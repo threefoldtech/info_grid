@@ -39,7 +39,7 @@ Go to portal
 
 !!!include:tfchain_portal_list
 
-Click on `Swap` in the sidebar to get the transfer screen. Click `Deposit`
+Click on `Bridge` in the sidebar to get the transfer screen. Click `Deposit`
 
 ![ ](../img/dashboard_portal_deposit_tft.png ':size=400')
 
