@@ -12,8 +12,8 @@ The dashboard is a unified admin interface for everything related to Threefold G
 ![dao](./img/dashboard_dao.png)
 
 - Token management
-    - Swapping with Binance and Stellar
-    ![swap](./img/dashboard_swap.png)
+    - Bridging with Binance and Stellar
+    ![bridge](./img/dashboard_bridge.png)
     - Transferring money to other tfchain user
     ![transfer](./img/dashboard_portal_transfer.png)
 
