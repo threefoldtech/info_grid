@@ -19,4 +19,4 @@ jobs:
           cd ~/websites/info_grid
           git log -1
           git pull
-          make build
+          mdbook build -d docs
