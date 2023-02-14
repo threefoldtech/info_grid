@@ -1,0 +1,22 @@
+name: Manual.grid.tf
+on:
+  push:
+    branch: [ development ]
+
+jobs:
+  job_one:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: pushing latest change on manual.grid.tf
+      uses: appleboy/ssh-action@master
+      with:
+        host: manual.grid.tf
+        username: ${{ secrets.TF_USER }}
+        key: ${{ secrets.TF_SECRET }}
+        port: ${{ secrets.TF_PORT }}
+        script: |
+          cd ~/websites/info_grid
+          git log -1
+          git pull
+          make build
