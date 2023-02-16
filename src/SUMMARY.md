@@ -58,6 +58,7 @@
         - [Presearch](weblets/weblets_presearch.md)
         - [CasperLabs](weblets/weblets_casper.md)
         - [Node Pilot](weblets/weblets_nodepilot.md)
+        - [WordPress](weblets/weblets_wordpress.md)
 - [Dashboard](dashboard/dashboard.md)
     - [Dasboard Explorer](dashboard/explorer/explorer_home.md)
         - [find capacity](dashboard/explorer/explorer_find_capacity.md)
