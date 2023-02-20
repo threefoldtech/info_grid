@@ -1,7 +1,7 @@
 name: Manual.grid.tf
 on:
   push:
-    branch: [ development ]
+    branch: [ master ]
 
 jobs:
   job_one:
