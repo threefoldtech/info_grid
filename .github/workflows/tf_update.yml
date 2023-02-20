@@ -1,4 +1,4 @@
-name: Manual.grid.tf
+name: www2.anual.grid.tf
 on:
   push:
     branch: [ development ]
@@ -8,15 +8,15 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: pushing latest change on manual.grid.tf
+    - name: pushing latest change on www2.manual.grid.tf
       uses: appleboy/ssh-action@master
       with:
-        host: manual.grid.tf
+        host: www2.manual.grid.tf
         username: ${{ secrets.TF_USER }}
         key: ${{ secrets.TF_SECRET }}
         port: ${{ secrets.TF_PORT }}
         script: |
-          cd ~/websites/info_grid
+          cd ~/websites/www2/info_grid
           git log -1
           git pull
           source ~/.cargo/env
