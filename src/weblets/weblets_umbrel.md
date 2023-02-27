@@ -31,7 +31,7 @@ You can see a list of all of your deployed instances
 
 ![ ](img/umbrel2.png)
 
-- you can click on `Show details` for more details about the Wordpress deployment.
+- you can click on `Show details` for more details about the Umbrel deployment.
     ![ ](img/umbrel3.png)
     and for more detailed information switch to `JSON` tap.
     ![ ](img/umbrel4.png)
