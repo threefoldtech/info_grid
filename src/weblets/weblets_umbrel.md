@@ -41,4 +41,4 @@ You can see a list of all of your deployed instances
 
 ![ ](img/umbrel5.png)
 
-> **Warning**: Due to the nature of the grid, shutdown, and restart your umbrel from the dashboard **MAY** make some unwanted behaviors.
+> **Warning**: Due to the nature of the grid, shutdown, or restart your umbrel from the dashboard **MAY** make some unwanted behaviors.
