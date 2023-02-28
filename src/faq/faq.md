@@ -13,7 +13,7 @@
 ***
 *Hint: Use the search function (Ctrl+F) to locate specific keywords*
 
-*If you can't find the answer to your question*, [ask a auestion to the Threefold Community](#ask-a-question-to-the-threefold-community)!
+*If you can't find the answer to your question*, [ask a question to the Threefold Community](#ask-a-question-to-the-threefold-community)!
 ***
 
 <h2>Main Sections</h2>
