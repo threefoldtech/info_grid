@@ -1,4 +1,4 @@
-name: www2.anual.grid.tf
+name: www2.manual.grid.tf
 on:
   push:
     branch: [ development ]
