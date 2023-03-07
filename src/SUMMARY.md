@@ -3,6 +3,7 @@
 
 - [Introduction](getstarted/grid3_howitworks.md)
 - [Getting Started](getstarted/tfgrid3_getstarted.md)
+    - [Threefold Connect](TF_Connect/TF_Connect.md)
     - [Installing Polkadot extension](dashboard/portal/dashboard_portal_polkadot_widget.md)
     - [Create Account](dashboard/portal/dashboard_portal_polkadot_create_account.md)
     - [Activate Account](dashboard/portal/dashboard_portal_ui_activation.md)
