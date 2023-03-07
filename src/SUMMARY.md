@@ -3,9 +3,9 @@
 
 - [Introduction](getstarted/grid3_howitworks.md)
 - [Getting Started](getstarted/tfgrid3_getstarted.md)
-    - [Threefold Connect](TF_Connect/TF_Connect.md)
-    - [Threefold Token](TF_Token/TF_Token.md)
-    - [Threefold Dashboard](TF_Dashboard/TF_Dashboard.md)
+    - [Threefold Connect](getstarted/TF_Connect/TF_Connect.md)
+    - [Threefold Token](getstarted/TF_Token/TF_Token.md)
+    - [Threefold Dashboard](getstarted/TF_Dashboard/TF_Dashboard.md)
     - [Tutorial: Find Node](dashboard/explorer/explorer_find_capacity.md)
     - [Tutorial: Deploy Your First VM](weblets/weblets_vm.md)
 - [Terraform](terraform/terraform_readme.md)
