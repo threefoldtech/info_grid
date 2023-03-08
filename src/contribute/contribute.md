@@ -28,6 +28,8 @@ We present here the main steps to add content to the Threefold Manual, https://w
 * The Threefold team will then update the Master branch from the Development branch
    * The new content will be available here: https://www.manual.grid.tf
 
+Note: You can update your forked repository by clicking Sync fork -> Update branch.
+
 ***
 
 # How to Build the mdbook Locally
@@ -45,7 +47,7 @@ Follow those simple steps:
   * mdbook build
   * mdbook serve --port 3031
     * You can use a different port too
-  * In your browswer, enter the following URL
+  * In your browser, enter the following URL
     * http://localhost:3031/
   * You should be able to see your changes
 
