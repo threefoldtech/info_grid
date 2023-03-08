@@ -55,9 +55,9 @@ Follow those simple steps:
 
 To install git, follow the steps provided [here](https://github.com/git-guides/install-git).
 
-To install mdbook, you need to install Rust and Cargo. Installing Rust should also install Cargo. To install Rust, follow the steps provided [here](https://www.rust-lang.org/tools/install).
+To install mdbook, you can download the executable binaries available on the [GitHub Releases Page](https://github.com/rust-lang/mdBook/releases). Simply download the binary for your platform (Windows, macOS, or Linux) and extract the archive. The archive contains an mdbook executable which you can run to build your books. To make it easier to run, you can put the path to the binary into your PATH.
 
-For more information, you can read this [documentation on mdbook](https://rust-lang.github.io/mdBook/guide/installation.html).
+For more information, read the [mdbook Documentation](https://rust-lang.github.io/mdBook/guide/installation.html).
 
 ***
 
