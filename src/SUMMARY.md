@@ -69,4 +69,5 @@
 - [Flist Hub](flist_hub/flist_hub.md)
     - [Supported FLists](manual3_iac/grid3_supported_flists.md)
 - [Farmerbot](farmerbot/farmerbot.md)
+- [How to Contribute](contribute/contribute.md)
 - [FAQ](faq/faq.md)
