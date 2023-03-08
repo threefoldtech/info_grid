@@ -1,4 +1,4 @@
-first, make sure you have your [client](./grid3_javascript_loadclient.md) prepared
+First, make sure you have your [client](./grid3_javascript_loadclient.md) prepared
 
 ## Deploying ZDBs for QSFS
 
@@ -13,7 +13,7 @@ async function main() {
     const grid3 = await getClient();
     const qsfs_name = "zdbsQsfsDemo";
     const qsfsQueryOptions: FilterOptions = {
-        hru: 16,
+        hru: 8,
         availableFor: grid3.twinId,
         farmId: 1,
     };
@@ -42,8 +42,8 @@ async function main() {
     const zdbs_data = await grid3.qsfs_zdbs.get({ name: qsfs_name });
     log(zdbs_data);
 
-    const delete_response = await grid3.qsfs_zdbs.delete({ name: qsfs_name });
-    log(delete_response);
+    // const delete_response = await grid3.qsfs_zdbs.delete({ name: qsfs_name });
+    // log(delete_response);
 
     await grid3.disconnect();
 }
