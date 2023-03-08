@@ -17,10 +17,11 @@ The farmerbot can only manage the nodes that you define in the configuration. So
 - twinid: the twin id of the node
 
 Next to the required attributes you can provide the following attributes:
+- never_shutdown: a value telling the farmerbot whether or not the node should never be shutdown
 - cpuoverprovision: a value between 1 and 4 defining how much the cpu can be overprovisioned (2 means the farmerbot will allocate 2 deployments to one cpu)
 - public_config: a value telling the farmerbot whether or not the node has a public config
 - dedicated: a value telling the farmerbot whether or not the node is dedicated (only allow renting the full node)
-- certified: true or false telling the farmerbot whether or not the node is certified
+- certified: a value telling the farmerbot whether or not the node is certified
 
 The snippet below shows you an example of a node definition in the markdown config file:
 ```
