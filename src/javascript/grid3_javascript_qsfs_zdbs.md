@@ -44,6 +44,7 @@ async function main() {
 
     const delete_response = await grid3.qsfs_zdbs.delete({ name: qsfs_name });
     log(delete_response);
+
     await grid3.disconnect();
 }
 main();
@@ -89,7 +90,7 @@ const qsfs_name = "zdbsQsfsDemo";
 
 We prepare here a name to use across the client for the QSFS ZDBs
 
-#### Deploying the zdbs
+#### Deploying the ZDBs
 
 ````typescript
 const qsfs: QSFSZDBSModel = {
@@ -107,3 +108,16 @@ log(deploy_res);
 
 Here we deploy `12` ZDBs on nodes in  `qsfsNode` with password `mypassword`, all of them having disk size of `1GB`, the client already add 4 zdbs for metadata.
 
+#### Getting deployment information
+
+````typescript
+const zdbs_data = await grid3.qsfs_zdbs.get({ name: qsfs_name });
+log(zdbs_data);
+````
+
+#### Deleting a deployment
+
+````typescript
+const delete_response = await grid3.qsfs_zdbs.delete({ name: qsfs_name });
+log(delete_response);
+````
