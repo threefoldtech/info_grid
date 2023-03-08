@@ -96,7 +96,7 @@ NETWORK=dev
 RELAY=wss://relay.dev.grid.tf:443
 SUBSTRATE=wss://tfchain.dev.grid.tf:443
 ```
-Please modify the fields to what is required: you should fill in the mneminic of your farm, choose the appropriate network and modify the relay and substrate values if need be (test instead of dev if your farm is running on testnet, etc). Now to run the the farmerbot just run the following command:
+Please modify the fields to what is required: you should fill in the mnemonic of your farm, choose the appropriate network and modify the relay and substrate values if need be (test instead of dev if your farm is running on testnet, etc). Now to run the the farmerbot just run the following command:
 ```
 docker compose up
 ```
