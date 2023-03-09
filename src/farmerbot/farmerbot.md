@@ -9,7 +9,7 @@ The sections on this page will guide you through the requirements, the required 
 The farmerbot is shipped inside a docker image so that it is easy to run in a docker environment. Thus, the one and only requirement to run the farmerbot is docker so please [install docker](https://docs.docker.com/engine/install/) on your vm or system. Next, you'll have to copy the [docker-compose file](https://github.com/threefoldtech/farmerbot/blob/development/docker-compose.yaml) that will start the farmerbot for you when executing the command specified in section [Running the farmerbot](#running-the-farmerbot).
 
 ## Configuration
-Some configuration is required before running the farmerbot which should happen in a markdown file. This file should be located inside a folder called *config* in the directory of the docker-compose file. The possible configuration will be discussed in this section.
+Some configuration is required before running the farmerbot which should happen in a markdown file (*farmerbot.md* for example). This file should be located inside a folder called *config* in the directory of the docker-compose file. The possible configuration will be discussed in this section.
 
 ### Node configuration
 The farmerbot can only manage the nodes that you define in the configuration. So, for each node in your farm, fill in these required attributes:
@@ -97,7 +97,19 @@ NETWORK=dev
 RELAY=wss://relay.dev.grid.tf:443
 SUBSTRATE=wss://tfchain.dev.grid.tf:443
 ```
+
 Please modify the fields to what is required: you should fill in the mnemonic of your farm, choose the appropriate network and modify the relay and substrate values if need be (test instead of dev if your farm is running on testnet, etc). Now to run the the farmerbot just run the following command:
 ```
-docker compose up
+docker compose up -d
 ```
+
+The farmerbot should be running after a couple of seconds. It will create a log file inside your config folder called *farmerbot.log*. If you wish to restart a running farmerbot you can run the command shown below. It can take a couple of seconds before the farmerbot is completely shutdown. But before doing that it might be good to copy or delete the old log file.
+```
+docker compose restart
+```
+
+If the docker-compose file has changed and you wish to run the new version you will have to copy the new docker-compose file, stop the running farmerbot and start the new farmerbot. Or just run the command (copy or delete the log file first):
+```
+docker compose rm -f -s && docker compose up -d
+```
+This again will take a couple of seconds.
