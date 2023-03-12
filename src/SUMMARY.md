@@ -37,6 +37,7 @@
     - [Gateways](javascript/grid3_javascript_vm_gateways.md)
     - [Deploy a Kubernetes cluster](javascript/grid3_javascript_kubernetes.md)
     - [Deploy a ZDB](javascript/grid3_javascript_zdb.md)
+    - [Deploy ZDBs for QSFS](javascript/grid3_javascript_qsfs_zdbs.md)
     - [QSFS](javascript/grid3_javascript_qsfs.md)
     - [Key Value Store](javascript/grid3_javascript_kvstore.md)
 - [Weblets](weblets/weblets_home.md)
