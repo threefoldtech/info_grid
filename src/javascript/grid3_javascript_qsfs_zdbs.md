@@ -42,8 +42,6 @@ async function main() {
     const zdbs_data = await grid3.qsfs_zdbs.get({ name: qsfs_name });
     log(zdbs_data);
 
-    // const delete_response = await grid3.qsfs_zdbs.delete({ name: qsfs_name });
-    // log(delete_response);
 
     await grid3.disconnect();
 }
