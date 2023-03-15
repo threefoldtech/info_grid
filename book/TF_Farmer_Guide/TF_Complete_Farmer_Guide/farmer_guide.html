@@ -1,0 +1,2182 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Threefold Complete Farming Guide</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../getstarted/grid3_howitworks.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../getstarted/tfgrid3_getstarted.html"><strong aria-hidden="true">2.</strong> Getting Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../getstarted/TF_Connect/TF_Connect.html"><strong aria-hidden="true">2.1.</strong> Threefold Connect</a></li><li class="chapter-item expanded "><a href="../../getstarted/TF_Token/TF_Token.html"><strong aria-hidden="true">2.2.</strong> Threefold Token</a></li><li class="chapter-item expanded "><a href="../../getstarted/TF_Dashboard/TF_Dashboard.html"><strong aria-hidden="true">2.3.</strong> Threefold Dashboard</a></li><li class="chapter-item expanded "><a href="../../dashboard/explorer/explorer_find_capacity.html"><strong aria-hidden="true">2.4.</strong> Tutorial: Find Node</a></li><li class="chapter-item expanded "><a href="../../weblets/weblets_vm.html"><strong aria-hidden="true">2.5.</strong> Tutorial: Deploy Your First VM</a></li></ol></li><li class="chapter-item expanded "><a href="../../terraform/terraform_readme.html"><strong aria-hidden="true">3.</strong> Terraform</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../terraform/terraform_install.html"><strong aria-hidden="true">3.1.</strong> Installing Terraform</a></li><li class="chapter-item expanded "><a href="../../terraform/terraform_basics.html"><strong aria-hidden="true">3.2.</strong> Terraform Basics</a></li><li class="chapter-item expanded "><a href="../../terraform/terraform_get_started.html"><strong aria-hidden="true">3.3.</strong> Tutorial</a></li><li class="chapter-item expanded "><a href="../../terraform/terraform_delete.html"><strong aria-hidden="true">3.4.</strong> Delete</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.5.</strong> Resources</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../terraform/resources/terraform_vm.html"><strong aria-hidden="true">3.5.1.</strong> Virtual Machine</a></li><li class="chapter-item expanded "><a href="../../terraform/resources/terraform_vm_gateway.html"><strong aria-hidden="true">3.5.2.</strong> Web Gateway</a></li><li class="chapter-item expanded "><a href="../../terraform/resources/terraform_k8s.html"><strong aria-hidden="true">3.5.3.</strong> Kubernetes cluster</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../terraform/resources/terraform_k8s_demo.html"><strong aria-hidden="true">3.5.3.1.</strong> Demo</a></li></ol></li><li class="chapter-item expanded "><a href="../../terraform/resources/terraform_zdb.html"><strong aria-hidden="true">3.5.4.</strong> ZDB</a></li><li class="chapter-item expanded "><a href="../../terraform/resources/terraform_qsfs.html"><strong aria-hidden="true">3.5.5.</strong> Quantum Filesystem</a></li><li class="chapter-item expanded "><a href="../../terraform/resources/terraform_caprover.html"><strong aria-hidden="true">3.5.6.</strong> CapRover</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.6.</strong> Advanced</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../terraform/advanced/terraform_provider.html"><strong aria-hidden="true">3.6.1.</strong> Terraform Provider</a></li><li class="chapter-item expanded "><a href="../../terraform/advanced/terraform_provisioners.html"><strong aria-hidden="true">3.6.2.</strong> Terraform Provisioners</a></li><li class="chapter-item expanded "><a href="../../terraform/advanced/terraform_mounts.html"><strong aria-hidden="true">3.6.3.</strong> Mounts</a></li><li class="chapter-item expanded "><a href="../../terraform/advanced/terraform_capacity_planning.html"><strong aria-hidden="true">3.6.4.</strong> Capacity planning</a></li><li class="chapter-item expanded "><a href="../../terraform/advanced/terraform_updates.html"><strong aria-hidden="true">3.6.5.</strong> Updates</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../javascript/grid3_javascript_readme.html"><strong aria-hidden="true">4.</strong> Javascript Client</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../javascript/grid3_javascript_installation.html"><strong aria-hidden="true">4.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="../../javascript/grid3_javascript_loadclient.html"><strong aria-hidden="true">4.2.</strong> Loading client</a></li><li class="chapter-item expanded "><a href="../../javascript/grid3_javascript_vm.html"><strong aria-hidden="true">4.3.</strong> Deploy a VM</a></li><li class="chapter-item expanded "><a href="../../javascript/grid3_javascript_capacity_planning.html"><strong aria-hidden="true">4.4.</strong> Capacity planning</a></li><li class="chapter-item expanded "><a href="../../javascript/grid3_javascript_vms.html"><strong aria-hidden="true">4.5.</strong> Deploy multiple VMs</a></li><li class="chapter-item expanded "><a href="../../javascript/grid3_javascript_caprover.html"><strong aria-hidden="true">4.6.</strong> Deploy CapRover</a></li><li class="chapter-item expanded "><a href="../../javascript/grid3_javascript_vm_gateways.html"><strong aria-hidden="true">4.7.</strong> Gateways</a></li><li class="chapter-item expanded "><a href="../../javascript/grid3_javascript_kubernetes.html"><strong aria-hidden="true">4.8.</strong> Deploy a Kubernetes cluster</a></li><li class="chapter-item expanded "><a href="../../javascript/grid3_javascript_zdb.html"><strong aria-hidden="true">4.9.</strong> Deploy a ZDB</a></li><li class="chapter-item expanded "><a href="../../javascript/grid3_javascript_qsfs.html"><strong aria-hidden="true">4.10.</strong> QSFS</a></li><li class="chapter-item expanded "><a href="../../javascript/grid3_javascript_kvstore.html"><strong aria-hidden="true">4.11.</strong> Key Value Store</a></li></ol></li><li class="chapter-item expanded "><a href="../../weblets/weblets_home.html"><strong aria-hidden="true">5.</strong> Weblets</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../weblets/weblets_profile_manager.html"><strong aria-hidden="true">5.1.</strong> Profile Manager</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../weblets/profile_manager_unlock.html"><strong aria-hidden="true">5.1.1.</strong> Profile Manager Unlock</a></li></ol></li><li class="chapter-item expanded "><a href="../../weblets/weblets_deployments_list.html"><strong aria-hidden="true">5.2.</strong> Deployments List</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.3.</strong> Basic Environments</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../weblets/weblets_vm.html"><strong aria-hidden="true">5.3.1.</strong> Virtual Machine</a></li><li class="chapter-item expanded "><a href="../../weblets/weblets_k8s.html"><strong aria-hidden="true">5.3.2.</strong> Kubernetes</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.</strong> Ready Community Solutions</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../weblets/weblets_caprover.html"><strong aria-hidden="true">5.4.1.</strong> Caprover</a></li><li class="chapter-item expanded "><a href="../../weblets/weblets_funkwhale.html"><strong aria-hidden="true">5.4.2.</strong> Funkwhale</a></li><li class="chapter-item expanded "><a href="../../weblets/weblets_peertube.html"><strong aria-hidden="true">5.4.3.</strong> Peertube</a></li><li class="chapter-item expanded "><a href="../../weblets/weblets_taiga.html"><strong aria-hidden="true">5.4.4.</strong> Taiga</a></li><li class="chapter-item expanded "><a href="../../weblets/weblets_owncloud.html"><strong aria-hidden="true">5.4.5.</strong> Owncloud</a></li><li class="chapter-item expanded "><a href="../../weblets/weblets_discourse.html"><strong aria-hidden="true">5.4.6.</strong> Discourse</a></li><li class="chapter-item expanded "><a href="../../weblets/weblets_mattermost.html"><strong aria-hidden="true">5.4.7.</strong> Mattermost</a></li><li class="chapter-item expanded "><a href="../../weblets/weblets_presearch.html"><strong aria-hidden="true">5.4.8.</strong> Presearch</a></li><li class="chapter-item expanded "><a href="../../weblets/weblets_casper.html"><strong aria-hidden="true">5.4.9.</strong> CasperLabs</a></li><li class="chapter-item expanded "><a href="../../weblets/weblets_nodepilot.html"><strong aria-hidden="true">5.4.10.</strong> Node Pilot</a></li><li class="chapter-item expanded "><a href="../../weblets/weblets_umbrel.html"><strong aria-hidden="true">5.4.11.</strong> Umbrel</a></li><li class="chapter-item expanded "><a href="../../weblets/weblets_wordpress.html"><strong aria-hidden="true">5.4.12.</strong> WordPress</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../dashboard/dashboard.html"><strong aria-hidden="true">6.</strong> Dashboard</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../dashboard/explorer/explorer_home.html"><strong aria-hidden="true">6.1.</strong> Dasboard Explorer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../dashboard/explorer/explorer_find_capacity.html"><strong aria-hidden="true">6.1.1.</strong> find capacity</a></li><li class="chapter-item expanded "><a href="../../dashboard/explorer/explorer_graphql_intro.html"><strong aria-hidden="true">6.1.2.</strong> A Glimpse into GraphQL</a></li></ol></li><li class="chapter-item expanded "><a href="../../dashboard/portal/dashboard_portal_home.html"><strong aria-hidden="true">6.2.</strong> TFChain Portal</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../dashboard/portal/dashboard_portal_ui_farming.html"><strong aria-hidden="true">6.2.1.</strong> Activate your farmer account and nodes on TFChain</a></li><li class="chapter-item expanded "><a href="../../dashboard/portal/dashboard_portal_dedicated_nodes.html"><strong aria-hidden="true">6.2.2.</strong> Dedicated Nodes</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../flist_hub/flist_hub.html"><strong aria-hidden="true">7.</strong> Flist Hub</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../manual3_iac/grid3_supported_flists.html"><strong aria-hidden="true">7.1.</strong> Supported FLists</a></li></ol></li><li class="chapter-item expanded "><a href="../../TF_Farmer_Guide/tf_farmer_guide_readme.html"><strong aria-hidden="true">8.</strong> Threefold Farmer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.html" class="active"><strong aria-hidden="true">8.1.</strong> Threefold Complete Farming Guide</a></li><li class="chapter-item expanded "><a href="../../TF_Farmer_Guide/3node_diy_desktop/3node_diy_desktop.html"><strong aria-hidden="true">8.2.</strong> 3node DIY Desktop</a></li><li class="chapter-item expanded "><a href="../../TF_Farmer_Guide/3node_diy_rack_server/3node_diy_rack_server.html"><strong aria-hidden="true">8.3.</strong> 3node DIY Rack Server</a></li></ol></li><li class="chapter-item expanded "><a href="../../farmerbot/farmerbot.html"><strong aria-hidden="true">9.</strong> Farmerbot</a></li><li class="chapter-item expanded "><a href="../../contribute/contribute.html"><strong aria-hidden="true">10.</strong> How to Contribute</a></li><li class="chapter-item expanded "><a href="../../faq/faq.html"><strong aria-hidden="true">11.</strong> FAQ</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p><img src="./img/farming_30.png" alt="Farming_Title" /></p>
+<p>The <em><strong>Threefold Farming Guide on How to Build a DIY 3node Server</strong></em> is presented to you by the Threefold community.</p>
+<p>This community initiative will be updated as we learn and gain knowledge. As always: <strong>Do your own research</strong>. </p>
+<p>And now <em>...Let's New Internet...</em></p>
+<hr />
+<p><em>Hint: Use the search function (Ctrl+F) to locate specific keywords</em></p>
+<hr />
+<ul>
+<li><a href="#building-a-diy-3node---from-zero-to-hero">Building a DIY 3node - From Zero to Hero</a>
+<ul>
+<li><a href="#1-create-a-farm">1. Create a Farm</a>
+<ul>
+<li><a href="#1-creating-a-polkadotjs-account">1) Creating a Polkadot.js account</a></li>
+<li><a href="#2-creating-the-farm-on-threefold-grid">2) Creating the Farm on Threefold Grid</a></li>
+<li><a href="#optional-add-public-ip-addresses">Optional: Add Public IP Addresses</a>
+<ul>
+<li><a href="#how-to-configure-public-ip-addresses-for-a-threefold-farm-or-a-3node">How to configure public IP addresses for a Threefold farm or a 3node</a>
+<ul>
+<li><a href="#the-difference-between-ips-assigned-to-nodes-versus-a-farm">The difference between IPs assigned to nodes versus a farm</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#2-create-a-zero-os-bootstrap-image">2. Create a Zero-OS Bootstrap Image</a>
+<ul>
+<li><a href="#burning-the-zero-os-bootstrap-image">Burning the Zero-OS Bootstrap Image</a>
+<ul>
+<li><a href="#cddvd-bios">CD/DVD BIOS</a></li>
+<li><a href="#usb-key-biosuefi">USB Key BIOS+UEFI</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#3-set-the-hardware">3. Set the Hardware</a>
+<ul>
+<li><a href="#hardware-requirements">Hardware Requirements</a></li>
+<li><a href="#bandwidth-requirements">Bandwidth Requirements</a></li>
+<li><a href="#link-to-share-farming-setup">Link to Share Farming Setup</a></li>
+<li><a href="#list-of-common-diy-3nodes">List of Common DIY 3nodes</a>
+<ul>
+<li><a href="#the-mini-pc-diy-3node">The Mini PC DIY 3node</a></li>
+<li><a href="#the-desktop-pc-diy-3node">The Desktop PC DIY 3node</a></li>
+<li><a href="#the-mini-server-diy-3node">The Mini Server DIY 3node</a></li>
+<li><a href="#the-tower-server-diy-3node">The Tower Server DIY 3node</a></li>
+<li><a href="#the-rack-server-diy-3node">The Rack Server DIY 3node</a></li>
+</ul>
+</li>
+<li><a href="#powering-the-3node">Powering the 3node</a>
+<ul>
+<li><a href="#surge-protector">Surge Protector</a></li>
+<li><a href="#power-distribution-unit-pdu">Power Distribution Unit (PDU)</a></li>
+<li><a href="#uninterrupted-power-supply-ups">Uninterrupted Power Supply (UPS)</a></li>
+<li><a href="#generator">Generator</a></li>
+</ul>
+</li>
+<li><a href="#using-onboard-storage-3node-servers">Using Onboard Storage (3node Servers)</a></li>
+<li><a href="#upgrading-a-diy-3node">Upgrading a DIY 3node</a></li>
+</ul>
+</li>
+<li><a href="#4-wipe-all-the-disks">4. Wipe All the Disks</a>
+<ul>
+<li><a href="#1-create-a-linux-bootstrap-image">1. Create a Linux Bootstrap Image</a></li>
+<li><a href="#2-boot-linux-in-try-mode">2. Boot Linux in <em>Try Mode</em></a></li>
+<li><a href="#3-use-wipefs-to-wipe-all-disks">3. Use wipefs to wipe all disks</a></li>
+</ul>
+</li>
+<li><a href="#5-set-the-biosuefi">5. Set the BIOS/UEFI</a>
+<ul>
+<li><a href="#the-essential-features-of-biosuefi-for-a-3node">The Essential Features of BIOS/UEFI for a 3node</a>
+<ul>
+<li><a href="#setting-the-remote-management-of-a-server-static-ip-address">Setting the Remote Management of a Server (Static IP Address)</a></li>
+</ul>
+</li>
+<li><a href="#update-the-biosuefi-firmware">Update the BIOS/UEFI firmware</a>
+<ul>
+<li><a href="#check-your-biosuefi-version-on-windows">Check your BIOS/UEFI version on Windows</a></li>
+<li><a href="#check-your-biosuefi-version-on-linux">Check your BIOS/UEFI version on Linux</a></li>
+<li><a href="#update-the-bios-firmware">Update the BIOS firmware</a></li>
+</ul>
+</li>
+<li><a href="#biosuefi-and-zero-os-bootstrap-image-combinations">BIOS/UEFI and Zero-OS Bootstrap Image Combinations</a>
+<ul>
+<li><a href="#example-of-bios-settings---rack-server---dell-r720">Example of BIOS Settings - Rack Server - Dell R720</a></li>
+<li><a href="#example-of-uefi-settings---desktop-computer---dell-optiplex-7010">Example of UEFI Settings - Desktop Computer - Dell Optiplex 7010</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#6-boot-the-3node">6. Boot the 3node</a>
+<ul>
+<li><a href="#1-booting-the-3node-with-zero-os-bootstrap-image">1. Booting the 3node with Zero-OS bootstrap image</a></li>
+<li><a href="#2-check-3node-status-on-the-tf-explorer">2. Check 3node Status on the TF Explorer</a></li>
+<li><a href="#3-receive-the-farming-rewards">3. Receive the Farming Rewards</a></li>
+<li><a href="#advanced-booting-option---network-booting-pxe">Advanced Booting Option - Network Booting (PXE)</a>
+<ul>
+<li><a href="#pxe-booting-with-opnsense">PXE Booting with OPNsense</a></li>
+<li><a href="#pxe-booting-with-pfsense">PXE Booting with pfSense</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#set-up-a-threefold-farm-in-a-data-center">Set Up a Threefold Farm in a Data Center</a>
+<ul>
+<li><a href="#gold-farming-qualification-requirements">Gold Farming Qualification Requirements</a></li>
+<li><a href="#data-center-cable-management">Data Center Cable Management</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#farming-optimization-and-planification">Farming Optimization and Planification</a>
+<ul>
+<li><a href="#calculate-the-roi-of-a-diy-3node">Calculate the ROI of a DIY 3node</a></li>
+<li><a href="#air-conditioner-relative-humidity-and-air-changes-per-hour">Air Conditioner, Relative Humidity and Air Changes per Hour</a>
+<ul>
+<li><a href="#calculate-the-minimum-btu-needed-for-the-ac">Calculate the Minimum BTU Needed for the AC</a></li>
+<li><a href="#ensure-proper-relative-humidity">Ensure Proper Relative Humidity</a></li>
+<li><a href="#ensure-proper-air-changes-per-hour">Ensure Proper Air Changes per Hour</a></li>
+</ul>
+</li>
+<li><a href="#calculate-power-internet-and-total-costs">Calculate Power, Internet and Total Costs</a>
+<ul>
+<li><a href="#calculate-the-total-electricity-cost-of-your-farm">Calculate the Total Electricity Cost of Your Farm</a></li>
+<li><a href="#calculate-the-proper-bandwidth-needed-for-your-farm">Calculate the Proper Bandwidth Needed for Your Farm</a>
+<ul>
+<li><a href="#the-minimum-bandwidth-per-3node-equation">The Minimum Bandwidth per 3node Equation</a></li>
+<li><a href="#cost-per-month-for-a-given-bandwidth">Cost per Month for a Given Bandwidth</a></li>
+</ul>
+</li>
+<li><a href="#calculate-the-total-cost-and-revenue">Calculate the Total Cost and Revenue</a>
+<ul>
+<li><a href="#check-revenue-with-the-threefold-simulator">Check Revenue with the Threefold Simulator</a></li>
+<li><a href="#economics-of-farming">Economics of Farming</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#threefold-token-tft">Threefold Token (TFT)</a>
+<ul>
+<li><a href="#6-facts-about-the-threefold-tokens">6 Facts About the ThreeFold Tokens</a></li>
+<li><a href="#threefold-wallet">Threefold Wallet</a>
+<ul>
+<li><a href="#threefold-connect-app-wallet">Threefold Connect App Wallet</a>
+<ul>
+<li><a href="#threefold-connect-installation">Threefold Connect Installation</a></li>
+<li><a href="#verify-your-identity-kyc-by-email">Verify your identity (KYC) by email</a></li>
+<li><a href="#change-email-associated-with-tf-account">Change email associated with TF account</a></li>
+<li><a href="#create-a-wallet">Create a Wallet</a></li>
+<li><a href="#create-a-farm">Create a Farm</a></li>
+<li><a href="#see-threefold-connect-app-and-wallet-transactions">See Threefold Connect App and Wallet Transactions</a></li>
+<li><a href="#connect-to-the-planetary-network">Connect to the Planetary Network</a></li>
+<li><a href="#show-seed-phrase---remove-account-from-tf-connect-app">Show Seed Phrase - Remove Account from TF Connect App</a></li>
+<li><a href="#recover-account-on-the-threefold-connect-app">Recover Account on the Threefold Connect App</a></li>
+<li><a href="#move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs">Move Farm from the TF app to the TF Portal (polkadot.js)</a></li>
+<li><a href="#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet">Import TF Portal (polkadot.js) wallet to the TF Connect App Wallet</a></li>
+<li><a href="#send-and-receive-tft-between-tf-connect-wallets">Send and Receive TFT between TF Connect Wallets</a>
+<ul>
+<li><a href="#send-tft">Send TFT</a></li>
+<li><a href="#receive-tft">Receive TFT</a></li>
+</ul>
+</li>
+<li><a href="#send-tft-to-hardware-wallet-on-stellar-blockchain">Send TFT to Hardware Wallet on Stellar Blockchain</a></li>
+</ul>
+</li>
+<li><a href="#hardware-wallet">Hardware Wallet</a>
+<ul>
+<li><a href="#setting-up-a-tft-trustline-on-stellar-blockchain">Setting up a TFT Trustline on Stellar Blockchain</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#how-to-buy-and-sell-tft">How to Buy and Sell TFT</a>
+<ul>
+<li><a href="#where-to-buy-and-sell-tft">Where to Buy and Sell TFT</a>
+<ul>
+<li><a href="#the-different-tft-threefold-bridges-tfchain-stellar-bridge-and-bsc-stellar-bridge">The different TFT Threefold bridges: TFChain-Stellar Bridge and BSC-Stellar Bridge</a></li>
+<li><a href="#how-to-set-up-a-stellar-address-for-tft-transactions">How to set up a Stellar address for TFT transactions</a></li>
+</ul>
+</li>
+<li><a href="#how-to-use-the-tfchain-stellar-bridge">How to use the TFChain-Stellar Bridge</a></li>
+<li><a href="#how-to-use-the-bsc-stellar-bridge">How to use the BSC-Stellar Bridge</a>
+<ul>
+<li><a href="#bridge-from-stellar-to-bsc">Bridge from Stellar to BSC</a></li>
+<li><a href="#bridge-from-bsc-to-stellar">Bridge from BSC to Stellar</a></li>
+<li><a href="#setting-up-tft-on-metamask">Setting Up TFT on Metamask</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#validator">Validator</a>
+<ul>
+<li><a href="#introduction-to-validator">Introduction to Validator</a></li>
+<li><a href="#more-information">More Information</a></li>
+</ul>
+</li>
+<li><a href="#how-to-stake-tft">How to Stake TFT</a></li>
+</ul>
+</li>
+<li><a href="#using-tft-on-the-grid">Using TFT on the Grid</a></li>
+</ul>
+<hr />
+<h1 id="building-a-diy-3node---from-zero-to-hero"><a class="header" href="#building-a-diy-3node---from-zero-to-hero">Building a DIY 3node - From Zero to Hero</a></h1>
+<h2 id="1-create-a-farm"><a class="header" href="#1-create-a-farm">1. Create a Farm</a></h2>
+<hr />
+<p>The following guide will show you how to create a farm and a farm ID. In doing so, we will also learn how to create a Threefold Twin and how to use the polkadot.js extension on Chrome or Firefox to create an account on the blockchain. You can also <a href="#create-a-farm">create a Threefold Farm with the Threefold Connect App</a>.</p>
+<hr />
+<h3 id="1-creating-a-polkadotjs-account"><a class="header" href="#1-creating-a-polkadotjs-account">1) Creating a Polkadot.js account</a></h3>
+<pre><code>https://polkadot.js.org/extension/
+</code></pre>
+<p>Go on this link and download the extension based on your browser.</p>
+<p><img src="./img/farming_createfarm_1.png" alt="Farming_Create_Farm_1" /> </p>
+<p>Choose Chrome or Firefox.</p>
+<pre><code>https://addons.mozilla.org/en-US/firefox/addon/polkadot-js-extension/
+</code></pre>
+<p>In this case, we use Firefox. Clicking on Download for Firefox leads us to this URL.</p>
+<p><img src="./img/farming_createfarm_2.png" alt="Farming_Create_Farm_1" /></p>
+<p>Click Add to Firefox.</p>
+<p><img src="./img/farming_createfarm_3.png" alt="Farming_Create_Farm_3" /></p>
+<p>Click Add.</p>
+<p><img src="./img/farming_createfarm_4.png" alt="Farming_Create_Farm_4" /> </p>
+<p>This message tells you that the extension was added. Select Allow this extension to run in Private Windows if you want, then click Okay.</p>
+<hr />
+<p><img src="./img/farming_createfarm_5.png" alt="Farming_Create_Farm_5" /></p>
+<p>At first, you have no account. Click on the + sign to create an account.</p>
+<p><img src="./img/farming_createfarm_6.png" alt="Farming_Create_Farm_6" /> </p>
+<p>Write down your 12-word mnemonic seed and select <em><strong>I have saved my mnemonic seed safely</strong></em>, once you’ve done so!</p>
+<p><img src="./img/farming_createfarm_7.png" alt="Farming_Create_Farm_7" /></p>
+<p>Choose a descriptive name for your account. This name is not relevant. If you remove your account from the browser, you will need to enter your 12-word mnemonic seed and choose a new descriptive name.</p>
+<p>You will need the password when accepting transactions. Choose it wisely.</p>
+<p><img src="./img/farming_createfarm_8.png" alt="Farming_Create_Farm_8" /> </p>
+<p>This is what you see when your account is created.</p>
+<hr />
+<h3 id="2-creating-the-farm-on-threefold-grid"><a class="header" href="#2-creating-the-farm-on-threefold-grid">2) Creating the Farm on Threefold Grid</a></h3>
+<pre><code>https://portal.grid.tf
+</code></pre>
+<p>Go on the Threefold Portal.</p>
+<p><img src="./img/farming_createfarm_9.png" alt="Farming_Create_Farm_9" /> </p>
+<p>As you’ve created and logged in your account, you will see your account in the list of connected accounts. Click on your account.</p>
+<p><img src="./img/farming_createfarm_10.png" alt="Farming_Create_Farm_10" /></p>
+<p>You will be asked to read and accept the terms and conditions.</p>
+<p><img src="./img/farming_createfarm_11.png" alt="Farming_Create_Farm_11" /> </p>
+<p>You will be asked your password in order to confirm the transaction.</p>
+<hr />
+<p><img src="./img/farming_createfarm_12.png" alt="Farming_Create_Farm_12" /> </p>
+<p>Once you confirm the transaction, your will land on the Twin page.</p>
+<p><img src="./img/farming_createfarm_13.png" alt="Farming_Create_Farm_13" /> </p>
+<p>You want to create a Twin and let the standard IP address already written, as shown below:</p>
+<blockquote>
+<p>::1</p>
+</blockquote>
+<p>Click Create. Note that this is a IPv6 address as the twin is using the Planetary Network.</p>
+<p><img src="./img/farming_createfarm_14.png" alt="Farming_Create_Farm_14" /> </p>
+<p>You will once again be asked to confirm the transaction. At this point, you might think: I will click on the Remember my password for the next 15 minutes. Wise Farmer indeed. You sign the transaction.</p>
+<p><img src="./img/farming_createfarm_15.png" alt="Farming_Create_Farm_15" /> </p>
+<p>You’ve just created a Threefold Twin. This is the New Internet.</p>
+<hr />
+<p><img src="./img/farming_createfarm_16.png" alt="Farming_Create_Farm_16" /> </p>
+<p>Click on the Farms button to your left. Then, click on Create Farm.</p>
+<p><img src="./img/farming_createfarm_17.png" alt="Farming_Create_Farm_17" /> </p>
+<p>Choose a farm name and click Create.</p>
+<p><img src="./img/farming_createfarm_18.png" alt="Farming_Create_Farm_18" /> </p>
+<p>You can Sign the transaction without entering your passwords and also choose to Extend the period without password by 15 minutes. Your choice. Your free will.</p>
+<p><img src="./img/farming_createfarm_19.png" alt="Farming_Create_Farm_19" /> </p>
+<p>You’ve created a farm! Here we can see on the top left the farm ID. 327. Imagine, one day there will be millions!</p>
+<p><img src="./img/farming_createfarm_20.png" alt="Farming_Create_Farm_20" /> </p>
+<p>Click on Add a <strong>Stellar address</strong>. Write your address and click save. You can, for example, use your <strong>Threefold Connect App</strong>* address or your hard storage device address (Ledger, Trezor).</p>
+<p>*Threefold Connect App Hyperlinks:</p>
+<ul>
+<li>Link for <a href="https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&amp;hl=en&amp;gl=US">Android</a></li>
+<li>Link for <a href="https://apps.apple.com/us/app/threefold-connect/id1459845885">iOS</a></li>
+</ul>
+<hr />
+<h3 id="optional-add-public-ip-addresses"><a class="header" href="#optional-add-public-ip-addresses">Optional: Add Public IP Addresses</a></h3>
+<hr />
+<blockquote>
+<p>Note: Assuming you are a farmer operating from your home, this field can usually be left blank. You do not have to fill in any details. The add IP option is for farmers that have a block of IP addresses routed to their router (in data centers mostly) and want to present “dedicated IP” addresses for deployments.</p>
+</blockquote>
+<p>The add IP option is for farmers that have a block of IP addresses routed to their router. This is mainly for data centers, but some ISP can provide this service for residential locations. With such public IP addresses, your TF farm and/or your 3nodes can present “dedicated IP” addresses for deployments.
+Unless you are paying for a block of IPs, you only have one static IP which is needed for you router</p>
+<p>The <a href="https://simulator.grid.tf/">Threefold simulator</a> is referring to this IP address. Only check the Public IP option in the simulator if you have such block of IP addresses.</p>
+<p><img src="img/farming_001.png" alt="farming_001" /> </p>
+<h4 id="how-to-configure-public-ip-addresses-for-a-threefold-farm-or-a-3node"><a class="header" href="#how-to-configure-public-ip-addresses-for-a-threefold-farm-or-a-3node">How to configure public IP addresses for a Threefold farm or a 3node</a></h4>
+<p>To configure public IP addresses for your 3node farm, head to the  <em>Farm</em>  section of the <a href="https://portal.grid.tf/">Threefold Portal</a>, expand your farm by clicking on the arrow on the left, then click on  <em>Public IPs</em>  and then click on  <em>Add IP</em> . Specify the IP address using CIDR format and then add the gateway.</p>
+<p><img src="img/farming_002.png" alt="farming_002" /> </p>
+<p><img src="img/farming_003.png" alt="farming_003" /> </p>
+<p><img src="img/farming_004.png" alt="farming_004" /> </p>
+<p>The same process can be done for individual 3nodes. This is available in the  <em>Nodes</em>  section, just below the  <em>Farms</em>  section of the Farms page.</p>
+<p>To configure public IP addresses to a specific 3node, click on the Actions <em>Add a public config</em> (represented with a Earth icon) and fill in the necessary information.</p>
+<p><img src="img/farming_005.png" alt="farming_005" /> </p>
+<p><img src="img/farming_006.png" alt="farming_006" /></p>
+<p>As it is written, only the IPV4 address and gateway are necessary. IPV6 and the Domain are optional.</p>
+<h5 id="the-difference-between-ips-assigned-to-nodes-versus-a-farm"><a class="header" href="#the-difference-between-ips-assigned-to-nodes-versus-a-farm">The difference between IPs assigned to nodes versus a farm</a></h5>
+<p>IPs assigned to a farm are available to be rented by workloads. They can be assigned to virtual machines for example. IPs assigned to nodes enable each node to become a gateway.</p>
+<hr />
+<h2 id="2-create-a-zero-os-bootstrap-image"><a class="header" href="#2-create-a-zero-os-bootstrap-image">2. Create a Zero-OS Bootstrap Image</a></h2>
+<hr />
+<p>We will now learn how to create a Zero-OS Bootstrap Image in order to boot a DIY 3node.</p>
+<pre><code>https://v3.bootstrap.grid.tf
+</code></pre>
+<p>Go on the <a href="https://v3.bootstrap.grid.tf">Threefold Zero-OS Bootstrap Link</a> as shown above.</p>
+<p><img src="./img/farming_createfarm_21.png" alt="Farming_Create_Farm_21" /> </p>
+<p>This is the Zero-OS v3 Bootstrapping page.</p>
+<p><img src="./img/farming_createfarm_22.png" alt="Farming_Create_Farm_22" /></p>
+<p>Write your farm ID and choose production mode.</p>
+<p><img src="./img/farming_createfarm_23.png" alt="Farming_Create_Farm_23" /></p>
+<p>If your system is new, you might be able to run the bootstrap in UEFI mode.</p>
+<p><img src="./img/farming_createfarm_24.png" alt="Farming_Create_Farm_24" /> </p>
+<p>For older systems, run the bootstrap in BIOS mode. For BIOS CD/DVD, choose <strong>ISO</strong>. For BIOS USB, choose <strong>USB</strong></p>
+<p>Download the bootstrap image. Next, we will burn the bootstrap image.</p>
+<hr />
+<h3 id="burning-the-zero-os-bootstrap-image"><a class="header" href="#burning-the-zero-os-bootstrap-image">Burning the Zero-OS Bootstrap Image</a></h3>
+<h4 id="cddvd-bios"><a class="header" href="#cddvd-bios">CD/DVD BIOS</a></h4>
+<hr />
+<p>For the BIOS <strong>ISO</strong> image, download the file and burn it on a DVD.</p>
+<hr />
+<h4 id="usb-key-biosuefi"><a class="header" href="#usb-key-biosuefi">USB Key BIOS+UEFI</a></h4>
+<p>For <strong>MAC</strong>, <strong>Linux</strong> and <strong>Windows</strong>, you can use <a href="https://www.balena.io/etcher/">BalenaEtcher</a> to load/flash the image on a USB stick. This program also formats the USB in the process. This will work for the option <strong>EFI IMG</strong> for UEFI boot, and with the option <strong>USB</strong> for BIOS boot. Simply follow the steps presented to you and make sure you select the bootstrap image file you downloaded previously.</p>
+<p>General Steps:</p>
+<ol>
+<li>Download BalenaEtcher</li>
+<li>Open BalenaEtcher</li>
+<li>Select <strong>Flash from file</strong></li>
+<li>Find and select the bootstrap image (with your correct farm ID)</li>
+<li>Select <strong>Target</strong> (your USB key)</li>
+<li>Select <strong>Flash</strong></li>
+</ol>
+<p>That's it. Now you have a bootstrap image on Zero-OS as a bootable removable media device.</p>
+<hr />
+<p>For the BIOS <strong>USB</strong> and the UEFI <strong>EFI IMG</strong> images, with Linux, you will want to do:</p>
+<pre><code>sudo dd status=progress if=FILELOCATION.ISO(or .IMG) of=/dev/sd*.
+</code></pre>
+<p>Here the * is to indicate that you must adjust according to your disk. To see your disks, write lsblk in the command window. Make sure you select the proper disk!</p>
+<p>*If you USB key is not new, make sure that you format it before burning the Zero-OS image.</p>
+<hr />
+<p>For Windows, if you are using the <em><strong>&quot;dd&quot; able image</strong></em>, instead of writing command line, you can use the free USB flashing program called <a href="https://sourceforge.net/projects/rufus.mirror/">Rufus</a> and it will automatically do this with no need for Linux or command line. Rufus also formats the boot media in the process.</p>
+<hr />
+<h2 id="3-set-the-hardware"><a class="header" href="#3-set-the-hardware">3. Set the Hardware</a></h2>
+<hr />
+<h3 id="hardware-requirements"><a class="header" href="#hardware-requirements">Hardware Requirements</a></h3>
+<hr />
+<p>In this section, we cover the essential farming requirements when it comes to Threefold 3node hardware.</p>
+<p>You need a theoretical minimum of 500 GB of SSD and 2 GB of RAM on a mini pc, desktop or server. In short, for peak optimization, aim for 100 GB of SSD and 8GB of RAM per thread. (Thread is equivalent to virtual core or logical core.)</p>
+<p>Also, TFDAO might implement a farming parameter based on <a href="https://www.cpubenchmark.net/cpu_list.php">passmark</a>. From the ongoing discussion on the Forum, you should aim at a CPU mark of 1000 and above per core.</p>
+<blockquote>
+<p>3node optimal farming hardware ratio -&gt; 100 GB of SSD + 8 GB of RAM per Virtual Core</p>
+</blockquote>
+<p>Note that you can run Zero-OS on a Virtual Machine (VM), but you won't farm any TFT from this process. To farm TFT, Zero-OS needs to be on bare metal.</p>
+<p>Also, note that Threefold runs its own OS, which is Zero-OS. You thus need to start with completely wiped disks. You cannot farm TFT with Windows, Linux or MAC OS installed on your disks. If you need to use such OS temporarily, boot it in Try mode with a removable media (USB key).</p>
+<p>Note: Once you have the necessary hardware, you need to <a href="/farming/farming.html#1-create-a-farm">create a farm</a>, <a href="/farming/farming.html#2-create-a-zero-os-bootstrap-image">create a Zero-OS bootstrap image</a>, <a href="/farming/farming.html#4-wipe-all-the-disks">wipe your disks</a> and <a href="/farming/farming.html#5-set-the-bios">set the BIOS/UEFI</a> . Then you can <a href="/farming/farming.html#6-boot-the-3node">boot your 3node</a>. </p>
+<hr />
+<p><strong>3NODE REQUIREMENTS</strong></p>
+<hr />
+<p>Any computer with the following specifications can be used as a DIY 3node.</p>
+<ul>
+<li>Any 64-bit hardware with an Intel or AMD processor chip.</li>
+<li>Servers, desktops and mini computers type hardware are compatible.</li>
+<li>A minimum of 500 GB of SSD and a bare minimum of 2 GB of RAM is required.</li>
+<li>A ratio of 100GB of SSD and 8GB of RAM per thread is recommended.</li>
+<li>A wired ethernet connection is highly recommended to maximize reliability and the ability to farm TFT.</li>
+<li>A <a href="https://www.passmark.com/">passmark</a> of 1000 per core is recommended and will probably be a minimum requirement in the future.</li>
+</ul>
+<p>*A passmark of 1000 per core is recommend and will be a minimum requirement in the future. This is not yet an official requirement. A 3node with less than 1000 passmark per core of CPU would not be penalized if it is registered before the DAO settles the <a href="https://forum.threefold.io/t/cpu-benchmarking-for-reward-calculations/2479">Passmark Question</a>.</p>
+<hr />
+<h3 id="bandwidth-requirements"><a class="header" href="#bandwidth-requirements">Bandwidth Requirements</a></h3>
+<!---
+This section should be checked and validated with the TF Team. We can change the constant (here it's 10) if needed. Or use another equation if this one is deemed suboptimal. This equation is an attempt at a synthesis of the discussions we had on the TF Forum.
+-->
+<hr />
+<p>A 3node connects to the Threefold Grid and transfers information, whether it is in the form of compute, storage or network units (CU, SU, NU respectively). The more resources your 3nodes offer to the Grid, the more bandwidth will be needed to transfer the additional information. In this section, we cover general guidelines to make sure you have enough bandwidth on the Threefold Grid when utilization will be happening.</p>
+<p>Note that the TFDAO will need to discuss and settle on clearer guidelines in the near future. For now, we propose those general guidelines. Being aware of these numbers as you build and scale your Threefold farm will set you in the proper direction.</p>
+<blockquote>
+<p><strong>The strict minimum for one Titan is 1 mbps of bandwidth</strong>. </p>
+</blockquote>
+<p>If you want to expand your Threefold farm, you should check the following to make sure your bandwidth will be sufficient when there will be Grid utilization.</p>
+<hr />
+<p><strong>Bandwidth per 3node Equation</strong></p>
+<hr />
+<blockquote>
+<p>min Bandwidth per 3node (mbps) = 10 * max((Total SSD TB / 1 TB),(Total Threads / 8 Threads),(Total GB / 64 GB)) + 10 * (Total HDD TB / 2)</p>
+</blockquote>
+<p>This equation means that for each TB of HDD you need 5 mbps of bandwidth, and for each TB of SSD, 8 Threads and 64GB of RAM (whichever is higher), you need 10 mbps of bandwidth. </p>
+<p>This means a proper bandwidth for a Titan would be 10 mbps. As stated, 1 mbps is the strict minimum for one Titan.</p>
+<hr />
+<h3 id="link-to-share-farming-setup"><a class="header" href="#link-to-share-farming-setup">Link to Share Farming Setup</a></h3>
+<hr />
+<p>If you want ideas and suggestions when it comes to building DIY 3nodes, a good place to start is by checking what other farmers have built. <a href="https://forum.threefold.io/t/lets-share-our-farming-setup/286">This post on the Forum</a> is a great start.</p>
+<hr />
+<h3 id="list-of-common-diy-3nodes"><a class="header" href="#list-of-common-diy-3nodes">List of Common DIY 3nodes</a></h3>
+<hr />
+<p>From the data collected by the Threefold DIY Farming Community, we can list some common 3node builds. Note that these builds can be used as starting inspiration to build your own unique 3node! That's the beauty of <em>the TF 3node DIY Adventure</em>.</p>
+<p>Building a 3node depends a lot on the hardware accessibility in your specific location. Do your own research and check what are the best deals when it comes to buying computers and parts where you live.</p>
+<p>We regroup the 3node builds in 5 main categories:</p>
+<ol>
+<li><a href="/farming/farming.html#the-mini-pc-diy-3node">Mini PC</a></li>
+<li><a href="/farming/farming.html#the-desktop-pc-diy-3node">Desktop</a></li>
+<li><a href="/farming/farming.html#the-mini-server-diy-3node">Mini server</a></li>
+<li><a href="/farming/farming.html#the-tower-server-diy-3node">Tower Server</a></li>
+<li><a href="/farming/farming.html#the-rack-server-diy-3node">Rack Server</a></li>
+</ol>
+<hr />
+<h4 id="the-mini-pc-diy-3node"><a class="header" href="#the-mini-pc-diy-3node">The Mini PC DIY 3node</a></h4>
+<hr />
+<p>Many farmers start with a Titan plug n play and then explore the world of Mini PC DIY 3nodes. </p>
+<hr />
+<p><strong>Lenovo M900 Tiny</strong></p>
+<ul>
+<li>Lenovo M900 Tiny</li>
+<li>Intel Core i7-6700T CPU (8 Threads)</li>
+<li>CPU Passmark per Core: 1817.75</li>
+<li>1TB SSD</li>
+<li>Crucial 64GB RAM CT2K32G4SFD8266 (2x32GB) DDR4 2666 MHz CL19 Laptop Memory</li>
+</ul>
+<p>A common Mini PC is the Lenovo M900 tiny. Equipped with an i7-6700T CPU (or i7-6700), this 3node can have up to 64GB of RAM. Note that for a i7-6500 and below, the maximum is 32GB of RAM.</p>
+<p>For this DIY 3node, you usually need to buy the RAM and SSD separately to get the best price. Here's an <a href="https://www.youtube.com/watch?v=-AmDJYWWS5M">amazing TF video</a> to get you started on this 3node DIY journey.</p>
+<hr />
+<h4 id="the-desktop-pc-diy-3node"><a class="header" href="#the-desktop-pc-diy-3node">The Desktop PC DIY 3node</a></h4>
+<hr />
+<p><strong>DELL OptiPlex 7020</strong></p>
+<ul>
+<li>DELL OptiPlex 7020</li>
+<li>i5-4570</li>
+<li>CPU Passmark per Core: 1300</li>
+<li>32GB Ram</li>
+<li>1x 512GB SSD</li>
+</ul>
+<p>This 3node is a great way to start your Threefold adventure: it requires no upgrade or any hardware tweaking. </p>
+<p>It has the minimum SSD requirement as well as 32GB of RAM. This SSD/RAM ratio optimizes the farming reward. In short, for around 240$, you can farm around 257 TFT per month. With the current TFT price of 8 cents, this gives you a return on investment of less than 12 months. Building the New Internet isn't that hard after all!</p>
+<hr />
+<p><strong>HP EliteDesk 800 G1 Desktop</strong></p>
+<ul>
+<li>HP EliteDesk 800 G1 Desktop</li>
+<li>Intel Core i7-6700</li>
+<li>CPU Passmark per Core: 2019</li>
+<li>32GB DDR3 RAM</li>
+<li>1TB SSD Hard Drive</li>
+<li>Zero-OS boot mode: UEFI</li>
+</ul>
+<p>This model has a nice CPU Passmark ratio and has the same basic specs as a Titan. A great advantage of this model is that you can buy it as is, wipe the disk and plug in your bootstrap image and that's it, you're farming TFT! It's thus an excellent first DIY 3node. </p>
+<p>This build can be upgraded to 64GB of RAM, but it requires SODIMM RAM, which can be expenseive. DYOR.</p>
+<hr />
+<h4 id="the-mini-server-diy-3node"><a class="header" href="#the-mini-server-diy-3node">The Mini Server DIY 3node</a></h4>
+<hr />
+<p><strong>Supermicro Pizza Box Chassis</strong> </p>
+<ul>
+<li>AMD 5700G - 8 Core 16 Thread CPU</li>
+<li>CPU Passmark per Core: 3066.875</li>
+<li>Asrock Rack X470 Motherboard</li>
+<li>128GB RAM</li>
+<li>2x 2TB Kingston NVME SSD’s</li>
+<li>1x 8TB Enterprise SATA HDD</li>
+</ul>
+<p>This 3node build is very effective and has a good ratio investment/TFT rewards if you can get the parts online. This takes a little bit of DIY working as you need to assemble the parts. The CPU mark is also excellent.</p>
+<hr />
+<h4 id="the-tower-server-diy-3node"><a class="header" href="#the-tower-server-diy-3node">The Tower Server DIY 3node</a></h4>
+<hr />
+<p><strong>HP Z800</strong></p>
+<ul>
+<li>HP Z800</li>
+<li>2x Xeon 5650(16 Cores / 32 Threads)</li>
+<li>192 GB RAM (12x 16GB DDR3 PC3L-8500R)</li>
+<li>CPU Passmark per Core: 960.83</li>
+<li>3TB SSD (1x1TB + 1x2TB)</li>
+<li>Zero-OS boot mode: UEFI</li>
+</ul>
+<hr />
+<p><strong>Dell Precision T5810</strong></p>
+<ul>
+<li>Dell Precision T5810</li>
+<li>Intel Xeon E5-2698 V3 (16 Cores / 32 Threads)</li>
+<li>CPU Passmark per Core: 1237.125</li>
+<li>256GB SK Hynix DDR4 ECC RAM</li>
+<li>4TB Crucial MX500 SSD</li>
+</ul>
+<hr />
+<p>A Tower Server DIY 3node is a good way to get major TFT rewards while also having an ergonomic and quiet 3node. Note that the Rack Server DIY 3node are usually louder, due to the fans spinning.</p>
+<p>Building tower servers as DIY 3nodes is also has a clear advantage: when GPU will be available on TF Grid, you will have ample room to add a decent GPU. This is thus future-proof in that regard.</p>
+<hr />
+<h4 id="the-rack-server-diy-3node"><a class="header" href="#the-rack-server-diy-3node">The Rack Server DIY 3node</a></h4>
+<hr />
+<p><strong>DELL R720</strong></p>
+<ul>
+<li>Dell R720 refurbished (125 USD)</li>
+<li>2 x Intel Xeon E5-2695 V2 (123 USD)</li>
+<li>CPU Passmark per Core: 1126.75</li>
+<li>48 Threads</li>
+<li>12 x 32GB (384GB) LR Ram ddr3 ebay (458 USD)</li>
+<li>2 x 2TB ssd (360 USD)</li>
+<li>1 x 1TB ssd (80 USD)</li>
+<li>cabels, caddies, etc: (15 USD)</li>
+<li>Zero-OS boot mode: BIOS</li>
+</ul>
+<p>Total : 1161 USD</p>
+<ul>
+<li>3122.5 TFT per month</li>
+<li>175 Watt</li>
+<li>126 kWh/month without any cultivation.</li>
+</ul>
+<p>Estimated ROI: around 6 months</p>
+<p>The prices are subjected to change depending on where you buy them. DYOR.</p>
+<p>This 3node build by @Valentine969 is quite amazing. You get great TFT rewards in a 2U rack server. </p>
+<p>Note that 2U servers are quieter than 1U. The reason is simple, 2U servers have larger fans, thus they can move more volume of air with a slower speed than would 1U fans. This is a general statement and it depends on the specific hardware.</p>
+<hr />
+<p><strong>DELL R620</strong></p>
+<ul>
+<li>Dell R620</li>
+<li>2x E5 2640 V2</li>
+<li>CPU Passmark per Core: 967.625</li>
+<li>32 Threads</li>
+<li>256 GB RAM </li>
+<li>16x16GB RAM DDR3 (256 GB)</li>
+<li>2x 2TB SSD NVME with PCIe 3.0 X 4 Adaptor Card</li>
+<li>Zero-OS boot mode: BIOS</li>
+</ul>
+<p>You can usually build the same 3node build with a R620 as with a R720. The difference is that the R620 is a 1U server so it can generate more noise. The smaller form factor is a plus though. The HP Proliant </p>
+<hr />
+<p><strong>DELL R630</strong></p>
+<ul>
+<li>E5-2630 v3 - 8 core / 16 thread CPU (32 threads total)</li>
+<li>CPU Passmark per Core: 1298.25</li>
+<li>256GB DDR4 RAM</li>
+<li>Inland Premium 2TB NVME</li>
+<li>Intel DC P4500 2TB NVME</li>
+</ul>
+<p>This server has the same specs as the R620 above, but it is a newer generation of server.</p>
+<hr />
+<p><strong>HP Proliant DL 580 G8</strong></p>
+<ul>
+<li>4 x Intel Xeon E7-4880 V2 15 core / 30 threads (60/120 total)</li>
+<li>960 GB DDR3</li>
+<li>CPU Passmark per Core: 3229</li>
+<li>5 TB SSD (1TB Samsung 860 EVO + 4TB Samsung 870 QVO)</li>
+<li>3,3 TB HDD (few SAS Samsung / HP)</li>
+<li>Power Consumption (Idle): 283 W</li>
+</ul>
+<p>This server is an amazing 3node with a great CPU passmark ratio. The HDD won't make much difference in terms of farming rewards, but it's alway a nice addition if you have some spare disks to add for your 3node!</p>
+<hr />
+<p>Those were examples of what you can do as a DIY 3node build. The possibilities are huge. Explore and build the New Internet!</p>
+<hr />
+<h3 id="powering-the-3node"><a class="header" href="#powering-the-3node">Powering the 3node</a></h3>
+<hr />
+<h4 id="surge-protector"><a class="header" href="#surge-protector">Surge Protector</a></h4>
+<p>A surge protector is highly recommended for your farm and your 3nodes. This ensures your 3nodes will not overcharge if a power surge happens. Whole-house surge protectors are also an option.</p>
+<hr />
+<h4 id="power-distribution-unit-pdu"><a class="header" href="#power-distribution-unit-pdu">Power Distribution Unit (PDU)</a></h4>
+<p>A PDU (power distribution unit) is useful in big server settings in order to manage your wattage and keep track of your power consumption.</p>
+<hr />
+<h4 id="uninterrupted-power-supply-ups"><a class="header" href="#uninterrupted-power-supply-ups">Uninterrupted Power Supply (UPS)</a></h4>
+<p>A UPS (uninterrupted power supply) is great for a 3node if your power goes on and off frequently for short periods of time. This ensures your 3node does not need to constantly reboot. If your electricity provider is very reliable, a UPS might not be needed, as the small downtime resulting from rare power outages with not exceed the DIY downtime limit*. (95% uptime, 5% downtime = 36 hours per month.) Of course, for greater Grid utilization experience, considering adding a UPS to your Threefold farm can be highly beneficial.</p>
+<p>Note: Make sure to have AC Recovery Power set properly so your 3node goes back online if power shutdowns momentarily. UPS are generally used in data center to make sure people have enough time to do a &quot;graceful&quot; shutdown of the units when power goes off. In the case of 3nodes, they do not need graceful shutdowns as Zero-OS cannot lose data while functioning. The only way to power down a 3node is simply to turn it off directly on the machine.</p>
+<hr />
+<h4 id="generator"><a class="header" href="#generator">Generator</a></h4>
+<p>A generator will be needed for very large installation with or without an unsteady main power supply.</p>
+<hr />
+<h3 id="using-onboard-storage-3node-servers"><a class="header" href="#using-onboard-storage-3node-servers">Using Onboard Storage (3node Servers)</a></h3>
+<p>If your 3node is based on a server, you can either use PCIe slots and PCIe-NVME adapter to install SSD NVME disk, or you can use the onboard storage.</p>
+<p>Usually, servers use RAID technology for onboard storage. RAID is a technology that has brought resilience and security to the IT industry. But it has some limitations that ThreeFold did not want to get stuck with. Threefold developed a different and more efficient way to <a href="https://library.threefold.me/info/threefold#/cloud/threefold__cloud_products?id=storage-quantum-safe-filesystem">store data reliably</a>. This Quantum Safe Storage overcomes some of the shortfalls of RAID and is able to work over multiple nodes geographically spread on the TF Grid. This means that there is no RAID controller in between data storage and the TF Grid.</p>
+<p>For your 3nodes, you want to bypass RAID in order for Zero-OS to have bare metals on the system. </p>
+<p>To use onboard storage on a server without RAID, you can</p>
+<ol>
+<li><a href="https://fohdeesha.com/docs/perc.html">Re-flash</a> the RAID card</li>
+<li>Turn on HBA/non-RAID mode</li>
+<li>Install a different card.</li>
+</ol>
+<p>For HP servers, you simply turn on the HBA mode (Host Bus Adapter). </p>
+<p>For Dell servers, you can either cross, or <a href="https://fohdeesha.com/docs/perc.html">re-flash</a>, the RAID controller with an “IT-mode-Firmware” (see this <a href="https://www.youtube.com/watch?v=h5nb09VksYw">video</a>) or get a DELL H310-controller (which has the non-RAID option). Otherwise, you can install a NVME SSD with a PCIe adaptor, and turn off the RAID controller.</p>
+<hr />
+<p>Once the disks are wiped, you can shutdown your 3node and remove the Linux Bootstrap Image (USB key). Usually, there will be a message telling you when to do so.</p>
+<hr />
+<h3 id="upgrading-a-diy-3node"><a class="header" href="#upgrading-a-diy-3node">Upgrading a DIY 3node</a></h3>
+<hr />
+<p>As we've seen in the <a href="#list-of-common-diy-3nodes">List of Common DIY 3nodes</a>, it is sometimes necessary, and often useful, to upgrade your hardware.</p>
+<p><strong>Type of upgrades possible</strong></p>
+<ul>
+<li>Add TBs of SSD/HDD</li>
+<li>Add RAM</li>
+<li>Change CPU</li>
+<li>Change BIOS battery</li>
+<li>Change fans</li>
+</ul>
+<p>For some DIY 3node, no upgrades are required and this constitutes a good start if you want to explore DIY building without going into too much additional steps.</p>
+<p>For in-depth videos on how to upgrade mini-pc and rack servers, watch these great <a href="https://www.youtube.com/user/floridanelson">DIY videos</a>.</p>
+<p>For a DIY picture guide on how to build a R620 3node rack server, read <a href="/3node_diy_rack_server/3node_diy_rack_server.html">this documentation</a>.</p>
+<hr />
+<h2 id="4-wipe-all-the-disks"><a class="header" href="#4-wipe-all-the-disks">4. Wipe All the Disks</a></h2>
+<hr />
+<ol>
+<li>Create a Linux Bootstrap Image</li>
+<li>Boot Linux in <em>Try Mode</em></li>
+<li>Wipe All the Disks</li>
+</ol>
+<p>Threefold runs its own OS, which is Zero-OS. You thus need to start with completely wiped disks. Note that ALL disks must be wiped. Otherwise, Zero-OS won't boot.</p>
+<p>An easy method is to simply download a Linux distribution and wipe the disk with the proper command line in the Terminal.</p>
+<p>We will show how to do this with Ubuntu 20.04. LTS. This distribution is easy to use and it is thus a good introduction for Linux, in case you haven't yet explored this great operating system.</p>
+<h3 id="1-create-a-linux-bootstrap-image"><a class="header" href="#1-create-a-linux-bootstrap-image">1. Create a Linux Bootstrap Image</a></h3>
+<p>Download the Ubuntu 20.04 ISO file <a href="https://releases.ubuntu.com/20.04/">here</a> and burn the ISO image on a USB key. Make sure you have enough space on your USB key. You can also use other Linux Distro such as <a href="https://grml.org/download/">GRML</a>, if you want a ligther ISO image.</p>
+<p>The process here is the same as in section <a href="#burning-the-zero-os-bootstrap-image">Burning the Bootstrap Image</a>, but with the Linux ISO instead of the Zero-OS ISO. <a href="https://www.balena.io/etcher/">BalenaEtcher</a> is recommended as it formats your USB in the process, and it is available for MAC, Windows and Linux.</p>
+<h3 id="2-boot-linux-in-try-mode"><a class="header" href="#2-boot-linux-in-try-mode">2. Boot Linux in <em>Try Mode</em></a></h3>
+<p>When you boot the Linux ISO image, make sure to choose <em>Try Mode</em>. Otherwise, it will install Linux on your computer. You do not want this.</p>
+<h3 id="3-use-wipefs-to-wipe-all-disks"><a class="header" href="#3-use-wipefs-to-wipe-all-disks">3. Use wipefs to wipe all disks</a></h3>
+<p>When you use wipefs, you are removing all the data on your disk. Make sure you have no important data on your disks, or make sure you have copies of your disks before doing this operation, if needed. </p>
+<p>Once Linux is booted, go into the terminal and write the following command lines.</p>
+<p>First, you can check the available disks by writing in a terminal or in a shell:</p>
+<blockquote>
+<p>lsblk</p>
+</blockquote>
+<p>To see what disks are connected, write this command:</p>
+<blockquote>
+<p>fdisk -l</p>
+</blockquote>
+<p>If you want to wipe one specific disk, here we use <em>sda</em> as an example, write this command:</p>
+<blockquote>
+<p>sudo wipefs -a /dev/sda</p>
+</blockquote>
+<p>And replace the &quot;a&quot; in sda by the letter of your disk, as shown when you did <em>lsblk</em>. The term <em>sudo</em> gives you the correct permission to do this.</p>
+<p>To wipe all the disks in your 3node, write the command:</p>
+<blockquote>
+<p>sudo for i in /dev/sd*; do wipefs -a $i; done</p>
+</blockquote>
+<p>If you have any <code>fdisk</code> entries that look like <code>/dev/nvme</code>, you'll need to adjust the command line.</p>
+<p>For a nvme disk, here we use <em>nvme0</em> as an example, write:</p>
+<blockquote>
+<p>sudo wipefs -a /dev/nvme0</p>
+</blockquote>
+<p>And replace the &quot;0&quot; in nvme0 by the number corresponding to your disk, as shown when you did <em>lsblk</em>. </p>
+<p>To wipe all the nvme disks, write this command line:</p>
+<blockquote>
+<p>for i in /dev/nvme*; do wipefs -a $i; done</p>
+</blockquote>
+<hr />
+<blockquote>
+<p>Note 1: If you're having trouble getting your disks recognized by Zero-OS, some farmers have had success enabling AHCI mode for SATA in their BIOS.</p>
+</blockquote>
+<blockquote>
+<p>Note 2: If you are using a server with onboard storage, you might need to <a href="/faq/faq.html#is-there-a-way-to-bypass-raid-in-order-for-zero-os-to-have-bare-metals-on-the-system-no-raid-controller-in-between-storage-and-the-grid">re-flash the RAID card</a>.</p>
+</blockquote>
+<hr />
+<h2 id="5-set-the-biosuefi"><a class="header" href="#5-set-the-biosuefi">5. Set the BIOS/UEFI</a></h2>
+<hr />
+<p>For this section, note that the BIOS mode is usually needed for older hardware while the UEFI mode is usually needed for newer hardware, when it comes to booting properly Zero-OS on your DIY 3node.</p>
+<p>If it doubt, start with UEFI and if it doesn't work as expected, try with BIOS.</p>
+<hr />
+<h3 id="the-essential-features-of-biosuefi-for-a-3node"><a class="header" href="#the-essential-features-of-biosuefi-for-a-3node">The Essential Features of BIOS/UEFI for a 3node</a></h3>
+<hr />
+<p>There are certain things that you should make sure are set properly on your 3node.</p>
+<p>As a general advice, you can Load Defaults (Settings) on your BIOS, then make sure the options below are set properly.</p>
+<ul>
+<li>Choose the correct combination of BIOS/UEFI and bootstrap image on <a href="https://bootstrap.grid.tf/">https://bootstrap.grid.tf/</a>
+<ul>
+<li>Newer system will use UEFI</li>
+<li>Older system will use BIOS
+<ul>
+<li>Hint:  If your 3node boot stops at <em>Initializing Network Devices</em>, try the other method (BIOS or UEFI)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Set Multi-Processor and Hyperthreading at Enabled
+<ul>
+<li>Sometimes, it will be written Virtual Cores, or Logical Cores. </li>
+</ul>
+</li>
+<li>Set Virtualization at Enabled
+<ul>
+<li>On Intel, it is denoted as CPU virtualization and on ASUS, it is denoted as SVM. </li>
+<li>Make sure virtualization is enabled and look for the precise terms in your specific BIOS/UEFI.</li>
+</ul>
+</li>
+<li>Set AC Recovery at Last Power State
+<ul>
+<li>This will make sure your 3node restarts after losing power momentarily.</li>
+</ul>
+</li>
+<li>Select the proper Boot Sequence for the 3node to boot Zero-OS from your bootstrap image
+<ul>
+<li>e.g., if you have a USB key as a bootstrap image, select it in Boot Sequence</li>
+</ul>
+</li>
+<li>Set Server Lookup Method (or the equivalent) at DNS. Only use Static IP if you know what you are doing.
+<ul>
+<li>Your router will assign a dynamic IP address to your 3node when it connects to Internet.</li>
+</ul>
+</li>
+<li>Set Client Address Method (or the equivalent) at DHCP. Only use Static IP if you know what you are doing.
+<ul>
+<li>Your router will assign a dynamic IP address to your 3node when it connects to Internet.</li>
+</ul>
+</li>
+<li>Secure Boot should be left at disabled
+<ul>
+<li>Enable it if you know what you are doing. Otherwise, it can be set at disabled.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h4 id="setting-the-remote-management-of-a-server-static-ip-address"><a class="header" href="#setting-the-remote-management-of-a-server-static-ip-address">Setting the Remote Management of a Server (Static IP Address)</a></h4>
+<hr />
+<p>Note from the list above that by enabling the DHCP and DNS in BIOS, dynamic IP addresses will be assigned to 3nodes. This way, you do not need any specific port configuration when booting a 3node.</p>
+<p>As long as the 3node is connected to the Internet via an ethernet cable (WiFi is not supported), Zero-OS will be able to boot. By setting DHCP in BIOS, an IP address is automatically assigned to your 3node every time you boot it. This section concerns 3node servers with remote management functions and interfaces.</p>
+<p>You can set up a node through static routing at the router without DHCP by assigning the MAC address of the NIC to a IP address within your private subnet. This will give a static IP address to your 3node.</p>
+<p>With a static IP address, you can then configure remote management on servers. For Dell, <a href="https://www.dell.com/support/kbdoc/en-us/000134243/how-to-setup-and-manage-your-idrac-or-cmc-for-dell-poweredge-servers-and-blades">iDRAC</a> is used, and for HP, <a href="https://support.hpe.com/hpesc/public/docDisplay?docId=a00045463en_us&amp;docLocale=en_US">ILO</a> is used.</p>
+<hr />
+<h3 id="update-the-biosuefi-firmware"><a class="header" href="#update-the-biosuefi-firmware">Update the BIOS/UEFI firmware</a></h3>
+<hr />
+<p>Updating the BIOS firmware is not always necessary, but to do so can help prevent future errors and troubleshootings. Making sure the Date and Time are set correctly can also help the booting process.</p>
+<p>Note: updating the BIOS/UEFI firmware is optional, but recommended.</p>
+<hr />
+<h5 id="check-your-biosuefi-version-on-windows"><a class="header" href="#check-your-biosuefi-version-on-windows">Check your BIOS/UEFI version on Windows</a></h5>
+<hr />
+<p>Hit <em>Start</em>, type in <em>cmd</em> in the search box and click on <em>Command Prompt</em>. Write the line</p>
+<blockquote>
+<p>wmic bios get smbiosbiosversion</p>
+</blockquote>
+<p>This will give you the BIOS or UEFI firmware of your PC.</p>
+<hr />
+<h5 id="check-your-biosuefi-version-on-linux"><a class="header" href="#check-your-biosuefi-version-on-linux">Check your BIOS/UEFI version on Linux</a></h5>
+<hr />
+<p>Simply type the following command </p>
+<blockquote>
+<p>sudo dmidecode | less</p>
+</blockquote>
+<p>or this line:</p>
+<blockquote>
+<p>sudo dmidecode -s bios-version</p>
+</blockquote>
+<hr />
+<h4 id="update-the-bios-firmware"><a class="header" href="#update-the-bios-firmware">Update the BIOS firmware</a></h4>
+<hr />
+<ol>
+<li>On the manufacturer's website, download the latest BIOS/UEFI firmware</li>
+<li>Put the file on a USB flash drive (+unzip if necessary)</li>
+<li>Restart your hardware and enter the BIOS/UEFI settings</li>
+<li>Navigate the menus to update the BIOS/UEFI</li>
+</ol>
+<hr />
+<h3 id="biosuefi-and-zero-os-bootstrap-image-combinations"><a class="header" href="#biosuefi-and-zero-os-bootstrap-image-combinations">BIOS/UEFI and Zero-OS Bootstrap Image Combinations</a></h3>
+<hr />
+<p>To boot your 3node, you need to create your own boot device for your system. This might sound like a big project to accomplish, but it's actually pretty simple. As simple as can be, you need a removable media (USB key for example) where you will burn/install the Zero-OS bootstrap image on it. The type of file you burn on the removable media will change depending if your system is old or recent. Older system uses BIOS and newer system uses UEFI.</p>
+<p>Whether you use BIOS or UEFI, 3nodes are also self-healing, so once you set up your 3node, maintenance is minimal. </p>
+<p>To properly boot the Zero-OS image, you can either use an image made for a BIOS system or a UEFI system, this depends on your system. </p>
+<p>BIOS is older technology. It means <em>Basic Input/Output System</em>. </p>
+<p>UEFI is newer technology. It means <em>Unified Extensible Firmware Interface</em>. BIOS/UEFI is, in a way, the link between the hardware and the software of your computer.</p>
+<p>In general, setting a 3node is similar whether it is with a BIOS or UEFI system. The important is to choose the correct combination of boot media + boot mode (BIOS/UEFI).</p>
+<p>The bootstrap images are available <a href="https://bootstrap.grid.tf/">here</a>.</p>
+<p>The choices are:</p>
+<ol>
+<li>EFI IMG - UEFI</li>
+<li>EFI FILE - UEFI</li>
+<li>iPXE - Boot from network</li>
+<li>ISO - BIOS</li>
+<li>USB - BIOS</li>
+<li>LKRN - Boot from network</li>
+</ol>
+<p>Choices 1 and 2 are for UEFI (newer models).
+Choices 4 and 5 are for BIOS (newer models).
+Choices 3 and 6 are mainly for network boot.</p>
+<p>For information on how to boot Zero-OS with iPXE, read <a href="#advanced-booting-option---network-booting-pxe">this section</a>.</p>
+<p>You might have to try UEFI first and if it doesn't work, try BIOS. Usually when this is the case (UEFI doesn't work with your current computer), the following message will be shown:</p>
+<blockquote>
+<p>Initializing Network Devices...</p>
+</blockquote>
+<p>And then... nothing. This means that you are still in the BIOS of the hardware and boot is not even started yet. When this happens, try the BIOS mode of your computer. </p>
+<hr />
+<p><strong>Additional information :</strong> One of the great features of Zero-OS is that it can be completely run within the cache of your 3node. Indeed, the booting device, that contains your farm ID, will connect to the Threefold Grid and download everything needed to run smoothly. There are many benefits in terms of security and protection of data that comes with this.</p>
+<hr />
+<p>Let's go into BIOS mode now!</p>
+<hr />
+<h4 id="example-of-bios-settings---rack-server---dell-r720"><a class="header" href="#example-of-bios-settings---rack-server---dell-r720">Example of BIOS Settings - Rack Server - Dell R720</a></h4>
+<hr />
+<p>The following covers proper settings for the BIOS mode of a DIY 3node. Note that it is also called the normal BIOS or legacy BIOS.</p>
+<p>There might be other ways to configure those settings, depending on the specific computer. Depending on your hardware (disks connections, RAID controller, etc.), you might need to change some settings to fit the specific model. Most of the time, if you follow these lines, your 3node should work 100% with the Grid. Check the <a href="/faq/faq.html#troubleshooting-and-error-messages">Troubleshooting and Error Messages</a> section if you have trouble on your way to booting Zero-OS.</p>
+<p>It is possible that your 3node needs to be booted with the UEFI mode. In this case, refer to the <a href="#example-of-uefi-settings---desktop-computer---dell-optiplex-7010">next section</a>.</p>
+<hr />
+<p>Note that the settings are similar for UEFI and non-UEFI. But some details are important.</p>
+<p>To boot Zero-OS, you need to use the bootstrap image <a href="https://bootstrap.grid.tf/">here</a>.</p>
+<p>Old servers/desktops will need to use the 4th and 5th options (named: ISO and USB). Newer servers/desktops can use UEFI (1st and 2nd option).</p>
+<p>The BIOS setting in BIOS (non-UEFI) mode presented here is mostly based on a Dell R720. We also add information to cover more broadly the subject. There may be differences with your specific 3node hardware. The following should give you a good overview of how to set it up and you can adjust the details. For newer servers, UEFI mode might be the preferred option.</p>
+<hr />
+<p>Please note that you can set your iDRAC with remote access. In this section, we set up the 3node directly with a monitor and keyboard. Once this BIOS settings are set and the 3node is running, you will not need to do much maintenance on the server's BIOS or iDRAC settings, thanks to the Self-Healing properly of Threefold's Zero-OS.</p>
+<hr />
+<p>SYSTEM SETUP</p>
+<hr />
+<p>To enter into system setup, you need to press a certain key when the computer is powered on. With Dell server R720, hit F2 to get into System Setup.</p>
+<p>To set the 3node running, you will need to configure the following sections:</p>
+<ul>
+<li>System BIOS</li>
+<li>iDRAC Settings</li>
+</ul>
+<p>First, let's go into System BIOS.</p>
+<hr />
+<p><strong>System BIOS</strong></p>
+<hr />
+<p>MEMORY SETTINGS</p>
+<hr />
+<p>In <code>System BIOS</code>, go into <code>Memory Settings</code> and make sure the Memory parameters are correct (Size, Type, Speed, Voltage). If you have less GB of RAM than expected, perhaps the RAM sticks are not well seated. </p>
+<p>You will have the choice of enabling or disabling the function <code>System Memory Testing</code>. You can leave this at <code>disabled</code> in general. You will want it at <code>enabled</code> when you want to tests the condition and integrity of the 3node's memory.</p>
+<p>The options for <code>Memory Operating Mode</code> are the following, with <strong>Optimizer Mode</strong> being the option by default, which you can leave as such:</p>
+<ul>
+<li>Optimizer Mode</li>
+<li>Advanced ECC Mode</li>
+<li>Mirror Mode</li>
+<li>Spare Mode</li>
+<li>Dell Fault Resilient Mode</li>
+</ul>
+<p>You will have the choice of enabling or disabling the function <code>Node Interleaving</code>.</p>
+<p>Usually your system will run faster with this option <code>disabled</code>.</p>
+<p>When <code>enabled</code>, Node Interleaving will interleave the memory addresses across the memory in each processor. In some situation and for certain workload, this can improve the performance.</p>
+<hr />
+<p>PROCESSOR SETTINGS </p>
+<hr />
+<p>Next, we will adjust the proper settings for the processors in <code>Processor Settings</code>. </p>
+<div class="table-wrapper"><table><thead><tr><th>#</th><th>Settings</th><th>Option</th></tr></thead><tbody>
+<tr><td>1</td><td>Logical Processors</td><td><strong>Enabled</strong></td></tr>
+<tr><td>2</td><td>QPI Speed</td><td>Maximum datarate</td></tr>
+<tr><td>3</td><td>Alternate RTID</td><td>Disabled</td></tr>
+<tr><td>4</td><td>Virtualization Technology</td><td>Enabled</td></tr>
+<tr><td>5</td><td>Adjacent Cache Line Prefetch</td><td>Enabled</td></tr>
+<tr><td>6</td><td>Hardware Prefetcher</td><td>Enabled</td></tr>
+<tr><td>7</td><td>DCU Streamer Prefetcher</td><td>Enabled</td></tr>
+<tr><td>8</td><td>DCU IP Prefetcher</td><td>Enabled</td></tr>
+<tr><td>9</td><td>Execute Disable</td><td>Enabled</td></tr>
+<tr><td>10</td><td>Logical Processor Idling</td><td>Disabled</td></tr>
+<tr><td>11</td><td>Dell Controlled Turbo</td><td>Disabled</td></tr>
+<tr><td>12</td><td>Number of Cores per Processor</td><td><strong>All</strong></td></tr>
+</tbody></table>
+</div>
+<p>Setting Logical Processor at Enabled is particularly important. If you're supposed to have <code>x</code> vcores, and the Explorer says you only have <code>x/2</code> (only half of expected vcores), chances are you need to enable this setting. Also make sure the number of cores is set to <strong>All</strong>.</p>
+<p>Next in the section Processor Settings, you will see the information of your processor(s). The number of cores per processor will also be shown. In short, make sure you have the expected processors and number of cores.</p>
+<hr />
+<p>SATA SETTINGS</p>
+<hr />
+<p>Next, we will adjust the proper software settings for the SATA connections and hardware in <code>SATA Settings</code>.</p>
+<div class="table-wrapper"><table><thead><tr><th>#</th><th>Settings</th><th>Option</th></tr></thead><tbody>
+<tr><td>1</td><td>Embedded SATA</td><td><strong>AHCI</strong>/RAID/ATA/Off</td></tr>
+<tr><td>2</td><td>Port A (First port)</td><td>Auto</td></tr>
+<tr><td>3</td><td>...</td><td>...</td></tr>
+<tr><td>4</td><td>Port Z (Last port)</td><td>Auto</td></tr>
+</tbody></table>
+</div>
+<p>If you are using SATA disks, you probably want #1 set to AHCI. Depending on your disks configurations, you might need to chance this parameter.</p>
+<p>The rest of the settings are for the Ports. You can always check in the User's Guide of your server to check which ports are for which hardware. For example, on Dell R720, Port E is for the optical drive (CD/DVD).</p>
+<hr />
+<p>BOOT SETTINGS</p>
+<hr />
+<p>Next, we will adjust the proper settings for the processors <code>BOOT Settings</code>.</p>
+<div class="table-wrapper"><table><thead><tr><th>#</th><th>Settings</th><th>Option</th></tr></thead><tbody>
+<tr><td>1</td><td>BOOT Mode</td><td><strong>BIOS</strong> / UEFI</td></tr>
+<tr><td>2</td><td>Boot Sequence Retry</td><td><strong>Enabled</strong> / Disabled</td></tr>
+<tr><td>3</td><td>BIOS Boot Settings</td><td>...</td></tr>
+<tr><td>4</td><td>BIOS Boot Settings</td><td>...</td></tr>
+</tbody></table>
+</div>
+<p>Since we are doing a BIOS boot, and not a UEFI boot, for the 3node, make sure you have BIOS mode instead of UEFI selected. Otherwise it won't boot properly. For newer servers, work with UEFI instead.</p>
+<p>You can have Boot Sequence Retry Enabled, but your server should boot fine without. When enabled, the system will reattempt the boot sequence 30 seconds after a failed booting sequence.</p>
+<p>Then you need to save these changes and come back to access BIOS Boot Settings (if you were previously set to UEFI mode).</p>
+<hr />
+<p>BIOS Boot Settings</p>
+<hr />
+<p>Next, we will adjust the proper settings for the processors <code>BIOS Boot Settings</code>. Note that USB keys will often be called <strong>Hard drive C:</strong>. Click on <strong>Boot Sequence</strong> and choose the proper order for your 3node configuration. Here we choose <strong>Hard drive C:</strong> as we will be booting from USB key. If you use another method than a USB key, make sure you select it. </p>
+<ul>
+<li>
+<p>BOOT Sequence</p>
+<ul>
+<li><strong>Hard drive C:</strong></li>
+<li>SATA Port</li>
+<li>Integrated NIC</li>
+<li>...</li>
+</ul>
+</li>
+<li>
+<p>Boot Option Enable/Disable</p>
+<ul>
+<li><input disabled="" type="checkbox" checked=""/>
+Hard drive C:</li>
+<li><input disabled="" type="checkbox"/>
+SATA Port:</li>
+<li><input disabled="" type="checkbox"/>
+...</li>
+</ul>
+</li>
+</ul>
+<p>In Boot Option Enable/Disable, you can check the option you will be using for your booting device. Here we check <code>Hard drive C:</code>, as we are booting Zero-OS from a USB key.</p>
+<hr />
+<p>INTEGRATED DEVICES</p>
+<hr />
+<p>Next, we will adjust the proper settings for the <code>Integrated Devices</code>.
+This will change depending on your hardware configuration.</p>
+<div class="table-wrapper"><table><thead><tr><th>#</th><th>Settings</th><th>Option</th></tr></thead><tbody>
+<tr><td>1</td><td>Integrated RAID Controller</td><td>Enabled / <strong>Disabled</strong></td></tr>
+<tr><td>2</td><td>User Accesible USB Ports</td><td><strong>All Ports On</strong> / Only Back Ports / All Ports Off</td></tr>
+<tr><td>3</td><td>Internal USB</td><td><strong>On</strong> / Off</td></tr>
+<tr><td>4</td><td>Integrated Network Card 1</td><td><strong>Enabled</strong> / Disabled</td></tr>
+<tr><td>5</td><td>OS Watchdog Timer</td><td>Enabled / <strong>Disabled</strong></td></tr>
+<tr><td>6</td><td>Embedded Video Controller</td><td><strong>Enabled</strong> / Disabled</td></tr>
+<tr><td>7</td><td>SR-IOV Global Enable</td><td><strong>Enabled</strong> /*Disabled</td></tr>
+<tr><td>8</td><td>Memory Mapped I/O above 4 GB</td><td><strong>Enabled</strong> / Disabled</td></tr>
+<tr><td>9</td><td>Slot Disablement</td><td><strong>Enabled</strong> / Disabled</td></tr>
+</tbody></table>
+</div>
+<ol>
+<li>
+<p>The RAID controller can be disabled if you are plugging your disks with a PCIe adaptors or the SATA connection of the optical drive. If you are using the front panel disks, you will need to deal with RAID configuration. You can also use RAID 0. But in general, 3nodes do not use RAID. </p>
+<p>You can use the onboard storage on a server without RAID. You can <a href="https://fohdeesha.com/docs/perc.html">re-flash</a> the RAID card, turn on HBA/non-RAID mode, or install a different card. There is no need for RAID on a 3node.</p>
+<p>It's usually easy to set servers such as a HP Proliant with the HBA mode. For Dell servers, you can either cross-flash the RAID controller with an “IT-mode-Firmware” (see this <a href="https://www.youtube.com/watch?v=h5nb09VksYw">video</a>) or get a DELL H310-controller (which has the non-RAID option). Otherwise, you can install a NVME SSD with a PCIe adaptor as stated above.</p>
+<p>Concerning RAID technology, here is what Weynand Kuijpers, one of Threefold's co-founders, has to say:</p>
+<blockquote>
+<p>RAID is a technology that has brought resilience and security to the IT industry. But it has some limitations that we at ThreeFold did not want to get stuck in. We developed a different (and more efficient way to store data reliably. Please have a look <a href="https://library.threefold.me/info/threefold#/cloud/threefold__cloud_products?id=storage-quantum-safe-filesystem">here</a>. </p>
+<p>This Quantum Safe Storage overcomes some of the shortfalls of RAID and is able to work over multiple nodes geographically spread on the TF Grid.</p>
+</blockquote>
+</li>
+<li>
+<p>Usually you can leave all USB ports accessible. </p>
+</li>
+<li>
+<p>You can choose to leave your booting device inside the server (this is recommended). You might sometimes have to upgrade the booting device, but minor upgrades are always done via the Threefold Grid so this would not happen often.</p>
+</li>
+<li>
+<p>It is important to enable your Network Card so your 3node can connect to the Threefold Grid.</p>
+</li>
+<li>
+<p>OS Timer is not necessary as Zero-OS is self-healing.</p>
+</li>
+<li>
+<p>By default, this parameter is enabled. The video controller is used to check the 3node Zero-OS status. Note that it is possible to run a 3node headless, and/or without a GPU connected.</p>
+</li>
+<li>
+<p>This is for virtualization devices.</p>
+</li>
+<li>
+<p>Memory Mapped is to perit PCIe devices to uses a lot of memory. Useful for NVME SSD PCIe adaptor 3node build.</p>
+</li>
+<li>
+<p>To enable PCIe slots. You can leave them all enabled, and disabled them for specific use cases.</p>
+</li>
+</ol>
+<div class="table-wrapper"><table><thead><tr><th>#</th><th>Settings</th><th>Option</th></tr></thead><tbody>
+<tr><td>1</td><td>First Slot (1)</td><td><strong>AHCI</strong>/RAID/ATA/Off</td></tr>
+<tr><td>3</td><td>...</td><td>...</td></tr>
+<tr><td>4</td><td>Last Slot (7)</td><td><strong>Enabled</strong> / Disabled / Boot Driver Disabled</td></tr>
+</tbody></table>
+</div>
+<p>All slots should be set at Enabled in Slot Disablement. You might want to disable unused slots depending on your spectific configuration.</p>
+<hr />
+<p>SERIAL COMMUNICATION</p>
+<hr />
+<p>Next, we will adjust the proper settings for the <code>Serial Communication</code>.
+This can change depending on your hardware configuration.</p>
+<div class="table-wrapper"><table><thead><tr><th>#</th><th>Settings</th><th>Option</th></tr></thead><tbody>
+<tr><td>1</td><td>Serial Communication</td><td><strong>On without Console Redirection</strong></td></tr>
+<tr><td>2</td><td>Serial Port Address</td><td><strong>Serial Device 1=COM2, Serial Device 2=COM1</strong></td></tr>
+<tr><td>3</td><td>External Serial Connector</td><td><strong>Serial Device1</strong></td></tr>
+<tr><td>4</td><td>Failsafe Baud Rate</td><td><strong>115200</strong></td></tr>
+<tr><td>5</td><td>Remote Terminal Type</td><td><strong>VTT100/VT220</strong> / ANSI</td></tr>
+<tr><td>6</td><td>Redirection After Boot</td><td><strong>Enabled</strong> / Disabled</td></tr>
+</tbody></table>
+</div>
+<p>In general, this section can be left with the default parameters. It can be useful when you have specific connections and want to use remote access device.</p>
+<ol>
+<li>To select serial communication devices.</li>
+<li>This can be used to set the port address for serial devices.</li>
+</ol>
+<hr />
+<p>SYSTEM PROFILE</p>
+<hr />
+<p>Next, we will adjust the proper settings for the <code>System Profile</code>.
+This can change depending on your hardware configuration.</p>
+<div class="table-wrapper"><table><thead><tr><th>#</th><th>Settings</th><th>Option</th></tr></thead><tbody>
+<tr><td>1</td><td>System Profile</td><td><strong>Performance Per Watt (DAPC)</strong></td></tr>
+<tr><td>2</td><td>CPU Power Management</td><td><strong>System DBPM (DAPC)</strong></td></tr>
+<tr><td>3</td><td>Memory Frequency</td><td><strong>Maximum Performance</strong></td></tr>
+<tr><td>4</td><td>Turbo Boost</td><td><strong>Enabled</strong></td></tr>
+<tr><td>5</td><td>C1E</td><td><strong>Enabled</strong></td></tr>
+<tr><td>6</td><td>C States</td><td><strong>Enabled</strong></td></tr>
+<tr><td>7</td><td>Monitor/Mwait</td><td><strong>Enabled</strong></td></tr>
+<tr><td>8</td><td>Memory Patrol Scrub</td><td><strong>Standard</strong></td></tr>
+<tr><td>9</td><td>Memory Refresh Rate</td><td><strong>1x</strong></td></tr>
+<tr><td>10</td><td>Memory Operating Voltage</td><td><strong>Auto</strong></td></tr>
+<tr><td>11</td><td>Collaborative CPU Performance Control</td><td><strong>Disabled</strong></td></tr>
+</tbody></table>
+</div>
+<p>System Profile Settings can be at Performance Per Watt. In this case, all the parameters are locked to default. This is aimed at being efficient and consume less power.</p>
+<p>You can also use custom parameters. Make sure you know what you are doing. Many things can be done such as changing the frequency and the DIMM voltage selection. This can, in certain situations, increase the 3node's performance.</p>
+<hr />
+<p>SYSTEM SECURITY</p>
+<hr />
+<p>Next, we will adjust the proper settings for the <code>System Security</code>. Here you can set a password for the BIOS and also set the AC Power Recovery with a set detay.</p>
+<div class="table-wrapper"><table><thead><tr><th>#</th><th>Settings</th><th>Option</th></tr></thead><tbody>
+<tr><td>1</td><td>Password Status</td><td><strong>Unlocked</strong> / Locked</td></tr>
+<tr><td>2</td><td>...</td><td>...</td></tr>
+<tr><td>3</td><td>Power Button</td><td><strong>Enabled</strong> / Disabled</td></tr>
+<tr><td>4</td><td>...</td><td>...</td></tr>
+<tr><td>5</td><td>AC Power Recovery</td><td><strong>Last</strong> / On / Off</td></tr>
+<tr><td>6</td><td>AC Power Recovery Delay</td><td><strong>User Defined</strong>*</td></tr>
+<tr><td>7</td><td>...</td><td>...</td></tr>
+</tbody></table>
+</div>
+<p>*In System Security, it can be very useful to set AC Power Recovery at <strong>Last</strong>. If your 3node is powered on and you have an electric outage, your 3node will power back on when the power outage is over. You can also set it to <strong>power on</strong> after X seconds (from 0 to 240 with Dell servers). Imagine if you have 15 power outage in the same 30 minutes, your serves would constantly power back on, and this could damage the unit if this is done too frequently. For this reason, it is good to set the power on after 30 seconds or more.</p>
+<p>To reset your Trusted Platform Module (TPM), use TPM Clear.</p>
+<hr />
+<p>MISCELLANEOUS SETTINGS</p>
+<hr />
+<p>Next, we will adjust the proper settings for the <code>Miscellaneous Settings</code>.
+This can change depending on your hardware configuration.</p>
+<div class="table-wrapper"><table><thead><tr><th>#</th><th>Settings</th><th>Option</th></tr></thead><tbody>
+<tr><td>1</td><td>System Time</td><td>HH:MM:SS PM</td></tr>
+<tr><td>2</td><td>System Date</td><td>DD/MM/YYYY</td></tr>
+<tr><td>3</td><td>...</td><td>...</td></tr>
+<tr><td>4</td><td>F1/F2 Prompt on Error</td><td><strong>Enabled</strong> / Disabled</td></tr>
+<tr><td>5</td><td>...</td><td>...</td></tr>
+</tbody></table>
+</div>
+<p>The settings in this section can be left at default. It is good to verify that the date and time are correct. Some farmers have reported that their 3nodes were not booting easily when they were out of sync.</p>
+<hr />
+<p><strong>iDRAC Settings</strong></p>
+<hr />
+<p>The next section covers the basic to set a iDRAC that will run properly with the 3node and help ease the farming maintenance. It is possible to set the iDRAC completely with a remote access. This will be partly covered here, but it is not the focus. Once your 3node is booted and connected to the TF Grid, minimal maintenances are required.</p>
+<hr />
+<p>SYSTEM SUMMARY</p>
+<hr />
+<p>In System Summary, you can see your computer informations. It's a good thing to make sure you have the latest iDRAC Firmware. Here you can make sure IPv4 and DHCP are Enabled.</p>
+<p>To set the iDRAC remotely, you can look at the iDRAC MAC Address.</p>
+<hr />
+<p>SYSTEM EVENT LOG</p>
+<hr />
+<p>In System Event Log, you can Clear Records. This can be a good thing to do when you buy a used server. 
+In Display System Event Log, you can check the history of your 3node. This can be good for specific troubleshootings.</p>
+<hr />
+<p>NETWORK</p>
+<hr />
+<p>In Network, make sure to set Enabled at Enable NIC and Auto Dedicated NIC. You will also need to enable DHCP and IPV4 (and IPV6 if needed). For remote access, you will need to Enabled Register DRAC on DNS and Use DHCP to obtain DNS server addresses.</p>
+<hr />
+<p>FRONT PANEL SECURITY</p>
+<hr />
+<p>In Front Panel Security, you want to make sure Disable Power Button is set at No. Front Panel Access can be set to Full Capabilities as this can be useful to check your server's parameters. </p>
+<hr />
+<p>VIRTUAL MEDIA</p>
+<hr />
+<p>Virtual Media setting can be set at Auto attach. This is for remote usage of software image files (ISO-files). This is used to update servers and install operating systems.</p>
+<hr />
+<p>vFlash Media</p>
+<hr />
+<p>Enable vFlash can be set at Disabled in the vFlash Media section. This SD card can be used as a storage device to boot Zero-OS. It can also be used as a storage backup when replacing the motherboard.</p>
+<hr />
+<p>LIFECYCLE CONTROLLER</p>
+<hr />
+<p>It's good to set Enabled at Lifecycle Controller and Collect System Inventory on Restart. This checks if anything new was added to the server between usages. Also Lifecycle Controller can be used to set iDRAC remotely.</p>
+<hr />
+<p>POWER CONFIGURATION</p>
+<hr />
+<p>You can disable Power Cap Policy and set Power Supply Options - Redundant Policy at Not Redundant. If you want to put a power limit on the system, you can set Power Cap Policy at enabled.</p>
+<p>You can enable Power Factor Correction to improve the server's efficiency and reduce current, but this is not necessary.</p>
+<p>Make sure <strong>Hot Spare is Enabled</strong>. This feature makes sure the server will function properly if one of the two PSU (power supply unit) is damaged or removed during use.</p>
+<hr />
+<p>SMART CARD</p>
+<hr />
+<p>The Smart Card option can be Disabled. This can be used to connect to iDRAC with a Two Factor Authetication (2FA).</p>
+<hr />
+<p>THERMAL</p>
+<hr />
+<p>In the section Thermal, you can set Thermal Base Algorithm at Auto and the Cooling Options at Default.</p>
+<hr />
+<p>COMMUNICATION PERMISSIONS</p>
+<hr />
+<p>Communication Permissions can be disabled. When enabled, you can launch the browswer in the host OS, but this does not really apply to a 3node.</p>
+<hr />
+<p>USER CONFIGURATION</p>
+<hr />
+<p>In User Configuration, you want to enable Enable User. You can set a password.</p>
+<hr />
+<p>REMOTE ENABLEMENT</p>
+<hr />
+<p>To use iDRAC remotely with Dell OpenManage Server Administrator (OMSA), you will need to set Enable Auto-Discovery at Enabled. Otherwise, you can set it at Disabled.</p>
+<hr />
+<p>SYSTEM LOCATION</p>
+<hr />
+<p>System Location can be useful if you are in a data center. You don't need to fill in any information.</p>
+<hr />
+<p>RESET iDRAC</p>
+<hr />
+<p>If ever needed, you can do a Factory Reset of the iDRAC configuration.</p>
+<hr />
+<p>We have been through the BIOS settings and th iDRAC settings of a typical Dell R720 Server. With these notions in mind, you should be able to properly set your DIY 3node. Some changes may be needed depending on your hardware and desired configuration. </p>
+<hr />
+<h4 id="example-of-uefi-settings---desktop-computer---dell-optiplex-7010"><a class="header" href="#example-of-uefi-settings---desktop-computer---dell-optiplex-7010">Example of UEFI Settings - Desktop Computer - Dell Optiplex 7010</a></h4>
+<hr />
+<p>The UEFI mode is usually needed for newer hardware.</p>
+<hr />
+<p>There might be other ways to configure those settings, depending on the specific computer. Depending on your hardware (disks connections, RAID controller, etc.), you might need to change some settings to fit your specific computer model. Most of the time, if you follow these lines, your 3node should work 100% with the Threefold Grid. Check the <a href="/faq/faq.html#troubleshooting-and-error-messages">Troubleshooting and Error Messages</a> section if you have trouble on your way to booting Zero-OS.</p>
+<p>It is possible that your 3node needs to be booted with the BIOS mode. In this case, refer to the <a href="#example-of-bios-settings---rack-server---dell-r720">previous section</a>.</p>
+<hr />
+<p>To boot Zero-OS, you need to use the bootstrap image <a href="https://bootstrap.grid.tf/">here</a>.</p>
+<p>Old servers/desktops will need to use the non-UEFI mode, which are the 4th and 5th options (named: ISO and USB). Newer servers/desktops can use UEFI (1st and 2nd option.</p>
+<p>We will now present the BIOS/UEFI settings that work with Threefold Zero-OS.
+Note that the settings are similar for UEFI and non-UEFI. But some details are important.</p>
+<p>The UEFI settings are from a HP G1 EliteDesk Desktop. These should give you a good overview of how to set it up.</p>
+<hr />
+<p><strong>UEFI mode with HP EliteDesk.</strong></p>
+<hr />
+<p>The following section will propose UEFI settings to boot a 3node properly on the TF Grid. Note that the settings might need some modifications in your specific situations. These guidelines will help you set your 3node properly.</p>
+<p>Start your computer and hit Escape to get into the startup Menu. For some other computers, it can be another key. It's usually shown at the start of the boot.
+Hit F10 or click on Computer Setup.</p>
+<hr />
+<p>It can be a good idea to first check in System Information that your setup is as expected.</p>
+<p>Here you can see your computer model and manufacturer. You can check that the processors are properly recognized and that you have the correct quantity of RAM. It's a good idea to check the BIOS and Firmware Versions. Updating the UEFI can help to boot the 3node.</p>
+<hr />
+<p>In Storage -&gt; Device Configuration, you can see if all your disks are well connected (SATA, USB, etc.). Usually, to be recognized, you need to plug your removable media before booting the 3node.</p>
+<hr />
+<p>In Storage -&gt; Storage Options, select AHCI as SATA Emulation and make sure Removable Media Boot is Enabled. For some specific configurations, you will want to use another paramter than AHCI.</p>
+<hr />
+<p>In Storage -&gt; Boot Order, you can choose the UEFI Boot Sources. If you are using a removable media, make sure it is the first in the list. Options can be: USB Hard Drive, USB Floppy/CD, CD/DVD Drive and more.</p>
+<p>If you are booting from a USB key, you'll want to select USB Hard Drive first for the Boot Order.</p>
+<hr />
+<p>In the section Security -&gt; Device Security, you can see that your devices are available. </p>
+<ul>
+<li>Netowrk Controller</li>
+<li>SATA0</li>
+<li>...</li>
+<li>SATA2</li>
+<li>...
+In the section Device Security, make sure all are set to Device Available.</li>
+</ul>
+<hr />
+<p>In Security -&gt; USB Security, make sure the port you want to use is Enabled. The easy way is to make them all Enabled.</p>
+<hr />
+<p>In Security -&gt; Slot Security, you can enable the PCI Express (PCIe) slots. This can be useful when you have SSD NVME disk to use via a PCIe adapter.</p>
+<hr />
+<p>Network boot can be set at Disabled if you are booting with a removable media (USB key, CD/DVD). If you are using PXE mode, you will need to set the Network Boot at Enabled.</p>
+<hr />
+<p>In Security -&gt; Master Boot Record Security, you can se it at Disabled. This is used to successfully boot from a disk while accessing the data it contains. In the case of Zero-OS, the OS is on the removable media.</p>
+<hr />
+<p>In Security -&gt; System Security, you can enable Data Execution Prevention and OS management of Embedded Security Device. This is the place to set the Virtualization Technology (VTx). It is needed with Zero-OS in order for users to deploy virtual machines on the 3nodes.</p>
+<hr />
+<p>In Security -&gt; Secure Boot Configuration, make sure you have Legacy Support set at Enabled (without this, your 3node can't boot without a monitor). You should also Disabled the Secure Boot. Sometimes Zero-OS won't boot otherwise. There is no security problem when doing so to a 3node running on Zero-OS. </p>
+<p>Enabling Secure Boot can be helpful when setting a 3node and you want to be sure no one can access the BIOS/UEFI and change the settings.</p>
+<hr />
+<p>In Power -&gt; OS Power Management, it can be set to Enabled Extended and Disabled.</p>
+<hr />
+<p>In Power -&gt; Hardware Power Management, both SATA Power Management and PCI Express Power Mangement can be set at Enabled. It can be set to Enabled Extended and Disabled. Here are the settings for Hard Power Management. S5 Maximum Power Savings can be set at Disabled. This function, when the computer is off, will turn off the power of all nonessential hardware.</p>
+<hr />
+<p>In Advanted -&gt; Power-On Options, it is a good idea to have After Power Loss set at Previous State. You can select a proper POST Delay (in seconds). This means if your servers are running and you get a power outage, they will turn back on when power comes back. As 3nodes don't have &quot;graceful shutdown&quot;, if you lose electricity momentarily, the 3node will symply reboot and continue its work. No data can be lost when a 3node is shutdown.</p>
+<p>If you have different 3nodes on the same breaker, it can be a good idea to set different POST delay timer. This will ensure that you do not have a sudden high power demand when they power on.</p>
+<hr />
+<p>In Advanced -&gt; BIOS Power-On, you can set all the BIOS Power-On Option at Disabled.</p>
+<hr />
+<p>In Advanced -&gt; Bus Options, you can set PCI SERR# Generation at Enabled, but it is simply concerning ill-behaved PCI add-in cards. PCI VGA Palette Snooping concerns graphics and can be set at Disabled.</p>
+<hr />
+<p>In Advanced -&gt; Device Options, you can Enabled Turbo Mode. It is very important to have <strong>Multi-Processor and Hyperthreading at Enabled.</strong> Sometimes, it will be written Virtual Cores, or Logical Cores. </p>
+<hr />
+<p>In Advanced -&gt; Management Operations, you can set the Active Management Technology (AMT). This is for remote access and is not necessary when it comes to booting and running a 3node.</p>
+<hr />
+<p>In Advanced -&gt; Option ROM Launch Policy, you can all all the parameters at Legacy Only. In Legacy mode, the computer will be able to boot from all bootage devices. </p>
+<hr />
+<p>In Advanced -&gt; Update BIOS via Network, you can set automatic BIOS Update and enabled Update via Network. You can either leave it Enabled or Disabled. To upgrade the BIOS, you can also use a booting removable device (USB key) containing the newer firmware file.</p>
+<hr />
+<p>In Advanced -&gt; Ethernet Connection -&gt; NIC Configuration, make sure your Link Status is at Connected.</p>
+<hr />
+<p>That's it. You went through the whole Computer Setup and this should get your 3node working good.</p>
+<p>In the next section, we will boot the 3node and connect to the Threefold Grid. How exciting!</p>
+<hr />
+<h2 id="6-boot-the-3node"><a class="header" href="#6-boot-the-3node">6. Boot the 3node</a></h2>
+<hr />
+<h3 id="1-booting-the-3node-with-zero-os-bootstrap-image"><a class="header" href="#1-booting-the-3node-with-zero-os-bootstrap-image">1. Booting the 3node with Zero-OS bootstrap image</a></h3>
+<hr />
+<p>To boot Zero-OS, insert your Zero-OS Bootstrap Image, power on your computer and choose the right booting sequence and parameters (<a href="#bios-mode">BIOS</a> or <a href="#uefi-mode">UEFI</a>) in your BIOS/UEFI settings. Then, restart the 3node. Zero-OS should boot automatically.</p>
+<p>Note that you need an ethernet cable connected to your router or switcher. You cannot farm on the Threefold Grid with Wifi.</p>
+<p>The first time you boot a 3node, it will be written: “This node is not registered (farmer ***: NameOfFarm). This is normal. The Grid will create a node ID and you will be able to see it on screen. This can take a couple of minutes.</p>
+<p>If time passes (an hour and more) and the node does not get registered, in many cases, <a href="#4-wipe-all-the-disks">wiping the disks</a> all over again and trying another reboot usually resolves this issue.</p>
+<p>Once you have your node ID, you can also go on the Threefold Explorer to see your 3node and verify that your 3node is online.</p>
+<hr />
+<h3 id="2-check-3node-status-on-the-tf-explorer"><a class="header" href="#2-check-3node-status-on-the-tf-explorer">2. Check 3node Status on the TF Explorer</a></h3>
+<hr />
+<p>In a browser, go on the <a href="https://explorer.threefold.io/">Threefold Explorer</a>. </p>
+<p><img src="./img/farming_25.png" alt="Farming_Create_Farm_3" /></p>
+<p>Select <strong>Grid V3</strong>.</p>
+<p><img src="./img/farming_26.png" alt="Farming_Create_Farm_3" /></p>
+<p>Then select <strong>Mainnet</strong>.</p>
+<p>In this example, we will look for the farm 100. Use your farm ID.</p>
+<p><img src="./img/farming_27.png" alt="Farming_Create_Farm_3" /></p>
+<p>We can see here that 5 x 3nodes of the Farm 100 are online. </p>
+<p><img src="./img/farming_28.png" alt="Farming_Create_Farm_3" /></p>
+<p>On the top right of this section, you can click on &quot;Show offline nodes&quot;. </p>
+<p><img src="./img/farming_29.png" alt="Farming_Create_Farm_3" /></p>
+<p>Now we can see the 3nodes that are offline.</p>
+<hr />
+<h3 id="3-receive-the-farming-rewards"><a class="header" href="#3-receive-the-farming-rewards">3. Receive the Farming Rewards</a></h3>
+<hr />
+<p>The farming reward will be sent once per month at the address you gave when you set up your farm. You can review this process in the section <a href="#2-creating-the-farm-on-threefold-grid">Creating the Farm on Threefold Grid</a>. If you created a TF farm with the TF Connect App, the address will be your TF Connect Wallet address.</p>
+<p>For the TF V3, rewards are locked for a 24 months period of after 30% of farm utilization. As of now, this is not implemented. This means that you can withdraw your farming rewards anytime you want. For more details on this, please refer to the section <a href="#threefold-token-tft">Threefold Token (TFT)</a>. Details of this locking system implementation will most likely be discussed by the upcoming DAO. Stay tuned.</p>
+<hr />
+<p>That's it. You've now completed the necessary steps to build a DIY 3node and to connect it to the Grid. In the next section, we will give you more details on Farming Optimization and Planification. This will maximize your farming efficiency as well as help you plan the economics of farming.</p>
+<hr />
+<h3 id="advanced-booting-option---network-booting-pxe"><a class="header" href="#advanced-booting-option---network-booting-pxe">Advanced Booting Option - Network Booting (PXE)</a></h3>
+<hr />
+<h4 id="pxe-booting-with-opnsense"><a class="header" href="#pxe-booting-with-opnsense">PXE Booting with OPNsense</a></h4>
+<hr />
+<blockquote>
+<p>This documentation comes from the <a href="https://forum.threefold.io/t/network-booting-tutorial/2688">amazing Network Booting Guide</a> by @Fnelson on the Threefold Forum. </p>
+</blockquote>
+<p>Network booting ditches your standard boot USB with a local server. This TFTP server delivers your boot files to your 3 nodes. This can be useful in bigger home farms, but is all but mandatory in a data center setup. </p>
+<p>Network boot setup is quite easy and is centered about configuring a TFTP server. There are essentially 2 options for this, a small dedicated server such as a raspberry pi, or piggybacking on your pfsense or opnsense router. I would recommend the latter as it eliminates another piece of equipment and is probably more reliable.</p>
+<p><strong>Setting Up Your Router to Allow Network Booting</strong></p>
+<p>These steps are for OPNsense, PFsense may differ. These set are required regardless of where you have your TFTP server.</p>
+<blockquote>
+<p>Services&gt;DHCPv4&gt;LAN&gt;Network Booting</p>
+</blockquote>
+<p>Check “Enable Network Booting”</p>
+<p>Enter the IP address of your TFTP server under “Set next-server IP”. This may be the router’s IP or whatever device you are booting from.</p>
+<p>Enter “pxelinux.0” under Set default bios filename.</p>
+<p>Ignore the TFTP Server settings.</p>
+<p><strong>TFTP server setup on a debian machine such as Ubuntu or Raspberry Pi</strong></p>
+<blockquote>
+<p>apt-get update</p>
+<p>apt-get install tftpd-hpa</p>
+<p>cd /srv/tftp/</p>
+<p>wget http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/netboot.tar.gz</p>
+<p>wget http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/pxelinux.0</p>
+<p>wget https://bootstrap.grid.tf/krn/prod/<FARMID> --no-check-certificate</p>
+<p>mv <FARMID> ipxe-prod.lkrn</p>
+<p>tar -xvzf netboot.tar.gz</p>
+<p>rm version.info netboot.tar.gz</p>
+<p>rm pxelinux.cfg/default</p>
+<p>chmod 777 /srv/tftp/pxelinux.cfg (optional if next step fails)</p>
+<p>echo 'default ipxe-prod.lkrn' &gt;&gt; pxelinux.cfg/default</p>
+</blockquote>
+<p><strong>TFTP Server on a OPNsense router</strong></p>
+<blockquote>
+<p>Note: When using PFsense instead of OPNsense, steps are probably similar, but the directory or other small things may differ.</p>
+</blockquote>
+<p>The first step is to download the TFTP server plugin. Go to system&gt;firmware&gt;Status and check for updates, follow prompts to install. Then click the Plugins tab and search for tftp, install os-tftp. Once that is installed go to Services&gt;TFTP (you may need to refresh page). Check the Enable box and input your router ip (normally 192.168.1.1). Click save.</p>
+<p>Turn on ssh for your router. In OPNsense it is System&gt;Settings&gt;Administration. Then check the Enable, root login, and password login. Hop over to Putty and connect to your router, normally 192.168.1.1. Login as root and input your password. Hit 8 to enter the shell.</p>
+<p>In OPNsense the tftp directory is /usr/local/tftp</p>
+<blockquote>
+<p>cd /usr/local</p>
+<p>mkdir tftp</p>
+<p>cd ./tftp</p>
+<p>fetch http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/netboot.tar.gz</p>
+<p>fetch http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/pxelinux.0</p>
+<p>fetch https://bootstrap.grid.tf/krn/prod/<FARMID> </p>
+<p>mv <FARMID> ipxe-prod.lkrn</p>
+<p>tar -xvzf netboot.tar.gz</p>
+<p>rm version.info netboot.tar.gz</p>
+<p>rm pxelinux.cfg/default</p>
+<p>echo 'default ipxe-prod.lkrn' &gt;&gt; pxelinux.cfg/default</p>
+</blockquote>
+<p>You can get out of shell by entering exit or just closing the window.</p>
+<p><strong>3Node Setup</strong></p>
+<p>Set the server to BIOS boot and put PXE or network boot as the first choice. At least on Dell machines, make sure you have the network cable in plug 1 or it won’t boot.</p>
+<hr />
+<h4 id="pxe-booting-with-pfsense"><a class="header" href="#pxe-booting-with-pfsense">PXE Booting with pfSense</a></h4>
+<hr />
+<blockquote>
+<p>This documentation comes from the <a href="https://forum.threefold.io/t/network-booting-tutorial/2688/7">amazing Network Booting Guide</a> by @TheCaptain on the Threefold Forum. </p>
+</blockquote>
+<p>These are the steps required to enable PXE booting on pfSense. This guide assumes you’ll be using the router as your PXE server; pfSense allows boot file uploads directly from its web GUI.</p>
+<ul>
+<li>Log into your pfSense instance
+<ul>
+<li>Go to System&gt;Package Manager
+<ul>
+<li>Search and add ‘tftpd’ package under ‘Available Packages’ tab</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Go to Services&gt;TFTP Server
+<ul>
+<li>Under ‘Settings’ tab check enable and enter the router IP in TFTP Server Bind IP field</li>
+</ul>
+</li>
+<li>Switch to ‘Files’ tab under Services&gt;TFTP Server and upload your ‘ipxe-prod.efi’ file acquired from https://v3.bootstrap.grid.tf/ (second option labeled ‘EFI Kernel’)</li>
+<li>Go to Services&gt;DHCP Server
+<ul>
+<li>Under ‘Other Options’ section click Display Advance next to ‘TFTP’ and enter router IP</li>
+<li>Click Display Advance next to ‘Network Booting’</li>
+<li>Check enable, enter router IP in Next Server field</li>
+<li>Enter ipxe-prod.efi in Default BIOS file name field</li>
+</ul>
+</li>
+</ul>
+<p>That's it! You’ll want to ensure your clients are configured with boot priority set as IPv4 in first spot. You might need to disable secure boot and enable legacy boot within BIOS.</p>
+<hr />
+<h2 id="set-up-a-threefold-farm-in-a-data-center"><a class="header" href="#set-up-a-threefold-farm-in-a-data-center">Set Up a Threefold Farm in a Data Center</a></h2>
+<hr />
+<p>Setting up a Threefold farm in a data center has a lot in common with setting up a farm at home. But some details should be taken into account.</p>
+<p>For farmers who want to set up a Threefold farm in a data center, the Gold Farming Certification can be very interesting. Indeed, Gold Farming Certification comes with 50% more farming reward and a better storage unit calculation price.</p>
+<p>Following the requirements for Gold Farming Certification will ensure an efficient Threefold farm in a data center environment.</p>
+<hr />
+<h3 id="gold-farming-qualification-requirements"><a class="header" href="#gold-farming-qualification-requirements">Gold Farming Qualification Requirements</a></h3>
+<hr />
+<ul>
+<li>Hardware purchased from a recognized vendor</li>
+<li>Minimum 5 IPv4 addresses per server</li>
+<li>Two power supplies or PDU with 2 power feeds which automatically fails over</li>
+<li>Two routers per rack (connections to internet)</li>
+<li>At least Two Internet Service Provider connections</li>
+<li>Tier 3 or 4 data center certified to ISO 27001</li>
+<li>Uptime 99.8%</li>
+<li>Network connection at least 1GBit/sec per TBD nr of CU/SU</li>
+<li>Geographic decentralization - no more than one full data center rack per TBD Region size unless and until utilization in that rack is &gt; 50%.</li>
+<li>The 3Nodes need to be certified (can be done by TFTech or other actors on blockchain)</li>
+</ul>
+<blockquote>
+<p>Note: This certification is not yet implemented and changes may apply. Look for upcoming information in the Threefold Forum and on threefold.io.</p>
+</blockquote>
+<hr />
+<h3 id="data-center-cable-management"><a class="header" href="#data-center-cable-management">Data Center Cable Management</a></h3>
+<hr />
+<p>It's important to have a good cable management, specially if you are in a data center. Proper cable management will improve the cooling streams of your farm. There shouldn't be any cable in front of the fans. This way, your servers will last longer. If you want to patch a rack, you have to have all lenght of patch cables from 30cm to 3m. Also, try to keep the cables as short as possible. Arrange the cables in bundles of eight and lead them to the sides of the rack as much as possible for optimal airflow.</p>
+<hr />
+<h1 id="farming-optimization-and-planification"><a class="header" href="#farming-optimization-and-planification">Farming Optimization and Planification</a></h1>
+<p>The last section covered the notions necessary to build a DIY 3node server. The following section will give you additional information with the goal of optimizing your farm while also being able to plan ahead the costs in terms of energy and capitals. We note that the Threefold token entry priced is locked for 5 years when you connect a 3node to the Threefold Grid v3. This means that you will farm a constant number of TFT per month, and this, for a duration of 60 months. </p>
+<p>This fact is very important as it gives you the basis for economic planning. Setting the price of the TFT you will sell at the same price of your 3node entry price is a conservative approach. Why? Because, as TFT becomes scarce, and the Grid's utility and diversity expand, it is logical to plan that the price of TFT will increase. In short, if you can have a decent return on investment (ROI) with your 3node(s) and your Threefold farm, based on your TFT entry price, you can have a greater confidence that you will be fruitful in this New Internet Adventure. Of course, this is not financial advice.</p>
+<p>As an economic comparative tool, many farmers will check the TFT per month for each dollar invested. This constitutes a good way to see if a 3node build is economically sound. It's then easy to compare between two different 3nodes configurations.</p>
+<p>Note that the goal is to bring the best service and resources possible on the Grid, while maximizing profits. Why? Because the sooner you pay back your initial investment, the sooner you can build even more 3nodes and decentralized even more Internet! You are warned, You Farmer of the New Internet, that once you start to walk on the Threefold journey, it becomes harder and harder to resist the temptation of building another 3node, and then another, and another...</p>
+<p>On a more serious note, remember that the CPU of your 3node should have 1000 passmark per core. This ensures a minimum of quality for the whole TF Grid. Also, it is important to have a sufficient bandwidth in terms of Internet Service Provider (ISP). Why? Because you will need to have sufficient badnwidth when your 3nodes will be used by Threefold users on the Grid. </p>
+<p>The CPU passmark threshold is not yet implemented, but it constitutes a good way to make sure the hardware you bring to the Threefold Grid will contribute healthily to the New Internet.</p>
+<hr />
+<h2 id="calculate-the-roi-of-a-diy-3node"><a class="header" href="#calculate-the-roi-of-a-diy-3node">Calculate the ROI of a DIY 3node</a></h2>
+<hr />
+<p>To calculate the ROI of a DIY 3node, we first calculate the Revenue per Month:</p>
+<blockquote>
+<p>Revenue per month = TFT price when sold * TFT farmed per month</p>
+</blockquote>
+<p>The ROI of a DIY 3node is:</p>
+<blockquote>
+<p>Cost of 3node / Revenue per month = ROI in months</p>
+</blockquote>
+<p>For example, a Rack Server farming 3000 TFT per month with an initial cost of 1500$USD has the following ROI:</p>
+<blockquote>
+<p>1500 / (3000 * 0.08) = 6.25 month ROI</p>
+</blockquote>
+<p>This, we remember, is with a conservative TFT price. Yummy. (Not Financial Advice!)</p>
+<p>Is it possible to build such DIY 3node? Yes it is! Check this section <a href="#the-rack-server-diy-3node">The Rack Server DIY 3node</a> and try not to build more 3nodes.</p>
+<p>Note that this ROI equation is used to compare efficienty between different DIY 3nodes. It does not constitute real final gains as additional costs must be taken into consideration, such as electricity for the 3nodes, for the AC system, as well as Internet bandwidth. This will be covered later.</p>
+<hr />
+<h2 id="air-conditioner-relative-humidity-and-air-changes-per-hour"><a class="header" href="#air-conditioner-relative-humidity-and-air-changes-per-hour">Air Conditioner, Relative Humidity and Air Changes per Hour</a></h2>
+<hr />
+<h3 id="calculate-the-minimum-btu-needed-for-the-ac"><a class="header" href="#calculate-the-minimum-btu-needed-for-the-ac">Calculate the Minimum BTU Needed for the AC</a></h3>
+<hr />
+<p>Let's see how to calculate how powerful your AC unit needs to be when it comes to cooling down your server room.</p>
+<p>As we know, servers generate heat when they are working. While a desktop 3node will generate under 20W at idle and a server 3node might use 100W at idle, when you pile up some 3nodes desktops/servers in the same location, things can get pretty warm when cultivation on the Grid is happening. Indeed, when your servers will be using a lot of power, especially in the summer time, you might need some additional cooling.</p>
+<p>A good thing about servers generating heat is that this can be used as a <strong>heat source in the winter</strong>. Other more advanced techniques can be used to maximize the heat production. But that's for another day! </p>
+<p>Note that for small farms, your current heating and cooling system may suffice.</p>
+<p>So let's do the calculation:</p>
+<hr />
+<p><strong>How Much BTU does your Threefold Farm Need to Cool Your Servers?</strong></p>
+<hr />
+<p>It's pretty simple actually. You need to keep in mind that <strong>1 kW of power is equivalent to 3413 BTU</strong> (Britisth Thermal Unit). </p>
+<blockquote>
+<p>1 kW = 3413 BTU</p>
+</blockquote>
+<p>So with our idle server example running at 100W, we have 0.1 kW. This is 341.3 BTU.</p>
+<blockquote>
+<p>100 W / 1000 = 0.1 kW</p>
+</blockquote>
+<p>Here we have that 100 Watt is 0.1 kiloWatt.</p>
+<blockquote>
+<p>0.1 kWh * 3413 = 341.3 BTU</p>
+</blockquote>
+<p>Here we multiply our kW by BTU factor <strong>3413</strong>.
+Say you have 5 servers with this same configuration. It means you have </p>
+<blockquote>
+<p>(# of servers) * (BTU per server) = Total BTU</p>
+</blockquote>
+<blockquote>
+<p>5 * 341.3 =  1706.5 BTU</p>
+</blockquote>
+<p>Thus, a 2000 BTU Air Conditioner would be able to compensate for the heat when your servers are at idle.</p>
+<hr />
+<p>Please take note that this does not take into account the energy needed to cool down your environment. You'd need to take into consideration <strong>the heat of the servers and the general heat of your environment</strong> to figure out how much BTU your AC needs in the big heat days of the summer.</p>
+<hr />
+<p><strong>Let there Be Cultivation</strong></p>
+<hr />
+<p>But then, what happens at cultivation? Well, say your server needs 400W of power when it's being fully cultivated by some lively Threefold Users of the New Internet. In this case, we would say that 400 W is the power consumption at <strong>full load</strong>.</p>
+<p>As we started with 100 W, and we now have 400 W, it means that you'd need four times the amount of BTU. </p>
+<p>Here we show how to calculate this with any other configuration of full load/idle. </p>
+<blockquote>
+<p>Cultivation-Idle Ratio =  Cultivation W / Idle W</p>
+</blockquote>
+<blockquote>
+<p>4 = 400 W / 100 W</p>
+</blockquote>
+<p>The BTU needed in cultivation would be </p>
+<blockquote>
+<p>(Full-Load / Idle Ratio) * Idle BTU = Full Load BTU</p>
+</blockquote>
+<blockquote>
+<p>4 * (1706.5 BTU at Idle) = 6826 BTU at Full Load</p>
+</blockquote>
+<p>Thus, you would need 6826 BTU from the AC unit for 5 servers running each at 400W. In that case, a 8000 BTU AC unit would be sufficient. Let's say your environment would typically need 4000 BTU to cool the room, you'd need about 12000 BTU AC unit for the whole setup. </p>
+<blockquote>
+<p>If: BTU needed &lt; BTU AC Unit, Then: AC Unit is OK for TF farming at full load.</p>
+</blockquote>
+<hr />
+<p>Now you can have a better idea of how much BTU is necessary for your AC unit. Of course, this can be a useful piece of data to incorporate in your simulation of Revenue/Cost farming.</p>
+<p>The <strong>general equation</strong> would then be:</p>
+<blockquote>
+<p>Server Power in kW at Full Load * 3413 * Number of Servers = Total Maximum BTU needed per Threefold Farm</p>
+</blockquote>
+<hr />
+<p>As another example, 7 servers using 120 W of power at idle would need:</p>
+<blockquote>
+<p>0.12 * 3413 * 7 = 2866.92 BTU</p>
+</blockquote>
+<p>During cultivation, these 7 servers might use 480 W. This would be:</p>
+<blockquote>
+<p>0.48 * 3413 * 7 = 11467.68 BTU</p>
+</blockquote>
+<p>To be sure everything's OK, this set up would need a 12 000 BTU AC unit to compensate for the heat generated by the Threefold Farm during full cultivation. This example considers the environment heat to be negligible.</p>
+<blockquote>
+<p>11467.68 &lt; 12000 --&gt; 12K BTU AC Unit is OK for farm</p>
+</blockquote>
+<hr />
+<p>That's it! It ain't any more complicated. Straight up mathematics and some judgment.</p>
+<p>Now, let's calcute the costs of running all this!</p>
+<hr />
+<h3 id="ensure-proper-relative-humidity"><a class="header" href="#ensure-proper-relative-humidity">Ensure Proper Relative Humidity</a></h3>
+<hr />
+<p>To ensure that the relative humidity in your server room stays within a proper range, look in your server's user manual to know the proper range of relative humidity your server can handle. If necessary, use an hygrometer to measure relative humidity and make sure it stays within an acceptable range for your 3nodes.</p>
+<p>Depending on your geographical location and your current situation, it could be interesting to consider having a AC unit equipped with a dehumidifier. Read your servers' manual to check the proper relative humidity range and set the unit accordingly. The maximum/minimum temperature and relative humidity a 3node server can handle will depend on the specific server/computer you are using. You should check the server's technical guide/manual to get the proper information. The following is an example.</p>
+<p>We will use here the Dell R720 as an example since it is a popular 3node choice. In this case, we use the R720's <a href="https://downloads.dell.com/manuals/all-products/esuprt_ser_stor_net/esuprt_poweredge/poweredge-r720_reference-guide_en-us.pdf">Technical Guide</a> as reference.</p>
+<p>For the R720, between 35˚C and 40˚C (or 95˚F and 104˚F), with 5% to 85% relative humidity, you can have this &lt;10% of annual operating hours (around 36 days per year), and between 40˚C and 45˚C (or 104˚F and 113˚F), with 5 to 90% relative humidity, it’s &lt;1% of annual operating hours (around 3.6 day per year). All this considers that there is no direct sunlight.</p>
+<p>From 10˚C to 35˚C (thus from 50˚F to 95˚F), it’s considered standard operating temperature. With relative humidity from 10% to 80%.</p>
+<p>This can give you a good idea of the conditions a 3node can handle, but make sure you verify with your specific server's manual.</p>
+<hr />
+<h3 id="ensure-proper-air-changes-per-hour"><a class="header" href="#ensure-proper-air-changes-per-hour">Ensure Proper Air Changes per Hour</a></h3>
+<hr />
+<p>To ensure that the air changes per hour is optimal in your 3node servers' room, and depending on your current situation, it can be recommended to ventilate the server room in other to disperse or evacuate excess heat and humidity. In those cases, ventilation flow will be set depending on the air changes per hour (ACPH) needed. Note that the <a href="https://www.ashrae.org/File%20Library/Technical%20Resources/Standards%20and%20Guidelines/Standards%20Addenda/62-2001/62-2001_Addendum-n.pdf">ASHRAE</a> recommends from 10 to 15 ACPH for a computer room.</p>
+<blockquote>
+<p>Note: A good AC unit will be able to regulate the heat and the relative humidity as well as ensure proper air changes per hour.</p>
+</blockquote>
+<hr />
+<h2 id="calculate-power-internet-and-total-costs"><a class="header" href="#calculate-power-internet-and-total-costs">Calculate Power, Internet and Total Costs</a></h2>
+<hr />
+<h3 id="calculate-the-total-electricity-cost-of-your-farm"><a class="header" href="#calculate-the-total-electricity-cost-of-your-farm">Calculate the Total Electricity Cost of Your Farm</a></h3>
+<hr />
+<p>The total electricity cost of your farm is the sum of all Power used by your system times the price you pay for each kWh of power.</p>
+<blockquote>
+<p>Total electricity cost = Total Electricity in kWh * Cost per kWh</p>
+</blockquote>
+<blockquote>
+<p>Total Electricty in kWh = 3nodes' electricity consumption * Number of 3nodes + Cooling system electricity consumption</p>
+</blockquote>
+<p>With our example, we have 5 servers running at 400 W at Full Load and we have a 12K BTU unit that is consuming in average 1000W. </p>
+<p>We would then have:</p>
+<blockquote>
+<p>5 * 400 W + 1000 W = 3000 W = 3 kW</p>
+</blockquote>
+<p>To get the kWh per day we simply multiply by 24. </p>
+<blockquote>
+<p>kW * (# of hour per day) = daily kWh consumption</p>
+</blockquote>
+<blockquote>
+<p>3 kW * 24 = 72 kWh / day</p>
+</blockquote>
+<p>We thus have 72 kWH per day. For 30 days, this would be </p>
+<blockquote>
+<p>kWh / day * (# day in a month) = kWh per month</p>
+</blockquote>
+<blockquote>
+<p>72 * 30 = 2160 kWH / month.</p>
+</blockquote>
+<p>At a kWh price of 0.10$ USD, we have a cost of 216 $USD per month for the electricity bill of our Threefold farm.</p>
+<blockquote>
+<p>kWH / month of the farm * kWh Cost = Electricity Bill per month for the farm</p>
+</blockquote>
+<blockquote>
+<p>2160 * 0.1 = 216$USD / month for electricity bills</p>
+</blockquote>
+<hr />
+<h3 id="calculate-the-proper-bandwidth-needed-for-your-farm"><a class="header" href="#calculate-the-proper-bandwidth-needed-for-your-farm">Calculate the Proper Bandwidth Needed for Your Farm</a></h3>
+<hr />
+<p>The bandwidth needed for a given 3node is not yet set in stone and you are welcome to participate in ongoing <a href="https://forum.threefold.io/t/storage-bandwidth-ratio/1389">discussion on this subject</a> on the Threefold Forum.</p>
+<p>In this section, we will give general guidelines. The goal is to have a good idea of what constitutes a proper bandwidth available for a given amount of resources utilized on the Threefold Grid.</p>
+<p>Starting with a minimum of 1 mbps per Titan, which is 1 TB SSD and 32 GB RAM, we note that this is the lowest limit that gives the opportunity for the most people possible to join the Threefold Grid. That being said, we could set that 10 mbps is an acceptable upper limit for 1 TB SSD and 64 GB of RAM. </p>
+<p>Those numbers are empirical and more information will be shared in the future. The ratio 1TB SSD/64GB RAM is in tune with the optimal TFT rewards ratio. It is thus logical to think that farmers will build 3node based on this ratio. Giving general bandwidth guidelines based on this ratio unit could thus be efficient for the current try-and-learn situation. </p>
+<hr />
+<h4 id="the-minimum-bandwidth-per-3node-equation"><a class="header" href="#the-minimum-bandwidth-per-3node-equation">The Minimum Bandwidth per 3node Equation</a></h4>
+<hr />
+<p>Here we explore some equations that can give a general idea to farmers of the bandwidth needed for their farms. As stated, this is not yet set in stones and the TFDAO will need to discuss and clarify those notions.</p>
+<p>Here is a general equation that gives you a good idea of a correct bandwidth for a 3node:</p>
+<blockquote>
+<p>min Bandwidth per 3node (mbps) = k * max((Total SSD TB / 1 Tb),(Total Threads / 8 Threads),(Total GB / 64 GB)) + k * (Total HDD TB / 2)</p>
+</blockquote>
+<p>Setting k = 10 mbps, we have:</p>
+<blockquote>
+<p>min Bandwidth per 3node (mbps) = 10 * max((Total SSD TB / 1 TB),(Total Threads / 8 Threads),(Total GB / 64 GB)) + 10 * (Total HDD TB / 2)</p>
+</blockquote>
+<p>As an example, a Titan, with 1TB SSD, 8 Threads and 64 GB of RAM, would need 10 mbps:</p>
+<blockquote>
+<p>10 * max(1, 1, 1) = 10 * 1 = 10</p>
+</blockquote>
+<p>With the last portion of the equation, we can see that for each additional 1TB HDD storage, you would need to add 5 mbps of bandwidth.</p>
+<hr />
+<p>Let's take a big server as another example. Say we have a server with 5TB SSD, 48 threads and 384 GB of RAM. We would then need 60 mbps of bandwidth for each of these 3nodes:</p>
+<blockquote>
+<p>10 * max((5/5), (48/8), (384/64)) = 10 * max(5,6,6) = 10 * 6 = 60</p>
+</blockquote>
+<p>This server would need 60 mbps minimum to account for a full TF Grid utilization.</p>
+<p>You can easily scale this equation if you have many 3nodes.</p>
+<hr />
+<p>Let's say you have a 1 gbps bandwidth from your Internet Service Provider (ISP). How much of those 3nodes could your farm have?</p>
+<blockquote>
+<p>Floor (Total available bandwidth / ((Bandwidth needed per 3nodes)) = Max servers possible</p>
+</blockquote>
+<p>With our example we have:</p>
+<blockquote>
+<p>1000 / 60 = 16.66... = 16</p>
+</blockquote>
+<p>We note that the function Floor takes the integer without the decimals.</p>
+<p>Thus, a 1 gbps bandwidth farm could have 16 3nodes with each 5TB SSD, 48 threads and 384 GB of RAM.</p>
+<hr />
+<p>In this section, we used <strong>k = 10 mbps</strong>. If you follow those guidelines, you will most probably have a decent bandwidth for your Threefold farm. For the time being, the goal is to have farmers building Threefold farms and scale them reasonably with their available bandwidth. </p>
+<p>Stay tuned for official bandwidth parameters in the future.</p>
+<hr />
+<h4 id="cost-per-month-for-a-given-bandwidth"><a class="header" href="#cost-per-month-for-a-given-bandwidth">Cost per Month for a Given Bandwidth</a></h4>
+<hr />
+<p>Once you know the general bandwidth needed for your farm, you can check with your ISP the price per month and take this into account when calculating your monthly costs.</p>
+<p>Let's take the example we used with 5 servers with 400 W at Full Load. Let's say these 5 servers have the same parameters we used above here. We then need 60 gbps per 3nodes. This means we need 300 mbps. For the sake of our example, let's say this is around 100$ USD per month.</p>
+<hr />
+<h3 id="calculate-the-total-cost-and-revenue"><a class="header" href="#calculate-the-total-cost-and-revenue">Calculate the Total Cost and Revenue</a></h3>
+<hr />
+<p>As the TFT price is fixed for 60 months when you connect your 3node for the first time on the TF Grid, we will use the period of 60 months, or 5 years, to calculate the total cost and revenue.</p>
+<p>The total cost is equal to:</p>
+<blockquote>
+<p>Total Cost = Initial investment + 60 * (electricity + Internet costs per month)</p>
+</blockquote>
+<p>In our example, we can state that we paid each server 1500$ USD and that they generate each 3000 TFT per month, with an entry price of 0.08$ USD per TFT. </p>
+<p>The electricity cost per month is </p>
+<blockquote>
+<p>144$ for the electricity bill</p>
+<p>100$ for the Internet bill</p>
+<p>Total : 244 $ monthly cost for electricity and Internet</p>
+</blockquote>
+<p>The revenues are</p>
+<blockquote>
+<p>Revenues per month = Number of 3nodes * TFT farmed per 3node * Price TFT Sold</p>
+</blockquote>
+<p>In this example, we have 5 servers generating 2000 TFT per month at 0.08$ USD per TFT:</p>
+<blockquote>
+<p>5 * 3000$ * 0.08$ = 1200$</p>
+</blockquote>
+<p>The net revenue per month are thus equal to </p>
+<blockquote>
+<p>Net Revenue = Gross revenue - Monthly cost.</p>
+</blockquote>
+<p>We thus have </p>
+<blockquote>
+<p>1200$ - 244$ = 956$</p>
+</blockquote>
+<p>This means that we generate a net profit of 956$ per month, without considering the initial investment of building the 3nodes for the farm.</p>
+<p>In the previous AC example, we calculate that a minimum of 12K BTU was needed for the AC system. Let's say that this would mean buying a 350$ USD 12k BTU AC unit.</p>
+<p>The initial cost is the cost of all the 3nodes plus the AC system.</p>
+<blockquote>
+<p>Number of 3nodes * cost per 3nodes + Cost of AC system = Total Cost</p>
+</blockquote>
+<p>In this case, it would be:</p>
+<blockquote>
+<p>Total initial investment = Number of 3nodes * Cost of 3node + Cost of AC system</p>
+</blockquote>
+<p>Then we'd have:</p>
+<blockquote>
+<p>5 * 1500 + 350 = 7850 $</p>
+</blockquote>
+<p>Thus, a more realistic ROI would be:</p>
+<blockquote>
+<p>Total initial investment / Net Revenue per Month = ROI in months</p>
+</blockquote>
+<p>In our case, we would have:</p>
+<blockquote>
+<p>7850$ / 956$ = Ceiling(8.211...) = 9</p>
+</blockquote>
+<p>With the function Ceiling taking the upper integer, without any decimals.</p>
+<p>Then within 9 months, this farm would have paid itself and from now on, it would be only positive net revenue of 956$ per month.</p>
+<p>We note that this takes into consideration that we are using the AC system 24/7. This would surely not be the case in real life. This means that the real ROI would be even better. It is a common practice to do estimates with stricter parameters. If you predict being profitable with strict parameters, you will surely be profitable in real life, even when &quot;things&quot; happen and not everything goes as planned. As always, this is not financial advice.</p>
+<p>We recall that in the section <a href="#calculate-the-roi-of-a-diy-3node">Calculate the ROI of a DIY 3node</a>, we found a simpler ROI of 6.25 months, say 7 months, that wasn't taking into consideration the additional costs of Internet and electricity. We now have a more realistic ROI of 9 months based on a fixed TFT price of 0.08$ USD. You will need to use to equations and check with your current TF farm and 3nodes.</p>
+<hr />
+<h4 id="check-revenue-with-the-threefold-simulator"><a class="header" href="#check-revenue-with-the-threefold-simulator">Check Revenue with the Threefold Simulator</a></h4>
+<hr />
+<p>To know how much TFT you will farm per month for a giving 3node, the easiest route is to use the <a href="simulator.grid.tf">Threefold Simulator</a>. You can do predictions of 60 months as the TFT price is locked at the TFT price when you first connect your 3node, and this, for 60 months.</p>
+<p>To know the details of the calculations behind this simulator, you can read <a href="https://library.threefold.me/info/threefold#/tfgrid/farming/threefold__farming_reward">this documentation</a>.</p>
+<hr />
+<h4 id="economics-of-farming"><a class="header" href="#economics-of-farming">Economics of Farming</a></h4>
+<hr />
+<p>As a brief synthesis, the following equations are used to calculate the total revenues and costs of your farm.</p>
+<pre><code>    - Total Monthly Cost = Electricity cost + Internet Cost
+    - Total Electricity Used = Electricy per 3node * Number of 3node + Electricity for Cooling
+    - Total Monthly Revenue = TFT farmed per 3 node * Number of 3nodes * TFT price when sold
+    - Initial Investment = Price of farm (3nodes) + Price of AC system
+    - Total Return on investment = (60 * Monthly Revenue) - (60 * Monthly cost) - Initial Investment
+</code></pre>
+<hr />
+<p>This section constitutes a quick synthesis of the costs and revenues when running a Threefold Farm. As always, do your own reseaerch and don't hesitate to visit the <a href="https://forum.threefold.io/">Threefold Forum</a> on the <a href="https://t.me/threefoldfarmers">Threefold Telegram Farmer Group</a> if you have any questions.</p>
+<hr />
+<h1 id="threefold-token-tft"><a class="header" href="#threefold-token-tft">Threefold Token (TFT)</a></h1>
+<p>The Threefold Toke (TFT) is a decentralized digital currency used to buy autonomous and decentralized Internet services (compute, storage, and application) on the ThreeFold Grid.</p>
+<p>No ThreeFold Tokens have ever been minted. ThreeFold Tokens are generated through a process called “Farming”. Farming happens when active internet capacity is added to the ThreeFold Grid. Independent farmers earn ThreeFold Tokens (TFT) by providing neutral and decentralized internet capacity, thus expending the usable TF Grid. Therefore no central entity controls the internet.</p>
+<h2 id="6-facts-about-the-threefold-tokens"><a class="header" href="#6-facts-about-the-threefold-tokens">6 Facts About the ThreeFold Tokens</a></h2>
+<ol>
+<li>TFTs are exclusively generated when new capacity is added to the TF Grid. There are no centralized issuers. Tokens have not been created out of thin air.</li>
+<li>While the ThreeFold Grid can expand, a maximum of 4 Billion TFTs can ever be in circulation. This limit ensures stability of value and incentivization for all stakeholders.</li>
+<li>TFT lives on the Stellar Blockchain. TFT holders benefit from a big ecosystem of proven wallets and mediums of exchange.</li>
+<li>By employing Stellar technology, TFT transactions and smart contracts are powered by one of the most energy-efficient blockchains available. Furthermore, TFT is the medium of exchange on the greenest internet network in the world.</li>
+<li>The market for farming, cultivating and trading TFT is open to all. Anyone with internet connection, power supply and necessary hardware can become a Farmer or trade ThreeFold tokens (TFT).</li>
+<li>By farming, buying, holding, and utilizing ThreeFold Tokens, you are actively supporting the expansion of the ThreeFold Grid and its use cases — creating a more sustainable, fair, and equally accessible Internet.</li>
+</ol>
+<hr />
+<h2 id="threefold-wallet"><a class="header" href="#threefold-wallet">Threefold Wallet</a></h2>
+<hr />
+<h3 id="threefold-connect-app-wallet"><a class="header" href="#threefold-connect-app-wallet">Threefold Connect App Wallet</a></h3>
+<hr />
+<p><img src="./img/farming_wallet_5.png" alt="farming_wallet_5" /></p>
+<p>The easiest way to send your farming rewards is to use the free Threefold Connect App. </p>
+<p>It is available for <a href="https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&amp;hl=en&amp;gl=US">Android</a> and <a href="https://apps.apple.com/us/app/threefold-connect/id1459845885">iOS</a>.</p>
+<ul>
+<li>Note that for Android phones, you need at minimum Android Nougat, the 8.0 software version.</li>
+<li>Note that for iOS phones, you need at minimum iOS 14.5. It will be soon available to iOS 13.</li>
+</ul>
+<hr />
+<h4 id="threefold-connect-installation"><a class="header" href="#threefold-connect-installation">Threefold Connect Installation</a></h4>
+<hr />
+<p>Either use the links above, or search for the Threefold Connect App on the Apple Store or the Google Play store. Then install and open the app. If you want to leave a 5 star review of the App, no one here will stop you!</p>
+<p><img src="./img/farming_tf_wallet_1.png" alt="farming_tf_wallet_1" />
+<img src="./img/farming_tf_wallet_2.png" alt="farming_tf_wallet_2" /></p>
+<p>When you try to open the App, if you get an error message such as : &quot;Error in initialization in Flagsmith...&quot;, you might need to upgrade your phone to a newer software version (8.0 for Android and 13 for iOS).</p>
+<p>Once you are in the application, you will see some introduction pages to help you familiarize with the TF Connect App. You will also be asked to read and accept Threefold's Terms and conditions.</p>
+<p><img src="./img/farming_tf_wallet_3.png" alt="farming_tf_wallet_3" />
+<img src="./img/farming_tf_wallet_4.png" alt="farming_tf_wallet_4" /></p>
+<p>You will then be asked to either <em>SIGN UP</em> or <em>RECOVER ACCOUNT</em>. For now, we will show how to sign up. Later in the guide, we will show you how to recover an account.</p>
+<p><img src="./img/farming_tf_wallet_5.png" alt="farming_tf_wallet_5" /></p>
+<p>You will then be asked to choose a <em>Threefold Connect Id</em>. This ID will be used, as well as the seed phrase, when you want to recover an account. Choose wisely. And do not forget it! Here we will use TFExample, as an example.</p>
+<p><img src="./img/farming_tf_wallet_6.png" alt="farming_tf_wallet_6" /></p>
+<p>Next, you need to add a valid email address. This will be used as a broad KYC. You will need to access your email and confirm the validation email from Threefold to use properly the TF Connect App Wallet.</p>
+<p><img src="./img/farming_tf_wallet_7.png" alt="farming_tf_wallet_7" /></p>
+<p>Then, the next step is crucial! Make sure no one is around looking at your screen. You will be shown your seed phrase. Keep this in a secure and offline place. You will need the 3bot ID and the seed phrase to recover your account. This seed phrase is of utmost important. Do not lose it nor give it to anyone.</p>
+<p><img src="./img/farming_tf_wallet_8.png" alt="farming_tf_wallet_8" /></p>
+<p>Once you've hit Next, you will be asked to write down 3 random words of your seed phrase. This is a necessary step to ensure you have taken the time to write down your seed phrase.</p>
+<p><img src="./img/farming_tf_wallet_9.png" alt="farming_tf_wallet_9" /></p>
+<p>Then, you'll be asked to confirm your TF 3bot name and the associated email.</p>
+<p><img src="./img/farming_tf_wallet_10.png" alt="farming_tf_wallet_10" /></p>
+<p>Finally, you will be asked to choose a 4-digit pin. This will be needed to use the Threefold Connect App. If you ever forget this 4-digit pin, you will need to recover your account from your 3bot name and your seed phrase. You will need to confirm the new pin in the next step.</p>
+<p><img src="./img/farming_tf_wallet_11.png" alt="farming_tf_wallet_11" /></p>
+<p>That's it! You've created your Threefold Connect account. You can press the hamburger menu on the top left to explore the Threefold Connect App.</p>
+<p><img src="./img/farming_tf_wallet_12.png" alt="farming_tf_wallet_12" /></p>
+<p>In the next step, we will create a Threefold Connect Wallet. You'll see, it's very simple!</p>
+<hr />
+<h4 id="verify-your-identity-kyc-by-email"><a class="header" href="#verify-your-identity-kyc-by-email">Verify your identity (KYC) by email</a></h4>
+<hr />
+<p>Once you've created your account, an email will be sent to the email address you've chosen in the account creation process. </p>
+<p>To verify your email, go on your email account and open the email sent by <em>info@openkyc.live</em> with the subject <em>Verify your email address</em>. </p>
+<p>In this email, click on the link <em>Verify my email address</em>. This will lead you to a <em>login.threefold.me</em> link. The process should be automatic. Once this is done, you will receive a confirmation on screen, as well as on your phone.</p>
+<p><img src="./img/farming_tf_wallet_39.png" alt="farming_tf_wallet_39" /></p>
+<p><img src="./img/farming_tf_wallet_40.png" alt="farming_tf_wallet_40" /></p>
+<p><img src="./img/farming_tf_wallet_41.png" alt="farming_tf_wallet_41" /></p>
+<p>If for some reason, you did not receive the verification email, simply click on <em>Verify</em> and another email will be sent.</p>
+<p><img src="./img/farming_tf_wallet_42.png" alt="farming_tf_wallet_42" /></p>
+<p><img src="./img/farming_tf_wallet_43.png" alt="farming_tf_wallet_43" /></p>
+<h4 id="change-email-associated-with-tf-account"><a class="header" href="#change-email-associated-with-tf-account">Change email associated with TF account</a></h4>
+<p>If you want to change your email, simply click on the <em>pencil</em> next to your email and write another email. You will need to redo the KYC verification process.</p>
+<p><img src="./img/farming_tf_wallet_44.png" alt="farming_tf_wallet_44" /></p>
+<hr />
+<h4 id="create-a-wallet"><a class="header" href="#create-a-wallet">Create a Wallet</a></h4>
+<hr />
+<p>To create a wallet, click on the Threefold Connect App menu. This is what you see. Choose <em>Wallet</em>.</p>
+<p><img src="./img/farming_tf_wallet_13.png" alt="farming_tf_wallet_13" /></p>
+<p>Once you are in the section <em>Wallet</em>, click on <em>Create Initial Wallet</em>. If it doesn't work the first time, retry some more. If you have trouble creating a wallet, make sure your connection is reliable. You can try a couple of minutes later if it still doesn't work. With a reliable connection, there shouldn't be any problem. Contact TF Support if problems persist.</p>
+<p><img src="./img/farming_tf_wallet_14.png" alt="farming_tf_wallet_14" /></p>
+<p>This is what you see when the TF Grid is initializing your wallet.</p>
+<p><img src="./img/farming_tf_wallet_15.png" alt="farming_tf_wallet_15" /></p>
+<p>Once your wallet is initialized, you will see <em>No blanace found for this wallet</em>. You can click on this button to enter the wallet.</p>
+<p><img src="./img/farming_tf_wallet_16.png" alt="farming_tf_wallet_16" /></p>
+<p>Once inside your wallet, this is what you see.</p>
+<p><img src="./img/farming_tf_wallet_17.png" alt="farming_tf_wallet_17" /></p>
+<p>We will now see where the Stellar and the TF Chain Addresses and Secrets are to be found. We will also changing the wallet name. To do so, click on the <em>circled i</em> at the bottom right of the screen.</p>
+<p><img src="./img/farming_tf_wallet_18.png" alt="farming_tf_wallet_18" /></p>
+<p><img src="./img/farming_tf_wallet_19.png" alt="farming_tf_wallet_19" /></p>
+<p>You can choose the name you want for your wallet. Here we use TFWalletExample. Note that you can also use alphanumeric characters.</p>
+<p><img src="./img/farming_tf_wallet_20.png" alt="farming_tf_wallet_20" /></p>
+<p>At the top of the section <em>Wallet</em>, we can see that the name has changed.</p>
+<p><img src="./img/farming_tf_wallet_21.png" alt="farming_tf_wallet_21" /></p>
+<p>Now, if you want to copy your Stellar Address, simply click on the button presented with the green circle. To access the TF Chain address, click on the button presented with the red circle. When your phone has copied the address, the TF App will give show a confirmation message as shown below.</p>
+<p><img src="./img/farming_tf_wallet_22.png" alt="farming_tf_wallet_22" /></p>
+<p>In some situations, you will want to access the Stellar and TF Chain secrets. To do so, simply click on the &quot;eye&quot; button of the desired chain, and then copy the secret.</p>
+<p><img src="./img/farming_tf_wallet_23.png" alt="farming_tf_wallet_23" /></p>
+<hr />
+<h4 id="create-a-farm"><a class="header" href="#create-a-farm">Create a Farm</a></h4>
+<hr />
+<p>Now, being a farmer, you might wonder: can I create a Threefold Farm with the Threefold Connect App. Well, yes! Here is how to do so.</p>
+<p>Click on the hamburger menu on the top left of your screen and select <em>Farmer Migration</em>. This title is somehow misleading, as you can not only migrate farms, but create farms too!</p>
+<p><img src="./img/farming_tf_wallet_24.png" alt="farming_tf_wallet_24" /></p>
+<p>To create a farm, either click on the <em>plus</em> sign at the top right, or click on <em>Click to create -&gt;</em>.</p>
+<p><img src="./img/farming_tf_wallet_25.png" alt="farming_tf_wallet_25" /></p>
+<p>To create a farm, choose the wallet associated with the farm. Also, choose a Farm Name then read and accept the Terms and Conditions. Finally, click <em>submit</em>.</p>
+<p><img src="./img/farming_tf_wallet_26.png" alt="farming_tf_wallet_26" /></p>
+<p>The TF Connect App will give you a confirmation message if the farm was created successfully. If it doesn't work the first time, make sure you have a good Internet connection and try again. If you click on the down arrow, you will be able to see your <em>Farm Information</em>.</p>
+<p><img src="./img/farming_tf_wallet_27.png" alt="farming_tf_wallet_27" /></p>
+<p>You can see on this screen the address were your farming rewards will be sent to. It is the Stellar address associated with the Threefold Wallet used to create the farm.</p>
+<p><img src="./img/farming_tf_wallet_28.png" alt="farming_tf_wallet_28" /></p>
+<hr />
+<h4 id="see-threefold-connect-app-and-wallet-transactions"><a class="header" href="#see-threefold-connect-app-and-wallet-transactions">See Threefold Connect App and Wallet Transactions</a></h4>
+<hr />
+<p>To see your transactions, simply click on the two arrows at the bottom of the screen, as shown below.</p>
+<p><img src="./img/farming_tf_wallet_29.png" alt="farming_tf_wallet_29" /></p>
+<hr />
+<h4 id="connect-to-the-planetary-network"><a class="header" href="#connect-to-the-planetary-network">Connect to the Planetary Network</a></h4>
+<p>To connect to the Planetary Network, click on the Planetary Network on the TF menu as shown below.</p>
+<p><img src="./img/farming_tf_wallet_30.png" alt="farming_tf_wallet_30" /></p>
+<p>Connecting to the Planetary Network couldn't be easier. Simply click on the connection button and you will see <em>Connected</em> on the screen once the connection is settled.</p>
+<p><img src="./img/farming_tf_wallet_31.png" alt="farming_tf_wallet_31" /></p>
+<hr />
+<h4 id="show-seed-phrase---remove-account-from-tf-connect-app"><a class="header" href="#show-seed-phrase---remove-account-from-tf-connect-app">Show Seed Phrase - Remove Account from TF Connect App</a></h4>
+<hr />
+<p>To see your seed phrase or remove your account from the TF Connect App, choose <em>Settings</em> in the Threefold Connect App menu.</p>
+<p><img src="./img/farming_tf_wallet_32.png" alt="farming_tf_wallet_32" /></p>
+<p>First, to see your seed phrase, click on this button as shown below:</p>
+<p><img src="./img/farming_tf_wallet_38.png" alt="farming_tf_wallet_31" /></p>
+<p>You will then be able to see your seed phrase. You can make sure you have your seed phrase somewhere safe, offline, before removing your account.</p>
+<p>Now, we will remove the account from the Threefold Connect App. In Settings, click on the arrow circled in green and click on the red button with a white dashed in it. Beware: once done, you can only recover your account with your <strong>3bot ID</strong> and your <strong>seed phrase</strong>.</p>
+<p><img src="./img/farming_tf_wallet_33.png" alt="farming_tf_wallet_33" /></p>
+<p>You will be asked to confirm your action as a security check.</p>
+<p><img src="./img/farming_tf_wallet_34.png" alt="farming_tf_wallet_34" /></p>
+<hr />
+<h4 id="recover-account-on-the-threefold-connect-app"><a class="header" href="#recover-account-on-the-threefold-connect-app">Recover Account on the Threefold Connect App</a></h4>
+<hr />
+<p>Once you're removed your account, if you want to recover your account, choose the option <em>RECOVER ACCOUNT</em> on the opening screen on the app.</p>
+<p><img src="./img/farming_tf_wallet_35.png" alt="farming_tf_wallet_35" /></p>
+<p>You will be asked to enter your <em>3bot ID</em> as well as your <em>seed phrase</em>.</p>
+<p><img src="./img/farming_tf_wallet_36.png" alt="farming_tf_wallet_36" /></p>
+<p>You will then be asked to choose and confirm a new 4-digit pin code. Once this is done, you will receive the following confirmation:</p>
+<p><img src="./img/farming_tf_wallet_37.png" alt="farming_tf_wallet_37" /></p>
+<p>That's it! You've recovered your account.</p>
+<hr />
+<h4 id="move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs"><a class="header" href="#move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs">Move Farm from the TF app to the TF Portal (polkadot.js)</a></h4>
+<hr />
+<p>If you want to move your farm from the Threefold Connect App to the portal.grif.tf (polkadot.js), follow these steps. Note that you cannot, for now, move your farm from the Portal to the Threefold Connect App.</p>
+<p>First, you want to find the TF Chain Secret, this is, in short, a hex version of the private key. To find the secret, head over to the <em>Farmer migration</em> (via the TF Menu).</p>
+<p>In the <em>Farming migration</em> section, click on the arrow (in green here) of the farm you want to export on the Threefold Portal.</p>
+<p><img src="./img/farming_tf_wallet_45.png" alt="farming_tf_wallet_45" /></p>
+<p>Then, click on the arrow (in green) to see your TF Chain Secret.</p>
+<p><img src="./img/farming_tf_wallet_46.png" alt="farming_tf_wallet_46" /></p>
+<p>Click on the button to copy the Secret. The App will show a confirmation message. </p>
+<p><img src="./img/farming_tf_wallet_47.png" alt="farming_tf_wallet_47" /></p>
+<p>Now head over to the browser with your polkadot.js extension. For more information on this, check the section <a href="#1-creating-a-polkadotjs-account">Creating a Polkadot.js account</a>.</p>
+<p>On your browser, click on the extension button (in green).</p>
+<p><img src="./img/farming_tf_wallet_48.png" alt="farming_tf_wallet_48" /></p>
+<p>Select the polkadot{.js} extension.</p>
+<p><img src="./img/farming_tf_wallet_49.png" alt="farming_tf_wallet_49" /></p>
+<p>Click on the <em>plus</em> button as shown in green.</p>
+<p><img src="./img/farming_tf_wallet_50.png" alt="farming_tf_wallet_50" /></p>
+<p>Choose the option <em>Import account from pre-existing seed</em>.</p>
+<p><img src="./img/farming_tf_wallet_51.png" alt="farming_tf_wallet_51" /></p>
+<p>In the box <em>EXISTING 12 OR 24-WORD MNEMONIC SEED</em>, paste the TF Chain Secret. Note that this Secret is a HEX version of your seed phrase.</p>
+<p><img src="./img/farming_tf_wallet_52.png" alt="farming_tf_wallet_52" /></p>
+<p>Choose a name for your account. Choose a password.</p>
+<p><img src="./img/farming_tf_wallet_53.png" alt="farming_tf_wallet_53" /></p>
+<p>When you go on the <a href="https://portal.grid.tf/">Threefold Portal</a>, you will now see your newly added account. Click on it.</p>
+<p><img src="./img/farming_tf_wallet_54.png" alt="farming_tf_wallet_54" /></p>
+<p>In the Farm section, you can now see your farm. You have successfully move the farm from the Threefold Connect App to the Threefold Portal.</p>
+<p><img src="./img/farming_tf_wallet_55.png" alt="farming_tf_wallet_55" /></p>
+<p>You can see here that the farming reward address is the same as before.</p>
+<p><img src="./img/farming_tf_wallet_56.png" alt="farming_tf_wallet_56" /></p>
+<p>That's it! You have successfully move the farm from the Threefold Connect App to the Threefold Portal.</p>
+<hr />
+<h4 id="import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet"><a class="header" href="#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet">Import TF Portal (polkadot.js) wallet to the TF Connect App Wallet</a></h4>
+<p>Now that we've seen how to go from the TF Connect App to the Threefold Portal (Polkadot.js), we will now show how to go the other way around. This method is very simple. You will need your Polkadot.js seed phrase handy.</p>
+<p>Go in the Wallet section of the Threefold Connect App and click on import at the bottom right (in green).</p>
+<p><img src="./img/farming_tf_wallet_57.png" alt="farming_tf_wallet_57" /></p>
+<p>Then simply name your wallet and enter the Polkadot.js seed phrase.</p>
+<p><img src="./img/farming_tf_wallet_58.png" alt="farming_tf_wallet_58" /></p>
+<p>Then in the Wallet section, you will now see the wallet.</p>
+<p><img src="./img/farming_tf_wallet_59.png" alt="farming_tf_wallet_59" /></p>
+<hr />
+<h4 id="send-and-receive-tft-between-tf-connect-wallets"><a class="header" href="#send-and-receive-tft-between-tf-connect-wallets">Send and Receive TFT between TF Connect Wallets</a></h4>
+<hr />
+<p>To send and receive TFT between TF Connect Wallet, go into Wallet and select the wallet you want to use.Remember that you must always send and receive TFT on the same chain, so choose either Stellar or TFChain.</p>
+<hr />
+<h5 id="send-tft"><a class="header" href="#send-tft">Send TFT</a></h5>
+<hr />
+<p>To send tokens, select <em>Send Coins</em> in the wallet section. To send TFT, you can scan the QR code of the address you wish to send tokens to. This will enter automatically the necessary information. Make sure to double check that the information is correct to avoid any complications. Otherwise, you can simply enter the correct address in the section <em>To</em>. Choose the amount you want to send. Then click on <em>SEND TOKENS</em>. </p>
+<p>Note that, for such transactions, there is a maximum fee of 0.10 TFT on the Stellar blockchain, and a maximum fee of 0.01 TFT on the TFChain. This amount is taken from the amount you are sending. It is not taken directly in your wallet. </p>
+<hr />
+<h5 id="receive-tft"><a class="header" href="#receive-tft">Receive TFT</a></h5>
+<hr />
+<p>To receive tokens, select <em>Receive Coins</em> in the wallet section. To receive TFT, you can generate a QR code to share to the person waiting to send you tokens. Otherwise, the sender can simply use your Stellar or TFChain address and send you TFT.</p>
+<p>To generate the QR Code, select the chain you want to use, Stellar or TFChain, enter the amount and the message if needed and click on <em>GENERATE QR CODE</em>. Note that there is no message option for TFChain, only for Stellar. This will generate a QR Code that can be scanned by other devices.</p>
+<hr />
+<h4 id="send-tft-to-hardware-wallet-on-stellar-blockchain"><a class="header" href="#send-tft-to-hardware-wallet-on-stellar-blockchain">Send TFT to Hardware Wallet on Stellar Blockchain</a></h4>
+<hr />
+<p>Before sending TFT to a hardware wallet, make sure the hardware wallet has a TFT trustline on the Stellar Blockchain. For more information, read the section below.</p>
+<hr />
+<h3 id="hardware-wallet"><a class="header" href="#hardware-wallet">Hardware Wallet</a></h3>
+<hr />
+<p>You can also have your farming rewards sent to a hardware wallet. In this case, you will need to enable a TFT trustline to receive TFT. </p>
+<p>You can use any hardware wallet that supports the Stellar Blockchain, such as a <a href="https://www.ledger.com/">Ledger</a>.</p>
+<hr />
+<h4 id="setting-up-a-tft-trustline-on-stellar-blockchain"><a class="header" href="#setting-up-a-tft-trustline-on-stellar-blockchain">Setting up a TFT Trustline on Stellar Blockchain</a></h4>
+<hr />
+<p>Setting up a trustline is simple.</p>
+<p>We will show an example with a Ledger hardware wallet. The process is similar with other hardware wallets. Just make sure that your hardware wallet is compatible with the Stellar blockchain, as the TFT from farming rewards will be sent on the Stellar Blockchain.</p>
+<hr />
+<p>First, <a href="https://www.ledger.com/ledger-live/download">download Ledger Live</a> and download the Stellar application in <strong>Manager</strong>. Then, go on an official Stellar website such as <a href="https://stellarterm.com/">Stellarterm</a> or <a href="https://www.stellarx.com/">StellarX</a>. For this example, we will be using Stellarterm.com.</p>
+<p>Unlock your Ledger by entering your digit password.</p>
+<p>Select the Stellar App.</p>
+<p>In our case, we do not need to create an account on Stellerterm, since we are using a hardware wallet.</p>
+<p><img src="./img/farming_wallet_7.png" alt="farming_wallet_7" /></p>
+<p>On Stellarterm.com, click on the button <strong>LOGIN</strong>.</p>
+<p><img src="./img/farming_wallet_8.png" alt="farming_wallet_8" /></p>
+<p>At the bottom of the page, select the option <strong>Ledger</strong> or another option if you are using a different hardware wallet.</p>
+<p><img src="./img/farming_wallet_9.png" alt="farming_wallet_9" /></p>
+<p>Click <strong>Connect with Ledger</strong>.</p>
+<p><img src="./img/farming_wallet_10.png" alt="farming_wallet_10" /></p>
+<p>Read and accept the Terms of Use.</p>
+<p><img src="./img/farming_wallet_11.png" alt="farming_wallet_11" /></p>
+<p>On the main page, click on <strong>Assets</strong>.</p>
+<p><img src="./img/farming_wallet_12.png" alt="farming_wallet_12" />
+<img src="./img/farming_wallet_13.png" alt="farming_wallet_13" /></p>
+<p>Scroll down and write <strong>Threefold.io</strong> in the Text box. Select <strong>TFT Threefold.io</strong>. Click <strong>Accept</strong>. Then follow the steps presented on your hardware wallet to confirm the trust line.</p>
+<hr />
+<p>You now have a TFT trust line on the Stellar Blockchain. You can now receive TFT on this wallet. Perfect for safe TFT farming!</p>
+<hr />
+<h2 id="how-to-buy-and-sell-tft"><a class="header" href="#how-to-buy-and-sell-tft">How to Buy and Sell TFT</a></h2>
+<hr />
+<h3 id="where-to-buy-and-sell-tft"><a class="header" href="#where-to-buy-and-sell-tft">Where to Buy and Sell TFT</a></h3>
+<hr />
+<p>There are many ways to buy and sell TFT. Here is a list of places <a href="https://library.threefold.me/info/threefold#/tokens/threefold__how_to_buy">where to Buy and Sell TFT</a>.</p>
+<hr />
+<h4 id="the-different-tft-threefold-bridges-tfchain-stellar-bridge-and-bsc-stellar-bridge"><a class="header" href="#the-different-tft-threefold-bridges-tfchain-stellar-bridge-and-bsc-stellar-bridge">The different TFT Threefold bridges: TFChain-Stellar Bridge and BSC-Stellar Bridge</a></h4>
+<hr />
+<p>In short, there is the <a href="https://bridge.bsc.threefold.io/">BSC-Stellar Bridge</a> and the <a href="https://portal.grid.tf/">TF Chain-Stellar</a> Bridge.</p>
+<p>The BSC-Stellar Bridge is used to go between the Stellar Chain and Binance Smart Chain (BSC).
+The TFChain-Stellar Bridge is used to go between Stellar Chain and TF Chain.</p>
+<p>To go from BSC to TF Chain, or from TF Chain to BSC, you need to use the two bridges.</p>
+<p>BSC can be used to sell/buy TFT while TF Chain can be used to deploy Dapps on https://play.grid.tf</p>
+<blockquote>
+<p>Note: Always start with a small amount the first time you try a bridge.</p>
+</blockquote>
+<hr />
+<h4 id="how-to-set-up-a-stellar-address-for-tft-transactions"><a class="header" href="#how-to-set-up-a-stellar-address-for-tft-transactions">How to set up a Stellar address for TFT transactions</a></h4>
+<hr />
+<p>In general, to set up a Stellar address to transact TFT on Stellar chain, you can use any Stellar wallet that has a TFT trustline enabled. Note that on Stellar chain, fees are paid in XLM. </p>
+<p>The easiest way is to simply create an account on the Threefold Connect App (for <a href="https://play.google.com/store/apps/details?id=org.jimber.threebotlogin">Android</a> and <a href="https://apps.apple.com/us/app/threefold-connect/id1459845885">iOS</a>) and to then use the TFT wallet of the app, which has by default a TFT trustline on Stellar chain and also comes with 1 XLM sponsored by Threefold for transaction fees.</p>
+<hr />
+<h3 id="how-to-use-the-tfchain-stellar-bridge"><a class="header" href="#how-to-use-the-tfchain-stellar-bridge">How to use the TFChain-Stellar Bridge</a></h3>
+<hr />
+<ol>
+<li>Go on the <a href="https://portal.grid.tf">Threefold Portal</a></li>
+<li>Sign-in with your Polkadot extension account</li>
+<li>Go in the section <strong>Twin</strong></li>
+<li>2-Way Bridge:
+<ul>
+<li>Transfer TFT from Stellar to TF Chain
+<ul>
+<li>Click on <em>Bridge TFT from Stellar</em></li>
+</ul>
+</li>
+<li>Transfer TFT from TF Chain to Stellar
+<ul>
+<li>Click on <em>Bridge TFT to Stellar</em></li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<p>Note: If you are on Threefold Connect App, you can export your account to the Polkadot extension. Look at the section <a href="#move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs">Move Farm from the TF app to the TF Portal (polkadot.js)</a>.</p>
+<hr />
+<h3 id="how-to-use-the-bsc-stellar-bridge"><a class="header" href="#how-to-use-the-bsc-stellar-bridge">How to use the BSC-Stellar Bridge</a></h3>
+<hr />
+<p>To use the BSC-Stellar Bridge, follow the following steps. If this is your first time with MetaMask and BSC, read the section <a href="#setting-up-tft-on-metamask">Setting up TFT on Metamask</a>.</p>
+<p>It will cost 50 TFT* to bridge from Stellar to BSC, and 1 TFT to bridge from BSC to Stellar. There is also a fixed fee of 0.01 TFT when using the Stellar blockchain. Those fees are taken from the total of what you are bridging. </p>
+<p>*For example, if you Bridge 80 TFT, from Stellar to BSC, you will receive 30 TFT.</p>
+<blockquote>
+<p>Note: The bridge will process deposits/withdrawals within 48 hours.</p>
+</blockquote>
+<hr />
+<h4 id="bridge-from-stellar-to-bsc"><a class="header" href="#bridge-from-stellar-to-bsc">Bridge from Stellar to BSC</a></h4>
+<hr />
+<p><strong>Pre-requisites:</strong></p>
+<ul>
+<li>Metamask account</li>
+<li>TF Connect App+Wallet</li>
+<li>TFT on Stellar Blockchain</li>
+</ul>
+<p><strong>Steps</strong></p>
+<ol>
+<li>Go to the BSC-Stellar <a href="https://bridge.bsc.threefold.io/">Bridge website</a>.</li>
+<li>Connect your MetaMask Wallet.</li>
+<li>Sign in with MetaMask.</li>
+<li>Choose the option  <em>Deposit from Stellar</em>.</li>
+<li>Agree to the  <em>Threefold Terms</em>.</li>
+<li>Read and tick the box of the  <em>Warning Message</em>.</li>
+<li>On your phone, open up your Threefold Connect App and go to the wallet section.</li>
+<li>Select the option  <em>Send</em>.</li>
+<li>Select the  <em>Stellar</em>  chain.</li>
+<li>Click on the button  <em>Scan QR Code</em> . The QR Code option automatically fill up your  <em>MESSAGE</em>.</li>
+<li>Scan the QR code that appears on the Bridge window (or write the information manually).</li>
+<li>Make sure the  <em>MESSAGE</em>  is correctly entered.</li>
+<li>Press  <em>Send Tokens</em>.</li>
+<li>Press  <em>Confirm</em>.</li>
+</ol>
+<p>In this method, you use the Bridge directly. Thus, it is normal if you do not see your standard MetaMask address. MetaMask is on ERC20 and TFT is on Stellar. You are sending TFT to the Bridge's address, and the Bridge sends money to your wallet afterward.</p>
+<hr />
+<h4 id="bridge-from-bsc-to-stellar"><a class="header" href="#bridge-from-bsc-to-stellar">Bridge from BSC to Stellar</a></h4>
+<hr />
+<p><strong>Pre-requisites:</strong></p>
+<ul>
+<li>Metamask account</li>
+<li>TF Connect App+Wallet</li>
+<li>BNB for gas fees</li>
+<li>TFT</li>
+</ul>
+<p><strong>Steps</strong></p>
+<ol>
+<li>Go to the BSC-Stellar <a href="https://bridge.bsc.threefold.io/">Bridge website</a>.</li>
+<li>Connect your MetaMask Wallet.</li>
+<li>Sign in with MetaMask.</li>
+<li>Choose the option  <em>Deposit from BSC</em>.</li>
+<li>Agree to the  <em>Threefold Terms</em>.</li>
+<li>Read and tick the box of the  <em>Warning Message</em>.</li>
+<li>On your phone, open up your Threefold Connect App and go to the wallet section.</li>
+<li>Copy your Stellar address.</li>
+<li>Paste your Stellar address in the proper field on The BSC-Stellar Bridge.</li>
+<li>Enter the amount of TFT you want to bridge.</li>
+<li>Click on  <em>Withdraw</em>.</li>
+<li>Follow the instructions on your Metamask Wallet.</li>
+</ol>
+<p><strong>General Tips</strong></p>
+<ul>
+<li>It's a good idea to start with a small amount the first time.</li>
+<li>The process is usually quick, but it can take up to 48h. In doubt, contact <a href="https://threefold.io/support/">TF Support</a>.</li>
+<li>Going from Stellar to BSC costs 50 TFT.</li>
+<li>Going from BSC to Stellar costs 1 TFT.</li>
+<li>There is also fixed fee of 0.01 TFT when using the Stellar Blockchain.</li>
+<li>Gas fees on BSC is usually around 5-20 gwei.</li>
+<li>You can try the bridge later if gas fees are high at the moment of your transaction.</li>
+</ul>
+<hr />
+<h4 id="setting-up-tft-on-metamask"><a class="header" href="#setting-up-tft-on-metamask">Setting Up TFT on Metamask</a></h4>
+<hr />
+<ul>
+<li>Download Metamask <a href="https://metamask.io/download.html">here</a>. Then, install the Metamask extension in your local browser.</li>
+<li>Create a Metamask account</li>
+<li>Switch the network to  <code>Binance chain</code> . You will have to create a new network with following information):
+<ul>
+<li>Mainnet</li>
+<li>Network Name: Smart Chain</li>
+<li>New RPC URL: https://bsc-dataseed.binance.org/</li>
+<li>ChainID: 56</li>
+<li>Symbol: BNB</li>
+<li>Block Explorer URL: <a href="https://bscscan.com/">https://bscscan.com</a></li>
+</ul>
+</li>
+<li>Add TFT token in Metamask -&gt; custom token -&gt; contract address =  <code>0x8f0FB159380176D324542b3a7933F0C2Fd0c2bbf</code></li>
+</ul>
+<hr />
+<h2 id="validator"><a class="header" href="#validator">Validator</a></h2>
+<hr />
+<h3 id="introduction-to-validator"><a class="header" href="#introduction-to-validator">Introduction to Validator</a></h3>
+<p>A blockchain validator participates in “consensus” and maintains the record of transactions. Once transactions are verified. Validators are computers that maintain the blockchain’s integrity by keeping a record of the whole transaction history, from the first block to the last.</p>
+<hr />
+<h3 id="more-information"><a class="header" href="#more-information">More Information</a></h3>
+<p>Now that you have farmed TFT, you might want to invest those farming rewards into the TF ecosystem. If you want to know more about the role of a validator and how to become one, read this <a href="/faq/faq.html#validator-faq">VALIDATOR FAQ</a>.</p>
+<hr />
+<h2 id="how-to-stake-tft"><a class="header" href="#how-to-stake-tft">How to Stake TFT</a></h2>
+<p>With the validator program comes <em>Delegated Staking</em>. This feature will be implemented soon. Stay tuned!</p>
+<hr />
+<h1 id="using-tft-on-the-grid"><a class="header" href="#using-tft-on-the-grid">Using TFT on the Grid</a></h1>
+<p>Now that you know how to farm TFT, you might want to explore the possibilities of the Threefold Token. </p>
+<p>When it comes to learning about the real-world application and use of TFT, a good place to start is the <a href="/faq/faq.html#user-faq">USER FAQ</a>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../TF_Farmer_Guide/tf_farmer_guide_readme.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../TF_Farmer_Guide/3node_diy_desktop/3node_diy_desktop.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../TF_Farmer_Guide/tf_farmer_guide_readme.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../TF_Farmer_Guide/3node_diy_desktop/3node_diy_desktop.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
