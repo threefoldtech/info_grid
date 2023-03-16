@@ -3,10 +3,8 @@
 
 ## This guide will walk you through: 
 
-- [Install Polkadot Widget](../dashboard/portal/dashboard_portal_polkadot_widget.md)
-- [Create and Activate account](../dashboard/portal/dashboard_polkadot_create_account.md)
-- [Activate Twin](../dashboard/portal/dashboard_ui_activation.md)
-- [TFT to TFChain](../dashboard/portal/dashboard_ui_tokens.md)
+- [Create an account and a wallet on the Threefold Connect app](../getstarted/TF_Connect/TF_Connect.md)
+- [Buy TFT on Lobstr and Store it in Your Threefold Connect Wallet](../getstarted/TF_Token/TF_Token.md)
+- [Create an Account on the Threefold Dashboard](../getstarted/TF_Dashboard/TF_Dashboard.md)
 - [Find Node](../dashboard/explorer/explorer_find_capacity.md)
 - [Deploy Your First VM](../weblets/weblets_vm.md)
-
