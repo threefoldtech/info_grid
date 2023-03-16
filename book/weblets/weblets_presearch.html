@@ -1,0 +1,250 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Presearch</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../getstarted/grid3_howitworks.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../getstarted/tfgrid3_getstarted.html"><strong aria-hidden="true">2.</strong> Getting Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../getstarted/TF_Connect/TF_Connect.html"><strong aria-hidden="true">2.1.</strong> Threefold Connect</a></li><li class="chapter-item expanded "><a href="../getstarted/TF_Token/TF_Token.html"><strong aria-hidden="true">2.2.</strong> Threefold Token</a></li><li class="chapter-item expanded "><a href="../getstarted/TF_Dashboard/TF_Dashboard.html"><strong aria-hidden="true">2.3.</strong> Threefold Dashboard</a></li><li class="chapter-item expanded "><a href="../dashboard/explorer/explorer_find_capacity.html"><strong aria-hidden="true">2.4.</strong> Tutorial: Find Node</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_vm.html"><strong aria-hidden="true">2.5.</strong> Tutorial: Deploy Your First VM</a></li></ol></li><li class="chapter-item expanded "><a href="../terraform/terraform_readme.html"><strong aria-hidden="true">3.</strong> Terraform</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terraform/terraform_install.html"><strong aria-hidden="true">3.1.</strong> Installing Terraform</a></li><li class="chapter-item expanded "><a href="../terraform/terraform_basics.html"><strong aria-hidden="true">3.2.</strong> Terraform Basics</a></li><li class="chapter-item expanded "><a href="../terraform/terraform_get_started.html"><strong aria-hidden="true">3.3.</strong> Tutorial</a></li><li class="chapter-item expanded "><a href="../terraform/terraform_delete.html"><strong aria-hidden="true">3.4.</strong> Delete</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.5.</strong> Resources</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terraform/resources/terraform_vm.html"><strong aria-hidden="true">3.5.1.</strong> Virtual Machine</a></li><li class="chapter-item expanded "><a href="../terraform/resources/terraform_vm_gateway.html"><strong aria-hidden="true">3.5.2.</strong> Web Gateway</a></li><li class="chapter-item expanded "><a href="../terraform/resources/terraform_k8s.html"><strong aria-hidden="true">3.5.3.</strong> Kubernetes cluster</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terraform/resources/terraform_k8s_demo.html"><strong aria-hidden="true">3.5.3.1.</strong> Demo</a></li></ol></li><li class="chapter-item expanded "><a href="../terraform/resources/terraform_zdb.html"><strong aria-hidden="true">3.5.4.</strong> ZDB</a></li><li class="chapter-item expanded "><a href="../terraform/resources/terraform_qsfs.html"><strong aria-hidden="true">3.5.5.</strong> Quantum Filesystem</a></li><li class="chapter-item expanded "><a href="../terraform/resources/terraform_caprover.html"><strong aria-hidden="true">3.5.6.</strong> CapRover</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.6.</strong> Advanced</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terraform/advanced/terraform_provider.html"><strong aria-hidden="true">3.6.1.</strong> Terraform Provider</a></li><li class="chapter-item expanded "><a href="../terraform/advanced/terraform_provisioners.html"><strong aria-hidden="true">3.6.2.</strong> Terraform Provisioners</a></li><li class="chapter-item expanded "><a href="../terraform/advanced/terraform_mounts.html"><strong aria-hidden="true">3.6.3.</strong> Mounts</a></li><li class="chapter-item expanded "><a href="../terraform/advanced/terraform_capacity_planning.html"><strong aria-hidden="true">3.6.4.</strong> Capacity planning</a></li><li class="chapter-item expanded "><a href="../terraform/advanced/terraform_updates.html"><strong aria-hidden="true">3.6.5.</strong> Updates</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_readme.html"><strong aria-hidden="true">4.</strong> Javascript Client</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_installation.html"><strong aria-hidden="true">4.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_loadclient.html"><strong aria-hidden="true">4.2.</strong> Loading client</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_vm.html"><strong aria-hidden="true">4.3.</strong> Deploy a VM</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_capacity_planning.html"><strong aria-hidden="true">4.4.</strong> Capacity planning</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_vms.html"><strong aria-hidden="true">4.5.</strong> Deploy multiple VMs</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_caprover.html"><strong aria-hidden="true">4.6.</strong> Deploy CapRover</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_vm_gateways.html"><strong aria-hidden="true">4.7.</strong> Gateways</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_kubernetes.html"><strong aria-hidden="true">4.8.</strong> Deploy a Kubernetes cluster</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_zdb.html"><strong aria-hidden="true">4.9.</strong> Deploy a ZDB</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_qsfs.html"><strong aria-hidden="true">4.10.</strong> QSFS</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_kvstore.html"><strong aria-hidden="true">4.11.</strong> Key Value Store</a></li></ol></li><li class="chapter-item expanded "><a href="../weblets/weblets_home.html"><strong aria-hidden="true">5.</strong> Weblets</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../weblets/weblets_profile_manager.html"><strong aria-hidden="true">5.1.</strong> Profile Manager</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../weblets/profile_manager_unlock.html"><strong aria-hidden="true">5.1.1.</strong> Profile Manager Unlock</a></li></ol></li><li class="chapter-item expanded "><a href="../weblets/weblets_deployments_list.html"><strong aria-hidden="true">5.2.</strong> Deployments List</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.3.</strong> Basic Environments</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../weblets/weblets_vm.html"><strong aria-hidden="true">5.3.1.</strong> Virtual Machine</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_k8s.html"><strong aria-hidden="true">5.3.2.</strong> Kubernetes</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.</strong> Ready Community Solutions</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../weblets/weblets_caprover.html"><strong aria-hidden="true">5.4.1.</strong> Caprover</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_funkwhale.html"><strong aria-hidden="true">5.4.2.</strong> Funkwhale</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_peertube.html"><strong aria-hidden="true">5.4.3.</strong> Peertube</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_taiga.html"><strong aria-hidden="true">5.4.4.</strong> Taiga</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_owncloud.html"><strong aria-hidden="true">5.4.5.</strong> Owncloud</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_discourse.html"><strong aria-hidden="true">5.4.6.</strong> Discourse</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_mattermost.html"><strong aria-hidden="true">5.4.7.</strong> Mattermost</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_presearch.html" class="active"><strong aria-hidden="true">5.4.8.</strong> Presearch</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_casper.html"><strong aria-hidden="true">5.4.9.</strong> CasperLabs</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_nodepilot.html"><strong aria-hidden="true">5.4.10.</strong> Node Pilot</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_umbrel.html"><strong aria-hidden="true">5.4.11.</strong> Umbrel</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_wordpress.html"><strong aria-hidden="true">5.4.12.</strong> WordPress</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../dashboard/dashboard.html"><strong aria-hidden="true">6.</strong> Dashboard</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../dashboard/explorer/explorer_home.html"><strong aria-hidden="true">6.1.</strong> Dasboard Explorer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../dashboard/explorer/explorer_find_capacity.html"><strong aria-hidden="true">6.1.1.</strong> find capacity</a></li><li class="chapter-item expanded "><a href="../dashboard/explorer/explorer_graphql_intro.html"><strong aria-hidden="true">6.1.2.</strong> A Glimpse into GraphQL</a></li></ol></li><li class="chapter-item expanded "><a href="../dashboard/portal/dashboard_portal_home.html"><strong aria-hidden="true">6.2.</strong> TFChain Portal</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../dashboard/portal/dashboard_portal_ui_farming.html"><strong aria-hidden="true">6.2.1.</strong> Activate your farmer account and nodes on TFChain</a></li><li class="chapter-item expanded "><a href="../dashboard/portal/dashboard_portal_dedicated_nodes.html"><strong aria-hidden="true">6.2.2.</strong> Dedicated Nodes</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../flist_hub/flist_hub.html"><strong aria-hidden="true">7.</strong> Flist Hub</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../manual3_iac/grid3_supported_flists.html"><strong aria-hidden="true">7.1.</strong> Supported FLists</a></li></ol></li><li class="chapter-item expanded "><a href="../TF_Farmer_Guide/tf_farmer_guide_readme.html"><strong aria-hidden="true">8.</strong> Threefold Farmer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.html"><strong aria-hidden="true">8.1.</strong> Threefold Complete Farming Guide</a></li><li class="chapter-item expanded "><a href="../TF_Farmer_Guide/3node_diy_desktop/3node_diy_desktop.html"><strong aria-hidden="true">8.2.</strong> 3node DIY Desktop</a></li><li class="chapter-item expanded "><a href="../TF_Farmer_Guide/3node_diy_rack_server/3node_diy_rack_server.html"><strong aria-hidden="true">8.3.</strong> 3node DIY Rack Server</a></li></ol></li><li class="chapter-item expanded "><a href="../farmerbot/farmerbot.html"><strong aria-hidden="true">9.</strong> Farmerbot</a></li><li class="chapter-item expanded "><a href="../contribute/contribute.html"><strong aria-hidden="true">10.</strong> How to Contribute</a></li><li class="chapter-item expanded "><a href="../faq/faq.html"><strong aria-hidden="true">11.</strong> FAQ</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="presearch"><a class="header" href="#presearch">Presearch</a></h1>
+<p><a href="https://www.presearch.io/">Presearch</a> is a community-powered, decentralized search engine that provides better results while protecting your privacy and rewarding you when you search. This weblet deploys a Presearch node. Presearch Nodes are used to process user search requests, and node operators earn Presearch PRE tokens for joining and supporting the network.</p>
+<ul>
+<li>Make sure you have an activated <a href="./weblets_profile_manager.html">profile</a></li>
+<li>Click on the <strong>Presearch</strong> tab</li>
+</ul>
+<p><strong>Process</strong></p>
+<p><img src="./img/presearch1.png" alt=" " /></p>
+<ul>
+<li>
+<p>Enter an instance name.</p>
+</li>
+<li>
+<p>You need to sign up on Presearch in order to get your <em>Presearch Registration Code</em>. To sign up, go to <a href="https://presearch.org/">Presearch</a>, create your account and then head to your <a href="https://nodes.presearch.org/dashboard">dashboard</a> to find your registration code.</p>
+</li>
+<li>
+<p>Choose a node to deploy your Presearch instance on.</p>
+</li>
+<li>
+<p>Either use the <strong>Capacity Filter</strong> which simply lets you pick a <em>Farm</em> and <em>Country</em>, after clicking on <em>Apply filters and suggest nodes</em> then it lists available nodes with these preferences and you pick.</p>
+</li>
+<li>
+<p>Or use <strong>Manual</strong> and type a specific node number to deploy on.</p>
+</li>
+</ul>
+<h3 id="now-what-if-you-already-have-a-presearch-node-deployed-somewhere-and-would-like-to-migrate-to-threefold"><a class="header" href="#now-what-if-you-already-have-a-presearch-node-deployed-somewhere-and-would-like-to-migrate-to-threefold">Now what if you already have a Presearch node deployed somewhere and would like to migrate to Threefold?</a></h3>
+<p>We got you! All you need to do is:</p>
+<ol>
+<li>Login to your old server that has your node via SSH.</li>
+<li>Run <code>docker cp presearch-node:/app/node/.keys presearch-node-keys</code> in order to generate your key-pair.</li>
+<li>Head to the <em>Restore</em> tab in the Presearch weblet and paste your key-pair in the fields below and you'll be good to deploy!</li>
+</ol>
+<p><img src="./img/presearch6.png" alt=" " /></p>
+<p>After that is done you can see a list of all of your deployed instances</p>
+<p><img src="./img/presearch4.png" alt=" " /></p>
+<p>Now head to your <a href="https://nodes.presearch.org/dashboard">dashboard</a>again and scroll down to <strong>Current Nodes</strong>, you'll see your newly created node up and connected!</p>
+<p><img src="./img/presearch5.png" alt=" " /></p>
+<p>You should visit Presearch's <a href="https://docs.presearch.org/">docs</a> if you want to learn more!</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../weblets/weblets_mattermost.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../weblets/weblets_casper.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../weblets/weblets_mattermost.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../weblets/weblets_casper.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

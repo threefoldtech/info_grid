@@ -1,0 +1,350 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Deploy a VM</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../getstarted/grid3_howitworks.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../getstarted/tfgrid3_getstarted.html"><strong aria-hidden="true">2.</strong> Getting Started</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../getstarted/TF_Connect/TF_Connect.html"><strong aria-hidden="true">2.1.</strong> Threefold Connect</a></li><li class="chapter-item expanded "><a href="../getstarted/TF_Token/TF_Token.html"><strong aria-hidden="true">2.2.</strong> Threefold Token</a></li><li class="chapter-item expanded "><a href="../getstarted/TF_Dashboard/TF_Dashboard.html"><strong aria-hidden="true">2.3.</strong> Threefold Dashboard</a></li><li class="chapter-item expanded "><a href="../dashboard/explorer/explorer_find_capacity.html"><strong aria-hidden="true">2.4.</strong> Tutorial: Find Node</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_vm.html"><strong aria-hidden="true">2.5.</strong> Tutorial: Deploy Your First VM</a></li></ol></li><li class="chapter-item expanded "><a href="../terraform/terraform_readme.html"><strong aria-hidden="true">3.</strong> Terraform</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terraform/terraform_install.html"><strong aria-hidden="true">3.1.</strong> Installing Terraform</a></li><li class="chapter-item expanded "><a href="../terraform/terraform_basics.html"><strong aria-hidden="true">3.2.</strong> Terraform Basics</a></li><li class="chapter-item expanded "><a href="../terraform/terraform_get_started.html"><strong aria-hidden="true">3.3.</strong> Tutorial</a></li><li class="chapter-item expanded "><a href="../terraform/terraform_delete.html"><strong aria-hidden="true">3.4.</strong> Delete</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.5.</strong> Resources</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terraform/resources/terraform_vm.html"><strong aria-hidden="true">3.5.1.</strong> Virtual Machine</a></li><li class="chapter-item expanded "><a href="../terraform/resources/terraform_vm_gateway.html"><strong aria-hidden="true">3.5.2.</strong> Web Gateway</a></li><li class="chapter-item expanded "><a href="../terraform/resources/terraform_k8s.html"><strong aria-hidden="true">3.5.3.</strong> Kubernetes cluster</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terraform/resources/terraform_k8s_demo.html"><strong aria-hidden="true">3.5.3.1.</strong> Demo</a></li></ol></li><li class="chapter-item expanded "><a href="../terraform/resources/terraform_zdb.html"><strong aria-hidden="true">3.5.4.</strong> ZDB</a></li><li class="chapter-item expanded "><a href="../terraform/resources/terraform_qsfs.html"><strong aria-hidden="true">3.5.5.</strong> Quantum Filesystem</a></li><li class="chapter-item expanded "><a href="../terraform/resources/terraform_caprover.html"><strong aria-hidden="true">3.5.6.</strong> CapRover</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">3.6.</strong> Advanced</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../terraform/advanced/terraform_provider.html"><strong aria-hidden="true">3.6.1.</strong> Terraform Provider</a></li><li class="chapter-item expanded "><a href="../terraform/advanced/terraform_provisioners.html"><strong aria-hidden="true">3.6.2.</strong> Terraform Provisioners</a></li><li class="chapter-item expanded "><a href="../terraform/advanced/terraform_mounts.html"><strong aria-hidden="true">3.6.3.</strong> Mounts</a></li><li class="chapter-item expanded "><a href="../terraform/advanced/terraform_capacity_planning.html"><strong aria-hidden="true">3.6.4.</strong> Capacity planning</a></li><li class="chapter-item expanded "><a href="../terraform/advanced/terraform_updates.html"><strong aria-hidden="true">3.6.5.</strong> Updates</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_readme.html"><strong aria-hidden="true">4.</strong> Javascript Client</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_installation.html"><strong aria-hidden="true">4.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_loadclient.html"><strong aria-hidden="true">4.2.</strong> Loading client</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_vm.html" class="active"><strong aria-hidden="true">4.3.</strong> Deploy a VM</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_capacity_planning.html"><strong aria-hidden="true">4.4.</strong> Capacity planning</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_vms.html"><strong aria-hidden="true">4.5.</strong> Deploy multiple VMs</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_caprover.html"><strong aria-hidden="true">4.6.</strong> Deploy CapRover</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_vm_gateways.html"><strong aria-hidden="true">4.7.</strong> Gateways</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_kubernetes.html"><strong aria-hidden="true">4.8.</strong> Deploy a Kubernetes cluster</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_zdb.html"><strong aria-hidden="true">4.9.</strong> Deploy a ZDB</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_qsfs.html"><strong aria-hidden="true">4.10.</strong> QSFS</a></li><li class="chapter-item expanded "><a href="../javascript/grid3_javascript_kvstore.html"><strong aria-hidden="true">4.11.</strong> Key Value Store</a></li></ol></li><li class="chapter-item expanded "><a href="../weblets/weblets_home.html"><strong aria-hidden="true">5.</strong> Weblets</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../weblets/weblets_profile_manager.html"><strong aria-hidden="true">5.1.</strong> Profile Manager</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../weblets/profile_manager_unlock.html"><strong aria-hidden="true">5.1.1.</strong> Profile Manager Unlock</a></li></ol></li><li class="chapter-item expanded "><a href="../weblets/weblets_deployments_list.html"><strong aria-hidden="true">5.2.</strong> Deployments List</a></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.3.</strong> Basic Environments</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../weblets/weblets_vm.html"><strong aria-hidden="true">5.3.1.</strong> Virtual Machine</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_k8s.html"><strong aria-hidden="true">5.3.2.</strong> Kubernetes</a></li></ol></li><li class="chapter-item expanded "><div><strong aria-hidden="true">5.4.</strong> Ready Community Solutions</div></li><li><ol class="section"><li class="chapter-item expanded "><a href="../weblets/weblets_caprover.html"><strong aria-hidden="true">5.4.1.</strong> Caprover</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_funkwhale.html"><strong aria-hidden="true">5.4.2.</strong> Funkwhale</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_peertube.html"><strong aria-hidden="true">5.4.3.</strong> Peertube</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_taiga.html"><strong aria-hidden="true">5.4.4.</strong> Taiga</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_owncloud.html"><strong aria-hidden="true">5.4.5.</strong> Owncloud</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_discourse.html"><strong aria-hidden="true">5.4.6.</strong> Discourse</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_mattermost.html"><strong aria-hidden="true">5.4.7.</strong> Mattermost</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_presearch.html"><strong aria-hidden="true">5.4.8.</strong> Presearch</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_casper.html"><strong aria-hidden="true">5.4.9.</strong> CasperLabs</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_nodepilot.html"><strong aria-hidden="true">5.4.10.</strong> Node Pilot</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_umbrel.html"><strong aria-hidden="true">5.4.11.</strong> Umbrel</a></li><li class="chapter-item expanded "><a href="../weblets/weblets_wordpress.html"><strong aria-hidden="true">5.4.12.</strong> WordPress</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../dashboard/dashboard.html"><strong aria-hidden="true">6.</strong> Dashboard</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../dashboard/explorer/explorer_home.html"><strong aria-hidden="true">6.1.</strong> Dasboard Explorer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../dashboard/explorer/explorer_find_capacity.html"><strong aria-hidden="true">6.1.1.</strong> find capacity</a></li><li class="chapter-item expanded "><a href="../dashboard/explorer/explorer_graphql_intro.html"><strong aria-hidden="true">6.1.2.</strong> A Glimpse into GraphQL</a></li></ol></li><li class="chapter-item expanded "><a href="../dashboard/portal/dashboard_portal_home.html"><strong aria-hidden="true">6.2.</strong> TFChain Portal</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../dashboard/portal/dashboard_portal_ui_farming.html"><strong aria-hidden="true">6.2.1.</strong> Activate your farmer account and nodes on TFChain</a></li><li class="chapter-item expanded "><a href="../dashboard/portal/dashboard_portal_dedicated_nodes.html"><strong aria-hidden="true">6.2.2.</strong> Dedicated Nodes</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../flist_hub/flist_hub.html"><strong aria-hidden="true">7.</strong> Flist Hub</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../manual3_iac/grid3_supported_flists.html"><strong aria-hidden="true">7.1.</strong> Supported FLists</a></li></ol></li><li class="chapter-item expanded "><a href="../TF_Farmer_Guide/tf_farmer_guide_readme.html"><strong aria-hidden="true">8.</strong> Threefold Farmer</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.html"><strong aria-hidden="true">8.1.</strong> Threefold Complete Farming Guide</a></li><li class="chapter-item expanded "><a href="../TF_Farmer_Guide/3node_diy_desktop/3node_diy_desktop.html"><strong aria-hidden="true">8.2.</strong> 3node DIY Desktop</a></li><li class="chapter-item expanded "><a href="../TF_Farmer_Guide/3node_diy_rack_server/3node_diy_rack_server.html"><strong aria-hidden="true">8.3.</strong> 3node DIY Rack Server</a></li></ol></li><li class="chapter-item expanded "><a href="../farmerbot/farmerbot.html"><strong aria-hidden="true">9.</strong> Farmerbot</a></li><li class="chapter-item expanded "><a href="../contribute/contribute.html"><strong aria-hidden="true">10.</strong> How to Contribute</a></li><li class="chapter-item expanded "><a href="../faq/faq.html"><strong aria-hidden="true">11.</strong> FAQ</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="deploying-a-vm"><a class="header" href="#deploying-a-vm">Deploying a VM</a></h2>
+<h3 id="example-code"><a class="header" href="#example-code">Example code</a></h3>
+<pre><code>import { DiskModel, MachineModel, MachinesModel, NetworkModel } from &quot;../src&quot;;
+import { config, getClient } from &quot;./client_loader&quot;;
+import { log } from &quot;./utils&quot;;
+
+// create network Object
+const n = new NetworkModel();
+n.name = &quot;wedtest&quot;;
+n.ip_range = &quot;10.249.0.0/16&quot;;
+
+// create disk Object
+const disk = new DiskModel();
+disk.name = &quot;wedDisk&quot;;
+disk.size = 8;
+disk.mountpoint = &quot;/testdisk&quot;;
+
+// create vm node Object
+const vm = new MachineModel();
+vm.name = &quot;testvm&quot;;
+vm.node_id = 17;
+vm.disks = [disk];
+vm.public_ip = false;
+vm.planetary = true;
+vm.cpu = 1;
+vm.memory = 1024 * 2;
+vm.rootfs_size = 0;
+vm.flist = &quot;https://hub.grid.tf/tf-official-apps/base:latest.flist&quot;;
+vm.entrypoint = &quot;/sbin/zinit init&quot;;
+vm.env = {
+    SSH_KEY: config.ssh_key,
+};
+// vm.ip = &quot;10.249.2.5&quot; // create a machine with specific private ip
+
+// create VMs Object
+const vms = new MachinesModel();
+vms.name = &quot;newVMS&quot;;
+vms.network = n;
+vms.machines = [vm];
+vms.metadata = &quot;{'testVMs': true}&quot;;
+vms.description = &quot;test deploying VMs via ts grid3 client&quot;;
+
+async function main() {
+    const grid3 = await getClient();
+
+    // deploy vms
+    const res = await grid3.machines.deploy(vms);
+    log(res);
+
+    // get the deployment
+    const l = await grid3.machines.getObj(vms.name);
+    log(l);
+
+    // // delete
+    // const d = await grid3.machines.delete({ name: vms.name });
+    // log(d);
+
+    await grid3.disconnect();
+}
+
+main();
+</code></pre>
+<h3 id="detailed-explanation"><a class="header" href="#detailed-explanation">Detailed explanation</a></h3>
+<h4 id="building-network"><a class="header" href="#building-network">building network</a></h4>
+<pre><code class="language-typescript">// create network Object
+const n = new NetworkModel();
+n.name = &quot;montest&quot;;
+n.ip_range = &quot;10.232.0.0/16&quot;;
+</code></pre>
+<p>Here we prepare the network model that is going to be used by specifying a name to our network and the range it will be spanning over</p>
+<h3 id="building-the-disk-model"><a class="header" href="#building-the-disk-model">building the disk model</a></h3>
+<pre><code class="language-typescript">// create disk Object
+const disk = new DiskModel();
+disk.name = &quot;newDisk&quot;;
+disk.size = 10;
+disk.mountpoint = &quot;/newDisk&quot;;
+</code></pre>
+<p>here we create the disk model specifying its name, size in GB and where it will be mounted eventually</p>
+<h3 id="building-the-vm"><a class="header" href="#building-the-vm">building the VM</a></h3>
+<pre><code class="language-typescript">// create vm node Object
+const vm = new MachineModel();
+vm.name = &quot;testvm&quot;;
+vm.node_id = 4;
+vm.disks = [disk];
+vm.public_ip = false;
+vm.planetary = true;
+vm.cpu = 1;
+vm.memory = 1024 * 2;
+vm.rootfs_size = 1;
+vm.flist = &quot;https://hub.grid.tf/tf-official-apps/base:latest.flist&quot;;
+vm.entrypoint = &quot;/sbin/zinit init&quot;;
+vm.env = {
+    SSH_KEY:
+        &quot;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDWlguBuvfQikkRJZXkLPei7Scvo/OULUEvjWVR4tCZ5V85P2F4SsSghxpRGixCNc7pNtgvdwJegK06Tn7SkV2jYJ9kBJh8PA06CPSz1mnpco4cgktiWx/R8xBvLGlyO0BwUuD3/WFjrc6fzH9E7Bpkel/xTnacx14w1bZAC1R35hz7BaHu1WrXsfxEd0VH7gpMPoQ4+l+H38ULPTiC+JcOKJOqVafgcc0sU7otXbgCa1Frr4QE5bwiMYhOlsRfRv/hf08jYsVo+RUO3wD12ylLWR7a7sJDkBBwgir8SwAvtRlT6k9ew9cDMQ7H8iWNCOg2xqoTLpVag6RN9kGzA5LGL+qHEcBr6gd2taFEy9+mt+TWuKp6reUeJfTu9RD1UgB0HpcdgTHtoUTISW7Mz4KNkouci2DJFngDWrLRxRoz81ZwfI2hjFY0PYDzF471K7Nwwt3qKYF1Js9a6VO38tMxSU4mTO83bt+dUFozgpw2Y0KKJGHDwU66i2MvTPg3EGs= ayoub@ayoub-Inspiron-3576&quot;,
+};
+
+</code></pre>
+<p>Now we go to the VM model, that will be used to build our <code>zmachine</code> object</p>
+<p>We need to specify its</p>
+<ul>
+<li>name</li>
+<li>node_id: where it will get deployed</li>
+<li>disks: disks model collection</li>
+<li>memory</li>
+<li>root filesystem size</li>
+<li>flist: the image it is going to start from. Check the <a href="/manual3_iac/grid3_supported_flists.html">supported flists</a></li>
+<li>entry point: entrypoint command / script to execute</li>
+<li>env: has the environment variables needed e.g sshkeys used</li>
+<li>public ip: if we want to have a public ip attached to the VM</li>
+<li>planetary: to enable planetary network on VM</li>
+</ul>
+<h3 id="building-vms-collection"><a class="header" href="#building-vms-collection">building VMs collection</a></h3>
+<pre><code class="language-typescript">// create VMs Object
+const vms = new MachinesModel();
+vms.name = &quot;monVMS&quot;;
+vms.network = n;
+vms.machines = [vm];
+vms.metadata = &quot;{'testVMs': true}&quot;;
+vms.description = &quot;test deploying VMs via ts grid3 client&quot;;
+</code></pre>
+<p>Here it's quite simple we can add one or more VM to the <code>machines</code> property to have them deployed as part of our project</p>
+<h3 id="deployment"><a class="header" href="#deployment">deployment</a></h3>
+<pre><code class="language-typescript">// deploy vms
+const res = await grid3.machines.deploy(vms);
+log(res);
+</code></pre>
+<h3 id="getting-deployment-information"><a class="header" href="#getting-deployment-information">getting deployment information</a></h3>
+<p>can do so based on the name you gave to the <code>vms</code> collection</p>
+<pre><code class="language-typescript">// get the deployment
+const l = await grid3.machines.getObj(vms.name);
+log(l);
+</code></pre>
+<h3 id="deleting-a-deployment"><a class="header" href="#deleting-a-deployment">deleting a deployment</a></h3>
+<pre><code class="language-typescript">// delete
+const d = await grid3.machines.delete({ name: vms.name });
+log(d);
+</code></pre>
+<p>In the underlying layer we cancel the contracts that were created on the chain and as a result all of the workloads tied to his project will get deleted.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../javascript/grid3_javascript_loadclient.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../javascript/grid3_javascript_capacity_planning.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../javascript/grid3_javascript_loadclient.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../javascript/grid3_javascript_capacity_planning.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
