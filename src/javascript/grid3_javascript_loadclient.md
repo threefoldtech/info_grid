@@ -1,64 +1,60 @@
-## client configurations
+# Grid3 Client
 
-grid 3 client supports communication over RMB `MessageBusClient` or HTTP `HTTPMessageBusClient` using one of the deployed grid3 proxies.
+grid3_client is a client used for deploying workloads (VMs, ZDBs, k8s, etc.) on grid3.
 
+## Client Configurations
 
-```typescript
-import fs from "fs";
-import path from "path";
-import { GridClient } from "../src/client";
-
-import { MessageBusClientInterface } from "ts-rmb-client-base";
-import { HTTPMessageBusClient } from "ts-rmb-http-client";
-import { MessageBusClient } from "ts-rmb-redis-client";
-
-```
-
-So according to your scenario you choose the communication method
-
-## example configuration object
+so you have to set up your configuration file to be like this:
 
 ```json
 {
     "network": "dev",
-    "mnemonic": "",
-    "rmb_proxy": true,
-    "storeSecret": "secret"
+    "mnemonic": "<Your mnemonic>",
+    "storeSecret": "secret",
+    "ssh_key": ""
 }
 ```
 
-So all configurations that is needed are
-- network: `dev` for devnet, `test` for testnet
-- mnemonics
-- rmb_proxy: to use the https RMB proxy to reduce the dependencies on having `redis` and `yggrassil` on the same host, and also to be usable too from the browser if needed.
+## Creating/Inintializing The Grid3 Client
 
-## creating a client
+```ts
+import type { GridClient, NetworkEnv } from "grid3_client";
 
-```typescript
-async function getClient(): Promise<GridClient> {
-    let rmb: MessageBusClientInterface;
-    if (config.rmb_proxy) {
-        rmb = new HTTPMessageBusClient(0, "");
-    } else {
-        rmb = new MessageBusClient();
+async function getGrid(mnemonic: string) {
+  const gridClient = new GridClient(
+    {
+      network: window.config.network as NetworkEnv,
+      mnemonic,
+      projectName:"ProjectName",
+      backendStorageType: BackendStorageType.tfkvstore
     }
-    const gridClient = new GridClient(config.network, config.mnemonic, config.storeSecret, rmb, "", BackendStorageType.auto, KeypairType.sr25519);
-    await gridClient.connect();
-    return gridClient;
+  );
+  return await gridClient.connect();
 }
 ```
-The grid client requires a communication transport, the availlable options are `MessageBusClient` that works over the RMB, and `HTTPMessageBusClient` using relay proxies 
 
-> HTTPMessageBusClient is very highlevel, and allows easier integration with many languages because it's http based, also it enables the whole space of web applications. It's safe to assume that we will be using it from now on.
+The grid client uses `rmb-rs` tool to send requests to/from nodes.
 
-- communication transport: RMB or over RMB proxy via HTTP
+## What is `rmb-rs` | Reliable Message Bus --rust
+
+Reliable message bus is a secure communication panel that allows bots to communicate together in a chat like way. It makes it very easy to host a service or a set of functions to be used by anyone, even if your service is running behind NAT.
+
+Out of the box RMB provides the following:
+
+- Guarantee authenticity of the messages. You are always sure that the received message is from whoever is pretending to be
+- End to End encryption
+- Support for 3rd party hosted relays. Anyone can host a relay and people can use it safely since there is no way messages can be inspected while
+using e2e. That's similar to home servers by matrix
+
+## Grid3 Client Options
+
 - network: `dev` for devnet, `test` for testnet
 - mnemonics: used for signing the requests.
 - storeSecret: used to encrypt data while storing in backeds
 - BackendStorage : can be `auto` which willl automatically adapt if running in node environment to use `filesystem backend` or the browser enviornment to use `localstorage backend`. Also you can set it to `kvstore` to use the tfchain keyvalue store module.
 - keypairType: is defaulted to `sr25519`, most likely you will never need to change it. `ed25519` is supported too.
 
-
+for more details, check [client options](https://github.com/threefoldtech/grid3_client_ts/blob/development_adding_docs/src/client.ts)
 
 > Note: The choice of the node is completely up to the user at this point. They need to do the capacity planning. Check [Exploring Capacity](../dashboard/explorer/explorer_home.md) to know which nodes fits your deployment criteria.
 
