@@ -1,5 +1,9 @@
 <h1>Threefold Token: Buy TFT on Lobstr</h1>
 
+<div class="youtubeVideoWrapper">
+<iframe title="How to Buy TFT on Lobstr" width="560" height="315" src="https://www.youtube-nocookie.com/embed/1N15bKztiqk" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
+
 <h2>Table of Contents</h2>
 
 - [Get TFT: Buy TFT on Lobstr](#get-tft-buy-tft-on-lobstr)

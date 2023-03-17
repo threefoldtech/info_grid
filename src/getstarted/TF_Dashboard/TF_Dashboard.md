@@ -1,5 +1,9 @@
 <h1> Threefold Dashboard: Create an Account and Transfer TFT</h1>
 
+<div class="youtubeVideoWrapper">
+<iframe title="Create an Account on ThreeFold Dashboard" width="560" height="315" src="https://www.youtube-nocookie.com/embed/t9rAZAPAWbM" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
+
 <h2>Table of Contents</h2>
 
 - [Threefold Dashboard: Create Account and Transfer TFT](#threefold-dashboard-create-account-and-transfer-tft)
