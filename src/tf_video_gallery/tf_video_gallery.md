@@ -113,6 +113,10 @@ Feel free to ask questions if you have any!
   - [How to Recover your ThreeFold Connect Account](#how-to-recover-your-threefold-connect-account)
   - [How to Deploy a Full VM on the ThreeFold Playground](#how-to-deploy-a-full-vm-on-the-threefold-playground)
   - [ThreeFold Playground: Full VM, Umbrel, Nostr Relay \& Tailscale](#threefold-playground-full-vm-umbrel-nostr-relay--tailscale)
+- [JakubProgramming's Videos](#jakubprogrammings-videos)
+  - [Kubernetes on ThreeFold 1 Playground, initial setup \& Dashboard](#kubernetes-on-threefold-1-playground-initial-setup--dashboard)
+  - [Kubernetes on ThreeFold 2 Deployment of nginx](#kubernetes-on-threefold-2-deployment-of-nginx)
+  - [Kubernetes on ThreeFold 3 Replication \& Distribution on Multiple Nodes](#kubernetes-on-threefold-3-replication--distribution-on-multiple-nodes)
 
 ***
 
@@ -970,3 +974,36 @@ Date: 15 Mar 2023
 
 ***
 
+# JakubProgramming's Videos
+
+## Kubernetes on ThreeFold 1 Playground, initial setup & Dashboard
+
+<div class="youtubeVideoWrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BY9eEabPABA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+[Link to the video](https://youtu.be/BY9eEabPABA)
+
+Date: 7 Mar 2023
+
+## Kubernetes on ThreeFold 2 Deployment of nginx
+
+<div class="youtubeVideoWrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hw4wWuWhWH0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+[Link to the video](https://youtu.be/hw4wWuWhWH0)
+
+Date: 7 Mar 2023
+
+## Kubernetes on ThreeFold 3 Replication & Distribution on Multiple Nodes
+
+<div class="youtubeVideoWrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7LOiBOMA5PQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+[Link to the video](https://youtu.be/7LOiBOMA5PQ)
+
+Date: 15 Mar 2023
+
+***
