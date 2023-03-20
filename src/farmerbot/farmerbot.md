@@ -197,15 +197,15 @@ Power configuration
 ```
 ***
 ## Running the farmerbot
-Once the configuration is done you should create a *.env* file (next to the docker-compose file) with the following content:
+Once the configuration is done you should create a *.env* file (next to the docker-compose file) with the content below. Make sure to change the fields to what is required: you should fill in the mnemonic of your farm, choose the appropriate network and modify the relay and substrate values if need be. The example below is for qa net. For example for devnet you should modify the NETWORK to dev, the RELAY to wss://relay.dev.grid.tf:443 and SUBSTRATE to wss://tfchain.dev.grid.tf:443:
 ```
-MNEMONIC="<THE_MNEMONIC_OF_YOUR_FARM>"
+MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
 NETWORK=qa
 RELAY=wss://relay.qa.grid.tf:443
 SUBSTRATE=wss://tfchain.qa.grid.tf:443
 ```
 
-Please modify the fields to what is required: you should fill in the mnemonic of your farm, choose the appropriate network and modify the relay and substrate values if need be (test instead of dev if your farm is running on testnet, etc). Now to run the the farmerbot just run the following command:
+Now to run the the farmerbot just run the following command:
 ```
 docker compose up -d
 ```
