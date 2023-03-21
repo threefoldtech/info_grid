@@ -17,6 +17,7 @@ will open the browser
 ## Browse docs
 
 can be browsed on [Manual.grid.tf](https://manual.grid.tf/)
+> Staging version from development branch is available on [www2.Manual.grid.tf](https://www2.manual.grid.
 
 ## Contribute
 
