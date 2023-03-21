@@ -38,4 +38,4 @@ $ tf-grid cancel examplegateway
 3:37PM INF examplegateway canceled
 ```
 
-Check out Gateway FQDN commands [docs](https://github.com/threefoldtech/grid3_client_go/blob/development/docs/cli/gateway-fqdn.md) for more details.
+Check out Gateway FQDN commands [docs](https://github.com/threefoldtech/tf-grid-cli/blob/development/docs/gateway-fqdn.md) for more details.

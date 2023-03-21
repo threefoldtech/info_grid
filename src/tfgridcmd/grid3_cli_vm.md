@@ -17,4 +17,4 @@ $ tf-grid cancel examplevm
 3:37PM INF examplevm canceled
 ```
 
-Check out VM commands [docs](https://github.com/threefoldtech/grid3_client_go/blob/development/docs/cli/vm.md) for more details.
+Check out VM commands [docs](https://github.com/threefoldtech/tf-grid-cli/blob/development/docs/vm.md) for more details.
