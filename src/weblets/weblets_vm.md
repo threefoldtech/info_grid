@@ -1,5 +1,9 @@
 # Virtual Machine
 
+<div class="youtubeVideoWrapper">
+<iframe title="How to Deploy a Full VM on the ThreeFold Playground" width="560" height="315" src="https://www.youtube-nocookie.com/embed/MDSIBkcYdqg" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
+
 Deploy a new virtual machine on the Threefold Grid
 
 - Make sure you have an activated [profile](./weblets_profile_manager.md) 
