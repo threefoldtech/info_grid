@@ -46,7 +46,7 @@
     - [Deploy Multiple VMs](go/grid3_go_vms.md)
     - [Deploy Gateways](go/grid3_go_gateways.md)
     - [Deploy Kubernetes](go/grid3_go_kubernetes.md)
-- [CLI](tfgridcmd/grid3_cli_readme.md)
+- [TFGrid CLI](tfgridcmd/grid3_cli_readme.md)
     - [Installation](tfgridcmd/grid3_cli_installation.md)
     - [Login](tfgridcmd/grid3_cli_login.md)
     - [Deploy a VM](tfgridcmd/grid3_cli_vm.md)
