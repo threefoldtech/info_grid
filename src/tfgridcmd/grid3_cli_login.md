@@ -1,9 +1,9 @@
 ## Login
 
-Before interacting with Threefold Grid with `tf-grid` you should login with your mnemonics and specify the grid network:
+Before interacting with Threefold Grid with `tf-grid-cli` you should login with your mnemonics and specify the grid network:
 
 ```console
-$ tf-grid login
+$ tf-grid-cli login
 Please enter your mnemonics: <mnemonics>
 Please enter grid network (main,test): <grid-network>
 ```
