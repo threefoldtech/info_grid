@@ -26,8 +26,9 @@ Feel free to ask questions if you have any!
   - [The Curve of Life and Why Threefold](#the-curve-of-life-and-why-threefold)
   - [Threefold Nile Interviews](#threefold-nile-interviews)
 - [Weynand's From Zero to Hero Videos](#weynands-from-zero-to-hero-videos)
-  - [Caprover Deployment](#caprover-deployment)
-  - [Wordpress](#wordpress)
+  - [Zero to Hero: Caprover Deployment](#zero-to-hero-caprover-deployment)
+  - [Zero to Hero: Wordpress Deployment](#zero-to-hero-wordpress-deployment)
+  - [Zero to Hero: Nextcloud Deployment](#zero-to-hero-nextcloud-deployment)
 - [Threefold Community Calls](#threefold-community-calls)
   - [TFT Tokenomics + Regional Internet Model | ThreeFold November 2022 Community Call](#tft-tokenomics--regional-internet-model--threefold-november-2022-community-call)
   - [Mastodon + the Fediverse | ThreeFold November 2022 Community Call](#mastodon--the-fediverse--threefold-november-2022-community-call)
@@ -42,7 +43,7 @@ Feel free to ask questions if you have any!
   - [Session 4](#session-4)
   - [Session 5](#session-5)
   - [Session 6](#session-6)
-- [River Bottoms Videos](#river-bottoms-videos)
+- [River Bottoms' Videos](#river-bottoms-videos)
   - [Building a Threefold Farmer to Maximize Profits](#building-a-threefold-farmer-to-maximize-profits)
   - [Deploying DIY Threefold 3Node Crypto Miner Web 3.0 Server!](#deploying-diy-threefold-3node-crypto-miner-web-30-server)
   - [New TFGrid Version Released! How to Upgrade 3Node Server to 3.0.](#new-tfgrid-version-released-how-to-upgrade-3node-server-to-30)
@@ -155,7 +156,7 @@ Date: 2021
 ***
 
 # Weynand's From Zero to Hero Videos
-## Caprover Deployment
+## Zero to Hero: Caprover Deployment
 <div class="youtubeVideoWrapper">
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/677571452?h=84ac7ee4b0" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
 </div>
@@ -164,7 +165,7 @@ Date: 2021
 
 Date: Dec 2022
 
-## Wordpress
+## Zero to Hero: Wordpress Deployment
 
 <div class="youtubeVideoWrapper">
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/677571553?h=0f2077e365" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
@@ -173,6 +174,16 @@ Date: Dec 2022
 [Link to the video](https://forum.threefold.io/t/from-zero-to-hero-deploy-discourse-and-wordpress-in-under-10-5-minutes/2206)
 
 Date: Dec 2022
+
+## Zero to Hero: Nextcloud Deployment
+
+<div class="youtubeVideoWrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DIhfSRKAKHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+[Link to the video](https://youtu.be/DIhfSRKAKHw)
+
+Date: 21 Mar 2023
 
 ***
 
@@ -298,7 +309,7 @@ Date: Jan 2022
 
 ***
 
-# River Bottoms Videos
+# River Bottoms' Videos
 
 ## Building a Threefold Farmer to Maximize Profits
 
