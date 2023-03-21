@@ -4,7 +4,7 @@ first, make sure you have your [client](./grid3_javascript_loadclient.md) prepar
 
 ### Example code
 
-```
+```ts
 import { FilterOptions, K8SModel, KubernetesNodeModel, NetworkModel } from "../src";
 import { config, getClient } from "./client_loader";
 import { log } from "./utils";
@@ -19,16 +19,18 @@ async function main() {
     n.addAccess = true;
 
     const masterQueryOptions: FilterOptions = {
-        cru: 1,
+        cru: 2,
         mru: 2, // GB
-        sru: 10,
+        sru: 2,
+        availableFor: grid3.twinId,
         farmId: 1,
     };
 
     const workerQueryOptions: FilterOptions = {
-        cru: 2,
-        mru: 4, // GB
-        sru: 10,
+        cru: 1,
+        mru: 1, // GB
+        sru: 1,
+        availableFor: grid3.twinId,
         farmId: 1,
     };
 
@@ -37,9 +39,9 @@ async function main() {
     master.name = "master";
     master.node_id = +(await grid3.capacity.filterNodes(masterQueryOptions))[0].nodeId;
     master.cpu = 1;
-    master.memory = 1024 * 2;
+    master.memory = 1024;
     master.rootfs_size = 0;
-    master.disk_size = 8;
+    master.disk_size = 1;
     master.public_ip = false;
     master.planetary = true;
 
@@ -47,10 +49,10 @@ async function main() {
     const worker = new KubernetesNodeModel();
     worker.name = "worker";
     worker.node_id = +(await grid3.capacity.filterNodes(workerQueryOptions))[0].nodeId;
-    worker.cpu = 2;
-    worker.memory = 1024 * 4;
+    worker.cpu = 1;
+    worker.memory = 1024;
     worker.rootfs_size = 0;
-    worker.disk_size = 8;
+    worker.disk_size = 1;
     worker.public_ip = false;
     worker.planetary = true;
 
@@ -101,22 +103,22 @@ n.ip_range = "10.238.0.0/16";
 // create k8s node Object
 const master = new KubernetesNodeModel();
 master.name = "master";
-master.node_id = 4;
+master.node_id = +(await grid3.capacity.filterNodes(masterQueryOptions))[0].nodeId;
 master.cpu = 1;
-master.memory = 1024 * 2;
-master.rootfs_size = 1;
-master.disk_size = 8;
+master.memory = 1024;
+master.rootfs_size = 0;
+master.disk_size = 1;
 master.public_ip = false;
 master.planetary = true;
 
-// create k8s node Object
+ // create k8s node Object
 const worker = new KubernetesNodeModel();
 worker.name = "worker";
-worker.node_id = 4;
-worker.cpu = 2;
-worker.memory = 1024 * 4;
-worker.rootfs_size = 1;
-worker.disk_size = 8;
+worker.node_id = +(await grid3.capacity.filterNodes(workerQueryOptions))[0].nodeId;
+worker.cpu = 1;
+worker.memory = 1024;
+worker.rootfs_size = 0;
+worker.disk_size = 1;
 worker.public_ip = false;
 worker.planetary = true;
 
@@ -126,7 +128,7 @@ worker.planetary = true;
 
 Here we specify the cluster project name, cluster secret, network model to be used, master and workers nodes and sshkey to access them
 
-```typescript
+```ts
 // create k8s Object
 const k = new K8SModel();
 k.name = "testk8s";
@@ -136,32 +138,28 @@ k.masters = [master];
 k.workers = [worker];
 k.metadata = "{'testk8s': true}";
 k.description = "test deploying k8s via ts grid3 client";
-k.ssh_key =
-    "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDWlguBuvfQikkRJZXkLPei7Scvo/OULUEvjWVR4tCZ5V85P2F4SsSghxpRGixCNc7pNtgvdwJegK06Tn7SkV2jYJ9kBJh8PA06CPSz1mnpco4cgktiWx/R8xBvLGlyO0BwUuD3/WFjrc6fzH9E7Bpkel/xTnacx14w1bZAC1R35hz7BaHu1WrXsfxEd0VH7gpMPoQ4+l+H38ULPTiC+JcOKJOqVafgcc0sU7otXbgCa1Frr4QE5bwiMYhOlsRfRv/hf08jYsVo+RUO3wD12ylLWR7a7sJDkBBwgir8SwAvtRlT6k9ew9cDMQ7H8iWNCOg2xqoTLpVag6RN9kGzA5LGL+qHEcBr6gd2taFEy9+mt+TWuKp6reUeJfTu9RD1UgB0HpcdgTHtoUTISW7Mz4KNkouci2DJFngDWrLRxRoz81ZwfI2hjFY0PYDzF471K7Nwwt3qKYF1Js9a6VO38tMxSU4mTO83bt+dUFozgpw2Y0KKJGHDwU66i2MvTPg3EGs= ayoub@ayoub-Inspiron-3576";
-
+k.ssh_key = config.ssh_key;
 ```
 
 #### Deploying
 
 use `deploy` function to deploy the kubernetes project
 
-```typescript
+```ts
 const res = await grid3.k8s.deploy(k);
 log(res);
 ```
 
 #### Getting deployment information
 
-```typescript
+```ts
 const l = await grid3.k8s.getObj(k.name);
 log(l);
 ```
 
-
 #### Deleting deployment
 
-```typescript
+```ts
 const d = await grid3.k8s.delete({ name: k.name });
 log(d);
 ```
-

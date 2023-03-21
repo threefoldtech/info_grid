@@ -1,9 +1,9 @@
 
-
 ## Deploying multiple VMs
 
 ### Example code
-```
+
+```ts
 import { DiskModel, FilterOptions, MachineModel, MachinesModel, NetworkModel } from "../src";
 import { config, getClient } from "./client_loader";
 import { log } from "./utils";
@@ -19,13 +19,14 @@ async function main() {
     // create disk Object
     const disk1 = new DiskModel();
     disk1.name = "newDisk1";
-    disk1.size = 10;
+    disk1.size = 1;
     disk1.mountpoint = "/newDisk1";
 
     const vmQueryOptions: FilterOptions = {
         cru: 1,
-        mru: 2, // GB
-        sru: 10,
+        mru: 1, // GB
+        sru: 1,
+        availableFor: grid3.twinId,
         farmId: 1,
     };
 
@@ -37,7 +38,7 @@ async function main() {
     vm1.public_ip = false;
     vm1.planetary = true;
     vm1.cpu = 1;
-    vm1.memory = 1024 * 2;
+    vm1.memory = 1024;
     vm1.rootfs_size = 0;
     vm1.flist = "https://hub.grid.tf/tf-official-apps/base:latest.flist";
     vm1.entrypoint = "/sbin/zinit init";
@@ -48,7 +49,7 @@ async function main() {
     // create disk Object
     const disk2 = new DiskModel();
     disk2.name = "newDisk2";
-    disk2.size = 10;
+    disk2.size = 1;
     disk2.mountpoint = "/newDisk2";
 
     // create another vm node Object
@@ -59,7 +60,7 @@ async function main() {
     vm2.public_ip = false;
     vm2.planetary = true;
     vm2.cpu = 1;
-    vm2.memory = 1024 * 2;
+    vm2.memory = 1024;
     vm2.rootfs_size = 0;
     vm2.flist = "https://hub.grid.tf/tf-official-apps/base:latest.flist";
     vm2.entrypoint = "/sbin/zinit init";
@@ -93,4 +94,4 @@ async function main() {
 main();
 ```
 
-It's similiar to the previous section of [deploying a single VM](../javascript/grid3_javascript_vm.md), but just adds more vm objects to vms collection. 
+It's similiar to the previous section of [deploying a single VM](../javascript/grid3_javascript_vm.md), but just adds more vm objects to vms collection.

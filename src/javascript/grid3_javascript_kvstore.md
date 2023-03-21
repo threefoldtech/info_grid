@@ -2,18 +2,13 @@ first, make sure you have your [client](./grid3_javascript_loadclient.md) prepar
 
 ## Using tfchain KVStore
 
-As part of the tfchain, we support a keyvalue store module that can be used for any value within `2KB` range. practically it's used to save the user configurations state, so it can be built up again on any machine, given they used the same mnemonics and same secret. 
+As part of the tfchain, we support a keyvalue store module that can be used for any value within `2KB` range. practically it's used to save the user configurations state, so it can be built up again on any machine, given they used the same mnemonics and same secret.
 
 ### Example code
-```
-import "reflect-metadata";
 
+```ts
 import { getClient } from "./client_loader";
-
-const exampleObj = {
-    key1: "value1",
-    key2: 2,
-};
+import { log } from "./utils";
 
 /*
 KVStore example usage:
@@ -30,51 +25,53 @@ async function main() {
 
     // set key
     const key = "hamada";
+    const exampleObj = {
+        key1: "value1",
+        key2: 2,
+    };
+    // set key
     await db.set({ key, value: JSON.stringify(exampleObj) });
 
     // list all the keys
     const keys = await db.list();
-    console.log(keys);
+    log(keys);
 
     // get the key
     const data = await db.get({ key });
-    console.log(JSON.parse(data.toString()));
+    log(JSON.parse(data));
 
-    // // remove the key
-    // await db.remove({ key });
+    // remove the key
+    await db.remove({ key });
 
-    // disconnect
     await gridClient.disconnect();
 }
 
 main();
-```
 
+```
 
 #### setting values
 
 `db.set` is used to set key to any value `serialized as string`
 
-```typescript
+```ts
 await db.set({ key, value: JSON.stringify(exampleObj) });
 ```
-
 
 #### getting key
 
 `db.get` is used to get a specific key
 
-```typescript
+```ts
 const data = await db.get({ key });
 log(JSON.parse(data));
 ```
-
 
 #### listing keys
 
 `db.list` is used to list all the keys.
 
-```typescript
+```ts
 const keys = await db.list();
 log(keys);
 ```
@@ -83,7 +80,6 @@ log(keys);
 
 `db.remove` is used to delete a specific key.
 
-```typescript
+```ts
 await db.remove({ key });
 ```
-
