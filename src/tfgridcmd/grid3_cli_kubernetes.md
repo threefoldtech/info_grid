@@ -17,4 +17,4 @@ $ tf-grid cancel examplekube
 3:37PM INF examplekube canceled
 ```
 
-Check out Kubernetes commands [docs](https://github.com/threefoldtech/grid3_client_go/blob/development/docs/cli/kubernetes.md) for more details.
+Check out Kubernetes commands [docs](https://github.com/threefoldtech/tf-grid-cli/blob/development/docs/kubernetes.md) for more details.
