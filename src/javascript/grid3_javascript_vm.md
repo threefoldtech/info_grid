@@ -3,49 +3,56 @@
 
 ### Example code
 
-```
-import { DiskModel, MachineModel, MachinesModel, NetworkModel } from "../src";
+```ts
+import { DiskModel, FilterOptions, MachineModel, MachinesModel, NetworkModel } from "../src";
 import { config, getClient } from "./client_loader";
 import { log } from "./utils";
 
-// create network Object
-const n = new NetworkModel();
-n.name = "wedtest";
-n.ip_range = "10.249.0.0/16";
-
-// create disk Object
-const disk = new DiskModel();
-disk.name = "wedDisk";
-disk.size = 8;
-disk.mountpoint = "/testdisk";
-
-// create vm node Object
-const vm = new MachineModel();
-vm.name = "testvm";
-vm.node_id = 17;
-vm.disks = [disk];
-vm.public_ip = false;
-vm.planetary = true;
-vm.cpu = 1;
-vm.memory = 1024 * 2;
-vm.rootfs_size = 0;
-vm.flist = "https://hub.grid.tf/tf-official-apps/base:latest.flist";
-vm.entrypoint = "/sbin/zinit init";
-vm.env = {
-    SSH_KEY: config.ssh_key,
-};
-// vm.ip = "10.249.2.5" // create a machine with specific private ip
-
-// create VMs Object
-const vms = new MachinesModel();
-vms.name = "newVMS";
-vms.network = n;
-vms.machines = [vm];
-vms.metadata = "{'testVMs': true}";
-vms.description = "test deploying VMs via ts grid3 client";
-
 async function main() {
     const grid3 = await getClient();
+
+    // create network Object
+    const n = new NetworkModel();
+    n.name = "dynamictest";
+    n.ip_range = "10.249.0.0/16";
+
+    // create disk Object
+    const disk = new DiskModel();
+    disk.name = "dynamicDisk";
+    disk.size = 8;
+    disk.mountpoint = "/testdisk";
+
+    const vmQueryOptions: FilterOptions = {
+        cru: 1,
+        mru: 1, // GB
+        sru: 1,
+        availableFor: grid3.twinId,
+        country: "Belgium",
+    };
+
+    // create vm node Object
+    const vm = new MachineModel();
+    vm.name = "testvm";
+    vm.node_id = +(await grid3.capacity.filterNodes(vmQueryOptions))[0].nodeId; // TODO: allow random choice
+    vm.disks = [disk];
+    vm.public_ip = false;
+    vm.planetary = true;
+    vm.cpu = 1;
+    vm.memory = 1024;
+    vm.rootfs_size = 0;
+    vm.flist = "https://hub.grid.tf/tf-official-apps/base:latest.flist";
+    vm.entrypoint = "/sbin/zinit init";
+    vm.env = {
+        SSH_KEY: config.ssh_key,
+    };
+
+    // create VMs Object
+    const vms = new MachinesModel();
+    vms.name = "dynamicVMS";
+    vms.network = n;
+    vms.machines = [vm];
+    vms.metadata = "{'testVMs': true}";
+    vms.description = "test deploying VMs via ts grid3 client";
 
     // deploy vms
     const res = await grid3.machines.deploy(vms);
@@ -67,53 +74,53 @@ main();
 
 ### Detailed explanation
 
-
 #### building network
 
-```typescript
+```ts
 // create network Object
 const n = new NetworkModel();
-n.name = "montest";
-n.ip_range = "10.232.0.0/16";
+n.name = "dynamictest";
+n.ip_range = "10.249.0.0/16";
 ```
-Here we prepare the network model that is going to be used by specifying a name to our network and the range it will be spanning over
 
+Here we prepare the network model that is going to be used by specifying a name to our network and the range it will be spanning over
 
 ### building the disk model
 
-```typescript
+```ts
 // create disk Object
 const disk = new DiskModel();
-disk.name = "newDisk";
-disk.size = 10;
-disk.mountpoint = "/newDisk";
+disk.name = "dynamicDisk";
+disk.size = 8;
+disk.mountpoint = "/testdisk";
 ```
+
 here we create the disk model specifying its name, size in GB and where it will be mounted eventually
 
 ### building the VM
 
-```typescript
+```ts
 // create vm node Object
 const vm = new MachineModel();
 vm.name = "testvm";
-vm.node_id = 4;
+vm.node_id = +(await grid3.capacity.filterNodes(vmQueryOptions))[0].nodeId; // TODO: allow random choice
 vm.disks = [disk];
 vm.public_ip = false;
 vm.planetary = true;
 vm.cpu = 1;
-vm.memory = 1024 * 2;
-vm.rootfs_size = 1;
+vm.memory = 1024;
+vm.rootfs_size = 0;
 vm.flist = "https://hub.grid.tf/tf-official-apps/base:latest.flist";
 vm.entrypoint = "/sbin/zinit init";
 vm.env = {
-    SSH_KEY:
-        "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDWlguBuvfQikkRJZXkLPei7Scvo/OULUEvjWVR4tCZ5V85P2F4SsSghxpRGixCNc7pNtgvdwJegK06Tn7SkV2jYJ9kBJh8PA06CPSz1mnpco4cgktiWx/R8xBvLGlyO0BwUuD3/WFjrc6fzH9E7Bpkel/xTnacx14w1bZAC1R35hz7BaHu1WrXsfxEd0VH7gpMPoQ4+l+H38ULPTiC+JcOKJOqVafgcc0sU7otXbgCa1Frr4QE5bwiMYhOlsRfRv/hf08jYsVo+RUO3wD12ylLWR7a7sJDkBBwgir8SwAvtRlT6k9ew9cDMQ7H8iWNCOg2xqoTLpVag6RN9kGzA5LGL+qHEcBr6gd2taFEy9+mt+TWuKp6reUeJfTu9RD1UgB0HpcdgTHtoUTISW7Mz4KNkouci2DJFngDWrLRxRoz81ZwfI2hjFY0PYDzF471K7Nwwt3qKYF1Js9a6VO38tMxSU4mTO83bt+dUFozgpw2Y0KKJGHDwU66i2MvTPg3EGs= ayoub@ayoub-Inspiron-3576",
+    SSH_KEY: config.ssh_key,
 };
-
 ```
+
 Now we go to the VM model, that will be used to build our `zmachine` object
 
 We need to specify its
+
 - name
 - node_id: where it will get deployed
 - disks: disks model collection
@@ -125,25 +132,23 @@ We need to specify its
 - public ip: if we want to have a public ip attached to the VM
 - planetary: to enable planetary network on VM
 
-
 ### building VMs collection
 
-
-```typescript
+```ts
 // create VMs Object
 const vms = new MachinesModel();
-vms.name = "monVMS";
+vms.name = "dynamicVMS";
 vms.network = n;
 vms.machines = [vm];
 vms.metadata = "{'testVMs': true}";
 vms.description = "test deploying VMs via ts grid3 client";
 ```
-Here it's quite simple we can add one or more VM to the `machines` property to have them deployed as part of our project
 
+Here it's quite simple we can add one or more VM to the `machines` property to have them deployed as part of our project
 
 ### deployment
 
-```typescript
+```ts
 // deploy vms
 const res = await grid3.machines.deploy(vms);
 log(res);
@@ -152,18 +157,19 @@ log(res);
 ### getting deployment information
 
 can do so based on the name you gave to the `vms` collection
-```typescript
+
+```ts
 // get the deployment
 const l = await grid3.machines.getObj(vms.name);
 log(l);
 ```
 
-
 ### deleting a deployment
 
-```typescript
+```ts
 // delete
 const d = await grid3.machines.delete({ name: vms.name });
 log(d);
 ```
+
 In the underlying layer we cancel the contracts that were created on the chain and as a result all of the workloads tied to his project will get deleted.
