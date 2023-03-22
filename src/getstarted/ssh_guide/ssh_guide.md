@@ -1,6 +1,6 @@
 <h1> SSH Remote Connection</h1>
 
-In this Threefold Guide, we explore how to SSH into a 3node on Linux, MAC and Windows with either an IPv4 or a Planetary Network Connection.
+In this Threefold Guide, we explore how to SSH into a 3node on Linux, MAC and Windows with either an IPv4 or a Planetary Network connection.
 
 ***
 
