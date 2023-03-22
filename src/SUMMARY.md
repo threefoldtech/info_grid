@@ -8,6 +8,7 @@
     - [Threefold Dashboard](getstarted/TF_Dashboard/TF_Dashboard.md)
     - [Tutorial: Find Node](dashboard/explorer/explorer_find_capacity.md)
     - [Tutorial: Deploy Your First VM](weblets/weblets_vm.md)
+    - [SSH Remote Connection](getstarted/ssh_guide/ssh_guide.md)
 - [Terraform](terraform/terraform_readme.md)
     - [Installing Terraform](terraform/terraform_install.md)
     - [Terraform Basics](terraform/terraform_basics.md)

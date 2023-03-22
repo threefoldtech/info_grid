@@ -32,9 +32,9 @@ There are 3 main steps to run the Farmerbot on your 3node Threefold farm.
 * Move Your Farm to QA Net
 * Set the Farmerbot
 
-Note that this guide is for QA Net.
+Note that this guide is for QA Net. This is a testing environment and farmers do not receive farming rewards (TFT) when deploying on this network. We invite farmers to try this new feature if they want to help test the farmerbot. We will announce when the farmerbot is ready for the Test Net and the Main Net, where farming rewards are distributed.
 
-We will update the guide when this will be available for other networks. The steps should be very similar.
+This guide will be updated when the farmerbot will be available on other networks. The steps should be very similar.
 
 ***
 # How to Prepare Your Farm for the Farmerbot with WOL
@@ -105,7 +105,7 @@ You can also download the bootstrap by using those URLs:
 * LKRN
   * `https://bootstrap.grid.tf/krn/qa/<FarmNumber>`
 
-Once you have your new bootstrap image for QA Net, simply shut down your 3node, insert the new bootstrap image and reboot the 3node.
+Once you have your new bootstrap image for QA Net, [wipe your disks](https://manual.grid.tf/TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.html#4-wipe-all-the-disks), insert the new bootstrap image and reboot the 3node.
 
 ***
 # How to Set the Farmerbot
