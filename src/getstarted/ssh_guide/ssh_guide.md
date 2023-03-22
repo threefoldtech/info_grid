@@ -41,8 +41,6 @@ The main steps for the whole process are the following:
 
 ## Linux
 
-***
-
 ### SSH into a 3node with IPv4 on Linux
 
 ***
@@ -140,8 +138,6 @@ The main steps for the whole process are the following:
 ***
 
 ## MAC
-
-***
 
 ### SSH into a 3node with IPv4 on MAC
 
@@ -246,8 +242,6 @@ The main steps for the whole process are the following:
 ***
 
 ## Windows
-
-***
 
 ### SSH into a 3node with IPv4 on Windows
 
