@@ -41,7 +41,11 @@ The main steps for the whole process are the following:
 
 ## Linux
 
+***
+
 ### SSH into a 3node with IPv4 on Linux
+
+***
 
 * To create the SSH key pair, write in the terminal 
   * ```
@@ -75,6 +79,8 @@ The main steps for the whole process are the following:
 ***
 
 ### SSH into a 3node with the Planetary Network on Linux
+
+***
 
 * To download and connect to the Threefold Planetary Network Connector
   * Download the [.deb file](https://github.com/threefoldtech/planetary_network/releases/tag/v0.3-rc1-Linux)
@@ -118,7 +124,11 @@ The main steps for the whole process are the following:
 
 ## MAC
 
+***
+
 ### SSH into a 3node with IPv4 on MAC
+
+***
 
 * To create the SSH key pair, in the terminal write
     * ```
@@ -157,6 +167,8 @@ The main steps for the whole process are the following:
 ***
 
 ### SSH into a 3node with the Planetary Network on MAC
+
+***
 
 * To download and connect to the Threefold Planetary Network Connector
   * Download the [.dmg file](https://github.com/threefoldtech/planetary_network/releases/tag/v0.3-rc1-MacOS)
@@ -201,7 +213,11 @@ The main steps for the whole process are the following:
 
 ## Windows
 
+***
+
 ### SSH into a 3node with IPv4 on Windows
+
+***
 
 * To download OpenSSH client and OpenSSH server
   * Search `Settings`
@@ -245,6 +261,8 @@ The main steps for the whole process are the following:
 ***
 
 ### SSH into a 3node with the Planetary Network on Windows
+
+***
 
 * To download and connect to the Threefold Planetary Network Connector
   * Download the [.msi file](https://github.com/threefoldtech/planetary_network/releases/tag/v0.3-rc1-Windows10)
