@@ -49,7 +49,7 @@ The main steps for the whole process are the following:
 
 * To create the SSH key pair, write in the terminal 
   * ```
-    ssh-keygen
+    sudo ssh-keygen
     ```
     * Save in default location
     * Write a password (optional)
@@ -86,14 +86,13 @@ The main steps for the whole process are the following:
   * Download the [.deb file](https://github.com/threefoldtech/planetary_network/releases/tag/v0.3-rc1-Linux)
   * Right-click and select `Open with other application`
     * Select `Software Install`
-  * Search and open in `Show applications`
-    * Threefold Planetary Connector
+  * Search the `Threefold Planetary Connector` and open it
   * Disconnect your VPN if you have one
   * In the connector, click `Connect`
 * Create an SSH Key Pair
   * To create the SSH key pair, in the terminal write
     * ```
-      ssh-keygen
+      sudo ssh-keygen
       ```
       * Save in default location
       * Write a password (optional)
@@ -181,7 +180,7 @@ The main steps for the whole process are the following:
 * To download and connect to the Threefold Planetary Network Connector
   * Download the [.dmg file](https://github.com/threefoldtech/planetary_network/releases/tag/v0.3-rc1-MacOS)
   * Run the dmg installer
-  * Search in `Applications` and open the Threefold Planetary Connector
+  * Search the Threefold Planetary Connector in `Applications` and open it
   * Disconnect your VPN if you have one
   * In the connector, click `Connect`
 * To create the SSH key pair, in the terminal write
@@ -283,7 +282,7 @@ The main steps for the whole process are the following:
 
 * To download and connect to the Threefold Planetary Network Connector
   * Download the [.msi file](https://github.com/threefoldtech/planetary_network/releases/tag/v0.3-rc1-Windows10)
-  * Search and open the `Threefold Planetary Connector`
+  * Search the `Threefold Planetary Connector` and open it
   * Disconnect your VPN if you have one
   * In the connector, click `Connect`
 * To download OpenSSH client and OpenSSH server
