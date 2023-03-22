@@ -63,17 +63,26 @@ The main steps for the whole process are the following:
     * Paste the seed phrase
     * Paste the SSH public key
     * You might need to refresh the page for the profile to be accessible
-  * Deploy a full VM
-  * After deployment
-    * Copy the IPv4 address
-    * Open the terminal and write (adjust your address)
+  * Deploy a Full VM on the TF Grid
+    * Choose the parameters you want
+      * Minimum CPU: 1 vCore
+      * Minimum Memory: 512 Mb
+      * Minimum Dis Size: 15 Gb
+    * Select IPv4 in `Network`
+    * In `Node Selection`
+      * Select `Capacity Filter`
+      * Select `Apply Filters and Suggest Nodes`
+    * Click `Deploy`
+    * Once the 3node is deployed
+      * Copy the IPv4 address
+      * Open the terminal, write (adjust your address)
         * ```
           ssh root@IPv4_address
           ```
-        * To confirm, write
-          *   ```
-              yes
-              ```
+            * To confirm, write
+              *   ```
+                  yes
+                  ```
 * You now have an SSH connection on Linux with IPv4
 
 ***
@@ -107,16 +116,25 @@ The main steps for the whole process are the following:
     * Paste the SSH public key
     * You might need to refresh the page for the profile to be accessible
   * Deploy a Full VM on the TF Grid
-    * Select Planetary Network in Network
-    * Copy the Planetary Network address
-    * Open the terminal and write (adjust your address)
-      * ```
-        ssh root@planetary_network_address
-        ```
-        * To confirm, write
-          *   ```
-              yes
-              ```
+    * Choose the parameters you want
+      * Minimum CPU: 1 vCore
+      * Minimum Memory: 512 Mb
+      * Minimum Dis Size: 15 Gb
+    * Select Planetary Network in `Network`
+    * In `Node Selection`
+      * Select `Capacity Filter`
+      * Select `Apply Filters and Suggest Nodes`
+    * Click `Deploy`
+    * Once the 3node is deployed
+      * Copy the Planetary Network address
+      * Open the terminal, write (adjust your address)
+        * ```
+          ssh root@planetary_network_address
+          ```
+            * To confirm, write
+              *   ```
+                  yes
+                  ```
 * You now have an SSH connection on Linux with the Planetary Network
 
 ***
@@ -256,22 +274,30 @@ The main steps for the whole process are the following:
   ```
     * Copy the output
 * To deploy, go to the [Threefold Playground](https://play.grid.tf/)
-  * In the Profile Manager settings
+  * In the profile manager settings
     * Paste the seed phrase
     * Paste the SSH public key
     * You might need to refresh the page for the profile to be accessible
   * Deploy a Full VM on the TF Grid
-    * Select Planetary Network in Network
-    * After deployment
+    * Choose the parameters you want
+      * Minimum CPU: 1 vCore
+      * Minimum Memory: 512 Mb
+      * Minimum Dis Size: 15 Gb
+    * Select IPv4 in `Network`
+    * In `Node Selection`
+      * Select `Capacity Filter`
+      * Select `Apply Filters and Suggest Nodes`
+    * Click `Deploy`
+    * Once the 3node is deployed
       * Copy the IPv4 address
-      * Open the command prompt and write (adjust your address)
-        ```
-        ssh root@IPv4_address
-        ```
-        * To confirm, write
-          *   ```
-              yes
-              ```
+      * Open the terminal, write (adjust your address)
+        * ```
+          ssh root@IPv4_address
+          ```
+            * To confirm, write
+              *   ```
+                  yes
+                  ```
 * You now have an SSH connection on Window with IPv4
 
 ***
@@ -306,22 +332,30 @@ The main steps for the whole process are the following:
   ```
     * Copy the output
 * To deploy, go to the [Threefold Playground](https://play.grid.tf/)
-  * In the Profile Manager settings
+  * In the profile manager settings
     * Paste the seed phrase
     * Paste the SSH public key
     * You might need to refresh the page for the profile to be accessible
   * Deploy a Full VM on the TF Grid
-    * Select Planetary Network in Network
-    * After deployment
+    * Choose the parameters you want
+      * Minimum CPU: 1 vCore
+      * Minimum Memory: 512 Mb
+      * Minimum Dis Size: 15 Gb
+    * Select Planetary Network in `Network`
+    * In `Node Selection`
+      * Select `Capacity Filter`
+      * Select `Apply Filters and Suggest Nodes`
+    * Click `Deploy`
+    * Once the 3node is deployed
       * Copy the Planetary Network address
-      * Open command prompt and write (adjust your address)
-        ```
-        ssh root@planetary_network_address
-        ```
-        * To confirm, write
-          *   ```
-              yes
-              ```
+      * Open the terminal, write (adjust your address)
+        * ```
+          ssh root@planetary_network_address
+          ```
+            * To confirm, write
+              *   ```
+                  yes
+                  ```
 * You now have an SSH connection on Window with the Planetary Network
 
 ***
