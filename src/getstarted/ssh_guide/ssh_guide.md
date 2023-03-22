@@ -35,6 +35,8 @@ The main steps for the whole process are the following:
 * SSH into the 3node
   * For the Planetary Network, download the Planetary Network Connector
 
+***
+
 # Step-by-Step Process
 
 ## Linux
@@ -110,7 +112,7 @@ The main steps for the whole process are the following:
           *   ```
               yes
               ```
-* You now have an SSH connection with the Planetary Network
+* You now have an SSH connection on Linux with the Planetary Network
 
 ***
 
@@ -193,7 +195,7 @@ The main steps for the whole process are the following:
             *   ```
                 yes
                 ```
-* You now have an SSH connection with the Planetary Network
+* You now have an SSH connection on MAC with the Planetary Network
 
 ***
 
