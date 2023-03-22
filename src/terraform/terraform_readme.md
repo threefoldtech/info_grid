@@ -14,5 +14,4 @@ Threefold loves Open Source! In v3.0 we are integrating one of the most popular 
 
 ## What is not supported.
 
-- we don't support updates/upgrades, if you want a change you need to destroy a deployment & re-create
-
+- we don't support updates/upgrades, if you want a change you need to destroy a deployment & re-create your deployment this in case you want to change the current running instances properties or change the node, but adding a vm to an existing deployment this shouldn't affect other running vm and same if we need to decommission a vm from a deployment this also shouldn't affect the others

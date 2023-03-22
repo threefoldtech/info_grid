@@ -15,11 +15,11 @@ Here’s a link to CapRover's open source repository on [GitHub](https://github.
 - Docker Swarm under the hood for containerization and clustering.
 - Nginx (fully customizable template) under the hood for load-balancing.
 - Let’s Encrypt under the hood for free SSL (HTTPS).
-- __One-Click Apps__ : Deploying one-click apps is a matter of seconds! MongoDB, Parse, MySQL, WordPress, Postgres and many more.
-- __Fully Customizable__ : Optionally fully customizable nginx config allowing you to enable HTTP2, specific caching logic, custom SSL certs and etc.
-- __Cluster Ready__ : Attach more nodes and create a cluster in seconds! CapRover automatically configures nginx to load balance.
-- __Increase Productivity__ : Focus on your apps ! Not the bells and whistles, just to run your apps.
-- __Easy Deploy__ : Many ways to deploy. You can upload your source from dashboard, use command line caprover deploy, use webhooks and build upon git push
+- **One-Click Apps** : Deploying one-click apps is a matter of seconds! MongoDB, Parse, MySQL, WordPress, Postgres and many more.
+- **Fully Customizable** : Optionally fully customizable nginx config allowing you to enable HTTP2, specific caching logic, custom SSL certs and etc.
+- **Cluster Ready** : Attach more nodes and create a cluster in seconds! CapRover automatically configures nginx to load balance.
+- **Increase Productivity** : Focus on your apps ! Not the bells and whistles, just to run your apps.
+- **Easy Deploy** : Many ways to deploy. You can upload your source from dashboard, use command line caprover deploy, use webhooks and build upon git push
 
 ### Pre-requisites
 
@@ -57,7 +57,7 @@ terraform {
 }
 
 provider "grid" {
-    mnemonics = "<your-mnemonics>" 
+    mnemonics = "<your-mnemonics>"
     network = "dev" # or test to use testnet
 }
 
@@ -112,6 +112,7 @@ resource "grid_deployment" "d0" {
     # CAPROVER_ROOT_DOMAIN is optional env var, by providing it you can access the captain dashboard after vm initilization by visiting http://captain.your-root-domain
     # otherwise you will have to add the root domain manually from the captain dashboard by visiting http://{publicip}:3000 to access the dashboard
       "CAPROVER_ROOT_DOMAIN" = "roverapps.grid.tf"
+   }
   }
 }
 
@@ -129,21 +130,21 @@ output "vm_public_ip" {
 }
 ```
 
-  ```bash
-  cd freeflow_caprover/terraform/leader/
-  vim main.tf
-  ```
+```bash
+cd freeflow_caprover/terraform/leader/
+vim main.tf
+```
 
-  - In `provider` Block, add your `mnemonics` and specify the grid network to deploy on.
-  - In `resource` Block, update the disks size, memory size, and cores number to fit your needs or leave as it is for testing.
-  - In the `PUBLIC_KEY` env var value put your ssh public key .
-  - In the `CAPROVER_ROOT_DOMAIN` env var value put your root domain, this is optional and you can add it later from the dashboard put it will save you the extra step and allow you to access your dashboard using your domain name directly after the deployment.
+- In `provider` Block, add your `mnemonics` and specify the grid network to deploy on.
+- In `resource` Block, update the disks size, memory size, and cores number to fit your needs or leave as it is for testing.
+- In the `PUBLIC_KEY` env var value put your ssh public key .
+- In the `CAPROVER_ROOT_DOMAIN` env var value put your root domain, this is optional and you can add it later from the dashboard put it will save you the extra step and allow you to access your dashboard using your domain name directly after the deployment.
 
 - save the file, and execute the following commands:
 
   ```bash
   terraform init
-  terraform apply -parallelism=1
+  terraform apply
   ```
 
 - wait till you see `apply complete`, and note the VM public ip in the final output.
@@ -346,7 +347,6 @@ This information is required in the next section to run CapRover in cluster mode
 
 example worker terraform file
 
-
 ```
 terraform {
   required_providers {
@@ -358,7 +358,7 @@ terraform {
 
 provider "grid" {
     mnemonics = "<your-mnemonics>"
-    network = "dev" # or test to use testnet 
+    network = "dev" # or test to use testnet
 }
 
 resource "grid_network" "net2" {
@@ -397,7 +397,7 @@ resource "grid_deployment" "d2" {
     }
     # SWM_NODE_MODE env var is required, should be "leader" or "worker"
     # leader: check the wroker terrafrom file example.
-    # worker: will run sshd, containerd, dockerd as zinit services plus caprover service in orker mode which only join the swarm cluster. 
+    # worker: will run sshd, containerd, dockerd as zinit services plus caprover service in orker mode which only join the swarm cluster.
 
       "SWM_NODE_MODE" = "worker"
     # from the leader node (the one running caprover) run `docker swarm join-token worker`
@@ -423,22 +423,22 @@ output "vm_public_ip" {
 }
 ```
 
-  ```bash
-  cd freeflow_caprover/terraform/worker/
-  vim main.tf
-  ```
+```bash
+cd freeflow_caprover/terraform/worker/
+vim main.tf
+```
 
-  - In `provider` Block, add your `mnemonics` and specify the grid network to deploy on.
-  - In `resource` Block, update the disks size, memory size, and cores number to fit your needs or leave as it is for testing.
-  - In the `PUBLIC_KEY` env var value put your ssh public key.
-  - In the `SWMTKN` env var value put the previously generated token.
-  - In the `LEADER_PUBLIC_IP` env var value put the leader node public ip.
+- In `provider` Block, add your `mnemonics` and specify the grid network to deploy on.
+- In `resource` Block, update the disks size, memory size, and cores number to fit your needs or leave as it is for testing.
+- In the `PUBLIC_KEY` env var value put your ssh public key.
+- In the `SWMTKN` env var value put the previously generated token.
+- In the `LEADER_PUBLIC_IP` env var value put the leader node public ip.
 
 - Save the file, and execute the following commands:
 
   ```bash
   terraform init
-  terraform apply -parallelism=1
+  terraform apply
   ```
 
 - Wait till you see `apply complete`, and note the VM public ip in the final output.
