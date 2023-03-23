@@ -248,9 +248,9 @@ The main steps for the whole process are the following:
 ***
 
 * To download OpenSSH client and OpenSSH server
-  * Search `Settings`
-  * Open `Apps & Features`
-  * Open `Optional Features`
+  * Open the `Settings` and select `Apps`
+  * Click `Apps & Features`
+  * Click `Optional Features`
   * Verifiy if OpenSSH Client and OpenSSH Server are there
     * If not
       * Click `Add a feature`
@@ -302,13 +302,14 @@ The main steps for the whole process are the following:
 
 * To download and connect to the Threefold Planetary Network Connector
   * Download the [.msi file](https://github.com/threefoldtech/planetary_network/releases/tag/v0.3-rc1-Windows10)
-  * Search the `Threefold Planetary Connector` and open it
+  * Search the `Threefold Planetary Connector`
+    * Right-click and select `Install`
   * Disconnect your VPN if you have one
-  * In the connector, click `Connect`
+  * Open the TF connector and click `Connect`
 * To download OpenSSH client and OpenSSH server
-  * Search `Settings`
-  * Open `Apps & Features`
-  * Open `Optional Features`
+  * Open the `Settings` and select `Apps`
+  * Click `Apps & Features`
+  * Click `Optional Features`
   * Verifiy if OpenSSH Client and OpenSSH Server are there
     * If not
       * Click `Add a feature`
