@@ -55,7 +55,7 @@ The main steps for the whole process are the following:
     ```
     * Save in default location
     * Write a password (optional)
-* To see the public key, write
+* To see the public key, write in the terminal
   * ```
     sudo cat ~/.ssh/id_rsa.pub
     ```
@@ -101,13 +101,13 @@ The main steps for the whole process are the following:
   * Disconnect your VPN if you have one
   * In the connector, click `Connect`
 * Create an SSH Key Pair
-  * To create the SSH key pair, in the terminal write
+  * To create the SSH key pair, write in the terminal
     * ```
       sudo ssh-keygen
       ```
       * Save in default location
       * Write a password (optional)
-* To copy the public key, write
+* To see the public key, write in the terminal
   * ```
     sudo cat ~/.ssh/id_rsa.pub
     ```
@@ -153,11 +153,11 @@ The main steps for the whole process are the following:
       ```
       * Save in default location
       * Write a password (optional)
-* To add the private key, write
+* To add the private key, write in the terminal
     * ```
       sudo ssh-add ~/.ssh/id_rsa
        ```
-* To copy the public key, write
+* To see the public key, write in the terminal
     * ```
       sudo cat ~/.ssh/id_rsa.pub
       ```
@@ -201,7 +201,7 @@ The main steps for the whole process are the following:
   * Search the Threefold Planetary Connector in `Applications` and open it
   * Disconnect your VPN if you have one
   * In the connector, click `Connect`
-* To create the SSH key pair, in the terminal write
+* To create the SSH key pair, write in the terminal 
     * ```
       sudo ssh-keygen
       ```
@@ -211,7 +211,7 @@ The main steps for the whole process are the following:
     * ```
       sudo ssh-add ~/.ssh/id_rsa
        ```
-* To copy the public key, write
+* To see the public key, write in the terminal
     * ```
       sudo cat ~/.ssh/id_rsa.pub
       ```
@@ -260,17 +260,17 @@ The main steps for the whole process are the following:
       * Click `Add a feature`
         * Search OpenSSH
         * Install OpenSSH Client and OpenSSH Server
-* To generate an SSH key pair, open the command prompt and write
+* To generate an SSH key pair, open the `Command Prompt` and write
   * ```
     ssh-keygen
     ```
     * Save in default location
     * Write a password (optional)
-* To copy your public key, write in the terminal
-  ```
-  cat ~/.ssh/id_rsa.pub
-  ```
-    * Copy the output
+* To see the public key, write in the `Command Prompt`
+  * ```
+    cat ~/.ssh/id_rsa.pub
+    ```
+  * Select and copy the public key when needed
 * To deploy, go to the [Threefold Playground](https://play.grid.tf/)
   * In the profile manager settings
     * Paste the seed phrase
@@ -288,7 +288,7 @@ The main steps for the whole process are the following:
     * Click `Deploy`
     * Once the 3node is deployed
       * Copy the IPv4 address
-      * Open the terminal, write (adjust your address)
+      * Open the `Command Prompt`, write (adjust your address)
         * ```
           ssh root@IPv4_address
           ```
@@ -319,17 +319,17 @@ The main steps for the whole process are the following:
       * Click `Add a feature`
         * Search OpenSSH
         * Install OpenSSH Client and OpenSSH Server
-* To generate an SSH key pair, open the command prompt and write
+* To generate an SSH key pair, open the `Command Prompt` and write
   * ```
     ssh-keygen
     ```
     * Save in default location
     * Write a password (optional)
-* To copy your public key, write in the terminal
-  ```
-  cat ~/.ssh/id_rsa.pub
-  ```
-    * Copy the output
+* To see the public key, write in the `Command Prompt`
+  * ```
+    cat ~/.ssh/id_rsa.pub
+    ```
+  * Select and copy the public key when needed
 * To deploy, go to the [Threefold Playground](https://play.grid.tf/)
   * In the profile manager settings
     * Paste the seed phrase
@@ -347,7 +347,7 @@ The main steps for the whole process are the following:
     * Click `Deploy`
     * Once the 3node is deployed
       * Copy the Planetary Network address
-      * Open the terminal, write (adjust your address)
+      * Open the `Command Prompt`, write (adjust your address)
         * ```
           ssh root@planetary_network_address
           ```
