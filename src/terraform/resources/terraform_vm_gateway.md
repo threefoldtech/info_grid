@@ -2,7 +2,7 @@
 
 # Terraform Web Gateway With VM
 
-## expose with prefix
+## Expose with prefix
 
 A complete list of gateway name workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/name_proxy.md).
 
@@ -80,7 +80,7 @@ Here
 - we created a grid domain resource `ashraf` to be deployed on gateway node `7` to end up with a domain `ashraf.ghent01.devnet.grid.tf`
 - we create a proxy for the gateway to send the traffic coming to `ashraf.ghent01.devnet.grid.tf` to the vm as a backend, we say `tls_passthrough is false` to let the gateway terminate the traffic, if you replcae it with `true` your backend service needs to be able to do the TLS termination
 
-## expose with fulldomain
+## Expose with fulldomain
 
 A complete list of gateway fqdn workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/fqdn_proxy.md).
 

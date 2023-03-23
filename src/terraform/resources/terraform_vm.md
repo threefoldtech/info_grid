@@ -87,7 +87,7 @@ output "vm2_ygg_ip" {
 - If the user decided to choose scheduler to find a node for him, then he will use the node returned from the scheduler as the example above
 - If not, the user can still specify the node directly if he wants
 
-### describing the overlay network for the project
+### Describing the overlay network for the project
 
 ```terraform
 resource "grid_network" "net1" {
@@ -99,9 +99,9 @@ resource "grid_network" "net1" {
 }
 ```
 
-We tell terraform we will have a network one one node `having the node ID returned from the scheduler` using the IP Range `10.1.0.0/16` and add wireguard access for this network
+We tell terraform we will have a network one node `having the node ID returned from the scheduler` using the IP Range `10.1.0.0/16` and add wireguard access for this network
 
-### describing the deployment
+### Describing the deployment
 
 ```terraform
 resource "grid_deployment" "d1" {
@@ -151,7 +151,7 @@ It's bit long for sure but let's try to dissect it a bit
 
 see [list of flists](../../manual3_iac/grid3_supported_flists.md)
 
-## remark multiple VMs
+## Remark multiple VMs
 
 in terraform you can define items of a list like the following
 
@@ -181,7 +181,7 @@ So to add a VM
 ```
 
 - We give it a name within our deployment `vm1`
-- `flist` is used to define the [flist](threefold:zos_fs) to run within the VM. Check the [supported flists](grid3_supported_flists)
+- `flist` is used to define the flist to run within the VM. Check the [list of flists](../../manual3_iac/grid3_supported_flists.md)
 - `cpu` and `memory` are used to define the cpu and memory
 - `publicip` is usued to define if it requires a public IP or not
 - `entrypoint` is used define the entrypoint which in most of the cases in `/sbin/zinit init`, but in case of flists based on vms it can be specific to each flist

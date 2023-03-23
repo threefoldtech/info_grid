@@ -8,11 +8,11 @@
 
 ## Create
 
-to start the deployment `terraform init && terraform apply -parallelism=1`
+to start the deployment `terraform init && terraform apply`
 
 ## Destroying
 
-can be done using `terraform destroy -parallelism=1`
+can be done using `terraform destroy`
 
 And that's it!! you managed to deploy 2 VMs on the threefold grid v3
 
@@ -27,13 +27,16 @@ terraform {
   required_providers {
     grid = {
       source = "threefoldtech/grid"
+      version = "1.8.1"
     }
   }
 }
 
 ```
 
-- you can always provide a version to chooses a specific version of the provider like `1.8.1-dev` to use version `1.8.1` for devnet
+- You can always provide a version to chooses a specific version of the provider like `1.8.1-dev` to use version `1.8.1` for devnet
+- If `version = "1.8.1"` is omitted, the provider will fetch the latest version but for environments other than main you have to specify the version explicitly
+- For devnet, qanet and testnet use version = `"<VERSION>-dev", "<VERSION>-qa" and  "<VERSION>-rcx"` respectively
 
 Providers can have different arguments e.g using which identity when deploying, which substrate network to create contracts on, .. etc. This can be done in the provider section
 
