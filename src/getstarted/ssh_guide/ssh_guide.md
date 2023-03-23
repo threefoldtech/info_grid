@@ -1,6 +1,10 @@
 <h1> SSH Remote Connection</h1>
 
-In this Threefold Guide, we explore how to SSH into a 3node on Linux, MAC and Windows with either an IPv4 or a Planetary Network connection.
+In this Threefold Guide, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3node on Linux, MAC and Windows with both an IPv4 and a Planetary Network connection.
+
+To deploy different workloads, the SSH connection process should be very similar.
+
+If you have any questions, feel free to write a post on the [Threefold Forum](http://forum.threefold.io/).
 
 ***
 
