@@ -145,7 +145,7 @@ The main steps for the whole process are the following:
 
 * To create the SSH key pair, in the terminal write
     * ```
-      sudo ssh-keygen -t rsa -f ~/.ssh/id_rsa
+      sudo ssh-keygen
       ```
       * Save in default location
       * Write a password (optional)
@@ -199,7 +199,7 @@ The main steps for the whole process are the following:
   * In the connector, click `Connect`
 * To create the SSH key pair, in the terminal write
     * ```
-      sudo ssh-keygen -t rsa -f ~/.ssh/id_rsa
+      sudo ssh-keygen
       ```
       * Save in default location
       * Write a password (optional)
