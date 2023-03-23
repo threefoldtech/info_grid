@@ -26,11 +26,9 @@ select the contracts you want to cancel.
 
 There is a select all button this makes sure your account you use has nothing left
 
-> Its not always easy to see what to delete, this feature is there as a last resort. We will improve visibility in future.
-
 ## Easier management of resources (TIP)
 
-Use multiple accounts on TFChain, group your resources per account. 
+Use multiple accounts on TFChain, group your resources per account.
 
 This gives you following benefits
 
@@ -38,4 +36,3 @@ This gives you following benefits
 - easier to delete all your contracts
 - less chance to make mistakes
 - can use an account to share access with multiple people
-
