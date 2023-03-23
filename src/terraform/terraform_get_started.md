@@ -84,4 +84,4 @@ Output parameters show what has been done:
 
 ### Which flists to use in VM
 
-see [list of flists](../../manual3_iac/grid3_supported_flists.md)
+see [list of flists](../manual3_iac/grid3_supported_flists.md)
