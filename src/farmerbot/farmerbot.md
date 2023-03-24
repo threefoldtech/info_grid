@@ -114,11 +114,9 @@ The sections on this page will guide you through the requirements, the required 
 ## Requirements
 The farmerbot is shipped inside a docker image so that it is easy to run in a docker environment. Thus, the one and only requirement to run the farmerbot is docker so please [install docker](https://docs.docker.com/engine/install/) on your VM or your system. Next, you'll have to copy the [docker-compose file](https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml) that will start the farmerbot for you when executing the command specified in section [Running the farmerbot](#running-the-farmerbot).
 
-Note that you can read [this guide](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html) to learn how to deploy a Full VM on the Threefold Grid with Linux, Mac or Linux with IPv4 or the Planetary Network.
+Note that you can read [this guide](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html) to learn how to deploy a Full VM on the Threefold Grid with Linux, Mac or Linux with IPv4 or the Planetary Network. Also note that the farmerbot doesn't need an IPv4 connection. It is thus cheaper to use the Planetary Network. 
 
-Also note that the farmerbot doesn't need an IPv4 connection. It is thus cheaper to use the Planetary Network.
-
-With the minimum Ubuntu Full VM requirements, it currently costs 0.25TFT/hour (Planetary Network). This should suffice to run the farmerbot. This is around 180 TFT/month.
+With the minimum Ubuntu Full VM requirements, it currently costs 0.25TFT/hour to run with the Planetary Network (Date: 24-03-23). This should suffice to run the farmerbot. This is around 180 TFT/month. Of course, check for yourselves if the costs are correct.
 
 ***
 ## Configuration
