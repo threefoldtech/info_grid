@@ -221,9 +221,21 @@ SUBSTRATE=wss://tfchain.test.grid.tf:443
 
 ### Running the Farmerbot
 
-Now to run the the farmerbot just run the following command:
+Now to run the the farmerbot, write the following commands:
 ```
 wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
+
+docker compose up -d
+```
+
+If the farmerbot is already running and you want to run the new version of the farmerbot, write the following commands instead (for more info, click [here](https://forum.threefold.io/t/farmerbot-basic-guide-for-qa-net/3845/14)):
+
+```
+wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
+
+docker compose rm -f -s
+
+mv config/farmerbot.log config/farmerbot.log.archiverc12
 
 docker compose up -d
 ```
