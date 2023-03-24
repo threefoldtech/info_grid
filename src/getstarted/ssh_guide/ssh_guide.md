@@ -1,4 +1,4 @@
-<h1> SSH Remote Connection</h1>
+<h1> Full VM Deployment and SSH Remote Connection</h1>
 
 In this Threefold Guide, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3node on Linux, MAC and Windows with both an IPv4 and a Planetary Network connection.
 
