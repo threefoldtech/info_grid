@@ -8,6 +8,7 @@
 - [Create an Account on the Threefold Dashboard](../getstarted/TF_Dashboard/TF_Dashboard.md)
 - [Find a 3Node to Deploy Your Workload](../dashboard/explorer/explorer_find_capacity.md)
 - [Deploy Your First Virtual Machine](../weblets/weblets_vm.md)
+- [Full VM Deployment and SSH Connection](../getstarted/ssh_guide/ssh_guide.md)
 
 ***
 
