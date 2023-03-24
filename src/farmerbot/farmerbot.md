@@ -20,10 +20,11 @@
     - [Farm Configuration](#farm-configuration)
     - [Power Configuration](#power-configuration)
     - [Example of a Configuration File](#example-of-a-configuration-file)
-  - [Running the Farmerbot](#running-the-farmerbot)
+  - [Deploying the Farmerbot](#deploying-the-farmerbot)
+    - [Dev Net](#dev-net)
     - [QA Net](#qa-net)
     - [Test Net](#test-net)
-    - [Running the Farmerbot](#running-the-farmerbot-1)
+    - [Running the Farmerbot](#running-the-farmerbot)
 - [Feedback and Questions](#feedback-and-questions)
 
 ***
@@ -37,12 +38,12 @@ The key feature of the farmerbot is powermanagement. The farmerbot will automati
 There are 3 main steps to run the Farmerbot on your 3node Threefold farm.
 
 * Prepare Your Farm for the Farmerbot with WOL
-* Move Your Farm to Test Net (or QA Net)
+* Move Your Farm to either Test Net, QA Net or Dev Net
 * Set the Farmerbot
 
-The farmerbot is currently available for Test Net and QA Net.
+The farmerbot is currently available for Dev Net, QA Net and Test Net.
 
-Note that QA Net is a testing environment and farmers do not receive farming rewards (TFT) when deploying on this network. To farm TFT, you would need to have your farm and the farmerbot on the Test Net.
+Note that the Dev Net and the QA Net are testing environments and farmers do not receive farming rewards (TFT) when deploying on those networks. To farm TFT, you would need to have your farm and the farmerbot on the Test Net.
 
 ***
 # How to Prepare Your Farm for the Farmerbot with WOL
@@ -93,13 +94,13 @@ Your farmerbot can be run on any system, including on a node. It doesn't have to
 
 # How to Move Your Farm to a Different Network
 
-If you are on Main Net and you want to try the farmerbot, you should move your farm to either Test Net or QA Net.
+If you are on Main Net and you want to try the farmerbot, you should move your farm to either the Dev Net, the QA Net or the Test Net.
 
 To move your farm to a different network, you need to create a new bootstrap image for the new network instead of your current network. You should also wipe your 3nodes' disks before moving to a different network.
 
 To download the Zero-OS bootstrap image, go to the usual bootstrap link [https://v3.bootstrap.grid.tf/](https://v3.bootstrap.grid.tf/) and select the network you want.
 
-Note that the farmerbot is currently available on QA Net and Test Net.
+Note that the farmerbot is currently available for Dev Net, QA Net and Test Net.
 
 ![test_net|690x422](img/farmerbot_5.png) 
 
@@ -111,7 +112,14 @@ Once you have your new bootstrap image for the new network, [wipe your disks](ht
 The sections on this page will guide you through the requirements, the required configuration and the steps to run the farmerbot.
 ***
 ## Requirements
-The farmerbot is shipped inside a docker image so that it is easy to run in a docker environment. Thus, the one and only requirement to run the farmerbot is docker so please [install docker](https://docs.docker.com/engine/install/) on your vm or system. Next, you'll have to copy the [docker-compose file](https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml) that will start the farmerbot for you when executing the command specified in section [Running the farmerbot](#running-the-farmerbot).
+The farmerbot is shipped inside a docker image so that it is easy to run in a docker environment. Thus, the one and only requirement to run the farmerbot is docker so please [install docker](https://docs.docker.com/engine/install/) on your VM or your system. Next, you'll have to copy the [docker-compose file](https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml) that will start the farmerbot for you when executing the command specified in section [Running the farmerbot](#running-the-farmerbot).
+
+Note that you can read [this guide](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html) to learn how to deploy a Full VM on the Threefold Grid with Linux, Mac or Linux with IPv4 or the Planetary Network.
+
+Also note that the farmerbot doesn't need an IPv4 connection. It is thus cheaper to use the Planetary Network.
+
+With the minimum Ubuntu Full VM requirements, it currently costs 0.25TFT/hour (Planetary Network). This should suffice to run the farmerbot. This is around 180 TFT/month.
+
 ***
 ## Configuration
 Some configuration is required before running the farmerbot which should happen in a markdown file (*farmerbot.md* for example). This file should be located inside a folder called *config* in the directory of the docker-compose file. The possible configuration will be discussed in this section.
@@ -194,10 +202,20 @@ Power configuration
     periodic_wakeup:8:30AM
 ```
 ***
-## Running the Farmerbot
+## Deploying the Farmerbot
 Once the configuration is done you should create a *.env* file (next to the docker-compose file) with the content below. Make sure to change the fields to what is required: you should fill in the mnemonic of your farm, choose the appropriate network and modify the relay and substrate values if need be. 
 
-We give examples for both QA Net and Test Net.
+We give examples for Dev Net, QA Net and Test Net.
+
+### Dev Net
+
+For Dev Net you should modify the NETWORK to dev, the RELAY to wss://relay.dev.grid.tf:443 and SUBSTRATE to wss://tfchain.dev.grid.tf:443:
+```
+MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
+NETWORK=dev
+RELAY=wss://relay.dev.grid.tf:443
+SUBSTRATE=wss://tfchain.dev.grid.tf:443
+```
 
 ### QA Net
 
