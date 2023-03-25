@@ -1,7 +1,7 @@
 <h1>Farmerbot: Basic Guide for Test Net, Dev Net and QA Net</h1>
 
 <div class="youtubeVideoWrapper">
-<iframe title="Farmerbot" width="560" height="315" src="https://peertube.hostservice.nl/videos/embed/bef2b1f9-8fc9-44a9-b40a-91ab6f3b6681" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8KKqqHmJE1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 
 <h2>Table of Contents</h2>
