@@ -276,3 +276,5 @@ This again will take a couple of seconds.
 If you have any questions, please let us know.
 
 You can ask questions on this [Threefold Forum post](https://forum.threefold.io/t/farmerbot-basic-guide-for-qa-net/3845).
+
+Your questions might just be in the Farmerbot FAQ! Have a look [here](https://manual.grid.tf/faq/faq.html#farmerbot).
