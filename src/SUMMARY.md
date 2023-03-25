@@ -80,6 +80,7 @@
     - [TFChain Portal](dashboard/portal/dashboard_portal_home.md)
         - [Activate your farmer account and nodes on TFChain](dashboard/portal/dashboard_portal_ui_farming.md)
         - [Dedicated Nodes](dashboard/portal/dashboard_portal_dedicated_nodes.md)
+    - [DAO Voting](dashboard/dao_voting/dao_voting.md)
 - [Flist Hub](flist_hub/flist_hub.md)
     - [Supported FLists](manual3_iac/grid3_supported_flists.md)
 - [Threefold Farmer](TF_Farmer_Guide/tf_farmer_guide_readme.md)
