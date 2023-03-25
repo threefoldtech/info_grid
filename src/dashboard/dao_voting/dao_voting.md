@@ -34,7 +34,7 @@ To vote, you need to log into your Threefold Dashboard account, go to the DAO se
 
 You can watch this short video to learn how to vote for a Threefold DAO proposal:
 
-<div>
+<div class="youtubeVideoWrapper">
 <iframe title="Threefold Dashboard DAO Voting" width="560" height="315" src="https://peertube.hostservice.nl/videos/embed/5b6813ea-7efa-4325-a413-082d831bc51e" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
 </div>
 
