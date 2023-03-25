@@ -1,4 +1,4 @@
-<h1> SSH Remote Connection</h1>
+<h1> Full VM Deployment and SSH Remote Connection</h1>
 
 In this Threefold Guide, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3node on Linux, MAC and Windows with both an IPv4 and a Planetary Network connection.
 
@@ -10,7 +10,7 @@ If you have any questions, feel free to write a post on the [Threefold Forum](ht
 
 <h2> Table of Contents </h2>
 
-- [Main Steps and Pre-Requisites](#main-steps-and-pre-requisites)
+- [Main Steps and Prerequisites](#main-steps-and-prerequisites)
 - [Step-by-Step Process](#step-by-step-process)
   - [Linux](#linux)
     - [SSH into a 3node with IPv4 on Linux](#ssh-into-a-3node-with-ipv4-on-linux)
@@ -23,9 +23,9 @@ If you have any questions, feel free to write a post on the [Threefold Forum](ht
     - [SSH into a 3node with the Planetary Network on Windows](#ssh-into-a-3node-with-the-planetary-network-on-windows)
 - [Questions and Feedback](#questions-and-feedback)
 ***
-# Main Steps and Pre-Requisites
+# Main Steps and Prerequisites
 
-The pre-requisites are:
+The prerequisites are:
 
 * [Create a Threefold Connect Wallet](https://manual.grid.tf/getstarted/TF_Connect/TF_Connect.html)
 * [Buy TFT](https://manual.grid.tf/getstarted/TF_Token/TF_Token.html)

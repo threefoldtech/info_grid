@@ -1,4 +1,9 @@
-<h1>Farmerbot: Basic Guide for QA Net</h1>
+<h1>Farmerbot: Basic Guide for Test Net, Dev Net and QA Net</h1>
+
+<div class="youtubeVideoWrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8KKqqHmJE1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
@@ -7,15 +12,19 @@
     - [Enabling WOL in the BIOS](#enabling-wol-in-the-bios)
     - [ZOS Nodes and NIC](#zos-nodes-and-nic)
     - [NIC Firmware and WOL](#nic-firmware-and-wol)
-- [How to Move Your Farm to QA Net](#how-to-move-your-farm-to-qa-net)
+- [How to Move Your Farm to a Different Network](#how-to-move-your-farm-to-a-different-network)
 - [How to Set the Farmerbot](#how-to-set-the-farmerbot)
   - [Requirements](#requirements)
   - [Configuration](#configuration)
-    - [Node configuration](#node-configuration)
-    - [Farm configuration](#farm-configuration)
-    - [Power configuration](#power-configuration)
-    - [Example of a configuration file](#example-of-a-configuration-file)
-  - [Running the farmerbot](#running-the-farmerbot)
+    - [Node Configuration](#node-configuration)
+    - [Farm Configuration](#farm-configuration)
+    - [Power Configuration](#power-configuration)
+    - [Example of a Configuration File](#example-of-a-configuration-file)
+  - [Deploying the Farmerbot](#deploying-the-farmerbot)
+    - [Dev Net](#dev-net)
+    - [QA Net](#qa-net)
+    - [Test Net](#test-net)
+    - [Running the Farmerbot](#running-the-farmerbot)
 - [Feedback and Questions](#feedback-and-questions)
 
 ***
@@ -29,12 +38,12 @@ The key feature of the farmerbot is powermanagement. The farmerbot will automati
 There are 3 main steps to run the Farmerbot on your 3node Threefold farm.
 
 * Prepare Your Farm for the Farmerbot with WOL
-* Move Your Farm to QA Net
+* Move Your Farm to either Test Net, QA Net or Dev Net
 * Set the Farmerbot
 
-Note that this guide is for QA Net. This is a testing environment and farmers do not receive farming rewards (TFT) when deploying on this network. We invite farmers to try this new feature if they want to help test the farmerbot. We will announce when the farmerbot is ready for the Test Net and the Main Net, where farming rewards are distributed.
+The farmerbot is currently available for Dev Net, QA Net and Test Net.
 
-This guide will be updated when the farmerbot will be available on other networks. The steps should be very similar.
+Note that the Dev Net and the QA Net are testing environments and farmers do not receive farming rewards (TFT) when deploying on those networks. To farm TFT, you would need to have your farm and the farmerbot on the Test Net.
 
 ***
 # How to Prepare Your Farm for the Farmerbot with WOL
@@ -83,29 +92,19 @@ Your farmerbot can be run on any system, including on a node. It doesn't have to
 
 ***
 
-# How to Move Your Farm to QA Net
+# How to Move Your Farm to a Different Network
 
-To move your farm to QA Net, you simply need to create a new bootstrap image for the QA Net instead of the Test or Main Net.
+If you are on Main Net and you want to try the farmerbot, you should move your farm to either the Dev Net, the QA Net or the Test Net.
 
-To download the QA Net version of the bootstrap, go to the usual bootstrap link [https://v3.bootstrap.grid.tf/](https://v3.bootstrap.grid.tf/) and select QA net.
+To move your farm to a different network, you need to create a new bootstrap image for the new network instead of your current network. You should also wipe your 3nodes' disks before moving to a different network.
 
-![qa_net|690x422](img/farmerbot_4.png) 
+To download the Zero-OS bootstrap image, go to the usual bootstrap link [https://v3.bootstrap.grid.tf/](https://v3.bootstrap.grid.tf/) and select the network you want.
 
-You can also download the bootstrap by using those URLs:
-* EFI IMG
-  * `https://bootstrap.grid.tf/uefimg/qa/<FarmNumber>`
-* EFI FILE
-  * `https://bootstrap.grid.tf/uefi/qa/<FarmNumber>`
-* iPXE
-  * `https://bootstrap.grid.tf/ipxe/qa/<FarmNumber>`
-* ISO
-  * `https://bootstrap.grid.tf/iso/qa/<FarmNumber>`
-* USB
-  * `https://bootstrap.grid.tf/usb/qa/<FarmNumber>`
-* LKRN
-  * `https://bootstrap.grid.tf/krn/qa/<FarmNumber>`
+Note that the farmerbot is currently available for Dev Net, QA Net and Test Net.
 
-Once you have your new bootstrap image for QA Net, [wipe your disks](https://manual.grid.tf/TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.html#4-wipe-all-the-disks), insert the new bootstrap image and reboot the 3node.
+![test_net|690x422](img/farmerbot_5.png) 
+
+Once you have your new bootstrap image for the new network, [wipe your disks](https://manual.grid.tf/TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.html#4-wipe-all-the-disks), insert the new bootstrap image and reboot the 3node.
 
 ***
 # How to Set the Farmerbot
@@ -113,12 +112,19 @@ Once you have your new bootstrap image for QA Net, [wipe your disks](https://man
 The sections on this page will guide you through the requirements, the required configuration and the steps to run the farmerbot.
 ***
 ## Requirements
-The farmerbot is shipped inside a docker image so that it is easy to run in a docker environment. Thus, the one and only requirement to run the farmerbot is docker so please [install docker](https://docs.docker.com/engine/install/) on your vm or system. Next, you'll have to copy the [docker-compose file](https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml) that will start the farmerbot for you when executing the command specified in section [Running the farmerbot](#running-the-farmerbot).
+The farmerbot is shipped inside a docker image so that it is easy to run in a docker environment. Thus, the one and only requirement to run the farmerbot is docker so please [install docker](https://docs.docker.com/engine/install/) on your VM or your system. Next, you'll have to copy the [docker-compose file](https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml) that will start the farmerbot for you when executing the command specified in section [Running the farmerbot](#running-the-farmerbot).
+
+Note that you can read [this guide](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html) to learn how to deploy a Full VM on the Threefold Grid with Linux, Mac or Linux with IPv4 or the Planetary Network. Also note that the farmerbot doesn't need an IPv4 connection. It is thus cheaper to use the Planetary Network. 
+
+With the minimum Ubuntu Full VM requirements, it currently costs 0.25TFT/hour to run with the Planetary Network (Date: 24-03-23). This should suffice to run the farmerbot. This is around 180 TFT/month. Of course, check for yourselves if the costs are correct.
+
+Note: The account that you are using to deploy the farmerbot needs to have at least 1 TFT available. This will cover the transaction fees over the TFChain.
+
 ***
 ## Configuration
 Some configuration is required before running the farmerbot which should happen in a markdown file (*farmerbot.md* for example). This file should be located inside a folder called *config* in the directory of the docker-compose file. The possible configuration will be discussed in this section.
 
-### Node configuration
+### Node Configuration
 The farmerbot can only manage the nodes that you define in the configuration. So, for each node in your farm, fill in these required attributes:
 - id: the id of the node
 - twinid: the twin id of the node
@@ -141,7 +147,7 @@ The snippet below shows you an example of a node definition in the markdown conf
     cpuoverprovision:1
 ```
 
-### Farm configuration
+### Farm Configuration
 Two more settings are required regarding the farm:
 - id: the id of the farm
 - public_ips: the amount of public ips that the farm has
@@ -153,7 +159,7 @@ Here is an example of the farm definition in the markdown config file:
     public_ips:2
 ```
 
-### Power configuration
+### Power Configuration
 Finally, you can add some configuration that will the behavior of the farmerbot regarding the powermanagement of the nodes. The following attributes can be added to the markdown config file:
 - wake_up_threshold: a value between 50 and 80 defining the threshold at which nodes will be powered on or off. If the usage percentage (total used resources devided by the total amount of resources) is greater then this threshold a new node will be powered on. In the other case the farmerbot will try to power off nodes if possible.
 - periodic_wakeup: nodes have to be woken up once a day, this variable defines the time at which this should happen. The offline nodes will be powered on sequentially with an interval of 5 minutes starting at the time defined by this variable.
@@ -165,7 +171,7 @@ An example of the power definition in the markdown config file:
     periodic_wakeup:8:30AM
 ```
 
-### Example of a configuration file
+### Example of a Configuration File
 Below you will find an example of a markdown config file for a farm with 3 nodes and 2 public ips. The first node has a public config, is dedicated, is certified and has a cpu overprovisioning of 2. The wake up threshold is set to 75% and the periodic wakeup will happen at 8:30AM.
 ```
 My nodes
@@ -196,8 +202,24 @@ Power configuration
     periodic_wakeup:8:30AM
 ```
 ***
-## Running the farmerbot
-Once the configuration is done you should create a *.env* file (next to the docker-compose file) with the content below. Make sure to change the fields to what is required: you should fill in the mnemonic of your farm, choose the appropriate network and modify the relay and substrate values if need be. The example below is for qa net. For example for devnet you should modify the NETWORK to dev, the RELAY to wss://relay.dev.grid.tf:443 and SUBSTRATE to wss://tfchain.dev.grid.tf:443:
+## Deploying the Farmerbot
+Once the configuration is done you should create a *.env* file (next to the docker-compose file) with the content below. Make sure to change the fields to what is required: you should fill in the mnemonic of your farm, choose the appropriate network and modify the relay and substrate values if need be. 
+
+We give examples for Dev Net, QA Net and Test Net.
+
+### Dev Net
+
+For Dev Net you should modify the NETWORK to dev, the RELAY to wss://relay.dev.grid.tf:443 and SUBSTRATE to wss://tfchain.dev.grid.tf:443:
+```
+MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
+NETWORK=dev
+RELAY=wss://relay.dev.grid.tf:443
+SUBSTRATE=wss://tfchain.dev.grid.tf:443
+```
+
+### QA Net
+
+For QA Net you should modify the NETWORK to qa, the RELAY to wss://relay.qa.grid.tf:443 and SUBSTRATE to wss://tfchain.qa.grid.tf:443:
 ```
 MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
 NETWORK=qa
@@ -205,8 +227,34 @@ RELAY=wss://relay.qa.grid.tf:443
 SUBSTRATE=wss://tfchain.qa.grid.tf:443
 ```
 
-Now to run the the farmerbot just run the following command:
+### Test Net
+
+For Test Net you should modify the NETWORK to test, the RELAY to wss://relay.test.grid.tf:443 and SUBSTRATE to wss://tfchain.test.grid.tf:443:
 ```
+MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
+NETWORK=test
+RELAY=wss://relay.test.grid.tf:443
+SUBSTRATE=wss://tfchain.test.grid.tf:443
+```
+
+### Running the Farmerbot
+
+Now to run the the farmerbot, write the following commands:
+```
+wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
+
+docker compose up -d
+```
+
+If the farmerbot is already running and you want to run the new version of the farmerbot, write the following commands instead (for more info, click [here](https://forum.threefold.io/t/farmerbot-basic-guide-for-qa-net/3845/14)):
+
+```
+wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
+
+docker compose rm -f -s
+
+mv config/farmerbot.log config/farmerbot.log.archiverc12
+
 docker compose up -d
 ```
 
@@ -228,3 +276,5 @@ This again will take a couple of seconds.
 If you have any questions, please let us know.
 
 You can ask questions on this [Threefold Forum post](https://forum.threefold.io/t/farmerbot-basic-guide-for-qa-net/3845).
+
+Your questions might just be in the Farmerbot FAQ! Have a look [here](https://manual.grid.tf/faq/faq.html#farmerbot).
