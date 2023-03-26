@@ -2236,7 +2236,7 @@ Of course! Go to the [Threefold Simulator](https://simulator.grid.tf/) and selec
 ***
 ### What is the TFT entry price of my 3node farming rewards?
 
-For Grid V3, Titans 3nodes have the entry price of the moment you bought the unit, if it's better than 8 cents, the current TFT farming entry price. For the time being, the DIY 3nodes have the entry price of 8 cents until the end of June 2022. The TFT entry price is voted on by the Threefold community on the [Threefold Forum](https://forum.threefold.io/). Stay tuned for the upcoming votes.
+Currently, the TFT entry price of the 3nodes' farming rewards is 8 cents (0.08 USD).
 
 ***
 
