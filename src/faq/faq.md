@@ -138,6 +138,11 @@
     - [What are the differences between a container, a micro virtual machine and a full virtual machine (VM)?](#what-are-the-differences-between-a-container-a-micro-virtual-machine-and-a-full-virtual-machine-vm)
     - [What is a 3node gateway? How can I configure a 3node as a gateway node?](#what-is-a-3node-gateway-how-can-i-configure-a-3node-as-a-gateway-node)
     - [The gateways are advertised as many-to-many. How can I have more than one gateway assigned to a deployment? Can more gateways be added after deployment?](#the-gateways-are-advertised-as-many-to-many-how-can-i-have-more-than-one-gateway-assigned-to-a-deployment-can-more-gateways-be-added-after-deployment)
+    - [When connecting remotely with SSH, I get the following error: "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!...". What can I do to fix this?](#when-connecting-remotely-with-ssh-i-get-the-following-error-warning-remote-host-identification-has-changed-what-can-i-do-to-fix-this)
+    - [How can I remove one host from known\_hosts?](#how-can-i-remove-one-host-from-known_hosts)
+    - [How can I add Threefold peers in the Yggdrasil configuration file?](#how-can-i-add-threefold-peers-in-the-yggdrasil-configuration-file)
+    - [How can I change the username of my SSH key?](#how-can-i-change-the-username-of-my-ssh-key)
+    - [How can I copy the clipboard content of a terminal output using the command cat? How can I copy the public key directly with the terminal?](#how-can-i-copy-the-clipboard-content-of-a-terminal-output-using-the-command-cat-how-can-i-copy-the-public-key-directly-with-the-terminal)
   - [Tutorials and Guides](#tutorials-and-guides)
     - [What are the prerequisites before using the Threefold Play Grid (play.grid.tf)?](#what-are-the-prerequisites-before-using-the-threefold-play-grid-playgridtf)
     - [How can I create a profile manager on the Threefold Playground?](#how-can-i-create-a-profile-manager-on-the-threefold-playground)
@@ -239,6 +244,8 @@
     - [Can a farm be erased from TF Grid?](#can-a-farm-be-erased-from-tf-grid)
     - [On the Threefold Connect App, it says I need to migrate my Titan farm from V2 to V3. What do I have to do? How long does this take?](#on-the-threefold-connect-app-it-says-i-need-to-migrate-my-titan-farm-from-v2-to-v3-what-do-i-have-to-do-how-long-does-this-take)
     - [How can I migrate my DIY farm from V2 to V3?](#how-can-i-migrate-my-diy-farm-from-v2-to-v3)
+    - [What does the pricing policy ID of a farm represent?](#what-does-the-pricing-policy-id-of-a-farm-represent)
+    - [What is the difference between TiB and TB? Why doesn't the TF Explorer shows the same storage space as my disk?](#what-is-the-difference-between-tib-and-tb-why-doesnt-the-tf-explorer-shows-the-same-storage-space-as-my-disk)
   - [Farming Rewards and Related Notions](#farming-rewards-and-related-notions)
     - [What are the rewards of farming? Can I get more rewards when my 3node is being utilized?](#what-are-the-rewards-of-farming-can-i-get-more-rewards-when-my-3node-is-being-utilized)
     - [How can I know the potential farming rewards for Grid Utilization?](#how-can-i-know-the-potential-farming-rewards-for-grid-utilization)
@@ -389,6 +396,7 @@
     - [How can I update a Dell PowerEdger server with a bootable ISO?](#how-can-i-update-a-dell-poweredger-server-with-a-bootable-iso)
     - [When I boot a 3node in UEFI mode, it gets stuck at: Initializing Network Device, is there a way to fix this?](#when-i-boot-a-3node-in-uefi-mode-it-gets-stuck-at-initializing-network-device-is-there-a-way-to-fix-this)
     - [When I boot my 3node, it gets stuck during the Zero-OS download. It never reaches 100%. What can I do to fix this issue?](#when-i-boot-my-3node-it-gets-stuck-during-the-zero-os-download-it-never-reaches-100-what-can-i-do-to-fix-this-issue)
+    - [When booting a 3node, I get the error=“context deadline exceeded” module=network error=failed to initialize rmb api failed to initialized admin mw: failed to get farm: farm not found: object not found. What can I do to fix this issue?](#when-booting-a-3node-i-get-the-errorcontext-deadline-exceeded-modulenetwork-errorfailed-to-initialize-rmb-api-failed-to-initialized-admin-mw-failed-to-get-farm-farm-not-found-object-not-found-what-can-i-do-to-fix-this-issue)
   - [Threefold Grid and Data](#threefold-grid-and-data)
     - [How is the farming minting reward calculated? Is the Grid always monitoring my 3node?](#how-is-the-farming-minting-reward-calculated-is-the-grid-always-monitoring-my-3node)
     - [How does communication happen on the Threefold Grid at the 3node's level?](#how-does-communication-happen-on-the-threefold-grid-at-the-3nodes-level)
@@ -1446,6 +1454,123 @@ This means name / domain reservation as they are now will become deprecated as w
 
 ***
 
+### When connecting remotely with SSH, I get the following error: "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!...". What can I do to fix this?
+
+If you've already done an SSH connection on your computer, the issue is most probably that the "host key has just been changed". To fix this, try one of those two solutions:
+
+* Linux and MAC: 
+  * ```
+    sudo rm ~/.ssh/known_hosts
+    ```
+* Windows: 
+  * ```
+    rm ~/.ssh/known_hosts
+    ```
+
+To be more specific, you can remove the probematic host:
+
+* Windows, Linux and MAC: 
+  * ```
+    ssh-keygen -R <host>
+    ```
+
+Once this is done, you should be able to SSH into your 3node deployment.
+
+***
+
+### How can I remove one host from known_hosts?
+
+You can write the following command 
+```
+ssh-keygen -R hostname
+```
+
+Where hostname would be the IPv4 or IPv6 address for example.
+In the case of the Threefold Grid, it can also be the Planetary Network address.
+
+***
+
+### How can I add Threefold peers in the Yggdrasil configuration file?
+
+In the file /etc/yggdrasil.conf, write the following in the "Peers" section:
+
+```
+ Peers: [
+    # Threefold Lochrist
+    tcp://gent01.grid.tf:9943
+    tcp://gent02.grid.tf:9943
+    tcp://gent03.grid.tf:9943
+    tcp://gent04.grid.tf:9943
+    tcp://gent01.test.grid.tf:9943
+    tcp://gent02.test.grid.tf:9943
+    tcp://gent01.dev.grid.tf:9943
+    tcp://gent02.dev.grid.tf:9943
+    # GreenEdge
+    tcp://gw291.vienna1.greenedgecloud.com:9943
+    tcp://gw293.vienna1.greenedgecloud.com:9943
+    tcp://gw294.vienna1.greenedgecloud.com:9943
+    tcp://gw297.vienna1.greenedgecloud.com:9943
+    tcp://gw298.vienna1.greenedgecloud.com:9943
+    tcp://gw299.vienna2.greenedgecloud.com:9943
+    tcp://gw300.vienna2.greenedgecloud.com:9943
+    tcp://gw304.vienna2.greenedgecloud.com:9943
+    tcp://gw306.vienna2.greenedgecloud.com:9943
+    tcp://gw307.vienna2.greenedgecloud.com:9943
+    tcp://gw309.vienna2.greenedgecloud.com:9943
+    tcp://gw313.vienna2.greenedgecloud.com:9943
+    tcp://gw324.salzburg1.greenedgecloud.com:9943
+    tcp://gw326.salzburg1.greenedgecloud.com:9943
+    tcp://gw327.salzburg1.greenedgecloud.com:9943
+    tcp://gw328.salzburg1.greenedgecloud.com:9943
+    tcp://gw330.salzburg1.greenedgecloud.com:9943
+    tcp://gw331.salzburg1.greenedgecloud.com:9943
+    tcp://gw333.salzburg1.greenedgecloud.com:9943
+    tcp://gw422.vienna2.greenedgecloud.com:9943
+    tcp://gw423.vienna2.greenedgecloud.com:9943
+    tcp://gw424.vienna2.greenedgecloud.com:9943
+    tcp://gw425.vienna2.greenedgecloud.com:9943
+  ]
+```
+
+***
+
+### How can I change the username of my SSH key?
+
+In the terminal, write the following line:
+
+```
+ssh-keygen -C newname
+```
+
+Make sure to replace "newname" by the name you want.
+
+***
+
+### How can I copy the clipboard content of a terminal output using the command cat? How can I copy the public key directly with the terminal?
+
+We use here the example of copying the public key in the default folder of OpenSSL.
+You can use this command to copy any content of a given text file for Linux, Mac and Windows.
+
+You can use the following terminal command line:
+
+* Linux
+  * ```
+    sudo cat ~/.ssh/id_rsa.pub | xclip -sel clip
+    ```
+* MAC
+  * ```
+    sudo cat ~/.ssh/id_rsa.pub | pbcopy
+    ```
+* Windows
+  * ```
+    cat ~/.ssh/id_rsa.pub | clip.exe 
+    ```
+
+After writing this command, your clipboard will contain your public key. You can paste it on the profile manager to connect with a 3node when deploying on the Threefold Grid.
+
+
+***
+
 ## Tutorials and Guides
 
 
@@ -1621,19 +1746,15 @@ QSFS can be run on both a full virtual machine or a micro virtual machine (VM). 
 
 ### What is the method to SSH into a 3node on IPv4, IPv6 and the Planetary Network?
 
-To SSH into a 3node, find the IP address of your Threefold deployment and do the following on your local computer terminal:
+To SSH into a 3node, find the IP address of your Threefold deployment and do the following on your local computer terminal (Command Prompt for Windows):
 
-* IPv4
-  * ssh root@IPv4_Address_Deployment
-* IPv6 and Planetary Network
-  * Linux
-    * Using bracket
-      * ssh root@[IPv6_Address_Deployment]
-  * MAC
-    * Using bracket and backslash
-      * ssh root@\\[IPv6_Address_Deployment\\]
+``` 
+ssh root@Address_Deployment
+```
 
-Note that the Planetary Network is on IPv6, and thus IPv6 and Planetary Network share the same method.
+To connect to the Planetary Network, [download and install the Threefold Planetary Network Connector](https://github.com/threefoldtech/planetary_network/releases). Once it is installed, open up the connector and click "Connect". Before connecting to the Planetary Network, make sure to disconnect your VPN if you have one.
+
+For more information on SSH Remote Connection, read this [Threefold SSH Guide](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html).
 
 ***
 
@@ -2229,6 +2350,28 @@ Create a new [bootstrap image](https://bootstrap.grid.tf/) using your new V3 Far
 
 ***
 
+### What does the pricing policy ID of a farm represent?
+
+The pricing policy is the definition of how the network bills for workloads (pricing for each resource type, discounts, etc.).
+
+***
+
+### What is the difference between TiB and TB? Why doesn't the TF Explorer shows the same storage space as my disk?
+
+Terabyte (TB) and Tebibyte (TiB) are units of digital information used to measure storage capacity and data transfer rate. While terabyte is a decimal standard unit, Tebibyte is binary. 
+
+* 1 TB = 1000^4 bytes
+* 1 TiB = 1024^4 bytes. 
+
+There are thus more bytes in 1 TiB than in 1 TB. 
+1 TiB is equal to 1.099511627776 TB.
+
+You can play around these 2 notions by exploring this [TiB-TB converter](https://www.dataunitconverter.com/tebibyte-to-terabyte/).
+
+You can also check [this table](https://www.seagate.com/ca/en/support/kb/why-does-my-hard-drive-report-less-capacity-than-indicated-on-the-drives-label-172191en/) to compare different OS system's storage representation.
+
+***
+
 ## Farming Rewards and Related Notions
 
 ### What are the rewards of farming? Can I get more rewards when my 3node is being utilized?
@@ -2245,7 +2388,7 @@ Go on the [Threefold simulator](https://simulator.grid.tf/), enter your 3node re
 
 ### What is the easiest way to farm Threefold tokens (TFT)?
 
-Buy a [Titan](https://marketplace.3node.global/index.php?dispatch=categories.view&category_id=167). This is more or less *plug n play*! You can also build a DIY 3node. It's fun and there are many resources to help you along the way.
+Buy a [certified 3node](https://marketplace.3node.global/index.php). This is more or less *plug n play*! You can also build a [DIY 3node](#what-are-the-general-requirements-for-a-diy-3node-server). It's fun and there are many resources to help you along the way.
 
 ***
 
@@ -2382,7 +2525,7 @@ This is normal. Currently, not all 3nodes are being utilized by users on the Thr
 
 ### What are the general requirements for a DIY 3node server?
 
-Any 64-bit hardware with an Intel or AMD processor chip can run Zero-OS and become a 3node. For a complete guide on building a 3node, read the [Farming Guide](https://forum.threefold.io/t/threefold-farming-guide-part-1/2989). The following configurations provide guidelines on compatible and recommended setups:
+Any 64-bit hardware with an Intel or AMD processor chip can run Zero-OS and become a 3node. For a complete guide on building a 3node, read the [Farming Guide](https://manual.grid.tf/TF_Farmer_Guide/tf_farmer_guide_readme.html). The following configurations provide guidelines on compatible and recommended setups:
 
 - Servers, desktops and mini computers type hardware are compatible.
 - A minimum of 500 GB of SSD and a bare minimum of 2 GB of RAM is required.
@@ -3384,6 +3527,12 @@ Here are some ways to troubleshoot your 3node when it cannot download Zero-OS co
 * It can help to reboot the modem and the router. 
 * Make sure your BIOS/UEFI is up to date. Updating the BIOS/UEFI can help. 
 * It can also help to set the correct date and time.
+
+***
+
+### When booting a 3node, I get the error=“context deadline exceeded” module=network error=failed to initialize rmb api failed to initialized admin mw: failed to get farm: farm not found: object not found. What can I do to fix this issue?
+
+Usually, the simple fix to this issue is to make sure that your bootstrap image is on the same network as your farm. For example, if you created your farm on the Main net, you should use a Main net Zero-OS bootstrap image.
 
 ***
 
