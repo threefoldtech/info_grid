@@ -423,6 +423,9 @@
     - [What type of computer can run the Farmerbot?](#what-type-of-computer-can-run-the-farmerbot)
     - [What happened if all the nodes are powered off?](#what-happened-if-all-the-nodes-are-powered-off)
     - [Is there a fail over setup possible for the Farmerbot?](#is-there-a-fail-over-setup-possible-for-the-farmerbot)
+    - [How do 3nodes power on and off with the Farmerbot?](#how-do-3nodes-power-on-and-off-with-the-farmerbot)
+    - [Can you have only one 3node in your farm with the Farmerbot?](#can-you-have-only-one-3node-in-your-farm-with-the-farmerbot)
+    - [Is there a way to access more error checking?](#is-there-a-way-to-access-more-error-checking)
 - [Ask a Question to the Threefold Community](#ask-a-question-to-the-threefold-community)
 
 ***
@@ -3597,6 +3600,24 @@ If all nodes in a subnet are powered off, there is no way other nodes in other s
 ### Is there a fail over setup possible for the Farmerbot?
 
 It should be possible to set (at least) 2 instances of the Farmerbot and have a fail over setup. Stay tuned for more information on this.
+
+***
+
+### How do 3nodes power on and off with the Farmerbot?
+
+Nodes power themselves down by checking TF Chain for a new power target. They power back up by receiving the magic packet from another node in the same LAN.
+
+***
+
+### Can you have only one 3node in your farm with the Farmerbot?
+
+No. Since you need at least one node to power up a second node. you can't test the Farmerbot with just one node. You need at least two 3nodes in your farm with the Farmerbot.
+
+***
+
+### Is there a way to access more error checking?
+
+Yes. In the config-path where you run the docker-compose, you have more logging for error checking. Under the directory where you set up your Farmerbot, you have the directory “config” in there where it creates a *.log file if you start the bot via Docker-Compose. In this directory, you can search for errors if something doesn't work as expected.
 
 ***
 

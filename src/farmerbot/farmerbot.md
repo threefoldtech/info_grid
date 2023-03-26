@@ -1,12 +1,9 @@
-<h1>Farmerbot: Basic Guide for Test Net, Dev Net and QA Net</h1>
-
-<div class="youtubeVideoWrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8KKqqHmJE1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+<h1>Farmerbot: Guide for Test Net, Dev Net and QA Net</h1>
 
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
+- [Farmerbot: Video Guide](#farmerbot-video-guide)
 - [How to Prepare Your Farm for the Farmerbot with WOL](#how-to-prepare-your-farm-for-the-farmerbot-with-wol)
   - [WOL Requirements](#wol-requirements)
     - [Enabling WOL in the BIOS](#enabling-wol-in-the-bios)
@@ -25,6 +22,26 @@
     - [QA Net](#qa-net)
     - [Test Net](#test-net)
     - [Running the Farmerbot](#running-the-farmerbot)
+- [Farmerbot FAQ](#farmerbot-faq)
+  - [Is there a guide for the Farmerbot?](#is-there-a-guide-for-the-farmerbot)
+  - [Why does the farmerbot need to wake nodes up for uptime report, if they are unused and shut down?](#why-does-the-farmerbot-need-to-wake-nodes-up-for-uptime-report-if-they-are-unused-and-shut-down)
+  - [Can a farmer opt in for farmerbot but also make exemption for certain nodes to never be shutdown regardless (for v1)?](#can-a-farmer-opt-in-for-farmerbot-but-also-make-exemption-for-certain-nodes-to-never-be-shutdown-regardless-for-v1)
+  - [Will this feature require a master node that will never be shut down?](#will-this-feature-require-a-master-node-that-will-never-be-shut-down)
+  - [Concerning the turning on of offline nodes, at the end, how does a farmer decide what almost full means? What do we decide?](#concerning-the-turning-on-of-offline-nodes-at-the-end-how-does-a-farmer-decide-what-almost-full-means-what-do-we-decide)
+  - [Does the Farmerbot need to run physically in the farm?](#does-the-farmerbot-need-to-run-physically-in-the-farm)
+  - [How many Farmerbot can you run per farm?](#how-many-farmerbot-can-you-run-per-farm)
+  - [On how many node can the Farmerbot run?](#on-how-many-node-can-the-farmerbot-run)
+  - [What is the uptime requirement for the Farmerbot?](#what-is-the-uptime-requirement-for-the-farmerbot)
+  - [Can I run the Farmerbot on my farm?](#can-i-run-the-farmerbot-on-my-farm)
+  - [Can the Farmerbot be the same node that wakes the other nodes?](#can-the-farmerbot-be-the-same-node-that-wakes-the-other-nodes)
+  - [What if I want to have several LANs with different group of 3nodes?](#what-if-i-want-to-have-several-lans-with-different-group-of-3nodes)
+  - [Can I turn all my nodes off while the Farmerbot runs? Why do I need at least one node per farm to be powered on?](#can-i-turn-all-my-nodes-off-while-the-farmerbot-runs-why-do-i-need-at-least-one-node-per-farm-to-be-powered-on)
+  - [What type of computer can run the Farmerbot?](#what-type-of-computer-can-run-the-farmerbot)
+  - [What happened if all the nodes are powered off?](#what-happened-if-all-the-nodes-are-powered-off)
+  - [Is there a fail over setup possible for the Farmerbot?](#is-there-a-fail-over-setup-possible-for-the-farmerbot)
+  - [How do 3nodes power on and off with the Farmerbot?](#how-do-3nodes-power-on-and-off-with-the-farmerbot)
+  - [Can you have only one 3node in your farm with the Farmerbot?](#can-you-have-only-one-3node-in-your-farm-with-the-farmerbot)
+  - [Is there a way to access more error checking?](#is-there-a-way-to-access-more-error-checking)
 - [Feedback and Questions](#feedback-and-questions)
 
 ***
@@ -46,6 +63,19 @@ The farmerbot is currently available for Dev Net, QA Net and Test Net.
 Note that the Dev Net and the QA Net are testing environments and farmers do not receive farming rewards (TFT) when deploying on those networks. To farm TFT, you would need to have your farm and the farmerbot on the Test Net.
 
 ***
+
+# Farmerbot: Video Guide
+
+The following video made by Scott from the Threefold team explains how to set up the Farmerbot for your Threefold farm. 
+
+<div class="youtubeVideoWrapper">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8KKqqHmJE1Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+If you have questions concerning the video, feel free to ask in the Threefold forum. Reading the present guide and the Farmerbot FAQ might also answer your questions.
+
+***
+
 # How to Prepare Your Farm for the Farmerbot with WOL
 
 ZOS can utilize 2 NIC's (Network Interface Card) of a node (server, workstation, desktop, ..). The first NIC on the motherboard will always be what we call the ZOS/dmz NIC, the second one is used for public config's (Gateway, public IP's for workloads, ..). So if you don't have public IP's in your farm, only the first NIC of your ZOS node will be used. This subnet is where the farmerbot operates. If you do have public IP's the same applies.
@@ -268,6 +298,120 @@ If the docker-compose file has changed and you wish to run the new version you w
 docker compose rm -f -s && docker compose up -d
 ```
 This again will take a couple of seconds.
+
+***
+
+# Farmerbot FAQ
+
+## Is there a guide for the Farmerbot?
+
+There is a written guide and a video on how to set up the Farmerbot. Go to [this link](https://manual.grid.tf/farmerbot/farmerbot.html) for more information.
+
+## Why does the farmerbot need to wake nodes up for uptime report, if they are unused and shut down?
+
+Because we want to know that the node is still available (is still there to be used). A farmer can unplug a node at any time so we can't distinct a node that has been unplugged from a node that is off.
+
+***
+
+## Can a farmer opt in for farmerbot but also make exemption for certain nodes to never be shutdown regardless (for v1)? 
+
+We could do that, but as we are in the testing phase right now, it is not a good idea. But since The farmer is already able to configure the capacity planning rule: the percentage of how much unused resources he/she wants to be available, this deemed to be unnecessary. Whenever that percentage is reached a new node is powered on.
+
+***
+
+## Will this feature require a master node that will never be shut down?
+
+Yes, that is a requirement. Nodes are powered on by other nodes (WOL packet comes from one of the nodes in the farm). So if you want to be able to power them back on you have to have at least one node powered on.
+
+***
+
+## Concerning the turning on of offline nodes, at the end, how does a farmer decide what almost full means? What do we decide?
+
+Nodes are powered on in two cases: when the total resource usage reaches a certain percentage (defined by the farmer) or when there is an incoming find_node request and that the selected node is off.
+
+***
+
+## Does the Farmerbot need to run physically in the farm?
+
+The Farmerbot doesn’t have to run physically in the farm since it instructs nodes over RMB to shut down / power on nodes.
+
+***
+
+## How many Farmerbot can you run per farm?
+
+You can run only one Farmerbot for now.
+
+***
+
+## On how many node can the Farmerbot run?
+
+Currently you can only deploy one Farmerbot for each farm, so the Farmerbot can only run on one node.
+
+***
+
+## What is the uptime requirement for the Farmerbot?
+
+The Farmerbot should be running all the time or not at all (this is up to the farmer)
+
+***
+
+## Can I run the Farmerbot on my farm?
+
+Though you can run the Farmerbot anywhere you want, it doesn’t have to be on a 3node in your farm.
+
+***
+
+## Can the Farmerbot be the same node that wakes the other nodes?
+
+If you want, you can set your Farmerbot on your farm, in the same LAN as all other nodes, and designate this 3node to be the node that wakes up the other nodes.
+
+***
+
+## What if I want to have several LANs with different group of 3nodes?
+
+You can set different farms in different LANs and set one Farmerbot per farm.
+
+***
+
+## Can I turn all my nodes off while the Farmerbot runs? Why do I need at least one node per farm to be powered on?
+
+The farmer bot uses the nodes in the farm to send WOL packets to the node that needs to wakeup. For this reason, you need at least one node per farm to be powered on at all time.
+
+***
+
+## What type of computer can run the Farmerbot?
+
+The Farmerbot can run on any computer/server, it could even run on a laptop so to speak, as long as it has an internet connection, the Farmerbot will be working fine.
+
+***
+
+## What happened if all the nodes are powered off?
+
+If all nodes in a subnet are powered off, there is no way other nodes in other subnets will be able to power them on again so that is an issue.
+
+***
+
+## Is there a fail over setup possible for the Farmerbot?
+
+It should be possible to set (at least) 2 instances of the Farmerbot and have a fail over setup. Stay tuned for more information on this.
+
+***
+
+## How do 3nodes power on and off with the Farmerbot?
+
+Nodes power themselves down by checking TF Chain for a new power target. They power back up by receiving the magic packet from another node in the same LAN.
+
+***
+
+## Can you have only one 3node in your farm with the Farmerbot?
+
+No. Since you need at least one node to power up a second node. you can't test the Farmerbot with just one node. You need at least two 3nodes in your farm with the Farmerbot.
+
+***
+
+## Is there a way to access more error checking?
+
+Yes. In the config-path where you run the docker-compose, you have more logging for error checking. Under the directory where you set up your Farmerbot, you have the directory “config” in there where it creates a *.log file if you start the bot via Docker-Compose. In this directory, you can search for errors if something doesn't work as expected.
 
 ***
 
