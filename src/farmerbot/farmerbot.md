@@ -23,7 +23,6 @@
     - [Test Net](#test-net)
     - [Running the Farmerbot](#running-the-farmerbot)
 - [Farmerbot FAQ](#farmerbot-faq)
-  - [Is there a guide for the Farmerbot?](#is-there-a-guide-for-the-farmerbot)
   - [Why does the farmerbot need to wake nodes up for uptime report, if they are unused and shut down?](#why-does-the-farmerbot-need-to-wake-nodes-up-for-uptime-report-if-they-are-unused-and-shut-down)
   - [Can a farmer opt in for farmerbot but also make exemption for certain nodes to never be shutdown regardless (for v1)?](#can-a-farmer-opt-in-for-farmerbot-but-also-make-exemption-for-certain-nodes-to-never-be-shutdown-regardless-for-v1)
   - [Will this feature require a master node that will never be shut down?](#will-this-feature-require-a-master-node-that-will-never-be-shut-down)
@@ -302,10 +301,6 @@ This again will take a couple of seconds.
 ***
 
 # Farmerbot FAQ
-
-## Is there a guide for the Farmerbot?
-
-There is a written guide and a video on how to set up the Farmerbot. Go to [this link](https://manual.grid.tf/farmerbot/farmerbot.html) for more information.
 
 ## Why does the farmerbot need to wake nodes up for uptime report, if they are unused and shut down?
 
