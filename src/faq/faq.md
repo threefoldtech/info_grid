@@ -105,6 +105,8 @@
     - [What is the role of the middleware?](#what-is-the-role-of-the-middleware)
     - [What is Polkadot UI? What can I do with Polkadot UI?](#what-is-polkadot-ui-what-can-i-do-with-polkadot-ui)
     - [How can I use GraphQl to find information on the Threefold Grid?](#how-can-i-use-graphql-to-find-information-on-the-threefold-grid)
+    - [What are the different links to Threefold's Graph QL depending on the network?](#what-are-the-different-links-to-threefolds-graph-ql-depending-on-the-network)
+    - [How can I find 3nodes with IPv6 addresses?](#how-can-i-find-3nodes-with-ipv6-addresses)
     - [How can I use Grid Proxy to find information on the Threefold Grid and 3nodes?](#how-can-i-use-grid-proxy-to-find-information-on-the-threefold-grid-and-3nodes)
     - [Who is hosting GraphQL and Grid Proxy on the Threefold Grid?](#who-is-hosting-graphql-and-grid-proxy-on-the-threefold-grid)
     - [I do not remember the name (Threefold 3bot ID) associated with my seed phrase on the Threefold Connect app. Can I recover my TF Connect app account with only the seed phrase and not the name (3bot ID) associated with it?](#i-do-not-remember-the-name-threefold-3bot-id-associated-with-my-seed-phrase-on-the-threefold-connect-app-can-i-recover-my-tf-connect-app-account-with-only-the-seed-phrase-and-not-the-name-3bot-id-associated-with-it)
@@ -1108,6 +1110,43 @@ query MyQuery {
 
 This code can be written automatically if you simply select the proper parameters in the left menu.
 For the previous example, we had to click on "farms", then "where", and then "name_contains". After clicking on "name_contains", you need to add the words you are looking for, in this example we had "duck". Further down the menu, we simply had to click on "farmID" and "name", and then click the Play button. The results of the query appear on the right screen.
+
+***
+
+### What are the different links to Threefold's Graph QL depending on the network?
+
+The links for the Development, Test and Main Networks are the following:
+
+* Main Net Graph QL
+  * [https://graphql.grid.tf/graphql](https://graphql.grid.tf/graphql)
+* Test Net Graph QL
+  * [https://graphql.test.grid.tf/graphql](https://graphql.test.grid.tf/graphql)
+* Dev Net Graph QL
+  * [https://graphql.dev.grid.tf/graphql](https://graphql.dev.grid.tf/graphql)
+
+***
+
+### How can I find 3nodes with IPv6 addresses?
+
+You can use [GraphQL](https://graphql.grid.tf/graphql) for such queries. 
+
+Use the following code to search for 3nodes with IPv6 addresses.
+Enter the following code on the middle window and click on the "Play" button.
+
+```
+query MyQuery {
+  publicConfigs {
+    ipv6
+    node {
+      nodeID
+    }
+  }
+}
+```
+
+The 3nodes with IPv6 addresses will appear on the right window.
+
+For more information on how to use Graph QL, read [this Q&A](#how-can-i-use-graphql-to-find-information-on-the-threefold-grid).
 
 ***
 
