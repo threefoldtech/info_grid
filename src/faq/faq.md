@@ -146,7 +146,6 @@
   - [Tutorials and Guides](#tutorials-and-guides)
     - [What are the prerequisites before using the Threefold Play Grid (play.grid.tf)?](#what-are-the-prerequisites-before-using-the-threefold-play-grid-playgridtf)
     - [How can I create a profile manager on the Threefold Playground?](#how-can-i-create-a-profile-manager-on-the-threefold-playground)
-    - [To deploy a load on the Threefold Grid, I need to generate SSH keys. How can I generate SSH keys on MAC, Linux or Windows?](#to-deploy-a-load-on-the-threefold-grid-i-need-to-generate-ssh-keys-how-can-i-generate-ssh-keys-on-mac-linux-or-windows)
     - [I want to deploy a virtual machine (VM) on Threefold. How can I do this?](#i-want-to-deploy-a-virtual-machine-vm-on-threefold-how-can-i-do-this)
     - [How can I use Caprover on Threefold Grid?](#how-can-i-use-caprover-on-threefold-grid)
     - [Is there a picture guide on how to deploy Wordpress on the Threefold Grid using Caprover?](#is-there-a-picture-guide-on-how-to-deploy-wordpress-on-the-threefold-grid-using-caprover)
@@ -162,6 +161,7 @@
     - [Can I use the same seed phrase for my mainnet and testnest accounts? How can I transfer my TFT from mainnet to testnet or vice versa?](#can-i-use-the-same-seed-phrase-for-my-mainnet-and-testnest-accounts-how-can-i-transfer-my-tft-from-mainnet-to-testnet-or-vice-versa)
     - [Can I recover my seed phrase?](#can-i-recover-my-seed-phrase)
     - [Do I need a full or micro virtual machine (VM) when I run QSFS, quantum safe file system, on the Threefold Grid?](#do-i-need-a-full-or-micro-virtual-machine-vm-when-i-run-qsfs-quantum-safe-file-system-on-the-threefold-grid)
+    - [To deploy a load on the Threefold Grid, I need to generate SSH keys. How can I generate SSH keys on MAC, Linux or Windows?](#to-deploy-a-load-on-the-threefold-grid-i-need-to-generate-ssh-keys-how-can-i-generate-ssh-keys-on-mac-linux-or-windows)
     - [What is the method to SSH into a 3node on IPv4, IPv6 and the Planetary Network?](#what-is-the-method-to-ssh-into-a-3node-on-ipv4-ipv6-and-the-planetary-network)
     - [How can I transfer a file from my computer to the virtual machine (VM) deployed on the Threefold Grid? How can I do SSH file transfer from Remote to Local and vice versa?](#how-can-i-transfer-a-file-from-my-computer-to-the-virtual-machine-vm-deployed-on-the-threefold-grid-how-can-i-do-ssh-file-transfer-from-remote-to-local-and-vice-versa)
   - [Grace Period (Status Paused)](#grace-period-status-paused)
@@ -1593,14 +1593,6 @@ You can create a profile manager on Testnet, Devnet and Mainnet. On the [Threefo
 
 ***
 
-### To deploy a load on the Threefold Grid, I need to generate SSH keys. How can I generate SSH keys on MAC, Linux or Windows?
-
-To generate SSH keys, you can use [OpenSSH client](https://www.openssh.com/) for MAC, Linux or Windows. For Windows, it is also possible to use [PuTTY client](https://www.putty.org/).
-
-For the detailed steps, go to [this link](https://helpdeskgeek.com/how-to/how-to-generate-ssh-keys-on-windows-mac-and-linux/) from Help Desk Geek.
-
-***
-
 ### I want to deploy a virtual machine (VM) on Threefold. How can I do this?
 
 Read this [short documentation](https://library.threefold.me/info/manual/#/manual__weblets_vm) and you'll soon be exploring the virtual machine world!
@@ -1744,6 +1736,14 @@ QSFS can be run on both a full virtual machine or a micro virtual machine (VM). 
 
 ***
 
+### To deploy a load on the Threefold Grid, I need to generate SSH keys. How can I generate SSH keys on MAC, Linux or Windows?
+
+There are many methods to generate SSH keys.
+
+You can read this [Threefold SSH Guide](../getstarted/ssh_guide/ssh_guide.md) to learn more about the whole process.
+
+***
+
 ### What is the method to SSH into a 3node on IPv4, IPv6 and the Planetary Network?
 
 To SSH into a 3node, find the IP address of your Threefold deployment and do the following on your local computer terminal (Command Prompt for Windows):
@@ -1754,23 +1754,17 @@ ssh root@Address_Deployment
 
 To connect to the Planetary Network, [download and install the Threefold Planetary Network Connector](https://github.com/threefoldtech/planetary_network/releases). Once it is installed, open up the connector and click "Connect". Before connecting to the Planetary Network, make sure to disconnect your VPN if you have one.
 
-For more information on SSH Remote Connection, read this [Threefold SSH Guide](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html).
+For more information on SSH Remote Connection, read this [Threefold SSH Guide](../getstarted/ssh_guide/ssh_guide.md).
 
 ***
 
 ### How can I transfer a file from my computer to the virtual machine (VM) deployed on the Threefold Grid? How can I do SSH file transfer from Remote to Local and vice versa?
 
-You can use **scp** in the terminal to achieve this. There are some differences in the syntax whether you are using IPv4 or IPv6 (and thus also the Planetary Network).
+You can use **scp** in the terminal to achieve this:
 
-* IPv4
-  * scp -r folder root@IPv4_Address_Deployment:/PATH
-* IPv6
-  * Linux
-    * Using bracket
-      * scp root@[IPv6_Address_Deployment]:/PATH
-  * MAC
-    * Using bracket and backslash
-      * scp root@\\[IPv6_Address_Deployment\\]:/PATH 
+```
+scp -r folder root@Address_Deployment:/PATH
+```
 
 For more information, read [this](http://www.whatismyipv6.com/blogs/macipv6/wordpress/?p=118). 
 
@@ -2253,7 +2247,7 @@ On the tokenomics side, V2 rewards decrease as the difficulty level increases. F
 
 ### How long is the minting period of the tokens on Threefold? How long is the farming period?
 
-Each period has: 2630880 seconds = 43848 minutes = 730.8 hours. For more info, click [here](https://forum.threefold.io/t/minting-periods/).
+Each period has: 2630880 seconds = 43848 minutes = 730.8 hours. For more info, read [this](../faq/faq.md#what-is-the-start-and-end-of-the-current-minting-period-what-are-the-minting-periods-for-threefold-farming-in-2023).
 
 ***
 
@@ -2453,7 +2447,7 @@ This is not possible. When you send tokens to a crypto exchange, you need to inc
 ***
 ### I received my farming rewards, now I want to sell my Threefold tokens (TFT). How can I do this?
 
-First, know that your TFT farming rewards are on the Stellar Blockchain. If you want to sell on Pancakeswap (on the Binance Chain), you will need to use the Stellar-BSC Bridge, where a 50 TFT fees is applicable. See the section *How to use the BSC-Stellar Bridge* in the [Threefold Farming Guide](https://forum.threefold.io/t/threefold-farming-guide-part-2/2990#how-to-use-the-bsc-stellar-bridge) for more information on this method.
+First, know that your TFT farming rewards are on the Stellar Blockchain. If you want to sell on Pancakeswap (on the Binance Chain), you will need to use the Stellar-BSC Bridge, where a 50 TFT fees is applicable. See the section *How to use the BSC-Stellar Bridge* in the [Threefold Farming Guide](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#how-to-use-the-bsc-stellar-bridge) for more information on this method.
 
 If you stay on Stellar blockchain, you can either swap your TFT, for example on [StellarX](https://stellarx.com/swap), where some XLM will be needed, or sell your TFT on an exchange using the Stellar blockchain. Currently, this can be done on [BTC-Alpha](https://btc-alpha.com). First, send your TFT to your exchange wallet and make sure you enter the memo correctly. Once your TFT are on the exchange, you can sell them on the market. Make sure to follow the exchange specific steps where applicable.
 
@@ -2467,7 +2461,7 @@ The most straightforward wallet possible when it comes to farming TFT is simply 
 
 ### Can I have more details on storing Threefold tokens (TFT) on hardware wallets?
 
-Yes of course! In short, you will need to use a hardware wallet (Ledger/Trezor/etc.) to sign in, add TFT as an asset (trustline), then send TFT to the Stellar address. For more information, read the section Setting up a TFT Trustline on Stellar Blockchain from the [Farming documentation](https://forum.threefold.io/t/threefold-farming-guide-part-1/2989).
+Yes of course! In short, you will need to use a hardware wallet (Ledger/Trezor/etc.) to sign in, add TFT as an asset (trustline), then send TFT to the Stellar address. For more information, read the section [Setting up a TFT Trustline on Stellar Blockchain](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#setting-up-a-tft-trustline-on-stellar-blockchain) from the Farming documentation.
 
 ***
 
@@ -2525,7 +2519,7 @@ This is normal. Currently, not all 3nodes are being utilized by users on the Thr
 
 ### What are the general requirements for a DIY 3node server?
 
-Any 64-bit hardware with an Intel or AMD processor chip can run Zero-OS and become a 3node. For a complete guide on building a 3node, read the [Farming Guide](https://manual.grid.tf/TF_Farmer_Guide/tf_farmer_guide_readme.html). The following configurations provide guidelines on compatible and recommended setups:
+Any 64-bit hardware with an Intel or AMD processor chip can run Zero-OS and become a 3node. For a complete guide on building a 3node, read the [Farming Guide](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md). The following configurations provide guidelines on compatible and recommended setups:
 
 - Servers, desktops and mini computers type hardware are compatible.
 - A minimum of 500 GB of SSD and a bare minimum of 2 GB of RAM is required.
@@ -2583,7 +2577,7 @@ No, as long as the 3node is connected to the Internet via an ethernet cable (wif
 
 A small DIY 3node based on a compact office computer will draw under 20W. A full size server will draw around 100W idling. Note that a 3node actively used on the Grid (proof-of-utilization) will draw more power, but also generate passive income on top of farming if you have a public IP address. 
 
-For more information, read this section Calculate the Total Electricity Cost of Your Farm of the [Farming Guide](https://forum.threefold.io/t/threefold-farming-guide-part-1/2989).
+For more information, read thes section [Calculate the Total Electricity Cost of Your Farm](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#calculate-the-total-electricity-cost-of-your-farm) of the Farming Guide.
 
 ***
 
@@ -2599,7 +2593,7 @@ For a small farm set up, you could simply keep your normal air conditioner syste
 
 > Server Power in kW * 3413 * Number of Servers = Total BTU
 
-The total BTU will indicate the minimum number to look for when buying your air conditioner. For more information, read the section *Calculate the Minimum BTU Needed* in the [Farming Guide](https://forum.threefold.io/t/threefold-farming-guide-part-1/2989).
+The total BTU will indicate the minimum number to look for when buying your air conditioner. For more information, read the section [Calculate the Minimum BTU Needed](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#calculate-the-minimum-btu-needed-for-the-ac) in the Farming Guide.
 
 ***
 
@@ -2699,15 +2693,15 @@ The main steps to build a DIY 3node are the following:
 5. Set the BIOS/UEFI 
 6. Boot the 3node
 
-For a complete step-by-step guide on how to build a DIY 3node, read the [Farming documentation](https://forum.threefold.io/t/threefold-farming-guide-part-1/2989).
+For a complete step-by-step guide on how to build a DIY 3node, read the [Farming documentation](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md).
 
 ***
 
 ### I wonder what type of desktop computer or server to use for my 3node. Are there any recommendation when it comes to DIY 3node hardware?
 
-The [Farming documentation](https://forum.threefold.io/t/threefold-farming-guide-part-1/2989) contains a list of typical DIY 3nodes in the section List of Common DIY 3nodes.
+The Farming documentation contains a list of typical DIY 3nodes in the section [List of Common DIY 3nodes](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#list-of-common-diy-3nodes).
 
-Also, a good place to start is by checking what other farmers have built. [Over here](https://forum.threefold.io/t/lets-share-our-farming-setup/286).
+Also, a good place to start is by checking [what other farmers have built](https://forum.threefold.io/t/lets-share-our-farming-setup/286).
 
 ***
 
@@ -2717,15 +2711,19 @@ For zero out disks unix has a tool called “wipefs”. Every distribution shoul
 
 Wipe all the disks in the 3node:
 
-> sudo for i in /dev/sd*; do wipefs -a $i; done
+```
+sudo for i in /dev/sd*; do wipefs -a $i; done
+```
 
 Wipe all the nvme disks in the 3node:
 
-> sudo for i in /dev/nvme*; do wipefs -a $i; done
+```
+sudo for i in /dev/nvme*; do wipefs -a $i; done
+```
 
 This will wipe all of the disk devices in the hardware. Make sure you have SU permissions (write "sudo" before the command line). If needed, do a backup of the disks information before.
 
-For more information, read the section *4. Wipe All the Disks* of the Farming guide [here](https://forum.threefold.io/t/threefold-farming-guide-part-1/2989).
+For more information, read the section [Wipe All the Disks](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#4-wipe-all-the-disks) of the Farming Guide.
 
 ***
 
@@ -2833,9 +2831,7 @@ It depends on your 3node's system. Newer computers and servers will accept UEFI.
 
 ### How do I set the BIOS or UEFI of my 3node?
 
-For BIOS, read this [documentation](https://forum.threefold.io/t/setting-the-3node-bios-mode-older-servers-desktops/2423).
-
-For UEFI, read [this documentation](https://forum.threefold.io/t/setting-the-3node-uefi-mode-recent-servers-desktops/2422).
+You can read this [documentation](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#5-set-the-biosuefi) to learn more about BIOS and UEFI settings for a DIY 3node.
 
 ***
 
@@ -3030,7 +3026,9 @@ If you want to put the rack vertically with the longest side of the rack laying 
 
 ### Do I need the Zero-OS bootstrap image drive (USB or CD-DVD) when I reboot, or can I boot Zero-OS from the 3node main hard drive?
 
-You need the bootstrap image device plugged in every time you reboot a 3node and it's a good practice to keep it plugged in all the time. The technical explanation is: (1) at first boot, it creates a minimum requirement on SSD which is used as cache (2) each time the system restarts it reuses this SSD piece but Zero-OS bootstrap is also needed to download the last image. Indeed, image is not stored on the machine and also no boot loader is installed. For more information, have a look [here](https://forum.threefold.io/t/booting-zero-os-should-we-leave-the-usb-key-in/1738).
+It is advised to keep the bootstrap image plugged in your 3node. Once your node has been booted with Zero-OS via the USB key, you can remove the USB key, but if something happens and the node needs to reconnect with the network, it won’t be able to do so. We advise people to let the USB key always in so the node can reconnect with the network if needed.
+
+You need the bootstrap image device plugged in every time you reboot a 3node and it's a good practice to keep it plugged in all the time. The technical explanation is: (1) at first boot, it creates a minimum requirement on SSD which is used as cache (2) each time the system restarts it reuses this SSD piece but Zero-OS bootstrap is also needed to download the last image. Indeed, image is not stored on the machine and also no boot loader is installed.
 
 ***
 
@@ -3051,9 +3049,9 @@ Check in the BIOS settings and make sure you have enabled Virtual Cores (or Hype
 
 ### What is the current status on the Wake-on-LAN (WOL) feature?
 
-The WOL feature has been revised. This project has transformed into the Farmer bot feature. The farmer bot is a piece of software that can run as a grid deployment and manages a farmers nodes.
+The WOL feature has been revised. This project has transformed into the Farmerbot. The farmer bot is a piece of software that can run as a grid deployment and manages a farmers nodes.
 
-More information on this will be shared soon. Follow [this post](https://forum.threefold.io/t/tfgrid-3-8-engineering-status-and-wol/3716) for ongoing discussion.
+To learn more about the Farmerbot, read the [Farmerbot Guide](../farmerbot/farmerbot.md).
 
 ***
 
@@ -3114,7 +3112,7 @@ If the first method did not work, you can try to remove the account and add it b
 ### I set up my farm on Threefold Connect App. Can I use the Polkadot extension Dashboard instead?
 
 
-If you want to use the Dashboard, you can take the TFChain Secret from the app and import it into the Polkadot extension. For more information, and the other way around (TF Dashboard to TF Connect App), read the sections Move Farm from the TF app to the TF Dashboard (polkadot.js) and Import TF Dashboard (polkadot.js) wallet to the TF Connect App Wallet of the [Farming Guide Part 2](https://forum.threefold.io/t/threefold-farming-guide-part-2/2990).
+If you want to use the Dashboard, you can take the TFChain Secret from the app and import it into the Polkadot extension. For more information, read [this section](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs) of the Farming Guide. For the other way around (TF Dashboad to TF Connect App), read [this section](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet) of the guide.
 
 ***
 
@@ -3185,7 +3183,7 @@ Short answer: no. Long answer: [click here](https://forum.threefold.io/t/does-it
 ***
 ### My 3node lost power momentarily and I had to power it back on manually. Is there a better way to proceed?
 
-In your BIOS, go in *Security Settings* and choose *Last* for *AC Power Recovery. If you want, set a delay between 60 and 240 seconds. This will ensure your 3node does not power on and off frantically if your power flickers on and off, thus potentially damaging the unit. On other BIOS, it's *After Power Loss*, and you should choose *Previous State*.
+In your BIOS, go in *Security Settings* and choose *Last* for *AC Power Recovery*. If you want, set a delay between 60 and 240 seconds. This will ensure your 3node does not power on and off frantically if your power flickers on and off, thus potentially damaging the unit. On other BIOS, it's *After Power Loss*, and you should choose *Previous State*.
 
 *Depending on your 3node, the parameter might have a different name.
 
@@ -3660,7 +3658,7 @@ For example, on the Dell R720, you can have 24x16gb RAM ECC sticks, but it can o
 
 ### Is there a guide for the Farmerbot?
 
-There is a written guide and a video on how to set up the Farmerbot. Go to [this link](https://manual.grid.tf/farmerbot/farmerbot.html) for more information.
+There is a written guide and a video on how to set up the Farmerbot. Go to [this link](../farmerbot/farmerbot.md)) for more information.
 
 ### Why does the farmerbot need to wake nodes up for uptime report, if they are unused and shut down?
 
