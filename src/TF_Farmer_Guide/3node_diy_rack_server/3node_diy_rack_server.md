@@ -271,14 +271,14 @@ Write your farmer ID and make sure you select production mode.
 
 If you haven't created a Threefold farm yet, you have two options: 
 
-1. [Create a Farm with the Polkadot.js Extension](/farming/farming.md#1-create-a-farm) 
-2. [Create a Farm with Threefold Connect App](/farming/farming.md#create-a-farm)
+1. [Create a Farm with the Polkadot.js Extension](../TF_Complete_Farmer_Guide/farmer_guide.md#1-create-a-farm) 
+2. [Create a Farm with Threefold Connect App](../TF_Complete_Farmer_Guide/farmer_guide.md#create-a-farm)
 
-Note: It is possible to move your farm from the [TF Connect App to the TF Portal](/farming/farming.md#move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs) (via the Polkadot.js Extension). You can also [import your farm from the TF Portal to the TF Connect App](/farming/farming.md#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet).
+Note: It is possible to move your farm from the [TF Connect App to the TF Portal](../TF_Complete_Farmer_Guide/farmer_guide.md#move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs) (via the Polkadot.js Extension). You can also [import your farm from the TF Portal to the TF Connect App](../TF_Complete_Farmer_Guide/farmer_guide.md#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet).
 
 ## Wiping All the Disks
 
-You might need to wipe your disks if they are not brand new. To wipe your disks, read the section [Wipe All the Disks](/farming/farming.md#4-wipe-all-the-disks) of the [Threefold Farming Documentation](/farming/farming.md).
+You might need to wipe your disks if they are not brand new. To wipe your disks, read the section [Wipe All the Disks](../TF_Complete_Farmer_Guide/farmer_guide.md#4-wipe-all-the-disks) of the Threefold Farming Documentation.
 
 ## Downloading the Zero-OS Bootstrap Image
 
@@ -315,7 +315,7 @@ When you start the server, press F2 to get into System Setup.
 
 Then, select System BIOS. In System BIOS settings, select Processor Settings.
 
-Note: More details are available for BIOS Settings in this [documentation](/farming/farming.md#bios-mode).
+Note: More details are available for BIOS Settings in this [documentation](../TF_Complete_Farmer_Guide/farmer_guide.md#5-set-the-biosuefi).
 
 ## Processor Settings
 
@@ -362,6 +362,6 @@ Note that you cannot have more than 16 sticks of ECC DIMM on the R620/R720. For 
 # Closing Words
 That's it. You have now built a DIY 3node and you are farming on the Threefold Grid.
 
-If you encounter errors, you can read the section [Troubleshooting and Error Messages](/faq/faq.md#troubleshooting-and-error-messages) of the [Farmer FAQ](/faq/faq.md#farmer-faq).
+If you encounter errors, you can read the section [Troubleshooting and Error Messages](../faq/faq.md#troubleshooting-and-error-messages) of the Farmer FAQ.
 
 >Welcome to the New Internet!
