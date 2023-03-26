@@ -133,7 +133,7 @@ Note that the farmerbot is currently available for Dev Net, QA Net and Test Net.
 
 ![test_net|690x422](img/farmerbot_5.png) 
 
-Once you have your new bootstrap image for the new network, [wipe your disks](https://manual.grid.tf/TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.html#4-wipe-all-the-disks), insert the new bootstrap image and reboot the 3node.
+Once you have your new bootstrap image for the new network, [wipe your disks](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#4-wipe-all-the-disks), insert the new bootstrap image and reboot the 3node.
 
 ***
 # How to Set the Farmerbot
@@ -143,7 +143,7 @@ The sections on this page will guide you through the requirements, the required 
 ## Requirements
 The farmerbot is shipped inside a docker image so that it is easy to run in a docker environment. Thus, the one and only requirement to run the farmerbot is docker so please [install docker](https://docs.docker.com/engine/install/) on your VM or your system. Next, you'll have to copy the [docker-compose file](https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml) that will start the farmerbot for you when executing the command specified in section [Running the farmerbot](#running-the-farmerbot).
 
-Note that you can read [this guide](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html) to learn how to deploy a Full VM on the Threefold Grid with Linux, Mac or Linux with IPv4 or the Planetary Network. Also note that the farmerbot doesn't need an IPv4 connection. It is thus cheaper to use the Planetary Network. 
+Note that you can read [this SSH guide](../getstarted/ssh_guide/ssh_guide.md) to learn how to deploy a Full VM on the Threefold Grid with Linux, Mac or Linux with IPv4 or the Planetary Network. Also note that the farmerbot doesn't need an IPv4 connection. It is thus cheaper to use the Planetary Network. 
 
 With the minimum Ubuntu Full VM requirements, it currently costs 0.25TFT/hour to run with the Planetary Network (Date: 24-03-23). This should suffice to run the farmerbot. This is around 180 TFT/month. Of course, check for yourselves if the costs are correct.
 
@@ -415,5 +415,3 @@ Yes. In the config-path where you run the docker-compose, you have more logging 
 If you have any questions, please let us know.
 
 You can ask questions on this [Threefold Forum post](https://forum.threefold.io/t/farmerbot-basic-guide-for-qa-net/3845).
-
-Your questions might just be in the Farmerbot FAQ! Have a look [here](https://manual.grid.tf/faq/faq.html#farmerbot).
