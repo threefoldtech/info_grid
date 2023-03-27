@@ -10,7 +10,7 @@ Supported flists
 - `SSH_KEY`
 
 ## ubuntu
-- [Ubuntu](https://hub.grid.tf/tf-official-apps/threefoldtech-ubuntu-20.04.flist)
+- [Ubuntu](https://hub.grid.tf/tf-official-apps/threefoldtech-ubuntu-22.04.flist)
 
 ### entrypoint
 `/init.sh`
@@ -28,7 +28,7 @@ Supported flists
 - `SSH_KEY`
 
 ## k3s
-- [K3s](https://hub.grid.tf/ahmed_hanafy_1/ahmedhanafy725-k3s-latest.flist) 
+- [K3s](https://hub.grid.tf/tf-official-apps/threefoldtech-k3s-latest.flist) 
 
 ### entrypoint
  
