@@ -20,6 +20,8 @@ can be browsed on [Manual.grid.tf](https://manual.grid.tf/)
 
 ## Contribute
 
+Be sure to check the [versioning explanation](./versioning.md) first. Make pull request to the appropriate branch.
+
 If you want to contribute to [Manual.grid.tf](https://manual.grid.tf/), you should follow this steps:
 
 1. Add the md file to [src](./src) directory.
