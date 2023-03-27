@@ -253,7 +253,7 @@ The [Threefold simulator](https://simulator.grid.tf/) is referring to this IP ad
 
 #### How to configure public IP addresses for a Threefold farm or a 3node
 
-To configure public IP addresses for your 3node farm, head to the  *Farm*  section of the [Threefold Portal](https://portal.grid.tf/), expand your farm by clicking on the arrow on the left, then click on  *Public IPs*  and then click on  *Add IP* . Specify the IP address using CIDR format and then add the gateway.
+To configure public IP addresses for your 3node farm, select the  *Farm*  section of Portal menu in the [Threefold Dashboard](https://dashboard.grid.tf/), expand your farm by clicking on the arrow on the left, then click on  *Public IPs*  and then click on  *Add IP* . Specify the IP address using CIDR format and then add the gateway.
 
 ![farming_002](img/farming_002.png) 
 
@@ -364,7 +364,7 @@ Note that you can run Zero-OS on a Virtual Machine (VM), but you won't farm any 
 
 Also, note that Threefold runs its own OS, which is Zero-OS. You thus need to start with completely wiped disks. You cannot farm TFT with Windows, Linux or MAC OS installed on your disks. If you need to use such OS temporarily, boot it in Try mode with a removable media (USB key).
 
-Note: Once you have the necessary hardware, you need to [create a farm](/farming/farming.md#1-create-a-farm), [create a Zero-OS bootstrap image](/farming/farming.md#2-create-a-zero-os-bootstrap-image), [wipe your disks](/farming/farming.md#4-wipe-all-the-disks) and [set the BIOS/UEFI](/farming/farming.md#5-set-the-bios) . Then you can [boot your 3node](/farming/farming.md#6-boot-the-3node). 
+Note: Once you have the necessary hardware, you need to [create a farm](#1-create-a-farm), [create a Zero-OS bootstrap image](#2-create-a-zero-os-bootstrap-image), [wipe your disks](#4-wipe-all-the-disks) and [set the BIOS/UEFI](#5-set-the-biosuefi) . Then you can [boot your 3node](#6-boot-the-3node). 
 
 ***
 
@@ -415,7 +415,7 @@ This means a proper bandwidth for a Titan would be 10 mbps. As stated, 1 mbps is
 
 ***
 
-If you want ideas and suggestions when it comes to building DIY 3nodes, a good place to start is by checking what other farmers have built. [This post on the Forum](https://forum.threefold.io/t/lets-share-our-farming-setup/286) is a great start.
+If you want ideas and suggestions when it comes to building DIY 3nodes, a good place to start is by checking what other farmers have built. [This post on the Forum](https://forum.threefold.io/t/lets-share-our-farming-setup/286) is a great start. The following section also contains great DIY 3node ideas.
 
 ***
 
@@ -429,11 +429,11 @@ Building a 3node depends a lot on the hardware accessibility in your specific lo
 
 We regroup the 3node builds in 5 main categories:
 
-1. [Mini PC](/farming/farming.md#the-mini-pc-diy-3node)
-2. [Desktop](/farming/farming.md#the-desktop-pc-diy-3node)
-3. [Mini server](/farming/farming.md#the-mini-server-diy-3node)
-4. [Tower Server](/farming/farming.md#the-tower-server-diy-3node)
-5. [Rack Server](/farming/farming.md#the-rack-server-diy-3node)
+1. [Mini PC](#the-mini-pc-diy-3node)
+2. [Desktop](#the-desktop-pc-diy-3node)
+3. [Mini server](#the-mini-server-diy-3node)
+4. [Tower Server](#the-tower-server-diy-3node)
+5. [Rack Server](#the-rack-server-diy-3node)
 
 ***
 
@@ -691,7 +691,7 @@ For some DIY 3node, no upgrades are required and this constitutes a good start i
 
 For in-depth videos on how to upgrade mini-pc and rack servers, watch these great [DIY videos](https://www.youtube.com/user/floridanelson).
 
-For a DIY picture guide on how to build a R620 3node rack server, read [this documentation](/3node_diy_rack_server/3node_diy_rack_server.md).
+For a DIY picture guide on how to build a R620 3node rack server, read [this documentation](../3node_diy_rack_server/3node_diy_rack_server.md).
 ***
 ## 4. Wipe All the Disks
 ***
@@ -1062,7 +1062,7 @@ This will change depending on your hardware configuration.
 
     Concerning RAID technology, here is what Weynand Kuijpers, one of Threefold's co-founders, has to say:
 
-    > RAID is a technology that has brought resilience and security to the IT industry. But it has some limitations that we at ThreeFold did not want to get stuck in. We developed a different (and more efficient way to store data reliably. Please have a look [here](https://library.threefold.me/info/threefold#/cloud/threefold__cloud_products?id=storage-quantum-safe-filesystem). 
+    > RAID is a technology that has brought resilience and security to the IT industry. But it has some limitations that we at ThreeFold did not want to get stuck in. We developed a different (and more efficient way to store data reliably). Please have a look [here](https://library.threefold.me/info/threefold#/cloud/threefold__cloud_products?id=storage-quantum-safe-filesystem). 
     > 
     > This Quantum Safe Storage overcomes some of the shortfalls of RAID and is able to work over multiple nodes geographically spread on the TF Grid.
 
@@ -1260,7 +1260,7 @@ It is possible that your 3node needs to be booted with the BIOS mode. In this ca
 ***
 To boot Zero-OS, you need to use the bootstrap image [here](https://bootstrap.grid.tf/).
 
-Old servers/desktops will need to use the non-UEFI mode, which are the 4th and 5th options (named: ISO and USB). Newer servers/desktops can use UEFI (1st and 2nd option.
+Old servers/desktops will need to use the non-UEFI mode, which are the 4th and 5th options (named: ISO and USB). Newer servers/desktops can use UEFI (1st and 2nd option).
 
 We will now present the BIOS/UEFI settings that work with Threefold Zero-OS.
 Note that the settings are similar for UEFI and non-UEFI. But some details are important.
@@ -1380,7 +1380,7 @@ In the next section, we will boot the 3node and connect to the Threefold Grid. H
 ### 1. Booting the 3node with Zero-OS bootstrap image
 ***
 
-To boot Zero-OS, insert your Zero-OS Bootstrap Image, power on your computer and choose the right booting sequence and parameters ([BIOS](#bios-mode) or [UEFI](#uefi-mode)) in your BIOS/UEFI settings. Then, restart the 3node. Zero-OS should boot automatically.
+To boot Zero-OS, insert your Zero-OS Bootstrap Image, power on your computer and choose the right booting sequence and parameters ([BIOS or UEFI](#5-set-the-biosuefi)) in your BIOS/UEFI settings. Then, restart the 3node. Zero-OS should boot automatically.
 
 Note that you need an ethernet cable connected to your router or switcher. You cannot farm on the Threefold Grid with Wifi.
 
@@ -1392,29 +1392,31 @@ Once you have your node ID, you can also go on the Threefold Explorer to see you
 ***
 ### 2. Check 3node Status on the TF Explorer
 ***
-In a browser, go on the [Threefold Explorer](https://explorer.threefold.io/). 
+In your browser, go on the [3nodes Explorer section](https://dashboard.grid.tf/explorer/nodes) of the Threefold Dashboard. 
 
-![Farming_Create_Farm_3](./img/farming_25.png)
+![dashboard_1](./img/dashboard_1.png)
 
-Select **Grid V3**.
+Make sure to select the filter "Node ID".
 
-![Farming_Create_Farm_3](./img/farming_26.png)
+![dashboard_2](./img/dashboard_2.png)
 
-Then select **Mainnet**.
+In "NODE ID", write your node ID. We use the node ID 25 as an example.
 
-In this example, we will look for the farm 100. Use your farm ID.
+![dashboard_6](./img/dashboard_6.png)
 
-![Farming_Create_Farm_3](./img/farming_27.png)
+If you node is online, you should see "up" written under the column "Status".
 
-We can see here that 5 x 3nodes of the Farm 100 are online. 
+![dashboard_5](./img/dashboard_5.png)
 
-![Farming_Create_Farm_3](./img/farming_28.png)
+To see offline nodes, unselect the option "Online (Only").
 
-On the top right of this section, you can click on "Show offline nodes". 
+![dashboard_4](./img/dashboard_4.png)
 
-![Farming_Create_Farm_3](./img/farming_29.png)
+This example is done with the Threefold Dashboard on Main Net. To access the Threefold Dashboard on different networks, select those links:
 
-Now we can see the 3nodes that are offline.
+* [Threefold Dev Net Dashboard](https://dashboard.dev.grid.tf/)
+* [Threefold Test Net Dashboard](https://dashboard.test.grid.tf/)
+
 ***
 ### 3. Receive the Farming Rewards
 ***
@@ -1893,7 +1895,7 @@ Then within 9 months, this farm would have paid itself and from now on, it would
 
 We note that this takes into consideration that we are using the AC system 24/7. This would surely not be the case in real life. This means that the real ROI would be even better. It is a common practice to do estimates with stricter parameters. If you predict being profitable with strict parameters, you will surely be profitable in real life, even when "things" happen and not everything goes as planned. As always, this is not financial advice.
 
-We recall that in the section [Calculate the ROI of a DIY 3node](#calculate-the-roi-of-a-diy-3node), we found a simpler ROI of 6.25 months, say 7 months, that wasn't taking into consideration the additional costs of Internet and electricity. We now have a more realistic ROI of 9 months based on a fixed TFT price of 0.08$ USD. You will need to use to equations and check with your current TF farm and 3nodes.
+We recall that in the section [Calculate the ROI of a DIY 3node](#calculate-the-roi-of-a-diy-3node), we found a simpler ROI of 6.25 months, say 7 months, that wasn't taking into consideration the additional costs of Internet and electricity. We now have a more realistic ROI of 9 months based on a fixed TFT price of 0.08$ USD. You will need to use to equations and check with your current TF farm and 3nodes, as well as the current TFT market price.
 
 ***
 #### Check Revenue with the Threefold Simulator
@@ -2330,14 +2332,14 @@ The easiest way is to simply create an account on the Threefold Connect App (for
 ***
 ### How to use the TFChain-Stellar Bridge
 ***
-1. Go on the [Threefold Portal](https://portal.grid.tf)
+1. Go on the [Threefold Dashboard](https://dashboard.grid.tf)
 2. Sign-in with your Polkadot extension account
-3. Go in the section **Twin**
+3. Go in the section **Swap** of the Portal menu
 4. 2-Way Bridge:
-   * Transfer TFT from Stellar to TF Chain
-      * Click on *Bridge TFT from Stellar*
-   * Transfer TFT from TF Chain to Stellar
-      * Click on *Bridge TFT to Stellar*
+   * Transfer TFT from Stellar to TFChain
+      * Click on *Deposit*
+   * Transfer TFT from TFChain to Stellar
+      * Click on *Withdraw*
 
 Note: If you are on Threefold Connect App, you can export your account to the Polkadot extension. Look at the section [Move Farm from the TF app to the TF Portal (polkadot.js)](#move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs).
 ***
@@ -2438,7 +2440,7 @@ A blockchain validator participates in “consensus” and maintains the record 
 ***
 ### More Information
 
-Now that you have farmed TFT, you might want to invest those farming rewards into the TF ecosystem. If you want to know more about the role of a validator and how to become one, read this [VALIDATOR FAQ](/faq/faq.md#validator-faq).
+Now that you have farmed TFT, you might want to invest those farming rewards into the TF ecosystem. If you want to know more about the role of a validator and how to become one, read this [VALIDATOR FAQ](../faq/faq.md#validator-faq).
 ***
 ## How to Stake TFT
 
@@ -2450,4 +2452,4 @@ With the validator program comes *Delegated Staking*. This feature will be imple
 
 Now that you know how to farm TFT, you might want to explore the possibilities of the Threefold Token. 
 
-When it comes to learning about the real-world application and use of TFT, a good place to start is the [USER FAQ](/faq/faq.md#user-faq).
+When it comes to learning about the real-world application and use of TFT, a good place to start is the [USER FAQ](../faq/faq.md#user-faq).
