@@ -72,6 +72,13 @@ Read and accept the terms and Conditions
 
 You will be asked to confirm the transaction, write your password and click on **Sign the transaction** to confirm.
 
+![image](./img/dashboard_13.png)
+
+Once you open your account, you can choose  a relay for it then click on **Create**.
+
+![image](./img/dashboard_relay.png)
+
+You will also be asked to confirm the transaction.
 
 ![image](./img/dashboard_13.png)
 
