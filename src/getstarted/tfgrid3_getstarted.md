@@ -1,7 +1,7 @@
 ![ ](././img/endlessscalable.png)
 
 
-## This guide will walk you through:
+## This guide will walk you through: 
 
 - [Create an Account and a Wallet on the Threefold Connect App](../getstarted/TF_Connect/TF_Connect.md)
 - [Buy TFT on Lobstr and Store it in Your Threefold Connect Wallet](../getstarted/TF_Token/TF_Token.md)
