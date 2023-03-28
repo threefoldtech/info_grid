@@ -195,7 +195,7 @@ Finally, you can add some configuration that will the behavior of the farmerbot 
 
 An example of the power definition in the markdown config file:
 ```
-!!farmerbot.powermanager.define
+!!farmerbot.powermanager.configure
     wake_up_threshold:75
     periodic_wakeup:8:30AM
 ```
@@ -226,7 +226,7 @@ Farm configuration
     public_ips:2
 
 Power configuration
-!!farmerbot.powermanager.define
+!!farmerbot.powermanager.configure
     wake_up_threshold:75
     periodic_wakeup:8:30AM
 ```
