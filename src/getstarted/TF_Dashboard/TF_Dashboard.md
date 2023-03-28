@@ -77,7 +77,7 @@ Then, simply click on your account name to access the Threefold Dashboard:
 
 ![image](./img/dashboard_14.png)
 
-Read and accept the terms and Conditions
+Read and accept the Terms and Conditions
 
 ![image](./img/dashboard_15.png)
 
