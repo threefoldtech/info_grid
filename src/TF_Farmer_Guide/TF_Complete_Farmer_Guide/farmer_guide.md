@@ -13,10 +13,10 @@ And now *...Let's New Internet...*
 - [Building a DIY 3node - From Zero to Hero](#building-a-diy-3node---from-zero-to-hero)
   - [1. Create a Farm](#1-create-a-farm)
     - [1) Creating a Polkadot.js account](#1-creating-a-polkadotjs-account)
-    - [2) Creating the Farm on Threefold Grid](#2-creating-the-farm-on-threefold-grid)
+    - [2) Creating the Farm on the Threefold Grid](#2-creating-the-farm-on-the-threefold-grid)
     - [Optional: Add Public IP Addresses](#optional-add-public-ip-addresses)
       - [How to configure public IP addresses for a Threefold farm or a 3node](#how-to-configure-public-ip-addresses-for-a-threefold-farm-or-a-3node)
-        - [The difference between IPs assigned to nodes versus a farm](#the-difference-between-ips-assigned-to-nodes-versus-a-farm)
+      - [The Difference Between IPs Assigned to Nodes Versus a Farm](#the-difference-between-ips-assigned-to-nodes-versus-a-farm)
   - [2. Create a Zero-OS Bootstrap Image](#2-create-a-zero-os-bootstrap-image)
     - [Burning the Zero-OS Bootstrap Image](#burning-the-zero-os-bootstrap-image)
       - [CD/DVD BIOS](#cddvd-bios)
@@ -171,67 +171,67 @@ This is what you see when your account is created.
 
 ***
 
-### 2) Creating the Farm on Threefold Grid
-
-    https://portal.grid.tf
+### 2) Creating the Farm on the Threefold Grid
 
 Go on the Threefold Portal.
 
-![Farming_Create_Farm_9](./img/farming_createfarm_9.png) 
+```
+https://portal.grid.tf
+```
 
 As you’ve created and logged in your account, you will see your account in the list of connected accounts. Click on your account.
 
-![Farming_Create_Farm_10](./img/farming_createfarm_10.png)
+![Farming_Create_Farm_9](./img/tf_dashboard_2023_1.png) 
 
-You will be asked to read and accept the terms and conditions.
+You will be asked to read and accept the `Terms and Conditions`.
 
-![Farming_Create_Farm_11](./img/farming_createfarm_11.png) 
+![Farming_Create_Farm_10](./img/tf_dashboard_2023_2.png)
 
 You will be asked your password in order to confirm the transaction.
 
-***
-
-![Farming_Create_Farm_12](./img/farming_createfarm_12.png) 
-
-Once you confirm the transaction, your will land on the Twin page.
-
-![Farming_Create_Farm_13](./img/farming_createfarm_13.png) 
-
-You want to create a Twin and let the standard IP address already written, as shown below:
-
-> ::1
-
- Click Create. Note that this is a IPv6 address as the twin is using the Planetary Network.
-
-![Farming_Create_Farm_14](./img/farming_createfarm_14.png) 
-
-You will once again be asked to confirm the transaction. At this point, you might think: I will click on the Remember my password for the next 15 minutes. Wise Farmer indeed. You sign the transaction.
-
-![Farming_Create_Farm_15](./img/farming_createfarm_15.png) 
-
-You’ve just created a Threefold Twin. This is the New Internet.
+![Farming_Create_Farm_11](./img/tf_dashboard_2023_4.png) 
 
 ***
 
-![Farming_Create_Farm_16](./img/farming_createfarm_16.png) 
+Once you confirm the transaction, you want to create a Twin and let the standard IP address already written, as shown below:
 
-Click on the Farms button to your left. Then, click on Create Farm.
+```
+::1
+```
 
-![Farming_Create_Farm_17](./img/farming_createfarm_17.png) 
+Note that this is a IPv6 address as the twin is using the Planetary Network.
 
-Choose a farm name and click Create.
+Click Create. 
 
-![Farming_Create_Farm_18](./img/farming_createfarm_18.png) 
+![Farming_Create_Farm_12](./img/tf_dashboard_2023_5.png) 
 
-You can Sign the transaction without entering your passwords and also choose to Extend the period without password by 15 minutes. Your choice. Your free will.
+You will once again be asked to confirm the transaction.
 
-![Farming_Create_Farm_19](./img/farming_createfarm_19.png) 
+Then, click on the "Farms" button in the Portal menu to your left:
 
-You’ve created a farm! Here we can see on the top left the farm ID. 327. Imagine, one day there will be millions!
+![Farming_Create_Farm_13](./img/tf_dashboard_2023_6.png) 
 
-![Farming_Create_Farm_20](./img/farming_createfarm_20.png) 
+On the "Farms" page, click on "Create Farm".
 
-Click on Add a **Stellar address**. Write your address and click save. You can, for example, use your **Threefold Connect App*** address or your hard storage device address (Ledger, Trezor).
+![Farming_Create_Farm_14](./img/tf_dashboard_2023_7.png) 
+
+Choose a farm name and click "Submit".
+
+![Farming_Create_Farm_15](./img/tf_dashboard_2023_8.png) 
+
+Once the farm is created, click on the down arrow to see your farm details.
+
+![Farming_Create_Farm_16](./img/tf_dashboard_2023_9.png) 
+
+In this section, click on "Add V2 Address" to add your farming rewards address.
+
+![Farming_Create_Farm_17](./img/tf_dashboard_2023_10.png) 
+
+Write a valid Stellar address and click "Submit". 
+
+![Farming_Create_Farm_17](./img/tf_dashboard_2023_11.png) 
+
+You can, for example, use your Threefold Connect App* address or your hardware wallet address (Ledger, Trezor).
 
 *Threefold Connect App Hyperlinks:
 * Link for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US)
@@ -250,29 +250,35 @@ The [Threefold simulator](https://simulator.grid.tf/) is referring to this IP ad
 
 ![farming_001](img/farming_001.png) 
 
-
+***
 #### How to configure public IP addresses for a Threefold farm or a 3node
+***
 
-To configure public IP addresses for your 3node farm, select the  *Farm*  section of Portal menu in the [Threefold Dashboard](https://dashboard.grid.tf/), expand your farm by clicking on the arrow on the left, then click on  *Public IPs*  and then click on  *Add IP* . Specify the IP address using CIDR format and then add the gateway.
+To configure public IP addresses for your 3node farm, select the  *Farms*  section of the Portal menu in the [Threefold Dashboard](https://dashboard.grid.tf/), expand your farm by clicking on the down arrow on the left, then click on the down arrow to the right of the subsection *Public IPs*.
 
-![farming_002](img/farming_002.png) 
+![Farming_Create_Farm_18](./img/tf_dashboard_2023_12.png) 
 
-![farming_003](img/farming_003.png) 
+Click on "Add IP".
 
-![farming_004](img/farming_004.png) 
+![Farming_Create_Farm_19](./img/tf_dashboard_2023_13.png) 
 
-The same process can be done for individual 3nodes. This is available in the  *Nodes*  section, just below the  *Farms*  section of the Farms page.
+Specify the IP address using CIDR format, add the gateway and then click "Save".
 
+![Farming_Create_Farm_20](./img/tf_dashboard_2023_14.png) 
 
-To configure public IP addresses to a specific 3node, click on the Actions *Add a public config* (represented with a Earth icon) and fill in the necessary information.
+The same process can be done for individual 3nodes. This is available in the  *Nodes*  section, just below the  *Farms*  section of the "Farms" page.
 
-![farming_005](img/farming_005.png) 
+To configure public IP addresses to a specific 3node, click on the Actions *Add a public config* (represented with a Earth icon).
 
-![farming_006](img/farming_006.png)  
+![Farming_Create_Farm_21](./img/tf_dashboard_2023_15.png) 
 
-As it is written, only the IPV4 address and gateway are necessary. IPV6 and the Domain are optional.
+Fill in the necessary information and click save. Only the IPv4 address and gateway are necessary. The IPv6 address and the Domain are optional.
 
-##### The difference between IPs assigned to nodes versus a farm
+![Farming_Create_Farm_22](./img/tf_dashboard_2023_16.png) 
+
+***
+#### The Difference Between IPs Assigned to Nodes Versus a Farm
+***
 
 IPs assigned to a farm are available to be rented by workloads. They can be assigned to virtual machines for example. IPs assigned to nodes enable each node to become a gateway.
 
