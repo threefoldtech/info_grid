@@ -1,6 +1,17 @@
 
 # Threefold Dashboard: Create Account and Transfer TFT
 
+<div class="youtubeVideoWrapper">
+<iframe title="Create an Account on ThreeFold Dashboard" width="560" height="315" src="https://www.youtube-nocookie.com/embed/t9rAZAPAWbM" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
+
+## Table of Contents
+
+- [Threefold Dashboard: Create Account and Transfer TFT](#threefold-dashboard-create-account-and-transfer-tft)
+  - [Table of Contents](#table-of-contents)
+  - [Create Polkadot Extension Account](#create-polkadot-extension-account)
+  - [Transfer TFT from Stellar Chain to TFChain](#transfer-tft-from-stellar-chain-to-tfchain)
+
 For this section, we will create an account on the TFChain and transfer TFT from Stellar chain to TFChain. We will then be able to use the TFT and deploy workloads on the Threefold Playground.
 
 It is simple. The main steps are:
