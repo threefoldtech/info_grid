@@ -6,15 +6,15 @@
 
 <h2>Table of Contents</h2>
 
-- [Get TFT: Buy TFT on Lobstr](#get-tft-buy-tft-on-lobstr)
-  - [Download the App and Create an Account](#download-the-app-and-create-an-account)
-  - [Connect Your TF Connect App Wallet](#connect-your-tf-connect-app-wallet)
-  - [Buy XLM with Fiat Currency](#buy-xlm-with-fiat-currency)
-  - [Swap XLM for TFT](#swap-xlm-for-tft)
+- [Introduction](#introduction)
+- [Download the App and Create an Account](#download-the-app-and-create-an-account)
+- [Connect Your TF Connect App Wallet](#connect-your-tf-connect-app-wallet)
+- [Buy XLM with Fiat Currency](#buy-xlm-with-fiat-currency)
+- [Swap XLM for TFT](#swap-xlm-for-tft)
 
 ***
 
-# Get TFT: Buy TFT on Lobstr
+# Introduction
 
 The Threefold token (TFT) is the utility token of the Threefold Grid, a decentralized and open-source project offering network, compute and storage capacity.
 
@@ -48,7 +48,7 @@ Here we go!
 
 ***
 
-## Download the App and Create an Account
+# Download the App and Create an Account
 
 Go on [www.lobstr.co](https://www.lobstr.co) and download the Lobstr app.
 You can download it for Android or iOS.
@@ -94,7 +94,7 @@ Once your email is verified, you can sign in to your Lobstr account:
 
 ***
 
-## Connect Your TF Connect App Wallet
+# Connect Your TF Connect App Wallet
 
 You will then need to either create a new wallet or connect an existing wallet.
 
@@ -138,7 +138,7 @@ You can now simply click on the **copy** button on the right:
 
 That's it! You've now connected your TF Connect app wallet to your Lobstr account.
 
-## Buy XLM with Fiat Currency
+# Buy XLM with Fiat Currency
 
 Now, all we need to do, is buy XLM and then swap it for TFT.
 It will be directly available in your TF Connect App wallet.
@@ -196,7 +196,7 @@ On the Trade History page, you can choose to download the csv file version of yo
 
 That's it! You've bought XLM on Lobstr and Moonpay.
 
-## Swap XLM for TFT
+# Swap XLM for TFT
 
 Now we want to swap the XLM tokens for the Threefold tokens (TFT).
 This is even easier than the previous steps.
