@@ -6,11 +6,9 @@
 </div>
 
 ## Table of Contents
-
-- [Threefold Dashboard: Create Account and Transfer TFT](#threefold-dashboard-create-account-and-transfer-tft)
-  - [Introduction](#introduction)
-  - [Create Polkadot Extension Account](#create-polkadot-extension-account)
-  - [Transfer TFT from Stellar Chain to TFChain](#transfer-tft-from-stellar-chain-to-tfchain)
+- [Introduction](#introduction)
+- [Create Polkadot Extension Account](#create-polkadot-extension-account)
+- [Transfer TFT from Stellar Chain to TFChain](#transfer-tft-from-stellar-chain-to-tfchain)
 
 ## Introduction
 
