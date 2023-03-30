@@ -91,7 +91,6 @@
 - [Threefold Video Gallery](tf_video_gallery/tf_video_gallery.md)
 - [Farmerbot](farmerbot/farmerbot.md)
 - [ThreeFold Chain](tfchain/tfchain.md)
-    - [Twin creation](tfchain/tfchain_create_twin.md)
     - [External service contract](tfchain/tfchain_external_service_contract.md)
 - [How to Contribute](contribute/contribute.md)
 - [FAQ](faq/faq.md)
