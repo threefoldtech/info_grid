@@ -38,3 +38,17 @@ in the bottom of the page you can see a list of all of the virual machines you d
 ![ ](../weblets/img/weblet_vm5.png)
 You can also go to JSON tab for full details
 ![ ](../weblets/img/weblet_vm6.png)
+
+
+
+__Difference Between Full Virtual Machine and Micro Virtual Machine__ : 
+   - A Micro Virtual Machine is meant to host microservice. and the user should enter the entrypoint.
+   - In a Micro Virtual Machine the user has no control over ther kernel used to run the machine.
+   - In a Micro Virtual Machine the network setup will be created for the user. And the vm's init process can assume that it will be fully set up (according to the config the user provided) by the time it is started. 
+   - In the Micro Virtual Machine mountpoints will also be setup for the user. The environment variables passed will be available inside the the vm.
+   - In full Vm, the users run their own operating system, but the image must be
+      - EFI bootable
+      - Cloud-init enabled.
+   - A Full Virtal Machine contains a default disk attached, as the boot image will be copied to this it.
+   - In a Full Virtal Machine The default disk is mounted on / so if you want to attach any additional disks, you have to choose a different mounting point.
+   - In a Full Virtual Machine a /image.rawfilr is used as "boot disk". This /image.raw is copied to the first attached volume of the vm. Cloud-init will take care of resizing the filesystem on the image to take the full disk size allocated in the deployment.
