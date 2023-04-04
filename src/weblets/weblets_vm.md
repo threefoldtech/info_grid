@@ -49,6 +49,6 @@ __Difference Between Full Virtual Machine and Micro Virtual Machine__ :
    - In full Vm, the users run their own operating system, but the image must be
       - EFI bootable
       - Cloud-init enabled.
-   - A Full Virtal Machine contains a default disk attached, as the boot image will be copied to this it.
+   - A Full Virtal Machine contains a default disk attached, as the boot image will be copied to this disk.
    - In a Full Virtal Machine The default disk is mounted on / so if you want to attach any additional disks, you have to choose a different mounting point.
-   - In a Full Virtual Machine a /image.rawfilr is used as "boot disk". This /image.raw is copied to the first attached volume of the vm. Cloud-init will take care of resizing the filesystem on the image to take the full disk size allocated in the deployment.
+   - In a Full Virtual Machine a /image.raw file is used as "boot disk". This /image.raw is copied to the first attached volume of the vm. Cloud-init will take care of resizing the filesystem on the image to take the full disk size allocated in the deployment.
