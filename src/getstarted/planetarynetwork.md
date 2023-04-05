@@ -1,8 +1,6 @@
 
 # Planetary Network
 
-An extensive explanation on the Planetary Network can be found [here](threefold:planetary_network). 
-
 In a first phase, to get started, you need to launch the planetary network by running [Yggdrasil](https://yggdrasil-network.github.io) from the command line. 
 
 Yggdrasil is an implementation of a fully end-to-end encrypted IPv6 network. It is lightweight, self-arranging, supported on multiple platforms, and allows pretty much any IPv6-capable application to communicate securely with other nodes on the network. Yggdrasil does not require you to have IPv6 Internet connectivity - it also works over IPv4.
@@ -100,21 +98,13 @@ Once Yggdrasil is installed, you can find your Yggdrasil IP address using this c
 yggdrasil -useconffile /etc/yggdrasil.conf -address
 ```
 
-You'll need this address when registering your twin on TF Chain in the next step.
-
-> TODO: following seems to be double
-
-# Setup yggdrasil (optional to obtain public Ipv6 address)
+You'll need this address when registering your twin on TFChain later.
 
 
-- download and install yggdrasil using the following [link](https://github.com/yggdrasil-network/yggdrasil-go/releases/tag/v0.4.0)
-- Start it initially to init the configurations:
+### Add Peers
 
-        systemctl start yggdrasil
-    Or using
 
-        yggdrasil -useconffile /etc/yggdrasil.conf
-- Add the needed [peers](https://publicpeers.neilalexander.dev/) in the config file generated under Peers.
+ - Add the needed [peers](https://publicpeers.neilalexander.dev/) in the config file generated under Peers.
 
   **example**:
 ```
@@ -127,7 +117,7 @@ You'll need this address when registering your twin on TF Chain in the next step
 
         systemctl restart yggdrasil
 
-# Clients
+## Clients
 
 - [planetary network connector](https://github.com/threefoldtech/planetary_network)
 
