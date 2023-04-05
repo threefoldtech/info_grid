@@ -14,7 +14,7 @@
 
 ***
 
-# Introduction
+## Introduction
 
 The Threefold token (TFT) is the utility token of the Threefold Grid, a decentralized and open-source project offering network, compute and storage capacity.
 
@@ -35,20 +35,13 @@ There are many ways to buy TFT:
 For the current guide, we will show how to buy TFT on the [Lobstr app](https://lobstr.co/).
 The process is simple.
 
-Here are the main steps:
-
-* Download and Create an account
-* Connect to the TF Connect app wallet
-* Buy XLM
-* Swap XLM to TFT
-
 Note that it is possible to do these steps without connecting the Lobstr wallet to the TF Connect App wallet. But doing this has a clear advantage: when we buy and swap on Lobstr, the TFT is directly accessible on the TF Connect app wallet.
 
 Here we go!
 
 ***
 
-# Download the App and Create an Account
+## Download the App and Create an Account
 
 Go on [www.lobstr.co](https://www.lobstr.co) and download the Lobstr app.
 You can download it for Android or iOS.
@@ -94,7 +87,7 @@ Once your email is verified, you can sign in to your Lobstr account:
 
 ***
 
-# Connect Your TF Connect App Wallet
+## Connect Your TF Connect App Wallet
 
 You will then need to either create a new wallet or connect an existing wallet.
 
@@ -138,7 +131,7 @@ You can now simply click on the **copy** button on the right:
 
 That's it! You've now connected your TF Connect app wallet to your Lobstr account.
 
-# Buy XLM with Fiat Currency
+## Buy XLM with Fiat Currency
 
 Now, all we need to do, is buy XLM and then swap it for TFT.
 It will be directly available in your TF Connect App wallet.
@@ -196,7 +189,7 @@ On the Trade History page, you can choose to download the csv file version of yo
 
 That's it! You've bought XLM on Lobstr and Moonpay.
 
-# Swap XLM for TFT
+## Swap XLM for TFT
 
 Now we want to swap the XLM tokens for the Threefold tokens (TFT).
 This is even easier than the previous steps.
