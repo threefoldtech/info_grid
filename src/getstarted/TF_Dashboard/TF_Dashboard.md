@@ -5,6 +5,7 @@
 </div>
 
 <h2> Table of Contents </h2>
+
 - [Introduction](#introduction)
 - [Create Polkadot Extension Account](#create-polkadot-extension-account)
 - [Transfer TFT from Stellar Chain to TFChain](#transfer-tft-from-stellar-chain-to-tfchain)
