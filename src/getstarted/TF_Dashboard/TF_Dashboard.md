@@ -14,13 +14,6 @@
 
 For this section, we will create an account on the TFChain and transfer TFT from Stellar chain to TFChain. We will then be able to use the TFT and deploy workloads on the Threefold Playground.
 
-It is simple. The main steps are:
-
-* Go to the Threefold Dashboard
-* Download the Polkadot extension
-* Create an account
-* Send TFT from Stellar Chain to TFChain
-
 ## Create Polkadot Extension Account
 
 Go to the Threefold Dashboard: [dashboard.grid.tf](https://dashboard.grid.tf/)
