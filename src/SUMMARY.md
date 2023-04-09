@@ -65,6 +65,8 @@
     - [Ready Community Solutions]()
         - [Algorand](weblets/weblets_algorand.md)
         - [Caprover](weblets/weblets_caprover.md)
+          - [Caprover Admin](./weblets/weblets_caprover_admin.md)
+          - [Caprover Worker](./weblets/weblets_caprover_worker.md)
         - [CasperLabs](weblets/weblets_casper.md)
         - [Discourse](weblets/weblets_discourse.md)
         - [Funkwhale](weblets/weblets_funkwhale.md)
