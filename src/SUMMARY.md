@@ -60,6 +60,7 @@
         - [Profile Manager Unlock](weblets/profile_manager_unlock.md)
     - [Deployments List](weblets/weblets_deployments_list.md)
     - [Basic Environments]()
+        - [Full virtual Machine](weblets/weblets_fullVm.md)
         - [Virtual Machine](weblets/weblets_vm.md)
         - [Kubernetes](weblets/weblets_k8s.md)
     - [Ready Community Solutions]()
