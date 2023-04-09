@@ -71,6 +71,7 @@
         - [Taiga](weblets/weblets_taiga.md)
         - [Owncloud](weblets/weblets_owncloud.md)
         - [Discourse](weblets/weblets_discourse.md)
+        - [Mastodon](weblets/weblets_mastodon.md)
         - [Mattermost](weblets/weblets_mattermost.md)
         - [Presearch](weblets/weblets_presearch.md)
         - [CasperLabs](weblets/weblets_casper.md)
