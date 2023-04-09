@@ -64,6 +64,7 @@
         - [Virtual Machine](weblets/weblets_vm.md)
         - [Kubernetes](weblets/weblets_k8s.md)
     - [Ready Community Solutions]()
+        - [Algorand](weblets/weblets_algorand.md)
         - [Caprover](weblets/weblets_caprover.md)
         - [Funkwhale](weblets/weblets_funkwhale.md)
         - [Peertube](weblets/weblets_peertube.md)
