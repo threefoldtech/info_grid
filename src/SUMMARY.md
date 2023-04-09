@@ -91,5 +91,7 @@
     - [3node DIY Rack Server](TF_Farmer_Guide/3node_diy_rack_server/3node_diy_rack_server.md)
 - [Threefold Video Gallery](tf_video_gallery/tf_video_gallery.md)
 - [Farmerbot](farmerbot/farmerbot.md)
+- [ThreeFold Chain](tfchain/tfchain.md)
+    - [External service contract](tfchain/tfchain_external_service_contract.md)
 - [How to Contribute](contribute/contribute.md)
 - [FAQ](faq/faq.md)
