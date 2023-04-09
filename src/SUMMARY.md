@@ -57,7 +57,6 @@
     - [Deploy Kubernetes](tfgridcmd/grid3_cli_kubernetes.md)
 - [Weblets](weblets/weblets_home.md)
     - [Profile Manager](weblets/weblets_profile_manager.md)
-        - [Profile Manager Unlock](weblets/profile_manager_unlock.md)
     - [Deployments List](weblets/weblets_deployments_list.md)
     - [Basic Environments]()
         - [Full virtual Machine](weblets/weblets_fullVm.md)
