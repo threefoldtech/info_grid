@@ -1,24 +1,9 @@
-## Requirements
+## Download
 
-- [Go](https://golang.org/doc/install) >= 1.19
-- make
-
-## Installation
-
-clone grid3-go-client repository:
+- Download latest release from [releases](https://github.com/threefoldtech/tf-grid-cli/releases).
+- Extract the binaries.
+- Move `tf-grid-cli` to any `$PATH` directory:
 
 ```bash
-git clone https://github.com/threefoldtech/grid3_client_go.git
-```
-
-cd into the repository directory and run `make build`:
-
-```bash
-cd grid3_client_go && make build
-```
-
-move result binary to any `$PATH` directory:
-
-```bash
-mv bin/tf-grid /usr/local/bin
+mv tf-grid-cli /usr/local/bin
 ```

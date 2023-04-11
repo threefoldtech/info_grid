@@ -12,7 +12,7 @@
   - will be used to create Umbrel dashboard account.
 - Enter a Password
   - Will be used to login to the Umbrel dashboard.
-  - Must be 12 characters or more.
+  - Must be 12 to 30 characters .
 - `Public IPv4` flag gives the Umbrel machine a Public IPv4
   - Select a capacity package:
   - **Minimum**: { cpu: 2, memory: 2048 , diskSize: 10 }

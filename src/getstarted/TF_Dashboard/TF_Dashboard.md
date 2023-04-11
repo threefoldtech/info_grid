@@ -1,27 +1,22 @@
-<h1> Threefold Dashboard: Create an Account and Transfer TFT</h1>
+<h1> Threefold Dashboard: Create Account and Transfer TFT </h1>
 
-<h2>Table of Contents</h2>
+<div class="youtubeVideoWrapper">
+<iframe title="Create an Account on ThreeFold Dashboard" width="560" height="315" src="https://www.youtube-nocookie.com/embed/t9rAZAPAWbM" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
 
-- [Threefold Dashboard: Create Account and Transfer TFT](#threefold-dashboard-create-account-and-transfer-tft)
-  - [Create Polkadot Extension Account](#create-polkadot-extension-account)
-  - [Transfer TFT from Stellar Chain to TFChain](#transfer-tft-from-stellar-chain-to-tfchain)
+<h2> Table of Contents </h2>
 
-***
+- [Introduction](#introduction)
+- [Create Polkadot Extension Account](#create-polkadot-extension-account)
+- [Transfer TFT from Stellar Chain to TFChain](#transfer-tft-from-stellar-chain-to-tfchain)
 
-# Threefold Dashboard: Create Account and Transfer TFT
+## Introduction
 
 For this section, we will create an account on the TFChain and transfer TFT from Stellar chain to TFChain. We will then be able to use the TFT and deploy workloads on the Threefold Playground.
 
-It is simple. The main steps are:
-
-* Go to the Threefold Dashboard
-* Download the Polkadot extension
-* Create an account
-* Send TFT from Stellar Chain to TFChain
-
 ## Create Polkadot Extension Account
 
-Go to the Threefold Dashboard: https://dashboard.grid.tf/
+Go to the Threefold Dashboard: [dashboard.grid.tf](https://dashboard.grid.tf/)
 
 If you don't have the Polkadot extension installed on your browser, you will be able to click on the download link directly on the Threefold Dashboard page:
 
@@ -69,19 +64,23 @@ Now, when you go on the [Threefold Dashboard](https://dashboard.grid.tf/), you c
 
 You will then need to grant the Threefold Dashboard access to your Polkadot account.
 
-Accept the terms and then write your password to confirm:
-
 ![image](./img/dashboard_12.png)
-
-![image](./img/dashboard_13.png)
 
 Then, simply click on your account name to access the Threefold Dashboard:
 
 ![image](./img/dashboard_14.png)
 
-Once you open your account, you can create a Twin ID. Make sure it is written **::1** in the box and click **Create**. 
+Read and accept the Terms and Conditions
 
 ![image](./img/dashboard_15.png)
+
+You will be asked to confirm the transaction, write your password and click on **Sign the transaction** to confirm.
+
+![image](./img/dashboard_13.png)
+
+Once you open your account, you can choose  a relay for it then click on **Create**.
+
+![image](./img/dashboard_relay.png)
 
 You will also be asked to confirm the transaction.
 

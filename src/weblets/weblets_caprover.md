@@ -135,4 +135,5 @@ You should now see
 
 ### How to work with CapRover
 
-> [see our caprover admin small tutorial](weblets/weblets_caprover_admin)
+> [see our caprover admin small tutorial](./weblets_caprover_admin.md)
+> [see our caprover worker small tutorial](./weblets_caprover_worker.md)

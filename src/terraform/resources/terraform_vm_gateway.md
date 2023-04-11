@@ -1,11 +1,11 @@
-
 ![ ](../advanced/img/terraform_.png)
 
 # Terraform Web Gateway With VM
 
-## expose with prefix
+## Expose with prefix
 
 A complete list of gateway name workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/name_proxy.md).
+
 ```
  terraform {
   required_providers {
@@ -22,9 +22,9 @@ provider "grid" {
 # vm: needs to know the domain in its init script
 # gateway_name: needs the ip of the vm to use as backend.
 # - the fqdn can be computed from grid_gateway_domain for the vm
-# - the backend can reference the vm ip directly 
+# - the backend can reference the vm ip directly
 data "grid_gateway_domain" "domain" {
-  node = 7 
+  node = 7
   name = "ashraf"
 }
 resource "grid_network" "net1" {
@@ -41,7 +41,7 @@ resource "grid_deployment" "d1" {
   vms {
     name = "vm1"
     flist = "https://hub.grid.tf/tf-official-apps/strm-helloworld-http-latest.flist"
-    cpu = 2 
+    cpu = 2
     publicip = true
     memory = 1024
     env_vars = {
@@ -72,23 +72,19 @@ output "ygg_ip" {
 
 ```
 
-
-
 please note to use grid_name_proxy you should choose a node that has public config and has a domain in its public config like node 7 in the following example
-![ ](./terraform/img//graphql_publicconf.png)
+![ ](./img/graphql_publicconf.png)
 
+Here
 
-
-Here 
 - we created a grid domain resource `ashraf` to be deployed on gateway node `7` to end up with a domain `ashraf.ghent01.devnet.grid.tf`
 - we create a proxy for the gateway to send the traffic coming to `ashraf.ghent01.devnet.grid.tf` to the vm as a backend, we say `tls_passthrough is false` to let the gateway terminate the traffic, if you replcae it with `true` your backend service needs to be able to do the TLS termination
 
-
-## expose with fulldomain
+## Expose with fulldomain
 
 A complete list of gateway fqdn workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/fqdn_proxy.md).
 
-it is more like the above example the only difference is you need to create an `A record` on your name provider for `remote.omar.grid.tf`  to gateway node `7` IPv4.
+it is more like the above example the only difference is you need to create an `A record` on your name provider for `remote.omar.grid.tf` to gateway node `7` IPv4.
 
 ```
 
@@ -104,5 +100,3 @@ output "fqdn" {
     value = grid_fqdn_proxy.p1.fqdn
 }
 ```
-
-

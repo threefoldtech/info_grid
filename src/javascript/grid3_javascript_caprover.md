@@ -1,10 +1,9 @@
 
-
 ## Deploying Caprover Leader Node
 
 ### Example code
 
-```
+```ts
 import { DiskModel, FilterOptions, MachineModel, MachinesModel, NetworkModel } from "../src";
 import { config, getClient } from "./client_loader";
 import { log } from "./utils";
@@ -19,7 +18,7 @@ async function main() {
         farmId: 1,
     };
 
-    const CAPROVER_FLIST = "https://hub.grid.tf/tf-official-apps/tf-caprover-main.flist";
+    const CAPROVER_FLIST = "https://hub.grid.tf/tf-official-apps/tf-caprover-latest.flist";
     // create network Object
     const n = new NetworkModel();
     n.name = "wedtest";
@@ -48,7 +47,7 @@ async function main() {
         SWM_NODE_MODE: "leader",
         CAPROVER_ROOT_DOMAIN: "rafy.grid.tf", // update me
         DEFAULT_PASSWORD: "captain42",
-        CAPTAIN_IMAGE_VERSION: "v1.2.1",
+        CAPTAIN_IMAGE_VERSION: "latest",
     };
 
     // create VMs Object
@@ -79,28 +78,24 @@ async function main() {
 main();
 ```
 
-
-
 ### Detailed explanation
 
 So this deployment is almost similiar to what we have in the [vm deployment section](./grid3_javascript_vm.md). We only have different environment variables
 
+#### Env. variables in Leader Node
 
-###### Env. variables in Leader Node
 - PUBLIC_KEY: Your public IP to be able to access the VM.
 - SWM_NODE_MODE: Caprover Node type which must be `leader` as we are deploying a leader node.
 - CAPROVER_ROOT_DOMAIN: The domain which you we will use to bind the deployed VM.
 - DEFAULT_PASSWORD: Caprover default password you want to deploy with.
 
-
 For further details about Leader node deployment please [check](https://github.com/freeflowuniverse/freeflow_caprover#a-leader-node-deploymentsetup)
-
 
 ## Deploying Caprover Worker Node
 
 ### Example code
 
-```
+```ts
 import { DiskModel, FilterOptions, MachineModel, MachinesModel, NetworkModel } from "../src";
 import { config, getClient } from "./client_loader";
 import { log } from "./utils";
@@ -115,7 +110,7 @@ async function main() {
         farmId: 1,
     };
 
-    const CAPROVER_FLIST = "https://hub.grid.tf/tf-official-apps/tf-caprover-main.flist";
+    const CAPROVER_FLIST = "https://hub.grid.tf/tf-official-apps/tf-caprover-latest.flist";
     // create network Object
     const n = new NetworkModel();
     n.name = "wedtest";
@@ -145,7 +140,7 @@ async function main() {
         SWM_NODE_MODE: "worker",
         SWMTKN: "SWMTKN-1-1eikxeyat4br9t4la1dnln11l1tvlnrngzwh5iq68m2vn7edi1-6lc6xtw3pzd99lrowyuayr5yv",
         LEADER_PUBLIC_IP: "185.206.122.157",
-        CAPTAIN_IMAGE_VERSION: "v1.2.1",
+        CAPTAIN_IMAGE_VERSION: "latest",
     };
 
     // create VMs Object
@@ -175,16 +170,17 @@ main();
 ```
 
 Before worker node deployment:
- - Get token from the leader node
- - Get leader node public IP
+
+- Get token from the leader node
+- Get leader node public IP
 
   For futher inforamtion please [check](https://github.com/freeflowuniverse/freeflow_caprover#step-4-access-the-captain-dashboard)
 
-
 to deploy a worker Node it has the same details as a leader node regarding the deployment details except environment variables.
 
-###### Env. variables in worker Node
+#### Env. variables in worker Node
+
 - PUBLIC_KEY: Your public IP to be able to access the VM.
 - SWM_NODE_MODE: Caprover Node type which must be `worker` as we are deploying a worker node.
-- SWMTKN: Token generated on the leader node to allow the worker node to join the docker swarm network 
+- SWMTKN: Token generated on the leader node to allow the worker node to join the docker swarm network
 - LEADER_PUBLIC_IP: Leader node public IP.

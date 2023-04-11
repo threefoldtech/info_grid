@@ -1,20 +1,18 @@
 ![ ](./advanced/img//terraform_.png)
 
-
 ## Using Terraform
 
 - make a directory for your project `mkdir myfirstproject`
 - `cd myfirstproject`
-- create `main.tf`  <- creates the terraform main file 
-
-
+- create `main.tf` <- creates the terraform main file
 
 ## Create
 
-to start the deployment `terraform init && terraform apply -parallelism=1`
+to start the deployment `terraform init && terraform apply`
 
 ## Destroying
-can be done using `terraform destroy -parallelism=1`
+
+can be done using `terraform destroy`
 
 And that's it!! you managed to deploy 2 VMs on the threefold grid v3
 
@@ -22,25 +20,29 @@ And that's it!! you managed to deploy 2 VMs on the threefold grid v3
 
 ### Initializing the provider
 
-In terraform's global section 
+In terraform's global section
 
 ```terraform
 terraform {
   required_providers {
     grid = {
       source = "threefoldtech/grid"
+      version = "1.8.1"
     }
   }
 }
 
 ```
 
-Providers can have different arguments e.g using which identity when deploying, which substrate network to create contracts on, .. etc. This can be done in the provider section
+- You can always provide a version to chooses a specific version of the provider like `1.8.1-dev` to use version `1.8.1` for devnet
+- If `version = "1.8.1"` is omitted, the provider will fetch the latest version but for environments other than main you have to specify the version explicitly
+- For devnet, qanet and testnet use version = `"<VERSION>-dev", "<VERSION>-qa" and  "<VERSION>-rcx"` respectively
 
+Providers can have different arguments e.g using which identity when deploying, which substrate network to create contracts on, .. etc. This can be done in the provider section
 
 ```terraform
 provider "grid" {
-    mnemonics = "FROM THE CREATE TWIN STEP" 
+    mnemonics = "FROM THE CREATE TWIN STEP"
     network = "dev" # or test to use testnet
 
 }
@@ -78,11 +80,8 @@ Output parameters show what has been done:
 
 - the overlay wireguard network configurations
 - the private IPs of the VMs
-- the public IP of the VM `exposed under computedip` 
+- the public IP of the VM `exposed under computedip`
 
 ### Which flists to use in VM
 
-see [list of flists](manual3_iac/grid3_supported_flists.md)
-
-
-
+see [list of flists](../manual3_iac/grid3_supported_flists.md)

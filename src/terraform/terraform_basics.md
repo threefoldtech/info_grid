@@ -1,4 +1,3 @@
-
 ![ ](./advanced/img//terraform_.png)
 
 # terraform basics
@@ -12,13 +11,12 @@ Make sure following is done:
 - [Get started with your account on TFGrid](../getstarted/tfgrid3_getstarted.md)
 - [Install Terraform](../terraform/terraform_install.md)
 
-
 ## Prepare
 
 - make a directory for your project `mkdir myfirstproject`
 - `cd myfirstproject`
 
-- create `main.tf`  <- creates the terraform main file 
+- create `main.tf` <- creates the terraform main file
 
 ```terraform
 terraform {
@@ -35,15 +33,16 @@ provider "grid" {
 }
 
 ```
+
 - to initialize the repo `terraform init`
 
 ## basic commands
 
-- to execute a terraform file `terraform apply -parallelism=1`
+- to execute a terraform file `terraform apply `
 - to see the output `terraform output`
-    - can be used to get the relevant output variables e.g public ip, planetary network ip, wireguard configurations .. 
+  - can be used to get the relevant output variables e.g public ip, planetary network ip, wireguard configurations ..
 - to see the state `terraform show`
-- to destroy `terraform destroy -parallelism=1`
+- to destroy `terraform destroy`
 
 ## Find your Node
 
