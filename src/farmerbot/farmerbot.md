@@ -338,7 +338,7 @@ You can run only one Farmerbot for now.
 
 ***
 
-## On how many node can the Farmerbot run?
+## On how many nodes can the Farmerbot run?
 
 Currently you can only deploy one Farmerbot for each farm, so the Farmerbot can only run on one node.
 
@@ -407,6 +407,12 @@ No. Since you need at least one node to power up a second node. you can't test t
 ## Is there a way to access more error checking?
 
 Yes. In the config-path where you run the docker-compose, you have more logging for error checking. Under the directory where you set up your Farmerbot, you have the directory “config” in there where it creates a *.log file if you start the bot via Docker-Compose. In this directory, you can search for errors if something doesn't work as expected.
+
+***
+
+## Do I need TFT to run the farmerbot? How much?
+
+Yes. How much depends on where you run the farmerbot and how many nodes it will power on/off. If you run the farmerbot on a node on the grid you will have to pay TFT to rent that node (or deploy on that node). Next to that, you will have to pay the transaction fees every time the farmerbot has to wakeup a node or shutdown a node. This is with the account tied to the twin of your farm.
 
 ***
 
