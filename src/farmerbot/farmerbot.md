@@ -147,7 +147,7 @@ Note that you can read [this SSH guide](../getstarted/ssh_guide/ssh_guide.md) to
 
 With the minimum Ubuntu Full VM requirements, it currently costs 0.25TFT/hour to run with the Planetary Network (Date: 24-03-23). This should suffice to run the farmerbot. This is around 180 TFT/month. Of course, check for yourselves if the costs are correct.
 
-Note: The account that you are using to deploy the farmerbot needs to have at least 1 TFT available. This will cover the transaction fees over the TFChain.
+Note: The account that you are using to deploy the farmerbot needs to have some TFT available. Every time the farmerbot has to wakeup a node or shutdown a node it will have to call the chain and thus execute a transaction. The account executing those transactions will be billed (transaction fees).
 
 ***
 ## Configuration
