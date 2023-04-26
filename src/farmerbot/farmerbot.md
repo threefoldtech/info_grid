@@ -418,6 +418,11 @@ Yes. How much depends on where you run the farmerbot and how many nodes it will 
 
 > cost per month = 0.001 TFT (extrinsic fee) * amount of nodes * 30 * 2 (1 for powering down, one for powering up)
 
+***
+
+## How are dedicated nodes power managed?
+
+Dedicated nodes are managed like any other node. Nodes marked as dedicated can only be rented completely. Whenever a user wants to rent a dedicated node the user sends a find_node job to the farmerbot. The farmerbot will find such a node, power it on if it is down and reserve the full node (for 30 minutes). The user can then proceed with creating a rent contract for that node. The farmerbot will get that information and keep that node powered on. It will no longer return that node as a possible node in future find_node jobs. Whenever the rent contract is canceled the farmerbot will notice this and shutdown the node if the resource usage allows it.
 
 ***
 
