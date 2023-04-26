@@ -147,7 +147,7 @@ Note that you can read [this SSH guide](../getstarted/ssh_guide/ssh_guide.md) to
 
 With the minimum Ubuntu Full VM requirements, it currently costs 0.25TFT/hour to run with the Planetary Network (Date: 24-03-23). This should suffice to run the farmerbot. This is around 180 TFT/month. Of course, check for yourselves if the costs are correct.
 
-Note: The account that you are using to deploy the farmerbot needs to have at least 1 TFT available. This will cover the transaction fees over the TFChain.
+Note: The account that you are using to deploy the farmerbot needs to have some TFT available. Every time the farmerbot has to wakeup a node or shutdown a node it will have to call the chain and thus execute a transaction. The account executing those transactions will be billed (transaction fees).
 
 ***
 ## Configuration
@@ -191,13 +191,17 @@ Here is an example of the farm definition in the markdown config file:
 ### Power Configuration
 Finally, you can add some configuration that will the behavior of the farmerbot regarding the powermanagement of the nodes. The following attributes can be added to the markdown config file:
 - wake_up_threshold: a value between 50 and 80 defining the threshold at which nodes will be powered on or off. If the usage percentage (total used resources devided by the total amount of resources) is greater then this threshold a new node will be powered on. In the other case the farmerbot will try to power off nodes if possible.
-- periodic_wakeup: nodes have to be woken up once a day, this variable defines the time at which this should happen. The offline nodes will be powered on sequentially with an interval of 5 minutes starting at the time defined by this variable.
+- periodic_wakeup: nodes have to be woken up once a day, this variable defines the time at which this should happen.
+- periodic_wakeup_limit: by default, during a periodic wakeup, the offline nodes will sequentially (1 at a time) be powered on with an interval of 5 minutes. The periodic_wakeup_limit variable allows you to specify how much nodes you want to wakeup at the same time during a periodic wakeup. Some examples:
+    - Value 1: wakeup the 1 offline node, wait 5 minutes, wakeup 1 offline node, wait 5 minutes, etc.
+    - Value 2: wakeup the 2 offline nodes, wait 5 minutes, wakeup 2 offline nodes, wait 5 minutes, etc.
 
 An example of the power definition in the markdown config file:
 ```
 !!farmerbot.powermanager.configure
     wake_up_threshold:75
     periodic_wakeup:8:30AM
+    periodic_wakeup_limit:1
 ```
 
 ### Example of a Configuration File
@@ -240,7 +244,7 @@ We give examples for Dev Net, QA Net and Test Net.
 
 For Dev Net you should modify the NETWORK to dev, the RELAY to wss://relay.dev.grid.tf:443 and SUBSTRATE to wss://tfchain.dev.grid.tf:443:
 ```
-MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
+SECRET="MNEMONIC_OR_HEX_SECRET_OF_YOUR_FARM"
 NETWORK=dev
 RELAY=wss://relay.dev.grid.tf:443
 SUBSTRATE=wss://tfchain.dev.grid.tf:443
@@ -250,7 +254,7 @@ SUBSTRATE=wss://tfchain.dev.grid.tf:443
 
 For QA Net you should modify the NETWORK to qa, the RELAY to wss://relay.qa.grid.tf:443 and SUBSTRATE to wss://tfchain.qa.grid.tf:443:
 ```
-MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
+SECRET="MNEMONIC_OR_HEX_SECRET_OF_YOUR_FARM"
 NETWORK=qa
 RELAY=wss://relay.qa.grid.tf:443
 SUBSTRATE=wss://tfchain.qa.grid.tf:443
@@ -260,7 +264,7 @@ SUBSTRATE=wss://tfchain.qa.grid.tf:443
 
 For Test Net you should modify the NETWORK to test, the RELAY to wss://relay.test.grid.tf:443 and SUBSTRATE to wss://tfchain.test.grid.tf:443:
 ```
-MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
+SECRET="MNEMONIC_OR_HEX_SECRET_OF_YOUR_FARM"
 NETWORK=test
 RELAY=wss://relay.test.grid.tf:443
 SUBSTRATE=wss://tfchain.test.grid.tf:443
@@ -280,21 +284,19 @@ If the farmerbot is already running and you want to run the new version of the f
 ```
 wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
 
-docker compose rm -f -s
+docker compose rm -f -s -v
 
-mv config/farmerbot.log config/farmerbot.log.archiverc12
+mv config/farmerbot.log config/farmerbot.log.archive
 
 docker compose up -d
 ```
 
-The farmerbot should be running after a couple of seconds. It will create a log file inside your config folder called *farmerbot.log*. If you wish to restart a running farmerbot you can run the command shown below. It can take a couple of seconds before the farmerbot is completely shutdown. But before doing that it might be good to copy or delete the old log file.
-```
-docker compose restart
-```
+The farmerbot should be running after a couple of seconds. It will create a log file inside your config folder called *farmerbot.log*. 
 
 If the docker-compose file has changed and you wish to run the new version you will have to copy the new docker-compose file, stop the running farmerbot and start the new farmerbot. Or just run the command (copy or delete the log file first):
 ```
-docker compose rm -f -s && docker compose up -d
+wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
+docker compose rm -f -s -v && docker compose up -d
 ```
 This again will take a couple of seconds.
 
@@ -338,7 +340,7 @@ You can run only one Farmerbot for now.
 
 ***
 
-## On how many node can the Farmerbot run?
+## On how many nodes can the Farmerbot run?
 
 Currently you can only deploy one Farmerbot for each farm, so the Farmerbot can only run on one node.
 
@@ -407,6 +409,20 @@ No. Since you need at least one node to power up a second node. you can't test t
 ## Is there a way to access more error checking?
 
 Yes. In the config-path where you run the docker-compose, you have more logging for error checking. Under the directory where you set up your Farmerbot, you have the directory “config” in there where it creates a *.log file if you start the bot via Docker-Compose. In this directory, you can search for errors if something doesn't work as expected.
+
+***
+
+## Do I need TFT to run the farmerbot? How much?
+
+Yes. How much depends on where you run the farmerbot and how many nodes it will power on/off. If you run the farmerbot on a node on the grid you will have to pay TFT to rent that node (or deploy on that node). Next to that, you will have to pay the transaction fees every time the farmerbot has to wakeup a node or shutdown a node. This is with the account tied to the twin of your farm. On average each node in the farm will be shutdown and powered on at least once a day (periodic wakeup). In that case the average cost per month to power on nodes and shut them back down equals:
+
+> cost per month = 0.001 TFT (extrinsic fee) * amount of nodes * 30 * 2 (1 for powering down, one for powering up)
+
+***
+
+## How are dedicated nodes power managed?
+
+Dedicated nodes are managed like any other node. Nodes marked as dedicated can only be rented completely. Whenever a user wants to rent a dedicated node the user sends a find_node job to the farmerbot. The farmerbot will find such a node, power it on if it is down and reserve the full node (for 30 minutes). The user can then proceed with creating a rent contract for that node. The farmerbot will get that information and keep that node powered on. It will no longer return that node as a possible node in future find_node jobs. Whenever the rent contract is canceled the farmerbot will notice this and shutdown the node if the resource usage allows it.
 
 ***
 
