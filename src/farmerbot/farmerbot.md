@@ -191,13 +191,17 @@ Here is an example of the farm definition in the markdown config file:
 ### Power Configuration
 Finally, you can add some configuration that will the behavior of the farmerbot regarding the powermanagement of the nodes. The following attributes can be added to the markdown config file:
 - wake_up_threshold: a value between 50 and 80 defining the threshold at which nodes will be powered on or off. If the usage percentage (total used resources devided by the total amount of resources) is greater then this threshold a new node will be powered on. In the other case the farmerbot will try to power off nodes if possible.
-- periodic_wakeup: nodes have to be woken up once a day, this variable defines the time at which this should happen. The offline nodes will be powered on sequentially with an interval of 5 minutes starting at the time defined by this variable.
+- periodic_wakeup: nodes have to be woken up once a day, this variable defines the time at which this should happen.
+- periodic_wakeup_limit: by default, during a periodic wakeup, the offline nodes will sequentially be powered on with an interval of 5 minutes. This variable allows you to specify how much nodes you want to wakeup at the same time during a periodic wakeup. Some examples:
+    - Value 1: wakeup the 1 offline node, wait 5 minutes, wakeup 1 offline node, wait 5 minutes, etc.
+    - Value 2: wakeup the 2 offline nodes, wait 5 minutes, wakeup 2 offline nodes, wait 5 minutes, etc.
 
 An example of the power definition in the markdown config file:
 ```
 !!farmerbot.powermanager.configure
     wake_up_threshold:75
     periodic_wakeup:8:30AM
+    periodic_wakeup_limit:2
 ```
 
 ### Example of a Configuration File
@@ -240,7 +244,7 @@ We give examples for Dev Net, QA Net and Test Net.
 
 For Dev Net you should modify the NETWORK to dev, the RELAY to wss://relay.dev.grid.tf:443 and SUBSTRATE to wss://tfchain.dev.grid.tf:443:
 ```
-MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
+SECRET="MNEMONIC_OR_HEX_SECRET_OF_YOUR_FARM"
 NETWORK=dev
 RELAY=wss://relay.dev.grid.tf:443
 SUBSTRATE=wss://tfchain.dev.grid.tf:443
@@ -250,7 +254,7 @@ SUBSTRATE=wss://tfchain.dev.grid.tf:443
 
 For QA Net you should modify the NETWORK to qa, the RELAY to wss://relay.qa.grid.tf:443 and SUBSTRATE to wss://tfchain.qa.grid.tf:443:
 ```
-MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
+SECRET="MNEMONIC_OR_HEX_SECRET_OF_YOUR_FARM"
 NETWORK=qa
 RELAY=wss://relay.qa.grid.tf:443
 SUBSTRATE=wss://tfchain.qa.grid.tf:443
@@ -260,7 +264,7 @@ SUBSTRATE=wss://tfchain.qa.grid.tf:443
 
 For Test Net you should modify the NETWORK to test, the RELAY to wss://relay.test.grid.tf:443 and SUBSTRATE to wss://tfchain.test.grid.tf:443:
 ```
-MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
+SECRET="MNEMONIC_OR_HEX_SECRET_OF_YOUR_FARM"
 NETWORK=test
 RELAY=wss://relay.test.grid.tf:443
 SUBSTRATE=wss://tfchain.test.grid.tf:443
@@ -280,21 +284,19 @@ If the farmerbot is already running and you want to run the new version of the f
 ```
 wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
 
-docker compose rm -f -s
+docker compose rm -f -s -v
 
-mv config/farmerbot.log config/farmerbot.log.archiverc12
+mv config/farmerbot.log config/farmerbot.log.archive
 
 docker compose up -d
 ```
 
-The farmerbot should be running after a couple of seconds. It will create a log file inside your config folder called *farmerbot.log*. If you wish to restart a running farmerbot you can run the command shown below. It can take a couple of seconds before the farmerbot is completely shutdown. But before doing that it might be good to copy or delete the old log file.
-```
-docker compose restart
-```
+The farmerbot should be running after a couple of seconds. It will create a log file inside your config folder called *farmerbot.log*. 
 
 If the docker-compose file has changed and you wish to run the new version you will have to copy the new docker-compose file, stop the running farmerbot and start the new farmerbot. Or just run the command (copy or delete the log file first):
 ```
-docker compose rm -f -s && docker compose up -d
+wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
+docker compose rm -f -s -v && docker compose up -d
 ```
 This again will take a couple of seconds.
 
