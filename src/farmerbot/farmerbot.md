@@ -192,7 +192,7 @@ Here is an example of the farm definition in the markdown config file:
 Finally, you can add some configuration that will the behavior of the farmerbot regarding the powermanagement of the nodes. The following attributes can be added to the markdown config file:
 - wake_up_threshold: a value between 50 and 80 defining the threshold at which nodes will be powered on or off. If the usage percentage (total used resources devided by the total amount of resources) is greater then this threshold a new node will be powered on. In the other case the farmerbot will try to power off nodes if possible.
 - periodic_wakeup: nodes have to be woken up once a day, this variable defines the time at which this should happen.
-- periodic_wakeup_limit: by default, during a periodic wakeup, the offline nodes will sequentially be powered on with an interval of 5 minutes. This variable allows you to specify how much nodes you want to wakeup at the same time during a periodic wakeup. Some examples:
+- periodic_wakeup_limit: by default, during a periodic wakeup, the offline nodes will sequentially (1 at a time) be powered on with an interval of 5 minutes. The periodic_wakeup_limit variable allows you to specify how much nodes you want to wakeup at the same time during a periodic wakeup. Some examples:
     - Value 1: wakeup the 1 offline node, wait 5 minutes, wakeup 1 offline node, wait 5 minutes, etc.
     - Value 2: wakeup the 2 offline nodes, wait 5 minutes, wakeup 2 offline nodes, wait 5 minutes, etc.
 
@@ -201,7 +201,7 @@ An example of the power definition in the markdown config file:
 !!farmerbot.powermanager.configure
     wake_up_threshold:75
     periodic_wakeup:8:30AM
-    periodic_wakeup_limit:2
+    periodic_wakeup_limit:1
 ```
 
 ### Example of a Configuration File
