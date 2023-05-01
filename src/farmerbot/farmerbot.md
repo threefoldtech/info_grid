@@ -1,4 +1,4 @@
-<h1>Farmerbot: Guide for Test Net, Dev Net and QA Net</h1>
+<h1>Farmerbot: Guide for All Networks</h1>
 
 <h2>Table of Contents</h2>
 
@@ -21,6 +21,7 @@
     - [Dev Net](#dev-net)
     - [QA Net](#qa-net)
     - [Test Net](#test-net)
+    - [Main Net](#main-net)
     - [Running the Farmerbot](#running-the-farmerbot)
 - [Farmerbot FAQ](#farmerbot-faq)
   - [Why does the farmerbot need to wake nodes up for uptime report, if they are unused and shut down?](#why-does-the-farmerbot-need-to-wake-nodes-up-for-uptime-report-if-they-are-unused-and-shut-down)
@@ -35,12 +36,24 @@
   - [Can the Farmerbot be the same node that wakes the other nodes?](#can-the-farmerbot-be-the-same-node-that-wakes-the-other-nodes)
   - [What if I want to have several LANs with different group of 3nodes?](#what-if-i-want-to-have-several-lans-with-different-group-of-3nodes)
   - [Can I turn all my nodes off while the Farmerbot runs? Why do I need at least one node per farm to be powered on?](#can-i-turn-all-my-nodes-off-while-the-farmerbot-runs-why-do-i-need-at-least-one-node-per-farm-to-be-powered-on)
-  - [What type of computer can run the Farmerbot?](#what-type-of-computer-can-run-the-farmerbot)
   - [What happened if all the nodes are powered off?](#what-happened-if-all-the-nodes-are-powered-off)
   - [Is there a fail over setup possible for the Farmerbot?](#is-there-a-fail-over-setup-possible-for-the-farmerbot)
   - [How do 3nodes power on and off with the Farmerbot?](#how-do-3nodes-power-on-and-off-with-the-farmerbot)
   - [Can you have only one 3node in your farm with the Farmerbot?](#can-you-have-only-one-3node-in-your-farm-with-the-farmerbot)
   - [Is there a way to access more error checking?](#is-there-a-way-to-access-more-error-checking)
+  - [What type of computer can run the Farmerbot? What are the minimum specs to run the Farmerbot?](#what-type-of-computer-can-run-the-farmerbot-what-are-the-minimum-specs-to-run-the-farmerbot)
+  - [Can I run the Farmerbot on a Raspberry Pi?](#can-i-run-the-farmerbot-on-a-raspberry-pi)
+  - [I want to set up the Farmerbot for my 3node farm. Should all my nodes have the same twin ID?](#i-want-to-set-up-the-farmerbot-for-my-3node-farm-should-all-my-nodes-have-the-same-twin-id)
+  - [How can I use GraphQL to see if a 3node is up or down in relation with the Farmerbot?](#how-can-i-use-graphql-to-see-if-a-3node-is-up-or-down-in-relation-with-the-farmerbot)
+  - [When setting up the Farmerbot, I get the error: dependency failed to start: container qa-redis-1 is unhealthy. What can I do?](#when-setting-up-the-farmerbot-i-get-the-error-dependency-failed-to-start-container-qa-redis-1-is-unhealthy-what-can-i-do)
+  - [Can you run multiple Farmerbots on a single computer?](#can-you-run-multiple-farmerbots-on-a-single-computer)
+  - [With the Farmerbot, how can I set a node to never shut down?](#with-the-farmerbot-how-can-i-set-a-node-to-never-shut-down)
+  - [How long does it take for the Farmerbot to do the periodic wake?](#how-long-does-it-take-for-the-farmerbot-to-do-the-periodic-wake)
+  - [The Farmerbot is set up and the containers are up and running, but in the logs I see following "Node xxx is not responding while we expect it to: timeout on blpop". Is this an issue?](#the-farmerbot-is-set-up-and-the-containers-are-up-and-running-but-in-the-logs-i-see-following-node-xxx-is-not-responding-while-we-expect-it-to-timeout-on-blpop-is-this-an-issue)
+  - [Does the Farmerbot operate in UTC or local time?](#does-the-farmerbot-operate-in-utc-or-local-time)
+  - [Setting up the Farmerbot, I get the following error: "Failed initializing the database: Invalid duration value" What can I do to fix this?](#setting-up-the-farmerbot-i-get-the-following-error-failed-initializing-the-database-invalid-duration-value-what-can-i-do-to-fix-this)
+  - [How can I update the Farmerbot with the new release?](#how-can-i-update-the-farmerbot-with-the-new-release)
+  - [What are the changes brought in with the new Farmerbot release?](#what-are-the-changes-brought-in-with-the-new-farmerbot-release)
 - [Feedback and Questions](#feedback-and-questions)
 
 ***
@@ -54,12 +67,14 @@ The key feature of the farmerbot is powermanagement. The farmerbot will automati
 There are 3 main steps to run the Farmerbot on your 3node Threefold farm.
 
 * Prepare Your Farm for the Farmerbot with WOL
-* Move Your Farm to either Test Net, QA Net or Dev Net
+* Move Your Farm to either Main Net, Test Net, QA Net or Dev Net (optional)
 * Set the Farmerbot
 
-The farmerbot is currently available for Dev Net, QA Net and Test Net.
+The farmerbot is currently available for Dev Net, QA Net, Test Net and Main Net.
 
-Note that the Dev Net and the QA Net are testing environments and farmers do not receive farming rewards (TFT) when deploying on those networks. To farm TFT, you would need to have your farm and the farmerbot on the Test Net.
+It is not necessary to move your farm to a different network if your farm is already on the desired network.
+
+Note that the Dev Net and the QA Net are testing environments and farmers do not receive farming rewards (TFT) when deploying on those networks. To farm TFT, you would need to have your farm and the farmerbot on the Test Net or the Main Net.
 
 ***
 
@@ -123,13 +138,11 @@ Your farmerbot can be run on any system, including on a node. It doesn't have to
 
 # How to Move Your Farm to a Different Network
 
-If you are on Main Net and you want to try the farmerbot, you should move your farm to either the Dev Net, the QA Net or the Test Net.
+Note that the farmerbot is currently available for Dev Net, QA Net, Test Net and Main Net.
 
 To move your farm to a different network, you need to create a new bootstrap image for the new network instead of your current network. You should also wipe your 3nodes' disks before moving to a different network.
 
 To download the Zero-OS bootstrap image, go to the usual bootstrap link [https://v3.bootstrap.grid.tf/](https://v3.bootstrap.grid.tf/) and select the network you want.
-
-Note that the farmerbot is currently available for Dev Net, QA Net and Test Net.
 
 ![test_net|690x422](img/farmerbot_5.png) 
 
@@ -145,9 +158,9 @@ The farmerbot is shipped inside a docker image so that it is easy to run in a do
 
 Note that you can read [this SSH guide](../getstarted/ssh_guide/ssh_guide.md) to learn how to deploy a Full VM on the Threefold Grid with Linux, Mac or Linux with IPv4 or the Planetary Network. Also note that the farmerbot doesn't need an IPv4 connection. It is thus cheaper to use the Planetary Network. 
 
-With the minimum Ubuntu Full VM requirements, it currently costs 0.25TFT/hour to run with the Planetary Network (Date: 24-03-23). This should suffice to run the farmerbot. This is around 180 TFT/month. Of course, check for yourselves if the costs are correct.
+With the minimum Ubuntu Full VM requirements, it currently costs 0.25TFT/hour to run with the Planetary Network (Date: 24-03-23) on Test Net. This should suffice to run the farmerbot. This is around 180 TFT/month. Of course, check for yourselves if the costs are correct.
 
-Note: The account that you are using to deploy the farmerbot needs to have some TFT available. Every time the farmerbot has to wakeup a node or shutdown a node it will have to call the chain and thus execute a transaction. The account executing those transactions will be billed (transaction fees).
+Note: The account that you are using to deploy the farmerbot needs to have at least 1 TFT available. This will cover the transaction fees over the TFChain.
 
 ***
 ## Configuration
@@ -191,17 +204,13 @@ Here is an example of the farm definition in the markdown config file:
 ### Power Configuration
 Finally, you can add some configuration that will the behavior of the farmerbot regarding the powermanagement of the nodes. The following attributes can be added to the markdown config file:
 - wake_up_threshold: a value between 50 and 80 defining the threshold at which nodes will be powered on or off. If the usage percentage (total used resources devided by the total amount of resources) is greater then this threshold a new node will be powered on. In the other case the farmerbot will try to power off nodes if possible.
-- periodic_wakeup: nodes have to be woken up once a day, this variable defines the time at which this should happen.
-- periodic_wakeup_limit: by default, during a periodic wakeup, the offline nodes will sequentially (1 at a time) be powered on with an interval of 5 minutes. The periodic_wakeup_limit variable allows you to specify how much nodes you want to wakeup at the same time during a periodic wakeup. Some examples:
-    - Value 1: wakeup the 1 offline node, wait 5 minutes, wakeup 1 offline node, wait 5 minutes, etc.
-    - Value 2: wakeup the 2 offline nodes, wait 5 minutes, wakeup 2 offline nodes, wait 5 minutes, etc.
+- periodic_wakeup: nodes have to be woken up once a day, this variable defines the time at which this should happen. The offline nodes will be powered on sequentially with an interval of 5 minutes starting at the time defined by this variable.
 
 An example of the power definition in the markdown config file:
 ```
 !!farmerbot.powermanager.configure
     wake_up_threshold:75
     periodic_wakeup:8:30AM
-    periodic_wakeup_limit:1
 ```
 
 ### Example of a Configuration File
@@ -238,13 +247,13 @@ Power configuration
 ## Deploying the Farmerbot
 Once the configuration is done you should create a *.env* file (next to the docker-compose file) with the content below. Make sure to change the fields to what is required: you should fill in the mnemonic of your farm, choose the appropriate network and modify the relay and substrate values if need be. 
 
-We give examples for Dev Net, QA Net and Test Net.
+We give examples for Dev Net, QA Net, Test Net and Main Net.
 
 ### Dev Net
 
 For Dev Net you should modify the NETWORK to dev, the RELAY to wss://relay.dev.grid.tf:443 and SUBSTRATE to wss://tfchain.dev.grid.tf:443:
 ```
-SECRET="MNEMONIC_OR_HEX_SECRET_OF_YOUR_FARM"
+MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
 NETWORK=dev
 RELAY=wss://relay.dev.grid.tf:443
 SUBSTRATE=wss://tfchain.dev.grid.tf:443
@@ -254,7 +263,7 @@ SUBSTRATE=wss://tfchain.dev.grid.tf:443
 
 For QA Net you should modify the NETWORK to qa, the RELAY to wss://relay.qa.grid.tf:443 and SUBSTRATE to wss://tfchain.qa.grid.tf:443:
 ```
-SECRET="MNEMONIC_OR_HEX_SECRET_OF_YOUR_FARM"
+MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
 NETWORK=qa
 RELAY=wss://relay.qa.grid.tf:443
 SUBSTRATE=wss://tfchain.qa.grid.tf:443
@@ -264,10 +273,20 @@ SUBSTRATE=wss://tfchain.qa.grid.tf:443
 
 For Test Net you should modify the NETWORK to test, the RELAY to wss://relay.test.grid.tf:443 and SUBSTRATE to wss://tfchain.test.grid.tf:443:
 ```
-SECRET="MNEMONIC_OR_HEX_SECRET_OF_YOUR_FARM"
+MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
 NETWORK=test
 RELAY=wss://relay.test.grid.tf:443
 SUBSTRATE=wss://tfchain.test.grid.tf:443
+```
+
+### Main Net
+
+For Main Net you should modify the NETWORK to main, the RELAY to wss://relay.grid.tf:443 and SUBSTRATE to wss://tfchain.grid.tf:443:
+```
+MNEMONIC="THE_MNEMONIC_OF_YOUR_FARM"
+NETWORK=main
+RELAY=wss://relay.grid.tf:443
+SUBSTRATE=wss://tfchain.grid.tf:443
 ```
 
 ### Running the Farmerbot
@@ -284,19 +303,21 @@ If the farmerbot is already running and you want to run the new version of the f
 ```
 wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
 
-docker compose rm -f -s -v
+docker compose rm -f -s
 
-mv config/farmerbot.log config/farmerbot.log.archive
+mv config/farmerbot.log config/farmerbot.log.archiverc12
 
 docker compose up -d
 ```
 
-The farmerbot should be running after a couple of seconds. It will create a log file inside your config folder called *farmerbot.log*. 
+The farmerbot should be running after a couple of seconds. It will create a log file inside your config folder called *farmerbot.log*. If you wish to restart a running farmerbot you can run the command shown below. It can take a couple of seconds before the farmerbot is completely shutdown. But before doing that it might be good to copy or delete the old log file.
+```
+docker compose restart
+```
 
 If the docker-compose file has changed and you wish to run the new version you will have to copy the new docker-compose file, stop the running farmerbot and start the new farmerbot. Or just run the command (copy or delete the log file first):
 ```
-wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
-docker compose rm -f -s -v && docker compose up -d
+docker compose rm -f -s && docker compose up -d
 ```
 This again will take a couple of seconds.
 
@@ -340,7 +361,7 @@ You can run only one Farmerbot for now.
 
 ***
 
-## On how many nodes can the Farmerbot run?
+## On how many node can the Farmerbot run?
 
 Currently you can only deploy one Farmerbot for each farm, so the Farmerbot can only run on one node.
 
@@ -376,12 +397,6 @@ The farmer bot uses the nodes in the farm to send WOL packets to the node that n
 
 ***
 
-## What type of computer can run the Farmerbot?
-
-The Farmerbot can run on any computer/server, it could even run on a laptop so to speak, as long as it has an internet connection, the Farmerbot will be working fine.
-
-***
-
 ## What happened if all the nodes are powered off?
 
 If all nodes in a subnet are powered off, there is no way other nodes in other subnets will be able to power them on again so that is an issue.
@@ -412,17 +427,137 @@ Yes. In the config-path where you run the docker-compose, you have more logging 
 
 ***
 
-## Do I need TFT to run the farmerbot? How much?
+## What type of computer can run the Farmerbot? What are the minimum specs to run the Farmerbot?
+The Farmerbot can run on any computer/server, it could even run on a laptop so to speak, as long as it has an internet connection, the Farmerbot will be working fine.
 
-Yes. How much depends on where you run the farmerbot and how many nodes it will power on/off. If you run the farmerbot on a node on the grid you will have to pay TFT to rent that node (or deploy on that node). Next to that, you will have to pay the transaction fees every time the farmerbot has to wakeup a node or shutdown a node. This is with the account tied to the twin of your farm. On average each node in the farm will be shutdown and powered on at least once a day (periodic wakeup). In that case the average cost per month to power on nodes and shut them back down equals:
-
-> cost per month = 0.001 TFT (extrinsic fee) * amount of nodes * 30 * 2 (1 for powering down, one for powering up)
+The Farmerbot runs fine on a VM with a single vcore and 512 Mb of RAM. For the storage, you need to have room for Docker and it’s dependencies. Thus 1 or 2GB of free storage, with the OS already installed, should be sufficient. 
 
 ***
 
-## How are dedicated nodes power managed?
+## Can I run the Farmerbot on a Raspberry Pi?
 
-Dedicated nodes are managed like any other node. Nodes marked as dedicated can only be rented completely. Whenever a user wants to rent a dedicated node the user sends a find_node job to the farmerbot. The farmerbot will find such a node, power it on if it is down and reserve the full node (for 30 minutes). The user can then proceed with creating a rent contract for that node. The farmerbot will get that information and keep that node powered on. It will no longer return that node as a possible node in future find_node jobs. Whenever the rent contract is canceled the farmerbot will notice this and shutdown the node if the resource usage allows it.
+It is possible to run the Farmerbot on a Pi. That being said, it is experimental and Threefold might never support it officially.
+
+To run the Farmerbot on a Raspberry Pi, read [this guide](https://forum.threefold.io/t/how-to-run-farmerbot-on-a-raspberry-pi/3879/).
+
+***
+
+## I want to set up the Farmerbot for my 3node farm. Should all my nodes have the same twin ID?
+
+The farmerbot can only manage the nodes that you define in the configuration. So, for each node in your farm, you will need to fill in these required attributes:
+
+* id
+  * the id of the node
+* twinid
+  * the twin id of the node
+
+***
+
+## How can I use GraphQL to see if a 3node is up or down in relation with the Farmerbot?
+
+This script will show you all the nodes' status on [GraphQL](https://graphql.grid.tf/graphql):
+
+```
+query MyQuery {
+  nodes {
+    nodeID
+    power {
+      state
+    }
+  }
+}
+```
+
+To find a specific node, write the following with the proper nodeID (here we use 655 as an example):
+
+```
+query MyQuery {
+  nodes(where: {nodeID_eq: 655}) {
+    power {
+      state
+    }
+    nodeID
+  }
+}
+```
+
+***
+
+## When setting up the Farmerbot, I get the error: dependency failed to start: container qa-redis-1 is unhealthy. What can I do?
+
+There's some redis database state stored in a persistent volume. The issue is that the database got corrupted somehow and thus redis is crashing.
+
+To remove the volume, and thus actually get a clean start, you can do this:
+```
+docker compose down -v
+```
+
+***
+
+## Can you run multiple Farmerbots on a single computer?
+
+It's been determined that multiple Farmerbots can be hosted on a single machine. In that case, each Farmerbot will need its own `.env` and `config` files. 
+
+Furthermore, in its current state, each Farmerbot can only control a single twin account, and each twin should only oversee a single farm. 
+
+At a later stage, it should be possible to run multiple farms under a single twin.
+
+***
+
+## With the Farmerbot, how can I set a node to never shut down?
+
+In the config file, set the following: `never_shutdown:true` for the node you want to never shut down.
+
+***
+
+## How long does it take for the Farmerbot to do the periodic wake?
+
+The minimum period between two nodes to be waken is currently 5 minutes.
+So every 5 minutes a new node wakes up.
+
+Once all nodes are awaken, they all shut down at the same time, except the node that stays awaken to wake up the other during the next periodic wake.
+
+A future release will permit farmers to specify how much nodes will be powered on at the same time during a periodic wakeup. This will enable faster periodic wake but might cause spikes in electricity consumption. Farmers will thus need to adjust with their own setup.
+
+***
+
+##  The Farmerbot is set up and the containers are up and running, but in the logs I see following "Node xxx is not responding while we expect it to: timeout on blpop". Is this an issue?
+
+This happens sometimes in normally functioning bots. It indicates a timeout while waiting for a reply from the node.
+
+***
+
+## Does the Farmerbot operate in UTC or local time?
+
+The Farmerbot works in UTC, independently of the local time of your machine.
+
+***
+
+## Setting up the Farmerbot, I get the following error: "Failed initializing the database: Invalid duration value" What can I do to fix this?
+
+If you see this error, it's because you've used 24h time in conjunction with AM/PM time. Note that "periodic_wakeup" uses 12h time format. 
+
+***
+
+## How can I update the Farmerbot with the new release?
+
+ Please follow these steps to move the existing farmerbot to the new one:
+
+1. Change the current directory to the directory containing the docker-compose file
+2. Download the new docker-compose file: `wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml`
+3. Modify the .env file: rename `MNEMONIC` to `SECRET`
+4. Stop the existing farmerbot: `docker compose rm -f -s -v`
+5. Run the new farmerbot: `docker compose up -d`
+
+This last command can take some time as it is downloading new docker images. Let the farmerbot run for some time. If you think something is wrong or if you want to check if there is something wrong you should look into the config/farmerbot.log file. If you see some errors please share that file with us.
+
+***
+
+## What are the changes brought in with the new Farmerbot release?
+
+Among new changes, we adjusted the `periodic_wakeup_limit` which allows you to specify how much sleeping nodes you want to wake up at the same time during a periodic wakeup.
+
+Also, we got rid of the requirement to have at least one node up that is unused. So if you have two nodes and one of them is running the Farmerbot the other one will be able to shutdown (it wouldn't shut down before).
 
 ***
 
