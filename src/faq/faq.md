@@ -49,11 +49,15 @@
     - [How is Threefold registered as an entity?](#how-is-threefold-registered-as-an-entity)
     - [Where is ThreeFold Tech's headquarters?](#where-is-threefold-techs-headquarters)
     - [Can I have more information on Threefold Tech NV and Threefold S.A.?](#can-i-have-more-information-on-threefold-tech-nv-and-threefold-sa)
+    - [Is Threefold using Wireguard?](#is-threefold-using-wireguard)
+    - [Is the 3bot the same as the Digital Twin?](#is-the-3bot-the-same-as-the-digital-twin)
+    - [How can I create a twin on the TF Grid?](#how-can-i-create-a-twin-on-the-tf-grid)
   - [Threefold Communication](#threefold-communication)
     - [Is there a Threefold app for mobile?](#is-there-a-threefold-app-for-mobile)
     - [I want to reach the Threefold community. What are Threefold social links?](#i-want-to-reach-the-threefold-community-what-are-threefold-social-links)
     - [Is there a Discord group for Threefold?](#is-there-a-discord-group-for-threefold)
     - [How can I reach Threefold Support?](#how-can-i-reach-threefold-support)
+    - [Could we reach out someone for publishing research work on Threefold?](#could-we-reach-out-someone-for-publishing-research-work-on-threefold)
     - [Is there a Threefold podcast?](#is-there-a-threefold-podcast)
     - [Who can I write to for a proposal? Where can I send a proposal email for a new partnership opportunity with Threefold?](#who-can-i-write-to-for-a-proposal-where-can-i-send-a-proposal-email-for-a-new-partnership-opportunity-with-threefold)
     - [How can I track and follow the progress and development of Threefold?](#how-can-i-track-and-follow-the-progress-and-development-of-threefold)
@@ -66,6 +70,7 @@
     - [Threefold uses Quantum Safe Storage technology, what does it mean?](#threefold-uses-quantum-safe-storage-technology-what-does-it-mean)
     - [Quantum Safe File System (QSFS) allows for part of the storage to go down and it can self repair, however it’s still attached to a single VM and a single point of failure. Can a QSFS instance be reattached to another VM to recover it?](#quantum-safe-file-system-qsfs-allows-for-part-of-the-storage-to-go-down-and-it-can-self-repair-however-its-still-attached-to-a-single-vm-and-a-single-point-of-failure-can-a-qsfs-instance-be-reattached-to-another-vm-to-recover-it)
     - [Where does the Threefold Explorer take its data from?](#where-does-the-threefold-explorer-take-its-data-from)
+    - [How can I use the Gridproxy to query information on the TF Grid?](#how-can-i-use-the-gridproxy-to-query-information-on-the-tf-grid)
     - [Is there a way to see the Threefold Grid's metrics?](#is-there-a-way-to-see-the-threefold-grids-metrics)
     - [How can I connect to the Threefold Planetary Network?](#how-can-i-connect-to-the-threefold-planetary-network)
     - [Where can I download the Threefold Planetary Network connector?](#where-can-i-download-the-threefold-planetary-network-connector)
@@ -107,9 +112,12 @@
     - [How can I use GraphQl to find information on the Threefold Grid?](#how-can-i-use-graphql-to-find-information-on-the-threefold-grid)
     - [What are the different links to Threefold's Graph QL depending on the network?](#what-are-the-different-links-to-threefolds-graph-ql-depending-on-the-network)
     - [How can I find 3nodes with IPv6 addresses?](#how-can-i-find-3nodes-with-ipv6-addresses)
+    - [How can I use GraphQL to see contracts on my 3nodes?](#how-can-i-use-graphql-to-see-contracts-on-my-3nodes)
     - [How can I use Grid Proxy to find information on the Threefold Grid and 3nodes?](#how-can-i-use-grid-proxy-to-find-information-on-the-threefold-grid-and-3nodes)
     - [Who is hosting GraphQL and Grid Proxy on the Threefold Grid?](#who-is-hosting-graphql-and-grid-proxy-on-the-threefold-grid)
+    - [What is the difference between uptime, status and power state?](#what-is-the-difference-between-uptime-status-and-power-state)
     - [I do not remember the name (Threefold 3bot ID) associated with my seed phrase on the Threefold Connect app. Can I recover my TF Connect app account with only the seed phrase and not the name (3bot ID) associated with it?](#i-do-not-remember-the-name-threefold-3bot-id-associated-with-my-seed-phrase-on-the-threefold-connect-app-can-i-recover-my-tf-connect-app-account-with-only-the-seed-phrase-and-not-the-name-3bot-id-associated-with-it)
+    - [My twin is associated with a polkadot.js extension account and I do not have the mnemonics, can I set the Farmerbot anyway?](#my-twin-is-associated-with-a-polkadotjs-extension-account-and-i-do-not-have-the-mnemonics-can-i-set-the-farmerbot-anyway)
     - [How can I vote for a Threefold DAO proposal?](#how-can-i-vote-for-a-threefold-dao-proposal)
   - [Threefold Commercial Grid Services](#threefold-commercial-grid-services)
     - [What is the concept and the goals of the Threefold Commercial Grid Services project?](#what-is-the-concept-and-the-goals-of-the-threefold-commercial-grid-services-project)
@@ -145,6 +153,9 @@
     - [How can I add Threefold peers in the Yggdrasil configuration file?](#how-can-i-add-threefold-peers-in-the-yggdrasil-configuration-file)
     - [How can I change the username of my SSH key?](#how-can-i-change-the-username-of-my-ssh-key)
     - [How can I copy the clipboard content of a terminal output using the command cat? How can I copy the public key directly with the terminal?](#how-can-i-copy-the-clipboard-content-of-a-terminal-output-using-the-command-cat-how-can-i-copy-the-public-key-directly-with-the-terminal)
+    - [What is Threefold's stance on sharded workload? Will Threefold embrace and move towards distributed data chunks or stay with the one deployment, one node model?](#what-is-threefolds-stance-on-sharded-workload-will-threefold-embrace-and-move-towards-distributed-data-chunks-or-stay-with-the-one-deployment-one-node-model)
+    - [When I paste the SSH public key in the Profile Manager window, the SSH public key isn't accepted and it either doesn't stay in the window, or it gets removed and the older SSH public key reappear. What can I do to fix this?](#when-i-paste-the-ssh-public-key-in-the-profile-manager-window-the-ssh-public-key-isnt-accepted-and-it-either-doesnt-stay-in-the-window-or-it-gets-removed-and-the-older-ssh-public-key-reappear-what-can-i-do-to-fix-this)
+    - [When I try to add my mnemonics in the Threefold Playground's profile manager, I get the error: "Unable to connect due to Maximum number of attempts exceeded". How can I fix this?](#when-i-try-to-add-my-mnemonics-in-the-threefold-playgrounds-profile-manager-i-get-the-error-unable-to-connect-due-to-maximum-number-of-attempts-exceeded-how-can-i-fix-this)
   - [Tutorials and Guides](#tutorials-and-guides)
     - [What are the prerequisites before using the Threefold Play Grid (play.grid.tf)?](#what-are-the-prerequisites-before-using-the-threefold-play-grid-playgridtf)
     - [How can I create a profile manager on the Threefold Playground?](#how-can-i-create-a-profile-manager-on-the-threefold-playground)
@@ -166,6 +177,7 @@
     - [To deploy a load on the Threefold Grid, I need to generate SSH keys. How can I generate SSH keys on MAC, Linux or Windows?](#to-deploy-a-load-on-the-threefold-grid-i-need-to-generate-ssh-keys-how-can-i-generate-ssh-keys-on-mac-linux-or-windows)
     - [What is the method to SSH into a 3node on IPv4, IPv6 and the Planetary Network?](#what-is-the-method-to-ssh-into-a-3node-on-ipv4-ipv6-and-the-planetary-network)
     - [How can I transfer a file from my computer to the virtual machine (VM) deployed on the Threefold Grid? How can I do SSH file transfer from Remote to Local and vice versa?](#how-can-i-transfer-a-file-from-my-computer-to-the-virtual-machine-vm-deployed-on-the-threefold-grid-how-can-i-do-ssh-file-transfer-from-remote-to-local-and-vice-versa)
+    - [On Linux, how can I see the resources being used on my server?](#on-linux-how-can-i-see-the-resources-being-used-on-my-server)
   - [Grace Period (Status Paused)](#grace-period-status-paused)
     - [The status of my deployment is paused, in grace period, how can I resume the deployment?](#the-status-of-my-deployment-is-paused-in-grace-period-how-can-i-resume-the-deployment)
     - [Once I refund my TF wallet, how long does it take for the deployment to resume from grace period?](#once-i-refund-my-tf-wallet-how-long-does-it-take-for-the-deployment-to-resume-from-grace-period)
@@ -182,9 +194,10 @@
   - [Threefold Connect App](#threefold-connect-app)
     - [TF Connect App is now asking for a 4-digit password (PIN). I don't remember it as I usually use touch or face ID to unlock the app. What can I do?](#tf-connect-app-is-now-asking-for-a-4-digit-password-pin-i-dont-remember-it-as-i-usually-use-touch-or-face-id-to-unlock-the-app-what-can-i-do)
     - [Is there a way to have more than one wallet in TF Connect App?](#is-there-a-way-to-have-more-than-one-wallet-in-tf-connect-app)
+    - [What is the difference between 10.x.y.z and 192.168.x.y addresses?](#what-is-the-difference-between-10xyz-and-192168xy-addresses)
 - [DEVELOPERS FAQ](#developers-faq)
   - [General Information for Developer](#general-information-for-developer)
-    - [Can I use a docker with the Threefold Grid?](#can-i-use-a-docker-with-the-threefold-grid)
+    - [How can I use Docker on the Threefold Grid?](#how-can-i-use-docker-on-the-threefold-grid)
     - [Can I convert an existing docker into an flist?](#can-i-convert-an-existing-docker-into-an-flist)
     - [How does a FList work?](#how-does-a-flist-work)
     - [What is stored in the metadata of a software?](#what-is-stored-in-the-metadata-of-a-software)
@@ -298,6 +311,7 @@
     - [How can I wipe a disk with Windows?](#how-can-i-wipe-a-disk-with-windows)
     - [Do I need to wipe all the disks on my 3node server? Can I have one disk with a different operating systesm (OS)?](#do-i-need-to-wipe-all-the-disks-on-my-3node-server-can-i-have-one-disk-with-a-different-operating-systesm-os)
     - [How can I be sure that I properly wiped my disks?](#how-can-i-be-sure-that-i-properly-wiped-my-disks)
+    - [If I wipe my disk to create a new node ID, will I lose my farming rewards during the month?](#if-i-wipe-my-disk-to-create-a-new-node-id-will-i-lose-my-farming-rewards-during-the-month)
     - [My disks have issues with Zero-OS and my 3nodes. How can I do a factory reset of the disks?](#my-disks-have-issues-with-zero-os-and-my-3nodes-how-can-i-do-a-factory-reset-of-the-disks)
     - [Before doing a bootstrap image, I need to format my USB key. How can I format my USB key?](#before-doing-a-bootstrap-image-i-need-to-format-my-usb-key-how-can-i-format-my-usb-key)
     - [What do you use to burn (or to load) the Zero-OS bootstrap image onto a USB stick?](#what-do-you-use-to-burn-or-to-load-the-zero-os-bootstrap-image-onto-a-usb-stick)
@@ -430,12 +444,24 @@
     - [Can the Farmerbot be the same node that wakes the other nodes?](#can-the-farmerbot-be-the-same-node-that-wakes-the-other-nodes)
     - [What if I want to have several LANs with different group of 3nodes?](#what-if-i-want-to-have-several-lans-with-different-group-of-3nodes)
     - [Can I turn all my nodes off while the Farmerbot runs? Why do I need at least one node per farm to be powered on?](#can-i-turn-all-my-nodes-off-while-the-farmerbot-runs-why-do-i-need-at-least-one-node-per-farm-to-be-powered-on)
-    - [What type of computer can run the Farmerbot?](#what-type-of-computer-can-run-the-farmerbot)
     - [What happened if all the nodes are powered off?](#what-happened-if-all-the-nodes-are-powered-off)
     - [Is there a fail over setup possible for the Farmerbot?](#is-there-a-fail-over-setup-possible-for-the-farmerbot)
     - [How do 3nodes power on and off with the Farmerbot?](#how-do-3nodes-power-on-and-off-with-the-farmerbot)
     - [Can you have only one 3node in your farm with the Farmerbot?](#can-you-have-only-one-3node-in-your-farm-with-the-farmerbot)
     - [Is there a way to access more error checking?](#is-there-a-way-to-access-more-error-checking)
+    - [What type of computer can run the Farmerbot? What are the minimum specs to run the Farmerbot?](#what-type-of-computer-can-run-the-farmerbot-what-are-the-minimum-specs-to-run-the-farmerbot)
+    - [Can I run the Farmerbot on a Raspberry Pi?](#can-i-run-the-farmerbot-on-a-raspberry-pi)
+    - [I want to set up the Farmerbot for my 3node farm. Should all my nodes have the same twin ID?](#i-want-to-set-up-the-farmerbot-for-my-3node-farm-should-all-my-nodes-have-the-same-twin-id)
+    - [When setting up the Farmerbot, I get the error: dependency failed to start: container qa-redis-1 is unhealthy. What can I do?](#when-setting-up-the-farmerbot-i-get-the-error-dependency-failed-to-start-container-qa-redis-1-is-unhealthy-what-can-i-do)
+    - [How can I use GraphQL to see if a 3node is up or down in relation with the Farmerbot?](#how-can-i-use-graphql-to-see-if-a-3node-is-up-or-down-in-relation-with-the-farmerbot)
+    - [Can you run multiple Farmerbots on a single computer?](#can-you-run-multiple-farmerbots-on-a-single-computer)
+    - [With the Farmerbot, how can I set a node to never shut down?](#with-the-farmerbot-how-can-i-set-a-node-to-never-shut-down)
+    - [How long does it take for the Farmerbot to do the periodic wake?](#how-long-does-it-take-for-the-farmerbot-to-do-the-periodic-wake)
+    - [The Farmerbot is set up and the containers are up and running, but in the logs I see following "Node xxx is not responding while we expect it to: timeout on blpop". Is this an issue?](#the-farmerbot-is-set-up-and-the-containers-are-up-and-running-but-in-the-logs-i-see-following-node-xxx-is-not-responding-while-we-expect-it-to-timeout-on-blpop-is-this-an-issue)
+    - [Does the Farmerbot operate in UTC or local time?](#does-the-farmerbot-operate-in-utc-or-local-time)
+    - [Setting up the Farmerbot, I get the following error: "Failed initializing the database: Invalid duration value" What can I do to fix this?](#setting-up-the-farmerbot-i-get-the-following-error-failed-initializing-the-database-invalid-duration-value-what-can-i-do-to-fix-this)
+    - [How can I update the Farmerbot with the new release?](#how-can-i-update-the-farmerbot-with-the-new-release)
+    - [What are the changes brought in with the new Farmerbot release?](#what-are-the-changes-brought-in-with-the-new-farmerbot-release)
 - [Ask a Question to the Threefold Community](#ask-a-question-to-the-threefold-community)
 
 ***
@@ -585,6 +611,28 @@ Of course. Here are the basic information:
   * ThreeFold S.A., 6, Rue Dicks, 1417, Luxembourg.
 
 ***
+
+### Is Threefold using Wireguard?
+
+Wireguard is built directly into the Threefold Grid. It's called "Znet" or "private overlay network". Actually all deployments belong to a private overlay network, but the only way to get your wireguard config file to access the network is to use Terraform.
+
+***
+
+### Is the 3bot the same as the Digital Twin?
+
+The Digital Twin will be a more advanced version of the 3bot.
+
+***
+
+### How can I create a twin on the TF Grid?
+
+There are 2 ways to create a twin:
+
+You can create a twin via the ThreefoldDashboard portal. See those related documentations for more information: [Polkadot Extension account](https://manual.grid.tf/getstarted/TF_Dashboard/TF_Dashboard.html#create-polkadot-extension-account) and [Create a Farm](https://manual.grid.tf/TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.html#1-create-a-farm).
+
+You can also create a twin via the Threefold Connect app. Indeed, a twin is automatically generated while creating a farm. Note that, in this case, the twin will be created on mainnet.
+
+***
 ## Threefold Communication
 
 ### Is there a Threefold app for mobile?
@@ -622,6 +670,12 @@ Yes! It’s [right here](https://discord.com/invite/PaQtT7A72E). Threefold is de
 ### How can I reach Threefold Support?
 
 Go on the [Threefold Connect App](#is-there-a-threefold-app-for-mobile) and select Support or go on the [Threefold website](https://threefold.io), accept the cookies and click on the bottom right icon for chat.
+
+***
+
+### Could we reach out someone for publishing research work on Threefold?
+
+You can send an email to info@threefold.io for publishing research on Threefold.
 
 ***
 
@@ -700,6 +754,24 @@ In short, yes Quantum safe file system (QSFS) can be recovered on a different VM
 ### Where does the Threefold Explorer take its data from?
 
 The Threefold Explorer takes its data from this website: https://gridproxy.grid.tf/.
+
+To explore Grid Proxy, you can use Swagger: https://gridproxy.grid.tf/swagger/index.html. You will then be able to query the TF Grid and extract data.
+
+See the next Q&A for more information on Swagger.
+
+***
+
+### How can I use the Gridproxy to query information on the TF Grid?
+
+You can go to the Gridproxy Swagger index: https://gridproxy.grid.tf/swagger/index.html
+
+There you can query information such as information on a 3node.
+
+For example, asking the Gridproxy for the nodeID 466, you get the following URL: https://gridproxy.grid.tf/nodes/466
+
+To get specific information, you can add parameters, for example: https://gridproxy.grid.tf/nodes/466/status
+
+When you know the URL representation of the query, you can simply use the URL directly on a web browser.
 
 ***
 
@@ -1150,6 +1222,40 @@ For more information on how to use Graph QL, read [this Q&A](#how-can-i-use-grap
 
 ***
 
+### How can I use GraphQL to see contracts on my 3nodes?
+
+Go to https://graphql.grid.tf/graphql and write the following query:
+
+```
+query MyQuery {
+  nodeContracts(where: {nodeID_eq: 1}) {
+    nodeID
+    resourcesUsed {
+      cru
+      hru
+      mru
+      sru
+    }
+  }
+}
+
+```
+
+This will show you contracts on the 3node as well as resources used. You can play with the different parameters.
+
+How can I see the farm associated with a node?
+
+```
+query MyQuery {
+  nodes(where: {nodeID_eq: 57}) {
+    farmID
+    nodeID
+  }
+}
+```
+
+***
+
 ### How can I use Grid Proxy to find information on the Threefold Grid and 3nodes?
 
 To find information on the Threefold Grid with GraphQL, you need to write this URL: https://gridproxy.grid.tf/, followed by your specific query. Here's an example if we wanted to see all the available farm on the TF Grid that has "duck" in its name:
@@ -1169,11 +1275,36 @@ Note that it is also possible to run your own instance of those tools.
 
 ***
 
+### What is the difference between uptime, status and power state?
+
+There are three distinctly named endpoints or fields that exist in the back end systems:
+
+* Uptime
+  * number of seconds the node was up, as of it's last uptime report. This is the same on GraphQL and Grid Proxy.
+* Status
+  * this is a field that only exists on the Grid Proxy, which corresponds to whether the node sent an uptime report within the last 40 minutes.
+* Power state
+  * this is a field that only exists on GraphQL, and it's the self reported power state of the node. This only goes to "down" if the node shut itself down at request of the Farmerbot.
+
+***
+
 ### I do not remember the name (Threefold 3bot ID) associated with my seed phrase on the Threefold Connect app. Can I recover my TF Connect app account with only the seed phrase and not the name (3bot ID) associated with it?
 
 If you forgot the name associated with your seed phrase on the TF Connect app, you can always create a new identity (Threefold 3bot ID) and import your wallet using the old seed phrase. 
 
 Since the Connect App is also used for identity and authentication, you need both the name (3bot ID) and seed phrase to fully recover your account. The wallet is only linked to the seed phrase and not the name (3bot ID).
+
+***
+
+### My twin is associated with a polkadot.js extension account and I do not have the mnemonics, can I set the Farmerbot anyway?
+
+This is possible if your exported JSON lists `ed25519` under encoding. If it lists `sr25519`, it is not possible. 
+
+For `ed25519`, you will need to extract the hex secret.
+
+That being said, if you do not have your mnemonics for your polkadot.js extension account, the simplest way forward is to create a new polkadot.js account and generate a new twin. Then you will need to create a new farm and migrate the existing nodes to the new twin and farm. This is actually very simple: when you boot your new bootstrap image of the new farm, your node will move to the new farm, with its current node ID. 
+
+If you are using the Farmerbot, at this point, you will be able to set it with the mnemonics associated with the new farm.
 
 ***
 
@@ -1607,6 +1738,44 @@ You can use the following terminal command line:
 
 After writing this command, your clipboard will contain your public key. You can paste it on the profile manager to connect with a 3node when deploying on the Threefold Grid.
 
+***
+
+###  What is Threefold's stance on sharded workload? Will Threefold embrace and move towards distributed data chunks or stay with the one deployment, one node model?
+
+The ThreeFold Grid is basically agnostic when it comes to how you structure your deployment. 
+
+If you want to put all your storage and compute on one node and lose everything if it goes down, you can do so. 
+
+If you want a highly distributed and fault tolerant system with high availability where data is never lost, you can also do so. You could build an architecture with single nodes running single workloads as the building blocks.
+
+Containerized micro service architectures running on e.g. Kubernetes are basically the way that compute is being "sharded" already in the mainstream of IT, especially at large scales. Such applications fit well on the Threefold Grid today, since they account for the possibility that individual nodes may fail. However, many applications aren't built this way and it takes work to adapt them.
+
+Self driving and self healing IT is one of the core concepts of ThreeFold. What we've built so far is an excellent foundation for making this reality. Some additional features might come into TF Chain and the network itself to enable such features. That being said, a lot is already possible using the existing system. It's just a matter of gluing things together in the right way.
+
+***
+
+### When I paste the SSH public key in the Profile Manager window, the SSH public key isn't accepted and it either doesn't stay in the window, or it gets removed and the older SSH public key reappear. What can I do to fix this?
+
+This issue is usually happening when the SSH public key isn't in the proper format.
+
+The less technical fix is to take your SSH public key and paste it in a browser's URL search bar, then recopy and paste it in the Profile Manager. This should give the proper format to the SSH public key.
+
+Also, you can simply query the SSH public key in your terminal/command prompt with the proper format with a command like this:
+
+```
+cat ~/.ssh/id_rsa.pub
+```
+
+You might need to add "sudo" for MAC and Linux.
+
+You can also refer to [this question](#how-can-i-copy-the-clipboard-content-of-a-terminal-output-using-the-command-cat-how-can-i-copy-the-public-key-directly-with-the-terminal) for a direct way to obtain your SSH public key in your clipboard.
+
+
+***
+
+### When I try to add my mnemonics in the Threefold Playground's profile manager, I get the error: "Unable to connect due to Maximum number of attempts exceeded". How can I fix this?
+
+A quick fix to this is to simply add a space at the end of the mnemonics and then to delete the mnemonics. Then you should be able to rewrite the mnemonics.
 
 ***
 
@@ -1809,6 +1978,12 @@ For more information, read [this](http://www.whatismyipv6.com/blogs/macipv6/word
 
 ***
 
+### On Linux, how can I see the resources being used on my server?
+
+You can use the command `top` or `htop` in the terminal to see resources being used.
+
+***
+
 ## Grace Period (Status Paused)
 
 ### The status of my deployment is paused, in grace period, how can I resume the deployment? 
@@ -1959,13 +2134,31 @@ Note: There will not be an automatic function in the app to create a new wallet.
 
 ***
 
+### What is the difference between 10.x.y.z and 192.168.x.y addresses?
+
+The addresses 10.x.y.z and 192.168.x.y are on the private network.
+
+A 10.x.y.z address is just as valid as a 192.168.x.y address for a private network. If all the devices get a 10.x.y.z network, your private network should work properly. But if some of your devices are getting 10.x.y.z addresses while others are getting 192.168.x.y addresses, then you have two conflicting DHCP servers in your network.
+
+***
+
 # DEVELOPERS FAQ
 ![wethreepedia_developer](img/wethreepedia_developer.png)
 
 ## General Information for Developer
 
-### Can I use a docker with the Threefold Grid?
-Yes, you can. Simply [run a virtual machine on play.grid.tf](https://play.grid.tf/#/vm) and install your docker as per the given documentation of the software you want to implement. Note that you can also convert a docker into an flist, to simplify the process. For more information, read the next question.
+### How can I use Docker on the Threefold Grid?
+
+There are many ways to use Docker on the Threefold Grid.
+
+You can simply [run Docker in a virtual machine](https://docs.docker.com/desktop/install/ubuntu/) (Full VM and Micro VM) and then follow any instructions made for [Docker](https://docs.docker.com/). 
+
+Since the Threefold Hub has a [Docker to FList converter](https://hub.grid.tf/docker-convert), you can also [convert the Docker image to an FList](https://www2.manual.grid.tf/flist_hub/flist_hub.html?highlight=docker#convert-docker-to-flist) and run it directly as a micro VM, as shown in the Threefold Manual. This is covered in [this video on working with micro VM images](https://youtu.be/IM9fikszyss).
+
+For examples on Docker running on Threefold, check this video on [deploying Wordpress with Docker](https://www2.manual.grid.tf/tf_video_gallery/tf_video_gallery.html?highlight=docker#running-a-wordpress-website-using-threefold-and-docker) or this guide on [deploying Apache Guacamole with Docker](https://forum.threefold.io/t/threefold-guide-deploy-a-full-vm-and-run-apache-guacamole-docker-install/3871).
+
+Note that you can also run Docker in [Kubernetes](https://www2.manual.grid.tf/weblets/weblets_k8s.html).
+
 ***
 ### Can I convert an existing docker into an flist?
 Yes you can. Go on this [link](https://hub.grid.tf/docker-convert) and you will be able to convert a docker into an flist.
@@ -2819,6 +3012,14 @@ Here are some useful command lines for Linux to make sure there are no partition
 > lsblk --f
 > 
 > lsblk --raw
+
+***
+
+### If I wipe my disk to create a new node ID, will I lose my farming rewards during the month?
+
+No, you wouldn't lose any farming rewards. You will get both the rewards for your previous node ID's uptime and also the new node ID's uptime.
+
+Note that this is the case with the current farming rewards based on total uptime, without any minimum threshold.
 
 ***
 
@@ -3771,12 +3972,6 @@ The farmer bot uses the nodes in the farm to send WOL packets to the node that n
 
 ***
 
-### What type of computer can run the Farmerbot?
-
-The Farmerbot can run on any computer/server, it could even run on a laptop so to speak, as long as it has an internet connection, the Farmerbot will be working fine.
-
-***
-
 ### What happened if all the nodes are powered off?
 
 If all nodes in a subnet are powered off, there is no way other nodes in other subnets will be able to power them on again so that is an issue.
@@ -3804,6 +3999,140 @@ No. Since you need at least one node to power up a second node. you can't test t
 ### Is there a way to access more error checking?
 
 Yes. In the config-path where you run the docker-compose, you have more logging for error checking. Under the directory where you set up your Farmerbot, you have the directory “config” in there where it creates a *.log file if you start the bot via Docker-Compose. In this directory, you can search for errors if something doesn't work as expected.
+
+***
+
+### What type of computer can run the Farmerbot? What are the minimum specs to run the Farmerbot?
+The Farmerbot can run on any computer/server, it could even run on a laptop so to speak, as long as it has an internet connection, the Farmerbot will be working fine.
+
+The Farmerbot runs fine on a VM with a single vcore and 512 Mb of RAM. For the storage, you need to have room for Docker and it’s dependencies. Thus 1 or 2GB of free storage, with the OS already installed, should be sufficient. 
+
+***
+
+### Can I run the Farmerbot on a Raspberry Pi?
+
+It is possible to run the Farmerbot on a Pi. That being said, it is experimental and Threefold might never support it officially.
+
+To run the Farmerbot on a Raspberry Pi, read [this guide](https://forum.threefold.io/t/how-to-run-farmerbot-on-a-raspberry-pi/3879/).
+
+***
+
+### I want to set up the Farmerbot for my 3node farm. Should all my nodes have the same twin ID?
+
+The farmerbot can only manage the nodes that you define in the configuration. So, for each node in your farm, you will need to fill in these required attributes:
+
+* id
+  * the id of the node
+* twinid
+  * the twin id of the node
+
+***
+
+### When setting up the Farmerbot, I get the error: dependency failed to start: container qa-redis-1 is unhealthy. What can I do?
+
+There's some redis database state stored in a persistent volume. The issue is that the database got corrupted somehow and thus redis is crashing.
+
+To remove the volume, and thus actually get a clean start, you can do this:
+```
+docker compose down -v
+```
+
+***
+
+### How can I use GraphQL to see if a 3node is up or down in relation with the Farmerbot?
+
+This script will show you all the nodes' status on [GraphQL](https://graphql.grid.tf/graphql):
+
+```
+query MyQuery {
+  nodes {
+    nodeID
+    power {
+      state
+    }
+  }
+}
+```
+
+To find a specific node, write the following with the proper nodeID (here we use 655 as an example):
+
+```
+query MyQuery {
+  nodes(where: {nodeID_eq: 655}) {
+    power {
+      state
+    }
+    nodeID
+  }
+}
+```
+
+***
+
+### Can you run multiple Farmerbots on a single computer?
+
+It's been determined that multiple Farmerbots can be hosted on a single machine. In that case, each Farmerbot will need its own `.env` and `config` files. 
+
+Furthermore, in its current state, each Farmerbot can only control a single twin account, and each twin should only oversee a single farm. 
+
+At a later stage, it should be possible to run multiple farms under a single twin.
+
+***
+
+### With the Farmerbot, how can I set a node to never shut down?
+
+In the config file, set the following: `never_shutdown:true` for the node you want to never shut down.
+
+***
+
+### How long does it take for the Farmerbot to do the periodic wake?
+
+The minimum period between two nodes to be waken is currently 5 minutes.
+So every 5 minutes a new node wakes up.
+
+Once all nodes are awaken, they all shut down at the same time, except the node that stays awaken to wake up the other during the next periodic wake.
+
+A future release will permit farmers to specify how much nodes will be powered on at the same time during a periodic wakeup. This will enable faster periodic wake but might cause spikes in electricity consumption. Farmers will thus need to adjust with their own setup.
+
+***
+
+###  The Farmerbot is set up and the containers are up and running, but in the logs I see following "Node xxx is not responding while we expect it to: timeout on blpop". Is this an issue?
+
+This happens sometimes in normally functioning bots. It indicates a timeout while waiting for a reply from the node.
+
+***
+
+### Does the Farmerbot operate in UTC or local time?
+
+The Farmerbot works in UTC, independently of the local time of your machine.
+
+***
+
+### Setting up the Farmerbot, I get the following error: "Failed initializing the database: Invalid duration value" What can I do to fix this?
+
+If you see this error, it's because you've used 24h time in conjunction with AM/PM time. Note that "periodic_wakeup" uses 12h time format. 
+
+***
+
+### How can I update the Farmerbot with the new release?
+
+ Please follow these steps to move the existing farmerbot to the new one:
+
+1. Change the current directory to the directory containing the docker-compose file
+2. Download the new docker-compose file: `wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml`
+3. Modify the .env file: rename `MNEMONIC` to `SECRET`
+4. Stop the existing farmerbot: `docker compose rm -f -s -v`
+5. Run the new farmerbot: `docker compose up -d`
+
+This last command can take some time as it is downloading new docker images. Let the farmerbot run for some time. If you think something is wrong or if you want to check if there is something wrong you should look into the config/farmerbot.log file. If you see some errors please share that file with us.
+
+***
+
+### What are the changes brought in with the new Farmerbot release?
+
+Among new changes, we adjusted the `periodic_wakeup_limit` which allows you to specify how much sleeping nodes you want to wake up at the same time during a periodic wakeup.
+
+Also, we got rid of the requirement to have at least one node up that is unused. So if you have two nodes and one of them is running the Farmerbot the other one will be able to shutdown (it wouldn't shut down before).
 
 ***
 
