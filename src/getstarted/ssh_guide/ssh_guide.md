@@ -47,6 +47,10 @@ The main steps for the whole process are the following:
 
 ### SSH into a 3node with IPv4 on Linux
 
+<div class="youtubeVideoWrapper">
+<iframe title="SSH into a 3node with IPv4 on Linux" width="560" height="315" src="https://www.youtube-nocookie.com/embed/WRHlzv-jpbo" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
+
 ***
 
 * To create the SSH key pair, write in the terminal 
@@ -90,6 +94,10 @@ The main steps for the whole process are the following:
 ***
 
 ### SSH into a 3node with the Planetary Network on Linux
+
+<div class="youtubeVideoWrapper">
+<iframe title="SSH into a 3node with the Planetary Network on Linux" width="560" height="315" src="https://www.youtube-nocookie.com/embed/146vFBXr5pM" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
 
 ***
 
@@ -145,6 +153,10 @@ The main steps for the whole process are the following:
 
 ### SSH into a 3node with IPv4 on MAC
 
+<div class="youtubeVideoWrapper">
+<iframe title="SSH into a 3node with IPv4 on MAC" width="560" height="315" src="https://www.youtube-nocookie.com/embed/lICN-XXtt0A" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
+
 ***
 
 * To create the SSH key pair, in the terminal write
@@ -192,6 +204,10 @@ The main steps for the whole process are the following:
 ***
 
 ### SSH into a 3node with the Planetary Network on MAC
+
+<div class="youtubeVideoWrapper">
+<iframe title="SSH into a 3node with the Planetary Network on MAC" width="560" height="315" src="https://www.youtube-nocookie.com/embed/_7Lem9Y5jCQ" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
 
 ***
 
@@ -249,6 +265,10 @@ The main steps for the whole process are the following:
 
 ### SSH into a 3node with IPv4 on Windows
 
+<div class="youtubeVideoWrapper">
+<iframe title="SSH into a 3node with IPv4 on Windows" width="560" height="315" src="https://www.youtube-nocookie.com/embed/FhKOyW-ZH7Q" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
+
 ***
 
 * To download OpenSSH client and OpenSSH server
@@ -301,6 +321,10 @@ The main steps for the whole process are the following:
 ***
 
 ### SSH into a 3node with the Planetary Network on Windows
+
+<div class="youtubeVideoWrapper">
+<iframe title="SSH into a 3node with the Planetary Network on Windows" width="560" height="315" src="https://www.youtube-nocookie.com/embed/0wyKYcJeitk" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
 
 ***
 
