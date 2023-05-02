@@ -3973,7 +3973,7 @@ The farmer bot uses the nodes in the farm to send WOL packets to the node that n
 ### What type of computer can run the Farmerbot? What are the minimum specs to run the Farmerbot?
 The Farmerbot can run on any computer/server, it could even run on a laptop so to speak, as long as it has an internet connection, the Farmerbot will be working fine.
 
-The Farmerbot runs fine on a VM with a single vcore and 512 Mb of RAM. For the storage, you need to have room for Docker and it’s dependencies. Thus 1 or 2GB of free storage, with the OS already installed, should be sufficient. 
+The Farmerbot runs fine on a VM with a single vcore and 2GB of RAM. For the storage, you need to have room for Docker and its dependencies. Thus 1 or 2GB of free storage, with the OS already installed, should be sufficient.
 
 ***
 
@@ -4088,8 +4088,6 @@ It's been determined that multiple Farmerbots can be hosted on a single machine.
 
 Furthermore, in its current state, each Farmerbot can only control a single twin account, and each twin should only oversee a single farm. 
 
-At a later stage, it should be possible to run multiple farms under a single twin.
-
 ***
 
 ### With the Farmerbot, how can I set a node to never shut down?
@@ -4105,13 +4103,11 @@ So every 5 minutes a new node wakes up.
 
 Once all nodes are awaken, they all shut down at the same time, except the node that stays awaken to wake up the other during the next periodic wake.
 
-A future release will permit farmers to specify how much nodes will be powered on at the same time during a periodic wakeup. This will enable faster periodic wake but might cause spikes in electricity consumption. Farmers will thus need to adjust with their own setup.
-
 ***
 
 ###  The Farmerbot is set up and the containers are up and running, but in the logs I see following "Node xxx is not responding while we expect it to: timeout on blpop". Is this an issue?
 
-This happens sometimes in normally functioning bots. It indicates a timeout while waiting for a reply from the node.
+This always happens when you start the Farmerbot while the nodes are down. Although this is not an issue, it is recommended to have the nodes running when starting the Farmerbot. The nodes data will then be up to date and the nodes that are allowed to be shut down will be shut down.
 
 ***
 
@@ -4123,7 +4119,7 @@ The Farmerbot works in UTC, independently of the local time of your machine.
 
 ### Setting up the Farmerbot, I get the following error: "Failed initializing the database: Invalid duration value" What can I do to fix this?
 
-If you see this error, it's because you've used 24h time in conjunction with AM/PM time. Note that "periodic_wakeup" uses 12h time format. 
+If you see this error, it's because you've used 24h time format in conjunction with AM/PM time format. Note that if you add AM/PM, the Farmerbot will use the 12h time format (AM/PM). Otherwise, it is the 24h time format.
 
 ***
 
