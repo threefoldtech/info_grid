@@ -1,4 +1,4 @@
-<h1> Deploy a Full VM and Run Apache Guacamole, a Clientless Remote Desktop Gateway</h1>
+<h1> Deploy a Full VM and Run Apache Guacamole (RDP Connection, Remote Desktop) </h1>
 
 <h2> Table of Contents </h2>
 
@@ -15,56 +15,55 @@
 
 ## Introduction
 
-In this guide, we deploy a full virtual machine (Ubuntu 20.04) on the Threefold Grid with IPv4. We install and run Apache Guacamole and access the 3node server with remote desktop connection by using xrdp.
+In this guide, we deploy a full virtual machine (Ubuntu 20.04) on the Threefold Grid with IPv4. We install and run [Apache Guacamole](https://guacamole.apache.org/) and access the 3node server with remote desktop connection by using [xrdp](https://www.xrdp.org/).
 
-The Apache Guacamole instance has a two factor authorization to give further security to the deployment.
+The Apache Guacamole instance has a two-factor authorization to give further security to the deployment.
 
 With Apache Guacamole, a user can access different deployments and command servers remotely, with desktop access.
 
-This guide can be done on a Windows, MAC, or Linux computer. For more information on deploying a Full VM and using SSH remote connection, read [this SSH guide](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html).
+This guide can be done on a Windows, MAC, or Linux computer. For more information on deploying a Full VM and using SSH remote connection, read this [SSH guide](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html).
 
-If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section of the Threefold Manual](https://www2.manual.grid.tf/getstarted/tfgrid3_getstarted.html).
+If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](https://www2.manual.grid.tf/getstarted/tfgrid3_getstarted.html) of the Threefold Manual.
 
 ***
 
 ## Deploy a Full VM and Create a Root-Access User
 
 * Go to the [Threefold Playground](https://play.grid.tf/#/)
-* Deploy a Full VM (Ubuntu 20.04) with minimum specs for a desktop environment
+* Deploy a Full VM (Ubuntu 20.04) with at least the minimum specs for a desktop environment
   * IPv4 Address
   * Minimum vcores: 2vcores
   * Minimum Gb of RAM: 4Gb
   * Minimum storage: 15Gb
 * After deployment, note the 3node IPv4 address
-* In the terminal write
+* Connect to the 3node server via SSH
   * ``` 
     ssh root@3node_IPv4_address
     ```
-* Once connected, write the following lines in the terminal
-  * Create a new user with root access (here we use "newuser")
-    * ``` 
-      adduser newuser
-      ```
+* Once connected, create a new user with root access (for this guide we use "newuser")
+  * ``` 
+    adduser newuser
+    ```
+  * You should now see the new user directory
     * ``` 
       ls /home
       ```
-        You should now see the new user directory
-    * Give sudo capacity to the new user
-      * ```
-        usermod -aG sudo newuser
-        ```
-    * Make the new user accessible by SSH
-      * ```
-        su - newuser
-        ```
-      * ```
-        mkdir ~/.ssh
-        ```
+  * Give sudo capacity to the new user
+    * ```
+      usermod -aG sudo newuser
+      ```
+  * Make the new user accessible by SSH
+    * ```
+      su - newuser
+      ```
+    * ```
+      mkdir ~/.ssh
+      ```
+    * Add authorized public key in the file and save it
       * ```
         nano ~/.ssh/authorized_keys
         ```
-        * add authorized public key in the file and save it
-  * Exit the VM and reconnect with new user
+* Exit the VM and reconnect with the new user
 
 ***
 
@@ -93,19 +92,15 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
 
 ## Access Apache Guacamole and Create Admin-Access User
 
-* On your local computer, open a browser and write the URL
+* On your local computer, open a browser and write the following URL with the proper IPv4 address
   * ```
     https://3node_IPv4_address:8080/guacamole
     ```
-  * On Guacamole, enter the following username
+  * On Guacamole, enter the following for both the username and the password
     * ```
       guacadmin
       ```
-  * Enter the following password
-    * ```
-      guacadmin
-      ```
-  * Download TOTP app on your Android or iOS
+  * Download the [TOTP](https://totp.app/) app on your Android or iOS
     * Scan the QR Code
     * Enter the code
     * Next time you log in
@@ -131,7 +126,7 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
       * Choose lightdm
     * Run tasksel and choose `ubuntu desktop`
       * ```
-        tasksel
+        sudo tasksel
         ```
 
 * Download and run xrdp
@@ -152,7 +147,7 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
 * Create an RDP connection on Guacamole
   * Open Guacamole
     * ```
-      http://3node_IPv4_address:8080/guacamole/#/
+      http://3node_IPv4_address:8080/guacamole/
       ```
   * Go to Settings
     * Click on Connections
@@ -170,8 +165,8 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
       * Security mode: Any
       * Ignore server certificate: Yes
       * Click Save
-    * Go to the Apache Guacamole Home (top right menu button)
-    * Click on the New Connection
+    * Go to the Apache Guacamole Home menu (top right button)
+    * Click on the new connection
     * The remote desktop access is done
 
 ***
@@ -184,4 +179,6 @@ If you have any questions, let us know by writing a post on the [Threefold Forum
 
 ## References
 
-[Apache Guacamole for Secure Remote Access to your Computers](https://discussion.scottibyte.com/t/apache-guacamole-for-secure-remote-access-to-your-computers/32)
+Apache Guacamole for Secure Remote Access to your Computers, [https://discussion.scottibyte.com/t/apache-guacamole-for-secure-remote-access-to-your-computers/32](https://discussion.scottibyte.com/t/apache-guacamole-for-secure-remote-access-to-your-computers/32)
+
+MysticRyuujin's guac-install, [https://github.com/MysticRyuujin/guac-install](https://github.com/MysticRyuujin/guac-install)
