@@ -56,6 +56,7 @@
   - [Setting up the Farmerbot, I get the following error: "Failed initializing the database: Invalid duration value" What can I do to fix this?](#setting-up-the-farmerbot-i-get-the-following-error-failed-initializing-the-database-invalid-duration-value-what-can-i-do-to-fix-this)
   - [How can I update the Farmerbot with the new release?](#how-can-i-update-the-farmerbot-with-the-new-release)
   - [What are the changes brought in with the new Farmerbot release?](#what-are-the-changes-brought-in-with-the-new-farmerbot-release)
+  - [Can I deploy the Farmerbot with Portainer or other container management tools?](#can-i-deploy-the-farmerbot-with-portainer-or-other-container-management-tools)
 - [Feedback and Questions](#feedback-and-questions)
 
 ***
@@ -582,6 +583,14 @@ This last command can take some time as it is downloading new docker images. Let
 Among new changes, we adjusted the `periodic_wakeup_limit` which allows you to specify how much sleeping nodes you want to wake up at the same time during a periodic wakeup.
 
 Also, we got rid of the requirement to have at least one node up that is unused. So if you have two nodes and one of them is running the Farmerbot the other one will be able to shutdown (it wouldn't shut down before).
+
+***
+
+## Can I deploy the Farmerbot with Portainer or other container management tools?
+
+The Farmerbot should be compatible with Portainer and other container management tools, but there may be practical issues when deploying the Farmerbot. In that regard, Threefold can only support such tools on a best effort basis.
+
+Concerning Portainer, some farmers tried it and it led to issues. It is thus recommended to use something else than Portainer to deploy the Farmerbot.
 
 ***
 
