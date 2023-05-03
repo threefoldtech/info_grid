@@ -7,27 +7,32 @@
 - [Client Side: Install Remote Desktop Connection for Windows, MAC or Linux](#client-side-install-remote-desktop-connection-for-windows-mac-or-linux)
   - [Download the App](#download-the-app)
   - [Connect Remotely](#connect-remotely)
+- [Conclusion](#conclusion)
 
 ***
 
-# Introduction
+## Introduction
 
 In this guide, we learn how to deploy a full virtual machine on a 3node on the Threefold Grid.
 We access Ubuntu with a desktop environment to offer a graphical user interface (GUI).
 
-This guide can be done on a Window, MAC or Linux machine. The only difference will be in the Remote Desktop app. The steps are very similar.
+This guide can be done on a Windows, MAC, or Linux computer. The only difference will be in the Remote Desktop app. The steps are very similar.
+
+For more information on deploying a full VM and using SSH remote connection, read this [SSH guide](../../ssh_guide/ssh_guide.md).
+
+If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](../../tfgrid3_getstarted.md) of the Threefold Manual.
 
 ***
 
-# Server Side: Deploy the Full VM, install a desktop and XRDP
+## Server Side: Deploy the Full VM, install a desktop and XRDP
 
 * Go to the [Threefold Playground](https://play.grid.tf/#/)
-* Deploy a Full VM (Ubuntu 20.04)
-  * IPv4 Address
+* Deploy a full VM (Ubuntu 20.04)
+  * With an IPv4 Address
 * After deployment, copy the IPv4 address
-* To SSH into the 3node, write in the terminal
+* To SSH into the VM, write in the terminal
   * ``` 
-    ssh root@IPv4_address
+    ssh root@VM_IPv4_address
     ```
 * Once connected, update, upgrade and install the desktop environment
   * Update
@@ -65,9 +70,9 @@ This guide can be done on a Window, MAC or Linux machine. The only difference wi
     * ```
       exit
       ```
-* Reconnect to the 3node (server) terminal and install XRDP
+* Reconnect to the VM terminal and install XRDP
     * ``` 
-      ssh newuser@IPv4_address
+      ssh newuser@VM_IPv4_address
       ```
 * Install XRDP
   * ```
@@ -106,7 +111,7 @@ Move to home directory
       curl ifconfig.me
       ```
 
-* On the 3node terminal, allow client computer port to the firewall (ufw)
+* On the VM terminal, allow client computer port to the firewall (ufw)
   * ```
     sudo ufw allow from your_local_ip/32 to any port 3389
     ```
@@ -131,13 +136,13 @@ Move to home directory
       ```
 ***
 
-# Client Side: Install Remote Desktop Connection for Windows, MAC or Linux
+## Client Side: Install Remote Desktop Connection for Windows, MAC or Linux
 
-For the client side (the local computer accessing the 3node remotely), you can use remote desktop connection for Windows, MAC and Linux. The process is very similar in all 3 cases.
+For the client side (the local computer accessing the VM remotely), you can use remote desktop connection for Windows, MAC and Linux. The process is very similar in all three cases.
 
-Simply download the app, open it and write the IP address of the 3node. You then will need to write the username and password to enter into your 3node.
+Simply download the app, open it and write the IPv4 address of the VM. You then will need to write the username and password to enter into your VM.
 
-## Download the App
+### Download the App
 
 * Client side Remote app
   * Windows
@@ -148,11 +153,16 @@ Simply download the app, open it and write the IP address of the 3node. You then
   * Linux
     * [Remmina RDP Client](https://remmina.org/)
  
-## Connect Remotely
+### Connect Remotely
 
 * General process
   * In the Remote app, enter the following:
-    * your IP Address of the 3node
-    * 3node root-access username
-    * username password
-  * You now have remote desktop connection to your 3node
+    * the IPv4 Address of the VM
+    * the VM root-access username and password
+  * You now have remote desktop connection to your VM
+
+***
+
+## Conclusion
+
+You now have a remote access to the desktop environment of your VM. If you have any questions, let us know by writing a post on the [Threefold Forum](https://forum.threefold.io/).

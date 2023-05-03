@@ -43,9 +43,9 @@ In this Threefold Guide, we deploy a redundant [Nextcloud](https://nextcloud.com
 
 We will learn how to deploy two micro virtual machines (Ubuntu 22.04) with [Terraform](https://www.terraform.io/). The Terraform deployment will be composed of a virtual private network (VPN) using [Wireguard](https://www.wireguard.com/). The two VMs will thus be connected in a private and secure network. Once this is done, we will link the two VMs together by setting up a [MariaDB](https://mariadb.org/) database and using [GlusterFS](https://www.gluster.org/). Then, we will install and deploy Nextcloud. We will add a DDNS (dynamic DNS) domain to the Nextcloud deployment. It will then be possible to connect to the Nextcloud instance over public internet. Nextcloud will be available over your computer and even your smart phone! We will also set HTTPS for the DDNS domain in order to make the Nextcloud instance as secure as possible. You are free to explore different DDNS options. In this guide, we will be using [DuckDNS](https://www.duckdns.org/) for simplicity.
 
-The advantage of this redundant Nextcloud deployment is obvious: if one of the two 3nodes goes down, the Nextcloud instance will still be accessible, as the other 3node will take the lead. Also, the two 3nodes will be continually synced in real-time. If the master node goes down, the data will be synced to the worker node, and the worker node will become the master node. Once the master 3node goes back online, the data will be synced to the master node and the master node will retake the lead as the master node.
+The advantage of this redundant Nextcloud deployment is obvious: if one of the two VMs goes down, the Nextcloud instance will still be accessible, as the other VM will take the lead. Also, the two VMs will be continually synced in real-time. If the master node goes down, the data will be synced to the worker node, and the worker node will become the master node. Once the master VM goes back online, the data will be synced to the master node and the master node will retake the lead as the master node.
 
-This kind of real-time backup of the database is not only limited to Nextcloud. You can use the same architecture to deploy different workloads while having the redundancy over two 3nodes. This architecture could be deployed over more than two 3nodes. Feel free to explore and let us know in the [Threefold Forum](http://forum.threefold.io/) if you come up with exciting and different variations of this kind of deployment.
+This kind of real-time backup of the database is not only limited to Nextcloud. You can use the same architecture to deploy different workloads while having the redundancy over two 3node servers. This architecture could be deployed over more than two 3nodes. Feel free to explore and let us know in the [Threefold Forum](http://forum.threefold.io/) if you come up with exciting and different variations of this kind of deployment.
 
 As always, if you have questions concerning this guide, you can write a post on the [Threefold Forum](http://forum.threefold.io/).
 
@@ -320,9 +320,9 @@ After deployments, take note of the 3nodes' IPv4 address. You will need those ad
 
 ### SSH into the 3nodes
 
-* To [SSH into the 3nodes](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html), write the following:
+* To [SSH into the 3nodes](../../getstarted/ssh_guide/ssh_guide.md), write the following:
   *  ```
-     ssh root@3node_IPv4_Address
+     ssh root@VM_IPv4_Address
      ```
 
 * If you've already deployed on other 3nodes, you might need to remove the file `known_hosts` and add the private key in the SSH `.ssh` folder:

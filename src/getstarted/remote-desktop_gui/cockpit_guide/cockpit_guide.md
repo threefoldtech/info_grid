@@ -13,23 +13,23 @@
 
 In this Threefold Guide, we show how easy it is to deploy a full VM and access Cockpit, a web-based interface to manage servers. For more information on Cockpit, visit this [link](https://cockpit-project.org/).
 
-For more information on deploying a Full VM and using SSH remote connection, read [this SSH guide](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html).
+For more information on deploying a full VM and using SSH remote connection, read [this SSH guide](../../ssh_guide/ssh_guide.md).
 
-If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](https://www2.manual.grid.tf/getstarted/tfgrid3_getstarted.html) of the Threefold Manual.
+If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](../../tfgrid3_getstarted.md) of the Threefold Manual.
 
 ***
 
 ## Deploy a Full VM and Create a Root-Access User
 
-To start, you must [deploy and SSH into a Full VM](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html).
+To start, you must [deploy and SSH into a Full VM](../../ssh_guide/ssh_guide.md).
 
 * Go to the [Threefold Playground](https://play.grid.tf/#/)
-* Deploy a Full VM (e.g. Ubuntu 22.04)
-  * Set an IPv4 Address
+* Deploy a full VM (e.g. Ubuntu 22.04)
+  * With an IPv4 Address
 * After deployment, copy the IPv4 address
 * In the terminal write
   * ``` 
-    ssh root@IPv4_address
+    ssh root@VM_IPv4_address
     ```
 * To create a new user with root access
   * Here we use `newuser` as an example
@@ -57,7 +57,7 @@ To start, you must [deploy and SSH into a Full VM](https://www2.manual.grid.tf/g
       * add the authorized public key in the file, then save and quit
   * Exit the VM and reconnect with new user
   * ``` 
-    ssh newuser@IPv4_address
+    ssh newuser@VM_IPv4_address
     ```
 
 ***
@@ -73,9 +73,9 @@ To start, you must [deploy and SSH into a Full VM](https://www2.manual.grid.tf/g
     . /etc/os-release && sudo apt install -t ${UBUNTU_CODENAME}-backports cockpit -y
     ```
 * Access Cokcpit on a web browser:
-  * Write the following URL with the 3node IP address: 
+  * Write the following URL with the VM IPv4 address: 
     * ```
-      IP_Address:9090
+      VM_IPv4_Address:9090
       ```
   * Enter the username and password of the root-access user
 
@@ -83,4 +83,4 @@ To start, you must [deploy and SSH into a Full VM](https://www2.manual.grid.tf/g
 
 ## Conclusion
 
-You now have access to a web-based graphical interface to manage your 3node. Read [Cockpit's documentation](https://cockpit-project.org/documentation.html) to explore further this interface.
+You now have access to a web-based graphical interface to manage your VM. Read [Cockpit's documentation](https://cockpit-project.org/documentation.html) to explore further this interface.

@@ -15,30 +15,30 @@
 
 ## Introduction
 
-In this guide, we deploy a full virtual machine (Ubuntu 20.04) on the Threefold Grid with IPv4. We install and run [Apache Guacamole](https://guacamole.apache.org/) and access the 3node server with remote desktop connection by using [xrdp](https://www.xrdp.org/).
+In this guide, we deploy a full virtual machine (Ubuntu 20.04) on the Threefold Grid with IPv4. We install and run [Apache Guacamole](https://guacamole.apache.org/) and access the VM with remote desktop connection by using [xrdp](https://www.xrdp.org/).
 
 The Apache Guacamole instance has a two-factor authorization to give further security to the deployment.
 
 With Apache Guacamole, a user can access different deployments and command servers remotely, with desktop access.
 
-This guide can be done on a Windows, MAC, or Linux computer. For more information on deploying a Full VM and using SSH remote connection, read this [SSH guide](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html).
+This guide can be done on a Windows, MAC, or Linux computer. For more information on deploying a full VM and using SSH remote connection, read this [SSH guide](../../ssh_guide/ssh_guide.md).
 
-If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](https://www2.manual.grid.tf/getstarted/tfgrid3_getstarted.html) of the Threefold Manual.
+If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](../../tfgrid3_getstarted.md) of the Threefold Manual.
 
 ***
 
 ## Deploy a Full VM and Create a Root-Access User
 
 * Go to the [Threefold Playground](https://play.grid.tf/#/)
-* Deploy a Full VM (Ubuntu 20.04) with at least the minimum specs for a desktop environment
+* Deploy a full VM (Ubuntu 20.04) with at least the minimum specs for a desktop environment
   * IPv4 Address
   * Minimum vcores: 2vcores
   * Minimum Gb of RAM: 4Gb
   * Minimum storage: 15Gb
-* After deployment, note the 3node IPv4 address
-* Connect to the 3node server via SSH
+* After deployment, note the VM IPv4 address
+* Connect to the VM via SSH
   * ``` 
-    ssh root@3node_IPv4_address
+    ssh root@VM_IPv4_address
     ```
 * Once connected, create a new user with root access (for this guide we use "newuser")
   * ``` 
@@ -69,9 +69,9 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
 
 ## SSH with Root-Access User, Install Prerequisites and Apache Guacamole 
 
-* SSH into the 3node
+* SSH into the VM
   * ``` 
-    ssh newuser@3node_IPv4_address
+    ssh newuser@VM_IPv4_address
     ```
 * Update and upgrade Ubuntu  
   * ```
@@ -94,7 +94,7 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
 
 * On your local computer, open a browser and write the following URL with the proper IPv4 address
   * ```
-    https://3node_IPv4_address:8080/guacamole
+    https://VM_IPv4_address:8080/guacamole
     ```
   * On Guacamole, enter the following for both the username and the password
     * ```
@@ -119,7 +119,7 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
 
 ## Download the Desktop Environment and Run xrdp
 
-* Download a Ubuntu desktop environment on the 3node server
+* Download a Ubuntu desktop environment on the VM
     * ```
       sudo apt install tasksel -y && sudo apt install lightdm -y 
       ```
@@ -147,7 +147,7 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
 * Create an RDP connection on Guacamole
   * Open Guacamole
     * ```
-      http://3node_IPv4_address:8080/guacamole/
+      http://VM_IPv4_address:8080/guacamole/
       ```
   * Go to Settings
     * Click on Connections
@@ -157,7 +157,7 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
       * Location: ROOT
       * Protocol: RDP
       * Network
-        * Hostname: 3node_IPv4_Address
+        * Hostname: VM_IPv4_Address
         * Port: 3389
       * Authentication
         * Username: your root-access username (newuser)
