@@ -103,5 +103,7 @@
 - [Farmerbot](farmerbot/farmerbot.md)
 - [ThreeFold Chain](tfchain/tfchain.md)
     - [External service contract](tfchain/tfchain_external_service_contract.md)
+- [Collaboration Tools](collaboration_tools/collaboration_tools.md)
+    - [Circle Tool](collaboration_tools/circle_tool.md)
 - [How to Contribute](contribute/contribute.md)
 - [FAQ](faq/faq.md)
