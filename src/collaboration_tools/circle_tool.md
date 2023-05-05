@@ -5,6 +5,14 @@
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [How to Use the Circle Tool](#how-to-use-the-circle-tool)
+- [Circle Tool Overview](#circle-tool-overview)
+- [Dashboard View](#dashboard-view)
+- [Profile view](#profile-view)
+- [Projects](#projects)
+- [Scrum Module on Project](#scrum-module-on-project)
+  - [Scrum Backlog](#scrum-backlog)
+  - [Scrum Sprints](#scrum-sprints)
+- [More Info](#more-info)
 
 ***
 
