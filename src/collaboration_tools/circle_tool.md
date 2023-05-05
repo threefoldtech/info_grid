@@ -10,7 +10,7 @@
 
 # Introduction
 
-![ ](../img/taiga.png)
+![ ](./img/taiga.png)
 
 [__ThreeFold's Circle Tool__](https://circles.threefold.me ) is our own self-hosted (desktop only) project management tool based on [Taiga](https://www.taiga.io/), an open-source project management tool for cross-functional agile. It offers a lot of different project management kits and features such as the scrum board, kanban board, issues management, and many more. 
 
@@ -26,27 +26,27 @@ You would need to install and create an account on [TF Connect App](https://manu
 
 * Go to Circle Tool's desktop homepage on: https://circles.threefold.me on your computer / laptop as shown below. Click on '__Login__' button on the very top right corner of your screen.
 
-![ ](../img/circlehome.png)
+![ ](./img/circlehome.png)
 
 * Click on "TF Connect" button to log into the Circle Tool by using your TF Connect Account.
 
-![ ](../img/tfconnect.png)
+![ ](./img/tfconnect.png)
 
 * Fill in your TF Connect usernames (without adding the '@' sign) on the provided box, and click on the 'Sign in' button.
 
-![ ](../img/signin.png)
+![ ](./img/signin.png)
 
 * Circle Tool will ask you to verify your login by clicking the right emoji that is sent to your TF Connect App.
 
-![ ](../img/emoji.png)
+![ ](./img/emoji.png)
 
 * Verify your sign in process by loggin in to your TF Connect App on your mobile phone. Click on the same emoji that you see on your circle tool (desktop).
 
-![ ](../img/matchemoji.png)
+![ ](./img/matchemoji.png)
 
 * Congratulations, you are now officially logged in on the circle tool. The Dashboard view will be the first thing you will see once you are logged in to the tool.
 
-![ ](../img/dashboard.png)
+![ ](./img/dashboard.png)
 
 ***
 
@@ -56,27 +56,27 @@ The Circle Tool always try to make things easy and intuitive for new users but i
 
 # Dashboard View
 
-![ ](../img/dashboard.png)
+![ ](./img/dashboard.png)
 
 Upon login or if you just go to your Circle Tool, you’re confronted with your dashboard with quick access to your working on items, a list of watched items and shortcuts to your projects. You can always go back to your dashboard by clicking on the Taiga 
 icon on the top bar.
 
 # Profile view
 
-![ ](../img/profile.png)
+![ ](./img/profile.png)
 
 Circle Tool has an additional section to get a multiproject view where you can find and list everything that is accessible to you. Simply click on your avatar and you access your personal profile section where you can check from what your personal bio looks like for people that might have access to it to all sorts of information on your activities and relevant content.
 
 # Projects
 
-![ ](../img/project.png)
+![ ](./img/project.png)
 
 You can access your assigned projects by clicking on Projects link at the top left of your screen. You can hover and get an interactive shortlist or click on the link and go to a dedicated page where you can access them as well as rearrange them. Once you have clicked on a project, you access your default view for that project, which is always the Project’s Timeline if you haven’t changed that.
 
 
 # Scrum Module on Project
 
-![ ](../img/homeproject.png)
+![ ](./img/homeproject.png)
 
 Every circle project can activate the Scrum module. This also happens automatically if you chose the Scrum template upon project creation. You can find the scrum module on the sidebar of your project page. 
 
@@ -84,13 +84,13 @@ Scrum is an agile framework for developing, delivering, and sustaining complex p
 
 ## Scrum Backlog
 
-![ ](../img/backlog.png)
+![ ](./img/backlog.png)
 
 There are various so called artifacts in Scrum. The top three are the Backlog, the User Stories and the Sprints. They respectively represent what is to be done ordered by priority and readyness, the pieces of work themselves and the fixed time periods in which we put selected User Stories to be worked upon and finished.
 
 ## Scrum Sprints
 
-![ ](../img/sprints.png)
+![ ](./img/sprints.png)
 
 The Scrum Backlog view will always show a summary view of ongoing or closed Sprints but teams generally stick to the Sprint Taskboard view when they are focused on getting things done for that Sprint. Click on either the Sprint name or the “Sprint Taskboard” button so you can access the very important Sprint Taskboard. Open Sprints appear as shortcuts through the left navigation pane’s Scrum icon.
 
