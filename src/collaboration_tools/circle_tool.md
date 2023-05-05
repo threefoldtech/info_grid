@@ -28,11 +28,11 @@ This manual will be a beneficial thing to read for anyone: our team members, as 
 
 # Prerequisites
 
-You would need to install and create an account on [TF Connect App](https://manual.grid.tf/getstarted/TF_Connect/TF_Connect.html) before you're able to register and use the Circle Tool.
+You would need to install and create an account on the [TF Connect App](../getstarted/TF_Connect/TF_Connect.md) before being able to register and use the Circle Tool.
 
 # How to Use the Circle Tool
 
-* Go to Circle Tool's desktop homepage on: https://circles.threefold.me on your computer / laptop as shown below. Click on '__Login__' button on the very top right corner of your screen.
+* Go to [Circle Tool's desktop homepage](https://circles.threefold.me) on your computer as shown below. Click on '__Login__' button on the very top right corner of your screen.
 
 ![ ](./img/circlehome.png)
 
