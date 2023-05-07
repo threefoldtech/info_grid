@@ -52,6 +52,7 @@ Browse to :
 
 - For mainnet: <https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.grid.tf#/accounts>
 - For testnet: <https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.test.grid.tf#/accounts>
+- For Devnet: https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.dev.grid.tf#/accounts
 
 -> Add Account -> Click on mnemonic and select `Raw Seed` -> Paste raw TF Chain seed.
 

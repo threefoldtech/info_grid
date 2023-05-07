@@ -8,6 +8,8 @@ The `Billing Rate` is displayed in `TFT/Hour`
 
 ![image](img/billing_rate.png)
 
+## Contract Billing Report (graphql)
+
 - you need to find the contract ID
 - ask the graphql for the consumption
 
