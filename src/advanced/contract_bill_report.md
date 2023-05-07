@@ -1,11 +1,17 @@
-## consumption report
+# Contract Billing Rate (Playground)
 
-there's no easy, friendly way yet, but to find how much you're being billed
+Now you can check the billing rate of your contracts directly from the `Contracts` tab in the playground.
 
-1- you need to find the contract ID
-2- ask the graphql for the consumption
+> It takes an hour for the contract to display the billing rate (Until it reaches the first billing cycle).
 
-example query for all contracts
+The `Billing Rate` is displayed in `TFT/Hour`
+
+![image](img/billing_rate.png)
+
+- you need to find the contract ID
+- ask the graphql for the consumption
+
+> example query for all contracts
 
 ```graphql
 query MyQuery {

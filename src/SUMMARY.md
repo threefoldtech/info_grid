@@ -134,6 +134,8 @@
   - [Grid3 stellar tfchain bridge](advanced/grid3_stellar_tfchain_bridge.md)
   - [Token transfer keygenerator](advanced/token_transfer_keygenerator.md)
   - [Cancel contracts](advanced/cancel_contracts.md)
+  - [Contract bills reports](advanced/contract_bill_report.md)
+  - [Listing free public ips](advanced/list_public_ips.md)
 - [ThreeFold chain](tfchain/tfchain.md)
   - [Introduction](tfchain/introduction.md)
   - [Farming policies](tfchain/farming_policies.md)

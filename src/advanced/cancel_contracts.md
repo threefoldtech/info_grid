@@ -28,8 +28,8 @@ go to extrinsics, choose the smartContract module and cancelContract extrinsic a
 
 ![](img/polka_web_cancel_contracts.jpg)
 
-## Cancel using code
+## Cancelling Contracts Using `grid3_client_ts
 
-can also cancel them using [code](https://github.com/threefoldtech/grid3_client_ts/blob/development/scripts/delete_all_contracts.ts)
+In order to use the `grid3_client_ts` module, it is essential to first clone our official mono-repo containing the module and then navigate to it. If you are looking for a quick and efficient way to cancel contracts, we offer a code-based solution that can be found [here](https://github.com/threefoldtech/tfgrid-sdk-ts/blob/development/packages/grid_client/scripts/delete_all_contracts.ts).
 
-after cloning `grid3_client_ts`, `yarn install`, and update the `config.json` (beside the script), execute  `yarn run ts-node --project ./tsconfig-node.json scripts/delete_all_contracts.ts`
+To make the most of `grid_client`, we highly recommend following our [Grid-Client guide](https://github.com/threefoldtech/tfgrid-sdk-ts/blob/development/packages/grid_client/README.md) for a comprehensive overview of the many advanced capabilities offered by this powerful tool. With features like contract creation, modification, and retrieval, `grid_client` provides an intuitive and easy-to-use solution for managing your contracts effectively.

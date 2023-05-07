@@ -17,7 +17,7 @@ Advanced topics to do with TFGrid 3.0.
 
 - [TFChain Extrinsics = blockchain functions](/tfchain/tfchain.md)
 - [Create Farm](/dashboard/portal/dashboard_portal_ui_farming.md)
-- [cancel contracts](cancel_contracts.md)
-- [contract bills reports](contract_bill_report)
-- [listing free public ips](list_public_ips)
+- [Cancel contracts](cancel_contracts.md)
+- [Contract bills reports](contract_bill_report.md)
+- [Listing free public ips](list_public_ips.md)
 - [Become a Solution Provider](/tfchain/tfchain_solution_provider.md)

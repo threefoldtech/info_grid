@@ -1,18 +1,16 @@
 
-## Transfer TFT between net's by using the keygenerator
-
->TODO: need more explanation why this is useful
+# Transfer TFT between net's by using the keygenerator
 
 Using this method, only transfer is possible between accounts that are generated in the same manner and that are yours. Please find the keygen tooling for it below.
 
-### Prerequisites
+## Prerequisites
 
 - ed25519 keypair
 - Go installed on your local computer
 
 Create a keypair with the following tool: <https://github.com/threefoldtech/tfchain_tft/tree/main/tfchain_bridge/tools/keygen>
 
-```
+```sh
 go build .
 ./keygen
 ```
@@ -24,9 +22,8 @@ Transfer the TFT from your wallet to the bridge address. A deposit fee of 1 TFT 
 
 Bridge addresses :
 
-- On mainnet : ... (to be completed)
-- On testnet : `GA2CWNBUHX7NZ3B5GR4I23FMU7VY5RPA77IUJTIXTTTGKYSKDSV6LUA4` on [Stellar MAINnet](https://stellar.expert/explorer/public)
-<!--- - On devnet :  `GCMBZY4NGEV4CQYHJ6SXMRSTLTEOR2ERNKY6NH32LYCVDCN2E5CXZJOU` on [Stellar TESTnet](https://stellar.expert/explorer/testnet) -->
+- On Mainnet: `GBNOTAYUMXVO5QDYWYO2SOCOYIJ3XFIP65GKOQN7H65ZZSO6BK4SLWSC` on [Stellar Mainnet](https://stellar.expert/explorer/public).
+- On testnet: `GA2CWNBUHX7NZ3B5GR4I23FMU7VY5RPA77IUJTIXTTTGKYSKDSV6LUA4` on [Stellar MAINnet](https://stellar.expert/explorer/public)
 
 The amount deposited on TF Chain minus 1 TFT will be transferred over the bridge to the TF-Chain account.
 
@@ -53,9 +50,8 @@ To deposit to a TF Grid object, this object **must** exists. If the object is no
 Create a TF-Chain account from the key that you generated. (TF Chain raw seed).
 Browse to :
 
+- For mainnet: <https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.grid.tf#/accounts>
 - For testnet: <https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.test.grid.tf#/accounts>
-- For mainnet: (to be completed)
-<!--- - For devnet: https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.dev.grid.tf#/accounts -->
 
 -> Add Account -> Click on mnemonic and select `Raw Seed` -> Paste raw TF Chain seed.
 

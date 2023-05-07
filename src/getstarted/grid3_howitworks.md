@@ -29,7 +29,7 @@ And more.
 
 #### The farmers
 
-People (we call them farmers) provide internet capacity using one or mode 3Nodes. these nodes are registered on `TFChain` in what we call a "farm".
+People (we call them farmers) provide internet capacity using one or more 3Nodes. these nodes are registered on `TFChain` in what we call a "farm".
 
 The farm is the logical grouping of nodes. e.g you can have 2 3Nodes in Belgium, and 5 in France. so to logically group them you can create a farm in Belgium with a specific ID that you can use in for the nodes in Belgium and create another farm with another ID for the nodes in france.
 

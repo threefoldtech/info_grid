@@ -2,7 +2,7 @@
 
 is written in vlang see <https://vlang.io/>
 
-source see <https://github.com/threefoldtech/vgrid/tree/main/tfgriddb>
+source see <https://github.com/threefoldtech/vgrid/tree/development/gridproxy>
 
 ## Prerequisites
 
@@ -10,7 +10,7 @@ source see <https://github.com/threefoldtech/vgrid/tree/main/tfgriddb>
 
 to install client do
 
-```
+```sh
 v install https://github.com/threefoldtech/vgrid
 ```
 
@@ -152,5 +152,3 @@ println(city_by_id)
 cities_by_country_id := tfgrid.cities_by_country_id(65)?
 println(cities_by_country_id)
 ```
-
-.
