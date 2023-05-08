@@ -141,5 +141,7 @@
   - [Farming policies](tfchain/farming_policies.md)
   - [External service contract](tfchain/tfchain_external_service_contract.md)
   - [Become a solution provider](tfchain/tfchain_solution_provider.md)
+- [Collaboration Tools](collaboration_tools/collaboration_tools.md)
+    - [Circle Tool](collaboration_tools/circle_tool.md)
 - [How to contribute](contribute/contribute.md)
 - [FAQ](faq/faq.md)
