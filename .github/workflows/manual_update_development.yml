@@ -18,6 +18,7 @@ jobs:
         script: |
           cd ~/websites/www2/info_grid
           git log -1
+          git restore .
           git pull
           source ~/.cargo/env
           mdbook build -d docs
