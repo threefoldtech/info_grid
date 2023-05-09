@@ -108,13 +108,12 @@ The main steps for the whole process are the following:
   * Search the `Threefold Planetary Connector` and open it
   * Disconnect your VPN if you have one
   * In the connector, click `Connect`
-* Create an SSH Key Pair
-  * To create the SSH key pair, write in the terminal
-    * ```
-      ssh-keygen
-      ```
-      * Save in default location
-      * Write a password (optional)
+* To create the SSH key pair, write in the terminal
+  * ```
+    ssh-keygen
+    ```
+    * Save in default location
+    * Write a password (optional)
 * To see the public key, write in the terminal
   * ```
     cat ~/.ssh/id_rsa.pub
@@ -272,7 +271,7 @@ The main steps for the whole process are the following:
       * Click `Add a feature`
         * Search OpenSSH
         * Install OpenSSH Client and OpenSSH Server
-* To generate an SSH key pair, open the `Command Prompt` and write
+* To create the SSH key pair, open the `Command Prompt` and write
   * ```
     ssh-keygen
     ```
@@ -335,7 +334,7 @@ The main steps for the whole process are the following:
       * Click `Add a feature`
         * Search OpenSSH
         * Install OpenSSH Client and OpenSSH Server
-* To generate an SSH key pair, open the `Command Prompt` and write
+* To create the SSH key pair, open the `Command Prompt` and write
   * ```
     ssh-keygen
     ```
