@@ -55,13 +55,13 @@ The main steps for the whole process are the following:
 
 * To create the SSH key pair, write in the terminal 
   * ```
-    sudo ssh-keygen
+    ssh-keygen
     ```
     * Save in default location
     * Write a password (optional)
 * To see the public key, write in the terminal
   * ```
-    sudo cat ~/.ssh/id_rsa.pub
+    cat ~/.ssh/id_rsa.pub
     ```
   * Select and copy the public key when needed
 * To deploy, go to the [Threefold Playground](https://play.grid.tf/)
@@ -111,13 +111,13 @@ The main steps for the whole process are the following:
 * Create an SSH Key Pair
   * To create the SSH key pair, write in the terminal
     * ```
-      sudo ssh-keygen
+      ssh-keygen
       ```
       * Save in default location
       * Write a password (optional)
 * To see the public key, write in the terminal
   * ```
-    sudo cat ~/.ssh/id_rsa.pub
+    cat ~/.ssh/id_rsa.pub
     ```
   * Select and copy the public key when needed
 * To deploy, go to the [Threefold Playground](https://play.grid.tf/)
@@ -161,17 +161,13 @@ The main steps for the whole process are the following:
 
 * To create the SSH key pair, in the terminal write
     * ```
-      sudo ssh-keygen
+      ssh-keygen
       ```
       * Save in default location
       * Write a password (optional)
-* To add the private key, write in the terminal
-    * ```
-      sudo ssh-add ~/.ssh/id_rsa
-       ```
 * To see the public key, write in the terminal
     * ```
-      sudo cat ~/.ssh/id_rsa.pub
+      cat ~/.ssh/id_rsa.pub
       ```
     * Select and copy the public key when needed
 * To deploy, go to the [Threefold Playground](https://play.grid.tf/)
@@ -219,17 +215,13 @@ The main steps for the whole process are the following:
   * In the connector, click `Connect`
 * To create the SSH key pair, write in the terminal 
     * ```
-      sudo ssh-keygen
+      ssh-keygen
       ```
       * Save in default location
       * Write a password (optional)
-* To add the private key, write
-    * ```
-      sudo ssh-add ~/.ssh/id_rsa
-       ```
 * To see the public key, write in the terminal
     * ```
-      sudo cat ~/.ssh/id_rsa.pub
+      cat ~/.ssh/id_rsa.pub
       ```
     * Select and copy the public key when needed
 * To deploy, go to the [Threefold Playground](https://play.grid.tf/)
