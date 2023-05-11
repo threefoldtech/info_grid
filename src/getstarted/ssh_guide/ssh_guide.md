@@ -48,7 +48,7 @@ The main steps for the whole process are the following:
 ### SSH into a 3node with IPv4 on Linux
 
 <div class="youtubeVideoWrapper">
-<iframe title="SSH into a 3node with IPv4 on Linux" width="560" height="315" src="https://www.youtube-nocookie.com/embed/WRHlzv-jpbo" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+<iframe title="SSH into a 3node with IPv4 on Linux" width="560" height="315" src="https://peertube.hostservice.nl/videos/embed/a049f97c-f366-451c-b9c0-05766b693c77" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
 </div>
 
 ***
@@ -96,7 +96,7 @@ The main steps for the whole process are the following:
 ### SSH into a 3node with the Planetary Network on Linux
 
 <div class="youtubeVideoWrapper">
-<iframe title="SSH into a 3node with the Planetary Network on Linux" width="560" height="315" src="https://www.youtube-nocookie.com/embed/146vFBXr5pM" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+<iframe title="SSH into a 3node with the Planetary Network on Linux" width="560" height="315" src="https://peertube.hostservice.nl/videos/embed/793b6100-0f0c-4c76-b000-7f85e4ccd998" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
 </div>
 
 ***
@@ -153,7 +153,7 @@ The main steps for the whole process are the following:
 ### SSH into a 3node with IPv4 on MAC
 
 <div class="youtubeVideoWrapper">
-<iframe title="SSH into a 3node with IPv4 on MAC" width="560" height="315" src="https://www.youtube-nocookie.com/embed/lICN-XXtt0A" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+<iframe title="SSH into a 3node with IPv4 on MAC" width="560" height="315" src="https://peertube.hostservice.nl/videos/embed/1804a327-df69-430d-aef7-ba55f63dfacb" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
 </div>
 
 ***
@@ -201,7 +201,7 @@ The main steps for the whole process are the following:
 ### SSH into a 3node with the Planetary Network on MAC
 
 <div class="youtubeVideoWrapper">
-<iframe title="SSH into a 3node with the Planetary Network on MAC" width="560" height="315" src="https://www.youtube-nocookie.com/embed/_7Lem9Y5jCQ" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+<iframe title="SSH into a 3node with the Planetary Network on MAC" width="560" height="315" src="https://peertube.hostservice.nl/videos/embed/0d11f28c-cf21-4fe5-9165-ae4a28f7c331" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
 </div>
 
 ***
