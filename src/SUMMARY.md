@@ -1,6 +1,12 @@
 ## Learn The Basics
 
-- [Introduction](getstarted/grid3_howitworks.md)
+- [Introduction](intro/intro_readme.md)
+ - [How it Works](intro/grid3_howitworks.md)
+- [Grid Concepts](concepts/concepts_readme.md)
+  - [TFGrid Primitives](concepts/grid_primitives.md)
+  - [Proof of Utilization](concepts/proof_of_utilization.md)
+  - [Contract Grace Period](concepts/contract_grace_period.md)
+  - [Buying and Storing TFTs](concepts/buying_storing_tft.md)
 - [Getting Started](getstarted/tfgrid3_getstarted.md)
   - [Threefold Connect](getstarted/TF_Connect/TF_Connect.md)
   - [Threefold Token](getstarted/TF_Token/TF_Token.md)
