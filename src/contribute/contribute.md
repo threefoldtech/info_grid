@@ -13,7 +13,7 @@
 
 We present here the main steps to add content to the Threefold Manual by forking the repository [`threefoldtech/info_grid`](https://github.com/threefoldtech/info_grid) to your own Github account.
 
-* Go to the Threefold Manual repository: https://github.com/threefoldtech/info_grid
+* Go to the Threefold Manual repository: [https://github.com/threefoldtech/info_grid](https://github.com/threefoldtech/info_grid)
 * Fork the Development branch
   * On the top right corner, click `Fork -> Create a new fork`
 * Make changes in the forked repository
@@ -24,9 +24,9 @@ We present here the main steps to add content to the Threefold Manual by forking
      * Make the changes directly in the Markdown file
 * Ask for a pull request
   * In the forked repository, click `Contribute -> Open pull request`
-* Once the pull request is accepted, the changes of the Development branch will be available here: https://www2.manual.grid.tf
+* Once the pull request is accepted, the changes of the Development branch will be available here: [https://www2.manual.grid.tf](https://www2.manual.grid.tf)
 * The Threefold team will regularly update the [Development branch](https://github.com/threefoldtech/info_grid) to the [Master branch](https://github.com/threefoldtech/info_grid/tree/master)
-   * The new content will thus be available here: https://www.manual.grid.tf
+   * The new content will thus be available here: [https://www.manual.grid.tf](https://www.manual.grid.tf)
 
 Note: You can update your forked repository by clicking `Sync fork -> Update branch`.
 
@@ -53,7 +53,7 @@ The steps are the following:
     mdbook serve --port 3031
     ```
     * You can use a different port if you want
-* To view the TF Manual, go to the following URL: http://localhost:3031/
+* To view the TF Manual, go to the following URL: [http://localhost:3031/](http://localhost:3031/)
   * You should now be able to see your changes
 
 ***
