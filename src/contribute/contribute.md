@@ -44,7 +44,6 @@ Follow those simple steps:
   * git clone https://github.com/YOUR_GIT_ACCOUNT/info_grid && cd $_
     * make sure to write your own github account in the URL
   * cd info_grid
-  * mdbook build
   * mdbook serve --port 3031
     * You can use a different port too
   * In your browser, enter the following URL
