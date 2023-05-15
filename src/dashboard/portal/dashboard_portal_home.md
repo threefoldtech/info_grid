@@ -16,7 +16,7 @@ Follow the [Getting Started](../../getstarted/tfgrid3_getstarted.md) to make sur
 
 ## Transfer TFT
 
-- [Manage your Tokens on TFChain](./dashboard_portal_ui_tokens.md) e.g. transfer TFT to TFChain
+- [Manage your Tokens on TFChain](../portal/dashboard_portal_ui_tokens.md) e.g. transfer TFT to TFChain
 
 ## Be a Farmer, manage your information
 
