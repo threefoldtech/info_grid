@@ -23,6 +23,10 @@
 - [TF Flist Hub](../flist_hub/flist_hub.md)
 - [TF Playground / Weblets](../weblets/weblets_home.md)
 
+## TF Grid Services and Resources
+
+- [TF Grid Services](../TF_Grid_Services/tf_grid_services_readme.md)
+
 ## Advanced Deployment Techniques
 
 - [Advanced Topics](../advanced/advanced.md)
