@@ -1,4 +1,4 @@
-## What's new on ThreeFold Grid v3.x
+# What's new on ThreeFold Grid v3.x
 
 The ThreeFold Grid v3.x is packed with exciting new features and enhancements. This marks a significant milestone in the evolution of our decentralized grid infrastructure, bringing even more power, flexibility, and innovation to our users. In this introduction, we will highlight some of the key new features that make ThreeFold Grid v3.x a game-changer in the world of decentralized technologies.
 
