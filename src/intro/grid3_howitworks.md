@@ -1,33 +1,41 @@
-## How it works
+# How it Works
 
-Here we will try to describe the platform in a nutshell, so we understand the mechanics and clear the terminology a little bit.
+Let's delve into the mechanics of the ThreeFold Grid and gain a clearer understanding of its operations.
 
-#### ThreeFold Grid
+## The ThreeFold Grid: A Global, Sustainable Network
 
-ThreeFold Grid is a global, neutral, and sustainable network of autonomous storage and compute Internet capacity created by ThreeFold Farmers, with more than 80,000,000 GB and 20,000 cores existing today. On this Grid, IT capacity is indexed / registered on the TFChain for easy discovery by purchasers. Any application which can run on Linux can run on the ThreeFold Grid but with more privacy, security, closer to the end-user, and at a much lower cost.
+The ThreeFold Grid is a remarkable network consisting of autonomous storage and compute Internet capacity. It has been created by dedicated individuals known as ThreeFold Farmers, who have contributed over 80,000,000 GB of storage and 20,000 cores to the grid. This massive capacity is globally available, neutral, and sustainable.
 
-This Internet capacity is produced and allocated locally - similar to the way electricity and other utilities are purchased today. This allows any digital service or application provider to host their services and applications in proximity to the end user leading to significantly greater performance, a lower price point and better margins. This is both more cost effective and green.
+To ensure easy discovery by purchasers, the IT capacity within the ThreeFold Grid is indexed and registered on the TFChain. This platform serves as a comprehensive directory, simplifying the process of finding and accessing the desired resources. The ThreeFold Grid supports any application that can run on Linux, guaranteeing compatibility and flexibility. Moreover, it offers additional benefits, including enhanced privacy, security, proximity to end-users, and a significantly lower cost compared to traditional alternatives.
 
-### Capacity
+### Local Production and Allocation of Internet Capacity
 
-Threefold grid is providing the [largest](https://dashboard.grid.tf/explorer/statistics) decentralized, peer 2 peer infrastructure.
+In a similar manner to purchasing electricity or other utilities, the internet capacity provided by the ThreeFold Grid is produced and allocated locally. This decentralized approach empowers digital service and application providers to host their offerings closer to end-users, resulting in exceptional performance, competitive pricing, and improved profit margins. The ThreeFold Grid's cost-effectiveness and environmentally-friendly nature make it an ideal choice for businesses and individuals alike, creating a win-win situation that combines economic efficiency with sustainability.
 
-### The process
+By leveraging the power of the ThreeFold Grid, users can access a vast and versatile network that revolutionizes the way digital services are hosted, delivered, and consumed. It unlocks new possibilities, drives innovation, and paves the way for a greener and more connected future.
 
-The idea is similar to electricity grid. People consume electricity, and sometimes they can provide electricity. It's almost the same.
+## ThreeFold Grid Capacity
 
-#### TFchain
+The __ThreeFold Grid Capacity__ refers to the [extensive pool]((https://dashboard.grid.tf/explorer/statistics) of __decentralized storage and compute resources__ available within the ThreeFold Grid ecosystem. It encompasses a vast network of autonomous nodes contributed by ThreeFold Farmers, resulting in a highly scalable and resilient infrastructure. This capacity is distributed globally, providing users with a reliable and efficient platform to store and process data, run applications, and deliver digital services, providing the world with the largest decentralized, peer-2-peer infrastructure.
 
-TFChain is a blockchain orchestrating the interactions on the grid
+## The Process
 
+The ThreeFold Grid operates on a consumption and generation model similar to how people generate and consume electricity from the grid. Just as individuals consume electricity from the grid to power their homes and businesses, users of the ThreeFold Grid consume internet capacity to store data, run applications, and deliver digital services. At the same time, the ThreeFold Grid generates its capacity through the contributions of ThreeFold Farmers, who provide decentralized storage and compute resources to the grid. 
+
+This user-friendly model allows individuals and businesses to tap into a reliable and scalable infrastructure, accessing the resources they need while contributing to the overall capacity of the grid in a seamless and sustainable manner. Just like the electricity grid, the ThreeFold Grid offers a user-friendly and accessible approach to meet the ever-growing demand for internet capacity and digital services.
+
+## TFChain
+
+__TFChain__, also known as __ThreeFold Chain__, is the powerful blockchain that orchestrates the interactions within the ThreeFold Grid ecosystem, providing users with a range of key functions such as:
 - Users registration
 - Farms Managment (registration and IP management)
 - Money transfers
 - Billing and consumptions reports
+And many more. 
 
-And more.
+> Read more in-depth about __TFChain__ [here](../concepts/tfchain.md).
 
-#### The farmers
+## The Farmers
 
 People (we call them farmers) provide internet capacity using one or more 3Nodes. these nodes are registered on `TFChain` in what we call a "farm".
 
@@ -35,7 +43,7 @@ The farm is the logical grouping of nodes. e.g you can have 2 3Nodes in Belgium,
 
 > Note: most of the time the grouping is also done by the physical place
 
-#### 3Node
+## 3Nodes
 
  it's a computer really. That 3Node runs a very specific software `zero-os` sometimes called `zos`. `Zero-OS` is an autonomous operating system designed to expose raw compute, storage and network capacity.
 
@@ -47,7 +55,7 @@ The `Zero-OS` handles
 - The system upgrades
 - Consumption reporting for the billing to happen on the `TFChain`
 
-#### Provisioning
+## Provisioning
 
 Now that's very cool, we now already know about `TFChain`, `Farmers`, `3Nodes` and `Zero-OS`, but still one major thing is still missing is how can we send a provisioning request to `Zero-OS`?
 
