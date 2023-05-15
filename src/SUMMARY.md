@@ -118,6 +118,7 @@
     - [find capacity](dashboard/explorer/explorer_find_capacity.md)
     - [A Glimpse into GraphQL](dashboard/explorer/explorer_graphql_intro.md)
   - [TFChain Portal](dashboard/portal/dashboard_portal_home.md)
+    - [Manage TFTs on TFChain](dashboard/portal/dashboard_portal_ui_tokens.md)
     - [Activate your farmer account and nodes on TFChain](dashboard/portal/dashboard_portal_ui_farming.md)
     - [Dedicated Nodes](dashboard/portal/dashboard_portal_dedicated_nodes.md)
   - [DAO Voting](dashboard/dao_voting/dao_voting.md)
