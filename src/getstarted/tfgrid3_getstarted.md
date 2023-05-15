@@ -1,7 +1,8 @@
 ![ ](././img/endlessscalable.png)
 
+# TFGrid Manual - Get Started
 
-## This guide will walk you through: 
+## Get Started - Your First Virtual Machine
 
 - [Create an Account and a Wallet on the Threefold Connect App](../getstarted/TF_Connect/TF_Connect.md)
 - [Buy TFT on Lobstr and Store it in Your Threefold Connect Wallet](../getstarted/TF_Token/TF_Token.md)
@@ -9,6 +10,22 @@
 - [Find a 3Node to Deploy Your Workload](../dashboard/explorer/explorer_find_capacity.md)
 - [Deploy Your First Virtual Machine](../weblets/weblets_vm.md)
 - [Full VM Deployment and SSH Connection](../getstarted/ssh_guide/ssh_guide.md)
+
+## Get Started - Farmers
+
+- [Complete Farming Guide](../TF_Farmer_Guide/tf_farmer_guide_readme.md)
+
+## Grid Platforms
+
+- [TF Dashboard](../dashboard/dashboard.md)
+- [TF Portal](../dashboard/portal/dashboard_portal_home.md)
+- [TF Explorer](../dashboard/explorer/explorer_home)
+- [TF Flist Hub](../flist_hub/flist_hub.md)
+- [TF Playground / Weblets](../weblets/weblets_home.md)
+
+## Advanced Deployment Techniques
+
+- [Advanced Topics](../advanced/advanced.md)
 
 ***
 
