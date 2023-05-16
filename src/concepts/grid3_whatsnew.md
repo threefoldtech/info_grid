@@ -31,13 +31,13 @@ Experience the benefits of Proof of Utilization, a user-friendly feature that op
 
 ### ### Key Features:
 
-- Hourly Resource Utilization: Your resource utilization is accurately captured and calculated on an hourly basis, ensuring transparency and precision in tracking your cloud usage.
+- __Hourly Resource Utilization__: Your resource utilization is accurately captured and calculated on an hourly basis, ensuring transparency and precision in tracking your cloud usage.
 
-- Secure Storage on TFChain: Your resource utilization data is securely stored in TFChain, our dedicated blockchain, providing a reliable and tamper-proof record of your usage history.
+- __Secure Storage on TFChain__: Your resource utilization data is securely stored in TFChain, our dedicated blockchain, providing a reliable and tamper-proof record of your usage history.
 
-- Automated Discount System: Our innovative automated discount system acknowledges your pre-purchased cloud needs. Based on the amount of TFT (ThreeFold Tokens) you hold in your account and the duration you maintain these tokens, you can enjoy significant price discounts.
+- __Automated Discount System__: Our innovative automated discount system acknowledges your pre-purchased cloud needs. Based on the amount of TFT (ThreeFold Tokens) you hold in your account and the duration you maintain these tokens, you can enjoy significant price discounts.
 
-- Personalized Discounts: The discount you receive is customized to your TFT holdings and usage patterns. For instance, if you hold TFT tokens equivalent to 12 months' worth of usage, you receive a generous 40% discount. Holding TFT tokens for 36 months unlocks an impressive 60% discount on your cloud services.
+- __Personalized Discounts__: The discount you receive is customized to your TFT holdings and usage patterns. For instance, if you hold TFT tokens equivalent to 12 months' worth of usage, you receive a generous 40% discount. Holding TFT tokens for 36 months unlocks an impressive 60% discount on your cloud services.
 
 
 ### New TFGrid Explorer UI
