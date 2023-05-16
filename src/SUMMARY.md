@@ -8,6 +8,7 @@
   - [Contract Grace Period](concepts/contract_grace_period.md)
   - [Buying and Storing TFTs](concepts/buying_storing_tft.md)
   - [What's New on TFGrid v3.x](concepts/grid3_whatsnew.md)
+  - [TFChain](concepts/tfchain.md)
 - [Getting Started](getstarted/tfgrid3_getstarted.md)
   - [Threefold Connect](getstarted/TF_Connect/TF_Connect.md)
   - [Threefold Token](getstarted/TF_Token/TF_Token.md)
