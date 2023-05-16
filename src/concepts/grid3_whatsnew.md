@@ -29,7 +29,7 @@ Please note that the above list summarizes the key features introduced in TFChai
 
 Experience the benefits of Proof of Utilization, a user-friendly feature that optimizes your cloud usage and rewards your pre-purchases. Here are the key features:
 
-### ### Key Features:
+### Key Features:
 
 - __Hourly Resource Utilization__: Your resource utilization is accurately captured and calculated on an hourly basis, ensuring transparency and precision in tracking your cloud usage.
 
