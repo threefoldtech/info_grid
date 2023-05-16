@@ -13,7 +13,7 @@ Within the ThreeFold Grid, we offer a range of __low-level constructs known as P
 
 <br>
 
-- __Storage__ (measured in [Storage Units - SU](https://library.threefold.me/info/manual/#/technology/threefold__cloudunit) ): Leverage our robust storage Primitives to meet your data storage requirements efficiently.
+- __Storage__ (measured in [Storage Units - SU](https://library.threefold.me/info/manual/#/technology/threefold__cloudunits) ): Leverage our robust storage Primitives to meet your data storage requirements efficiently.
     - [ZOS Filesystem](https://library.threefold.me/info/manual/#/technology/threefold__zos_fs): Enjoy a deduplicated and immutable filesystem for secure and reliable data storage.
     - [ZOS Mount](https://library.threefold.me/info/manual/#/technology/threefold__zmount): Utilize a portion of a high-speed SSD (Solid State Drive) as a mounted disk directly accessible within your ZMachine.
     - [Quantum Safe Filesystem](https://library.threefold.me/info/manual/#/technology/threefold__qsfs): Secure your data with an unbreakable storage system, ideal for secondary storage needs.
@@ -22,7 +22,7 @@ Within the ThreeFold Grid, we offer a range of __low-level constructs known as P
 
 <br>
 
-- __Network__ (measured in [Network Units - NU](https://library.threefold.me/info/manual/#/technology/threefold__cloudunit)): Harness our network Primitives to enable seamless communication and connectivity.
+- __Network__ (measured in [Network Units - NU](https://library.threefold.me/info/manual/#/technology/threefold__cloudunits) ): Harness our network Primitives to enable seamless communication and connectivity.
     - [ZNET](https://library.threefold.me/info/manual/#/technology/threefold__znet): Establish private networks between [ZMachines](https://library.threefold.me/info/manual/#/technology/threefold__zmachine), ensuring secure and efficient communication.
     - [Planetary Network](https://library.threefold.me/info/manual/#/technology/threefold__planetary_network): Unlock the potential of a [peer-to-peer](https://library.threefold.me/info/manual/#/technology/threefold__peer2peer), end-to-end encrypted global network, providing secure and reliable connectivity.
     - [ZNIC](https://library.threefold.me/info/manual/#/technology/threefold__znic): Access and manage network interfaces within the Planetary Network, enabling efficient data transfer and communication.
