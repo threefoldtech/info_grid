@@ -12,7 +12,6 @@ To ensure easy discovery by purchasers, the IT capacity within the ThreeFold Gri
 
 In a similar manner to purchasing electricity or other utilities, the internet capacity provided by the ThreeFold Grid is produced and allocated locally. This decentralized approach empowers digital service and application providers to host their offerings closer to end-users, resulting in exceptional performance, competitive pricing, and improved profit margins. The ThreeFold Grid's cost-effectiveness and environmentally-friendly nature make it an ideal choice for businesses and individuals alike, creating a win-win situation that combines economic efficiency with sustainability.
 
-By leveraging the power of the ThreeFold Grid, users can access a vast and versatile network that revolutionizes the way digital services are hosted, delivered, and consumed. It unlocks new possibilities, drives innovation, and paves the way for a greener and more connected future.
 
 ## ThreeFold Grid Capacity
 
@@ -24,44 +23,60 @@ The ThreeFold Grid operates on a consumption and generation model similar to how
 
 This user-friendly model allows individuals and businesses to tap into a reliable and scalable infrastructure, accessing the resources they need while contributing to the overall capacity of the grid in a seamless and sustainable manner. Just like the electricity grid, the ThreeFold Grid offers a user-friendly and accessible approach to meet the ever-growing demand for internet capacity and digital services.
 
-## TFChain
+## TFChain: The Backbone Blockhain Infrastructure
 
-__TFChain__, also known as __ThreeFold Chain__, is the powerful blockchain that orchestrates the interactions within the ThreeFold Grid ecosystem, providing users with a range of key functions such as:
+__TFChain__, also known as __ThreeFold Chain__, is the powerful blockchain that orchestrates the interactions within the ThreeFold Grid ecosystem, providing users with a range of key functionalities such as:
 - Users registration
-- Farms Managment (registration and IP management)
-- Money transfers
+- Farms Management (registration and IP management)
+- Fund transfers
 - Billing and consumptions reports
 And many more. 
 
-> Read more in-depth about __TFChain__ [here](../concepts/tfchain.md).
+> Read more in-depth about __TFChain's key functionalities__  [here](../concepts/tfchain.md).
 
-## The Farmers
+## The Farmers: Empowering the ThreeFold Grid
 
-People (we call them farmers) provide internet capacity using one or more 3Nodes. these nodes are registered on `TFChain` in what we call a "farm".
+In the ThreeFold ecosystem, dedicated individuals, whom we fondly refer to as "__Farmers__," play a crucial role in providing the valuable internet capacity that drives the ThreeFold Grid. These farmers contribute to the network by utilizing one or more __3Nodes__, which are registered on the TFChain, our dedicated blockchain infrastructure.
 
-The farm is the logical grouping of nodes. e.g you can have 2 3Nodes in Belgium, and 5 in France. so to logically group them you can create a farm in Belgium with a specific ID that you can use in for the nodes in Belgium and create another farm with another ID for the nodes in france.
+A farm represents a logical grouping of nodes, allowing farmers to organize their infrastructure effectively. For example, a farmer may have 2 3Nodes located in Belgium, and 5 3Nodes in France. By creating separate farms with unique IDs, the nodes can be logically grouped based on their geographical location. This logical grouping not only simplifies management but also reflects the physical placement of the nodes.
 
-> Note: most of the time the grouping is also done by the physical place
+The farmers' commitment to deploying and maintaining their nodes fuels the growth and resilience of the ThreeFold Grid. Through their efforts, they contribute to the availability of decentralized internet capacity, enabling individuals and businesses to benefit from secure, efficient, and cost-effective resources. The dedication of our farmers is instrumental in creating a robust and sustainable infrastructure that powers the future of the internet.
 
-## 3Nodes
+## 3Nodes: Unleashing the Power of Raw Capacity
 
- it's a computer really. That 3Node runs a very specific software `zero-os` sometimes called `zos`. `Zero-OS` is an autonomous operating system designed to expose raw compute, storage and network capacity.
+__3Nodes__ are the driving force behind the ThreeFold Grid, acting as __specialized computers that run the remarkable Zero-OS software__. Think of a 3Node as a unique breed of operating system, designed to expose raw compute, storage, and network capacity in a seamless and efficient manner.
 
-The `Zero-OS` handles
--The workloads provisioning, e.g starting a new container or a VM, starting a `0-db`,
+With Zero-OS at its core, a 3Node takes care of various essential tasks to ensure optimal performance:
 
-- The networking for the workloads
-- The lifecycle management of the workloads running on
-- The system upgrades
-- Consumption reporting for the billing to happen on the `TFChain`
+__Workload Provisioning__: Whether it's starting a new container or a virtual machine (VM), or even initiating a "0-db" database, the 3Node expertly handles the provisioning of your workloads, empowering you to effortlessly deploy and manage your applications.
 
-## Provisioning
+__Networking for Workloads__: The 3Node effortlessly manages the networking requirements of your workloads, ensuring smooth connectivity and efficient data transfer within the ThreeFold Grid.
 
-Now that's very cool, we now already know about `TFChain`, `Farmers`, `3Nodes` and `Zero-OS`, but still one major thing is still missing is how can we send a provisioning request to `Zero-OS`?
+__Lifecycle Management__: Say goodbye to manual workload management! The 3Node diligently oversees the lifecycle of your running workloads, handling tasks such as scaling, monitoring, and resource allocation, so you can focus on what matters most: your applications.
 
-The provisioning process is done mainly using two tools which you can read about in this manual;
+__System Upgrades__: Keeping your infrastructure up-to-date is a breeze with 3Nodes. The Zero-OS automatically manages system upgrades, seamlessly integrating the latest enhancements and security patches, all without causing disruption to your workloads.
+
+__Consumption Reporting__: Accurate billing is essential, and the 3Node provides comprehensive consumption reporting. By recording resource usage data, it facilitates transparent and precise billing processes that take place on the TFChain, our dedicated blockchain.
+
+Through the power of 3Nodes, the ThreeFold Grid empowers users to harness the raw capacity of compute, storage, and network resources with ease. Say goodbye to complexities and hello to a user-friendly ecosystem that allows you to focus on innovation and productivity.
+
+## Provisioning: Empowering Resource Deployment
+
+Now that we've covered the fundamental components of the ThreeFold Grid, it's time to explore the exciting world of provisioning. But how can we initiate a provisioning request to the Zero-OS operating system? Let's find out!
+
+The provisioning process revolves around two powerful tools, which we will delve into within this manual:
 
 - [Terraform](../terraform/terraform_readme.md)
 - [Typescript Client](../javascript/grid3_javascript_readme.md)
 
-So what happens is we build the deployment information (what workloads we want to deploy) and create a contract(s) on the blockchain between us and a 3Node that will fulfill the provisioning of the resources needed in the contract for us, and automatically the node reports to the blockchain periodically to deduct the money from the user account based on the consumption.
+Here's how it works: First, we gather the necessary deployment information, specifying the workloads we want to deploy. Using either Terraform or the Typescript Client, we create a contract on the blockchain. This contract acts as an agreement between us and a dedicated 3Node, ensuring that the required resources will be provisioned on our behalf.
+
+Once the contract is in place, the 3Node diligently reports its resource consumption to the blockchain at regular intervals. As a result, the associated fees are automatically deducted from the user's account, ensuring a seamless and transparent billing process based on actual resource consumption.
+
+With the provisioning process, you have the power to effortlessly deploy the resources you need, thanks to the harmony between the blockchain, 3Nodes, and the Zero-OS operating system. Discover the full potential of resource deployment and embrace the convenience and flexibility of the ThreeFold Grid.
+
+
+
+
+
+
