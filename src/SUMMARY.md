@@ -91,6 +91,7 @@
   - [Deploy a VM](tfgridcmd/grid3_cli_vm.md)
   - [Deploy Gateways](tfgridcmd/grid3_cli_gateways.md)
   - [Deploy Kubernetes](tfgridcmd/grid3_cli_kubernetes.md)
+- [TFGrid Services](TF_Grid_Services/tf_grid_services_readme.md)
 - [Cloud](cloud/cloud.md)
   - [Pricing](cloud/cloudunits_pricing.md)
 - [Weblets](weblets/weblets_home.md)
