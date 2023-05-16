@@ -19,7 +19,7 @@
 
 - [TF Dashboard](../dashboard/dashboard.md)
 - [TF Portal](../dashboard/portal/dashboard_portal_home.md)
-- [TF Explorer](../dashboard/explorer/explorer_home)
+- [TF Explorer](../dashboard/explorer/explorer_home.md)
 - [TF Flist Hub](../flist_hub/flist_hub.md)
 - [TF Playground / Weblets](../weblets/weblets_home.md)
 
