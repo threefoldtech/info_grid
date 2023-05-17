@@ -15,7 +15,7 @@ In a similar manner to purchasing electricity or other utilities, the internet c
 
 ## ThreeFold Grid Capacity
 
-The __ThreeFold Grid Capacity__ refers to the [extensive pool]((https://dashboard.grid.tf/explorer/statistics) of __decentralized storage and compute resources__ available within the ThreeFold Grid ecosystem. It encompasses a vast network of autonomous nodes contributed by ThreeFold Farmers, resulting in a highly scalable and resilient infrastructure. This capacity is distributed globally, providing users with a reliable and efficient platform to store and process data, run applications, and deliver digital services, providing the world with the largest decentralized, peer-2-peer infrastructure.
+The __ThreeFold Grid Capacity__ refers to the [extensive pool](https://dashboard.grid.tf/explorer/statistics) of __decentralized storage and compute resources__ available within the ThreeFold Grid ecosystem. It encompasses a vast network of autonomous nodes contributed by ThreeFold Farmers, resulting in a highly scalable and resilient infrastructure. This capacity is distributed globally, providing users with a reliable and efficient platform to store and process data, run applications, and deliver digital services, providing the world with the largest decentralized, peer-2-peer infrastructure.
 
 ## The Process
 
