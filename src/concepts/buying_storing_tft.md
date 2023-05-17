@@ -2,9 +2,9 @@
 
 # Buying and Storing TFTs
 
-If you're looking to navigate the [TFT Ecosystem](https://github.com/threefoldfoundation/info_threefold_pub/blob/development/wiki/tokens/tft_ecosystem), this collection of tutorials and manuals is here to help. Learn how to purchase, trade, and securely store your TFTs with ease.
+If you're looking to navigate the [TFT Ecosystem](https://library.threefold.me/info/manual/#/tokens/threefold__tft_ecosystem), this collection of tutorials and manuals is here to help. Learn how to purchase, trade, and securely store your TFTs with ease.
 
-For a comprehensive introduction to TFT, we recommend exploring the [TFT Home Section in the ThreeFold Library](https://github.com/threefoldfoundation/info_threefold_pub/blob/development/wiki/tokens/tokens_home).
+For a comprehensive introduction to TFT, we recommend exploring the [TFT Home Section in the ThreeFold Library](https://library.threefold.me/info/threefold#/tokens/threefold__tokens_home).
 
 ## Manuals on How to Buy TFT
 Discover step-by-step instructions on buying and storing TFTs across different platforms. Our manuals cover:
