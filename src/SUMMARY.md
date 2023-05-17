@@ -155,3 +155,4 @@
     - [Circle Tool](collaboration_tools/circle_tool.md)
 - [How to contribute](contribute/contribute.md)
 - [FAQ](faq/faq.md)
+- [Legal](https://legal.threefold.io)
