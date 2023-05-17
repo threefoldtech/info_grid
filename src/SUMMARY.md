@@ -154,5 +154,6 @@
 - [Collaboration Tools](collaboration_tools/collaboration_tools.md)
     - [Circle Tool](collaboration_tools/circle_tool.md)
 - [How to contribute](contribute/contribute.md)
+- [How to Test](testing/testing_readme.md)
 - [FAQ](faq/faq.md)
 - [Legal](https://legal.threefold.io)
