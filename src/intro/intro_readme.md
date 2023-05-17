@@ -12,7 +12,7 @@ Within this manual, you will find a wealth of information on how to leverage the
 
 ## Key Sections
 
-- [The Grid Concepts](./concepts/concepts_readme.md): This section provides a brief introduction to the ThreeFold Grid, its core concepts, and its key benefits. It will help you understand the fundamental principles behind the grid and set the stage for further exploration.
+- [The Grid Concepts](../concepts/concepts_readme.md): This section provides a brief introduction to the ThreeFold Grid, its core concepts, and its key benefits. It will help you understand the fundamental principles behind the grid and set the stage for further exploration.
 - [How it Works](./grid3_howitworks.md): This section provides a brief description of the platform in a nutshell, so we understand the mechanics and clear the terminology a little bit.
 - [Getting Started](../getstarted/tfgrid3_getstarted.md): Here, you will learn how to connect to the ThreeFold Grid, access its distributed resources. We will walk you through the prerequisites and necessary steps to establish a connection and configure your environment for seamless interaction with the grid.
 - [FAQ](../faq/faq.md): Frequently asked questions about the ThreeFold ecosystem, its technologies, and the various aspects of its implementation. 
