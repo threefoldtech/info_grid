@@ -1727,11 +1727,11 @@ You can use the following terminal command line:
 
 * Linux
   * ```
-    sudo cat ~/.ssh/id_rsa.pub | xclip -sel clip
+    cat ~/.ssh/id_rsa.pub | xclip -sel clip
     ```
 * MAC
   * ```
-    sudo cat ~/.ssh/id_rsa.pub | pbcopy
+    cat ~/.ssh/id_rsa.pub | pbcopy
     ```
 * Windows
   * ```
