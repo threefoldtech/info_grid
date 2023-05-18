@@ -1768,8 +1768,6 @@ Also, you can simply query the SSH public key in your terminal/command prompt wi
 cat ~/.ssh/id_rsa.pub
 ```
 
-You might need to add "sudo" for MAC and Linux.
-
 You can also refer to [this question](#how-can-i-copy-the-clipboard-content-of-a-terminal-output-using-the-command-cat-how-can-i-copy-the-public-key-directly-with-the-terminal) for a direct way to obtain your SSH public key in your clipboard.
 
 
