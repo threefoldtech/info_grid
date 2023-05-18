@@ -2,58 +2,63 @@
 
 <h2>Table of Contents</h2>
 
-- [Main Steps to Contribute](#main-steps-to-contribute)
-- [How to Build the mdbook Locally](#how-to-build-the-mdbook-locally)
+- [Main Steps to Add Content](#main-steps-to-add-content)
+- [How to View the mdbook Locally](#how-to-view-the-mdbook-locally)
 - [How to Install git and mdbook](#how-to-install-git-and-mdbook)
 - [Questions and Feedback](#questions-and-feedback)
 
 ***
 
-# Main Steps to Contribute
+## Main Steps to Add Content
 
-We present here the main steps to add content to the Threefold Manual, https://www.manual.grid.tf.
+We present here the main steps to add content to the Threefold Manual by forking the repository [`threefoldtech/info_grid`](https://github.com/threefoldtech/info_grid) to your own Github account.
 
-* Go to https://github.com/threefoldtech/info_grid
+* Go to the Threefold Manual repository: [https://github.com/threefoldtech/info_grid](https://github.com/threefoldtech/info_grid)
 * Fork the Development branch
-  * On the top right corner, click Fork -> Create a new fork
+  * On the top right corner, click `Fork -> Create a new fork`
 * Make changes in the forked repository
-   * To add a new markdown file:
-      * Add the new md file to the [src](https://github.com/threefoldtech/info_grid/blob/development/src) directory.
-      * Add the path of the md file to [SUMMARY](https://github.com/threefoldtech/info_grid/blob/development/src/SUMMARY.md).
-   * To modify an existing markdown file:
-     * Make the changes in the markdown file directly
+   * To add a new section
+      * Add a new Markdown file to the [src](https://github.com/threefoldtech/info_grid/blob/development/src) directory
+      * Add the path of the Markdown file to [SUMMARY](https://github.com/threefoldtech/info_grid/blob/development/src/SUMMARY.md).
+   * To modify an existing section:
+     * Make the changes directly in the Markdown file
 * Ask for a pull request
-  * In the forked repository, click Contribute -> Open pull request
-* Once the pull request is accepted, the changes of the Development branch are available here: https://www2.manual.grid.tf
-* The Threefold team will then update the Master branch from the Development branch
-   * The new content will be available here: https://www.manual.grid.tf
+  * In the forked repository, click `Contribute -> Open pull request`
+* Once the pull request is accepted, the changes of the Development branch will be available here: [https://www2.manual.grid.tf](https://www2.manual.grid.tf)
+* The Threefold team will regularly update the [Development branch](https://github.com/threefoldtech/info_grid) to the [Master branch](https://github.com/threefoldtech/info_grid/tree/master)
+   * The new content will thus be available here: [https://www.manual.grid.tf](https://www.manual.grid.tf)
 
-Note: You can update your forked repository by clicking Sync fork -> Update branch.
-
-***
-
-# How to Build the mdbook Locally
-
-If you want to see the changes you made on the Threefold Manual, you can build locally the manual.
-
-Follow those simple steps:
-
-* In your terminal, create a new directory
-  * cd PATH_TO_DIRECTORY
-  * mkdir info_grid_local && cd $_
-  * git clone https://github.com/YOUR_GIT_ACCOUNT/info_grid && cd $_
-    * make sure to write your own github account in the URL
-  * cd info_grid
-  * mdbook build
-  * mdbook serve --port 3031
-    * You can use a different port too
-  * In your browser, enter the following URL
-    * http://localhost:3031/
-  * You should be able to see your changes
+Note: You can update your forked repository by clicking `Sync fork -> Update branch`.
 
 ***
 
-# How to Install git and mdbook
+## How to View the mdbook Locally
+
+Once you've forked the TF Manual repository to your Github account, you might want to see the changes you've made before asking for a pull request. This will ensure that the final output is exactly what you have in mind.
+
+To do so, you simply need to clone the forked repository on your local computer and serve the mdbook on a given port.
+
+The steps are the following:
+
+* In the terminal, write the following line to clone the forked `info_grid` repository
+  * ```
+    git clone https://github.com/YOUR_GIT_ACCOUNT/info_grid
+    ```
+    * make sure to write your own Github account in the URL
+* To deploy the mdbook locally, write the following lines
+  * ```
+    cd info_grid
+    ```
+  * ```
+    mdbook serve --port 3031
+    ```
+    * You can use a different port if you want
+* To view the TF Manual, go to the following URL: [http://localhost:3031/](http://localhost:3031/)
+  * You should now be able to see your changes
+
+***
+
+## How to Install git and mdbook
 
 To install git, follow the steps provided [here](https://github.com/git-guides/install-git).
 
@@ -63,6 +68,6 @@ For more information, read the [mdbook Documentation](https://rust-lang.github.i
 
 ***
 
-# Questions and Feedback
+## Questions and Feedback
 
 If you have any questions or you would like to share some feedback, let us know in this [Threefold forum post](https://forum.threefold.io/t/new-grid-manual/3783).

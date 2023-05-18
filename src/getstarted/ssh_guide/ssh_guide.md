@@ -47,17 +47,21 @@ The main steps for the whole process are the following:
 
 ### SSH into a 3node with IPv4 on Linux
 
+<div class="youtubeVideoWrapper">
+<iframe title="SSH into a 3node with IPv4 on Linux" width="560" height="315" src="https://peertube.hostservice.nl/videos/embed/a049f97c-f366-451c-b9c0-05766b693c77" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
+
 ***
 
 * To create the SSH key pair, write in the terminal 
   * ```
-    sudo ssh-keygen
+    ssh-keygen
     ```
     * Save in default location
     * Write a password (optional)
 * To see the public key, write in the terminal
   * ```
-    sudo cat ~/.ssh/id_rsa.pub
+    cat ~/.ssh/id_rsa.pub
     ```
   * Select and copy the public key when needed
 * To deploy, go to the [Threefold Playground](https://play.grid.tf/)
@@ -91,6 +95,10 @@ The main steps for the whole process are the following:
 
 ### SSH into a 3node with the Planetary Network on Linux
 
+<div class="youtubeVideoWrapper">
+<iframe title="SSH into a 3node with the Planetary Network on Linux" width="560" height="315" src="https://peertube.hostservice.nl/videos/embed/793b6100-0f0c-4c76-b000-7f85e4ccd998" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
+
 ***
 
 * To download and connect to the Threefold Planetary Network Connector
@@ -100,16 +108,15 @@ The main steps for the whole process are the following:
   * Search the `Threefold Planetary Connector` and open it
   * Disconnect your VPN if you have one
   * In the connector, click `Connect`
-* Create an SSH Key Pair
-  * To create the SSH key pair, write in the terminal
-    * ```
-      sudo ssh-keygen
-      ```
-      * Save in default location
-      * Write a password (optional)
+* To create the SSH key pair, write in the terminal
+  * ```
+    ssh-keygen
+    ```
+    * Save in default location
+    * Write a password (optional)
 * To see the public key, write in the terminal
   * ```
-    sudo cat ~/.ssh/id_rsa.pub
+    cat ~/.ssh/id_rsa.pub
     ```
   * Select and copy the public key when needed
 * To deploy, go to the [Threefold Playground](https://play.grid.tf/)
@@ -145,21 +152,21 @@ The main steps for the whole process are the following:
 
 ### SSH into a 3node with IPv4 on MAC
 
+<div class="youtubeVideoWrapper">
+<iframe title="SSH into a 3node with IPv4 on MAC" width="560" height="315" src="https://peertube.hostservice.nl/videos/embed/1804a327-df69-430d-aef7-ba55f63dfacb" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
+
 ***
 
 * To create the SSH key pair, in the terminal write
     * ```
-      sudo ssh-keygen
+      ssh-keygen
       ```
       * Save in default location
       * Write a password (optional)
-* To add the private key, write in the terminal
-    * ```
-      sudo ssh-add ~/.ssh/id_rsa
-       ```
 * To see the public key, write in the terminal
     * ```
-      sudo cat ~/.ssh/id_rsa.pub
+      cat ~/.ssh/id_rsa.pub
       ```
     * Select and copy the public key when needed
 * To deploy, go to the [Threefold Playground](https://play.grid.tf/)
@@ -193,6 +200,10 @@ The main steps for the whole process are the following:
 
 ### SSH into a 3node with the Planetary Network on MAC
 
+<div class="youtubeVideoWrapper">
+<iframe title="SSH into a 3node with the Planetary Network on MAC" width="560" height="315" src="https://peertube.hostservice.nl/videos/embed/0d11f28c-cf21-4fe5-9165-ae4a28f7c331" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
+
 ***
 
 * To download and connect to the Threefold Planetary Network Connector
@@ -203,17 +214,13 @@ The main steps for the whole process are the following:
   * In the connector, click `Connect`
 * To create the SSH key pair, write in the terminal 
     * ```
-      sudo ssh-keygen
+      ssh-keygen
       ```
       * Save in default location
       * Write a password (optional)
-* To add the private key, write
-    * ```
-      sudo ssh-add ~/.ssh/id_rsa
-       ```
 * To see the public key, write in the terminal
     * ```
-      sudo cat ~/.ssh/id_rsa.pub
+      cat ~/.ssh/id_rsa.pub
       ```
     * Select and copy the public key when needed
 * To deploy, go to the [Threefold Playground](https://play.grid.tf/)
@@ -249,6 +256,10 @@ The main steps for the whole process are the following:
 
 ### SSH into a 3node with IPv4 on Windows
 
+<div class="youtubeVideoWrapper">
+<iframe title="SSH into a 3node with IPv4 on Windows" width="560" height="315" src="https://www.youtube-nocookie.com/embed/FhKOyW-ZH7Q" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
+
 ***
 
 * To download OpenSSH client and OpenSSH server
@@ -260,7 +271,7 @@ The main steps for the whole process are the following:
       * Click `Add a feature`
         * Search OpenSSH
         * Install OpenSSH Client and OpenSSH Server
-* To generate an SSH key pair, open the `Command Prompt` and write
+* To create the SSH key pair, open the `Command Prompt` and write
   * ```
     ssh-keygen
     ```
@@ -302,6 +313,10 @@ The main steps for the whole process are the following:
 
 ### SSH into a 3node with the Planetary Network on Windows
 
+<div class="youtubeVideoWrapper">
+<iframe title="SSH into a 3node with the Planetary Network on Windows" width="560" height="315" src="https://www.youtube-nocookie.com/embed/0wyKYcJeitk" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+</div>
+
 ***
 
 * To download and connect to the Threefold Planetary Network Connector
@@ -319,7 +334,7 @@ The main steps for the whole process are the following:
       * Click `Add a feature`
         * Search OpenSSH
         * Install OpenSSH Client and OpenSSH Server
-* To generate an SSH key pair, open the `Command Prompt` and write
+* To create the SSH key pair, open the `Command Prompt` and write
   * ```
     ssh-keygen
     ```
