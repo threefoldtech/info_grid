@@ -828,7 +828,7 @@ When people spend Threefold Tokens on the Threefold Grid for any kind of deploym
 
 The Proof-of-Utilization distribution flow is the following:
 
-* up to 50% goes to solution providers and sales channels*
+* 50% goes to solution providers and sales channels*
 * 35% goes to TFT burning
 * 10% goes to the Threefold Foundation
 * 5% goes to the Validator Staking Pool
