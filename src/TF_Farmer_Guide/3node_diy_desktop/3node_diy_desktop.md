@@ -582,5 +582,3 @@ The farming reward will be sent once per month directly in your Threefold Connec
 Congratulations, you now have built your first Threefold 3Node server! 
 
 If you have any questions, you can ask the Threefold community for help on the [Threefold Forum](https://forum.threefold.io/) or on the [Threefold Telegram Farmer Group](https://t.me/threefoldfarmers).
-
-Visit the [Threefold Library](https://library.threefold.me/) for more documentation.
