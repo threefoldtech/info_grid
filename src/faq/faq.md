@@ -828,14 +828,14 @@ When people spend Threefold Tokens on the Threefold Grid for any kind of deploym
 
 The Proof-of-Utilization distribution flow is the following:
 
-* 50% goes to solution providers and sales channels*
+* up to 50% goes to solution providers and sales channels*
 * 35% goes to TFT burning
 * 10% goes to the Threefold Foundation
 * 5% goes to the Validator Staking Pool
 
 To see the Proof-of-Utilization distribution flow chart, check this [link](https://library.threefold.me/info/threefold#/tokens/threefold__token_overview).
 
-*Note: For billing purposes, ThreeFold DAO will check if the workload comes from a known sales channel and/or solution provider. If yes, then the billing smart contract code will know how to distribute the TFTs. If the sales channel and/or solution provider is not known, then the 50% will go to a DAO owned Community Grant Wallet.
+*Note: For billing purposes, ThreeFold DAO will check if the workload comes from a known sales channel and/or solution provider. If yes, then the billing smart contract code will know how to distribute the TFTs. If the sales channel and/or solution provider is not known, then the 50% will go to a DAO owned Community Grant Wallet. If less than 50% is allocated to the solution provider/sales channel, the remaining of the 50% will go to the DAO owned Community Grant Wallet.
 
 ***
 
@@ -1381,7 +1381,7 @@ Onboarding is meant through FIAT. It is comparable to any other online service p
 
 ### What does it mean to be a solution provider on the Threefold Grid?
 
-A solution provider offers a solution on the Threefold Grid and receives 50% of the TFT utilization revenues from the workload related to the solution.
+A solution provider offers a solution on the Threefold Grid and receives up to 50% of the TFT utilization revenues from the workload related to the solution.
 
 A "solution" is something running on the grid, created by a community member. This can be brought forward to the council, who can vote on it to recognize it as a solution. On contract creation, a recognized solution can be referenced, in which case part of the payment goes toward the address coupled to the solution.
 
@@ -1391,7 +1391,7 @@ To become a solution provider, read the next question.
 
 ### How can I become a solution provider on top of the Threefold Grid?
 
-Threefold uses the Proof-of-Utilization distribution where 50% of the TFT utilization revenues goes to the solution provider offering a solution. If there is no solution provider associated with the deployment, the 50% revenues goes to a DAO owned Community Grant Wallet.
+Threefold uses the Proof-of-Utilization distribution where up to 50% of the TFT utilization revenues goes to the solution provider offering a solution. If there is no solution provider associated with the deployment, the 50% revenues goes to a DAO owned Community Grant Wallet.
 
 There are a few steps to follow to become a solution provider:
 
