@@ -2447,7 +2447,7 @@ A blockchain validator participates in “consensus” and maintains the record 
 ***
 ### More Information
 
-Now that you have farmed TFT, you might want to invest those farming rewards into the TF ecosystem. If you want to know more about the role of a validator and how to become one, read this [VALIDATOR FAQ](../../faq/faq.md#validators-faq).
+Now that you have farmed TFT, you might want to invest those farming rewards into the TF ecosystem. If you want to know more about the role of a validator and how to become one, read this [VALIDATORS FAQ](../../faq/faq.md#validators-faq).
 ***
 ## How to Stake TFT
 
@@ -2459,7 +2459,7 @@ With the validator program comes *Delegated Staking*. This feature will be imple
 
 Now that you know how to farm TFT, you might want to explore the possibilities of the Threefold Token. 
 
-When it comes to learning about the real-world application and use of TFT, a good place to start is the [USER FAQ](../../faq/faq.md#users-faq).
+When it comes to learning about the real-world application and use of TFT, a good place to start is the [USERS FAQ](../../faq/faq.md#users-faq).
 
 ***
 
