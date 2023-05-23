@@ -1,4 +1,4 @@
-![header](./img/intro_header.png)
+![header](img/intro_header.png)
 
 # Welcome to the ThreeFold Grid Manual!
 
