@@ -4280,14 +4280,6 @@ docker compose down -v
 
 ***
 
-### Can you run multiple Farmerbots on a single computer?
-
-It's been determined that multiple Farmerbots can be hosted on a single machine. In that case, each Farmerbot will need its own `.env` and `config` files. 
-
-Furthermore, in its current state, each Farmerbot can only control a single twin account, and each twin should only oversee a single farm. 
-
-***
-
 ### With the Farmerbot, how can I set a node to never shut down?
 
 In the config file, set the following: `never_shutdown:true` for the node you want to never shut down.
@@ -4380,7 +4372,7 @@ Concerning Portainer, some farmers tried it and it led to issues. It is thus rec
 
 ### Can I run multiple Farmerbots on a single computer? How can I install a second Farmerbot for a different farm on the same computer? 
 
-You can run multiple Farmerbots on the same computer, as long as each Farmerbot is associated with only one farm. Note that you also need to have a separate twin for each farm.
+You can run multiple Farmerbots on the same computer, as long as each Farmerbot is associated with only one farm. Note that you also need to have a separate twin for each farm and each Farmerbot will need its own `.env` and `config` files. Indeed, each Farmerbot can only control a single twin account, and each twin should only oversee a single farm.
 
 You can follow the same process as with the first Farmerbot, with the new seed phrase associated with the new farm. You simply need to install the second Farmerbot in a different directory and it won't interfere with the other Farmerbot. 
 
