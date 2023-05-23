@@ -62,7 +62,6 @@
     - [Who can I write to for a proposal? Where can I send a proposal email for a new partnership opportunity with ThreeFold?](#who-can-i-write-to-for-a-proposal-where-can-i-send-a-proposal-email-for-a-new-partnership-opportunity-with-threefold)
     - [How can I track and follow the progress and development of ThreeFold?](#how-can-i-track-and-follow-the-progress-and-development-of-threefold)
     - [Why do some forum posts need to be approved?](#why-do-some-forum-posts-need-to-be-approved)
-    - [Is there a way to search the FAQ more easily? What is the link for the ThreeFold FAQ Bot?](#is-there-a-way-to-search-the-faq-more-easily-what-is-the-link-for-the-threefold-faq-bot)
   - [The Technology of ThreeFold](#the-technology-of-threefold)
     - [What is a 3node?](#what-is-a-3node)
     - [What is the difference between a 3node and a ThreeFold farm?](#what-is-the-difference-between-a-3node-and-a-threefold-farm)
@@ -733,14 +732,6 @@ There are two main places where you can track the progress of ThreeFold. ThreeFo
 The configurations of the ThreeFold forum make so that some posts need approval, depending on where they are posted. Like posting from meta-sections, and some specific sections.
 
 Also, note that certain posts can automatically get flagged for moderation based on their content.
-
-***
-
-### Is there a way to search the FAQ more easily? What is the link for the ThreeFold FAQ Bot?
-
-There is ThreeFold FAQ Bot available on Telegram. You can ask the bot any questions on ThreeFold, and it will find the most related Q&A in the ThreeFold FAQ.
-
-The link to the ThreeFold FAQ Bot is the following: https://t.me/TF_FAQ_Bot.
 
 ***
 
