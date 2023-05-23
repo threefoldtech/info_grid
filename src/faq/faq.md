@@ -780,9 +780,9 @@ In short, yes Quantum safe file system (QSFS) can be recovered on a different VM
 
 ### Where does the ThreeFold Explorer take its data from?
 
-The ThreeFold Explorer takes its data from this website: https://gridproxy.grid.tf/.
+The ThreeFold Explorer takes its data from this website: [https://gridproxy.grid.tf/](https://gridproxy.grid.tf/).
 
-To explore Grid Proxy, you can use Swagger: https://gridproxy.grid.tf/swagger/index.html. You will then be able to query the TF Grid and extract data.
+To explore Grid Proxy, you can use Swagger: [https://gridproxy.grid.tf/swagger/index.html](https://gridproxy.grid.tf/swagger/index.html). You will then be able to query the TF Grid and extract data.
 
 See the next Q&A for more information on Swagger.
 
@@ -790,13 +790,13 @@ See the next Q&A for more information on Swagger.
 
 ### How can I use the Gridproxy to query information on the TF Grid?
 
-You can go to the Gridproxy Swagger index: https://gridproxy.grid.tf/swagger/index.html
+You can go to the Gridproxy Swagger index: [https://gridproxy.grid.tf/swagger/index.html](https://gridproxy.grid.tf/swagger/index.html).
 
 There you can query information such as information on a 3node.
 
-For example, asking the Gridproxy for the nodeID 466, you get the following URL: https://gridproxy.grid.tf/nodes/466
+For example, asking the Gridproxy for the nodeID 466, you get the following URL: `https://gridproxy.grid.tf/nodes/466`.
 
-To get specific information, you can add parameters, for example: https://gridproxy.grid.tf/nodes/466/status
+To get specific information, you can add parameters, for example: `https://gridproxy.grid.tf/nodes/466/status`.
 
 When you know the URL representation of the query, you can simply use the URL directly on a web browser.
 
