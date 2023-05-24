@@ -6,8 +6,8 @@ You only need a TFT wallet and some TFTs to get started. TFTs are needed to fund
 - **How can I buy TFTs?**
 You can buy TFTs in numerous ways, for example via decentralized exchangers, farmers, and many more. Read the complete list of TFT vendors and how to buy TFT [**here**](../concepts/buying_storing_tft.md).
 
-- **What happens if I forget my Mnenomics?**
-Unfortunately, since our deployment account system is truly decentralized, we would not be able to assist you to log into your account without Mnemonics. **Please keep a copy of your mnemonics safe.** This would be the only way to recover your instance in the future. Failure to do so will result in a loss of account.
+- **What happens if I forget my Mnenomic?**
+Unfortunately, since our deployment account system is truly decentralized, we would not be able to assist you to log into your account without Mnemonic. **Please keep a copy of your mnemonic safe.** This would be the only way to recover your instance in the future. Failure to do so will result in a loss of account.
 
 - **Can I deploy multiple Mastodon servers on the same deployment account?**
 Yes, you can! You can manage all your mastodon servers on the 'Deployment List' section of your account. 
