@@ -19,7 +19,7 @@ Building Mastodon Servers using Certified Nodes mean that you are building your 
 In means once you have activated your Mastodon servers, you have the option of letting users of your server to create or login to their Mastodon account quickly by using TF Connect App login.
 
 - **What does exactly 'locked balance' on my account mean?**
-Locked Balance means the balance, or the amount of topped up TFT in you deployment wallet that has already been reserved and allocated for your active deployed servers. Each server that you have deployed and activated will need to be funded daily, and the locked balance make sure that your server will be up and running.
+Locked Balance means the balance, or the amount of topped up TFT in your deployment wallet that has already been reserved and allocated for your active deployed servers. Each server that you have deployed and activated will need to be funded daily, and the locked balance make sure that your server will be up and running.
 
 - **What happens if I forgot to fund my mastodon server?**
 If your account is running out of balance, your mastodon server will be temporarily deactivated until you top up your account again, the server will not be deleted. You will be given a grace period of two weeks to top up your balance and reactivate your server. [Click here for more detailed information about Grace Period.](../concepts/contract_grace_period.md)

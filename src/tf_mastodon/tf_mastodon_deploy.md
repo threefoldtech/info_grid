@@ -3,7 +3,7 @@
 ![](img/getmastodon_tf.png)
 
 On this tutorial you will learn on how to deploy a Mastodon Server using [https://getmastodon.threefold.io/](https://getmastodon.threefold.io/).
-To deploy a Mastodon server as weblet, please see [Mastodon Weblet Tutorial](weblets_mastodon)
+To deploy a Mastodon server as weblet, please see [Mastodon Weblet Tutorial](../weblets/weblets_mastodon.md)
 
 ThreeFold has made it possible for everyone to run their own Mastodon Instance, simply and effectively. Feel free to go to [www.mastodon.threefold.io](https://www.mastodon.threefold.io/) to read about ThreeFold's Mastodon Servers
 
@@ -11,7 +11,7 @@ ThreeFold has made it possible for everyone to run their own Mastodon Instance, 
 
 [Mastodon](https://joinmastodon.org/) is free and `open-source` software for running self-hosted social networking services. It has microblogging features similar to the Twitter service, which are offered by a large number of independently run nodes, known as `instances`, each with its own code of conduct, terms of service, privacy options, and moderation policies.
 
-Each user is a member of a specific `Mastodon` instance `also called a server`, which can interoperate as a federated social network, allowing users on different instance to interact with each other. This is intended to give users the flexibility to select a node whose policies they prefer, but keep access to a larger social network. `Mastodon` is also part of the Fediverse ensemble of server platforms, which use shared protocols allowing users to also interact with users on other compatible platforms,[9] such as [PeerTube](./weblets_peertube.md).
+Each user is a member of a specific `Mastodon` instance `also called a server`, which can interoperate as a federated social network, allowing users on different instance to interact with each other. This is intended to give users the flexibility to select a node whose policies they prefer, but keep access to a larger social network. `Mastodon` is also part of the Fediverse ensemble of server platforms, which use shared protocols allowing users to also interact with users on other compatible platforms,[9] such as [PeerTube](../weblets/weblets_peertube.md).
 `Mastodon` is crowdfunded and does not contain ads.
 
 ## Prerequisites
@@ -53,7 +53,7 @@ It may takes a few minutes until the transfer is successful. We would recommend 
 
 ### Generate your SSH Keys
 
-After you have successfully transfered some TFT, you will be asked to generate SSH Keys (for new accounts only) by clicking **‘Generate’** button on the right side. This key is used to authenticate and establish an encrypted communication channel to your Mastodon.
+After you have successfully transferred some TFT, you will be asked to generate SSH Keys (for new accounts only) by clicking **‘Generate’** button on the right side. This key is used to authenticate and establish an encrypted communication channel to your Mastodon.
 
 ![mnemonics](img/getmastodon_credentials_ssh.png)
 
@@ -85,7 +85,7 @@ If you choose to only do basic setup, you don't need to configure the advance se
 
 Please keep in mind that **you need to have sufficient amount of TFTs** in your deployment wallet in order your deployment to be successful. 
 
-Upon a successful server deployment, you will need to also have sufficient TFTs to keep your deploy alive. Failure to do so will result in server deactivation (not deletion), and You will be given 2 weeks of grace period time to top up your account to reactivate your servers. [Click here for more detailed information about Grace Period.](https://library.threefold.me/info/manual/#/manual__grace_period?id=grace-period).
+Upon a successful server deployment, you will need to also have sufficient TFTs to keep your deploy alive. Failure to do so will result in server deactivation (not deletion), and You will be given 2 weeks of grace period time to top up your account to reactivate your servers. [Click here for more detailed information about Grace Period.](../concepts/contract_grace_period.md).
 
 To top up your wallet, simply go back to **'Credentials'** and transfer TFTs to your account.
 
@@ -93,7 +93,7 @@ To top up your wallet, simply go back to **'Credentials'** and transfer TFTs to 
 
 ![](img/getmastodon_advance.png)
 
-Before configuring the advance setup please keep in mind that you would need to configure the ![basic setup](#basic-setup) too.
+Before configuring the advance setup please keep in mind that you would need to configure the **basic setup** (see Basic Setup section on this page above) too.
 
 Advance Mastodon Server Setup consists of:
 - CPU: Choose the total number of CPU resource for your Mastodon Server
@@ -148,5 +148,5 @@ Once you're logged in, you will also be shown how much TFT Balance left you have
 
 Deploying [Mastodon](https://www.mastodon.threefold.io/) have never been easier. ThreeFold has made it possible for everyone to deploy and run their own Mastodon Server, simply and effectively. Let’s get started and happy experimenting!
 
-> Read the FAQ on Mastodon Servers Powered by ThreeFold [here](threefold_mastodon_faq).
+> Read the FAQ on Mastodon Servers Powered by ThreeFold [here](./tf_mastodon_faq.md).
 
