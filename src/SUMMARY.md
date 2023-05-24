@@ -134,7 +134,7 @@
 - [Flist Hub](flist_hub/flist_hub.md)
   - [Supported FLists](manual3_iac/grid3_supported_flists.md)
 - [Threefold Farmer](TF_Farmer_Guide/tf_farmer_guide_readme.md)
-  - [Threefold complete farming guide](TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md)
+  - [Threefold Complete Farming Guide](TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md)
   - [3node DIY Desktop](TF_Farmer_Guide/3node_diy_desktop/3node_diy_desktop.md)
   - [3node DIY Rack Server](TF_Farmer_Guide/3node_diy_rack_server/3node_diy_rack_server.md)
 - [ThreeFold Video Gallery](tf_video_gallery/tf_video_gallery.md)
