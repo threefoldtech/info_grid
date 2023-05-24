@@ -22,7 +22,7 @@ In means once you have activated your Mastodon servers, you have the option of l
 Locked Balance means the balance, or the amount of topped up TFT in you deployment wallet that has already been reserved and allocated for your active deployed servers. Each server that you have deployed and activated will need to be funded daily, and the locked balance make sure that your server will be up and running.
 
 - **What happens if I forgot to fund my mastodon server?**
-If your account is running out of balance, your mastodon server will be temporarily deactivated until you top up your account again, the server will not be deleted. You will be given a grace periodd of two weeks to top up your balance and reactivate your server. [Click here for more detailed information about Grace Period.](../concepts/contract_grace_period.md)
+If your account is running out of balance, your mastodon server will be temporarily deactivated until you top up your account again, the server will not be deleted. You will be given a grace period of two weeks to top up your balance and reactivate your server. [Click here for more detailed information about Grace Period.](../concepts/contract_grace_period.md)
 
 - **How will I know if my account is running out of balance?**
 Your deployment wallet will always display how much TFT is left on your account.
