@@ -139,6 +139,8 @@
   - [3node DIY Rack Server](TF_Farmer_Guide/3node_diy_rack_server/3node_diy_rack_server.md)
 - [ThreeFold Video Gallery](tf_video_gallery/tf_video_gallery.md)
 - [ThreeFold Mastodon Server](tf_mastodon/tf_mastodon_readme.md)
+  - [Mastodon Deployer Manual](tf_mastodon/tf_mastodon_deploy.md)
+  - [Frequently Asked Questions](tf_mastodon/tf_mastodon_faq.md)
 - [Farmerbot](farmerbot/farmerbot.md)
 - [Grid Proxy](proxy/proxy.md)
 - [Advanced](advanced/advanced.md)
