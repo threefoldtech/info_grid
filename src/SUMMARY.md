@@ -149,6 +149,8 @@
   - [Cancel contracts](advanced/cancel_contracts.md)
   - [Contract Bills Reports](advanced/contract_bill_report.md)
   - [Listing Free Public IPs](advanced/list_public_ips.md)
+- [ThreeFold Roadmap](roadmap/roadmap_readme.md)
+  - [Release Notes](roadmap/releasenotes/releasenotes_readme.md)
 - [ThreeFold Chain](tfchain/tfchain.md)
   - [Introduction](tfchain/introduction.md)
   - [Farming Policies](tfchain/farming_policies.md)
