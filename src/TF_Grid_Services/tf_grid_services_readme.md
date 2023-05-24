@@ -39,7 +39,7 @@ On this article we have aggregated a list of all of the services running on Thre
 - [GraphQL](https://graphql.grid.tf/graphql)
 - [Activation Service](https://activation.grid.tf/activation/)
 - [TFChain-Stellar Bridge](https://bridge.bsc.threefold.io/)
-- [TFChain-Etherium Bridge](http://bridge.eth.threefold.io)
+- [TFChain-Ethereum Bridge](https://bridge.eth.threefold.io/)
 - [TFGrid Proxy](https://gridproxy.grid.tf)
 - [Grid Playground](https://play.grid.tf)
 - [Dashboard](https://dashboard.grid.tf)
