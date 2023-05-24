@@ -13,7 +13,7 @@ Unfortunately, since our deployment account system is truly decentralized, we wo
 Yes, you can! You can manage all your mastodon servers on the 'Deployment List' section of your account. 
 
 - **What's The difference for me as a user to build a mastodon server on certified node vs DIY node?**
-Building Mastodon Servers using Certified Nodes mean that you are buillding your server on top of ThreeFold's nodes that farmers bought from ThreeFold Certified Nodes partners, instead of DIY Nodes (Nodes that farmers build themselves).
+Building Mastodon Servers using Certified Nodes mean that you are building your server on top of ThreeFold's nodes that farmers bought from ThreeFold Certified Nodes partners, instead of DIY Nodes (Nodes that farmers build themselves).
 
 - - **What does exactly 'Enable TF Connect' on the 'basic'deployment setting mean?**
 In means once you have activated your Mastodon servers, you have the option of letting users of your server to create or login to their Mastodon account quickly by using TF Connect App login.
