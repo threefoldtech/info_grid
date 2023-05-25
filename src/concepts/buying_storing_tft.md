@@ -24,6 +24,6 @@ Discover step-by-step instructions on buying and storing TFTs across different p
 - [Bettertoken (Farmers)](https://library.threefold.me/info/manual/#/tokens/threefold__tft_bettertoken)
 
 ## Other Related Manuals on TFT
-- [Store TFTs on Hardware Wallets](https://forum.threefold.io/t/storing-tft-on-hardware-wallets/802)
-- [Storing TFTs on TF Connect App](https://library.threefold.me/info/manual/#/tokens/threefold__wiki_3bot_connect_wallet)
-- [Bridge TFT between Stellar and Binance Smart Chain](https://library.threefold.me/info/manual/#/tokens/threefold__tft_bsc_bridge)
+- [Store TFTs on Hardware Wallets](https://manual.grid.tf/TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.html#send-tft-to-hardware-wallet-on-stellar-blockchain)
+- [Storing TFTs on TF Connect App](https://manual.grid.tf/TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.html#send-and-receive-tft-between-tf-connect-wallets)
+- [Bridge TFT between Stellar and Binance Smart Chain](https://manual.grid.tf/TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.html#how-to-use-the-bsc-stellar-bridge)
