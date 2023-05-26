@@ -26,6 +26,7 @@
   - [Terraform Basics](terraform/terraform_basics.md)
   - [Tutorial](terraform/terraform_get_started.md)
   - [Delete](terraform/terraform_delete.md)
+  - [Full VM Deployment](terraform/terraform_full_vm.md)
   - [Resources]()
     - [Virtual Machine](terraform/resources/terraform_vm.md)
     - [Web Gateway](terraform/resources/terraform_vm_gateway.md)
