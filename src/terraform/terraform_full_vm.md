@@ -238,7 +238,7 @@ After deployments, take note of the 3node' IPv4 address. You will need this addr
 
 ## SSH into the 3node
 
-* To [SSH into the 3node](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html), write the following:
+* To [SSH into the 3node](../getstarted/ssh_guide/ssh_guide.md), write the following:
   *  ```
      ssh root@VM_IPv4_Address
      ```
