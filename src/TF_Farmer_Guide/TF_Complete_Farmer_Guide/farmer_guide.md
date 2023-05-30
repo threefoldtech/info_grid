@@ -356,14 +356,12 @@ For Windows, if you are using the ***"dd" able image***, instead of writing comm
 
 ### Bootstrap Image for Certified 3Node
 
-After creating a farm, provide your farm ID and your farm name to [ThreeFold Support on our live chat](https://threefoldfaq.crisp.help/en/) or by sending an email at [info@threefold.io](mailto:info@threefold.io) for certification.
+After creating a farm, to enable the certified farming status on your 3Node, you need to provide your farm ID and your farm name to the ThreeFold Support. You can do this by either using the [live chat](https://threefoldfaq.crisp.help/en/) or by sending an email at [info@threefold.io](mailto:info@threefold.io). The ThreeFold team will then send you a bootstrap image file for certified 3Node. You will need to replace this new bootstrap image with the old one present on the USB key attached to your 3Node. We present here the detailed steps:
 
-The ThreeFold team will then share a boot image file which you will need to replace on the USB drive that is attached to the 3Node. The process is very easy. Simply follow the steps below:
-
-* Download the zip file with your new boot image.
-* When you unzip it, you’ll see a file, BOOTX64.EFI within the BOOT/EFI directory.
-  * Simply copy this file onto the USB stick within the same directories that exist there, to overwrite the existing BOOTX64.EFI file.
-* Insert the USB drive in the node and boot it again.
+* Download and unzip the folder containing your new boot image.
+* The unzip file will contain a directory named `BOOT/EFI` with a file named `BOOTX64.EFI` within it.
+  * Simply replace this file onto the USB key with the old `BOOTX64.EFI` file. 
+* Once this is done, insert the USB key in the 3Node and boot it again.
 
 Your 3Node now has a bootstrap image for certified 3Node.
 
