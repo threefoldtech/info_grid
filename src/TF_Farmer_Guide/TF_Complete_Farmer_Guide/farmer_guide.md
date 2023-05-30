@@ -356,7 +356,7 @@ For Windows, if you are using the ***"dd" able image***, instead of writing comm
 
 ### Bootstrap Image for Certified 3Node
 
-After creating a farm, to enable the certified farming status on your 3Node, you need to provide your farm ID and your farm name to the ThreeFold Support. You can do this by either using the [ThreeFold live chat](https://threefoldfaq.crisp.help/en/) or by sending an email at [info@threefold.io](mailto:info@threefold.io). The ThreeFold team will then send you a bootstrap image for your certified 3Node. You will need to replace the existing bootstrap image present on the USB key with this new bootstrap image for certitied 3Node. Simply follow the steps below:
+After creating a farm, to enable the certified farming status on your 3Node, you need to provide your farm ID and your farm name to the ThreeFold Support. You can do this by either using the [ThreeFold live chat](https://threefoldfaq.crisp.help/en/) or by sending an email at [info@threefold.io](mailto:info@threefold.io). The ThreeFold team will then send you a bootstrap image for your certified 3Node. You will need to replace the existing bootstrap image present on the USB key attached to the 3Node with this new bootstrap image for certified 3Node. Simply follow the steps below:
 
 * Download the zip file containing your new bootstrap image.
 * When you unzip the file, you’ll see a file named `BOOTX64.EFI` within the `BOOT/EFI` directory.
