@@ -21,6 +21,7 @@ And now *...Let's New Internet...*
     - [Burning the Zero-OS Bootstrap Image](#burning-the-zero-os-bootstrap-image)
       - [CD/DVD BIOS](#cddvd-bios)
       - [USB Key BIOS+UEFI](#usb-key-biosuefi)
+    - [Bootstrap Image for Certified 3Node](#bootstrap-image-for-certified-3node)
   - [3. Set the Hardware](#3-set-the-hardware)
     - [Hardware Requirements](#hardware-requirements)
     - [Bandwidth Requirements](#bandwidth-requirements)
@@ -291,6 +292,8 @@ IPs assigned to a farm are available to be rented by workloads. They can be assi
 
 We will now learn how to create a Zero-OS Bootstrap Image in order to boot a DIY 3node.
 
+Note: For certified 3Nodes, read [this section](./farmer_guide.md#bootstrap-image-for-certified-3node).
+
     https://v3.bootstrap.grid.tf
 
 Go on the [Threefold Zero-OS Bootstrap Link](https://v3.bootstrap.grid.tf) as shown above.
@@ -348,6 +351,21 @@ Here the * is to indicate that you must adjust according to your disk. To see yo
 ***
 
 For Windows, if you are using the ***"dd" able image***, instead of writing command line, you can use the free USB flashing program called [Rufus](https://sourceforge.net/projects/rufus.mirror/) and it will automatically do this with no need for Linux or command line. Rufus also formats the boot media in the process.
+
+***
+
+### Bootstrap Image for Certified 3Node
+
+After creating a farm, provide your farm ID and your farm name to [ThreeFold Support on our live chat](https://threefoldfaq.crisp.help/en/) or by sending an email at [info@threefold.io](mailto:info@threefold.io) for certification.
+
+The ThreeFold team will then share a boot image file which you will need to replace on the USB drive that is attached to the 3Node. The process is very easy. Simply follow the steps below:
+
+* Download the zip file with your new boot image.
+* When you unzip it, you’ll see a file, BOOTX64.EFI within the BOOT/EFI directory.
+  * Simply copy this file onto the USB stick within the same directories that exist there, to overwrite the existing BOOTX64.EFI file.
+* Insert the USB drive in the node and boot it again.
+
+Your 3Node now has a bootstrap image for certified 3Node.
 
 ***
 
