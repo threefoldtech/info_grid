@@ -360,8 +360,8 @@ After creating a farm, to enable the certified farming status on your 3Node, you
 
 * Download the zip file containing your new bootstrap image.
 * When you unzip the file, you’ll see a file named `BOOTX64.EFI` within the `BOOT/EFI` directory.
-  * Simply copy this file onto the USB stick within the same directories that exist there, to overwrite the existing `BOOTX64.EFI` file.
-* Insert the USB drive in the 3Node and boot it again.
+  * Simply copy this file onto the USB key within the same directories that exist there, to overwrite the existing `BOOTX64.EFI` file.
+* Insert the USB key in the 3Node and boot it again.
 
 Your 3Node has now a bootstrap image for certified 3Node.
 
