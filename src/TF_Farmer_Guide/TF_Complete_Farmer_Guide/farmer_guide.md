@@ -290,7 +290,7 @@ IPs assigned to a farm are available to be rented by workloads. They can be assi
 
 ***
 
-We will now learn how to create a Zero-OS Bootstrap Image in order to boot a DIY 3node.
+We will now learn how to create a Zero-OS bootstrap image in order to boot a DIY 3Node.
 
 Note: For certified 3Nodes, read [this section](./farmer_guide.md#bootstrap-image-for-certified-3node).
 
@@ -358,9 +358,9 @@ For Windows, if you are using the ***"dd" able image***, instead of writing comm
 
 After creating a farm, to enable the certified farming status on your 3Node, you need to provide your farm ID and your farm name to the ThreeFold Support. You can do this by either using the [ThreeFold live chat](https://threefoldfaq.crisp.help/en/) or by sending an email at [info@threefold.io](mailto:info@threefold.io). The ThreeFold team will then send you a bootstrap image file for your certified 3Node. You will need to replace this new bootstrap image with the old bootstrap image present on the USB key attached to your 3Node. We present here the detailed steps:
 
-* Download and unzip the folder containing your new bootstrap image.
-* The unzip file will contain a directory named `BOOT/EFI` with a file named `BOOTX64.EFI` within it.
-  * Simply replace this file onto the USB key with the old file. 
+* Download and unzip the zipped file containing your new bootstrap image.
+* The unzipped file will contain a directory named `BOOT/EFI` with a file named `BOOTX64.EFI` within it.
+  * On your 3Node USB key, replace the old file named `BOOTX64.EFI` with the new file of the same name.
 * Once this is done, insert the USB key in the 3Node and boot it again.
 
 Your 3Node now has a bootstrap image for certified 3Node.
