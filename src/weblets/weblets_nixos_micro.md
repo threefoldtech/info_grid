@@ -1,6 +1,6 @@
 # NixOS MicroVM
 
-NixOS MicroVM refers to a minimalistic virtual machine environment based on the NixOS Linux distribution.
+__NixOS MicroVM__ refers to a minimalistic virtual machine environment based on the NixOS Linux distribution.
 The NixOS MicroVM leverages these principles to create a highly customizable and reproducible virtual machine environment. It allows users to define the entire system configuration, including packages, services, and dependencies, in a declarative manner using the Nix language. This ensures that the MicroVM is consistent, easily reproducible, and can be version-controlled.
 
 ## Deploy a NixOS MicroVM

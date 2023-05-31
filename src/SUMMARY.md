@@ -79,6 +79,7 @@
     - [Full Virtual Machine](weblets/weblets_fullVm.md)
     - [Virtual Machine](weblets/weblets_vm.md)
     - [Kubernetes](weblets/weblets_k8s.md)
+    - [Nixos MicroVM](weblets/weblets_nixos_micro.md)
   - [Ready Community Solutions]()
     - [Algorand](weblets/weblets_algorand.md)
     - [Caprover](weblets/weblets_caprover.md)
