@@ -21,6 +21,7 @@ And now *...Let's New Internet...*
     - [Burning the Zero-OS Bootstrap Image](#burning-the-zero-os-bootstrap-image)
       - [CD/DVD BIOS](#cddvd-bios)
       - [USB Key BIOS+UEFI](#usb-key-biosuefi)
+    - [Bootstrap Image for Certified 3Node](#bootstrap-image-for-certified-3node)
   - [3. Set the Hardware](#3-set-the-hardware)
     - [Hardware Requirements](#hardware-requirements)
     - [Bandwidth Requirements](#bandwidth-requirements)
@@ -111,6 +112,7 @@ And now *...Let's New Internet...*
     - [More Information](#more-information)
   - [How to Stake TFT](#how-to-stake-tft)
 - [Using TFT on the Grid](#using-tft-on-the-grid)
+- [Additional Information](#additional-information)
 
 ***
 
@@ -288,7 +290,9 @@ IPs assigned to a farm are available to be rented by workloads. They can be assi
 
 ***
 
-We will now learn how to create a Zero-OS Bootstrap Image in order to boot a DIY 3node.
+We will now learn how to create a Zero-OS bootstrap image in order to boot a DIY 3Node.
+
+Note: For certified 3Nodes, read [this section](./farmer_guide.md#bootstrap-image-for-certified-3node).
 
     https://v3.bootstrap.grid.tf
 
@@ -347,6 +351,19 @@ Here the * is to indicate that you must adjust according to your disk. To see yo
 ***
 
 For Windows, if you are using the ***"dd" able image***, instead of writing command line, you can use the free USB flashing program called [Rufus](https://sourceforge.net/projects/rufus.mirror/) and it will automatically do this with no need for Linux or command line. Rufus also formats the boot media in the process.
+
+***
+
+### Bootstrap Image for Certified 3Node
+
+After creating a farm, to enable the certified farming status on your 3Node, you need to provide your farm ID and your farm name to the ThreeFold Support. You can do this by either using the [ThreeFold live chat](https://threefoldfaq.crisp.help/en/) or by sending an email at [info@threefold.io](mailto:info@threefold.io). The ThreeFold team will then send you a bootstrap image for your certified 3Node. You will need to replace the existing bootstrap image present on the USB key attached to the 3Node with this new bootstrap image for certified 3Node. Simply follow the steps below:
+
+* Download the zip file containing your new bootstrap image.
+* When you unzip the file, you’ll see a file named `BOOTX64.EFI` within the `BOOT/EFI` directory.
+  * Simply copy this file onto the USB key within the same directories that exist there, to overwrite the existing `BOOTX64.EFI` file.
+* Insert the USB key in the 3Node and boot it again.
+
+Your 3Node has now a bootstrap image for certified 3Node.
 
 ***
 
@@ -2446,7 +2463,7 @@ A blockchain validator participates in “consensus” and maintains the record 
 ***
 ### More Information
 
-Now that you have farmed TFT, you might want to invest those farming rewards into the TF ecosystem. If you want to know more about the role of a validator and how to become one, read this [VALIDATOR FAQ](../faq/faq.md#validator-faq).
+Now that you have farmed TFT, you might want to invest those farming rewards into the TF ecosystem. If you want to know more about the role of a validator and how to become one, read this [VALIDATORS FAQ](../../faq/faq.md#validators-faq).
 ***
 ## How to Stake TFT
 
@@ -2458,4 +2475,10 @@ With the validator program comes *Delegated Staking*. This feature will be imple
 
 Now that you know how to farm TFT, you might want to explore the possibilities of the Threefold Token. 
 
-When it comes to learning about the real-world application and use of TFT, a good place to start is the [USER FAQ](../faq/faq.md#user-faq).
+When it comes to learning about the real-world application and use of TFT, a good place to start is the [USERS FAQ](../../faq/faq.md#users-faq).
+
+***
+
+# Additional Information
+
+If you have any questions, you can ask the Threefold community for help on the [Threefold Forum](https://forum.threefold.io/) or on the [Threefold Telegram Farmer Group](https://t.me/threefoldfarmers).
