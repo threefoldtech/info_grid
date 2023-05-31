@@ -1,6 +1,8 @@
 # ThreeFold Grid and Product Roadmap
 
-Welcome to ThreeFold's product roadmap! We are thrilled to have you on board as we journey towards a decentralized and sustainable future. Our product roadmap outlines the innovative solutions and technologies we are developing to revolutionize the way we compute, store data, and connect. Here, you will find a comprehensive overview of our latest and upcoming releases, enhancements, and advancements across our ecosystem. 
+Welcome to ThreeFold's product roadmap! We are thrilled to have you on board as we journey towards a decentralized and sustainable future. Our product roadmap outlines the innovative solutions and technologies we are developing to revolutionize the way we compute, store data, and connect. Here, you will find a comprehensive overview of our latest and upcoming releases, enhancements, and advancements across our ecosystem.
+
+> To see the complete list and description of TFGrid Components, see [TFGrid Component List](../concepts/grid3_components.md)
 
 ## Table of Contents
 
