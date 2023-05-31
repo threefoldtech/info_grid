@@ -4,6 +4,7 @@
  - [How it Works](intro/grid3_howitworks.md)
 - [Grid Concepts](concepts/concepts_readme.md)
   - [TFGrid Primitives](concepts/grid_primitives.md)
+  - [TFGrid Component List](concepts/grid3_components.md)
   - [Proof of Utilization](concepts/proof_of_utilization.md)
   - [Contract Grace Period](concepts/contract_grace_period.md)
   - [Buying and Storing TFTs](concepts/buying_storing_tft.md)
