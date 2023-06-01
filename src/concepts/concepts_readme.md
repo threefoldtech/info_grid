@@ -6,6 +6,7 @@ On this section we will explore the fundamental principles and concepts behind t
 
 - [TFGrid Primitives](./grid_primitives.md)
 - [TFGrid Component List](./grid3_components.md)
+- [ThreeFold's Infrastructure as Code (IaC)](./grid3_iac.md)
 - [Proof of Utilization](./proof_of_utilization.md)
 - [Contract Grace Period](./contract_grace_period.md)
 - [Buying and Storing TFTs](./buying_storing_tft.md)
