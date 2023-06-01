@@ -1,8 +1,41 @@
-# TF Website Tool (Zola)
-
-## Overview
+<h1> Zola Website Deployer</h1>
 
 ![](./img/websitetool.jpeg)  
+
+<h2> Table of Contents </h2>
+
+- [Overview](#overview)
+  - [What is Zola Framework?](#what-is-zola-framework)
+- [Prerequisites](#prerequisites)
+  - [Important Links](#important-links)
+- [Installing Zola Onto Your Machine](#installing-zola-onto-your-machine)
+  - [Important Links](#important-links-1)
+- [Get Started](#get-started)
+  - [Fork ThreeFold's Website Template to Your Github Account](#fork-threefolds-website-template-to-your-github-account)
+  - [Clone the Forked Repository Locally](#clone-the-forked-repository-locally)
+  - [Open and Edit Your Cloned Zola Template with a Code Editor](#open-and-edit-your-cloned-zola-template-with-a-code-editor)
+  - [Template Guide](#template-guide)
+  - [Navigating the Template](#navigating-the-template)
+  - [Top Navbar Made Easy](#top-navbar-made-easy)
+  - [Replace Logo with your Own logo](#replace-logo-with-your-own-logo)
+  - [Important Links](#important-links-2)
+- [Customization](#customization)
+  - [Some Tutorials on Markdown](#some-tutorials-on-markdown)
+  - [Creating A Single-Column Page Section](#creating-a-single-column-page-section)
+  - [Adding Image](#adding-image)
+  - [Creating Page Section with Multiple Columns](#creating-page-section-with-multiple-columns)
+  - [Important Links](#important-links-3)
+  - [Build and Preview Your Website Locally](#build-and-preview-your-website-locally)
+  - [Important Links](#important-links-4)
+- [Publish Your Website (Via Github Pages)](#publish-your-website-via-github-pages)
+  - [Publish your Github page](#publish-your-github-page)
+- [Important Links](#important-links-5)
+- [Questions and Feedback](#questions-and-feedback)
+
+
+***
+
+## Overview
 
 **ThreeFold Website Tool** is a customized open-source Zola-based web deployment framework and static website template repository that is available for anyone to use.
 
@@ -12,7 +45,8 @@ At ThreeFold, we utilized Website Tool to deploy all of our web presences. For e
 [**Zola**](https://www.getzola.org/) is a static site generator (SSG), similar to Hugo, Pelican, and Jekyll (for a comprehensive list of SSGs, please see Jamstack). It is written in Rust and uses the Tera template engine, which is similar to Jinja2, Django templates, Liquid, and Twig. Content is written in CommonMark, a strongly defined, highly compatible specification of Markdown.
 
 While you can also publish a static website using Zola alone, we at ThreeFold have customized the framework and created a static website template that makes it even easier for anyone to build a website by simply cloning template and fill it with their own website content.
-<br>
+
+***
 
 ## Prerequisites
 
@@ -31,7 +65,9 @@ In order to deploy and publish a website using ThreeFold Website Tool, you would
 > - [Learn Markdown Language](https://www.markdownguide.org/)
 > - [Command Line Cheat Sheet](https://cs.colby.edu/maxwell/courses/tutorials/terminal/)
 
-## Installing Zola onto Your Machine
+***
+
+## Installing Zola Onto Your Machine
 
 To install Zola on your machine, simply go to your terminal and run the following command:
 
@@ -68,6 +104,7 @@ For more details on Zola Installation, and installation guidelines for other ope
 
 > Next Step: [Template Guide: How to use the TF Web Template](templateguide)
 
+***
 
 ## Get Started
 
@@ -87,7 +124,7 @@ After you forked the template, now you can [clone the repository](https://docs.g
 
 ![](./img/clone.png)
 
-### Open and edit your cloned Zola Template on code editor
+### Open and Edit Your Cloned Zola Template with a Code Editor
 
 Once the template is forked and cloned, open your code editor and start working on your website. I will explain a little more about the content editing process and procedure on the next pages...
 
@@ -138,6 +175,8 @@ And then go to **_index.md** file and replace the **logo_path**: images/yourlogo
 
 > - [TF Web Template](https://github.com/threefoldfoundation/www_examplezola)
 
+***
+
 ## Customization
 
 We have designed the template in certain ways that it would accommodate different indentation web page style, such as placeholders, footer, header, left-indentation, right-indentation.
@@ -148,7 +187,7 @@ All you need to do is just replace the texts and images using markdown language,
 
 ### Some Tutorials on Markdown
 
-### Creating A single-column Page Section
+### Creating A Single-Column Page Section
 
 Since we only have one column, Every one column section begins only with row indentation syntax (style, margin, padding).
 
@@ -226,7 +265,7 @@ The Result:
 ### Important Links
 > - [Learn Markdown Language](https://www.markdownguide.org/)
 
-###  Build and Preview your website locally
+###  Build and Preview Your Website Locally
 
 After customizing your website, you might want to review and build your website locally before publishing it online. On this page you will find tutorials on how to preview and deploy your website.
 
@@ -260,6 +299,8 @@ And, Congratulations! You just built your website locally!
 
 > - [Command Line Cheat Sheet](https://cs.colby.edu/maxwell/courses/tutorials/terminal/)
 
+***
+
 ## Publish Your Website (Via Github Pages)
 
 Since we're using github repository to save our website content, the easiest way to publish our website is also through github pages and by using our own domain.
@@ -284,7 +325,15 @@ And you are done! Your website will be published, and it will take only a minute
 
 ![](./img/done.png)
 
+***
+
 ## Important Links
 > - [Pushing Changes to Github](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/pushing-changes-to-github)
 > - [Github Pages How-to](https://docs.github.com/en/pages)
 > - [Adding Custom Domain to my Github Page](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
+
+***
+
+## Questions and Feedback
+
+If you have any question or feedback, you can write a post on the [ThreeFold Forum](http://forum.threefold.io/).
