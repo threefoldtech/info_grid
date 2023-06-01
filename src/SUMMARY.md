@@ -127,6 +127,7 @@
   - [Cancel contracts](advanced/cancel_contracts.md)
   - [Contract Bills Reports](advanced/contract_bill_report.md)
   - [Listing Free Public IPs](advanced/list_public_ips.md)
+  - [Redis](advanced/grid3_redis.md) 
 - [ThreeFold Roadmap](roadmap/roadmap_readme.md)
   - [Release Notes](roadmap/releasenotes/releasenotes_readme.md)
     - [TFGrid v3.9.0](roadmap/releasenotes/tfgrid_release_3_9_0.md)
