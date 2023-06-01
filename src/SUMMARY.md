@@ -37,7 +37,7 @@
     - [ZDB](terraform/resources/terraform_zdb.md)
     - [Quantum Filesystem](terraform/resources/terraform_qsfs.md)
     - [CapRover](terraform/resources/terraform_caprover.md)
-  - [Advanced]()
+  - [Advanced](terraform/advanced/terraform_advanced_readme.md)
     - [Terraform Provider](terraform/advanced/terraform_provider.md)
     - [Terraform Provisioners](terraform/advanced/terraform_provisioners.md)
     - [Mounts](terraform/advanced/terraform_mounts.md)
