@@ -29,7 +29,7 @@
   - [Tutorial](terraform/terraform_get_started.md)
   - [Delete](terraform/terraform_delete.md)
   - [Full VM Deployment](terraform/terraform_full_vm.md)
-  - [Resources]()
+  - [Resources](terraform/resources/terraform_resources_readme.md)
     - [Virtual Machine](terraform/resources/terraform_vm.md)
     - [Web Gateway](terraform/resources/terraform_vm_gateway.md)
     - [Kubernetes Cluster](terraform/resources/terraform_k8s.md)
