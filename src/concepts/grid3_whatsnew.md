@@ -1,4 +1,4 @@
-> To see the complete list of TFGrid Component, see [TFGrid Component List](../concepts/grid3_components.md)
+> Click [here](../concepts/grid3_components.md) to see the complete TFGrid Component List
 
 # What's new on ThreeFold Grid v3.x
 
