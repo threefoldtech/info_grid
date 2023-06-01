@@ -70,7 +70,9 @@ The glossary covers a wide range of components, including infrastructure element
 ## TFGrid Components (Alphabetical Orders)
 
 ### TF Admin Portal 
-A tool within TF Dashboard provided by ThreeFold for administrators to manage and monitor various aspects of the ThreeFold Grid ecosystem. It serves as a central hub where administrators can access and control different components of the grid, including nodes, capacity, workloads, and user management. The TF Admin Portal provides a comprehensive set of tools and features to configure, deploy, and monitor resources within the grid, ensuring efficient management and utilization of the decentralized infrastructure. Through the portal, administrators can track the performance and health of the grid, allocate resources, manage user permissions, and gain insights into the grid's utilization and usage patterns. 
+A tool within TF Dashboard provided by ThreeFold for administrators to manage and monitor various aspects of the ThreeFold Grid ecosystem. It serves as a central hub where administrators can access and control different components of the grid, including nodes, capacity, workloads, and user management. 
+
+The TF Admin Portal provides a comprehensive set of tools and features to configure, deploy, and monitor resources within the grid, ensuring efficient management and utilization of the decentralized infrastructure. Through the portal, administrators can track the performance and health of the grid, allocate resources, manage user permissions, and gain insights into the grid's utilization and usage patterns. 
 
 > [Component Repository on Github (Archived)](https://github.com/threefoldtech/tfgrid_dashboard)
 
@@ -80,17 +82,23 @@ A component within the ThreeFold ecosystem that refers to Atomic Swaps, a crypto
 > [Component Repository on Github](https://github.com/threefoldtech/atomicswap)
 
 ### Builders
-A Docker-based component within the ThreeFold Grid ecosystem. This particular aspect of Builders involves leveraging Docker containers to package and deploy applications and services on the ThreeFold Grid. Docker is an open-source platform that enables developers to build, package, and distribute applications as lightweight, portable containers. By using Builders as a Docker-based component, developers can easily containerize their applications, ensuring consistency and compatibility across different environments. This approach simplifies the deployment process, allowing developers to quickly deploy their applications on the ThreeFold Grid with minimal configuration and setup. The Builders component takes care of managing the underlying infrastructure and orchestrating the deployment of Docker containers, making it an efficient and convenient way to leverage the capabilities of the ThreeFold Grid for hosting and running applications.
+A Docker-based component within the ThreeFold Grid ecosystem. This particular aspect of Builders involves leveraging Docker containers to package and deploy applications and services on the ThreeFold Grid. Docker is an open-source platform that enables developers to build, package, and distribute applications as lightweight, portable containers. 
+
+By using Builders as a Docker-based component, developers can easily containerize their applications, ensuring consistency and compatibility across different environments. This approach simplifies the deployment process, allowing developers to quickly deploy their applications on the ThreeFold Grid with minimal configuration and setup. The Builders component takes care of managing the underlying infrastructure and orchestrating the deployment of Docker containers, making it an efficient and convenient way to leverage the capabilities of the ThreeFold Grid for hosting and running applications.
 
 > [Component Repository on Github](https://github.com/threefoldtech/builders)
 
 ### TF Capacity Explorer
-A tool within the TF Dashboard provided by ThreeFold that allows users to explore and analyze the available capacity within the ThreeFold Grid. It provides insights into the distributed computing resources, including storage, processing power, and network bandwidth, that are available for utilization within the ThreeFold network. The TF Capacity Explorer enables users to discover and assess the capacity of different nodes and data centers within the ThreeFold Grid, helping them make informed decisions when deploying their workloads or applications.
+A tool within the TF Dashboard provided by ThreeFold that allows users to explore and analyze the available capacity within the ThreeFold Grid. It provides insights into the distributed computing resources, including storage, processing power, and network bandwidth, that are available for utilization within the ThreeFold network. 
+
+The TF Capacity Explorer enables users to discover and assess the capacity of different nodes and data centers within the ThreeFold Grid, helping them make informed decisions when deploying their workloads or applications.
 
 > [Component Repository on Github (Archived)](https://github.com/threefoldtech/tfgrid_dashboard)
 
 ### Cloud Container
-A containerization technology provided by ThreeFold that enables the deployment and management of applications and services in a cloud environment. It offers a lightweight and isolated execution environment for running applications, ensuring scalability, portability, and efficient resource utilization. With ThreeFold's Cloud Container, developers and organizations can package their applications along with their dependencies and configurations, making it easier to deploy and manage them in a cloud-native manner. The Cloud Container technology provides features such as automated scaling, load balancing, and resource allocation, allowing for efficient utilization of computing resources and optimal performance of applications.
+A containerization technology provided by ThreeFold that enables the deployment and management of applications and services in a cloud environment. It offers a lightweight and isolated execution environment for running applications, ensuring scalability, portability, and efficient resource utilization. 
+
+With ThreeFold's Cloud Container, developers and organizations can package their applications along with their dependencies and configurations, making it easier to deploy and manage them in a cloud-native manner. The Cloud Container technology provides features such as automated scaling, load balancing, and resource allocation, allowing for efficient utilization of computing resources and optimal performance of applications.
 
 > [Component Repository on Github](https://github.com/threefoldtech/cloud-container)
 
@@ -109,7 +117,6 @@ A Graphical user interface (GUI) provided by ThreeFold for users to access and m
 ### Farm Management 
 A set of tools, processes, and functionalities provided by ThreeFold to manage and operate farms within the ThreeFold Grid. Farms are the physical locations where ThreeFold Farmers deploy and maintain the infrastructure that powers the decentralized network. TF Farm Management offers a comprehensive suite of features that enable farmers to efficiently manage their resources, monitor the health and performance of their infrastructure, and handle various administrative tasks. This includes functionalities such as capacity allocation, monitoring and reporting tools, farmer reputation management, billing and invoicing systems, and overall farm administration. 
 
-
 ### TF Farming Calculator
 A tool provided by ThreeFold that allows users to estimate and calculate potential earnings from farming on the ThreeFold Grid. Farming refers to the process of providing computing resources, such as storage and processing power, to the ThreeFold Grid and earning tokens in return. The tf-farming-calculator takes into account various factors, including the amount of resources contributed, the duration of farming, and the current market conditions, to provide users with an estimate of their potential earnings in terms of ThreeFold Tokens (TFT).
 
@@ -121,7 +128,9 @@ A software tool developed by ThreeFold that serves as a management and monitorin
 > [Component Repository on Github](https://github.com/threefoldtech/farmerbot)
 
 ### Freeflow Twin Main App or Freeflow Connect (previously Uhuru)
-FFTwin is a component of the ThreeFold ecosystem that serves as the main interface for users to access and utilize the features of Freeflow Twin. Freeflow Twin is a decentralized communication and collaboration platform developed by ThreeFold. The Twin Main App allows users to securely communicate, share files, and collaborate with others in a decentralized manner, ensuring privacy and data sovereignty. Users can create chat channels, join communities, and engage in real-time messaging with end-to-end encryption. The app also supports file sharing, voice and video calls, and other collaborative features. With the Freeflow Twin Main App, users can experience a decentralized and secure communication platform that empowers them to connect and collaborate with others while maintaining control over their data.
+FFTwin is a component of the ThreeFold ecosystem that serves as the main interface for users to access and utilize the features of Freeflow Twin. Freeflow Twin is a decentralized communication and collaboration platform developed by ThreeFold. 
+
+The Twin Main App allows users to securely communicate, share files, and collaborate with others in a decentralized manner, ensuring privacy and data sovereignty. Users can create chat channels, join communities, and engage in real-time messaging with end-to-end encryption. The app also supports file sharing, voice and video calls, and other collaborative features. With the Freeflow Twin Main App, users can experience a decentralized and secure communication platform that empowers them to connect and collaborate with others while maintaining control over their data.
 
 > [Component Repository on Github](https://github.com/threefoldtech/freeflow_twin_main_app)
 
@@ -159,12 +168,16 @@ A component or tool within the ThreeFold ecosystem that is designed to gather an
 > [Component Repository on Github (Archived)](https://github.com/threefoldtech/tfgrid_stats)
 
 ### JS-SDK
-A software development kit (SDK) provided by ThreeFold that enables developers to interact with and utilize the ThreeFold Grid infrastructure using JavaScript. It provides a set of libraries, tools, and APIs that simplify the integration and interaction with various ThreeFold services and functionalities. With the JS-SDK, developers can programmatically manage and deploy resources, interact with the ThreeFold Grid's decentralized storage, perform transactions on the ThreeFold Chain blockchain, and access other platform features. The JS-SDK empowers developers to build decentralized applications (dApps), create custom automation scripts, and leverage the capabilities of the ThreeFold Grid using the familiar JavaScript programming language.
+A software development kit (SDK) provided by ThreeFold that enables developers to interact with and utilize the ThreeFold Grid infrastructure using JavaScript. It provides a set of libraries, tools, and APIs that simplify the integration and interaction with various ThreeFold services and functionalities. 
+
+With the JS-SDK, developers can programmatically manage and deploy resources, interact with the ThreeFold Grid's decentralized storage, perform transactions on the ThreeFold Chain blockchain, and access other platform features. The JS-SDK empowers developers to build decentralized applications (dApps), create custom automation scripts, and leverage the capabilities of the ThreeFold Grid using the familiar JavaScript programming language.
 
 > [Component Repository on Github](https://github.com/threefoldtech/js-sdk)
 
 ### JS-NG
-JavaScript Next-Generation (js-ng) framework, which is a modern and advanced framework for building web applications using JavaScript. It provides developers with a set of tools, libraries, and utilities to streamline the development process and create high-performance, scalable, and maintainable web applications. The js-ng framework incorporates the latest features and best practices of JavaScript, allowing developers to write clean and efficient code. It offers a modular architecture, allowing for easy integration of third-party libraries and extensions. With js-ng, developers can build interactive user interfaces, handle data management, perform client-server communication, and implement various functionalities required for robust web applications. The framework promotes code reusability, testability, and code organization, making it an ideal choice for developing modern web applications.
+JavaScript Next-Generation (js-ng) framework, which is a modern and advanced framework for building web applications using JavaScript. It provides developers with a set of tools, libraries, and utilities to streamline the development process and create high-performance, scalable, and maintainable web applications. The js-ng framework incorporates the latest features and best practices of JavaScript, allowing developers to write clean and efficient code. It offers a modular architecture, allowing for easy integration of third-party libraries and extensions. 
+
+With js-ng, developers can build interactive user interfaces, handle data management, perform client-server communication, and implement various functionalities required for robust web applications. The framework promotes code reusability, testability, and code organization, making it an ideal choice for developing modern web applications.
 
 > [Component Repository on Github](https://github.com/threefoldtech/js-ng)
 
@@ -182,7 +195,9 @@ The third version of the ThreeFold Token (TFT) minting process. It is a protocol
 > [Component Repository on Github](https://github.com/threefoldtech/minting_v3)
 
 ### Node-Pilot 
-A software package provided by ThreeFold for running and managing individual nodes on the ThreeFold Grid. It is designed to enable users to set up and operate their own decentralized infrastructure nodes. TFNode-Pilot provides the necessary tools and functionality to deploy, configure, and monitor nodes, allowing users to contribute their computing resources to the ThreeFold Grid and participate in the decentralized ecosystem. With TFNode-Pilot, users can easily transform their hardware into powerful nodes that contribute to the storage, compute, and networking capabilities of the ThreeFold Grid. The software package includes features such as node management, resource monitoring, security measures, and integration with other components of the ThreeFold ecosystem.
+A software package provided by ThreeFold for running and managing individual nodes on the ThreeFold Grid. It is designed to enable users to set up and operate their own decentralized infrastructure nodes. TFNode-Pilot provides the necessary tools and functionality to deploy, configure, and monitor nodes, allowing users to contribute their computing resources to the ThreeFold Grid and participate in the decentralized ecosystem. 
+
+With TFNode-Pilot, users can easily transform their hardware into powerful nodes that contribute to the storage, compute, and networking capabilities of the ThreeFold Grid. The software package includes features such as node management, resource monitoring, security measures, and integration with other components of the ThreeFold ecosystem.
 
 > [Component Repository on Github](https://github.com/threefoldtech/node-pilot-light)
 
