@@ -4,16 +4,16 @@
 
 - [Introduction](#introduction)
 - [1) Creating a Polkadot.js account](#1-creating-a-polkadotjs-account)
-- [2) Creating the Farm on the Threefold Grid](#2-creating-the-farm-on-the-threefold-grid)
+- [2) Creating the Farm on the ThreeFold Grid](#2-creating-the-farm-on-the-threefold-grid)
 - [Optional: Add Public IP Addresses](#optional-add-public-ip-addresses)
-  - [How to configure public IP addresses for a Threefold farm or a 3node](#how-to-configure-public-ip-addresses-for-a-threefold-farm-or-a-3node)
+  - [How to configure public IP addresses for a ThreeFold farm or a 3Node](#how-to-configure-public-ip-addresses-for-a-threefold-farm-or-a-3node)
   - [The Difference Between IPs Assigned to Nodes Versus a Farm](#the-difference-between-ips-assigned-to-nodes-versus-a-farm)
 
 ***
 
 ## Introduction
 
-The following section will show you how to create a farm and a farm ID. In doing so, we will also learn how to create a Threefold Twin and how to use the polkadot.js extension on Chrome or Firefox to create an account on the blockchain. You can also [create a Threefold Farm with the Threefold Connect App](#create-a-farm).
+The following section will show you how to create a farm and a farm ID. In doing so, we will also learn how to create a ThreeFold Twin and how to use the polkadot.js extension on Chrome or Firefox to create an account on the blockchain. You can also [create a ThreeFold Farm with the ThreeFold Connect App](#create-a-farm).
 
 ***
 
@@ -64,9 +64,9 @@ This is what you see when your account is created.
 
 ***
 
-## 2) Creating the Farm on the Threefold Grid
+## 2) Creating the Farm on the ThreeFold Grid
 
-Go on the Threefold Portal.
+Go on the ThreeFold Portal.
 
 ```
 https://portal.grid.tf
@@ -124,9 +124,9 @@ Write a valid Stellar address and click "Submit".
 
 ![Farming_Create_Farm_17](./img/tf_dashboard_2023_11.png) 
 
-You can, for example, use your Threefold Connect App* address or your hardware wallet address (Ledger, Trezor).
+You can, for example, use your ThreeFold Connect App* address or your hardware wallet address (Ledger, Trezor).
 
-*Threefold Connect App Hyperlinks:
+*ThreeFold Connect App Hyperlinks:
 * Link for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US)
 * Link for [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885)
 
@@ -136,18 +136,18 @@ You can, for example, use your Threefold Connect App* address or your hardware w
 
 > Note: Assuming you are a farmer operating from your home, this field can usually be left blank. You do not have to fill in any details. The add IP option is for farmers that have a block of IP addresses routed to their router (in data centers mostly) and want to present “dedicated IP” addresses for deployments.
 
-The add IP option is for farmers that have a block of IP addresses routed to their router. This is mainly for data centers, but some ISP can provide this service for residential locations. With such public IP addresses, your TF farm and/or your 3nodes can present “dedicated IP” addresses for deployments.
+The add IP option is for farmers that have a block of IP addresses routed to their router. This is mainly for data centers, but some ISP can provide this service for residential locations. With such public IP addresses, your TF farm and/or your 3Nodes can present “dedicated IP” addresses for deployments.
 Unless you are paying for a block of IPs, you only have one static IP which is needed for you router
 
-The [Threefold simulator](https://simulator.grid.tf/) is referring to this IP address. Only check the Public IP option in the simulator if you have such block of IP addresses.
+The [ThreeFold simulator](https://simulator.grid.tf/) is referring to this IP address. Only check the Public IP option in the simulator if you have such block of IP addresses.
 
 ![farming_001](img/farming_001.png) 
 
 ***
-### How to configure public IP addresses for a Threefold farm or a 3node
+### How to configure public IP addresses for a ThreeFold farm or a 3Node
 ***
 
-To configure public IP addresses for your 3node farm, select the  *Farms*  section of the Portal menu in the [Threefold Dashboard](https://dashboard.grid.tf/), expand your farm by clicking on the down arrow on the left, then click on the down arrow to the right of the subsection *Public IPs*.
+To configure public IP addresses for your 3Node farm, select the  *Farms*  section of the Portal menu in the [ThreeFold Dashboard](https://dashboard.grid.tf/), expand your farm by clicking on the down arrow on the left, then click on the down arrow to the right of the subsection *Public IPs*.
 
 ![Farming_Create_Farm_18](./img/tf_dashboard_2023_12.png) 
 
@@ -159,9 +159,9 @@ Specify the IP address using CIDR format, add the gateway and then click "Save".
 
 ![Farming_Create_Farm_20](./img/tf_dashboard_2023_14.png) 
 
-The same process can be done for individual 3nodes. This is available in the  *Nodes*  section, just below the  *Farms*  section of the "Farms" page.
+The same process can be done for individual 3Nodes. This is available in the  *Nodes*  section, just below the  *Farms*  section of the "Farms" page.
 
-To configure public IP addresses to a specific 3node, click on the Actions *Add a public config* (represented with a Earth icon).
+To configure public IP addresses to a specific 3Node, click on the Actions *Add a public config* (represented with a Earth icon).
 
 ![Farming_Create_Farm_21](./img/tf_dashboard_2023_15.png) 
 
