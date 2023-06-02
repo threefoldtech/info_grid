@@ -165,7 +165,7 @@ Set the server to BIOS boot and put PXE or network boot as the first choice. At 
 
 ### PXE Booting with pfSense
 
-> This documentation comes from the [amazing Network Booting Guide](https://forum.ThreeFold.io/t/network-booting-tutorial/2688/7) by @TheCaptain on the ThreeFold Forum. 
+> This documentation comes from the [amazing Network Booting Guide](https://forum.threefold.io/t/network-booting-tutorial/2688/7) by @TheCaptain on the ThreeFold Forum. 
 
 These are the steps required to enable PXE booting on pfSense. This guide assumes you’ll be using the router as your PXE server; pfSense allows boot file uploads directly from its web GUI.
 

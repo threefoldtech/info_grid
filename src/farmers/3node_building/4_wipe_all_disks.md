@@ -22,7 +22,7 @@ In this section of the ThreeFold Farmers book, we explain how to wipe all the di
 2. Boot Linux in *Try Mode*
 3. Wipe All the Disks
 
-Threefold runs its own OS, which is Zero-OS. You thus need to start with completely wiped disks. Note that ALL disks must be wiped. Otherwise, Zero-OS won't boot.
+ThreeFold runs its own OS, which is Zero-OS. You thus need to start with completely wiped disks. Note that ALL disks must be wiped. Otherwise, Zero-OS won't boot.
 
 An easy method is to simply download a Linux distribution and wipe the disk with the proper command line in the Terminal.
 
@@ -70,7 +70,7 @@ sudo wipefs -a /dev/sda
 
 And replace the "a" in sda by the letter of your disk, as shown when you did *lsblk*. The term *sudo* gives you the correct permission to do this.
 
-To wipe all the disks in your 3node, write the command:
+To wipe all the disks in your 3Node, write the command:
 
 ```
 sudo for i in /dev/sd*; do wipefs -a $i; done

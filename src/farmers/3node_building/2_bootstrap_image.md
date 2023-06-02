@@ -19,7 +19,7 @@ Note: For certified 3Nodes, read [this section](./farmer_guide.md#bootstrap-imag
 
 ## Download the Zero-OS Bootstrap Image
 
-Go on the [Threefold Zero-OS Bootstrap Link](https://v3.bootstrap.grid.tf):
+Go on the [ThreeFold Zero-OS Bootstrap Link](https://v3.bootstrap.grid.tf):
 
 ```
 https://v3.bootstrap.grid.tf

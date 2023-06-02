@@ -140,7 +140,7 @@ And then... nothing. This means that you are still in the BIOS of the hardware a
 
 ***
 
-**Additional information :** One of the great features of Zero-OS is that it can be completely run within the cache of your 3Node. Indeed, the booting device, that contains your farm ID, will connect to the Threefold Grid and download everything needed to run smoothly. There are many benefits in terms of security and protection of data that comes with this.
+**Additional information :** One of the great features of Zero-OS is that it can be completely run within the cache of your 3Node. Indeed, the booting device, that contains your farm ID, will connect to the ThreeFold Grid and download everything needed to run smoothly. There are many benefits in terms of security and protection of data that comes with this.
 
 ***
 
@@ -166,7 +166,7 @@ Old servers/desktops will need to use the 4th and 5th options (named: ISO and US
 The BIOS setting in BIOS (non-UEFI) mode presented here is mostly based on a Dell R720. We also add information to cover more broadly the subject. There may be differences with your specific 3Node hardware. The following should give you a good overview of how to set it up and you can adjust the details. For newer servers, UEFI mode might be the preferred option.
 ***
 
-Please note that you can set your iDRAC with remote access. In this section, we set up the 3Node directly with a monitor and keyboard. Once this BIOS settings are set and the 3Node is running, you will not need to do much maintenance on the server's BIOS or iDRAC settings, thanks to the Self-Healing properly of Threefold's Zero-OS.
+Please note that you can set your iDRAC with remote access. In this section, we set up the 3Node directly with a monitor and keyboard. Once this BIOS settings are set and the 3Node is running, you will not need to do much maintenance on the server's BIOS or iDRAC settings, thanks to the Self-Healing properly of ThreeFold's Zero-OS.
 
 ***
 
@@ -317,15 +317,15 @@ This will change depending on your hardware configuration.
     
     It's usually easy to set servers such as a HP Proliant with the HBA mode. For Dell servers, you can either cross-flash the RAID controller with an “IT-mode-Firmware” (see this [video](https://www.youtube.com/watch?v=h5nb09VksYw)) or get a DELL H310-controller (which has the non-RAID option). Otherwise, you can install a NVME SSD with a PCIe adaptor as stated above.
 
-    Concerning RAID technology, here is what Weynand Kuijpers, one of Threefold's co-founders, has to say:
+    Concerning RAID technology, here is what Weynand Kuijpers, one of ThreeFold's co-founders, has to say:
 
     > RAID is a technology that has brought resilience and security to the IT industry. But it has some limitations that we at ThreeFold did not want to get stuck in. We developed a different (and more efficient way to store data reliably). Please have a look [here](https://library.threefold.me/info/threefold#/cloud/threefold__cloud_products?id=storage-quantum-safe-filesystem). 
     > 
     > This Quantum Safe Storage overcomes some of the shortfalls of RAID and is able to work over multiple nodes geographically spread on the TF Grid.
 
 2. Usually you can leave all USB ports accessible. 
-3. You can choose to leave your booting device inside the server (this is recommended). You might sometimes have to upgrade the booting device, but minor upgrades are always done via the Threefold Grid so this would not happen often.
-4. It is important to enable your Network Card so your 3Node can connect to the Threefold Grid.
+3. You can choose to leave your booting device inside the server (this is recommended). You might sometimes have to upgrade the booting device, but minor upgrades are always done via the ThreeFold Grid so this would not happen often.
+4. It is important to enable your Network Card so your 3Node can connect to the ThreeFold Grid.
 5. OS Timer is not necessary as Zero-OS is self-healing.
 6. By default, this parameter is enabled. The video controller is used to check the 3Node Zero-OS status. Note that it is possible to run a 3Node headless, and/or without a GPU connected.
 7. This is for virtualization devices.
@@ -510,7 +510,7 @@ We have been through the BIOS settings and th iDRAC settings of a typical Dell R
 
 The UEFI mode is usually needed for newer hardware.
 ***
-There might be other ways to configure those settings, depending on the specific computer. Depending on your hardware (disks connections, RAID controller, etc.), you might need to change some settings to fit your specific computer model. Most of the time, if you follow these lines, your 3Node should work 100% with the Threefold Grid. Check the [Troubleshooting and Error Messages](/faq/faq.md#troubleshooting-and-error-messages) section if you have trouble on your way to booting Zero-OS.
+There might be other ways to configure those settings, depending on the specific computer. Depending on your hardware (disks connections, RAID controller, etc.), you might need to change some settings to fit your specific computer model. Most of the time, if you follow these lines, your 3Node should work 100% with the ThreeFold Grid. Check the [Troubleshooting and Error Messages](/faq/faq.md#troubleshooting-and-error-messages) section if you have trouble on your way to booting Zero-OS.
 
 It is possible that your 3Node needs to be booted with the BIOS mode. In this case, refer to the [previous section](#example-of-bios-settings---rack-server---dell-r720).
 
@@ -519,7 +519,7 @@ To boot Zero-OS, you need to use the bootstrap image [here](https://bootstrap.gr
 
 Old servers/desktops will need to use the non-UEFI mode, which are the 4th and 5th options (named: ISO and USB). Newer servers/desktops can use UEFI (1st and 2nd option).
 
-We will now present the BIOS/UEFI settings that work with Threefold Zero-OS.
+We will now present the BIOS/UEFI settings that work with ThreeFold Zero-OS.
 Note that the settings are similar for UEFI and non-UEFI. But some details are important.
 
 The UEFI settings are from a HP G1 EliteDesk Desktop. These should give you a good overview of how to set it up.
@@ -629,4 +629,4 @@ In Advanced -> Ethernet Connection -> NIC Configuration, make sure your Link Sta
 
 That's it. You went through the whole Computer Setup and this should get your 3Node working good.
 
-In the next section, we will boot the 3Node and connect to the Threefold Grid. How exciting!
+In the next section, we will boot the 3Node and connect to the ThreeFold Grid. How exciting!
