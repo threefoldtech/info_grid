@@ -1,4 +1,4 @@
-# ThreeFold Farmers Book
+# ThreeFold Farmers
 
 ![Farming_Title](./img/farming_30.png)
 
