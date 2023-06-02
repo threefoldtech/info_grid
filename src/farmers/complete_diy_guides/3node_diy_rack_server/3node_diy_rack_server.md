@@ -1,10 +1,10 @@
 ![Farming_Title](./img/farming_30.png)
 
 <body>
-<h1>DIY 3node Guide - Rack Server - Dell R620 / R720</h1>
+<h1>DIY 3Node Guide - Rack Server - Dell R620 / R720</h1>
 </body>
 
-In the following 3node DIY guide, you will learn how to turn a Dell server (R620, R720) into a 3node farming on the Threefold Grid 3.0. 
+In the following 3Node DIY guide, you will learn how to turn a Dell server (R620, R720) into a 3Node farming on the ThreeFold Grid 3.0. 
 
 Note that the process is similar for other rack servers.
 
@@ -24,7 +24,7 @@ Note that the process is similar for other rack servers.
   - [Removing the DVD Optical Drive - Installing a SSD disk in the DVD Optical Drive Slot](#removing-the-dvd-optical-drive---installing-a-ssd-disk-in-the-dvd-optical-drive-slot)
   - [Using Onboard Storage - RAID Controller Details](#using-onboard-storage---raid-controller-details)
 - [Zero-OS Bootstrap Image](#zero-os-bootstrap-image)
-  - [Creating a Threefold Farm](#creating-a-threefold-farm)
+  - [Creating a ThreeFold Farm](#creating-a-threefold-farm)
   - [Wiping All the Disks](#wiping-all-the-disks)
   - [Downloading the Zero-OS Bootstrap Image](#downloading-the-zero-os-bootstrap-image)
     - [DVD ISO BIOS Image](#dvd-iso-bios-image)
@@ -32,10 +32,10 @@ Note that the process is similar for other rack servers.
 - [BIOS Settings](#bios-settings)
   - [Processor Settings](#processor-settings)
   - [Boot Settings](#boot-settings)
-- [Booting the 3node](#booting-the-3node)
+- [Booting the 3Node](#booting-the-3node)
 - [Additional Information](#additional-information)
   - [Differences between the R620 and the R720](#differences-between-the-r620-and-the-r720)
-  - [Different CPUs and RAMs Configurations for 3node Dell Servers](#different-cpus-and-rams-configurations-for-3node-dell-servers)
+  - [Different CPUs and RAMs Configurations for 3Node Dell Servers](#different-cpus-and-rams-configurations-for-3node-dell-servers)
 - [Closing Words](#closing-words)
 
 
@@ -267,18 +267,18 @@ Go on https://bootstrap.grid.tf/ and download the appropriate image: option **IS
 
 Write your farmer ID and make sure you select production mode.
 
-## Creating a Threefold Farm
+## Creating a ThreeFold Farm
 
-If you haven't created a Threefold farm yet, you have two options: 
+If you haven't created a ThreeFold farm yet, you have two options: 
 
 1. [Create a Farm with the Polkadot.js Extension](../TF_Complete_Farmer_Guide/farmer_guide.md#1-create-a-farm) 
-2. [Create a Farm with Threefold Connect App](../TF_Complete_Farmer_Guide/farmer_guide.md#create-a-farm)
+2. [Create a Farm with ThreeFold Connect App](../TF_Complete_Farmer_Guide/farmer_guide.md#create-a-farm)
 
 Note: It is possible to move your farm from the [TF Connect App to the TF Portal](../TF_Complete_Farmer_Guide/farmer_guide.md#move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs) (via the Polkadot.js Extension). You can also [import your farm from the TF Portal to the TF Connect App](../TF_Complete_Farmer_Guide/farmer_guide.md#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet).
 
 ## Wiping All the Disks
 
-You might need to wipe your disks if they are not brand new. To wipe your disks, read the section [Wipe All the Disks](../TF_Complete_Farmer_Guide/farmer_guide.md#4-wipe-all-the-disks) of the Threefold Farming Documentation.
+You might need to wipe your disks if they are not brand new. To wipe your disks, read the section [Wipe All the Disks](../TF_Complete_Farmer_Guide/farmer_guide.md#4-wipe-all-the-disks) of the ThreeFold Farming Documentation.
 
 ## Downloading the Zero-OS Bootstrap Image
 
@@ -334,24 +334,24 @@ You can also disable the booting options that are not need. It can be good to ha
 Boot Sequence Retry enabled will simply redo the booting sequence if the last time did not work.
 
 ***
-That's it. You've set the BIOS settings properly and now is time to boot the 3node and connect to the Threefold Grid.
+That's it. You've set the BIOS settings properly and now is time to boot the 3Node and connect to the ThreeFold Grid.
 
 You can then save your preferences and exit. Your server should restart and load the bootstrap image. 
 
-# Booting the 3node
+# Booting the 3Node
 
 Once you've set the BIOS settings and restarted your computer, it will download the Zero-OS bootstrap image. This takes a couple of minutes.
 
-The first time you boot a 3node, it will be written: “This node is not registered (farmer ***: NameOfFarm). This is normal. The Grid will create a node ID and you will be able to see it on screen. This can take a couple of minutes.
+The first time you boot a 3Node, it will be written: “This node is not registered (farmer ***: NameOfFarm). This is normal. The Grid will create a node ID and you will be able to see it on screen. This can take a couple of minutes.
 
-Once you have your node ID, you can also go on the Threefold Explorer to see your 3node and verify that the connection is recognized by the Explorer.
+Once you have your node ID, you can also go on the ThreeFold Explorer to see your 3Node and verify that the connection is recognized by the Explorer.
 
 # Additional Information
 ## Differences between the R620 and the R720
 
 Note that the main difference between the R620 and the R720 is that the former is a 1U and the latter a 2U. 2U servers are usually less noisy and generate less heat than 1U servers since they have a greater volume. In the R720, fans are bigger and thus less noisy. This can be an important factor to consider. Both offer great performances and work well with Zero-OS.
 
-## Different CPUs and RAMs Configurations for 3node Dell Servers
+## Different CPUs and RAMs Configurations for 3Node Dell Servers
 
 Different CPUs and RAMs configurations are possible for the Dell R620/R720 servers.
 
@@ -360,10 +360,10 @@ For example, you could replace the E5-2640 v2 CPUs for the E5-2695 V2. This woul
 Note that you cannot have more than 16 sticks of ECC DIMM on the R620/R720. For more sticks, you need LRDIMM as stated above. 
 
 # Closing Words
-That's it. You have now built a DIY 3node and you are farming on the Threefold Grid.
+That's it. You have now built a DIY 3Node and you are farming on the ThreeFold Grid.
 
 If you encounter errors, you can read the section [Troubleshooting and Error Messages](../../faq/faq.md#troubleshooting-and-error-messages) of the Farmer FAQ.
 
-If you have any questions, you can ask the Threefold community for help on the [Threefold Forum](https://forum.threefold.io/) or on the [Threefold Telegram Farmer Group](https://t.me/threefoldfarmers).
+If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](https://forum.threefold.io/) or on the [ThreeFold Telegram Farmer Group](https://t.me/threefoldfarmers).
 
 >Welcome to the New Internet!

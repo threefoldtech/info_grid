@@ -9,4 +9,4 @@
    * Transfer TFT from TFChain to Stellar
       * Click on *Withdraw*
 
-Note: If you are on Threefold Connect App, you can export your account to the Polkadot extension. Look at the section [Move Farm from the TF app to the TF Portal (polkadot.js)](#move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs).
+Note: If you are on ThreeFold Connect App, you can export your account to the Polkadot extension. Look at the section [Move Farm from the TF app to the TF Portal (polkadot.js)](#move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs).

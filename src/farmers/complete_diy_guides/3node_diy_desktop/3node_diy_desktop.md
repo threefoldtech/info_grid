@@ -15,8 +15,8 @@
 - [Prerequisite](#prerequisite)
   - [DIY 3Node Computer Requirements](#diy-3node-computer-requirements)
   - [DIY 3Node Material List](#diy-3node-material-list)
-- [1. Create a Farm with Threefold Connect App](#1-create-a-farm-with-threefold-connect-app)
-  - [Threefold Connect App Installation](#threefold-connect-app-installation)
+- [1. Create a Farm with ThreeFold Connect App](#1-create-a-farm-with-threefold-connect-app)
+  - [ThreeFold Connect App Installation](#threefold-connect-app-installation)
     - [Verify Your Identity (KYC) by Email](#verify-your-identity-kyc-by-email)
   - [Create a Wallet](#create-a-wallet)
   - [Create a Farm](#create-a-farm)
@@ -78,24 +78,24 @@ In this guide, we are using a Dell Optiplex 7020. It constitutes a perfect affor
 
 ***
 
-# 1. Create a Farm with Threefold Connect App
+# 1. Create a Farm with ThreeFold Connect App
 
-## Threefold Connect App Installation
+## ThreeFold Connect App Installation
 
 ***
 
-The Threefold Connect App is available for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US) and [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885).
+The ThreeFold Connect App is available for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US) and [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885).
 
 - Note that for Android phones, you need at minimum Android Nougat, the 8.0 software version.
 - Note that for iOS phones, you need at minimum iOS 14.5. It will be soon available to iOS 13.
 
-Either use the links above, or search for the Threefold Connect App on the Apple Store or the Google Play store. Then install and open the app. If you want to leave a 5 star review of the App, no one here will stop you!
+Either use the links above, or search for the ThreeFold Connect App on the Apple Store or the Google Play store. Then install and open the app. If you want to leave a 5 star review of the App, no one here will stop you!
 
 ![farming_tf_wallet_1](./img/farming_tf_wallet_1.png)
 
 ![farming_tf_wallet_2](./img/farming_tf_wallet_2.png)
 
-Once you are in the application, you will see some introduction pages to help you familiarize with the TF Connect App. You will also be asked to read and accept Threefold's Terms and conditions.
+Once you are in the application, you will see some introduction pages to help you familiarize with the TF Connect App. You will also be asked to read and accept ThreeFold's Terms and conditions.
 
 ![farming_tf_wallet_4](./img/farming_tf_wallet_4.png)
 
@@ -103,11 +103,11 @@ You will then be asked to either *SIGN UP* or *RECOVER ACCOUNT*. For now, we wil
 
 ![farming_tf_wallet_5](./img/farming_tf_wallet_5.png)
 
-You will then be asked to choose a *Threefold Connect Id*. This ID will be used, as well as the seed phrase, when you want to recover an account. Choose wisely. And do not forget it! Here we will use TFExample, as an example.
+You will then be asked to choose a *ThreeFold Connect Id*. This ID will be used, as well as the seed phrase, when you want to recover an account. Choose wisely. And do not forget it! Here we will use TFExample, as an example.
 
 ![farming_tf_wallet_6](./img/farming_tf_wallet_6.png)
 
-Next, you need to add a valid email address. This will be used as a broad KYC. You will need to access your email and confirm the validation email from Threefold to use properly the TF Connect App Wallet.
+Next, you need to add a valid email address. This will be used as a broad KYC. You will need to access your email and confirm the validation email from ThreeFold to use properly the TF Connect App Wallet.
 
 ![farming_tf_wallet_7](./img/farming_tf_wallet_7.png)
 
@@ -123,11 +123,11 @@ Then, you'll be asked to confirm your TF 3bot name and the associated email.
 
 ![farming_tf_wallet_10](./img/farming_tf_wallet_10.png)
 
-Finally, you will be asked to choose a 4-digit pin. This will be needed to use the Threefold Connect App. If you ever forget this 4-digit pin, you will need to recover your account from your 3bot name and your seed phrase. You will need to confirm the new pin in the next step.
+Finally, you will be asked to choose a 4-digit pin. This will be needed to use the ThreeFold Connect App. If you ever forget this 4-digit pin, you will need to recover your account from your 3bot name and your seed phrase. You will need to confirm the new pin in the next step.
 
 ![farming_tf_wallet_11](./img/farming_tf_wallet_11.png)
 
-That's it! You've created your Threefold Connect account. You can press the hamburger menu on the top left to explore the Threefold Connect App.
+That's it! You've created your ThreeFold Connect account. You can press the hamburger menu on the top left to explore the ThreeFold Connect App.
 
 ![farming_tf_wallet_12](./img/farming_tf_wallet_12.png)
 
@@ -168,7 +168,7 @@ If for some reason, you did not receive the verification email, simply click on 
 ## Create a Wallet
 
 ***
-To create a wallet, click on the Threefold Connect App menu. This is what you see. Choose *Wallet*.
+To create a wallet, click on the ThreeFold Connect App menu. This is what you see. Choose *Wallet*.
 
 ![farming_tf_wallet_13](./img/farming_tf_wallet_13.png)
 
@@ -214,7 +214,7 @@ The TF Connect App will give you a confirmation message if the farm was created 
 
 ![farming_tf_wallet_27](./img/farming_tf_wallet_27.png)
 
-You can see on this screen the address were your farming rewards will be sent to. It is the Stellar address associated with the Threefold Wallet used to create the farm.
+You can see on this screen the address were your farming rewards will be sent to. It is the Stellar address associated with the ThreeFold Wallet used to create the farm.
 
 ![farming_tf_wallet_28](./img/farming_tf_wallet_28.png)
 
@@ -236,7 +236,7 @@ We will now learn how to create a Zero-OS Bootstrap Image in order to boot a DIY
 
     https://v3.bootstrap.grid.tf
 
-Go on the [Threefold Zero-OS Bootstrap Link](https://v3.bootstrap.grid.tf) as shown above.
+Go on the [ThreeFold Zero-OS Bootstrap Link](https://v3.bootstrap.grid.tf) as shown above.
 
 ![Farming_Create_Farm_21](./img/farming_createfarm_21.png) 
 
@@ -522,17 +522,17 @@ If your BIOS/UEFI settings are set properly and you have the Zero-OS bootstrap i
 1. Power on the 3Node with the Zero-OS boostrap image USB key
 2. Let the 3Node load Zero-OS
    * The first time it boots, the 3node will register to the TF Grid
-3. Verify the 3Node's status on Threefold Explorer
+3. Verify the 3Node's status on ThreeFold Explorer
 
 The first time you boot a 3Node, it will be written: “This node is not registered (farmer ***: NameOfFarm). This is normal. The Grid will create a node ID and you will be able to see it on screen. This can take a couple of minutes.
 
-This is the final screen you should see when your 3Node is connected to the Threefold Grid. Note that it is normal if it is written *no public config* next to *PUB* as we did not set any public IP address.
+This is the final screen you should see when your 3Node is connected to the ThreeFold Grid. Note that it is normal if it is written *no public config* next to *PUB* as we did not set any public IP address.
 
 Naturally, your node ID as well as your farm ID and name will be shown.
 
 ![3node_diy_desktop_76.png](img/3node_diy_desktop_130.png)
 
-Once you have your node ID, you can also go on the Threefold Explorer to see your 3Node and verify that your 3Node is online.
+Once you have your node ID, you can also go on the ThreeFold Explorer to see your 3Node and verify that your 3Node is online.
 
 ***
 
@@ -543,7 +543,7 @@ Once you have your node ID, you can also go on the Threefold Explorer to see you
 ## Check the 3Node's Status on the TF Explorer
 
 ***
-In a browser, go on the [Threefold Explorer](https://explorer.threefold.io/). 
+In a browser, go on the [ThreeFold Explorer](https://explorer.threefold.io/). 
 
 Select **Grid V3**.
 
@@ -573,12 +573,12 @@ Now we can see the 3Nodes that are offline.
 
 ***
 
-The farming reward will be sent once per month directly in your Threefold Connect App wallet. Farming rewards are usually distributed around the 5th of each month.
+The farming reward will be sent once per month directly in your ThreeFold Connect App wallet. Farming rewards are usually distributed around the 5th of each month.
 
 ***
 
 # Additional Information
 
-Congratulations, you now have built your first Threefold 3Node server! 
+Congratulations, you now have built your first ThreeFold 3Node server! 
 
-If you have any questions, you can ask the Threefold community for help on the [Threefold Forum](https://forum.threefold.io/) or on the [Threefold Telegram Farmer Group](https://t.me/threefoldfarmers).
+If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](https://forum.threefold.io/) or on the [ThreeFold Telegram Farmer Group](https://t.me/threefoldfarmers).

@@ -7,7 +7,7 @@
   - [The Minimum Bandwidth per 3Node Equation](#the-minimum-bandwidth-per-3node-equation)
   - [Cost per Month for a Given Bandwidth](#cost-per-month-for-a-given-bandwidth)
 - [Calculate Total Cost and Revenue](#calculate-total-cost-and-revenue)
-  - [Check Revenue with the Threefold Simulator](#check-revenue-with-the-threefold-simulator)
+  - [Check Revenue with the ThreeFold Simulator](#check-revenue-with-the-threefold-simulator)
   - [Economics of Farming](#economics-of-farming)
 - [Questions and Feedback](#questions-and-feedback)
 
@@ -40,7 +40,7 @@ We thus have 72 kWH per day. For 30 days, this would be
 
 > 72 * 30 = 2160 kWH / month.  
 
-At a kWh price of 0.10$ USD, we have a cost of 216 $USD per month for the electricity bill of our Threefold farm.
+At a kWh price of 0.10$ USD, we have a cost of 216 $USD per month for the electricity bill of our ThreeFold farm.
 
 > kWH / month of the farm * kWh Cost = Electricity Bill per month for the farm
 
@@ -49,11 +49,11 @@ At a kWh price of 0.10$ USD, we have a cost of 216 $USD per month for the electr
 ***
 ## Calculate the Proper Bandwidth Needed for Your Farm
 
-The bandwidth needed for a given 3Node is not yet set in stone and you are welcome to participate in ongoing [discussion on this subject](https://forum.threefold.io/t/storage-bandwidth-ratio/1389) on the Threefold Forum.
+The bandwidth needed for a given 3Node is not yet set in stone and you are welcome to participate in ongoing [discussion on this subject](https://forum.threefold.io/t/storage-bandwidth-ratio/1389) on the ThreeFold Forum.
 
-In this section, we will give general guidelines. The goal is to have a good idea of what constitutes a proper bandwidth available for a given amount of resources utilized on the Threefold Grid.
+In this section, we will give general guidelines. The goal is to have a good idea of what constitutes a proper bandwidth available for a given amount of resources utilized on the ThreeFold Grid.
 
-Starting with a minimum of 1 mbps per Titan, which is 1 TB SSD and 32 GB RAM, we note that this is the lowest limit that gives the opportunity for the most people possible to join the Threefold Grid. That being said, we could set that 10 mbps is an acceptable upper limit for 1 TB SSD and 64 GB of RAM. 
+Starting with a minimum of 1 mbps per Titan, which is 1 TB SSD and 32 GB RAM, we note that this is the lowest limit that gives the opportunity for the most people possible to join the ThreeFold Grid. That being said, we could set that 10 mbps is an acceptable upper limit for 1 TB SSD and 64 GB of RAM. 
 
 Those numbers are empirical and more information will be shared in the future. The ratio 1TB SSD/64GB RAM is in tune with the optimal TFT rewards ratio. It is thus logical to think that farmers will build 3Node based on this ratio. Giving general bandwidth guidelines based on this ratio unit could thus be efficient for the current try-and-learn situation. 
 ***
@@ -101,7 +101,7 @@ Thus, a 1 gbps bandwidth farm could have 16 3Nodes with each 5TB SSD, 48 threads
 
 ***
 
-In this section, we used **k = 10 mbps**. If you follow those guidelines, you will most probably have a decent bandwidth for your Threefold farm. For the time being, the goal is to have farmers building Threefold farms and scale them reasonably with their available bandwidth. 
+In this section, we used **k = 10 mbps**. If you follow those guidelines, you will most probably have a decent bandwidth for your ThreeFold farm. For the time being, the goal is to have farmers building ThreeFold farms and scale them reasonably with their available bandwidth. 
 
 Stay tuned for official bandwidth parameters in the future.
 
@@ -182,9 +182,9 @@ We note that this takes into consideration that we are using the AC system 24/7.
 We recall that in the section [Calculate the ROI of a DIY 3Node](#calculate-the-roi-of-a-diy-3Node), we found a simpler ROI of 6.25 months, say 7 months, that wasn't taking into consideration the additional costs of Internet and electricity. We now have a more realistic ROI of 9 months based on a fixed TFT price of 0.08$ USD. You will need to use to equations and check with your current TF farm and 3Nodes, as well as the current TFT market price.
 
 ***
-### Check Revenue with the Threefold Simulator
+### Check Revenue with the ThreeFold Simulator
 ***
-To know how much TFT you will farm per month for a giving 3Node, the easiest route is to use the [Threefold Simulator](https://simulator.grid.tf/). You can do predictions of 60 months as the TFT price is locked at the TFT price when you first connect your 3Node, and this, for 60 months.
+To know how much TFT you will farm per month for a giving 3Node, the easiest route is to use the [ThreeFold Simulator](https://simulator.grid.tf/). You can do predictions of 60 months as the TFT price is locked at the TFT price when you first connect your 3Node, and this, for 60 months.
 
 To know the details of the calculations behind this simulator, you can read [this documentation](https://library.threefold.me/info/threefold#/tfgrid/farming/threefold__farming_reward).
 
@@ -203,4 +203,4 @@ As a brief synthesis, the following equations are used to calculate the total re
 
 ## Questions and Feedback
 
-This section constitutes a quick synthesis of the costs and revenues when running a Threefold Farm. As always, do your own reseaerch and don't hesitate to visit the [Threefold Forum](https://forum.threefold.io/) on the [Threefold Telegram Farmer Group](https://t.me/threefoldfarmers) if you have any questions.
+This section constitutes a quick synthesis of the costs and revenues when running a ThreeFold Farm. As always, do your own reseaerch and don't hesitate to visit the [ThreeFold Forum](https://forum.threefold.io/) on the [ThreeFold Telegram Farmer Group](https://t.me/threefoldfarmers) if you have any questions.

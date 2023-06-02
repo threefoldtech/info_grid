@@ -42,9 +42,9 @@ It will cost 50 TFT* to bridge from Stellar to BSC, and 1 TFT to bridge from BSC
 2. Connect your MetaMask Wallet.
 3. Sign in with MetaMask.
 4. Choose the option  *Deposit from Stellar*.
-5. Agree to the  *Threefold Terms*.
+5. Agree to the  *ThreeFold Terms*.
 6. Read and tick the box of the  *Warning Message*.
-7. On your phone, open up your Threefold Connect App and go to the wallet section.
+7. On your phone, open up your ThreeFold Connect App and go to the wallet section.
 8. Select the option  *Send*.
 9. Select the  *Stellar*  chain.
 10. Click on the button  *Scan QR Code* . The QR Code option automatically fill up your  *MESSAGE*.
@@ -72,9 +72,9 @@ In this method, you use the Bridge directly. Thus, it is normal if you do not se
 2. Connect your MetaMask Wallet.
 3. Sign in with MetaMask.
 4. Choose the option  *Deposit from BSC*.
-5. Agree to the  *Threefold Terms*.
+5. Agree to the  *ThreeFold Terms*.
 6. Read and tick the box of the  *Warning Message*.
-7. On your phone, open up your Threefold Connect App and go to the wallet section.
+7. On your phone, open up your ThreeFold Connect App and go to the wallet section.
 8. Copy your Stellar address.
 9. Paste your Stellar address in the proper field on The BSC-Stellar Bridge.
 10. Enter the amount of TFT you want to bridge.

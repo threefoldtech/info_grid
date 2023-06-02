@@ -34,7 +34,7 @@ Welcome to the Farmerbot. The Farmerbot is a service that a farmer can run in or
 
 The key feature of the Farmerbot is powermanagement. The Farmerbot will automatically shutdown nodes from its farm whenever possible and bring them back on using Wake-on-Lan (WOL) when they are needed. It will try to maximize downtime as much as possible by recommending which nodes to use, this is one of the requests that the farmerbot can handle. All this behavior is customizable through markup definition files. 
 
-There are 3 main steps to run the Farmerbot on your 3node Threefold farm.
+There are 3 main steps to run the Farmerbot on your 3Node Threefold farm.
 
 * Prepare Your Farm for the Farmerbot with WOL
 * Move Your Farm to either Main Net, Test Net, QA Net or Dev Net (optional)
@@ -108,13 +108,13 @@ Your farmerbot can be run on any system, including on a node. It doesn't have to
 
 Note that the farmerbot is currently available for Dev Net, QA Net, Test Net and Main Net. Thus, it might not be necessary to move your farm to a different network.
 
-To move your farm to a different network, you need to create a new bootstrap image for the new network instead of your current network. You should also wipe your 3nodes' disks before moving to a different network.
+To move your farm to a different network, you need to create a new bootstrap image for the new network instead of your current network. You should also wipe your 3Nodes' disks before moving to a different network.
 
 To download the Zero-OS bootstrap image, go to the usual bootstrap link [https://v3.bootstrap.grid.tf/](https://v3.bootstrap.grid.tf/) and select the network you want.
 
 ![test_net|690x422](img/farmerbot_5.png) 
 
-Once you have your new bootstrap image for the new network, [wipe your disks](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#4-wipe-all-the-disks), insert the new bootstrap image and reboot the 3node.
+Once you have your new bootstrap image for the new network, [wipe your disks](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#4-wipe-all-the-disks), insert the new bootstrap image and reboot the 3Node.
 
 ***
 # How to Set the Farmerbot
@@ -124,7 +124,7 @@ The sections on this page will guide you through the requirements, the required 
 ## Requirements
 The Farmerbot is shipped inside a docker image so that it is easy to run in a docker environment. Thus, the one and only requirement to run the farmerbot is docker so please [install docker](https://docs.docker.com/engine/install/) on your VM or your system. Next, you'll have to copy the [docker-compose file](https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml) that will start the farmerbot for you when executing the command specified in section [Running the farmerbot](#running-the-farmerbot).
 
-Note that you can read [this SSH guide](../getstarted/ssh_guide/ssh_guide.md) to learn how to deploy a Full VM on the Threefold Grid with Linux, Mac or Linux with IPv4 or the Planetary Network. Also note that the farmerbot doesn't need an IPv4 connection. It is thus cheaper to use the Planetary Network. 
+Note that you can read [this SSH guide](../getstarted/ssh_guide/ssh_guide.md) to learn how to deploy a Full VM on the ThreeFold Grid with Linux, Mac or Linux with IPv4 or the Planetary Network. Also note that the farmerbot doesn't need an IPv4 connection. It is thus cheaper to use the Planetary Network. 
 
 With the minimum Ubuntu Full VM requirements, it currently costs 0.25TFT/hour to run with the Planetary Network (Date: 24-03-23). This should suffice to run the Farmerbot. This is around 180 TFT/month. Of course, check for yourselves if the costs are correct.
 
@@ -303,4 +303,4 @@ Consult the Farmerbot FAQ [here](../faq/faq.md#farmerbot).
 
 If you have any questions, please let us know.
 
-You can ask questions on this [Threefold Forum post](https://forum.threefold.io/t/farmerbot-basic-guide-for-qa-net/3845).
+You can ask questions on this [ThreeFold Forum post](https://forum.threefold.io/t/farmerbot-basic-guide-for-qa-net/3845).
