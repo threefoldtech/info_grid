@@ -113,7 +113,7 @@
   - [DAO Voting](dashboard/dao_voting/dao_voting.md)
 - [Flist Hub](flist_hub/flist_hub.md)
   - [Supported FLists](manual3_iac/grid3_supported_flists.md)
-- [Farmers](farmers/farmers_readme.md)
+- [Farmers](farmers/farmers.md)
   - [Build a 3Node](farmers/3node_building/3node_building.md)
     - [1. Create a Farm](farmers/3node_building/1_create_farm.md)
     - [2. Create a Zero-OS Bootstrap Image](farmers/3node_building/2_bootstrap_image.md)
