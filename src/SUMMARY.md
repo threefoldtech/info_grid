@@ -142,6 +142,7 @@
         - [TFChain-Stellar Bridge](farmers/threefold_token/buy_sell_tft/tfchain_stellar_bridge.md)
         - [Ethereum-Stellar Bridge](getstarted/TF_Token/tft_ethereum/tft_ethereum.md)
   - [Farmerbot](farmers/farmerbot/farmerbot.md)
+  - [Farmers FAQ](farmers/farmers_faq/farmers_faq.md)
 - [ThreeFold Video Gallery](tf_video_gallery/tf_video_gallery.md)
 - [ThreeFold Mastodon Server](tf_mastodon/tf_mastodon_readme.md)
   - [Mastodon Deployer Manual](tf_mastodon/tf_mastodon_deploy.md)

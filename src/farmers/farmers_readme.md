@@ -32,3 +32,4 @@
       - [TFChain-Stellar Bridge](./threefold_token/buy_sell_tft/tfchain_stellar_bridge.html)
       - [Ethereum-Stellar Bridge](../getstarted/TF_Token/tft_ethereum/tft_ethereum.html)
 - [Farmerbot](./farmerbot/farmerbot.html)
+- [Farmers FAQ](./farmers_faq/farmers_faq.html)
