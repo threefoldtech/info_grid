@@ -117,6 +117,8 @@ A Graphical user interface (GUI) provided by ThreeFold for users to access and m
 ### Farm Management 
 A set of tools, processes, and functionalities provided by ThreeFold to manage and operate farms within the ThreeFold Grid. Farms are the physical locations where ThreeFold Farmers deploy and maintain the infrastructure that powers the decentralized network. TF Farm Management offers a comprehensive suite of features that enable farmers to efficiently manage their resources, monitor the health and performance of their infrastructure, and handle various administrative tasks. This includes functionalities such as capacity allocation, monitoring and reporting tools, farmer reputation management, billing and invoicing systems, and overall farm administration. 
 
+Note: This is a feature that involves multiple component repositories. It is listed here to give a complete picture of ThreeFold's component list.
+
 ### TF Farming Calculator
 A tool provided by ThreeFold that allows users to estimate and calculate potential earnings from farming on the ThreeFold Grid. Farming refers to the process of providing computing resources, such as storage and processing power, to the ThreeFold Grid and earning tokens in return. The tf-farming-calculator takes into account various factors, including the amount of resources contributed, the duration of farming, and the current market conditions, to provide users with an estimate of their potential earnings in terms of ThreeFold Tokens (TFT).
 
@@ -136,6 +138,8 @@ The Twin Main App allows users to securely communicate, share files, and collabo
 
 ### GetTFT Shop
 An official, online platform provided by ThreeFold where users can purchase ThreeFold Tokens (TFT) directly. It serves as a dedicated marketplace for individuals and organizations to buy TFT tokens using various payment methods. The GetTFT Shop ensures a seamless and user-friendly experience for acquiring TFT, which is the native cryptocurrency of the ThreeFold ecosystem.
+
+Note: This repository is private. You can visit the GetTFT Shop [here](https://gettft.com/gettft/shop/).
 
 ### TF Grid3 Client TS
 A software component that serves as a client library for interacting with the Grid3 platform. It provides developers with a set of tools, functions, and interfaces to communicate with the ThreeFold Grid and utilize its resources. The Grid3 Client TS allows users to perform various operations, such as creating and managing virtual machines, deploying applications, accessing storage services, and interacting with the decentralized network. It acts as a bridge between developers and the ThreeFold Grid, enabling them to leverage the platform's decentralized infrastructure and harness its capabilities programmatically. 
@@ -183,6 +187,8 @@ With js-ng, developers can build interactive user interfaces, handle data manage
 
 ### Itenv_TFGridv2 
 The development and testing environment for the TFGrid v2, which is the second version of the ThreeFold Grid. It is a comprehensive set of tools, configurations, and resources that enable developers to create, test, and deploy applications on the ThreeFold Grid infrastructure. The itenv_tfgridv2 environment provides developers with the necessary tools and utilities to set up a local development environment that closely resembles the production environment of the ThreeFold Grid. It includes various components such as virtual machines, containers, networking configurations, and monitoring tools, all specifically tailored for the development and testing of applications on the ThreeFold Grid. 
+
+Note: This repository is private.
 
 ### Libp2p-relay 
 A component within the ThreeFold ecosystem that refers to the libp2p relay functionality. libp2p is a modular networking stack that allows peer-to-peer communication and data transfer between nodes in a decentralized network. The libp2p-relay component specifically focuses on providing relay services, which enable nodes that are behind firewalls or NATs (Network Address Translators) to establish direct connections with other nodes in the network. This relaying functionality helps overcome network obstacles and facilitates seamless communication between nodes, ensuring that the ThreeFold Grid operates efficiently and nodes can interact with each other effectively.
@@ -276,6 +282,8 @@ The bridge mechanism that enables the conversion of TFT tokens between different
 ### 3Bot or Threebot
 3Bot is a component of the ThreeFold ecosystem that refers to a personal digital assistant. It is a software entity that acts as a virtual representation of an individual or organization, providing various services and performing tasks on their behalf. The 3Bot is designed to be decentralized and secure, running on the ThreeFold Grid infrastructure. It can handle functions such as managing personal data, interacting with other digital entities, executing transactions, and offering a range of services through its customizable capabilities. The 3Bot component enables individuals and organizations to have their own private and secure digital assistant, tailored to their specific needs and preferences.
 
+Note: This is a feature that involves multiple component repositories. It is listed here to give a complete picture of ThreeFold's component list.
+
 ### Threebot-deployer or 3Bot Deployer
 A tool provided by ThreeFold that facilitates the deployment of ThreeFold's ThreeBot applications. A ThreeBot is a personal digital assistant that can perform various tasks and provide services to users. The threebot-deployer simplifies the process of setting up and configuring a ThreeBot instance by automating many of the steps involved. It allows users to specify the desired configuration and parameters for their ThreeBot, such as the domain name, authentication settings, and available services. The threebot-deployer then handles the deployment process, ensuring that the ThreeBot is properly installed and configured according to the specified parameters. This tool streamlines the deployment process and enables users to quickly and easily set up their own personalized ThreeBot instances.
 
@@ -309,7 +317,7 @@ Also known as Zero-Bootstrap, is a component of the ThreeFold Grid infrastructur
 ### 0-Bus or ZBus
 A component that facilitates interprocess communication (IPC) within the ThreeFold technology stack. It provides a lightweight and efficient messaging system that allows different software components or services to communicate with each other in a distributed environment. zbus implements a message bus architecture, where components can publish messages to topics and subscribe to receive messages from those topics. It enables decoupled and asynchronous communication between various parts of the system, promoting modularity and scalability. zbus plays a crucial role in enabling communication and coordination between different components of the ThreeFold infrastructure, such as the ThreeBot, ThreeFold Chain, and storage services, allowing them to work together seamlessly to deliver the desired functionality.
 
-> [Component Repository on Github](https://github.com/threefoldtech/zubs)
+> [Component Repository on Github](https://github.com/threefoldtech/zbus)
 
 ### 0-DB
 a distributed key-value database system. It is designed to provide efficient and secure storage for data in a decentralized environment. 
