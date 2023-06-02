@@ -18,6 +18,7 @@ There are several weblets you can use like:
 - Basic Environments:
   - [Virtual Machine](./weblets_vm.md)
   - [Kubernetes](./weblets_k8s.md)
+  - [NixOS MicroVM](./weblets_nixos_micro.md)
 
 - Ready Community Solutions:
   - [Caprover](./weblets_caprover.md)

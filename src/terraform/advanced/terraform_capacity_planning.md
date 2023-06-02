@@ -1,4 +1,4 @@
-# Capacity planning
+# Capacity Planning
 
 ![ ](./img//terraform_.png)
 
