@@ -1,10 +1,8 @@
 ![Farming_Title](./img/farming_30.png)
 
-<body>
-<h1>DIY 3Node Guide - Rack Server - Dell R620 / R720</h1>
-</body>
+<h1>Building a DIY 3Node: Rack Server</h1>
 
-In the following 3Node DIY guide, you will learn how to turn a Dell server (R620, R720) into a 3Node farming on the ThreeFold Grid 3.0. 
+In the following 3Node DIY guide, you will learn how to turn a Dell server (R620, R720) into a 3Node farming on the ThreeFold Grid. 
 
 Note that the process is similar for other rack servers.
 

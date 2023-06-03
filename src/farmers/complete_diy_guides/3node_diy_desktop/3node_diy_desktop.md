@@ -1,8 +1,10 @@
 ![Farming_Title](./img/farming_30.png)
 
-<h1>Threefold Farming</h1>
+<h1>Building a DIY 3Node: Desktop Computer</h1>
 
-<h2>Building a DIY 3Node: Desktop Computer</h2>
+In the following 3Node DIY guide, you will learn how to turn a Dell Optiplex 7020 into a 3Node farming on the ThreeFold Grid. 
+
+Note that the process is similar for other desktop computers.
 
 <div style="break-after:page"></div>
 
