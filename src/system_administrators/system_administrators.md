@@ -2,7 +2,6 @@
 
 <h2> Table of Contents </h2>
 
-- [System Administrators](../system_administrators/system_administrators.md)
 - [Getting Started](../getstarted/tfgrid3_getstarted.md)
   - [ThreeFold Connect](../getstarted/TF_Connect/TF_Connect.md)
   - [ThreeFold Token](../getstarted/TF_Token/tft_toc.md)
