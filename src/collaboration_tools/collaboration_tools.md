@@ -3,3 +3,4 @@
 <h2>Table of Contents</h2>
 
 - [Circle Tool](./circle_tool.md)
+- [Website Deployer](./website_tool.md)
