@@ -10,6 +10,17 @@ The ThreeFold Grid is a global, peer-to-peer network that aims to create a more 
 
 Within this manual, you will find a wealth of information on how to leverage the capabilities of the ThreeFold Grid. Whether you are an individual user, a farmer, a developer, or a business entity, this manual will guide you through the process of accessing, deploying, and managing resources on the grid.
 
+## Where to Start?
+
+* If you are new to the ThreeFold ecosystem and would like to understand the big picture...
+  * Read the [General Information](../general/general.md) book.
+* If you want to farm TFT, the token fueling the ThreeFold ecosystem...
+  * Read the [Farmers](../farmers/farmers.md) book.
+* If you want to become a developer on the ThreeFold Grid...
+  * Read the [Developers](../developers/developers.md) book.
+* If you want to become a system administrator on the ThreeFold Grid
+  * Read the [System Administrators](../system_administrators/system_administrators.md) book.
+
 ## Key Sections
 
 - [The Grid Concepts](../concepts/concepts_readme.md): This section provides a brief introduction to the ThreeFold Grid, its core concepts, and its key benefits. It will help you understand the fundamental principles behind the grid and set the stage for further exploration.
@@ -19,4 +30,17 @@ Within this manual, you will find a wealth of information on how to leverage the
 
 We hope that the ThreeFold Grid Manual proves to be a valuable resource as you embark on your journey through the decentralized world of the ThreeFold Grid. Whether you are new to decentralized technologies or an experienced user, this manual aims to equip you with the knowledge and understanding needed to fully leverage the potential of the ThreeFold Grid.
 
-We encourage you to explore each section thoroughly, and should you have any questions or need further assistance, our dedicated [support team](https://threefoldfaq.crisp.help/en/) is here to help. Welcome to the ThreeFold Grid, where together, we can shape a more sustainable and inclusive digital future.
+## Join the ThreeFold Community
+
+The ThreeFold community is very active and its members will be more than happy to discuss and help you get started.
+
+* [ThreeFold Forum](https://forum.threefold.io/)
+* [ThreeFold General Telegram Channel](https://t.me/threefold)
+* [ThreeFold Farmer Telegram Channel](https://t.me/threefoldfarmers)
+* [TFGrid Tester Telegram Channel](https://t.me/threefoldtesting)
+
+## Questions and Feedback
+
+We encourage you to explore each section thoroughly, and should you have any questions or need further assistance, our dedicated [support team](https://threefoldfaq.crisp.help/en/) is here to help. 
+
+Welcome to the ThreeFold Grid, where together we can shape a more sustainable and inclusive digital future!
