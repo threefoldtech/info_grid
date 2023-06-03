@@ -1,5 +1,5 @@
 ![wethreepedia_faq_poster](img/wethreepedia_faq_poster.jpg)
-<h1> FARMERS FAQ </h1>
+<h1> Farmers FAQ </h1>
 
 <h2> Table of Contents </h2>
 
