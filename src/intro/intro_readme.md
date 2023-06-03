@@ -18,7 +18,7 @@ Within this manual, you will find a wealth of information on how to leverage the
   * Read the [Farmers](../farmers/farmers.md) book.
 * If you want to become a developer on the ThreeFold Grid...
   * Read the [Developers](../developers/developers.md) book.
-* If you want to become a system administrator on the ThreeFold Grid
+* If you want to become a system administrator on the ThreeFold Grid...
   * Read the [System Administrators](../system_administrators/system_administrators.md) book.
 
 ## Key Sections
