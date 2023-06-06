@@ -4334,7 +4334,8 @@ If you see this error, it's because you've used 24h time format in conjunction w
 2. Download the new docker-compose file: `wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml`
 3. Modify the .env file: rename `MNEMONIC` to `SECRET`
 4. Stop the existing farmerbot: `docker compose rm -f -s -v`
-5. Run the new farmerbot: `docker compose up -d`
+5. Make a copy of the farmerbot log file: `cp config/farmerbot.log config/farmerbot.log.archive`
+6. Run the new farmerbot: `docker compose up -d`
 
 This last command can take some time as it is downloading new docker images. Let the farmerbot run for some time. If you think something is wrong or if you want to check if there is something wrong you should look into the config/farmerbot.log file. If you see some errors please share that file with us.
 
@@ -4399,7 +4400,7 @@ Yes, this is an expected behaviour. When you restart the Farmerbot, it will then
 
 ### I deleted the log files in the config folder, but no new log files have been generated. How can I generate new log files for the Farmerbot?
 
-To generate new log files for the Farmerbot after deleting the original log files, you need to restart the Farmerbot for changes to take effect. 
+You can always get the logs from docker too via `docker compose logs` (run this command in the folder where your docker compose file is located). You can restart the Farmerbot to start the logging to file again (keep in mind that it will execute the periodic wakeup for all nodes at startup).
 
 You should also make sure that you didn't use a different file structure.
 
