@@ -2098,7 +2098,7 @@ Yes, this is an expected behaviour. When you restart the Farmerbot, it will then
 
 ### I deleted the log files in the config folder, but no new log files have been generated. How can I generate new log files for the Farmerbot?
 
-To generate new log files for the Farmerbot after deleting the original log files, you need to restart the Farmerbot for changes to take effect. 
+You can always get the logs from docker too via `docker compose logs` (run this command in the folder where your docker compose file is located). You can restart the Farmerbot to start the logging to file again (keep in mind that it will execute the periodic wakeup for all nodes at startup).
 
 You should also make sure that you didn't use a different file structure.
 
