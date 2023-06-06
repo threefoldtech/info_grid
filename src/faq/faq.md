@@ -2825,23 +2825,23 @@ They are distributed once a month, around the 8th*. Distributions are not daily,
 
 ### On ThreeFold Grid v3, how can I verify my 3nodes' payments on Stellar Blockchain?
 
-Here's the summary on how to find the details of a 3node's payment:
+Here's the summary on how to find the details of a 3node's payment on the Stellar Blockchain using the ThreeFold Alpha Minting tool:
 
-1. Go to [https://stellar.expert](https://stellar.expert)
+1. Go to [https://stellar.expert](https://stellar.expert).
 
-2. Open the hamburger menu on the top right (mobile version)
+2. Open the hamburger menu on the top right (mobile version).
 
-3. Paste your wallet address in the search bar
+3. Paste your wallet address in the search bar.
 
-4. Go to the last payment you want details of
+4. Go to the last payment you want details of.
    
-5. Make sure the Memo (HASH) is in the HEX format. If it isn't click on *base64* and change it to *hex*.
+5. Make sure the Memo (HASH) is in the HEX format. If it isn't, click on *base64* and change it to *hex*.
 
-6. Copy the Memo (HASH)
+6. Copy the Memo (HASH).
 
-7. Go to [https://alpha.minting.tfchain.grid.tf/](https://alpha.minting.tfchain.grid.tf/)
+7. Go to the ThreeFold Alpha minting tool at [https://alpha.minting.tfchain.grid.tf/](https://alpha.minting.tfchain.grid.tf/).
 
-8. Paste the Memo (HASH) you copied. You will find the details of the 3node's payment
+8. Paste the Memo (HASH) you copied. You will find the details of the 3node's payment.
 
 NB: A full period is 2630880 seconds.
 
