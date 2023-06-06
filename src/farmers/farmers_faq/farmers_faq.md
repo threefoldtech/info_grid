@@ -2033,7 +2033,7 @@ If you see this error, it's because you've used 24h time format in conjunction w
 3. Modify the .env file: rename `MNEMONIC` to `SECRET`
 4. Stop the existing farmerbot: `docker compose rm -f -s -v`
 5. Make a copy of the farmerbot log file: `cp config/farmerbot.log config/farmerbot.log.archive`
-5. Run the new farmerbot: `docker compose up -d`
+6. Run the new farmerbot: `docker compose up -d`
 
 This last command can take some time as it is downloading new docker images. Let the farmerbot run for some time. If you think something is wrong or if you want to check if there is something wrong you should look into the config/farmerbot.log file. If you see some errors please share that file with us.
 
