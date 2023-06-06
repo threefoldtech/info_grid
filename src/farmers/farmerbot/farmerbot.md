@@ -292,7 +292,7 @@ docker compose up -d
 
 # Farmerbot FAQ
 
-Consult the Farmerbot FAQ [here](../faq/faq.md#farmerbot).
+Consult the Farmerbot FAQ [here](../farmers_faq/farmers_faq.md#farmerbot).
 
 ***
 
