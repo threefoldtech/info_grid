@@ -2827,7 +2827,7 @@ They are distributed once a month, around the 8th*. Distributions are not daily,
 
 Here's the summary on how to find the details of a 3node's payment:
 
-1. Go to https://stellar.expert
+1. Go to [https://stellar.expert](https://stellar.expert)
 
 2. Open the hamburger menu on the top right (mobile version)
 
@@ -2839,7 +2839,7 @@ Here's the summary on how to find the details of a 3node's payment:
 
 6. Copy the Memo (HASH)
 
-7. Go to https://alpha.minting.tfchain.grid.tf/
+7. Go to [https://alpha.minting.tfchain.grid.tf/](https://alpha.minting.tfchain.grid.tf/)
 
 8. Paste the Memo (HASH) you copied. You will find the details of the 3node's payment
 
