@@ -270,7 +270,13 @@ wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docke
 docker compose up -d
 ```
 
-If the farmerbot is already running and you want to run the new version of the farmerbot, write the following commands instead (for more info, click [here](https://forum.threefold.io/t/farmerbot-basic-guide-for-qa-net/3845/14)):
+The farmerbot should be up and running within a couple of seconds. A log file will be created inside of the config folder called farmerbot.log. **It is very important to keep this file in case the farmerbot encounters errors. Without the log file we cannot debug the farmerbot.** If you deleted the log file by mistake you can get it back through docker via the command:
+
+```
+docker compose log > farmerbot.log
+```
+
+If the farmerbot is already running and you want to run the new version of the farmerbot (or restart the farmerbot), write the commands shown below (for more info, click [here](https://forum.threefold.io/t/farmerbot-basic-guide-for-qa-net/3845/14)). **Make sure to copy the log file before doing so!**
 
 ```
 wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
@@ -281,15 +287,6 @@ mv config/farmerbot.log config/farmerbot.log.archive
 
 docker compose up -d
 ```
-
-The farmerbot should be running after a couple of seconds. It will create a log file inside your config folder called *farmerbot.log*. 
-
-If the docker-compose file has changed and you wish to run the new version you will have to copy the new docker-compose file, stop the running farmerbot and start the new farmerbot. Or just run the command (copy or delete the log file first):
-```
-wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
-docker compose rm -f -s -v && docker compose up -d
-```
-This again will take a couple of seconds.
 
 ***
 
