@@ -19,6 +19,8 @@ jobs:
           cd ~/websites/www3/info_grid
           git log -1
           git restore .
+          git fetch origin
+          git reset --hard origin/development-split
           git pull
           source ~/.cargo/env
           mdbook build -d docs
