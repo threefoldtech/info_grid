@@ -1,0 +1,219 @@
+first, make sure you have your [client](./grid3_javascript_loadclient.md) prepared
+
+## Deploying a VM with Wireguard and gateway
+
+### Code example
+
+```ts
+import { FilterOptions, GatewayNameModel, GridClient, MachineModel, MachinesModel, NetworkModel } from "../src";
+import { config, getClient } from "./client_loader";
+import { log } from "./utils";
+
+function createNetworkModel(gwNode: number, name: string): NetworkModel {
+  return {
+    name,
+    addAccess: true,
+    accessNodeId: gwNode,
+    ip_range: "10.238.0.0/16",
+  } as NetworkModel;
+}
+function createMachineModel(node: number) {
+  return {
+    name: "testvm1",
+    node_id: node,
+    public_ip: false,
+    planetary: true,
+    cpu: 1,
+    memory: 1024 * 2,
+    rootfs_size: 0,
+    disks: [],
+    flist: "https://hub.grid.tf/tf-official-apps/threefoldtech-ubuntu-22.04.flist",
+    entrypoint: "/usr/bin/python3 -m http.server --bind ::",
+    env: {
+      SSH_KEY: config.ssh_key,
+    },
+  } as MachineModel;
+}
+function createMachinesModel(vm: MachineModel, network: NetworkModel): MachinesModel {
+  return {
+    name: "newVMs",
+    network,
+    machines: [vm],
+    metadata: "",
+    description: "test deploying VMs with wireguard via ts grid3 client",
+  } as MachinesModel;
+}
+function createGwModel(node_id: number, ip: string, networkName: string, name: string, port: number) {
+  return {
+    name,
+    node_id,
+    tls_passthrough: false,
+    backends: [`http://${ip}:${port}`],
+    network: networkName,
+  } as GatewayNameModel;
+}
+
+async function main() {
+  const grid3 = await getClient();
+
+  const gwNode = +(await grid3.capacity.filterNodes({ gateway: true }))[0].nodeId;
+
+  const vmQueryOptions: FilterOptions = {
+    cru: 1,
+    mru: 2, // GB
+    availableFor: grid3.twinId,
+    farmId: 1,
+  };
+  const vmNode = +(await grid3.capacity.filterNodes(vmQueryOptions))[0].nodeId;
+
+  const network = createNetworkModel(gwNode, "monNetwork");
+  const vm = createMachineModel(vmNode);
+  const machines = createMachinesModel(vm, network);
+  log(`Deploying vm on node: ${vmNode}, with network node: ${gwNode}`);
+
+  // deploy the vm
+  const vmResult = await grid3.machines.deploy(machines);
+  log(vmResult);
+
+  const deployedVm = await grid3.machines.getObj(machines.name);
+  log("+++ deployed vm +++");
+  log(deployedVm);
+
+  // deploy the gateway
+  const vmPrivateIP = (deployedVm as { interfaces: { ip: string }[] }[])[0].interfaces[0].ip;
+  const gateway = createGwModel(gwNode, vmPrivateIP, network.name, "pyserver", 8000);
+  log(`deploying gateway ${network.name} on node ${gwNode}`);
+
+  const gatewayResult = await grid3.gateway.deploy_name(gateway);
+  log(gatewayResult);
+
+  log("+++ Deployed gateway +++");
+
+  const l = await grid3.gateway.getObj(gateway.name);
+  log(l);
+
+  await grid3.disconnect();
+}
+
+main();
+
+```
+
+### Detailed explanation
+
+What we need to do with that code is:
+
+- Deploy Vm with wireguard access.
+- Deploy gateway to access the machine through it.
+
+This will be done through the following steps:
+
+#### Getting the client
+
+```ts
+const grid3 = getClient();
+```
+
+#### Getting the nodes
+
+Determine the deploying nodes for the vm, network and gateway.
+
+- Gateway and network access node
+
+  ```ts
+  const gwNode = +(await grid3.capacity.filterNodes({ gateway: true }))[0].nodeId;
+  ```
+
+  Using the `filterNodes` method, will get the first gateway node id, we will deploy the gateway and will use it as our network access node.
+
+  > The gateway node must be the same as the network access node.
+- VM node
+
+  we need to set the filter options first for this example we will deploy the vm with 1 cpu, 2 GB of memory.
+  now will crete a `FilterOptions` object with that specs and get the firs node id of the result.
+
+  ```ts
+    const vmQueryOptions: FilterOptions = {
+    cru: 1,
+    mru: 2, // GB
+    availableFor: grid3.twinId,
+    farmId: 1,
+  };
+  const vmNode = +(await grid3.capacity.filterNodes(vmQueryOptions))[0].nodeId;
+  ```
+
+#### Deploy the VM
+
+We need to create the network and machine models, the deploy the VM
+
+```ts
+const network = createNetworkModel(gwNode, "monNetwork");
+const vm = createMachineModel(vmNode);
+const machines = createMachinesModel(vm, network);
+log(`Deploying vm on node: ${vmNode}, with network node: ${gwNode}`);
+
+// deploy the vm
+const vmResult = await grid3.machines.deploy(machines);
+log(vmResult);
+```
+
+- `CreateNetWorkModel` :
+ we are creating a network and set the node id to be `gwNode`, the name `monNetwork` and inside the function we set `addAccess: true` to add __wireguard__ access.
+
+- `createMachineModel` and `createMachinesModel` is similar to the previous section of [deploying a single VM](../javascript/grid3_javascript_vm.md), but we are passing the created `NetworkModel` to the machines model and the entry point here runs a py server .
+
+#### Deploy the Gateway
+
+Now we have our VM deployed with it's network, we need to make the gateway on the same node, same network and pointing to the VM's private IP address.
+
+- Get the VM's private IP address:
+  
+  ```ts
+  const vmPrivateIP = (deployedVm as { interfaces: { ip: string }[] }[])[0].interfaces[0].ip;
+  ```
+
+- Create the Gateway name model:
+  
+  ```ts
+  const gateway = createGwModel(gwNode, vmPrivateIP, network.name, "pyserver", 8000);
+  ```
+
+  This will create a `GatewayNameModel` with the following properties:
+  
+  - `name` : the subdomain name
+  - `node_id` : the gateway node id
+  - `tls_passthrough: false`
+  - `backends: [`http://${ip}:${port}`]` : the private ip address and the port number of our machine
+  - `network: networkName` : the network name, we already created earlier.
+
+#### Get the deployments information
+
+  ```ts
+  const deployedVm = await grid3.machines.getObj(machines.name); 
+  log("+++ deployed vm +++");
+  log(deployedVm);
+
+  log("+++ Deployed gateway +++");
+  const l = await grid3.gateway.getObj(gateway.name);
+  log(l);
+  ```
+
+#### Disconnect the client
+
+finally we need to disconnect the client using `await grid3.disconnect();`
+
+#### Delete the deployments
+
+If we want to delete the deployments we can just do this:
+
+```ts
+  const deletedMachines = await grid3.machines.delete({ name:  machines.name});
+  log(deletedMachines);
+
+  const deletedGW = await grid3.gateway.delete_name({ name: gateway.name});
+  log(deletedGW);
+```
+
+### Summary
+
+This was a detailed description of how we can create a vm with private ip (wireguard) and use it as a backend for a gateway contract.
