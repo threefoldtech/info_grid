@@ -273,7 +273,7 @@ docker compose up -d
 The farmerbot should be up and running within a couple of seconds. A log file will be created inside of the config folder called farmerbot.log. **It is very important to keep this file in case the farmerbot encounters errors. Without the log file we cannot debug the farmerbot.** If you deleted the log file by mistake you can get it back through docker via the command:
 
 ```
-docker compose log > farmerbot.log
+docker compose logs > farmerbot.log
 ```
 
 If the farmerbot is already running and you want to run the new version of the farmerbot (or restart the farmerbot), write the commands shown below (for more info, click [here](https://forum.threefold.io/t/farmerbot-basic-guide-for-qa-net/3845/14)). **Make sure to copy the log file before doing so!**
