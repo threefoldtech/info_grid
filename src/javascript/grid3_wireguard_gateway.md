@@ -92,8 +92,8 @@ async function main() {
 
   log("+++ Deployed gateway +++");
 
-  const l = await grid3.gateway.getObj(gateway.name);
-  log(l);
+  const deployedGw = await grid3.gateway.getObj(gateway.name);
+  log(deployedGw);
 
   await grid3.disconnect();
 }
@@ -160,7 +160,7 @@ log(vmResult);
 - `CreateNetWorkModel` :
  we are creating a network and set the node id to be `gwNode`, the name `monNetwork` and inside the function we set `addAccess: true` to add __wireguard__ access.
 
-- `createMachineModel` and `createMachinesModel` is similar to the previous section of [deploying a single VM](../javascript/grid3_javascript_vm.md), but we are passing the created `NetworkModel` to the machines model and the entry point here runs a py server .
+- `createMachineModel` and `createMachinesModel` is similar to the previous section of [deploying a single VM](../javascript/grid3_javascript_vm.md), but we are passing the created `NetworkModel` to the machines model and the entry point here runs a simple python server.
 
 #### Deploy the Gateway
 
@@ -194,9 +194,62 @@ Now we have our VM deployed with it's network, we need to make the gateway on th
   log(deployedVm);
 
   log("+++ Deployed gateway +++");
-  const l = await grid3.gateway.getObj(gateway.name);
-  log(l);
+  const deployedGw = await grid3.gateway.getObj(gateway.name);
+  log(deployedGw);
   ```
+
+- `deployedVm` : is an array of one object contains the details about the vm deployment.
+
+  ```ts
+  [
+  {
+    version: 0,
+    contractId: 30658,
+    nodeId: 11,
+    name: 'testvm1',
+    created: 1686225126,
+    status: 'ok',
+    message: '',
+    flist: 'https://hub.grid.tf/tf-official-apps/threefoldtech-ubuntu-22.04.flist',
+    publicIP: null,
+    planetary: '302:9e63:7d43:b742:3582:a831:cd41:3f19',
+    interfaces: [ { network: 'monNetwork', ip: '10.238.2.2' } ],
+    capacity: { cpu: 1, memory: 2048 },
+    mounts: [],
+    env: {
+      SSH_KEY: 'ssh'
+    },
+    entrypoint: '/usr/bin/python3 -m http.server --bind ::',
+    metadata: '{"type":"vm","name":"newVMs","projectName":""}',
+    description: 'test deploying VMs with wireguard via ts grid3 client',
+    rootfs_size: 0,
+    corex: false
+  }
+  ]
+  ```
+
+- `deployedGw` : is an array of one object contains the details of the gateway name.
+  
+  ```ts
+  [
+  {
+    version: 0,
+    contractId: 30659,
+    name: 'pyserver1',
+    created: 1686225139,
+    status: 'ok',
+    message: '',
+    type: 'gateway-name-proxy',
+    domain: 'pyserver1.gent02.dev.grid.tf',
+    tls_passthrough: false,
+    backends: [ 'http://10.238.2.2:8000' ],
+    metadata: '{"type":"gateway","name":"pyserver1","projectName":""}',
+    description: ''
+  }
+  ]
+  ```
+
+  Now we can access the vm using the `domain` that returned in the object. 
 
 #### Disconnect the client
 
