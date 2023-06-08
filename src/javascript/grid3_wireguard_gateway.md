@@ -1,4 +1,7 @@
-first, make sure you have your [client](./grid3_javascript_loadclient.md) prepared
+
+### client configurations
+
+Check [client](./grid3_javascript_loadclient.md) to configure the client
 
 ## Deploying a VM with Wireguard and gateway
 
@@ -101,10 +104,7 @@ main();
 
 ### Detailed explanation
 
-What we need to do with that code is:
-
-- Deploy Vm with wireguard access.
-- Deploy gateway to access the machine through it.
+What we need to do with that code is: Deploy a name contract with the wireguard IP as the backend
 
 This will be done through the following steps:
 
