@@ -104,7 +104,7 @@ main();
 
 ### Detailed explanation
 
-What we need to do with that code is: Deploy a name contract with the wireguard IP as the backend
+What we need to do with that code is: Deploy a name gateway with the wireguard IP as the backend; that allows accessing a server inside the vm through the gateway using the private network (wireguard) as the backend.
 
 This will be done through the following steps:
 
@@ -249,7 +249,7 @@ Now we have our VM deployed with it's network, we need to make the gateway on th
   ]
   ```
 
-  Now we can access the vm using the `domain` that returned in the object. 
+  Now we can access the vm using the `domain` that returned in the object.
 
 #### Disconnect the client
 
@@ -269,4 +269,4 @@ If we want to delete the deployments we can just do this:
 
 ### Summary
 
-This was a detailed description of how we can create a vm with private ip (wireguard) and use it as a backend for a gateway contract.
+This was a detailed description of how we can create a vm with private ip (wireguard) and use it as a backend for a name gateway.
