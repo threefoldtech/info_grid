@@ -59,6 +59,7 @@
   - [Deploy ZDBs for QSFS](javascript/grid3_javascript_qsfs_zdbs.md)
   - [QSFS](javascript/grid3_javascript_qsfs.md)
   - [Key Value Store](javascript/grid3_javascript_kvstore.md)
+  - [Gateway with wireguard backend](javascript/grid3_wireguard_gateway.md)
 - [Go Client](go/grid3_go_readme.md)
   - [Installation](go/grid3_go_installation.md)
   - [Loading Client](go/grid3_go_load_client.md)
