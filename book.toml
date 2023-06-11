@@ -4,3 +4,12 @@ level = 0
 
 [output.html]
 no-section-label = true
+
+[preprocessor]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
+
+[output.html]
+no-section-label = true
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
