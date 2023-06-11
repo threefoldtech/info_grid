@@ -2,9 +2,6 @@
 enable = true
 level = 0
 
-[output.html]
-no-section-label = true
-
 [preprocessor]
 
 [preprocessor.mermaid]
