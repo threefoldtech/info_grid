@@ -25,6 +25,12 @@ If you have public IPv4 addresses available that can be used for usage on the TF
 Click `ADD IP`, specify the addresses, the gateway and click `CREATE`.
 You can add them one by one or using range of IPs.
 
+__Some notes about adding a new IPs__:
+
+- Make sure to not add a new IP range that includes an already existing ip address, this will cause an error.
+- Make sure that the IP address is correct, and the gateway address as well.
+- Make sure to not add a new IP range that includes the same gateway address.
+
 ![ ](../img/dashboard_portal_ip_add.png ':size=600')
 ![ ](../img/dashboard_portal_ip_add_detail.png ':size=300')
 ![ ](../img/dashboard_portal_ip_add_detail_range.png ':size=300')
