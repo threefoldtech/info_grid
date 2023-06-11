@@ -27,9 +27,9 @@ You can add them one by one or using range of IPs.
 
 __Some notes about adding a new IPs__:
 
-- Make sure to not add a new IP range that includes an already existing ip address, this will cause an error.
-- Make sure that the IP address is correct, and the gateway address as well.
-- Make sure to not add a new IP range that includes the same gateway address.
+- Be careful not to create a new IP range that contains an IP address that already exists; doing so will result in an error.
+- Verify that both the gateway address and the IP address are correct.
+- Be careful not to include the same gateway address in a new IP range.
 
 ![ ](../img/dashboard_portal_ip_add.png ':size=600')
 ![ ](../img/dashboard_portal_ip_add_detail.png ':size=300')
