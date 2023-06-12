@@ -18,7 +18,7 @@ The links to the bridges for TFT are the following:
 
 * Stellar-Ethereum Bridge
   * This bridge is accessible at the following link: [https://bridge.eth.threefold.io/](https://bridge.eth.threefold.io/)
-  * Read [this guide](./tfchain_stellar_bridge.html) for more information
+  * Read [this guide](./tft_ethereum/tft_ethereum.md) for more information
 * Stellar-BSC Bridge
   * This bridge is accessible at the following link: [https://bridge.bsc.threefold.io/](https://bridge.bsc.threefold.io/)
   * Read [this guide](./bsc_stellar_bridge.html) for more information
