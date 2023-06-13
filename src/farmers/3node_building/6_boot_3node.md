@@ -21,19 +21,19 @@ In this section of the ThreeFold Farmers book, we explain how to boot the 3Node.
 
 ## 1. Booting the 3Node with the Zero-OS bootstrap image
 
-To boot Zero-OS, insert your Zero-OS Bootstrap Image, power on your computer and choose the right booting sequence and parameters ([BIOS or UEFI](#5-set-the-biosuefi)) in your BIOS/UEFI settings. Then, restart the 3Node. Zero-OS should boot automatically.
+To boot Zero-OS, insert your Zero-OS Bootstrap Image, power on your computer and choose the right booting sequence and parameters ([BIOS or UEFI](./5_set_bios_uefi.md)) in your BIOS/UEFI settings. Then, restart the 3Node. Zero-OS should boot automatically.
 
 Note that you need an ethernet cable connected to your router or switcher. You cannot farm on the ThreeFold Grid with Wifi.
 
 The first time you boot a 3Node, it will be written: “This node is not registered (farmer ***: NameOfFarm). This is normal. The Grid will create a node ID and you will be able to see it on screen. This can take a couple of minutes.
 
-If time passes (an hour and more) and the node does not get registered, in many cases, [wiping the disks](#4-wipe-all-the-disks) all over again and trying another reboot usually resolves this issue.
+If time passes (an hour and more) and the node does not get registered, in many cases, [wiping the disks](./4_wipe_all_disks.md) all over again and trying another reboot usually resolves this issue.
 
 Once you have your node ID, you can also go on the ThreeFold Explorer to see your 3Node and verify that your 3Node is online.
 ***
 ## 2. Check the 3Node Status on the TF Explorer
 
-In your browser, go on the [3Nodes Explorer section](https://dashboard.grid.tf/explorer/nodes) of the ThreeFold Dashboard. 
+In your browser, go on the [3Nodes Explorer section](https://dashboard.grid.tf/explorer/nodes) of the ThreeFold Dashboard on Main Net. 
 
 ![dashboard_1](./img/dashboard_1.png)
 
@@ -57,13 +57,14 @@ This example is done with the ThreeFold Dashboard on Main Net. To access the Thr
 
 * [ThreeFold Dev Net Dashboard](https://dashboard.dev.grid.tf/)
 * [ThreeFold Test Net Dashboard](https://dashboard.test.grid.tf/)
+* [ThreeFold QA Net Dashboard](https://dashboard.qa.grid.tf/)
 
 ***
 ## 3. Receive the Farming Rewards
 
-The farming reward will be sent once per month at the address you gave when you set up your farm. You can review this process in the section [Creating the Farm on ThreeFold Grid](#2-creating-the-farm-on-ThreeFold-grid). If you created a TF farm with the TF Connect App, the address will be your TF Connect Wallet address.
+The farming reward will be sent once per month at the address you gave when you set up your farm. You can review this process in the section [Creating the Farm on ThreeFold Grid](./1_create_farm.md). If you created a TF farm with the TF Connect App, the address will be your TF Connect Wallet address.
 
-For the TF V3, rewards are locked for a 24 months period of after 30% of farm utilization. As of now, this is not implemented. This means that you can withdraw your farming rewards anytime you want. For more details on this, please refer to the section [ThreeFold Token (TFT)](#ThreeFold-token-tft). Details of this locking system implementation will most likely be discussed by the upcoming DAO. Stay tuned.
+For the TF V3, rewards are locked for a 24 months period of after 30% of farm utilization. As of now, this is not implemented. This means that you can withdraw your farming rewards anytime you want. For more details on this, please refer to the section [ThreeFold Token (TFT)](../../threefold_token/threefold_token.md). Details of this locking system implementation will most likely be discussed by the upcoming DAO. Stay tuned.
 
 ***
 
