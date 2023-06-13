@@ -130,7 +130,7 @@ Choices 1 and 2 are for UEFI (newer models).
 Choices 4 and 5 are for BIOS (newer models).
 Choices 3 and 6 are mainly for network boot.
 
-For information on how to boot Zero-OS with iPXE, read [this section](#advanced-booting-option---network-booting-pxe).
+For information on how to boot Zero-OS with iPXE, read [this section](./6_boot_3node.md#advanced-booting-option---network-booting-pxe).
 
 You might have to try UEFI first and if it doesn't work, try BIOS. Usually when this is the case (UEFI doesn't work with your current computer), the following message will be shown:
 
