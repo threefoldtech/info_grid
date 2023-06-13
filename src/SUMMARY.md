@@ -61,7 +61,6 @@
     - [Room Parameters](farmers/farming_optimization/farm_room_parameters.md)
     - [Farming Costs](farmers/farming_optimization/farming_costs.md)
   - [Farmerbot](farmers/farmerbot/farmerbot.md)
-  - [Farmers FAQ](farmers/farmers_faq/farmers_faq.md)
 - [Developers](developers/developers.md)
   - [Javascript Client](javascript/grid3_javascript_readme.md)
     - [Installation](javascript/grid3_javascript_installation.md)
