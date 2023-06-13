@@ -1,8 +1,6 @@
 <H1>Become a TFT Liquidity Provider</h1>
 
 <h2>Table of Contents</h2>
-- [Intro](#intro)
-  - [Provide TFT Liquidity](#provide-tft-liquidity)
 
 # Intro
 
