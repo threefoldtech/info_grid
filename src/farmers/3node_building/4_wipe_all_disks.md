@@ -34,7 +34,7 @@ We will show how to do this with Ubuntu 20.04. LTS. This distribution is easy to
 
 Download the Ubuntu 20.04 ISO file [here](https://releases.ubuntu.com/20.04/) and burn the ISO image on a USB key. Make sure you have enough space on your USB key. You can also use other Linux Distro such as [GRML](https://grml.org/download/), if you want a ligther ISO image.
 
-The process here is the same as in section [Burning the Bootstrap Image](#burning-the-zero-os-bootstrap-image), but with the Linux ISO instead of the Zero-OS ISO. [BalenaEtcher](https://www.balena.io/etcher/) is recommended as it formats your USB in the process, and it is available for MAC, Windows and Linux.
+The process here is the same as in section [Burning the Bootstrap Image](./2_bootstrap_image.md#burn-the-zero-os-bootstrap-image), but with the Linux ISO instead of the Zero-OS ISO. [BalenaEtcher](https://www.balena.io/etcher/) is recommended as it formats your USB in the process, and it is available for MAC, Windows and Linux.
 
 ***
 
