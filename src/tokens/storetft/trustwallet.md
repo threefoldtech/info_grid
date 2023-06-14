@@ -1,4 +1,12 @@
-<h1> Store TFT on Trust Wallet (BSC) </h1>
+<h1> Store TFT-BSC on Trust Wallet (BSC) </h1>
+
+<H2>Table of Contents</h2>
+
+- [Intro](#intro)
+- [How to Store TFT on Trust Wallet (BSC)](#how-to-store-tft-on-trust-wallet-bsc)
+  - [Download and Create a Trust Wallet Account](#download-and-create-a-trust-wallet-account)
+  - [Add TFT to Trust Wallet](#add-tft-to-trust-wallet)
+- [Important Notice](#important-notice)
 
 ## Intro
 
@@ -6,7 +14,7 @@
 
 ## How to Store TFT on Trust Wallet (BSC)
 
-## Download and Create a Trust Wallet Account
+### Download and Create a Trust Wallet Account
 
 Once you have downloaded the app (iOS / Android) via [https://trustwallet.com/](https://trustwallet.com/), Select “Create a new wallet” and press “Continue” to accept the terms. Get a pencil and paper ready because the warning Trust Wallet gives you is real: If you lose your recovery words (sometimes also known as a seed phrase or recovery phrase) you may lose access to your wallet and the crypto within it forever.
 
@@ -28,7 +36,7 @@ You will get a screen stating, “Your wallet was successfully created.”
 
 ![](./img/trust_created.png)
 
-## Add TFT to Trust Wallet
+### Add TFT to Trust Wallet
  
 To add TFT to your Trust Wallet, you need to configure it manually as a 'custom token'. In Trust Wallet, a custom token refers to a token that is not natively supported or pre-listed on the wallet's default token list. 
 

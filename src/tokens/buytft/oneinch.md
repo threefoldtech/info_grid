@@ -1,12 +1,13 @@
-<h1>How to buy TFT on 1inch.io (BSC)</h1>
+<h1>How to Get TFT on 1inch.io (TFT-BSC)</h1>
 
 <h2>Table of Contents</h2>
 
 - [Intro](#intro)
 - [Prerequisites](#prerequisites)
-- [Connect a BSC Wallet to 1inch.io](#connect-a-bsc-wallet-to-1inchio)
-- [Swapping tokens to TFT](#swapping-tokens-to-tft)
-- [Important Notice](#important-notice)
+- [How to Get TFT on 1inch.io (TFT-BSC)](#how-to-get-tft-on-1inchio-tft-bsc)
+  - [Connect a BSC Wallet to 1inch.io](#connect-a-bsc-wallet-to-1inchio)
+  - [Swapping tokens to TFT](#swapping-tokens-to-tft)
+  - [Important Notice](#important-notice)
 
 ## Intro
 
@@ -29,8 +30,11 @@ Before you can buy TFT on 1inch.io, there are a few prerequisites you need to fu
 
 > [Get BNB Tokens](https://docs.pancakeswap.finance/readme/get-started/bep20-guide)
 
+## How to Get TFT on 1inch.io (TFT-BSC)
 
-## Connect a BSC Wallet to 1inch.io
+By utilizing 1inch.io, you can easily convert your existing crypto assets on BSC network into TFT-BSC by using the Swap function. Once you have obtained TFT-BSC, you have the option to bridge it into TFT Native on the Stellar network by utilizing the [TFT-Stellar bridge](/src/farmers/threefold_token/buy_sell_tft/tfchain_stellar_bridge.md). Let's swap some tokens!
+
+### Connect a BSC Wallet to 1inch.io
 
 To get started, head to 1inch.io and click on '**Launch dApp**' icon on the homepage as shown below
 
@@ -52,13 +56,13 @@ Once your wallet is connected, you will see that you have your wallet connected 
 
 ![](./img/1inch_successful.png)
 
-## Swapping tokens to TFT
+### Swapping tokens to TFT
 
 To start swapping tokens to TFT, click on the '**Select Token**' button on the Swap page. Depending which existing BSC-supported tokens that you have in your Metamask wallet, you can swap them to to TFT as long as they're listed on 1inch.io. On this tutorial we will try to swap some BUSD tokens to TFT.
 
 ![](./img/1inch_swap.png)
 
-Type '**TFT on BS**C' on the listing page, and clicked on the result shown as below
+Type '**TFT on BSC**' on the listing page, and clicked on the result shown as below
 
 ![](./img/1inch_select.png)
 
@@ -70,6 +74,6 @@ Wait for the banner in the upper-right corner informing you about the success of
 
 ![](./img/threefold__1inch_success.png)
 
-## Important Notice
+### Important Notice
 
 If you are looking for ways to provide liquidity for TFT on Binance Smart Chain on 1inch.io, you will find the according information [here](../liquidity/liquidity_1inch.md).

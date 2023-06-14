@@ -1,10 +1,10 @@
-<h1> Set up TFT on Metamask Wallet (BSC Mainnet) </h1>
+<h1> Store TFT-BSC on Metamask Wallet </h1>
 
 <h2>Table of Contents</h2>
 
 - [Intro](#intro)
-- [Install \& Create Metamask Account](#install--create-metamask-account)
-- [Configure a BSC Wallet (Mainnet) for your TFT](#configure-a-bsc-wallet-mainnet-for-your-tft)
+  - [Install \& Create Metamask Account](#install--create-metamask-account)
+  - [Configure a BSC Wallet (Mainnet) for your TFT](#configure-a-bsc-wallet-mainnet-for-your-tft)
   - [Switch Network from ETH to BSC (Auto Add)](#switch-network-from-eth-to-bsc-auto-add)
   - [Add TFT Asset to BSC Wallet (Mainnet)](#add-tft-asset-to-bsc-wallet-mainnet)
 - [Important Notice](#important-notice)
@@ -14,7 +14,7 @@
 [ MetaMask](https://metamask.io/) is a popular browser extension wallet that allows users to interact with various blockchain networks, including BSC. By following the steps outlined in this guide, you'll be able to configure your MetaMask wallet to support TFT tokens on BSC and seamlessly participate in the TFT ecosystem. So let's dive in and explore how to set up TFT on MetaMask with Binance Smart Chain.
 
 
- ## Install & Create Metamask Account
+### Install & Create Metamask Account
 
 **Download Metamask** [**here**](https://metamask.io/download.html). Then, install the Metamask extension in your local browser. Follow [this tutorial](https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask) to install metamask to your preferred browser and create. 
 
@@ -40,7 +40,7 @@ This passphrase is very important, so be sure to keep it safe. Once you have wri
 
 Once you’ve entered those words, you can click “Continue.” Then, you’re done! It’s that easy. 
 
-## Configure a BSC Wallet (Mainnet) for your TFT
+### Configure a BSC Wallet (Mainnet) for your TFT
 
  MetaMask supports various wallet networks, including Ethereum, Binance Smart Chain (BSC), and more. By adding the BSC network, you can seamlessly manage and transact with BSC-based assets like TFT tokens directly within your MetaMask wallet.
  

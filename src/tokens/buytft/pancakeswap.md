@@ -34,6 +34,8 @@ Before you can buy TFT on Pancake Swap, there are a few prerequisites you need t
 
 ##  Buy TFT on PancakeSwap
 
+On Pancake Swap, you can easily convert your existing crypto assets on BSC network into TFT-BSC by using the Swap function. Once you have obtained TFT-BSC, you have the option to bridge it into TFT Native on the Stellar network by utilizing the [TFT-Stellar bridge](/src/farmers/threefold_token/buy_sell_tft/tfchain_stellar_bridge.md). Let's swap some tokens!
+
 Now that you're all set, go to your [PancakeSwap homepage](https://pancakeswap.finance/) and click on **Trade > Swap** button as shown. Please Make sure you're on **BNB Smart Chain** network.
 
 ![](img/pancake_home.png)

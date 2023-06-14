@@ -60,7 +60,7 @@ Click “supply” and confirm the wallet prompt and fee.
 
 Congratulations! You have now exchanged the selected amounts for both currencies for LPs (Liquidity Tokens) and you are providing liquidity and earning a part of the transaction fees.
 
-![](./img/../threefold__lp_tokens.jpg)
+![](./img/threefold__lp_tokens.jpg)
 
 ## Important Notice
 
