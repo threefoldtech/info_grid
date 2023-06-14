@@ -17,8 +17,7 @@ jobs:
         port: ${{ secrets.TF_PORT }}
         script: |
           cd ~/websites/www3/info_grid
-          git log -1
-          git restore .
-          git pull
+          git fetch
+          git reset --hard origin/development-split
           source ~/.cargo/env
           mdbook build -d docs
