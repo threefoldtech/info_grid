@@ -25,7 +25,7 @@
     - [XRDP: an Open-Source Remote Desktop Protocol](getstarted/remote-desktop_gui/xrdp_guide/xrdp_guide.md)
     - [Apache Guacamole: a Clientless Remote Desktop Gateway](getstarted/remote-desktop_gui/guacamole_guide/guacamole_guide.md)
 - [TFT](tokens/tft_readme.md)
-    - [Buy TFT](tokens/buytft/buytft_readme.md)
+    - [Get TFT](tokens/buytft/buytft_readme.md)
       - [Pancake Swap](tokens/buytft/pancakeswap.md)
       - [1inch.io](tokens/buytft/oneinch.md)
     - [Store TFT](tokens/storetft/storetft_readme.md)
