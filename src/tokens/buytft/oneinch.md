@@ -1,4 +1,4 @@
-<h1>How to Get TFT on 1inch.io (TFT-BSC)</h1>
+<h1>Get TFT on 1inch.io (TFT-BSC)</h1>
 
 <h2>Table of Contents</h2>
 

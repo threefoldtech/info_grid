@@ -1,4 +1,4 @@
-<h1>How to buy TFT on Binance Smart Chain</h1>
+<h1>Get TFT on Pancake Swap (TFT-BSC)</h1>
 
 <h2>Table of Contents</h2>
 
