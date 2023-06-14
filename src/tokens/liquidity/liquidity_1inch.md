@@ -2,9 +2,13 @@
 
 <h2>Table of Contents</h2>
 
+- [Intro](#intro)
+- [Become a TFT LP on 1inch.io](#become-a-tft-lp-on-1inchio)
+- [Important Notice](#important-notice)
+
 ## Intro
 
-In the case of TFT on Binance Smart Chain (BSC) and 1inch.io, becoming a liquidity provider involves providing TFT(BSC) and another token (such as BUSD) to the TFT- BSC liquidity pool on 1inch.io. 
+In the case of TFT on Binance Smart Chain (BSC) and [1inch.io](https://1inch.io/), becoming a liquidity provider involves providing TFT(BSC) and another token (such as BUSD) to the TFT- BSC liquidity pool on 1inch.io. 
 
 By adding liquidity to this pool, the LP helps to ensure that there is a consistent and sufficient supply of TFT available for trading on the BSC network. This contributes to the overall liquidity of the TFT token on 1inch.io, making it easier for users to buy and sell TFT(BSC) without experiencing significant price slippage.
 
@@ -47,5 +51,7 @@ Once done, you can go back to the TFT pool section on 1inch.io Pools page on [**
 ![](./img/1inch_pool_total.png)
 
 Note that the number of TFT and BUSD tokens will change constantly and will not be the same as you initially provided. This is because of the way liquidity pools work and is absolutely normal.
+
+## Important Notice
 
 It's important to note that being a liquidity provider involves certain risks, such as impermanent loss, which occurs when the value of the tokens in the liquidity pool fluctuates. However, if you believe in the potential of TFT and want to actively contribute to the liquidity ecosystem on 1inch.io, becoming a liquidity provider can be a rewarding opportunity to earn fees and support the growth of the platform.

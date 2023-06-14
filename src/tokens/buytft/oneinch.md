@@ -1,5 +1,13 @@
 <h1>How to buy TFT on 1inch.io (BSC)</h1>
 
+<h2>Table of Contents</h2>
+
+- [Intro](#intro)
+- [Prerequisites](#prerequisites)
+- [Connect a BSC Wallet to 1inch.io](#connect-a-bsc-wallet-to-1inchio)
+- [Swapping tokens to TFT](#swapping-tokens-to-tft)
+- [Important Notice](#important-notice)
+
 ## Intro
 
 Welcome to our tutorial on how to buy TFT on Binance Smart Chain (BSC) using [1inch.io](https://1inch.io/)! 
@@ -46,21 +54,21 @@ Once your wallet is connected, you will see that you have your wallet connected 
 
 ## Swapping tokens to TFT
 
-To start swapping tokens to TFT, click on the 'Select Token' button on the Swap page. Depending which existing BSC-supported tokens that you have in your Metamask wallet, you can swap them to to TFT as long as they're listed on 1inch.io. On this tutorial we will try to swap some BUSD tokens to TFT.
+To start swapping tokens to TFT, click on the '**Select Token**' button on the Swap page. Depending which existing BSC-supported tokens that you have in your Metamask wallet, you can swap them to to TFT as long as they're listed on 1inch.io. On this tutorial we will try to swap some BUSD tokens to TFT.
 
 ![](./img/1inch_swap.png)
 
-Type 'TFT on BSC' on the listing page, and clicked on the result shown as below
+Type '**TFT on BS**C' on the listing page, and clicked on the result shown as below
 
 ![](./img/1inch_select.png)
 
-Once selected, define the amount of BNB you'd like to swap to TFT and click 'Confirm Swap' button.
+Once selected, define the amount of BNB you'd like to swap to TFT and click '**Confirm Swap**' button.
 
-![](img/threefold__1inch_permission.png)
+![](./img/threefold__1inch_rates.jpg)
 
 Wait for the banner in the upper-right corner informing you about the success of your transaction. You will be notified once the swap is successful, and Congrats! You have just swapped some BUSD to TFT.
 
-![](./threefold__1inch_success.png)
+![](./img/threefold__1inch_success.png)
 
 ## Important Notice
 

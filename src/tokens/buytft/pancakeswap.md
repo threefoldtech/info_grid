@@ -38,11 +38,11 @@ Now that you're all set, go to your [PancakeSwap homepage](https://pancakeswap.f
 
 ![](img/pancake_home.png)
 
-On the Swap Page, you would see that it displays swapping from BNB to CAKE as default. Here we'd like to change that to BNB (or any other tokens you have) to TFT. click on 'CAKE' and find TFT on the token listing pop up page, and click 'Import'.
+On the Swap Page, you would see that it displays swapping from BNB to CAKE as default. Here we'd like to change that to BNB (or any other tokens you have) to TFT. click on '**CAKE**' and find TFT on the token listing pop up page, and click '**Impor**t'.
 
 ![](img/pancake_tft.png)
 
-Once selected, define how much BNB or other token you would like to swap into TFT, and click on the 'Swap' button.
+Once selected, define how much BNB or other token you would like to swap into TFT, and click on the '**Swap**' button.
 
 ![](img/pancake_swap.png)
 
