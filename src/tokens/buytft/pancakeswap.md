@@ -2,16 +2,18 @@
 
 <h2>Table of Contents</h2>
 
+- [Intro](#intro)
 - [Prerequisites](#prerequisites)
 - [Buy TFT on PancakeSwap](#buy-tft-on-pancakeswap)
 - [Important Notice](#important-notice)
 
+## Intro
 
 Welcome to our tutorial on how to buy TFT on Binance Smart Chain (BSC) using [Pancake Swap](https://pancakeswap.finance/)! 
 
 [**Binance Smart Chain**](https://coinmarketcap.com/alexandria/article/what-is-binance-smart-chain) is a blockchain network that enables the execution of smart contracts and decentralized applications, while **Pancake Swap** is a popular decentralized exchange (DEX) built on BSC. 
 
-By following the steps outlined in this guide, you'll be able to purchase TFT tokens seamlessly and take advantage of the benefits offered by the Binance Smart Chain network.
+By following the steps outlined in this guide, you'll be able to purchase TFT tokens on Pancake Swap seamlessly and take advantage of the benefits offered by the Binance Smart Chain network.
 
 ## Prerequisites
 
@@ -45,7 +47,6 @@ Once selected, define how much BNB or other token you would like to swap into TF
 ![](img/pancake_swap.png)
 
 That's it! You have officially swapped BNB into TFT. 
-
 
 ## Important Notice
 
