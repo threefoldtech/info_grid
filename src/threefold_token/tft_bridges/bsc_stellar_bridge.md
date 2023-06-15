@@ -21,9 +21,9 @@ We present here the main steps to use the BSC-Stellar Bridge.
 
 To use the BSC-Stellar Bridge, follow the following steps. If this is your first time with MetaMask and BSC, read the section [Setting up TFT on Metamask](#setting-up-tft-on-metamask).
 
-It will cost 50 TFT* to bridge from Stellar to BSC, and 1 TFT to bridge from BSC to Stellar. There is also a fixed fee of 0.01 TFT when using the Stellar blockchain. Those fees are taken from the total of what you are bridging. 
+It will cost 100 TFT* to bridge from Stellar to BSC, and 1 TFT to bridge from BSC to Stellar. There is also a fixed fee of 0.01 TFT when using the Stellar blockchain. Those fees are taken from the total of what you are bridging. 
 
-*For example, if you Bridge 80 TFT, from Stellar to BSC, you will receive 30 TFT.
+*For example, if you Bridge 200 TFT, from Stellar to BSC, you will receive 100 TFT.
 
 > Note: The bridge will process deposits/withdrawals within 48 hours.
 
@@ -85,7 +85,7 @@ In this method, you use the Bridge directly. Thus, it is normal if you do not se
 
 * It's a good idea to start with a small amount the first time.
 * The process is usually quick, but it can take up to 48h. In doubt, contact [TF Support](https://threefold.io/support/).
-* Going from Stellar to BSC costs 50 TFT.
+* Going from Stellar to BSC costs 100 TFT.
 * Going from BSC to Stellar costs 1 TFT.
 * There is also fixed fee of 0.01 TFT when using the Stellar Blockchain.
 * Gas fees on BSC is usually around 5-20 gwei.

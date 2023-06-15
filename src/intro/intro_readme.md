@@ -41,6 +41,9 @@ The ThreeFold community is very active and its members will be more than happy t
 
 ## Questions and Feedback
 
-We encourage you to explore each section thoroughly, and should you have any questions or need further assistance, our dedicated [support team](https://threefoldfaq.crisp.help/en/) is here to help. 
+To explore this manual, you can use the search function by hitting **'s'** on your keyboard, or by clicking on the magnifier button at the top left of each page. Feel free to use the [ThreeFold FAQ Bot](https://t.me/TF_FAQ_Bot) on Telegram to query the ThreeFold Manual. 
+Answers to your questions might also be on the [ThreeFold Forum](https://forum.threefold.io/).
+
+If you can't find the answer to your question, our dedicated [ThreeFold Support](https://threefoldfaq.crisp.help/en/) team is here to help.
 
 Welcome to the ThreeFold Grid, where together we can shape a more sustainable and inclusive digital future!

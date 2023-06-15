@@ -66,10 +66,10 @@ This is what you see when your account is created.
 
 ## 2) Creating the Farm on the ThreeFold Grid
 
-Go on the ThreeFold Portal.
+Go on the ThreeFold Dashboard.
 
 ```
-https://portal.grid.tf
+https://dashboard.grid.tf/
 ```
 
 As you’ve created and logged in your account, you will see your account in the list of connected accounts. Click on your account.

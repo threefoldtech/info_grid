@@ -78,8 +78,6 @@ In this guide, we are using a Dell Optiplex 7020. It constitutes a perfect affor
 
 <div style="break-after:page"></div>
 
-***
-
 # 1. Create a Farm with ThreeFold Connect App
 
 ## ThreeFold Connect App Installation
@@ -137,8 +135,6 @@ That's it! You've created your ThreeFold Connect account. You can press the hamb
 
 <div style="break-after:page"></div>
 
-***
-
 ### Verify Your Identity (KYC) by Email
 
 ***
@@ -164,8 +160,6 @@ If for some reason, you did not receive the verification email, simply click on 
 ***
 
 <div style="break-after:page"></div>
-
-***
 
 ## Create a Wallet
 
@@ -226,8 +220,6 @@ We can see on the picture above that the Farm ID here is 1821. The farm ID will 
 
 <div style="break-after:page"></div>
 
-***
-
 # 2. Create a Zero-OS Bootstrap Image
 
 ## Download the Zero-OS Boostrap Image
@@ -255,8 +247,6 @@ Download the bootstrap image. Next, we will burn the bootstrap image.
 ***
 
 <div style="break-after:page"></div>
-
-***
 
 ## Burn the Zero-OS Bootstrap Image
 
@@ -309,8 +299,6 @@ That's it. Now you have a bootstrap image on Zero-OS as a bootable removable med
 
 <div style="break-after:page"></div>
 
-***
-
 # 3. Set the Hardware
 
 Setting the hardware of this DIY 3node is very easy as there are no updates or upgrades needed. Simply unbox the computer and plug everything.
@@ -338,8 +326,6 @@ Plug the ethernet cable in the router (or the switcher)
 ***
 
 <div style="break-after:page"></div>
-
-***
 
 # 4. Wipe All the Disks
 
@@ -424,8 +410,6 @@ That's it! The disks are all wiped. All that is left now is to set the BIOS/UEFI
 
 <div style="break-after:page"></div>
 
-***
-
 # 5. Set the BIOS/UEFI
 
 Before booting the main operating system, in our case Zero-OS, a computer will boot in either BIOS or UEFI mode. Older systems use BIOS and newer systems uses UEFI. Both BIOS and UEFI are low-lewel softwares needed to interact between the hardware and the main OS of the computer. Note that BIOS is also called Legacy BIOS.
@@ -464,8 +448,6 @@ As a general advice, you can Load Defaults (Settings) on your BIOS, then make su
 ***
 
 <div style="break-after:page"></div>
-
-***
 
 ## Set the BIOS/UEFI on a Dell Optiplex 7020
 
@@ -515,8 +497,6 @@ As a general advice, you can Load Defaults (Settings) on your BIOS, then make su
 
 <div style="break-after:page"></div>
 
-***
-
 # 6. Boot the 3Node
 
 If your BIOS/UEFI settings are set properly and you have the Zero-OS bootstrap image USB key plugged in, your 3node should automatically boot Zero-OS every time that it is turned on.
@@ -540,12 +520,10 @@ Once you have your node ID, you can also go on the ThreeFold Explorer to see you
 
 <div style="break-after:page"></div>
 
-***
-
 ## Check the 3Node's Status on the TF Explorer
 
 ***
-In a browser, go on the [ThreeFold Explorer](https://explorer.threefold.io/). 
+In a browser, go on the [ThreeFold Explorer](https://dashboard.grid.tf/explorer/nodes). 
 
 Select **Grid V3**.
 

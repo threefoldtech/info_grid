@@ -42,7 +42,7 @@ Note that you can run Zero-OS on a Virtual Machine (VM), but you won't farm any 
 
 Also, note that ThreeFold runs its own OS, which is Zero-OS. You thus need to start with completely wiped disks. You cannot farm TFT with Windows, Linux or MAC OS installed on your disks. If you need to use such OS temporarily, boot it in Try mode with a removable media (USB key).
 
-Note: Once you have the necessary hardware, you need to [create a farm](#1-create-a-farm), [create a Zero-OS bootstrap image](#2-create-a-zero-os-bootstrap-image), [wipe your disks](#4-wipe-all-the-disks) and [set the BIOS/UEFI](#5-set-the-biosuefi) . Then you can [boot your 3Node](#6-boot-the-3node). 
+Note: Once you have the necessary hardware, you need to [create a farm](./1_create_farm.md), [create a Zero-OS bootstrap image](./2_bootstrap_image.md), [wipe your disks](./4_wipe_all_disks.md) and [set the BIOS/UEFI](./5_set_bios_uefi.md) . Then you can [boot your 3Node](./6_boot_3node.md). If you are planning in building a farm in data center, [read this section](./data_center.md).
 
 ***
 
@@ -367,4 +367,6 @@ For some DIY 3Node, no upgrades are required and this constitutes a good start i
 
 For in-depth videos on how to upgrade mini-pc and rack servers, watch these great [DIY videos](https://www.youtube.com/user/floridanelson).
 
-For a DIY picture guide on how to build a R620 3Node rack server, read [this documentation](../3node_diy_rack_server/3node_diy_rack_server.md).
+For a DIY picture guide on how to build a 3Node desktop computer, read [this documentation](../complete_diy_guides/3node_diy_desktop/3node_diy_desktop.md).
+
+For a DIY picture guide on how to build a 3Node rack server, read [this documentation](../complete_diy_guides/3node_diy_rack_server/3node_diy_rack_server.md).

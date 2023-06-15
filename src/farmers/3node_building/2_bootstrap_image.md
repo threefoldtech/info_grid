@@ -15,7 +15,7 @@
 
 We will now learn how to create a Zero-OS bootstrap image in order to boot a DIY 3Node.
 
-Note: For certified 3Nodes, read [this section](./farmer_guide.md#bootstrap-image-for-certified-3node).
+Note: For certified 3Nodes, read [this section](#bootstrap-image-for-certified-3node).
 
 ## Download the Zero-OS Bootstrap Image
 

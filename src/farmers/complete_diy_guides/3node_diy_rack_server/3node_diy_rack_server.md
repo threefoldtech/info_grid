@@ -269,14 +269,14 @@ Write your farmer ID and make sure you select production mode.
 
 If you haven't created a ThreeFold farm yet, you have two options: 
 
-1. [Create a Farm with the Polkadot.js Extension](../TF_Complete_Farmer_Guide/farmer_guide.md#1-create-a-farm) 
-2. [Create a Farm with ThreeFold Connect App](../TF_Complete_Farmer_Guide/farmer_guide.md#create-a-farm)
+1. [Create a Farm with the Polkadot.js Extension](../../3node_building/1_create_farm.md) 
+2. [Create a Farm with ThreeFold Connect App](../../../threefold_token/storing_tft/tf_connect_app.md#create-a-farm)
 
-Note: It is possible to move your farm from the [TF Connect App to the TF Portal](../TF_Complete_Farmer_Guide/farmer_guide.md#move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs) (via the Polkadot.js Extension). You can also [import your farm from the TF Portal to the TF Connect App](../TF_Complete_Farmer_Guide/farmer_guide.md#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet).
+Note: It is possible to move your farm from the [TF Connect App to the TF Portal](../../../threefold_token/storing_tft/tf_connect_app.md#move-farm-from-the-tf-connect-app-to-the-tf-portal-polkadotjs) (via the Polkadot.js Extension). You can also [import your farm from the TF Portal to the TF Connect App](../../../threefold_token/storing_tft/tf_connect_app.md#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet).
 
 ## Wiping All the Disks
 
-You might need to wipe your disks if they are not brand new. To wipe your disks, read the section [Wipe All the Disks](../TF_Complete_Farmer_Guide/farmer_guide.md#4-wipe-all-the-disks) of the ThreeFold Farming Documentation.
+You might need to wipe your disks if they are not brand new. To wipe your disks, read the section [Wipe All the Disks](../../3node_building/4_wipe_all_disks.md) of the ThreeFold Farming Documentation.
 
 ## Downloading the Zero-OS Bootstrap Image
 
@@ -313,7 +313,7 @@ When you start the server, press F2 to get into System Setup.
 
 Then, select System BIOS. In System BIOS settings, select Processor Settings.
 
-Note: More details are available for BIOS Settings in this [documentation](../TF_Complete_Farmer_Guide/farmer_guide.md#5-set-the-biosuefi).
+Note: More details are available for BIOS Settings in this [documentation](../../3node_building/5_set_bios_uefi.md).
 
 ## Processor Settings
 
