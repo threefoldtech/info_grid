@@ -23,7 +23,7 @@ To use the BSC-Stellar Bridge, follow the following steps. If this is your first
 
 It will cost 100 TFT* to bridge from Stellar to BSC, and 1 TFT to bridge from BSC to Stellar. There is also a fixed fee of 0.01 TFT when using the Stellar blockchain. Those fees are taken from the total of what you are bridging. 
 
-*For example, if you Bridge 80 TFT, from Stellar to BSC, you will receive 30 TFT.
+*For example, if you Bridge 200 TFT, from Stellar to BSC, you will receive 100 TFT.
 
 > Note: The bridge will process deposits/withdrawals within 48 hours.
 
