@@ -1,4 +1,4 @@
-<h1>Get TFT on GetTFT.com</h1>
+<h1>Get TFT (Stellar) aon GetTFT.com</h1>
 
 <h2>Table of Contents</h2>
 
