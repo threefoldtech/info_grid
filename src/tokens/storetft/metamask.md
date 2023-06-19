@@ -3,6 +3,7 @@
 <h2>Table of Contents</h2>
 
 - [Intro](#intro)
+- [Get Started](#get-started)
   - [Install \& Create Metamask Account](#install--create-metamask-account)
   - [Configure a BSC Wallet (Mainnet) for your TFT](#configure-a-bsc-wallet-mainnet-for-your-tft)
   - [Switch Network from ETH to BSC (Auto Add)](#switch-network-from-eth-to-bsc-auto-add)
@@ -13,6 +14,7 @@
 
 [ MetaMask](https://metamask.io/) is a popular browser extension wallet that allows users to interact with various blockchain networks, including BSC. By following the steps outlined in this guide, you'll be able to configure your MetaMask wallet to support TFT tokens on BSC and seamlessly participate in the TFT ecosystem. So let's dive in and explore how to set up TFT on MetaMask with Binance Smart Chain.
 
+## Get Started
 
 ### Install & Create Metamask Account
 

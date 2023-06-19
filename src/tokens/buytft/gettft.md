@@ -4,9 +4,10 @@
 
 - [Intro](#intro)
 - [Prerequisites](#prerequisites)
-- [Get Started: Link TF Wallet to GetTFT.com](#get-started-link-tf-wallet-to-gettftcom)
-  - [Get TFT using BTC](#get-tft-using-btc)
-  - [Get TFT using Fiat Currency (USD / EUR)](#get-tft-using-fiat-currency-usd--eur)
+- [Get Started](#get-started)
+  - [Link TF Wallet to GetTFT.com](#link-tf-wallet-to-gettftcom)
+    - [Get TFT using BTC](#get-tft-using-btc)
+    - [Get TFT using Fiat Currency (USD / EUR)](#get-tft-using-fiat-currency-usd--eur)
 - [Important Notice](#important-notice)
 
 ## Intro
@@ -27,7 +28,9 @@ Before you can buy TFT on [GetTFT.com](https://gettft.com/), there are a few pre
 
 - **Mercuryo.io Account**: If you plan to buy TFT tokens using fiat currency (such as USD or EUR), you will need to create an account on [Mercuryo.io](https://mercuryo.io). Mercuryo.io is a fiat payment provider that allows you to purchase cryptocurrencies using traditional fiat currencies. This account will enable you to complete the fiat-to-TFT purchase process on GetTFT.com. See the complete mercuryio.io guide [here](https://help.mercuryo.io/en/collections/2396448-getting-started).
 
-## Get Started: Link TF Wallet to GetTFT.com
+## Get Started
+
+### Link TF Wallet to GetTFT.com
 
 After completing the prerequisites, you can directly go to [GetTFT.com](https://gettft.com/) and click on the 'Get TFT' button to start the process.
 
@@ -37,7 +40,7 @@ You will be then redirected to the TF wallet connection page. Link your mobile T
 
 ![](img/gettft_login.png)
 
-### Get TFT using BTC
+#### Get TFT using BTC
 
 After successfully logged in, you will be redirected to the transaction page. select the amount of TFT you would like to buy and choose the 'BTC' icon as your payment method. Verify that you're providing the correct Stellar TFT wallet address (the wallet you have previously linked), read the t&c of the purchase and hit 'Submit' once everything is verified.
 
@@ -55,7 +58,7 @@ Please note that it may take some time, typically up to 30 minutes, for the TFT 
 
 During this waiting period, it is important to remain patient and refrain from making multiple purchase attempts or transactions. Rest assured that the TFT tokens will be delivered to your TF Connect wallet as soon as the process is completed.
 
-### Get TFT using Fiat Currency (USD / EUR)
+#### Get TFT using Fiat Currency (USD / EUR)
 
 When purchasing TFT tokens using fiat currency on GetTFT.com, the transaction is facilitated through the Mercuryo.io exchange platform. The process involves with firstly buying Bitcoin (BTC)  through the fiat gateway provided by Mercuryo.io. After the successful purchase of BTC, GetTFT.com will automatically convert the BTC amount into TFT tokens and send them to your TF Connect wallet. Please note that there is a minimum purchase amount of 110 USD for TFT tokens when using this platform. 
 
