@@ -56,7 +56,7 @@ To get started, complete the same login process described on '**Get Started: Lin
 
 ![](img/gettft_usd.png)
 
-Once clicked, you will be redirected to [https://exchange.mercuryo.io/](https://exchange.mercuryo.io/) widget. Follow the prompts to complete the purchase, which typically involves connecting your bank account or using a supported payment method to transfer the USD equivalent for the desired amount of BTC tokens.
+Once clicked, you will be redirected to [https://exchange.mercuryo.io/](https://exchange.mercuryo.io/) widget. Please read [Mercuryo.io's FAQ](https://help.mercuryo.io/en/articles/4519473-mercuryo-widget-faq) to learn more about Mercuryo widget. Follow the prompts to complete the purchase, which typically involves connecting your bank account or using a supported payment method to transfer the USD equivalent for the desired amount of BTC tokens. 
 
 ![](img/gettft_mercuryo.png)
 
