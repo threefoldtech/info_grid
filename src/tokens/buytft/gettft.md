@@ -7,6 +7,7 @@
 - [Get Started: Link TF Wallet to GetTFT.com](#get-started-link-tf-wallet-to-gettftcom)
   - [Get TFT using BTC](#get-tft-using-btc)
   - [Get TFT using Fiat Currency (USD / EUR)](#get-tft-using-fiat-currency-usd--eur)
+- [Important Notice](#important-notice)
 
 ## Intro
 
@@ -73,6 +74,8 @@ Once the BTC purchase is complete, the GetTFT.com platform will automatically co
 Please note that it may take some time, typically up to 30 minutes, for the TFT tokens to appear in your TF Connect wallet app after the automatic conversion and transfer process. This delay is normal and can be attributed to various factors, including network congestion and blockchain confirmations.
 
 During this waiting period, it is important to remain patient and refrain from making multiple purchase attempts or transactions. Rest assured that the TFT tokens will be delivered to your TF Connect wallet as soon as the process is completed.
+
+## Important Notice
 
 If, for any reason, you encounter any issues or face difficulties during the purchase process, we recommend contacting the our customer support team via the popup chat box on the page or by going to [support.grid.tf](https://support.grid.tf/). They will be able to assist you and provide the necessary guidance to resolve any problems you may encounter.
 
