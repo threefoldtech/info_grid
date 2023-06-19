@@ -29,6 +29,7 @@
       - [Pancake Swap](tokens/buytft/pancakeswap.md)
       - [1inch.io](tokens/buytft/oneinch.md)
       - [GetTFT.com](tokens/buytft/gettft.md)
+      - [Albedo](tokens/buytft/albedo_buy.md)
     - [Store TFT](tokens/storetft/storetft_readme.md)
       - [Metamask (TFT-BSC)](tokens/storetft/metamask.md)
       - [Trust Wallet (TFT-BSC)](tokens/storetft/trustwallet.md)
