@@ -1,6 +1,7 @@
 <h1>Get TFT on GetTFT.com</h1>
 
 <h2>Table of Contents</h2>
+
 - [Intro](#intro)
 - [Prerequisites](#prerequisites)
 - [Get Started: Link TF Wallet to GetTFT.com](#get-started-link-tf-wallet-to-gettftcom)
