@@ -21,3 +21,4 @@ It's important to explore the available options and select the most convenient a
 
 - [Get TFT(BSC) on Pancake Swap](./buytft/pancakeswap.md)
 - [Get TFT(BSC) on 1inch.io](./buytft/oneinch.md)
+- [Get TFT(Stellar) on GetTFT.com](./buytft/gettft.md)

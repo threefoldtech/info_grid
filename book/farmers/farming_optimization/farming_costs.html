@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Farming Costs</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../intro/intro_readme.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../intro/grid3_howitworks.html"><strong aria-hidden="true">2.</strong> How it Works</a></li><li class="chapter-item expanded "><a href="../../concepts/concepts_readme.html"><strong aria-hidden="true">3.</strong> Grid Concepts</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../concepts/grid_primitives.html"><strong aria-hidden="true">3.1.</strong> TFGrid Primitives</a></li><li class="chapter-item "><a href="../../concepts/grid3_components.html"><strong aria-hidden="true">3.2.</strong> TFGrid Component List</a></li><li class="chapter-item "><a href="../../concepts/grid3_iac.html"><strong aria-hidden="true">3.3.</strong> Infrastructure as Code</a></li><li class="chapter-item "><a href="../../concepts/proof_of_utilization.html"><strong aria-hidden="true">3.4.</strong> Proof of Utilization</a></li><li class="chapter-item "><a href="../../concepts/contract_grace_period.html"><strong aria-hidden="true">3.5.</strong> Contract Grace Period</a></li><li class="chapter-item "><a href="../../concepts/buying_storing_tft.html"><strong aria-hidden="true">3.6.</strong> Buying and Storing TFTs</a></li><li class="chapter-item "><a href="../../concepts/grid3_whatsnew.html"><strong aria-hidden="true">3.7.</strong> What's New on TFGrid v3.x</a></li><li class="chapter-item "><a href="../../concepts/tfchain.html"><strong aria-hidden="true">3.8.</strong> TFChain</a></li></ol></li><li class="chapter-item expanded "><a href="../../getstarted/tfgrid3_getstarted.html"><strong aria-hidden="true">4.</strong> Getting Started</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../getstarted/TF_Connect/TF_Connect.html"><strong aria-hidden="true">4.1.</strong> ThreeFold Connect</a></li><li class="chapter-item "><a href="../../getstarted/TF_Token/tft_toc.html"><strong aria-hidden="true">4.2.</strong> ThreeFold Token</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../getstarted/TF_Token/tft_lobstr/tft_lobstr.html"><strong aria-hidden="true">4.2.1.</strong> TFT on Lobstr</a></li><li class="chapter-item "><a href="../../getstarted/TF_Token/tft_ethereum/tft_ethereum.html"><strong aria-hidden="true">4.2.2.</strong> TFT on Ethereum</a></li></ol></li><li class="chapter-item "><a href="../../getstarted/TF_Dashboard/TF_Dashboard.html"><strong aria-hidden="true">4.3.</strong> ThreeFold Dashboard</a></li><li class="chapter-item "><a href="../../dashboard/explorer/explorer_find_capacity.html"><strong aria-hidden="true">4.4.</strong> Tutorial: Find Node</a></li><li class="chapter-item "><a href="../../weblets/weblets_vm.html"><strong aria-hidden="true">4.5.</strong> Tutorial: Deploy Your First VM</a></li><li class="chapter-item "><a href="../../getstarted/ssh_guide/ssh_guide.html"><strong aria-hidden="true">4.6.</strong> SSH Remote Connection</a></li><li class="chapter-item "><a href="../../getstarted/remote-desktop_gui/remote-desktop_gui.html"><strong aria-hidden="true">4.7.</strong> Remote Desktop and GUI</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../getstarted/remote-desktop_gui/cockpit_guide/cockpit_guide.html"><strong aria-hidden="true">4.7.1.</strong> Cockpit: a Web-based Interface for Servers</a></li><li class="chapter-item "><a href="../../getstarted/remote-desktop_gui/xrdp_guide/xrdp_guide.html"><strong aria-hidden="true">4.7.2.</strong> XRDP: an Open-Source Remote Desktop Protocol</a></li><li class="chapter-item "><a href="../../getstarted/remote-desktop_gui/guacamole_guide/guacamole_guide.html"><strong aria-hidden="true">4.7.3.</strong> Apache Guacamole: a Clientless Remote Desktop Gateway</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../tokens/tft_readme.html"><strong aria-hidden="true">5.</strong> TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../tokens/buytft/buytft_readme.html"><strong aria-hidden="true">5.1.</strong> Get TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../tokens/buytft/pancakeswap.html"><strong aria-hidden="true">5.1.1.</strong> Pancake Swap</a></li><li class="chapter-item "><a href="../../tokens/buytft/oneinch.html"><strong aria-hidden="true">5.1.2.</strong> 1inch.io</a></li><li class="chapter-item "><a href="../../tokens/buytft/gettft.html"><strong aria-hidden="true">5.1.3.</strong> GetTFT.com</a></li></ol></li><li class="chapter-item "><a href="../../tokens/storetft/storetft_readme.html"><strong aria-hidden="true">5.2.</strong> Store TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../tokens/storetft/metamask.html"><strong aria-hidden="true">5.2.1.</strong> Metamask (TFT-BSC)</a></li><li class="chapter-item "><a href="../../tokens/storetft/trustwallet.html"><strong aria-hidden="true">5.2.2.</strong> Trust Wallet (TFT-BSC)</a></li></ol></li><li class="chapter-item "><a href="../../tokens/liquidity/liquidity_readme.html"><strong aria-hidden="true">5.3.</strong> Provide Liquidity</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../tokens/liquidity/liquidity_pancake.html"><strong aria-hidden="true">5.3.1.</strong> LP on Pancake Swap</a></li><li class="chapter-item "><a href="../../tokens/liquidity/liquidity_1inch.html"><strong aria-hidden="true">5.3.2.</strong> LP on 1inch.io</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../getstarted/planetarynetwork.html"><strong aria-hidden="true">6.</strong> Planetary Network</a></li><li class="chapter-item expanded "><a href="../../terraform/terraform_readme.html"><strong aria-hidden="true">7.</strong> Terraform</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../terraform/terraform_install.html"><strong aria-hidden="true">7.1.</strong> Installing Terraform</a></li><li class="chapter-item "><a href="../../terraform/terraform_basics.html"><strong aria-hidden="true">7.2.</strong> Terraform Basics</a></li><li class="chapter-item "><a href="../../terraform/terraform_get_started.html"><strong aria-hidden="true">7.3.</strong> Tutorial</a></li><li class="chapter-item "><a href="../../terraform/terraform_delete.html"><strong aria-hidden="true">7.4.</strong> Delete</a></li><li class="chapter-item "><a href="../../terraform/terraform_full_vm.html"><strong aria-hidden="true">7.5.</strong> Full VM Deployment</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_resources_readme.html"><strong aria-hidden="true">7.6.</strong> Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../terraform/resources/terraform_vm.html"><strong aria-hidden="true">7.6.1.</strong> Virtual Machine</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_vm_gateway.html"><strong aria-hidden="true">7.6.2.</strong> Web Gateway</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_k8s.html"><strong aria-hidden="true">7.6.3.</strong> Kubernetes Cluster</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../terraform/resources/terraform_k8s_demo.html"><strong aria-hidden="true">7.6.3.1.</strong> Demo</a></li></ol></li><li class="chapter-item "><a href="../../terraform/resources/terraform_zdb.html"><strong aria-hidden="true">7.6.4.</strong> ZDB</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_qsfs.html"><strong aria-hidden="true">7.6.5.</strong> Quantum Filesystem</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_caprover.html"><strong aria-hidden="true">7.6.6.</strong> CapRover</a></li></ol></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_advanced_readme.html"><strong aria-hidden="true">7.7.</strong> Advanced</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../terraform/advanced/terraform_provider.html"><strong aria-hidden="true">7.7.1.</strong> Terraform Provider</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_provisioners.html"><strong aria-hidden="true">7.7.2.</strong> Terraform Provisioners</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_mounts.html"><strong aria-hidden="true">7.7.3.</strong> Mounts</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_capacity_planning.html"><strong aria-hidden="true">7.7.4.</strong> Capacity Planning</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_updates.html"><strong aria-hidden="true">7.7.5.</strong> Updates</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_nextcloud_redundant.html"><strong aria-hidden="true">7.7.6.</strong> Nextcloud Redundant Deployment</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../javascript/grid3_javascript_readme.html"><strong aria-hidden="true">8.</strong> Javascript Client</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../javascript/grid3_javascript_installation.html"><strong aria-hidden="true">8.1.</strong> Installation</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_loadclient.html"><strong aria-hidden="true">8.2.</strong> Loading Client</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_vm.html"><strong aria-hidden="true">8.3.</strong> Deploy a VM</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_capacity_planning.html"><strong aria-hidden="true">8.4.</strong> Capacity Planning</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_vms.html"><strong aria-hidden="true">8.5.</strong> Deploy Multiple VMs</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_caprover.html"><strong aria-hidden="true">8.6.</strong> Deploy CapRover</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_vm_gateways.html"><strong aria-hidden="true">8.7.</strong> Gateways</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_kubernetes.html"><strong aria-hidden="true">8.8.</strong> Deploy a Kubernetes Cluster</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_zdb.html"><strong aria-hidden="true">8.9.</strong> Deploy a ZDB</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_qsfs_zdbs.html"><strong aria-hidden="true">8.10.</strong> Deploy ZDBs for QSFS</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_qsfs.html"><strong aria-hidden="true">8.11.</strong> QSFS</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_kvstore.html"><strong aria-hidden="true">8.12.</strong> Key Value Store</a></li><li class="chapter-item "><a href="../../javascript/grid3_wireguard_gateway.html"><strong aria-hidden="true">8.13.</strong> Gateway with wireguard backend</a></li></ol></li><li class="chapter-item expanded "><a href="../../go/grid3_go_readme.html"><strong aria-hidden="true">9.</strong> Go Client</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../go/grid3_go_installation.html"><strong aria-hidden="true">9.1.</strong> Installation</a></li><li class="chapter-item "><a href="../../go/grid3_go_load_client.html"><strong aria-hidden="true">9.2.</strong> Loading Client</a></li><li class="chapter-item "><a href="../../go/grid3_go_vm.html"><strong aria-hidden="true">9.3.</strong> Deploy a VM</a></li><li class="chapter-item "><a href="../../go/grid3_go_vms.html"><strong aria-hidden="true">9.4.</strong> Deploy Multiple VMs</a></li><li class="chapter-item "><a href="../../go/grid3_go_gateways.html"><strong aria-hidden="true">9.5.</strong> Deploy Gateways</a></li><li class="chapter-item "><a href="../../go/grid3_go_kubernetes.html"><strong aria-hidden="true">9.6.</strong> Deploy Kubernetes</a></li></ol></li><li class="chapter-item expanded "><a href="../../tfgridcmd/grid3_cli_readme.html"><strong aria-hidden="true">10.</strong> TFGrid CLI</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_installation.html"><strong aria-hidden="true">10.1.</strong> Installation</a></li><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_login.html"><strong aria-hidden="true">10.2.</strong> Login</a></li><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_vm.html"><strong aria-hidden="true">10.3.</strong> Deploy a VM</a></li><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_gateways.html"><strong aria-hidden="true">10.4.</strong> Deploy Gateways</a></li><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_kubernetes.html"><strong aria-hidden="true">10.5.</strong> Deploy Kubernetes</a></li></ol></li><li class="chapter-item expanded "><a href="../../TF_Grid_Services/tf_grid_services_readme.html"><strong aria-hidden="true">11.</strong> TFGrid Services</a></li><li class="chapter-item expanded "><a href="../../cloud/cloud.html"><strong aria-hidden="true">12.</strong> Cloud</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cloud/cloudunits_pricing.html"><strong aria-hidden="true">12.1.</strong> Pricing</a></li></ol></li><li class="chapter-item expanded "><a href="../../weblets/weblets_home.html"><strong aria-hidden="true">13.</strong> Weblets</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../weblets/weblets_profile_manager.html"><strong aria-hidden="true">13.1.</strong> Profile Manager</a></li><li class="chapter-item "><a href="../../weblets/weblets_deployments_list.html"><strong aria-hidden="true">13.2.</strong> Deployments List</a></li><li class="chapter-item "><a href="../../weblets/weblets_cancel_contracts.html"><strong aria-hidden="true">13.3.</strong> Cancel Contracts</a></li><li class="chapter-item "><a href="../../weblets/weblets_basic_environments_readme.html"><strong aria-hidden="true">13.4.</strong> Basic Environments</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../weblets/weblets_fullVm.html"><strong aria-hidden="true">13.4.1.</strong> Full Virtual Machine</a></li><li class="chapter-item "><a href="../../weblets/weblets_vm.html"><strong aria-hidden="true">13.4.2.</strong> Virtual Machine</a></li><li class="chapter-item "><a href="../../weblets/weblets_k8s.html"><strong aria-hidden="true">13.4.3.</strong> Kubernetes</a></li><li class="chapter-item "><a href="../../weblets/weblets_nixos_micro.html"><strong aria-hidden="true">13.4.4.</strong> Nixos MicroVM</a></li></ol></li><li class="chapter-item "><a href="../../weblets/weblets_ready_community_readme.html"><strong aria-hidden="true">13.5.</strong> Ready Community Solutions</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../weblets/weblets_algorand.html"><strong aria-hidden="true">13.5.1.</strong> Algorand</a></li><li class="chapter-item "><a href="../../weblets/weblets_caprover.html"><strong aria-hidden="true">13.5.2.</strong> Caprover</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../weblets/weblets_caprover_admin.html"><strong aria-hidden="true">13.5.2.1.</strong> Caprover Admin</a></li><li class="chapter-item "><a href="../../weblets/weblets_caprover_worker.html"><strong aria-hidden="true">13.5.2.2.</strong> Caprover Worker</a></li></ol></li><li class="chapter-item "><a href="../../weblets/weblets_casper.html"><strong aria-hidden="true">13.5.3.</strong> CasperLabs</a></li><li class="chapter-item "><a href="../../weblets/weblets_discourse.html"><strong aria-hidden="true">13.5.4.</strong> Discourse</a></li><li class="chapter-item "><a href="../../weblets/weblets_funkwhale.html"><strong aria-hidden="true">13.5.5.</strong> Funkwhale</a></li><li class="chapter-item "><a href="../../weblets/weblets_mastodon.html"><strong aria-hidden="true">13.5.6.</strong> Mastodon Weblet</a></li><li class="chapter-item "><a href="../../weblets/weblets_mattermost.html"><strong aria-hidden="true">13.5.7.</strong> Mattermost</a></li><li class="chapter-item "><a href="../../weblets/weblets_nodepilot.html"><strong aria-hidden="true">13.5.8.</strong> Node Pilot</a></li><li class="chapter-item "><a href="../../weblets/weblets_owncloud.html"><strong aria-hidden="true">13.5.9.</strong> Owncloud</a></li><li class="chapter-item "><a href="../../weblets/weblets_peertube.html"><strong aria-hidden="true">13.5.10.</strong> Peertube</a></li><li class="chapter-item "><a href="../../weblets/weblets_presearch.html"><strong aria-hidden="true">13.5.11.</strong> Presearch</a></li><li class="chapter-item "><a href="../../weblets/weblets_subsquid.html"><strong aria-hidden="true">13.5.12.</strong> Subsquid</a></li><li class="chapter-item "><a href="../../weblets/weblets_taiga.html"><strong aria-hidden="true">13.5.13.</strong> Taiga</a></li><li class="chapter-item "><a href="../../weblets/weblets_umbrel.html"><strong aria-hidden="true">13.5.14.</strong> Umbrel</a></li><li class="chapter-item "><a href="../../weblets/weblets_wordpress.html"><strong aria-hidden="true">13.5.15.</strong> WordPress</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../dashboard/dashboard.html"><strong aria-hidden="true">14.</strong> Dashboard</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../dashboard/explorer/explorer_home.html"><strong aria-hidden="true">14.1.</strong> Dasboard Explorer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../dashboard/explorer/explorer_find_capacity.html"><strong aria-hidden="true">14.1.1.</strong> Find Capacity</a></li><li class="chapter-item "><a href="../../dashboard/explorer/explorer_graphql_intro.html"><strong aria-hidden="true">14.1.2.</strong> A Glimpse into GraphQL</a></li></ol></li><li class="chapter-item "><a href="../../dashboard/portal/dashboard_portal_home.html"><strong aria-hidden="true">14.2.</strong> TFChain Portal</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../dashboard/portal/dashboard_portal_ui_tokens.html"><strong aria-hidden="true">14.2.1.</strong> Manage TFTs on TFChain</a></li><li class="chapter-item "><a href="../../dashboard/portal/dashboard_portal_ui_farming.html"><strong aria-hidden="true">14.2.2.</strong> Activate Farmer Account and Nodes on TFChain</a></li><li class="chapter-item "><a href="../../dashboard/portal/dashboard_portal_dedicated_nodes.html"><strong aria-hidden="true">14.2.3.</strong> Dedicated Nodes</a></li></ol></li><li class="chapter-item "><a href="../../dashboard/dao_voting/dao_voting.html"><strong aria-hidden="true">14.3.</strong> DAO Voting</a></li></ol></li><li class="chapter-item expanded "><a href="../../flist_hub/flist_hub.html"><strong aria-hidden="true">15.</strong> Flist Hub</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../manual3_iac/grid3_supported_flists.html"><strong aria-hidden="true">15.1.</strong> Supported FLists</a></li></ol></li><li class="chapter-item expanded "><a href="../../farmers/farmers.html"><strong aria-hidden="true">16.</strong> Farmers</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/3node_building/3node_building.html"><strong aria-hidden="true">16.1.</strong> Build a 3Node</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/3node_building/1_create_farm.html"><strong aria-hidden="true">16.1.1.</strong> 1. Create a Farm</a></li><li class="chapter-item "><a href="../../farmers/3node_building/2_bootstrap_image.html"><strong aria-hidden="true">16.1.2.</strong> 2. Create a Zero-OS Bootstrap Image</a></li><li class="chapter-item "><a href="../../farmers/3node_building/3_set_hardware.html"><strong aria-hidden="true">16.1.3.</strong> 3. Set the Hardware</a></li><li class="chapter-item "><a href="../../farmers/3node_building/4_wipe_all_disks.html"><strong aria-hidden="true">16.1.4.</strong> 4. Wipe All the Disks</a></li><li class="chapter-item "><a href="../../farmers/3node_building/5_set_bios_uefi.html"><strong aria-hidden="true">16.1.5.</strong> 5. Set the BIOS/UEFI</a></li><li class="chapter-item "><a href="../../farmers/3node_building/6_boot_3node.html"><strong aria-hidden="true">16.1.6.</strong> 6. Boot the 3Node</a></li><li class="chapter-item "><a href="../../farmers/3node_building/data_center.html"><strong aria-hidden="true">16.1.7.</strong> Set Up a ThreeFold Farm in a Data Center</a></li></ol></li><li class="chapter-item "><a href="../../farmers/complete_diy_guides/complete_diy_guides_readme.html"><strong aria-hidden="true">16.2.</strong> Complete DIY 3Node Guides</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/complete_diy_guides/3node_diy_desktop/3node_diy_desktop.html"><strong aria-hidden="true">16.2.1.</strong> 3Node Desktop DIY Guide</a></li><li class="chapter-item "><a href="../../farmers/complete_diy_guides/3node_diy_rack_server/3node_diy_rack_server.html"><strong aria-hidden="true">16.2.2.</strong> 3Node Rack Server DIY Guide</a></li></ol></li><li class="chapter-item expanded "><a href="../../farmers/farming_optimization/farming_optimization.html"><strong aria-hidden="true">16.3.</strong> Farming Optimization</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/farming_optimization/calculate_roi.html"><strong aria-hidden="true">16.3.1.</strong> Calculate Your ROI</a></li><li class="chapter-item "><a href="../../farmers/farming_optimization/farm_room_parameters.html"><strong aria-hidden="true">16.3.2.</strong> Room Parameters</a></li><li class="chapter-item expanded "><a href="../../farmers/farming_optimization/farming_costs.html" class="active"><strong aria-hidden="true">16.3.3.</strong> Farming Costs</a></li></ol></li><li class="chapter-item "><a href="../../farmers/threefold_token/threefold_token.html"><strong aria-hidden="true">16.4.</strong> TFT and Farming</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/threefold_token/tft_facts.html"><strong aria-hidden="true">16.4.1.</strong> TFT Facts</a></li><li class="chapter-item "><a href="../../farmers/threefold_token/storing_tft/storing_tft.html"><strong aria-hidden="true">16.4.2.</strong> Storing TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/threefold_token/storing_tft/tf_connect_app.html"><strong aria-hidden="true">16.4.2.1.</strong> TF Connect App</a></li><li class="chapter-item "><a href="../../farmers/threefold_token/storing_tft/hardware_wallet.html"><strong aria-hidden="true">16.4.2.2.</strong> Hardware Wallet</a></li></ol></li><li class="chapter-item "><a href="../../farmers/threefold_token/buy_sell_tft/buy_sell_tft.html"><strong aria-hidden="true">16.4.3.</strong> Buy and Sell TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/threefold_token/buy_sell_tft/set_stellar_address.html"><strong aria-hidden="true">16.4.3.1.</strong> Set a Stellar Address</a></li><li class="chapter-item "><a href="../../getstarted/TF_Token/tft_lobstr/tft_lobstr.html"><strong aria-hidden="true">16.4.3.2.</strong> TFT on Lobstr</a></li><li class="chapter-item "><a href="../../farmers/threefold_token/buy_sell_tft/tft_bridges.html"><strong aria-hidden="true">16.4.3.3.</strong> TFT Bridges</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/threefold_token/buy_sell_tft/bsc_stellar_bridge.html"><strong aria-hidden="true">16.4.3.3.1.</strong> BSC-Stellar Bridge</a></li><li class="chapter-item "><a href="../../farmers/threefold_token/buy_sell_tft/tfchain_stellar_bridge.html"><strong aria-hidden="true">16.4.3.3.2.</strong> TFChain-Stellar Bridge</a></li><li class="chapter-item "><a href="../../getstarted/TF_Token/tft_ethereum/tft_ethereum.html"><strong aria-hidden="true">16.4.3.3.3.</strong> Ethereum-Stellar Bridge</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><a href="../../farmers/farmerbot/farmerbot.html"><strong aria-hidden="true">16.5.</strong> Farmerbot</a></li><li class="chapter-item "><a href="../../farmers/farmers_faq/farmers_faq.html"><strong aria-hidden="true">16.6.</strong> Farmers FAQ</a></li></ol></li><li class="chapter-item expanded "><a href="../../tf_video_gallery/tf_video_gallery.html"><strong aria-hidden="true">17.</strong> ThreeFold Video Gallery</a></li><li class="chapter-item expanded "><a href="../../tf_mastodon/tf_mastodon_readme.html"><strong aria-hidden="true">18.</strong> ThreeFold Mastodon Server</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../tf_mastodon/tf_mastodon_deploy.html"><strong aria-hidden="true">18.1.</strong> Mastodon Deployer Manual</a></li><li class="chapter-item "><a href="../../tf_mastodon/tf_mastodon_faq.html"><strong aria-hidden="true">18.2.</strong> Frequently Asked Questions</a></li></ol></li><li class="chapter-item expanded "><a href="../../proxy/proxy.html"><strong aria-hidden="true">19.</strong> Grid Proxy</a></li><li class="chapter-item expanded "><a href="../../advanced/advanced.html"><strong aria-hidden="true">20.</strong> Advanced</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../advanced/grid3_stellar_tfchain_bridge.html"><strong aria-hidden="true">20.1.</strong> Grid3 Stellar-TFChain Bridge</a></li><li class="chapter-item "><a href="../../advanced/token_transfer_keygenerator.html"><strong aria-hidden="true">20.2.</strong> Token Transfer Keygenerator</a></li><li class="chapter-item "><a href="../../advanced/cancel_contracts.html"><strong aria-hidden="true">20.3.</strong> Cancel contracts</a></li><li class="chapter-item "><a href="../../advanced/contract_bill_report.html"><strong aria-hidden="true">20.4.</strong> Contract Bills Reports</a></li><li class="chapter-item "><a href="../../advanced/list_public_ips.html"><strong aria-hidden="true">20.5.</strong> Listing Free Public IPs</a></li><li class="chapter-item "><a href="../../advanced/grid3_redis.html"><strong aria-hidden="true">20.6.</strong> Redis</a></li></ol></li><li class="chapter-item expanded "><a href="../../roadmap/roadmap_readme.html"><strong aria-hidden="true">21.</strong> ThreeFold Roadmap</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../roadmap/releasenotes/releasenotes_readme.html"><strong aria-hidden="true">21.1.</strong> Release Notes</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_9_0.html"><strong aria-hidden="true">21.1.1.</strong> TFGrid v3.9.0</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_8_0.html"><strong aria-hidden="true">21.1.2.</strong> TFGrid v3.8.0</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_7_0.html"><strong aria-hidden="true">21.1.3.</strong> TFGrid v3.7.0</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_6_1.html"><strong aria-hidden="true">21.1.4.</strong> TFGrid v3.6.1</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_6_0.html"><strong aria-hidden="true">21.1.5.</strong> TFGrid v3.6.0</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_0_a5.html"><strong aria-hidden="true">21.1.6.</strong> TFGrid v3.0.0 Alpha-5</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_0_a4.html"><strong aria-hidden="true">21.1.7.</strong> TFGrid v3.0.0 Alpha-4</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_0_a2.html"><strong aria-hidden="true">21.1.8.</strong> TFGrid v3.0.0 Alpha-2</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_0.html"><strong aria-hidden="true">21.1.9.</strong> TFGrid v3.0.0</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../tfchain/tfchain.html"><strong aria-hidden="true">22.</strong> ThreeFold Chain</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../tfchain/introduction.html"><strong aria-hidden="true">22.1.</strong> Introduction</a></li><li class="chapter-item "><a href="../../tfchain/farming_policies.html"><strong aria-hidden="true">22.2.</strong> Farming Policies</a></li><li class="chapter-item "><a href="../../tfchain/tfchain_external_service_contract.html"><strong aria-hidden="true">22.3.</strong> External Service Contract</a></li><li class="chapter-item "><a href="../../tfchain/tfchain_solution_provider.html"><strong aria-hidden="true">22.4.</strong> Become a Solution Provider</a></li></ol></li><li class="chapter-item expanded "><a href="../../collaboration_tools/collaboration_tools.html"><strong aria-hidden="true">23.</strong> Collaboration Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../collaboration_tools/circle_tool.html"><strong aria-hidden="true">23.1.</strong> Circle Tool</a></li><li class="chapter-item "><a href="../../collaboration_tools/website_tool.html"><strong aria-hidden="true">23.2.</strong> Website Deployer</a></li></ol></li><li class="chapter-item expanded "><a href="../../contribute/contribute.html"><strong aria-hidden="true">24.</strong> How to Contribute</a></li><li class="chapter-item expanded "><a href="../../testing/testing_readme.html"><strong aria-hidden="true">25.</strong> How to Test</a></li><li class="chapter-item expanded "><a href="../../faq/faq.html"><strong aria-hidden="true">26.</strong> FAQ</a></li><li class="chapter-item expanded "><a href="../../legal/legal.html"><strong aria-hidden="true">27.</strong> Legal</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="calculate-the-farming-costs-power-internet-and-total-costs"><a class="header" href="#calculate-the-farming-costs-power-internet-and-total-costs"> Calculate the Farming Costs: Power, Internet and Total Costs</a></h1>
+<h2 id="table-of-contents"><a class="header" href="#table-of-contents"> Table of Contents </a></h2>
+<ul>
+<li><a href="#calculate-the-total-electricity-cost-of-your-farm">Calculate the Total Electricity Cost of Your Farm</a></li>
+<li><a href="#calculate-the-proper-bandwidth-needed-for-your-farm">Calculate the Proper Bandwidth Needed for Your Farm</a>
+<ul>
+<li><a href="#the-minimum-bandwidth-per-3node-equation">The Minimum Bandwidth per 3Node Equation</a></li>
+<li><a href="#cost-per-month-for-a-given-bandwidth">Cost per Month for a Given Bandwidth</a></li>
+</ul>
+</li>
+<li><a href="#calculate-total-cost-and-revenue">Calculate Total Cost and Revenue</a>
+<ul>
+<li><a href="#check-revenue-with-the-threefold-simulator">Check Revenue with the ThreeFold Simulator</a></li>
+<li><a href="#economics-of-farming">Economics of Farming</a></li>
+</ul>
+</li>
+<li><a href="#questions-and-feedback">Questions and Feedback</a></li>
+</ul>
+<hr />
+<h2 id="calculate-the-total-electricity-cost-of-your-farm"><a class="header" href="#calculate-the-total-electricity-cost-of-your-farm">Calculate the Total Electricity Cost of Your Farm</a></h2>
+<p>The total electricity cost of your farm is the sum of all Power used by your system times the price you pay for each kWh of power.</p>
+<blockquote>
+<p>Total electricity cost = Total Electricity in kWh * Cost per kWh</p>
+</blockquote>
+<blockquote>
+<p>Total Electricty in kWh = 3Nodes' electricity consumption * Number of 3Nodes + Cooling system electricity consumption</p>
+</blockquote>
+<p>With our example, we have 5 servers running at 400 W at Full Load and we have a 12K BTU unit that is consuming in average 1000W. </p>
+<p>We would then have:</p>
+<blockquote>
+<p>5 * 400 W + 1000 W = 3000 W = 3 kW</p>
+</blockquote>
+<p>To get the kWh per day we simply multiply by 24. </p>
+<blockquote>
+<p>kW * (# of hour per day) = daily kWh consumption</p>
+</blockquote>
+<blockquote>
+<p>3 kW * 24 = 72 kWh / day</p>
+</blockquote>
+<p>We thus have 72 kWH per day. For 30 days, this would be </p>
+<blockquote>
+<p>kWh / day * (# day in a month) = kWh per month</p>
+</blockquote>
+<blockquote>
+<p>72 * 30 = 2160 kWH / month.</p>
+</blockquote>
+<p>At a kWh price of 0.10$ USD, we have a cost of 216 $USD per month for the electricity bill of our ThreeFold farm.</p>
+<blockquote>
+<p>kWH / month of the farm * kWh Cost = Electricity Bill per month for the farm</p>
+</blockquote>
+<blockquote>
+<p>2160 * 0.1 = 216$USD / month for electricity bills</p>
+</blockquote>
+<hr />
+<h2 id="calculate-the-proper-bandwidth-needed-for-your-farm"><a class="header" href="#calculate-the-proper-bandwidth-needed-for-your-farm">Calculate the Proper Bandwidth Needed for Your Farm</a></h2>
+<p>The bandwidth needed for a given 3Node is not yet set in stone and you are welcome to participate in ongoing <a href="https://forum.threefold.io/t/storage-bandwidth-ratio/1389">discussion on this subject</a> on the ThreeFold Forum.</p>
+<p>In this section, we will give general guidelines. The goal is to have a good idea of what constitutes a proper bandwidth available for a given amount of resources utilized on the ThreeFold Grid.</p>
+<p>Starting with a minimum of 1 mbps per Titan, which is 1 TB SSD and 32 GB RAM, we note that this is the lowest limit that gives the opportunity for the most people possible to join the ThreeFold Grid. That being said, we could set that 10 mbps is an acceptable upper limit for 1 TB SSD and 64 GB of RAM. </p>
+<p>Those numbers are empirical and more information will be shared in the future. The ratio 1TB SSD/64GB RAM is in tune with the optimal TFT rewards ratio. It is thus logical to think that farmers will build 3Node based on this ratio. Giving general bandwidth guidelines based on this ratio unit could thus be efficient for the current try-and-learn situation. </p>
+<hr />
+<h3 id="the-minimum-bandwidth-per-3node-equation"><a class="header" href="#the-minimum-bandwidth-per-3node-equation">The Minimum Bandwidth per 3Node Equation</a></h3>
+<hr />
+<p>Here we explore some equations that can give a general idea to farmers of the bandwidth needed for their farms. As stated, this is not yet set in stones and the TFDAO will need to discuss and clarify those notions.</p>
+<p>Here is a general equation that gives you a good idea of a correct bandwidth for a 3Node:</p>
+<blockquote>
+<p>min Bandwidth per 3Node (mbps) = k * max((Total SSD TB / 1 Tb),(Total Threads / 8 Threads),(Total GB / 64 GB)) + k * (Total HDD TB / 2)</p>
+</blockquote>
+<p>Setting k = 10 mbps, we have:</p>
+<blockquote>
+<p>min Bandwidth per 3Node (mbps) = 10 * max((Total SSD TB / 1 TB),(Total Threads / 8 Threads),(Total GB / 64 GB)) + 10 * (Total HDD TB / 2)</p>
+</blockquote>
+<p>As an example, a Titan, with 1TB SSD, 8 Threads and 64 GB of RAM, would need 10 mbps:</p>
+<blockquote>
+<p>10 * max(1, 1, 1) = 10 * 1 = 10</p>
+</blockquote>
+<p>With the last portion of the equation, we can see that for each additional 1TB HDD storage, you would need to add 5 mbps of bandwidth.</p>
+<hr />
+<p>Let's take a big server as another example. Say we have a server with 5TB SSD, 48 threads and 384 GB of RAM. We would then need 60 mbps of bandwidth for each of these 3Nodes:</p>
+<blockquote>
+<p>10 * max((5/5), (48/8), (384/64)) = 10 * max(5,6,6) = 10 * 6 = 60</p>
+</blockquote>
+<p>This server would need 60 mbps minimum to account for a full TF Grid utilization.</p>
+<p>You can easily scale this equation if you have many 3Nodes.</p>
+<hr />
+<p>Let's say you have a 1 gbps bandwidth from your Internet Service Provider (ISP). How much of those 3Nodes could your farm have?</p>
+<blockquote>
+<p>Floor (Total available bandwidth / ((Bandwidth needed per 3Nodes)) = Max servers possible</p>
+</blockquote>
+<p>With our example we have:</p>
+<blockquote>
+<p>1000 / 60 = 16.66... = 16</p>
+</blockquote>
+<p>We note that the function Floor takes the integer without the decimals.</p>
+<p>Thus, a 1 gbps bandwidth farm could have 16 3Nodes with each 5TB SSD, 48 threads and 384 GB of RAM.</p>
+<hr />
+<p>In this section, we used <strong>k = 10 mbps</strong>. If you follow those guidelines, you will most probably have a decent bandwidth for your ThreeFold farm. For the time being, the goal is to have farmers building ThreeFold farms and scale them reasonably with their available bandwidth. </p>
+<p>Stay tuned for official bandwidth parameters in the future.</p>
+<hr />
+<h3 id="cost-per-month-for-a-given-bandwidth"><a class="header" href="#cost-per-month-for-a-given-bandwidth">Cost per Month for a Given Bandwidth</a></h3>
+<hr />
+<p>Once you know the general bandwidth needed for your farm, you can check with your ISP the price per month and take this into account when calculating your monthly costs.</p>
+<p>Let's take the example we used with 5 servers with 400 W at Full Load. Let's say these 5 servers have the same parameters we used above here. We then need 60 gbps per 3Nodes. This means we need 300 mbps. For the sake of our example, let's say this is around 100$ USD per month.</p>
+<hr />
+<h2 id="calculate-total-cost-and-revenue"><a class="header" href="#calculate-total-cost-and-revenue">Calculate Total Cost and Revenue</a></h2>
+<hr />
+<p>As the TFT price is fixed for 60 months when you connect your 3Node for the first time on the TF Grid, we will use the period of 60 months, or 5 years, to calculate the total cost and revenue.</p>
+<p>The total cost is equal to:</p>
+<blockquote>
+<p>Total Cost = Initial investment + 60 * (electricity + Internet costs per month)</p>
+</blockquote>
+<p>In our example, we can state that we paid each server 1500$ USD and that they generate each 3000 TFT per month, with an entry price of 0.08$ USD per TFT. </p>
+<p>The electricity cost per month is </p>
+<blockquote>
+<p>144$ for the electricity bill</p>
+<p>100$ for the Internet bill</p>
+<p>Total : 244 $ monthly cost for electricity and Internet</p>
+</blockquote>
+<p>The revenues are</p>
+<blockquote>
+<p>Revenues per month = Number of 3Nodes * TFT farmed per 3Node * Price TFT Sold</p>
+</blockquote>
+<p>In this example, we have 5 servers generating 2000 TFT per month at 0.08$ USD per TFT:</p>
+<blockquote>
+<p>5 * 3000$ * 0.08$ = 1200$</p>
+</blockquote>
+<p>The net revenue per month are thus equal to </p>
+<blockquote>
+<p>Net Revenue = Gross revenue - Monthly cost.</p>
+</blockquote>
+<p>We thus have </p>
+<blockquote>
+<p>1200$ - 244$ = 956$</p>
+</blockquote>
+<p>This means that we generate a net profit of 956$ per month, without considering the initial investment of building the 3Nodes for the farm.</p>
+<p>In the previous AC example, we calculate that a minimum of 12K BTU was needed for the AC system. Let's say that this would mean buying a 350$ USD 12k BTU AC unit.</p>
+<p>The initial cost is the cost of all the 3Nodes plus the AC system.</p>
+<blockquote>
+<p>Number of 3Nodes * cost per 3Nodes + Cost of AC system = Total Cost</p>
+</blockquote>
+<p>In this case, it would be:</p>
+<blockquote>
+<p>Total initial investment = Number of 3Nodes * Cost of 3Node + Cost of AC system</p>
+</blockquote>
+<p>Then we'd have:</p>
+<blockquote>
+<p>5 * 1500 + 350 = 7850 $</p>
+</blockquote>
+<p>Thus, a more realistic ROI would be:</p>
+<blockquote>
+<p>Total initial investment / Net Revenue per Month = ROI in months</p>
+</blockquote>
+<p>In our case, we would have:</p>
+<blockquote>
+<p>7850$ / 956$ = Ceiling(8.211...) = 9</p>
+</blockquote>
+<p>With the function Ceiling taking the upper integer, without any decimals.</p>
+<p>Then within 9 months, this farm would have paid itself and from now on, it would be only positive net revenue of 956$ per month.</p>
+<p>We note that this takes into consideration that we are using the AC system 24/7. This would surely not be the case in real life. This means that the real ROI would be even better. It is a common practice to do estimates with stricter parameters. If you predict being profitable with strict parameters, you will surely be profitable in real life, even when &quot;things&quot; happen and not everything goes as planned. As always, this is not financial advice.</p>
+<p>We recall that in the section <a href="#calculate-the-roi-of-a-diy-3Node">Calculate the ROI of a DIY 3Node</a>, we found a simpler ROI of 6.25 months, say 7 months, that wasn't taking into consideration the additional costs of Internet and electricity. We now have a more realistic ROI of 9 months based on a fixed TFT price of 0.08$ USD. You will need to use to equations and check with your current TF farm and 3Nodes, as well as the current TFT market price.</p>
+<hr />
+<h3 id="check-revenue-with-the-threefold-simulator"><a class="header" href="#check-revenue-with-the-threefold-simulator">Check Revenue with the ThreeFold Simulator</a></h3>
+<hr />
+<p>To know how much TFT you will farm per month for a giving 3Node, the easiest route is to use the <a href="https://simulator.grid.tf/">ThreeFold Simulator</a>. You can do predictions of 60 months as the TFT price is locked at the TFT price when you first connect your 3Node, and this, for 60 months.</p>
+<p>To know the details of the calculations behind this simulator, you can read <a href="https://library.threefold.me/info/threefold#/tfgrid/farming/threefold__farming_reward">this documentation</a>.</p>
+<hr />
+<h3 id="economics-of-farming"><a class="header" href="#economics-of-farming">Economics of Farming</a></h3>
+<hr />
+<p>As a brief synthesis, the following equations are used to calculate the total revenues and costs of your farm.</p>
+<pre><code>    - Total Monthly Cost = Electricity cost + Internet Cost
+    - Total Electricity Used = Electricy per 3Node * Number of 3Node + Electricity for Cooling
+    - Total Monthly Revenue = TFT farmed per 3 node * Number of 3Nodes * TFT price when sold
+    - Initial Investment = Price of farm (3Nodes) + Price of AC system
+    - Total Return on investment = (60 * Monthly Revenue) - (60 * Monthly cost) - Initial Investment
+</code></pre>
+<hr />
+<h2 id="questions-and-feedback"><a class="header" href="#questions-and-feedback">Questions and Feedback</a></h2>
+<p>This section constitutes a quick synthesis of the costs and revenues when running a ThreeFold Farm. As always, do your own reseaerch and don't hesitate to visit the <a href="https://forum.threefold.io/">ThreeFold Forum</a> on the <a href="https://t.me/threefoldfarmers">ThreeFold Telegram Farmer Group</a> if you have any questions.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../farmers/farming_optimization/farm_room_parameters.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../farmers/threefold_token/threefold_token.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../farmers/farming_optimization/farm_room_parameters.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../farmers/threefold_token/threefold_token.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
