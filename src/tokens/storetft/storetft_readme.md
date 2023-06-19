@@ -16,6 +16,7 @@ If TFTs are issued on the Stellar blockchain, users can opt to store them in Ste
 
 - [Metamask Wallet (TFT-BSC)](metamask.md)
 - [Trust Wallet (TFT-BSC)](trustwallet.md)
+- [Albedo Wallet (TFT-Stellar)](albedo_store.md)
 
 ## Important Disclaimer
 
