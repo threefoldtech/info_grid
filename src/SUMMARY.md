@@ -33,7 +33,7 @@
     - [Store TFT](tokens/storetft/storetft_readme.md)
       - [Metamask (TFT-BSC)](tokens/storetft/metamask.md)
       - [Trust Wallet (TFT-BSC)](tokens/storetft/trustwallet.md)
-      - [Albedo](tokens/storetft/albedo_store.md)
+      - [Albedo (TFT-Stellar)](tokens/storetft/albedo_store.md)
     - [Provide Liquidity](tokens/liquidity/liquidity_readme.md)
       - [LP on Pancake Swap](tokens/liquidity/liquidity_pancake.md)
       - [LP on 1inch.io](tokens/liquidity/liquidity_1inch.md)
