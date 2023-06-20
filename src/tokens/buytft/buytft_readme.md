@@ -24,6 +24,7 @@ It's important to explore the available options and select the most convenient a
 - [Get TFT(BSC) on 1inch.io](./buytft/oneinch.md)
 - [Get TFT(Stellar) on GetTFT.com](./buytft/gettft.md)
 - [Get TFT(Stellar) on Albedo Wallet](./buytft/albedo_buy.md)
+- [Get TFT(Stellar) on Solar Wallet](./buytft/solar_buy.md)
 
 ## Disclaimer
 

@@ -3,7 +3,7 @@
 <h2>Table of Contents</h2>
 
 - [Intro](#intro)
-- [Software Wallet Guides](#software-wallet-guides)
+- [TFT Wallet Guides](#tft-wallet-guides)
 - [Disclaimer](#disclaimer)
 
 ## Intro
@@ -12,12 +12,13 @@ There are various options available to store TFTs, each with its own benefits an
 
 If TFTs are issued on the Stellar blockchain, users can opt to store them in Stellar-compatible wallets. On the other hand, if TFTs are bridged and swapped from Stellar to the Binance Smart Chain (BSC) or Ethereum Network, users can utilize BSC-compatible and ETH- compatible wallets to store their tokens. 
 
-## Software Wallet Guides
+## TFT Wallet Guides
 
 - [Metamask Wallet (TFT-BSC)](metamask.md)
 - [Trust Wallet (TFT-BSC)](trustwallet.md)
 - [Albedo Wallet (TFT-Stellar)](albedo_store.md)
-
+- [Solar Wallet (TFT-Stellar)](solar_wallet.md)
+- 
 ## Disclaimer
 
 The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
