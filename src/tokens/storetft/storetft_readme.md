@@ -4,7 +4,7 @@
 
 - [Intro](#intro)
 - [Software Wallet Guides](#software-wallet-guides)
-- [Important Disclaimer](#important-disclaimer)
+- [Disclaimer](#disclaimer)
 
 ## Intro
 
@@ -18,7 +18,7 @@ If TFTs are issued on the Stellar blockchain, users can opt to store them in Ste
 - [Trust Wallet (TFT-BSC)](trustwallet.md)
 - [Albedo Wallet (TFT-Stellar)](albedo_store.md)
 
-## Important Disclaimer
+## Disclaimer
 
 The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
 

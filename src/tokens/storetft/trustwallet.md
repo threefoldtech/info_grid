@@ -7,6 +7,7 @@
   - [Download and Create a Trust Wallet Account](#download-and-create-a-trust-wallet-account)
   - [Add TFT to Trust Wallet](#add-tft-to-trust-wallet)
 - [Important Notice](#important-notice)
+- [Disclaimer](#disclaimer)
 
 ## Intro
 
@@ -72,7 +73,11 @@ But don't worry! You can still swap your Stellar TFT into BSC TFT and vice versa
 
 You can also buy and swap TFTs on BSC-supported exchangers by connecting your Trust Wallet to platforms like [Pancake Swap](https://pancakeswap.finance/). See tutorial [here](../buytft/pancakeswap.md)
 
+## Disclaimer
 
+The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
+
+**The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](https://library.threefold.me/info/legal/#/legal__disclaimer) and seek advice from a qualified financial professional if needed.
 
 
 
