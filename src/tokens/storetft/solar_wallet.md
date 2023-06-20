@@ -1,7 +1,5 @@
 # Solar Wallet (TFT-Stellar)
 
-<h1> Store TFT (Stellar) on Solar Wallet </h1>
-
 <h2>Table of Contents</h2>
 
 - [Solar Wallet (TFT-Stellar)](#solar-wallet-tft-stellar)
