@@ -48,3 +48,5 @@ Remember to exercise caution and verify the compatibility of your chosen wallet 
 After successfully purchasing XLM from Coinbase, you can begin the process of withdrawing your XLM to another Stellar wallet of your choice. This allows you to have full control over your XLM and engage in transactions within the Stellar network.
 
 To learn more about the steps involved in withdrawing XLM from Coinbase to another Stellar wallet, click [here](https://help.coinbase.com/en/exchange/trading-and-funding/withdraw-funds). This resource will provide you with detailed instructions and guidelines on how to initiate the withdrawal process and ensure a smooth transfer of your XLM to your preferred Stellar wallet.
+
+> Get a TFT (Stellar) Wallet of your choice [here](../storetft/storetft_readme.md)!
