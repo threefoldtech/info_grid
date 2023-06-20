@@ -1,1 +1,0 @@
-# Solar Wallet (TFT-Stellar)
