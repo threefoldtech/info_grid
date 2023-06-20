@@ -20,10 +20,10 @@ graph LR
     B((Stellar Chain)) --- id3(Stellar / BSC Bridge) --- E((Binance Smart Chain));
     B((Stellar Chain)) --- id4(Stellar / Eth Bridge) --- D((Ethereum Chain));
 
-    click id1 "https://www2.manual.grid.tf/threefold_token/tft_bridges/tfchain_stellar_bridge.html"
-    click id2 "https://www2.manual.grid.tf/threefold_token/tft_bridges/tfchain_stellar_bridge.html"
-    click id3 "https://www2.manual.grid.tf/threefold_token/tft_bridges/bsc_stellar_bridge.html"
-    click id4 "https://www2.manual.grid.tf/threefold_token/tft_bridges/tft_ethereum/tft_ethereum.html"
+    click id1 "./tfchain_stellar_bridge.html"
+    click id2 "./tfchain_stellar_bridge.html"
+    click id3 "./bsc_stellar_bridge.html"
+    click id4 "./tft_ethereum/tft_ethereum.html"
 
 ```
 
