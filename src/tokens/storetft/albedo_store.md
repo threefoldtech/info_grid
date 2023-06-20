@@ -24,6 +24,10 @@ In this tutorial, we will walk you through the process of storing Stellar TFT to
 
 - **XLM**: When storing TFT tokens using the Albedo wallet, a certain amount of XLM funding is required to facilitate the sending and receiving of assets on the Stellar network.
 
+There are multiple ways to acquire XLM and send it to your wallet. One option is to utilize XLM-supported exchanges, which provide a convenient platform for purchasing XLM. Click [here](https://www.coinlore.com/coin/stellar/exchanges) to access a comprehensive list of exchanges that support XLM.
+
+As an example, we have created a tutorial specifically focusing on how to buy XLM on Coinbase, one of the popular cryptocurrency exchanges. This tutorial provides step-by-step instructions on the process of purchasing XLM on **Coinbase Exchange**. You can find the tutorial [**here**](./coinbase_xlm.md).
+
 ## Get Started
 
 ### Create and Fund Albedo Wallet
