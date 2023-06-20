@@ -1,4 +1,4 @@
-<h1> Get TFT (Stellar) on Albedo Wallet </h1>
+<h1> Store TFT (Stellar) on Albedo Wallet </h1>
 
 <h2>Table of Contents</h2>
 
@@ -13,8 +13,9 @@
 
 # Intro
 
-Welcome to our guide on how to store TFT tokens (Stellar) via the [Albedo wallet](https://albedo.link/i)! Albedo is a secure and trustworthy keystore web app and browser extension designed for Stellar token accounts. With Albedo, you can safely manage and transact with your Stellar account without having to share your secret key with any third parties.
+Welcome to our guide on how to store TFT tokens (Stellar) via the [Albedo wallet](https://albedo.link/)! 
 
+Albedo is a secure and trustworthy keystore web app and browser extension designed for Stellar token accounts. With Albedo, you can safely manage and transact with your Stellar account without having to share your secret key with any third parties.
 Developed by the creators of stellar.expert explorer, Albedo offers a range of features, including storage, swaps, and participation in liquidity pools. It is an open-source solution that can be accessed directly from your browser or installed as a browser add-on, currently available for Chrome and Firefox.
 
 In this tutorial, we will walk you through the process of storing Stellar TFT tokens using the Albedo wallet.
@@ -36,7 +37,7 @@ Click “**I saved recovery phrase**” (Again, it is critical that you save thi
 
 ![](img/albedo_secret.png)
 
-Congrats! You just created an Albedo wallet. To get started swapping tokens into TFT, firstly we would need to fund your wallet with XLM by clicking 'f**und it**' on the homepage.
+Congrats! You just created an Albedo wallet. To get started swapping tokens into TFT, firstly we would need to fund your wallet with XLM by clicking '**fund it**' on the homepage.
 
 ![](img/albedo_fund.png)
 
@@ -78,7 +79,7 @@ You can also transfer TFT to another stellar wallet by clicking the '**Transfer*
 
 ## Important Notice
 
-If you are looking for ways to get / purchase TFT (Stellar) on Albedo, you will find the according information [here](../liquidity/albedo_buy.md).
+If you are looking for ways to get / purchase TFT (Stellar) on Albedo, you will find the according information [here](../buytft/albedo_buy.md).
 
 ## Disclaimer
 
