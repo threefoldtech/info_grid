@@ -1,6 +1,13 @@
 # Buying XLM on Coinbase Exchange
 
+<h2>Table of Contents</h2>
 
+- [Buying XLM on Coinbase Exchange](#buying-xlm-on-coinbase-exchange)
+  - [Intro](#intro)
+  - [Prerequisites](#prerequisites)
+  - [Tutorial](#tutorial)
+  - [Important Notice](#important-notice)
+  - [Withdrawing XLM From Coinbase to Your Stellar Wallet](#withdrawing-xlm-from-coinbase-to-your-stellar-wallet)
 
 ## Intro
 
