@@ -8,6 +8,7 @@
   - [Connect a BSC Wallet to 1inch.io](#connect-a-bsc-wallet-to-1inchio)
   - [Swapping tokens to TFT](#swapping-tokens-to-tft)
   - [Important Notice](#important-notice)
+- [Disclaimer](#disclaimer)
 
 ## Intro
 
@@ -77,3 +78,9 @@ Wait for the banner in the upper-right corner informing you about the success of
 ### Important Notice
 
 If you are looking for ways to provide liquidity for TFT on Binance Smart Chain on 1inch.io, you will find the according information [here](../liquidity/liquidity_1inch.md).
+
+## Disclaimer
+
+The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
+
+**The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](https://library.threefold.me/info/legal/#/legal__disclaimer) and seek advice from a qualified financial professional if needed.

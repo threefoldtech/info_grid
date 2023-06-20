@@ -6,6 +6,7 @@
 - [Prerequisites](#prerequisites)
 - [Become a TFT - BSC LP](#become-a-tft---bsc-lp)
 - [Important Notice](#important-notice)
+- [Disclaimer](#disclaimer)
 
 ## Intro
 
@@ -65,3 +66,9 @@ Congratulations! You have now exchanged the selected amounts for both currencies
 ## Important Notice
 
 It's important to note that being a liquidity provider involves certain risks, such as impermanent loss, which occurs when the value of the tokens in the liquidity pool fluctuates. However, if you believe in the potential of TFT and want to actively contribute to the liquidity ecosystem on PancakeSwap, becoming a liquidity provider can be a rewarding opportunity to earn fees and support the growth of the platform.
+
+## Disclaimer
+
+The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
+
+**The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](https://library.threefold.me/info/legal/#/legal__disclaimer) and seek advice from a qualified financial professional if needed.

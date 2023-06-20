@@ -3,8 +3,10 @@
 <h2>Table of Contents</h2>
 
 - [Intro](#intro)
+- [Prerequisites](#prerequisites)
 - [Become a TFT LP on 1inch.io](#become-a-tft-lp-on-1inchio)
 - [Important Notice](#important-notice)
+- [Disclaimer](#disclaimer)
 
 ## Intro
 
@@ -14,6 +16,19 @@ By adding liquidity to this pool, the LP helps to ensure that there is a consist
 
 By participating in the liquidity provision process, you actively contribute to the growth and adoption of the TFT token. As more users trade TFT(BSC) on 1inch.io, the liquidity and trading volume increase, which can attract more traders and investors to the token. This increased activity can lead to a broader awareness of TFT and potentially drive its value and market presence.
 
+## Prerequisites
+
+BBefore you can buy TFT on 1inch.io, there are a few prerequisites you need to fulfill. Here's what you'll need:
+
+- **BSC Wallet**: To interact with the Binance Smart Chain and 1inch.io, you'll need a BSC-compatible wallet. [Trust Wallet](https://trustwallet.com/) and [MetaMask](https://metamask.io/) are popular options that support BSC. Make sure to set up and secure your wallet before proceeding. On this tutorial, we will use Metamask as our connecting wallet.
+
+> [Set up a Metamask Wallet](../storetft/metamask.md)
+> [Set up a Trust Wallet](../storetft/trustwallet.md)
+
+- **Get BNB Tokens**: As the native cryptocurrency of Binance Smart Chain, BNB is required to pay for transaction fees on the network. You will need to have Ensure you have some BNB tokens in your BSC wallet to cover these fees when buying TFT on 1inch.io. Read [this tutorial](https://fortunly.com/articles/how-to-buy-bnb/) to know where you can buy BNB and transfer them to your BSC Wallet.
+
+> [Get BNB Tokens](https://docs.pancakeswap.finance/readme/get-started/bep20-guide)
+> 
 ## Become a TFT LP on 1inch.io
 
 Anyone who fullfill the prerequisites can create a TFT(BSC) liquidity pool on 1inch.io. Currently as June 2023 on 1inch.io there is one existing BUSD - TFT(BSC) liquidity pool available where you can participate in providing liquidity into on address:
@@ -55,3 +70,9 @@ Note that the number of TFT and BUSD tokens will change constantly and will not 
 ## Important Notice
 
 It's important to note that being a liquidity provider involves certain risks, such as impermanent loss, which occurs when the value of the tokens in the liquidity pool fluctuates. However, if you believe in the potential of TFT and want to actively contribute to the liquidity ecosystem on 1inch.io, becoming a liquidity provider can be a rewarding opportunity to earn fees and support the growth of the platform.
+
+## Disclaimer
+
+The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
+
+**The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](https://library.threefold.me/info/legal/#/legal__disclaimer) and seek advice from a qualified financial professional if needed.
