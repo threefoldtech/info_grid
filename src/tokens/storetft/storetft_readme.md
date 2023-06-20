@@ -4,6 +4,8 @@
 
 - [Intro](#intro)
 - [TFT Wallet Guides](#tft-wallet-guides)
+  - [TFT(Stellar) Wallets](#tftstellar-wallets)
+  - [TFT(BSC) Wallets](#tftbsc-wallets)
 - [Disclaimer](#disclaimer)
 
 ## Intro
@@ -14,11 +16,16 @@ If TFTs are issued on the Stellar blockchain, users can opt to store them in Ste
 
 ## TFT Wallet Guides
 
-- [Metamask Wallet (TFT-BSC)](metamask.md)
-- [Trust Wallet (TFT-BSC)](trustwallet.md)
+### TFT(Stellar) Wallets
+
 - [Albedo Wallet (TFT-Stellar)](albedo_store.md)
 - [Solar Wallet (TFT-Stellar)](solar_wallet.md)
-- 
+
+### TFT(BSC) Wallets
+
+- [Metamask Wallet (TFT-BSC)](metamask.md)
+- [Trust Wallet (TFT-BSC)](trustwallet.md)
+
 ## Disclaimer
 
 The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
