@@ -15,10 +15,10 @@ The following diagram shows the different bridges and ways to transfer ThreeFold
 ```mermaid
 
 graph LR
-    A((TFChain-MainNet)) --- id1(Stellar / TFChain MainNet Bridge) --- B((Stellar Chain));
-    C((TFChain-TestNet)) --- id2(Stellar / TFChain TestNet Bridge) --- B((Stellar Chain));
-    B((Stellar Chain)) --- id3(Stellar / BSC Bridge) --- E((Binance Smart Chain));
-    B((Stellar Chain)) --- id4(Stellar / Eth Bridge) --- D((Ethereum Chain));
+    A((TFChain-MainNet)) === id1(Stellar / TFChain MainNet Bridge) === B((Stellar Chain));
+    C((TFChain-TestNet)) === id2(Stellar / TFChain TestNet Bridge) === B((Stellar Chain));
+    B((Stellar Chain)) === id3(Stellar / BSC Bridge) === E((Binance Smart Chain));
+    B((Stellar Chain)) === id4(Stellar / Eth Bridge) === D((Ethereum Chain));
 
     click id1 "./tfchain_stellar_bridge.html"
     click id2 "./tfchain_stellar_bridge.html"
