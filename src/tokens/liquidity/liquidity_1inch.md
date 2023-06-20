@@ -1,4 +1,4 @@
-<h1> Provide TFT Liquidity on Pancake Swap </h1>
+<h1> Provide TFT (BSC) Liquidity on Pancake Swap </h1>
 
 <h2>Table of Contents</h2>
 
