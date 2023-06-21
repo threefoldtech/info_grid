@@ -37,6 +37,7 @@
       - [Trust Wallet (TFT-BSC)](tokens/storetft/trustwallet.md)
       - [Albedo Wallet (TFT-Stellar)](tokens/storetft/albedo_store.md)
       - [Solar Wallet (TFT-Stellar)](tokens/storetft/solar_wallet.md)
+      - [Lobstr Wallet](tokens/storetft/lobstr_wallet.md)
     - [Provide Liquidity](tokens/liquidity/liquidity_readme.md)
       - [LP on Pancake Swap](tokens/liquidity/liquidity_pancake.md)
       - [LP on 1inch.io](tokens/liquidity/liquidity_1inch.md)
