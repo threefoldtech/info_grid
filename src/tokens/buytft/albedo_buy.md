@@ -11,11 +11,9 @@
 
 ## Intro
 
-Welcome to our guide on how to buy TFT tokens (Stellar) via the [Albedo wallet](https://albedo.link/i)! Albedo is a secure and trustworthy keystore web app and browser extension designed for Stellar token accounts. With Albedo, you can safely manage and transact with your Stellar account without having to share your secret key with any third parties.
+Welcome to our guide on how to buy TFT tokens (Stellar) via the [Albedo wallet](https://albedo.link/)! Albedo is a secure and trustworthy keystore web app and browser extension designed for Stellar token accounts. With Albedo, you can safely manage and transact with your Stellar account without having to share your secret key with any third parties.
 
-Developed by the creators of stellar.expert explorer, Albedo offers a range of features, including storage, swaps, and participation in liquidity pools. It is an open-source solution that can be accessed directly from your browser or installed as a browser add-on, currently available for Chrome and Firefox.
-
-In this tutorial, we will walk you through the process of buying Stellar TFT tokens using the Albedo wallet. Whether you're a seasoned Stellar user or new to the ecosystem, Albedo provides a convenient and secure way to engage with the Stellar network. Let's dive in and explore how to purchase TFT tokens (Stellar) using the Albedo wallet.
+In this tutorial, we will walk you through the process of buying Stellar TFT tokens using the Albedo wallet. 
 
 ## Prerequisites
 

@@ -77,3 +77,15 @@ Use the search at the top of the "Assets" screen. From there you can search for 
 ![](img/lobstr_asset.jpeg)
 
 Congratulations! TFT asset has been successfully added to your Lobstr Wallet account. If you've performed the steps above correctly and there are no assets displayed, contact [Lobstr support](https://lobstr.freshdesk.com/support/tickets/new) with the details and the home domain of the asset.
+
+You can now store TFT by depositing it from another wallet on your TFT Asset page.
+
+## Important Notice
+
+If you are looking for ways to get / purchase TFT (Stellar) on Solar Wallet, you will find the according information [here](../buytft/lobstr_buy.md).
+
+## Disclaimer
+
+The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
+
+**The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](https://library.threefold.me/info/legal/#/legal__disclaimer) and seek advice from a qualified financial professional if needed.

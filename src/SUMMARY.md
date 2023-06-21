@@ -32,6 +32,7 @@
       - [Albedo Wallet](tokens/buytft/albedo_buy.md)
       - [Solar Wallet](tokens/buytft/solar_buy.md)
       - [Coinbase (XLM)](tokens/buytft/coinbase_xlm.md)
+      - [Lobstr Wallet](tokens/buytft/lobstr_buy.md)
     - [Store TFT](tokens/storetft/storetft_readme.md)
       - [Metamask (TFT-BSC)](tokens/storetft/metamask.md)
       - [Trust Wallet (TFT-BSC)](tokens/storetft/trustwallet.md)
