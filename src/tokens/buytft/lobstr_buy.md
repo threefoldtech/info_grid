@@ -24,7 +24,7 @@ Once you have completed the prerequisites, you can get TFT on Lobstr by clicking
 
 ![](IMG/../img/lobstr_swap.jpeg)
 
-Insert the amount of TFT you'd like to buy or the amount of XLM you'd like to swap for TFT. Click 'Swap XLM to TFT' to confirm the transaction.
+Insert the amount of TFT you'd like to buy or the amount of XLM you'd like to swap for TFT. Click '**Swap XLM to TFT**' to confirm the transaction.
 
 ![](img/threefold__lobstr_swap_tft_.jpg)
 
