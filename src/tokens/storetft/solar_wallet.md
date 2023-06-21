@@ -6,8 +6,8 @@
   - [Intro](#intro)
   - [Prerequisites](#prerequisites)
   - [Get Started](#get-started)
-    - [Create and Fund Solar Wallet](#create-and-fund-solar-wallet)
-    - [Fund Your Wallet](#fund-your-wallet)
+    - [Create a New Solar Wallet](#create-a-new-solar-wallet)
+    - [Fund XLM to New Wallet](#fund-xlm-to-new-wallet)
     - [Adding TFT Asset to Solar Wallet](#adding-tft-asset-to-solar-wallet)
   - [Storing / Receiving and Sending TFT](#storing--receiving-and-sending-tft)
   - [Important Notice](#important-notice)
@@ -29,9 +29,9 @@ As an example, we have created a tutorial specifically focusing on how to buy XL
 
 ## Get Started
 
-### Create and Fund Solar Wallet
+### Create a New Solar Wallet
 
-For this guide, we will focus on using the desktop wallet version of Solar Wallet for MacOS. You can download the appropriate version for your operating system by visiting the official website at [https://solarwallet.io/](https://solarwallet.io/) and clickking '**Get Wallet Now**'.
+For this guide, we will focus on using the desktop wallet version of Solar Wallet for MacOS. You can download the appropriate version for your operating system by visiting the official website at [https://solarwallet.io/](https://solarwallet.io/) and clicking '**Get Wallet Now**'.
 
 ![](img/solar_home.png)
 
@@ -49,7 +49,7 @@ Once downloaded, open your Solar wallet and congratulations! You just created a 
 
 ![](img/solar_home.jpeg)
 
-### Fund Your Wallet
+### Fund XLM to New Wallet
 
 To initiate the process of storing TFT in Solar, the first step is to fund your wallet with XLM (Stellar Lumens). By funding your wallet with XLM, you will have the necessary cryptocurrency to cover future transaction fees and engage in token transaction activities on Solar Wallet. Follow these steps:
 
@@ -85,7 +85,7 @@ A search box will appear. Type "**TFT**" in the search box to find the ThreeFold
 
 ![](img/solar_search.png)
 
-*It is important to ensure that you also see the name "threefold.io" next to the logo** , as this verifies that you are selecting the genuine TFT asset associated with ThreeFold. **Beware of imposters or fraudulent assets that may attempt to mimic TFT.** ThreeFold cannot assume responsibility for any errors or mistakes made during the trustline creation process done by users. If you have any uncertainties or doubts, it is always recommended to seek assistance from official support channels or trusted sources to ensure the accuracy of the trustline configuration.
+**IMPORTANT**: It is important to ensure that you also see the name "**threefold.io**" next to the logo , as this verifies that you are selecting the genuine TFT asset associated with ThreeFold. **Beware of imposters or fraudulent assets that may attempt to mimic TFT.** ThreeFold cannot assume responsibility for any errors or mistakes made during the trustline creation process done by users. If you have any uncertainties or doubts, it is always recommended to seek assistance from official support channels or trusted sources to ensure the accuracy of the trustline configuration.
 
 Once you see the TFT asset, click on the "**Add Asset To Account**" button. Please note that adding the asset will require a small amount of XLM to set up a trustline for the TFT asset.
 
@@ -120,3 +120,4 @@ If you are looking for ways to get / purchase TFT (Stellar) on Solar Wallet, you
 The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
 
 **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](https://library.threefold.me/info/legal/#/legal__disclaimer) and seek advice from a qualified financial professional if needed.
+
