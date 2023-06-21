@@ -569,7 +569,7 @@ We now update the mount with the filse fstab on both master and worker.
        10.1.4.2:/vol1 /var/www glusterfs defaults,_netdev 0 0
        ```
 
-The databases of both VMs are accessible in `/var/www`. This means that any change in either folder `/var/www` of each VM will be reflected in the same folder of the other VM. In order words, the databases are not synced in real-time.
+The databases of both VMs are accessible in `/var/www`. This means that any change in either folder `/var/www` of each VM will be reflected in the same folder of the other VM. In order words, the databases are now synced in real-time.
 
 ***
 
