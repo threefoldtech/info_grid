@@ -88,7 +88,7 @@ You need to download and install properly Terraform and Wireguard on your local 
 
 We first need to decide on which 3Nodes we will be deploying our workload.
 
-We thus start by finding two 3Nodes with sufficient resources. For this current MariaDB guide, we will be using 1 CPU, 2 GB of RAM and 50 GB of storage. We are also looking for 3Nodes with each a public IPv4 address.
+We thus start by finding two 3Nodes with sufficient resources. For this current Nextcloud guide, we will be using 1 CPU, 2 GB of RAM and 50 GB of storage. We are also looking for 3Nodes with each a public IPv4 address.
 
 * Go to the ThreeFold Grid's [Explorer](https://dashboard.grid.tf/explorer/nodes) (Main Net)
 * Find a 3Node with suitable resources for the deployment and take note of its node ID on the leftmost column `ID`
