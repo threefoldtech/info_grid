@@ -77,10 +77,11 @@ Now let's create the Terraform files.
 
 * Create the folder `terraform` and the subfolder `deployment-wg-ssh`:
   *  ```
-     mkdir -p terraform && cd $_
+     mkdir -p terraform/deployment-wg-ssh
      ```
   *  ```
-     mkdir deployment-wg-ssh && cd $_
+     cd terraform/deployment-wg-ssh
+     ```
      ```
 * Create the `main.tf` file:
   *  ```

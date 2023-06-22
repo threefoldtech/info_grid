@@ -33,7 +33,7 @@ You need to download and install properly Terraform and Wireguard on your local 
 
 ## Find a 3Node with the ThreeFold Explorer
 
-We want to find a proper 3Node to deploy our workload. For this guide, we want a 3Node with at least 15GB of storage, 1 vcore and 512MB of RAM, which are the minimum specifications for a micro VM on the TFGrid.
+We want to find a proper 3Node to deploy our workload. For this guide, we want a 3Node with at least 15GB of storage, 1 vcore and 512MB of RAM, which are the minimum specifications for a micro VM on the TFGrid. We are also looking for a 3Node with a public IPv4 address.
 
 We show here how to find a suitable 3Node using the ThreeFold Explorer.
 

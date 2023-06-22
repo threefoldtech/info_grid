@@ -61,7 +61,7 @@ You need to download and install properly Terraform and Wireguard on your local 
 
 We first need to decide on which 3Nodes we will be deploying our workload.
 
-We thus start by finding two 3Nodes with sufficient resources. For this current MariaDB guide, we will be using 1 CPU, 2 GB of RAM and 50 GB of storage.
+We thus start by finding two 3Nodes with sufficient resources. For this current MariaDB guide, we will be using 1 CPU, 2 GB of RAM and 50 GB of storage. We are also looking for a 3Node with a public IPv4 address.
 
 * Go to the ThreeFold Grid's [Explorer](https://dashboard.grid.tf/explorer/nodes) (Main Net)
 * Find a 3Node with suitable resources for the deployment and take note of its node ID on the leftmost column `ID`
@@ -110,10 +110,10 @@ Open the terminal.
 
 * Create the folder `terraform` and the subfolder `deployment-synced-db`:
   *  ```
-     mkdir -p terraform && cd $_
+     mkdir -p terraform/deployment-synced-db
      ```
   *  ```
-     mkdir deployment-synced-db && cd $_
+     cd terraform/deployment-synced-db
      ```
 * Create the `main.tf` file:
   *  ```

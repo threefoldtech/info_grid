@@ -7,7 +7,7 @@
 - [Introduction](#introduction)
 - [Main Steps](#main-steps)
 - [Prerequisites](#prerequisites)
-- [Find Two 3nodes with the Necessary Resources](#find-two-3nodes-with-the-necessary-resources)
+- [Find Nodes with the ThreeFold Explorer](#find-nodes-with-the-threefold-explorer)
 - [Set the VMs](#set-the-vms)
   - [Create a Two Servers Wireguard VPN with Terraform](#create-a-two-servers-wireguard-vpn-with-terraform)
     - [Create the Terraform Files](#create-the-terraform-files)
@@ -84,31 +84,31 @@ You need to download and install properly Terraform and Wireguard on your local 
 
 ***
 
-# Find Two 3nodes with the Necessary Resources
+# Find Nodes with the ThreeFold Explorer
 
-We first need to decide on which 3nodes we will be deploying our workload.
+We first need to decide on which 3Nodes we will be deploying our workload.
 
-We thus start by finding two 3nodes with IPv4 addresses and see if they have enough resources. For our Nextcloud deployment, we want at least 1 CPU and 2 GB of memory. For the storage, we use 50 GB.
+We thus start by finding two 3Nodes with sufficient resources. For this current MariaDB guide, we will be using 1 CPU, 2 GB of RAM and 50 GB of storage. We are also looking for 3Nodes with each a public IPv4 address.
 
-* Go to the Threefold Grid's [GraphQL](https://graphql.grid.tf/graphql).
-* Write the following query
-```
-query MyQuery {
-  publicConfigs {
-    node {
-      nodeID
-      resourcesTotal {
-        cru
-        mru
-        sru
-      }
-    }
-    ipv4
-  }
-}
-```
-* Press the "Play" button
-* Find two 3nodes that suit the deployment's needs (under `nodeID`)
+* Go to the ThreeFold Grid's [Explorer](https://dashboard.grid.tf/explorer/nodes) (Main Net)
+* Find a 3Node with suitable resources for the deployment and take note of its node ID on the leftmost column `ID`
+* For proper understanding, we give further information on some relevant columns:
+  * `ID` refers to the node ID
+  * `Free Public IPs` refers to available IPv4 public IP addresses
+  * `HRU` refers to HDD storage
+  * `SRU` refers to SSD storage
+  * `MRU` refers to RAM (memory)
+  * `CRU` refers to virtual cores (vcores)
+* To quicken the process of finding proper 3Nodes, you can narrow down the search by adding filters:
+  * At the top left of the screen, in the `Filters` box, select the parameter(s) you want.
+  * For each parameter, a new field will appear where you can enter a minimum number requirement for the 3Nodes.
+    * `Free SRU (GB)`: 50
+    * `Free MRU (GB)`: 2
+    * `Total CRU (Cores)`: 1
+    * `Free Public IP`: 2
+      * Note: if you want a public IPv4 address, it is recommended to set the parameter `FREE PUBLIC IP` to at least 2 to avoid false positives. This ensures that the shown 3Nodes have viable IP addresses.
+
+Once you've found a proper node, take node of its node ID. You will need to use this ID when creating the Terraform files.
 
 ***
 
@@ -119,7 +119,7 @@ For this guide, we use two files to deploy with Terraform. The first file contai
 
 To facilitate the deployment, only the environment variables file needs to be adjusted. The `main.tf` file contains the environment variables (e.g. `var.size` for the disk size) and thus you do not need to change this file. Of course, you can adjust the deployment based on your preferences. That being said, it should be easy to deploy the Terraform deployment with the `main.tf` as is.
 
-On your local computer, create a new folder named `terraform` and a subfolder called `deployments`. In the subfolder, store the files `main.tf` and `credentials.auto.tfvars`.
+On your local computer, create a new folder named `terraform` and a subfolder called `deployment-nextcloud`. In the subfolder, store the files `main.tf` and `credentials.auto.tfvars`.
 
 Modify the variable files to take into account your own seed phrase and SSH keys. You should also specifiy the node IDs of the two 3nodes you will be deploying on.
 
@@ -132,12 +132,12 @@ Open the terminal.
      cd ~
      ```
 
-* Create the folder `terraform` and the subfolder `deployments`:
+* Create the folder `terraform` and the subfolder `deployment-nextcloud`:
   *  ```
-     mkdir terraform && cd $_
+     mkdir -p terraform/deployment-nextcloud
      ```
   *  ```
-     mkdir deployments && cd $_
+     cd terraform/deployment-nextcloud
      ```
 * Create the `main.tf` file:
   *  ```
@@ -306,7 +306,7 @@ Make sure to add your own seed phrase and SSH public key. You will also need to 
 
 ### Deploy the 3nodes with Terraform
 
-We now deploy the VPN with Terraform. Make sure that you are in the correct folder `terraform/deployments` with the main and variables files.
+We now deploy the VPN with Terraform. Make sure that you are in the correct folder `terraform/deployment-nextcloud` with the main and variables files.
 
 * Initialize Terraform:
   *  ```
