@@ -7,4 +7,7 @@
 - [Mounts](./terraform_mounts.html)
 - [Capacity Planning](./terraform_capacity_planning.html)
 - [Updates](./terraform_updates.html)
+- [SSH Connection with Wireguard](./terraform_wireguard_ssh.md)
+- [Set a Wireguard VPN](./terraform_wireguard_vpn.md)
+- [Synced MariaDB Databases](./terraform_mariadb_synced_databases.md)
 - [Nextcloud Redundant Deployment](./terraform_nextcloud_redundant.html)
