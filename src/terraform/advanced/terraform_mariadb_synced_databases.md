@@ -1,5 +1,7 @@
 <h1>MariaDB Synced Databases Between Two VMs</h1>
 
+![ ](./img/terraform_.png)
+
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)

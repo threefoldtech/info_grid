@@ -1,5 +1,7 @@
 <h1>Nextcloud Redundant Deployment on Two 3node Servers</h1>
 
+![ ](./img/terraform_.png)
+
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
