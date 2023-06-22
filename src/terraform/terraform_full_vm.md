@@ -7,7 +7,7 @@
 - [Introduction](#introduction)
 - [Main Process](#main-process)
 - [Prerequisites](#prerequisites)
-- [Find a 3node](#find-a-3node)
+- [Find a 3Node with the ThreeFold Explorer](#find-a-3node-with-the-threefold-explorer)
 - [Create the Terraform Files](#create-the-terraform-files)
 - [Deploy the Full VM with Terraform](#deploy-the-full-vm-with-terraform)
 - [SSH into the 3node](#ssh-into-the-3node)
@@ -49,31 +49,31 @@ You need to download and install properly Terraform. Simply follow the documenta
 ***
 
 
-## Find a 3node
+## Find a 3Node with the ThreeFold Explorer
 
-We first need to decide on which 3node we will be deploying our workload.
+We want to find a proper 3Node to deploy our workload. For this guide, we want a 3Node with at least 15GB of storage, 1 vcore and 512MB of RAM, which are the minimum specifications for a micro VM on the TFGrid. We are also looking for a 3Node with a public IPv4 address.
 
-We thus start by finding a 3node with an IPv4 address and see if it has enough resources. For our full VM deployment, the minimum specs are 1 CPU, 512 MB of memory and 15 GB of storage.
+We show here how to find a suitable 3Node using the ThreeFold Explorer.
 
-* Go to the TFGrid's [GraphQL](https://graphql.grid.tf/graphql)
-* Write the following query
-```
-query MyQuery {
-  publicConfigs {
-    node {
-      nodeID
-      resourcesTotal {
-        cru
-        mru
-        sru
-      }
-    }
-    ipv4
-  }
-}
-```
-* Press the "Play" button
-* Find a 3node that suits the deployment's needs (under `nodeID`)
+* Go to the ThreeFold Grid's [Explorer](https://dashboard.grid.tf/explorer/nodes) (Main Net)
+* Find a 3Node with suitable resources for the deployment and take note of its node ID on the leftmost column `ID`
+* For proper understanding, we give further information on some relevant columns:
+  * `ID` refers to the node ID
+  * `Free Public IPs` refers to available IPv4 public IP addresses
+  * `HRU` refers to HDD storage
+  * `SRU` refers to SSD storage
+  * `MRU` refers to RAM (memory)
+  * `CRU` refers to virtual cores (vcores)
+* To quicken the process of finding a proper 3Node, you can narrow down the search by adding filters:
+  * At the top left of the screen, in the `Filters` box, select the parameter(s) you want.
+  * For each parameter, a new field will appear where you can enter a minimum number requirement for the 3Nodes.
+    * `Free SRU (GB)`: 15
+    * `Free MRU (GB)`: 1
+    * `Total CRU (Cores)`: 1
+    * `Free Public IP`: 2
+      * Note: if you want a public IPv4 address, it is recommended to set the parameter `FREE PUBLIC IP` to at least 2 to avoid false positives. This ensures that the shown 3Nodes have viable IP addresses.
+
+Once you've found a proper node, take node of its node ID. You will need to use this ID when creating the Terraform files.
 
 ***
 
@@ -86,12 +86,12 @@ Open the terminal.
      cd ~
      ```
 
-* Create the folder `terraform` and the subfolder `deployments`:
+* Create the folder `terraform` and the subfolder `deployment-full-vm`:
   *  ```
-     mkdir terraform && cd $_
+     mkdir -p terraform/deployment-full-vm
      ```
   *  ```
-     mkdir deployments && cd $_
+     cd terraform/deployment-full-vm
      ```
 * Create the `main.tf` file:
   *  ```

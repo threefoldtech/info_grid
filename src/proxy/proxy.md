@@ -20,7 +20,7 @@ By default the client has a local cache which makes sure you are not hitting the
 Caching happens in redis (if started on your local machine).
 
 ```v
-#import explorer client
+// Import explorer client
 import threefoldtech.vgrid.explorer
 
 // Create a new instance of the client

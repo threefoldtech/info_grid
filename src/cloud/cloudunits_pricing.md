@@ -62,7 +62,7 @@ TFChain charges the user for proof_of_utilization every hour. TFChain will calcu
 ### Example for 40% discount
 
 - I've used 10 TFT worth of Internet Capacity on tf_grid for the last hour.
-- 10TFT *24* 30 * 12 = I would need 86,400 TFT for one year
-- 10TFT *24* 30 * 36 = I would need 259,200 TFT for 3 year
+- 10TFT \* 24 \* 30 \* 12 = I would need 86,400 TFT for one year
+- 10TFT \* 24 \* 30 \* 36 = I would need 259,200 TFT for 3 year
 - I have 120,000 TFT in my account on TF_Chain, this means that I will get 40% discount.
 - I don't have enough tokens to get to 60% discount.

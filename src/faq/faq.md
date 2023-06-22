@@ -2590,6 +2590,20 @@ Minting is based on blockchain data according to strict rules that are carried o
 
 There is a human verification mechanism through multisignatures for calculations done on the data as stored in the blockchain. This explains the timing differences when it comes to the monthly farming rewards distribution, since enough people need to sign off.
 
+The detailed minting process for V3 is as follow:
+
+- TFChain, ThreeFold's blockchain, has all the details about capacity provided by the nodes.
+- TFChain is used to track uptime.
+- Zero-OS reports to TFChain.
+- The code in [this repo](https://github.com/threefoldtech/minting_v3) uses the information from the blockchain to calculate the TFT to be minted.
+- A proof of what needs to be minted and why is created. This proof is then sent to our guardians.
+- The guardians need to double check the execution and the minting report. This is like a human check on the automated process.
+- The guardians need to sign. Only when consensus is achieved the minting as suggested will happen. This allows human to check the code.
+
+It is important to understant that TFChain tracks the capacity and uptime and is the source for the minting.
+
+Note: Additional auditing code will be added in V4 (i.e. special code generated at runtime for verification) using security primitives on motherboards.
+
 For more information on the minting periods, read this [QnA](#what-is-the-start-and-end-of-the-current-minting-period-what-are-the-minting-periods-for-threefold-farming-in-2023).
 
 ***
@@ -2811,23 +2825,23 @@ They are distributed once a month, around the 8th*. Distributions are not daily,
 
 ### On ThreeFold Grid v3, how can I verify my 3nodes' payments on Stellar Blockchain?
 
-Here's the summary on how to find the details of a 3node's payment:
+Here's the summary on how to find the details of a 3node's payment on the Stellar Blockchain using the ThreeFold Alpha Minting tool:
 
-1. Go to https://stellar.expert
+1. Go to [https://stellar.expert](https://stellar.expert).
 
-2. Open the hamburger menu on the top right (mobile version)
+2. Open the hamburger menu on the top right (mobile version).
 
-3. Paste your wallet address in the search bar
+3. Paste your wallet address in the search bar.
 
-4. Go to the last payment you want details of
+4. Go to the last payment you want details of.
    
-5. Make sure the Memo (HASH) is in the HEX format. If it isn't click on *base64* and change it to *hex*.
+5. Make sure the Memo (HASH) is in the HEX format. If it isn't, click on *base64* and change it to *hex*.
 
-6. Copy the Memo (HASH)
+6. Copy the Memo (HASH).
 
-7. Go to https://alpha.minting.tfchain.grid.tf/
+7. Go to the ThreeFold Alpha minting tool at [https://alpha.minting.tfchain.grid.tf/](https://alpha.minting.tfchain.grid.tf/).
 
-8. Paste the Memo (HASH) you copied. You will find the details of the 3node's payment
+8. Paste the Memo (HASH) you copied. You will find the details of the 3node's payment.
 
 NB: A full period is 2630880 seconds.
 
@@ -4320,7 +4334,8 @@ If you see this error, it's because you've used 24h time format in conjunction w
 2. Download the new docker-compose file: `wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml`
 3. Modify the .env file: rename `MNEMONIC` to `SECRET`
 4. Stop the existing farmerbot: `docker compose rm -f -s -v`
-5. Run the new farmerbot: `docker compose up -d`
+5. Make a copy of the farmerbot log file: `cp config/farmerbot.log config/farmerbot.log.archive`
+6. Run the new farmerbot: `docker compose up -d`
 
 This last command can take some time as it is downloading new docker images. Let the farmerbot run for some time. If you think something is wrong or if you want to check if there is something wrong you should look into the config/farmerbot.log file. If you see some errors please share that file with us.
 
@@ -4385,7 +4400,7 @@ Yes, this is an expected behaviour. When you restart the Farmerbot, it will then
 
 ### I deleted the log files in the config folder, but no new log files have been generated. How can I generate new log files for the Farmerbot?
 
-To generate new log files for the Farmerbot after deleting the original log files, you need to restart the Farmerbot for changes to take effect. 
+You can always get the logs from docker too via `docker compose logs` (run this command in the folder where your docker compose file is located). You can restart the Farmerbot to start the logging to file again (keep in mind that it will execute the periodic wakeup for all nodes at startup).
 
 You should also make sure that you didn't use a different file structure.
 

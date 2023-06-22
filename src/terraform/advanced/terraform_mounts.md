@@ -1,4 +1,4 @@
-# Deploying a VM with Mounts using terraform
+# Deploying a VM with Mounts Using Terraform
 
 ![ ](./img//terraform_.png)
 

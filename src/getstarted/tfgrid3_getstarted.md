@@ -11,10 +11,6 @@
 - [Deploy Your First Virtual Machine](../weblets/weblets_vm.md)
 - [Full VM Deployment and SSH Connection](../getstarted/ssh_guide/ssh_guide.md)
 
-## Get Started - Farmers
-
-- [Complete Farming Guide](../TF_Farmer_Guide/tf_farmer_guide_readme.md)
-
 ## Grid Platforms
 
 - [TF Dashboard](../dashboard/dashboard.md)

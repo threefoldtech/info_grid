@@ -1,4 +1,4 @@
-# Deploying a VM and applying provisioner commands after deployment
+# Deploying a VM and Applying Provisioner Commands After Deployment
 
 ![ ](./img//terraform_.png)
 
