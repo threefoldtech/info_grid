@@ -6,7 +6,7 @@ A complete list of QSFS workload parameters can be found [here](https://github.c
 
 The [quantum-storage](https://github.com/threefoldtech/quantum-storage) repo contains a more thorough description of QSFS operation.
 
-An example of deploying a QSFS could be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/qsfs/main.tf)
+An example of deploying a QSFS on microVM could be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/qsfs/main.tf)
 
 ```terraform
 terraform {
