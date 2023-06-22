@@ -4,7 +4,7 @@
 
 <h2> Table of Contents </h2>
 
-- [QSFS on microVM](./terraform_qsfs_on_microvm.md)
+- [QSFS on Micro VM](./terraform_qsfs_on_microvm.md)
 - [QSFS on Full VM](./terraform_qsfs_on_full_vm.md)
 
 ***

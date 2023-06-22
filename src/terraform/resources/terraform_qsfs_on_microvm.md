@@ -1,8 +1,8 @@
-<h1> QSFS on microVM </h1>
+<h1> QSFS on Micro VM </h1>
 
 ![ ](../advanced/img/terraform_.png)
 
-## QSFS Example on microVM
+## QSFS Example on Micro VM
 
 We present below an example of a QSFS deployment on a microVM. Note that you will need to replace the line `SSH_KEY = "PUT YOUR SSH KEY HERE"` with your own SSH key.
 
