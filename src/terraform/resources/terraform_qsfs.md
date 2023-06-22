@@ -1,12 +1,36 @@
-# Quantum Safe Filesystem
+<h1> Quantum Safe Filesystem </h1>
 
 ![ ](../advanced/img/terraform_.png)
+
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [QSFS Workload Parameters and Documentation](#qsfs-workload-parameters-and-documentation)
+- [QSFS Example on microVM](#qsfs-example-on-microvm)
+
+***
+
+## Introduction
+
+Quantum Storage is a FUSE filesystem that uses mechanisms of forward error correction (Reed Solomon codes) to make sure data (files and metadata) are stored in multiple remote places in a way that we can afford losing x number of locations without losing the data. 
+
+The aim is to support unlimited local storage with remote backends for offload and backup which cannot be broken, even by a quantum computer.
+
+***
+
+## QSFS Workload Parameters and Documentation
 
 A complete list of QSFS workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/deployment.md#nested-schema-for-qsfs).
 
 The [quantum-storage](https://github.com/threefoldtech/quantum-storage) repo contains a more thorough description of QSFS operation.
 
-An example of deploying a QSFS on microVM could be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/qsfs/main.tf)
+***
+
+## QSFS Example on microVM
+
+We present below an example of a QSFS deployment on a microVM. Note that you will need to replace the line `SSH_KEY = "PUT YOUR SSH KEY HERE"` with your own SSH key.
+
+The main template for this example can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/qsfs/main.tf). 
 
 ```terraform
 terraform {
