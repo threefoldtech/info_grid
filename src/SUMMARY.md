@@ -167,7 +167,7 @@
         - [Demo](terraform/resources/terraform_k8s_demo.md)
       - [ZDB](terraform/resources/terraform_zdb.md)
       - [Quantum Safe Filesystem](terraform/resources/terraform_qsfs.md)
-        - [QSFS on microVM](terraform/resources/terraform_qsfs_on_microvm.md)
+        - [QSFS on Micro VM](terraform/resources/terraform_qsfs_on_microvm.md)
         - [QSFS on Full VM](terraform/resources/terraform_qsfs_on_full_vm.md) 
       - [CapRover](terraform/resources/terraform_caprover.md)
     - [Advanced](terraform/advanced/terraform_advanced_readme.md)
