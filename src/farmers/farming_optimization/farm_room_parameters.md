@@ -40,13 +40,9 @@ How much BTU does your ThreeFold Farm need to cool your servers?
 
 Calculating this is pretty simple actually. You need to keep in mind that **1 kW (1000 W) of power is equivalent to 3413 BTU/h** (Britisth Thermal Unit). 
 
-> 1000 W = 1kW = 3413 BTU/h
-
-You should remember the following equivalences when thinking about air conditioners and energy in general:
-
-> kWh = BTU
+> 1000 W = 1 kW = 3413 BTU/h
 >
-> kW = BTU/h
+> 1000 Wh = 1 kWh = 3413 BTU
 
 So with our idle server example running at 100W, we have 0.1 kW.
 
@@ -62,7 +58,7 @@ Say you have 5 servers with this same configuration. It means you have
  
 > 5 * 341.3 =  1706.5 BTU/h
 
-Thus, a 2000 BTU/h Air Conditioner would be able to compensate for the heat when your servers are at idle. 
+Thus, a 2000 BTU/h air conditioner would be able to compensate for the heat when your servers are at idle. 
 
 > Note that in general for air conditioners, it will often be written BTU instead of BTU/h as a shorthand.
 
