@@ -25,7 +25,7 @@ Planning ahead the building of your ThreeFold farm with these notions in mind wi
 
 Let's see how to calculate how powerful your AC unit needs to be when it comes to cooling down your server room.
 
-As we know, servers generate heat when they are working. While a desktop 3Node will generate under 20W at idle and a server 3Node might use 100W at idle, when you pile up some 3Nodes desktops/servers in the same location, things can get pretty warm when cultivation on the Grid is happening. Indeed, when your servers will be using a lot of power, especially in the summer time, you might need some additional cooling.
+As we know, servers generate heat when they are working. While a desktop 3Node will generate under 20W at idle and a server 3Node might use 100W at **idle**, when you pile up some 3Nodes desktops/servers in the same location, things can get pretty warm when cultivation on the Grid is happening. Indeed, when your servers will be using a lot of power, especially in the summer time, you might need some additional cooling.
 
 A good thing about servers generating heat is that this can be used as a **heat source in the winter**. Other more advanced techniques can be used to maximize the heat production. But that's for another day! 
 
@@ -38,26 +38,30 @@ So let's do the calculation:
 
 How Much BTU does your ThreeFold Farm Need to Cool Your Servers?
 
-It's pretty simple actually. You need to keep in mind that **1 kW of power is equivalent to 3413 BTU** (Britisth Thermal Unit). 
+It's pretty simple actually. You need to keep in mind that **1 kW (1000 W) of power is equivalent to 3413 BTU/h** (Britisth Thermal Unit). 
 
-> 1 kW = 3413 BTU
+> 1000 W = 1kW = 3413 BTU/h
 
-So with our idle server example running at 100W, we have 0.1 kW. This is 341.3 BTU.
+So with our idle server example running at 100W, we have 0.1 kW. This is 341.3 BTU/h.
 
-> 100 W / 1000 = 0.1 kW
+> 100 W = 0.1 kW
 
-Here we have that 100 Watt is 0.1 kiloWatt.
+Here we thus have that 100 watt is 0.1 kilowatt.
 
-> 0.1 kWh * 3413 = 341.3 BTU
+We then multiply our kW by the BTU/h factor **3413**.
 
-Here we multiply our kW by BTU factor **3413**.
+> 0.1 kW * 3413/h = 341.3 BTU/h
+
 Say you have 5 servers with this same configuration. It means you have 
 
-> (# of servers) * (BTU per server) = Total BTU
+> (# of servers) * (BTU/h per server) = Total BTU/h
  
-> 5 * 341.3 =  1706.5 BTU
+> 5 * 341.3 =  1706.5 BTU/h
 
-Thus, a 2000 BTU Air Conditioner would be able to compensate for the heat when your servers are at idle.
+Thus, a 2000 BTU Air Conditioner would be able to compensate for the heat when your servers are at idle. 
+
+> Note that in general for air conditioners, it will often be written BTU instead of BTU/h as a shorthand.
+
 ***
 Please take note that this does not take into account the energy needed to cool down your environment. You'd need to take into consideration **the heat of the servers and the general heat of your environment** to figure out how much BTU your AC needs in the big heat days of the summer.
 ***
@@ -65,52 +69,52 @@ Please take note that this does not take into account the energy needed to cool 
 ***
 But then, what happens at cultivation? Well, say your server needs 400W of power when it's being fully cultivated by some lively ThreeFold Users of the New Internet. In this case, we would say that 400 W is the power consumption at **full load**.
 
-As we started with 100 W, and we now have 400 W, it means that you'd need four times the amount of BTU. 
+As we started with 100 W, and we now have 400 W, it means that you'd need four times the amount of BTU/h. 
 
 Here we show how to calculate this with any other configuration of full load/idle. 
 
-> Cultivation-Idle Ratio =  Cultivation W / Idle W
+> Full-load / Idle Ratio =  Full Load W / Idle W
 
 > 4 = 400 W / 100 W
 
-The BTU needed in cultivation would be 
+The BTU/h needed in cultivation would be 
 
-> (Full-Load / Idle Ratio) * Idle BTU = Full Load BTU  
+> (Full-Load / Idle Ratio) * Idle BTU/h needed = Full Load BTU/h 
 
-> 4 * (1706.5 BTU at Idle) = 6826 BTU at Full Load
+> 4 * (1706.5 BTU/h at Idle) = 6826 BTU/h at Full Load
 
-Thus, you would need 6826 BTU from the AC unit for 5 servers running each at 400W. In that case, a 8000 BTU AC unit would be sufficient. Let's say your environment would typically need 4000 BTU to cool the room, you'd need about 12000 BTU AC unit for the whole setup. 
+Thus, you would need 6826 BTU/h from the AC unit for 5 servers running each at 400W. In that case, a 8000 BTU/h AC unit would be sufficient. Let's say your environment would typically need 4000 BTU/h to cool the room, you'd need about 12000 BTU/h AC unit for the whole setup. 
 
-> If: BTU needed < BTU AC Unit, Then: AC Unit is OK for TF farming at full load.
+> If: BTU/h needed < BTU/h AC Unit, Then: AC Unit is OK for TF farming at full load.
 
 ***
 
-Now you can have a better idea of how much BTU is necessary for your AC unit. Of course, this can be a useful piece of data to incorporate in your simulation of Revenue/Cost farming.
+Now you can have a better idea of how much BTU/h is necessary for your AC unit. Of course, this can be a useful piece of data to incorporate in your simulation of Revenue/Cost farming.
 
 ### The General BTU Equation
 
 The **general equation** would then be:
 
-> Server Power in kW at Full Load * 3413 * Number of Servers = Total Maximum BTU needed per ThreeFold Farm
+> Server Power in kW at Full Load * 3413 * Number of Servers = Total Maximum BTU/h needed per ThreeFold Farm
 
 ***
 
 As another example, 7 servers using 120 W of power at idle would need:
 
-> 0.12 * 3413 * 7 = 2866.92 BTU
+> 0.12 * 3413 * 7 = 2866.92 BTU/h
 
 During cultivation, these 7 servers might use 480 W. This would be:
 
-> 0.48 * 3413 * 7 = 11467.68 BTU
+> 0.48 * 3413 * 7 = 11467.68 BTU/h
 
-To be sure everything's OK, this set up would need a 12 000 BTU AC unit to compensate for the heat generated by the ThreeFold Farm during full cultivation. This example considers the environment heat to be negligible.
+To be sure everything's OK, this set up would need a 12 000 BTU/h AC unit to compensate for the heat generated by the ThreeFold Farm during full cultivation. This example considers the environment heat to be negligible.
 
-> 11467.68 < 12000 --> 12K BTU AC Unit is OK for farm
+> 11467.68 < 12000 --> 12K BTU/h AC Unit is OK for farm
 ***
 
 That's it! It ain't any more complicated. Straight up mathematics and some judgment.
 
-Now, let's calcute the costs of running all this!
+Now, let's compute the costs of running all this!
 
 ***
 
