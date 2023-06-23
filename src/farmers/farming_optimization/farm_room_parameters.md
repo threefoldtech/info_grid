@@ -7,7 +7,7 @@
 - [Calculate the Minimum BTU/h Needed for the AC](#calculate-the-minimum-btuh-needed-for-the-ac)
   - [How Much BTU/h is Needed?](#how-much-btuh-is-needed)
   - [Taking Utilization into Account](#taking-utilization-into-account)
-  - [The General BTU Equation](#the-general-btu-equation)
+  - [The General BTU/h Equation](#the-general-btuh-equation)
 - [Ensure Proper Relative Humidity](#ensure-proper-relative-humidity)
 - [Ensure Proper Air Changes per Hour](#ensure-proper-air-changes-per-hour)
 
@@ -91,7 +91,7 @@ Thus, you would need 6826 BTU/h from the AC unit for 5 servers running each at 4
 
 Now you can have a better idea of how much BTU/h is necessary for your AC unit. Of course, this can be a useful piece of data to incorporate in your simulation of Revenue/Cost farming.
 
-### The General BTU Equation
+### The General BTU/h Equation
 
 The **general equation** would then be:
 
