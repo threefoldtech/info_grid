@@ -36,7 +36,7 @@ So let's do the calculation:
 ### How Much BTU is Needed?
 ***
 
-How much BTU does your ThreeFold Farm need to cool your servers?
+How much BTU/h does your ThreeFold Farm need to cool your servers?
 
 Calculating this is pretty simple actually. You need to keep in mind that **1 kW (1000 W) of power is equivalent to 3413 BTU/h** (Britisth Thermal Unit). 
 
