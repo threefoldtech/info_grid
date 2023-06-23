@@ -4,8 +4,8 @@
 <h1> Table of Contents </h2>
 
 - [Introduction](#introduction)
-- [Calculate the Minimum BTU Needed for the AC](#calculate-the-minimum-btu-needed-for-the-ac)
-  - [How Much BTU is Needed?](#how-much-btu-is-needed)
+- [Calculate the Minimum BTU/h Needed for the AC](#calculate-the-minimum-btuh-needed-for-the-ac)
+  - [How Much BTU/h is Needed?](#how-much-btuh-is-needed)
   - [Taking Utilization into Account](#taking-utilization-into-account)
   - [The General BTU Equation](#the-general-btu-equation)
 - [Ensure Proper Relative Humidity](#ensure-proper-relative-humidity)
@@ -21,7 +21,7 @@ Planning ahead the building of your ThreeFold farm with these notions in mind wi
 
 ***
 
-## Calculate the Minimum BTU Needed for the AC
+## Calculate the Minimum BTU/h Needed for the AC
 
 Let's see how to calculate how powerful your AC unit needs to be when it comes to cooling down your server room.
 
@@ -33,7 +33,7 @@ Note that for small farms, your current heating and cooling system may suffice.
 
 So let's do the calculation:
 ***
-### How Much BTU is Needed?
+### How Much BTU/h is Needed?
 ***
 
 How much BTU/h does your ThreeFold Farm need to cool your servers?
