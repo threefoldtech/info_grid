@@ -6,7 +6,7 @@
 - [Introduction](#introduction)
 - [Calculate the Minimum BTU/h Needed for the AC](#calculate-the-minimum-btuh-needed-for-the-ac)
   - [How Much BTU/h is Needed?](#how-much-btuh-is-needed)
-  - [Taking Utilization into Account](#taking-utilization-into-account)
+  - [Taking Utilization Into Account](#taking-utilization-into-account)
   - [The General BTU/h Equation](#the-general-btuh-equation)
 - [Ensure Proper Relative Humidity](#ensure-proper-relative-humidity)
 - [Ensure Proper Air Changes per Hour](#ensure-proper-air-changes-per-hour)
@@ -65,7 +65,7 @@ Thus, a 2000 BTU/h air conditioner would be able to compensate for the heat when
 ***
 Please take note that this does not take into account the energy needed to cool down your environment. You'd need to take into consideration **the heat of the servers and the general heat of your environment** to figure out how much BTU your AC needs in the big heat days of the summer.
 ***
-### Taking Utilization into Account
+### Taking Utilization Into Account
 ***
 But then, what happens at cultivation? Well, say your server needs 400W of power when it's being fully cultivated by some lively ThreeFold Users of the New Internet. In this case, we would say that 400 W is the power consumption at **full load**.
 
