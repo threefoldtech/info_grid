@@ -5,7 +5,7 @@
 ## Get Started - Your First Virtual Machine
 
 - [Create an Account and a Wallet on the Threefold Connect App](../getstarted/TF_Connect/TF_Connect.md)
-- [Buy TFT on Lobstr and Store it in Your Threefold Connect Wallet](../getstarted/TF_Token/TF_Token.md)
+- [Buy TFT on Lobstr and Store it in Your Threefold Connect Wallet](../threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr.md)
 - [Create an Account on the Threefold Dashboard](../getstarted/TF_Dashboard/TF_Dashboard.md)
 - [Find a 3Node to Deploy Your Workload](../dashboard/explorer/explorer_find_capacity.md)
 - [Deploy Your First Virtual Machine](../weblets/weblets_vm.md)
