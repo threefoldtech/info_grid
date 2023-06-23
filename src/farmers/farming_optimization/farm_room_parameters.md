@@ -62,7 +62,7 @@ Say you have 5 servers with this same configuration. It means you have
  
 > 5 * 341.3 =  1706.5 BTU/h
 
-Thus, a 2000 BTU Air Conditioner would be able to compensate for the heat when your servers are at idle. 
+Thus, a 2000 BTU/h Air Conditioner would be able to compensate for the heat when your servers are at idle. 
 
 > Note that in general for air conditioners, it will often be written BTU instead of BTU/h as a shorthand.
 
