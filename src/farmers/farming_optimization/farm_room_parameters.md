@@ -48,15 +48,13 @@ You should remember the following equivalences when thinking about air condition
 >
 > kW = BTU/h
 
-So with our idle server example running at 100W, we have 0.1 kW. This is 341.3 BTU/h.
+So with our idle server example running at 100W, we have 0.1 kW.
 
 > 100 W = 0.1 kW
 
-Here we thus have that 100 watt is 0.1 kilowatt.
+We then multiply our kW by the BTU/h factor **3413** to obtain the result in BTU/h. Here we have 341.3 BTU/h:
 
-We then multiply our kW by the BTU/h factor **3413**.
-
-> 0.1 kW * 3413/h = 341.3 BTU/h
+> 0.1 kW * 3413 = 341.3 BTU/h
 
 Say you have 5 servers with this same configuration. It means you have 
 
