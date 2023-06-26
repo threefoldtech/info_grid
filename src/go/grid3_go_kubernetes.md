@@ -7,16 +7,16 @@ import (
     "fmt"
     "net"
 
-    "github.com/threefoldtech/grid3-go/deployer"
-    "github.com/threefoldtech/grid3-go/workloads"
-    "github.com/threefoldtech/grid_proxy_server/pkg/types"
+    "github.com/threefoldtech/tfgrid-sdk-go/grid-client/deployer"
+    "github.com/threefoldtech/tfgrid-sdk-go/grid-client/workloads"
+    "github.com/threefoldtech/tfgrid-sdk-go/grid-proxy/pkg/types"
     "github.com/threefoldtech/zos/pkg/gridtypes"
 )
 
 func main() {
 
     // Create Threefold plugin client
-    tfPluginClient, err := deployer.NewTFPluginClient(mnemonics, "sr25519", network, "", "", true, false)
+    tfPluginClient, err := deployer.NewTFPluginClient(mnemonics, "sr25519", network, "", "", "", 0, true)
 
     // Get a free node to deploy
     freeMRU := uint64(1)
@@ -72,6 +72,7 @@ func main() {
         CPU:      2,
         Memory:   1024,
     }
+  
     k8sCluster := workloads.K8sCluster{
         Master:      &master,
         Workers:     []workloads.K8sNode{worker1, worker2},
@@ -87,12 +88,16 @@ func main() {
     err = tfPluginClient.K8sDeployer.Deploy(ctx, &k8sCluster)
 
     // Load the k8s cluster
-    masterNode := map[uint32]string{masterNodeID: master.Name}
-    workerNodes := map[uint32][]string{workerNodeID1: []string{worker1.Name}, workerNodeID2: []string{worker2.Name}}
-    k8sClusterObj, err := tfPluginClient.State.LoadK8sFromGrid(masterNode, workerNodes, master.Name)
+    k8sClusterObj, err := tfPluginClient.State.LoadK8sFromGrid([]uint32{masterNodeID, workerNodeID1, workerNodeID2}, master.Name)
 
     // Print master node Yggdrasil IP
     fmt.Println(k8sClusterObj.Master.YggIP)
+
+    // Cancel the VM deployment
+    err = tfPluginClient.K8sDeployer.Cancel(ctx, &k8sCluster)
+
+    // Cancel the network deployment
+    err = tfPluginClient.NetworkDeployer.Cancel(ctx, &network)
 }
 
 ```

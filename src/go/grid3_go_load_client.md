@@ -9,13 +9,13 @@
 Import `deployer` package to your project:
 
 ```go
-import "github.com/threefoldtech/grid3-go/deployer"
+import "github.com/threefoldtech/tfgrid-sdk-go/grid-client/deployer"
 ```
 
 Create new Client:
 
 ```go
 func main() {
-    client, err := deployer.NewTFPluginClient(mnemonics, keyType, network, "", "", true, true)
+    client, err := deployer.NewTFPluginClient(mnemonics, keyType, network, "", "", "", 0, true)
 }
 ```
