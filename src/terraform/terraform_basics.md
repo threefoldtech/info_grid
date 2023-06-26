@@ -23,6 +23,7 @@ terraform {
   required_providers {
     grid = {
       source = "threefoldtech/grid"
+      version = "<version-dev>" // provide version if you want to deploy with a version other than latest
     }
   }
 }
@@ -46,8 +47,9 @@ provider "grid" {
 
 ## Find your Node
 
-The choice of the node is up to the user. They need to do the capacity planning.
+we have two options here(using the scheduler or searching for a node in the capacity explorer)
 
-Make sure you choose a node which has enough capacity and is available (up and running).
+- Use the [scheduler](resources/terraform_scheduler.md), scheduler will help you find a node that matches your criteria
+- You do the capacity planning your self and make sure you choose a node which has enough capacity and is available (up and running).
 
 > Check [Exploring Capacity](../dashboard/explorer/explorer_home.md) to know which nodes fits your deployment criteria.
