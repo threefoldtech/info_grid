@@ -1,4 +1,4 @@
-## Deploying a VM
+## Deploying a VM with GPUs
 
 ### Example
 
@@ -17,19 +17,28 @@ import (
 func main() {
 
     // Create Threefold plugin client
-    tfPluginClient, err := deployer.NewTFPluginClient(mnemonics, keyType, network, "", "", "", 0, true)
+    tfPluginClient, err := deployer.NewTFPluginClient(mnemonics, "sr25519", network, "", "", "", 0, true)
 
     // Get a free node to deploy
     freeMRU := uint64(2)
     freeSRU := uint64(20)
     status := "up"
+    trueVal := true
+  
+    twinID := uint64(tfPluginClient.TwinID)
     filter := types.NodeFilter{
         FreeMRU: &freeMRU,
         FreeSRU: &freeSRU,
         Status:  &status,
+        RentedBy: &twinID,
+        HasGPU:   &trueVal,
     }
     nodeIDs, err := deployer.FilterNodes(tfPluginClient.GridProxyClient, filter)
     nodeID := uint32(nodeIDs[0].NodeID)
+
+    // Get the available gpus on the node
+    nodeClient, err := tfPluginClient.NcPool.GetNodeClient(tfPluginClient.SubstrateConn, nodeID)
+    gpus, err := nodeClient.GPUs(ctx)
 
     // Create a new network to deploy
     network := workloads.ZNet{
@@ -43,6 +52,12 @@ func main() {
         AddWGAccess: true,
     }
 
+    // Create a new disk to deploy
+    disk := workloads.Disk{
+        Name:   "gpuDisk",
+        SizeGB: 20,
+    }
+
     // Create a new VM to deploy
     vm := workloads.VM{
         Name:       "vm",
@@ -50,11 +65,16 @@ func main() {
         CPU:        2,
         PublicIP:   true,
         Planetary:  true,
+        // Insert your GPUs' IDs here
+        GPUs:       []zos.GPU{zos.GPU(gpus[0].ID)},
         Memory:     1024,
         RootfsSize: 20 * 1024,
         Entrypoint: "/sbin/zinit init",
         EnvVars: map[string]string{
             "SSH_KEY": publicKey,
+        },
+        Mounts: []workloads.Mount{
+            {DiskName: disk.Name, MountPoint: "/data"},
         },
         IP:          "10.20.2.5",
         NetworkName: network.Name,
@@ -64,7 +84,7 @@ func main() {
     err = tfPluginClient.NetworkDeployer.Deploy(ctx, &network)
 
     // Deploy the VM deployment
-    dl := workloads.NewDeployment("vm", nodeID, "", nil, network.Name, nil, nil, []workloads.VM{vm}, nil)
+    dl := workloads.NewDeployment("gpu", nodeID, "", nil, network.Name, []workloads.Disk{disk}, nil, []workloads.VM{vm}, nil)
     err = tfPluginClient.DeploymentDeployer.Deploy(ctx, &dl)
 
     // Load the VM using the state loader
@@ -81,8 +101,8 @@ func main() {
 }
 ```
 
-Running this code should result in a VM deployed on an available node and get an output like this:
+Running this code should result in a VM with a GPU deployed on an available node and get an output like this:
 
 ```bash
-300:e9c4:9048:57cf:6d98:42c6:a7bf:2e3f
+Yggdrasil IP: 300:e9c4:9048:57cf:6d98:42c6:a7bf:2e3f
 ```

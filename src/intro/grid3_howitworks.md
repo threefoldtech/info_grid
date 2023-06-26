@@ -1,6 +1,6 @@
 <h1> How it Works </h1>
 
-<h2> Table of Contents </h2> 
+<h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
 - [The ThreeFold Grid: A Global, Sustainable Network](#the-threefold-grid-a-global-sustainable-network)
@@ -40,7 +40,7 @@ The __ThreeFold Grid Capacity__ refers to the [extensive pool](https://dashboard
 
 ## The Process
 
-The ThreeFold Grid operates on a consumption and generation model similar to how people generate and consume electricity from the grid. Just as individuals consume electricity from the grid to power their homes and businesses, users of the ThreeFold Grid consume internet capacity to store data, run applications, and deliver digital services. At the same time, the ThreeFold Grid generates its capacity through the contributions of ThreeFold Farmers, who provide decentralized storage and compute resources to the grid. 
+The ThreeFold Grid operates on a consumption and generation model similar to how people generate and consume electricity from the grid. Just as individuals consume electricity from the grid to power their homes and businesses, users of the ThreeFold Grid consume internet capacity to store data, run applications, and deliver digital services. At the same time, the ThreeFold Grid generates its capacity through the contributions of ThreeFold Farmers, who provide decentralized storage and compute resources to the grid.
 
 This user-friendly model allows individuals and businesses to tap into a reliable and scalable infrastructure, accessing the resources they need while contributing to the overall capacity of the grid in a seamless and sustainable manner. Just like the electricity grid, the ThreeFold Grid offers a user-friendly and accessible approach to meet the ever-growing demand for internet capacity and digital services.
 
@@ -49,11 +49,12 @@ This user-friendly model allows individuals and businesses to tap into a reliabl
 ## TFChain: The Backbone Blockchain Infrastructure
 
 __TFChain__, also known as __ThreeFold Chain__, is the powerful blockchain that orchestrates the interactions within the ThreeFold Grid ecosystem, providing users with a range of key functionalities such as:
+
 - Users registration
 - Farms Management (registration and IP management)
 - Fund transfers
 - Billing and consumptions reports
-And many more. 
+And many more.
 
 > Read more in-depth about __TFChain's key functionalities__  [here](../concepts/tfchain.md).
 
@@ -103,9 +104,3 @@ Here's how it works: First, we gather the necessary deployment information, spec
 Once the contract is in place, the 3Node diligently reports its resource consumption to the blockchain at regular intervals. As a result, the associated fees are automatically deducted from the user's account, ensuring a seamless and transparent billing process based on actual resource consumption.
 
 With the provisioning process, you have the power to effortlessly deploy the resources you need, thanks to the harmony between the blockchain, 3Nodes, and the Zero-OS operating system. Discover the full potential of resource deployment and embrace the convenience and flexibility of the ThreeFold Grid.
-
-
-
-
-
-
