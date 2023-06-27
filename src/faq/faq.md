@@ -551,7 +551,6 @@ People from all over the world contribute to the growth of ThreeFold. Meet them 
 The [co-founders](https://threefold.io/memberships/cofounders/) of ThreeFold are:
 
 - [Adnan Fatayerji](https://www.threefold.io/people/adnan-fatayerji/)
-- [Christopher Hutton](https://www.threefold.io/people/christopher-hutton/)
 - [Kristof de Spiegeleer](https://www.threefold.io/people/kristof-de-spiegeleer/)
 - [Nickolay Babenko](https://www.threefold.io/people/nickolay-babenko/)
 - [Owen Kemp](https://www.threefold.io/people/owen-kemp/)
