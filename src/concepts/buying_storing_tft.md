@@ -1,5 +1,3 @@
-![](./img/tft.png)
-
 # Buying and Storing TFTs
 
 If you're looking to navigate the [TFT Ecosystem](https://library.threefold.me/info/manual/#/tokens/threefold__tft_ecosystem), this collection of tutorials and manuals is here to help. Learn how to purchase, trade, and securely store your TFTs with ease.

@@ -1,0 +1,637 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>3Node Desktop DIY Guide</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../../favicon.svg">
+        <link rel="shortcut icon" href="../../../favicon.png">
+        <link rel="stylesheet" href="../../../css/variables.css">
+        <link rel="stylesheet" href="../../../css/general.css">
+        <link rel="stylesheet" href="../../../css/chrome.css">
+        <link rel="stylesheet" href="../../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../../highlight.css">
+        <link rel="stylesheet" href="../../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../../intro/intro_readme.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="../../../intro/grid3_howitworks.html"><strong aria-hidden="true">2.</strong> How it Works</a></li><li class="chapter-item expanded "><a href="../../../concepts/concepts_readme.html"><strong aria-hidden="true">3.</strong> Grid Concepts</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../concepts/grid_primitives.html"><strong aria-hidden="true">3.1.</strong> TFGrid Primitives</a></li><li class="chapter-item "><a href="../../../concepts/grid3_components.html"><strong aria-hidden="true">3.2.</strong> TFGrid Component List</a></li><li class="chapter-item "><a href="../../../concepts/grid3_iac.html"><strong aria-hidden="true">3.3.</strong> Infrastructure as Code</a></li><li class="chapter-item "><a href="../../../concepts/proof_of_utilization.html"><strong aria-hidden="true">3.4.</strong> Proof of Utilization</a></li><li class="chapter-item "><a href="../../../concepts/contract_grace_period.html"><strong aria-hidden="true">3.5.</strong> Contract Grace Period</a></li><li class="chapter-item "><a href="../../../concepts/buying_storing_tft.html"><strong aria-hidden="true">3.6.</strong> Buying and Storing TFTs</a></li><li class="chapter-item "><a href="../../../concepts/grid3_whatsnew.html"><strong aria-hidden="true">3.7.</strong> What's New on TFGrid v3.x</a></li><li class="chapter-item "><a href="../../../concepts/tfchain.html"><strong aria-hidden="true">3.8.</strong> TFChain</a></li></ol></li><li class="chapter-item expanded "><a href="../../../getstarted/tfgrid3_getstarted.html"><strong aria-hidden="true">4.</strong> Getting Started</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../getstarted/TF_Connect/TF_Connect.html"><strong aria-hidden="true">4.1.</strong> ThreeFold Connect</a></li><li class="chapter-item "><a href="../../../getstarted/TF_Token/tft_toc.html"><strong aria-hidden="true">4.2.</strong> ThreeFold Token</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../getstarted/TF_Token/tft_lobstr/tft_lobstr.html"><strong aria-hidden="true">4.2.1.</strong> TFT on Lobstr</a></li><li class="chapter-item "><a href="../../../getstarted/TF_Token/tft_ethereum/tft_ethereum.html"><strong aria-hidden="true">4.2.2.</strong> TFT on Ethereum</a></li></ol></li><li class="chapter-item "><a href="../../../getstarted/TF_Dashboard/TF_Dashboard.html"><strong aria-hidden="true">4.3.</strong> ThreeFold Dashboard</a></li><li class="chapter-item "><a href="../../../dashboard/explorer/explorer_find_capacity.html"><strong aria-hidden="true">4.4.</strong> Tutorial: Find Node</a></li><li class="chapter-item "><a href="../../../weblets/weblets_vm.html"><strong aria-hidden="true">4.5.</strong> Tutorial: Deploy Your First VM</a></li><li class="chapter-item "><a href="../../../getstarted/ssh_guide/ssh_guide.html"><strong aria-hidden="true">4.6.</strong> SSH Remote Connection</a></li><li class="chapter-item "><a href="../../../getstarted/remote-desktop_gui/remote-desktop_gui.html"><strong aria-hidden="true">4.7.</strong> Remote Desktop and GUI</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../getstarted/remote-desktop_gui/cockpit_guide/cockpit_guide.html"><strong aria-hidden="true">4.7.1.</strong> Cockpit: a Web-based Interface for Servers</a></li><li class="chapter-item "><a href="../../../getstarted/remote-desktop_gui/xrdp_guide/xrdp_guide.html"><strong aria-hidden="true">4.7.2.</strong> XRDP: an Open-Source Remote Desktop Protocol</a></li><li class="chapter-item "><a href="../../../getstarted/remote-desktop_gui/guacamole_guide/guacamole_guide.html"><strong aria-hidden="true">4.7.3.</strong> Apache Guacamole: a Clientless Remote Desktop Gateway</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../tokens/tft_readme.html"><strong aria-hidden="true">5.</strong> TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../tokens/buytft/buytft_readme.html"><strong aria-hidden="true">5.1.</strong> Get TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../tokens/buytft/pancakeswap.html"><strong aria-hidden="true">5.1.1.</strong> Pancake Swap</a></li><li class="chapter-item "><a href="../../../tokens/buytft/oneinch.html"><strong aria-hidden="true">5.1.2.</strong> 1inch.io</a></li><li class="chapter-item "><a href="../../../tokens/buytft/gettft.html"><strong aria-hidden="true">5.1.3.</strong> GetTFT.com</a></li><li class="chapter-item "><a href="../../../tokens/buytft/albedo_buy.html"><strong aria-hidden="true">5.1.4.</strong> Albedo Wallet</a></li><li class="chapter-item "><a href="../../../tokens/buytft/solar_buy.html"><strong aria-hidden="true">5.1.5.</strong> Solar Wallet</a></li><li class="chapter-item "><a href="../../../tokens/buytft/coinbase_xlm.html"><strong aria-hidden="true">5.1.6.</strong> Coinbase (XLM)</a></li><li class="chapter-item "><a href="../../../tokens/buytft/lobstr_buy.html"><strong aria-hidden="true">5.1.7.</strong> Lobstr Wallet</a></li></ol></li><li class="chapter-item "><a href="../../../tokens/storetft/storetft_readme.html"><strong aria-hidden="true">5.2.</strong> Store TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../tokens/storetft/metamask.html"><strong aria-hidden="true">5.2.1.</strong> Metamask (TFT-BSC)</a></li><li class="chapter-item "><a href="../../../tokens/storetft/trustwallet.html"><strong aria-hidden="true">5.2.2.</strong> Trust Wallet (TFT-BSC)</a></li><li class="chapter-item "><a href="../../../tokens/storetft/albedo_store.html"><strong aria-hidden="true">5.2.3.</strong> Albedo Wallet (TFT-Stellar)</a></li><li class="chapter-item "><a href="../../../tokens/storetft/solar_wallet.html"><strong aria-hidden="true">5.2.4.</strong> Solar Wallet (TFT-Stellar)</a></li><li class="chapter-item "><a href="../../../tokens/storetft/lobstr_wallet.html"><strong aria-hidden="true">5.2.5.</strong> Lobstr Wallet</a></li></ol></li><li class="chapter-item "><a href="../../../tokens/liquidity/liquidity_readme.html"><strong aria-hidden="true">5.3.</strong> Provide Liquidity</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../tokens/liquidity/liquidity_pancake.html"><strong aria-hidden="true">5.3.1.</strong> LP on Pancake Swap</a></li><li class="chapter-item "><a href="../../../tokens/liquidity/liquidity_1inch.html"><strong aria-hidden="true">5.3.2.</strong> LP on 1inch.io</a></li><li class="chapter-item "><a href="../../../tokens/liquidity/liquidity_albedo.html"><strong aria-hidden="true">5.3.3.</strong> LP on Albedo</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../getstarted/planetarynetwork.html"><strong aria-hidden="true">6.</strong> Planetary Network</a></li><li class="chapter-item expanded "><a href="../../../terraform/terraform_readme.html"><strong aria-hidden="true">7.</strong> Terraform</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../terraform/terraform_install.html"><strong aria-hidden="true">7.1.</strong> Installing Terraform</a></li><li class="chapter-item "><a href="../../../terraform/terraform_basics.html"><strong aria-hidden="true">7.2.</strong> Terraform Basics</a></li><li class="chapter-item "><a href="../../../terraform/terraform_get_started.html"><strong aria-hidden="true">7.3.</strong> Tutorial</a></li><li class="chapter-item "><a href="../../../terraform/terraform_delete.html"><strong aria-hidden="true">7.4.</strong> Delete</a></li><li class="chapter-item "><a href="../../../terraform/terraform_full_vm.html"><strong aria-hidden="true">7.5.</strong> Full VM Deployment</a></li><li class="chapter-item "><a href="../../../terraform/resources/terraform_resources_readme.html"><strong aria-hidden="true">7.6.</strong> Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../terraform/resources/terraform_vm.html"><strong aria-hidden="true">7.6.1.</strong> Virtual Machine</a></li><li class="chapter-item "><a href="../../../terraform/resources/terraform_vm_gateway.html"><strong aria-hidden="true">7.6.2.</strong> Web Gateway</a></li><li class="chapter-item "><a href="../../../terraform/resources/terraform_k8s.html"><strong aria-hidden="true">7.6.3.</strong> Kubernetes Cluster</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../terraform/resources/terraform_k8s_demo.html"><strong aria-hidden="true">7.6.3.1.</strong> Demo</a></li></ol></li><li class="chapter-item "><a href="../../../terraform/resources/terraform_zdb.html"><strong aria-hidden="true">7.6.4.</strong> ZDB</a></li><li class="chapter-item "><a href="../../../terraform/resources/terraform_qsfs.html"><strong aria-hidden="true">7.6.5.</strong> Quantum Filesystem</a></li><li class="chapter-item "><a href="../../../terraform/resources/terraform_caprover.html"><strong aria-hidden="true">7.6.6.</strong> CapRover</a></li></ol></li><li class="chapter-item "><a href="../../../terraform/advanced/terraform_advanced_readme.html"><strong aria-hidden="true">7.7.</strong> Advanced</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../terraform/advanced/terraform_provider.html"><strong aria-hidden="true">7.7.1.</strong> Terraform Provider</a></li><li class="chapter-item "><a href="../../../terraform/advanced/terraform_provisioners.html"><strong aria-hidden="true">7.7.2.</strong> Terraform Provisioners</a></li><li class="chapter-item "><a href="../../../terraform/advanced/terraform_mounts.html"><strong aria-hidden="true">7.7.3.</strong> Mounts</a></li><li class="chapter-item "><a href="../../../terraform/advanced/terraform_capacity_planning.html"><strong aria-hidden="true">7.7.4.</strong> Capacity Planning</a></li><li class="chapter-item "><a href="../../../terraform/advanced/terraform_updates.html"><strong aria-hidden="true">7.7.5.</strong> Updates</a></li><li class="chapter-item "><a href="../../../terraform/advanced/terraform_nextcloud_redundant.html"><strong aria-hidden="true">7.7.6.</strong> Nextcloud Redundant Deployment</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../javascript/grid3_javascript_readme.html"><strong aria-hidden="true">8.</strong> Javascript Client</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../javascript/grid3_javascript_installation.html"><strong aria-hidden="true">8.1.</strong> Installation</a></li><li class="chapter-item "><a href="../../../javascript/grid3_javascript_loadclient.html"><strong aria-hidden="true">8.2.</strong> Loading Client</a></li><li class="chapter-item "><a href="../../../javascript/grid3_javascript_vm.html"><strong aria-hidden="true">8.3.</strong> Deploy a VM</a></li><li class="chapter-item "><a href="../../../javascript/grid3_javascript_capacity_planning.html"><strong aria-hidden="true">8.4.</strong> Capacity Planning</a></li><li class="chapter-item "><a href="../../../javascript/grid3_javascript_vms.html"><strong aria-hidden="true">8.5.</strong> Deploy Multiple VMs</a></li><li class="chapter-item "><a href="../../../javascript/grid3_javascript_caprover.html"><strong aria-hidden="true">8.6.</strong> Deploy CapRover</a></li><li class="chapter-item "><a href="../../../javascript/grid3_javascript_vm_gateways.html"><strong aria-hidden="true">8.7.</strong> Gateways</a></li><li class="chapter-item "><a href="../../../javascript/grid3_javascript_kubernetes.html"><strong aria-hidden="true">8.8.</strong> Deploy a Kubernetes Cluster</a></li><li class="chapter-item "><a href="../../../javascript/grid3_javascript_zdb.html"><strong aria-hidden="true">8.9.</strong> Deploy a ZDB</a></li><li class="chapter-item "><a href="../../../javascript/grid3_javascript_qsfs_zdbs.html"><strong aria-hidden="true">8.10.</strong> Deploy ZDBs for QSFS</a></li><li class="chapter-item "><a href="../../../javascript/grid3_javascript_qsfs.html"><strong aria-hidden="true">8.11.</strong> QSFS</a></li><li class="chapter-item "><a href="../../../javascript/grid3_javascript_kvstore.html"><strong aria-hidden="true">8.12.</strong> Key Value Store</a></li><li class="chapter-item "><a href="../../../javascript/grid3_wireguard_gateway.html"><strong aria-hidden="true">8.13.</strong> Gateway with wireguard backend</a></li></ol></li><li class="chapter-item expanded "><a href="../../../go/grid3_go_readme.html"><strong aria-hidden="true">9.</strong> Go Client</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../go/grid3_go_installation.html"><strong aria-hidden="true">9.1.</strong> Installation</a></li><li class="chapter-item "><a href="../../../go/grid3_go_load_client.html"><strong aria-hidden="true">9.2.</strong> Loading Client</a></li><li class="chapter-item "><a href="../../../go/grid3_go_vm.html"><strong aria-hidden="true">9.3.</strong> Deploy a VM</a></li><li class="chapter-item "><a href="../../../go/grid3_go_vms.html"><strong aria-hidden="true">9.4.</strong> Deploy Multiple VMs</a></li><li class="chapter-item "><a href="../../../go/grid3_go_gateways.html"><strong aria-hidden="true">9.5.</strong> Deploy Gateways</a></li><li class="chapter-item "><a href="../../../go/grid3_go_kubernetes.html"><strong aria-hidden="true">9.6.</strong> Deploy Kubernetes</a></li></ol></li><li class="chapter-item expanded "><a href="../../../tfgridcmd/grid3_cli_readme.html"><strong aria-hidden="true">10.</strong> TFGrid CLI</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../tfgridcmd/grid3_cli_installation.html"><strong aria-hidden="true">10.1.</strong> Installation</a></li><li class="chapter-item "><a href="../../../tfgridcmd/grid3_cli_login.html"><strong aria-hidden="true">10.2.</strong> Login</a></li><li class="chapter-item "><a href="../../../tfgridcmd/grid3_cli_vm.html"><strong aria-hidden="true">10.3.</strong> Deploy a VM</a></li><li class="chapter-item "><a href="../../../tfgridcmd/grid3_cli_gateways.html"><strong aria-hidden="true">10.4.</strong> Deploy Gateways</a></li><li class="chapter-item "><a href="../../../tfgridcmd/grid3_cli_kubernetes.html"><strong aria-hidden="true">10.5.</strong> Deploy Kubernetes</a></li></ol></li><li class="chapter-item expanded "><a href="../../../TF_Grid_Services/tf_grid_services_readme.html"><strong aria-hidden="true">11.</strong> TFGrid Services</a></li><li class="chapter-item expanded "><a href="../../../cloud/cloud.html"><strong aria-hidden="true">12.</strong> Cloud</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../cloud/cloudunits_pricing.html"><strong aria-hidden="true">12.1.</strong> Pricing</a></li></ol></li><li class="chapter-item expanded "><a href="../../../weblets/weblets_home.html"><strong aria-hidden="true">13.</strong> Weblets</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../weblets/weblets_profile_manager.html"><strong aria-hidden="true">13.1.</strong> Profile Manager</a></li><li class="chapter-item "><a href="../../../weblets/weblets_deployments_list.html"><strong aria-hidden="true">13.2.</strong> Deployments List</a></li><li class="chapter-item "><a href="../../../weblets/weblets_cancel_contracts.html"><strong aria-hidden="true">13.3.</strong> Cancel Contracts</a></li><li class="chapter-item "><a href="../../../weblets/weblets_basic_environments_readme.html"><strong aria-hidden="true">13.4.</strong> Basic Environments</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../weblets/weblets_fullVm.html"><strong aria-hidden="true">13.4.1.</strong> Full Virtual Machine</a></li><li class="chapter-item "><a href="../../../weblets/weblets_vm.html"><strong aria-hidden="true">13.4.2.</strong> Virtual Machine</a></li><li class="chapter-item "><a href="../../../weblets/weblets_k8s.html"><strong aria-hidden="true">13.4.3.</strong> Kubernetes</a></li><li class="chapter-item "><a href="../../../weblets/weblets_nixos_micro.html"><strong aria-hidden="true">13.4.4.</strong> Nixos MicroVM</a></li></ol></li><li class="chapter-item "><a href="../../../weblets/weblets_ready_community_readme.html"><strong aria-hidden="true">13.5.</strong> Ready Community Solutions</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../weblets/weblets_algorand.html"><strong aria-hidden="true">13.5.1.</strong> Algorand</a></li><li class="chapter-item "><a href="../../../weblets/weblets_caprover.html"><strong aria-hidden="true">13.5.2.</strong> Caprover</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../weblets/weblets_caprover_admin.html"><strong aria-hidden="true">13.5.2.1.</strong> Caprover Admin</a></li><li class="chapter-item "><a href="../../../weblets/weblets_caprover_worker.html"><strong aria-hidden="true">13.5.2.2.</strong> Caprover Worker</a></li></ol></li><li class="chapter-item "><a href="../../../weblets/weblets_casper.html"><strong aria-hidden="true">13.5.3.</strong> CasperLabs</a></li><li class="chapter-item "><a href="../../../weblets/weblets_discourse.html"><strong aria-hidden="true">13.5.4.</strong> Discourse</a></li><li class="chapter-item "><a href="../../../weblets/weblets_funkwhale.html"><strong aria-hidden="true">13.5.5.</strong> Funkwhale</a></li><li class="chapter-item "><a href="../../../weblets/weblets_mastodon.html"><strong aria-hidden="true">13.5.6.</strong> Mastodon Weblet</a></li><li class="chapter-item "><a href="../../../weblets/weblets_mattermost.html"><strong aria-hidden="true">13.5.7.</strong> Mattermost</a></li><li class="chapter-item "><a href="../../../weblets/weblets_nodepilot.html"><strong aria-hidden="true">13.5.8.</strong> Node Pilot</a></li><li class="chapter-item "><a href="../../../weblets/weblets_owncloud.html"><strong aria-hidden="true">13.5.9.</strong> Owncloud</a></li><li class="chapter-item "><a href="../../../weblets/weblets_peertube.html"><strong aria-hidden="true">13.5.10.</strong> Peertube</a></li><li class="chapter-item "><a href="../../../weblets/weblets_presearch.html"><strong aria-hidden="true">13.5.11.</strong> Presearch</a></li><li class="chapter-item "><a href="../../../weblets/weblets_subsquid.html"><strong aria-hidden="true">13.5.12.</strong> Subsquid</a></li><li class="chapter-item "><a href="../../../weblets/weblets_taiga.html"><strong aria-hidden="true">13.5.13.</strong> Taiga</a></li><li class="chapter-item "><a href="../../../weblets/weblets_umbrel.html"><strong aria-hidden="true">13.5.14.</strong> Umbrel</a></li><li class="chapter-item "><a href="../../../weblets/weblets_wordpress.html"><strong aria-hidden="true">13.5.15.</strong> WordPress</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../dashboard/dashboard.html"><strong aria-hidden="true">14.</strong> Dashboard</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../dashboard/explorer/explorer_home.html"><strong aria-hidden="true">14.1.</strong> Dasboard Explorer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../dashboard/explorer/explorer_find_capacity.html"><strong aria-hidden="true">14.1.1.</strong> Find Capacity</a></li><li class="chapter-item "><a href="../../../dashboard/explorer/explorer_graphql_intro.html"><strong aria-hidden="true">14.1.2.</strong> A Glimpse into GraphQL</a></li></ol></li><li class="chapter-item "><a href="../../../dashboard/portal/dashboard_portal_home.html"><strong aria-hidden="true">14.2.</strong> TFChain Portal</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../dashboard/portal/dashboard_portal_ui_tokens.html"><strong aria-hidden="true">14.2.1.</strong> Manage TFTs on TFChain</a></li><li class="chapter-item "><a href="../../../dashboard/portal/dashboard_portal_ui_farming.html"><strong aria-hidden="true">14.2.2.</strong> Activate Farmer Account and Nodes on TFChain</a></li><li class="chapter-item "><a href="../../../dashboard/portal/dashboard_portal_dedicated_nodes.html"><strong aria-hidden="true">14.2.3.</strong> Dedicated Nodes</a></li></ol></li><li class="chapter-item "><a href="../../../dashboard/dao_voting/dao_voting.html"><strong aria-hidden="true">14.3.</strong> DAO Voting</a></li></ol></li><li class="chapter-item expanded "><a href="../../../flist_hub/flist_hub.html"><strong aria-hidden="true">15.</strong> Flist Hub</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../manual3_iac/grid3_supported_flists.html"><strong aria-hidden="true">15.1.</strong> Supported FLists</a></li></ol></li><li class="chapter-item expanded "><a href="../../../farmers/farmers.html"><strong aria-hidden="true">16.</strong> Farmers</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../farmers/3node_building/3node_building.html"><strong aria-hidden="true">16.1.</strong> Build a 3Node</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../farmers/3node_building/1_create_farm.html"><strong aria-hidden="true">16.1.1.</strong> 1. Create a Farm</a></li><li class="chapter-item "><a href="../../../farmers/3node_building/2_bootstrap_image.html"><strong aria-hidden="true">16.1.2.</strong> 2. Create a Zero-OS Bootstrap Image</a></li><li class="chapter-item "><a href="../../../farmers/3node_building/3_set_hardware.html"><strong aria-hidden="true">16.1.3.</strong> 3. Set the Hardware</a></li><li class="chapter-item "><a href="../../../farmers/3node_building/4_wipe_all_disks.html"><strong aria-hidden="true">16.1.4.</strong> 4. Wipe All the Disks</a></li><li class="chapter-item "><a href="../../../farmers/3node_building/5_set_bios_uefi.html"><strong aria-hidden="true">16.1.5.</strong> 5. Set the BIOS/UEFI</a></li><li class="chapter-item "><a href="../../../farmers/3node_building/6_boot_3node.html"><strong aria-hidden="true">16.1.6.</strong> 6. Boot the 3Node</a></li><li class="chapter-item "><a href="../../../farmers/3node_building/data_center.html"><strong aria-hidden="true">16.1.7.</strong> Set Up a ThreeFold Farm in a Data Center</a></li></ol></li><li class="chapter-item expanded "><a href="../../../farmers/complete_diy_guides/complete_diy_guides_readme.html"><strong aria-hidden="true">16.2.</strong> Complete DIY 3Node Guides</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../../farmers/complete_diy_guides/3node_diy_desktop/3node_diy_desktop.html" class="active"><strong aria-hidden="true">16.2.1.</strong> 3Node Desktop DIY Guide</a></li><li class="chapter-item "><a href="../../../farmers/complete_diy_guides/3node_diy_rack_server/3node_diy_rack_server.html"><strong aria-hidden="true">16.2.2.</strong> 3Node Rack Server DIY Guide</a></li></ol></li><li class="chapter-item "><a href="../../../farmers/farming_optimization/farming_optimization.html"><strong aria-hidden="true">16.3.</strong> Farming Optimization</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../farmers/farming_optimization/calculate_roi.html"><strong aria-hidden="true">16.3.1.</strong> Calculate Your ROI</a></li><li class="chapter-item "><a href="../../../farmers/farming_optimization/farm_room_parameters.html"><strong aria-hidden="true">16.3.2.</strong> Room Parameters</a></li><li class="chapter-item "><a href="../../../farmers/farming_optimization/farming_costs.html"><strong aria-hidden="true">16.3.3.</strong> Farming Costs</a></li></ol></li><li class="chapter-item "><a href="../../../farmers/threefold_token/threefold_token.html"><strong aria-hidden="true">16.4.</strong> TFT and Farming</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../farmers/threefold_token/tft_facts.html"><strong aria-hidden="true">16.4.1.</strong> TFT Facts</a></li><li class="chapter-item "><a href="../../../farmers/threefold_token/storing_tft/storing_tft.html"><strong aria-hidden="true">16.4.2.</strong> Storing TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../farmers/threefold_token/storing_tft/tf_connect_app.html"><strong aria-hidden="true">16.4.2.1.</strong> TF Connect App</a></li><li class="chapter-item "><a href="../../../farmers/threefold_token/storing_tft/hardware_wallet.html"><strong aria-hidden="true">16.4.2.2.</strong> Hardware Wallet</a></li></ol></li><li class="chapter-item "><a href="../../../farmers/threefold_token/buy_sell_tft/buy_sell_tft.html"><strong aria-hidden="true">16.4.3.</strong> Buy and Sell TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../farmers/threefold_token/buy_sell_tft/set_stellar_address.html"><strong aria-hidden="true">16.4.3.1.</strong> Set a Stellar Address</a></li><li class="chapter-item "><a href="../../../getstarted/TF_Token/tft_lobstr/tft_lobstr.html"><strong aria-hidden="true">16.4.3.2.</strong> TFT on Lobstr</a></li><li class="chapter-item "><a href="../../../farmers/threefold_token/buy_sell_tft/tft_bridges.html"><strong aria-hidden="true">16.4.3.3.</strong> TFT Bridges</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../farmers/threefold_token/buy_sell_tft/bsc_stellar_bridge.html"><strong aria-hidden="true">16.4.3.3.1.</strong> BSC-Stellar Bridge</a></li><li class="chapter-item "><a href="../../../farmers/threefold_token/buy_sell_tft/tfchain_stellar_bridge.html"><strong aria-hidden="true">16.4.3.3.2.</strong> TFChain-Stellar Bridge</a></li><li class="chapter-item "><a href="../../../getstarted/TF_Token/tft_ethereum/tft_ethereum.html"><strong aria-hidden="true">16.4.3.3.3.</strong> Ethereum-Stellar Bridge</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><a href="../../../farmers/farmerbot/farmerbot.html"><strong aria-hidden="true">16.5.</strong> Farmerbot</a></li><li class="chapter-item "><a href="../../../farmers/farmers_faq/farmers_faq.html"><strong aria-hidden="true">16.6.</strong> Farmers FAQ</a></li></ol></li><li class="chapter-item expanded "><a href="../../../tf_video_gallery/tf_video_gallery.html"><strong aria-hidden="true">17.</strong> ThreeFold Video Gallery</a></li><li class="chapter-item expanded "><a href="../../../tf_mastodon/tf_mastodon_readme.html"><strong aria-hidden="true">18.</strong> ThreeFold Mastodon Server</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../tf_mastodon/tf_mastodon_deploy.html"><strong aria-hidden="true">18.1.</strong> Mastodon Deployer Manual</a></li><li class="chapter-item "><a href="../../../tf_mastodon/tf_mastodon_faq.html"><strong aria-hidden="true">18.2.</strong> Frequently Asked Questions</a></li></ol></li><li class="chapter-item expanded "><a href="../../../proxy/proxy.html"><strong aria-hidden="true">19.</strong> Grid Proxy</a></li><li class="chapter-item expanded "><a href="../../../advanced/advanced.html"><strong aria-hidden="true">20.</strong> Advanced</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../advanced/grid3_stellar_tfchain_bridge.html"><strong aria-hidden="true">20.1.</strong> Grid3 Stellar-TFChain Bridge</a></li><li class="chapter-item "><a href="../../../advanced/token_transfer_keygenerator.html"><strong aria-hidden="true">20.2.</strong> Token Transfer Keygenerator</a></li><li class="chapter-item "><a href="../../../advanced/cancel_contracts.html"><strong aria-hidden="true">20.3.</strong> Cancel contracts</a></li><li class="chapter-item "><a href="../../../advanced/contract_bill_report.html"><strong aria-hidden="true">20.4.</strong> Contract Bills Reports</a></li><li class="chapter-item "><a href="../../../advanced/list_public_ips.html"><strong aria-hidden="true">20.5.</strong> Listing Free Public IPs</a></li><li class="chapter-item "><a href="../../../advanced/grid3_redis.html"><strong aria-hidden="true">20.6.</strong> Redis</a></li></ol></li><li class="chapter-item expanded "><a href="../../../roadmap/roadmap_readme.html"><strong aria-hidden="true">21.</strong> ThreeFold Roadmap</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../roadmap/releasenotes/releasenotes_readme.html"><strong aria-hidden="true">21.1.</strong> Release Notes</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../roadmap/releasenotes/tfgrid_release_3_9_0.html"><strong aria-hidden="true">21.1.1.</strong> TFGrid v3.9.0</a></li><li class="chapter-item "><a href="../../../roadmap/releasenotes/tfgrid_release_3_8_0.html"><strong aria-hidden="true">21.1.2.</strong> TFGrid v3.8.0</a></li><li class="chapter-item "><a href="../../../roadmap/releasenotes/tfgrid_release_3_7_0.html"><strong aria-hidden="true">21.1.3.</strong> TFGrid v3.7.0</a></li><li class="chapter-item "><a href="../../../roadmap/releasenotes/tfgrid_release_3_6_1.html"><strong aria-hidden="true">21.1.4.</strong> TFGrid v3.6.1</a></li><li class="chapter-item "><a href="../../../roadmap/releasenotes/tfgrid_release_3_6_0.html"><strong aria-hidden="true">21.1.5.</strong> TFGrid v3.6.0</a></li><li class="chapter-item "><a href="../../../roadmap/releasenotes/tfgrid_release_3_0_a5.html"><strong aria-hidden="true">21.1.6.</strong> TFGrid v3.0.0 Alpha-5</a></li><li class="chapter-item "><a href="../../../roadmap/releasenotes/tfgrid_release_3_0_a4.html"><strong aria-hidden="true">21.1.7.</strong> TFGrid v3.0.0 Alpha-4</a></li><li class="chapter-item "><a href="../../../roadmap/releasenotes/tfgrid_release_3_0_a2.html"><strong aria-hidden="true">21.1.8.</strong> TFGrid v3.0.0 Alpha-2</a></li><li class="chapter-item "><a href="../../../roadmap/releasenotes/tfgrid_release_3_0.html"><strong aria-hidden="true">21.1.9.</strong> TFGrid v3.0.0</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../../tfchain/tfchain.html"><strong aria-hidden="true">22.</strong> ThreeFold Chain</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../tfchain/introduction.html"><strong aria-hidden="true">22.1.</strong> Introduction</a></li><li class="chapter-item "><a href="../../../tfchain/farming_policies.html"><strong aria-hidden="true">22.2.</strong> Farming Policies</a></li><li class="chapter-item "><a href="../../../tfchain/tfchain_external_service_contract.html"><strong aria-hidden="true">22.3.</strong> External Service Contract</a></li><li class="chapter-item "><a href="../../../tfchain/tfchain_solution_provider.html"><strong aria-hidden="true">22.4.</strong> Become a Solution Provider</a></li></ol></li><li class="chapter-item expanded "><a href="../../../collaboration_tools/collaboration_tools.html"><strong aria-hidden="true">23.</strong> Collaboration Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../../collaboration_tools/circle_tool.html"><strong aria-hidden="true">23.1.</strong> Circle Tool</a></li><li class="chapter-item "><a href="../../../collaboration_tools/website_tool.html"><strong aria-hidden="true">23.2.</strong> Website Deployer</a></li></ol></li><li class="chapter-item expanded "><a href="../../../contribute/contribute.html"><strong aria-hidden="true">24.</strong> How to Contribute</a></li><li class="chapter-item expanded "><a href="../../../testing/testing_readme.html"><strong aria-hidden="true">25.</strong> How to Test</a></li><li class="chapter-item expanded "><a href="../../../faq/faq.html"><strong aria-hidden="true">26.</strong> FAQ</a></li><li class="chapter-item expanded "><a href="../../../legal/legal.html"><strong aria-hidden="true">27.</strong> Legal</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="../../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p><img src="./img/farming_30.png" alt="Farming_Title" /></p>
+<h1 id="building-a-diy-3node-desktop-computer"><a class="header" href="#building-a-diy-3node-desktop-computer">Building a DIY 3Node: Desktop Computer</a></h1>
+<p>In the following 3Node DIY guide, you will learn how to turn a Dell Optiplex 7020 into a 3Node farming on the ThreeFold Grid. </p>
+<p>Note that the process is similar for other desktop computers.</p>
+<div style="break-after:page"></div>
+<hr />
+<h2 id="table-of-contents"><a class="header" href="#table-of-contents">Table of Contents</a></h2>
+<hr />
+<ul>
+<li><a href="#prerequisite">Prerequisite</a>
+<ul>
+<li><a href="#diy-3node-computer-requirements">DIY 3Node Computer Requirements</a></li>
+<li><a href="#diy-3node-material-list">DIY 3Node Material List</a></li>
+</ul>
+</li>
+<li><a href="#1-create-a-farm-with-threefold-connect-app">1. Create a Farm with ThreeFold Connect App</a>
+<ul>
+<li><a href="#threefold-connect-app-installation">ThreeFold Connect App Installation</a>
+<ul>
+<li><a href="#verify-your-identity-kyc-by-email">Verify Your Identity (KYC) by Email</a></li>
+</ul>
+</li>
+<li><a href="#create-a-wallet">Create a Wallet</a></li>
+<li><a href="#create-a-farm">Create a Farm</a></li>
+</ul>
+</li>
+<li><a href="#2-create-a-zero-os-bootstrap-image">2. Create a Zero-OS Bootstrap Image</a>
+<ul>
+<li><a href="#download-the-zero-os-boostrap-image">Download the Zero-OS Boostrap Image</a></li>
+<li><a href="#burn-the-zero-os-bootstrap-image">Burn the Zero-OS Bootstrap Image</a></li>
+</ul>
+</li>
+<li><a href="#3-set-the-hardware">3. Set the Hardware</a></li>
+<li><a href="#4-wipe-all-the-disks">4. Wipe All the Disks</a>
+<ul>
+<li><a href="#1-create-a-linux-boostrap-image">1. Create a Linux Boostrap Image</a></li>
+<li><a href="#2-boot-linux-in-try-mode">2. Boot Linux in Try Mode</a></li>
+<li><a href="#3-use-wipefs-to-wipe-all-disks">3. Use wipefs to Wipe All Disks</a></li>
+</ul>
+</li>
+<li><a href="#5-set-the-biosuefi">5. Set the BIOS/UEFI</a>
+<ul>
+<li><a href="#the-essential-features-of-biosuefi-for-a-3node">The Essential Features of BIOS/UEFI for a 3Node</a></li>
+<li><a href="#set-the-biosuefi-on-a-dell-optiplex-7020">Set the BIOS/UEFI on a Dell Optiplex 7020</a></li>
+</ul>
+</li>
+<li><a href="#6-boot-the-3node">6. Boot the 3Node</a>
+<ul>
+<li><a href="#check-the-3nodes-status-on-the-tf-explorer">Check the 3Node's Status on the TF Explorer</a></li>
+<li><a href="#farming-rewards-distribution">Farming Rewards Distribution</a></li>
+</ul>
+</li>
+<li><a href="#additional-information">Additional Information</a></li>
+</ul>
+<div style="break-after:page"></div>
+<hr />
+<h1 id="prerequisite"><a class="header" href="#prerequisite">Prerequisite</a></h1>
+<h2 id="diy-3node-computer-requirements"><a class="header" href="#diy-3node-computer-requirements">DIY 3Node Computer Requirements</a></h2>
+<hr />
+<p>Any computer with the following specifications can be used as a DIY 3Node.</p>
+<ul>
+<li>Any 64-bit hardware with an Intel or AMD processor chip.</li>
+<li>Servers, desktops and mini computers type hardware are compatible.</li>
+<li>A minimum of 500 GB of SSD and a bare minimum of 2 GB of RAM is required.</li>
+<li>A ratio of 100GB of SSD and 8GB of RAM per thread is recommended.</li>
+<li>A wired ethernet connection is highly recommended to maximize reliability and the ability to farm TFT.</li>
+<li>A <a href="https://www.passmark.com/">passmark</a> of 1000 per core is recommended and will be a minimum requirement in the future.</li>
+</ul>
+<p>In this guide, we are using a Dell Optiplex 7020. It constitutes a perfect affordable entry DIY 3Node as it can be bought refurbished with the proper ratio of 100GB of SSD and 8GB of RAM per thread, and this, without any need of upgrades or updates.</p>
+<hr />
+<h2 id="diy-3node-material-list"><a class="header" href="#diy-3node-material-list">DIY 3Node Material List</a></h2>
+<hr />
+<ul>
+<li>Any computer respecting the DIY 3Node Computer Requirements stated above</li>
+<li>Ethernet cable</li>
+<li>Router + Modem</li>
+<li>Surge Protector</li>
+<li>2x USB key 4 Go</li>
+<li>Android/iOS Phone</li>
+<li>Computer monitor and cable, keyboard and mouse</li>
+<li>MAC/Linux/Windows Computer</li>
+</ul>
+<hr />
+<div style="break-after:page"></div>
+<hr />
+<h1 id="1-create-a-farm-with-threefold-connect-app"><a class="header" href="#1-create-a-farm-with-threefold-connect-app">1. Create a Farm with ThreeFold Connect App</a></h1>
+<h2 id="threefold-connect-app-installation"><a class="header" href="#threefold-connect-app-installation">ThreeFold Connect App Installation</a></h2>
+<hr />
+<p>The ThreeFold Connect App is available for <a href="https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&amp;hl=en&amp;gl=US">Android</a> and <a href="https://apps.apple.com/us/app/threefold-connect/id1459845885">iOS</a>.</p>
+<ul>
+<li>Note that for Android phones, you need at minimum Android Nougat, the 8.0 software version.</li>
+<li>Note that for iOS phones, you need at minimum iOS 14.5. It will be soon available to iOS 13.</li>
+</ul>
+<p>Either use the links above, or search for the ThreeFold Connect App on the Apple Store or the Google Play store. Then install and open the app. If you want to leave a 5 star review of the App, no one here will stop you!</p>
+<p><img src="./img/farming_tf_wallet_1.png" alt="farming_tf_wallet_1" /></p>
+<p><img src="./img/farming_tf_wallet_2.png" alt="farming_tf_wallet_2" /></p>
+<p>Once you are in the application, you will see some introduction pages to help you familiarize with the TF Connect App. You will also be asked to read and accept ThreeFold's Terms and conditions.</p>
+<p><img src="./img/farming_tf_wallet_4.png" alt="farming_tf_wallet_4" /></p>
+<p>You will then be asked to either <em>SIGN UP</em> or <em>RECOVER ACCOUNT</em>. For now, we will show how to sign up. Later in the guide, we will show you how to recover an account.</p>
+<p><img src="./img/farming_tf_wallet_5.png" alt="farming_tf_wallet_5" /></p>
+<p>You will then be asked to choose a <em>ThreeFold Connect Id</em>. This ID will be used, as well as the seed phrase, when you want to recover an account. Choose wisely. And do not forget it! Here we will use TFExample, as an example.</p>
+<p><img src="./img/farming_tf_wallet_6.png" alt="farming_tf_wallet_6" /></p>
+<p>Next, you need to add a valid email address. This will be used as a broad KYC. You will need to access your email and confirm the validation email from ThreeFold to use properly the TF Connect App Wallet.</p>
+<p><img src="./img/farming_tf_wallet_7.png" alt="farming_tf_wallet_7" /></p>
+<p>Then, the next step is crucial! Make sure no one is around looking at your screen. You will be shown your seed phrase. Keep this in a secure and offline place. You will need the 3bot ID and the seed phrase to recover your account. This seed phrase is of utmost important. Do not lose it nor give it to anyone.</p>
+<p><img src="./img/farming_tf_wallet_8.png" alt="farming_tf_wallet_8" /></p>
+<p>Once you've hit Next, you will be asked to write down 3 random words of your seed phrase. This is a necessary step to ensure you have taken the time to write down your seed phrase.</p>
+<p><img src="./img/farming_tf_wallet_9.png" alt="farming_tf_wallet_9" /></p>
+<p>Then, you'll be asked to confirm your TF 3bot name and the associated email.</p>
+<p><img src="./img/farming_tf_wallet_10.png" alt="farming_tf_wallet_10" /></p>
+<p>Finally, you will be asked to choose a 4-digit pin. This will be needed to use the ThreeFold Connect App. If you ever forget this 4-digit pin, you will need to recover your account from your 3bot name and your seed phrase. You will need to confirm the new pin in the next step.</p>
+<p><img src="./img/farming_tf_wallet_11.png" alt="farming_tf_wallet_11" /></p>
+<p>That's it! You've created your ThreeFold Connect account. You can press the hamburger menu on the top left to explore the ThreeFold Connect App.</p>
+<p><img src="./img/farming_tf_wallet_12.png" alt="farming_tf_wallet_12" /></p>
+<hr />
+<div style="break-after:page"></div>
+<hr />
+<h3 id="verify-your-identity-kyc-by-email"><a class="header" href="#verify-your-identity-kyc-by-email">Verify Your Identity (KYC) by Email</a></h3>
+<hr />
+<p>Once you've created your account, an email will be sent to the email address you've chosen in the account creation process. </p>
+<p>To verify your email, go on your email account and open the email sent by <em>info@openkyc.live</em> with the subject <em>Verify your email address</em>. </p>
+<p>In this email, click on the link <em>Verify my email address</em>. This will lead you to a <em>login.threefold.me</em> link. The process should be automatic. Once this is done, you will receive a confirmation on screen, as well as on your phone.</p>
+<p><img src="./img/farming_tf_wallet_39.png" alt="farming_tf_wallet_39" /></p>
+<p><img src="./img/farming_tf_wallet_40.png" alt="farming_tf_wallet_40" /></p>
+<p><img src="./img/farming_tf_wallet_41.png" alt="farming_tf_wallet_41" /></p>
+<p>If for some reason, you did not receive the verification email, simply click on <em>Verify</em> and another email will be sent.</p>
+<p><img src="./img/farming_tf_wallet_42.png" alt="farming_tf_wallet_42" /></p>
+<p><img src="./img/farming_tf_wallet_43.png" alt="farming_tf_wallet_43" /></p>
+<hr />
+<div style="break-after:page"></div>
+<hr />
+<h2 id="create-a-wallet"><a class="header" href="#create-a-wallet">Create a Wallet</a></h2>
+<hr />
+<p>To create a wallet, click on the ThreeFold Connect App menu. This is what you see. Choose <em>Wallet</em>.</p>
+<p><img src="./img/farming_tf_wallet_13.png" alt="farming_tf_wallet_13" /></p>
+<p>Once you are in the section <em>Wallet</em>, click on <em>Create Initial Wallet</em>. </p>
+<p><img src="./img/farming_tf_wallet_14.png" alt="farming_tf_wallet_14" /></p>
+<p>This is what you see when the TF Grid is initializing your wallet.</p>
+<p><img src="./img/farming_tf_wallet_15.png" alt="farming_tf_wallet_15" /></p>
+<p>Once your wallet is initialized, you will see <em>No blanace found for this wallet</em>. You can click on this button to enter the wallet.</p>
+<p><img src="./img/farming_tf_wallet_16.png" alt="farming_tf_wallet_16" /></p>
+<p>Once inside your wallet, this is what you see.</p>
+<p><img src="./img/farming_tf_wallet_17.png" alt="farming_tf_wallet_17" /></p>
+<div style="break-after:page"></div>
+<hr />
+<h2 id="create-a-farm"><a class="header" href="#create-a-farm">Create a Farm</a></h2>
+<hr />
+<p>To create a farm, follow those steps.</p>
+<p>Click on the hamburger menu on the top left of your screen and select <em>Farmer Migration</em>. This title is somehow misleading, as you can not only migrate farms, but create farms too!</p>
+<p><img src="./img/farming_tf_wallet_24.png" alt="farming_tf_wallet_24" /></p>
+<p>To create a farm, either click on the <em>plus</em> sign at the top right, or click on <em>Click to create -&gt;</em>.</p>
+<p><img src="./img/farming_tf_wallet_25.png" alt="farming_tf_wallet_25" /></p>
+<p>To create a farm, choose the wallet associated with the farm. Also, choose a Farm Name then read and accept the Terms and Conditions. Finally, click <em>submit</em>.</p>
+<p><img src="./img/farming_tf_wallet_26.png" alt="farming_tf_wallet_26" /></p>
+<p>The TF Connect App will give you a confirmation message if the farm was created successfully. If it doesn't work the first time, make sure you have a good Internet connection and try again. If you click on the down arrow, you will be able to see your <em>Farm Information</em>.</p>
+<p><img src="./img/farming_tf_wallet_27.png" alt="farming_tf_wallet_27" /></p>
+<p>You can see on this screen the address were your farming rewards will be sent to. It is the Stellar address associated with the ThreeFold Wallet used to create the farm.</p>
+<p><img src="./img/farming_tf_wallet_28.png" alt="farming_tf_wallet_28" /></p>
+<p>We can see on the picture above that the Farm ID here is 1821. The farm ID will be used to create the Zero-OS Bootstrap Image in the next section.</p>
+<hr />
+<div style="break-after:page"></div>
+<hr />
+<h1 id="2-create-a-zero-os-bootstrap-image"><a class="header" href="#2-create-a-zero-os-bootstrap-image">2. Create a Zero-OS Bootstrap Image</a></h1>
+<h2 id="download-the-zero-os-boostrap-image"><a class="header" href="#download-the-zero-os-boostrap-image">Download the Zero-OS Boostrap Image</a></h2>
+<hr />
+<p>We will now learn how to create a Zero-OS Bootstrap Image in order to boot a DIY 3Node.</p>
+<pre><code>https://v3.bootstrap.grid.tf
+</code></pre>
+<p>Go on the <a href="https://v3.bootstrap.grid.tf">ThreeFold Zero-OS Bootstrap Link</a> as shown above.</p>
+<p><img src="./img/farming_createfarm_21.png" alt="Farming_Create_Farm_21" /> </p>
+<p>This is the Zero-OS v3 Bootstrapping page.</p>
+<p><img src="./img/farming_createfarm_22.png" alt="Farming_Create_Farm_22" /></p>
+<p>Write your farm ID and choose production mode.</p>
+<p><img src="./img/farming_createfarm_23.png" alt="Farming_Create_Farm_23" /></p>
+<p>Download the bootstrap image. Next, we will burn the bootstrap image.</p>
+<hr />
+<div style="break-after:page"></div>
+<hr />
+<h2 id="burn-the-zero-os-bootstrap-image"><a class="header" href="#burn-the-zero-os-bootstrap-image">Burn the Zero-OS Bootstrap Image</a></h2>
+<hr />
+<p>For <strong>MAC</strong>, <strong>Linux</strong> and <strong>Windows</strong>, you can use <a href="https://www.balena.io/etcher/">BalenaEtcher</a> to load/flash the image on a USB stick. This program also formats the USB in the process. This will work for the option <strong>EFI IMG</strong> for UEFI boot, and with the option <strong>USB</strong> for BIOS boot. Simply follow the steps presented to you and make sure you select the correct bootstrap image file you downloaded previously.</p>
+<p>General Steps:</p>
+<ol>
+<li>Download BalenaEtcher at <a href="https://balena.io/etcher">https://balena.io/etcher</a></li>
+</ol>
+<p><img src="img/3node_diy_desktop_42.png" alt="3node_diy_desktop_42.png" /></p>
+<p><img src="img/3node_diy_desktop_43.png" alt="3node_diy_desktop_43.png" /></p>
+<p><img src="img/3node_diy_desktop_44.png" alt="3node_diy_desktop_44.png" /></p>
+<p><img src="img/3node_diy_desktop_45.png" alt="3node_diy_desktop_45.png" /></p>
+<p><img src="img/3node_diy_desktop_48.png" alt="3node_diy_desktop_48.png" /></p>
+<p><img src="img/3node_diy_desktop_49.png" alt="3node_diy_desktop_49.png" /></p>
+<ol start="2">
+<li>Open BalenaEtcher</li>
+</ol>
+<p><img src="img/3node_diy_desktop_50.png" alt="3node_diy_desktop_50.png" /></p>
+<ol start="3">
+<li>Select <strong>Flash from file</strong></li>
+</ol>
+<p><img src="img/3node_diy_desktop_52.png" alt="3node_diy_desktop_52.png" /></p>
+<ol>
+<li>
+<p>Find and select the bootstrap image in your computer</p>
+</li>
+<li>
+<p>Select <strong>Target</strong> (your USB key)</p>
+</li>
+</ol>
+<p><img src="img/3node_diy_desktop_53.png" alt="3node_diy_desktop_53.png" /></p>
+<p><img src="img/3node_diy_desktop_54.png" alt="3node_diy_desktop_54.png" /></p>
+<ol start="6">
+<li>Select <strong>Flash</strong></li>
+</ol>
+<p><img src="img/3node_diy_desktop_55.png" alt="3node_diy_desktop_55.png" /></p>
+<p><img src="img/3node_diy_desktop_56.png" alt="3node_diy_desktop_56.png" /></p>
+<p>That's it. Now you have a bootstrap image on Zero-OS as a bootable removable media device.</p>
+<hr />
+<div style="break-after:page"></div>
+<hr />
+<h1 id="3-set-the-hardware"><a class="header" href="#3-set-the-hardware">3. Set the Hardware</a></h1>
+<p>Setting the hardware of this DIY 3node is very easy as there are no updates or upgrades needed. Simply unbox the computer and plug everything.</p>
+<p><img src="img/3node_diy_desktop_40.jpeg" alt="3node_diy_desktop_40.png" /></p>
+<p><img src="img/3node_diy_desktop_38.jpeg" alt="3node_diy_desktop_38.png" /></p>
+<p><img src="img/3node_diy_desktop_30.jpeg" alt="3node_diy_desktop_30.png" /></p>
+<p><img src="img/3node_diy_desktop_29.jpeg" alt="3node_diy_desktop_29.png" /></p>
+<p>Plug the computer cable in the surge protector</p>
+<p><img src="img/3node_diy_desktop_6.png" alt="3node_diy_desktop_6.png" /></p>
+<p>Connect the computer cable, the ethernet cable, the mouse and keyboard cable and the monitor cable.</p>
+<p><img src="img/3node_diy_desktop_13.jpeg" alt="3node_diy_desktop_13.png" /></p>
+<p>Plug the ethernet cable in the router (or the switcher)</p>
+<p><img src="img/3node_diy_desktop_3.png" alt="3node_diy_desktop_6.png" /></p>
+<hr />
+<div style="break-after:page"></div>
+<hr />
+<h1 id="4-wipe-all-the-disks"><a class="header" href="#4-wipe-all-the-disks">4. Wipe All the Disks</a></h1>
+<p>In this section, we will learn how to create a Linux bootstrap image, boot it in Try mode and then wipe all the disks in your 3Node. To create a Linux boostrap image, follow the same process as when we burnt the Zero-OS Boostrap Image.</p>
+<hr />
+<h2 id="1-create-a-linux-boostrap-image"><a class="header" href="#1-create-a-linux-boostrap-image">1. Create a Linux Boostrap Image</a></h2>
+<hr />
+<ol>
+<li>Download the Ubuntu 20.04 ISO file <a href="https://releases.ubuntu.com/20.04/">here</a></li>
+<li>Burn the ISO image on a USB key with Balena Etcher</li>
+</ol>
+<hr />
+<h2 id="2-boot-linux-in-try-mode"><a class="header" href="#2-boot-linux-in-try-mode">2. Boot Linux in Try Mode</a></h2>
+<hr />
+<ol>
+<li>Insert your Linux boostrap image USB key in your computer and boot it</li>
+<li>During boot, press F12 to enter into Settings</li>
+<li>Select your booting device, here it is: <em>UEFI: USB DISK 2.0</em></li>
+</ol>
+<p><img src="img/3node_diy_desktop_107.jpeg" alt="3node_diy_desktop_107.png" /></p>
+<ol start="4">
+<li>Select Try or install Ubuntu</li>
+</ol>
+<p><img src="img/3node_diy_desktop_106.jpeg" alt="3node_diy_desktop_106.png" /></p>
+<ol start="5">
+<li>Select Try Ubuntu</li>
+</ol>
+<p><img src="img/3node_diy_desktop_105.jpeg" alt="3node_diy_desktop_105.png" /></p>
+<hr />
+<h2 id="3-use-wipefs-to-wipe-all-disks"><a class="header" href="#3-use-wipefs-to-wipe-all-disks">3. Use wipefs to Wipe All Disks</a></h2>
+<hr />
+<p>Once Ubuntu is booted, you will land on the main page.</p>
+<p><img src="img/3node_diy_desktop_67.png" alt="3node_diy_desktop_67.png" /></p>
+<p>At the bottom left of the screen, click on Applications.</p>
+<p><img src="img/3node_diy_desktop_68.png" alt="3node_diy_desktop_68.png" /></p>
+<p>In Applications, select Terminal. </p>
+<p><img src="img/3node_diy_desktop_69.png" alt="3node_diy_desktop_69.png" /></p>
+<p>If you don't see it, write terminal in the search box.</p>
+<p><img src="img/3node_diy_desktop_70.png" alt="3node_diy_desktop_70.png" /></p>
+<p>You will land in the Ubuntu Terminal.</p>
+<p><img src="img/3node_diy_desktop_71.png" alt="3node_diy_desktop_71.png" /></p>
+<p>Write the command line <em>lsblk</em> as shown below. You will then see the disks in your computer. You want to wipe the main disk, but not the USB key we are using, named <em>sdb</em> here. We can see here that the SSD disk, <em>sda</em>, has 3 partitions: <em>sda1</em>, <em>sda2</em>, <em>sda3</em>. Note that when wiping the disks, we want no partition.</p>
+<p>In this case, the disk we want to wipe is <em>sda</em>.</p>
+<p><img src="img/3node_diy_desktop_72.png" alt="3node_diy_desktop_72.png" /></p>
+<p>Write the command line <em>sudo wipefs -a /dev/sda</em>. This will wipe the disk <em>sda</em>. </p>
+<p><img src="img/3node_diy_desktop_73.png" alt="3node_diy_desktop_73.png" /></p>
+<p>If you write the command line <em>lsblk</em> once more, you should see that your SSD disk has no more partition. The disk has been properly wiped. </p>
+<p><img src="img/3node_diy_desktop_74.png" alt="3node_diy_desktop_74.png" /></p>
+<p>Power off the computer by selecting <em>Power Off</em> after having clicked on the button at the top right of the screen as shown below. </p>
+<p><img src="img/3node_diy_desktop_75.png" alt="3node_diy_desktop_75.png" /></p>
+<p>That's it! The disks are all wiped. All that is left now is to set the BIOS/UEFI settings and then boot the 3Node!</p>
+<hr />
+<div style="break-after:page"></div>
+<hr />
+<h1 id="5-set-the-biosuefi"><a class="header" href="#5-set-the-biosuefi">5. Set the BIOS/UEFI</a></h1>
+<p>Before booting the main operating system, in our case Zero-OS, a computer will boot in either BIOS or UEFI mode. Older systems use BIOS and newer systems uses UEFI. Both BIOS and UEFI are low-lewel softwares needed to interact between the hardware and the main OS of the computer. Note that BIOS is also called Legacy BIOS.</p>
+<h2 id="the-essential-features-of-biosuefi-for-a-3node"><a class="header" href="#the-essential-features-of-biosuefi-for-a-3node">The Essential Features of BIOS/UEFI for a 3Node</a></h2>
+<hr />
+<p>There are certain things that you should make sure are set properly on your 3Node.</p>
+<p>As a general advice, you can Load Defaults (Settings) on your BIOS, then make sure the options below are set properly.</p>
+<ul>
+<li>Choose the correct combination of BIOS/UEFI and bootstrap image on <a href="https://bootstrap.grid.tf/">https://bootstrap.grid.tf/</a>
+<ul>
+<li>Newer system will use UEFI --&gt; the Dell Optiplex 7020 uses UEFI
+<ul>
+<li>Bootstrap image: <em>EFI IMG</em> and <em>EFI FILE</em></li>
+</ul>
+</li>
+<li>Older system will use Legacy BIOS
+<ul>
+<li>Bootstrap image: <em>ISO</em> and <em>USB</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Set <em>Multi-Processor</em> and <em>Hyperthreading</em> at Enabled
+<ul>
+<li>Sometimes, it will be written <em>Virtual Cores</em>, or <em>Logical Cores</em>. </li>
+</ul>
+</li>
+<li>Set <em>Virtualization</em> at Enabled
+<ul>
+<li>On Intel, it is denoted as <em>CPU virtualization</em> and on ASUS, it is denoted as <em>SVM</em>. </li>
+<li>Make sure virtualization is enabled and look for the precise terms in your specific BIOS/UEFI.</li>
+</ul>
+</li>
+<li>Enable <em>Network Stack</em> (sometimes called <em>Network Boot</em>)</li>
+<li>Set <em>AC Recovery</em> at <em>Last Power State</em>
+<ul>
+<li>This will make sure your 3Node restarts after losing power momentarily.</li>
+</ul>
+</li>
+<li>Select the proper <em>Boot Sequence</em> for the 3Node to boot Zero-OS from your bootstrap image
+<ul>
+<li>e.g., if you have a USB key as a bootstrap image, select it in <em>Boot Sequence</em></li>
+</ul>
+</li>
+<li>Set <em>Server Lookup Method</em> (or the equivalent) at <em>DNS</em>.
+<ul>
+<li>Only use Static IP if you know what you are doing.</li>
+<li>Your router will automatically assign a dynamic IP address to your 3Node when it connects to Internet.</li>
+</ul>
+</li>
+<li>Set <em>Client Address Method</em> (or the equivalent) at <em>DHCP</em>. Only use Static IP if you know what you are doing.
+<ul>
+<li>Your router will automatically assign a dynamic IP address to your 3Node when it connects to Internet.</li>
+</ul>
+</li>
+<li><em>Secure Boot</em> should be left at disabled
+<ul>
+<li>Enable it if you know what you are doing. Otherwise, it can be set at disabled.</li>
+</ul>
+</li>
+</ul>
+<hr />
+<div style="break-after:page"></div>
+<hr />
+<h2 id="set-the-biosuefi-on-a-dell-optiplex-7020"><a class="header" href="#set-the-biosuefi-on-a-dell-optiplex-7020">Set the BIOS/UEFI on a Dell Optiplex 7020</a></h2>
+<hr />
+<ol>
+<li>Insert your Zero-OS boostrap image USB key in your computer and boot it.</li>
+<li>During boot, press F12 to enter into <em>Settings</em> then choose <em>BIOS Setup</em>.</li>
+</ol>
+<p><img src="img/3node_diy_desktop_109.png" alt="3node_diy_desktop_104.jpeg" /></p>
+<ol start="3">
+<li>In BIOS Setup, click on Load Default and confirm by clicking on <em>OK</em></li>
+</ol>
+<p><img src="img/3node_diy_desktop_115.png" alt="3node_diy_desktop_115.png" /></p>
+<ol start="4">
+<li>
+<p>Leave the BIOS Setup (Exit) and re-enter. This will set the default settings.</p>
+</li>
+<li>
+<p>Go through each page and make sure you are following the guidelines set in the section Essential Features as shown in the following pictures.</p>
+</li>
+</ol>
+<p><img src="img/3node_diy_desktop_116.png" alt="3node_diy_desktop_.png" /></p>
+<p><img src="img/3node_diy_desktop_117.png" alt="3node_diy_desktop_.png" /></p>
+<p><img src="img/3node_diy_desktop_118.png" alt="3node_diy_desktop_.png" /></p>
+<p><img src="img/3node_diy_desktop_114.png" alt="3node_diy_desktop_.png" /></p>
+<p><img src="img/3node_diy_desktop_127.png" alt="3node_diy_desktop_.png" /></p>
+<p><img src="img/3node_diy_desktop_120.png" alt="3node_diy_desktop_.png" /></p>
+<p><img src="img/3node_diy_desktop_128.png" alt="3node_diy_desktop_.png" /></p>
+<p><img src="img/3node_diy_desktop_122.png" alt="3node_diy_desktop_.png" /></p>
+<p><img src="img/3node_diy_desktop_123.png" alt="3node_diy_desktop_.png" /></p>
+<p><img src="img/3node_diy_desktop_129.png" alt="3node_diy_desktop_.png" /></p>
+<p><img src="img/3node_diy_desktop_125.png" alt="3node_diy_desktop_.png" /></p>
+<ol start="6">
+<li>Once you are done, click on <em>Exit</em> and then click <em>Yes</em> to save your changes. The 3node will now boot Zero-OS.</li>
+</ol>
+<p><img src="img/3node_diy_desktop_126.png" alt="3node_diy_desktop_126.png" /></p>
+<hr />
+<div style="break-after:page"></div>
+<hr />
+<h1 id="6-boot-the-3node"><a class="header" href="#6-boot-the-3node">6. Boot the 3Node</a></h1>
+<p>If your BIOS/UEFI settings are set properly and you have the Zero-OS bootstrap image USB key plugged in, your 3node should automatically boot Zero-OS every time that it is turned on.</p>
+<ol>
+<li>Power on the 3Node with the Zero-OS boostrap image USB key</li>
+<li>Let the 3Node load Zero-OS
+<ul>
+<li>The first time it boots, the 3node will register to the TF Grid</li>
+</ul>
+</li>
+<li>Verify the 3Node's status on ThreeFold Explorer</li>
+</ol>
+<p>The first time you boot a 3Node, it will be written: “This node is not registered (farmer ***: NameOfFarm). This is normal. The Grid will create a node ID and you will be able to see it on screen. This can take a couple of minutes.</p>
+<p>This is the final screen you should see when your 3Node is connected to the ThreeFold Grid. Note that it is normal if it is written <em>no public config</em> next to <em>PUB</em> as we did not set any public IP address.</p>
+<p>Naturally, your node ID as well as your farm ID and name will be shown.</p>
+<p><img src="img/3node_diy_desktop_130.png" alt="3node_diy_desktop_76.png" /></p>
+<p>Once you have your node ID, you can also go on the ThreeFold Explorer to see your 3Node and verify that your 3Node is online.</p>
+<hr />
+<div style="break-after:page"></div>
+<hr />
+<h2 id="check-the-3nodes-status-on-the-tf-explorer"><a class="header" href="#check-the-3nodes-status-on-the-tf-explorer">Check the 3Node's Status on the TF Explorer</a></h2>
+<hr />
+<p>In a browser, go on the <a href="https://explorer.threefold.io/">ThreeFold Explorer</a>. </p>
+<p>Select <strong>Grid V3</strong>.</p>
+<p><img src="./img/farming_25.png" alt="Farming_Create_Farm_3" /></p>
+<p>Then select <strong>Mainnet</strong>.</p>
+<p><img src="./img/farming_26.png" alt="Farming_Create_Farm_3" /></p>
+<p>In this example, we will look for the farm 100. Use your farm ID.</p>
+<p>We can see here that 5 x 3Nodes of the Farm 100 are online. </p>
+<p><img src="./img/farming_27.png" alt="Farming_Create_Farm_3" /></p>
+<p>On the top right of this section, you can click on &quot;Show offline nodes&quot;. </p>
+<p><img src="./img/farming_28.png" alt="Farming_Create_Farm_3" /></p>
+<p>Now we can see the 3Nodes that are offline.</p>
+<p><img src="./img/farming_29.png" alt="Farming_Create_Farm_3" /></p>
+<hr />
+<h2 id="farming-rewards-distribution"><a class="header" href="#farming-rewards-distribution">Farming Rewards Distribution</a></h2>
+<hr />
+<p>The farming reward will be sent once per month directly in your ThreeFold Connect App wallet. Farming rewards are usually distributed around the 5th of each month.</p>
+<hr />
+<h1 id="additional-information"><a class="header" href="#additional-information">Additional Information</a></h1>
+<p>Congratulations, you now have built your first ThreeFold 3Node server! </p>
+<p>If you have any questions, you can ask the ThreeFold community for help on the <a href="https://forum.threefold.io/">ThreeFold Forum</a> or on the <a href="https://t.me/threefoldfarmers">ThreeFold Telegram Farmer Group</a>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../../farmers/complete_diy_guides/complete_diy_guides_readme.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../../farmers/complete_diy_guides/3node_diy_rack_server/3node_diy_rack_server.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../../farmers/complete_diy_guides/complete_diy_guides_readme.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../../farmers/complete_diy_guides/3node_diy_rack_server/3node_diy_rack_server.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
