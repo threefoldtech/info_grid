@@ -12,9 +12,9 @@ This generates a FQDN for your VM.
 import (
     "fmt"
 
-    "github.com/threefoldtech/grid3-go/deployer"
-    "github.com/threefoldtech/grid3-go/workloads"
-    "github.com/threefoldtech/grid_proxy_server/pkg/types"
+    "github.com/threefoldtech/tfgrid-sdk-go/grid-client/deployer"
+    "github.com/threefoldtech/tfgrid-sdk-go/grid-client/workloads"
+    "github.com/threefoldtech/tfgrid-sdk-go/grid-proxy/pkg/types"
     "github.com/threefoldtech/zos/pkg/gridtypes/zos"
 )
 
@@ -64,15 +64,15 @@ In case you have a FQDN already pointing to the node, you can expose your VM usi
 import (
     "fmt"
 
-    "github.com/threefoldtech/grid3-go/deployer"
-    "github.com/threefoldtech/grid3-go/workloads"
+    "github.com/threefoldtech/tfgrid-sdk-go/grid-client/deployer"
+    "github.com/threefoldtech/tfgrid-sdk-go/grid-client/workloads"
     "github.com/threefoldtech/zos/pkg/gridtypes/zos"
 )
 
 func main() {
 
     // Create Threefold plugin client
-    tfPluginClient, err := deployer.NewTFPluginClient(mnemonics, "sr25519", network, "", "", true, false)
+    tfPluginClient, err := deployer.NewTFPluginClient(mnemonics, "sr25519", network, "", "", "", 0, true)
 
     // Create gateway to deploy
     gateway := workloads.GatewayFQDNProxy{
