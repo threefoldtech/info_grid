@@ -2,22 +2,22 @@
 
 <h2>Table of Contents</h2>
 
-- [Intro](#intro)
+- [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [How to Get TFT on 1inch.io (TFT-BSC)](#how-to-get-tft-on-1inchio-tft-bsc)
   - [Connect a BSC Wallet to 1inch.io](#connect-a-bsc-wallet-to-1inchio)
   - [Swapping tokens to TFT](#swapping-tokens-to-tft)
   - [Important Notice](#important-notice)
 - [Disclaimer](#disclaimer)
-
-## Intro
+***
+## Introduction
 
 Welcome to our tutorial on how to buy TFT on Binance Smart Chain (BSC) using [1inch.io](https://1inch.io/)! 
 
 [**1inch.io**](https://1inch.io/) is a decentralized exchange (DEX) aggregator that aims to provide the best possible trading rates for users by sourcing liquidity from various DEX platforms. It combines smart contract technology with an intuitive user interface to enable users to swap tokens at the most favorable rates with minimal slippage and fees. 1inch.io scans multiple liquidity sources, including popular DEXs like Uniswap and SushiSwap, to ensure users get the most competitive prices for their trades. For more details about 1inch you can find a review of the 1inch exchange [here](https://www.coinbureau.com/review/1inch-exchange/)
 
 By following the steps outlined in this guide, you'll be able to purchase TFT tokens on 1inch.io seamlessly and take advantage of the benefits offered by the Binance Smart Chain network.
-
+***
 ## Prerequisites
 
 Before you can buy TFT on 1inch.io, there are a few prerequisites you need to fulfill. Here's what you'll need:
@@ -30,7 +30,7 @@ Before you can buy TFT on 1inch.io, there are a few prerequisites you need to fu
 - **Get BNB Tokens**: As the native cryptocurrency of Binance Smart Chain, BNB is required to pay for transaction fees on the network. You will need to have Ensure you have some BNB tokens in your BSC wallet to cover these fees when buying TFT on 1inch.io. Read [this tutorial](https://fortunly.com/articles/how-to-buy-bnb/) to know where you can buy BNB and transfer them to your BSC Wallet.
 
 > [Get BNB Tokens](https://docs.pancakeswap.finance/readme/get-started/bep20-guide)
-
+***
 ## How to Get TFT on 1inch.io (TFT-BSC)
 
 By utilizing 1inch.io, you can easily convert your existing crypto assets on BSC network into TFT-BSC by using the Swap function. Once you have obtained TFT-BSC, you have the option to bridge it into TFT Native on the Stellar network by utilizing the [TFT-Stellar bridge](/src/farmers/threefold_token/buy_sell_tft/tfchain_stellar_bridge.md). Let's swap some tokens!
@@ -78,7 +78,7 @@ Wait for the banner in the upper-right corner informing you about the success of
 ### Important Notice
 
 If you are looking for ways to provide liquidity for TFT on Binance Smart Chain on 1inch.io, you will find the according information [here](../liquidity/liquidity_1inch.md).
-
+***
 ## Disclaimer
 
 The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 

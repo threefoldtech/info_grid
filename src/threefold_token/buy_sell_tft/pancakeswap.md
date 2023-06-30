@@ -2,20 +2,20 @@
 
 <h2>Table of Contents</h2>
 
-- [Intro](#intro)
+- [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Buy TFT on PancakeSwap](#buy-tft-on-pancakeswap)
 - [Important Notice](#important-notice)
 - [Disclaimer](#disclaimer)
-
-## Intro
+***
+## Introduction
 
 Welcome to our tutorial on how to buy TFT on Binance Smart Chain (BSC) using [Pancake Swap](https://pancakeswap.finance/)! 
 
 [**Binance Smart Chain**](https://coinmarketcap.com/alexandria/article/what-is-binance-smart-chain) is a blockchain network that enables the execution of smart contracts and decentralized applications, while **Pancake Swap** is a popular decentralized exchange (DEX) built on BSC. 
 
 By following the steps outlined in this guide, you'll be able to purchase TFT tokens on Pancake Swap seamlessly and take advantage of the benefits offered by the Binance Smart Chain network.
-
+***
 ## Prerequisites
 
 Before you can buy TFT on Pancake Swap, there are a few prerequisites you need to fulfill. Here's what you'll need:
@@ -32,7 +32,7 @@ Before you can buy TFT on Pancake Swap, there are a few prerequisites you need t
 - **Get BNB Tokens**: As the native cryptocurrency of Binance Smart Chain, BNB is required to pay for transaction fees on the network. Ensure you have some BNB tokens in your BSC wallet to cover these fees when buying TFT on Pancake Swap. Read [this tutorial](https://fortunly.com/articles/how-to-buy-bnb/) to know where you can buy BNB and transfer them to your BSC Wallet.
 
 > [Get BNB Tokens](https://docs.pancakeswap.finance/readme/get-started/bep20-guide)
-
+***
 ##  Buy TFT on PancakeSwap
 
 On Pancake Swap, you can easily convert your existing crypto assets on BSC network into TFT-BSC by using the Swap function. Once you have obtained TFT-BSC, you have the option to bridge it into TFT Native on the Stellar network by utilizing the [TFT-Stellar bridge](/src/farmers/threefold_token/buy_sell_tft/tfchain_stellar_bridge.md). Let's swap some tokens!
@@ -50,11 +50,11 @@ Once selected, define how much BNB or other token you would like to swap into TF
 ![](img/pancake_swap.png)
 
 That's it! You have officially swapped BNB into TFT. 
-
+***
 ## Important Notice
 
 If you are looking for ways to provide liquidity for TFT on Binance Smart Chain on Pancake Swap, you will find the according information [here](../liquidity/liquidity_pancake.md).
-
+***
 ## Disclaimer
 
 The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 

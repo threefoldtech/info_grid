@@ -2,7 +2,7 @@
 
 <h2>Table of Contents</h2>
 
-- [Intro](#intro)
+- [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Get Started](#get-started)
   - [Link TF Wallet to GetTFT.com](#link-tf-wallet-to-gettftcom)
@@ -10,15 +10,15 @@
     - [Get TFT using Fiat Currency (USD / EUR)](#get-tft-using-fiat-currency-usd--eur)
 - [Important Notice](#important-notice)
 - [Disclaimer](#disclaimer)
-
-## Intro
+***
+## Introduction
 
 Welcome to our tutorial on how to buy TFT tokens (Stellar / Native) via [GetTFT.com](https://gettft.com/)! 
 
 GetTFT.com provides a seamless experience for purchasing TFT tokens (Stellar / Native), allowing you to be a part of the ThreeFold ecosystem. As a product developed by the ThreeFold team, GetTFT.com ensures a reliable and secure platform to facilitate the acquisition of TFT tokens. Whether you're an investor looking to support the ThreeFold mission or a technology enthusiast interested in participating in the decentralized internet revolution, this guide will walk you through the process of buying TFT tokens on GetTFT.com.
 
 On GetTFT.com, you have the flexibility to buy TFT tokens using either Bitcoin (BTC), or fiat currency like US Dollars (USD), or Euros (EUR). This allows you to choose the currency that is most convenient for you. Whether you already hold Bitcoin, prefer to use traditional fiat currencies, or want to explore various options, GetTFT.com caters to your needs.
-
+***
 ## Prerequisites
 
 Before you can buy TFT on [GetTFT.com](https://gettft.com/), there are a few prerequisites you need to fulfill. Here's what you'll need:
@@ -28,7 +28,7 @@ Before you can buy TFT on [GetTFT.com](https://gettft.com/), there are a few pre
 - **BTC Wallet**: If you prefer to purchase TFT tokens using Bitcoin (BTC), make sure you have a BTC wallet of your own preference. This can be a hardware wallet, software wallet, or any other secure wallet that supports BTC transactions. You will need this wallet to send BTC from your personal wallet to GetTFT.com for the purchase.
 
 - **Mercuryo.io Account**: If you plan to buy TFT tokens using fiat currency (such as USD or EUR), you will need to create an account on [Mercuryo.io](https://mercuryo.io). Mercuryo.io is a fiat payment provider that allows you to purchase cryptocurrencies using traditional fiat currencies. This account will enable you to complete the fiat-to-TFT purchase process on GetTFT.com. See the complete mercuryio.io guide [here](https://help.mercuryo.io/en/collections/2396448-getting-started).
-
+***
 ## Get Started
 
 ### Link TF Wallet to GetTFT.com
@@ -78,7 +78,7 @@ Once the BTC purchase is complete, the GetTFT.com platform will automatically co
 Please note that it may take some time, typically up to 30 minutes, for the TFT tokens to appear in your TF Connect wallet app after the automatic conversion and transfer process. This delay is normal and can be attributed to various factors, including network congestion and blockchain confirmations.
 
 During this waiting period, it is important to remain patient and refrain from making multiple purchase attempts or transactions. Rest assured that the TFT tokens will be delivered to your TF Connect wallet as soon as the process is completed.
-
+***
 ## Important Notice
 
 If, for any reason, you encounter any issues or face difficulties during the purchase process, we recommend contacting the our customer support team via the popup chat box on the page or by going to [support.grid.tf](https://support.grid.tf/). They will be able to assist you and provide the necessary guidance to resolve any problems you may encounter.
@@ -86,7 +86,7 @@ If, for any reason, you encounter any issues or face difficulties during the pur
 ![](img/gettft_support.png)
 
 Remember to reach out to the support team promptly and provide them with relevant details regarding your issue, such as your account information, public wallet address and transaction details. 
-
+***
 ## Disclaimer
 
 The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
