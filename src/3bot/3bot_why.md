@@ -35,7 +35,7 @@ Thanks to the 3Bot technology, your digital life is 100% owned by you and no one
 
 Any existing web framework can be used to create the experiences.
 
-The 3Bot technology also makes use of the zero-knowledge quantum safe storage system which is 100% private per instance and where storage is distributed over multiple 3Nodes. Each 3Bot goes through quantum safe storage system layered by the 3Nodes, the latter which provide compute, storage and newtork units.
+The 3Bot technology also makes use of the zero-knowledge quantum safe storage system which is 100% private per instance and where storage is distributed over multiple 3Nodes. Each 3Bot goes through quantum safe storage system layered by the 3Nodes, the latter which provide compute, storage and network units.
 
 Each 3Bot talks directly to the other 3Bots using a shortest path performer to increase efficiency. This keeps information flow local and provides for a greener Internet experience. It also improves security, performance and privacy. The communication between 3Bots do not require any SSL key exchange.
 
