@@ -1,20 +1,22 @@
 <h1> ThreeFold Token </h1>
 
-The ThreeFold Toke (TFT) is a decentralized digital currency used to buy autonomous and decentralized Internet services (compute, storage, and application) on the ThreeFold Grid.
-
-ThreeFold Tokens are generated through a process called “Farming”. Farming happens when active internet capacity is added to the ThreeFold Grid. Independent farmers earn ThreeFold Tokens (TFT) by providing neutral and decentralized internet capacity, thus expending the usable TF Grid. Therefore no central entity controls the internet.
-
 <h2> Table of Contents </h2>
 
-- [TFT Facts](./tft_facts.md)
+- [Introduction to TFT](./tft_intro.md)
 - [TFT Bridges](./tft_bridges/tft_bridges.md)
-  - [TFChain-Stellar Bridge](./tft_bridges/tfchain_stellar_bridge.md)
-  - [BSC-Stellar Bridge](./tft_bridges/bsc_stellar_bridge.md)
-  - [Ethereum-Stellar Bridge](./tft_bridges/tft_ethereum/tft_ethereum.md)
 - [Storing TFT](./storing_tft/storing_tft.md)
-  - [TF Connect App](./storing_tft/tf_connect_app.md)
-  - [Hardware Wallet](./storing_tft/hardware_wallet.md)
 - [Buy and Sell TFT](./buy_sell_tft/buy_sell_tft.md)
-  - [Set a Stellar Address](./buy_sell_tft/set_stellar_address.md)
-  - [TFT on Lobstr](./buy_sell_tft/tft_lobstr/tft_lobstr.md)
-  - [TFT on Metamask](./tft_bridges/tft_ethereum/tft_ethereum.md)
+- [Liquidity Provider (LP)](./liquidity/liquidity_readme.md)
+
+***
+## Introduction
+
+The ThreeFold Token (TFT) is a decentralized digital currency used to buy autonomous and decentralized Internet services (compute, storage, and application) on the ThreeFold Grid.
+
+ThreeFold Tokens are generated through a process called “Farming”. Farming happens when active internet capacity is added to the ThreeFold Grid. Independent farmers earn ThreeFold Tokens (TFT) by providing neutral and decentralized internet capacity, thus expending the usable TF Grid. Therefore no central entity controls the internet.
+***
+## Disclaimer
+
+The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
+
+**The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](https://library.threefold.me/info/legal/#/legal__disclaimer) and seek advice from a qualified financial professional if needed.
