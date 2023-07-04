@@ -6,7 +6,7 @@
   - [Dashboard](dashboard/dashboard.md)
     - [Dasboard Explorer](dashboard/explorer/explorer_home.md)
       - [Find Capacity](dashboard/explorer/explorer_find_capacity.md)
-      - [Introduction to GraphQL](dashboard/explorer/explorer_graphql_intro.md)
+      - [A Glimpse into GraphQL](dashboard/explorer/explorer_graphql_intro.md)
     - [TFChain Portal](dashboard/portal/dashboard_portal_home.md)
       - [Manage TFTs on TFChain](dashboard/portal/dashboard_portal_ui_tokens.md)
       - [Activate Farmer Account and Nodes on TFChain](dashboard/portal/dashboard_portal_ui_farming.md)

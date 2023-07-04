@@ -1,4 +1,4 @@
-<h1> Introduction to GraphQL </h1>
+<h1> A Glimpse Into GraphQL </h1>
 
 <h2> Table of Contents </h2>
 
