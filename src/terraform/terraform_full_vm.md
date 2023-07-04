@@ -272,4 +272,4 @@ Make sure that you are in the Terraform directory you created for this deploymen
 
 You now have the basic knowledge and know-how to deploy on the TFGrid using Terraform.
 
-If you have any question, let us know [here](https://github.com/threefoldtech/info_grid/)!
+As always, if you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Grid Tester Community](https://t.me/threefoldtesting) on Telegram.
