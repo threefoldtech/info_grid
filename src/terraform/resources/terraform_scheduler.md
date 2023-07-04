@@ -5,7 +5,7 @@
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
-- [How Scheduler Works](#how-scheduler-works)
+- [How the Scheduler Works](#how-the-scheduler-works)
 - [Quick Example](#quick-example)
 
 
@@ -17,7 +17,7 @@ Using the TFGrid scheduler enables users to automatically get the nodes that mat
 
 ***
 
-## How Scheduler Works
+## How the Scheduler Works
 
 To better understand the scheduler, we summarize the main process:
 
