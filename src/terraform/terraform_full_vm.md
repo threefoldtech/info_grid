@@ -8,7 +8,7 @@
 - [Main Process](#main-process)
 - [Prerequisites](#prerequisites)
 - [Find a 3Node with the ThreeFold Explorer](#find-a-3node-with-the-threefold-explorer)
-  - [Using the Scheduler](#using-the-scheduler)
+  - [Using the Grid Scheduler](#using-the-grid-scheduler)
   - [Using the Grid Explorer](#using-the-grid-explorer)
 - [Create the Terraform Files](#create-the-terraform-files)
 - [Deploy the Full VM with Terraform](#deploy-the-full-vm-with-terraform)
@@ -58,9 +58,9 @@ We present two options to find a suitable node: the scheduler and the TFGrid Exp
 
 ***
 
-### Using the Scheduler
+### Using the Grid Scheduler
 
-Using the scheduler can be very efficient depending on what you are trying to achieve. To learn more about the scheduler, please refer to the [Scheduler Guide](resources/terraform_scheduler.md).
+Using the TFGrid scheduler can be very efficient depending on what you are trying to achieve. To learn more about the scheduler, please refer to this [Scheduler Guide](resources/terraform_scheduler.md).
 
 ***
 

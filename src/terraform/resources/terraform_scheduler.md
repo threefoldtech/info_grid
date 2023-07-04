@@ -13,13 +13,13 @@
 
 ## Introduction
 
-Using the scheduler resource enables users to automatically get the nodes that match their criterias. 
+Using the TFGrid scheduler enables users to automatically get the nodes that match their criterias. We present here some basic information on this resource.
 
 ***
 
 ## How Scheduler Works
 
-To better understand scheduler, we summarize the main process:
+To better understand the scheduler, we summarize the main process:
 
 - At first if `farm_id` is specified, then the scheduler will check if this farm has the Farmerbot enabled
   - If so it will try to find a suitable node using the Farmerbot.
@@ -29,7 +29,7 @@ To better understand scheduler, we summarize the main process:
 
 ## Quick Example 
 
-Let's take a look at this following example:
+Let's take a look at the following example:
 
 ```
 terraform {
