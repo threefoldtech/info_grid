@@ -1,0 +1,452 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Website Deployer - ThreeFold Manual</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../intro/intro_readme.html">Introduction</a></li><li class="chapter-item expanded "><a href="../general/general.html">General Information</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../intro/grid3_howitworks.html">How it Works</a></li><li class="chapter-item "><a href="../dashboard/dashboard.html">Dashboard</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../dashboard/explorer/explorer_home.html">Dasboard Explorer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../dashboard/explorer/explorer_find_capacity.html">Find Capacity</a></li><li class="chapter-item "><a href="../dashboard/explorer/explorer_graphql_intro.html">A Glimpse into GraphQL</a></li></ol></li><li class="chapter-item "><a href="../dashboard/portal/dashboard_portal_home.html">TFChain Portal</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../dashboard/portal/dashboard_portal_ui_tokens.html">Manage TFTs on TFChain</a></li><li class="chapter-item "><a href="../dashboard/portal/dashboard_portal_ui_farming.html">Activate Farmer Account and Nodes on TFChain</a></li><li class="chapter-item "><a href="../dashboard/portal/dashboard_portal_dedicated_nodes.html">Dedicated Nodes</a></li></ol></li><li class="chapter-item "><a href="../dashboard/dao_voting/dao_voting.html">DAO Voting</a></li></ol></li><li class="chapter-item "><a href="../threefold_token/threefold_token.html">ThreeFold Token</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../threefold_token/tft_intro.html">Introduction to TFT</a></li><li class="chapter-item "><a href="../threefold_token/tft_bridges/tft_bridges.html">TFT Bridges</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../threefold_token/tft_bridges/tfchain_stellar_bridge.html">TFChain-Stellar Bridge</a></li><li class="chapter-item "><a href="../threefold_token/tft_bridges/bsc_stellar_bridge.html">BSC-Stellar Bridge</a></li><li class="chapter-item "><a href="../threefold_token/tft_bridges/tft_ethereum/tft_ethereum.html">Ethereum-Stellar Bridge</a></li></ol></li><li class="chapter-item "><a href="../threefold_token/storing_tft/storing_tft.html">Storing TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../threefold_token/storing_tft/tf_connect_app.html">ThreeFold Connect App</a></li><li class="chapter-item "><a href="../threefold_token/storing_tft/hardware_wallet.html">Hardware Wallet</a></li><li class="chapter-item "><a href="../threefold_token/storing_tft/metamask.html">Metamask (TFT-BSC)</a></li><li class="chapter-item "><a href="../threefold_token/storing_tft/trustwallet.html">Trust Wallet (TFT-BSC)</a></li><li class="chapter-item "><a href="../threefold_token/storing_tft/albedo_store.html">Albedo Wallet (TFT-Stellar)</a></li><li class="chapter-item "><a href="../threefold_token/storing_tft/solar_wallet.html">Solar Wallet (TFT-Stellar)</a></li><li class="chapter-item "><a href="../threefold_token/storing_tft/lobstr_wallet.html">Lobstr Wallet (TFT-Stellar)</a></li><li class="chapter-item "><a href="../threefold_token/storing_tft/Interstellar_store.html">Interstellar (TFT-Stellar)</a></li><li class="chapter-item "><a href="../threefold_token/storing_tft/btc_alpha_deposit.html">BTC-Alpha (TFT-Stellar)</a></li></ol></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/buy_sell_tft.html">Buy and Sell TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr.html">Lobstr Wallet</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr_short_guide.html">Lobstr Wallet: Short Guide</a></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr_complete_guide.html">Lobstr Wallet: Complete Guide</a></li></ol></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/tft_metamask/tft_metamask.html">MetaMask</a></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/pancakeswap.html">Pancake Swap</a></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/oneinch.html">1inch.io</a></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/gettft.html">GetTFT.com</a></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/albedo_buy.html">Albedo Wallet</a></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/solar_buy.html">Solar Wallet</a></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/coinbase_xlm.html">Coinbase (XLM)</a></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/stellarterm.html">StellarTerm</a></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/interstellar.html">Interstellar</a></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/btc_alpha.html">BTC-Alpha</a></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/tf_otc.html">ThreeFold Live Desk</a></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/mazraa.html">Mazraa Farmers</a></li><li class="chapter-item "><a href="../threefold_token/buy_sell_tft/bettertoken.html">BetterToken Farmers</a></li></ol></li><li class="chapter-item "><a href="../threefold_token/liquidity/liquidity_readme.html">Liquidity Provider (LP)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../threefold_token/liquidity/liquidity_pancake.html">Pancake Swap LP</a></li><li class="chapter-item "><a href="../threefold_token/liquidity/liquidity_1inch.html">1inch.io LP</a></li><li class="chapter-item "><a href="../threefold_token/liquidity/liquidity_albedo.html">Albedo LP</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../collaboration_tools/collaboration_tools.html">Collaboration Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../collaboration_tools/circle_tool.html">Circle Tool</a></li><li class="chapter-item expanded "><a href="../collaboration_tools/website_tool.html" class="active">Website Deployer</a></li></ol></li><li class="chapter-item "><a href="../contribute/contribute.html">How to Contribute</a></li><li class="chapter-item "><a href="../testing/testing_readme.html">How to Test</a></li><li class="chapter-item "><a href="../tf_video_gallery/tf_video_gallery.html">ThreeFold Video Gallery</a></li><li class="chapter-item "><a href="../roadmap/roadmap_readme.html">ThreeFold Roadmap</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../roadmap/releasenotes/releasenotes_readme.html">Release Notes</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../roadmap/releasenotes/tfgrid_release_3_10_0.html">TFGrid v3.10.0</a></li><li class="chapter-item "><a href="../roadmap/releasenotes/tfgrid_release_3_9_0.html">TFGrid v3.9.0</a></li><li class="chapter-item "><a href="../roadmap/releasenotes/tfgrid_release_3_8_0.html">TFGrid v3.8.0</a></li><li class="chapter-item "><a href="../roadmap/releasenotes/tfgrid_release_3_7_0.html">TFGrid v3.7.0</a></li><li class="chapter-item "><a href="../roadmap/releasenotes/tfgrid_release_3_6_1.html">TFGrid v3.6.1</a></li><li class="chapter-item "><a href="../roadmap/releasenotes/tfgrid_release_3_6_0.html">TFGrid v3.6.0</a></li><li class="chapter-item "><a href="../roadmap/releasenotes/tfgrid_release_3_0_a5.html">TFGrid v3.0.0 Alpha-5</a></li><li class="chapter-item "><a href="../roadmap/releasenotes/tfgrid_release_3_0_a4.html">TFGrid v3.0.0 Alpha-4</a></li><li class="chapter-item "><a href="../roadmap/releasenotes/tfgrid_release_3_0_a2.html">TFGrid v3.0.0 Alpha-2</a></li><li class="chapter-item "><a href="../roadmap/releasenotes/tfgrid_release_3_0.html">TFGrid v3.0.0</a></li></ol></li></ol></li><li class="chapter-item "><a href="../faq/faq.html">FAQ</a></li><li class="chapter-item "><a href="../legal/legal.html">Legal</a></li></ol></li><li class="chapter-item "><a href="../farmers/farmers.html">Farmers</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../farmers/3node_building/3node_building.html">Build a 3Node</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../farmers/3node_building/1_create_farm.html">1. Create a Farm</a></li><li class="chapter-item "><a href="../farmers/3node_building/2_bootstrap_image.html">2. Create a Zero-OS Bootstrap Image</a></li><li class="chapter-item "><a href="../farmers/3node_building/3_set_hardware.html">3. Set the Hardware</a></li><li class="chapter-item "><a href="../farmers/3node_building/4_wipe_all_disks.html">4. Wipe All the Disks</a></li><li class="chapter-item "><a href="../farmers/3node_building/5_set_bios_uefi.html">5. Set the BIOS/UEFI</a></li><li class="chapter-item "><a href="../farmers/3node_building/6_boot_3node.html">6. Boot the 3Node</a></li><li class="chapter-item "><a href="../farmers/3node_building/data_center.html">Set Up a ThreeFold Farm in a Data Center</a></li></ol></li><li class="chapter-item "><a href="../farmers/complete_diy_guides/complete_diy_guides_readme.html">Complete DIY 3Node Guides</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../farmers/complete_diy_guides/3node_diy_desktop/3node_diy_desktop.html">3Node Desktop DIY Guide</a></li><li class="chapter-item "><a href="../farmers/complete_diy_guides/3node_diy_rack_server/3node_diy_rack_server.html">3Node Rack Server DIY Guide</a></li></ol></li><li class="chapter-item "><a href="../farmers/farming_optimization/farming_optimization.html">Farming Optimization</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../farmers/farming_optimization/calculate_roi.html">Calculate Your ROI</a></li><li class="chapter-item "><a href="../farmers/farming_optimization/farm_room_parameters.html">Room Parameters</a></li><li class="chapter-item "><a href="../farmers/farming_optimization/farming_costs.html">Farming Costs</a></li></ol></li><li class="chapter-item "><a href="../farmers/farmerbot/farmerbot.html">Farmerbot</a></li></ol></li><li class="chapter-item "><a href="../developers/developers.html">Developers</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../javascript/grid3_javascript_readme.html">Javascript Client</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../javascript/grid3_javascript_installation.html">Installation</a></li><li class="chapter-item "><a href="../javascript/grid3_javascript_loadclient.html">Loading Client</a></li><li class="chapter-item "><a href="../javascript/grid3_javascript_vm.html">Deploy a VM</a></li><li class="chapter-item "><a href="../javascript/grid3_javascript_capacity_planning.html">Capacity Planning</a></li><li class="chapter-item "><a href="../javascript/grid3_javascript_vms.html">Deploy Multiple VMs</a></li><li class="chapter-item "><a href="../javascript/grid3_javascript_caprover.html">Deploy CapRover</a></li><li class="chapter-item "><a href="../javascript/grid3_javascript_vm_gateways.html">Gateways</a></li><li class="chapter-item "><a href="../javascript/grid3_javascript_kubernetes.html">Deploy a Kubernetes Cluster</a></li><li class="chapter-item "><a href="../javascript/grid3_javascript_zdb.html">Deploy a ZDB</a></li><li class="chapter-item "><a href="../javascript/grid3_javascript_qsfs_zdbs.html">Deploy ZDBs for QSFS</a></li><li class="chapter-item "><a href="../javascript/grid3_javascript_qsfs.html">QSFS</a></li><li class="chapter-item "><a href="../javascript/grid3_javascript_kvstore.html">Key Value Store</a></li><li class="chapter-item "><a href="../javascript/grid3_wireguard_gateway.html">Gateway with wireguard backend</a></li></ol></li><li class="chapter-item "><a href="../go/grid3_go_readme.html">Go Client</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../go/grid3_go_installation.html">Installation</a></li><li class="chapter-item "><a href="../go/grid3_go_load_client.html">Loading Client</a></li><li class="chapter-item "><a href="../go/grid3_go_vm.html">Deploy a VM</a></li><li class="chapter-item "><a href="../go/grid3_go_vm_with_gpu.html">Deploy a VM with GPUs</a></li><li class="chapter-item "><a href="../go/grid3_go_vms.html">Deploy Multiple VMs</a></li><li class="chapter-item "><a href="../go/grid3_go_gateways.html">Deploy Gateways</a></li><li class="chapter-item "><a href="../go/grid3_go_kubernetes.html">Deploy Kubernetes</a></li><li class="chapter-item "><a href="../go/grid3_go_qsfs.html">Deploy a QSFS</a></li></ol></li><li class="chapter-item "><a href="../tfgridcmd/grid3_cli_readme.html">TFGrid CLI</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../tfgridcmd/grid3_cli_installation.html">Installation</a></li><li class="chapter-item "><a href="../tfgridcmd/grid3_cli_login.html">Login</a></li><li class="chapter-item "><a href="../tfgridcmd/grid3_cli_vm.html">Deploy a VM</a></li><li class="chapter-item "><a href="../tfgridcmd/grid3_cli_gateways.html">Deploy Gateways</a></li><li class="chapter-item "><a href="../tfgridcmd/grid3_cli_kubernetes.html">Deploy Kubernetes</a></li></ol></li><li class="chapter-item "><a href="../tfchain/tfchain.html">ThreeFold Chain</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../tfchain/introduction.html">Introduction</a></li><li class="chapter-item "><a href="../tfchain/farming_policies.html">Farming Policies</a></li><li class="chapter-item "><a href="../tfchain/tfchain_external_service_contract.html">External Service Contract</a></li><li class="chapter-item "><a href="../tfchain/tfchain_solution_provider.html">Become a Solution Provider</a></li></ol></li><li class="chapter-item "><a href="../proxy/proxy.html">Grid Proxy</a></li><li class="chapter-item "><a href="../flist_hub/flist_hub.html">Flist Hub</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../manual3_iac/grid3_supported_flists.html">Supported FLists</a></li></ol></li></ol></li><li class="chapter-item "><a href="../system_administrators/system_administrators.html">System Administrators</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../getstarted/tfgrid3_getstarted.html">Getting Started</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../getstarted/TF_Connect/TF_Connect.html">ThreeFold Connect</a></li><li class="chapter-item "><a href="../getstarted/TF_Token/tft_toc.html">ThreeFold Token</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../getstarted/TF_Token/tft_lobstr/tft_lobstr.html">TFT on Lobstr</a></li><li class="chapter-item "><a href="../getstarted/TF_Token/tft_ethereum/tft_ethereum.html">TFT on Ethereum</a></li></ol></li><li class="chapter-item "><a href="../getstarted/TF_Dashboard/TF_Dashboard.html">ThreeFold Dashboard</a></li><li class="chapter-item "><a href="../dashboard/explorer/explorer_find_capacity.html">Tutorial: Find Node</a></li><li class="chapter-item "><a href="../weblets/weblets_vm.html">Tutorial: Deploy Your First VM</a></li><li class="chapter-item "><a href="../getstarted/ssh_guide/ssh_guide.html">SSH Remote Connection</a></li><li class="chapter-item "><a href="../getstarted/remote-desktop_gui/remote-desktop_gui.html">Remote Desktop and GUI</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../getstarted/remote-desktop_gui/cockpit_guide/cockpit_guide.html">Cockpit: a Web-based Interface for Servers</a></li><li class="chapter-item "><a href="../getstarted/remote-desktop_gui/xrdp_guide/xrdp_guide.html">XRDP: an Open-Source Remote Desktop Protocol</a></li><li class="chapter-item "><a href="../getstarted/remote-desktop_gui/guacamole_guide/guacamole_guide.html">Apache Guacamole: a Clientless Remote Desktop Gateway</a></li></ol></li></ol></li><li class="chapter-item "><a href="../concepts/concepts_readme.html">Grid Concepts</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../concepts/grid_primitives.html">TFGrid Primitives</a></li><li class="chapter-item "><a href="../concepts/grid3_components.html">TFGrid Component List</a></li><li class="chapter-item "><a href="../concepts/grid3_iac.html">Infrastructure as Code</a></li><li class="chapter-item "><a href="../concepts/proof_of_utilization.html">Proof of Utilization</a></li><li class="chapter-item "><a href="../concepts/contract_grace_period.html">Contract Grace Period</a></li><li class="chapter-item "><a href="../concepts/buying_storing_tft.html">Buying and Storing TFTs</a></li><li class="chapter-item "><a href="../concepts/grid3_whatsnew.html">What's New on TFGrid v3.x</a></li><li class="chapter-item "><a href="../concepts/tfchain.html">TFChain</a></li></ol></li><li class="chapter-item "><a href="../cloud/cloud.html">Cloud</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../cloud/cloudunits_pricing.html">Pricing</a></li></ol></li><li class="chapter-item "><a href="../getstarted/planetarynetwork.html">Planetary Network</a></li><li class="chapter-item "><a href="../TF_Grid_Services/tf_grid_services_readme.html">TFGrid Services</a></li><li class="chapter-item "><a href="../weblets/weblets_home.html">Weblets</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../weblets/weblets_profile_manager.html">Profile Manager</a></li><li class="chapter-item "><a href="../weblets/weblets_deployments_list.html">Deployments List</a></li><li class="chapter-item "><a href="../weblets/weblets_cancel_contracts.html">Cancel Contracts</a></li><li class="chapter-item "><a href="../weblets/weblets_basic_environments_readme.html">Basic Environments</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../weblets/weblets_fullVm.html">Full Virtual Machine</a></li><li class="chapter-item "><a href="../weblets/weblets_vm.html">Virtual Machine</a></li><li class="chapter-item "><a href="../weblets/weblets_k8s.html">Kubernetes</a></li><li class="chapter-item "><a href="../weblets/weblets_nixos_micro.html">Nixos MicroVM</a></li></ol></li><li class="chapter-item "><a href="../weblets/weblets_ready_community_readme.html">Ready Community Solutions</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../weblets/weblets_algorand.html">Algorand</a></li><li class="chapter-item "><a href="../weblets/weblets_caprover.html">Caprover</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../weblets/weblets_caprover_admin.html">Caprover Admin</a></li><li class="chapter-item "><a href="../weblets/weblets_caprover_worker.html">Caprover Worker</a></li></ol></li><li class="chapter-item "><a href="../weblets/weblets_casper.html">CasperLabs</a></li><li class="chapter-item "><a href="../weblets/weblets_discourse.html">Discourse</a></li><li class="chapter-item "><a href="../weblets/weblets_funkwhale.html">Funkwhale</a></li><li class="chapter-item "><a href="../weblets/weblets_mastodon.html">Mastodon Weblet</a></li><li class="chapter-item "><a href="../weblets/weblets_mattermost.html">Mattermost</a></li><li class="chapter-item "><a href="../weblets/weblets_nodepilot.html">Node Pilot</a></li><li class="chapter-item "><a href="../weblets/weblets_owncloud.html">Owncloud</a></li><li class="chapter-item "><a href="../weblets/weblets_peertube.html">Peertube</a></li><li class="chapter-item "><a href="../weblets/weblets_presearch.html">Presearch</a></li><li class="chapter-item "><a href="../weblets/weblets_subsquid.html">Subsquid</a></li><li class="chapter-item "><a href="../weblets/weblets_taiga.html">Taiga</a></li><li class="chapter-item "><a href="../weblets/weblets_umbrel.html">Umbrel</a></li><li class="chapter-item "><a href="../weblets/weblets_wordpress.html">WordPress</a></li><li class="chapter-item "><a href="../tf_mastodon/tf_mastodon_readme.html">ThreeFold Mastodon Server</a></li><li class="chapter-item "><a href="../tf_mastodon/tf_mastodon_deploy.html">Mastodon Deployer Manual</a></li><li class="chapter-item "><a href="../tf_mastodon/tf_mastodon_faq.html">Frequently Asked Questions</a></li></ol></li></ol></li><li class="chapter-item "><a href="../terraform/terraform_readme.html">Terraform</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../terraform/terraform_install.html">Installing Terraform</a></li><li class="chapter-item "><a href="../terraform/terraform_basics.html">Terraform Basics</a></li><li class="chapter-item "><a href="../terraform/terraform_get_started.html">Tutorial</a></li><li class="chapter-item "><a href="../terraform/terraform_delete.html">Delete</a></li><li class="chapter-item "><a href="../terraform/terraform_full_vm.html">Full VM Deployment</a></li><li class="chapter-item "><a href="../terraform/resources/terraform_resources_readme.html">Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../terraform/resources/terraform_vm.html">Virtual Machine</a></li><li class="chapter-item "><a href="../terraform/resources/terraform_vm_gateway.html">Web Gateway</a></li><li class="chapter-item "><a href="../terraform/resources/terraform_k8s.html">Kubernetes Cluster</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../terraform/resources/terraform_k8s_demo.html">Demo</a></li></ol></li><li class="chapter-item "><a href="../terraform/resources/terraform_zdb.html">ZDB</a></li><li class="chapter-item "><a href="../terraform/resources/terraform_qsfs.html">Quantum Safe Filesystem</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../terraform/resources/terraform_qsfs_on_microvm.html">QSFS on Micro VM</a></li><li class="chapter-item "><a href="../terraform/resources/terraform_qsfs_on_full_vm.html">QSFS on Full VM</a></li></ol></li><li class="chapter-item "><a href="../terraform/resources/terraform_caprover.html">CapRover</a></li></ol></li><li class="chapter-item "><a href="../terraform/advanced/terraform_advanced_readme.html">Advanced</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../terraform/advanced/terraform_provider.html">Terraform Provider</a></li><li class="chapter-item "><a href="../terraform/advanced/terraform_provisioners.html">Terraform Provisioners</a></li><li class="chapter-item "><a href="../terraform/advanced/terraform_mounts.html">Mounts</a></li><li class="chapter-item "><a href="../terraform/advanced/terraform_capacity_planning.html">Capacity Planning</a></li><li class="chapter-item "><a href="../terraform/advanced/terraform_updates.html">Updates</a></li><li class="chapter-item "><a href="../terraform/advanced/terraform_wireguard_ssh.html">SSH Connection with Wireguard</a></li><li class="chapter-item "><a href="../terraform/advanced/terraform_wireguard_vpn.html">Set a Wireguard VPN</a></li><li class="chapter-item "><a href="../terraform/advanced/terraform_mariadb_synced_databases.html">Synced MariaDB Databases</a></li><li class="chapter-item "><a href="../terraform/advanced/terraform_nextcloud_redundant.html">Nextcloud Redundant Deployment</a></li></ol></li></ol></li><li class="chapter-item "><a href="../advanced/advanced.html">Advanced</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../advanced/grid3_stellar_tfchain_bridge.html">Grid3 Stellar-TFChain Bridge</a></li><li class="chapter-item "><a href="../advanced/token_transfer_keygenerator.html">Token Transfer Keygenerator</a></li><li class="chapter-item "><a href="../advanced/cancel_contracts.html">Cancel contracts</a></li><li class="chapter-item "><a href="../advanced/contract_bill_report.html">Contract Bills Reports</a></li><li class="chapter-item "><a href="../advanced/list_public_ips.html">Listing Free Public IPs</a></li><li class="chapter-item "><a href="../advanced/grid3_redis.html">Redis</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">ThreeFold Manual</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="zola-website-deployer"><a class="header" href="#zola-website-deployer"> Zola Website Deployer</a></h1>
+<p><img src="./img/websitetool.jpeg" alt="" /></p>
+<h2 id="table-of-contents"><a class="header" href="#table-of-contents"> Table of Contents </a></h2>
+<ul>
+<li><a href="#overview">Overview</a>
+<ul>
+<li><a href="#what-is-zola-framework">What is Zola Framework?</a></li>
+</ul>
+</li>
+<li><a href="#prerequisites">Prerequisites</a>
+<ul>
+<li><a href="#important-links">Important Links</a></li>
+</ul>
+</li>
+<li><a href="#installing-zola-onto-your-machine">Installing Zola Onto Your Machine</a>
+<ul>
+<li><a href="#important-links-1">Important Links</a></li>
+</ul>
+</li>
+<li><a href="#get-started">Get Started</a>
+<ul>
+<li><a href="#fork-threefolds-website-template-to-your-github-account">Fork ThreeFold's Website Template to Your Github Account</a></li>
+<li><a href="#clone-the-forked-repository-locally">Clone the Forked Repository Locally</a></li>
+<li><a href="#open-and-edit-your-cloned-zola-template-with-a-code-editor">Open and Edit Your Cloned Zola Template with a Code Editor</a></li>
+<li><a href="#template-guide">Template Guide</a></li>
+<li><a href="#navigating-the-template">Navigating the Template</a></li>
+<li><a href="#top-navbar-made-easy">Top Navbar Made Easy</a></li>
+<li><a href="#replace-logo-with-your-own-logo">Replace Logo with your Own logo</a></li>
+<li><a href="#important-links-2">Important Links</a></li>
+</ul>
+</li>
+<li><a href="#customization">Customization</a>
+<ul>
+<li><a href="#some-tutorials-on-markdown">Some Tutorials on Markdown</a></li>
+<li><a href="#creating-a-single-column-page-section">Creating A Single-Column Page Section</a></li>
+<li><a href="#adding-image">Adding Image</a></li>
+<li><a href="#creating-page-section-with-multiple-columns">Creating Page Section with Multiple Columns</a></li>
+<li><a href="#important-links-3">Important Links</a></li>
+<li><a href="#build-and-preview-your-website-locally">Build and Preview Your Website Locally</a></li>
+<li><a href="#important-links-4">Important Links</a></li>
+</ul>
+</li>
+<li><a href="#publish-your-website-via-github-pages">Publish Your Website (Via Github Pages)</a>
+<ul>
+<li><a href="#publish-your-github-page">Publish your Github page</a></li>
+</ul>
+</li>
+<li><a href="#important-links-5">Important Links</a></li>
+<li><a href="#questions-and-feedback">Questions and Feedback</a></li>
+</ul>
+<hr />
+<h2 id="overview"><a class="header" href="#overview">Overview</a></h2>
+<p><strong>ThreeFold Website Tool</strong> is a customized open-source Zola-based web deployment framework and static website template repository that is available for anyone to use.</p>
+<p>At ThreeFold, we utilized Website Tool to deploy all of our web presences. For example, <a href="https://threefold.io"><strong>www.threefold.io</strong></a>.</p>
+<h3 id="what-is-zola-framework"><a class="header" href="#what-is-zola-framework">What is Zola Framework?</a></h3>
+<p><a href="https://www.getzola.org/"><strong>Zola</strong></a> is a static site generator (SSG), similar to Hugo, Pelican, and Jekyll (for a comprehensive list of SSGs, please see Jamstack). It is written in Rust and uses the Tera template engine, which is similar to Jinja2, Django templates, Liquid, and Twig. Content is written in CommonMark, a strongly defined, highly compatible specification of Markdown.</p>
+<p>While you can also publish a static website using Zola alone, we at ThreeFold have customized the framework and created a static website template that makes it even easier for anyone to build a website by simply cloning template and fill it with their own website content.</p>
+<hr />
+<h2 id="prerequisites"><a class="header" href="#prerequisites">Prerequisites</a></h2>
+<ul>
+<li>Github Account</li>
+<li>Zola Framework</li>
+<li>VS Code, or any code editor of choice</li>
+<li>Markdown language knowledge</li>
+<li>Basic Command Line (Terminal) Knowledge</li>
+</ul>
+<p>In order to deploy and publish a website using ThreeFold Website Tool, you would need to have an account on github (to store your website data in a github repository), as well as to have Zola framework installed on your machine.</p>
+<h3 id="important-links"><a class="header" href="#important-links">Important Links</a></h3>
+<blockquote>
+<ul>
+<li><a href="https://docs.github.com/en/get-started/signing-up-for-github/signing-up-for-a-new-github-account">How to Sign Up for a Github Account</a></li>
+<li><a href="https://code.visualstudio.com/download">Download VS Code</a></li>
+<li><a href="https://www.markdownguide.org/">Learn Markdown Language</a></li>
+<li><a href="https://cs.colby.edu/maxwell/courses/tutorials/terminal/">Command Line Cheat Sheet</a></li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="installing-zola-onto-your-machine"><a class="header" href="#installing-zola-onto-your-machine">Installing Zola Onto Your Machine</a></h2>
+<p>To install Zola on your machine, simply go to your terminal and run the following command:</p>
+<p><strong>MacOS (brew)</strong>:</p>
+<pre><code>$ brew install zola
+</code></pre>
+<p>Please make sure you have <a href="https://brew.sh/">Brew</a> installed on your MacOS machine before installing Zola. </p>
+<p>You should see a similar screen as below when successful:</p>
+<p><img src="./img/brewsuccess.png" alt="" /></p>
+<p><b>Windows (scoop)</b>:</p>
+<pre><code>$ scoop install zola
+</code></pre>
+<p>Please make sure you have <a href="https://scoop.sh/">Scoop</a> installed on your Windows machine before installing Zola.</p>
+<p>You should see a similar screen as below when successful:</p>
+<p><img src="./img/scoopsuccess.png" alt="" /></p>
+<p>For more details on Zola Installation, and installation guidelines for other operating systems, please read: <a href="https://www.getzola.org/documentation/getting-started/installation/"><strong>Zola Installation Manual</strong></a>.</p>
+<h3 id="important-links-1"><a class="header" href="#important-links-1">Important Links</a></h3>
+<blockquote>
+<ul>
+<li><a href="https://brew.sh/">How to Install Brew (MacOS)</a></li>
+<li><a href="https://github.com/ScoopInstaller/Scoop#readme">How to Install Scoop (Windows)</a></li>
+<li><a href="https://www.getzola.org/documentation/getting-started/installation/">Zola Installation for other OS</a></li>
+<li><a href="https://cs.colby.edu/maxwell/courses/tutorials/terminal/">Command Line Cheat Sheet</a></li>
+</ul>
+</blockquote>
+<blockquote>
+<p>Next Step: <a href="templateguide">Template Guide: How to use the TF Web Template</a></p>
+</blockquote>
+<hr />
+<h2 id="get-started"><a class="header" href="#get-started">Get Started</a></h2>
+<p>Now that you have successfully installed Zola on your machine. You are ready to create and build your own website using ThreeFold Website Tool. </p>
+<p>In order to do that you would need to clone <a href="https://github.com/threefoldfoundation/www_examplezola"><strong>ThreeFold's Website Template</strong></a> to your own github account, and open it locally on your computer by using VS Code or your code editing program of choice.</p>
+<h3 id="fork-threefolds-website-template-to-your-github-account"><a class="header" href="#fork-threefolds-website-template-to-your-github-account">Fork ThreeFold's Website Template to Your Github Account</a></h3>
+<p>Our Team has especially created an html/css/markdown based template repository on github, free for anyone to use. To start working on your project, simply fork <a href="https://github.com/threefoldfoundation/www_examplezola">this repository</a> to your own github account by clicking the 'fork' account on the repository, and rename it with your website's name.</p>
+<p><img src="./img/fork.png" alt="" /></p>
+<h3 id="clone-the-forked-repository-locally"><a class="header" href="#clone-the-forked-repository-locally">Clone the Forked Repository Locally</a></h3>
+<p>After you forked the template, now you can <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">clone the repository</a> to your local computer so we can start working on it. Please remember the directory / folder of where you cloned the repository in your computer to make it easier for you to locate and edit it.</p>
+<p><img src="./img/clone.png" alt="" /></p>
+<h3 id="open-and-edit-your-cloned-zola-template-with-a-code-editor"><a class="header" href="#open-and-edit-your-cloned-zola-template-with-a-code-editor">Open and Edit Your Cloned Zola Template with a Code Editor</a></h3>
+<p>Once the template is forked and cloned, open your code editor and start working on your website. I will explain a little more about the content editing process and procedure on the next pages...</p>
+<p><img src="./img/vscode.png" alt="" /></p>
+<h3 id="template-guide"><a class="header" href="#template-guide">Template Guide</a></h3>
+<p>On this page you will find an introduction on <a href="https://github.com/threefoldfoundation/www_examplezola">TF Web Template</a> and how to navigate the different template component that enable you to edit the template with your own content.</p>
+<h3 id="navigating-the-template"><a class="header" href="#navigating-the-template">Navigating the Template</a></h3>
+<p>All editable content of your website would be found under <strong>‘content’</strong> folder. 
+Each page of your website is a <strong>markdown (.md) file.</strong></p>
+<p>Each page and all the images on the page will be put into its own folder under content/ folder. 
+<img src="./img/folderdetail.png" alt="" />
+<br>
+For example, here, my homepage (index.md) is put into <strong>content/home</strong> folder.
+<img src="./img/indexmd.png" alt="" /></p>
+<p>If I want to edit the homepage of my website, I would go to the following:
+bb</p>
+<pre><code>content/home/index.md
+</code></pre>
+<p>and start editing.</p>
+<p><img src="./img/vscode.png" alt="" /></p>
+<h3 id="top-navbar-made-easy"><a class="header" href="#top-navbar-made-easy">Top Navbar Made Easy</a></h3>
+<p><img src="./img/navbar.png" alt="" /></p>
+<p>Every time you make a new page folder, we have designed it in a way that the website would automatically generate a new navbar item using the name of each folder you created.</p>
+<p>based on the navbar picture above, it means that I have created 3 separate content subfolders, each with an index.md file on it called Home, ThreeFoldFeed and GetServer.</p>
+<h3 id="replace-logo-with-your-own-logo"><a class="header" href="#replace-logo-with-your-own-logo">Replace Logo with your Own logo</a></h3>
+<p><img src="./img/logo.png" alt="" /></p>
+<p>To replace the logo, <strong>add your own logo image to ‘home’ folder.</strong></p>
+<p>And then go to <strong>_index.md</strong> file and replace the <strong>logo_path</strong>: images/yourlogoimagename.jpg</p>
+<p><img src="./img/placeholder.png" alt="" /></p>
+<h3 id="important-links-2"><a class="header" href="#important-links-2">Important Links</a></h3>
+<blockquote>
+<ul>
+<li><a href="https://github.com/threefoldfoundation/www_examplezola">TF Web Template</a></li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="customization"><a class="header" href="#customization">Customization</a></h2>
+<p>We have designed the template in certain ways that it would accommodate different indentation web page style, such as placeholders, footer, header, left-indentation, right-indentation.</p>
+<p>All you need to do is just replace the texts and images using markdown language, and use the indentation style you would like to use for your page. Don’t know how to markdown? Here’s a <a href="https://www.markdownguide.org/basic-syntax/"><strong>complete markdown syntax guide</strong></a> for you to begin with.</p>
+<p>Happy experimenting!</p>
+<h3 id="some-tutorials-on-markdown"><a class="header" href="#some-tutorials-on-markdown">Some Tutorials on Markdown</a></h3>
+<h3 id="creating-a-single-column-page-section"><a class="header" href="#creating-a-single-column-page-section">Creating A Single-Column Page Section</a></h3>
+<p>Since we only have one column, Every one column section begins only with row indentation syntax (style, margin, padding).</p>
+<pre><code>&lt;!-- section 1 (header) --&gt;
+
+{% row(style=&quot;&quot; margin=&quot;&quot; padding=&quot;t&quot;) %}
+</code></pre>
+<p>for example:</p>
+<pre><code>&lt;!-- section 1 (header) --&gt;
+
+{% row(style=&quot;center&quot; margin=&quot;narrow&quot; padding=&quot;top&quot;) %}
+</code></pre>
+<p>and ends with </p>
+<pre><code>{% end %}
+</code></pre>
+<p>For example, the first section of the homepage of <a href="www.mastodon.io"><strong>www.mastodon.io</strong></a> in Markdown:</p>
+<p><img src="./img/codeexample.png" alt="" /></p>
+<h3 id="adding-image"><a class="header" href="#adding-image">Adding Image</a></h3>
+<p>To add image to your page please use </p>
+<pre><code>![alt_text](yourimagename.png)
+</code></pre>
+<p>The Result:</p>
+<p><img src="./img/mastodon.png" alt="" /></p>
+<h3 id="creating-page-section-with-multiple-columns"><a class="header" href="#creating-page-section-with-multiple-columns">Creating Page Section with Multiple Columns</a></h3>
+<p>For more than one column section, we need to configure the row and column syntax.
+For example:
+Sometimes you would like to have a page where you place your texts and buttons on left column and an image on the right column, like:</p>
+<p>What you need to do is add:</p>
+<pre><code>|||
+</code></pre>
+<p>in between your text and images for every column you want to create.</p>
+<p>For example, this page consist of two columns (left and right):</p>
+<p><img src="./img/twocolumns.png" alt="" /></p>
+<p>The Result:</p>
+<p><img src="./img/twocolumnsdone.png" alt="" /></p>
+<p>You can add more than two column like this one, a page section consist of 3 columns.</p>
+<p>The code:</p>
+<p><img src="./img/threecolumns.png" alt="" /></p>
+<p>The Result:</p>
+<p><img src="./img/threecolumnsdone.png" alt="" /></p>
+<h3 id="important-links-3"><a class="header" href="#important-links-3">Important Links</a></h3>
+<blockquote>
+<ul>
+<li><a href="https://www.markdownguide.org/">Learn Markdown Language</a></li>
+</ul>
+</blockquote>
+<h3 id="build-and-preview-your-website-locally"><a class="header" href="#build-and-preview-your-website-locally">Build and Preview Your Website Locally</a></h3>
+<p>After customizing your website, you might want to review and build your website locally before publishing it online. On this page you will find tutorials on how to preview and deploy your website.</p>
+<p>To preview your website locally, simply open the terminal via your code editor and type in:</p>
+<pre><code>./build.sh
+</code></pre>
+<p>So that the framework starts building your website.</p>
+<p>Then</p>
+<pre><code>./start.sh
+</code></pre>
+<p>So that the framework starts serving your website preview locally. Please make sure you are on located on the right website folder, for example: <em>$ user/doc/mywebsitename</em> before typing the command above. </p>
+<p>The preview won't successfuly be built if you run the command in the wrong folder.</p>
+<p>When successful, it will give you a link to a local preview of your website. Go ahead and copy paste the url onto your web browser to preview your website locally.</p>
+<p><img src="./img/success.png" alt="" /></p>
+<p>And, Congratulations! You just built your website locally!</p>
+<p><img src="./img/preview.png" alt="" /></p>
+<h3 id="important-links-4"><a class="header" href="#important-links-4">Important Links</a></h3>
+<blockquote>
+<ul>
+<li><a href="https://cs.colby.edu/maxwell/courses/tutorials/terminal/">Command Line Cheat Sheet</a></li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="publish-your-website-via-github-pages"><a class="header" href="#publish-your-website-via-github-pages">Publish Your Website (Via Github Pages)</a></h2>
+<p>Since we're using github repository to save our website content, the easiest way to publish our website is also through github pages and by using our own domain.</p>
+<p>Once all commits have been pushed back to your github repository online, you can start publishing your website.</p>
+<p>The first thing you need to do is to go back to your code editor, and find <strong>config.toml</strong> file on your website repo. 
+Edit the <strong>base_url</strong> on the <strong>config.toml</strong> file on your repo to your own domain.</p>
+<p><img src="./img/config.png" alt="" /></p>
+<p>Save all your changes and push all your commits to its origin again.</p>
+<h3 id="publish-your-github-page"><a class="header" href="#publish-your-github-page">Publish your Github page</a></h3>
+<p>Later on, go to your github repo <strong>settings</strong>, go to <strong>Pages</strong> on the left navigation sidebar. Add your own custom domain to start publishing your website.</p>
+<p><img src="./img/gitpages.png" alt="" /></p>
+<p>And you are done! Your website will be published, and it will take only a minute or so to complete the process. Refresh page, and you will see a link to your newly published website.</p>
+<p><img src="./img/done.png" alt="" /></p>
+<hr />
+<h2 id="important-links-5"><a class="header" href="#important-links-5">Important Links</a></h2>
+<blockquote>
+<ul>
+<li><a href="https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/pushing-changes-to-github">Pushing Changes to Github</a></li>
+<li><a href="https://docs.github.com/en/pages">Github Pages How-to</a></li>
+<li><a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages">Adding Custom Domain to my Github Page</a></li>
+</ul>
+</blockquote>
+<hr />
+<h2 id="questions-and-feedback"><a class="header" href="#questions-and-feedback">Questions and Feedback</a></h2>
+<p>If you have any question or feedback, you can write a post on the <a href="http://forum.threefold.io/">ThreeFold Forum</a>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../collaboration_tools/circle_tool.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../contribute/contribute.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../collaboration_tools/circle_tool.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../contribute/contribute.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
