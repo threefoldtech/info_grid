@@ -8,6 +8,8 @@
 - [Main Process](#main-process)
 - [Prerequisites](#prerequisites)
 - [Find a 3Node with the ThreeFold Explorer](#find-a-3node-with-the-threefold-explorer)
+  - [Using the Scheduler](#using-the-scheduler)
+  - [Using the Grid Explorer](#using-the-grid-explorer)
 - [Create the Terraform Files](#create-the-terraform-files)
 - [Deploy the Full VM with Terraform](#deploy-the-full-vm-with-terraform)
 - [SSH into the 3node](#ssh-into-the-3node)
@@ -51,13 +53,18 @@ You need to download and install properly Terraform. Simply follow the documenta
 ## Find a 3Node with the ThreeFold Explorer
 
 We want to find a proper 3Node to deploy our workload. For this guide, we want a 3Node with at least 15GB of storage, 1 vcore and 512MB of RAM, which are the minimum specifications for a micro VM on the TFGrid. We are also looking for a 3Node with a public IPv4 address.
-We have two options to find a sutable node
 
-### Using the scheduler
+We present two options to find a suitable node: the scheduler and the TFGrid Explorer.
 
-- Refer to this [guid](resources/terraform_scheduler.md)
+***
 
-### using the Grid Explorer
+### Using the Scheduler
+
+Using the scheduler can be very efficient depending on what you are trying to achieve. To learn more about the scheduler, please refer to the [Scheduler Guide](resources/terraform_scheduler.md).
+
+***
+
+### Using the Grid Explorer
 
 We show here how to find a suitable 3Node using the ThreeFold Explorer.
 

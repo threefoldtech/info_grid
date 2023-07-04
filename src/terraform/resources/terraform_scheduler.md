@@ -1,8 +1,35 @@
+<h1> Scheduler Resource </h1>
+
 ![ ](../advanced/img/terraform_.png)
 
-## Scheduler Resource
+<h2> Table of Contents </h2>
 
-using scheduler resource enables the user to automatically get the nodes that matches his criterias, so if we have an examples as follows
+- [Introduction](#introduction)
+- [How Scheduler Works](#how-scheduler-works)
+- [Quick Example](#quick-example)
+
+
+***
+
+## Introduction
+
+Using the scheduler resource enables users to automatically get the nodes that match their criterias. 
+
+***
+
+## How Scheduler Works
+
+To better understand scheduler, we summarize the main process:
+
+- At first if `farm_id` is specified, then the scheduler will check if this farm has the Farmerbot enabled
+  - If so it will try to find a suitable node using the Farmerbot.
+- If the Farmerbot is not enabled, it will use grid proxy to find a suitable node.
+
+***
+
+## Quick Example 
+
+Let's take a look at this following example:
 
 ```
 terraform {
@@ -82,7 +109,7 @@ output "vm2_ygg_ip" {
 
 ```
 
-for the scheduler part above
+From the example above, we take a closer look at the following section:
 
 ```
 resource "grid_scheduler" "sched" {
@@ -98,7 +125,9 @@ resource "grid_scheduler" "sched" {
 }
 ```
 
-here the user is specifying his requirements which matches his deployments and later on he can use the result of the scheduler which contains the `[nodes]` in his deployments and follows.
+In this case, the user is specifying the requirements which match the deployments. 
+
+Later on, the user can use the result of the scheduler which contains the `[nodes]` in the deployments:
 
 ```
 resource "grid_network" "net1" {
@@ -124,7 +153,3 @@ resource "grid_deployment" "d1" {
 }
 ```
 
-what scheduler does is actually the following:
-
-- At first if farm_id is specified, then the scheduler will check if this farm has farmerbot enabled, if so it will try to find a suitable node using farmerbot.
-- If farmerbot is not enabled, it will use grid proxy to find a suitable node.
