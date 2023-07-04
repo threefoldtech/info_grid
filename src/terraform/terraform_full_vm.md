@@ -55,7 +55,7 @@ We have two options to find a sutable node
 
 ### Using the scheduler
 
-- Refer to this [guid](resources/terraform_scheduler.md)
+- Refer to this [guide](resources/terraform_scheduler.md)
 
 ### using the Grid Explorer
 

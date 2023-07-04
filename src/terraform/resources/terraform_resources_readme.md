@@ -2,6 +2,7 @@
 
 <h2> Table of Contents </h2>
 
+- [using scheduler](./terraform_scheduler.md)
 - [Virtual Machine](./terraform_vm.html)
 - [Web Gateway](./terraform_vm_gateway.html)
 - [Kubernetes Cluster](./terraform_k8s.html)
