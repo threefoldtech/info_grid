@@ -3,69 +3,92 @@
 
 ## Cloud Unit Pricing
 
-| Cloud Units       | description                                      | mUSD               | mTFT               |
-| ----------------- | ------------------------------------------------ | ------------------ | ------------------ |
-| Compute Unit (CU) | typically 2 vcpu, 4 GB mem, 50 GB storage        | $CU_MUSD_HOUR/hour | $CU_MTFT_HOUR/hour |
-| Storage Unit (SU) | typically 1 TB of netto usable storage (*)       | $SU_MUSD_HOUR/hour | $SU_MTFT_HOUR/hour |
-| Network Unit (NU) | 1 GB transfer, bandwidth as used by TFGrid users | $NU_MUSD_GB/GB      | $NU_MTFT_GB/GB    |
+Last updated: July 4, 2023
 
-| Network Addressing | description                                | mUSD                  | mTFT                  |
-| ------------------ | ------------------------------------------ | --------------------- | --------------------- |
-| IPv4 Address       | Public Ip Address as used by a TFGrid user | $IP_MUSD_HOUR/hour    | $IP_MTFT_HOUR/hour    |
-| Unique Name        | Usable as name on webgateways              | $NAME_MUSD_HOUR/hour  | $NAME_MTFT_HOUR/hour  |
-| Unique Domain Name | Usable as dns name on webgateways          | $DNAME_MUSD_HOUR/hour | $DNAME_MTFT_HOUR/hour |
+## Hourly Pricing
 
-- mUSD = 1/1000 of USD, mTFT = 1/1000 of TFT
-- TFT pricing pegged to USD (pricing changes in line with TFT/USD rate)
-- **current TFT to USD price is $TFTUSD** , calculated on $NOW
+- The current prices for deployment (as per chain)
+- Values on chain are expressed as "units USD per hour", where "1 unit usd" == 10.000.000 (1e7). 
 - pricing is calculated per hour for the TFGrid 3.0
+
+| Cloud Units       | description                                      | USD / hour         | 
+| ----------------- | ------------------------------------------------ | ------------------ | 
+| Compute Unit (CU) | typically 2 vcpu, 4 GB mem, 50 GB storage        | 0.01/hour          | 
+| Storage Unit (SU) | typically 1 TB of netto usable storage (*)       | 0.005/hour         |
+| Network Unit (NU) | 1 GB transfer, bandwidth as used by TFGrid users | 0.0015/GB          | 
+
+<br>
+
+| Network Addressing | description                                |  USD / hour           | 
+| ------------------ | ------------------------------------------ | --------------------- | 
+| IPv4 Address       | Public Ip Address as used by a TFGrid user | 0.004/hour	          | 
+| Unique Name        | Usable as name on webgateways              | 0.00025/hour	      | 
+| Unique Domain Name | Usable as dns name on webgateways          | 0.0005/hour	          | 
+
+
 <!-- - pricing of capacity of certified farmers is 25% more (x 1.25) (future development) -->
 
-### Pricing Expressed Per Month
+### Monthly Pricing
 
-| Cloud Units       | description                                      | USD NO DISCOUNT     | USD 60% DISCOUNT             |
-| ----------------- | ------------------------------------------------ | ------------------- | ---------------------------- |
-| Compute Unit (CU) | typically 2 vcpu, 4 GB mem, 50 GB storage        | $CU_USD_MONTH/month | $CU_USD_MONTH_DISCOUNT/month |
-| Storage Unit (SU) | typically 1 TB of netto usable storage (*)       | $SU_USD_MONTH/month | $SU_USD_MONTH_DISCOUNT/month |
-| Network Unit (NU) | 1 GB transfer, bandwidth as used by TFGrid users | $NU_USD_GB/GB       | $NU_USD_MONTH_DISCOUNT/GB    |
-| IPv4 Address      | Public Ip Address as used by a TFGrid user       | $IP_USD_MONTH/month | $IP_USD_MONTH_DISCOUNT/month |
+- A month is considered as 30 days (720 hours):
 
-> Please check pricing calculator on [http://pricing.threefold.me](http://pricing.threefold.me)
+| Cloud Units        | description                                      | USD - 0 discount | 
+| -----------------  | ------------------------------------------------ | ---------------- | 
+| Compute Unit (CU)  | typically 2 vcpu, 4 GB mem, 50 GB storage        | 7.20/month	   | 
+| Storage Unit (SU)  | typically 1 TB of netto usable storage (*)       | 3.60/month	   | 
+| Network Unit (NU)  | 1 GB transfer, bandwidth as used by TFGrid users | 0.0015/TB	       | 
 
-### Dedicated Servers
+<br>
 
-Starting April 2022, the TFGrid 3.0/a5 has support for dedicated servers. You can reserve a full server and the server is only usable for you, a minimum of 70% discount is given for this usecase.
+| Network Addressing | description                                      | USD - 0 discount | 
+| -----------------  | ------------------------------------------------ | ---------------- | 
+| IPv4 Address       | Public Ip Address as used by a TFGrid user       | 2.88/month       | 
+| Unique Name        | Usable as name on webgateways                    | 0.90/month	   | 
+| Unique Domain Name | Usable as dns name on webgateways                | 1.80/month	   | 
 
-- Dedicated Node, 192 GB mem, 24 cores, 1000 GB SSD = 75 USD per month (max discount, 3Y staking)
-- Dedicated Node, 32 GB mem, 8 cores, 1000 GB SSD = 31 USD per month (max discount, 3Y staking)
+> Please check our [Cloud Pricing Calculator](https://docs.google.com/spreadsheets/d/1E6MpGs15h1_flyT5AtyKp1TixH1ILuGo5tzHdmjeYdQ/edit#gid=2014089775) for more detailed calculations and information.
 
-Above example was with generous 5TB of bandwidth used per node per month, which is huge.
+On top of this, discounts are handed out if sufficient tokens are available on the account which pays for the deployment (defined in code [here](https://github.com/threefoldtech/tfchain/blob/development/substrate-node/pallets/pallet-smart-contract/src/cost.rs#L296-L340).
 
-These nodes are ideal to deploy blockchain nodes, or other high demanding workloads. Dedicated nodes leads to amazing pricing.
+### Dedicated Nodes
 
-To use a dedicated node, you will have to reserve a 3node for yourself in your admin portal of TFGrid, only you can then deploy on this node and there is no additional cost.
+Since April 2022, TFGrid 3.0/a5 has introduced dedicated server support. With dedicated servers, you can reserve a full server exclusively for your use. This comes with a minimum 70% discount, making it a cost-effective option.
 
-> Please check pricing calculator on <http://pricing.threefold.me>
+Here are two examples of dedicated nodes and their prices (with maximum discount and 3-year staking):
+
+- Dedicated Node 1: 192 GB memory, 24 cores, 1000 GB SSD = $75 per month
+- Dedicated Node 2: 32 GB memory, 8 cores, 1000 GB SSD = $31 per month
+
+
+These dedicated nodes come with a generous 5TB bandwidth usage per node per month. They are well-suited for deploying blockchain nodes or other resource-intensive workloads. Using a dedicated node requires reserving a 3node in your TFGrid admin portal. Once reserved, you have exclusive deployment rights for that node, and there are no additional costs.
+
+> Please check our [Cloud Pricing Calculator](https://docs.google.com/spreadsheets/d/1E6MpGs15h1_flyT5AtyKp1TixH1ILuGo5tzHdmjeYdQ/edit#gid=2014089775) for more detailed calculations and information.
 
 ### Discount Levels
 
-Last Updated: July 4, 2023.
-
 | type       | pricing level | nr months of TFT linked to account |
 | ---------- | ------------- | ---------------------------------- |
-| no staking | - 0%          | 0                                  |
-| default    | - 20%         | 1.5 months                         |
-| bronze     | - 30%         | 3 months                           |
-| silver     | - 40%         | 6 months                           |
-| gold       | - 60%         | 18 months                          |
+| No staking | - 0%          | 0                                  |
+| Default    | - 20%         | 1.5 months                         |
+| Bronze     | - 30%         | 3 months                           |
+| Silver     | - 40%         | 6 months                           |
+| Gold       | - 60%         | 18 months                          |
 
-TFChain charges the user for proof_of_utilization every hour. TFChain will calculate the discount based on amount of TFT available in the account of the user on TFChain (not on Stellar or any of the other blockchains we also support). This is an automatic form of staking, the user does not have to do anything to have this benefit. For network related services its max 40% discount.
+TFChain charges users for proof of utilization on an hourly basis. The discount applied is determined by the amount of TFT (ThreeFold Token) available in the user's TFChain account. It's important to note that the discount is calculated based on the TFT balance in the TFChain account, not on other supported blockchains like Stellar.
+
+This discount mechanism operates automatically, and users don't need to take any specific actions to avail themselves of this benefit. However, it's worth mentioning that the maximum discount for network-related services is 40%.
+
+When renting a dedicated node, you receive a 50% discount for the entire node. However, it's important to note that you will still be required to pay for the entire node, even with the discount applied. This means that while you enjoy the discount, the cost of the dedicated node is not prorated based on the resources you utilize.
 
 ## Example for 40% discount
 
-- Let say my Internet Capacity consumption on ThreeFold Grid is 10 TFT per hour worth.
-- Scaled to 6 months it gives 10 TFT * 24h * 30d * 6m = 43,200 TFT which is the minimum amount to have in my account to be eligible for 40% discount
-- Scaled to 18 months it gives 10 TFT * 24h * 30d * 18m = 129,600 TFT which is the minimum amount to have in my account to be eligible for 60% discount
-- So if I have 60,000 TFT in my account on TFChain, this means I will get 40% discount.
-- I don’t have enough tokens to get to 60% discount.
-- Taking into account the 40% discount I will effectively pay this consumption 6 TFT per hour as long as the amount of TFT in my account belongs to the [43,200; 129,600] range (see calculation above).
+Let's break down the example for a 40% discount on Internet Capacity consumption:
+
+- Suppose your consumption on the ThreeFold Grid is worth 10 TFT per hour.
+- To be eligible for a 40% discount, you need to have a minimum of 43,200 TFT in your account, calculated as 10 TFT * 24 hours * 30 days * 6 months.
+- Similarly, to be eligible for a 60% discount, you would need a minimum of 129,600 TFT in your account, calculated as 10 TFT * 24 hours * 30 days * 18 months.
+- If you have 60,000 TFT in your TFChain account, you would receive a 40% discount.
+- However, since you don't have enough tokens to qualify for the 60% discount, it won't be applicable.
+- With the 40% discount, your effective payment for the consumption would be 6 TFT per hour, as long as the amount of TFT in your account falls within the range of 43,200 to 129,600 (as calculated above).
+
+Keep in mind that these calculations are based on the example provided and the specific discount levels mentioned.
