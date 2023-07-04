@@ -57,6 +57,7 @@
   - [ThreeFold Video Gallery](tf_video_gallery/tf_video_gallery.md)
   - [ThreeFold Roadmap](roadmap/roadmap_readme.md)
     - [Release Notes](roadmap/releasenotes/releasenotes_readme.md)
+      - [TFGrid v3.10.0](roadmap/releasenotes/tfgrid_release_3_10_0.md)
       - [TFGrid v3.9.0](roadmap/releasenotes/tfgrid_release_3_9_0.md)
       - [TFGrid v3.8.0](roadmap/releasenotes/tfgrid_release_3_8_0.md)
       - [TFGrid v3.7.0](roadmap/releasenotes/tfgrid_release_3_7_0.md)

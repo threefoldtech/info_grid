@@ -7,6 +7,7 @@
  Whether you're a developer, a farmer, a user, or simply curious about the cutting-edge advancements happening in the world of distributed computing, these release notes will provide you with valuable insights and keep you up to date with our progress. So dive in, explore the details, and join us in shaping the future of the ThreeFold Grid!
 
 ## ThreeFold TFGrid v3.x Release Notes
+- [TFGrid v3.10.0](./tfgrid_release_3_10_0.md)
 - [TFGrid v3.9.0](./tfgrid_release_3_9_0.md)
 - [TFGrid v3.8.0](./tfgrid_release_3_8_0.md)
 - [TFGrid v3.7.0](./tfgrid_release_3_7_0.md)
