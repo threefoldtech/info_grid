@@ -76,3 +76,7 @@ See [tfchain_dao](/dashboard/dao_voting/dao_voting.md#an-introduction-to-the-dao
 Node certifiers are entities who are allowed to set a node's certification level to `Certified`. The DAO can propose to add / remove entities that can certify nodes. This is usefull for allowing approved resellers of Threefold nodes to mark nodes as Certified. A certified node farms 25% more tokens than `Diy` a node.
 
 See [tfchain_dao](/dashboard/dao_voting/dao_voting.md#an-introduction-to-the-dao-concept) on how the DAO can add/remove node certifiers.
+
+## GPU support
+
+On TFChain there will be a small migration to store the information if the node has_gpu/or gpu devices count on the node and the extra price the farmer wants to receive as a fee [ADR Link](https://github.com/threefoldtech/tfchain/blob/development/docs/architecture/0011-dedicated-nodes-extra-fee.md).
