@@ -26,7 +26,7 @@ Last updated: July 4, 2023
 
 > Please check our [Cloud Pricing for utilization sheet](https://docs.google.com/spreadsheets/d/1E6MpGs15h1_flyT5AtyKp1TixH1ILuGo5tzHdmjeYdQ/edit#gid=2014089775) for more details.
 
-### Certified capacity
+### Certified Capacity
 
 Renting capacity on certified nodes is charged 25% extra (x 1.25).
   
