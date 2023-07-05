@@ -20,7 +20,7 @@ Last updated: July 4, 2023
 
 | Network Addressing | Description                                |  USD / hour | USD / month |
 | ------------------ | ------------------------------------------ | ----------- | ----------- | 
-| IPv4 Address       | Public Ip Address as used by a TFGrid user | 0.004	      | 2.88        |
+| IPv4 Address       | Public Ip Address as used by a TFGrid user | 0.004	    | 2.88        |
 | Unique Name        | Usable as name on webgateways              | 0.00025	    | 0.18        |
 | Unique Domain Name | Usable as dns name on webgateways          | 0.0005	    | 0.36        |
 
