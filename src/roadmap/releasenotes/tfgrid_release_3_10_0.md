@@ -105,7 +105,7 @@ Below are some of the key highlights of the TFGrid v3.10.0 component upgrades an
 - We are phasing out the TFGrid Weblets for a newer playground rewritten in vue3, however, we introduced some maintenance bugfixes.
 - [Support umbrel on the grid](https://github.com/threefoldtech/home/issues/1394).
 
-### TF Playground v1.5.0
+### TF Playground v2.0.0
 
 This release introduces a new playground with a more consistent user experience. Some components have been reworked for consistency.
 
