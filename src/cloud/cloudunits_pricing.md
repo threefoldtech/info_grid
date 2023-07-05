@@ -5,68 +5,49 @@
 
 Last updated: July 4, 2023
 
-## Hourly Pricing
+### Pricing Policy
 
-- The current prices for deployment (as per chain)
-- Values on chain are expressed as "units USD per hour", where "1 unit usd" == 10.000.000 (1e7). 
-- pricing is calculated per hour for the TFGrid 3.0
+- The current prices are for resources usage on mainnet (testnet get 50% discount)
+- A month is considered as 30 days (720 hours)
 
-| Cloud Units       | description                                      | USD / hour         | 
-| ----------------- | ------------------------------------------------ | ------------------ | 
-| Compute Unit (CU) | typically 2 vcpu, 4 GB mem, 50 GB storage        | 0.01/hour          | 
-| Storage Unit (SU) | typically 1 TB of netto usable storage (*)       | 0.005/hour         |
-| Network Unit (NU) | 1 GB transfer, bandwidth as used by TFGrid users | 0.0015/GB          | 
-
-<br>
-
-| Network Addressing | description                                |  USD / hour           | 
-| ------------------ | ------------------------------------------ | --------------------- | 
-| IPv4 Address       | Public Ip Address as used by a TFGrid user | 0.004/hour	          | 
-| Unique Name        | Usable as name on webgateways              | 0.00025/hour	      | 
-| Unique Domain Name | Usable as dns name on webgateways          | 0.0005/hour	          | 
-
-
-<!-- - pricing of capacity of certified farmers is 25% more (x 1.25) (future development) -->
-
-### Monthly Pricing
-
-- A month is considered as 30 days (720 hours):
-
-| Cloud Units        | description                                      | USD - 0 discount | 
-| -----------------  | ------------------------------------------------ | ---------------- | 
-| Compute Unit (CU)  | typically 2 vcpu, 4 GB mem, 50 GB storage        | 7.20/month	   | 
-| Storage Unit (SU)  | typically 1 TB of netto usable storage (*)       | 3.60/month	   | 
-| Network Unit (NU)  | 1 GB transfer, bandwidth as used by TFGrid users | 0.0015/TB	       | 
+| Cloud Units       | Description                                      | USD / hour      | USD / month | USD / GB |
+| ----------------- | ------------------------------------------------ | --------------- | ----------- | -------- |
+| Compute Unit (CU) | typically 2 vcpu, 4 GB mem, 50 GB storage        | 0.01            | 7.20        |          |
+| Storage Unit (SU) | typically 1 TB of netto usable storage           | 0.005           | 3.60        |          |
+| Network Unit (NU) | 1 GB transfer, bandwidth as used by TFGrid users |                 |             | 0.0015   |
 
 <br>
 
-| Network Addressing | description                                      | USD - 0 discount | 
-| -----------------  | ------------------------------------------------ | ---------------- | 
-| IPv4 Address       | Public Ip Address as used by a TFGrid user       | 2.88/month       | 
-| Unique Name        | Usable as name on webgateways                    | 0.90/month	   | 
-| Unique Domain Name | Usable as dns name on webgateways                | 1.80/month	   | 
+| Network Addressing | Description                                |  USD / hour | USD / month |
+| ------------------ | ------------------------------------------ | ----------- | ----------- | 
+| IPv4 Address       | Public Ip Address as used by a TFGrid user | 0.004	      | 2.88        |
+| Unique Name        | Usable as name on webgateways              | 0.00025	    | 0.18        |
+| Unique Domain Name | Usable as dns name on webgateways          | 0.0005	    | 0.36        |
 
-> Please check our [Cloud Pricing Calculator](https://docs.google.com/spreadsheets/d/1E6MpGs15h1_flyT5AtyKp1TixH1ILuGo5tzHdmjeYdQ/edit#gid=2014089775) for more detailed calculations and information.
+> Please check our [Cloud Pricing for utilization sheet](https://docs.google.com/spreadsheets/d/1E6MpGs15h1_flyT5AtyKp1TixH1ILuGo5tzHdmjeYdQ/edit#gid=2014089775) for more details.
 
-On top of this, discounts are handed out if sufficient tokens are available on the account which pays for the deployment (defined in code [here](https://github.com/threefoldtech/tfchain/blob/development/substrate-node/pallets/pallet-smart-contract/src/cost.rs#L296-L340).
+### Certified capacity
 
+Renting capacity on certified nodes is charged 25% extra (x 1.25).
+  
 ### Dedicated Nodes
 
-Since April 2022, TFGrid 3.0/a5 has introduced dedicated server support. With dedicated servers, you can reserve a full server exclusively for your use. This comes with a minimum 70% discount, making it a cost-effective option.
+Since April 2022, TFGrid has introduced dedicated server support. With dedicated servers, you can reserve a full server exclusively for your use. This comes with 50% discount, making it a cost-effective option.
 
-Here are two examples of dedicated nodes and their prices (with maximum discount and 3-year staking):
+Here are two examples of dedicated nodes and their prices, with maximum staking discount level (Gold => -60%) for 18 months staking:
 
 - Dedicated Node 1: 192 GB memory, 24 cores, 1000 GB SSD = $75 per month
 - Dedicated Node 2: 32 GB memory, 8 cores, 1000 GB SSD = $31 per month
 
+> Please check our [Cloud Pricing for utilization sheet](https://docs.google.com/spreadsheets/d/1E6MpGs15h1_flyT5AtyKp1TixH1ILuGo5tzHdmjeYdQ/edit#gid=2014089775) for more details.
 
 These dedicated nodes come with a generous 5TB bandwidth usage per node per month. They are well-suited for deploying blockchain nodes or other resource-intensive workloads. Using a dedicated node requires reserving a 3node in your TFGrid admin portal. Once reserved, you have exclusive deployment rights for that node, and there are no additional costs.
 
-> Please check our [Cloud Pricing Calculator](https://docs.google.com/spreadsheets/d/1E6MpGs15h1_flyT5AtyKp1TixH1ILuGo5tzHdmjeYdQ/edit#gid=2014089775) for more detailed calculations and information.
+When renting a dedicated node, you receive a 50% discount for the entire node. However, it's important to note that you will still be required to pay for the entire node, even with the discount applied. This means that while you enjoy the discount, the cost of the dedicated node is not prorated based on the resources you utilize.
 
-### Discount Levels
+### Staking Discount
 
-| type       | pricing level | nr months of TFT linked to account |
+| Type       | Pricing Level | Nr months of TFT linked to account |
 | ---------- | ------------- | ---------------------------------- |
 | No staking | - 0%          | 0                                  |
 | Default    | - 20%         | 1.5 months                         |
@@ -78,9 +59,7 @@ TFChain charges users for proof of utilization on an hourly basis. The discount 
 
 This discount mechanism operates automatically, and users don't need to take any specific actions to avail themselves of this benefit. However, it's worth mentioning that the maximum discount for network-related services is 40%.
 
-When renting a dedicated node, you receive a 50% discount for the entire node. However, it's important to note that you will still be required to pay for the entire node, even with the discount applied. This means that while you enjoy the discount, the cost of the dedicated node is not prorated based on the resources you utilize.
-
-## Example for 40% discount
+#### Example for 40% discount [Silver]
 
 Let's break down the example for a 40% discount on Internet Capacity consumption:
 
