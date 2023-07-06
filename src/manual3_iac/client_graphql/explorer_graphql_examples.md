@@ -1,10 +1,9 @@
-Info on TFChain is indexed over GraphQL and is available for queries. 
+Info on TFChain is indexed over GraphQL and is available for queries.
 
 - [Devnet GraphQL](https://graphql.dev.grid.tf/graphql)
 - [Qanet GraphQL](https://graphql.qa.grid.tf/graphql)
 - [Testnet GraphQL](https://graphql.test.grid.tf/graphql)
 - [Mainnet GraphQL](https://graphql.grid.tf/graphql)
-
 
 ## getting lots of nodes
 
@@ -60,9 +59,10 @@ query MyQuery {
 
 ```
 
-##  finding  gateways
+## finding  gateways
 
 gateway typically needs to be a node with public ipv4 or ipv6 and a domain configured otherwise it won't be able to create `NameContracts`
+
 ```graphql
  query MyQuery {
   nodes {
@@ -94,7 +94,6 @@ query MyQuery {
 
 ## finding nodes on a specific farm
 
-
 ```graphql
 query MyQuery {
   nodes(where: {farmId_eq: 1}) {
@@ -103,12 +102,23 @@ query MyQuery {
 }
 ```
 
-##  finding nodes  with country
+## finding nodes  with country
 
 ```graphql
 query MyQuery {
   nodes(where: {country_eq: "BE"}) {
     twinId
+  }
+}
+```
+
+## filtering nodes with gpu devices
+
+```graphql
+query MyQuery {
+  nodes(where: {hasGpu_eq: true}) {
+    hasGpu
+    id
   }
 }
 ```
@@ -129,7 +139,7 @@ query MyQuery {
 
 the cru/... are in bytes !
 
-##  filtering nodes with capacity
+## filtering nodes with capacity
 
 ```graphql
 query MyQuery {

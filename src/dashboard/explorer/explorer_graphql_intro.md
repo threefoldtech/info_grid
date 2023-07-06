@@ -18,7 +18,9 @@
 
 ## Introduction
 
-Info on TFChain is indexed over GraphQL and is available for queries.
+Information on TFChain is indexed over GraphQL and is available for queries.
+
+You can query the following ThreeFold networks with GraphQL:
 
 - [Devnet GraphQL](https://graphql.dev.grid.tf/graphql)
 - [Qanet GraphQL](https://graphql.qa.grid.tf/graphql)
