@@ -151,7 +151,7 @@ It's bit long for sure but let's try to dissect it a bit
 - `node = grid_scheduler.sched.nodes["node1"]` means this deployment will happen on node returned from the scheduler. Otherwise the user can specify the node as `node = 2` and in this case the choice of the node is completely up to the user at this point. They need to do the capacity planning. Check [Exploring Capacity](../../dashboard/explorer/explorer_home.md) to know which nodes fits your deployment criteria.
 - `network_name` which network to deploy our project on, and here we choose the `name` of network `net1`
 - `ip_range` here we [lookup](https://www.terraform.io/docs/language/functions/lookup.html) the iprange of node `2` and initially load it with `""`
-- `gpus` is an optional parameter a list of gpu ids specifies which gpus needed to be attached to this vm, these gpu ids can be retrieved from the [dashboard](dashboard.grid.tf)
+- `gpus` is an optional parameter a list of gpu ids specifies which gpus needed to be attached to this vm, these gpu ids can be retrieved from the [ThreeFold Dashboard](https://dashboard.grid.tf)
 
 > Advannced note: Direct map access fails during the planning if the key doesn't exist which happens in cases like adding a node to the network and a new deployment on this node. So it's replaced with this to make a default empty value to pass the planning validation and it's validated anyway inside the plugin.
 
