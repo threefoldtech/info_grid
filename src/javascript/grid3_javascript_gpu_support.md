@@ -1,11 +1,12 @@
-# GPU support
+<h1> GPU Support and JavaScript </h1>
 
-There’s a lot depending on the updates here, e.g All of our frontend components
+We present here a quick introduction to GPU support with JavaScript. 
 
-Client PR <https://github.com/threefoldtech/tfgrid-sdk-ts/pull/666>
-Here there’re couple of updates regarding finding nodes with GPU, querying node for GPU information and deploying with support of GPU
+There are a couple of updates regarding finding nodes with GPU, querying node for GPU information and deploying with support of GPU. 
 
-an example script to deploy with GPU support
+This is an ongoing development and this section will be updated as new information comes in.
+
+Here is an example script to deploy with GPU support:
 
 ```ts
 import { DiskModel, FilterOptions, MachineModel, MachinesModel, NetworkModel } from "../src";

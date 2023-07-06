@@ -1,6 +1,19 @@
-# GPU support
+<h1> GPU Support and Terraform </h1>
 
-The support of GPUs is almost there, here’s an example
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Example](#example)
+
+***
+
+## Introduction
+
+The support of GPUs is almost there. We present here a quick example. This section will be expanded as new information comes in.
+
+***
+
+## Example
 
 ```terraform
 terraform {

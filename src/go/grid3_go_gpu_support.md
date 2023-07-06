@@ -1,8 +1,20 @@
-# GPU support
+<h1> GPU Support and Go </h1>
 
-Client PR <https://github.com/threefoldtech/tfgrid-sdk-go/pull/207/> supporting the new calls to listGPUs and to deploy a machine with GPUs.
+<h2> Table of Contents </h2>
 
-Here’s an example of how to deploy using the go client (part of our integration tests)
+- [Introduction](#introduction)
+- [Example](#example)
+- [More Information](#more-information)
+
+***
+
+## Introduction
+
+We present here an example on how to deploy using the Go client. This is part of our integration tests.
+
+***
+
+## Example
 
 ```go
 func TestVMWithGPUDeployment(t *testing.T) {
@@ -96,3 +108,9 @@ func TestVMWithGPUDeployment(t *testing.T) {
  assert.Contains(t, string(output), gpus[0].Vendor)
 }
 ```
+
+***
+
+## More Information
+
+For more information on this, you can check this [Client Pull Request](https://github.com/threefoldtech/tfgrid-sdk-go/pull/207/) on how to support the new calls to list GPUs and to deploy a machine with GPU.
