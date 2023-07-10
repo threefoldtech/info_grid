@@ -3,7 +3,7 @@
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
-- [How to use the Ethereum-Stellar Bridge](#how-to-use-the-ethereum-stellar-bridge)
+- [How to Use the Ethereum-Stellar Bridge](#how-to-use-the-ethereum-stellar-bridge)
 - [Questions and Feedback](#questions-and-feedback)
 
 ***
@@ -14,7 +14,7 @@ The TFT Stellar-Ethereum bridge serves as a vital link between the Stellar and E
 
 ***
 
-## How to use the Ethereum-Stellar Bridge
+## How to Use the Ethereum-Stellar Bridge
 
 The easiest way to transfer TFT between Ethereum and Stellar is to use the [TFT Ethereum Bridge](https://bridge.eth.threefold.io). We present here the main steps on how to use this bridge.
 
