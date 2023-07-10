@@ -1,3 +1,5 @@
+> Note: TFGrid GPU Support is only available on Dev Test for the moment.
+
 <h1> GPU Support and JavaScript </h1>
 
 We present here a quick introduction to GPU support with JavaScript. 

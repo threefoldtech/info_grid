@@ -1,3 +1,5 @@
+> Note: TFGrid GPU Support is only available on Dev Test for the moment.
+
 <h1> GPU Support and Go </h1>
 
 <h2> Table of Contents </h2>
