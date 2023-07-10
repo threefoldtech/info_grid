@@ -73,7 +73,7 @@ The main steps for the whole process are the following:
     * Choose the parameters you want
       * Minimum CPU: 1 vCore
       * Minimum Memory: 512 Mb
-      * Minimum Dis Size: 15 Gb
+      * Minimum Disk Size: 15 Gb
     * Select IPv4 in `Network`
     * In `Node Selection`
       * Select `Capacity Filter`
@@ -128,7 +128,7 @@ The main steps for the whole process are the following:
     * Choose the parameters you want
       * Minimum CPU: 1 vCore
       * Minimum Memory: 512 Mb
-      * Minimum Dis Size: 15 Gb
+      * Minimum Disk Size: 15 Gb
     * Select Planetary Network in `Network`
     * In `Node Selection`
       * Select `Capacity Filter`
@@ -178,7 +178,7 @@ The main steps for the whole process are the following:
     * Choose the parameters you want
       * Minimum CPU: 1 vCore
       * Minimum Memory: 512 Mb
-      * Minimum Dis Size: 15 Gb
+      * Minimum Disk Size: 15 Gb
     * Select IPv4 in `Network`
     * In `Node Selection`
       * Select `Capacity Filter`
@@ -232,7 +232,7 @@ The main steps for the whole process are the following:
     * Choose the parameters you want
       * Minimum CPU: 1 vCore
       * Minimum Memory: 512 Mb
-      * Minimum Dis Size: 15 Gb
+      * Minimum Disk Size: 15 Gb
     * Select Planetary Network in `Network`
     * In `Node Selection`
       * Select `Capacity Filter`
@@ -291,7 +291,7 @@ The main steps for the whole process are the following:
     * Choose the parameters you want
       * Minimum CPU: 1 vCore
       * Minimum Memory: 512 Mb
-      * Minimum Dis Size: 15 Gb
+      * Minimum Disk Size: 15 Gb
     * Select IPv4 in `Network`
     * In `Node Selection`
       * Select `Capacity Filter`
@@ -354,7 +354,7 @@ The main steps for the whole process are the following:
     * Choose the parameters you want
       * Minimum CPU: 1 vCore
       * Minimum Memory: 512 Mb
-      * Minimum Dis Size: 15 Gb
+      * Minimum Disk Size: 15 Gb
     * Select Planetary Network in `Network`
     * In `Node Selection`
       * Select `Capacity Filter`
