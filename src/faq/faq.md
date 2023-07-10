@@ -4329,7 +4329,7 @@ If you see this error, it's because you've used 24h time format in conjunction w
 
 Please follow these steps to update the Farmerbot with the new release:
 
-* Go to the current Farmerbot folder
+* Go to the Farmerbot folder
 * Stop the existing Farmerbot
   * ```
     docker compose rm -f -s -v
@@ -4337,6 +4337,10 @@ Please follow these steps to update the Farmerbot with the new release:
 * Make a copy of the Farmerbot log file
   * ```
     cp config/farmerbot.log config/farmerbot.log.archive
+    ```
+* Remove the docker-compose file of the previous Farmerbot release
+  * ```
+    rm docker-compose.yaml
     ```
 * Download the new docker-compose file
   * ```
