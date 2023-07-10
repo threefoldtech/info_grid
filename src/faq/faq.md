@@ -4327,16 +4327,27 @@ If you see this error, it's because you've used 24h time format in conjunction w
 
 ### How can I update the Farmerbot with the new release?
 
- Please follow these steps to move the existing farmerbot to the new one:
+Please follow these steps to update the Farmerbot with the new release:
 
-1. Change the current directory to the directory containing the docker-compose file
-2. Download the new docker-compose file: `wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml`
-3. If this hasn't already been done, modify the .env file: rename `MNEMONIC` to `SECRET`
-4. Stop the existing farmerbot: `docker compose rm -f -s -v`
-5. Make a copy of the farmerbot log file: `cp config/farmerbot.log config/farmerbot.log.archive`
-6. Run the new farmerbot: `docker compose up -d`
+* Go to the current Farmerbot folder
+* Stop the existing Farmerbot
+  * ```
+    docker compose rm -f -s -v
+    ```
+* Make a copy of the Farmerbot log file
+  * ```
+    cp config/farmerbot.log config/farmerbot.log.archive
+    ```
+* Download the new docker-compose file
+  * ```
+    wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
+    ```
+* Run the new Farmerbot
+  * ```
+    docker compose up -d
+    ```
 
-This last command can take some time as it is downloading new docker images. Let the farmerbot run for some time. If you think something is wrong or if you want to check if there is something wrong you should look into the config/farmerbot.log file. If you see some errors please share that file with us.
+This last command can take some time as it is downloading new docker images. Let the Farmerbot run for some time. If you think something is wrong or if you want to check if there is something wrong you should look into the config/farmerbot.log file. If you see some errors please share that file with us.
 
 ***
 
