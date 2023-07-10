@@ -10,7 +10,9 @@
 
 The ThreeFold Token (TFT) exists on different chains. To transfer TFTs between chains, you can use different TFT Bridges.
 
-The following diagram shows the different bridges and ways to transfer ThreeFold Tokens (TFT) from one chain to another.
+The following diagram shows the different bridges and ways to transfer ThreeFold Tokens (TFT) from one chain to another. 
+
+> Note: You can click on a given bridge to access its related guide.
 
 ```mermaid
 
@@ -53,6 +55,6 @@ The different bridges help you move your TFT and achieve different goals:
 
 As shown in the diagram, to go from BSC to TF Chain, or from TF Chain to BSC, you need to use first the BSC-Stellar bridge, then the Stellar-TFChain bridge. To go from the Ethereum blockchain to TFChain, you need to use the Ethereum-Stellar bridge then the Stellar-TFChain bridge.
 
-BSC, Stellar and Ethereum can be used to sell/buy TFT, while TF Chain can be used to deploy Dapps on the [ThreeFold Playground](https://play.grid.tf).
+BSC, Stellar and Ethereum can be used to sell/buy TFT, while TFChain can be used to deploy Dapps on the [ThreeFold Playground](https://play.grid.tf). The TFT minting process happens on Stellar Blockchain.
 
 > Note: You should always start with a small amount the first time you try a bridge.
