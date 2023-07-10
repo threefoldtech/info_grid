@@ -1,3 +1,5 @@
+> Note: TFGrid GPU Support is only available on Dev Test for the moment.
+
 ## Deploying a VM
 
 Specify the VM name, specs and your public SSH key path:
