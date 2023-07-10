@@ -1,7 +1,7 @@
 name: www2.manual.grid.tf
 on:
   push:
-    branch: [ development ]
+    branches: [ development ]
 
 jobs:
   job_one:
@@ -16,9 +16,8 @@ jobs:
         key: ${{ secrets.TF_SECRET }}
         port: ${{ secrets.TF_PORT }}
         script: |
-          cd ~/websites/www2/info_grid
+          cd websites/www2/info_grid/
           git log -1
           git restore .
           git pull
-          source ~/.cargo/env
           mdbook build -d docs
