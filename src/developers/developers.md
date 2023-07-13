@@ -41,3 +41,4 @@
 - [Grid Proxy](../proxy/proxy.md)
 - [Flist Hub](../flist_hub/flist_hub.md)
   - [Supported FLists](../manual3_iac/grid3_supported_flists.md)
+- [Developers FAQ](../faq/faq.md#developers-faq)

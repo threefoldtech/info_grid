@@ -23,3 +23,4 @@
   - [Farmerbot Quick Guide](./farmerbot/farmerbot_quick.md)
   - [Farmerbot Extensive Guide](./farmerbot/farmerbot.md)
   - [Farmerbot FAQ](../../faq/faq.md#farmerbot)
+- [Farmers FAQ](../faq/faq.md#farmers-faq)
