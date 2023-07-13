@@ -57,7 +57,7 @@ If you run the Farmerbot on a 3Node on the TFGrid, you will have to pay TFT to d
 
 Next to that, you will have to pay the transaction fees every time the Farmerbot has to wake up or shut down a node. This means that you need some TFT on the account tied to the twin of your farm. 
 
-For the periodic wakeup, each node in the farm is shut down and powered on once a day. Also, there is 10 random wakeups per month for each node. This means that each node is turned off and on 40 times per month. In that case, the average cost per month to power on nodes and shut them back down equals:
+For the periodic wakeup, each node in the farm is shut down and powered on once a day, i.e. 30 times per month. Also, there is 10 random wakeups per month for each node. This means that each node is turned off and on 40 times per month. In that case, the average cost per month to power on nodes and shut them back down equals:
 
 > average transaction fees cost per month = 0.001 TFT (extrinsic fee) * amount of nodes * 40 * 2 (1 for powering down, one for powering up)
 

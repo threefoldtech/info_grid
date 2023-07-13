@@ -4211,7 +4211,7 @@ Yes. In the config-path where you run the docker-compose, you have more logging 
 
 Yes. How much depends on where you run the farmerbot and how many nodes it will power on/off. If you run the farmerbot on a node on the grid you will have to pay TFT to rent that node (or deploy on that node). Next to that, you will have to pay the transaction fees every time the farmerbot has to wakeup a node or shutdown a node. This is with the account tied to the twin of your farm. 
 
-For the periodic wakeup, each node in the farm is shut down and powered on once a day. Also, there is 10 random wakeups per month for each node. This means that each node is turned off and on 40 times per month. In that case, the average cost per month to power on nodes and shut them back down equals:
+For the periodic wakeup, each node in the farm is shut down and powered on once a day, i.e. 30 times per month. Also, there is 10 random wakeups per month for each node. This means that each node is turned off and on 40 times per month. In that case, the average cost per month to power on nodes and shut them back down equals:
 
 > average transaction fees cost per month = 0.001 TFT (extrinsic fee) * amount of nodes * 40 * 2 (1 for powering down, one for powering up)
 
