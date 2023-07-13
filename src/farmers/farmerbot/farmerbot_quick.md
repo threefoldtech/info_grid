@@ -65,9 +65,13 @@ On average each node in the farm will be shut down and powered on at least once 
 
 ## Install Docker
 
-An quick way to install Docker can be found in [this Docker documentation](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository).
+For this guide, we need to install Docker Engine. The quickest way is to use the Docker convenience script. This method installs the latest stable release of Docker on Linux:
 
-Simply follow the steps given in the sections `Set up the repository` and `Install Docker Engine`.
+```
+curl -fsSL https://get.docker.com | sh
+```
+
+If you want, you can also set up and install Docker Engine from [Docker’s apt repository](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository). For this method, simply follow the steps given in the sections `Set up the repository` and `Install Docker Engine`.
 
 
 ***
