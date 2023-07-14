@@ -1,38 +1,58 @@
 # RMB
-RMB is (reliable message bus) is a set of tools (client and daemon) that aims to abstract inter-process communication between multiple processes running over multiple nodes.
 
-The point behind using RMB is to allow the clients to not know much about the other process, or where it lives (client doesn't know network addresses, or identity). Unlike HTTP(S) where the caller must know exact address (or dns-name) and endpoints of the calls. Instead RMB requires you to only know about
-- Twin ID (numeric ID) of where the service can be found
+RMB is (reliable message bus) is a set of protocols and tools (client and daemon) that aims to abstract inter-process communication between multiple processes running over multiple nodes.
+
+The point behind using RMB is to allow the clients to not know much about the other process, or where it lives (client doesn't know network addresses, or identity). Unlike HTTP(S) or gRPC where the caller must know exact address (or dns-name) and endpoints of the service it's trying to call. Instead RMB requires you to only know about
+
+- Twin ID (numeric ID) of the endpoint as defined by `tfchain`
 - Command (string) is simply the function to call
 - The request "body" which is binary blob that is passed to the command as is
   - implementation of the command need then to interpret this data as intended (out of scope of rmb)
 
 Twins are stored on tfchain. hence identity of twins is granted not to be spoofed, or phished. When a twin is created he needs to define 2 things:
+
 - RMB Relay
 - His Elliptic Curve public key (we use secp256k1 (K-256) elliptic curve)
 
+> This data is stored on tfchain forever, and only the twin can change it using his secure-key. Hence phishing is impossible. A twin can decide later to change this encryption key or relay.
+
 Once all twins has their data set correctly on the chain. Any 2 twins can communicate with full end-to-end encryption as follows:
-- A twin establish a WS connection to his relay
-- A twin create an `envelope` as defined by the protobuf schema
-- Twin fill end all envelope information (more about this later)
+
+- A twin establish a WS connection to his relay of choice
+- A twin create an `envelope` as defined by the protobuf [schema](https://github.com/threefoldtech/rmb-rs/blob/main/proto/types.proto)
+- Twin fill in all envelope information (more about this later)
 - Twin pushes the envelope to the relay
   - If the destination twin is also using the same relay, message is directly forwarded to this twin
   - If federation is needed (twin using different relay), message is forwarded to the proper twin.
 
-Any new messages that is designated to this twin, is pushed over the websocket to this twin. The twin can NOT maintain multiple connections to the relay hence a small tool (rmb-peer) is provided that runs as a dispatcher for a single twin identity.
+> NOTE: since a sender twin need to also encrypt the message for the receiver twin, a twin queries the `tf-chain` for the twin information. Usually it caches this data locally for reuse, hence clients need to make sure this data is always up-to-date.
 
-This rmb-peer tool makes it possible to run multiple services behind this twin and push replies back to their initiators
+On the relay, the relay checks federation information set on the envelope and then decide to either to forward it internally to one of it's connected clients, or forward it to the destination relay. Hence relays need to be publicly available.
+
+When the relay receive a message that is destined to a `local` connected client, it queue it for delivery. The relay can maintain a queue of messages per twin to a limit. If the twin does not come back online to consume queued messages, the relay will start to drop messages for that specific twin client.
+
+Once a twin come online and connect to its peer, the peer will receive all queued messages. the messages are pushed over the web-socket as they are received. the client then can decide how to handle them (a message can be a request or a response). A message type can be inspected as defined by the schema.
 
 ## Overview of the operation of RMB relay
-![relay](https://github.com/threefoldtech/rmb-rs/blob/main/docs/png/relay.png)
+
+![relay](img/relay.png)
 
 ### Connections
+
+By design, there can be only `ONE TWIN` with that specific ID. Hence only has `ONE RELAY` set on tfchain per twin. This force a twin to always use this defined relay if it wishes to open multiple connections to its relay. In other words, a twin once sets up a relay on its public information can only use that relay for all of its connections. If decided to change the relay address, all connections must use the new relay otherwise messages will get lost as they will be delivered to the wrong relay.
+
+In an RPC system, the response of a request must be delivered to the requester. Hence if a twin is maintaining multiple connections to its relay, it need to identify `uniquely` the connection to allow the relay to route back the responses to the right requester. We call this `id` a `session-id`. The `session-id` must be unique per twin.
+
 The relay can maintain **MULTIPLE** connections per peer given that each connection has a unique **SID** (session id). But for each (twin-id, session-id) combo there can be only one connection. if a new connection with the same (twin-id, session-id) is created, the older connection is dropped.
 
-The `rmb-peer` process reserved the `None` sid. It connection with No session id, hence you can only run one `rmb-peer` per `twin` (identity). But the same twin (identity) can make other connection with other rmb clients (for example rmb-sdk-go direct client) to establish more connections with unique session ids.
+The message received always has the session-id as part of the source address. a reply message then must have destination set back to the source as is, this allows the relay to route the message back correctly without the need to maintain an internal state.
+
+The `rmb-peer` process reserved the `None` sid. It connects with No session id, hence you can only run one `rmb-peer` per `twin` (identity). But the same twin (identity) can make other connection with other rmb clients (for example rmb-sdk-go direct client) to establish more connections with unique session ids.
 
 ### Peer
+
 Any language or code that can open `WebSocket` connection to the relay can work as a peer. A peer need to do the following:
+
 - Authenticate with the relay. This is by providing a `JWT` that is signed by the twin key (more on that later)
 - Handle received binary mesasge
 - Send binary messages
@@ -40,6 +60,7 @@ Any language or code that can open `WebSocket` connection to the relay can work 
 Each message is an object of type `Envelope` serialized as with protobuf. Type definition can be found under `proto/types.proto`
 
 ### Peer implementation
+
 This project already have a peer implementation that works as local peer gateway. By running this peer instance it allows you to
 run multiple services (and clients) behind that gateway and they appear to the world as a single twin.
 
@@ -49,17 +70,21 @@ run multiple services (and clients) behind that gateway and they appear to the w
   - The service can process the command, and push a response back to a specific redis queue for responses.
 - The gateway can then pull ready responses from the responses queue, create a valid envelope, encrypt, and sign and send to destination
 
-![peer](https://github.com/threefoldtech/rmb-rs/blob/main/docs/png/peer.png)
+![peer](img/peer.png)
 
 #### `rmb-peer` message types
+
 To make it easy for apps to work behind an `rmb-peer`, we use JSON message for communication between the local process and the rmb-peer. the rmb-peer still
 maintains a fully binary communication with the relay.
 
 A request message is defined as follows
+
 ##### Output requests
+
 This is created by a client who wants to request make a request to a remote service
 
 > this message is pushed to `msgbus.system.local` to be picked up by the peer
+
 ```rust
 #[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct JsonOutgoingRequest {
@@ -87,9 +112,11 @@ pub struct JsonOutgoingRequest {
 ```
 
 ##### Incoming Response
+
 A response message is defined as follows this is what is received as a response by a client in response to his outgoing request.
 
 > this response is what is pushed to `$ret` queue defined by the outgoing request, hence the client need to wait on this queue until the response is received or it times out
+
 ```rust
 #[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct JsonError {
@@ -117,8 +144,10 @@ pub struct JsonIncomingResponse {
 ```
 
 ##### Incoming Request
+
 An incoming request is a modified version of the request that is received by a service running behind RMB peer
 > this request is received on `msgbus.${request.cmd}` (always prefixed with `msgbus`)
+
 ```rust
 #[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct JsonIncomingRequest {
@@ -147,14 +176,15 @@ pub struct JsonIncomingRequest {
 
 Services that receive this needs to make sure their responses `destination` to have the same value as the incoming request `source`
 
-
 ##### Outgoing Response
+
 A response message is defined as follows this is what is sent as a response by a service in response to an incoming request.
 
 Your bot (server) need to make sure to set `destination` to the same value as the incoming request `source`
 
 The
 > this response is what is pushed to `msgbus.system.reply`
+
 ```rust
 #[derive(Serialize, Deserialize, Clone, Debug)]
 pub struct JsonOutgoingResponse {
@@ -175,7 +205,8 @@ pub struct JsonOutgoingResponse {
 }
 ```
 
-# End2End Encryption
+## End2End Encryption
+
 Relay is totally opaque to the messages. Our implementation of the relay does not poke into messages except for the routing attributes (source, and destinations addresses, and federation information). But since the relay is designed to be hosted by other 3rd parties (hence federation) you should
 not fully trust the relay or whoever is hosting it. Hence e2e was needed
 
@@ -185,17 +216,17 @@ As you already understand e2e is completely up to the peers to implement, and ev
 - On start, if the key is not already set on the twin object, the key is updated.
 - If a peer A is trying to send a message to peer B. but peer B does not has his `pk` set, peer A will send the message in plain-text format (please check the protobuf envelope type for details)
 - If peer B has public key set, peer A will prefer e2e encryption and will does the following:
- - Drive a shared secret point with `ecdh` algorithm, the key is the `sha256` of that point
-  - `shared = ecdh(A.sk, B.pk)`
- - create a 12 bytes random nonce
- - encrypt data as `encrypted = aes-gcm.encrypt(shared-key, nonce, plain-data)`
- - create cipher as `cipher nonce + encrypted`
- - fill `envelope.cipher = cipher`
+- Drive a shared secret point with `ecdh` algorithm, the key is the `sha256` of that point
+- `shared = ecdh(A.sk, B.pk)`
+- create a 12 bytes random nonce
+- encrypt data as `encrypted = aes-gcm.encrypt(shared-key, nonce, plain-data)`
+- create cipher as `cipher nonce + encrypted`
+- fill `envelope.cipher = cipher`
 - on receiving a message peer B does the same in the opposite direction
- - split data and nonce (nonce is always first 12 bytes)
- - derive the same shared key
-  - `shared = ecdh(B.sk, A.pk)`
- - `plain-data = aes-gcm.decrypt(shared-key, nonce, encrypted)`
+- split data and nonce (nonce is always first 12 bytes)
+- derive the same shared key
+- `shared = ecdh(B.sk, A.pk)`
+- `plain-data = aes-gcm.decrypt(shared-key, nonce, encrypted)`
 
 ## Rate Limiting
 
