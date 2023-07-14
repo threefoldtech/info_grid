@@ -131,7 +131,6 @@
     - [Supported FLists](manual3_iac/grid3_supported_flists.md)
   - [Internals](internals/internals.md)
     - [Reliable Message Bus (RMB)](internals/rmb/rmb_toc.md)
-      - [Introduction to RMB](internals/rmb/rmb_intro.md)
       - [RMB Specs](internals/rmb/rmb_specs.md)
       - [RMB Peer](internals/rmb/uml/peer.md)
       - [RMB Relay](internals/rmb/uml/relay.md)
