@@ -1,3 +1,8 @@
+<h1> RMB Peer </h1>
+
+We present an example of RMB peer. Note that the extension for this kind of file is `.wsd`.
+
+```
 @startuml RMB
 
 participant "Local Process" as ps
@@ -25,3 +30,4 @@ ps -> redis: PUSH to (msgbus.system.reply)
 redis -> peer: POP from (msgbus.system.reply)
 peer -> relay: send response message
 @enduml
+```

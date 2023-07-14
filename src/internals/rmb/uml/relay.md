@@ -1,3 +1,8 @@
+<h1> RMB Relay </h1>
+
+We present an example of RMB relay. Note that the extension for this kind of file is `.wsd`.
+
+```
 @startuml RMB
 actor "Peer 1" as peer1
 participant "Relay 1" as relay1
@@ -20,3 +25,4 @@ end note
 relay1 -> relay2: Federation of message for\n Peer 3
 relay2 -> peer3: Forward message directly
 @enduml
+```

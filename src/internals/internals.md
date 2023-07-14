@@ -1,5 +1,11 @@
-# Internals
+<h1> Internals </h1>
 
-A non inclusive list of system components:
+We present in this section of the developers book a partial list of system components. Content will be added progressively.
 
-- Reliable Message Bus [RMB](rmb/readme.md)
+<h2> Table of Contents </h2>
+
+- [Reliable Message Bus (RMB)](rmb/rmb_toc.md)
+  - [Introduction to RMB](rmb/rmb_intro.md)
+  - [RMB Specs](rmb/rmb_specs.md)
+  - [RMB Peer](rmb/uml/peer.md)
+  - [RMB Relay](rmb/uml/relay.md)

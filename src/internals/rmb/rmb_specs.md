@@ -1,4 +1,23 @@
-# RMB
+<h1> RMB Specs </h1>
+
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Overview of the Operation of RMB Relay](#overview-of-the-operation-of-rmb-relay)
+  - [Connections](#connections)
+  - [Peer](#peer)
+  - [Peer implementation](#peer-implementation)
+    - [Message Types](#message-types)
+      - [Output Requests](#output-requests)
+      - [Incoming Response](#incoming-response)
+      - [Incoming Request](#incoming-request)
+      - [Outgoing Response](#outgoing-response)
+- [End2End Encryption](#end2end-encryption)
+- [Rate Limiting](#rate-limiting)
+
+***
+
+# Introduction
 
 RMB is (reliable message bus) is a set of protocols and tools (client and daemon) that aims to abstract inter-process communication between multiple processes running over multiple nodes.
 
@@ -32,12 +51,12 @@ On the relay, the relay checks federation information set on the envelope and th
 When the relay receive a message that is destined to a `local` connected client, it queue it for delivery. The relay can maintain a queue of messages per twin to a limit. If the twin does not come back online to consume queued messages, the relay will start to drop messages for that specific twin client.
 
 Once a twin come online and connect to its peer, the peer will receive all queued messages. the messages are pushed over the web-socket as they are received. the client then can decide how to handle them (a message can be a request or a response). A message type can be inspected as defined by the schema.
-
-## Overview of the operation of RMB relay
+***
+# Overview of the Operation of RMB Relay
 
 ![relay](img/relay.png)
 
-### Connections
+## Connections
 
 By design, there can be only `ONE TWIN` with that specific ID. Hence only has `ONE RELAY` set on tfchain per twin. This force a twin to always use this defined relay if it wishes to open multiple connections to its relay. In other words, a twin once sets up a relay on its public information can only use that relay for all of its connections. If decided to change the relay address, all connections must use the new relay otherwise messages will get lost as they will be delivered to the wrong relay.
 
@@ -49,7 +68,7 @@ The message received always has the session-id as part of the source address. a 
 
 The `rmb-peer` process reserved the `None` sid. It connects with No session id, hence you can only run one `rmb-peer` per `twin` (identity). But the same twin (identity) can make other connection with other rmb clients (for example rmb-sdk-go direct client) to establish more connections with unique session ids.
 
-### Peer
+## Peer
 
 Any language or code that can open `WebSocket` connection to the relay can work as a peer. A peer need to do the following:
 
@@ -59,7 +78,7 @@ Any language or code that can open `WebSocket` connection to the relay can work 
 
 Each message is an object of type `Envelope` serialized as with protobuf. Type definition can be found under `proto/types.proto`
 
-### Peer implementation
+## Peer implementation
 
 This project already have a peer implementation that works as local peer gateway. By running this peer instance it allows you to
 run multiple services (and clients) behind that gateway and they appear to the world as a single twin.
@@ -72,14 +91,14 @@ run multiple services (and clients) behind that gateway and they appear to the w
 
 ![peer](img/peer.png)
 
-#### `rmb-peer` message types
+### Message Types
 
-To make it easy for apps to work behind an `rmb-peer`, we use JSON message for communication between the local process and the rmb-peer. the rmb-peer still
+Concerning, `rmb-peer` message types, to make it easy for apps to work behind an `rmb-peer`, we use JSON message for communication between the local process and the rmb-peer. the rmb-peer still
 maintains a fully binary communication with the relay.
 
 A request message is defined as follows
 
-##### Output requests
+#### Output Requests
 
 This is created by a client who wants to request make a request to a remote service
 
@@ -111,11 +130,11 @@ pub struct JsonOutgoingRequest {
 }
 ```
 
-##### Incoming Response
+#### Incoming Response
 
 A response message is defined as follows this is what is received as a response by a client in response to his outgoing request.
 
-> this response is what is pushed to `$ret` queue defined by the outgoing request, hence the client need to wait on this queue until the response is received or it times out
+> This response is what is pushed to `$ret` queue defined by the outgoing request, hence the client need to wait on this queue until the response is received or it times out
 
 ```rust
 #[derive(Serialize, Deserialize, Clone, Debug)]
@@ -143,7 +162,7 @@ pub struct JsonIncomingResponse {
 }
 ```
 
-##### Incoming Request
+#### Incoming Request
 
 An incoming request is a modified version of the request that is received by a service running behind RMB peer
 > this request is received on `msgbus.${request.cmd}` (always prefixed with `msgbus`)
@@ -176,7 +195,7 @@ pub struct JsonIncomingRequest {
 
 Services that receive this needs to make sure their responses `destination` to have the same value as the incoming request `source`
 
-##### Outgoing Response
+#### Outgoing Response
 
 A response message is defined as follows this is what is sent as a response by a service in response to an incoming request.
 
@@ -204,8 +223,8 @@ pub struct JsonOutgoingResponse {
     pub error: Option<JsonError>,
 }
 ```
-
-## End2End Encryption
+***
+# End2End Encryption
 
 Relay is totally opaque to the messages. Our implementation of the relay does not poke into messages except for the routing attributes (source, and destinations addresses, and federation information). But since the relay is designed to be hosted by other 3rd parties (hence federation) you should
 not fully trust the relay or whoever is hosting it. Hence e2e was needed
@@ -227,8 +246,8 @@ As you already understand e2e is completely up to the peers to implement, and ev
 - derive the same shared key
 - `shared = ecdh(B.sk, A.pk)`
 - `plain-data = aes-gcm.decrypt(shared-key, nonce, encrypted)`
-
-## Rate Limiting
+***
+# Rate Limiting
 
 To avoid abuse of the server, and prevent DoS attacks on the relay, a rate limiter is used to limit the number of clients' requests.\
 It was decided that the rate limiter should only watch websocket connections of users, since all other requests/connections with users consume little resources, and since the relay handles the max number of users inherently.\
