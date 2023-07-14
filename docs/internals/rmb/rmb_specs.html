@@ -1,0 +1,448 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>RMB Specs - ThreeFold Manual</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../../intro/intro_readme.html">Introduction</a></li><li class="chapter-item "><a href="../../general/general.html">General Information</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../intro/grid3_howitworks.html">How it Works</a></li><li class="chapter-item "><a href="../../dashboard/dashboard.html">Dashboard</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../dashboard/explorer/explorer_home.html">Dasboard Explorer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../dashboard/explorer/explorer_find_capacity.html">Find Capacity</a></li><li class="chapter-item "><a href="../../dashboard/explorer/explorer_graphql_intro.html">A Glimpse Into GraphQL</a></li><li class="chapter-item "><a href="../../dashboard/explorer/explorer_gpu_support.html">GPU Support</a></li></ol></li><li class="chapter-item "><a href="../../dashboard/portal/dashboard_portal_home.html">TFChain Portal</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../dashboard/portal/dashboard_portal_ui_tokens.html">Manage TFTs on TFChain</a></li><li class="chapter-item "><a href="../../dashboard/portal/dashboard_portal_ui_farming.html">Activate Farmer Account and Nodes on TFChain</a></li><li class="chapter-item "><a href="../../dashboard/portal/dashboard_portal_dedicated_nodes.html">Dedicated Nodes</a></li></ol></li><li class="chapter-item "><a href="../../dashboard/dao_voting/dao_voting.html">DAO Voting</a></li></ol></li><li class="chapter-item "><a href="../../threefold_token/threefold_token.html">ThreeFold Token</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../threefold_token/tft_intro.html">Introduction to TFT</a></li><li class="chapter-item "><a href="../../threefold_token/tft_bridges/tft_bridges.html">TFT Bridges</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../threefold_token/tft_bridges/tfchain_stellar_bridge.html">TFChain-Stellar Bridge</a></li><li class="chapter-item "><a href="../../threefold_token/tft_bridges/bsc_stellar_bridge.html">BSC-Stellar Bridge</a></li><li class="chapter-item "><a href="../../threefold_token/tft_bridges/tft_ethereum/tft_ethereum.html">Ethereum-Stellar Bridge</a></li></ol></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/storing_tft.html">Storing TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../threefold_token/storing_tft/tf_connect_app.html">ThreeFold Connect App</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/hardware_wallet.html">Hardware Wallet</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/metamask.html">Metamask (TFT-BSC)</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/trustwallet.html">Trust Wallet (TFT-BSC)</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/albedo_store.html">Albedo Wallet (TFT-Stellar)</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/solar_wallet.html">Solar Wallet (TFT-Stellar)</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/lobstr_wallet.html">Lobstr Wallet (TFT-Stellar)</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/Interstellar_store.html">Interstellar (TFT-Stellar)</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/btc_alpha_deposit.html">BTC-Alpha (TFT-Stellar)</a></li></ol></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/buy_sell_tft.html">Buy and Sell TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr.html">Lobstr Wallet</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr_short_guide.html">Lobstr Wallet: Short Guide</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr_complete_guide.html">Lobstr Wallet: Complete Guide</a></li></ol></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/tft_metamask/tft_metamask.html">MetaMask</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/pancakeswap.html">Pancake Swap</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/oneinch.html">1inch.io</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/gettft.html">GetTFT.com</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/albedo_buy.html">Albedo Wallet</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/solar_buy.html">Solar Wallet</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/coinbase_xlm.html">Coinbase (XLM)</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/stellarterm.html">StellarTerm</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/interstellar.html">Interstellar</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/btc_alpha.html">BTC-Alpha</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/tf_otc.html">ThreeFold Live Desk</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/mazraa.html">Mazraa Farmers</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/bettertoken.html">BetterToken Farmers</a></li></ol></li><li class="chapter-item "><a href="../../threefold_token/liquidity/liquidity_readme.html">Liquidity Provider (LP)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../threefold_token/liquidity/liquidity_pancake.html">Pancake Swap LP</a></li><li class="chapter-item "><a href="../../threefold_token/liquidity/liquidity_1inch.html">1inch.io LP</a></li><li class="chapter-item "><a href="../../threefold_token/liquidity/liquidity_albedo.html">Albedo LP</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../collaboration_tools/collaboration_tools.html">Collaboration Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../collaboration_tools/circle_tool.html">Circle Tool</a></li><li class="chapter-item "><a href="../../collaboration_tools/website_tool.html">Website Deployer</a></li></ol></li><li class="chapter-item "><a href="../../contribute/contribute.html">How to Contribute</a></li><li class="chapter-item "><a href="../../testing/testing_readme.html">How to Test</a></li><li class="chapter-item "><a href="../../tf_video_gallery/tf_video_gallery.html">ThreeFold Video Gallery</a></li><li class="chapter-item "><a href="../../roadmap/roadmap_readme.html">ThreeFold Roadmap</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../roadmap/releasenotes/releasenotes_readme.html">Release Notes</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_10_0.html">TFGrid v3.10.0</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_9_0.html">TFGrid v3.9.0</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_8_0.html">TFGrid v3.8.0</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_7_0.html">TFGrid v3.7.0</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_6_1.html">TFGrid v3.6.1</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_6_0.html">TFGrid v3.6.0</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_0_a5.html">TFGrid v3.0.0 Alpha-5</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_0_a4.html">TFGrid v3.0.0 Alpha-4</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_0_a2.html">TFGrid v3.0.0 Alpha-2</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_0.html">TFGrid v3.0.0</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../faq/faq.html">FAQ</a></li><li class="chapter-item "><a href="../../legal/legal.html">Legal</a></li></ol></li><li class="chapter-item "><a href="../../farmers/farmers.html">Farmers</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/3node_building/3node_building.html">Build a 3Node</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/3node_building/1_create_farm.html">1. Create a Farm</a></li><li class="chapter-item "><a href="../../farmers/3node_building/2_bootstrap_image.html">2. Create a Zero-OS Bootstrap Image</a></li><li class="chapter-item "><a href="../../farmers/3node_building/3_set_hardware.html">3. Set the Hardware</a></li><li class="chapter-item "><a href="../../farmers/3node_building/4_wipe_all_disks.html">4. Wipe All the Disks</a></li><li class="chapter-item "><a href="../../farmers/3node_building/5_set_bios_uefi.html">5. Set the BIOS/UEFI</a></li><li class="chapter-item "><a href="../../farmers/3node_building/6_boot_3node.html">6. Boot the 3Node</a></li><li class="chapter-item "><a href="../../farmers/3node_building/data_center.html">Set Up a ThreeFold Farm in a Data Center</a></li></ol></li><li class="chapter-item "><a href="../../farmers/complete_diy_guides/complete_diy_guides_readme.html">Complete DIY 3Node Guides</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/complete_diy_guides/3node_diy_desktop/3node_diy_desktop.html">3Node Desktop DIY Guide</a></li><li class="chapter-item "><a href="../../farmers/complete_diy_guides/3node_diy_rack_server/3node_diy_rack_server.html">3Node Rack Server DIY Guide</a></li></ol></li><li class="chapter-item "><a href="../../farmers/farming_optimization/farming_optimization.html">Farming Optimization</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/farming_optimization/calculate_roi.html">Calculate Your ROI</a></li><li class="chapter-item "><a href="../../farmers/farming_optimization/farm_room_parameters.html">Room Parameters</a></li><li class="chapter-item "><a href="../../farmers/farming_optimization/farming_costs.html">Farming Costs</a></li></ol></li><li class="chapter-item "><a href="../../farmers/farmerbot/farmerbot_intro.html">Farmerbot</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/farmerbot/farmerbot_quick.html">Farmerbot Quick Guide</a></li><li class="chapter-item "><a href="../../farmers/farmerbot/farmerbot.html">Farmerbot Extensive Guide</a></li></ol></li></ol></li><li class="chapter-item expanded "><a href="../../developers/developers.html">Developers</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../javascript/grid3_javascript_readme.html">Javascript Client</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../javascript/grid3_javascript_installation.html">Installation</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_loadclient.html">Loading Client</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_vm.html">Deploy a VM</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_capacity_planning.html">Capacity Planning</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_vms.html">Deploy Multiple VMs</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_caprover.html">Deploy CapRover</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_vm_gateways.html">Gateways</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_kubernetes.html">Deploy a Kubernetes Cluster</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_zdb.html">Deploy a ZDB</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_qsfs_zdbs.html">Deploy ZDBs for QSFS</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_qsfs.html">QSFS</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_kvstore.html">Key Value Store</a></li><li class="chapter-item "><a href="../../javascript/grid3_wireguard_gateway.html">VM with Wireguard and Gateway</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_gpu_support.html">GPU Support</a></li></ol></li><li class="chapter-item "><a href="../../go/grid3_go_readme.html">Go Client</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../go/grid3_go_installation.html">Installation</a></li><li class="chapter-item "><a href="../../go/grid3_go_load_client.html">Loading Client</a></li><li class="chapter-item "><a href="../../go/grid3_go_vm.html">Deploy a VM</a></li><li class="chapter-item "><a href="../../go/grid3_go_vm_with_gpu.html">Deploy a VM with GPU</a></li><li class="chapter-item "><a href="../../go/grid3_go_vms.html">Deploy Multiple VMs</a></li><li class="chapter-item "><a href="../../go/grid3_go_gateways.html">Deploy Gateways</a></li><li class="chapter-item "><a href="../../go/grid3_go_kubernetes.html">Deploy Kubernetes</a></li><li class="chapter-item "><a href="../../go/grid3_go_qsfs.html">Deploy a QSFS</a></li><li class="chapter-item "><a href="../../go/grid3_go_gpu_support.html">GPU Support</a></li></ol></li><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_readme.html">TFGrid CLI</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_installation.html">Installation</a></li><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_login.html">Login</a></li><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_vm.html">Deploy a VM</a></li><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_gateways.html">Deploy Gateways</a></li><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_kubernetes.html">Deploy Kubernetes</a></li></ol></li><li class="chapter-item "><a href="../../tfchain/tfchain.html">ThreeFold Chain</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../tfchain/introduction.html">Introduction</a></li><li class="chapter-item "><a href="../../tfchain/farming_policies.html">Farming Policies</a></li><li class="chapter-item "><a href="../../tfchain/tfchain_external_service_contract.html">External Service Contract</a></li><li class="chapter-item "><a href="../../tfchain/tfchain_solution_provider.html">Become a Solution Provider</a></li></ol></li><li class="chapter-item "><a href="../../proxy/proxy.html">Grid Proxy</a></li><li class="chapter-item "><a href="../../flist_hub/flist_hub.html">Flist Hub</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../manual3_iac/grid3_supported_flists.html">Supported FLists</a></li></ol></li><li class="chapter-item expanded "><a href="../../internals/internals.html">Internals</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../internals/rmb/rmb_toc.html">Reliable Message Bus (RMB)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../internals/rmb/rmb_intro.html">Introduction to RMB</a></li><li class="chapter-item expanded "><a href="../../internals/rmb/rmb_specs.html" class="active">RMB Specs</a></li><li class="chapter-item "><a href="../../internals/rmb/uml/peer.html">RMB Peer</a></li><li class="chapter-item "><a href="../../internals/rmb/uml/relay.html">RMB Relay</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><a href="../../system_administrators/system_administrators.html">System Administrators</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../getstarted/tfgrid3_getstarted.html">Getting Started</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../getstarted/TF_Connect/TF_Connect.html">ThreeFold Connect</a></li><li class="chapter-item "><a href="../../getstarted/TF_Token/tft_toc.html">ThreeFold Token</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../getstarted/TF_Token/tft_lobstr/tft_lobstr.html">TFT on Lobstr</a></li><li class="chapter-item "><a href="../../getstarted/TF_Token/tft_ethereum/tft_ethereum.html">TFT on Ethereum</a></li></ol></li><li class="chapter-item "><a href="../../getstarted/TF_Dashboard/TF_Dashboard.html">ThreeFold Dashboard</a></li><li class="chapter-item "><a href="../../dashboard/explorer/explorer_find_capacity.html">Tutorial: Find Node</a></li><li class="chapter-item "><a href="../../weblets/weblets_vm.html">Tutorial: Deploy Your First VM</a></li><li class="chapter-item "><a href="../../getstarted/ssh_guide/ssh_guide.html">SSH Remote Connection</a></li><li class="chapter-item "><a href="../../getstarted/remote-desktop_gui/remote-desktop_gui.html">Remote Desktop and GUI</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../getstarted/remote-desktop_gui/cockpit_guide/cockpit_guide.html">Cockpit: a Web-based Interface for Servers</a></li><li class="chapter-item "><a href="../../getstarted/remote-desktop_gui/xrdp_guide/xrdp_guide.html">XRDP: an Open-Source Remote Desktop Protocol</a></li><li class="chapter-item "><a href="../../getstarted/remote-desktop_gui/guacamole_guide/guacamole_guide.html">Apache Guacamole: a Clientless Remote Desktop Gateway</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../concepts/concepts_readme.html">Grid Concepts</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../concepts/grid_primitives.html">TFGrid Primitives</a></li><li class="chapter-item "><a href="../../concepts/grid3_components.html">TFGrid Component List</a></li><li class="chapter-item "><a href="../../concepts/grid3_iac.html">Infrastructure as Code</a></li><li class="chapter-item "><a href="../../concepts/proof_of_utilization.html">Proof of Utilization</a></li><li class="chapter-item "><a href="../../concepts/contract_grace_period.html">Contract Grace Period</a></li><li class="chapter-item "><a href="../../concepts/buying_storing_tft.html">Buying and Storing TFTs</a></li><li class="chapter-item "><a href="../../concepts/grid3_whatsnew.html">What's New on TFGrid v3.x</a></li><li class="chapter-item "><a href="../../concepts/tfchain.html">TFChain</a></li></ol></li><li class="chapter-item "><a href="../../cloud/cloud.html">Cloud</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cloud/cloudunits_pricing.html">Pricing</a></li></ol></li><li class="chapter-item "><a href="../../getstarted/planetarynetwork.html">Planetary Network</a></li><li class="chapter-item "><a href="../../TF_Grid_Services/tf_grid_services_readme.html">TFGrid Services</a></li><li class="chapter-item "><a href="../../weblets/weblets_home.html">Weblets</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../weblets/weblets_profile_manager.html">Profile Manager</a></li><li class="chapter-item "><a href="../../weblets/weblets_deployments_list.html">Deployments List</a></li><li class="chapter-item "><a href="../../weblets/weblets_cancel_contracts.html">Cancel Contracts</a></li><li class="chapter-item "><a href="../../weblets/weblets_basic_environments_readme.html">Basic Environments</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../weblets/weblets_fullVm.html">Full Virtual Machine</a></li><li class="chapter-item "><a href="../../weblets/weblets_vm.html">Virtual Machine</a></li><li class="chapter-item "><a href="../../weblets/weblets_k8s.html">Kubernetes</a></li><li class="chapter-item "><a href="../../weblets/weblets_nixos_micro.html">Nixos MicroVM</a></li></ol></li><li class="chapter-item "><a href="../../weblets/weblets_ready_community_readme.html">Ready Community Solutions</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../weblets/weblets_algorand.html">Algorand</a></li><li class="chapter-item "><a href="../../weblets/weblets_caprover.html">Caprover</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../weblets/weblets_caprover_admin.html">Caprover Admin</a></li><li class="chapter-item "><a href="../../weblets/weblets_caprover_worker.html">Caprover Worker</a></li></ol></li><li class="chapter-item "><a href="../../weblets/weblets_casper.html">CasperLabs</a></li><li class="chapter-item "><a href="../../weblets/weblets_discourse.html">Discourse</a></li><li class="chapter-item "><a href="../../weblets/weblets_funkwhale.html">Funkwhale</a></li><li class="chapter-item "><a href="../../weblets/weblets_mastodon.html">Mastodon Weblet</a></li><li class="chapter-item "><a href="../../weblets/weblets_mattermost.html">Mattermost</a></li><li class="chapter-item "><a href="../../weblets/weblets_nodepilot.html">Node Pilot</a></li><li class="chapter-item "><a href="../../weblets/weblets_owncloud.html">Owncloud</a></li><li class="chapter-item "><a href="../../weblets/weblets_peertube.html">Peertube</a></li><li class="chapter-item "><a href="../../weblets/weblets_presearch.html">Presearch</a></li><li class="chapter-item "><a href="../../weblets/weblets_subsquid.html">Subsquid</a></li><li class="chapter-item "><a href="../../weblets/weblets_taiga.html">Taiga</a></li><li class="chapter-item "><a href="../../weblets/weblets_umbrel.html">Umbrel</a></li><li class="chapter-item "><a href="../../weblets/weblets_wordpress.html">WordPress</a></li><li class="chapter-item "><a href="../../tf_mastodon/tf_mastodon_readme.html">ThreeFold Mastodon Server</a></li><li class="chapter-item "><a href="../../tf_mastodon/tf_mastodon_deploy.html">Mastodon Deployer Manual</a></li><li class="chapter-item "><a href="../../tf_mastodon/tf_mastodon_faq.html">Frequently Asked Questions</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../terraform/terraform_readme.html">Terraform</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../terraform/terraform_install.html">Installing Terraform</a></li><li class="chapter-item "><a href="../../terraform/terraform_basics.html">Terraform Basics</a></li><li class="chapter-item "><a href="../../terraform/terraform_get_started.html">Tutorial</a></li><li class="chapter-item "><a href="../../terraform/terraform_delete.html">Delete</a></li><li class="chapter-item "><a href="../../terraform/terraform_full_vm.html">Full VM Deployment</a></li><li class="chapter-item "><a href="../../terraform/terraform_gpu_support.html">GPU Support</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_resources_readme.html">Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../terraform/resources/terraform_scheduler.html">Using Scheduler</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_vm.html">Virtual Machine</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_vm_gateway.html">Web Gateway</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_k8s.html">Kubernetes Cluster</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../terraform/resources/terraform_k8s_demo.html">Demo</a></li></ol></li><li class="chapter-item "><a href="../../terraform/resources/terraform_zdb.html">ZDB</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_qsfs.html">Quantum Safe Filesystem</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../terraform/resources/terraform_qsfs_on_microvm.html">QSFS on Micro VM</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_qsfs_on_full_vm.html">QSFS on Full VM</a></li></ol></li><li class="chapter-item "><a href="../../terraform/resources/terraform_caprover.html">CapRover</a></li></ol></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_advanced_readme.html">Advanced</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../terraform/advanced/terraform_provider.html">Terraform Provider</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_provisioners.html">Terraform Provisioners</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_mounts.html">Mounts</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_capacity_planning.html">Capacity Planning</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_updates.html">Updates</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_wireguard_ssh.html">SSH Connection with Wireguard</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_wireguard_vpn.html">Set a Wireguard VPN</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_mariadb_synced_databases.html">Synced MariaDB Databases</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_nextcloud_redundant.html">Nextcloud Redundant Deployment</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../advanced/advanced.html">Advanced</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../advanced/grid3_stellar_tfchain_bridge.html">Grid3 Stellar-TFChain Bridge</a></li><li class="chapter-item "><a href="../../advanced/token_transfer_keygenerator.html">Token Transfer Keygenerator</a></li><li class="chapter-item "><a href="../../advanced/cancel_contracts.html">Cancel contracts</a></li><li class="chapter-item "><a href="../../advanced/contract_bill_report.html">Contract Bills Reports</a></li><li class="chapter-item "><a href="../../advanced/list_public_ips.html">Listing Free Public IPs</a></li><li class="chapter-item "><a href="../../advanced/grid3_redis.html">Redis</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">ThreeFold Manual</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="rmb-specs"><a class="header" href="#rmb-specs"> RMB Specs </a></h1>
+<h2 id="table-of-contents"><a class="header" href="#table-of-contents"> Table of Contents </a></h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#overview-of-the-operation-of-rmb-relay">Overview of the Operation of RMB Relay</a>
+<ul>
+<li><a href="#connections">Connections</a></li>
+<li><a href="#peer">Peer</a></li>
+<li><a href="#peer-implementation">Peer implementation</a>
+<ul>
+<li><a href="#message-types">Message Types</a>
+<ul>
+<li><a href="#output-requests">Output Requests</a></li>
+<li><a href="#incoming-response">Incoming Response</a></li>
+<li><a href="#incoming-request">Incoming Request</a></li>
+<li><a href="#outgoing-response">Outgoing Response</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#end2end-encryption">End2End Encryption</a></li>
+<li><a href="#rate-limiting">Rate Limiting</a></li>
+</ul>
+<hr />
+<h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
+<p>RMB is (reliable message bus) is a set of protocols and tools (client and daemon) that aims to abstract inter-process communication between multiple processes running over multiple nodes.</p>
+<p>The point behind using RMB is to allow the clients to not know much about the other process, or where it lives (client doesn't know network addresses, or identity). Unlike HTTP(S) or gRPC where the caller must know exact address (or dns-name) and endpoints of the service it's trying to call. Instead RMB requires you to only know about</p>
+<ul>
+<li>Twin ID (numeric ID) of the endpoint as defined by <code>tfchain</code></li>
+<li>Command (string) is simply the function to call</li>
+<li>The request &quot;body&quot; which is binary blob that is passed to the command as is
+<ul>
+<li>implementation of the command need then to interpret this data as intended (out of scope of rmb)</li>
+</ul>
+</li>
+</ul>
+<p>Twins are stored on tfchain. hence identity of twins is granted not to be spoofed, or phished. When a twin is created he needs to define 2 things:</p>
+<ul>
+<li>RMB Relay</li>
+<li>His Elliptic Curve public key (we use secp256k1 (K-256) elliptic curve)</li>
+</ul>
+<blockquote>
+<p>This data is stored on tfchain forever, and only the twin can change it using his secure-key. Hence phishing is impossible. A twin can decide later to change this encryption key or relay.</p>
+</blockquote>
+<p>Once all twins has their data set correctly on the chain. Any 2 twins can communicate with full end-to-end encryption as follows:</p>
+<ul>
+<li>A twin establish a WS connection to his relay of choice</li>
+<li>A twin create an <code>envelope</code> as defined by the protobuf <a href="https://github.com/threefoldtech/rmb-rs/blob/main/proto/types.proto">schema</a></li>
+<li>Twin fill in all envelope information (more about this later)</li>
+<li>Twin pushes the envelope to the relay
+<ul>
+<li>If the destination twin is also using the same relay, message is directly forwarded to this twin</li>
+<li>If federation is needed (twin using different relay), message is forwarded to the proper twin.</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>NOTE: since a sender twin need to also encrypt the message for the receiver twin, a twin queries the <code>tf-chain</code> for the twin information. Usually it caches this data locally for reuse, hence clients need to make sure this data is always up-to-date.</p>
+</blockquote>
+<p>On the relay, the relay checks federation information set on the envelope and then decide to either to forward it internally to one of it's connected clients, or forward it to the destination relay. Hence relays need to be publicly available.</p>
+<p>When the relay receive a message that is destined to a <code>local</code> connected client, it queue it for delivery. The relay can maintain a queue of messages per twin to a limit. If the twin does not come back online to consume queued messages, the relay will start to drop messages for that specific twin client.</p>
+<p>Once a twin come online and connect to its peer, the peer will receive all queued messages. the messages are pushed over the web-socket as they are received. the client then can decide how to handle them (a message can be a request or a response). A message type can be inspected as defined by the schema.</p>
+<hr />
+<h1 id="overview-of-the-operation-of-rmb-relay"><a class="header" href="#overview-of-the-operation-of-rmb-relay">Overview of the Operation of RMB Relay</a></h1>
+<p><img src="img/relay.png" alt="relay" /></p>
+<h2 id="connections"><a class="header" href="#connections">Connections</a></h2>
+<p>By design, there can be only <code>ONE TWIN</code> with that specific ID. Hence only has <code>ONE RELAY</code> set on tfchain per twin. This force a twin to always use this defined relay if it wishes to open multiple connections to its relay. In other words, a twin once sets up a relay on its public information can only use that relay for all of its connections. If decided to change the relay address, all connections must use the new relay otherwise messages will get lost as they will be delivered to the wrong relay.</p>
+<p>In an RPC system, the response of a request must be delivered to the requester. Hence if a twin is maintaining multiple connections to its relay, it need to identify <code>uniquely</code> the connection to allow the relay to route back the responses to the right requester. We call this <code>id</code> a <code>session-id</code>. The <code>session-id</code> must be unique per twin.</p>
+<p>The relay can maintain <strong>MULTIPLE</strong> connections per peer given that each connection has a unique <strong>SID</strong> (session id). But for each (twin-id, session-id) combo there can be only one connection. if a new connection with the same (twin-id, session-id) is created, the older connection is dropped.</p>
+<p>The message received always has the session-id as part of the source address. a reply message then must have destination set back to the source as is, this allows the relay to route the message back correctly without the need to maintain an internal state.</p>
+<p>The <code>rmb-peer</code> process reserved the <code>None</code> sid. It connects with No session id, hence you can only run one <code>rmb-peer</code> per <code>twin</code> (identity). But the same twin (identity) can make other connection with other rmb clients (for example rmb-sdk-go direct client) to establish more connections with unique session ids.</p>
+<h2 id="peer"><a class="header" href="#peer">Peer</a></h2>
+<p>Any language or code that can open <code>WebSocket</code> connection to the relay can work as a peer. A peer need to do the following:</p>
+<ul>
+<li>Authenticate with the relay. This is by providing a <code>JWT</code> that is signed by the twin key (more on that later)</li>
+<li>Handle received binary mesasge</li>
+<li>Send binary messages</li>
+</ul>
+<p>Each message is an object of type <code>Envelope</code> serialized as with protobuf. Type definition can be found under <code>proto/types.proto</code></p>
+<h2 id="peer-implementation"><a class="header" href="#peer-implementation">Peer implementation</a></h2>
+<p>This project already have a peer implementation that works as local peer gateway. By running this peer instance it allows you to
+run multiple services (and clients) behind that gateway and they appear to the world as a single twin.</p>
+<ul>
+<li>The peer gateway (rmb-peer) starts and connects to realy</li>
+<li>If requests are received, they are verified, decrypted and pushed to a redis queue that as command specific (from the envelope)</li>
+<li>A service can then be waiting on this redis queue for new messages
+<ul>
+<li>The service can process the command, and push a response back to a specific redis queue for responses.</li>
+</ul>
+</li>
+<li>The gateway can then pull ready responses from the responses queue, create a valid envelope, encrypt, and sign and send to destination</li>
+</ul>
+<p><img src="img/peer.png" alt="peer" /></p>
+<h3 id="message-types"><a class="header" href="#message-types">Message Types</a></h3>
+<p>Concerning, <code>rmb-peer</code> message types, to make it easy for apps to work behind an <code>rmb-peer</code>, we use JSON message for communication between the local process and the rmb-peer. the rmb-peer still
+maintains a fully binary communication with the relay.</p>
+<p>A request message is defined as follows</p>
+<h4 id="output-requests"><a class="header" href="#output-requests">Output Requests</a></h4>
+<p>This is created by a client who wants to request make a request to a remote service</p>
+<blockquote>
+<p>this message is pushed to <code>msgbus.system.local</code> to be picked up by the peer</p>
+</blockquote>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>#[derive(Serialize, Deserialize, Clone, Debug)]
+pub struct JsonOutgoingRequest {
+    #[serde(rename = &quot;ver&quot;)]
+    pub version: usize,
+    #[serde(rename = &quot;ref&quot;)]
+    pub reference: Option&lt;String&gt;,
+    #[serde(rename = &quot;cmd&quot;)]
+    pub command: String,
+    #[serde(rename = &quot;exp&quot;)]
+    pub expiration: u64,
+    #[serde(rename = &quot;dat&quot;)]
+    pub data: String,
+    #[serde(rename = &quot;tag&quot;)]
+    pub tags: Option&lt;String&gt;,
+    #[serde(rename = &quot;dst&quot;)]
+    pub destinations: Vec&lt;u32&gt;,
+    #[serde(rename = &quot;ret&quot;)]
+    pub reply_to: String,
+    #[serde(rename = &quot;shm&quot;)]
+    pub schema: String,
+    #[serde(rename = &quot;now&quot;)]
+    pub timestamp: u64,
+}
+<span class="boring">}</span></code></pre></pre>
+<h4 id="incoming-response"><a class="header" href="#incoming-response">Incoming Response</a></h4>
+<p>A response message is defined as follows this is what is received as a response by a client in response to his outgoing request.</p>
+<blockquote>
+<p>This response is what is pushed to <code>$ret</code> queue defined by the outgoing request, hence the client need to wait on this queue until the response is received or it times out</p>
+</blockquote>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>#[derive(Serialize, Deserialize, Clone, Debug)]
+pub struct JsonError {
+    pub code: u32,
+    pub message: String,
+}
+
+#[derive(Serialize, Deserialize, Clone, Debug)]
+pub struct JsonIncomingResponse {
+    #[serde(rename = &quot;ver&quot;)]
+    pub version: usize,
+    #[serde(rename = &quot;ref&quot;)]
+    pub reference: Option&lt;String&gt;,
+    #[serde(rename = &quot;dat&quot;)]
+    pub data: String,
+    #[serde(rename = &quot;src&quot;)]
+    pub source: String,
+    #[serde(rename = &quot;shm&quot;)]
+    pub schema: Option&lt;String&gt;,
+    #[serde(rename = &quot;now&quot;)]
+    pub timestamp: u64,
+    #[serde(rename = &quot;err&quot;)]
+    pub error: Option&lt;JsonError&gt;,
+}
+<span class="boring">}</span></code></pre></pre>
+<h4 id="incoming-request"><a class="header" href="#incoming-request">Incoming Request</a></h4>
+<p>An incoming request is a modified version of the request that is received by a service running behind RMB peer</p>
+<blockquote>
+<p>this request is received on <code>msgbus.${request.cmd}</code> (always prefixed with <code>msgbus</code>)</p>
+</blockquote>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>#[derive(Serialize, Deserialize, Clone, Debug)]
+pub struct JsonIncomingRequest {
+    #[serde(rename = &quot;ver&quot;)]
+    pub version: usize,
+    #[serde(rename = &quot;ref&quot;)]
+    pub reference: Option&lt;String&gt;,
+    #[serde(rename = &quot;src&quot;)]
+    pub source: String,
+    #[serde(rename = &quot;cmd&quot;)]
+    pub command: String,
+    #[serde(rename = &quot;exp&quot;)]
+    pub expiration: u64,
+    #[serde(rename = &quot;dat&quot;)]
+    pub data: String,
+    #[serde(rename = &quot;tag&quot;)]
+    pub tags: Option&lt;String&gt;,
+    #[serde(rename = &quot;ret&quot;)]
+    pub reply_to: String,
+    #[serde(rename = &quot;shm&quot;)]
+    pub schema: String,
+    #[serde(rename = &quot;now&quot;)]
+    pub timestamp: u64,
+}
+<span class="boring">}</span></code></pre></pre>
+<p>Services that receive this needs to make sure their responses <code>destination</code> to have the same value as the incoming request <code>source</code></p>
+<h4 id="outgoing-response"><a class="header" href="#outgoing-response">Outgoing Response</a></h4>
+<p>A response message is defined as follows this is what is sent as a response by a service in response to an incoming request.</p>
+<p>Your bot (server) need to make sure to set <code>destination</code> to the same value as the incoming request <code>source</code></p>
+<p>The</p>
+<blockquote>
+<p>this response is what is pushed to <code>msgbus.system.reply</code></p>
+</blockquote>
+<pre><pre class="playground"><code class="language-rust"><span class="boring">#![allow(unused)]
+</span><span class="boring">fn main() {
+</span>#[derive(Serialize, Deserialize, Clone, Debug)]
+pub struct JsonOutgoingResponse {
+    #[serde(rename = &quot;ver&quot;)]
+    pub version: usize,
+    #[serde(rename = &quot;ref&quot;)]
+    pub reference: Option&lt;String&gt;,
+    #[serde(rename = &quot;dat&quot;)]
+    pub data: String,
+    #[serde(rename = &quot;dst&quot;)]
+    pub destination: String,
+    #[serde(rename = &quot;shm&quot;)]
+    pub schema: Option&lt;String&gt;,
+    #[serde(rename = &quot;now&quot;)]
+    pub timestamp: u64,
+    #[serde(rename = &quot;err&quot;)]
+    pub error: Option&lt;JsonError&gt;,
+}
+<span class="boring">}</span></code></pre></pre>
+<hr />
+<h1 id="end2end-encryption"><a class="header" href="#end2end-encryption">End2End Encryption</a></h1>
+<p>Relay is totally opaque to the messages. Our implementation of the relay does not poke into messages except for the routing attributes (source, and destinations addresses, and federation information). But since the relay is designed to be hosted by other 3rd parties (hence federation) you should
+not fully trust the relay or whoever is hosting it. Hence e2e was needed</p>
+<p>As you already understand e2e is completely up to the peers to implement, and even other implementations of the peers can agree on a completely different encryption algorithm and key sharing algorithm (again, relay does not care). But in our implementation of the e2e (rmb-peer) things goes like this</p>
+<ul>
+<li>Each twin has a <code>pk</code> field on tfchain. when rmb-peer start, it generates an <code>secp256k1</code> key from the same seed as the user tfchain mnemonics. Note that this will not make the encryption key and the signing key any related, they just are driven from the same seed.</li>
+<li>On start, if the key is not already set on the twin object, the key is updated.</li>
+<li>If a peer A is trying to send a message to peer B. but peer B does not has his <code>pk</code> set, peer A will send the message in plain-text format (please check the protobuf envelope type for details)</li>
+<li>If peer B has public key set, peer A will prefer e2e encryption and will does the following:</li>
+<li>Drive a shared secret point with <code>ecdh</code> algorithm, the key is the <code>sha256</code> of that point</li>
+<li><code>shared = ecdh(A.sk, B.pk)</code></li>
+<li>create a 12 bytes random nonce</li>
+<li>encrypt data as <code>encrypted = aes-gcm.encrypt(shared-key, nonce, plain-data)</code></li>
+<li>create cipher as <code>cipher nonce + encrypted</code></li>
+<li>fill <code>envelope.cipher = cipher</code></li>
+<li>on receiving a message peer B does the same in the opposite direction</li>
+<li>split data and nonce (nonce is always first 12 bytes)</li>
+<li>derive the same shared key</li>
+<li><code>shared = ecdh(B.sk, A.pk)</code></li>
+<li><code>plain-data = aes-gcm.decrypt(shared-key, nonce, encrypted)</code></li>
+</ul>
+<hr />
+<h1 id="rate-limiting"><a class="header" href="#rate-limiting">Rate Limiting</a></h1>
+<p>To avoid abuse of the server, and prevent DoS attacks on the relay, a rate limiter is used to limit the number of clients' requests.<br />
+It was decided that the rate limiter should only watch websocket connections of users, since all other requests/connections with users consume little resources, and since the relay handles the max number of users inherently.<br />
+The limiter's configurations are passed as a command line argument <code>--limit &lt;count&gt;, &lt;size&gt;</code>. <code>&lt;count&gt;</code> represents the number of messages a twin is allowed to send in each time window, <code>&lt;size&gt;</code> represents the total size of messages in bytes a twin is allowed to send in each time window.<br />
+Currently there are two implementations of the rate limiter:</p>
+<ul>
+<li><code>NoLimit</code> which imposes no limits on users.</li>
+<li><code>FixedWindowLimiter</code> which breaks the timeline into fixed time windows, and allows a twin to send a fixed number of messages, with a fixed total size, in each time window. If a twin exceeded their limits in some time window, their message is dropped, an error message is sent back to the user, the relay dumps a log about this twin, and the user gets to keep their connection with the relay.</li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../internals/rmb/rmb_intro.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../internals/rmb/uml/peer.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../internals/rmb/rmb_intro.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../internals/rmb/uml/peer.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../mermaid.min.js"></script>
+        <script src="../../mermaid-init.js"></script>
+
+
+    </div>
+    </body>
+</html>
