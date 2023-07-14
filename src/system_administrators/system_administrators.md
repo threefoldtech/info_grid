@@ -65,6 +65,7 @@
   - [Tutorial](../terraform/terraform_get_started.md)
   - [Delete](../terraform/terraform_delete.md)
   - [Full VM Deployment](../terraform/terraform_full_vm.md)
+  - [GPU Support](../terraform/terraform_gpu_support.md)
   - [Resources](../terraform/resources/terraform_resources_readme.md)
     - [Virtual Machine](../terraform/resources/terraform_vm.md)
     - [Web Gateway](../terraform/resources/terraform_vm_gateway.md)
@@ -92,3 +93,4 @@
   - [Contract Bills Reports](../advanced/contract_bill_report.md)
   - [Listing Free Public IPs](../advanced/list_public_ips.md)
   - [Redis](../advanced/grid3_redis.md) 
+- [Users FAQ](../faq/faq.md#users-faq)

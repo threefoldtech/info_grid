@@ -30,7 +30,7 @@
 
 # Introduction
 
-Welcome to the Farmerbot. The Farmerbot is a service that a farmer can run in order to automatically manage the nodes in his or her farm. 
+The Farmerbot has been implemented using the actor model principles. It contains two actors that are able to execute jobs (actions that need to be executed by a specific actor). The first actor is the nodemanager which is in charge of executing jobs related to nodes (e.g. finding a suitable node). The second actor is the powermanager which allows us to power on and off nodes in the farm.
 
 The key feature of the Farmerbot is powermanagement. The Farmerbot will automatically shutdown nodes from its farm whenever possible and bring them back on using Wake-on-Lan (WOL) when they are needed. It will try to maximize downtime as much as possible by recommending which nodes to use, this is one of the requests that the farmerbot can handle. All this behavior is customizable through markup definition files. 
 
@@ -292,7 +292,7 @@ docker compose up -d
 
 # Farmerbot FAQ
 
-Consult the Farmerbot FAQ [here](../farmers_faq/farmers_faq.md#farmerbot).
+Consult the Farmerbot FAQ [here](../../faq/faq.md#farmerbot).
 
 ***
 

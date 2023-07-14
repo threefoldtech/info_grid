@@ -1,6 +1,21 @@
-## Deploying a VM with GPUs
+> Note: TFGrid GPU Support is only available on Dev Test for the moment.
 
-### Example
+<h1> Deploy a VM with GPU </h1>
+
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Example](#example)
+
+***
+
+## Introduction
+
+In this section, we explore how to deploy a virtual machine equipped with GPU. We deploy the VM using Go. The VM will be deployed on a 3Node with an available GPU.
+
+***
+
+## Example
 
 ```go
 import (
@@ -101,7 +116,7 @@ func main() {
 }
 ```
 
-Running this code should result in a VM with a GPU deployed on an available node and get an output like this:
+Running this code should result in a VM with a GPU deployed on an available node. The output should look like this:
 
 ```bash
 Yggdrasil IP: 300:e9c4:9048:57cf:6d98:42c6:a7bf:2e3f
