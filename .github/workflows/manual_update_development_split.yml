@@ -1,7 +1,7 @@
 name: www3.manual.grid.tf
 on:
   push:
-    branch: [ development-split ]
+    branches: [ development-split ]
 
 jobs:
   job_one:
@@ -16,8 +16,8 @@ jobs:
         key: ${{ secrets.TF_SECRET }}
         port: ${{ secrets.TF_PORT }}
         script: |
-          cd ~/websites/www3/info_grid
-          git fetch
-          git reset --hard origin/development-split
-          source ~/.cargo/env
+          cd websites/www3/info_grid
+          git log -1
+          git restore .
+          git pull
           mdbook build -d docs

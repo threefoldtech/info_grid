@@ -3,7 +3,8 @@
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
-- [How to use the TFChain-Stellar Bridge](#how-to-use-the-tfchain-stellar-bridge)
+- [How to Use the TFChain-Stellar Bridge](#how-to-use-the-tfchain-stellar-bridge)
+- [Questions and Feedback](#questions-and-feedback)
 
 ***
 
@@ -13,7 +14,7 @@ We present here the general steps to use the TFChain-Stellar Bridge. Note that t
 
 ***
 
-## How to use the TFChain-Stellar Bridge
+## How to Use the TFChain-Stellar Bridge
 
 1. Go on the ThreeFold Dashboard
    1. [Main Net](https://dashboard.grid.tf/)
@@ -27,4 +28,10 @@ We present here the general steps to use the TFChain-Stellar Bridge. Note that t
       * Click on *Withdraw*
 
 Note: If you are on ThreeFold Connect App, you can export your account to the Polkadot extension. Look at the section [Move Farm from the TF app to the TF Portal (polkadot.js)](../storing_tft/tf_connect_app.md#move-farm-from-the-tf-connect-app-to-the-tf-portal-polkadotjs).
+
+***
+
+## Questions and Feedback
+
+If you have any question, feel free to write a post on the [Threefold Forum](https://forum.threefold.io/).
 

@@ -92,3 +92,4 @@
   - [Contract Bills Reports](../advanced/contract_bill_report.md)
   - [Listing Free Public IPs](../advanced/list_public_ips.md)
   - [Redis](../advanced/grid3_redis.md) 
+- [Users FAQ](../faq/faq.md#users-faq)

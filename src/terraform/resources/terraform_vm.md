@@ -133,9 +133,6 @@ resource "grid_deployment" "d1" {
     }
     planetary = true
   }
-  gpus = [
-      "0000:0e:00.0/1002/744c" //choose the correct gpu id available on the node your are deploying on
-    ]
 
 }
 ```
@@ -151,7 +148,6 @@ It's bit long for sure but let's try to dissect it a bit
 - `node = grid_scheduler.sched.nodes["node1"]` means this deployment will happen on node returned from the scheduler. Otherwise the user can specify the node as `node = 2` and in this case the choice of the node is completely up to the user at this point. They need to do the capacity planning. Check [Exploring Capacity](../../dashboard/explorer/explorer_home.md) to know which nodes fits your deployment criteria.
 - `network_name` which network to deploy our project on, and here we choose the `name` of network `net1`
 - `ip_range` here we [lookup](https://www.terraform.io/docs/language/functions/lookup.html) the iprange of node `2` and initially load it with `""`
-- `gpus` is an optional parameter a list of gpu ids specifies which gpus needed to be attached to this vm, these gpu ids can be retrieved from the [ThreeFold Dashboard](https://dashboard.grid.tf)
 
 > Advannced note: Direct map access fails during the planning if the key doesn't exist which happens in cases like adding a node to the network and a new deployment on this node. So it's replaced with this to make a default empty value to pass the planning validation and it's validated anyway inside the plugin.
 
@@ -185,9 +181,6 @@ So to add a VM
     env_vars = {
       SSH_KEY ="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCeq1MFCQOv3OCLO1HxdQl8V0CxAwt5AzdsNOL91wmHiG9ocgnq2yipv7qz+uCS0AdyOSzB9umyLcOZl2apnuyzSOd+2k6Cj9ipkgVx4nx4q5W1xt4MWIwKPfbfBA9gDMVpaGYpT6ZEv2ykFPnjG0obXzIjAaOsRthawuEF8bPZku1yi83SDtpU7I0pLOl3oifuwPpXTAVkK6GabSfbCJQWBDSYXXM20eRcAhIMmt79zo78FNItHmWpfPxPTWlYW02f7vVxTN/LUeRFoaNXXY+cuPxmcmXp912kW0vhK9IvWXqGAEuSycUOwync/yj+8f7dRU7upFGqd6bXUh67iMl7 ahmed@ahmedheaven"
     }
-   gpus = [
-      "0000:0e:00.0/1002/744c" //choose the correct gpu id available on the node your are deploying on
-    ]
 
   }
 ```
@@ -198,7 +191,6 @@ So to add a VM
 - `publicip` is usued to define if it requires a public IP or not
 - `entrypoint` is used define the entrypoint which in most of the cases in `/sbin/zinit init`, but in case of flists based on vms it can be specific to each flist
 - `env_vars` are used to define te environment variables, in this example we define `SSH_KEY` to authorize me accessing the machine
-- `gpus` is an optional property, you should provide it if you want a gpu in your vm, this should be done only on a rented node and the owner of the node is the only one who can deploy on it
   Here we say we will have this deployment on node with `twin ID 2` using the overlay network defined from before `grid_network.net1.name` and use the ip range allocated to that specific node `2`
 
 The file describes only the desired state which is `a deployment of two VMs and their specifications in terms of cpu and memory, and some environment variables e.g sshkey to ssh into the machine`

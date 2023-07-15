@@ -3,10 +3,11 @@
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
-- [How to use the BSC-Stellar Bridge](#how-to-use-the-bsc-stellar-bridge)
+- [How to Use the BSC-Stellar Bridge](#how-to-use-the-bsc-stellar-bridge)
   - [Bridge from Stellar to BSC](#bridge-from-stellar-to-bsc)
   - [Bridge from BSC to Stellar](#bridge-from-bsc-to-stellar)
 - [Setting Up TFT on Metamask](#setting-up-tft-on-metamask)
+- [Questions and Feedback](#questions-and-feedback)
 
 
 ***
@@ -17,7 +18,7 @@ We present here the main steps to use the BSC-Stellar Bridge.
 
 ***
 
-## How to use the BSC-Stellar Bridge
+## How to Use the BSC-Stellar Bridge
 
 To use the BSC-Stellar Bridge, follow the following steps. If this is your first time with MetaMask and BSC, read the section [Setting up TFT on Metamask](#setting-up-tft-on-metamask).
 
@@ -104,3 +105,9 @@ In this method, you use the Bridge directly. Thus, it is normal if you do not se
   * Symbol: BNB
   * Block Explorer URL: [https://bscscan.com](https://bscscan.com/)
 * Add TFT token in Metamask -> custom token -> contract address =  `0x8f0FB159380176D324542b3a7933F0C2Fd0c2bbf`
+
+***
+
+## Questions and Feedback
+
+If you have any question, feel free to write a post on the [Threefold Forum](https://forum.threefold.io/).

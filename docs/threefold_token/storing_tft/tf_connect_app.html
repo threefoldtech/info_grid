@@ -1,0 +1,396 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>ThreeFold Connect App - ThreeFold Manual</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item "><a href="../../intro/intro_readme.html">Introduction</a></li><li class="chapter-item expanded "><a href="../../general/general.html">General Information</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../intro/grid3_howitworks.html">How it Works</a></li><li class="chapter-item "><a href="../../dashboard/dashboard.html">Dashboard</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../dashboard/explorer/explorer_home.html">Dasboard Explorer</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../dashboard/explorer/explorer_find_capacity.html">Find Capacity</a></li><li class="chapter-item "><a href="../../dashboard/explorer/explorer_graphql_intro.html">A Glimpse Into GraphQL</a></li><li class="chapter-item "><a href="../../dashboard/explorer/explorer_gpu_support.html">GPU Support</a></li></ol></li><li class="chapter-item "><a href="../../dashboard/portal/dashboard_portal_home.html">TFChain Portal</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../dashboard/portal/dashboard_portal_ui_tokens.html">Manage TFTs on TFChain</a></li><li class="chapter-item "><a href="../../dashboard/portal/dashboard_portal_ui_farming.html">Activate Farmer Account and Nodes on TFChain</a></li><li class="chapter-item "><a href="../../dashboard/portal/dashboard_portal_dedicated_nodes.html">Dedicated Nodes</a></li></ol></li><li class="chapter-item "><a href="../../dashboard/dao_voting/dao_voting.html">DAO Voting</a></li></ol></li><li class="chapter-item expanded "><a href="../../threefold_token/threefold_token.html">ThreeFold Token</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../threefold_token/tft_intro.html">Introduction to TFT</a></li><li class="chapter-item "><a href="../../threefold_token/tft_bridges/tft_bridges.html">TFT Bridges</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../threefold_token/tft_bridges/tfchain_stellar_bridge.html">TFChain-Stellar Bridge</a></li><li class="chapter-item "><a href="../../threefold_token/tft_bridges/bsc_stellar_bridge.html">BSC-Stellar Bridge</a></li><li class="chapter-item "><a href="../../threefold_token/tft_bridges/tft_ethereum/tft_ethereum.html">Ethereum-Stellar Bridge</a></li></ol></li><li class="chapter-item expanded "><a href="../../threefold_token/storing_tft/storing_tft.html">Storing TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../threefold_token/storing_tft/tf_connect_app.html" class="active">ThreeFold Connect App</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/hardware_wallet.html">Hardware Wallet</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/metamask.html">Metamask (TFT-BSC)</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/trustwallet.html">Trust Wallet (TFT-BSC)</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/albedo_store.html">Albedo Wallet (TFT-Stellar)</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/solar_wallet.html">Solar Wallet (TFT-Stellar)</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/lobstr_wallet.html">Lobstr Wallet (TFT-Stellar)</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/Interstellar_store.html">Interstellar (TFT-Stellar)</a></li><li class="chapter-item "><a href="../../threefold_token/storing_tft/btc_alpha_deposit.html">BTC-Alpha (TFT-Stellar)</a></li></ol></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/buy_sell_tft.html">Buy and Sell TFT</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr.html">Lobstr Wallet</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr_short_guide.html">Lobstr Wallet: Short Guide</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr_complete_guide.html">Lobstr Wallet: Complete Guide</a></li></ol></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/tft_metamask/tft_metamask.html">MetaMask</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/pancakeswap.html">Pancake Swap</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/oneinch.html">1inch.io</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/gettft.html">GetTFT.com</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/albedo_buy.html">Albedo Wallet</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/solar_buy.html">Solar Wallet</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/coinbase_xlm.html">Coinbase (XLM)</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/stellarterm.html">StellarTerm</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/interstellar.html">Interstellar</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/btc_alpha.html">BTC-Alpha</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/tf_otc.html">ThreeFold Live Desk</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/mazraa.html">Mazraa Farmers</a></li><li class="chapter-item "><a href="../../threefold_token/buy_sell_tft/bettertoken.html">BetterToken Farmers</a></li></ol></li><li class="chapter-item "><a href="../../threefold_token/liquidity/liquidity_readme.html">Liquidity Provider (LP)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../threefold_token/liquidity/liquidity_pancake.html">Pancake Swap LP</a></li><li class="chapter-item "><a href="../../threefold_token/liquidity/liquidity_1inch.html">1inch.io LP</a></li><li class="chapter-item "><a href="../../threefold_token/liquidity/liquidity_albedo.html">Albedo LP</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../collaboration_tools/collaboration_tools.html">Collaboration Tools</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../collaboration_tools/circle_tool.html">Circle Tool</a></li><li class="chapter-item "><a href="../../collaboration_tools/website_tool.html">Website Deployer</a></li></ol></li><li class="chapter-item "><a href="../../contribute/contribute.html">How to Contribute</a></li><li class="chapter-item "><a href="../../testing/testing_readme.html">How to Test</a></li><li class="chapter-item "><a href="../../tf_video_gallery/tf_video_gallery.html">ThreeFold Video Gallery</a></li><li class="chapter-item "><a href="../../roadmap/roadmap_readme.html">ThreeFold Roadmap</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../roadmap/releasenotes/releasenotes_readme.html">Release Notes</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_10_0.html">TFGrid v3.10.0</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_9_0.html">TFGrid v3.9.0</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_8_0.html">TFGrid v3.8.0</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_7_0.html">TFGrid v3.7.0</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_6_1.html">TFGrid v3.6.1</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_6_0.html">TFGrid v3.6.0</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_0_a5.html">TFGrid v3.0.0 Alpha-5</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_0_a4.html">TFGrid v3.0.0 Alpha-4</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_0_a2.html">TFGrid v3.0.0 Alpha-2</a></li><li class="chapter-item "><a href="../../roadmap/releasenotes/tfgrid_release_3_0.html">TFGrid v3.0.0</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../faq/faq.html">FAQ</a></li><li class="chapter-item "><a href="../../legal/legal.html">Legal</a></li></ol></li><li class="chapter-item "><a href="../../farmers/farmers.html">Farmers</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/3node_building/3node_building.html">Build a 3Node</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/3node_building/1_create_farm.html">1. Create a Farm</a></li><li class="chapter-item "><a href="../../farmers/3node_building/2_bootstrap_image.html">2. Create a Zero-OS Bootstrap Image</a></li><li class="chapter-item "><a href="../../farmers/3node_building/3_set_hardware.html">3. Set the Hardware</a></li><li class="chapter-item "><a href="../../farmers/3node_building/4_wipe_all_disks.html">4. Wipe All the Disks</a></li><li class="chapter-item "><a href="../../farmers/3node_building/5_set_bios_uefi.html">5. Set the BIOS/UEFI</a></li><li class="chapter-item "><a href="../../farmers/3node_building/6_boot_3node.html">6. Boot the 3Node</a></li><li class="chapter-item "><a href="../../farmers/3node_building/data_center.html">Set Up a ThreeFold Farm in a Data Center</a></li></ol></li><li class="chapter-item "><a href="../../farmers/complete_diy_guides/complete_diy_guides_readme.html">Complete DIY 3Node Guides</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/complete_diy_guides/3node_diy_desktop/3node_diy_desktop.html">3Node Desktop DIY Guide</a></li><li class="chapter-item "><a href="../../farmers/complete_diy_guides/3node_diy_rack_server/3node_diy_rack_server.html">3Node Rack Server DIY Guide</a></li></ol></li><li class="chapter-item "><a href="../../farmers/farming_optimization/farming_optimization.html">Farming Optimization</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/farming_optimization/calculate_roi.html">Calculate Your ROI</a></li><li class="chapter-item "><a href="../../farmers/farming_optimization/farm_room_parameters.html">Room Parameters</a></li><li class="chapter-item "><a href="../../farmers/farming_optimization/farming_costs.html">Farming Costs</a></li></ol></li><li class="chapter-item "><a href="../../farmers/farmerbot/farmerbot_intro.html">Farmerbot</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../farmers/farmerbot/farmerbot_quick.html">Farmerbot Quick Guide</a></li><li class="chapter-item "><a href="../../farmers/farmerbot/farmerbot.html">Farmerbot Extensive Guide</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../developers/developers.html">Developers</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../javascript/grid3_javascript_readme.html">Javascript Client</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../javascript/grid3_javascript_installation.html">Installation</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_loadclient.html">Loading Client</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_vm.html">Deploy a VM</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_capacity_planning.html">Capacity Planning</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_vms.html">Deploy Multiple VMs</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_caprover.html">Deploy CapRover</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_vm_gateways.html">Gateways</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_kubernetes.html">Deploy a Kubernetes Cluster</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_zdb.html">Deploy a ZDB</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_qsfs_zdbs.html">Deploy ZDBs for QSFS</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_qsfs.html">QSFS</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_kvstore.html">Key Value Store</a></li><li class="chapter-item "><a href="../../javascript/grid3_wireguard_gateway.html">VM with Wireguard and Gateway</a></li><li class="chapter-item "><a href="../../javascript/grid3_javascript_gpu_support.html">GPU Support</a></li></ol></li><li class="chapter-item "><a href="../../go/grid3_go_readme.html">Go Client</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../go/grid3_go_installation.html">Installation</a></li><li class="chapter-item "><a href="../../go/grid3_go_load_client.html">Loading Client</a></li><li class="chapter-item "><a href="../../go/grid3_go_vm.html">Deploy a VM</a></li><li class="chapter-item "><a href="../../go/grid3_go_vm_with_gpu.html">Deploy a VM with GPU</a></li><li class="chapter-item "><a href="../../go/grid3_go_vms.html">Deploy Multiple VMs</a></li><li class="chapter-item "><a href="../../go/grid3_go_gateways.html">Deploy Gateways</a></li><li class="chapter-item "><a href="../../go/grid3_go_kubernetes.html">Deploy Kubernetes</a></li><li class="chapter-item "><a href="../../go/grid3_go_qsfs.html">Deploy a QSFS</a></li><li class="chapter-item "><a href="../../go/grid3_go_gpu_support.html">GPU Support</a></li></ol></li><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_readme.html">TFGrid CLI</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_installation.html">Installation</a></li><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_login.html">Login</a></li><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_vm.html">Deploy a VM</a></li><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_gateways.html">Deploy Gateways</a></li><li class="chapter-item "><a href="../../tfgridcmd/grid3_cli_kubernetes.html">Deploy Kubernetes</a></li></ol></li><li class="chapter-item "><a href="../../tfchain/tfchain.html">ThreeFold Chain</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../tfchain/introduction.html">Introduction</a></li><li class="chapter-item "><a href="../../tfchain/farming_policies.html">Farming Policies</a></li><li class="chapter-item "><a href="../../tfchain/tfchain_external_service_contract.html">External Service Contract</a></li><li class="chapter-item "><a href="../../tfchain/tfchain_solution_provider.html">Become a Solution Provider</a></li></ol></li><li class="chapter-item "><a href="../../proxy/proxy.html">Grid Proxy</a></li><li class="chapter-item "><a href="../../flist_hub/flist_hub.html">Flist Hub</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../manual3_iac/grid3_supported_flists.html">Supported FLists</a></li></ol></li><li class="chapter-item "><a href="../../internals/internals.html">Internals</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../internals/rmb/rmb_toc.html">Reliable Message Bus (RMB)</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../internals/rmb/rmb_intro.html">Introduction to RMB</a></li><li class="chapter-item "><a href="../../internals/rmb/rmb_specs.html">RMB Specs</a></li><li class="chapter-item "><a href="../../internals/rmb/uml/peer.html">RMB Peer</a></li><li class="chapter-item "><a href="../../internals/rmb/uml/relay.html">RMB Relay</a></li></ol></li></ol></li></ol></li><li class="chapter-item "><a href="../../system_administrators/system_administrators.html">System Administrators</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../getstarted/tfgrid3_getstarted.html">Getting Started</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../getstarted/TF_Connect/TF_Connect.html">ThreeFold Connect</a></li><li class="chapter-item "><a href="../../getstarted/TF_Token/tft_toc.html">ThreeFold Token</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../getstarted/TF_Token/tft_lobstr/tft_lobstr.html">TFT on Lobstr</a></li><li class="chapter-item "><a href="../../getstarted/TF_Token/tft_ethereum/tft_ethereum.html">TFT on Ethereum</a></li></ol></li><li class="chapter-item "><a href="../../getstarted/TF_Dashboard/TF_Dashboard.html">ThreeFold Dashboard</a></li><li class="chapter-item "><a href="../../dashboard/explorer/explorer_find_capacity.html">Tutorial: Find Node</a></li><li class="chapter-item "><a href="../../weblets/weblets_vm.html">Tutorial: Deploy Your First VM</a></li><li class="chapter-item "><a href="../../getstarted/ssh_guide/ssh_guide.html">SSH Remote Connection</a></li><li class="chapter-item "><a href="../../getstarted/remote-desktop_gui/remote-desktop_gui.html">Remote Desktop and GUI</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../getstarted/remote-desktop_gui/cockpit_guide/cockpit_guide.html">Cockpit: a Web-based Interface for Servers</a></li><li class="chapter-item "><a href="../../getstarted/remote-desktop_gui/xrdp_guide/xrdp_guide.html">XRDP: an Open-Source Remote Desktop Protocol</a></li><li class="chapter-item "><a href="../../getstarted/remote-desktop_gui/guacamole_guide/guacamole_guide.html">Apache Guacamole: a Clientless Remote Desktop Gateway</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../concepts/concepts_readme.html">Grid Concepts</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../concepts/grid_primitives.html">TFGrid Primitives</a></li><li class="chapter-item "><a href="../../concepts/grid3_components.html">TFGrid Component List</a></li><li class="chapter-item "><a href="../../concepts/grid3_iac.html">Infrastructure as Code</a></li><li class="chapter-item "><a href="../../concepts/proof_of_utilization.html">Proof of Utilization</a></li><li class="chapter-item "><a href="../../concepts/contract_grace_period.html">Contract Grace Period</a></li><li class="chapter-item "><a href="../../concepts/buying_storing_tft.html">Buying and Storing TFTs</a></li><li class="chapter-item "><a href="../../concepts/grid3_whatsnew.html">What's New on TFGrid v3.x</a></li><li class="chapter-item "><a href="../../concepts/tfchain.html">TFChain</a></li></ol></li><li class="chapter-item "><a href="../../cloud/cloud.html">Cloud</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../cloud/cloudunits_pricing.html">Pricing</a></li></ol></li><li class="chapter-item "><a href="../../getstarted/planetarynetwork.html">Planetary Network</a></li><li class="chapter-item "><a href="../../TF_Grid_Services/tf_grid_services_readme.html">TFGrid Services</a></li><li class="chapter-item "><a href="../../weblets/weblets_home.html">Weblets</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../weblets/weblets_profile_manager.html">Profile Manager</a></li><li class="chapter-item "><a href="../../weblets/weblets_deployments_list.html">Deployments List</a></li><li class="chapter-item "><a href="../../weblets/weblets_cancel_contracts.html">Cancel Contracts</a></li><li class="chapter-item "><a href="../../weblets/weblets_basic_environments_readme.html">Basic Environments</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../weblets/weblets_fullVm.html">Full Virtual Machine</a></li><li class="chapter-item "><a href="../../weblets/weblets_vm.html">Virtual Machine</a></li><li class="chapter-item "><a href="../../weblets/weblets_k8s.html">Kubernetes</a></li><li class="chapter-item "><a href="../../weblets/weblets_nixos_micro.html">Nixos MicroVM</a></li></ol></li><li class="chapter-item "><a href="../../weblets/weblets_ready_community_readme.html">Ready Community Solutions</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../weblets/weblets_algorand.html">Algorand</a></li><li class="chapter-item "><a href="../../weblets/weblets_caprover.html">Caprover</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../weblets/weblets_caprover_admin.html">Caprover Admin</a></li><li class="chapter-item "><a href="../../weblets/weblets_caprover_worker.html">Caprover Worker</a></li></ol></li><li class="chapter-item "><a href="../../weblets/weblets_casper.html">CasperLabs</a></li><li class="chapter-item "><a href="../../weblets/weblets_discourse.html">Discourse</a></li><li class="chapter-item "><a href="../../weblets/weblets_funkwhale.html">Funkwhale</a></li><li class="chapter-item "><a href="../../weblets/weblets_mastodon.html">Mastodon Weblet</a></li><li class="chapter-item "><a href="../../weblets/weblets_mattermost.html">Mattermost</a></li><li class="chapter-item "><a href="../../weblets/weblets_nodepilot.html">Node Pilot</a></li><li class="chapter-item "><a href="../../weblets/weblets_owncloud.html">Owncloud</a></li><li class="chapter-item "><a href="../../weblets/weblets_peertube.html">Peertube</a></li><li class="chapter-item "><a href="../../weblets/weblets_presearch.html">Presearch</a></li><li class="chapter-item "><a href="../../weblets/weblets_subsquid.html">Subsquid</a></li><li class="chapter-item "><a href="../../weblets/weblets_taiga.html">Taiga</a></li><li class="chapter-item "><a href="../../weblets/weblets_umbrel.html">Umbrel</a></li><li class="chapter-item "><a href="../../weblets/weblets_wordpress.html">WordPress</a></li><li class="chapter-item "><a href="../../tf_mastodon/tf_mastodon_readme.html">ThreeFold Mastodon Server</a></li><li class="chapter-item "><a href="../../tf_mastodon/tf_mastodon_deploy.html">Mastodon Deployer Manual</a></li><li class="chapter-item "><a href="../../tf_mastodon/tf_mastodon_faq.html">Frequently Asked Questions</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../terraform/terraform_readme.html">Terraform</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../terraform/terraform_install.html">Installing Terraform</a></li><li class="chapter-item "><a href="../../terraform/terraform_basics.html">Terraform Basics</a></li><li class="chapter-item "><a href="../../terraform/terraform_get_started.html">Tutorial</a></li><li class="chapter-item "><a href="../../terraform/terraform_delete.html">Delete</a></li><li class="chapter-item "><a href="../../terraform/terraform_full_vm.html">Full VM Deployment</a></li><li class="chapter-item "><a href="../../terraform/terraform_gpu_support.html">GPU Support</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_resources_readme.html">Resources</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../terraform/resources/terraform_scheduler.html">Using Scheduler</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_vm.html">Virtual Machine</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_vm_gateway.html">Web Gateway</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_k8s.html">Kubernetes Cluster</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../terraform/resources/terraform_k8s_demo.html">Demo</a></li></ol></li><li class="chapter-item "><a href="../../terraform/resources/terraform_zdb.html">ZDB</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_qsfs.html">Quantum Safe Filesystem</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../terraform/resources/terraform_qsfs_on_microvm.html">QSFS on Micro VM</a></li><li class="chapter-item "><a href="../../terraform/resources/terraform_qsfs_on_full_vm.html">QSFS on Full VM</a></li></ol></li><li class="chapter-item "><a href="../../terraform/resources/terraform_caprover.html">CapRover</a></li></ol></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_advanced_readme.html">Advanced</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../terraform/advanced/terraform_provider.html">Terraform Provider</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_provisioners.html">Terraform Provisioners</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_mounts.html">Mounts</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_capacity_planning.html">Capacity Planning</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_updates.html">Updates</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_wireguard_ssh.html">SSH Connection with Wireguard</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_wireguard_vpn.html">Set a Wireguard VPN</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_mariadb_synced_databases.html">Synced MariaDB Databases</a></li><li class="chapter-item "><a href="../../terraform/advanced/terraform_nextcloud_redundant.html">Nextcloud Redundant Deployment</a></li></ol></li></ol></li><li class="chapter-item "><a href="../../advanced/advanced.html">Advanced</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../../advanced/grid3_stellar_tfchain_bridge.html">Grid3 Stellar-TFChain Bridge</a></li><li class="chapter-item "><a href="../../advanced/token_transfer_keygenerator.html">Token Transfer Keygenerator</a></li><li class="chapter-item "><a href="../../advanced/cancel_contracts.html">Cancel contracts</a></li><li class="chapter-item "><a href="../../advanced/contract_bill_report.html">Contract Bills Reports</a></li><li class="chapter-item "><a href="../../advanced/list_public_ips.html">Listing Free Public IPs</a></li><li class="chapter-item "><a href="../../advanced/grid3_redis.html">Redis</a></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">ThreeFold Manual</h1>
+
+                    <div class="right-buttons">
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="threefold-connect-app-wallet"><a class="header" href="#threefold-connect-app-wallet"> ThreeFold Connect App Wallet </a></h1>
+<h2 id="table-of-contents"><a class="header" href="#table-of-contents"> Table of Contents </a></h2>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#threefold-connect-installation">ThreeFold Connect Installation</a>
+<ul>
+<li><a href="#verify-your-identity-by-email">Verify your identity by Email</a></li>
+<li><a href="#change-email-associated-with-tf-account">Change email associated with TF account</a></li>
+</ul>
+</li>
+<li><a href="#create-a-wallet">Create a Wallet</a></li>
+<li><a href="#create-a-farm">Create a Farm</a></li>
+<li><a href="#see-threefold-connect-app-and-wallet-transactions">See ThreeFold Connect App and Wallet Transactions</a></li>
+<li><a href="#connect-to-the-planetary-network">Connect to the Planetary Network</a></li>
+<li><a href="#show-seed-phrase---remove-account-from-tf-connect-app">Show Seed Phrase - Remove Account from TF Connect App</a></li>
+<li><a href="#recover-account-on-the-threefold-connect-app">Recover Account on the ThreeFold Connect App</a></li>
+<li><a href="#move-farm-from-the-tf-connect-app-to-the-tf-portal-polkadotjs">Move Farm from the TF Connect App to the TF Portal (polkadot.js)</a></li>
+<li><a href="#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet">Import TF Portal (polkadot.js) Wallet to the TF Connect App Wallet</a></li>
+<li><a href="#send-and-receive-tft-between-tf-connect-wallets">Send and Receive TFT between TF Connect Wallets</a>
+<ul>
+<li><a href="#send-tft">Send TFT</a></li>
+<li><a href="#receive-tft">Receive TFT</a></li>
+<li><a href="#send-tft-to-hardware-wallet-on-stellar-blockchain">Send TFT to Hardware Wallet on Stellar Blockchain</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="introduction"><a class="header" href="#introduction">Introduction</a></h2>
+<p>The easiest way to send your farming rewards is to use the free ThreeFold Connect App. </p>
+<p>It is available for <a href="https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&amp;hl=en&amp;gl=US">Android</a> and <a href="https://apps.apple.com/us/app/threefold-connect/id1459845885">iOS</a>.</p>
+<p><img src="./img/farming_wallet_5.png" alt="farming_wallet_5" /></p>
+<ul>
+<li>Note that for Android phones, you need at minimum Android Nougat, the 8.0 software version.</li>
+<li>Note that for iOS phones, you need at minimum iOS 14.5. It will be soon available to iOS 13.</li>
+</ul>
+<hr />
+<h2 id="threefold-connect-installation"><a class="header" href="#threefold-connect-installation">ThreeFold Connect Installation</a></h2>
+<p>Either use the links above, or search for the ThreeFold Connect App on the Apple Store or the Google Play store. Then install and open the app. If you want to leave a 5 star review of the App, no one here will stop you!</p>
+<p><img src="./img/farming_tf_wallet_1.png" alt="farming_tf_wallet_1" />
+<img src="./img/farming_tf_wallet_2.png" alt="farming_tf_wallet_2" /></p>
+<p>When you try to open the App, if you get an error message such as : &quot;Error in initialization in Flagsmith...&quot;, you might need to upgrade your phone to a newer software version (8.0 for Android and 13 for iOS).</p>
+<p>Once you are in the application, you will see some introduction pages to help you familiarize with the TF Connect App. You will also be asked to read and accept ThreeFold's Terms and conditions.</p>
+<p><img src="./img/farming_tf_wallet_3.png" alt="farming_tf_wallet_3" />
+<img src="./img/farming_tf_wallet_4.png" alt="farming_tf_wallet_4" /></p>
+<p>You will then be asked to either <em>SIGN UP</em> or <em>RECOVER ACCOUNT</em>. For now, we will show how to sign up. Later in the guide, we will show you how to recover an account.</p>
+<p><img src="./img/farming_tf_wallet_5.png" alt="farming_tf_wallet_5" /></p>
+<p>You will then be asked to choose a <em>Threefold Connect Id</em>. This ID will be used, as well as the seed phrase, when you want to recover an account. Choose wisely. And do not forget it! Here we will use TFExample, as an example.</p>
+<p><img src="./img/farming_tf_wallet_6.png" alt="farming_tf_wallet_6" /></p>
+<p>Next, you need to add a valid email address. This will be used as a broad KYC. You will need to access your email and confirm the validation email from ThreeFold to use properly the TF Connect App Wallet.</p>
+<p><img src="./img/farming_tf_wallet_7.png" alt="farming_tf_wallet_7" /></p>
+<p>Then, the next step is crucial! Make sure no one is around looking at your screen. You will be shown your seed phrase. Keep this in a secure and offline place. You will need the 3bot ID and the seed phrase to recover your account. This seed phrase is of utmost important. Do not lose it nor give it to anyone.</p>
+<p><img src="./img/farming_tf_wallet_8.png" alt="farming_tf_wallet_8" /></p>
+<p>Once you've hit Next, you will be asked to write down 3 random words of your seed phrase. This is a necessary step to ensure you have taken the time to write down your seed phrase.</p>
+<p><img src="./img/farming_tf_wallet_9.png" alt="farming_tf_wallet_9" /></p>
+<p>Then, you'll be asked to confirm your TF 3bot name and the associated email.</p>
+<p><img src="./img/farming_tf_wallet_10.png" alt="farming_tf_wallet_10" /></p>
+<p>Finally, you will be asked to choose a 4-digit pin. This will be needed to use the ThreeFold Connect App. If you ever forget this 4-digit pin, you will need to recover your account from your 3bot name and your seed phrase. You will need to confirm the new pin in the next step.</p>
+<p><img src="./img/farming_tf_wallet_11.png" alt="farming_tf_wallet_11" /></p>
+<p>That's it! You've created your ThreeFold Connect account. You can press the hamburger menu on the top left to explore the ThreeFold Connect App.</p>
+<p><img src="./img/farming_tf_wallet_12.png" alt="farming_tf_wallet_12" /></p>
+<p>In the next step, we will create a ThreeFold Connect Wallet. You'll see, it's very simple!</p>
+<hr />
+<h3 id="verify-your-identity-by-email"><a class="header" href="#verify-your-identity-by-email">Verify your identity by Email</a></h3>
+<hr />
+<p>Once you've created your account, an email will be sent to the email address you've chosen in the account creation process. </p>
+<p>To verify your email, go on your email account and open the email sent by <em>info@openkyc.live</em> with the subject <em>Verify your email address</em>. </p>
+<p>In this email, click on the link <em>Verify my email address</em>. This will lead you to a <em>login.threefold.me</em> link. The process should be automatic. Once this is done, you will receive a confirmation on screen, as well as on your phone.</p>
+<p><img src="./img/farming_tf_wallet_39.png" alt="farming_tf_wallet_39" /></p>
+<p><img src="./img/farming_tf_wallet_40.png" alt="farming_tf_wallet_40" /></p>
+<p><img src="./img/farming_tf_wallet_41.png" alt="farming_tf_wallet_41" /></p>
+<p>If for some reason, you did not receive the verification email, simply click on <em>Verify</em> and another email will be sent.</p>
+<p><img src="./img/farming_tf_wallet_42.png" alt="farming_tf_wallet_42" /></p>
+<p><img src="./img/farming_tf_wallet_43.png" alt="farming_tf_wallet_43" /></p>
+<hr />
+<h3 id="change-email-associated-with-tf-account"><a class="header" href="#change-email-associated-with-tf-account">Change email associated with TF account</a></h3>
+<hr />
+<p>If you want to change your email, simply click on the <em>pencil</em> next to your email and write another email. You will need to redo the KYC verification process.</p>
+<p><img src="./img/farming_tf_wallet_44.png" alt="farming_tf_wallet_44" /></p>
+<hr />
+<h2 id="create-a-wallet"><a class="header" href="#create-a-wallet">Create a Wallet</a></h2>
+<p>To create a wallet, click on the ThreeFold Connect App menu. This is what you see. Choose <em>Wallet</em>.</p>
+<p><img src="./img/farming_tf_wallet_13.png" alt="farming_tf_wallet_13" /></p>
+<p>Once you are in the section <em>Wallet</em>, click on <em>Create Initial Wallet</em>. If it doesn't work the first time, retry some more. If you have trouble creating a wallet, make sure your connection is reliable. You can try a couple of minutes later if it still doesn't work. With a reliable connection, there shouldn't be any problem. Contact TF Support if problems persist.</p>
+<p><img src="./img/farming_tf_wallet_14.png" alt="farming_tf_wallet_14" /></p>
+<p>This is what you see when the TF Grid is initializing your wallet.</p>
+<p><img src="./img/farming_tf_wallet_15.png" alt="farming_tf_wallet_15" /></p>
+<p>Once your wallet is initialized, you will see <em>No blanace found for this wallet</em>. You can click on this button to enter the wallet.</p>
+<p><img src="./img/farming_tf_wallet_16.png" alt="farming_tf_wallet_16" /></p>
+<p>Once inside your wallet, this is what you see.</p>
+<p><img src="./img/farming_tf_wallet_17.png" alt="farming_tf_wallet_17" /></p>
+<p>We will now see where the Stellar and the TF Chain Addresses and Secrets are to be found. We will also changing the wallet name. To do so, click on the <em>circled i</em> at the bottom right of the screen.</p>
+<p><img src="./img/farming_tf_wallet_18.png" alt="farming_tf_wallet_18" /></p>
+<p><img src="./img/farming_tf_wallet_19.png" alt="farming_tf_wallet_19" /></p>
+<p>You can choose the name you want for your wallet. Here we use TFWalletExample. Note that you can also use alphanumeric characters.</p>
+<p><img src="./img/farming_tf_wallet_20.png" alt="farming_tf_wallet_20" /></p>
+<p>At the top of the section <em>Wallet</em>, we can see that the name has changed.</p>
+<p><img src="./img/farming_tf_wallet_21.png" alt="farming_tf_wallet_21" /></p>
+<p>Now, if you want to copy your Stellar Address, simply click on the button presented with the green circle. To access the TF Chain address, click on the button presented with the red circle. When your phone has copied the address, the TF App will give show a confirmation message as shown below.</p>
+<p><img src="./img/farming_tf_wallet_22.png" alt="farming_tf_wallet_22" /></p>
+<p>In some situations, you will want to access the Stellar and TF Chain secrets. To do so, simply click on the &quot;eye&quot; button of the desired chain, and then copy the secret.</p>
+<p><img src="./img/farming_tf_wallet_23.png" alt="farming_tf_wallet_23" /></p>
+<hr />
+<h2 id="create-a-farm"><a class="header" href="#create-a-farm">Create a Farm</a></h2>
+<p>Now, being a farmer, you might wonder: can I create a ThreeFold Farm with the ThreeFold Connect App. Well, yes! Here is how to do so.</p>
+<p>Click on the hamburger menu on the top left of your screen and select <em>Farmer Migration</em>. This title is somehow misleading, as you can not only migrate farms, but create farms too!</p>
+<p><img src="./img/farming_tf_wallet_24.png" alt="farming_tf_wallet_24" /></p>
+<p>To create a farm, either click on the <em>plus</em> sign at the top right, or click on <em>Click to create -&gt;</em>.</p>
+<p><img src="./img/farming_tf_wallet_25.png" alt="farming_tf_wallet_25" /></p>
+<p>To create a farm, choose the wallet associated with the farm. Also, choose a Farm Name then read and accept the Terms and Conditions. Finally, click <em>submit</em>.</p>
+<p><img src="./img/farming_tf_wallet_26.png" alt="farming_tf_wallet_26" /></p>
+<p>The TF Connect App will give you a confirmation message if the farm was created successfully. If it doesn't work the first time, make sure you have a good Internet connection and try again. If you click on the down arrow, you will be able to see your <em>Farm Information</em>.</p>
+<p><img src="./img/farming_tf_wallet_27.png" alt="farming_tf_wallet_27" /></p>
+<p>You can see on this screen the address were your farming rewards will be sent to. It is the Stellar address associated with the ThreeFold Wallet used to create the farm.</p>
+<p><img src="./img/farming_tf_wallet_28.png" alt="farming_tf_wallet_28" /></p>
+<hr />
+<h2 id="see-threefold-connect-app-and-wallet-transactions"><a class="header" href="#see-threefold-connect-app-and-wallet-transactions">See ThreeFold Connect App and Wallet Transactions</a></h2>
+<p>To see your transactions, simply click on the two arrows at the bottom of the screen, as shown below.</p>
+<p><img src="./img/farming_tf_wallet_29.png" alt="farming_tf_wallet_29" /></p>
+<hr />
+<h2 id="connect-to-the-planetary-network"><a class="header" href="#connect-to-the-planetary-network">Connect to the Planetary Network</a></h2>
+<p>To connect to the Planetary Network, click on the Planetary Network on the TF menu as shown below.</p>
+<p><img src="./img/farming_tf_wallet_30.png" alt="farming_tf_wallet_30" /></p>
+<p>Connecting to the Planetary Network couldn't be easier. Simply click on the connection button and you will see <em>Connected</em> on the screen once the connection is settled.</p>
+<p><img src="./img/farming_tf_wallet_31.png" alt="farming_tf_wallet_31" /></p>
+<hr />
+<h2 id="show-seed-phrase---remove-account-from-tf-connect-app"><a class="header" href="#show-seed-phrase---remove-account-from-tf-connect-app">Show Seed Phrase - Remove Account from TF Connect App</a></h2>
+<p>To see your seed phrase or remove your account from the TF Connect App, choose <em>Settings</em> in the ThreeFold Connect App menu.</p>
+<p><img src="./img/farming_tf_wallet_32.png" alt="farming_tf_wallet_32" /></p>
+<p>First, to see your seed phrase, click on this button as shown below:</p>
+<p><img src="./img/farming_tf_wallet_38.png" alt="farming_tf_wallet_31" /></p>
+<p>You will then be able to see your seed phrase. You can make sure you have your seed phrase somewhere safe, offline, before removing your account.</p>
+<p>Now, we will remove the account from the ThreeFold Connect App. In Settings, click on the arrow circled in green and click on the red button with a white dashed in it. Beware: once done, you can only recover your account with your <strong>3bot ID</strong> and your <strong>seed phrase</strong>.</p>
+<p><img src="./img/farming_tf_wallet_33.png" alt="farming_tf_wallet_33" /></p>
+<p>You will be asked to confirm your action as a security check.</p>
+<p><img src="./img/farming_tf_wallet_34.png" alt="farming_tf_wallet_34" /></p>
+<hr />
+<h2 id="recover-account-on-the-threefold-connect-app"><a class="header" href="#recover-account-on-the-threefold-connect-app">Recover Account on the ThreeFold Connect App</a></h2>
+<p>Once you're removed your account, if you want to recover your account, choose the option <em>RECOVER ACCOUNT</em> on the opening screen on the app.</p>
+<p><img src="./img/farming_tf_wallet_35.png" alt="farming_tf_wallet_35" /></p>
+<p>You will be asked to enter your <em>3bot ID</em> as well as your <em>seed phrase</em>.</p>
+<p><img src="./img/farming_tf_wallet_36.png" alt="farming_tf_wallet_36" /></p>
+<p>You will then be asked to choose and confirm a new 4-digit pin code. Once this is done, you will receive the following confirmation:</p>
+<p><img src="./img/farming_tf_wallet_37.png" alt="farming_tf_wallet_37" /></p>
+<p>That's it! You've recovered your account.</p>
+<hr />
+<h2 id="move-farm-from-the-tf-connect-app-to-the-tf-portal-polkadotjs"><a class="header" href="#move-farm-from-the-tf-connect-app-to-the-tf-portal-polkadotjs">Move Farm from the TF Connect App to the TF Portal (polkadot.js)</a></h2>
+<p>If you want to move your farm from the ThreeFold Connect App to the portal.grif.tf (polkadot.js), follow these steps. Note that you cannot, for now, move your farm from the Portal to the ThreeFold Connect App.</p>
+<p>First, you want to find the TF Chain Secret, this is, in short, a hex version of the private key. To find the secret, head over to the <em>Farmer migration</em> (via the TF Menu).</p>
+<p>In the <em>Farming migration</em> section, click on the arrow (in green here) of the farm you want to export on the ThreeFold Portal.</p>
+<p><img src="./img/farming_tf_wallet_45.png" alt="farming_tf_wallet_45" /></p>
+<p>Then, click on the arrow (in green) to see your TF Chain Secret.</p>
+<p><img src="./img/farming_tf_wallet_46.png" alt="farming_tf_wallet_46" /></p>
+<p>Click on the button to copy the Secret. The App will show a confirmation message. </p>
+<p><img src="./img/farming_tf_wallet_47.png" alt="farming_tf_wallet_47" /></p>
+<p>Now head over to the browser with your polkadot.js extension. For more information on this, check the section <a href="#1-creating-a-polkadotjs-account">Creating a Polkadot.js account</a>.</p>
+<p>On your browser, click on the extension button (in green).</p>
+<p><img src="./img/farming_tf_wallet_48.png" alt="farming_tf_wallet_48" /></p>
+<p>Select the polkadot{.js} extension.</p>
+<p><img src="./img/farming_tf_wallet_49.png" alt="farming_tf_wallet_49" /></p>
+<p>Click on the <em>plus</em> button as shown in green.</p>
+<p><img src="./img/farming_tf_wallet_50.png" alt="farming_tf_wallet_50" /></p>
+<p>Choose the option <em>Import account from pre-existing seed</em>.</p>
+<p><img src="./img/farming_tf_wallet_51.png" alt="farming_tf_wallet_51" /></p>
+<p>In the box <em>EXISTING 12 OR 24-WORD MNEMONIC SEED</em>, paste the TF Chain Secret. Note that this Secret is a HEX version of your seed phrase.</p>
+<p><img src="./img/farming_tf_wallet_52.png" alt="farming_tf_wallet_52" /></p>
+<p>Choose a name for your account. Choose a password.</p>
+<p><img src="./img/farming_tf_wallet_53.png" alt="farming_tf_wallet_53" /></p>
+<p>When you go on the <a href="https://portal.grid.tf/">ThreeFold Portal</a>, you will now see your newly added account. Click on it.</p>
+<p><img src="./img/farming_tf_wallet_54.png" alt="farming_tf_wallet_54" /></p>
+<p>In the Farm section, you can now see your farm. You have successfully move the farm from the ThreeFold Connect App to the ThreeFold Portal.</p>
+<p><img src="./img/farming_tf_wallet_55.png" alt="farming_tf_wallet_55" /></p>
+<p>You can see here that the farming reward address is the same as before.</p>
+<p><img src="./img/farming_tf_wallet_56.png" alt="farming_tf_wallet_56" /></p>
+<p>That's it! You have successfully move the farm from the ThreeFold Connect App to the ThreeFold Portal.</p>
+<hr />
+<h2 id="import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet"><a class="header" href="#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet">Import TF Portal (polkadot.js) Wallet to the TF Connect App Wallet</a></h2>
+<p>Now that we've seen how to go from the TF Connect App to the ThreeFold Portal (Polkadot.js), we will now show how to go the other way around. This method is very simple. You will need your Polkadot.js seed phrase handy.</p>
+<p>Go in the Wallet section of the ThreeFold Connect App and click on import at the bottom right (in green).</p>
+<p><img src="./img/farming_tf_wallet_57.png" alt="farming_tf_wallet_57" /></p>
+<p>Then simply name your wallet and enter the Polkadot.js seed phrase.</p>
+<p><img src="./img/farming_tf_wallet_58.png" alt="farming_tf_wallet_58" /></p>
+<p>Then in the Wallet section, you will now see the wallet.</p>
+<p><img src="./img/farming_tf_wallet_59.png" alt="farming_tf_wallet_59" /></p>
+<hr />
+<h2 id="send-and-receive-tft-between-tf-connect-wallets"><a class="header" href="#send-and-receive-tft-between-tf-connect-wallets">Send and Receive TFT between TF Connect Wallets</a></h2>
+<p>To send and receive TFT between TF Connect Wallet, go into Wallet and select the wallet you want to use.Remember that you must always send and receive TFT on the same chain, so choose either Stellar or TFChain.</p>
+<hr />
+<h3 id="send-tft"><a class="header" href="#send-tft">Send TFT</a></h3>
+<hr />
+<p>To send tokens, select <em>Send Coins</em> in the wallet section. To send TFT, you can scan the QR code of the address you wish to send tokens to. This will enter automatically the necessary information. Make sure to double check that the information is correct to avoid any complications. Otherwise, you can simply enter the correct address in the section <em>To</em>. Choose the amount you want to send. Then click on <em>SEND TOKENS</em>. </p>
+<p>Note that, for such transactions, there is a maximum fee of 0.10 TFT on the Stellar blockchain, and a maximum fee of 0.01 TFT on the TFChain. This amount is taken from the amount you are sending. It is not taken directly in your wallet. </p>
+<hr />
+<h3 id="receive-tft"><a class="header" href="#receive-tft">Receive TFT</a></h3>
+<hr />
+<p>To receive tokens, select <em>Receive Coins</em> in the wallet section. To receive TFT, you can generate a QR code to share to the person waiting to send you tokens. Otherwise, the sender can simply use your Stellar or TFChain address and send you TFT.</p>
+<p>To generate the QR Code, select the chain you want to use, Stellar or TFChain, enter the amount and the message if needed and click on <em>GENERATE QR CODE</em>. Note that there is no message option for TFChain, only for Stellar. This will generate a QR Code that can be scanned by other devices.</p>
+<hr />
+<h3 id="send-tft-to-hardware-wallet-on-stellar-blockchain"><a class="header" href="#send-tft-to-hardware-wallet-on-stellar-blockchain">Send TFT to Hardware Wallet on Stellar Blockchain</a></h3>
+<hr />
+<p>Before sending TFT to a hardware wallet, make sure the hardware wallet has a TFT trustline on the Stellar Blockchain. For more information, read the section below.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../threefold_token/storing_tft/storing_tft.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../threefold_token/storing_tft/hardware_wallet.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../threefold_token/storing_tft/storing_tft.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../threefold_token/storing_tft/hardware_wallet.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="../../mermaid.min.js"></script>
+        <script src="../../mermaid-init.js"></script>
+
+
+    </div>
+    </body>
+</html>
