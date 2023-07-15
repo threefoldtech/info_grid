@@ -1,5 +1,3 @@
-> Note: TFGrid GPU Support is only available on Dev Test for the moment.
-
 ## Deploying a VM
 
 Specify the VM name, specs and your public SSH key path:
@@ -10,8 +8,6 @@ $ tf-grid-cli deploy vm --name examplevm --ssh ~/.ssh/id_rsa.pub --cpu 2 --memor
 12:06PM INF deploying vm
 12:07PM INF vm yggdrasil ip: 300:e9c4:9048:57cf:7da2:ac99:99db:8821
 ```
-
-If you require a GPU on your machine, simply add the `--gpu` flag when deploying on a specific rented node.
 
 Get deployed VM using deployment name:
 

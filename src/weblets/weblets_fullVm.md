@@ -1,5 +1,3 @@
-> Note: TFGrid GPU Support is only available on Dev Test for the moment.
-
 <h1> Full Virtual Machine </h1>
 
 <h2> Table of Contents </h2>
@@ -7,7 +5,6 @@
 - [Introduction](#introduction)
 - [Process](#process)
 - [New Released Features](#new-released-features)
-  - [GPU Support](#gpu-support)
 - [Differences Between Full and Micro VMs](#differences-between-full-and-micro-vms)
 - [Manually Mounting Additional Disks](#manually-mounting-additional-disks)
   - [Check All Disks Attached to the VM](#check-all-disks-attached-to-the-vm)
@@ -33,20 +30,13 @@ Deploy a new full virtual machine on the Threefold Grid
 - `Public IPv4` flag gives the full VM a Public IPv4
 - `Public IPv6` flag gives the full VM a Public IPv6
 - `Planetary Network` to connect the full VM to Planetary network
-- `Selecting a Node with GPU` when selecting a node with GPU resources, please make sure that you have a rented node. To rent a node and gain access to GPU capabilities, you can use our dashboard.
 - Choose the node to deploy on which can be
 - `Manual` where you specify the node id yourself
 - `Automatic` Suggests nodes list based on search criteria e.g `country`, `farm`, capacity..
 ***
 ## New Released Features
 
-### GPU Support
-
-Currently the playground is the easiest way to deploy a VM, a new option GPU is added to the filters
-
-![GPU Support](img/fullvm_gpu_support.png)
-
-That means it will limit the criteria of the search to the nodes you rented that has GPU, once it finds nodes it will also show a list of the available GPUs to use in the VM
+Currently the playground is the easiest way to deploy a VM.
 
 ![Disks tab](img/fullvm2.png)
 You can attach one or more disks to the Full Virtual Machine by clicking on the Disks tab and the plus `+` sign and specify the following parameters

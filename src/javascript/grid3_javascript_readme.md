@@ -23,4 +23,3 @@ All code examples can be found [here](https://github.com/threefoldtech/grid3_cli
 - [QSFS](../javascript/grid3_javascript_qsfs.md)
 - [Key Value Store](../javascript/grid3_javascript_kvstore.md)
 - [VM with Wireguard and Gateway](../javascript/grid3_wireguard_gateway.md)
-- [GPU Support](../javascript/grid3_javascript_gpu_support.md)

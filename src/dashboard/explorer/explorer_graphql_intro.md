@@ -9,7 +9,6 @@
   - [Finding Farms with Public IPs](#finding-farms-with-public-ips)
   - [Finding Nodes on a Specific Farm](#finding-nodes-on-a-specific-farm)
   - [Finding Nodes by Country](#finding-nodes-by-country)
-  - [Filtering Nodes with GPU Devices](#filtering-nodes-with-gpu-devices)
   - [Finding Nodes by Capacity](#finding-nodes-by-capacity)
   - [Filtering Nodes with Specific Capacity](#filtering-nodes-with-specific-capacity)
 - [GraphQL and the ThreeFold Explorer](#graphql-and-the-threefold-explorer)
@@ -138,17 +137,6 @@ query MyQuery {
 query MyQuery {
   nodes(where: {country_eq: "BE"}) {
     twinId
-  }
-}
-```
-***
-### Filtering Nodes with GPU Devices
-
-```graphql
-query MyQuery {
-  nodes(where: {hasGpu_eq: true}) {
-    hasGpu
-    id
   }
 }
 ```

@@ -112,17 +112,6 @@ query MyQuery {
 }
 ```
 
-## filtering nodes with gpu devices
-
-```graphql
-query MyQuery {
-  nodes(where: {hasGpu_eq: true}) {
-    hasGpu
-    id
-  }
-}
-```
-
 ## finding nodes  with capacity
 
 ```graphql
