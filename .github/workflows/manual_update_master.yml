@@ -20,4 +20,5 @@ jobs:
           git log -1
           git restore .
           git pull
+          source ~/.cargo/env
           mdbook build -d docs
