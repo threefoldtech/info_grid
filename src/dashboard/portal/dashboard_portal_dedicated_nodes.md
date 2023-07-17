@@ -1,15 +1,27 @@
-## What is Dedicated Node?
+<h1> Dedicated Nodes </h1>
 
-A user can reserve an entire node then use it exclusively to deploy solutions.
+<h2> Table of Contents </h2>
 
-### Description
+- [What is a Dedicated Node?](#what-is-a-dedicated-node)
+- [Description](#description)
+- [Billing \& Pricing](#billing--pricing)
+- [Usage](#usage)
+
+***
+
+## What is a Dedicated Node?
+
+Dedicated nodes are 3Nodes that can be reserved and rented entirely by one user. The user can thus reserve an entire node and use it exclusively to deploy solutions. This feature is ideal for users who want to host heavy deployments with the benefits of high reliability and cost effectiveness.
+
+***
+## Description
 
 - Node reserved with deploying a `RentContract` on this node. node can has only one rentContract.
 - When a user create a RentContract against a node, the grid validate that there are no other active contracts on that node on the creation.
 - Once a RentContract is created, the grid can only accept contracts on this node from the tenant.
 - Only workloads from the tenant are accepted
-
-### Billing & Pricing
+***
+## Billing & Pricing
 
 - Once a node is rented, there is a fixed charge billed to the tenant regardless of deployed workloads.
 - Any subsequent NodeContract deployed on a node where a rentContract is active (and the same user is creating the nodeContracts) can be excluded from billing (apart from public ip and network usage).
@@ -17,8 +29,8 @@ A user can reserve an entire node then use it exclusively to deploy solutions.
   - 50% for dedicated node (TF Pricing policies)
   - a second level discount up to 60% for balance level see [Discount Levels](../../cloud/cloudunits_pricing.md#staking-discount)
 
-
-### Usage
+***
+## Usage
 
 - See list of all dedicated node on `Dedicated Nodes` tab on the portal.
 
