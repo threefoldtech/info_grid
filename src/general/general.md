@@ -1,5 +1,9 @@
 # General Information
 
+Welcome to the ThreeFold General section of the ThreeFold Manual! 
+
+This book serves as a central hub for gathering general information about ThreeFold, providing you with an overview of the core concepts, tools, and resources associated with the platform. Whether you're new to ThreeFold or seeking a refresher, this section covers a wide range of topics.  Let's dive into this section and gain a comprehensive understanding of ThreeFold's vision, technology, and community-driven growth.
+
 <h2> Table of Contents </h2>
 
 - [How it Works](../intro/grid3_howitworks.md)
