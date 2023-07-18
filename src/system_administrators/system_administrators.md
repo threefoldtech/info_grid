@@ -1,10 +1,10 @@
 # ThreeFold System Administrators
 
-Welcome to the System Administrator Section of the ThreeFold Manual! 
+Welcome to the ThreeFold System Administrators section of the ThreeFold Manual! 
 
-This dedicated section is designed specifically for system administrators, providing a comprehensive resource for all the documentation, guides, and how-tos related to managing and maintaining the ThreeFold products and technologies. Whether you're responsible for overseeing the infrastructure, ensuring optimal performance, or troubleshooting issues, this section has got you covered. 
+The book is designed specifically for system administrators, providing a comprehensive resource for all the documentation, guides, and how-tos related to managing and maintaining the ThreeFold products and technologies. Whether you're responsible for overseeing infrastructures, ensuring optimal performance, or troubleshooting issues, this section has got you covered. 
 
-From deployment strategies to monitoring tools, from security best practices to network configuration, you'll find a wealth of information to support your role as a system administrator. With this comprehensive resource at your fingertips, you'll be equipped to handle the intricacies of the decentralized and sustainable ThreeFold ecosystem and ensure a smooth and efficient operation. So, Let's delve into the System Administrator Section and empower ourselves with the knowledge and skills to effectively manage the ThreeFold infrastructure.
+From deployment strategies to monitoring tools, from security best practices to network configuration, you'll find a wealth of information to support your role as a system administrator. With this comprehensive resource at your fingertips, you'll be equipped to handle the intricacies of the decentralized and sustainable ThreeFold ecosystem and ensure a smooth and efficient operation. So, let's delve into the System Administrators book and empower ourselves with the knowledge and skills to effectively manage the ThreeFold infrastructure.
 
 <h2> Table of Contents </h2>
 
