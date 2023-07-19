@@ -18,7 +18,7 @@ jobs:
         script: |
           cd websites/info_grid/
           git log -1
-          git clean -f
-          git pull
+          git fetch
+          git reset --hard origin/master
           source ~/.cargo/env
           mdbook build -d docs

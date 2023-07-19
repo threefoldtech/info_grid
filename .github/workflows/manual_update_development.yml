@@ -18,6 +18,6 @@ jobs:
         script: |
           cd websites/www2/info_grid/
           git log -1
-          git clean -f
-          git pull
+          git fetch
+          git reset --hard origin/development
           mdbook build -d docs
