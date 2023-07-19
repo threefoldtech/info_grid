@@ -1,0 +1,1 @@
+exec: redis-server --protected-mode no --unixsocket /var/run/redis.sock
