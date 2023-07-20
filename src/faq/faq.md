@@ -2214,7 +2214,7 @@ To set the relay on the TF Dashboard, follow those steps:
 * Select the relay `relay.grid.tf` then click `Submit`.
 * Enter your password and sign the transaction.
 
-Note that you might need to set the relay on the TF Dashboard if, while deploying on the TFGrid, you get the error "Unable to establish a connection with the RMB server."
+Note that if you are using the TF Playground and the twin doesn't have the relay set, the TF Playground will set the relay automatically.
 
 ***
 
