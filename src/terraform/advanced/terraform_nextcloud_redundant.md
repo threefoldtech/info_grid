@@ -108,7 +108,7 @@ We thus start by finding two 3Nodes with sufficient resources. For this current 
     * `Free Public IP`: 2
       * Note: if you want a public IPv4 address, it is recommended to set the parameter `FREE PUBLIC IP` to at least 2 to avoid false positives. This ensures that the shown 3Nodes have viable IP addresses.
 
-Once you've found two proper nodes, take node of their node IDs. You will need to use those IDs when creating the Terraform files.
+Once you've found two 3Nodes, take note of their node IDs. You will need to use those IDs when creating the Terraform files.
 
 ***
 

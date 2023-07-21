@@ -9,12 +9,11 @@
 - [Prerequisites](#prerequisites)
 - [Find Nodes with the ThreeFold Explorer](#find-nodes-with-the-threefold-explorer)
 - [Set the VMs](#set-the-vms)
-  - [Create a Two Servers Wireguard VPN with Terraform](#create-a-two-servers-wireguard-vpn-with-terraform)
-    - [Create the Terraform Files](#create-the-terraform-files)
-    - [Deploy the 3nodes with Terraform](#deploy-the-3nodes-with-terraform)
-    - [SSH into the 3nodes](#ssh-into-the-3nodes)
-    - [Preparing the VMs for the Deployment](#preparing-the-vms-for-the-deployment)
-    - [Test the Wireguard Connection](#test-the-wireguard-connection)
+  - [Overview](#overview)
+  - [Create the Terraform Files](#create-the-terraform-files)
+  - [Deploy the Full VM with Terraform](#deploy-the-full-vm-with-terraform)
+  - [SSH into the 3Node](#ssh-into-the-3node)
+  - [Prepare the VM for the Deployment](#prepare-the-vm-for-the-deployment)
 - [Create the MariaDB Database](#create-the-mariadb-database)
   - [Download MariaDB and Configure the Database](#download-mariadb-and-configure-the-database)
   - [Create User with Replication Grant](#create-user-with-replication-grant)
@@ -101,22 +100,23 @@ We thus start by finding a 3Node with sufficient resources. For this current Nex
     * `Free Public IP`: 2
       * Note: if you want a public IPv4 address, it is recommended to set the parameter `FREE PUBLIC IP` to at least 2 to avoid false positives. This ensures that the shown 3Nodes have viable IP addresses.
 
-Once you've found a proper node, take node of its node ID. You will need to use this ID when creating the Terraform files.
+Once you've found a 3Node, take note of its node ID. You will need to use this ID when creating the Terraform files.
 
 ***
 
 # Set the VMs
-## Create a Two Servers Wireguard VPN with Terraform
 
-For this guide, we use two files to deploy with Terraform. The first file contains the environment variables and the second file contains the parameters to deploy our workloads.
+## Overview
+
+For this guide, we use two files to deploy with Terraform. The first file contains the environment variables and the second file contains the parameters to deploy our workload.
 
 To facilitate the deployment, only the environment variables file needs to be adjusted. The `main.tf` file contains the environment variables (e.g. `var.size` for the disk size) and thus you do not need to change this file. Of course, you can adjust the deployment based on your preferences. That being said, it should be easy to deploy the Terraform deployment with the `main.tf` as is.
 
-On your local computer, create a new folder named `terraform` and a subfolder called `deployment-nextcloud`. In the subfolder, store the files `main.tf` and `credentials.auto.tfvars`.
+On your local computer, create a new folder named `terraform` and a subfolder called `deployment-single-nextcloud`. In the subfolder, store the files `main.tf` and `credentials.auto.tfvars`.
 
-Modify the variable files to take into account your own seed phrase and SSH keys. You should also specifiy the node IDs of the two 3nodes you will be deploying on.
+Modify the variable files to take into account your own seed phrase and SSH keys. You should also specifiy the node ID of the 3Nodes you will be deploying on.
 
-### Create the Terraform Files
+## Create the Terraform Files
 
 Open the terminal.
 
@@ -125,12 +125,12 @@ Open the terminal.
      cd ~
      ```
 
-* Create the folder `terraform` and the subfolder `deployment-nextcloud`:
+* Create the folder `terraform` and the subfolder `deployment-single-nextcloud`:
   *  ```
-     mkdir -p terraform/deployment-nextcloud
+     mkdir -p terraform/deployment-single-nextcloud
      ```
   *  ```
-     cd terraform/deployment-nextcloud
+     cd terraform/deployment-single-nextcloud
      ```
 * Create the `main.tf` file:
   *  ```
@@ -157,10 +157,6 @@ variable "SSH_KEY" {
 }
 
 variable "tfnodeid1" {
-  type = string
-}
-
-variable "tfnodeid2" {
   type = string
 }
 
@@ -219,63 +215,24 @@ resource "grid_deployment" "d1" {
   }
 }
 
-resource "grid_deployment" "d2" {
-  disks {
-    name = "disk2"
-    size = var.size
-  }
-  name         = local.name
-  node         = var.tfnodeid2
-  network_name = grid_network.net1.name
-
-  vms {
-    name       = "vm2"
-    flist      = "https://hub.grid.tf/tf-official-vms/ubuntu-22.04.flist"
-    cpu        = var.cpu
-    mounts {
-        disk_name = "disk2"
-        mount_point = "/disk2"
-    }
-    memory     = var.memory
-    entrypoint = "/sbin/zinit init"
-    env_vars = {
-      SSH_KEY = var.SSH_KEY
-    }
-    publicip   = true
-    planetary = true
-  }
-}
-
 output "wg_config" {
   value = grid_network.net1.access_wg_config
 }
 output "node1_zmachine1_ip" {
   value = grid_deployment.d1.vms[0].ip
 }
-output "node1_zmachine2_ip" {
-  value = grid_deployment.d2.vms[0].ip
-}
 
 output "ygg_ip1" {
   value = grid_deployment.d1.vms[0].ygg_ip
-}
-output "ygg_ip2" {
-  value = grid_deployment.d2.vms[0].ygg_ip
 }
 
 output "ipv4_vm1" {
   value = grid_deployment.d1.vms[0].computedip
 }
 
-output "ipv4_vm2" {
-  value = grid_deployment.d2.vms[0].computedip
-}
-
 ```
 
-In this file, we name the first VM as `vm1` and the second VM as `vm2`. In the guide, we call `vm1` as the master VM and `vm2` as the worker VM.
-
-In this guide, the virtual IP for `vm1` is 10.1.3.2 and the virtual IP for `vm2` is 10.1.4.2. This might be different during your own deployment. Change the codes in this guide accordingly.
+In this file, we name the full VM as `vm1`.
 
 * Create the `credentials.auto.tfvars` file:
   *  ```
@@ -288,18 +245,17 @@ In this guide, the virtual IP for `vm1` is 10.1.3.2 and the virtual IP for `vm2`
      SSH_KEY = "..."
 
      tfnodeid1 = "..."
-     tfnodeid2 = "..."
 
      size = "50"
      cpu = "1"
      memory = "2048"
      ```
 
-Make sure to add your own seed phrase and SSH public key. You will also need to specify the two node IDs of the servers used. Simply replace the three dots by the content. Obviously, you can decide to set more storage (size). The memory and CPU should be sufficient for the Nextcloud deployment with the above numbers.
+Make sure to add your own seed phrase and SSH public key. You will also need to specify the node ID of the 3Node. Simply replace the three dots by the appropriate content. Obviously, you can decide to set more storage (size). The memory and CPU should be sufficient for the Nextcloud deployment with the above numbers.
 
-### Deploy the 3nodes with Terraform
+## Deploy the Full VM with Terraform
 
-We now deploy the VPN with Terraform. Make sure that you are in the correct folder `terraform/deployment-nextcloud` with the main and variables files.
+We now deploy the Full VM with Terraform. Make sure that you are in the correct folder `terraform/deployment-single-nextcloud` with the main and variables files.
 
 * Initialize Terraform:
   *  ```
@@ -311,16 +267,16 @@ We now deploy the VPN with Terraform. Make sure that you are in the correct fold
      terraform apply
      ```
 
-After deployments, take note of the 3nodes' IPv4 address. You will need those addresses to SSH into the 3nodes.
+After deployments, take note of the 3Node's IPv4 address. You will need this address to SSH into the 3Node.
 
-### SSH into the 3nodes
+## SSH into the 3Node
 
-* To [SSH into the 3nodes](../../getstarted/ssh_guide/ssh_guide.md), write the following:
+* To [SSH into the 3Node](../../getstarted/ssh_guide/ssh_guide.md), write the following:
   *  ```
      ssh root@VM_IPv4_Address
      ```
 
-* If you've already deployed on other 3nodes, you might need to remove the file `known_hosts` and add the private key in the SSH `.ssh` folder:
+* If you've already deployed on other 3Nodes, you might need to remove the file `known_hosts` and add the private key in the SSH `.ssh` folder:
     * ```
       rm ~/.ssh/known_hosts
       ```
@@ -328,7 +284,7 @@ After deployments, take note of the 3nodes' IPv4 address. You will need those ad
       sudo ssh-add ~/.ssh/id_rsa
       ```
 
-### Preparing the VMs for the Deployment
+## Prepare the VM for the Deployment
 
 * Update and upgrade the system
   * ```
@@ -338,45 +294,7 @@ After deployments, take note of the 3nodes' IPv4 address. You will need those ad
   * ```
     sudo reboot
     ``` 
-* Reconnect to the VMs
-
-***
-
-### Test the Wireguard Connection
-
-We now want to ping the VMs using Wireguard. This will ensure the connection is properly established.
-
-First, we set Wireguard with the Terraform output.
-
-* On your local computer, take the Terraform's `wg_config` output and create a `wg.conf` file in the directory `/usr/local/etc/wireguard/wg.conf`.
-  *  ```
-     nano /usr/local/etc/wireguard/wg.conf
-     ```
-
-* Paste the content provided by the Terraform deployment. You can use `terraform show` to see the Terraform output. The Wireguard output stands in between `EOT`.
-
-* Start Wireguard on your local computer:
-  *  ```
-     wg-quick up wg
-     ```
-
-* To stop the wireguard service:
-  *  ```
-     wg-quick down wg
-     ```
-
-If it doesn't work and you already did a wireguard connection with the same file from Terraform (from a previous deployment perhaps), do `wg-quick down wg`, then `wg-quick up wg`.
-This should set everything properly.
-
-* As a test, you can ping the virtual IP addresses of both VMs to make sure the Wireguard connection is correct:
-  *  ```
-     ping -c 2 10.1.3.2
-     ```
-  *  ```
-     ping -c 2 10.1.4.2
-     ```
-
-If you correctly receive the packets from the two VMs, you know that the VPN is properly set.
+* Reconnect to the VM
 
 ***
 
