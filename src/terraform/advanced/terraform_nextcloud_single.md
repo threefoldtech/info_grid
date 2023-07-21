@@ -1,4 +1,4 @@
-<h1>Nextcloud Redundant Deployment on Two 3node Servers</h1>
+<h1>Nextcloud Deployment </h1>
 
 ![ ](./img/terraform_.png)
 
@@ -41,13 +41,9 @@
 
 # Introduction
 
-In this Threefold Guide, we deploy a redundant [Nextcloud](https://nextcloud.com/) instance that is continually synced on two different 3node servers running on the [Threefold Grid](https://threefold.io/).
+In this Threefold Guide, we deploy a [Nextcloud](https://nextcloud.com/) instance on a Full VM running on the [Threefold Grid](https://threefold.io/).
 
-We will learn how to deploy two full virtual machines (Ubuntu 22.04) with [Terraform](https://www.terraform.io/). The Terraform deployment will be composed of a virtual private network (VPN) using [Wireguard](https://www.wireguard.com/). The two VMs will thus be connected in a private and secure network. Once this is done, we will link the two VMs together by setting up a [MariaDB](https://mariadb.org/) database and using [GlusterFS](https://www.gluster.org/). Then, we will install and deploy Nextcloud. We will add a DDNS (dynamic DNS) domain to the Nextcloud deployment. It will then be possible to connect to the Nextcloud instance over public internet. Nextcloud will be available over your computer and even your smart phone! We will also set HTTPS for the DDNS domain in order to make the Nextcloud instance as secure as possible. You are free to explore different DDNS options. In this guide, we will be using [DuckDNS](https://www.duckdns.org/) for simplicity.
-
-The advantage of this redundant Nextcloud deployment is obvious: if one of the two VMs goes down, the Nextcloud instance will still be accessible, as the other VM will take the lead. Also, the two VMs will be continually synced in real-time. If the master node goes down, the data will be synced to the worker node, and the worker node will become the master node. Once the master VM goes back online, the data will be synced to the master node and the master node will retake the lead as the master node.
-
-This kind of real-time backup of the database is not only limited to Nextcloud. You can use the same architecture to deploy different workloads while having the redundancy over two 3node servers. This architecture could be deployed over more than two 3nodes. Feel free to explore and let us know in the [Threefold Forum](http://forum.threefold.io/) if you come up with exciting and different variations of this kind of deployment.
+We will learn how to deploy a full virtual machine (Ubuntu 22.04) with [Terraform](https://www.terraform.io/). We will install and deploy Nextcloud. We will add a DDNS (dynamic DNS) domain to the Nextcloud deployment. It will then be possible to connect to the Nextcloud instance over public internet. Nextcloud will be available over your computer and even your smart phone! We will also set HTTPS for the DDNS domain in order to make the Nextcloud instance as secure as possible. You are free to explore different DDNS options. In this guide, we will be using [DuckDNS](https://www.duckdns.org/) for simplicity.
 
 As always, if you have questions concerning this guide, you can write a post on the [Threefold Forum](http://forum.threefold.io/).
 
@@ -62,10 +58,8 @@ This guide might seem overwhelming, but the steps are carefully explained. Take 
 To get an overview of the whole process, we present the main steps:
 
 * Download the dependencies
-* Find two 3nodes on the TF Grid
-* Deploy and set the VMs with Terraform
-* Create a MariaDB database
-* Download and set GlusterFS
+* Find a 3Node on the TF Grid
+* Deploy and set the VM with Terraform
 * Install PHP and Nextcloud
 * Create a subdomain with DuckDNS
 * Set Apache
@@ -78,20 +72,19 @@ To get an overview of the whole process, we present the main steps:
 # Prerequisites
 
 * [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
-* [Install Wireguard](https://www.wireguard.com/install/)
 
-You need to download and install properly Terraform and Wireguard on your local computer. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
+You need to download and install properly Terraform on your local computer. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
 
 ***
 
 # Find Nodes with the ThreeFold Explorer
 
-We first need to decide on which 3Nodes we will be deploying our workload.
+We first need to decide on which 3Node we will be deploying our workload.
 
-We thus start by finding two 3Nodes with sufficient resources. For this current Nextcloud guide, we will be using 1 CPU, 2 GB of RAM and 50 GB of storage. We are also looking for 3Nodes with each a public IPv4 address.
+We thus start by finding a 3Node with sufficient resources. For this current Nextcloud guide, we will be using 1 CPU, 2 GB of RAM and 50 GB of storage. We are also looking for a 3Node with a public IPv4 address.
 
 * Go to the ThreeFold Grid's [Explorer](https://dashboard.grid.tf/explorer/nodes) (Main Net)
-* Find two 3Nodes with suitable resources for the deployment and take note of their node IDs on the leftmost column `ID`
+* Find a 3Node with suitable resources for the deployment and take note of its node ID on the leftmost column `ID`
 * For proper understanding, we give further information on some relevant columns:
   * `ID` refers to the node ID
   * `Free Public IPs` refers to available IPv4 public IP addresses
@@ -99,16 +92,16 @@ We thus start by finding two 3Nodes with sufficient resources. For this current 
   * `SRU` refers to SSD storage
   * `MRU` refers to RAM (memory)
   * `CRU` refers to virtual cores (vcores)
-* To quicken the process of finding proper 3Nodes, you can narrow down the search by adding filters:
+* To quicken the process of finding a proper 3Node, you can narrow down the search by adding filters:
   * At the top left of the screen, in the `Filters` box, select the parameter(s) you want.
-  * For each parameter, a new field will appear where you can enter a minimum number requirement for the 3Nodes.
+  * For each parameter, a new field will appear where you can enter a minimum number requirement for the 3Node.
     * `Free SRU (GB)`: 50
     * `Free MRU (GB)`: 2
     * `Total CRU (Cores)`: 1
     * `Free Public IP`: 2
       * Note: if you want a public IPv4 address, it is recommended to set the parameter `FREE PUBLIC IP` to at least 2 to avoid false positives. This ensures that the shown 3Nodes have viable IP addresses.
 
-Once you've found two proper nodes, take node of their node IDs. You will need to use those IDs when creating the Terraform files.
+Once you've found a proper node, take node of its node ID. You will need to use this ID when creating the Terraform files.
 
 ***
 
