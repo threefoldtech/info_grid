@@ -7,27 +7,20 @@
 - [Introduction](#introduction)
 - [Main Steps](#main-steps)
 - [Prerequisites](#prerequisites)
-- [Find Nodes with the ThreeFold Explorer](#find-nodes-with-the-threefold-explorer)
-- [Set the VMs](#set-the-vms)
+- [Find a 3Node with the ThreeFold Explorer](#find-a-3node-with-the-threefold-explorer)
+- [Set the full VM](#set-the-full-vm)
   - [Overview](#overview)
   - [Create the Terraform Files](#create-the-terraform-files)
   - [Deploy the Full VM with Terraform](#deploy-the-full-vm-with-terraform)
   - [SSH into the 3Node](#ssh-into-the-3node)
-  - [Prepare the VM for the Deployment](#prepare-the-vm-for-the-deployment)
+  - [Prepare the full VM](#prepare-the-full-vm)
 - [Create the MariaDB Database](#create-the-mariadb-database)
   - [Download MariaDB and Configure the Database](#download-mariadb-and-configure-the-database)
-  - [Create User with Replication Grant](#create-user-with-replication-grant)
-  - [Verify the Access of the User](#verify-the-access-of-the-user)
-  - [Set the VMs to Accept the MariaDB Connection](#set-the-vms-to-accept-the-mariadb-connection)
-    - [TF Template Worker Server Data](#tf-template-worker-server-data)
-    - [TF Template Master Server Data](#tf-template-master-server-data)
   - [Set the Nextcloud User and Database](#set-the-nextcloud-user-and-database)
-- [Install and Set GlusterFS](#install-and-set-glusterfs)
 - [Install PHP and Nextcloud](#install-php-and-nextcloud)
 - [Create a Subdomain with DuckDNS](#create-a-subdomain-with-duckdns)
-  - [Worker File for DuckDNS](#worker-file-for-duckdns)
 - [Set Apache](#set-apache)
-- [Access Nextcloud on a Web Browser with the Subdomain](#access-nextcloud-on-a-web-browser-with-the-subdomain)
+- [Access Nextcloud on a Web Browser](#access-nextcloud-on-a-web-browser)
 - [Enable HTTPS](#enable-https)
   - [Install Certbot](#install-certbot)
   - [Set the Certbot with the DNS Domain](#set-the-certbot-with-the-dns-domain)
@@ -104,7 +97,7 @@ Once you've found a 3Node, take note of its node ID. You will need to use this I
 
 ***
 
-# Set the VMs
+# Set the full VM
 
 ## Overview
 
@@ -284,7 +277,7 @@ After deployments, take note of the 3Node's IPv4 address. You will need this add
       sudo ssh-add ~/.ssh/id_rsa
       ```
 
-## Prepare the VM for the Deployment
+## Prepare the full VM
 
 * Update and upgrade the system
   * ```
@@ -460,7 +453,7 @@ The file should look like this, with your own subdomain instead of `subdomain`:
 
 ***
 
-# Access Nextcloud on a Web Browser with the Subdomain
+# Access Nextcloud on a Web Browser
 
 We now access Nextcloud over the public Internet.
 
