@@ -901,7 +901,7 @@ The Nextcloud database is synced in real-time on two different 3nodes. When one 
 
 You can now [install Nextcloud](https://nextcloud.com/install/) on your local computer. You will then be able to "use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop". You can also do regular backups with Nextcloud to ensure maximum resilience of your data. Check Nextcloud's [documentation](https://docs.nextcloud.com/server/latest/admin_manual/maintenance/backup.html) for more information on this.
 
-You should now have a basic understanding of the Threefold Grid, GraphQL, Wireguard, Terraform, MariaDB, GlusterFS, PHP and Nextcloud. Now, you know how to deploy workloads on the Threefold Grid with an efficient architecture in order to ensure redundancy. This is just the beginning. The Threefold Grid has a somewhat infinite potential when it comes to deployments, workloads, architectures and server projects. Let's see where it goes from here!
+You should now have a basic understanding of the Threefold Grid, the ThreeFold Explorer, Wireguard, Terraform, MariaDB, GlusterFS, PHP and Nextcloud. Now, you know how to deploy workloads on the Threefold Grid with an efficient architecture in order to ensure redundancy. This is just the beginning. The Threefold Grid has a somewhat infinite potential when it comes to deployments, workloads, architectures and server projects. Let's see where it goes from here!
 
 This Nextcloud deployment could be improved in many ways and other guides might be published in the future with enhanced functionalities. Stay tuned for more Threefold Guides. If you have ideas on how to improve this guide, please let us know. We learn best when sharing knowledge.
 

@@ -76,7 +76,7 @@ You need to download and install properly Terraform on your local computer. Simp
 
 ***
 
-# Find Nodes with the ThreeFold Explorer
+# Find a 3Node with the ThreeFold Explorer
 
 We first need to decide on which 3Node we will be deploying our workload.
 
@@ -114,13 +114,13 @@ To facilitate the deployment, only the environment variables file needs to be ad
 
 On your local computer, create a new folder named `terraform` and a subfolder called `deployment-single-nextcloud`. In the subfolder, store the files `main.tf` and `credentials.auto.tfvars`.
 
-Modify the variable files to take into account your own seed phrase and SSH keys. You should also specifiy the node ID of the 3Nodes you will be deploying on.
+Modify the variable files to take into account your own seed phrase and SSH keys. You should also specifiy the node ID of the 3Node you will be deploying on.
 
 ## Create the Terraform Files
 
-Open the terminal.
+Open the terminal and follow those steps.
 
-* Go to the home folder
+* Go to the home folder 
   *  ```
      cd ~
      ```
@@ -262,7 +262,7 @@ We now deploy the Full VM with Terraform. Make sure that you are in the correct 
      terraform init
      ```
 
-* Apply Terraform to deploy the VPN:
+* Apply Terraform to deploy the full VM:
   *  ```
      terraform apply
      ```
@@ -288,7 +288,7 @@ After deployments, take note of the 3Node's IPv4 address. You will need this add
 
 * Update and upgrade the system
   * ```
-    sudo apt update && sudo apt upgrade -y && sudo apt-get install apache2 -y
+    sudo apt update && sudo apt upgrade && sudo apt-get install apache2
     ```
 * After download, reboot the system
   * ```
@@ -304,7 +304,7 @@ After deployments, take note of the 3Node's IPv4 address. You will need this add
 
 * Download MariaDB's server and client
   * ```
-    sudo apt install mariadb-server mariadb-client -y
+    sudo apt install mariadb-server mariadb-client
     ```
 * Configure the MariaDB database
   * ```
@@ -313,9 +313,9 @@ After deployments, take note of the 3Node's IPv4 address. You will need this add
     * Do the following changes 
       * Add `#` in front of
         * `bind-address = 127.0.0.1`
-      * Remove `#` in front of the following lines and replace  `X` by `1` for the master VM and by `2` for the worker VM
+      * Remove `#` in front of the following lines and make sure the variable `server-id` is set to `1`
         ```
-        #server-id              = X
+        #server-id              = 1
         #log_bin                = /var/log/mysql/mysql-bin.log
         ```
       * Below the lines shown above add the following line:
@@ -333,72 +333,13 @@ After deployments, take note of the 3Node's IPv4 address. You will need this add
     sudo mysql
     ```
 
-## Create User with Replication Grant
-
-* Do the following on both VMs
-  * ```
-    CREATE USER 'repuser'@'%' IDENTIFIED BY 'password';
-    GRANT REPLICATION SLAVE ON *.* TO 'repuser'@'%' ;
-    FLUSH PRIVILEGES;
-    show master status\G;
-    ```
-
-## Verify the Access of the User
-* Verify the access of the user
-    ```
-    SELECT host FROM mysql.user WHERE User = 'repuser';
-    ```
-  * You want to see `%` in Host
-
-## Set the VMs to Accept the MariaDB Connection
-
-### TF Template Worker Server Data
-
-* Write the following in the worker VM
-  * ```
-    CHANGE MASTER TO MASTER_HOST='10.1.3.2',
-    MASTER_USER='repuser',
-    MASTER_PASSWORD='password',
-    MASTER_LOG_FILE='mysql-bin.000001',
-    MASTER_LOG_POS=328;
-    ```
-  * ```
-    start slave;
-    ```
-  * ```
-    show slave status\G;
-    ```
-### TF Template Master Server Data
-
-* Write the following in the master VM
-  * ```
-    CHANGE MASTER TO MASTER_HOST='10.1.4.2',
-    MASTER_USER='repuser',
-    MASTER_PASSWORD='password',
-    MASTER_LOG_FILE='mysql-bin.000001',
-    MASTER_LOG_POS=328;
-    ```
-  * ```
-    start slave;
-    ```
-  * ```
-    show slave status\G;
-    ```
-
 ## Set the Nextcloud User and Database
 
-We now set the Nextcloud database. You should choose your own username and password. The password should be the same for the master and worker VMs.
+We now set the Nextcloud database. You should choose your own username and password. 
 
-* On the master VM, write:
+* On the full VM, write:
     ```
     CREATE DATABASE nextcloud;
-    CREATE USER 'ncuser'@'%';
-    GRANT ALL PRIVILEGES ON nextcloud.* TO ncuser@'%' IDENTIFIED BY 'password1234';
-    FLUSH PRIVILEGES;
-    ```
-
-* On the worker VM, write:
-    ```
     CREATE USER 'ncuser'@'%';
     GRANT ALL PRIVILEGES ON nextcloud.* TO ncuser@'%' IDENTIFIED BY 'password1234';
     FLUSH PRIVILEGES;
@@ -416,95 +357,18 @@ We now set the Nextcloud database. You should choose your own username and passw
     ```
     exit;
     ```
-
-***
-
-# Install and Set GlusterFS
-
-We will now install and set [GlusterFS](https://www.gluster.org/), a free and open source software scalable network filesystem.
-
-* Install GlusterFS on both the master and worker VMs
-  *  ```
-     echo | sudo add-apt-repository ppa:gluster/glusterfs-7 && sudo apt install glusterfs-server -y
-     ```
-* Start the GlusterFS service on both VMs
-  *  ```
-     sudo systemctl start glusterd.service && sudo systemctl enable glusterd.service
-     ```
-* Set the master to worker probe IP on the master VM:
-  *  ```
-     sudo gluster peer probe 10.1.4.2
-     ```
-
-* See the peer status on the worker VM:
-  *  ```
-     sudo gluster peer status
-     ```
-
-* Set the master and worker IP address on the master VM:
-  *  ```
-     sudo gluster volume create vol1 replica 2 10.1.3.2:/gluster-storage 10.1.4.2:/gluster-storage force
-     ```
-
-* Start GlusterFS on the master VM:
-  *  ```
-     sudo gluster volume start vol1
-     ```
-
-* Check the status on the worker VM:
-  *  ```
-     sudo gluster volume status
-     ```
-
-* Mount the server with the master IP on the master VM:
-  *  ```
-     sudo mount -t glusterfs 10.1.3.2:/vol1 /var/www
-     ```
-
-* See if the mount is there on the master VM:
-  *  ```
-     df -h
-     ```
-
-* Mount the server with the worker IP on the worker VM:
-  *  ```
-     sudo mount -t glusterfs 10.1.4.2:/vol1 /var/www
-     ```
-
-* See if the mount is there on the worker VM:
-  *  ```
-     df -h
-     ```
-
-We now update the mount with the filse fstab on both VMs.
-
-* To prevent the mount from being aborted if the server reboots, write the following on both servers:
-  *  ```
-     sudo nano /etc/fstab
-     ```
-
-* Add the following line in the `fstab` file to set the master VM with the master virtual IP (here it is 10.1.3.2):
-  *  ```
-     10.1.3.2:/vol1 /var/www glusterfs defaults,_netdev 0 0
-     ```
-
-* Add the following line in the `fstab` file to set the worker VM with the worker virtual IP (here it is 10.1.4.2):
-  *  ```
-     10.1.4.2:/vol1 /var/www glusterfs defaults,_netdev 0 0
-     ```
-
 ***
 
 # Install PHP and Nextcloud
 
 * Install PHP and the PHP modules for Nextcloud on both the master and the worker:
   *  ```
-     sudo apt install php -y && sudo apt-get install php zip libapache2-mod-php php-gd php-json php-mysql php-curl php-mbstring php-intl php-imagick php-xml php-zip php-mysql php-bcmath php-gmp zip -y
+     sudo apt install php && sudo apt-get install php zip libapache2-mod-php php-gd php-json php-mysql php-curl php-mbstring php-intl php-imagick php-xml php-zip php-mysql php-bcmath php-gmp zip
      ```
 
-We will now install Nextcloud. This is done only on the master VM.
+We will now install Nextcloud.
 
-* On both the master and worker VMs, go to the folder `/var/www`:
+* On the full VM, go to the folder `/var/www`:
   *  ```
      cd /var/www
      ```
@@ -512,27 +376,19 @@ We will now install Nextcloud. This is done only on the master VM.
 * To install the latest Nextcloud version, go to the Nextcloud homepage:
   * See the latest [Nextcloud releases](https://download.nextcloud.com/server/releases/).
 
-* We now download Nextcloud on the master VM. 
+* We now download Nextcloud on the full VM. 
   *  ```
      sudo wget https://download.nextcloud.com/server/releases/nextcloud-26.0.0.zip
      ```
 
-You only need to download on the master VM, since you set a peer-to-peer connection, it will also be accessible on the worker VM.
-
 * Then, extract the `.zip` file. This will take a couple of minutes. We use 7z to track progress:
   * ```
-    sudo apt install p7zip-full -y
+    sudo apt install p7zip-full
     ```
   * ```
     sudo 7z x nextcloud-26.0.0.zip -o/var/www/
     ```
-
-* After the download, see if the Nextcloud file is there on the worker VM:
-  *  ```
-     ls
-     ```
-
-* Then, we grant permissions to the folder. Do this on both the master VM and the worker VM.
+* Then, we grant permissions to the folder.
   *  ```
      sudo chown www-data:www-data /var/www/nextcloud/ -R
      ```
@@ -545,32 +401,12 @@ We want to create a subdomain to access Nextcloud over the public internet.
 
 For this guide, we use DuckDNS to create a subdomain for our Nextcloud deployment. Note that this can be done with other services. We use DuckDNS for simplicity. We invite users to explore other methods as they see fit.
 
-We create a public subdomain with DuckDNS. To set DuckDNS, you simply need to follow the steps on their website. Make sure to do this for both VMs.
+We create a public subdomain with DuckDNS. To set DuckDNS, you simply need to follow the steps on their website.
 
 * First, sign in on the website: [https://www.duckdns.org/](https://www.duckdns.org/). 
 * Then go to [https://www.duckdns.org/install.jsp](https://www.duckdns.org/install.jsp) and follow the steps. For this guide, we use `linux cron` as the operating system.
 
 Hint: make sure to save the DuckDNS folder in the home menu. Write `cd ~` before creating the folder to be sure.
-
-## Worker File for DuckDNS
-
-In our current scenario, we want to make sure the master VM stays the main IP address for the DuckDNS subdomain as long as the master VM is online. To do so, we add an `if` statement in the worker VM's `duck.sh` file. The process is as follow: the worker VM will ping the master VM and if it sees that the master VM is offline, it will run the command to update DuckDNS's subdomain with the worker VM's IP address. When the master VM goes back online, it will run the `duck.sh` file within 5 minutes and the DuckDNS's subdomain will be updated with the master VM's IP address.
-
-The content of the `duck.sh` file for the worker VM is the following. Make sure to replace the line `echo ...` with the line provided by DuckDNS and to replace `mastervm_IPv4_address` with the master VM's IP address.
-
-```
-ping -c 2 mastervm_IPv4_address
-
-if [ $? != 0 ] 
-then 
-  
-  echo url="https://www.duckdns.org/update?domains=exampledomain&token=a7c4d0ad-114e-40ef-ba1d-d217904a50f2&ip=" | curl -k -o ~/duckdns/duck.log -K -
-  
-fi
-
-```
-
-Note: When the master VM goes offline, after 5 minutes maximum DuckDNS will change the IP address from the master’s to the worker’s. Without clearing the DNS cache, your browser might have some difficulties connecting to the updated IP address when reaching the URL `subdomain.duckdns.org`. Thus you might need to [clear your DNS cache](https://blog.hubspot.com/website/flush-dns). You can also use the [Tor browser](https://www.torproject.org/) to connect to Nextcloud. If the IP address changes, you can simply leave the browser and reopen another session as the browser will automatically clear the DNS cache.
 
 ***
 
@@ -578,7 +414,7 @@ Note: When the master VM goes offline, after 5 minutes maximum DuckDNS will chan
 
 We now want to tell Apache where to store the Nextcloud data. To do this, we will create a file called `nextcloud.conf`.
 
-* On both the master and worker VMs, write the following:
+* On full VM, write the following:
   *  ```
      sudo nano /etc/apache2/sites-available/nextcloud.conf
      ```
@@ -612,7 +448,7 @@ The file should look like this, with your own subdomain instead of `subdomain`:
 </VirtualHost>
 ```
 
-* On both the master VM and the worker VM, write the following to set the Nextcloud database with Apache and to enable the new virtual host file:
+* On the full VM, write the following to set the Nextcloud database with Apache and to enable the new virtual host file:
   *  ```
      sudo a2ensite nextcloud.conf && sudo a2enmod rewrite headers env dir mime setenvif ssl
      ```
@@ -661,7 +497,7 @@ After the installation, you can now access Nextcloud. To provide further securit
 
 ## Install Certbot
 
-We will now enable HTTPS. This needs to be done on the master VM as well as the worker VM. This section can be done simultaneously on the two VMs. But make sure to do the next section on setting the Certbot with only one VM at a time.
+We will now enable HTTPS on the full VM.
 
 To enable HTTPS, first install `letsencrypt` with `certbot`:
 
@@ -689,69 +525,17 @@ Install certbot by following the steps here: [https://certbot.eff.org/](https://
 
 * Then, install certbot-apache:
   *  ```
-     sudo apt install python3-certbot-apache -y
+     sudo apt install python3-certbot-apache
      ```
 
 ## Set the Certbot with the DNS Domain
 
-To avoid errors, set HTTPS with the master VM and power off the worker VM. 
+We now set the certbot with the DNS domain.
 
-* To do so with a 3node, you can simply comment the `vms` section of the worker VM in the Terraform `main.tf` file and do `terraform apply` on the terminal.
-  * Put `/*` one line above the section, and `*/` one line below the section `vms`:
-```
-/*
-  vms {
-    name       = "vm2"
-    flist      = "https://hub.grid.tf/tf-official-vms/ubuntu-22.04.flist"
-    cpu        = var.cpu
-    mounts {
-        disk_name = "disk2"
-        mount_point = "/disk2"
-    }
-    memory     = var.memory
-    entrypoint = "/sbin/zinit init"
-    env_vars = {
-      SSH_KEY = var.SSH_KEY
-    }
-    publicip   = true
-    planetary = true
-  }
-*/
-```
-* Put `#` in front of the appropriated lines, as shown below:
-```
-output "node1_zmachine1_ip" {
-  value = grid_deployment.d1.vms[0].ip
-}
-#output "node1_zmachine2_ip" {
-#  value = grid_deployment.d2.vms[0].ip
-#}
-
-output "ygg_ip1" {
-  value = grid_deployment.d1.vms[0].ygg_ip
-}
-#output "ygg_ip2" {
-#  value = grid_deployment.d2.vms[0].ygg_ip
-#}
-
-output "ipv4_vm1" {
-  value = grid_deployment.d1.vms[0].computedip
-}
-
-#output "ipv4_vm2" {
-#  value = grid_deployment.d2.vms[0].computedip
-#}
-```
-
-* To add the HTTPS protection, write the following line on the master VM with your own subdomain:
+* To add the HTTPS protection, write the following line on the full VM with your own subdomain:
   *  ```
      sudo certbot --apache -d subdomain.duckdns.org -d www.subdomain.duckdns.org
      ```
-
-* Once the HTTPS is set, you can reset the worker VM:
-  * To reset the worker VM, simply remove `/*`, `*/` and `#` on the main file and redo `terraform apply` on the terminal.
-
-Note: You then need to redo the same process with the worker VM. This time, make sure to set the master VM offline to avoid errors. This means that you should comment the section `vms`of `vm1`instead of `vm2`.
 
 ## Verify HTTPS Automatic Renewal
 
@@ -808,11 +592,9 @@ You now have enabled the firwall with proper security rules for your Nextcloud d
 
 If everything went smooth, you should now be able to access Nextcloud over the Internet with HTTPS security from any computer or smart phone!
 
-The Nextcloud database is synced in real-time on two different 3nodes. When one 3node goes offline, the database is still synchronized on the other 3node. Once the powered-off 3node goes back online, the database is synced automatically with the node that was powered off.
-
 You can now [install Nextcloud](https://nextcloud.com/install/) on your local computer. You will then be able to "use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop". You can also do regular backups with Nextcloud to ensure maximum resilience of your data. Check Nextcloud's [documentation](https://docs.nextcloud.com/server/latest/admin_manual/maintenance/backup.html) for more information on this.
 
-You should now have a basic understanding of the Threefold Grid, GraphQL, Wireguard, Terraform, MariaDB, GlusterFS, PHP and Nextcloud. Now, you know how to deploy workloads on the Threefold Grid with an efficient architecture in order to ensure redundancy. This is just the beginning. The Threefold Grid has a somewhat infinite potential when it comes to deployments, workloads, architectures and server projects. Let's see where it goes from here!
+You should now have a basic understanding of the Threefold Grid, the ThreeFold Explorer, Terraform, MariaDB, PHP and Nextcloud. 
 
 This Nextcloud deployment could be improved in many ways and other guides might be published in the future with enhanced functionalities. Stay tuned for more Threefold Guides. If you have ideas on how to improve this guide, please let us know. We learn best when sharing knowledge.
 
@@ -822,6 +604,8 @@ This Nextcloud deployment could be improved in many ways and other guides might 
 
 A big thank you to [Scott Yeager](https://github.com/scottyeager) for his help on brainstorming, troubleshooting and creating this tutorial. This guide wouldn't have been properly done without his time and dedication. This really is a team effort!
 
-The main reference for this guide is this [amazing video](https://youtu.be/ARsqxUw1ONc) by NETVN82. Many steps were modified or added to make this suitable with Wireguard and the Threefold Grid. Other configurations are possible. We invite you to explore the possibilities offered by the Threefold Grid!
-
 This guide has been inspired by Weynand Kuijpers' [great tutorial](https://youtu.be/DIhfSRKAKHw) on how to deploy Nextcloud with Terraform.
+
+This single Nextcloud instance guide is an adaptation from the [Nextcloud Redundant Deployment guide](terraform_nextcloud_redundant.md). The inspiration to make a single instance deployment guide comes from [RobertL](https://forum.threefold.io/t/threefold-guide-nextcloud-redundant-deployment-on-two-3node-servers/3915/3) on the ThreeFold Forum.
+
+Thanks to everyone who helped shape this guide.
