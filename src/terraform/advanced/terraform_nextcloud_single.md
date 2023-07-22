@@ -8,12 +8,12 @@
 - [Main Steps](#main-steps)
 - [Prerequisites](#prerequisites)
 - [Find a 3Node with the ThreeFold Explorer](#find-a-3node-with-the-threefold-explorer)
-- [Set the full VM](#set-the-full-vm)
+- [Set the Full VM](#set-the-full-vm)
   - [Overview](#overview)
   - [Create the Terraform Files](#create-the-terraform-files)
   - [Deploy the Full VM with Terraform](#deploy-the-full-vm-with-terraform)
   - [SSH into the 3Node](#ssh-into-the-3node)
-  - [Prepare the full VM](#prepare-the-full-vm)
+  - [Prepare the Full VM](#prepare-the-full-vm)
 - [Create the MariaDB Database](#create-the-mariadb-database)
   - [Download MariaDB and Configure the Database](#download-mariadb-and-configure-the-database)
   - [Set the Nextcloud User and Database](#set-the-nextcloud-user-and-database)
@@ -33,7 +33,7 @@
 
 # Introduction
 
-In this Threefold Guide, we deploy a [Nextcloud](https://nextcloud.com/) instance on a Full VM running on the [Threefold Grid](https://threefold.io/).
+In this Threefold Guide, we deploy a [Nextcloud](https://nextcloud.com/) instance on a full VM running on the [Threefold Grid](https://threefold.io/).
 
 We will learn how to deploy a full virtual machine (Ubuntu 22.04) with [Terraform](https://www.terraform.io/). We will install and deploy Nextcloud. We will add a DDNS (dynamic DNS) domain to the Nextcloud deployment. It will then be possible to connect to the Nextcloud instance over public internet. Nextcloud will be available over your computer and even your smart phone! We will also set HTTPS for the DDNS domain in order to make the Nextcloud instance as secure as possible. You are free to explore different DDNS options. In this guide, we will be using [DuckDNS](https://www.duckdns.org/) for simplicity.
 
@@ -97,7 +97,7 @@ Once you've found a 3Node, take note of its node ID. You will need to use this I
 
 ***
 
-# Set the full VM
+# Set the Full VM
 
 ## Overview
 
@@ -248,7 +248,7 @@ Make sure to add your own seed phrase and SSH public key. You will also need to 
 
 ## Deploy the Full VM with Terraform
 
-We now deploy the Full VM with Terraform. Make sure that you are in the correct folder `terraform/deployment-single-nextcloud` with the main and variables files.
+We now deploy the full VM with Terraform. Make sure that you are in the correct folder `terraform/deployment-single-nextcloud` with the main and variables files.
 
 * Initialize Terraform:
   *  ```
@@ -277,7 +277,7 @@ After deployments, take note of the 3Node's IPv4 address. You will need this add
       sudo ssh-add ~/.ssh/id_rsa
       ```
 
-## Prepare the full VM
+## Prepare the Full VM
 
 * Update and upgrade the system
   * ```
