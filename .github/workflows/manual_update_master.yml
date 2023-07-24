@@ -17,6 +17,7 @@ jobs:
         port: ${{ secrets.TF_PORT }}
         script: |
           cd websites/info_grid/
+          git checkout master
           git log -1
           git fetch
           git reset --hard origin/master
