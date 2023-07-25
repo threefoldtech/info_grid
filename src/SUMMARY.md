@@ -214,6 +214,7 @@
       - [SSH Connection with Wireguard](terraform/advanced/terraform_wireguard_ssh.md)
       - [Set a Wireguard VPN](terraform/advanced/terraform_wireguard_vpn.md)
       - [Synced MariaDB Databases](terraform/advanced/terraform_mariadb_synced_databases.md)
+      - [Nextcloud Single Deployment](terraform/advanced/terraform_nextcloud_single.md)
       - [Nextcloud Redundant Deployment](terraform/advanced/terraform_nextcloud_redundant.md)
   - [Advanced](advanced/advanced.md)
     - [Grid3 Stellar-TFChain Bridge](advanced/grid3_stellar_tfchain_bridge.md)
