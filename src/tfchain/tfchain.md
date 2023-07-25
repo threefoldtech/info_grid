@@ -1,5 +1,3 @@
-> Note: TFGrid GPU Support is only available on Dev Test for the moment.
-
 <h1> TF Chain <h1>
 
 <h2> Table of Contents </h2>
@@ -18,7 +16,6 @@
 - [Farming Policies](#farming-policies)
 - [Node Connection price](#node-connection-price)
 - [Node Certifiers](#node-certifiers)
-- [GPU Support](#gpu-support)
 
 ***
 
@@ -100,7 +97,3 @@ See [tfchain_dao](/dashboard/dao_voting/dao_voting.md#an-introduction-to-the-dao
 Node certifiers are entities who are allowed to set a node's certification level to `Certified`. The DAO can propose to add / remove entities that can certify nodes. This is usefull for allowing approved resellers of Threefold nodes to mark nodes as Certified. A certified node farms 25% more tokens than `Diy` a node.
 
 See [tfchain_dao](/dashboard/dao_voting/dao_voting.md#an-introduction-to-the-dao-concept) on how the DAO can add/remove node certifiers.
-***
-## GPU Support
-
-On TFChain there will be a small migration to store the information if the node has_gpu/or gpu devices count on the node and the extra price the farmer wants to receive as a fee [ADR Link](https://github.com/threefoldtech/tfchain/blob/development/docs/architecture/0011-dedicated-nodes-extra-fee.md).
