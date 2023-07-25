@@ -43,7 +43,7 @@
 
 In this Threefold Guide, we deploy a redundant [Nextcloud](https://nextcloud.com/) instance that is continually synced on two different 3node servers running on the [Threefold Grid](https://threefold.io/).
 
-We will learn how to deploy two micro virtual machines (Ubuntu 22.04) with [Terraform](https://www.terraform.io/). The Terraform deployment will be composed of a virtual private network (VPN) using [Wireguard](https://www.wireguard.com/). The two VMs will thus be connected in a private and secure network. Once this is done, we will link the two VMs together by setting up a [MariaDB](https://mariadb.org/) database and using [GlusterFS](https://www.gluster.org/). Then, we will install and deploy Nextcloud. We will add a DDNS (dynamic DNS) domain to the Nextcloud deployment. It will then be possible to connect to the Nextcloud instance over public internet. Nextcloud will be available over your computer and even your smart phone! We will also set HTTPS for the DDNS domain in order to make the Nextcloud instance as secure as possible. You are free to explore different DDNS options. In this guide, we will be using [DuckDNS](https://www.duckdns.org/) for simplicity.
+We will learn how to deploy two full virtual machines (Ubuntu 22.04) with [Terraform](https://www.terraform.io/). The Terraform deployment will be composed of a virtual private network (VPN) using [Wireguard](https://www.wireguard.com/). The two VMs will thus be connected in a private and secure network. Once this is done, we will link the two VMs together by setting up a [MariaDB](https://mariadb.org/) database and using [GlusterFS](https://www.gluster.org/). Then, we will install and deploy Nextcloud. We will add a DDNS (dynamic DNS) domain to the Nextcloud deployment. It will then be possible to connect to the Nextcloud instance over public internet. Nextcloud will be available over your computer and even your smart phone! We will also set HTTPS for the DDNS domain in order to make the Nextcloud instance as secure as possible. You are free to explore different DDNS options. In this guide, we will be using [DuckDNS](https://www.duckdns.org/) for simplicity.
 
 The advantage of this redundant Nextcloud deployment is obvious: if one of the two VMs goes down, the Nextcloud instance will still be accessible, as the other VM will take the lead. Also, the two VMs will be continually synced in real-time. If the master node goes down, the data will be synced to the worker node, and the worker node will become the master node. Once the master VM goes back online, the data will be synced to the master node and the master node will retake the lead as the master node.
 
@@ -91,7 +91,7 @@ We first need to decide on which 3Nodes we will be deploying our workload.
 We thus start by finding two 3Nodes with sufficient resources. For this current Nextcloud guide, we will be using 1 CPU, 2 GB of RAM and 50 GB of storage. We are also looking for 3Nodes with each a public IPv4 address.
 
 * Go to the ThreeFold Grid's [Explorer](https://dashboard.grid.tf/explorer/nodes) (Main Net)
-* Find a 3Node with suitable resources for the deployment and take note of its node ID on the leftmost column `ID`
+* Find two 3Nodes with suitable resources for the deployment and take note of their node IDs on the leftmost column `ID`
 * For proper understanding, we give further information on some relevant columns:
   * `ID` refers to the node ID
   * `Free Public IPs` refers to available IPv4 public IP addresses
@@ -108,7 +108,7 @@ We thus start by finding two 3Nodes with sufficient resources. For this current 
     * `Free Public IP`: 2
       * Note: if you want a public IPv4 address, it is recommended to set the parameter `FREE PUBLIC IP` to at least 2 to avoid false positives. This ensures that the shown 3Nodes have viable IP addresses.
 
-Once you've found a proper node, take node of its node ID. You will need to use this ID when creating the Terraform files.
+Once you've found two 3Nodes, take note of their node IDs. You will need to use those IDs when creating the Terraform files.
 
 ***
 
@@ -901,7 +901,7 @@ The Nextcloud database is synced in real-time on two different 3nodes. When one 
 
 You can now [install Nextcloud](https://nextcloud.com/install/) on your local computer. You will then be able to "use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop". You can also do regular backups with Nextcloud to ensure maximum resilience of your data. Check Nextcloud's [documentation](https://docs.nextcloud.com/server/latest/admin_manual/maintenance/backup.html) for more information on this.
 
-You should now have a basic understanding of the Threefold Grid, GraphQL, Wireguard, Terraform, MariaDB, GlusterFS, PHP and Nextcloud. Now, you know how to deploy workloads on the Threefold Grid with an efficient architecture in order to ensure redundancy. This is just the beginning. The Threefold Grid has a somewhat infinite potential when it comes to deployments, workloads, architectures and server projects. Let's see where it goes from here!
+You should now have a basic understanding of the Threefold Grid, the ThreeFold Explorer, Wireguard, Terraform, MariaDB, GlusterFS, PHP and Nextcloud. Now, you know how to deploy workloads on the Threefold Grid with an efficient architecture in order to ensure redundancy. This is just the beginning. The Threefold Grid has a somewhat infinite potential when it comes to deployments, workloads, architectures and server projects. Let's see where it goes from here!
 
 This Nextcloud deployment could be improved in many ways and other guides might be published in the future with enhanced functionalities. Stay tuned for more Threefold Guides. If you have ideas on how to improve this guide, please let us know. We learn best when sharing knowledge.
 
