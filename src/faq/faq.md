@@ -467,6 +467,7 @@
     - [Is there a way to access more error checking?](#is-there-a-way-to-access-more-error-checking)
     - [Do I need TFT to run the Farmerbot? How much?](#do-i-need-tft-to-run-the-farmerbot-how-much)
     - [On the Farmerbot, I receive the error: "Balance is not enough to apply an extrinsic". What can I do to fix this issue?](#on-the-farmerbot-i-receive-the-error-balance-is-not-enough-to-apply-an-extrinsic-what-can-i-do-to-fix-this-issue)
+    - [When deploying the Farmerbot, I get an error in "root-grid3\_client-1". The farmerbot.log error is: "Error: Invalid twin id. Twin id must be postive integer". Is there a fix?](#when-deploying-the-farmerbot-i-get-an-error-in-root-grid3_client-1-the-farmerbotlog-error-is-error-invalid-twin-id-twin-id-must-be-postive-integer-is-there-a-fix)
     - [How are dedicated nodes power managed?](#how-are-dedicated-nodes-power-managed)
     - [Can I run the Farmerbot on a Raspberry Pi?](#can-i-run-the-farmerbot-on-a-raspberry-pi)
     - [I want to set up the Farmerbot for my 3node farm. Should all my nodes have the same twin ID?](#i-want-to-set-up-the-farmerbot-for-my-3node-farm-should-all-my-nodes-have-the-same-twin-id)
@@ -3504,7 +3505,7 @@ Check in the BIOS settings and make sure you have enabled Virtual Cores (or Hype
 
 The WOL feature has been revised. This project has transformed into the Farmerbot. The farmer bot is a piece of software that can run as a grid deployment and manages a farmers nodes.
 
-To learn more about the Farmerbot, read the [Farmerbot Guide](../farmerbot/farmerbot.md).
+To learn more about the Farmerbot, read the [Farmerbot Guide](../farmers/farmerbot/farmerbot_intro.md).
 
 ***
 
@@ -4241,6 +4242,17 @@ This means that you do not have sufficient funds (TFT) in your wallet for the Fa
 You thus simply need to add some TFTs in the wallet that is connected to the farm on which you are running the Farmerbot. 1 TFT can suffice for many transactions. 
 
 For more information on the Farmerbot running cost, read this [QnA](#do-i-need-tft-to-run-the-farmerbot-how-much).
+
+***
+
+### When deploying the Farmerbot, I get an error in "root-grid3_client-1". The farmerbot.log error is: "Error: Invalid twin id. Twin id must be postive integer". Is there a fix?
+
+This indicates that the seed phrase has no associated twin. There can be many reasons behind this. 
+
+- You are using the wrong seed phrase for your farm.
+  - To fix it, simply find the proper seed phrase for the farm hosting your 3Nodes.
+- You created the farm in the TF Connect app and are using the seed phrase in words instead of the seed phrase in HEX format (the TFChain secret).
+  - To fix it, simply use the TFChain secret (HEX format) in the TF Connect app.
 
 ***
 
