@@ -131,6 +131,13 @@
       - [RMB Specs](internals/rmb/rmb_specs.md)
       - [RMB Peer](internals/rmb/uml/peer.md)
       - [RMB Relay](internals/rmb/uml/relay.md)
+    - [ZOS](internas/zos/readme.md)
+      - [Development environment](/qemu/README.md)
+      - [Manual](manual/manual.md)
+      - [Internals](internals/internals.md)
+
+    - [FAQ](faq/readme.md)
+
 - [System Administrators](system_administrators/system_administrators.md)
   - [Getting Started](getstarted/tfgrid3_getstarted.md)
     - [ThreeFold Connect](getstarted/TF_Connect/TF_Connect.md)
