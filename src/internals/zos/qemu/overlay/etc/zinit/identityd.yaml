@@ -1,4 +1,0 @@
-exec: identityd -d
-test: zbusdebug --module identityd
-after:
-  - boot
