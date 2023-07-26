@@ -1,1 +1,0 @@
-../../../../../etc/zinit/init/node-ready.sh
