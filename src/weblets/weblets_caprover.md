@@ -1,6 +1,6 @@
 # CapRover
 
-![ ](./img/caprover_1.png)
+![ ](./img/new-cap-apps.png)
 
 About CapRover
 
@@ -34,7 +34,8 @@ It has following benefits :
 ### Usage
 
 
-![ ](./img/new_cap1.png)
+![ ](./img/new_cap_usage1.png)
+![ ](./img/new_cap_usage2.png)
 
 - Select a capacity package:
     - **Minimum**: {cpu: 1, memory: 1024, diskSize: 50 }
@@ -42,12 +43,9 @@ It has following benefits :
     - **Recommended**: {cpu: 4, memory: 1024 * 4, diskSize: 250 }
     - Or choose a **Custom** plan
 
-- Choose a node to deploy Caprover on.
-- Either use the **Capacity Filter**. Which simply lets you pick a *Farm* and *Country*, after clicking on *Apply filters and suggest nodes* then it lists available nodes with these preferences and you pick. 
- 
-    
-- Or use **Manual** and type a specific node number to deploy on.
-
+- Choose a Country to deploy Caprover on.
+- Choose a Farm in that Country.
+- Add many workers as you need to join Caprover Cluster.
 
 - Be very careful about the domain name: it needs to be a wildcard domain name you can configure in your chosen domain name system.
 
@@ -67,7 +65,7 @@ Deployment will take couple of minutes.
 
 Go back to your CapRover weblet and go to the deployment list. Click on `Show Details`.
 
-![ ](./img/caprover_detail_weblet.png)
+![ ](./img/show-details-cap.png)
 
 - The public IPv4 address is visible in here
 - Now you can configure the domain name (see above, don't forget to point the wildcard domain to the public IP address)
@@ -78,6 +76,8 @@ Click on details if you want to see more details
 
 {
     "version": 0,
+    "contractId": 12345,
+    "nodeId": 2,
     "name": "caprover_leader_cr_156e44f0",
     "created": 1637843368,
     "status": "ok",
@@ -85,10 +85,10 @@ Click on details if you want to see more details
     "flist": "https://hub.grid.tf/samehabouelsaad.3bot/tf-caprover-main-a4f186da8d.flist",
     "publicIP": {
         "ip": "185.206.122.136/24",
+        "ip6": "",
         "gateway": "185.206.122.1"
     },
     "planetary": false,
-    "yggIP": "",
     "interfaces": [
         {
             "network": "caprover_network_cr_156e44f0",
@@ -111,11 +111,19 @@ Click on details if you want to see more details
     "env": {
         "SWM_NODE_MODE": "leader",
         "CAPROVER_ROOT_DOMAIN": "apps.openly.life",
-        "PUBLIC_KEY": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/9RNGKRjHvViunSOXhBF7EumrWvmqAAVJSrfGdLaVasgaYK6tkTRDzpZNplh3Tk1aowneXnZffygzIIZ82FWQYBo04IBWwFDOsCawjVbuAfcd9ZslYEYB3QnxV6ogQ4rvXnJ7IHgm3E3SZvt2l45WIyFn6ZKuFifK1aXhZkxHIPf31q68R2idJ764EsfqXfaf3q8H3u4G0NjfWmdPm9nwf/RJDZO+KYFLQ9wXeqRn6u/mRx+u7UD+Uo0xgjRQk1m8V+KuLAmqAosFdlAq0pBO8lEBpSebYdvRWxpM0QSdNrYQcMLVRX7IehizyTt+5sYYbp6f11WWcxLx0QDsUZ/J"
+        "CAPTAIN_IMAGE_VERSION": "latest",
+        "PUBLIC_KEY": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/9RNGKRjHvViunSOXhBF7EumrWvmqAAVJSrfGdLaVasgaYK6tkTRDzpZNplh3Tk1aowneXnZffygzIIZ82FWQYBo04IBWwFDOsCawjVbuAfcd9ZslYEYB3QnxV6ogQ4rvXnJ7IHgm3E3SZvt2l45WIyFn6ZKuFifK1aXhZkxHIPf31q68R2idJ764EsfqXfaf3q8H3u4G0NjfWmdPm9nwf/RJDZO+KYFLQ9wXeqRn6u/mRx+u7UD+Uo0xgjRQk1m8V+KuLAmqAosFdlAq0pBO8lEBpSebYdvRWxpM0QSdNrYQcMLVRX7IehizyTt+5sYYbp6f11WWcxLx0QDsUZ/J",
+        "DEFAULT_PASSWORD": "defaultpassword",
+        "CAPTAIN_IS_DEBUG": "true"
     },
     "entrypoint": "/sbin/zinit init",
     "metadata": "",
-    "description": "caprover leader machine/node"
+    "description": "caprover leader machine/node",
+    "rootfs_size": 524288000,
+    "corex": false,
+    "deploymentName": "cre0t8g6199",
+    "projectName": "caprover",
+    "billing": "No Data Available"
 }
 ```
 

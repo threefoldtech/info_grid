@@ -6,13 +6,9 @@
 
 You need to specify your email address.
 
-You will have to login again.
-
 ![ ](./img/caprover_https_activated.png)
 
 > Now force https.
-
-You will have to login again, and you should notice https is now used.
 
 ## Step 2: Add a default docker registry
 
@@ -38,33 +34,27 @@ You should now see
 
 ## Step 5: Lets add nodes to caprover
 
-- Go to the settings
+- Go to the Cluster 
 
-![ ](./img/caprover_cluster.png)
+![ ](./img/cluster-cap-new.png)
 
-- Fill in your mnemonic from TF-Chain, make sure it's the right network you are connected to
-- Set your store secret for storing deployment information securely on TF-Chain.
-- Add your SSH-key
+- Enable Add Self hosted registry or Add remote registry.
 
-Now go to `Cluster -> Deploy a new node on Threefold grid`, specify the details of the resources you need and then click **Search resources...** :
+- Here appears the leader node
 
-![ ](./img/cluster_add_nodes.png)
+![ ](./img/new-cap-leader.png)
 
-If there are enough resources, a new window will appear listing possible nodes to deploy this node to, select one of them and click **Deploy**:
+Now you can attach new nodes as workers 
 
-![ ](./img/caprover_select_node.png)
+- Add IP address of worker node you deployed from playground
 
-You should then see something like
+- Add SSH Private Key for root
 
-![ ](./img/caprover_add_node2.png)
+- Join cluster as worker node
 
-This should typically take less than 2 minutes.
+![ ](./img/new-cap-add-worker.png)
 
-> Important: the deployment process takes some time before it is known in CapRover.
-
-Go out of the form and back to `Cluster`.
-
-![ ](./img/caprover_node_added.png)
+- You can also apply the alternative method if you want
 
 ## Step 6: Change your password
 
