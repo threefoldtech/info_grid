@@ -1,17 +1,20 @@
-# ZOS
+<h1> Zero-OS </h1>
 
 ![Architecture](assets/0-OS_v2_architecture.png)
-- [ZOS Manual](manual/manual.md)
-    - Virtual machine related
+
+<h2> Table of Contents </h2>
+
+- [Manual](manual/manual.md)
+    - Virtual Machine Related
       - [`network`](manual/network/readme.md)
       - [`ip`](manual/ip/readme.md)
       - [`zmount`](manual/zmount/readme.md)
       - [`zmachine`](manual/zmachine/readme.md)
       - [`zlogs`](manual/zlogs/readme.me)
-    - Storage related
+    - Storage Related
       - [`zdb`](manual/zdb/readme.md)
       - [`qsfs`](manual/qsfs/readme.md)
-    - Gateway related
+    - Gateway Related
       - [`gateway-name-proxy`](manual/gateway/name-proxy.md)
       - [`gateway-fqdn-proxy`]((manual/gateway/fqdn-proxy.md))
 - [Internal Modules](./internals/internals.md)
@@ -25,3 +28,5 @@
   - [Provision](internals/provision/readme.md)
 - [API](manual/api.md)
 - [FAQ](faq/readme.md)
+
+***
