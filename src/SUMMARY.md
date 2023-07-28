@@ -133,6 +133,7 @@
       - [RMB Relay](internals/rmb/uml/relay.md)
     - [Zero-OS](internals/zos/readme.md)
       - [Manual](internals/zos/manual/manual.md)
+      - [Workload Types](internals/zos/manual/workload_types.md)
         - [`network`](internals/zos/manual/network/readme.md)
         - [`ip`](internals/zos/manual/ip/readme.md)
         - [`zmount`](internals/zos/manual/zmount/readme.md)

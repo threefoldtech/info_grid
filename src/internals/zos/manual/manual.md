@@ -109,7 +109,7 @@ For example, a deployment can define
   - etc.
 
 ## Workload
-Each workload has a type which associated with some data. So minimal definition of a workload contains:
+Each workload has a type which is associated with some data. So minimal definition of a workload contains:
 - `name`: unique per deployment (id)
 - `type`: workload type
 - `data`: workload data that is proper for the selected type.
@@ -145,17 +145,17 @@ type Workload struct {
 
 ### Types
 - Virtual machine related
-  - [`network`](network/readme.md)
-  - [`ip`](ip/readme.md)
-  - [`zmount`](zmount/readme.md)
-  - [`zmachine`](zmachine/readme.md)
-  - [`zlogs`](zlogs/readme.me)
+  - [`network`](./network/index.md)
+  - [`ip`](./ip/index.md)
+  - [`zmount`](./zmount/index.md)
+  - [`zmachine`](./zmachine/index.md)
+  - [`zlogs`](./zlogs/index.md)
 - Storage related
-  - [`zdb`](zdb/readme.md)
-  - [`qsfs`](qsfs/readme.md)
+  - [`zdb`](./zdb/index.md)
+  - [`qsfs`](./qsfs/index.md)
 - Gateway related
-  - [`gateway-name-proxy`](gateway/name-proxy.md)
-  - [`gateway-fqdn-proxy`]((gateway/fqdn-proxy.md))
+  - [`gateway-name-proxy`](./gateway/name-proxy.md)
+  - [`gateway-fqdn-proxy`](./gateway/fqdn-proxy.md)
 
 ### API
 Node is always connected to the RMB network with the node `twin`. Means the node is always reachable over RMB with the node `twin-id` as an address.
