@@ -25,9 +25,9 @@ You already can tell that ZOS can work fine with no HDD (it will not be able to 
 
 List of sub-modules:
 
-- [disks](#disk-sub-module)
-- [0-db](#0-db-sub-module)
-- [booting](#booting)
+- disks
+- 0-db
+- booting
 
 ## On Node Booting
 

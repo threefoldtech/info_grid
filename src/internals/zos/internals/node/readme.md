@@ -2,13 +2,13 @@
 
 ## Zbus
 
-Node module is available on zbus over the following channel
+Node module is available on [zbus](https://github.com/threefoldtech/zbus) over the following channel
 
 | module | object | version |
 |--------|--------|---------|
-|host   |[host](#)| 0.0.1
-|system   |[system](#)| 0.0.1
-|events  |[events](#)| 0.0.1
+|host   |host| 0.0.1
+|system   |system| 0.0.1
+|events  |events| 0.0.1
 
 
 ## Introduction

@@ -59,15 +59,15 @@ Modules of zos are completely internal. There is no way for an external user to 
 
 Here is a list of the major ZOS modules.
 
-- [Identity](identity/readme.md)
-- [Node](node/readme.md)
-- [Storage](storage/readme.md)
-- [Network](network/readme.md)
-- [Flist](flist/readme.md)
-- [Container](container/readme.md)
-- [VM](vmd/readme.md)
-- [Provision](provision/readme.md)
+- [Identity](identity/index.md)
+- [Node](node/index.md)
+- [Storage](storage/index.md)
+- [Network](network/index.md)
+- [Flist](flist/index.md)
+- [Container](container/index.md)
+- [VM](vmd/index.md)
+- [Provision](provision/index.md)
 
 ## Capacity
 
-In [this document](capacity.md) you can find detail description of how ZOS does capacity planning.
+In [this document](./capacity.md), you can find detail description of how ZOS does capacity planning.
