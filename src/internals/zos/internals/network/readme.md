@@ -2,7 +2,7 @@
 
 <h2> Table of Contents </h2>
 
-- [Introduction to networkd, the network manager of 0-OS](./introduction.md)
-- [Definitions of the vocabulary used in the documentation](./definitions.md)
-- [Detail about the wireguard mesh used to interconnect 0-OS nodes](./mesh.md)
-- [Documentation for farmer on how to setup the network of their farm](./setup_farm_network.md)
+- [Introduction to networkd](./introduction.md)
+- [Vocabulary Definitions](./definitions.md)
+- [Wireguard Mesh Details](./mesh.md)
+- [Farm Network Setup](./setup_farm_network.md)
