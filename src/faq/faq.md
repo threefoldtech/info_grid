@@ -151,8 +151,6 @@
     - [How can I change the username of my SSH key?](#how-can-i-change-the-username-of-my-ssh-key)
     - [How can I copy the clipboard content of a terminal output using the command cat? How can I copy the public key directly with the terminal?](#how-can-i-copy-the-clipboard-content-of-a-terminal-output-using-the-command-cat-how-can-i-copy-the-public-key-directly-with-the-terminal)
     - [What is ThreeFold's stance on sharded workload? Will ThreeFold embrace and move towards distributed data chunks or stay with the one deployment, one node model?](#what-is-threefolds-stance-on-sharded-workload-will-threefold-embrace-and-move-towards-distributed-data-chunks-or-stay-with-the-one-deployment-one-node-model)
-    - [When I paste the SSH public key in the Profile Manager window, the SSH public key isn't accepted and it either doesn't stay in the window, or it gets removed and the older SSH public key reappear. What can I do to fix this?](#when-i-paste-the-ssh-public-key-in-the-profile-manager-window-the-ssh-public-key-isnt-accepted-and-it-either-doesnt-stay-in-the-window-or-it-gets-removed-and-the-older-ssh-public-key-reappear-what-can-i-do-to-fix-this)
-    - [When I try to add my mnemonics in the ThreeFold Playground's profile manager, I get the error: "Unable to connect due to Maximum number of attempts exceeded". How can I fix this?](#when-i-try-to-add-my-mnemonics-in-the-threefold-playgrounds-profile-manager-i-get-the-error-unable-to-connect-due-to-maximum-number-of-attempts-exceeded-how-can-i-fix-this)
   - [Tutorials and Guides](#tutorials-and-guides)
     - [What are the prerequisites before using the ThreeFold Play Grid (play.grid.tf)?](#what-are-the-prerequisites-before-using-the-threefold-play-grid-playgridtf)
     - [How can I create a profile manager on the ThreeFold Playground?](#how-can-i-create-a-profile-manager-on-the-threefold-playground)
@@ -197,6 +195,9 @@
     - [When deploying a virtual machine (VM) on the ThreeFold Grid, I get the following message after trying a full system update and upgrade: GRUB failed to install to the following devices... Is there a fix to this issue?](#when-deploying-a-virtual-machine-vm-on-the-threefold-grid-i-get-the-following-message-after-trying-a-full-system-update-and-upgrade-grub-failed-to-install-to-the-following-devices-is-there-a-fix-to-this-issue)
     - [I tried exporting my account to another computer but my password doesn't activate my profile manager on the ThreeFold Playground. What should I do?](#i-tried-exporting-my-account-to-another-computer-but-my-password-doesnt-activate-my-profile-manager-on-the-threefold-playground-what-should-i-do)
     - [While deploying on the TF Playground, I get the following error :"global workload with the same name exists: conflict". What can I do to fix this issue?](#while-deploying-on-the-tf-playground-i-get-the-following-error-global-workload-with-the-same-name-exists-conflict-what-can-i-do-to-fix-this-issue)
+    - [How can I set the relay on the TF Dashboard?](#how-can-i-set-the-relay-on-the-tf-dashboard)
+    - [When I paste the SSH public key in the Profile Manager window, the SSH public key isn't accepted and it either doesn't stay in the window, or it gets removed and the older SSH public key reappear. What can I do to fix this?](#when-i-paste-the-ssh-public-key-in-the-profile-manager-window-the-ssh-public-key-isnt-accepted-and-it-either-doesnt-stay-in-the-window-or-it-gets-removed-and-the-older-ssh-public-key-reappear-what-can-i-do-to-fix-this)
+    - [When I try to add my mnemonics in the ThreeFold Playground's profile manager, I get the error: "Unable to connect due to Maximum number of attempts exceeded". How can I fix this?](#when-i-try-to-add-my-mnemonics-in-the-threefold-playgrounds-profile-manager-i-get-the-error-unable-to-connect-due-to-maximum-number-of-attempts-exceeded-how-can-i-fix-this)
   - [ThreeFold Connect App](#threefold-connect-app)
     - [TF Connect App is now asking for a 4-digit password (PIN). I don't remember it as I usually use touch or face ID to unlock the app. What can I do?](#tf-connect-app-is-now-asking-for-a-4-digit-password-pin-i-dont-remember-it-as-i-usually-use-touch-or-face-id-to-unlock-the-app-what-can-i-do)
     - [Is there a way to have more than one wallet in TF Connect App?](#is-there-a-way-to-have-more-than-one-wallet-in-tf-connect-app)
@@ -466,6 +467,7 @@
     - [Is there a way to access more error checking?](#is-there-a-way-to-access-more-error-checking)
     - [Do I need TFT to run the Farmerbot? How much?](#do-i-need-tft-to-run-the-farmerbot-how-much)
     - [On the Farmerbot, I receive the error: "Balance is not enough to apply an extrinsic". What can I do to fix this issue?](#on-the-farmerbot-i-receive-the-error-balance-is-not-enough-to-apply-an-extrinsic-what-can-i-do-to-fix-this-issue)
+    - [When deploying the Farmerbot, I get an error in "root-grid3\_client-1". The farmerbot.log error is: "Error: Invalid twin id. Twin id must be postive integer". Is there a fix?](#when-deploying-the-farmerbot-i-get-an-error-in-root-grid3_client-1-the-farmerbotlog-error-is-error-invalid-twin-id-twin-id-must-be-postive-integer-is-there-a-fix)
     - [How are dedicated nodes power managed?](#how-are-dedicated-nodes-power-managed)
     - [Can I run the Farmerbot on a Raspberry Pi?](#can-i-run-the-farmerbot-on-a-raspberry-pi)
     - [I want to set up the Farmerbot for my 3node farm. Should all my nodes have the same twin ID?](#i-want-to-set-up-the-farmerbot-for-my-3node-farm-should-all-my-nodes-have-the-same-twin-id)
@@ -551,7 +553,6 @@ People from all over the world contribute to the growth of ThreeFold. Meet them 
 The [co-founders](https://threefold.io/memberships/cofounders/) of ThreeFold are:
 
 - [Adnan Fatayerji](https://www.threefold.io/people/adnan-fatayerji/)
-- [Christopher Hutton](https://www.threefold.io/people/christopher-hutton/)
 - [Kristof de Spiegeleer](https://www.threefold.io/people/kristof-de-spiegeleer/)
 - [Nickolay Babenko](https://www.threefold.io/people/nickolay-babenko/)
 - [Owen Kemp](https://www.threefold.io/people/owen-kemp/)
@@ -1758,29 +1759,6 @@ Self driving and self healing IT is one of the core concepts of ThreeFold. What 
 
 ***
 
-### When I paste the SSH public key in the Profile Manager window, the SSH public key isn't accepted and it either doesn't stay in the window, or it gets removed and the older SSH public key reappear. What can I do to fix this?
-
-This issue is usually happening when the SSH public key isn't in the proper format.
-
-The less technical fix is to take your SSH public key and paste it in a browser's URL search bar, then recopy and paste it in the Profile Manager. This should give the proper format to the SSH public key.
-
-Also, you can simply query the SSH public key in your terminal/command prompt with the proper format with a command like this:
-
-```
-cat ~/.ssh/id_rsa.pub
-```
-
-You can also refer to [this question](#how-can-i-copy-the-clipboard-content-of-a-terminal-output-using-the-command-cat-how-can-i-copy-the-public-key-directly-with-the-terminal) for a direct way to obtain your SSH public key in your clipboard.
-
-
-***
-
-### When I try to add my mnemonics in the ThreeFold Playground's profile manager, I get the error: "Unable to connect due to Maximum number of attempts exceeded". How can I fix this?
-
-A quick fix to this is to simply add a space at the end of the mnemonics and then to delete the mnemonics. Then you should be able to rewrite the mnemonics.
-
-***
-
 ## Tutorials and Guides
 
 
@@ -2206,7 +2184,7 @@ The tool has the following options:
 
 ### When deploying a virtual machine (VM) on the ThreeFold Grid, I get the following message after trying a full system update and upgrade: GRUB failed to install to the following devices... Is there a fix to this issue?
 
-When deploying a virtual machine and doing a full system update and upgrade (apt update, apt upgrade, if you get the error: GRUB failed to install to the following devices /dev/vda15, try this to fix it:
+When deploying a virtual machine and doing a full system update and upgrade (apt update, apt upgrade), if you get the error: GRUB failed to install to the following devices /dev/vda15, try this to fix it:
 
 > apt-mark hold grub-efi-amd64-signed
 
@@ -2223,6 +2201,45 @@ Your Playground profile is stored in the local browser storage, so it won't show
 ### While deploying on the TF Playground, I get the following error :"global workload with the same name exists: conflict". What can I do to fix this issue?
 
 This error happens if you deployed a workload on the TF Playground with the same deployment name of a previous deployment. In general, you can simply refresh the TF Playground browser page and/or change the deployment name for a new one. This should fix the issue.
+
+***
+
+### How can I set the relay on the TF Dashboard? 
+
+To set the relay on the TF Dashboard, follow those steps:
+
+* Go to the [TF Dashboard](https://dashboard.grid.tf).
+* Select the account which needs to have the relay set.
+* In the menu, select `Portal` and then `Twin`.
+* Under `Twin Details`, if `Relay` is set to `null`, click on `Edit`.
+* Select the relay `relay.grid.tf` then click `Submit`.
+* Enter your password and sign the transaction.
+
+Note that if you are using the TF Playground and the twin doesn't have the relay set, the TF Playground will set the relay automatically.
+
+***
+
+### When I paste the SSH public key in the Profile Manager window, the SSH public key isn't accepted and it either doesn't stay in the window, or it gets removed and the older SSH public key reappear. What can I do to fix this?
+
+This issue is usually happening when the SSH public key isn't in the proper format.
+
+The less technical fix is to take your SSH public key and paste it in a browser's URL search bar, then recopy and paste it in the Profile Manager. This should give the proper format to the SSH public key.
+
+Also, you can simply query the SSH public key in your terminal/command prompt with the proper format with a command like this:
+
+```
+cat ~/.ssh/id_rsa.pub
+```
+
+You can also refer to [this question](#how-can-i-copy-the-clipboard-content-of-a-terminal-output-using-the-command-cat-how-can-i-copy-the-public-key-directly-with-the-terminal) for a direct way to obtain your SSH public key in your clipboard.
+
+
+***
+
+### When I try to add my mnemonics in the ThreeFold Playground's profile manager, I get the error: "Unable to connect due to Maximum number of attempts exceeded". How can I fix this?
+
+A quick fix to this is to simply add a space at the end of the mnemonics and then to delete the mnemonics. Then you should be able to rewrite the mnemonics.
+
 
 ***
 
@@ -3488,7 +3505,7 @@ Check in the BIOS settings and make sure you have enabled Virtual Cores (or Hype
 
 The WOL feature has been revised. This project has transformed into the Farmerbot. The farmer bot is a piece of software that can run as a grid deployment and manages a farmers nodes.
 
-To learn more about the Farmerbot, read the [Farmerbot Guide](../farmerbot/farmerbot.md).
+To learn more about the Farmerbot, read the [Farmerbot Guide](../farmers/farmerbot/farmerbot_intro.md).
 
 ***
 
@@ -4210,9 +4227,11 @@ Yes. In the config-path where you run the docker-compose, you have more logging 
 
 ### Do I need TFT to run the Farmerbot? How much?
 
-Yes. How much depends on where you run the farmerbot and how many nodes it will power on/off. If you run the farmerbot on a node on the grid you will have to pay TFT to rent that node (or deploy on that node). Next to that, you will have to pay the transaction fees every time the farmerbot has to wakeup a node or shutdown a node. This is with the account tied to the twin of your farm. On average each node in the farm will be shutdown and powered on at least once a day (periodic wakeup). In that case the average cost per month to power on nodes and shut them back down equals:
+Yes. How much depends on where you run the farmerbot and how many nodes it will power on/off. If you run the farmerbot on a node on the grid you will have to pay TFT to rent that node (or deploy on that node). Next to that, you will have to pay the transaction fees every time the farmerbot has to wakeup a node or shutdown a node. This is with the account tied to the twin of your farm. 
 
-> cost per month = 0.001 TFT (extrinsic fee) * amount of nodes * 30 * 2 (1 for powering down, one for powering up)
+For the periodic wakeups, each node in the farm is shut down and powered on once a day, i.e. 30 times per month. Also, there is 10 random wakeups per month for each node. This means that each node is turned off and on 40 times per month in average. In that case, the average cost per month to power on nodes and shut them back down equals:
+
+> average transaction fees cost per month = 0.001 TFT (extrinsic fee) * amount of nodes * 40 * 2 (1 for powering down, one for powering up)
 
 ***
 
@@ -4223,6 +4242,17 @@ This means that you do not have sufficient funds (TFT) in your wallet for the Fa
 You thus simply need to add some TFTs in the wallet that is connected to the farm on which you are running the Farmerbot. 1 TFT can suffice for many transactions. 
 
 For more information on the Farmerbot running cost, read this [QnA](#do-i-need-tft-to-run-the-farmerbot-how-much).
+
+***
+
+### When deploying the Farmerbot, I get an error in "root-grid3_client-1". The farmerbot.log error is: "Error: Invalid twin id. Twin id must be postive integer". Is there a fix?
+
+This indicates that the seed phrase has no associated twin. There can be many reasons behind this. 
+
+- You are using the wrong seed phrase for your farm.
+  - To fix it, simply find the proper seed phrase for the farm hosting your 3Nodes.
+- You created the farm in the TF Connect app and are using the seed phrase in words instead of the seed phrase in HEX format (the TFChain secret).
+  - To fix it, simply use the TFChain secret (HEX format) in the TF Connect app.
 
 ***
 
@@ -4328,16 +4358,31 @@ If you see this error, it's because you've used 24h time format in conjunction w
 
 ### How can I update the Farmerbot with the new release?
 
- Please follow these steps to move the existing farmerbot to the new one:
+Please follow these steps to update the Farmerbot with the new release:
 
-1. Change the current directory to the directory containing the docker-compose file
-2. Download the new docker-compose file: `wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml`
-3. Modify the .env file: rename `MNEMONIC` to `SECRET`
-4. Stop the existing farmerbot: `docker compose rm -f -s -v`
-5. Make a copy of the farmerbot log file: `cp config/farmerbot.log config/farmerbot.log.archive`
-6. Run the new farmerbot: `docker compose up -d`
+* Go to the Farmerbot folder
+* Stop the existing Farmerbot
+  * ```
+    docker compose rm -f -s -v
+    ```
+* Make a copy of the Farmerbot log file
+  * ```
+    cp config/farmerbot.log config/farmerbot.log.archive
+    ```
+* Remove the docker-compose file of the previous Farmerbot release
+  * ```
+    rm docker-compose.yaml
+    ```
+* Download the new docker-compose file
+  * ```
+    wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
+    ```
+* Run the new Farmerbot
+  * ```
+    docker compose up -d
+    ```
 
-This last command can take some time as it is downloading new docker images. Let the farmerbot run for some time. If you think something is wrong or if you want to check if there is something wrong you should look into the config/farmerbot.log file. If you see some errors please share that file with us.
+This last command can take some time as it is downloading new docker images. Let the Farmerbot run for some time. If you think something is wrong or if you want to check if there is something wrong you should look into the config/farmerbot.log file. If you see some errors please share that file with us.
 
 ***
 

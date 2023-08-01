@@ -84,8 +84,11 @@ output "vm2_ygg_ip" {
 
 ### Using scheduler
 
-- If the user decided to choose scheduler to find a node for him, then he will use the node returned from the scheduler as the example above
-- If not, the user can still specify the node directly if he wants
+- If the user decided to choose [scheduler](terraform_scheduler.md) to find a node for him, then he will use the node returned from the scheduler as the example above
+
+### Using Grid Explorer
+
+- If not, the user can still specify the node directly if he wants using the grid explorer to find a node that matches his requirements
 
 ### Describing the overlay network for the project
 
@@ -130,6 +133,7 @@ resource "grid_deployment" "d1" {
     }
     planetary = true
   }
+
 }
 ```
 
@@ -177,6 +181,7 @@ So to add a VM
     env_vars = {
       SSH_KEY ="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCeq1MFCQOv3OCLO1HxdQl8V0CxAwt5AzdsNOL91wmHiG9ocgnq2yipv7qz+uCS0AdyOSzB9umyLcOZl2apnuyzSOd+2k6Cj9ipkgVx4nx4q5W1xt4MWIwKPfbfBA9gDMVpaGYpT6ZEv2ykFPnjG0obXzIjAaOsRthawuEF8bPZku1yi83SDtpU7I0pLOl3oifuwPpXTAVkK6GabSfbCJQWBDSYXXM20eRcAhIMmt79zo78FNItHmWpfPxPTWlYW02f7vVxTN/LUeRFoaNXXY+cuPxmcmXp912kW0vhK9IvWXqGAEuSycUOwync/yj+8f7dRU7upFGqd6bXUh67iMl7 ahmed@ahmedheaven"
     }
+
   }
 ```
 
@@ -186,8 +191,7 @@ So to add a VM
 - `publicip` is usued to define if it requires a public IP or not
 - `entrypoint` is used define the entrypoint which in most of the cases in `/sbin/zinit init`, but in case of flists based on vms it can be specific to each flist
 - `env_vars` are used to define te environment variables, in this example we define `SSH_KEY` to authorize me accessing the machine
-
-Here we say we will have this deployment on node with `twin ID 2` using the overlay network defined from before `grid_network.net1.name` and use the ip range allocated to that specific node `2`
+  Here we say we will have this deployment on node with `twin ID 2` using the overlay network defined from before `grid_network.net1.name` and use the ip range allocated to that specific node `2`
 
 The file describes only the desired state which is `a deployment of two VMs and their specifications in terms of cpu and memory, and some environment variables e.g sshkey to ssh into the machine`
 

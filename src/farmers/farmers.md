@@ -2,6 +2,10 @@
 
 ![Farming_Title](./img/farming_30.png)
 
+Welcome to the ThreeFold Farmers section of the ThreeFold Manual! 
+
+If you aspire to become a farmer on the ThreeFold Grid, you've come to the right place. This comprehensive book is designed to provide you with all the necessary information, steps, and insights you need to embark on your journey as a ThreeFold farmer, from start to finish. By becoming a farmer, you'll be part of a global network powering a new era of decentralized computing. So, let's dive into this manual and discover the world of ThreeFold Farming!
+
 <h2> Table of Contents </h2>
 
 - [Build a 3Node](./3node_building/3node_building.md)
@@ -19,4 +23,8 @@
   - [Calculate Your ROI](./farming_optimization/calculate_roi.md)
   - [Room Parameters](./farming_optimization/farm_room_parameters.md)
   - [Farming Costs](./farming_optimization/farming_costs.md)
-- [Farmerbot](./farmerbot/farmerbot.md)
+- [Farmerbot](./farmerbot/farmerbot_intro.md)
+  - [Farmerbot Quick Guide](./farmerbot/farmerbot_quick.md)
+  - [Farmerbot Extensive Guide](./farmerbot/farmerbot.md)
+  - [Farmerbot FAQ](../../faq/faq.md#farmerbot)
+- [Farmers FAQ](../faq/faq.md#farmers-faq)

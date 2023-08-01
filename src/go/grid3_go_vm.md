@@ -8,16 +8,16 @@ import (
     "fmt"
     "net"
 
-    "github.com/threefoldtech/grid3-go/deployer"
-    "github.com/threefoldtech/grid3-go/workloads"
-    "github.com/threefoldtech/grid_proxy_server/pkg/types"
+    "github.com/threefoldtech/tfgrid-sdk-go/grid-client/deployer"
+    "github.com/threefoldtech/tfgrid-sdk-go/grid-client/workloads"
+    "github.com/threefoldtech/tfgrid-sdk-go/grid-proxy/pkg/types"
     "github.com/threefoldtech/zos/pkg/gridtypes"
 )
 
 func main() {
 
     // Create Threefold plugin client
-    tfPluginClient, err := deployer.NewTFPluginClient(mnemonics, "sr25519", network, "", "", true, false)
+    tfPluginClient, err := deployer.NewTFPluginClient(mnemonics, keyType, network, "", "", "", 0, true)
 
     // Get a free node to deploy
     freeMRU := uint64(2)
@@ -43,7 +43,7 @@ func main() {
         AddWGAccess: true,
     }
 
-    // Create new VM to deploy
+    // Create a new VM to deploy
     vm := workloads.VM{
         Name:       "vm",
         Flist:      "https://hub.grid.tf/tf-official-apps/base:latest.flist",
@@ -74,9 +74,9 @@ func main() {
     fmt.Println(vmObj.YggIP)
 
     // Cancel the VM deployment
-    err = tfPluginClient.NetworkDeployer.Cancel(ctx, &dl)
+    err = tfPluginClient.DeploymentDeployer.Cancel(ctx, &dl)
 
-    // Cancel the network
+    // Cancel the network deployment
     err = tfPluginClient.NetworkDeployer.Cancel(ctx, &network)
 }
 ```

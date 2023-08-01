@@ -7,14 +7,16 @@
 - [Introduction](#introduction)
 - [Main Process](#main-process)
 - [Prerequisites](#prerequisites)
-- [Find a 3node](#find-a-3node)
+- [Find a 3Node with the ThreeFold Explorer](#find-a-3node-with-the-threefold-explorer)
+  - [Using the Grid Scheduler](#using-the-grid-scheduler)
+  - [Using the Grid Explorer](#using-the-grid-explorer)
 - [Create the Terraform Files](#create-the-terraform-files)
 - [Deploy the Full VM with Terraform](#deploy-the-full-vm-with-terraform)
 - [SSH into the 3node](#ssh-into-the-3node)
 - [Delete the Deployment](#delete-the-deployment)
 - [Conclusion](#conclusion)
 
-***
+---
 
 ## Introduction
 
@@ -24,7 +26,7 @@ The steps are very simple. You first need to create the Terraform files, the var
 
 The main goal of this guide is to show you all the necessary steps to deploy a Full VM on the TGrid using Terraform. Once you get acquainted with this first basic deployment, you should be able to explore on your own the possibilities that the TFGrid and Terraform combined provide.
 
-***
+---
 
 ## Main Process
 
@@ -38,67 +40,80 @@ Modify the variable file to take into account your own seed phrase and SSH keys.
 
 Once this is done, initialize and apply Terraform to deploy your workload, then SSH into the Full VM. That's it! Now let's go through all these steps in further details.
 
-***
+---
 
 ## Prerequisites
 
-* [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
+- [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
 
 You need to download and install properly Terraform. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
 
-***
+---
 
+## Find a 3Node with the ThreeFold Explorer
 
-## Find a 3node
+We want to find a proper 3Node to deploy our workload. For this guide, we want a 3Node with at least 15GB of storage, 1 vcore and 512MB of RAM, which are the minimum specifications for a micro VM on the TFGrid. We are also looking for a 3Node with a public IPv4 address.
 
-We first need to decide on which 3node we will be deploying our workload.
-
-We thus start by finding a 3node with an IPv4 address and see if it has enough resources. For our full VM deployment, the minimum specs are 1 CPU, 512 MB of memory and 15 GB of storage.
-
-* Go to the TFGrid's [GraphQL](https://graphql.grid.tf/graphql)
-* Write the following query
-```
-query MyQuery {
-  publicConfigs {
-    node {
-      nodeID
-      resourcesTotal {
-        cru
-        mru
-        sru
-      }
-    }
-    ipv4
-  }
-}
-```
-* Press the "Play" button
-* Find a 3node that suits the deployment's needs (under `nodeID`)
+We present two options to find a suitable node: the scheduler and the TFGrid Explorer.
 
 ***
+
+### Using the Grid Scheduler
+
+Using the TFGrid scheduler can be very efficient depending on what you are trying to achieve. To learn more about the scheduler, please refer to this [Scheduler Guide](resources/terraform_scheduler.md).
+
+***
+
+### Using the Grid Explorer
+
+We show here how to find a suitable 3Node using the ThreeFold Explorer.
+
+- Go to the ThreeFold Grid's [Explorer](https://dashboard.grid.tf/explorer/nodes) (Main Net)
+- Find a 3Node with suitable resources for the deployment and take note of its node ID on the leftmost column `ID`
+- For proper understanding, we give further information on some relevant columns:
+  - `ID` refers to the node ID
+  - `Free Public IPs` refers to available IPv4 public IP addresses
+  - `HRU` refers to HDD storage
+  - `SRU` refers to SSD storage
+  - `MRU` refers to RAM (memory)
+  - `CRU` refers to virtual cores (vcores)
+- To quicken the process of finding a proper 3Node, you can narrow down the search by adding filters:
+  - At the top left of the screen, in the `Filters` box, select the parameter(s) you want.
+  - For each parameter, a new field will appear where you can enter a minimum number requirement for the 3Nodes.
+    - `Free SRU (GB)`: 15
+    - `Free MRU (GB)`: 1
+    - `Total CRU (Cores)`: 1
+    - `Free Public IP`: 2
+      - Note: if you want a public IPv4 address, it is recommended to set the parameter `FREE PUBLIC IP` to at least 2 to avoid false positives. This ensures that the shown 3Nodes have viable IP addresses.
+
+Once you've found a proper node, take node of its node ID. You will need to use this ID when creating the Terraform files.
+
+---
 
 ## Create the Terraform Files
 
 Open the terminal.
 
-* Go to the home folder
-  *  ```
-     cd ~
-     ```
+- Go to the home folder
 
-* Create the folder `terraform` and the subfolder `deployments`:
-  *  ```
-     mkdir terraform && cd $_
-     ```
-  *  ```
-     mkdir deployments && cd $_
-     ```
-* Create the `main.tf` file:
-  *  ```
-     nano main.tf
-     ```
+  - ```
+    cd ~
+    ```
 
-* Copy the `main.tf` content and save the file.
+- Create the folder `terraform` and the subfolder `deployment-full-vm`:
+  - ```
+    mkdir -p terraform/deployment-full-vm
+    ```
+  - ```
+    cd terraform/deployment-full-vm
+    ```
+- Create the `main.tf` file:
+
+  - ```
+    nano main.tf
+    ```
+
+- Copy the `main.tf` content and save the file.
 
 ```
 terraform {
@@ -195,12 +210,14 @@ output "ipv4_vm1" {
 
 In this file, we name the VM as `vm1`.
 
-* Create the `credentials.auto.tfvars` file:
-  *  ```
-     nano credentials.auto.tfvars
-     ```
+- Create the `credentials.auto.tfvars` file:
 
-* Copy the `credentials.auto.tfvars` content and save the file. 
+  - ```
+    nano credentials.auto.tfvars
+    ```
+
+- Copy the `credentials.auto.tfvars` content and save the file.
+
 ```
 mnemonics = "..."
 SSH_KEY = "..."
@@ -216,34 +233,35 @@ Make sure to add your own seed phrase and SSH public key. You will also need to 
 
 We set here the minimum specs for a full VM, but you can adjust these parameters.
 
-***
+---
 
 ## Deploy the Full VM with Terraform
 
 We now deploy the full VM with Terraform. Make sure that you are in the correct folder `terraform/deployments` containing the main and variables files.
 
-* Initialize Terraform:
-  *  ```
-     terraform init
-     ```
+- Initialize Terraform:
 
-* Apply Terraform to deploy the full VM:
-  *  ```
-     terraform apply
-     ```
+  - ```
+    terraform init
+    ```
+
+- Apply Terraform to deploy the full VM:
+  - ```
+    terraform apply
+    ```
 
 After deployments, take note of the 3node' IPv4 address. You will need this address to SSH into the 3node.
 
-***
+---
 
 ## SSH into the 3node
 
-* To [SSH into the 3node](../getstarted/ssh_guide/ssh_guide.md), write the following:
-  *  ```
-     ssh root@VM_IPv4_Address
-     ```
+- To [SSH into the 3node](../getstarted/ssh_guide/ssh_guide.md), write the following:
+  - ```
+    ssh root@VM_IPv4_Address
+    ```
 
-***
+---
 
 ## Delete the Deployment
 
@@ -255,10 +273,10 @@ terraform destroy
 
 Make sure that you are in the Terraform directory you created for this deployment.
 
-***
+---
 
 ## Conclusion
 
 You now have the basic knowledge and know-how to deploy on the TFGrid using Terraform.
 
-If you have any question, let us know!
+As always, if you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Grid Tester Community](https://t.me/threefoldtesting) on Telegram.

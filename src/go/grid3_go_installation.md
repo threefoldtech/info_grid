@@ -7,7 +7,7 @@
 To install Grid3 Go Client:
 
 ```bash
-go get github.com/threefoldtech/grid3-go
+go get github.com/threefoldtech/tfgrid-sdk-go/grid-client
 ```
 
 This will make Grid3 Go Client packages available to you.

@@ -185,3 +185,10 @@ These are the steps required to enable PXE booting on pfSense. This guide assume
 That's it! You’ll want to ensure your clients are configured with boot priority set as IPv4 in first spot. You might need to disable secure boot and enable legacy boot within BIOS.
 
 ***
+
+
+### Other farmers can any node with your farmID
+
+It's a [known issue](https://github.com/threefoldtech/info_grid/issues/122), It's going to be resolved once the TPM effort gets finalized
+
+***

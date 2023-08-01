@@ -1,11 +1,36 @@
+<h1> Deploying a VM with Wireguard and Gateway </h1>
 
-### client configurations
+<h2> Table of Contents </h2>
 
-Check [client](./grid3_javascript_loadclient.md) to configure the client
+- [Introduction](#introduction)
+- [Client Configurations](#client-configurations)
+- [Code Example](#code-example)
+- [Detailed Explanation](#detailed-explanation)
+  - [Get the Client](#get-the-client)
+  - [Get the Nodes](#get-the-nodes)
+  - [Deploy the VM](#deploy-the-vm)
+  - [Deploy the Gateway](#deploy-the-gateway)
+  - [Get the Deployments Information](#get-the-deployments-information)
+  - [Disconnect the Client](#disconnect-the-client)
+  - [Delete the Deployments](#delete-the-deployments)
+- [Conclusion](#conclusion)
 
-## Deploying a VM with Wireguard and gateway
+***
 
-### Code example
+## Introduction
+
+We present here the relevant information when it comes to deploying a virtual machine with Wireguard and a gateway.
+
+***
+
+
+## Client Configurations
+
+To configure the client, have a look at [this section](./grid3_javascript_loadclient.md).
+
+***
+
+## Code Example
 
 ```ts
 import { FilterOptions, GatewayNameModel, GridClient, MachineModel, MachinesModel, NetworkModel } from "../src";
@@ -101,20 +126,21 @@ async function main() {
 main();
 
 ```
+***
 
-### Detailed explanation
+## Detailed Explanation
 
 What we need to do with that code is: Deploy a name gateway with the wireguard IP as the backend; that allows accessing a server inside the vm through the gateway using the private network (wireguard) as the backend.
 
 This will be done through the following steps:
 
-#### Getting the client
+### Get the Client
 
 ```ts
 const grid3 = getClient();
 ```
 
-#### Getting the nodes
+### Get the Nodes
 
 Determine the deploying nodes for the vm, network and gateway.
 
@@ -142,7 +168,7 @@ Determine the deploying nodes for the vm, network and gateway.
   const vmNode = +(await grid3.capacity.filterNodes(vmQueryOptions))[0].nodeId;
   ```
 
-#### Deploy the VM
+### Deploy the VM
 
 We need to create the network and machine models, the deploy the VM
 
@@ -162,7 +188,7 @@ log(vmResult);
 
 - `createMachineModel` and `createMachinesModel` is similar to the previous section of [deploying a single VM](../javascript/grid3_javascript_vm.md), but we are passing the created `NetworkModel` to the machines model and the entry point here runs a simple python server.
 
-#### Deploy the Gateway
+### Deploy the Gateway
 
 Now we have our VM deployed with it's network, we need to make the gateway on the same node, same network and pointing to the VM's private IP address.
 
@@ -186,7 +212,7 @@ Now we have our VM deployed with it's network, we need to make the gateway on th
   - `backends: [`http://${ip}:${port}`]` : the private ip address and the port number of our machine
   - `network: networkName` : the network name, we already created earlier.
 
-#### Get the deployments information
+### Get the Deployments Information
 
   ```ts
   const deployedVm = await grid3.machines.getObj(machines.name); 
@@ -251,11 +277,11 @@ Now we have our VM deployed with it's network, we need to make the gateway on th
 
   Now we can access the vm using the `domain` that returned in the object.
 
-#### Disconnect the client
+### Disconnect the Client
 
 finally we need to disconnect the client using `await grid3.disconnect();`
 
-#### Delete the deployments
+### Delete the Deployments
 
 If we want to delete the deployments we can just do this:
 
@@ -267,6 +293,10 @@ If we want to delete the deployments we can just do this:
   log(deletedGW);
 ```
 
-### Summary
+***
 
-This was a detailed description of how we can create a vm with private ip (wireguard) and use it as a backend for a name gateway.
+## Conclusion
+
+This section presented a detailed description on how to create a virtual machine with private IP using Wireguard and use it as a backend for a name gateway.
+
+If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Grid Tester Community](https://t.me/threefoldtesting) on Telegram.

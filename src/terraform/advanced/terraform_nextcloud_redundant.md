@@ -1,11 +1,13 @@
 <h1>Nextcloud Redundant Deployment on Two 3node Servers</h1>
 
+![ ](./img/terraform_.png)
+
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
 - [Main Steps](#main-steps)
 - [Prerequisites](#prerequisites)
-- [Find Two 3nodes with the Necessary Resources](#find-two-3nodes-with-the-necessary-resources)
+- [Find Nodes with the ThreeFold Explorer](#find-nodes-with-the-threefold-explorer)
 - [Set the VMs](#set-the-vms)
   - [Create a Two Servers Wireguard VPN with Terraform](#create-a-two-servers-wireguard-vpn-with-terraform)
     - [Create the Terraform Files](#create-the-terraform-files)
@@ -41,7 +43,7 @@
 
 In this Threefold Guide, we deploy a redundant [Nextcloud](https://nextcloud.com/) instance that is continually synced on two different 3node servers running on the [Threefold Grid](https://threefold.io/).
 
-We will learn how to deploy two micro virtual machines (Ubuntu 22.04) with [Terraform](https://www.terraform.io/). The Terraform deployment will be composed of a virtual private network (VPN) using [Wireguard](https://www.wireguard.com/). The two VMs will thus be connected in a private and secure network. Once this is done, we will link the two VMs together by setting up a [MariaDB](https://mariadb.org/) database and using [GlusterFS](https://www.gluster.org/). Then, we will install and deploy Nextcloud. We will add a DDNS (dynamic DNS) domain to the Nextcloud deployment. It will then be possible to connect to the Nextcloud instance over public internet. Nextcloud will be available over your computer and even your smart phone! We will also set HTTPS for the DDNS domain in order to make the Nextcloud instance as secure as possible. You are free to explore different DDNS options. In this guide, we will be using [DuckDNS](https://www.duckdns.org/) for simplicity.
+We will learn how to deploy two full virtual machines (Ubuntu 22.04) with [Terraform](https://www.terraform.io/). The Terraform deployment will be composed of a virtual private network (VPN) using [Wireguard](https://www.wireguard.com/). The two VMs will thus be connected in a private and secure network. Once this is done, we will link the two VMs together by setting up a [MariaDB](https://mariadb.org/) database and using [GlusterFS](https://www.gluster.org/). Then, we will install and deploy Nextcloud. We will add a DDNS (dynamic DNS) domain to the Nextcloud deployment. It will then be possible to connect to the Nextcloud instance over public internet. Nextcloud will be available over your computer and even your smart phone! We will also set HTTPS for the DDNS domain in order to make the Nextcloud instance as secure as possible. You are free to explore different DDNS options. In this guide, we will be using [DuckDNS](https://www.duckdns.org/) for simplicity.
 
 The advantage of this redundant Nextcloud deployment is obvious: if one of the two VMs goes down, the Nextcloud instance will still be accessible, as the other VM will take the lead. Also, the two VMs will be continually synced in real-time. If the master node goes down, the data will be synced to the worker node, and the worker node will become the master node. Once the master VM goes back online, the data will be synced to the master node and the master node will retake the lead as the master node.
 
@@ -82,31 +84,31 @@ You need to download and install properly Terraform and Wireguard on your local 
 
 ***
 
-# Find Two 3nodes with the Necessary Resources
+# Find Nodes with the ThreeFold Explorer
 
-We first need to decide on which 3nodes we will be deploying our workload.
+We first need to decide on which 3Nodes we will be deploying our workload.
 
-We thus start by finding two 3nodes with IPv4 addresses and see if they have enough resources. For our Nextcloud deployment, we want at least 1 CPU and 2 GB of memory. For the storage, we use 50 GB.
+We thus start by finding two 3Nodes with sufficient resources. For this current Nextcloud guide, we will be using 1 CPU, 2 GB of RAM and 50 GB of storage. We are also looking for 3Nodes with each a public IPv4 address.
 
-* Go to the Threefold Grid's [GraphQL](https://graphql.grid.tf/graphql).
-* Write the following query
-```
-query MyQuery {
-  publicConfigs {
-    node {
-      nodeID
-      resourcesTotal {
-        cru
-        mru
-        sru
-      }
-    }
-    ipv4
-  }
-}
-```
-* Press the "Play" button
-* Find two 3nodes that suit the deployment's needs (under `nodeID`)
+* Go to the ThreeFold Grid's [Explorer](https://dashboard.grid.tf/explorer/nodes) (Main Net)
+* Find two 3Nodes with suitable resources for the deployment and take note of their node IDs on the leftmost column `ID`
+* For proper understanding, we give further information on some relevant columns:
+  * `ID` refers to the node ID
+  * `Free Public IPs` refers to available IPv4 public IP addresses
+  * `HRU` refers to HDD storage
+  * `SRU` refers to SSD storage
+  * `MRU` refers to RAM (memory)
+  * `CRU` refers to virtual cores (vcores)
+* To quicken the process of finding proper 3Nodes, you can narrow down the search by adding filters:
+  * At the top left of the screen, in the `Filters` box, select the parameter(s) you want.
+  * For each parameter, a new field will appear where you can enter a minimum number requirement for the 3Nodes.
+    * `Free SRU (GB)`: 50
+    * `Free MRU (GB)`: 2
+    * `Total CRU (Cores)`: 1
+    * `Free Public IP`: 2
+      * Note: if you want a public IPv4 address, it is recommended to set the parameter `FREE PUBLIC IP` to at least 2 to avoid false positives. This ensures that the shown 3Nodes have viable IP addresses.
+
+Once you've found two 3Nodes, take note of their node IDs. You will need to use those IDs when creating the Terraform files.
 
 ***
 
@@ -117,7 +119,7 @@ For this guide, we use two files to deploy with Terraform. The first file contai
 
 To facilitate the deployment, only the environment variables file needs to be adjusted. The `main.tf` file contains the environment variables (e.g. `var.size` for the disk size) and thus you do not need to change this file. Of course, you can adjust the deployment based on your preferences. That being said, it should be easy to deploy the Terraform deployment with the `main.tf` as is.
 
-On your local computer, create a new folder named `terraform` and a subfolder called `deployments`. In the subfolder, store the files `main.tf` and `credentials.auto.tfvars`.
+On your local computer, create a new folder named `terraform` and a subfolder called `deployment-nextcloud`. In the subfolder, store the files `main.tf` and `credentials.auto.tfvars`.
 
 Modify the variable files to take into account your own seed phrase and SSH keys. You should also specifiy the node IDs of the two 3nodes you will be deploying on.
 
@@ -130,12 +132,12 @@ Open the terminal.
      cd ~
      ```
 
-* Create the folder `terraform` and the subfolder `deployments`:
+* Create the folder `terraform` and the subfolder `deployment-nextcloud`:
   *  ```
-     mkdir terraform && cd $_
+     mkdir -p terraform/deployment-nextcloud
      ```
   *  ```
-     mkdir deployments && cd $_
+     cd terraform/deployment-nextcloud
      ```
 * Create the `main.tf` file:
   *  ```
@@ -304,7 +306,7 @@ Make sure to add your own seed phrase and SSH public key. You will also need to 
 
 ### Deploy the 3nodes with Terraform
 
-We now deploy the VPN with Terraform. Make sure that you are in the correct folder `terraform/deployments` with the main and variables files.
+We now deploy the VPN with Terraform. Make sure that you are in the correct folder `terraform/deployment-nextcloud` with the main and variables files.
 
 * Initialize Terraform:
   *  ```
@@ -330,18 +332,18 @@ After deployments, take note of the 3nodes' IPv4 address. You will need those ad
       rm ~/.ssh/known_hosts
       ```
     * ```
-      sudo ssh-add ~/.ssh/id_rsa
+      ssh-add ~/.ssh/id_rsa
       ```
 
 ### Preparing the VMs for the Deployment
 
 * Update and upgrade the system
   * ```
-    sudo apt update && sudo apt upgrade -y && sudo apt-get install apache2 -y
+    apt update && apt upgrade -y && apt-get install apache2 -y
     ```
 * After download, reboot the system
   * ```
-    sudo reboot
+    reboot
     ``` 
 * Reconnect to the VMs
 
@@ -391,11 +393,11 @@ If you correctly receive the packets from the two VMs, you know that the VPN is 
 
 * Download MariaDB's server and client
   * ```
-    sudo apt install mariadb-server mariadb-client -y
+    apt install mariadb-server mariadb-client -y
     ```
 * Configure the MariaDB database
   * ```
-    sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+    nano /etc/mysql/mariadb.conf.d/50-server.cnf
     ```
     * Do the following changes 
       * Add `#` in front of
@@ -412,12 +414,12 @@ If you correctly receive the packets from the two VMs, you know that the VPN is 
 
 * Restart MariaDB
   * ```
-    sudo systemctl restart mysql
+    systemctl restart mysql
     ```
 
 * Launch MariaDB
   * ```
-    sudo mysql
+    mysql
     ```
 
 ## Create User with Replication Grant
@@ -512,40 +514,40 @@ We will now install and set [GlusterFS](https://www.gluster.org/), a free and op
 
 * Install GlusterFS on both the master and worker VMs
   *  ```
-     echo | sudo add-apt-repository ppa:gluster/glusterfs-7 && sudo apt install glusterfs-server -y
+     echo | add-apt-repository ppa:gluster/glusterfs-7 && apt install glusterfs-server -y
      ```
 * Start the GlusterFS service on both VMs
   *  ```
-     sudo systemctl start glusterd.service && sudo systemctl enable glusterd.service
+     systemctl start glusterd.service && systemctl enable glusterd.service
      ```
 * Set the master to worker probe IP on the master VM:
   *  ```
-     sudo gluster peer probe 10.1.4.2
+     gluster peer probe 10.1.4.2
      ```
 
 * See the peer status on the worker VM:
   *  ```
-     sudo gluster peer status
+     gluster peer status
      ```
 
 * Set the master and worker IP address on the master VM:
   *  ```
-     sudo gluster volume create vol1 replica 2 10.1.3.2:/gluster-storage 10.1.4.2:/gluster-storage force
+     gluster volume create vol1 replica 2 10.1.3.2:/gluster-storage 10.1.4.2:/gluster-storage force
      ```
 
 * Start GlusterFS on the master VM:
   *  ```
-     sudo gluster volume start vol1
+     gluster volume start vol1
      ```
 
 * Check the status on the worker VM:
   *  ```
-     sudo gluster volume status
+     gluster volume status
      ```
 
 * Mount the server with the master IP on the master VM:
   *  ```
-     sudo mount -t glusterfs 10.1.3.2:/vol1 /var/www
+     mount -t glusterfs 10.1.3.2:/vol1 /var/www
      ```
 
 * See if the mount is there on the master VM:
@@ -555,7 +557,7 @@ We will now install and set [GlusterFS](https://www.gluster.org/), a free and op
 
 * Mount the server with the worker IP on the worker VM:
   *  ```
-     sudo mount -t glusterfs 10.1.4.2:/vol1 /var/www
+     mount -t glusterfs 10.1.4.2:/vol1 /var/www
      ```
 
 * See if the mount is there on the worker VM:
@@ -567,7 +569,7 @@ We now update the mount with the filse fstab on both VMs.
 
 * To prevent the mount from being aborted if the server reboots, write the following on both servers:
   *  ```
-     sudo nano /etc/fstab
+     nano /etc/fstab
      ```
 
 * Add the following line in the `fstab` file to set the master VM with the master virtual IP (here it is 10.1.3.2):
@@ -586,7 +588,7 @@ We now update the mount with the filse fstab on both VMs.
 
 * Install PHP and the PHP modules for Nextcloud on both the master and the worker:
   *  ```
-     sudo apt install php -y && sudo apt-get install php zip libapache2-mod-php php-gd php-json php-mysql php-curl php-mbstring php-intl php-imagick php-xml php-zip php-mysql php-bcmath php-gmp zip -y
+     apt install php -y && apt-get install php zip libapache2-mod-php php-gd php-json php-mysql php-curl php-mbstring php-intl php-imagick php-xml php-zip php-mysql php-bcmath php-gmp zip -y
      ```
 
 We will now install Nextcloud. This is done only on the master VM.
@@ -601,17 +603,17 @@ We will now install Nextcloud. This is done only on the master VM.
 
 * We now download Nextcloud on the master VM. 
   *  ```
-     sudo wget https://download.nextcloud.com/server/releases/nextcloud-26.0.0.zip
+     wget https://download.nextcloud.com/server/releases/nextcloud-27.0.1.zip
      ```
 
 You only need to download on the master VM, since you set a peer-to-peer connection, it will also be accessible on the worker VM.
 
 * Then, extract the `.zip` file. This will take a couple of minutes. We use 7z to track progress:
   * ```
-    sudo apt install p7zip-full -y
+    apt install p7zip-full -y
     ```
   * ```
-    sudo 7z x nextcloud-26.0.0.zip -o/var/www/
+    7z x nextcloud-27.0.1.zip -o/var/www/
     ```
 
 * After the download, see if the Nextcloud file is there on the worker VM:
@@ -621,7 +623,7 @@ You only need to download on the master VM, since you set a peer-to-peer connect
 
 * Then, we grant permissions to the folder. Do this on both the master VM and the worker VM.
   *  ```
-     sudo chown www-data:www-data /var/www/nextcloud/ -R
+     chown www-data:www-data /var/www/nextcloud/ -R
      ```
 
 ***
@@ -667,7 +669,7 @@ We now want to tell Apache where to store the Nextcloud data. To do this, we wil
 
 * On both the master and worker VMs, write the following:
   *  ```
-     sudo nano /etc/apache2/sites-available/nextcloud.conf
+     nano /etc/apache2/sites-available/nextcloud.conf
      ```
 
 The file should look like this, with your own subdomain instead of `subdomain`:
@@ -701,12 +703,12 @@ The file should look like this, with your own subdomain instead of `subdomain`:
 
 * On both the master VM and the worker VM, write the following to set the Nextcloud database with Apache and to enable the new virtual host file:
   *  ```
-     sudo a2ensite nextcloud.conf && sudo a2enmod rewrite headers env dir mime setenvif ssl
+     a2ensite nextcloud.conf && a2enmod rewrite headers env dir mime setenvif ssl
      ```
 
 * Then, reload and restart Apache:
   *  ```
-     sudo systemctl reload apache2 && sudo systemctl restart apache2
+     systemctl reload apache2 && systemctl restart apache2
      ```
 
 ***
@@ -756,27 +758,27 @@ Install certbot by following the steps here: [https://certbot.eff.org/](https://
 
 * See if you have the latest version of snap:
   *  ```
-     sudo snap install core; sudo snap refresh core
+     snap install core; snap refresh core
      ```
 
 * Remove certbot-auto:
   *  ```
-     sudo apt-get remove certbot
+     apt-get remove certbot
      ```
 
 * Install certbot:
   *  ```
-     sudo snap install --classic certbot
+     snap install --classic certbot
      ```
 
 * Ensure that certbot can be run:
   *  ```
-     sudo ln -s /snap/bin/certbot /usr/bin/certbot
+     ln -s /snap/bin/certbot /usr/bin/certbot
      ```
 
 * Then, install certbot-apache:
   *  ```
-     sudo apt install python3-certbot-apache -y
+     apt install python3-certbot-apache -y
      ```
 
 ## Set the Certbot with the DNS Domain
@@ -832,7 +834,7 @@ output "ipv4_vm1" {
 
 * To add the HTTPS protection, write the following line on the master VM with your own subdomain:
   *  ```
-     sudo certbot --apache -d subdomain.duckdns.org -d www.subdomain.duckdns.org
+     certbot --apache -d subdomain.duckdns.org -d www.subdomain.duckdns.org
      ```
 
 * Once the HTTPS is set, you can reset the worker VM:
@@ -844,7 +846,7 @@ Note: You then need to redo the same process with the worker VM. This time, make
 
 * Make a dry run of the certbot renewal to verify that it is correctly set up.
   *  ```
-     sudo certbot renew --dry-run
+     certbot renew --dry-run
      ```
 
 You now have HTTPS security on your Nextcloud instance.
@@ -856,7 +858,7 @@ Finally, we want to set a firewall to monitor and control incoming and outgoing 
 It should already be installed on your system. If it is not, install it with the following command:
 
 ```
-sudo apt install ufw
+apt install ufw
 ```
 
 For our security rules, we want to allow SSH, HTTP and HTTPS.
@@ -866,25 +868,25 @@ We thus add the following rules:
 
 * Allow SSH (port 22)
   * ```
-    sudo ufw allow ssh
+    ufw allow ssh
     ```
 * Allow HTTP (port 80)
   * ```
-    sudo ufw allow http
+    ufw allow http
     ```
 * Allow https (port 443)
   * ```
-    sudo ufw allow https
+    ufw allow https
     ```
 
 * To enable the firewall, write the following:
   * ```
-    sudo ufw enable
+    ufw enable
     ```
 
 * To see the current security rules, write the following:
   * ```
-    sudo ufw status verbose
+    ufw status verbose
     ```
 
 You now have enabled the firwall with proper security rules for your Nextcloud deployment.
@@ -899,7 +901,7 @@ The Nextcloud database is synced in real-time on two different 3nodes. When one 
 
 You can now [install Nextcloud](https://nextcloud.com/install/) on your local computer. You will then be able to "use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop". You can also do regular backups with Nextcloud to ensure maximum resilience of your data. Check Nextcloud's [documentation](https://docs.nextcloud.com/server/latest/admin_manual/maintenance/backup.html) for more information on this.
 
-You should now have a basic understanding of the Threefold Grid, GraphQL, Wireguard, Terraform, MariaDB, GlusterFS, PHP and Nextcloud. Now, you know how to deploy workloads on the Threefold Grid with an efficient architecture in order to ensure redundancy. This is just the beginning. The Threefold Grid has a somewhat infinite potential when it comes to deployments, workloads, architectures and server projects. Let's see where it goes from here!
+You should now have a basic understanding of the Threefold Grid, the ThreeFold Explorer, Wireguard, Terraform, MariaDB, GlusterFS, PHP and Nextcloud. Now, you know how to deploy workloads on the Threefold Grid with an efficient architecture in order to ensure redundancy. This is just the beginning. The Threefold Grid has a somewhat infinite potential when it comes to deployments, workloads, architectures and server projects. Let's see where it goes from here!
 
 This Nextcloud deployment could be improved in many ways and other guides might be published in the future with enhanced functionalities. Stay tuned for more Threefold Guides. If you have ideas on how to improve this guide, please let us know. We learn best when sharing knowledge.
 

@@ -8,17 +8,16 @@ import (
     "fmt"
     "net"
 
-    "github.com/threefoldtech/grid3-go/deployer"
-    "github.com/threefoldtech/grid3-go/workloads"
-    "github.com/threefoldtech/grid_proxy_server/pkg/types"
+    "github.com/threefoldtech/tfgrid-sdk-go/grid-client/deployer"
+    "github.com/threefoldtech/tfgrid-sdk-go/grid-client/workloads"
+    "github.com/threefoldtech/tfgrid-sdk-go/grid-proxy/pkg/types"
     "github.com/threefoldtech/zos/pkg/gridtypes"
 )
 
 func main() {
 
     // Create Threefold plugin client
-    tfPluginClient, err := deployer.NewTFPluginClient(mnemonics, "sr25519", network, "", "", true, false)
-
+    tfPluginClient, err := deployer.NewTFPluginClient(mnemonics, "sr25519", network, "", "", "", 0, true)
 
     // Get a free node to deploy
     freeMRU := uint64(2)
@@ -86,10 +85,8 @@ func main() {
 
     // Deploy the VM deployments
     dl1 := workloads.NewDeployment("vm1", nodeID1, "", nil, network.Name, nil, nil, []workloads.VM{vm1}, nil)
-    err = tfPluginClient.DeploymentDeployer.Deploy(ctx, &dl1)
-
     dl2 := workloads.NewDeployment("vm2", nodeID2, "", nil, network.Name, nil, nil, []workloads.VM{vm2}, nil)
-    err = tfPluginClient.DeploymentDeployer.Deploy(ctx, &dl2)
+    err = tfPluginClient.DeploymentDeployer.BatchDeploy(ctx, []*workloads.Deployment{&dl1, &dl2})
 
     // Load the VMs using the state loader
     vmObj1, err := tfPluginClient.State.LoadVMFromGrid(nodeID1, vm1.Name, dl1.Name)
@@ -100,8 +97,8 @@ func main() {
     fmt.Println(vmObj2.YggIP)
 
     // Cancel the VM deployments
-    err = tfPluginClient.NetworkDeployer.Cancel(ctx, &dl1)
-    err = tfPluginClient.NetworkDeployer.Cancel(ctx, &dl2)
+    err = tfPluginClient.DeploymentDeployer.Cancel(ctx, &dl1)
+    err = tfPluginClient.DeploymentDeployer.Cancel(ctx, &dl2)
 
     // Cancel the network
     err = tfPluginClient.NetworkDeployer.Cancel(ctx, &network)

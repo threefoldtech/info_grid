@@ -1,5 +1,11 @@
 # ThreeFold System Administrators
 
+Welcome to the ThreeFold System Administrators section of the ThreeFold Manual! 
+
+The book is designed specifically for system administrators, providing a comprehensive resource for all the documentation, guides, and how-tos related to managing and maintaining the ThreeFold products and technologies. Whether you're responsible for overseeing infrastructures, ensuring optimal performance, or troubleshooting issues, this section has got you covered. 
+
+From deployment strategies to monitoring tools, from security best practices to network configuration, you'll find a wealth of information to support your role as a system administrator. With this comprehensive resource at your fingertips, you'll be equipped to handle the intricacies of the decentralized and sustainable ThreeFold ecosystem and ensure a smooth and efficient operation. So, let's delve into the System Administrators book and empower ourselves with the knowledge and skills to effectively manage the ThreeFold infrastructure.
+
 <h2> Table of Contents </h2>
 
 - [System Administrators](../system_administrators/system_administrators.md)
@@ -71,7 +77,9 @@
     - [Kubernetes Cluster](../terraform/resources/terraform_k8s.md)
       - [Demo](../terraform/resources/terraform_k8s_demo.md)
     - [ZDB](../terraform/resources/terraform_zdb.md)
-    - [Quantum Filesystem](../terraform/resources/terraform_qsfs.md)
+    - [Quantum Safe Filesystem](../terraform/resources/terraform_qsfs.md)
+      - [QSFS on Micro VM](../terraform/resources/terraform_qsfs_on_microvm.md)
+      - [QSFS on Full VM](../terraform/resources/terraform_qsfs_on_full_vm.md) 
     - [CapRover](../terraform/resources/terraform_caprover.md)
   - [Advanced](../terraform/advanced/terraform_advanced_readme.md)
     - [Terraform Provider](../terraform/advanced/terraform_provider.md)
@@ -79,6 +87,10 @@
     - [Mounts](../terraform/advanced/terraform_mounts.md)
     - [Capacity Planning](../terraform/advanced/terraform_capacity_planning.md)
     - [Updates](../terraform/advanced/terraform_updates.md)
+    - [SSH Connection with Wireguard](../terraform/advanced/terraform_wireguard_ssh.md)
+    - [Set a Wireguard VPN](../terraform/advanced/terraform_wireguard_vpn.md)
+    - [Synced MariaDB Databases](../terraform/advanced/terraform_mariadb_synced_databases.md)
+    - [Nextcloud Single Deployment](../terraform/advanced/terraform_nextcloud_single.md)
     - [Nextcloud Redundant Deployment](../terraform/advanced/terraform_nextcloud_redundant.md)
 - [Advanced](../advanced/advanced.md)
   - [Grid3 Stellar-TFChain Bridge](../advanced/grid3_stellar_tfchain_bridge.md)
@@ -87,3 +99,4 @@
   - [Contract Bills Reports](../advanced/contract_bill_report.md)
   - [Listing Free Public IPs](../advanced/list_public_ips.md)
   - [Redis](../advanced/grid3_redis.md) 
+- [Users FAQ](../faq/faq.md#users-faq)

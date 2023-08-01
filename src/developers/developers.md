@@ -1,5 +1,11 @@
 # ThreeFold Developers
 
+Welcome to the ThreeFold Developers section of the ThreeFold Manual! 
+
+This comprehensive book is your go-to resource for all documentation, tools, and tutorials tailored specifically for developers. Whether you're a seasoned developer or just starting your journey, this section is designed to provide you with everything you need to dive into the exciting world of ThreeFold products and technologies. From APIs to SDKs, from how-tos to best practices, you'll find a wealth of information to help you integrate, build, and innovate on the ThreeFold platform. 
+
+Whether you're interested in decentralized cloud computing, blockchain integration, or exploring new possibilities in digital sovereignty, this developer-focused section will equip you with the knowledge and tools to unleash your creativity and transform ideas into reality. Let's now explore the depths of the ThreeFold Developers section!
+
 <h2> Table of Contents </h2>
 
 - [Javascript Client](../javascript/grid3_javascript_readme.md)
@@ -15,13 +21,15 @@
   - [Deploy ZDBs for QSFS](../javascript/grid3_javascript_qsfs_zdbs.md)
   - [QSFS](../javascript/grid3_javascript_qsfs.md)
   - [Key Value Store](../javascript/grid3_javascript_kvstore.md)
+  - [VM with Wireguard and Gateway](../javascript/grid3_wireguard_gateway.md)
 - [Go Client](../go/grid3_go_readme.md)
-  - [Installation](../go/grid3_go_installation.md)
-  - [Loading Client](../go/grid3_go_load_client.md)
-  - [Deploy a VM](../go/grid3_go_vm.md)
-  - [Deploy Multiple VMs](../go/grid3_go_vms.md)
-  - [Deploy Gateways](../go/grid3_go_gateways.md)
-  - [Deploy Kubernetes](../go/grid3_go_kubernetes.md)
+    - [Installation](../go/grid3_go_installation.md)
+    - [Loading Client](../go/grid3_go_load_client.md)
+    - [Deploy a VM](../go/grid3_go_vm.md)
+    - [Deploy Multiple VMs](../go/grid3_go_vms.md)
+    - [Deploy Gateways](../go/grid3_go_gateways.md)
+    - [Deploy Kubernetes](../go/grid3_go_kubernetes.md)
+    - [Deploy a QSFS](../go/grid3_go_qsfs.md)
 - [TFGrid CLI](../tfgridcmd/grid3_cli_readme.md)
   - [Installation](../tfgridcmd/grid3_cli_installation.md)
   - [Login](../tfgridcmd/grid3_cli_login.md)
@@ -36,3 +44,17 @@
 - [Grid Proxy](../proxy/proxy.md)
 - [Flist Hub](../flist_hub/flist_hub.md)
   - [Supported FLists](../manual3_iac/grid3_supported_flists.md)
+- [Internals](../internals/internals.md)
+  - [Reliable Message Bus (RMB)](../internals/rmb/rmb_toc.md)
+    - [Introduction to RMB](../internals/rmb/rmb_intro.md)
+    - [RMB Specs](../internals/rmb/rmb_specs.md)
+    - [RMB Peer](../internals/rmb/uml/peer.md)
+    - [RMB Relay](../internals/rmb/uml/relay.md)
+  - [ZOS](../internals/zos/index.md)
+    - [Manual](../internals/zos/manual/manual.md)
+    - [Workload Types](../internals/zos/manual/workload_types.md)
+    - [Internal Modules](../internals/zos/internals/internals.md)
+    - [Capacity](../internals/zos/internals/capacity.md)
+    - [API](../internals/zos/manual/api.md)
+    - [FAQ](../internals/zos/faq/index.md)
+- [Developers FAQ](../faq/faq.md#developers-faq)
