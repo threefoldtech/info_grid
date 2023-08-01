@@ -274,18 +274,18 @@ After deployments, take note of the 3Node's IPv4 address. You will need this add
       rm ~/.ssh/known_hosts
       ```
     * ```
-      sudo ssh-add ~/.ssh/id_rsa
+      ssh-add ~/.ssh/id_rsa
       ```
 
 ## Prepare the Full VM
 
 * Update and upgrade the system
   * ```
-    sudo apt update && sudo apt upgrade && sudo apt-get install apache2
+    apt update && apt upgrade && apt-get install apache2
     ```
 * After download, reboot the system
   * ```
-    sudo reboot
+    reboot
     ``` 
 * Reconnect to the VM
 
@@ -297,11 +297,11 @@ After deployments, take note of the 3Node's IPv4 address. You will need this add
 
 * Download MariaDB's server and client
   * ```
-    sudo apt install mariadb-server mariadb-client
+    apt install mariadb-server mariadb-client
     ```
 * Configure the MariaDB database
   * ```
-    sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+    nano /etc/mysql/mariadb.conf.d/50-server.cnf
     ```
     * Do the following changes 
       * Add `#` in front of
@@ -318,12 +318,12 @@ After deployments, take note of the 3Node's IPv4 address. You will need this add
 
 * Restart MariaDB
   * ```
-    sudo systemctl restart mysql
+    systemctl restart mysql
     ```
 
 * Launch MariaDB
   * ```
-    sudo mysql
+    mysql
     ```
 
 ## Set the Nextcloud User and Database
@@ -356,7 +356,7 @@ We now set the Nextcloud database. You should choose your own username and passw
 
 * Install PHP and the PHP modules for Nextcloud on both the master and the worker:
   *  ```
-     sudo apt install php && sudo apt-get install php zip libapache2-mod-php php-gd php-json php-mysql php-curl php-mbstring php-intl php-imagick php-xml php-zip php-mysql php-bcmath php-gmp zip
+     apt install php && apt-get install php zip libapache2-mod-php php-gd php-json php-mysql php-curl php-mbstring php-intl php-imagick php-xml php-zip php-mysql php-bcmath php-gmp zip
      ```
 
 We will now install Nextcloud.
@@ -371,19 +371,19 @@ We will now install Nextcloud.
 
 * We now download Nextcloud on the full VM. 
   *  ```
-     sudo wget https://download.nextcloud.com/server/releases/nextcloud-26.0.0.zip
+     wget https://download.nextcloud.com/server/releases/nextcloud-27.0.1.zip
      ```
 
 * Then, extract the `.zip` file. This will take a couple of minutes. We use 7z to track progress:
   * ```
-    sudo apt install p7zip-full
+    apt install p7zip-full
     ```
   * ```
-    sudo 7z x nextcloud-26.0.0.zip -o/var/www/
+    7z x nextcloud-27.0.1.zip -o/var/www/
     ```
 * Then, we grant permissions to the folder.
   *  ```
-     sudo chown www-data:www-data /var/www/nextcloud/ -R
+     chown www-data:www-data /var/www/nextcloud/ -R
      ```
 
 ***
@@ -409,7 +409,7 @@ We now want to tell Apache where to store the Nextcloud data. To do this, we wil
 
 * On full VM, write the following:
   *  ```
-     sudo nano /etc/apache2/sites-available/nextcloud.conf
+     nano /etc/apache2/sites-available/nextcloud.conf
      ```
 
 The file should look like this, with your own subdomain instead of `subdomain`:
@@ -443,12 +443,12 @@ The file should look like this, with your own subdomain instead of `subdomain`:
 
 * On the full VM, write the following to set the Nextcloud database with Apache and to enable the new virtual host file:
   *  ```
-     sudo a2ensite nextcloud.conf && sudo a2enmod rewrite headers env dir mime setenvif ssl
+     a2ensite nextcloud.conf && a2enmod rewrite headers env dir mime setenvif ssl
      ```
 
 * Then, reload and restart Apache:
   *  ```
-     sudo systemctl reload apache2 && sudo systemctl restart apache2
+     systemctl reload apache2 && systemctl restart apache2
      ```
 
 ***
@@ -498,27 +498,27 @@ Install certbot by following the steps here: [https://certbot.eff.org/](https://
 
 * See if you have the latest version of snap:
   *  ```
-     sudo snap install core; sudo snap refresh core
+     snap install core; snap refresh core
      ```
 
 * Remove certbot-auto:
   *  ```
-     sudo apt-get remove certbot
+     apt-get remove certbot
      ```
 
 * Install certbot:
   *  ```
-     sudo snap install --classic certbot
+     snap install --classic certbot
      ```
 
 * Ensure that certbot can be run:
   *  ```
-     sudo ln -s /snap/bin/certbot /usr/bin/certbot
+     ln -s /snap/bin/certbot /usr/bin/certbot
      ```
 
 * Then, install certbot-apache:
   *  ```
-     sudo apt install python3-certbot-apache
+     apt install python3-certbot-apache
      ```
 
 ## Set the Certbot with the DNS Domain
@@ -527,14 +527,14 @@ We now set the certbot with the DNS domain.
 
 * To add the HTTPS protection, write the following line on the full VM with your own subdomain:
   *  ```
-     sudo certbot --apache -d subdomain.duckdns.org -d www.subdomain.duckdns.org
+     certbot --apache -d subdomain.duckdns.org -d www.subdomain.duckdns.org
      ```
 
 ## Verify HTTPS Automatic Renewal
 
 * Make a dry run of the certbot renewal to verify that it is correctly set up.
   *  ```
-     sudo certbot renew --dry-run
+     certbot renew --dry-run
      ```
 
 You now have HTTPS security on your Nextcloud instance.
@@ -546,7 +546,7 @@ Finally, we want to set a firewall to monitor and control incoming and outgoing 
 It should already be installed on your system. If it is not, install it with the following command:
 
 ```
-sudo apt install ufw
+apt install ufw
 ```
 
 For our security rules, we want to allow SSH, HTTP and HTTPS.
@@ -556,25 +556,25 @@ We thus add the following rules:
 
 * Allow SSH (port 22)
   * ```
-    sudo ufw allow ssh
+    ufw allow ssh
     ```
 * Allow HTTP (port 80)
   * ```
-    sudo ufw allow http
+    ufw allow http
     ```
 * Allow https (port 443)
   * ```
-    sudo ufw allow https
+    ufw allow https
     ```
 
 * To enable the firewall, write the following:
   * ```
-    sudo ufw enable
+    ufw enable
     ```
 
 * To see the current security rules, write the following:
   * ```
-    sudo ufw status verbose
+    ufw status verbose
     ```
 
 You now have enabled the firwall with proper security rules for your Nextcloud deployment.
