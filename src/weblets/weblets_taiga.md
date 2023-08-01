@@ -8,26 +8,27 @@
 
 __Process__ :
 
+### **Base** tab
+
 ![ ](./img/taiga1.png)
 
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. ***tg98taigar*.gent02.dev.grid.tf**
 
 - Enter administrator information including **Username**, **Email** and **Password**. This admin user will have full permission on the deployed instance.
-
 - Select a capacity package:
-    - **Minimum**: { cpu: 2, memory: 1024 * 2, diskSize: 100 }
-    - **Standard**: { cpu: 2, memory: 1024 * 4, diskSize: 150 }
-    - **Recommended**: { cpu: 4, memory: 1024 * 4, diskSize: 250 }
+    - **Minimum**: {cpu: 2, memory: 1024 * 2, diskSize: 100 }
+    - **Standard**: {cpu: 2, memory: 1024 * 4, diskSize: 150 }
+    - **Recommended**: {cpu: 4, memory: 1024 * 4, diskSize: 250 }
     - Or choose a **Custom** plan
-- Choose a gateway node to deploy your Taiga instance on.
 
-- Select a node to deploy your Taiga instance on.
-
-    - Either use the **Capacity Filter**. Which simply lets you pick a *Farm* and *Country*, after clicking on *Apply filters and suggest nodes* then it lists available nodes with these preferences and you pick.
-
-
-
-    - Or use **Manual** and type a specific node number to deploy on.
+- `Dedicated` flag to retrieve only dedeicated nodes 
+- `Certified` flag to retrieve only certified nodes 
+- Choose the location of the node
+   - `Country`
+   - `Farm Name`
+- Choose the node to deploy the Tiaga instance on
+- `Custom Domain` flag lets the user to use a custom domain
+- Choose a gateway node to deploy your Funkwhale instance on.
 
 
 

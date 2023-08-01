@@ -12,13 +12,17 @@ __Process__
 - Enter an instance name.
 
 - You need to sign up on Presearch in order to get your *Presearch Registration Code*. To sign up, go to [Presearch](https://presearch.org/), create your account and then head to your [dashboard](https://nodes.presearch.org/dashboard) to find your registration code.
-  
-- Choose a node to deploy your Presearch instance on.
 
-- Either use the **Capacity Filter** which simply lets you pick a *Farm* and *Country*, after clicking on *Apply filters and suggest nodes* then it lists available nodes with these preferences and you pick.
+- Choose the network
+   - `Public IPv4` flag gives the virtual machine a Public IPv4
+   - `Planetary Network` to connect the Virtual Machine to Planetary network
 
-
-- Or use **Manual** and type a specific node number to deploy on.
+- `Dedicated` flag to retrieve only dedeicated nodes 
+- `Certified` flag to retrieve only certified nodes 
+- Choose the location of the node
+   - `Country`
+   - `Farm Name`
+- Choose the node to deploy the Virtual Machine on 
 
 ### Now what if you already have a Presearch node deployed somewhere and would like to migrate to Threefold?
 
@@ -32,7 +36,7 @@ We got you! All you need to do is:
 
 After that is done you can see a list of all of your deployed instances
 
-![ ](./img/presearch4.png)
+![ ](./img/presearch4.jpg)
 
 Now head to your [dashboard](https://nodes.presearch.org/dashboard)again and scroll down to **Current Nodes**, you'll see your newly created node up and connected!
 

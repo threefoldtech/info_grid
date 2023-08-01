@@ -13,19 +13,23 @@ __Process__
   the applied format `<solution-code><twin-id><solution-name>.<gateway-subdomain>` Ex. ***pt100peerprod*.gent02.dev.grid.tf**
 - Enter an email and password which will be used for the admin login.
 - Select a capacity package:
-    - **Minimum**: { cpu: 1, memory: 1024, diskSize: 100 }
-    - **Standard**: { cpu: 2, memory: 1024 * 2, diskSize: 250 }
-    - **Recommended**: { cpu: 4, memory: 1024 * 4, diskSize: 500 }
+    - **Minimum**: { cpu: 1, memory: 1024  * 2, diskSize: 15 }
+    - **Standard**: { cpu: 2, memory: 1024 * 2, diskSize: 100 }
+    - **Recommended**: { cpu: 4, memory: 1024 * 4, diskSize: 250 }
     - Or choose a **Custom** plan
-- Choose a gateway node to deploy your Subsquid instance on.
 
-- Select a node to deploy your Peertube instance on.
-
-  - Either use the **Capacity Filter**. Which simply lets you pick a *Farm* and *Country*, after clicking on *Apply filters and suggest nodes* then it lists available nodes with these preferences and you pick.
-
-  - Or use **Manual** and type a specific node number to deploy on.
-
-
+   - `Public IPv4` flag gives the virtual machine a Public IPv4
+   - `Public IPv6` flag gives the virtual machine a Public IPv6
+   - `Planetary Network` to connect the Virtual Machine to Planetary network
+   - `Wiregaurd Access` to add a wiregaurd acces to the Virtual Machine
+- `Dedicated` flag to retrieve only dedeicated nodes 
+- `Certified` flag to retrieve only certified nodes 
+- Choose the location of the node
+   - `Country`
+   - `Farm Name`
+- Choose the node to deploy on 
+- `Custom Domain` flag lets the user to use a custom domain
+- Choose a gateway node to deploy your Peertube instance on.
 
 After that is done you can see a list of all of your deployed instances
 

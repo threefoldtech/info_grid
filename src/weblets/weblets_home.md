@@ -31,17 +31,21 @@ There are several weblets you can use like:
   - [Presearch](./weblets_presearch.md)
   - [CasperLabs](./weblets_casper.md)
   - [Node Pilot](./weblets_nodepilot.md)
+  - [Subsquid](./weblets_subsquid.md)
+  - [Algorand](./weblets_algorand.md)
+  - [Wordpress](./weblets_wordpress.md)
+  - [Umbrel](./weblets_umbrel.md)
+
 
 - Some utils:
   - [Profile Manager](./weblets_profile_manager.md)
-  - [Deployment List](./weblets_deployments_list.md)
 
 ## Playground
 Playground is a Vue app that has the weblets embedded. so you can try it out on different TF Chain networks.
-- [https://play.dev.grid.tf](https://play.dev.grid.tf) for Devnet.
-- [https://play.qa.grid.tf](https://play.qa.grid.tf) for QAnet.
-- [https://play.test.grid.tf](https://play.test.grid.tf) for Testnet.
-- [https://play.grid.tf](https://play.grid.tf) for Mainnet.
+- [https://playground.dev.grid.tf](https://playground.dev.grid.tf) for Devnet.
+- [https://playground.qa.grid.tf](https://playground.qa.grid.tf) for QAnet.
+- [https://playground.test.grid.tf](https://playground.test.grid.tf) for Testnet.
+- [https://playground.grid.tf](https://playground.grid.tf) for Mainnet.
 
 ## Limitations
 

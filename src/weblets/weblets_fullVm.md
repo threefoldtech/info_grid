@@ -7,33 +7,41 @@ Deploy a new full virtual machine on the Threefold Grid
 
 **Process:**
 
-![Config tab](img/fullvm1.png)
 
-- Fill in the instance name: it's used to reference the VM in the future.
-- `Public IPv4` flag gives the full VM a Public IPv4
-- `Public IPv6` flag gives the full VM a Public IPv6
-- `Planetary Network` to connect the full VM to Planetary network
-- Choose the node to deploy on which can be
-- Manual: where you specify the node id yourself
-- Automatic: Suggests nodes list based on search criteria e.g `country`, `farm`, capacity..
+![ ](../weblets/img/new_vm1.png)
 
-![Disks tab](img/fullvm2.png)
-You can attach one or more disks to the Full Virtual Machine by clicking on the Disks tab and the plus `+` sign and specify the following parameters
+- Fill in the instance name: it's used to reference the Full VM in the future.
+- Choose the image from the drop down (e.g Alpine, Ubuntu) or you can click on `Other` and manually specify the flist URL and the entrypoint.
+- Select a capacity package:
+    - **Minimum**: {cpu: 1, memory: 1024, diskSize: 25 }
+    - **Standard**: {cpu: 2, memory: 4096, diskSize: 50 }
+    - **Recommended**: {cpu: 4, memory: 4096, diskSize: 100}
+    - Or choose a **Custom** plan
+- Choose the network
+   - `Public IPv4` flag gives the virtual machine a Public IPv4
+   - `Public IPv6` flag gives the virtual machine a Public IPv6
+   - `Planetary Network` to connect the Virtual Machine to Planetary network
+   - `Wiregaurd Access` to add a wiregaurd acces to the Virtual Machine
+- `GPU` flag to add GPU to the Virtual machine
+- `Dedicated` flag to retrieve only dedeicated nodes 
+- `Certified` flag to retrieve only certified nodes 
+- Choose the location of the node
+   - `Country`
+   - `Farm Name`
+- Choose the node to deploy the Full Virtual Machine on 
 
-- Disk name
-- Disk size
-- Mount point
 
-![Advanced tab](img/fullvm7.jpg)
+![ ](../weblets/img/new_vm3.png)
+You can attach one or more disks to the Virtual Machine by clicking on the Disks tab and the plus `+` sign and specify the following parameters
+   - Disk name 
+   - Disk size
 
-- `Network Name`: It's used for Wireguard's private network.
-- `Network IP Range`: It's a private subnet for Wireguard's network. You could use the auto-generated one or replace it with a **private** subnet.
 
-In the bottom of the page you can see a list of all of the virual machines you deployed. you can click on `Show details` for more details
+in the bottom of the page you can see a list of all of the virual machines you deployed. you can click on `Show details` for more details
 
-![Deployment details](img/fullvm4.png)
-
-![You can also go to JSON tab for full details](img/fullvm5.png)
+![ ](../weblets/img/new_vm5.png)
+You can also go to JSON tab for full details
+![ ](../weblets/img/weblet_vm6.png)
 
 ## Difference Between Full Virtual Machine and Micro Virtual Machine
 

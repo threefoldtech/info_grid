@@ -13,24 +13,26 @@
 
 - Enter an endpoint for a supported substrate chain. You can find the list of endpoints of supported cahins [here](https://github.com/polkadot-js/apps/blob/master/packages/apps-config/src/endpoints/production.ts).
 
-- `Public IPv4` flag gives the virtual machine a Public IPv4
 
 - Select a capacity package:
-  - **Minimum**: { cpu: 1, memory: 1024 , diskSize: 50 }
-  - **Standard**: { cpu: 2, memory: 1024 * 2, diskSize: 100 }
-  - **Recommended**: { cpu: 4, memory: 1024 * 4, diskSize: 250 }
-  - Or choose a **Custom** plan
+    - **Minimum**: {cpu: 1, memory: 1024 , diskSize: 50 }
+    - **Standard**: {cpu: 2, memory: 1024 * 2, diskSize: 100 }
+    - **Recommended**: {cpu: 4, memory: 1024 * 4, diskSize: 250 }
+    - Or choose a **Custom** plan
+
+- `Dedicated` flag to retrieve only dedeicated nodes 
+- `Certified` flag to retrieve only certified nodes 
+- Choose the location of the node
+   - `Country`
+   - `Farm Name`
+- Choose the node to deploy on 
+- `Custom Domain` flag lets the user to use a custom domain
 - Choose a gateway node to deploy your Subsquid instance on.
 
-- Choose a node to deploy your Subsquid instance on.
-
-  - Either use the **Capacity Filter** which simply lets you pick a *Farm* and *Country*, after clicking on *Apply filters and suggest nodes* then it lists available nodes with these preferences and you pick.
-
-  - Or use **Manual** and type a specific node number to deploy on.
 
 After that is done you can see a list of all of your deployed instances
 
-![ ](./img/subsquid_list.jpeg)
+![ ](./img/subsquid_list.png)
 
 Click on ***Visit*** to go to the homepage of your Subsquid indexer instance!
 

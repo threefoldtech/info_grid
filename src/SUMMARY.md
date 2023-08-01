@@ -126,7 +126,6 @@
   - [TFGrid Services](TF_Grid_Services/tf_grid_services_readme.md)
   - [Weblets](weblets/weblets_home.md)
     - [Profile Manager](weblets/weblets_profile_manager.md)
-    - [Deployments List](weblets/weblets_deployments_list.md)
     - [Cancel Contracts](weblets/weblets_cancel_contracts.md)
     - [Basic Environments](weblets/weblets_basic_environments_readme.md)
       - [Full Virtual Machine](weblets/weblets_fullVm.md)

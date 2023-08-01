@@ -15,16 +15,23 @@
   - **Password**: will be used as MySQL DB password, and for Wp-admin.
   - **Email**: will be used for Wp-admin.
 - Select a capacity package:
-  - **Minimum**: { cpu: 1, memory: 2048 , diskSize: 10 }
+  - **Minimum**: { cpu: 1, memory: 2048 , diskSize: 15 }
   - **Standard**: { cpu: 2, memory: 2048 , diskSize: 50 }
   - **Recommended**: { cpu: 4, memory: 4096 , diskSize: 100 }
   - Or choose a **Custom** plan
-- Choose a gateway node to deploy your Wordpress instance on.
-- Choose a node to deploy your Wordpress instance on.
 
-  - Either use the **Capacity Filter** which simply lets you pick a *Farm* and *Country*, after clicking on *Apply filters and suggest nodes* then it lists available nodes with these preferences and you pick.
+- Choose the network
+   - `Public IPv4` flag gives the virtual machine a Public IPv4
 
-  - Or use **Manual** and type a specific node number to deploy on.
+- `Dedicated` flag to retrieve only dedeicated nodes 
+- `Certified` flag to retrieve only certified nodes 
+- Choose the location of the node
+   - `Country`
+   - `Farm Name`
+- Choose the node to deploy the Wordpress instance on 
+- `Custom Domain` flag lets the user to use a custom domain
+- Choose a gateway node to deploy your Funkwhale instance on.
+
 
 **After Deploying**:
 

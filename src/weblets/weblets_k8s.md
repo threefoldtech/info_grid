@@ -13,10 +13,9 @@ On the TF grid, Kubernetes clusters can be deployed out of the box. We have impl
 
 - `Name`: Your Kubernetes Cluster name.
 - `Cluster Token`: It's used for authentication between your worker nodes and master node. You could use the auto-generated one or type your own.
-- `Network Name`: It's used for Wireguard's private network.
-- `Network IP Range`: It's a private subnet for Wireguard's network. You could use the auto-generated one or replace it with a **private** subnet.
 
-### **Master** and **Worker** tabs
+
+### **Master** and **Workers** tabs
 
 ![ ](./img/new_k8s2.png)
 ![ ](./img/new_k8s3.png)
@@ -65,9 +64,7 @@ replace PLANETARYIP_OR_PUBLICIP with the IP you want to reach th cluster through
 
 ### Manage Workers
 Add or Remove workers in any **Kubernetes cluster**.
-```html
-<tf-deployedlist tab="k8s"></tf-deployedlist>
-```
+
 
 - Kubernetes DeployedList Weblet
 ![ ](./img/k8s_dl_1.png)
@@ -82,4 +79,5 @@ Add or Remove workers in any **Kubernetes cluster**.
 ![ ](./img/k8s_dl_4.png)
 
 - Delete a worker
-![ ](./img/new_k8s4.png)
+
+![ ](./img/new_k8s5.png)

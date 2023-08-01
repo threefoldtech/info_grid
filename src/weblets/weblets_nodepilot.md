@@ -13,17 +13,21 @@ __Process__
 
 - Minimum CPU allowed is 8 cores and minimum memory allowed is 8192.
 
+- `Dedicated` flag to retrieve only dedeicated nodes 
+- `Certified` flag to retrieve only certified nodes 
+
+- Choose the location of the node
+   - `Country`
+   - `Farm Name`
+
 - Select a node to deploy your node-pilot instance on.
 
-- Either use the **Capacity Filter**. Which simply lets you pick a *Farm* and *Country*, after clicking on *Apply filters and suggest nodes* then it lists available nodes with these preferences and you pick.
-
-- Or use **Manual** and type a specific node number to deploy on.
 
 - When using the [flist](https://hub.grid.tf/tf-official-vms/node-pilot-zdbfs.flist) you get a node pilot instance ready out-of-box. You need to get a public ipv4 to get it to works.
 
 After that is done you can see a list of all of your deployed instances
 
-![ ](./img/nodePilot_2.png)
+![ ](./img/nodeP_2.jpg)
 
 Click on ***Visit*** to go to the registeration page of your Node Pilot instance!
 

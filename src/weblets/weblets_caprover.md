@@ -34,22 +34,18 @@ It has following benefits :
 ### Usage
 
 
+### **Configs** tab
+
 ![ ](./img/new_cap1.png)
 
-- Select a capacity package:
-    - **Minimum**: {cpu: 1, memory: 1024, diskSize: 50 }
-    - **Standard**: {cpu: 2, memory: 1024 * 2, diskSize: 100 }
-    - **Recommended**: {cpu: 4, memory: 1024 * 4, diskSize: 250 }
-    - Or choose a **Custom** plan
+- Enter domain for you Caprover instance, Be very careful about the domain name: it needs to be a wildcard domain name you can configure in your chosen domain name system.
+- Enter password for you Caprover instance.
+### **Leader** and **Workers** tabs
 
-- Choose a node to deploy Caprover on.
-- Either use the **Capacity Filter**. Which simply lets you pick a *Farm* and *Country*, after clicking on *Apply filters and suggest nodes* then it lists available nodes with these preferences and you pick. 
- 
-    
-- Or use **Manual** and type a specific node number to deploy on.
+![ ](./img/new_cap4.png)
 
-
-- Be very careful about the domain name: it needs to be a wildcard domain name you can configure in your chosen domain name system.
+![ ](./img/new_cap5.png)
+Note: Worker nodes only accept SSH keys of RSA format.
 
 
 Deployment will take couple of minutes.
@@ -67,7 +63,7 @@ Deployment will take couple of minutes.
 
 Go back to your CapRover weblet and go to the deployment list. Click on `Show Details`.
 
-![ ](./img/caprover_detail_weblet.png)
+![ ](./img/cap.jpg)
 
 - The public IPv4 address is visible in here
 - Now you can configure the domain name (see above, don't forget to point the wildcard domain to the public IP address)

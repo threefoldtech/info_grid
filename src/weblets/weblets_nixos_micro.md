@@ -23,10 +23,10 @@ For more information on Nix, you can read the [Nix Reference Manual](https://nix
 ## Access the ThreeFold Playground
 
 * Go to the ThreeFold Playground website, based on the deployment network you prefer:
-  * [Mainnet](https://play.grid.tf)
-  * [Testnet](https://play.test.grid.tf)
-  * [Devnet](https://play.dev.grid.tf)
-  * [QAnet](https://play.qa.grid.tf)
+  * [Mainnet](https://playground.grid.tf)
+  * [Testnet](https://playground.test.grid.tf)
+  * [Devnet](https://playground.dev.grid.tf)
+  * [QAnet](https://playground.qa.grid.tf)
 
 * Make sure you have activated a [weblet profile](./weblets_profile_manager.md)
 
@@ -40,7 +40,7 @@ We now present the main steps to properly configure your NixOS MicroVM running o
 
 * In the section `Config`, make sure to select `Nixos` as the `VM Image`. You can choose different parameters (CPU, Memory, etc.) for your deployment depending on your workload needs. 
 
-![](./img/nixos-micro1.png)
+![](./img/nxios-micro1.png)
 
 * In the section `Environment Variables`, you can add the default configurations for Nix. Here's an example:
   * ```

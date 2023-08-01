@@ -13,17 +13,18 @@
 - Enter a Password
   - Will be used to login to the Umbrel dashboard.
   - Must be 12 to 30 characters .
-- `Public IPv4` flag gives the Umbrel machine a Public IPv4
-  - Select a capacity package:
+- Select a capacity package:
   - **Minimum**: { cpu: 2, memory: 2048 , diskSize: 10 }
   - **Standard**: { cpu: 2, memory: 4096 , diskSize: 50 }
   - **Recommended**: { cpu: 4, memory: 4096 , diskSize: 100 }
   - Or choose a **Custom** plan
-- Choose a node to deploy your Umbrel instance on.
 
-  - Either use the **Capacity Filter** which simply lets you pick a *Farm* and *Country*, after clicking on *Apply filters and suggest nodes* then it lists available nodes with these preferences and you pick.
-
-  - Or use **Manual** and type a specific node number to deploy on.
+- `Dedicated` flag to retrieve only dedeicated nodes 
+- `Certified` flag to retrieve only certified nodes 
+- Choose the location of the node
+   - `Country`
+   - `Farm Name`
+- Choose the node to deploy the Umbrel instance on 
 
 **After Deploying**:
 

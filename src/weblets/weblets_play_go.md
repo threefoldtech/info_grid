@@ -1,5 +1,5 @@
 - Choose one of the networks:
-  -  https://play.dev.grid.tf for Devnet.
-  -  https://play.qa.grid.tf for QAnet.
-  -  https://play.test.grid.tf for Testnet.
-  -  https://play.grid.tf for Mainnet.
+  -  https://playground.dev.grid.tf for Devnet.
+  -  https://playground.qa.grid.tf for QAnet.
+  -  https://playground.test.grid.tf for Testnet.
+  -  https://playground.grid.tf for Mainnet.
