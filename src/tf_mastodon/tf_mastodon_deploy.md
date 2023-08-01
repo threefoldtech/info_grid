@@ -3,7 +3,6 @@
 ![](img/getmastodon_tf.png)
 
 On this tutorial you will learn on how to deploy a Mastodon Server using [https://getmastodon.threefold.io/](https://getmastodon.threefold.io/).
-To deploy a Mastodon server as weblet, please see [Mastodon Weblet Tutorial](../weblets/weblets_mastodon.md)
 
 ThreeFold has made it possible for everyone to run their own Mastodon Instance, simply and effectively. Feel free to go to [www.mastodon.threefold.io](https://www.mastodon.threefold.io/) to read about ThreeFold's Mastodon Servers
 

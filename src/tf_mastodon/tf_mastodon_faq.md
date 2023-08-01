@@ -1,4 +1,4 @@
-# Mastodon Servers: FAQ
+# Mastodon FAQ
 
 - **What do I need to get started?**
 You only need a TFT wallet and some TFTs to get started. TFTs are needed to fund the deployment. We recommend you to use **TF Connect App** [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US&pli=1) / [Apple](https://apps.apple.com/us/app/threefold-connect/id1459845885). Please download TF Connect App before you proceed.
