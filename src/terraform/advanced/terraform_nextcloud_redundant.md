@@ -332,18 +332,18 @@ After deployments, take note of the 3nodes' IPv4 address. You will need those ad
       rm ~/.ssh/known_hosts
       ```
     * ```
-      sudo ssh-add ~/.ssh/id_rsa
+      ssh-add ~/.ssh/id_rsa
       ```
 
 ### Preparing the VMs for the Deployment
 
 * Update and upgrade the system
   * ```
-    sudo apt update && sudo apt upgrade -y && sudo apt-get install apache2 -y
+    apt update && apt upgrade -y && apt-get install apache2 -y
     ```
 * After download, reboot the system
   * ```
-    sudo reboot
+    reboot
     ``` 
 * Reconnect to the VMs
 
@@ -393,11 +393,11 @@ If you correctly receive the packets from the two VMs, you know that the VPN is 
 
 * Download MariaDB's server and client
   * ```
-    sudo apt install mariadb-server mariadb-client -y
+    apt install mariadb-server mariadb-client -y
     ```
 * Configure the MariaDB database
   * ```
-    sudo nano /etc/mysql/mariadb.conf.d/50-server.cnf
+    nano /etc/mysql/mariadb.conf.d/50-server.cnf
     ```
     * Do the following changes 
       * Add `#` in front of
@@ -414,12 +414,12 @@ If you correctly receive the packets from the two VMs, you know that the VPN is 
 
 * Restart MariaDB
   * ```
-    sudo systemctl restart mysql
+    systemctl restart mysql
     ```
 
 * Launch MariaDB
   * ```
-    sudo mysql
+    mysql
     ```
 
 ## Create User with Replication Grant
@@ -514,40 +514,40 @@ We will now install and set [GlusterFS](https://www.gluster.org/), a free and op
 
 * Install GlusterFS on both the master and worker VMs
   *  ```
-     echo | sudo add-apt-repository ppa:gluster/glusterfs-7 && sudo apt install glusterfs-server -y
+     echo | add-apt-repository ppa:gluster/glusterfs-7 && apt install glusterfs-server -y
      ```
 * Start the GlusterFS service on both VMs
   *  ```
-     sudo systemctl start glusterd.service && sudo systemctl enable glusterd.service
+     systemctl start glusterd.service && systemctl enable glusterd.service
      ```
 * Set the master to worker probe IP on the master VM:
   *  ```
-     sudo gluster peer probe 10.1.4.2
+     gluster peer probe 10.1.4.2
      ```
 
 * See the peer status on the worker VM:
   *  ```
-     sudo gluster peer status
+     gluster peer status
      ```
 
 * Set the master and worker IP address on the master VM:
   *  ```
-     sudo gluster volume create vol1 replica 2 10.1.3.2:/gluster-storage 10.1.4.2:/gluster-storage force
+     gluster volume create vol1 replica 2 10.1.3.2:/gluster-storage 10.1.4.2:/gluster-storage force
      ```
 
 * Start GlusterFS on the master VM:
   *  ```
-     sudo gluster volume start vol1
+     gluster volume start vol1
      ```
 
 * Check the status on the worker VM:
   *  ```
-     sudo gluster volume status
+     gluster volume status
      ```
 
 * Mount the server with the master IP on the master VM:
   *  ```
-     sudo mount -t glusterfs 10.1.3.2:/vol1 /var/www
+     mount -t glusterfs 10.1.3.2:/vol1 /var/www
      ```
 
 * See if the mount is there on the master VM:
@@ -557,7 +557,7 @@ We will now install and set [GlusterFS](https://www.gluster.org/), a free and op
 
 * Mount the server with the worker IP on the worker VM:
   *  ```
-     sudo mount -t glusterfs 10.1.4.2:/vol1 /var/www
+     mount -t glusterfs 10.1.4.2:/vol1 /var/www
      ```
 
 * See if the mount is there on the worker VM:
@@ -569,7 +569,7 @@ We now update the mount with the filse fstab on both VMs.
 
 * To prevent the mount from being aborted if the server reboots, write the following on both servers:
   *  ```
-     sudo nano /etc/fstab
+     nano /etc/fstab
      ```
 
 * Add the following line in the `fstab` file to set the master VM with the master virtual IP (here it is 10.1.3.2):
@@ -588,7 +588,7 @@ We now update the mount with the filse fstab on both VMs.
 
 * Install PHP and the PHP modules for Nextcloud on both the master and the worker:
   *  ```
-     sudo apt install php -y && sudo apt-get install php zip libapache2-mod-php php-gd php-json php-mysql php-curl php-mbstring php-intl php-imagick php-xml php-zip php-mysql php-bcmath php-gmp zip -y
+     apt install php -y && apt-get install php zip libapache2-mod-php php-gd php-json php-mysql php-curl php-mbstring php-intl php-imagick php-xml php-zip php-mysql php-bcmath php-gmp zip -y
      ```
 
 We will now install Nextcloud. This is done only on the master VM.
@@ -603,17 +603,17 @@ We will now install Nextcloud. This is done only on the master VM.
 
 * We now download Nextcloud on the master VM. 
   *  ```
-     sudo wget https://download.nextcloud.com/server/releases/nextcloud-26.0.0.zip
+     wget https://download.nextcloud.com/server/releases/nextcloud-27.0.1.zip
      ```
 
 You only need to download on the master VM, since you set a peer-to-peer connection, it will also be accessible on the worker VM.
 
 * Then, extract the `.zip` file. This will take a couple of minutes. We use 7z to track progress:
   * ```
-    sudo apt install p7zip-full -y
+    apt install p7zip-full -y
     ```
   * ```
-    sudo 7z x nextcloud-26.0.0.zip -o/var/www/
+    7z x nextcloud-27.0.1.zip -o/var/www/
     ```
 
 * After the download, see if the Nextcloud file is there on the worker VM:
@@ -623,7 +623,7 @@ You only need to download on the master VM, since you set a peer-to-peer connect
 
 * Then, we grant permissions to the folder. Do this on both the master VM and the worker VM.
   *  ```
-     sudo chown www-data:www-data /var/www/nextcloud/ -R
+     chown www-data:www-data /var/www/nextcloud/ -R
      ```
 
 ***
@@ -669,7 +669,7 @@ We now want to tell Apache where to store the Nextcloud data. To do this, we wil
 
 * On both the master and worker VMs, write the following:
   *  ```
-     sudo nano /etc/apache2/sites-available/nextcloud.conf
+     nano /etc/apache2/sites-available/nextcloud.conf
      ```
 
 The file should look like this, with your own subdomain instead of `subdomain`:
@@ -703,12 +703,12 @@ The file should look like this, with your own subdomain instead of `subdomain`:
 
 * On both the master VM and the worker VM, write the following to set the Nextcloud database with Apache and to enable the new virtual host file:
   *  ```
-     sudo a2ensite nextcloud.conf && sudo a2enmod rewrite headers env dir mime setenvif ssl
+     a2ensite nextcloud.conf && a2enmod rewrite headers env dir mime setenvif ssl
      ```
 
 * Then, reload and restart Apache:
   *  ```
-     sudo systemctl reload apache2 && sudo systemctl restart apache2
+     systemctl reload apache2 && systemctl restart apache2
      ```
 
 ***
@@ -758,27 +758,27 @@ Install certbot by following the steps here: [https://certbot.eff.org/](https://
 
 * See if you have the latest version of snap:
   *  ```
-     sudo snap install core; sudo snap refresh core
+     snap install core; snap refresh core
      ```
 
 * Remove certbot-auto:
   *  ```
-     sudo apt-get remove certbot
+     apt-get remove certbot
      ```
 
 * Install certbot:
   *  ```
-     sudo snap install --classic certbot
+     snap install --classic certbot
      ```
 
 * Ensure that certbot can be run:
   *  ```
-     sudo ln -s /snap/bin/certbot /usr/bin/certbot
+     ln -s /snap/bin/certbot /usr/bin/certbot
      ```
 
 * Then, install certbot-apache:
   *  ```
-     sudo apt install python3-certbot-apache -y
+     apt install python3-certbot-apache -y
      ```
 
 ## Set the Certbot with the DNS Domain
@@ -834,7 +834,7 @@ output "ipv4_vm1" {
 
 * To add the HTTPS protection, write the following line on the master VM with your own subdomain:
   *  ```
-     sudo certbot --apache -d subdomain.duckdns.org -d www.subdomain.duckdns.org
+     certbot --apache -d subdomain.duckdns.org -d www.subdomain.duckdns.org
      ```
 
 * Once the HTTPS is set, you can reset the worker VM:
@@ -846,7 +846,7 @@ Note: You then need to redo the same process with the worker VM. This time, make
 
 * Make a dry run of the certbot renewal to verify that it is correctly set up.
   *  ```
-     sudo certbot renew --dry-run
+     certbot renew --dry-run
      ```
 
 You now have HTTPS security on your Nextcloud instance.
@@ -858,7 +858,7 @@ Finally, we want to set a firewall to monitor and control incoming and outgoing 
 It should already be installed on your system. If it is not, install it with the following command:
 
 ```
-sudo apt install ufw
+apt install ufw
 ```
 
 For our security rules, we want to allow SSH, HTTP and HTTPS.
@@ -868,25 +868,25 @@ We thus add the following rules:
 
 * Allow SSH (port 22)
   * ```
-    sudo ufw allow ssh
+    ufw allow ssh
     ```
 * Allow HTTP (port 80)
   * ```
-    sudo ufw allow http
+    ufw allow http
     ```
 * Allow https (port 443)
   * ```
-    sudo ufw allow https
+    ufw allow https
     ```
 
 * To enable the firewall, write the following:
   * ```
-    sudo ufw enable
+    ufw enable
     ```
 
 * To see the current security rules, write the following:
   * ```
-    sudo ufw status verbose
+    ufw status verbose
     ```
 
 You now have enabled the firwall with proper security rules for your Nextcloud deployment.
