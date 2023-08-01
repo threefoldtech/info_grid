@@ -27,9 +27,9 @@ It has following benefits :
 
 ### Requirements
 
-- you need an account on TF-Chain, and there needs to be TFT on the account (see getting started)
+- You need an account on TF-Chain, and there needs to be TFT on the account (see getting started)
 - [Make sure your profile is activated](./weblets_profile_manager.md)
-- [Unlock your profile on profile manager, if already filled in before](./profile_manager_unlock.md)
+- Unlock your profile on profile manager, if already filled in before
 
 ### Usage
 

@@ -1,6 +1,6 @@
 # NodePilot
 
-This is a simple instance of upstream node-pilot: https://nodepilot.tech
+This is a simple instance of upstream [Node Pilot](https://nodepilot.tech).
 
 - Make sure you have an activated [profile](./weblets_profile_manager.md)
 - Click on the **Node Pilot** tab

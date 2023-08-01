@@ -9,7 +9,6 @@
 - [CasperLabs](./weblets_casper.html)
 - [Discourse](./weblets_discourse.html)
 - [Funkwhale](./weblets_funkwhale.html)
-- [Mastodon Weblet](./weblets_mastodon.html)
 - [Mattermost](./weblets_mattermost.html)
 - [Node Pilot](./weblets_nodepilot.html)
 - [Owncloud](./weblets_owncloud.html)

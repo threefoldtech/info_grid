@@ -1,11 +1,15 @@
 # Profile Manager
 
-Currently, we're supporting four different networks.
+Currently, we're supporting four different networks:
 
-- One for development purposes (Devnet) where you can find it at https://playground.dev.grid.tf
-- One for internal testing and verifications (QAnet) where you can find it at https://playground.qa.grid.tf
-- One for testing (Testnet) where you can find it at https://playground.test.grid.tf
-- One for our mainnet and you can find it at https://playground.grid.tf
+- Dev net, for development purposes
+  - [https://playground.dev.grid.tf](https://playground.dev.grid.tf)
+- QA net, for internal testing and verifications
+  - [https://playground.qa.grid.tf](https://playground.qa.grid.tf)
+- Test net, for testing purposes
+  - [https://playground.test.grid.tf](https://playground.test.grid.tf)
+- Main net, for production-ready purposes
+  - [https://playground.grid.tf](https://playground.grid.tf)
 
 ![ ](./img/profile_manager1.png)
 
@@ -15,7 +19,7 @@ Start entering the following information required to create your new profile.
 
 ![ ](./img/dev_profile2.png)
 
-- `Mnemonics` are the secret words of your Polkadot account, [Generate yours here!](../getstarted/TF_Dashboard/TF_Dashboard.html#create-polkadot-extension-account). Or use the **Generate Account** button.
+- `Mnemonics` are the secret words of your Polkadot account. [Generate yours here](../getstarted/TF_Dashboard/TF_Dashboard.html#create-polkadot-extension-account) or use the **Generate Account** button.
 - `Password` is used to access your account
 - `Confirm Password` 
 

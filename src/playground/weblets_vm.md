@@ -1,4 +1,4 @@
-# Virtual Machine
+# Micro Virtual Machine
 
 <div class="youtubeVideoWrapper">
 <iframe title="How to Deploy a Full VM on the ThreeFold Playground" width="560" height="315" src="https://www.youtube-nocookie.com/embed/MDSIBkcYdqg" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
@@ -7,7 +7,7 @@
 Deploy a new virtual machine on the Threefold Grid
 
 - Make sure you have an activated [profile](./weblets_profile_manager.md) 
-- Click on the **Virtual Machine** tab
+- Click on the **Micro Virtual Machine** tab
 
 __Process__ : 
 
@@ -47,19 +47,3 @@ in the bottom of the page you can see a list of all of the virual machines you d
 ![](./img/vm_list.png)
 You can also go to JSON tab for full details
 ![ ](../playground/img/vm_json.png)
-
-
-
-__Difference Between Full Virtual Machine and Micro Virtual Machine__ : 
-   - In a Micro Virtual Machine:
-      - It's meant to host microservice. and the user should enter the entrypoint.
-      - The user has no control over ther kernel used to run the machine.
-      - The network setup will be created for the user. And the vm's init process can assume that it will be fully set up (according to the config the user provided) by the time it is started. 
-      - Mountpoints will also be setup for the user. The environment variables passed will be available inside the the vm.
-   - In a Full Virtual Machine:   
-      - The users run their own operating system, but the image must be
-         - EFI bootable
-         - Cloud-init enabled.
-      - It contains a default disk attached, as the boot image will be copied to this disk.
-      - The default disk is mounted on / so if you want to attach any additional disks, you have to choose a different mounting point.
-      - A /image.raw file is used as "boot disk". This /image.raw is copied to the first attached volume of the vm. Cloud-init will take care of resizing the filesystem on the image to take the full disk size allocated in the deployment.
