@@ -34,7 +34,6 @@ There are several weblets you can use like:
 
 - Some utils:
   - [Profile Manager](./weblets_profile_manager.md)
-  - [Deployment List](./weblets_deployments_list.md)
 
 ## Playground
 Playground is a Vue app that has the weblets embedded. so you can try it out on different TF Chain networks.
