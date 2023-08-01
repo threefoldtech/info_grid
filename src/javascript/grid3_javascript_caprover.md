@@ -2,19 +2,32 @@
 
 <h2> Table of Contents </h2>
 
+- [Introduction](#introduction)
 - [Leader Node](#leader-node)
-  - [Example Code](#example-code)
-  - [Detailed Explanation](#detailed-explanation)
+  - [Code Example](#code-example)
   - [Environment Variables](#environment-variables)
 - [Worker Node](#worker-node)
-  - [Example Code](#example-code-1)
+  - [Code Example](#code-example-1)
   - [Environment Variables](#environment-variables-1)
+- [Questions and Feedback](#questions-and-feedback)
 
 ***
 
-# Leader Node
+## Introduction
 
-## Example Code
+In this section, we show how to deploy CapRover with the Javascript client.
+
+This deployment is very similar to what we have in the section [Deploy a VM](./grid3_javascript_vm.md), but the environment variables are different.
+
+***
+
+## Leader Node
+
+We present here a code example and the environment variables to deploy a CapRover Leader node. 
+
+For further details about the Leader node deployment, [read this documentation](https://github.com/freeflowuniverse/freeflow_caprover#a-leader-node-deploymentsetup).
+
+### Code Example
 
 ```ts
 import {
@@ -100,24 +113,29 @@ async function main() {
 main();
 ```
 
-## Detailed Explanation
+***
 
-So this deployment is almost similiar to what we have in the [vm deployment section](./grid3_javascript_vm.md). We only have different environment variables
-
-## Environment Variables
+### Environment Variables
 
 - PUBLIC_KEY: Your public IP to be able to access the VM.
 - SWM_NODE_MODE: Caprover Node type which must be `leader` as we are deploying a leader node.
 - CAPROVER_ROOT_DOMAIN: The domain which you we will use to bind the deployed VM.
 - DEFAULT_PASSWORD: Caprover default password you want to deploy with.
 
-For further details about Leader node deployment please [check](https://github.com/freeflowuniverse/freeflow_caprover#a-leader-node-deploymentsetup)
-
 ***
 
-# Worker Node
+## Worker Node
 
-## Example Code
+We present here a code example and the environment variables to deploy a CapRover Worker node. 
+
+Note that before deploying the Worker node, you should check the following:
+
+- Get the Leader node public IP address.
+- The Worker node should join the cluster from the UI by adding public IP address and the private SSH key.
+
+For further information, [read this documentation](https://github.com/freeflowuniverse/freeflow_caprover#step-4-access-the-captain-dashboard).
+
+### Code Example
 
 ```ts
 import {
@@ -199,18 +217,18 @@ async function main() {
 main();
 ```
 
-Before worker node deployment:
+***
 
-- Get leader node public IP
+### Environment Variables
 
-  For futher inforamtion please [check](https://github.com/freeflowuniverse/freeflow_caprover#step-4-access-the-captain-dashboard)
-
-to deploy a worker Node it has the same details as a leader node regarding the deployment details except environment variables.
-
-- Worker Node would join the cluster from the UI by adding public IP and private SSH Key.
-
-## Environment Variables
+The deployment of the Worker node is similar to the deployment of the Leader node, with the exception of the environment variables which differ slightly.
 
 - PUBLIC_KEY: Your public IP to be able to access the VM.
 - SWM_NODE_MODE: Caprover Node type which must be `worker` as we are deploying a worker node.
 - LEADER_PUBLIC_IP: Leader node public IP.
+
+***
+
+## Questions and Feedback
+
+If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Grid Tester Community](https://t.me/threefoldtesting) on Telegram.
