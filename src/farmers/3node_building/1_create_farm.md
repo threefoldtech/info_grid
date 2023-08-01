@@ -86,15 +86,13 @@ You will be asked your password in order to confirm the transaction.
 
 ***
 
-Once you confirm the transaction, you want to create a Twin and let the standard IP address already written, as shown below:
+Once you've confirmed the transaction, you want to create a relay address. The relay address should be the following:
 
 ```
-::1
+relay.grid.tf
 ```
 
-Note that this is a IPv6 address as the twin is using the Planetary Network.
-
-Click Create. 
+Make sure that `relay.grid.tf` is selected, then click "Create".
 
 ![Farming_Create_Farm_12](./img/tf_dashboard_2023_5.png) 
 
