@@ -1,6 +1,20 @@
-## Deploying Caprover Leader Node
+<h1> Deploy CapRover </h1>
 
-### Example code
+<h2> Table of Contents </h2>
+
+- [Leader Node](#leader-node)
+  - [Example Code](#example-code)
+  - [Detailed Explanation](#detailed-explanation)
+  - [Environment Variables](#environment-variables)
+- [Worker Node](#worker-node)
+  - [Example Code](#example-code-1)
+  - [Environment Variables](#environment-variables-1)
+
+***
+
+# Leader Node
+
+## Example Code
 
 ```ts
 import {
@@ -86,11 +100,11 @@ async function main() {
 main();
 ```
 
-### Detailed explanation
+## Detailed Explanation
 
 So this deployment is almost similiar to what we have in the [vm deployment section](./grid3_javascript_vm.md). We only have different environment variables
 
-#### Env. variables in Leader Node
+## Environment Variables
 
 - PUBLIC_KEY: Your public IP to be able to access the VM.
 - SWM_NODE_MODE: Caprover Node type which must be `leader` as we are deploying a leader node.
@@ -99,9 +113,11 @@ So this deployment is almost similiar to what we have in the [vm deployment sect
 
 For further details about Leader node deployment please [check](https://github.com/freeflowuniverse/freeflow_caprover#a-leader-node-deploymentsetup)
 
-## Deploying Caprover Worker Node
+***
 
-### Example code
+# Worker Node
+
+## Example Code
 
 ```ts
 import {
@@ -193,7 +209,7 @@ to deploy a worker Node it has the same details as a leader node regarding the d
 
 - Worker Node would join the cluster from the UI by adding public IP and private SSH Key.
 
-#### Env. variables in worker Node
+## Environment Variables
 
 - PUBLIC_KEY: Your public IP to be able to access the VM.
 - SWM_NODE_MODE: Caprover Node type which must be `worker` as we are deploying a worker node.
