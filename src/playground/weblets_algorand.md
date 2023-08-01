@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- An active [deployment profile](./weblets_profile_manager)
+- An active [deployment profile](./weblets_profile_manager.md)
 
 ### Algorand Structure
 

@@ -11,7 +11,7 @@ Deploy a new virtual machine on the Threefold Grid
 
 __Process__ : 
 
-![ ](../weblets/img/vm.png)
+![ ](../playground/img/vm.png)
 
 - Fill in the instance name: it's used to reference the VM in the future.
 - Choose the image from the drop down (e.g Alpine, Ubuntu) or you can click on `Other` and manually specify the flist URL and the entrypoint.
@@ -46,7 +46,7 @@ in the bottom of the page you can see a list of all of the virual machines you d
 
 ![](./img/vm_list.png)
 You can also go to JSON tab for full details
-![ ](../weblets/img/vm_json.png)
+![ ](../playground/img/vm_json.png)
 
 
 
