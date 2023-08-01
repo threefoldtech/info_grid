@@ -1,5 +1,5 @@
 ## Deploying Caprover Leader Node
-s
+
 ### Example code
 
 ```ts
