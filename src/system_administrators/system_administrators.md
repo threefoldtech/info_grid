@@ -70,7 +70,7 @@ From deployment strategies to monitoring tools, from security best practices to 
   - [Listing Free Public IPs](../advanced/list_public_ips.md)
   - [Redis](../advanced/grid3_redis.md) 
 - [Playground](../playground/weblets_home.md)
-  - [Profile Manager](../playground/weblets_profile_manager.md)
+  - [Wallet Connector](../playground/wallet_connector.md)
   - [Basic Environments](../playground/weblets_basic_environments_readme.md)
     - [Virtual Machines](../playground/weblets_vm_intro.md)
       - [Micro and Full VM Differences ](../playground/weblets_vm_differences.md)

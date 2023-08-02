@@ -6,7 +6,7 @@ The backend for the weblets is introduced with [grid client](../javascript/grid3
 
 <h2> Table of Contents </h2>
 
-- [Profile Manager](./wallet_connector.md)
+- [Wallet Connector](./wallet_connector.md)
 
 - [Basic Environments](./basic_environments_readme.md)
   - [Virtual Machines](./vm_intro.md)
