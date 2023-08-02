@@ -1,1 +1,0 @@
-# Ready Community Solutions
