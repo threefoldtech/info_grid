@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-- An active [deployment profile](./wallet_connector.md)
+- Make sure you have a [wallet](./wallet_connector.md) 
 
 ### Algorand Structure
 

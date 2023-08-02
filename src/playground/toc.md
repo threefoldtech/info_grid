@@ -1,7 +1,7 @@
-## Weblets TOC
+## Playground TOC
 
 - [Home](./home.md)
-- [Profile Manager](./wallet_connector.md)
+- [Wallet Connector](./wallet_connector.md)
 - [CapRover](./caprover.md)
 - [Virtual Machine](./vm.md)
 - [Funkwhale](./funkwhale.md)

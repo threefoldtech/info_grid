@@ -28,7 +28,7 @@ For more information on Nix, you can read the [Nix Reference Manual](https://nix
   * [Devnet](https://playground.dev.grid.tf)
   * [QAnet](https://playground.qa.grid.tf)
 
-* Make sure you have activated a [weblet profile](./wallet_connector.md)
+* Make sure you have a [wallet](./wallet_connector.md) 
 
 * Click on the **Micro Virtual Machine** tab to start your NixOS MicroVM Deployment
 
