@@ -225,7 +225,7 @@
     - [Listing Free Public IPs](advanced/list_public_ips.md)
     - [Redis](advanced/grid3_redis.md) 
   - [Playground](playground/home.md)
-    - [Profile Manager](playground/wallet_connector.md)
+    - [Wallet Connector](playground/wallet_connector.md)
     - [Basic Environments](playground/basic_environments_readme.md)
       - [Virtual Machines](playground/vm_intro.md)
         - [Micro and Full VM Differences ](playground/vm_differences.md)
