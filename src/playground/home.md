@@ -8,6 +8,8 @@ The backend for the weblets is introduced with [grid client](../javascript/grid3
 
 - [Wallet Connector](./wallet_connector.md)
 
+- [SSH on WSL](./ssh.md)
+
 - [Basic Environments](./basic_environments_readme.md)
   - [Virtual Machines](./vm_intro.md)
     - [Micro and Full VM Differences ](./vm_differences.md)

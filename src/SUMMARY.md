@@ -226,6 +226,7 @@
     - [Redis](advanced/grid3_redis.md) 
   - [Playground](playground/home.md)
     - [Wallet Connector](playground/wallet_connector.md)
+    - [SSH on WSL](playground/ssh.md)
     - [Basic Environments](playground/basic_environments_readme.md)
       - [Virtual Machines](playground/vm_intro.md)
         - [Micro and Full VM Differences ](playground/vm_differences.md)

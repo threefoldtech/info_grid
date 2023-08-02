@@ -35,7 +35,7 @@ If you open the public key in a text editor it should contain something similar 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNqqi1mHLnryb1FdbePrSZQdmXRZxGZbo0gTfglysq6KMNUNY2VhzmYN9JYW39yNtjhVxqfW6ewc+eHiL+IRRM1P5ecDAaL3V0ou6ecSurU+t9DR4114mzNJ5SqNxMgiJzbXdhR+j55GjfXdk0FyzxM3a5qpVcGZEXiAzGzhHytUV51+YGnuLGaZ37nebh3UlYC+KJev4MYIVww0tWmY+9GniRSQlgLLUQZ+FcBUjaqhwqVqsHe4F/woW1IHe7mfm63GXyBavVc+llrEzRbMO111MogZUcoWDI9w7UIm8ZOTnhJsk7jhJzG2GpSXZHmly/a/buFaaFnmfZ4MYPkgJD username@example.com
 ```
 
-Copying the entire text you can specify your public SSH key while c connecting your [wallet](./wallet_connector.md) before [deploying a VM](./vm.md).
+Copying the entire text you can specify your public SSH key while connecting your [wallet](./wallet_connector.md) before [deploying a VM](./vm_intro.md).
 
 ## Connect to remote host with SSH
 
