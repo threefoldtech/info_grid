@@ -2,7 +2,7 @@
 
 [Wordpress](https://wordpress.org/) is the most popular CMS on the market, powering 65.2% of websites whose CMS we know. That translates to 42.4% of all websites – nearly half of the internet. It is a popular option for those who want to build a website or blog.
 
-- Make sure you have a [wallet](./wallet_connector.md) 
+- Make sure you have a [wallet](./wallet_connector.md)
 - Click on the **Wordpress** tab
 
 **Process** :

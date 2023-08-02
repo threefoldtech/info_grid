@@ -2,7 +2,7 @@
 
 [Presearch](https://www.presearch.io/) is a community-powered, decentralized search engine that provides better results while protecting your privacy and rewarding you when you search. This weblet deploys a Presearch node. Presearch Nodes are used to process user search requests, and node operators earn Presearch PRE tokens for joining and supporting the network.
 
-- Make sure you have a [wallet](./wallet_connector.md) 
+- Make sure you have a [wallet](./wallet_connector.md)
 - Click on the **Presearch** tab
 
 __Process__

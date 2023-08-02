@@ -2,7 +2,7 @@
 
 This is a simple instance of upstream [Node Pilot](https://nodepilot.tech).
 
-- Make sure you have a [wallet](./wallet_connector.md) 
+- Make sure you have a [wallet](./wallet_connector.md)
 - Click on the **Node Pilot** tab
 
 __Process__

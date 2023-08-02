@@ -28,7 +28,7 @@ It has following benefits :
 ### Requirements
 
 - You need an account on TF-Chain, and there needs to be TFT on the account (see getting started)
-- [Make sure your profile is activated](./wallet_connector.md)
+- Make sure you have a [wallet](./wallet_connector.md)
 - Unlock your profile on profile manager, if already filled in before
 
 ### Usage

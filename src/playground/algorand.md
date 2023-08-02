@@ -4,8 +4,7 @@
 
 ## Prerequisites
 
-- Make sure you have a [wallet](./wallet_connector.md) 
-
+- Make sure you have a [wallet](./wallet_connector.md)
 ### Algorand Structure
 
 - Algorand has two main [types](https://developer.algorand.org/docs/run-a-node/setup/types/#:~:text=The%20Algorand%20network%20is%20comprised,%2C%20and%20non%2Drelay%20nodes.) of nodes (Relay or Participant) you can run also a 4 networks you can run your node against. Combining the types you can get:
