@@ -169,7 +169,7 @@ log: stdout
 oneshot: true
 ````
 
-We can see that the first line call the [bash](https://www.gnu.org/software/bash/) Unix shell and that it will run the file `start.sh` we've seen earlier. 
+We can see that the first line calls the [bash](https://www.gnu.org/software/bash/) Unix shell and that it will run the file `start.sh` we've seen earlier. 
 
 In this zinit service file, we define a service named `ssh-init.yaml`, where we tell zinit which commands to execute (here `bash /start.sh`), where to log (here in `stdout`) and where `oneshot` is set to `true` (meaning that it should only be executed once).
 
@@ -224,60 +224,68 @@ You now have access to the Docker Hub from your local computer. We will then pro
 
 ### Build and Push the Docker Image
 
-* Make sure the Docker Daemon is running.
+* Make sure the Docker Daemon is running
 * Build the docker container
   * Template:
-    * `docker build -t <your_username>/my-private-repo . `
+    * ```
+      docker build -t <docker_username>/<docker_repo_name> . 
+      ```
   * Example:
     * ```
       docker build -t logismosis/debian12 . 
       ```
-* Push the docker container to the Docker Hub
-  * Template: 
-    * `docker push <your_username>/my-private-repo`.
+* Push the docker container to the [Docker Hub](https://hub.docker.com/)
+  * Template:
+    * ```
+      docker push <your_username>/<docker_repo_name>
+      ```
   * Example:
     * ```
       docker push logismosis/debian12
       ```
-
-You can now see your docker image on the Docker Hub when you go into the option `My Profile` of your account menu.
-
-* You can access this link quickly with the following template
-  * `https://hub.docker.com/u/<account_name>`
-* Just make sure to replace `<account_name>` with your own account name.
+* You should now see your docker image on the [Docker Hub](https://hub.docker.com/) when you go into the menu option `My Profile`.
+  * Note that you can access this link quickly with the following template.
+    * ```
+      https://hub.docker.com/u/<account_name>
+      ```
 
 ***
 
 ## Convert the Docker Image to an FList
 
-This part is so easy you will almost be wondering why you never heard about FList before!
+We will now convert the Docker image into a Zero-OS FList. This part is so easy you will almost be wondering why you never heard about FList before!
 
 * Go to the [ThreeFold Hub](https://hub.grid.tf/).
 * Sign in with the ThreeFold Connect app.
 * Go to the [Docker Hub Converter](https://hub.grid.tf/docker-convert) section.
 * Next to `Docker Image Name`, add the docker image repository and name, see the example below:
-  * `logismosis/debian12:latest`
+  * Template:
+    * `<docker_username>/docker_image_name:tagname`
+  * Example:
+    * `logismosis/debian12:latest`
 * Click `Convert the docker image`.
 * Once the conversion is done, the FList is available as a public link on the ThreeFold Hub.
 * To get the FList URL, go to the [TF Hub main page](https://hub.grid.tf/), scroll down to your 3Bot ID and click on it.
 * Under `Name`, you will see all your available FLists.
-* Right-click on the FList and select `Copy Clean Link`.
-  * The URL should look like this, with your own 3Bot ID and FList name:
-    * `https://hub.grid.tf/idrnd.3bot/logismosis-debian12-latest.flist`
-* This URL will be used when deploying on the ThreeFold Playground.
+* Right-click on the FList you want and select `Copy Clean Link`. This URL will be used when deploying on the ThreeFold Playground. We show below the template and an example of what the FList URL looks like.
+  * Template:
+    * ```
+      https://hub.grid.tf/<3BOT_name.3bot>/<docker_username>-<docker_image_name>-<tagname>.flist
+      ```
+  * Example:
+    * ```
+      https://hub.grid.tf/idrnd.3bot/logismosis-debian12-latest.flist
+      ```
 
 ***
 
 ## Deploy the FList on the TF Playground
 
-* Go to the [ThreeFold Playground](https://play.grid.tf)
-* Set your profile manager
-* Go to the [Micro VM](https://play.grid.tf/#/vm) page
-* Choose your parameters (name, VM specs, etc.)
-* Enter the Debian FList under `FList`:
-  * ```
-    https://hub.grid.tf/idrnd.3bot/logismosis-debian12-latest.flist
-    ```
+* Go to the [ThreeFold Playground](https://play.grid.tf).
+* Set your profile manager.
+* Go to the [Micro VM](https://play.grid.tf/#/vm) page.
+* Choose your parameters (name, VM specs, etc.).
+* Under `FList`, paste the Debian FList from the TF Hub you copied previously.
 * Make sure the entrypoint is as follows:
   * ```
     /sbin/zinit init
