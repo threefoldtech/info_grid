@@ -155,7 +155,11 @@ echo "$SSH_KEY" >> /root/.ssh/authorized_keys
 
 ### zinit Folder
 
-Next, we want to take a look at the zinit folder. When we start the Docker container, the files in the folder zinit will be executed.
+Next, we want to take a look at the zinit folder. 
+
+But first, what is zinit? In a nutshell, zinit is a process manager (pid 1) that knows how to launch, monitor and sort dependencies. It thus executes targets in the proper order. For more information on zinit, check the [zinit repository](https://github.com/threefoldtech/zinit). 
+
+When we start the Docker container, the files in the folder zinit will be executed. 
 
 If we take a look at the file `ssh-init.yaml`, we find the following:
 
