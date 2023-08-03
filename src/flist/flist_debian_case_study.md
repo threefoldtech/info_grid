@@ -31,7 +31,7 @@ To do all this, we will need to create a Docker Hub account, create a Dockerfile
 
 ### You Said FList?
 
-First, let's recall what an FList actually is and does. In short, an FLIst is a very effective way to deal with software data and the end result is fast deployment and high reliability.
+First, let's recall what an FList actually is and does. In short, an FList is a very effective way to deal with software data and the end result is fast deployment and high reliability.
 
 In a FList, we separate the metadata from the data. The metadata is a description of what files are in that particular image. It's the data providing information about the app/software. Thanks to FList, the 3Node doesn't need to install a complete software program in order to run properly. Only the necessary files are installed. Zero-OS can read the metadata of a container and only download and execute the necessary binaries and applications to run the workload, when it is necessary.
 
