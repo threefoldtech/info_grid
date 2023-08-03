@@ -2,7 +2,7 @@
 
 Deploy a new full virtual machine on the Threefold Grid
 
-- Make sure you have an activated [profile](./weblets_profile_manager.md)
+- Make sure you have a [wallet](./wallet_connector.md)
 - Click on the **Full Virtual Machine** tab
 
 **Process:**

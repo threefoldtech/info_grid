@@ -2,7 +2,7 @@
 
 [Peertube](https://joinpeertube.org/) aspires to be a decentralized and free/libre alternative to video broadcasting services.
 
-- Make sure you have an activated [profile](./weblets_profile_manager.md)
+- Make sure you have a [wallet](./wallet_connector.md)
 - Click on the **Peertube** tab
 
 __Process__

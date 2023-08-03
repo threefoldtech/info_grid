@@ -9,7 +9,10 @@
 - [Create an Account on the Threefold Dashboard](../getstarted/TF_Dashboard/TF_Dashboard.md)
 - [Find a 3Node to Deploy Your Workload](../dashboard/explorer/explorer_find_capacity.md)
 - [Deploy Your First Virtual Machine](../weblets/weblets_vm.md)
-- [Full VM Deployment and SSH Connection](../getstarted/ssh_guide/ssh_guide.md)
+- [SSH Remote Connection](../getstarted/ssh_guide/ssh_toc.md)
+  - [SSH with OpenSSH](../getstarted/ssh_guide/ssh_openssh.md)
+  - [SSH with PuTTY](../getstarted/ssh_guide/ssh_putty.md)
+  - [SSH with WSL](../getstarted/ssh_guide/ssh_wsl.md)
 
 ## Grid Platforms
 
