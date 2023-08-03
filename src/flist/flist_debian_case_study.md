@@ -171,6 +171,8 @@ oneshot: true
 
 We can see that the first line call the [bash](https://www.gnu.org/software/bash/) Unix shell and that it will run the file `start.sh` we've seen earlier. 
 
+In this zinit service file, we define a service named `ssh-init.yaml`, where we tell zinit which commands to execute (here `bash /start.sh`), where to log (here in `stdout`) and where `oneshot` is set to `true` (meaning that it should only be executed once).
+
 If we take a look at the file `sshd.yaml`, we find the following:
 
 ```.yaml
@@ -179,7 +181,7 @@ after:
   - ssh-init
 ```
 
-Here, we can see that the first line call the ball Unix shell and that it will run the file `start.sh` we've seen earlier. 
+Here another service `sshd.yaml` runs after the `ssh-init.yaml` process.
 
 ### README.md File
 
