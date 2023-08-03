@@ -1,15 +1,10 @@
-<h1> Full VM Deployment and SSH Remote Connection</h1>
-
-In this Threefold Guide, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3node on Linux, MAC and Windows with both an IPv4 and a Planetary Network connection.
-
-To deploy different workloads, the SSH connection process should be very similar.
-
-If you have any questions, feel free to write a post on the [Threefold Forum](http://forum.threefold.io/).
+<h1> SSH Remote Connection with OpenSSH </h1>
 
 ***
 
 <h2> Table of Contents </h2>
 
+- [Introduction](#introduction)
 - [Main Steps and Prerequisites](#main-steps-and-prerequisites)
 - [Step-by-Step Process with OpenSSH](#step-by-step-process-with-openssh)
   - [Linux](#linux)
@@ -23,6 +18,16 @@ If you have any questions, feel free to write a post on the [Threefold Forum](ht
     - [SSH into a 3node with the Planetary Network on Windows](#ssh-into-a-3node-with-the-planetary-network-on-windows)
 - [SSH with PuTTY on Windows](#ssh-with-putty-on-windows)
 - [Questions and Feedback](#questions-and-feedback)
+***
+
+# Introduction
+
+In this Threefold Guide, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3node with [OpenSSH](https://www.openssh.com/) on Linux, MAC and Windows with both an IPv4 and a Planetary Network connection.
+
+To deploy different workloads, the SSH connection process should be very similar.
+
+If you have any questions, feel free to write a post on the [Threefold Forum](http://forum.threefold.io/).
+
 ***
 # Main Steps and Prerequisites
 

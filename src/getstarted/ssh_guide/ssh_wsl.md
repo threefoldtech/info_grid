@@ -1,10 +1,22 @@
-# SSH with Ubuntu on WSL
+<h1> SSH Remote Connection with WSL </h1>
 
-SSH is a secure protocol used as the primary means of connecting to Linux servers remotely.
-It provides a text-based interface by spawning a remote shell.
-After connecting, all commands you type in your local terminal are sent to the remote server and executed there.
+<h2> Table of Contents </h2>
 
-## SSH key generation
+- [Introduction](#introduction)
+- [SSH Key Generation](#ssh-key-generation)
+- [Connect to Remote Host with SSH](#connect-to-remote-host-with-ssh)
+- [Enable Port 22 in Windows Firewall](#enable-port-22-in-windows-firewall)
+- [Questions and Feedback](#questions-and-feedback)
+
+***
+
+## Introduction
+
+In this Threefold Guide, we show how easy it is to SSH into a 3node on Windows with [Windows Subsystem for Linux (WSL)](https://ubuntu.com/wsl).
+
+If you have any questions, feel free to write a post on the [Threefold Forum](http://forum.threefold.io/).
+***
+## SSH Key Generation
 
 Make sure SSH is installed by entering following command at the command prompt:
 
@@ -36,8 +48,8 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNqqi1mHLnryb1FdbePrSZQdmXRZxGZbo0gTfglysq
 ```
 
 Copying the entire text you can specify your public SSH key while connecting your [wallet](./wallet_connector.md) before [deploying a VM](./vm_intro.md).
-
-## Connect to remote host with SSH
+***
+## Connect to Remote Host with SSH
 
 With the SSH key you should be able to SSH to your account on the remote system from the computer that has your private key using the following command:
 
@@ -52,7 +64,7 @@ For example, to invoke the private key `my_key`, stored in the `~/.ssh/keys` dir
 ```sh
 ssh -i ~/.ssh/keys/my_key username@remote_IP_host
 ```
-
+***
 ## Enable Port 22 in Windows Firewall
 
 The port 22 is used for Secure Shell (SSH) communication and allows remote administration access to the VM.
@@ -71,3 +83,7 @@ This is not recommend especially for portable device (Laptop, Tablets) that conn
 - under `Name`
   - Name: `SSH Server`
   - Description: `SSH Server`
+***
+## Questions and Feedback
+
+If you have any questions, let us know by writing a post on the [Threefold Forum](http://forum.threefold.io/).
