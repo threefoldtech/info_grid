@@ -171,7 +171,7 @@
     - [ThreeFold Dashboard](getstarted/TF_Dashboard/TF_Dashboard.md)
     - [Tutorial: Find Node](dashboard/explorer/explorer_find_capacity.md)
     - [Tutorial: Deploy Your First VM](weblets/weblets_vm.md)
-    - [SSH Remote Connection](getstarted/ssh_guide/ssh_toc.md)
+    - [SSH Remote Connection](getstarted/ssh_guide/ssh_guide.md)
       - [SSH with OpenSSH](getstarted/ssh_guide/ssh_openssh.md)
       - [SSH with PuTTY](getstarted/ssh_guide/ssh_putty.md)
       - [SSH with WSL](getstarted/ssh_guide/ssh_wsl.md)
