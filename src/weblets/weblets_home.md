@@ -34,6 +34,7 @@ There are several weblets you can use like:
 
 - Some utils:
   - [Profile Manager](./weblets_profile_manager.md)
+  - [Make sure your profile is activated](./weblets_profile_manager.md)
 
 ## Playground
 Playground is a Vue app that has the weblets embedded. so you can try it out on different TF Chain networks.

@@ -1,4 +1,4 @@
-# Profile Manager
+# Wallet Connector
 
 Currently, we're supporting four different networks:
 

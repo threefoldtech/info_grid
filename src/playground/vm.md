@@ -6,7 +6,7 @@
 
 Deploy a new virtual machine on the Threefold Grid
 
-- Make sure you have an activated [profile](./weblets_profile_manager.md) 
+- Make sure you have a [wallet](./wallet_connector.md)
 - Click on the **Micro Virtual Machine** tab
 
 __Process__ : 

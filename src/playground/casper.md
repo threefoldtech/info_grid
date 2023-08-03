@@ -2,7 +2,7 @@
 
 [Casper Network](https://casperlabs.io/) is a blockchain protocol built from the ground up to remain true to core Web3 principles and adapt to the needs of our evolving world.
 
-- Make sure you have an activated [profile](./weblets_profile_manager.md)
+- Make sure you have a [wallet](./wallet_connector.md)
 - Click on the **Casperlabs** tab
 
 __Process__ :
@@ -27,8 +27,6 @@ __Process__ :
 - Choose the node to deploy on 
 - `Custom Domain` flag lets the user to use a custom domain
 - Choose a gateway node to deploy your Casperlab instance on.
-
-
 
 After that is done you can see a list of all of your deployed instances
 

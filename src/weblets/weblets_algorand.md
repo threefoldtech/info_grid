@@ -5,7 +5,7 @@
 ## Prerequisites
 
 - An active [deployment profile](./weblets_profile_manager.md)
-
+- [Make sure your profile is activated](./weblets_profile_manager.md)
 ### Algorand Structure
 
 - Algorand has two main [types](https://developer.algorand.org/docs/run-a-node/setup/types/#:~:text=The%20Algorand%20network%20is%20comprised,%2C%20and%20non%2Drelay%20nodes.) of nodes (Relay or Participant) you can run also a 4 networks you can run your node against. Combining the types you can get:

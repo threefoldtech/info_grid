@@ -3,7 +3,7 @@
 [ownCloud](https://owncloud.com/) develops and provides open-source software for content collaboration, allowing teams to easily share and work on files seamlessly regardless of device or location.
 
 
-- Make sure you have an activated [profile](./weblets_profile_manager.md)
+- Make sure you have a [wallet](./wallet_connector.md)
 - Click on the **Owncloud** tab
 
 __Process__ :

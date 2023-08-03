@@ -3,7 +3,7 @@
 [Mattermost](https://mattermost.com/) A single point of collaboration. Designed specifically for digital operations.
 
 
-- Make sure you have an activated [profile](./weblets_profile_manager.md)
+- Make sure you have a [wallet](./wallet_connector.md)
 - Click on the **Mattermost** tab
 
 __Process__ :

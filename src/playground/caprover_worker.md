@@ -1,6 +1,13 @@
-# Add a new worker node
+<h1> Add a New Worker Node </h1>
 
-## Step 1: Add a default docker registry
+<h2> Table of Contents </h2>
+
+- [Step 1: Add a Default Docker Registry](#step-1-add-a-default-docker-registry)
+- [Step 2: Attach a New Node to the Cluster](#step-2-attach-a-new-node-to-the-cluster)
+
+***
+
+## Step 1: Add a Default Docker Registry
 
 You'll have to add a default docker registry so other CapRover nodes in the cluster can download images from, and it can be self-hosted (managed by CapRover itself), to add it, go to `Cluster` -> `Docker Registry Configuration`.
 
@@ -12,7 +19,9 @@ You'll have to add a default docker registry so other CapRover nodes in the clus
 
 You can check [official documentation](https://caprover.com/docs/app-scaling-and-cluster.html#setup-docker-registry) to know more about Docker registry options.
 
-## Step 2: Attach a new node to the cluster
+***
+
+## Step 2: Attach a New Node to the Cluster
 
 ![ ](./img/caprover_add_worker.png)
 
