@@ -28,8 +28,6 @@ __Process__ :
 - `Custom Domain` flag lets the user to use a custom domain
 - Choose a gateway node to deploy your Casperlab instance on.
 
-
-
 After that is done you can see a list of all of your deployed instances
 
 ![ ](./img/casper4.png)

@@ -1,8 +1,21 @@
-# CapRover
+<h1> CapRover </h1>
 
 ![ ](./img/caprover_1.png)
 
-About CapRover
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Requirements](#requirements)
+- [Configs Tab](#configs-tab)
+- [Admin and Workers Tabs](#admin-and-workers-tabs)
+- [The Domain Name](#the-domain-name)
+- [How to Know the IP Address](#how-to-know-the-ip-address)
+- [How to Access the Admin Interface](#how-to-access-the-admin-interface)
+- [How to Work with CapRover](#how-to-work-with-caprover)
+
+***
+
+## Introduction
 
 CapRover is an extremely easy to use app/database deployment & web server manager for your NodeJS, Python, PHP, ASP.NET, Ruby, MySQL, MongoDB, Postgres, WordPress (and etc...) applications!
 
@@ -15,7 +28,6 @@ It's blazingly fast and very robust as it uses Docker, nginx, LetsEncrypt and Ne
 - Nginx (fully customizable template) under the hood for load-balancing
 - Let's Encrypt under the hood for free SSL (HTTPS)
 
-
 Caprover is a very cool management app for containers based on Docker Swarm.
 
 It has following benefits : 
@@ -24,23 +36,22 @@ It has following benefits :
 - easy to create new apps
 - super good monitoring
 - can be extended over the TFGrid
-
-### Requirements
+***
+## Requirements
 
 - You need an account on TF-Chain, and there needs to be TFT on the account (see getting started)
 - Make sure you have a [wallet](./wallet_connector.md)
 - Unlock your profile on profile manager, if already filled in before
+***
 
-### Usage
-
-
-### **Configs** tab
+## Configs Tab
 
 ![ ](./img/new_cap1.png)
 
 - Enter domain for you Caprover instance, Be very careful about the domain name: it needs to be a wildcard domain name you can configure in your chosen domain name system.
 - Enter password for you Caprover instance.
-### **Leader** and **Workers** tabs
+***
+## Admin and Workers Tabs
 
 ![ ](./img/new_cap4.png)
 
@@ -49,8 +60,8 @@ Note: Worker nodes only accept SSH keys of RSA format.
 
 
 Deployment will take couple of minutes.
-
-### The Domain Name
+***
+## The Domain Name
 
 - e.g. I picked ```apps.openly.life``` which is a domain name that will point to the ip address of the CapRover instance (which we only know after deployment).
 
@@ -58,8 +69,8 @@ Deployment will take couple of minutes.
 
 
 > Note how the *.apps.openly.life points to the public IPv4 address that has been returned from the deployment.
-
-### How to know what the IP address is?
+***
+## How to Know the IP Address
 
 Go back to your CapRover weblet and go to the deployment list. Click on `Show Details`.
 
@@ -114,8 +125,8 @@ Click on details if you want to see more details
     "description": "caprover leader machine/node"
 }
 ```
-
-### How to access the admin interface ?
+***
+## How to Access the Admin Interface
 
 - make sure your public IP address (in my case ```185.206.122.136```) is filled in in the domain name record.
 
@@ -129,7 +140,7 @@ You should now see
 
 ![ ](./img/captain_login+weblet_caprover_.png)
 
-### How to work with CapRover
+## How to Work with CapRover
 
-> [see our caprover admin small tutorial](./caprover_admin.md)
-> [see our caprover worker small tutorial](./caprover_worker.md)
+* [CapRover Admin Tutorial](./caprover_admin.md)
+* [CapRover Worker Tutorial](./caprover_worker.md)
