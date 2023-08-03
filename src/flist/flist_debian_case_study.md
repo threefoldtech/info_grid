@@ -56,7 +56,7 @@ To give you a bird's view of the whole project, here are the main steps:
 * Create the Docker image
 * Push the Docker image to the Docker Hub
 * Convert the Docker image to a Zero-OS FList
-* Deploy the FList on the ThreeFold Playground
+* Deploy a micro VM with the FList on the ThreeFold Playground
 
 ***
 
@@ -132,7 +132,7 @@ RUN chmod +x /sbin/zinit && chmod +x /start.sh
 ENTRYPOINT  ["zinit", "init"]
 ```
 
-There is nothing more needed here. Pretty fun to start from existing open-source code, right?
+There is nothing more needed here. Pretty fun to start from some existing open-source code, right?
 
 ### Docker Image Script
 
@@ -187,11 +187,7 @@ Here another service `sshd.yaml` runs after the `ssh-init.yaml` process.
 
 As every good programmer knows, a good code is nothing without some good documentation to help others understand what's going on! This is where the `README.md` file comes into play.
 
-In this file, we can explain what our code is doing and offer steps to properly configure the whole deployment.
-
-In our case, the Ubuntu 22.04 `README.md` file doesn't have exactly the information we're looking for. We will thus write something else in the `README.md`` file.
-
-Essentially, for the users that will want to deploy the FList on the ThreeFold Playground, they would need the FLIst URL and the basic steps to deploy a Micro VM on the TFGrid. We will thus add this information in the README.md file. This information can be seen in the [section below](#deploy-the-flist-on-the-tf-playground).
+In this file, we can explain what our code is doing and offer steps to properly configure the whole deployment. For the users that will want to deploy the FList on the ThreeFold Playground, they would need the FLIst URL and the basic steps to deploy a Micro VM on the TFGrid. We will thus add this information in the README.md file. This information can be seen in the [section below](#deploy-the-flist-on-the-tf-playground). To read the complete README.md file, go to [this link](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/debian).
 
 ### Putting it All Together
 
@@ -205,7 +201,7 @@ To have a look at the final result of the changes we bring to the Ubuntu 22.04 v
 
 ### Create Account and Access Token
 
-To be able to push Docker images to the Docker Hub, you obviously need to create an account! This is very easy and please note that there are so many amazing documentation on Docker online. If you're lost, make the most out of your favorite search engine and find a way out of the blue.
+To be able to push Docker images to the Docker Hub, you obviously need to create a Docker Hub account! This is very easy and please note that there are so many amazing documentation on Docker online. If you're lost, make the most of your favorite search engine and find a way out of the blue.
 
 Here are the steps to create an account and an access token.
 
@@ -244,7 +240,7 @@ You now have access to the Docker Hub from your local computer. We will then pro
       docker push logismosis/debian12
       ```
 * You should now see your docker image on the [Docker Hub](https://hub.docker.com/) when you go into the menu option `My Profile`.
-  * Note that you can access this link quickly with the following template.
+  * Note that you can access this link quickly with the following template:
     * ```
       https://hub.docker.com/u/<account_name>
       ```
