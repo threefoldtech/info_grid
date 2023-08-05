@@ -454,6 +454,7 @@
     - [Does the Farmerbot need to run physically in the farm?](#does-the-farmerbot-need-to-run-physically-in-the-farm)
     - [How many Farmerbot can you run per farm?](#how-many-farmerbot-can-you-run-per-farm)
     - [On how many nodes can the Farmerbot run?](#on-how-many-nodes-can-the-farmerbot-run)
+    - [Can you run multiple Farmerbots on the same computer or VM?](#can-you-run-multiple-farmerbots-on-the-same-computer-or-vm)
     - [What is the uptime requirement for the Farmerbot?](#what-is-the-uptime-requirement-for-the-farmerbot)
     - [Can I run the Farmerbot on my farm?](#can-i-run-the-farmerbot-on-my-farm)
     - [Can the Farmerbot be the same node that wakes the other nodes?](#can-the-farmerbot-be-the-same-node-that-wakes-the-other-nodes)
@@ -2907,7 +2908,7 @@ The most straightforward wallet possible when it comes to farming TFT is simply 
 
 ### Can I have more details on storing ThreeFold tokens (TFT) on hardware wallets?
 
-Yes of course! In short, you will need to use a hardware wallet (Ledger/Trezor/etc.) to sign in, add TFT as an asset (trustline), then send TFT to the Stellar address. For more information, read the section [Setting up a TFT Trustline on Stellar Blockchain](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#setting-up-a-tft-trustline-on-stellar-blockchain) from the Farming documentation.
+Yes of course! In short, you will need to use a hardware wallet (Ledger/Trezor/etc.) to sign in, add TFT as an asset (trustline), then send TFT to the Stellar address. For more information, read the section [Store TFT in a Hardware Wallet](../threefold_token/storing_tft/hardware_wallet.md).
 
 ***
 
@@ -4155,6 +4156,30 @@ You can run only one Farmerbot for now.
 ### On how many nodes can the Farmerbot run?
 
 Currently you can only deploy one Farmerbot for each farm, so the Farmerbot can only run on one node.
+
+***
+
+### Can you run multiple Farmerbots on the same computer or VM?
+
+You can run multiple Farmerbot on the same computer or VM. where each Farmerbot can take care of one farm at time. So, for example, with two Farmerbots, you could manage two different farms, and so on.
+
+In this case, you need to make sure that each Farmerbot is running in its own directory. We show here a directory tree example with two different Farmerbots running each a docker image.
+
+```
+.
+├── farmerbot_docker_1
+│   ├── config
+│   │   ├── config.md
+│   │   └── farmerbot.log
+│   └── docker-compose.yaml
+└── farmerbot_docker_2
+    ├── config
+    │   ├── config.md
+    │   └── farmerbot.log
+    └── docker-compose.yaml
+```
+
+To achieve this, you can simply follow the [Farmerbot Quick Guide](../farmers/farmerbot/farmerbot_quick.md) and create a distinct directory for each Farmerbot (`mkdir farmerbot_docker_1`, etc.) and complete the guide for each Farmerbot and farm combination.
 
 ***
 
