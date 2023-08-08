@@ -64,6 +64,10 @@ We thus add the following rules:
   * ```
     ufw allow 8443
     ```
+* Allow port 3478 for Nextcloud Talk
+  * ```
+    ufw allow 3478
+    ```
 
 * To enable the firewall, write the following:
   * ```
@@ -124,7 +128,7 @@ For the rest of the guide, we follow the steps availabe on the Nextcloud website
     ```
 * Reach the AIO interface on your browser
   * ```
-    <VM_IP_Address>:8080
+    https://<VM_IP_Address>:8080
     ```
 * Take note of the Nextcloud password
 * Log in with the given password
