@@ -4,6 +4,7 @@
 
 - [Introduction](#introduction)
 - [TFChain Wallet](#tfchain-wallet)
+  - [Generate Account](#generate-account)
   - [Connect Your Wallet](#connect-wallet)
   - [Login](#login)
 - [Twin/Farm Management](#twinfarm-management)
@@ -30,11 +31,18 @@ The ThreeFold Dashboard is a unified admin interface for everything related to t
 
 ## TFChain Wallet
 
+### Generate Account
+
+![Connect](./img/dashboard_generate_account.png)
+![Generate](./img/dashboard_T&C.png)
+
+Mnemonics serve as your private keys, acting as your representation on the ThreeFold Grid. You can input an existing mnemonic or click the 'Generate Account' button to establish an account and generate a new mnemonic. Upon selecting 'Generate Account', you will be redirected to our Terms and Conditions page, where acceptance is required. Afterward, the mnemonic will be automatically created and filled into the form.
+
 ### Connect Your Wallet
 
 ![Connect](./img/dashboard_connect.png)
 
-To connect your wallet, you will need to enter your mnemonic which will be encrypted using the password.
+After entering your information, you can connect your wallet seamlessly.
 
 ### Login
 
