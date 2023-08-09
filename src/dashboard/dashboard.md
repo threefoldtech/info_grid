@@ -4,8 +4,8 @@
 
 - [Introduction](#introduction)
 - [TFChain Wallet](#tfchain-wallet)
-  - [Login](#login)
   - [Connect Your Wallet](#connect-wallet)
+  - [Login](#login)
 - [Twin/Farm Management](#twinfarm-management)
   - [Twin Management](#twin-management)
   - [Farms Management](#farms-management)
@@ -30,17 +30,17 @@ The ThreeFold Dashboard is a unified admin interface for everything related to t
 
 ## TFChain Wallet
 
-### Login
-
-![login](./img/dashboard_login.png)
-
-Once you login with the password you used while connecting your wallet, you can access all Dashboard sections.
-
 ### Connect Your Wallet
 
 ![Connect](./img/dashboard_connect.png)
 
 To connect your wallet, you will need to enter your mnemonic which will be encrypted using the password.
+
+### Login
+
+![login](./img/dashboard_login.png)
+
+Once you login with the password you used while connecting your wallet, you can access all Dashboard sections.
 
 ## Twin/Farm Management
 
