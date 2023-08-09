@@ -48,7 +48,7 @@ After entering your information, you can connect your wallet seamlessly.
 
 ![login](./img/dashboard_login.png)
 
-Once you log in with the password you used while connecting your wallet, you can access all of the TF Dashboard sections.
+Once you've logged in with the password used while connecting your wallet, you can access all of the TF Dashboard sections.
 
 ## Twin/Farm Management
 
