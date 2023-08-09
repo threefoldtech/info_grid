@@ -3,6 +3,10 @@
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
+- [TFChain Wallet](#tfchain-wallet)
+  - [Generate Account](#generate-account)
+  - [Connect Your Wallet](#connect-your-wallet)
+  - [Login](#login)
 - [Twin/Farm Management](#twinfarm-management)
   - [Twin Management](#twin-management)
   - [Farms Management](#farms-management)
@@ -20,24 +24,47 @@
 
 ## Introduction
 
-This section of the ThreeFold Manual introduces you to the **ThreeFold Dashboard**, a powerful tool designed to empower individuals and organizations with seamless control and management over their ThreeFold Grid resources. The ThreeFold Dashboard provides an intuitive web-based interface that allows users to effortlessly deploy, monitor, and scale their workloads on the decentralized and sustainable ThreeFold Grid infrastructure. 
+This section of the ThreeFold Manual introduces you to the **ThreeFold Dashboard**, a powerful tool designed to empower individuals and organizations with seamless control and management over their ThreeFold Grid resources. The ThreeFold Dashboard provides an intuitive web-based interface that allows users to effortlessly deploy, monitor, and scale their workloads on the decentralized and sustainable ThreeFold Grid infrastructure.
 
 The ThreeFold Dashboard is a unified admin interface for everything related to the Threefold Grid. We now give an overview of the different features of the ThreeFold Dashboard.
 ***
+
+## TFChain Wallet
+
+### Generate Account
+
+![Connect](./img/dashboard_generate_account.png)
+![Generate](./img/dashboard_T&C.png)
+
+Mnemonics serve as your private keys, acting as your representation on the ThreeFold Grid. You can input an existing mnemonic or click the **Generate Account** button to establish an account and generate a new mnemonic. In the latter case, you will be redirected to our **Terms and Conditions** page, where acceptance is required. Afterward, the mnemonic will be automatically created and filled into the form.
+
+### Connect Your Wallet
+
+![Connect](./img/dashboard_connect.png)
+
+After entering your information, you can connect your wallet seamlessly.
+
+### Login
+
+![login](./img/dashboard_login.png)
+
+Once you've logged in with the password used while connecting your wallet, you can access all of the TF Dashboard sections.
+
 ## Twin/Farm Management
 
 ### Twin Management
 
 ![twin mgmt](./img/dashboard_portal_twin.png)
 
-The TF Twin management feature of the ThreeFold Dashboard enables users to create, manage, and monitor their individual digital entities known as "Twins." A Twin can represent a virtual machine (VM) or a container running on the ThreeFold Grid. With the Twin management, users can easily deploy and scale their workloads, allocate resources, and configure networking and storage settings for their Twins.
+The TF Twin management feature of the ThreeFold Dashboard enables users to create, manage, and monitor their individual digital entities known as **Twins**. A Twin can represent a virtual machine (VM) or a container running on the ThreeFold Grid. With the Twin management, users can easily deploy and scale their workloads, allocate resources, and configure networking and storage settings for their Twins.
 
 ### Farms Management
 
 ![farm mgmt](./img/dashboard_portal_farms.png)
 
-The Farms management feature allows users to manage their own infrastructure, referred to as "Farms," on the ThreeFold Grid. Farms consist of servers and storage devices that contribute computing and storage capacity to the grid. Through the Farms management feature, users can add or remove, as well as monitor the health and performance of their farms, all the while efficiently using their resources.
+The Farms management feature allows users to manage their own infrastructure, referred to as **Farms** on the ThreeFold Grid. Farms consist of servers and storage devices that contribute computing and storage capacity to the grid. Through the Farms management feature, users can add or remove, as well as monitor the health and performance of their farms, all the while efficiently using their resources.
 ***
+
 ## TFChain DAO
 
 ![dao](./img/dashboard_dao.png)
@@ -56,7 +83,7 @@ Users can bridge and transfer TFT within the ThreeFold ecosystem. Here's an over
 
 ![bridge](./img/dashboard_bridge.png)
 
-The TFChain-Stellar Bridge establishes connections between the ThreeFold blockchain (TFChain) and the Stellar blockchain. This bridge enables interoperability and facilitate the exchange or utilization of TFT in a broader ecosystem. 
+The TFChain-Stellar Bridge establishes connections between the ThreeFold blockchain (TFChain) and the Stellar blockchain. This bridge enables interoperability and facilitates the exchange or utilization of TFT in a broader ecosystem.
 
 For more information on the TFChain-Stellar Bridge, read [this section](../threefold_token/tft_bridges/tfchain_stellar_bridge.md).
 
@@ -68,6 +95,7 @@ Additionally, users can transfer TFT directly to other TFChain users via the Thr
 
 For more information on how to transfer TFT between TFChain accounts, read [this section](./portal/dashboard_portal_ui_tokens.md).
 ***
+
 ## TFGrid Explorer
 
 The TFGrid Explorer feature provides a comprehensive view of the ThreeFold Grid infrastructure. Users can explore and analyze information related to ThreeFold nodes, farms, and grid statistics. It also provides insights into the farms contributing to the grid and their respective performance metrics. By utilizing the TFGrid Explorer, users can access detailed information about individual nodes, including their location, capacity, and availability.
