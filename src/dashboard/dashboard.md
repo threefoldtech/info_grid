@@ -36,7 +36,7 @@ The ThreeFold Dashboard is a unified admin interface for everything related to t
 ![Connect](./img/dashboard_generate_account.png)
 ![Generate](./img/dashboard_T&C.png)
 
-Mnemonics serve as your private keys, acting as your representation on the ThreeFold Grid. You can input an existing mnemonic or click the 'Generate Account' button to establish an account and generate a new mnemonic. Upon selecting 'Generate Account', you will be redirected to our `Terms and Conditions` page, where acceptance is required. Afterward, the mnemonic will be automatically created and filled into the form.
+Mnemonics serve as your private keys, acting as your representation on the ThreeFold Grid. You can input an existing mnemonic or click the **Generate Account** button to establish an account and generate a new mnemonic. In the latter case, you will be redirected to our **Terms and Conditions** page, where acceptance is required. Afterward, the mnemonic will be automatically created and filled into the form.
 
 ### Connect Your Wallet
 
@@ -56,13 +56,13 @@ Once you've logged in with the password used while connecting your wallet, you c
 
 ![twin mgmt](./img/dashboard_portal_twin.png)
 
-The TF Twin management feature of the ThreeFold Dashboard enables users to create, manage, and monitor their individual digital entities known as "Twins." A Twin can represent a virtual machine (VM) or a container running on the ThreeFold Grid. With the Twin management, users can easily deploy and scale their workloads, allocate resources, and configure networking and storage settings for their Twins.
+The TF Twin management feature of the ThreeFold Dashboard enables users to create, manage, and monitor their individual digital entities known as **Twins**. A Twin can represent a virtual machine (VM) or a container running on the ThreeFold Grid. With the Twin management, users can easily deploy and scale their workloads, allocate resources, and configure networking and storage settings for their Twins.
 
 ### Farms Management
 
 ![farm mgmt](./img/dashboard_portal_farms.png)
 
-The Farms management feature allows users to manage their own infrastructure, referred to as "Farms" on the ThreeFold Grid. Farms consist of servers and storage devices that contribute computing and storage capacity to the grid. Through the Farms management feature, users can add or remove, as well as monitor the health and performance of their farms, all the while efficiently using their resources.
+The Farms management feature allows users to manage their own infrastructure, referred to as **Farms** on the ThreeFold Grid. Farms consist of servers and storage devices that contribute computing and storage capacity to the grid. Through the Farms management feature, users can add or remove, as well as monitor the health and performance of their farms, all the while efficiently using their resources.
 ***
 
 ## TFChain DAO
