@@ -4335,6 +4335,19 @@ query MyQuery {
 }
 ```
 
+To find the nodes of a specific farm, write the following with the proper farmID (here we use 1 as an example):
+
+```
+query MyQuery {
+  nodes(where: {farmID_eq: 1}) {
+    power {
+      state
+    }
+    nodeID
+  }
+}
+```
+
 ***
 
 ### When setting up the Farmerbot, I get the error: dependency failed to start: container qa-redis-1 is unhealthy. What can I do?
