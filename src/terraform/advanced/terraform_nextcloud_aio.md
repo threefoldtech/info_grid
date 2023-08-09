@@ -27,7 +27,7 @@ We present a quick way to install Nextcloud All-in-One on the TFGrid. This guide
   * Minimum specs:
     * IPv4 Address
     * 2 vcores 
-    * 4096 MB of RAm
+    * 4096 MB of RAM
     * 50 GB of Storage
 * Take note of the VM IP address
 * SSH into the Full VM
