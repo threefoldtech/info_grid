@@ -12,7 +12,7 @@
 - [Authenticate via 3Bot](#authenticate-via-3bot)
 - [Get and Update Information Through the API](#get-and-update-information-through-the-api)
   - [Public API Endpoints (No Authentication Required)](#public-api-endpoints-no-authentication-required)
-  - [Restricted API Endpoints (Authentication required)](#restricted-api-endpoints-authentication-required)
+  - [Restricted API Endpoints (Authentication Required)](#restricted-api-endpoints-authentication-required)
   - [API Request Templates and Examples](#api-request-templates-and-examples)
 
 ***
@@ -84,7 +84,7 @@ See example below.
 - `/api/flist/<repository>/<flist>` (**GET**)
   - Returns json object with flist dumps (full file list)
 
-### Restricted API Endpoints (Authentication required)
+### Restricted API Endpoints (Authentication Required)
 - `/api/flist/me` (**GET**)
   - Returns json object with some basic information about yourself (authenticated user)
 - `/api/flist/me/<flist>` (**GET**, **DELETE**)
