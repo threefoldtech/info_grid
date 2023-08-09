@@ -406,7 +406,7 @@
     - [I have trouble connecting the 3node to the Grid with a 10GB NIC card. What can I do?](#i-have-trouble-connecting-the-3node-to-the-grid-with-a-10gb-nic-card-what-can-i-do)
     - [I switch the ethernet cable to a different port when my 3node was running. Internet connection is lost. What can I do?](#i-switch-the-ethernet-cable-to-a-different-port-when-my-3node-was-running-internet-connection-is-lost-what-can-i-do)
     - [I  get the error Certificate is not yet valid when booting my 3node server, what can I do?](#i--get-the-error-certificate-is-not-yet-valid-when-booting-my-3node-server-what-can-i-do)
-    - [I tried to wipe my disk, but I get the error Probing Initialized Failed. What can I do?](#i-tried-to-wipe-my-disk-but-i-get-the-error-probing-initialized-failed-what-can-i-do)
+    - [When running wipefs to wipe my disks on Linux, I get either of the following errors: "syntax error near unexpected token" or "Probing Initialized Failed". Is there a fix?](#when-running-wipefs-to-wipe-my-disks-on-linux-i-get-either-of-the-following-errors-syntax-error-near-unexpected-token-or-probing-initialized-failed-is-there-a-fix)
     - [I did a format on my SSD disk, but Zero-OS still does not recognize them. What's wrong?](#i-did-a-format-on-my-ssd-disk-but-zero-os-still-does-not-recognize-them-whats-wrong)
     - [I have a Dell Rx10 server (R610, 710, 910). When I boot Zero-OS I get the message Probing EDD and the 3node doesn't boot from there. What can I do?](#i-have-a-dell-rx10-server-r610-710-910-when-i-boot-zero-os-i-get-the-message-probing-edd-and-the-3node-doesnt-boot-from-there-what-can-i-do)
     - [My 3node doesn't boot properly without a monitor plugged in. What can I do?](#my-3node-doesnt-boot-properly-without-a-monitor-plugged-in-what-can-i-do)
@@ -3817,9 +3817,23 @@ Make sure your firmware is up to date. If necessary, reinstall it. You might hav
 
 ***
 
-### I tried to wipe my disk, but I get the error Probing Initialized Failed. What can I do?
+### When running wipefs to wipe my disks on Linux, I get either of the following errors: "syntax error near unexpected token" or "Probing Initialized Failed". Is there a fix?
 
-Some people tried the command *wipefs -a /dev/sd without success. (Where * is the specific disk letter.) When you get that error, sometimes it is because your are trying to wipe your boot USB by accident. If this is not the case, and you really are trying to wipe your disk, try this command *wipefs -af /dev/sd.
+Many different reasons can cause this issue. When you get that error, sometimes it is because your are trying to wipe your boot USB by accident. If this is not the case, and you really are trying to wipe the correct disk, here are some fixes to try out, with the disk `sda` as an example:
+
+* Fix 1:
+  * Force the wiping of the disk:
+    * ```
+      sudo wipefs -af /dev/sda
+      ```
+* Fix 2:
+  * Unmount the disk then wipe it:
+    * ```
+      sudo umount /dev/sda
+      ```
+    * ```
+      sudo wipefs -a /dev/sda
+      ```
 
 ***
 
