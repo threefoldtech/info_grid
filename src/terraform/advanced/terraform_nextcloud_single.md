@@ -269,14 +269,6 @@ After deployments, take note of the 3Node's IPv4 address. You will need this add
      ssh root@VM_IPv4_Address
      ```
 
-* If you've already deployed on other 3Nodes, you might need to remove the file `known_hosts` and add the private key in the SSH `.ssh` folder:
-    * ```
-      rm ~/.ssh/known_hosts
-      ```
-    * ```
-      ssh-add ~/.ssh/id_rsa
-      ```
-
 ## Prepare the Full VM
 
 * Update and upgrade the system
