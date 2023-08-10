@@ -91,9 +91,9 @@ Once your email is verified, you can sign in to your Lobstr account:
 
 You will then need to either create a new wallet or connect an existing wallet.
 
-Since we are working on the Threefold ecosystem, it is very easy and practical to simply connect your Threefold Connect app wallet. You can also create a new wallet.
+For this guide, we will show how to connect your TF Connect app wallet, but please note that you can create a new wallet on Lobstr by clicking **Create Stellar Wallet**.
 
-Using the TF Connect wallet is very useful and quick. When you buy XLM and swap XLM tokens for TFTs, they will be directly available on your TF Connect app wallet.
+Since we are working with the Threefold ecosystem, it is very easy and practical to simply connect your TF Connect app wallet to Lobstr. This way, when you buy XLM and swap XLM tokens for TFTs, they will be directly available on your TF Connect app wallet.
 
 ![image](./img/gettft_11.png)
 

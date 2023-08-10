@@ -1,12 +1,4 @@
-# Flist HUB
-
-![ ](./img/hub_flist.png)
-
-- Allows you to convert .tar.gz to an flist
-- Allows you to convert a docker image.
-- Allows you to customize an flist.
-
-# Convert Docker To Flist
+<h1> Convert Docker Image to FList </h1>
 
 1. Upload the Docker image to Docker Hub with the following command:
 
