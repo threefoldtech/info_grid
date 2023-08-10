@@ -117,6 +117,7 @@
     - [Deploy a VM](tfgridcmd/grid3_cli_vm.md)
     - [Deploy Gateways](tfgridcmd/grid3_cli_gateways.md)
     - [Deploy Kubernetes](tfgridcmd/grid3_cli_kubernetes.md)
+    - [Deploy ZDB](tfgridcmd/grid3_cli_zdbs.md)
   - [ThreeFold Chain](tfchain/tfchain.md)
     - [Introduction](tfchain/introduction.md)
     - [Farming Policies](tfchain/farming_policies.md)
