@@ -14,6 +14,7 @@ Nextcloud provides functionality similar to Dropbox, Office 365 or Google Drive 
 * Choose a name for your deployment
   * Note: You can let the auto-generated name if you want
 * Write your domain
+  * Example: `example.com`
   * Note: Read the section [Set the DNS Record](#set-the-dns-record) for more information
 * Select a capacity package:
     * **Minimum**: {cpu: 2, memory: 4096, diskSize: 50 }
