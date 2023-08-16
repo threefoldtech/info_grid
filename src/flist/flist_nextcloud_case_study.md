@@ -3,7 +3,7 @@
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
-  - [You Said FList?](#you-said-flist)
+  - [FList: What is It?](#flist-what-is-it)
   - [Case Study Objective](#case-study-objective)
   - [The Overall Process](#the-overall-process)
 - [Docker Image Creation](#docker-image-creation)
@@ -26,21 +26,21 @@
 
 ## Introduction
 
-For this tutorial, we will present a case study demonstrating how easy it is to create a new FList on the ThreeFold Ecosystem. We will be creating a Nextcloud All-in-One Flist and we will deploy a micro VM on the ThreeFold Playground and access our Nextcloud deployment. 
+For this tutorial, we will present a case study demonstrating how to create a new FList on the ThreeFold Ecosystem. We will be creating a Nextcloud All-in-One Flist and we will deploy a micro VM on the ThreeFold Playground and access our Nextcloud deployment. 
 
 To do all this, we will need to create a Docker Hub account, create a Dockerfile, a docker image and a docker container, then convert the docker image to a Zero-OS FList. After all this, we will be deploying our Nextcloud instance on the ThreeFold Playground.
 
+As a general advice, before creating an FList for a ThreeFold deployment, you should make sure that you are able to deploy your workload efficiently by using a micro VM or a full VM on the TFGrid. Once you know all the steps for your workload and that you tested it thoroughly, you can take the things you've learned and implement it into an FList.
+
 ***
 
-### You Said FList?
+### FList: What is It?
 
-First, let's recall what an FList actually is and does. In short, an FList is a very effective way to deal with software data and the end result is fast deployment and high reliability.
+In short, an FList is a very effective way to deal with software data and the end result is fast deployment and high reliability.
 
 In a FList, we separate the metadata from the data. The metadata is a description of what files are in that particular image. It's the data providing information about the app/software. Thanks to FList, the 3Node doesn't need to install a complete software program in order to run properly. Only the necessary files are installed. Zero-OS can read the metadata of a container and only download and execute the necessary binaries and applications to run the workload, when it is necessary.
 
-Sounds great? It really is great, and very effective!
-
-One amazing thing about the FList technology is that it is possible to convert any Docker image into an FList, thanks to the [ThreeFold Docker Hub Converter tool](https://hub.grid.tf/docker-convert). If this sounds complicated, fear not. It is very easy and we will show you how to proceed in this case study.
+One amazing thing about the FList technology is that it is possible to convert any Docker image into an FList, thanks to the [ThreeFold Docker Hub Converter tool](https://hub.grid.tf/docker-convert). It is very easy to do and we will show you how to proceed in this case study.
 
 ***
 
@@ -48,7 +48,7 @@ One amazing thing about the FList technology is that it is possible to convert a
 
 The goal of this case study is to give you enough information and tools so that you can yourself build your own FList projects and deploy on the ThreeFold Grid.
 
-This case study is not meant to show you all the detailed steps on creating an FList from scratch. We will instead start with some files templates available on the ThreeFold repository [tf-images](https://github.com/threefoldtech/tf-images). This is one of the many advantages of working with open-source projects: we can easily get inspiration from the already available codes of the many ThreeFold repositories and work our way up from there.
+We will explore the different files needed to create the FList and give some explanations of the process as a whole. Instead of starting from scratch, we will analyze the Nextcloud FList directory in the ThreeFold Tech [tf-images repository](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud). As the project is already done, it will be easier to get an overview of the process. Once you know the different components needed to create an FList, it will be easier for your to create your own.
 
 ***
 
@@ -65,11 +65,11 @@ To give you a bird's view of the whole project, here are the main steps:
 
 ## Docker Image Creation
 
-As we've said previously, we will not explore all the details of creating an FList from scratch. This would be done in a subsequent guide. For now, we want to take existing codes and work our way from there. This is not only quicker, but it is a good way to get to know the ThreeFold's ecosystem and repositories.
+As we've said previously, we will explore the different componenets of the existing Nextcloud FList directory. We thus want to check the existing codes and try to understand as much as possible how the different components work together. This is also a very good introduction to the ThreeFold ecosystem.
 
 We will be using the code available on the [ThreeFold Tech's Github page](https://github.com/threefoldtech). In our case, we want to explore the repository [tf-images](https://github.com/threefoldtech/tf-images).
 
-If you go on the subsection [tfgrid3](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3), you can see many different FLists available. In our case, we want to deploy the Nextcloud All-in-One Flist. 
+If you go on the subsection [tfgrid3](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3), you can see many different FLists available. In our case, we want to deploy the [Nextcloud All-in-One Flist](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud). 
 
 The Nextcloud FList directory tree looks like this:
 
@@ -77,13 +77,21 @@ The Nextcloud FList directory tree looks like this:
 .
 ├── Dockerfile
 ├── README.md
-├── start.sh
+├── scripts
+│   ├── nextcloud.sh
+│   ├── sshd_init.sh
+│   └── ufw_init.sh
 └── zinit
+    ├── containerd.yaml
+    ├── dockerd.yaml
+    ├── nextcloud.yaml
+    ├── sshd.yaml
     ├── ssh-init.yaml
-    └── sshd.yaml
+    ├── ufw-init.yaml
+    └── ufw.yaml
 ```
 
-We will now explore each of those files to get a good look at the whole repository and try to understand how it all works together.
+We can see that the directory is composed of four main sections. We will now explore each of those sections to get a good look at the whole repository and try to understand how it all works together.
 
 ### Dockerfile
 
