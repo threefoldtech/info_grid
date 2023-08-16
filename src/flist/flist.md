@@ -7,3 +7,4 @@
 - [Convert Docker Image into FList](./flist_hub/convert_docker_image.md)
 - [Supported FLists](../manual3_iac/grid3_supported_flists.md)
 - [Case Study: Debian 12](./flist_debian_case_study.md)
+- [Case Study: Nextcloud AIO](./flist_nextcloud_case_study.md)

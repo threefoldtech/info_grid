@@ -130,6 +130,7 @@
     - [Convert Docker Image into FList](flist/flist_hub/convert_docker_image.md)
     - [Supported FLists](manual3_iac/grid3_supported_flists.md)
     - [Case Study: Debian 12](flist/flist_debian_case_study.md)
+    - [Case Study: Nextcloud AIO](flist/flist_nextcloud_case_study.md)
   - [Internals](internals/internals.md)
     - [Reliable Message Bus (RMB)](internals/rmb/rmb_toc.md)
       - [Introduction to RMB](internals/rmb/rmb_intro.md)
