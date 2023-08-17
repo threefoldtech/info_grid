@@ -101,7 +101,7 @@ output "fqdn" {
 }
 ```
 
-# using gatway name on private networks (wireguard)
+## using gatway name on private networks (wireguard)
 
 It is possible to create a vm with private ip (wireguard) and use it as a backend for a gateway contract. this is done as the following
 
