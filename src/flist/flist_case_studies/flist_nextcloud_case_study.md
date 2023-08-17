@@ -70,6 +70,12 @@ To give you a bird's view of the whole project, here are the main steps:
 * Convert the Docker image to a Zero-OS FList
 * Deploy a micro VM with the FList on the ThreeFold Playground
 
+One important thing to have in mind is that when we create an FList, what we are doing is basically automating the required steps to deploy a given workload on the TFGrid. Usually, these steps would be done linearly by an individual deploying on a micro or a full VM. 
+
+Once we've successfully created an FList, we thus have a very quick way to deploy a specific workload while always obtaining the same result. This is why it is highly recommended to test a given deployment on a full or micro VM before building an FList. 
+
+For example, in the case of building a Nextcloud All-in-One FList, the prerequisite would be to successfully deploy a Nextcloud AIO instance on a full VM by executing each step sequentially. This specific example is documented in the Terraform section [Nextcloud All-in-One Guide](../../terraform/advanced/terraform_nextcloud_aio.md) of the System Administrators book.
+
 ***
 
 # Docker Image Creation
@@ -82,7 +88,7 @@ If you go in the subsection [tfgrid3](https://github.com/threefoldtech/tf-images
 ***
 ## Nextcloud FList Directory Tree
 
-The Nextcloud FList directory tree looks like this:
+The Nextcloud FList directory tree is the following:
 
 ```
 .
@@ -105,7 +111,9 @@ The Nextcloud FList directory tree looks like this:
 We can see that the directory is composed of four main sections. We will now explore each of those sections to get a good look at the whole repository and try to understand how it all works together.
 
 To get a big picture of this directory, we could say that the **README.md** file provides the necessary documentation for the users to understand the Nextcloud FList, how it is built and how it works, the **Dockerfile** provides the necessary requirements for the Docker image to be built, installing things such as openssh and the ufw firewall for secure remote connection, while the two folders, **scripts** and **zinit**, could be said to work hand-in-hand. While commands can be executed in the **.yaml** files contained within the zinit folder, these files also serve as a way to organize the scripts. As we will see later on, the **.yaml** files can provide ordered steps for the .sh files to be executed. This is to make sure that the Nextcloud deployment gets built systematically in the proper order.
+
 ***
+
 ## Dockerfile
 
 We recall that to make a Docker image, you need to create a Dockerfile. As per [Docker's documentation](https://docs.docker.com/engine/reference/builder/), a Dockerfile is "a Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image". 
@@ -153,9 +161,9 @@ Finally, we set an entrypoint in our Dockerfile. As per the [Docker documentatio
 
 The **README.md** file has the main goal of explaining clearly to the user the functioning of the Nextcloud directory and its associated FList.
 
-In this file, we can explain what our code is doing and offer steps to properly configure the whole deployment. For the users that will want to deploy the FList on the ThreeFold Playground, they would need the FLIst URL and the basic steps to deploy a Micro VM on the TFGrid. We will thus add this information in the README.md file. 
+In this file, we can explain what our code is doing and offer steps to properly configure the whole deployment. For users that want to deploy the FList on the ThreeFold Playground, they would only need the FLIst URL and the basic steps to deploy a Micro VM on the TFGrid. We thus add this information in the README.md file. 
 
-We also give the necessary steps to create the Docker image and convert it into an FList starting directly with the Nextcloud directory. this would be useful for users that want to create their own FList, instead of using the [official ThreeFold Nextcloud FList](https://hub.grid.tf/tf-official-apps/threefoldtech-nextcloudaio-latest.flist.md).
+We also give the necessary steps to create the Docker image and convert it into an FList starting directly with the Nextcloud directory. This can be useful for users that want to create their own FList, instead of using the [official ThreeFold Nextcloud FList](https://hub.grid.tf/tf-official-apps/threefoldtech-nextcloudaio-latest.flist.md).
 
 To read the complete README.md file, go to [this link](https://github.com/threefoldtech/tf-images/blob/development/tfgrid3/nextcloud/README.md).
 ***
