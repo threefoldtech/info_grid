@@ -15,6 +15,10 @@
     - [ufw\_init.sh](#ufw_initsh)
     - [nextcloud.sh](#nextcloudsh)
   - [zinit Folder](#zinit-folder)
+    - [ssh-init.yaml and sshd.yaml](#ssh-inityaml-and-sshdyaml)
+    - [ufw-init.yaml and ufw.yaml](#ufw-inityaml-and-ufwyaml)
+    - [containerd.yaml and dockerd.yaml](#containerdyaml-and-dockerdyaml)
+    - [nextcloud.yaml](#nextcloudyaml)
   - [Putting it All Together](#putting-it-all-together)
 - [Docker Publishing Steps](#docker-publishing-steps)
   - [Create Account and Access Token](#create-account-and-access-token)
@@ -267,21 +271,26 @@ Next, we want to take a look at the zinit folder.
 
 But first, what is zinit? In a nutshell, zinit is a process manager (pid 1) that knows how to launch, monitor and sort dependencies. It thus executes targets in the proper order. For more information on zinit, check the [zinit repository](https://github.com/threefoldtech/zinit). 
 
-When we start the Docker container, the files in the folder zinit will be executed. 
+When we start the Docker container, the files in the folder zinit will be executed. Those zinit files will run commands that will either execute direct commands and also execute some of the scripts we've seen in the previous sections.
 
-If we take a look at the file `ssh-init.yaml`, we find the following:
+### ssh-init.yaml and sshd.yaml
+
+We start by taking a look at the **ssh-init.yaml** and **sshd.yaml** files. 
+
+File: `ssh-init.yaml`
 
 ```.yaml
-exec: bash /start.sh
-log: stdout
+exec: /scripts/sshd_init.sh
 oneshot: true
-````
+```
 
-We can see that the first line calls the [bash](https://www.gnu.org/software/bash/) Unix shell and that it will run the file `start.sh` we've seen earlier. 
+In this zinit service file, we define a service named `ssh-init.yaml`, where we tell zinit to execute the following command: `exec: /scripts/sshd_init.sh`.  This command thus runs the script `sshd_init.sh` we covered in a previous section. 
 
-In this zinit service file, we define a service named `ssh-init.yaml`, where we tell zinit which commands to execute (here `bash /start.sh`), where to log (here in `stdout`) and where `oneshot` is set to `true` (meaning that it should only be executed once).
+We also note that `oneshot` is set to `true` and this means that it should only be executed once. This command is often used with zinit files and it comes up frequently in the Nextcloud FList directory.
 
-If we take a look at the file `sshd.yaml`, we find the following:
+Now, we take a look at the file `sshd.yaml`:
+
+File: `sshd.yaml`
 
 ```.yaml
 exec: bash -c "/usr/sbin/sshd -D"
@@ -289,11 +298,75 @@ after:
   - ssh-init
 ```
 
-Here another service `sshd.yaml` runs after the `ssh-init.yaml` process.
+We can see that this file executes a line from the Bash shell. Also, one thing to take note with such .yaml files is that we can easily order them by setting lines such as the following: `after: - ssh-init`. In this case, it means that the file sshd.yaml will only be executed after the file ssh-init.yaml is executed.
+
+### ufw-init.yaml and ufw.yaml
+
+File: `ufw-init.yaml`
+
+```.yaml
+exec: /scripts/ufw_init.sh
+oneshot: true
+```
+
+The file `ufw-init.yaml` is very similar to the file `ssh-unit.yaml`. In this case, this file is ran only once and it runs the script `ufw_unit.sh`. 
+
+File: `ufw.yaml`
+
+```.yaml
+exec: ufw --force enable
+oneshot: true
+after:
+  - ufw-init
+```
+
+We can see that this file will only run once and only after the file `ufw-init.yaml` has been run. This is important since the file `ufw-unit.yaml` executes the script `unit_init.sh`, as we recall this script allows different ports. Once those ports are define, we can then run the command `ufw --force enable`. This will then start the ufw firewall properly.
+
+### containerd.yaml and dockerd.yaml
+
+We now take a look at the files **containerd.yaml** and **dockerd.yaml**.
+
+File: `containerd.yaml`
+
+```.yaml
+exec: /usr/bin/containerd
+after:
+  - ufw
+```
+
+We can see here that this file will only be execute after the file `ufw.yaml`, thus only after the firewall is properly set. This file will run the [containerd daemon](https://containerd.io/) which manages the complete container lifecycle of the host system.
+
+File: `dockerd.yaml`
+
+```.yaml
+exec: /usr/bin/dockerd
+after:
+  - containerd
+```
+
+The file `dockerd.yaml` runs only after the file `containerd`. This file will run the [dockerd daemon](https://docs.docker.com/engine/reference/commandline/dockerd/) which is the persistent process that manages containers. It is thus logic that we run this file only after containerd is properly set.
+
+### nextcloud.yaml
+
+File: `nextcloud.yaml`
+
+```.yaml
+exec: /scripts/nextcloud.sh
+after:
+  - dockerd
+```
+
+Finally, the file `nextcloud.yaml` runs after all the other .yaml files have been run, since it starts after dockerd, which in turn starts after containerd, and so on.
+
+This file will execute the `nextcloud.sh` script we saw earlier. We recall that this script starts the Nextcloud All-in-One image. At this point, the deployment is complete.
+
 ***
+
 ## Putting it All Together
 
-We've now went through all the files available in the Nextcloud directory in the tf-images repository of ThreeFold Tech. To build your own image, you would simply need to clone this directory to your local computer and to follow the steps presented at the next section, [Docker Publishing Steps](#docker-publishing-steps). As explained before, those steps are also detailed in the [README.md file](https://github.com/threefoldtech/tf-images/blob/development/tfgrid3/nextcloud/README.md) of the Nextcloud FList directory.
+We've now went through all the files available in the Nextcloud FList directory. You should now have a good understanding of the interplay between the zinit (.yaml) and the scripts (.sh) files as well as the basic steps to build a Dockerfile and write clear documentation.
+
+To build your own Nextcloud docker image, you would simply need to clone this directory to your local computer and to follow the steps presented in the next section [Docker Publishing Steps](#docker-publishing-steps). As explained before, those steps are also detailed in the [README.md file](https://github.com/threefoldtech/tf-images/blob/development/tfgrid3/nextcloud/README.md) of the Nextcloud FList directory.
 
 To have a look at the complete directory, you can always refer to the [Nextcloud FList directory](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud) on the ThreeFold tf-images repository.
 
