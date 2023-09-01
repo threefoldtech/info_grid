@@ -51,7 +51,7 @@ The TFGrid disposes of different components that can provide reliability, redund
 
 Storage units are related to the data stored in SSD and HDD disks. The Quantum Safe Filesystem (QSFS) technology developed by ThreeFold ensures redundancy and resilience in storage units. Another way to achieve redundancy in the storage category would be to deploy a solution with real-time synced databases of two or more 3nodes connected via a wireguard VPN. 
 
-If one disk of the QSFS array goes offline, the rest of the system can still function at 100%. Whereas if someone only stores information on one 3Node and this 3Node has a drastic disk failure, the user will lose the data. 
+If one disk of the QSFS array goes offline, the rest of the system can still function at 100%. To the contrary, if a user stores information on one single 3Node and this 3Node has a drastic disk failure, the user will lose the data.
 
 ### 0-DB-FS
 
