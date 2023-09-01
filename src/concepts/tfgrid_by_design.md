@@ -79,7 +79,7 @@ The [TFGrid-SDK-Go](./grid3_components.md#tf-grid-sdk-go) and [TFGrid-SDK-TS](./
 
 ## Network Units
 
-Network units are related to the data transmistted over Internet. While TFGrid does not provide direct ISP services, elements such as the gateways are drastically related to network. Gateways can be used to balance network workloads. A deployment could consist of two different gateways with a master and a slave gateway. If the master gateway would fail, the slave gateway would take the lead and become master. Deploying architecture solutions with gateways in mind can help the system administrator to build reliable solutions.
+Network units are related to the data transmistted over Internet. While TFGrid does not provide direct ISP services, elements such as the gateways are drastically related to network. [Gateways](../terraform/resources/terraform_vm_gateway.md) can be used to balance network workloads. A deployment could consist of two different gateways with a master and a slave gateway. If the master gateway would fail, the slave gateway would take the lead and become master. Deploying architecture solutions with gateways in mind can help the system administrator to build reliable solutions.
 
 It is also possible to deploy Wireguard VPN between different 3Nodes and have them sync their database. This provide resilience and redundancy by design. [Read more on VPN and synced databases here](../terraform/advanced/terraform_mariadb_synced_databases.md).
 
