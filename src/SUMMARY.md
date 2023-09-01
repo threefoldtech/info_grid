@@ -193,6 +193,7 @@
     - [Buying and Storing TFTs](concepts/buying_storing_tft.md)
     - [What's New on TFGrid v3.x](concepts/grid3_whatsnew.md)
     - [TFChain](concepts/tfchain.md)
+    - [TFGrid by Design](concepts/tfgrid_by_design.md)
   - [Cloud](cloud/cloud.md)
     - [Pricing](cloud/cloudunits_pricing.md)
   - [Planetary Network](getstarted/planetarynetwork.md)
