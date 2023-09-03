@@ -53,20 +53,20 @@ You can check if the DNS records are propagated globally with DNS propagation ch
 
 ## Quick Nextcloud Access
 
-Once the DNS record is propagated, you can click on the button **Visit** to access your Nextcloud instance.
+Once the DNS record is propagated, locate the table **Nextcloud Instances** on the Playground Nextcloud weblet page, and under **Actions**, click on the button **Open Nextcloud** to access your Nextcloud instance.
 
 For more information, read the next section.
 
 ## Access Parameters
 
-You can access the Nextcloud interface either (1) by using the domain pointing to the VM (as the **Visit** button does) with port 8443 or (2) by using the IPv4 address of the VM with port 8080.
+You can access the Nextcloud interface either (1) by using the domain pointing to the VM (as the **Open Nextcloud** button does) with port 8443 or (2) by using the IPv4 address of the VM with port 8080.
 
 * (1) Reach the Nextcloud interface using the domain and port 8443:
   * Template
     * ```
       https://<domain_name>:8443
       ```
-    * This is equivalent to using the **Visit** button
+    * This is equivalent to using the **Open Nextcloud** button
   * Example:
     * ```
       https://nextcloudwebsite.com:8443
