@@ -14,7 +14,7 @@
   - [Automatic Backups and Updates](#automatic-backups-and-updates)
 - [Troubleshooting](#troubleshooting)
   - [Retrieve the Nextcloud AIO Seed Phrase](#retrieve-the-nextcloud-aio-seed-phrase)
-  - [Access the Nextcloud interface page](#access-the-nextcloud-interface-page)
+  - [Access the Nextcloud Interface Page](#access-the-nextcloud-interface-page)
 - [Questions and Feedback](#questions-and-feedback)
 
 ***
@@ -161,7 +161,7 @@ You can retrieve the Nextcloud AIO seed phrase (8 words) by writing the followin
 cat /var/lib/docker/volumes/nextcloud_aio_mastercontainer/_data/data/configuration.json | grep password
 ```
 
-### Access the Nextcloud interface page
+### Access the Nextcloud Interface Page
 
 To access the Nextcloud interface page, follow those stepse
 
