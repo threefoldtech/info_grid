@@ -166,6 +166,8 @@
       - [Capacity](internals/zos/internals/capacity.md)
       - [API](internals/zos/manual/api.md)
       - [FAQ](internals/zos/faq/readme.md)
+  - [Playground](developers/playground/playground.md)
+    - [Deploy the Playground](developers/playground/deploy_playground.md)
 
 - [System Administrators](system_administrators/system_administrators.md)
   - [Getting Started](getstarted/tfgrid3_getstarted.md)
