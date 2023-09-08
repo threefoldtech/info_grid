@@ -23,6 +23,9 @@
   - [Revert a push commited with git](#revert-a-push-commited-with-git)
   - [Make a backup of a branch](#make-a-backup-of-a-branch)
   - [Revert to a backup branch](#revert-to-a-backup-branch)
+  - [Start over local branch and pull remote branch](#start-over-local-branch-and-pull-remote-branch)
+  - [Overwrite local files and pull remote branch](#overwrite-local-files-and-pull-remote-branch)
+  - [Stash command and parameters](#stash-command-and-parameters)
 - [Code Editors](#code-editors)
   - [VS-Code](#vs-code)
   - [VS-Codium](#vs-codium)
@@ -337,6 +340,76 @@ git clone -b <branch_name> --single-branch /<path_to_repo>/<repo_name>.git
 * Do a reset of your current branch based on the backup branch
   * ```
     git reset --hard <backup_branch>
+    ```
+
+***
+
+### Start over local branch and pull remote branch 
+
+To start over your local branch and pull the remote branch to your working environment, thus ignoring local changes in the branch, you can do the following:
+
+```
+git fetch
+git reset --hard
+git pull
+```
+
+Note that this will not work for untracked and new files. See below for untracked and new files.
+
+***
+
+### Overwrite local files and pull remote branch
+
+This method can be used to overwrite local files. This will work even if you have untracked and new files.
+
+* Save local changes on a stash
+  * ```
+    git stash --include-untracked
+    ```
+* Discard local changes
+  * ```
+    git reset --hard
+    ```
+* Discard untracked and new files
+  * ```
+    git clean -fd
+    ```
+* Pull the remote branch
+  * ```
+    git pull
+    ```
+
+Then, to delete the stash, you can use **git stash drop**.
+
+***
+
+### Stash command and parameters
+
+The stash command is used to record the current state of the working directory.
+
+* Stash a branch (equivalent to **git stash push**)
+  * ```
+    git stash
+    ```
+* List the changes in the stash
+  * ```
+    git stash list
+    ```
+* Inspect the changes in the stash
+  * ```
+    git stash show
+    ```
+* Remove a single stashed state from the stash list and apply it on top of the current working tree state
+  * ```
+    git stash pop
+    ```
+* Apply the stash on top of the current working tree state without removing the state from the stash list
+  * ```
+    git stash apply
+    ```
+* Drop a stash
+  * ```
+    git stash drop
     ```
 
 ***
