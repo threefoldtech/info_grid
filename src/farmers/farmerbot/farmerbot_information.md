@@ -138,6 +138,7 @@ When setting up the Farmerbot, you will need to enter either the seed phrase or 
 ### Farmerbot directory tree
 
 As a general template, the directory tree of the Farmerbot will look like this:
+
 ```
 └── farmerbot_docker
     ├── .env
