@@ -20,6 +20,7 @@
   - [Copy files from a container to the local computer](#copy-files-from-a-container-to-the-local-computer)
   - [Delete all the containers, images and volumes](#delete-all-the-containers-images-and-volumes)
   - [Kill all the Docker processes](#kill-all-the-docker-processes)
+  - [Output full logs for all containers](#output-full-logs-for-all-containers)
 - [Resources Usage](#resources-usage)
   - [Examine containers with size](#examine-containers-with-size)
   - [Examine disks usage](#examine-disks-usage)
@@ -326,6 +327,16 @@ docker cp <container_id>:<file_path> <file_path_destination>
   * ```
     killall Docker && open /Applications/Docker.app
     ```
+
+***
+
+### Output full logs for all containers
+
+The following command output the full logs for all containers in the file **containers.log**:
+
+```
+docker compose logs > containers.log
+```
 
 ***
 
