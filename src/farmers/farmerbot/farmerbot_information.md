@@ -14,6 +14,7 @@
   - [Using the ThreeFold Node Status Bot](#using-the-threefold-node-status-bot)
   - [CPU overprovisioning](#cpu-overprovisioning)
   - [Seed phrase and HEX secret](#seed-phrase-and-hex-secret)
+  - [Farmerbot directory tree](#farmerbot-directory-tree)
   - [Run multiple Farmerbots on the same computer or VM](#run-multiple-farmerbots-on-the-same-computer-or-vm)
   - [Dedicated Nodes and the Farmerbot](#dedicated-nodes-and-the-farmerbot)
   - [Run the Farmerbot on Raspberry Pi](#run-the-farmerbot-on-raspberry-pi)
@@ -134,6 +135,22 @@ When setting up the Farmerbot, you will need to enter either the seed phrase or 
 
 ***
 
+### Farmerbot directory tree
+
+As a general template, the directory tree of the Farmerbot will look like this:
+```
+└── farmerbot_docker
+    ├── .env
+    ├── config
+    │   ├── config.md
+    │   └── farmerbot.log
+    └── docker-compose.yaml
+```
+
+Note that the directory tree and its associated files can be created automatically when using the [file creator](./farmerbot_quick.md#create-the-configuration-files).
+
+***
+
 ### Run multiple Farmerbots on the same computer or VM
 
 You can run multiple Farmerbot on the same computer or VM, where each Farmerbot can take care of one farm at time. For example, with two Farmerbots, you could manage two different farms, and so on. In this case, you will need to set different farms in different LANs and set one Farmerbot per farm.
@@ -143,11 +160,13 @@ In this case, you need to make sure that each Farmerbot is running in its own di
 ```
 .
 ├── farmerbot_docker_1
+    ├── .env
 │   ├── config
 │   │   ├── config.md
 │   │   └── farmerbot.log
 │   └── docker-compose.yaml
 └── farmerbot_docker_2
+    ├── .env
     ├── config
     │   ├── config.md
     │   └── farmerbot.log
