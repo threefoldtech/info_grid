@@ -8,7 +8,8 @@
   - [Set default terminal](#set-default-terminal)
   - [See the current path](#see-the-current-path)
   - [List hidden files](#list-hidden-files)
-  - [Write and exit with Vim](#write-and-exit-with-vim)
+  - [Display the content of a directory](#display-the-content-of-a-directory)
+  - [Vim modes and basic commands](#vim-modes-and-basic-commands)
   - [Check the listening ports using netstat](#check-the-listening-ports-using-netstat)
   - [See the disk usage of different folders](#see-the-disk-usage-of-different-folders)
   - [Verify the application version](#verify-the-application-version)
@@ -80,16 +81,54 @@ ls -ld .?*
 
 ***
 
-### Write and exit with Vim
+### Display the content of a directory
 
-Use the command:
+You can use **tree** to display the files and organization of a directory:
 
-```
-:wq
-```
+* General command
+  * ```
+    tree
+    ```
+* View hidden files
+  * ```
+    tree -a
+    ```
 
 ***
 
+### Vim modes and basic commands
+
+[Vim](https://www.vim.org/) is a free and open-source, screen-based text editor program.
+
+With Vim, you can use two modes.
+
+* Insert mode - normal text editor
+  * Press **i**
+* Command mode - commands to the editor
+  * Press **ESC**
+
+Here are some basic commands:
+
+* Delete characters
+  * **x**
+* Undo last command
+  * **u**
+* Undo the whole line
+  * **U**
+* Go to the end of line
+  * **A**
+* Save and exit
+  * **:wq**
+* Discard all changes
+  * **:q!**
+* Move cursor to the start of the line
+  * **0**
+* Delete the current word
+  * **dw**
+* Delete the current line
+  * **dd**
+
+***
 
 ### Check the listening ports using netstat
 
