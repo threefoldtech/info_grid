@@ -154,7 +154,7 @@ In this case, you need to make sure that each Farmerbot is running in its own di
     └── docker-compose.yaml
 ```
 
-To achieve this, you can simply follow the [Farmerbot Quick Guide](https://manual.grid.tf/farmers/farmerbot/farmerbot_quick.html) and create a distinct directory for each Farmerbot (`mkdir farmerbot_docker_1`, etc.) and complete the guide for each Farmerbot and farm combination.
+To achieve this, you can simply follow the [Farmerbot Quick Guide](./farmerbot_quick.md) and create a distinct directory for each Farmerbot (`mkdir farmerbot_docker_1`, etc.) and complete the guide for each Farmerbot and farm combination.
 
 ***
 
@@ -339,7 +339,7 @@ To fix this error, make sure that you are only running one instance of the Farme
 
 This error means that you do not have sufficient funds (TFT) in your wallet for the Farmerbot's fees.
 
-You thus simply need to add some TFTs in the wallet that is connected to the farm on which you are running the Farmerbot. For example, 1 TFT can suffice for many transactions. For more information, read [this documentation](https://manual.grid.tf/farmers/farmerbot/farmerbot_quick.html#farmerbot-costs-on-the-tfgrid).
+You thus simply need to add some TFTs in the wallet that is connected to the farm on which you are running the Farmerbot. For example, 1 TFT can suffice for many transactions. For more information, read [this documentation](./farmerbot_quick.html#farmerbot-costs-on-the-tfgrid).
 
 ***
 
