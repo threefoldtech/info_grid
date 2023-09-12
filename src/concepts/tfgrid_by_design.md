@@ -1,4 +1,4 @@
-<h1>TFGrid by Design: Deployment Architectures and Categories of Solutions</h1>
+<h1>TFGrid by Design: Deployment Architectures and Solution Categories</h1>
 
 <h2>Table of Contents</h2>
 
@@ -16,16 +16,18 @@
   - [Network Units](#network-units)
     - [Reliable Message Bus Relay (RMB-RS)](#reliable-message-bus-relay-rmb-rs)
     - [TCP-Router](#tcp-router)
-- [Categories of Solutions](#categories-of-solutions)
+- [Solution Categories](#solution-categories)
   - [DIY Workloads](#diy-workloads)
   - [Independent Commercial Offerings](#independent-commercial-offerings)
   - [ThreeFold Commercial Offerings](#threefold-commercial-offerings)
+- [Best Practices](#best-practices)
+- [Questions and Feedback](#questions-and-feedback)
 
 ***
 
 # Introduction
 
-Before starting a project on the TFGrid, it can be well worth it to consider the overall design of the grid itself, and to ponder the potential solution designs you can come up with to ensure reliable and resilient deployments. This text will explore the different components of the TFGrid as well as its inherent design in order to provide sufficient information for system administrators to deploy effective and reliable solutions. We will also cover the three main categories of solutions that can be built on top of the TFGrid.
+Before starting a project on the TFGrid, it can be well worth it to consider the overall design of the grid itself, and to ponder the potential solution designs you can come up with to ensure reliable and resilient deployments. This text will explore the different components of the TFGrid as well as its inherent design in order to provide sufficient information for system administrators to deploy effective and reliable solutions. We will also cover the three main solution categories that can be built on top of the TFGrid.
 
 ## TFGrid by Design
 
@@ -93,9 +95,9 @@ Let's explore some network components of the ThreeFold Grid.
 
 [TCP-Router](./grid3_components.md#tcp-router) is a component of the ThreeFold technology stack that acts as a TCP (Transmission Control Protocol) router and load balancer. It serves as a network gateway for incoming TCP connections, routing them to the appropriate destinations based on predefined rules and configurations. The TCP-Router component is responsible for distributing incoming network traffic across multiple backend services or nodes, ensuring efficient load balancing and high availability.
 
-# Categories of Solutions
+# Solution Categories
 
-There are three main categories of solutions on the TFGrid: DIY workloads as well as independent and ThreeFold commercial offerings. Let's take a look at them and discuss their basic properties.
+There are three main solution categories on the TFGrid: DIY workloads as well as independent and ThreeFold commercial offerings. Let's take a look at them and discuss their basic properties.
 
 ## DIY Workloads
 
@@ -114,3 +116,26 @@ In this case, the commercial offering is the centralized entity and if the compa
 ThreeFold is building commercial offerings on top of the TFGrid. Those commercial offerings are for-profit organizations. Each of those organizations would function as a centralized entity.
 
 ThreeFold Ventures will be the branch exploring this aspect of the TF Ecosystem. A major project is ThreeFold Cloud. This is a centralized entity that will generate its own Terms and Conditions, support, marketing and website strategy and be liable to the users to the extent developed in the T&C.
+
+# Best Practices
+
+This text provided an introduction to deployment architectures and solution categories on the TFGrid. In the future, we will expand on best practices on the TFGrid. Stay tuned for more on this topic.
+
+Some of the best practices to be covered are the following:
+
+* Use Kubernetes to deploy redundant workloads
+* Use multi-gateways deployments for redundancy
+  * Deploy manually two VMs
+  * Use two webgateways to access the VMs
+  * Choose a data replication strategy to have content on both places (e.g. syncing databases)
+* Use continous deployment and integration workloads
+  * Deploy on 2 different VMs
+  * Ensure continuous deployment and integration when changes occur
+* Use DNS with redundancy
+* Use QSFS for storage resilience and redundancy
+
+These are only a few of the many possibilities that the TFGrid offers. We invite everyone to explore the TFGrid and share their experience and learning.
+
+# Questions and Feedback
+
+If you have any questions or feedback, we invite you to discuss with the ThreeFold community on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Grid Tester Community](https://t.me/threefoldtesting) chat on Telegram.
