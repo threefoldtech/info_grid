@@ -20,8 +20,9 @@
   - [Set the path of a package](#set-the-path-of-a-package)
   - [See the current path](#see-the-current-path-1)
   - [Find the current shell](#find-the-current-shell)
-  - [Transfer a file between local and remote machines (IPv4 and IPv6)](#transfer-a-file-between-local-and-remote-machines-ipv4-and-ipv6)
-  - [See the network connections and ports](#see-the-network-connections-and-ports)
+  - [SSH into Remote Server](#ssh-into-remote-server)
+  - [Transfer files between local and remote computers (IPv4 and IPv6) with scp](#transfer-files-between-local-and-remote-computers-ipv4-and-ipv6-with-scp)
+  - [Transfer files between computer (local or remote ) with rsync](#transfer-files-between-computer-local-or-remote--with-rsync)
   - [Encrypt files with Gocryptfs](#encrypt-files-with-gocryptfs)
   - [Encrypt files with Veracrypt](#encrypt-files-with-veracrypt)
   - [Install Brew](#install-brew)
@@ -33,6 +34,16 @@
   - [See the current date and time on Linux](#see-the-current-date-and-time-on-linux)
   - [Special variables in Bash Shell](#special-variables-in-bash-shell)
   - [Gather DNS information of a website](#gather-dns-information-of-a-website)
+- [Network-related Commands](#network-related-commands)
+  - [See the network connections and ports](#see-the-network-connections-and-ports)
+  - [See identity and info of IP address](#see-identity-and-info-of-ip-address)
+  - [ip basic commands](#ip-basic-commands)
+  - [Display socket statistics](#display-socket-statistics)
+  - [Query or control network driver and hardware settings](#query-or-control-network-driver-and-hardware-settings)
+  - [See if ethernet port is active](#see-if-ethernet-port-is-active)
+  - [Add IP address to hardware port (ethernet)](#add-ip-address-to-hardware-port-ethernet)
+  - [Private IP address range](#private-ip-address-range)
+  - [Set IP Address manually](#set-ip-address-manually)
 - [Basic Scripts](#basic-scripts)
   - [Run a script with arguments](#run-a-script-with-arguments)
   - [Print all arguments](#print-all-arguments)
@@ -250,8 +261,44 @@ pwd
 
 ***
 
+### SSH into Remote Server
 
-### Transfer a file between local and remote machines (IPv4 and IPv6)
+* Create SSH key pair
+  * ```
+    ssh-keygen
+    ```
+* Install openssh-client on the local computer
+  * ```
+    sudo apt install openssh-client
+    ```
+* Install openssh-server on the remote computer
+  * ```
+    sudo apt install openssh-server
+    ```
+* Copy public key
+  * ```
+    cat ~/.ssh/id_rsa.pub
+    ```
+* Create the ssh directory on the remote computer
+  * ```
+    mkdir ~/.ssh
+    ```
+* Add public key in the file **authorized_keys** on the remote computer
+  * ```
+    nano ~/.ssh/authorized_keys
+    ```
+* Check openssh-server status
+  * ``` 
+    sudo service ssh status
+    ```
+* SSH into the remote machine
+  * ```
+    ssh <username>@<remote_server_IP_or_hostname>
+    ```
+
+***
+
+### Transfer files between local and remote computers (IPv4 and IPv6) with scp
 
 * From local to remote, write the following on the local terminal:
   * ```
@@ -268,9 +315,22 @@ For IPv6, simply add `-6` after scp and add `\[` before and `\]` after the IPv6 
 
 ***
 
-### See the network connections and ports
+### Transfer files between computer (local or remote ) with rsync
 
-ifconfig
+* From local to remote
+  * ```
+    rsync -avz /path/to/files remote_user@<remote_host_or_ip>:/path/to/files
+    ```
+* From remote to local
+  * ```
+    rsync -avz remote_user@<remote_host_or_ip>:/path/to/files /path/to/files
+    ```
+
+Here is short description of the parameters used:
+
+* **-a**: archive mode, preserving the attributes of the files and directories 
+* **-v**: verbose mode, displaying the progress of the transfer
+* **-z**: compress mode, compressing the data before transferring 
 
 ***
 
@@ -500,6 +560,266 @@ You can use [Dig](https://man.archlinux.org/man/dig.1) to gather DNS information
     ```
 
 You can also use online tools such as [DNS Checker](https://dnschecker.org/).
+
+***
+
+## Network-related Commands
+
+### See the network connections and ports
+
+ifconfig
+
+***
+
+### See identity and info of IP address
+
+* See abuses related to an IP address:
+  * ```
+    https://www.abuseipdb.com/check/<IP_Address>
+    ```
+* See general information of an IP address: 
+  * ```
+    https://www.whois.com/whois/<IP_Address>
+    ```
+
+***
+
+### ip basic commands
+
+* Manage and display the state of all network 
+  * ```
+    ip link
+    ```
+* Display IP Addresses and property information (abbreviation of address)
+  * ```
+    ip addr
+    ```
+* Display and alter the routing table
+  * ```
+    ip route
+    ```
+* Manage and display multicast IP addresses
+  * ```
+    ip maddr
+    ```
+* Show neighbour object
+  * ```
+    ip neigh
+    ```
+* Display a list of commands and arguments for
+each subcommand
+  * ```
+    ip help
+    ```
+* Add an address
+  * Template
+    * ```
+      ip addr add
+      ```
+  * Example: set IP address to device **enp0**
+    * ```
+      ip addr add 192.168.3.4/24 dev enp0
+      ```
+* Delete an address
+  * Template
+    * ```
+      ip addr del
+      ```
+  * Example: set IP address to device **enp0**
+    * ```
+      ip addr del 192.168.3.4/24 dev enp0
+      ```
+* Alter the status of an interface
+  * Template
+    * ```
+      ip link set
+      ```
+  * Example 1: Bring interface online (here device **em2**)
+    * ```
+      ip link set em2 up
+      ```
+  * Example 2: Bring interface offline (here device **em2**)
+    * ```
+      ip link set em2 down
+      ```
+* Add a multicast address
+  * Template
+    * ```
+      ip maddr add
+      ```
+  * Example : set IP address to device **em2**
+    * ```
+      ip maddr add 33:32:00:00:00:01 dev em2
+      ```
+* Delete a multicast address
+  * Template
+    * ```
+      ip maddr del
+      ```
+  * Example: set IP address to device **em2**
+    * ```
+      ip maddr del 33:32:00:00:00:01 dev em2
+      ```
+* Add a routing table entry
+  * Template
+    * ```
+      ip route add
+      ```
+  * Example 1: Add a default route (for all addresses) via a local gateway
+    * ```
+      ip route add default via 192.168.1.1 dev em1
+      ```
+  * Example 2: Add a route to 192.168.3.0/24 via the gateway at 192.168.3.2
+    * ```
+      ip route add 192.168.3.0/24 via 192.168.3.2
+      ```
+  * Example 3: Add a route to 192.168.1.0/24 that can be reached on
+device em1
+    * ```
+      ip route add 192.168.1.0/24 dev em1
+      ```
+* Delete a routing table entry
+  * Template
+    * ```
+      ip route delete
+      ```
+  * Example: Delete the route for 192.168.1.0/24 via the gateway at
+192.168.1.1
+    * ```
+      ip route delete 192.168.1.0/24 via 192.168.1.1
+      ```
+* Replace, or add, a route
+  * Template
+    * ```
+      ip route replace
+      ```
+  * Example: Replace the defined route for 192.168.1.0/24 to use
+device em1
+    * ```
+      ip route replace 192.168.1.0/24 dev em1
+      ```
+* Display the route an address will take
+  * Template
+    * ```
+      ip route get
+      ```
+  * Example: Display the route taken for IP 192.168.18.25
+    * ```
+      ip route replace 192.168.18.25/24 dev enp0
+      ```
+
+
+
+References: https://www.commandlinux.com/man-page/man8/ip.8.html
+
+***
+
+### Display socket statistics
+
+* Show all sockets
+  * ```
+    ss -a
+    ```
+* Show detailed socket information
+  * ```
+    ss -e
+    ```
+* Show timer information
+  * ```
+    ss -o
+    ```
+* Do not resolve address
+  * ```
+    ss -n
+    ```
+* Show process using the socket
+  * ```
+    ss -p
+    ```
+
+Note: You can combine parameters, e.g. **ss -aeo**.
+
+References: https://www.commandlinux.com/man-page/man8/ss.8.html
+
+***
+
+### Query or control network driver and hardware settings
+
+* Display ring buffer for a device (e.g. **eth0**)
+  * ```
+    ethtool -g eth0
+    ```
+* Display driver information for a device (e.g. **eth0**)
+  * ```
+    ethtool -i eth0
+    ```
+* Identify eth0 by sight, e.g. by causing LEDs to blink on the network port
+  * ```
+    ethtool -p eth0
+    ```
+* Display network and driver statistics for a device (e.g. **eth0**)
+  * ```
+    ethtool -S eth0
+    ```
+
+References: https://man.archlinux.org/man/ethtool.8.en
+
+***
+
+### See if ethernet port is active
+
+Replace <ethernet_device> with the proper device:
+
+```
+cat /sys/class/net/<ethernet_device>/carrier
+```
+
+***
+
+### Add IP address to hardware port (ethernet)
+
+* Find ethernet port ID on both computers
+  * ```
+    ip a
+    ```
+* Add IP address (DHCO or static)
+  * Computer 1
+    * ```
+      ip addr add <Private_IP_Address_1>/24 dev <ethernet_interface_1>
+      ```
+  * Computer 2
+    * ```
+      ip addr add <Private_IP_Address_2>/24 dev <ethernet_interface_2>
+      ```
+* Ping the address to confirm connection
+  * ```
+    ping -c 5 <Private_IP_Address>
+    ```
+
+To set and view the address for either DHCP or static, go to **Networks** then **Details**. 
+
+***
+
+### Private IP address range
+
+The private IP range is the following:
+
+* 10.0.0.0–10.255.255.255
+* 172.16.0.0–172.31.255.255
+* 192.168.0.0–192.168.255.255
+
+***
+
+### Set IP Address manually
+
+You can use the following template when you set an IP address manually:
+
+* Address
+  * <Private_IP_Address>
+* Netmask
+  * 255.255.255.0
+* Gateway
+  * optional
 
 ***
 
