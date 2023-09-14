@@ -267,11 +267,11 @@ pwd
   * ```
     ssh-keygen
     ```
-* Install openssh-client on the local computer
+* Install openssh-client on the local computer*
   * ```
     sudo apt install openssh-client
     ```
-* Install openssh-server on the remote computer
+* Install openssh-server on the remote computer*
   * ```
     sudo apt install openssh-server
     ```
@@ -295,6 +295,10 @@ pwd
   * ```
     ssh <username>@<remote_server_IP_or_hostname>
     ```
+
+\*Note: For MAC, you can install **openssh-server** and **openssh-client** with Brew: **brew install openssh-server** and **brew install openssh-client**.
+
+To enable remote login on a MAC, [read this section](#enable-remote-login-on-mac).
 
 ***
 
