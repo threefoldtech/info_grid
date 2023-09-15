@@ -22,7 +22,9 @@
   - [Find the current shell](#find-the-current-shell)
   - [SSH into Remote Server](#ssh-into-remote-server)
   - [Transfer files between local and remote computers (IPv4 and IPv6) with scp](#transfer-files-between-local-and-remote-computers-ipv4-and-ipv6-with-scp)
-  - [Transfer files between computer (local or remote ) with rsync](#transfer-files-between-computer-local-or-remote--with-rsync)
+  - [Transfer files between computers (local or remote ) with rsync](#transfer-files-between-computers-local-or-remote--with-rsync)
+  - [Adjust reorganization of files and folders before running rsync](#adjust-reorganization-of-files-and-folders-before-running-rsync)
+  - [Automate backup with rsync](#automate-backup-with-rsync)
   - [Encrypt files with Gocryptfs](#encrypt-files-with-gocryptfs)
   - [Encrypt files with Veracrypt](#encrypt-files-with-veracrypt)
   - [Install Brew](#install-brew)
@@ -319,15 +321,19 @@ For IPv6, simply add `-6` after scp and add `\[` before and `\]` after the IPv6 
 
 ***
 
-### Transfer files between computer (local or remote ) with rsync
+### Transfer files between computers (local or remote ) with rsync
+
+[rsync](https://rsync.samba.org/) is a utility for efficiently transferring and synchronizing files between a computer and a storage drive and across networked computers by comparing the modification times and sizes of files.
+
+We show here how to transfer files between two computers. Note that at least one of the two computers must be local.
 
 * From local to remote
   * ```
-    rsync -avz /path/to/files remote_user@<remote_host_or_ip>:/path/to/files
+    rsync -avze ssh --progress --delete /path/to/local/directory remote_user@<remote_host_or_ip>:/path/to/remote/directory/
     ```
 * From remote to local
   * ```
-    rsync -avz remote_user@<remote_host_or_ip>:/path/to/files /path/to/files
+    rsync -avze ssh --progress --delete remote_user@<remote_host_or_ip>:/path/to/remote/directory /path/to/local/directory/
     ```
 
 Here is short description of the parameters used:
@@ -335,6 +341,75 @@ Here is short description of the parameters used:
 * **-a**: archive mode, preserving the attributes of the files and directories 
 * **-v**: verbose mode, displaying the progress of the transfer
 * **-z**: compress mode, compressing the data before transferring 
+* **-e** specifies the remote shell (.e.g -**e ssh**)
+* **--progress** tells rsync to print information showing the progress of the transfer 
+* **--delete** tells rsync to delete files that aren't on the sending side
+
+***
+
+### Adjust reorganization of files and folders before running rsync
+
+[rsync-sidekick](https://github.com/m-manu/rsync-sidekick) propagates changes from source directory to destination directory. You can run rsync-sidekick before running rsync.
+
+
+* Install go
+  * ```
+    sudo apt install golang-go
+    ```
+* Verify that go is properly installed
+  * ```
+    go version
+    ```
+* Install rsync-sidekick
+  * ```
+    sudo go install github.com/m-manu/rsync-sidekick@latest
+    ```
+* Reorganize the files and folders with rsync-sidekick
+  * ```
+    rsync-sidekick /path/to/local/directory/ username@IP_Address:/path/to/remote/directory/
+    ```
+
+* Transfer and update files and folders with rsync
+  * ```
+    sudo rsync -avze ssh --progress --delete --log-file=/path/to/local/directory/rsync_storage.log /path/to/local/directory/ username@IP_Address:/path/to/remote/directory/
+    ```
+
+***
+
+### Automate backup with rsync
+
+We show how to automate file transfers between two computers using rsync and rsync-sidekick.
+
+* Create the script file
+  * ```
+    nano rsync_backup.sh
+    ```
+* Write the following script with the proper paths. Here the log is saved in the same directory.
+  * ```bash
+    # filename: rsync_backup.sh
+    #!/bin/bash
+
+    rsync-sidekick /path/to/local/directory/ username@IP_Address:/path/to/remote/directory/
+
+    sudo rsync -avze ssh --progress --delete --log-file=/path/to/local/directory/rsync_storage.log /path/to/local/directory/ username@IP_Address:/path/to/remote/directory/
+    ```
+* Give permission
+  * ```
+    sudo chmod +x /path/to/script/rsync_backup.sh
+    ```
+* Set a cron job to run the script periodically
+  * Copy your .sh file to **/root**:
+    ``` 
+    sudo cp path/to/script/rsync_backup.sh /root
+    ```
+* Open the cron file
+  * ```
+    sudo crontab -e
+    ```
+* Add the following to run the script everyday. For this example, we set the time at 18:00PM
+  * ```
+    0 18 * * * /root/rsync_backup.sh
+    ```
 
 ***
 
