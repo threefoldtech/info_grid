@@ -5,6 +5,11 @@
 
 - [Introduction](#introduction)
 - [Basic Commands](#basic-commands)
+  - [Update and upgrade packages](#update-and-upgrade-packages)
+  - [Install Go](#install-go)
+  - [Install Brew](#install-brew)
+  - [Brew basic commands](#brew-basic-commands)
+  - [Yarn basic commands](#yarn-basic-commands)
   - [Set default terminal](#set-default-terminal)
   - [See the current path](#see-the-current-path)
   - [List hidden files](#list-hidden-files)
@@ -27,9 +32,6 @@
   - [Automate backup with rsync](#automate-backup-with-rsync)
   - [Encrypt files with Gocryptfs](#encrypt-files-with-gocryptfs)
   - [Encrypt files with Veracrypt](#encrypt-files-with-veracrypt)
-  - [Install Brew](#install-brew)
-  - [Brew basic commands](#brew-basic-commands)
-  - [Yarn basic commands](#yarn-basic-commands)
   - [Replace a string by another string in a text file](#replace-a-string-by-another-string-in-a-text-file)
   - [Replace extensions of files in a folder](#replace-extensions-of-files-in-a-folder)
   - [Remove extension of files in a folder](#remove-extension-of-files-in-a-folder)
@@ -71,6 +73,118 @@ We present here a quick guide on different command-line interface (CLI) commands
 The main goal of this guide is to demonstrate that having some core understanding of CLI and scripts can drastically increase efficiency and speed when it comes to deploying and managing workloads on the TFGrid.
 
 ## Basic Commands
+
+### Update and upgrade packages
+
+The command **update** ensures that you have access to the latest versions of packages available.
+
+```
+sudo apt update
+```
+
+The command **upgrade** downloads and installs the updates for each outdated package and dependency on your system.
+
+```
+sudo apt upgrade
+```
+
+***
+
+### Install Go
+
+Here are the steps to install [Go](https://go.dev/).
+
+* Install go
+  * ```
+    sudo apt install golang-go
+    ```
+* Verify that go is properly installed
+  * ```
+    go version
+    ```
+
+***
+
+### Install Brew
+
+Follow those steps to install [Brew](https://brew.sh/)
+
+* Installation command from Brew:
+  * ```
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    ```
+* Add the path to the **.profile** directory. Replace <user_name> by your username.
+  * ```
+    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/<user_name>/.profile
+    ```
+* Evaluation the following:
+  * ```
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+    ```
+* Verify the installation
+  * ``` 
+    brew doctor
+    ```
+
+***
+
+### Brew basic commands
+
+* To update brew in general:
+  * ``` 
+    brew update
+    ```
+* To update a specific package:
+  * ``` 
+    brew update <package_name>
+    ```
+* To install a package:
+  * ``` 
+    brew install <package_name>
+    ```
+* To uninstall a package:
+  * ``` 
+    brew uninstall <package_name>
+    ```
+* To search a package:
+  * ``` 
+    brew search <package_name>
+    ```
+* [Uninstall Brew](https://github.com/homebrew/install#uninstall-homebrew)
+  * ```
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+    ```
+
+***
+
+### Yarn basic commands
+
+* Add a package
+  * ```
+    yarn add
+    ```
+* Initialize the development of a package
+  * ```
+    yarn init
+    ```
+* Install all the dependencies in the **package.json** file
+  * ```
+    yarn install
+    ```
+* Publish a package to a package manager
+  * ```
+    yarn publish
+    ```
+* Remove unused package from the current package
+  * ```
+    yarn remove
+    ```
+* Clean the cache
+  * ```
+    yarn cache clean
+    ```
+
+***
 
 ### Set default terminal
 
@@ -349,17 +463,8 @@ Here is short description of the parameters used:
 
 ### Adjust reorganization of files and folders before running rsync
 
-[rsync-sidekick](https://github.com/m-manu/rsync-sidekick) propagates changes from source directory to destination directory. You can run rsync-sidekick before running rsync.
+[rsync-sidekick](https://github.com/m-manu/rsync-sidekick) propagates changes from source directory to destination directory. You can run rsync-sidekick before running rsync. Make sure that [Go is installed](#install-go).
 
-
-* Install go
-  * ```
-    sudo apt install golang-go
-    ```
-* Verify that go is properly installed
-  * ```
-    go version
-    ```
 * Install rsync-sidekick
   * ```
     sudo go install github.com/m-manu/rsync-sidekick@latest
@@ -482,87 +587,6 @@ You can visit [Veracrypt download page](https://www.veracrypt.fr/en/Downloads.ht
     veracrypt
     ```
 * Veracrypt documentation is very complete. To begin using the application, visit the [Beginner's Tutorial](https://www.veracrypt.fr/en/Beginner%27s%20Tutorial.html).
-
-***
-
-### Install Brew
-
-Follow those steps to install [Brew](https://brew.sh/)
-
-* Installation command from Brew:
-  * ```
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-    ```
-* Add the path to the **.profile** directory. Replace <user_name> by your username.
-  * ```
-    echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/<user_name>/.profile
-    ```
-* Evaluation the following:
-  * ```
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-    ```
-* Verify the installation
-  * ``` 
-    brew doctor
-    ```
-
-***
-
-### Brew basic commands
-
-* To update brew in general:
-  * ``` 
-    brew update
-    ```
-* To update a specific package:
-  * ``` 
-    brew update <package_name>
-    ```
-* To install a package:
-  * ``` 
-    brew install <package_name>
-    ```
-* To uninstall a package:
-  * ``` 
-    brew uninstall <package_name>
-    ```
-* To search a package:
-  * ``` 
-    brew search <package_name>
-    ```
-* [Uninstall Brew](https://github.com/homebrew/install#uninstall-homebrew)
-  * ```
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
-    ```
-
-***
-
-### Yarn basic commands
-
-* Add a package
-  * ```
-    yarn add
-    ```
-* Initialize the development of a package
-  * ```
-    yarn init
-    ```
-* Install all the dependencies in the **package.json** file
-  * ```
-    yarn install
-    ```
-* Publish a package to a package manager
-  * ```
-    yarn publish
-    ```
-* Remove unused package from the current package
-  * ```
-    yarn remove
-    ```
-* Clean the cache
-  * ```
-    yarn cache clean
-    ```
 
 ***
 
