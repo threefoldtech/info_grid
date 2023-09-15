@@ -19,6 +19,7 @@
   - [Dedicated Nodes and the Farmerbot](#dedicated-nodes-and-the-farmerbot)
   - [Run the Farmerbot on Raspberry Pi](#run-the-farmerbot-on-raspberry-pi)
   - [Periodic wakeup](#periodic-wakeup)
+  - [Time period between random wakeups and power target update](#time-period-between-random-wakeups-and-power-target-update)
   - [Farmerbot and UTC time](#farmerbot-and-utc-time)
 - [Maintenance](#maintenance)
   - [See the Farmerbot logs](#see-the-farmerbot-logs)
@@ -27,6 +28,7 @@
   - [Properly reboot the node if power target "Down" doesn't work](#properly-reboot-the-node-if-power-target-down-doesnt-work)
   - [Stop and restart the Farmerbot](#stop-and-restart-the-farmerbot)
   - [Update the Farmerbot with the new release](#update-the-farmerbot-with-the-new-release)
+  - [Add a 3Node to a running Farmerbot](#add-a-3node-to-a-running-farmerbot)
 - [Troubleshooting](#troubleshooting)
   - [Retrieve the Farmerbot log after receiving the error: "Error grabbing logs"](#retrieve-the-farmerbot-log-after-receiving-the-error-error-grabbing-logs)
   - [Fix the error: "WebSocket protocol error: Connection reset without closing handshake"](#fix-the-error-websocket-protocol-error-connection-reset-without-closing-handshake)
@@ -200,6 +202,21 @@ Once all nodes are awaken, they all shut down at the same time, except the node 
 
 ***
 
+### Time period between random wakeups and power target update
+
+The time period between a random wakeup and the moment the power target is set to down is between 30 minutes and one hour.
+
+Whenever a random wakeup is initiated, the Farmerbot will wait 30 minutes for the node to be up. Once the node is up, the Farmerbot will keep that node up for 30 minutes for the two following reasons:
+
+* The node can send uptime report
+* If the node was put online for a given user deployment, this time priod gives ample time for the user to deploy their workload.
+
+This ensures an optimal user experience and reliablity in 3Nodes' reports.
+
+Note that each node managed by the Farmerbot will randomly wakeup on average 10 times a month.
+
+***
+
 ### Farmerbot and UTC time
 
 The Farmerbot works in UTC, independently of the local time of your machine.
@@ -320,6 +337,12 @@ Follow these steps to update the Farmerbot with the new release:
     ```
 
 This last command can take some time as it is downloading new docker images. Let the Farmerbot run for some time. If you think something is wrong, or if you want to check if there is something wrong, you should look into the **config/farmerbot.log** file. If you see some errors please contact [ThreeFold Support](https://threefoldfaq.crisp.help/en/).
+
+***
+
+### Add a 3Node to a running Farmerbot
+
+If the Farmerbot is running and you want to add a new 3Node to your farm, you will need to [stop and restart the Farmerbot](#stop-and-restart-the-farmerbot) once the new 3Node is connected to the TFGrid.
 
 ***
 
