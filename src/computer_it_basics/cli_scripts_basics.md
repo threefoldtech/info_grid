@@ -26,18 +26,23 @@
   - [See the current path](#see-the-current-path-1)
   - [Find the current shell](#find-the-current-shell)
   - [SSH into Remote Server](#ssh-into-remote-server)
-  - [Transfer files between local and remote computers (IPv4 and IPv6) with scp](#transfer-files-between-local-and-remote-computers-ipv4-and-ipv6-with-scp)
-  - [Transfer files between computers (local or remote ) with rsync](#transfer-files-between-computers-local-or-remote--with-rsync)
-  - [Adjust reorganization of files and folders before running rsync](#adjust-reorganization-of-files-and-folders-before-running-rsync)
-  - [Automate backup with rsync](#automate-backup-with-rsync)
-  - [Encrypt files with Gocryptfs](#encrypt-files-with-gocryptfs)
-  - [Encrypt files with Veracrypt](#encrypt-files-with-veracrypt)
   - [Replace a string by another string in a text file](#replace-a-string-by-another-string-in-a-text-file)
   - [Replace extensions of files in a folder](#replace-extensions-of-files-in-a-folder)
   - [Remove extension of files in a folder](#remove-extension-of-files-in-a-folder)
   - [See the current date and time on Linux](#see-the-current-date-and-time-on-linux)
   - [Special variables in Bash Shell](#special-variables-in-bash-shell)
   - [Gather DNS information of a website](#gather-dns-information-of-a-website)
+  - [Partition and mount a disk](#partition-and-mount-a-disk)
+- [File Transfer](#file-transfer)
+  - [Transfer files between local and remote computers (IPv4 and IPv6) with scp](#transfer-files-between-local-and-remote-computers-ipv4-and-ipv6-with-scp)
+  - [Transfer files between computers (local or remote ) with rsync](#transfer-files-between-computers-local-or-remote--with-rsync)
+  - [Adjust reorganization of files and folders before running rsync](#adjust-reorganization-of-files-and-folders-before-running-rsync)
+  - [Automate backup with rsync](#automate-backup-with-rsync)
+  - [Parameters --checksum and --ignore-times with rsync](#parameters---checksum-and---ignore-times-with-rsync)
+  - [Trailing slashes with rsync](#trailing-slashes-with-rsync)
+- [Encryption](#encryption)
+  - [Encrypt files with Gocryptfs](#encrypt-files-with-gocryptfs)
+  - [Encrypt files with Veracrypt](#encrypt-files-with-veracrypt)
 - [Network-related Commands](#network-related-commands)
   - [See the network connections and ports](#see-the-network-connections-and-ports)
   - [See identity and info of IP address](#see-identity-and-info-of-ip-address)
@@ -418,178 +423,6 @@ To enable remote login on a MAC, [read this section](#enable-remote-login-on-mac
 
 ***
 
-### Transfer files between local and remote computers (IPv4 and IPv6) with scp
-
-* From local to remote, write the following on the local terminal:
-  * ```
-    scp <path_to_local_file>/<filename> <remote_username>@<remote_IPv4_address>:/<remote_username>/<path_to_remote_file>/<filename>
-    ```
-* From remote to local, you can write the following on the local terminal (more secure):
-  * ```
-    scp <remote_username>@<remote_IPv4_address>:/<remote_username>/<path_to_remote_file>/<filename> <path_to_local_file>/<file> 
-* From remote to local, you can also write the following on the remote terminal:
-  * ```
-    scp <path_to_remote_file>/<file> <local_user>@<local_IPv4_address>:/<local_username>/<path_to_local_file>/<filename>
-
-For IPv6, simply add `-6` after scp and add `\[` before and `\]` after the IPv6 address. 
-
-***
-
-### Transfer files between computers (local or remote ) with rsync
-
-[rsync](https://rsync.samba.org/) is a utility for efficiently transferring and synchronizing files between a computer and a storage drive and across networked computers by comparing the modification times and sizes of files.
-
-We show here how to transfer files between two computers. Note that at least one of the two computers must be local.
-
-* From local to remote
-  * ```
-    rsync -avze ssh --progress --delete /path/to/local/directory remote_user@<remote_host_or_ip>:/path/to/remote/directory/
-    ```
-* From remote to local
-  * ```
-    rsync -avze ssh --progress --delete remote_user@<remote_host_or_ip>:/path/to/remote/directory /path/to/local/directory/
-    ```
-
-Here is short description of the parameters used:
-
-* **-a**: archive mode, preserving the attributes of the files and directories 
-* **-v**: verbose mode, displaying the progress of the transfer
-* **-z**: compress mode, compressing the data before transferring 
-* **-e** specifies the remote shell (.e.g -**e ssh**)
-* **--progress** tells rsync to print information showing the progress of the transfer 
-* **--delete** tells rsync to delete files that aren't on the sending side
-
-***
-
-### Adjust reorganization of files and folders before running rsync
-
-[rsync-sidekick](https://github.com/m-manu/rsync-sidekick) propagates changes from source directory to destination directory. You can run rsync-sidekick before running rsync. Make sure that [Go is installed](#install-go).
-
-* Install rsync-sidekick
-  * ```
-    sudo go install github.com/m-manu/rsync-sidekick@latest
-    ```
-* Reorganize the files and folders with rsync-sidekick
-  * ```
-    rsync-sidekick /path/to/local/directory/ username@IP_Address:/path/to/remote/directory/
-    ```
-
-* Transfer and update files and folders with rsync
-  * ```
-    sudo rsync -avze ssh --progress --delete --log-file=/path/to/local/directory/rsync_storage.log /path/to/local/directory/ username@IP_Address:/path/to/remote/directory/
-    ```
-
-***
-
-### Automate backup with rsync
-
-We show how to automate file transfers between two computers using rsync and rsync-sidekick.
-
-* Create the script file
-  * ```
-    nano rsync_backup.sh
-    ```
-* Write the following script with the proper paths. Here the log is saved in the same directory.
-  * ```
-    # filename: rsync_backup.sh
-    #!/bin/bash
-
-    rsync-sidekick /path/to/local/directory/ username@IP_Address:/path/to/remote/directory/
-
-    sudo rsync -avze ssh --progress --delete --log-file=/path/to/local/directory/rsync_storage.log /path/to/local/directory/ username@IP_Address:/path/to/remote/directory/
-    ```
-* Give permission
-  * ```
-    sudo chmod +x /path/to/script/rsync_backup.sh
-    ```
-* Set a cron job to run the script periodically
-  * Copy your .sh file to **/root**:
-    ``` 
-    sudo cp path/to/script/rsync_backup.sh /root
-    ```
-* Open the cron file
-  * ```
-    sudo crontab -e
-    ```
-* Add the following to run the script everyday. For this example, we set the time at 18:00PM
-  * ```
-    0 18 * * * /root/rsync_backup.sh
-    ```
-
-***
-
-### Encrypt files with Gocryptfs
-
-You can use [gocryptfs](https://github.com/rfjakob/gocryptfs) to encrypt files.
-
-* Install gocryptfs
-  * ```
-    apt install gocryptfs
-    ```
-* Create a vault directory (e.g. **vaultdir**) and a mount directory (e.g. **mountdir**)
-  * ```
-    mkdir vaultdir mountdir
-    ```
-* Initiate the vault
-  * ```
-    gocryptfs -init vaultdir
-    ```
-* Mount the mount directory with the vault
-  * ```
-    gocryptfs vaultdir mountdir
-    ```
-* You can now create files in the folder. For example:
-  * ```
-    touch mountdir/test.txt
-    ```
-* The new file **test.txt** is now encrypted in the vault  
-  * ```
-    ls vaultdir
-    ```
-* To unmount the mountedvault folder:
-  * Option 1
-    * ```
-      fusermount -u mountdir
-      ```
-  * Option 2
-    * ```
-      rmdir mountdir
-      ```
-***
-
-### Encrypt files with Veracrypt
-
-To encrypt files, you can use [Veracrypt](https://www.veracrypt.fr/en/Home.html). Let's see how to download and install Veracrypt.
-
-* Veracrypt GUI
-  * Download the package
-    * ```
-      wget https://launchpad.net/veracrypt/trunk/1.25.9/+download/veracrypt-1.25.9-Ubuntu-22.04-amd64.deb
-      ```
-  * Install the package
-    * ```
-      dpkg -i ./veracrypt-1.25.9-Ubuntu-22.04-amd64.deb
-      ```
-* Veracrypt console only
-  * Download the package
-    * ```
-      wget https://launchpad.net/veracrypt/trunk/1.25.9/+download/veracrypt-console-1.25.9-Ubuntu-22.04-amd64.deb
-      ```
-  * Install the package
-    * ```
-      dpkg -i ./veracrypt-console-1.25.9-Ubuntu-22.04-amd64.deb
-      ```
-
-You can visit [Veracrypt download page](https://www.veracrypt.fr/en/Downloads.html) to get the newest releases.
-
-* To run Veracrypt
-  * ```
-    veracrypt
-    ```
-* Veracrypt documentation is very complete. To begin using the application, visit the [Beginner's Tutorial](https://www.veracrypt.fr/en/Beginner%27s%20Tutorial.html).
-
-***
-
 ### Replace a string by another string in a text file
 
 * Replace one string by another (e.g. **old_string**, **new_string**)
@@ -663,6 +496,245 @@ You can use [Dig](https://man.archlinux.org/man/dig.1) to gather DNS information
     ```
 
 You can also use online tools such as [DNS Checker](https://dnschecker.org/).
+
+***
+
+### Partition and mount a disk
+
+We present one of many ways to partition and mount a disk.
+
+* Create partition with [gparted](https://gparted.org/)
+  * ```
+    sudo gparted
+    ```
+* Find the disk you want to mount (e.g. **sdb**)
+  * ```
+    sudo fdisk -l
+    ```
+* Create a directory to mount the disk to
+  * ```
+    sudo mkdir /mnt/disk
+    ```
+* Open fstab
+  * ```
+    sudo nano /etc/fstab
+    ```
+* Append the following to the fstab with the proper disk path (e.g. **/dev/sdb**) and mount point (e.g. **/mnt/disk**)
+  * ```
+    /dev/sdb    /mnt/disk    ext4    defaults    0    0
+    ```
+* Mount the disk
+  * ```
+    sudo mount /mnt/disk
+    ```
+* Add permissions (as needed)
+  * ```
+    sudo chmod -R 0777 /mnt/disk
+    ```
+
+***
+
+## File Transfer
+
+
+### Transfer files between local and remote computers (IPv4 and IPv6) with scp
+
+* From local to remote, write the following on the local terminal:
+  * ```
+    scp <path_to_local_file>/<filename> <remote_username>@<remote_IPv4_address>:/<remote_username>/<path_to_remote_file>/<filename>
+    ```
+* From remote to local, you can write the following on the local terminal (more secure):
+  * ```
+    scp <remote_username>@<remote_IPv4_address>:/<remote_username>/<path_to_remote_file>/<filename> <path_to_local_file>/<file> 
+* From remote to local, you can also write the following on the remote terminal:
+  * ```
+    scp <path_to_remote_file>/<file> <local_user>@<local_IPv4_address>:/<local_username>/<path_to_local_file>/<filename>
+
+For IPv6, simply add `-6` after scp and add `\[` before and `\]` after the IPv6 address. 
+
+***
+
+### Transfer files between computers (local or remote ) with rsync
+
+[rsync](https://rsync.samba.org/) is a utility for efficiently transferring and synchronizing files between a computer and a storage drive and across networked computers by comparing the modification times and sizes of files.
+
+We show here how to transfer files between two computers. Note that at least one of the two computers must be local. This will transfer the content of the source directory into the destination directory.
+
+* From local to remote
+  * ```
+    rsync -avz --progress --delete /path/to/local/directory/ remote_user@<remote_host_or_ip>:/path/to/remote/directory
+    ```
+* From remote to local
+  * ```
+    rsync -avz --progress --delete remote_user@<remote_host_or_ip>:/path/to/remote/directory/ /path/to/local/directory
+    ```
+
+Here is short description of the parameters used:
+
+* **-a**: archive mode, preserving the attributes of the files and directories 
+* **-v**: verbose mode, displaying the progress of the transfer
+* **-z**: compress mode, compressing the data before transferring 
+* **--progress** tells rsync to print information showing the progress of the transfer 
+* **--delete** tells rsync to delete files that aren't on the sending side
+
+***
+
+### Adjust reorganization of files and folders before running rsync
+
+[rsync-sidekick](https://github.com/m-manu/rsync-sidekick) propagates changes from source directory to destination directory. You can run rsync-sidekick before running rsync. Make sure that [Go is installed](#install-go).
+
+* Install rsync-sidekick
+  * ```
+    sudo go install github.com/m-manu/rsync-sidekick@latest
+    ```
+* Reorganize the files and folders with rsync-sidekick
+  * ```
+    rsync-sidekick /path/to/local/directory/ username@IP_Address:/path/to/remote/directory
+    ```
+
+* Transfer and update files and folders with rsync
+  * ```
+    sudo rsync -avz --progress --delete --log-file=/path/to/local/directory/rsync_storage.log /path/to/local/directory/ username@IP_Address:/path/to/remote/directory
+    ```
+
+***
+
+### Automate backup with rsync
+
+We show how to automate file transfers between two computers using rsync.
+
+* Create the script file
+  * ```
+    nano rsync_backup.sh
+    ```
+* Write the following script with the proper paths. Here the log is saved in the same directory.
+  * ```
+    # filename: rsync_backup.sh
+    #!/bin/bash
+
+    sudo rsync -avz --progress --delete --log-file=/path/to/local/directory/rsync_storage.log /path/to/local/directory/ username@IP_Address:/path/to/remote/directory
+    ```
+* Give permission
+  * ```
+    sudo chmod +x /path/to/script/rsync_backup.sh
+    ```
+* Set a cron job to run the script periodically
+  * Copy your .sh file to **/root**:
+    ``` 
+    sudo cp path/to/script/rsync_backup.sh /root
+    ```
+* Open the cron file
+  * ```
+    sudo crontab -e
+    ```
+* Add the following to run the script everyday. For this example, we set the time at 18:00PM
+  * ```
+    0 18 * * * /root/rsync_backup.sh
+    ```
+
+***
+
+### Parameters --checksum and --ignore-times with rsync
+
+Depending on your situation, the parameters **--checksum** or **--ignore-times** can be quite useful. Note that adding either parameter will slow the transfer.
+
+* With **--ignore time**, you ignore both the time and size of each file. This means that you transfer all files from source to destination.
+  * ```
+    rsync --ignore-time source_folder/ destination_folder
+    ```
+* With **--checksum**, you verify with a checksum that the files from source and destination are the same. This means that you transfer all files that have a different checksum compared source to destination.
+  * ```
+    rsync --checksum source_folder/ destination_folder
+    ```
+
+***
+
+### Trailing slashes with rsync
+
+rsync does not act the same whether you use or not a slash ("\/") at the end of the source path.
+
+* Copy content of **source_folder** into **destination_folder** to obtain the result: **destination_folder/source_folder_content**
+  * ```
+    rsync source_folder/ destination_folder
+    ```
+* Copy **source_folder** into **destination_folder** to obtain the result: **destination_folder/source_folder/source_folder_content**
+  * ```
+    rsync source_folder destination_folder
+    ```
+
+***
+
+## Encryption
+
+### Encrypt files with Gocryptfs
+
+You can use [gocryptfs](https://github.com/rfjakob/gocryptfs) to encrypt files.
+
+* Install gocryptfs
+  * ```
+    apt install gocryptfs
+    ```
+* Create a vault directory (e.g. **vaultdir**) and a mount directory (e.g. **mountdir**)
+  * ```
+    mkdir vaultdir mountdir
+    ```
+* Initiate the vault
+  * ```
+    gocryptfs -init vaultdir
+    ```
+* Mount the mount directory with the vault
+  * ```
+    gocryptfs vaultdir mountdir
+    ```
+* You can now create files in the folder. For example:
+  * ```
+    touch mountdir/test.txt
+    ```
+* The new file **test.txt** is now encrypted in the vault  
+  * ```
+    ls vaultdir
+    ```
+* To unmount the mountedvault folder:
+  * Option 1
+    * ```
+      fusermount -u mountdir
+      ```
+  * Option 2
+    * ```
+      rmdir mountdir
+      ```
+***
+
+### Encrypt files with Veracrypt
+
+To encrypt files, you can use [Veracrypt](https://www.veracrypt.fr/en/Home.html). Let's see how to download and install Veracrypt.
+
+* Veracrypt GUI
+  * Download the package
+    * ```
+      wget https://launchpad.net/veracrypt/trunk/1.25.9/+download/veracrypt-1.25.9-Ubuntu-22.04-amd64.deb
+      ```
+  * Install the package
+    * ```
+      dpkg -i ./veracrypt-1.25.9-Ubuntu-22.04-amd64.deb
+      ```
+* Veracrypt console only
+  * Download the package
+    * ```
+      wget https://launchpad.net/veracrypt/trunk/1.25.9/+download/veracrypt-console-1.25.9-Ubuntu-22.04-amd64.deb
+      ```
+  * Install the package
+    * ```
+      dpkg -i ./veracrypt-console-1.25.9-Ubuntu-22.04-amd64.deb
+      ```
+
+You can visit [Veracrypt download page](https://www.veracrypt.fr/en/Downloads.html) to get the newest releases.
+
+* To run Veracrypt
+  * ```
+    veracrypt
+    ```
+* Veracrypt documentation is very complete. To begin using the application, visit the [Beginner's Tutorial](https://www.veracrypt.fr/en/Beginner%27s%20Tutorial.html).
 
 ***
 
