@@ -385,7 +385,7 @@ We show how to automate file transfers between two computers using rsync and rsy
     nano rsync_backup.sh
     ```
 * Write the following script with the proper paths. Here the log is saved in the same directory.
-  * ```bash
+  * ```
     # filename: rsync_backup.sh
     #!/bin/bash
 
