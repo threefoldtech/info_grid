@@ -61,4 +61,6 @@ Whether you're interested in decentralized cloud computing, blockchain integrati
     - [Capacity](../internals/zos/internals/capacity.md)
     - [API](../internals/zos/manual/api.md)
     - [FAQ](../internals/zos/faq/index.md)
+- [Playground](./playground/playground.md)
+  - [Deploy the Playground](./playground/deploy_playground.md)
 - [Developers FAQ](../faq/faq.md#developers-faq)
