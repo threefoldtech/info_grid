@@ -18,6 +18,8 @@
   - [Power Distribution Unit (PDU)](#power-distribution-unit-pdu)
   - [Uninterrupted Power Supply (UPS)](#uninterrupted-power-supply-ups)
   - [Generator](#generator)
+- [Connecting the 3Node to the Internet](#connecting-the-3node-to-the-internet)
+  - [Z-OS and Switches](#z-os-and-switches)
 - [Using Onboard Storage (3Node Servers)](#using-onboard-storage-3node-servers)
 - [Upgrading a DIY 3Node](#upgrading-a-diy-3node)
 
@@ -69,8 +71,6 @@ Any computer with the following specifications can be used as a DIY 3Node.
 This section should be checked and validated with the TF Team. We can change the constant (here it's 10) if needed. Or use another equation if this one is deemed suboptimal. This equation is an attempt at a synthesis of the discussions we had on the TF Forum.
 -->
 
-***
-
 A 3Node connects to the ThreeFold Grid and transfers information, whether it is in the form of compute, storage or network units (CU, SU, NU respectively). The more resources your 3Nodes offer to the Grid, the more bandwidth will be needed to transfer the additional information. In this section, we cover general guidelines to make sure you have enough bandwidth on the ThreeFold Grid when utilization will be happening.
 
 Note that the TFDAO will need to discuss and settle on clearer guidelines in the near future. For now, we propose those general guidelines. Being aware of these numbers as you build and scale your ThreeFold farm will set you in the proper direction.
@@ -80,7 +80,7 @@ Note that the TFDAO will need to discuss and settle on clearer guidelines in the
 If you want to expand your ThreeFold farm, you should check the following to make sure your bandwidth will be sufficient when there will be Grid utilization.
 ***
 **Bandwidth per 3Node Equation**
-***
+
 > min Bandwidth per 3Node (mbps) = 10 * max((Total SSD TB / 1 TB),(Total Threads / 8 Threads),(Total GB / 64 GB)) + 10 * (Total HDD TB / 2)
 
 This equation means that for each TB of HDD you need 5 mbps of bandwidth, and for each TB of SSD, 8 Threads and 64GB of RAM (whichever is higher), you need 10 mbps of bandwidth. 
@@ -114,8 +114,6 @@ We regroup the 3Node builds in 5 main categories:
 ***
 
 ### The Mini PC DIY 3Node
-
-***
 
 Many farmers start with a Titan plug n play and then explore the world of Mini PC DIY 3Nodes. 
 
@@ -297,7 +295,6 @@ Those were examples of what you can do as a DIY 3Node build. The possibilities a
 ***
 
 ## Powering the 3Node
-***
 
 ### Surge Protector
 
@@ -323,7 +320,35 @@ A generator will be needed for very large installation with or without an unstea
 
 ***
 
+## Connecting the 3Node to the Internet
 
+As a general consideration, to connect a 3Node to the Internet, you must use an Ethernet cable and set DHCP as a network management protocol. Note that WiFi is not supported with ThreeFold farming. 
+
+The general route from the 3Node to the Internet is the following:
+
+> 3Node -> Switch (optional) -> Router -> Modem
+
+Note that most home routers come with a built-in switch to provide multiple Ethernet ports. Using a stand-alone switch is optional, but can come quite handy when farmers have many 3Nodes.
+
+***
+
+### Z-OS and Switches
+
+Switches can be managed or unmanaged. Managed switches come with managed features made available to the user (typically more of such features on premium models). 
+
+Z-OS can work with both types of switches. As long as there's a router reachable on the other end offering DHCP and a route to the public internet, it's not important what's in between. Generally speaking, switches are more like cables, just part of the pipes that connect devices in a network.
+
+We present a general overview of the two types of switches.
+
+**Unmanaged Switches**
+
+Unmanaged are the most common type and if someone just says "switch" this is probably what they mean. These switches just forward traffic along to its destination in a plug and play manner with no configuration. When a switch is connected to a router, you can think of the additional free ports on the switch as essentially just extra ports on the router. It's a way to expand the available ports and sometimes also avoid running multiple long cables. My nodes are far from my router, so I run a single long ethernet cable to a switch next to the nodes and then use multiple shorter cables to connect from the switch to the nodes.
+
+**Managed Switches**
+
+Managed switches have more capabilities than unmanaged switches and they are not very common in home settings (at least not as standalone units). Some of our farmers do use managed switches. These switches offer much more control and also require configuration. They can enable advanced features like virtual LANs to segment the network.
+
+***
 
 ## Using Onboard Storage (3Node Servers)
 

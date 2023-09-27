@@ -3,6 +3,9 @@
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
+- [Z-OS and DHCP](#z-os-and-dhcp)
+  - [Regular Computer and 3Node Network Differences](#regular-computer-and-3node-network-differences)
+  - [Static IP Addresses](#static-ip-addresses)
 - [The Essential Features of BIOS/UEFI for a 3Node](#the-essential-features-of-biosuefi-for-a-3node)
 - [Setting the Remote Management of a Server (Static IP Address)](#setting-the-remote-management-of-a-server-static-ip-address)
 - [Update the BIOS/UEFI firmware](#update-the-biosuefi-firmware)
@@ -24,8 +27,38 @@ Note that the BIOS mode is usually needed for older hardware while the UEFI mode
 
 If it doubt, start with UEFI and if it doesn't work as expected, try with BIOS.
 
-## The Essential Features of BIOS/UEFI for a 3Node
+Before diving into the BIOS/UEFI settings, we will present some general considerations on Z-OS and DHCP.
+
+## Z-OS and DHCP
+
+The operating system running on the 3Nodes is called Zero-OS (Z-OS). When it comes to setting the proper network for your 3Node farm, you must use DHCP since Z-OS is going to request an IP from the DHCP server if there's one present, and it won't get network connectivity if there's no DHCP. 
+
+The Z-OS philosophy is to minimize configuration wherever possible, so there's nowhere to supply a static config when setting your 3Node network. Instead, the farmer is expected to provide DHCP. 
+
+While it is possible to set fixed IP addresses with the DHCP for the 3Nodes, it is recommended to avoid this and just set the DHCP normally without fixed IP addresses.
+
+By setting DHCP in BIOS/UEFI, an IP address is automatically assigned by your router to your 3Node every time you boot it.
+
+### Regular Computer and 3Node Network Differences
+
+For a regular computer (not a 3Node), if you want to use a static IP in a network with DHCP, you'd first turn off DHCP and then set the static IP to an IP address outside the DHCP range. That being said, with Z-OS, there's no option to turn off DHCP and there's nowhere to set a static IP, besides public config and remote management. In brief, the farmer must provide DHCP, either on a private or a public range, for the 3Node to boot.
+
+### Static IP Addresses
+
+In the ThreeFold ecosystem, there are only two situations where you would work with static IP addresses: to set a public config to a 3Node or a farm, and to remotely manage your 3Nodes. 
+
+**Static IP and Public Config**
+
+You can [set a static IP for the public config of a 3Node or a farm](./1_create_farm.md#optional-add-public-ip-addresses). In thise case, the 3Node takes information from TF Chain and uses it to set a static configuration on a NIC (or on a virtual NIC in the case of single NIC systems). 
+
+**Static IP and Remote Mangement**
+
+You can [set a static IP address to remotely manage a 3Node](#setting-the-remote-management-of-a-server-static-ip-address).
+
 ***
+
+## The Essential Features of BIOS/UEFI for a 3Node
+
 There are certain things that you should make sure are set properly on your 3Node.
 
 As a general advice, you can Load Defaults (Settings) on your BIOS, then make sure the options below are set properly.
