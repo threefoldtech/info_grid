@@ -302,7 +302,6 @@
     - [I found a decent computer (or server) to buy online, but it doesn't come with a CPU. How can I know what CPU models would work with a specific computer or server?](#i-found-a-decent-computer-or-server-to-buy-online-but-it-doesnt-come-with-a-cpu-how-can-i-know-what-cpu-models-would-work-with-a-specific-computer-or-server)
     - [Can I host more than one 3node server at my house?](#can-i-host-more-than-one-3node-server-at-my-house)
     - [Is Wifi supported? Can I farm via Wifi instead of an Ethernet cable?](#is-wifi-supported-can-i-farm-via-wifi-instead-of-an-ethernet-cable)
-    - [Is there any way to run Zero-OS without DHCP?](#is-there-any-way-to-run-zero-os-without-dhcp)
     - [I have 2 routers with each a different Internet service provider. I disconnected the ethernet cable from one router and connected it to the other router. Do I need to reboot the 3node?](#i-have-2-routers-with-each-a-different-internet-service-provider-i-disconnected-the-ethernet-cable-from-one-router-and-connected-it-to-the-other-router-do-i-need-to-reboot-the-3node)
     - [Do I need any specific port configuration when booting a 3node?](#do-i-need-any-specific-port-configuration-when-booting-a-3node)
     - [How much electricity does a 3node use?](#how-much-electricity-does-a-3node-use)
@@ -2997,13 +2996,6 @@ Yes, but do not host more than your bandwidth can support.
 ### Is Wifi supported? Can I farm via Wifi instead of an Ethernet cable?
 
 No. Wifi is not supported by Zero-OS due to a number of issues, like reliability, performance, configuration requirements and driver support. It's all about Ethernet cables here.
-
-***
-
-### Is there any way to run Zero-OS without DHCP?
-
-You can set up a node through static routing at the router without DHCP by assigning the MAC address of the NIC to a IP address within your private subnet. This will give a static IP address to your 3node.
-
 
 ***
 
