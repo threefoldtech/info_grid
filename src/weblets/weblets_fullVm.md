@@ -1,5 +1,3 @@
-> Note: TFGrid GPU Support is only available on Dev Test for the moment.
-
 <h1> Full Virtual Machine </h1>
 
 <h2> Table of Contents </h2>
