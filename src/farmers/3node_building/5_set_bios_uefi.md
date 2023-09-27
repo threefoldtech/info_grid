@@ -51,7 +51,7 @@ In the ThreeFold ecosystem, there are only two situations where you would work w
 
 You can [set a static IP for the public config of a 3Node or a farm](./1_create_farm.md#optional-add-public-ip-addresses). In thise case, the 3Node takes information from TF Chain and uses it to set a static configuration on a NIC (or on a virtual NIC in the case of single NIC systems). 
 
-**Static IP and Remote Mangement**
+**Static IP and Remote Management**
 
 You can [set a static IP address to remotely manage a 3Node](#setting-the-remote-management-of-a-server-static-ip-address).
 
