@@ -3783,7 +3783,7 @@ The most probable fix to this error is simply to properly wipe your disk(s):
 
 First, let's see the main terms. Default gateway act as an access point to other networks, in this case the TF Grid, when there is a back and forth exchange of data packets.
 
-While the last question implied a communication problem from the Grid, this error message usually means that the 3node has communication problem. In short, it has difficulty reaching the TF Grid. There are many ways to troubleshoot this error. First, let's give the most direct solution. Make sure you have a direct connection with your Internet Service Provider (ISP): your 3node should be connected to a router or a switcher via an ethernet cable. Wifi doesn't work. Make sure your DHCP is set correctly.
+While the last question implied a communication problem from the Grid, this error message usually means that the 3node has communication problem. In short, it has difficulty reaching the TF Grid. There are many ways to troubleshoot this error. First, let's give the most direct solution. Make sure you have a direct connection with your Internet Service Provider (ISP): your 3node should be connected to a router or a switch via an ethernet cable. Wifi doesn't work. Make sure your DHCP is set correctly.
 
 If the problem persists, check the default gateway of your 3node and then make sure your router can reach it. 
 
