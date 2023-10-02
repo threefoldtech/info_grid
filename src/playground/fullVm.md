@@ -21,7 +21,7 @@ Deploy a new full virtual machine on the Threefold Grid
    - `Public IPv4` flag gives the virtual machine a Public IPv4
    - `Public IPv6` flag gives the virtual machine a Public IPv6
    - `Planetary Network` to connect the Virtual Machine to Planetary network
-   - `Wiregaurd Access` to add a wireguard acces to the Virtual Machine
+   - `Wireguard Access` to add a wireguard acces to the Virtual Machine
 - `GPU` flag to add GPU to the Virtual machine
   - To deploy a Full VM with GPU, you first need to [rent a dedicated node](../dashboard/portal/dashboard_portal_dedicated_nodes.md#filter-and-reserve-a-gpu-node)
 - `Dedicated` flag to retrieve only dedicated nodes 
