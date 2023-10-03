@@ -11,6 +11,7 @@
     - [0-stor\_v2](#0-stor_v2)
     - [QSFS](#qsfs)
   - [Compute Units](#compute-units)
+    - [Virtual CPUs (vCPUs)](#virtual-cpus-vcpus)
     - [Kubernetes](#kubernetes)
     - [TF Grid-SDK-Go and TF Grid-SDK-TS](#tf-grid-sdk-go-and-tf-grid-sdk-ts)
   - [Network Units](#network-units)
@@ -72,6 +73,10 @@ Let's explore some storage components of the ThreeFold Grid.
 Compute units are related to the CPUs doing calculations during the deployment. If a user deploys on a 3Node and uses the CPUs of the units while those CPUs experience failure, the user will lose compute power. as a main example, a way to achieve redundancy in the compute category would be to deploy a solution via Kubernetes. In this case, the CPU workload is balanced between the different 3Nodes of the Kubernetes cluster and if one 3Node fails, the deployment can still function properly.
 
 Let's explore some compute components of the ThreeFold Grid.
+
+### Virtual CPUs (vCPUs)
+
+Virtual CPUs (vCPUs) are virtual representations of physical CPUs that allow multiple virtual machines (VMs) to run concurrently on a single physical server or host. Virtualization platforms allocate vCPUs to each VM, enabling them to execute tasks and run applications as if they were running on dedicated physical hardware. The number of vCPUs assigned to a VM determines its processing power and capacity to handle workloads. On the TFGrid, the number of vCPUs is limited to the physical number of CPUs on the host (i.e. the 3Node). Since this limitation is done per VM, this means that a node with 8 cores can still have 2 VMs each with 8 vCPUs.
 
 ### Kubernetes
 
