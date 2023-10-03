@@ -8,6 +8,8 @@
 - [Prerequisites](#prerequisites)
 - [Find a 3Node](#find-a-3node)
 - [Create the Terraform Files](#create-the-terraform-files)
+  - [Create the Files with the Provider](#create-the-files-with-the-provider)
+  - [Create the Files Manually](#create-the-files-manually)
 - [Deploy the Micro VM with Terraform](#deploy-the-micro-vm-with-terraform)
 - [SSH into the 3Node](#ssh-into-the-3node)
 - [Questions and Feedback](#questions-and-feedback)
@@ -58,7 +60,46 @@ Once you've found a proper node, take node of its node ID. You will need to use 
 
 ## Create the Terraform Files
 
-For this guide, we use two files to deploy with Terraform. The first file contains the environment variables (**credentials.auto.tfvars**) and the second file contains the parameters to deploy our workloads (**main.tf**). To facilitate the deployment, only the environment variables file needs to be adjusted. The **main.tf** file contains the environment variables (e.g. `var.size` for the disk size) and thus you do not need to change this file, but only the file **credentials.auto.tfvars**.
+We present two different methods to create the Terraform files. In the first method, we will create the Terraform files using the [TFGrid Terraform Provider](https://github.com/threefoldtech/terraform-provider-grid). In the second method, we will create the Terraform files manually. Feel free to choose the method that suits you best.
+
+### Create the Files with the Provider
+
+Creating the Terraform files is very straightforward. We want to clone the repository `terraform-provider-grid` locally and run some simple commands to properly set and start the deployment.
+
+* Clone the repository `terraform-provider-grid`
+  * ```
+    git clone https://github.com/threefoldtech/terraform-provider-grid
+    ```
+* Go to the subdirectory containing the examples
+  * ```
+    cd terraform-provider-grid/examples/resources/qsfs
+    ```
+* Set your own mnemonics (replace `mnemonics words` with your own mnemonics)
+  * ```
+    export MNEMONICS="mnemonics words"
+    ```
+* Set the network (replace `network` by the desired network, e.g. `dev`, `qa`, `test` or `main`)
+  * ```
+    export NETWORK="network"
+    ```
+* Initialize the Terraform deployment
+  * ```
+    terraform init
+    ```
+* Apply the Terraform deployment
+  * ```
+    terraform apply
+    ```
+* At any moment, you can destroy the deployment with the following line
+  * ```
+    terraform destroy
+    ```
+
+When using this method, you might need to change some parameters within the `main.tf` depending on your specific deployment.
+
+### Create the Files Manually
+
+For this method, we use two files to deploy with Terraform. The first file contains the environment variables (**credentials.auto.tfvars**) and the second file contains the parameters to deploy our workloads (**main.tf**). To facilitate the deployment, only the environment variables file needs to be adjusted. The **main.tf** file contains the environment variables (e.g. `var.size` for the disk size) and thus you do not need to change this file, but only the file **credentials.auto.tfvars**.
 
 * Open the terminal and go to the home directory (optional)
   *  ```
