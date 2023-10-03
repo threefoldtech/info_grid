@@ -43,6 +43,7 @@ From deployment strategies to monitoring tools, from security best practices to 
   - [Tutorial](../terraform/terraform_get_started.md)
   - [Delete](../terraform/terraform_delete.md)
   - [Full VM Deployment](../terraform/terraform_full_vm.md)
+  - [GPU Support](../terraform/terraform_gpu_support.md)
   - [Resources](../terraform/resources/terraform_resources_readme.md)
     - [Using Scheduler](../terraform/resources/terraform_scheduler.md)
     - [Virtual Machine](../terraform/resources/terraform_vm.md)

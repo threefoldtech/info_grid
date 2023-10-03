@@ -6,6 +6,9 @@
 - [Description](#description)
 - [Billing \& Pricing](#billing--pricing)
 - [Usage](#usage)
+- [Filter and Reserve a GPU Node](#filter-and-reserve-a-gpu-node)
+  - [Filter Nodes](#filter-nodes)
+  - [Reserve a Node](#reserve-a-node)
 
 ***
 
@@ -60,3 +63,22 @@ Dedicated nodes are 3Nodes that can be reserved and rented entirely by one user.
 
 - Unreserve a node:
   - Simply as reserving but another check will be done to check you don't have any active workloads on the node before unreserving.
+***
+## Filter and Reserve a GPU Node
+
+You can filter and reserve a GPU node using the **Dedicated Nodes** section of the **Portal**.
+
+### Filter Nodes
+
+* Filter nodes using the vendor name
+  * In **Filters**, select **GPU's vendor name**
+  * A new window will appear below named **GPU'S VENDOR NAME**
+    * Write the name of the vendor desired (e.g. **nvidia**, **amd**)
+* Filter nodes using the device name
+  * In **Filters**, select **GPU's device name**
+  * A new window will appear below named **GPU'S DEVICE NAME**
+    * Write the name of the device desired (e.g. **GT218**)
+
+### Reserve a Node
+
+When you have decided which node to reserve, click on **Reserve** under the column named **Actions**.

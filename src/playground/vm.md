@@ -24,9 +24,9 @@ __Process__ :
    - `Public IPv4` flag gives the virtual machine a Public IPv4
    - `Public IPv6` flag gives the virtual machine a Public IPv6
    - `Planetary Network` to connect the Virtual Machine to Planetary network
-   - `Wiregaurd Access` to add a wiregaurd acces to the Virtual Machine
+   - `Wireguard Access` to add a wireguard acces to the Virtual Machine
 - `GPU` flag to add GPU to the Virtual machine
-- `Dedicated` flag to retrieve only dedeicated nodes 
+- `Dedicated` flag to retrieve only dedicated nodes 
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
    - `Country`
