@@ -10,6 +10,7 @@ On this section we will explore the fundamental principles and concepts behind t
 - [Proof of Utilization](./proof_of_utilization.md)
 - [Contract Grace Period](./contract_grace_period.md)
 - [Buying and Storing TFTs](./buying_storing_tft.md)
+- [TFGrid by Design](./tfgrid_by_design.md)
 
 ## Take an In-depth Looks
 
