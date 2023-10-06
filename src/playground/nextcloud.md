@@ -40,20 +40,13 @@ Nextcloud provides functionality similar to Dropbox, Office 365 or Google Drive 
 
 ***
 
-# Four Deployment Variations
+# Domain Names and Public IPs
 
-There are four possible configurations for this Nextcloud weblet. There are two parameters, domain name and connection, which you need to choose two options from: to use a custom domain or to use a gateway domain, and to use IPv4 connection or gateway connection.
+A domain name is required to use Nextcloud. You can either use your own, which we'll call a *custom domain*, or you can get a free subdomain from a gateway node. This won't impact the function of your deployment, it's just a matter of preference. If you want to use your own domain, follow the steps for custom domain wherever you see them below.
 
-* Case 1:
-  * IPv4 connection + custom domain
-* Case 2:
-  * IPv4 connection + gateway domain
-* Case 3:
-  * Gateway connection + custom Domain
-* Case 4:
-  * Gateway connection + gateway domain
+Another choice to make before launching your Nextcloud instance is whether you want to reserve a public IPv4 for the deployment. Renting a public IP is an extra cost and is only required for the dedicated Nextcloud Talk video conferencing backend. If you don't reserve a public IP, you can still use Talk in a more limited fashion (see the Talk section below for details).
 
-You can read [this section](#deployment-variations-details) to learn more about the deployment variations details.
+If you're not sure and just want the easiest, most affordable option, skip the public IP and use a gateway domain.
 
 ***
 
@@ -67,7 +60,7 @@ You can read [this section](#deployment-variations-details) to learn more about 
     * **Standard**: {cpu: 2, memory: 8192, diskSize: 500 }
     * **Recommended**: {cpu: 4, memory: 16384, diskSize: 1000 }
     * Or choose a **Custom** plan
-* If you are using IPv4, click on Network then select **Public IPv4**
+* If want to reserve a public IPv4 address, click on Network then select **Public IPv4**
 * If you want a [dedicated](../dashboard/portal/dashboard_portal_dedicated_nodes.md) and/or a certified node, select the corresponding options:
   * `Dedicated` flag to retrieve only dedicated nodes 
   * `Certified` flag to retrieve only certified nodes 
@@ -77,42 +70,43 @@ You can read [this section](#deployment-variations-details) to learn more about 
 * Select a node 
 * If you want to use a custom domain, click on **Custom domain** under **Domain Name** and write your domain name
   * Example: `nextcloudwebsite.com`
-  * Note: Read the section [Set the DNS Record](#set-the-dns-record) for more information
-* If you want to use a gateway, click on **Select gateway** and choose a gateway
+* The **Select gateway** box will be visible whenever a gatway is required. If so, click it and choose a gateway
+  * If you are also using a custom domain, you must set your DNS record now before proceeding. The IP of the gateway will appear on screen. Check [below](#set-the-dns-record) for more information
 * Click **Deploy**
 
 ***
 
 # Nextcloud Setup
 
-Once the weblet is deployed, you can click on the button **Nextcloud Setup** under **Actions** to set up Nextcloud.
+Once the weblet is deployed, the details page will appear. If you are using a custom domain with a public IPv4, you'll need to set your DNS record now using the IP address shown under **Public IPv4**. Again, see [below](#set-the-dns-record) for details.
 
-* Once you have access to the **Nextcloud AIO setup page**, you will be given a seed phrase composed of 8 words. 
-  * Use this seed phrase to access the **Nextcloud AIO interface page**.
-  * Write down this seed phrase somewhere safe and offline.
+Before you can access Nextcloud itself, you'll need to decide which addons you want to install and complete a setup step. This is done through the AIO interface that's included with your deployment. To access it, you can visit the **Nextcloud Setup** link shown in the dteails page, or click on the **Nextcloud Setup** button under **Actions** in the deployments list to set up Nextcloud.
+
+* Once you have access to the **Nextcloud AIO setup page**, you will be given a password composed of 8 words. 
+  * Use this password to access the **Nextcloud AIO interface page**.
+  * Store this password somewhere safe. It's only possible to recover it by using SSH
 * On the next page, you can add **Optionals addons** if you want.
 * Click on **Download and start containers** to start the Nextcloud instance. 
 * Once the containers are properly started, you can access the Nextcloud admin login page by clicking **Open your Nextcloud**. 
-  * You will be given an **Initial Nextcloud username** and an **Initial Nextcloud password**. Use these credentials to log into the admin page.
-  * Write down those credentials somewhere safe and offline.
-* Later, if you want to access the Nextcloud admin login page, you can simply click on the button **Open Nextcloud** under **Actions** on the Playground page.
+  * You will be given an **Initial Nextcloud user name** and an **Initial Nextcloud password**. Use these credentials to log into the admin page.
+  * Store these credentials somewhere safe.
+* Later, if you want to access the Nextcloud admin login page, you can simply click on the button **Open Nextcloud** under **Actions** in the deployment list.
 
 The installation is now complete and you have access to your Nextcloud instance.
 
 ***
 
-# Deployment Variations Details
+# DNS Details
 
-
-## Set the DNS Record for Case 1
+## DNS Record with Public IPv4
 
 After deployment, you will have access to the IPv4 address of the VM you deployed on. You will need to add a **DNS A record** (Host: "@", Value: <VM_IP_Address>) to your domain to access Nextcloud. This record type indicates the IP address of a given domain.
 
-## Set the DNS Record for Case 3
+## DNS Record with Gateway
 
 Before starting the deployment, you will need to add a **DNS A record** (Host: "@", Value: <Gateway_IP>) to your domain. The gateway IP will be shown to you when you select this option.
 
-## DNS Propagation for Cases 1 and 3
+## DNS Propagation
 
 When setting your own custom domain, it might take time for DNS to propagate. It is possible that you see the following message when opening the Nextcloud page: 
 
@@ -120,11 +114,13 @@ When setting your own custom domain, it might take time for DNS to propagate. It
 
 This is normal. You might simply need to wait for the DNS to propagate completely.
 
-## Set Talk and TURN Server for Cases 3 and 4
+# Talk
 
-When using Case 3 or 4, if you want to use the Talk app, you need to install it and then set a TURN server.
+If you don't rent a public IP with your deployement, it's still possible to use Nextcloud Talk in a more limited fashion. It's generally understood that this method can work for up to four participants in a call. For larger calls, the dedicated backend, which requires a public IP, is recommended.
 
-### Install Talk
+While some calls can go entirely peer to peer and don't require any setup beyond installing the Talk app, a TURN server can be helpful to relay data when a peer to peer connection can't be established. There's more information on TURN servers after the install instructions.
+
+## Install Talk
 
 To install Talk, do the following:
 
@@ -136,25 +132,21 @@ To install Talk, do the following:
 
 Once the Talk app is downloaded and enabled, you can find its icon at the top bar menu. 
 
-### Set a TURN Public Server
+## TURN
 
-To install a TURN public server, we will be using the **metered.ca**'s [documentation and service](https://www.metered.ca/tools/openrelay/#turn-server-for-nextcloud-talk). 
+As mentioned before, TURN servers relay data to help call participants connect to each other. All data sent to TURN server is encrypted in this case, so it's perfectly safe to use a free public server.
+
+That said, such free servers are not common, because relaying video chat uses a lot of bandwidth. As of the time of writing, Open Relay Project is one example the includes [instructions for use with Nextcloud Talk](https://www.metered.ca/tools/openrelay/#turn-server-for-nextcloud-talk). 
+
+TURN server configuration can be found by opening the Talk settings, like this:
 
 * Open the dropdown menu at the top right of the Nextcloud page
 * Click on **Personal settings**
 * In the left-side menu, select **Talk**
-* Scroll down and locate the section **TURN servers**
-* To add a new TURN server, click on **Add a new TURN server**
-  * You need to set two TURN servers with the following parameters:
 
-| Column 1   | Column 2                            | Column 3               | Column 4    |
-| ---------- | ----------------------------------- | ---------------------- | ----------- |
-| turn: only | staticauth.openrelay.metered.ca:80  | openrelayprojectsecret | UDP and TCP |
-| turn: only | staticauth.openrelay.metered.ca:443 | openrelayprojectsecret | UDP and TCP | 
+## Use Talk
 
-### Use Talk
-
-Once you've installed Talk and set the TURN server, you can use Talk to create video conferences and chat rooms.
+Once you've installed Talk and optionally added a TURN server, you can use Talk to create video conferences and chat rooms.
 
 Note that the host of the video meeting might need to turn the VPN off before creating a new conversation.
 
@@ -184,9 +176,9 @@ After the first manual backup of your Nextcloud instance is complete, you can se
 
 # Troubleshooting
 
-## Retrieve the Nextcloud AIO Seed Phrase
+## Retrieve the Nextcloud AIO Password
 
-You can retrieve the Nextcloud AIO seed phrase (8 words) by writing the following command line on the VM hosting your Nextcloud instance:
+You can retrieve the Nextcloud AIO password (8 words) by writing the following command line on the VM hosting your Nextcloud instance:
 
 ```
 cat /mnt/data/docker/volumes/nextcloud_aio_mastercontainer/_data/data/configuration.json | grep password
