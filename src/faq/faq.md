@@ -134,6 +134,7 @@
     - [What is ThreeFold's cloud pricing? Are there any discounts available for ThreeFold's cloud pricing?](#what-is-threefolds-cloud-pricing-are-there-any-discounts-available-for-threefolds-cloud-pricing)
     - [How can I see the available capacity of a 3node server on the ThreeFold Grid?](#how-can-i-see-the-available-capacity-of-a-3node-server-on-the-threefold-grid)
     - [What is the difference between the Playground and Dashboard on mainnet and testnet?](#what-is-the-difference-between-the-playground-and-dashboard-on-mainnet-and-testnet)
+    - [What are the different TF Manual links for GPU support?](#what-are-the-different-tf-manual-links-for-gpu-support)
   - [Deployments on the ThreeFold Grid](#deployments-on-the-threefold-grid)
     - [Can I use the TFChain secret on the ThreeFold Connect App for the Profile settings on the ThreeFold Playground?](#can-i-use-the-tfchain-secret-on-the-threefold-connect-app-for-the-profile-settings-on-the-threefold-playground)
     - [Does the ThreeFold Grid charge the total resources rented or it only charges the resources used during deployment?](#does-the-threefold-grid-charge-the-total-resources-rented-or-it-only-charges-the-resources-used-during-deployment)
@@ -1457,6 +1458,23 @@ You can use the [ThreeFold Grid Proxy](https://gridproxy.grid.tf/swagger/index.h
 ### What is the difference between the Playground and Dashboard on mainnet and testnet?
 
 In general, mainnet is more stable and it is better to use it for official workload deployments. Mainnet and testnet offer the same features, but testnet costs 50% less TFT to run workload. 
+
+***
+
+### What are the different TF Manual links for GPU support?
+
+* [Dedicated Nodes and GPU](../dashboard/portal/dashboard_portal_dedicated_nodes.md#filter-and-reserve-a-gpu-node)
+* Dashboard and GPU
+  * [ThreeFold Explorer](../dashboard/explorer/explorer_gpu_support.md)
+  * [GraphQL and GPU](../dashboard/explorer/explorer_graphql_intro.md#filtering-nodes-with-gpu-devices) 
+* [Javascript Client and GPU](../javascript/grid3_javascript_gpu_support.md)
+* Go Client and GPU
+  * [GPU Support](../go/grid3_go_gpu_support.md)
+  * [VM with GPU](../go/grid3_go_vm_with_gpu.md)
+* [TFGrid CLI and GPU](../tfgridcmd/grid3_cli_vm.md#deploy-a-vm-with-gpu)
+* [Terraform and GPU](../terraform/terraform_gpu_support.md)
+* [Full VM and GPU](../playground/fullVm.md)
+* [Zero-OS API and GPU](../internals/zos/manual/api.md#gpus)
 
 ***
 
