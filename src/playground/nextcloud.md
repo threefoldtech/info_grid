@@ -44,7 +44,7 @@ Nextcloud provides functionality similar to Dropbox, Office 365 or Google Drive 
 
 A domain name is required to use Nextcloud. You can either use your own, which we'll call a *custom domain*, or you can get a free subdomain from a gateway node. This won't impact the function of your deployment, it's just a matter of preference. If you want to use your own domain, follow the steps for custom domain wherever you see them below.
 
-Another choice to make before launching your Nextcloud instance is whether you want to reserve a public IPv4 for the deployment. Renting a public IP is an extra cost and is only required for the dedicated Nextcloud Talk video conferencing backend. If you don't reserve a public IP, you can still use Talk in a more limited fashion (see the Talk section below for details).
+Another choice to make before launching your Nextcloud instance is whether you want to reserve a public IPv4 for the deployment. Renting a public IP is an extra cost and is only required for the dedicated Nextcloud Talk video conferencing backend, recommended for calls with more than four participants. If you don't reserve a public IP, you can still use Talk in a more limited fashion (see the [Talk](#talk) section below for details).
 
 If you're not sure and just want the easiest, most affordable option, skip the public IP and use a gateway domain.
 
@@ -56,14 +56,12 @@ If you're not sure and just want the easiest, most affordable option, skip the p
 * Choose a name for your deployment
   * Note: You can use the auto-generated name if you want
 * Select a capacity package:
-    * **Minimum**: {cpu: 2, memory: 4096, diskSize: 50 }
-    * **Standard**: {cpu: 2, memory: 8192, diskSize: 500 }
-    * **Recommended**: {cpu: 4, memory: 16384, diskSize: 1000 }
+    * **Minimum**: {cpu: 2, memory: 4gb, diskSize: 50gb }
+    * **Standard**: {cpu: 2, memory: 8gb, diskSize: 500gb }
+    * **Recommended**: {cpu: 4, memory: 16gb, diskSize: 1000gb }
     * Or choose a **Custom** plan
 * If want to reserve a public IPv4 address, click on Network then select **Public IPv4**
-* If you want a [dedicated](../dashboard/portal/dashboard_portal_dedicated_nodes.md) and/or a certified node, select the corresponding options:
-  * `Dedicated` flag to retrieve only dedicated nodes 
-  * `Certified` flag to retrieve only certified nodes 
+* If you want a [dedicated](../dashboard/portal/dashboard_portal_dedicated_nodes.md) and/or a certified node, select the corresponding option
 * Choose the location of the node
    * `Country`
    * `Farm Name`
@@ -71,14 +69,14 @@ If you're not sure and just want the easiest, most affordable option, skip the p
 * If you want to use a custom domain, click on **Custom domain** under **Domain Name** and write your domain name
   * Example: `nextcloudwebsite.com`
 * The **Select gateway** box will be visible whenever a gatway is required. If so, click it and choose a gateway
-  * If you are also using a custom domain, you must set your DNS record now before proceeding. The IP of the gateway will appear on screen. Check [below](#set-the-dns-record) for more information
+  * If you are also using a custom domain, you must set your DNS record now before proceeding. The IP of the gateway will appear on screen. Check [below](#dns-details) for more information
 * Click **Deploy**
 
 ***
 
 # Nextcloud Setup
 
-Once the weblet is deployed, the details page will appear. If you are using a custom domain with a public IPv4, you'll need to set your DNS record now using the IP address shown under **Public IPv4**. Again, see [below](#set-the-dns-record) for details.
+Once the weblet is deployed, the details page will appear. If you are using a custom domain with a public IPv4, you'll need to set your DNS record now using the IP address shown under **Public IPv4**. Again, see [below](#dns-details) for details.
 
 Before you can access Nextcloud itself, you'll need to decide which addons you want to install and complete a setup step. This is done through the AIO interface that's included with your deployment. To access it, you can visit the **Nextcloud Setup** link shown in the dteails page, or click on the **Nextcloud Setup** button under **Actions** in the deployments list to set up Nextcloud.
 
@@ -114,9 +112,11 @@ When setting your own custom domain, it might take time for DNS to propagate. It
 
 This is normal. You might simply need to wait for the DNS to propagate completely.
 
+***
+
 # Talk
 
-If you don't rent a public IP with your deployement, it's still possible to use Nextcloud Talk in a more limited fashion. It's generally understood that this method can work for up to four participants in a call. For larger calls, the dedicated backend, which requires a public IP, is recommended.
+If you don't rent a public IP with your deployement, it's still possible to use Nextcloud Talk in a more limited fashion. It's generally understood that this method can work well for up to four participants in a call, and text chat also works without restriction. For larger calls, the dedicated backend, which requires a public IP, is recommended.
 
 While some calls can go entirely peer to peer and don't require any setup beyond installing the Talk app, a TURN server can be helpful to relay data when a peer to peer connection can't be established. There's more information on TURN servers after the install instructions.
 
