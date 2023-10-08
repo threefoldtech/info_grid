@@ -401,6 +401,7 @@
     - [I plugged an HDMI cable from my monitor into the node and the monitor is displaying nothing. What can I do?](#i-plugged-an-hdmi-cable-from-my-monitor-into-the-node-and-the-monitor-is-displaying-nothing-what-can-i-do)
     - [What does it mean when I see, during the 3node boot, the message: error = context deadline exceeded?](#what-does-it-mean-when-i-see-during-the-3node-boot-the-message-error--context-deadline-exceeded)
     - [I try to boot a 3node, but I get the error No Route to Host on Linux. What does it mean?](#i-try-to-boot-a-3node-but-i-get-the-error-no-route-to-host-on-linux-what-does-it-mean)
+    - [When booting a 3Node, how to fix the error: "no disks: registration failed"?](#when-booting-a-3node-how-to-fix-the-error-no-disks-registration-failed)
     - [When booting a 3node, I get the message: failed to register node: failed to create node: failed to submit extrinsic: Invalid Transaction: registration failed. What could fix this?](#when-booting-a-3node-i-get-the-message-failed-to-register-node-failed-to-create-node-failed-to-submit-extrinsic-invalid-transaction-registration-failed-what-could-fix-this)
     - [I try to boot a 3node, but I get the message no route with default gateway found. What does it mean?](#i-try-to-boot-a-3node-but-i-get-the-message-no-route-with-default-gateway-found-what-does-it-mean)
     - [I have trouble connecting the 3node to the Grid with a 10GB NIC card. What can I do?](#i-have-trouble-connecting-the-3node-to-the-grid-with-a-10gb-nic-card-what-can-i-do)
@@ -3786,6 +3787,22 @@ There are many potential answers to this. Perhaps the Host is offline, the servi
 
 There can also be other reasons. You might have connected to the wrong port. Perhaps you have configured iptables to block connections on that port. Your DNS might be improperly configured. You might have an Incorrect Network or Host Configuration. Many troubleshoots are possible. Here's a [good place to start](https://www.maketecheasier.com/fix-no-route-to-host-error-linux/).
 
+***
+
+### When booting a 3Node, how to fix the error: "no disks: registration failed"?
+
+There can be many different fixes for this error. Here are some troubleshooting tips to test separately:
+
+* In BIOS, enable AHCI
+* Make sure to [wipe the disks](../farmers/3node_building/4_wipe_all_disks.md) of the 3Nodes
+* If the 3Node has a RAID Controller:
+  * Disabled the RAID controller, OR;
+  * [Flash the RAID controller](https://fohdeesha.com/docs/perc.html) (i.e. crossflashing), OR;
+  * Change the controller to a Dell H310 controller (for Dell servers)
+* Try the command **badblocks** (replace **sda** with your specific disk). Note that this command will delete all the data on the disk
+  * ```
+    sudo badblocks -svw -b 512 -t 0x00 /dev/sda
+    ```
 ***
 
 ### When booting a 3node, I get the message: failed to register node: failed to create node: failed to submit extrinsic: Invalid Transaction: registration failed. What could fix this?
