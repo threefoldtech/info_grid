@@ -8,7 +8,6 @@ For more information on the Farmerbot, you can visit the [Farmerbot repository](
 
 <h2> Table of Contents </h2>
 
-- [Farmerbot Quick Guide](farmerbot_quick.md)
-- [Farmerbot Extensive Guide](farmerbot.md)
-- [Farmerbot FAQ](../../faq/faq.md#farmerbot)
-
+- [Quick Guide](farmerbot_quick.md)
+- [Extensive Guide](farmerbot.md)
+- [Additional Information](farmerbot_information.md)

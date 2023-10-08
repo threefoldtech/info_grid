@@ -134,6 +134,7 @@
     - [What is ThreeFold's cloud pricing? Are there any discounts available for ThreeFold's cloud pricing?](#what-is-threefolds-cloud-pricing-are-there-any-discounts-available-for-threefolds-cloud-pricing)
     - [How can I see the available capacity of a 3node server on the ThreeFold Grid?](#how-can-i-see-the-available-capacity-of-a-3node-server-on-the-threefold-grid)
     - [What is the difference between the Playground and Dashboard on mainnet and testnet?](#what-is-the-difference-between-the-playground-and-dashboard-on-mainnet-and-testnet)
+    - [What are the different TF Manual links for GPU support?](#what-are-the-different-tf-manual-links-for-gpu-support)
   - [Deployments on the ThreeFold Grid](#deployments-on-the-threefold-grid)
     - [Can I use the TFChain secret on the ThreeFold Connect App for the Profile settings on the ThreeFold Playground?](#can-i-use-the-tfchain-secret-on-the-threefold-connect-app-for-the-profile-settings-on-the-threefold-playground)
     - [Does the ThreeFold Grid charge the total resources rented or it only charges the resources used during deployment?](#does-the-threefold-grid-charge-the-total-resources-rented-or-it-only-charges-the-resources-used-during-deployment)
@@ -302,7 +303,6 @@
     - [I found a decent computer (or server) to buy online, but it doesn't come with a CPU. How can I know what CPU models would work with a specific computer or server?](#i-found-a-decent-computer-or-server-to-buy-online-but-it-doesnt-come-with-a-cpu-how-can-i-know-what-cpu-models-would-work-with-a-specific-computer-or-server)
     - [Can I host more than one 3node server at my house?](#can-i-host-more-than-one-3node-server-at-my-house)
     - [Is Wifi supported? Can I farm via Wifi instead of an Ethernet cable?](#is-wifi-supported-can-i-farm-via-wifi-instead-of-an-ethernet-cable)
-    - [Is there any way to run Zero-OS without DHCP?](#is-there-any-way-to-run-zero-os-without-dhcp)
     - [I have 2 routers with each a different Internet service provider. I disconnected the ethernet cable from one router and connected it to the other router. Do I need to reboot the 3node?](#i-have-2-routers-with-each-a-different-internet-service-provider-i-disconnected-the-ethernet-cable-from-one-router-and-connected-it-to-the-other-router-do-i-need-to-reboot-the-3node)
     - [Do I need any specific port configuration when booting a 3node?](#do-i-need-any-specific-port-configuration-when-booting-a-3node)
     - [How much electricity does a 3node use?](#how-much-electricity-does-a-3node-use)
@@ -401,6 +401,7 @@
     - [I plugged an HDMI cable from my monitor into the node and the monitor is displaying nothing. What can I do?](#i-plugged-an-hdmi-cable-from-my-monitor-into-the-node-and-the-monitor-is-displaying-nothing-what-can-i-do)
     - [What does it mean when I see, during the 3node boot, the message: error = context deadline exceeded?](#what-does-it-mean-when-i-see-during-the-3node-boot-the-message-error--context-deadline-exceeded)
     - [I try to boot a 3node, but I get the error No Route to Host on Linux. What does it mean?](#i-try-to-boot-a-3node-but-i-get-the-error-no-route-to-host-on-linux-what-does-it-mean)
+    - [When booting a 3Node, how to fix the error: "no disks: registration failed"?](#when-booting-a-3node-how-to-fix-the-error-no-disks-registration-failed)
     - [When booting a 3node, I get the message: failed to register node: failed to create node: failed to submit extrinsic: Invalid Transaction: registration failed. What could fix this?](#when-booting-a-3node-i-get-the-message-failed-to-register-node-failed-to-create-node-failed-to-submit-extrinsic-invalid-transaction-registration-failed-what-could-fix-this)
     - [I try to boot a 3node, but I get the message no route with default gateway found. What does it mean?](#i-try-to-boot-a-3node-but-i-get-the-message-no-route-with-default-gateway-found-what-does-it-mean)
     - [I have trouble connecting the 3node to the Grid with a 10GB NIC card. What can I do?](#i-have-trouble-connecting-the-3node-to-the-grid-with-a-10gb-nic-card-what-can-i-do)
@@ -1457,6 +1458,23 @@ You can use the [ThreeFold Grid Proxy](https://gridproxy.grid.tf/swagger/index.h
 ### What is the difference between the Playground and Dashboard on mainnet and testnet?
 
 In general, mainnet is more stable and it is better to use it for official workload deployments. Mainnet and testnet offer the same features, but testnet costs 50% less TFT to run workload. 
+
+***
+
+### What are the different TF Manual links for GPU support?
+
+* [Dedicated Nodes and GPU](../dashboard/portal/dashboard_portal_dedicated_nodes.md#filter-and-reserve-a-gpu-node)
+* Dashboard and GPU
+  * [ThreeFold Explorer](../dashboard/explorer/explorer_gpu_support.md)
+  * [GraphQL and GPU](../dashboard/explorer/explorer_graphql_intro.md#filtering-nodes-with-gpu-devices) 
+* [Javascript Client and GPU](../javascript/grid3_javascript_gpu_support.md)
+* Go Client and GPU
+  * [GPU Support](../go/grid3_go_gpu_support.md)
+  * [VM with GPU](../go/grid3_go_vm_with_gpu.md)
+* [TFGrid CLI and GPU](../tfgridcmd/grid3_cli_vm.md#deploy-a-vm-with-gpu)
+* [Terraform and GPU](../terraform/terraform_gpu_support.md)
+* [Full VM and GPU](../playground/fullVm.md)
+* [Zero-OS API and GPU](../internals/zos/manual/api.md#gpus)
 
 ***
 
@@ -3000,13 +3018,6 @@ No. Wifi is not supported by Zero-OS due to a number of issues, like reliability
 
 ***
 
-### Is there any way to run Zero-OS without DHCP?
-
-You can set up a node through static routing at the router without DHCP by assigning the MAC address of the NIC to a IP address within your private subnet. This will give a static IP address to your 3node.
-
-
-***
-
 ### I have 2 routers with each a different Internet service provider. I disconnected the ethernet cable from one router and connected it to the other router. Do I need to reboot the 3node?
 
 You do not need to reboot. The 3node will be able to reconnect to the ThreeFold Grid.
@@ -3778,6 +3789,22 @@ There can also be other reasons. You might have connected to the wrong port. Per
 
 ***
 
+### When booting a 3Node, how to fix the error: "no disks: registration failed"?
+
+There can be many different fixes for this error. Here are some troubleshooting tips to test separately:
+
+* In BIOS, enable AHCI
+* Make sure to [wipe the disks](../farmers/3node_building/4_wipe_all_disks.md) of the 3Nodes
+* If the 3Node has a RAID Controller:
+  * Disabled the RAID controller, OR;
+  * [Flash the RAID controller](https://fohdeesha.com/docs/perc.html) (i.e. crossflashing), OR;
+  * Change the controller to a Dell H310 controller (for Dell servers)
+* Try the command **badblocks** (replace **sda** with your specific disk). Note that this command will delete all the data on the disk
+  * ```
+    sudo badblocks -svw -b 512 -t 0x00 /dev/sda
+    ```
+***
+
 ### When booting a 3node, I get the message: failed to register node: failed to create node: failed to submit extrinsic: Invalid Transaction: registration failed. What could fix this?
 
 The most probable fix to this error is simply to properly wipe your disk(s):
@@ -3791,7 +3818,7 @@ The most probable fix to this error is simply to properly wipe your disk(s):
 
 First, let's see the main terms. Default gateway act as an access point to other networks, in this case the TF Grid, when there is a back and forth exchange of data packets.
 
-While the last question implied a communication problem from the Grid, this error message usually means that the 3node has communication problem. In short, it has difficulty reaching the TF Grid. There are many ways to troubleshoot this error. First, let's give the most direct solution. Make sure you have a direct connection with your Internet Service Provider (ISP): your 3node should be connected to a router or a switcher via an ethernet cable. Wifi doesn't work. Make sure your DHCP is set correctly.
+While the last question implied a communication problem from the Grid, this error message usually means that the 3node has communication problem. In short, it has difficulty reaching the TF Grid. There are many ways to troubleshoot this error. First, let's give the most direct solution. Make sure you have a direct connection with your Internet Service Provider (ISP): your 3node should be connected to a router or a switch via an ethernet cable. Wifi doesn't work. Make sure your DHCP is set correctly.
 
 If the problem persists, check the default gateway of your 3node and then make sure your router can reach it. 
 
