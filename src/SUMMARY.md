@@ -186,6 +186,7 @@
       - [SSH with OpenSSH](getstarted/ssh_guide/ssh_openssh.md)
       - [SSH with PuTTY](getstarted/ssh_guide/ssh_putty.md)
       - [SSH with WSL](getstarted/ssh_guide/ssh_wsl.md)
+      - [WireGuard Access](getstarted/ssh_guide/ssh_wireguard.md)
     - [Remote Desktop and GUI](getstarted/remote-desktop_gui/remote-desktop_gui.md)
       - [Cockpit: a Web-based Interface for Servers](getstarted/remote-desktop_gui/cockpit_guide/cockpit_guide.md)
       - [XRDP: an Open-Source Remote Desktop Protocol](getstarted/remote-desktop_gui/xrdp_guide/xrdp_guide.md)
