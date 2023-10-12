@@ -76,6 +76,10 @@ To set the WireGuard connection on Linux or MAC, create a WireGuard configuratio
   * ```
     wg-quick up wg
     ```
+  * Note that you can also specify a config file by path, stored in any location
+    * ```
+      wg-quick up /etc/wireguard/wg.conf
+      ```
 * If you want to stop the WireGuard service, you can write the following in the terminal
   * ```
     wg-quick down wg
