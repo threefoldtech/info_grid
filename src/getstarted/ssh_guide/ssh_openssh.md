@@ -252,13 +252,13 @@ The main steps for the whole process are the following:
       * Click `Add a feature`
         * Search OpenSSH
         * Install OpenSSH Client and OpenSSH Server
-* To create the SSH key pair, open the `Command Prompt` and write
+* To create the SSH key pair, open `PowerShell` and write
   * ```
     ssh-keygen
     ```
     * Save in default location
     * Write a password (optional)
-* To see the public key, write in the `Command Prompt`
+* To see the public key, write in `PowerShell`
   * ```
     cat ~/.ssh/id_rsa.pub
     ```
@@ -280,7 +280,7 @@ The main steps for the whole process are the following:
     * Click `Deploy`
     * Once the 3node is deployed
       * Copy the IPv4 address
-      * Open the `Command Prompt`, write (adjust your address)
+      * Open `PowerShell`, write (adjust your address)
         * ```
           ssh root@IPv4_address
           ```
@@ -315,13 +315,13 @@ The main steps for the whole process are the following:
       * Click `Add a feature`
         * Search OpenSSH
         * Install OpenSSH Client and OpenSSH Server
-* To create the SSH key pair, open the `Command Prompt` and write
+* To create the SSH key pair, open `PowerShell` and write
   * ```
     ssh-keygen
     ```
     * Save in default location
     * Write a password (optional)
-* To see the public key, write in the `Command Prompt`
+* To see the public key, write in `PowerShell`
   * ```
     cat ~/.ssh/id_rsa.pub
     ```
@@ -343,7 +343,7 @@ The main steps for the whole process are the following:
     * Click `Deploy`
     * Once the 3node is deployed
       * Copy the Planetary Network address
-      * Open the `Command Prompt`, write (adjust your address)
+      * Open `PowerShell`, write (adjust your address)
         * ```
           ssh root@planetary_network_address
           ```
