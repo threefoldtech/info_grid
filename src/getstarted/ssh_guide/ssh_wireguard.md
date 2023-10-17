@@ -68,16 +68,18 @@ When it comes to setting the WireGuard configurations, the steps are similar for
 To set the WireGuard connection on Linux or MAC, create a WireGuard configuration file and run WireGuard via the command line:
 
 * Copy the content **WireGuard Config** from the Playground **Details** window
-* Paste the content to a file with the extension `.conf` (e.g. **wg.conf**) in the directory `/usr/local/etc/wireguard`
+* Paste the content to a file with the extension `.conf` (e.g. **wg.conf**) in the directory `/etc/wireguard`
   * ```
-    nano /usr/local/etc/wireguard/wg.conf
+    sudo nano /etc/wireguard/wg.conf
     ```
-  * Note that you might need superuser permissions (`sudo su`) to do so.
-
 * Start WireGuard with the command **wg-quick** and, as a parameter, pass the configuration file without the extension (e.g. *wg.conf -> wg*)
   * ```
     wg-quick up wg
     ```
+  * Note that you can also specify a config file by path, stored in any location
+    * ```
+      wg-quick up /etc/wireguard/wg.conf
+      ```
 * If you want to stop the WireGuard service, you can write the following in the terminal
   * ```
     wg-quick down wg
