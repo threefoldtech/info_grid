@@ -10,7 +10,7 @@ The ThreeFold Grid (TFGrid) is a global, peer-to-peer network that aims to creat
 
 Within this manual, you will find a wealth of information on how to leverage the capabilities of the ThreeFold Grid. Whether you are an individual user, a farmer, a developer, or a business entity, this manual will guide you through the process of accessing, deploying, and managing resources on the grid.
 
-> [Explore the TFGrid status page for live updates on Threefold services](https://status.grid.tf/status/threefold)
+> [Explore the TFGrid status page for live updates on Threefold services](https://status.grid.tf)
 
 ## Where to Start?
 
