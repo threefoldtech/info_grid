@@ -33,4 +33,5 @@ This book serves as a central hub for gathering general information about ThreeF
 - [ThreeFold Roadmap](../roadmap/roadmap_readme.md)
   - [Release Notes](../roadmap/releasenotes/releasenotes_readme.md)
 - [FAQ](../faq/faq.md)
+- [Code of Conduct](../contribute/code_conduct.md)
 - [Legal](../legal/legal.md)
