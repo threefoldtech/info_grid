@@ -69,6 +69,7 @@
       - [TFGrid v3.0.0 Alpha-2](roadmap/releasenotes/tfgrid_release_3_0_a2.md)
       - [TFGrid v3.0.0](roadmap/releasenotes/tfgrid_release_3_0.md)
   - [FAQ](faq/faq.md)
+  - [Code of Conduct](contribute/code_conduct.md)
   - [Legal](legal/legal.md)
 - [Farmers](farmers/farmers.md)
   - [Build a 3Node](farmers/3node_building/3node_building.md)

@@ -6,7 +6,7 @@ Welcome to the __ThreeFold Grid Manual__, your comprehensive guide to understand
 
 ## About the ThreeFold Grid
 
-The ThreeFold Grid (TFGrid) is a global, peer-to-peer network that aims to create a more sustainable and equitable digital world. It is built on the principles of decentralization, empowering individuals and organizations to take control of their digital assets, data, and interactions. The ThreeFold Grid is designed to be highly scalable, secure, and environmentally friendly, offering a robust and efficient alternative to traditional centralized cloud and computing services.
+The ThreeFold Grid (TFGrid) is a global, peer-to-peer network that aims to create a more sustainable and equitable digital world. Part of the [ThreeFold](https://threefold.io/) ecosystem, the TFGrid is built on the principles of decentralization, empowering individuals and organizations to take control of their digital assets, data, and interactions. The ThreeFold Grid is designed to be highly scalable, secure, and environmentally friendly, offering a robust and efficient alternative to traditional centralized cloud and computing services.
 
 Within this manual, you will find a wealth of information on how to leverage the capabilities of the ThreeFold Grid. Whether you are an individual user, a farmer, a developer, or a business entity, this manual will guide you through the process of accessing, deploying, and managing resources on the grid.
 
