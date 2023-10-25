@@ -78,7 +78,7 @@
     - [What is Proof-of-Capacity used by ThreeFold?](#what-is-proof-of-capacity-used-by-threefold)
     - [What is Proof-of-Utilization?](#what-is-proof-of-utilization)
     - [How does Proof-of-Utilization work? How is the ThreeFold Token (TFT) distributed when there is utilization on the ThreeFold Grid?](#how-does-proof-of-utilization-work-how-is-the-threefold-token-tft-distributed-when-there-is-utilization-on-the-threefold-grid)
-    - [What is the difference between a seed phrase and an HEX secret?](#what-is-the-difference-between-a-seed-phrase-and-an-hex-secret)
+    - [What is the difference between a seed phrase (mnemonics) and an HEX secret?](#what-is-the-difference-between-a-seed-phrase-mnemonics-and-an-hex-secret)
   - [Buying and Transacting TFT](#buying-and-transacting-tft)
     - [How can I buy TFT?](#how-can-i-buy-tft)
     - [What is the maximum supply of ThreeFold tokens? What is the current supply of ThreeFold tokens?](#what-is-the-maximum-supply-of-threefold-tokens-what-is-the-current-supply-of-threefold-tokens)
@@ -883,9 +883,9 @@ To see the Proof-of-Utilization distribution flow chart, check this [link](https
 
 ***
 
-### What is the difference between a seed phrase and an HEX secret?
+### What is the difference between a seed phrase (mnemonics) and an HEX secret?
 
-Seed phrases are sets of words from a carefully selected pool that can be used to derive cryptographic secrets. A HEX secret is a more direct representation of such secret that the computer uses. In the case of an HEX secret, there is no extra information present to form complete words of the seed phrase.
+A seed phrase (also called mnemonics) is a set of words from a carefully selected pool that can be used to derive cryptographic secrets. A HEX secret is a more direct representation of such secret that the computer uses. In the case of an HEX secret, there is no extra information present to form complete words of the seed phrase.
 
 In typical usage, multiple secrets can be derived from a seed phrase via a one-way operation. The secret and its derived public key are sufficient to do any cryptographic operation like signing transactions or encrypting data, but it can't be used to get back the words of the seed phrase.
 
