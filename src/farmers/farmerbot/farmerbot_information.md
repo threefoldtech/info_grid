@@ -34,9 +34,10 @@
   - [Fix the error: "WebSocket protocol error: Connection reset without closing handshake"](#fix-the-error-websocket-protocol-error-connection-reset-without-closing-handshake)
   - [Fix the error: "Balance is not enough to apply an extrinsic"](#fix-the-error-balance-is-not-enough-to-apply-an-extrinsic)
   - [Fix the error: "Error: Invalid twin id. Twin id must be postive integer"](#fix-the-error-error-invalid-twin-id-twin-id-must-be-postive-integer)
-  - [Fix the error: "dependency failed to start: container qa-redis-1 is unhealthy"](#fix-the-error-dependency-failed-to-start-container-qa-redis-1-is-unhealthy)
+  - [Fix the error: "Dependency failed to start: container qa-redis-1 is unhealthy"](#fix-the-error-dependency-failed-to-start-container-qa-redis-1-is-unhealthy)
   - [Fix the error: "Node xxx is not responding while we expect it to: timeout on blpop"](#fix-the-error-node-xxx-is-not-responding-while-we-expect-it-to-timeout-on-blpop)
   - [Fix the error: "Failed initializing the database: Invalid duration value"](#fix-the-error-failed-initializing-the-database-invalid-duration-value)
+  - [Fix the error: "Invalid characters for a local volume name... If you intended to pass a host directory, use absolute path."](#fix-the-error-invalid-characters-for-a-local-volume-name-if-you-intended-to-pass-a-host-directory-use-absolute-path)
 - [Questions and Feedback](#questions-and-feedback)
 
 ***
@@ -397,7 +398,7 @@ This indicates that the seed phrase has no associated twin. There can be many re
 
 ***
 
-### Fix the error: "dependency failed to start: container qa-redis-1 is unhealthy"
+### Fix the error: "Dependency failed to start: container qa-redis-1 is unhealthy"
 
 This means that there is some redis database state stored in a persistent volume. The issue is that the database got corrupted somehow and thus redis is crashing.
 
@@ -417,6 +418,16 @@ This error happens when you start the Farmerbot while the nodes are down. Althou
 ### Fix the error: "Failed initializing the database: Invalid duration value"
 
 If you see this error, it's because you've used 24h time format in conjunction with AM/PM time format. Note that if you add AM/PM, the Farmerbot will use the 12h time format (AM/PM). Otherwise, it is the 24h time format.
+
+***
+
+### Fix the error: "Invalid characters for a local volume name... If you intended to pass a host directory, use absolute path."
+
+If you see this error, simply make sure that you are using the absolute path. Here is an example using `$(pwd)` to pass the absolute path:
+
+```
+docker run --name fbot_config_container -v $(pwd):/farmerbot -ti ghcr.io/threefoldtech/farmerbot_config:0.2.0
+```
 
 ***
 
