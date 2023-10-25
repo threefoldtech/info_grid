@@ -27,7 +27,7 @@ For the reverse operation, going from Ethereum to Stellar, there is a smart cont
 
 Note that the contract address for TFT on Ethereum is the following: `0x395E925834996e558bdeC77CD648435d620AfB5b`.
 
-To see the ThreeFold Token on Etherscan, check [this link](https://etherscan.io/address/0x395E925834996e558bdeC77CD648435d620AfB5b).
+To see the ThreeFold Token on Etherscan, check [this link](https://etherscan.io/token/0x395E925834996e558bdeC77CD648435d620AfB5b).
 
 ***
 

@@ -1144,7 +1144,7 @@ For the reverse operation, going from Ethereum to Stellar, there is a smart cont
 
 The contract address for TFT on Ethereum is the following: `0x395E925834996e558bdeC77CD648435d620AfB5b`.
 
-You can see it on Etherscan [here](https://etherscan.io/address/0x395E925834996e558bdeC77CD648435d620AfB5b).
+You can see it on Etherscan [here](https://etherscan.io/token/0x395E925834996e558bdeC77CD648435d620AfB5b).
 
 ***
 ## TF Connect App, TF Dashboard, GraphQL, Grix Proxy and Polkadot Substrate
