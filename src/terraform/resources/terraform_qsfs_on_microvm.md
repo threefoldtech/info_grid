@@ -25,7 +25,7 @@ In this ThreeFold Guide, we will learn how to deploy a Quantum Safe File System 
 
 In this guide, we will be using Terraform to deploy a QSFS workload on a micro VM that runs on the TFGrid. Make sure to have the latest Terraform version.
 
-* [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
+- [Install Terraform](../terraform_install.md)
 
 ***
 

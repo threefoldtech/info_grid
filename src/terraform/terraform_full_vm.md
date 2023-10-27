@@ -44,7 +44,7 @@ Once this is done, initialize and apply Terraform to deploy your workload, then 
 
 ## Prerequisites
 
-- [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
+- [Install Terraform](./terraform_install.md)
 
 You need to download and install properly Terraform. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
 
