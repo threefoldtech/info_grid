@@ -4,7 +4,8 @@
 
 - [Introduction](#introduction)
 - [Install Terraform](#install-terraform)
-  - [Install Terraform on MAC and Linux](#install-terraform-on-mac-and-linux)
+  - [Install Terraform on Linux](#install-terraform-on-linux)
+  - [Install Terraform on MAC](#install-terraform-on-mac)
   - [Install Terraform on Windows](#install-terraform-on-windows)
 - [ThreeFold Terraform Plugin](#threefold-terraform-plugin)
 - [Questions and Feedback](#questions-and-feedback)
@@ -21,18 +22,22 @@ You can get Terraform from the Terraform website [download page](https://www.ter
 
 We cover here the basic steps for Linux, MAC and Windows for convenience. Refer to the official Terraform documentation if needed.
 
-### Install Terraform on MAC and Linux
+### Install Terraform on Linux
 
-To install Terraform on MAC and Linux, a quick way is to first install Brew and then install Terraform.
+To install Terraform on Linux, we follow the official [Terraform documentation](https://developer.hashicorp.com/terraform/downloads). 
+
+* [Install Terraform on Linux](../computer_it_basics/cli_scripts_basics.md#install-terraform)
+
+### Install Terraform on MAC
+
+To install Terraform on MAC, install Brew and then install Terraform.
 
 * [Install Brew](../computer_it_basics/cli_scripts_basics.md#install-brew)
 * [Install Terraform with Brew](../computer_it_basics/cli_scripts_basics.md#install-terraform-with-brew)
 
-For other methods of installation with Linux, you can also refer to the [Terraform documentation](https://developer.hashicorp.com/terraform/downloads).
-
 ### Install Terraform on Windows
 
-To install Terraform on Windows, a quick way is to first install Chocolatey (Choco) and then install Terraform.
+To install Terraform on Windows, a quick way is to first install Chocolatey and then install Terraform.
 
 * [Install Chocolatey](../computer_it_basics/cli_scripts_basics.md#install-chocolatey)
 * [Install Terraform with Chocolatey](../computer_it_basics/cli_scripts_basics.md#install-terraform-with-chocolatey)
