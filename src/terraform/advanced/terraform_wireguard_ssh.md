@@ -23,7 +23,7 @@ In this ThreeFold Guide, we show how simple it is to deploy a micro VM on the Th
 
 ## Prerequisites
 
-* [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
+* [Install Terraform](../terraform_install.md)
 * [Install Wireguard](https://www.wireguard.com/install/)
 
 You need to download and install properly Terraform and Wireguard on your local computer. Simply follow the linked documentation depending on your operating system (Linux, MAC and Windows).
