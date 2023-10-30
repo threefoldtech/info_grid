@@ -9,6 +9,7 @@
   - [Install Go](#install-go)
   - [Install Brew](#install-brew)
   - [Brew basic commands](#brew-basic-commands)
+  - [Install Terraform with Brew](#install-terraform-with-brew)
   - [Yarn basic commands](#yarn-basic-commands)
   - [Set default terminal](#set-default-terminal)
   - [See the current path](#see-the-current-path)
@@ -60,11 +61,15 @@
   - [Count lines in files given as arguments](#count-lines-in-files-given-as-arguments)
   - [Find path of a file](#find-path-of-a-file)
   - [Print how many arguments are passed in a script](#print-how-many-arguments-are-passed-in-a-script)
+- [Linux](#linux)
+  - [Install Terraform](#install-terraform)
 - [MAC](#mac)
   - [Enable remote login on MAC](#enable-remote-login-on-mac)
   - [Find Other storage on MAC](#find-other-storage-on-mac)
   - [Sort files by size and extension on MAC](#sort-files-by-size-and-extension-on-mac)
 - [Windows](#windows)
+  - [Install Chocolatey](#install-chocolatey)
+  - [Install Terraform with Chocolatey](#install-terraform-with-chocolatey)
   - [Find the product key](#find-the-product-key)
   - [Find Windows license type](#find-windows-license-type)
 - [References](#references)
@@ -158,6 +163,21 @@ Follow those steps to install [Brew](https://brew.sh/)
 * [Uninstall Brew](https://github.com/homebrew/install#uninstall-homebrew)
   * ```
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
+    ```
+
+***
+
+### Install Terraform with Brew
+
+Installing Terraform with Brew is very simple by following the [Terraform documentation](https://developer.hashicorp.com/terraform/downloads).
+
+* Compile HashiCorp software on Homebrew's infrastructure
+  * ```
+    brew tap hashicorp/tap
+    ```
+* Install Terraform
+  * ```
+    brew install hashicorp/tap/terraform
     ```
 
 ***
@@ -1113,6 +1133,24 @@ You can use the following template to add arguments when running a script:
     ```
 ***
 
+## Linux
+
+### Install Terraform
+
+Here are the steps to install Terraform on Linux based on the [Terraform documentation](https://developer.hashicorp.com/terraform/downloads). 
+
+```
+wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+```
+```
+echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+```
+```
+sudo apt update && sudo apt install terraform
+```
+
+Note that the Terraform documentation also covers other methods to install Terraform on Linux.
+
 ## MAC
 
 ### Enable remote login on MAC
@@ -1150,6 +1188,38 @@ You can use the following template to add arguments when running a script:
 
 ## Windows
 
+### Install Chocolatey
+
+To install Chocolatey on Windows, we follow the [official Chocolatey website](https://chocolatey.org/install) instructions.
+
+* Run PowerShell as Administrator
+* Check if **Get-ExecutionPolicy** is restricted
+  * ```
+    Get-ExecutionPolicy
+    ```
+  * If it is restricted, run the following command:
+    * ```
+      Set-ExecutionPolicy AllSigned
+      ```
+* Install Chocolatey
+  * ```
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+    ```
+* Note: You might need to restart PowerShell to use Chocolatey
+
+***
+
+### Install Terraform with Chocolatey
+
+Once you've installed Chocolatey on Windows, installing Terraform is as simple as can be:
+
+* Install Terraform with Chocolatey
+  * ```
+    choco install terraform
+    ```
+
+***
+
 ### Find the product key
 
 Write the following in **Command Prompt** (run as administrator):
@@ -1157,6 +1227,8 @@ Write the following in **Command Prompt** (run as administrator):
 ```
 wmic path SoftwareLicensingService get OA3xOriginalProductKey
 ```
+
+***
 
 ### Find Windows license type
 

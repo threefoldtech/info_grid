@@ -24,8 +24,8 @@ Note that this concept can be extended with more than two micro VMs. Once you un
 ***
 ## Prerequisites
 
-* [Download Terraform](https://developer.hashicorp.com/terraform/downloads)
-* [Download Wireguard](https://www.wireguard.com/install/)
+* [Install Terraform](../terraform_install.md)
+* [Install Wireguard](https://www.wireguard.com/install/)
 
 You need to download and install properly Terraform and Wireguard on your local computer. Simply follow the linked documentation depending on your operating system (Linux, MAC and Windows).
 

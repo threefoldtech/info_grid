@@ -80,6 +80,7 @@
     - [5. Set the BIOS/UEFI](farmers/3node_building/5_set_bios_uefi.md)
     - [6. Boot the 3Node](farmers/3node_building/6_boot_3node.md)
     - [Set Up a ThreeFold Farm in a Data Center](farmers/3node_building/data_center.md)
+    - [GPU Farming](farmers/3node_building/gpu_farming.md)
   - [Complete DIY 3Node Guides](farmers/complete_diy_guides/complete_diy_guides_readme.md)
     - [3Node Desktop DIY Guide](farmers/complete_diy_guides/3node_diy_desktop/3node_diy_desktop.md)
     - [3Node Rack Server DIY Guide](farmers/complete_diy_guides/3node_diy_rack_server/3node_diy_rack_server.md)

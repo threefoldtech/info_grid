@@ -15,3 +15,4 @@ Note that we also include the information needed to set a certified 3Node.
 - [5. Set the BIOS/UEFI](./5_set_bios_uefi.html)
 - [6. Boot the 3Node](./6_boot_3node.html)
 - [Set Up a ThreeFold Farm in a Data Center](./data_center.html)
+- [GPU Farming](./gpu_farming.html)

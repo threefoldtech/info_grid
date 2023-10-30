@@ -25,7 +25,7 @@ The main goal of this guide is to show you all the necessary steps to deploy a F
 
 ## Prerequisites
 
-* [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
+- [Install Terraform](../terraform_install.md)
 
 You need to download and install properly Terraform. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
 
