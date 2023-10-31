@@ -34,10 +34,6 @@ There are a few things to set up before exploring Pulumi. Since we will be using
   * ```
     cd ./pulumi-threefold
     ```
-* Use make to build the project
-  * ```
-    make build
-    ```
 
 ## Set the Environment Variables
 
