@@ -73,6 +73,8 @@ From deployment strategies to monitoring tools, from security best practices to 
     - [Nomad](../terraform/advanced/terraform_nomad.md)
 - [Pulumi](../pulumi/pulumi_readme.md)
   - [Introduction to Pulumi](../pulumi/pulumi_intro.md)
+  - [Deployment Examples](../pulumi/pulumi_examples.md)
+  - [Deployment Details](../pulumi/pulumi_deployment_details.md)
 - [Computer and IT Basics](../computer_it_basics/computer_it_basics.md)
   - [CLI and Scripts Basics](../computer_it_basics/cli_scripts_basics.md)
   - [Docker Basics](../computer_it_basics/docker_basics.md)

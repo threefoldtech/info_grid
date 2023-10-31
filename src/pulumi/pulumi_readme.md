@@ -5,3 +5,5 @@
 <h2>Table of Contents</h2>
 
 - [Introduction to Pulumi](./pulumi_intro.md)
+- [Deployment Examples](./pulumi_examples.md)
+- [Deployment Details](./pulumi_deployment_details.md)
