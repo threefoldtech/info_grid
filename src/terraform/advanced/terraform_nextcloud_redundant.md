@@ -347,9 +347,9 @@ We now want to ping the VMs using Wireguard. This will ensure the connection is 
 
 First, we set Wireguard with the Terraform output.
 
-* On your local computer, take the Terraform's `wg_config` output and create a `wg.conf` file in the directory `/usr/local/etc/wireguard/wg.conf`.
+* On your local computer, take the Terraform's `wg_config` output and create a `wg.conf` file in the directory `/etc/wireguard/wg.conf`.
   *  ```
-     nano /usr/local/etc/wireguard/wg.conf
+     nano /etc/wireguard/wg.conf
      ```
 
 * Paste the content provided by the Terraform deployment. You can use `terraform show` to see the Terraform output. The Wireguard output stands in between `EOT`.
