@@ -242,6 +242,7 @@
       - [Nomad](terraform/advanced/terraform_nomad.md)
   - [Pulumi](pulumi/pulumi_readme.md)
     - [Introduction to Pulumi](pulumi/pulumi_intro.md)
+    - [Installing Pulumi](pulumi/pulumi_install.md)
     - [Deployment Examples](pulumi/pulumi_examples.md)
     - [Deployment Details](pulumi/pulumi_deployment_details.md)
   - [Computer and IT Basics](computer_it_basics/computer_it_basics.md)

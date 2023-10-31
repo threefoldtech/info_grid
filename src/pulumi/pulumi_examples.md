@@ -23,22 +23,10 @@ Please note that the Pulumi plugin for ThreeFold Grid is not yet officially publ
 
 ## Prerequisites
 
-There are a few things to set up before exploring Pulumi.
+There are a few things to set up before exploring Pulumi. Since we will be using the examples in the ThreeFold Pulumi repository, we must clone the repository before going further.
 
-* Install [Go](https://go.dev/)
-  * ```
-    sudo snap install go --classic
-    ```
-* Install [pulumi](https://www.pulumi.com/)
-  * ```
-    curl -fsSL https://get.pulumi.com | sh
-    ```
-* Install [pulumictl](https://github.com/pulumi/pulumictl#installation)
-  * ```
-    brew tap pulumi/tap
-    brew install pulumictl
-    ```
-* Clone the repository
+* [Install Pulumi](./pulumi_install.md) on your machine
+* Clone the **Pulumi-ThreeFold** repository
   * ```
     git clone https://github.com/threefoldtech/pulumi-threefold
     ```

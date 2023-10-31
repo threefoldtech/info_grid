@@ -6,7 +6,6 @@
 
 - [Introduction](#introduction)
 - [Installation](#installation)
-  - [Verifying the Installation](#verifying-the-installation)
 - [Essential Workflow](#essential-workflow)
   - [State](#state)
   - [Creating an Empty Stack](#creating-an-empty-stack)
@@ -32,23 +31,7 @@ Please note that the Pulumi plugin for ThreeFold Grid is not yet officially publ
 
 ## Installation
 
-You can install pulumi using the following command:
-
-```
-curl -fsSL https://get.pulumi.com | sh
-```
-
-If you prefer checking the shell script before executing, please do so.
-
-### Verifying the Installation
-
-To verify if Pulumi is installed on your machine, use the following command:
-
-```
-pulumi version
-```
-
-If you need more in-depth information, e.g. installing a specific version or migrating from an older version, please check the [installation documentation](https://www.pulumi.com/docs/install/).
+If this isn't already done, [install Pulumi](./pulumi_install.md) on your machine.
 
 ## Essential Workflow
 
