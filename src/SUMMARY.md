@@ -240,6 +240,8 @@
         - [Nextcloud Single Deployment](terraform/advanced/terraform_nextcloud_single.md)
         - [Nextcloud Redundant Deployment](terraform/advanced/terraform_nextcloud_redundant.md)
       - [Nomad](terraform/advanced/terraform_nomad.md)
+  - [Pulumi](pulumi/pulumi_readme.md)
+    - [Introduction to Pulumi](pulumi/pulumi_intro.md)
   - [Computer and IT Basics](computer_it_basics/computer_it_basics.md)
     - [CLI and Scripts Basics](computer_it_basics/cli_scripts_basics.md)
     - [Docker Basics](computer_it_basics/docker_basics.md)
