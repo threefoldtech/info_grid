@@ -12,3 +12,4 @@
 - [Synced MariaDB Databases](./terraform_mariadb_synced_databases.md)
 - [Nextcloud Single Deployment](./terraform_nextcloud_single.md)
 - [Nextcloud Redundant Deployment](./terraform_nextcloud_redundant.html)
+- [Nomad](./terraform_nomad.md)
