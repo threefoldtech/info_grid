@@ -660,18 +660,23 @@ For this example, we will be deployment with a ThreeFold gateway as well as a ga
 
 ```
 mnemonics = "..."
+network = "main"
 SSH_KEY = "..."
 
-tfnodeid = "12"
-
 size = "50"
-cpu = "1"
-memory = "2048"
+cpu = "2"
+memory = "4096"
 
+gateway_id = "50"
+vm1_id = "5453"
+
+deployment_name = "nextcloudgateway"
 nextcloud_flist = "https://hub.grid.tf/tf-official-apps/threefoldtech-nextcloudaio-latest.flist"
 ```
 
-Make sure to add your own seed phrase and SSH public key. Simply replace the three dots by the content. Note that you can deploy on a different node than node 12. Obviously, you can decide to increase or modify the quantity in the variables `size`, `cpu` and `memory`. 
+Make sure to add your own seed phrase and SSH public key. Simply replace the three dots by the content. Note that you can deploy on a different node than node 5453 for the **vm1** node. If you want to deploy on another node than node 5453 for the **gateway** node, make sure that you choose a gateway node. To find a gateway node, go on the [ThreeFold Dashboard](https://dashboard.grid.tf/) Nodes section of the Explorer and select **Gateways (Only)**.
+
+Obviously, you can decide to increase or modify the quantity in the variables `size`, `cpu` and `memory`. 
 
 Note that in our case, we set the FList to be the official Nextcloud FList. Simply replace the URL with your newly created Nextcloud FList to test it!
 
@@ -680,15 +685,21 @@ Note that in our case, we set the FList to be the official Nextcloud FList. Simp
 ```
 variable "mnemonics" {
   type = string
+  default = "your mnemonics"
+}
+
+variable "network" {
+  type = string
+  default = "main"
 }
 
 variable "SSH_KEY" {
   type = string
+  default = "your SSH pub key"
 }
 
-variable "tfnodeid" {
+variable "deployment_name" {
   type = string
-  default = "12"
 }
 
 variable "size" {
@@ -703,21 +714,23 @@ variable "memory" {
   type = string
 }
 
-variable "network" {
-  type = string
-  default = "test"
-}
-
 variable "nextcloud_flist" {
   type = string
-  default = "https://hub.grid.tf/tf-official-apps/threefoldtech-nextcloudaio-latest.flist"
 }
+
+variable "gateway_id" {
+  type = string
+}
+
+variable "vm1_id" {
+  type = string
+}
+
 
 terraform {
   required_providers {
     grid = {
       source = "threefoldtech/grid"
-      version = "1.9.2"
     }
   }
 }
@@ -728,12 +741,12 @@ provider "grid" {
 }
 
 data "grid_gateway_domain" "domain" {
-  node = var.tfnodeid
-  name = "nextcloud"
+  node = var.gateway_id
+  name = var.deployment_name
 }
 
 resource "grid_network" "net" {
-    nodes = [var.tfnodeid]
+    nodes = [var.gateway_id, var.vm1_id]
     ip_range = "10.1.0.0/16"
     name = "network"
     description = "My network"
@@ -741,7 +754,7 @@ resource "grid_network" "net" {
 }
 
 resource "grid_deployment" "d1" {
-  node = var.tfnodeid
+  node = var.vm1_id
   network_name = grid_network.net.name
 
   disks {
@@ -770,7 +783,7 @@ resource "grid_deployment" "d1" {
 }
 
 resource "grid_name_proxy" "p1" {
-  node            = var.tfnodeid
+  node            = var.gateway_id
   name            = data.grid_gateway_domain.domain.name
   backends        = [format("http://%s:80", grid_deployment.d1.vms[0].ip)]
   network         = grid_network.net.name
@@ -814,11 +827,7 @@ Note that, at any moment, if you want to see the information on your Terraform d
 
 ## Nextcloud Setup
 
-Once you've deployed Nextcloud, you can access the Nextcloud setup page by pasting the URL displayed on the line `fqdn = "..."` of the Terraform output. The URL should be the following: 
-
-```
-nextcloud.gent02.test.grid.tf
-```
+Once you've deployed Nextcloud, you can access the Nextcloud setup page by pasting the URL displayed on the line `fqdn = "..."` of the Terraform output.
 
 # Conclusion
 
