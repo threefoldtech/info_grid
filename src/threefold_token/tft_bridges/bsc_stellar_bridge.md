@@ -6,7 +6,6 @@
 - [How to Use the BSC-Stellar Bridge](#how-to-use-the-bsc-stellar-bridge)
   - [Bridge from Stellar to BSC](#bridge-from-stellar-to-bsc)
   - [Bridge from BSC to Stellar](#bridge-from-bsc-to-stellar)
-  - [How to verify TFT bridge transactions from bsc and vice-versa](https://github.com/threefoldtech/info_grid/edit/dev_amanda/src/threefold_token/tft_bridges/bsc_stellar_bridge.md#how-to-verify-tft-bridge-transactions-from-bsc-and-vice-versa)
 - [Setting Up TFT on Metamask](#setting-up-tft-on-metamask)
 - [Questions and Feedback](#questions-and-feedback)
 
@@ -94,10 +93,7 @@ In this method, you use the Bridge directly. Thus, it is normal if you do not se
 * You can try the bridge later if gas fees are high at the moment of your transaction.
 
 ***
-### How to verify TFT bridge transactions from bsc and vice-versa
 
-[Verify TFT bridge transactions](https://forum.threefold.io/t/how-to-verify-tft-bridge-transactions-to-bsc/3979)
-***
 ## Setting Up TFT on Metamask
 
 * Download Metamask [here](https://metamask.io/download.html). Then, install the Metamask extension in your local browser.
