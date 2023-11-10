@@ -64,32 +64,28 @@ Alright, wasn't that fun? In the world of public blockchains, all data is record
 
 So, what if you bridged from BSC to Stellar? As it turns out, we can trace transactions in that direction too.
 
-Let’s start at the BscScan explorer this time. Here’s an example bridge transaction, as seen from the account transactions view, which is the default view if you search for a wallet address:
+Let's start at the BscScan explorer this time. Here's an example bridge transaction, as seen from the account transactions view, which is the default view if you search for a wallet address:
 
-image
-image
-1511×309 68.4 KB
-We can identify it because it’s using the Withdraw method in a transaction to the TFT contract address on BSC.
+![](./img/BSC%20to%20Stellar1.jpeg)
 
-If we open the transaction details page by clicking on the transaction hash and switch to the Logs view, we can see more details:
+We can identify it because it's using the `Withdraw` method in a transaction to the TFT contract address on BSC.
 
-image
-image
-1278×596 81.6 KB
+If we open the [transaction details page](https://bscscan.com/tx/0xae2a9b5cdad652ecb1e6252ee44a7f0e3c5fc9cdf1df9fddff3b0c100c4b3cb5) by clicking on the transaction hash and switch to the *Logs* view, we can see more details:
+
+![](./img/BSC%20to%20Stellar2.png)
+
 In particular, this shows us the destination address on Stellar and the amount (again, divide by 1e7 to get the decimal form).
 
 Back on StellarExpert, we can find a transaction on the same date just shortly after the transaction on BSC, for the same amount of TFT (minus 1 TFT bridge fee). It originates from the bridge address on Stellar and the destination is the address we see in the contract call above:
 
-image
-image
-1068×106 15 KB
-As a final step, let’s double check that the transaction we see on Stellar is actually the result of the bridge interaction we saw on BSC. It’s possible, after all, that the user has sent multiple transactions with the same amount.
+![](./img/BSC%20to%20Stellar3.png)
 
-To do this, we look at the memo on the Stellar transaction. Like above, we need to convert from base 64 to hex again (using this tool, for example):
+As a final step, let's double check that the transaction we see on Stellar is actually the result of the bridge interaction we saw on BSC. It's possible, after all, that the user has sent multiple transactions with the same amount.
 
-image
-image
-1177×797 62.5 KB
-If the output hex doesn’t already look familiar, compare it to the transaction hash from above, remembering that 0x is just a formatting convention indicating that hex data follows. Indeed, we can even search it on BscScan, to come full circle back to transaction details page from before.
+To do this, we look at the memo on the Stellar transaction. Like above, we need to convert from base 64 to hex again (using [this tool](https://base64.guru/converter/decode/hex), for example):
 
-And now we’ve made a direct link between use of the bridge contract on BSC and the resulting payment from the bridge on Stellar :white_check_mark:
+![](./img/BSC%20to%20Stellar4.png) 
+
+If the output hex doesn't already look familiar, compare it to the transaction hash from above, remembering that `0x` is just a formatting convention indicating that hex data follows. Indeed, we can even search it on BscScan, to come full circle back to transaction details page from before. 
+
+And now we've made a direct link between use of the bridge contract on BSC and the resulting payment from the bridge on Stellar :white_check_mark:
