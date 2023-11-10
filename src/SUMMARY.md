@@ -18,6 +18,7 @@
     - [TFT Bridges](./threefold_token/tft_bridges/tft_bridges.md)
       - [TFChain-Stellar Bridge](./threefold_token/tft_bridges/tfchain_stellar_bridge.md)
       - [BSC-Stellar Bridge](./threefold_token/tft_bridges/bsc_stellar_bridge.md)
+        - [BSC-Stellar Bridge Verification](./threefold_token/tft_bridges/bsc_stellar_bridge_verification.md)
       - [Ethereum-Stellar Bridge](./threefold_token/tft_bridges/tft_ethereum/tft_ethereum.md)
     - [Storing TFT](./threefold_token/storing_tft/storing_tft.md)
       - [ThreeFold Connect App](./threefold_token/storing_tft/tf_connect_app.md)
