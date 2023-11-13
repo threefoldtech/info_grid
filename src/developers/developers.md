@@ -65,4 +65,5 @@ Whether you're interested in decentralized cloud computing, blockchain integrati
     - [FAQ](../internals/zos/faq/index.md)
 - [Playground](./playground/playground.md)
   - [Deploy the Playground](./playground/deploy_playground.md)
+  - [Weblet Case Study: Nextcloud AIO](./playground/weblet_case_study_nextcloud.md)
 - [Developers FAQ](../faq/faq.md#developers-faq)
