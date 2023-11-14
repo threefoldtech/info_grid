@@ -4,11 +4,11 @@
 
 - [Introduction](#introduction)
 - [Upload Your Files](#upload-your-files)
-- [Merge Multiple FLists](#merge-multiple-flists)
+- [Merge Multiple Flists](#merge-multiple-flists)
 - [Convert Docker Images and Tar Files](#convert-docker-images-and-tar-files)
-- [Upload Customize FLists](#upload-customize-flists)
-- [Upload Homemade FLists](#upload-homemade-flists)
-- [Upload your Existing FList to Reduce Bandwidth](#upload-your-existing-flist-to-reduce-bandwidth)
+- [Upload Customize Flists](#upload-customize-flists)
+- [Upload Homemade Flists](#upload-homemade-flists)
+- [Upload your Existing Flist to Reduce Bandwidth](#upload-your-existing-flist-to-reduce-bandwidth)
 - [Authenticate via 3Bot](#authenticate-via-3bot)
 - [Get and Update Information Through the API](#get-and-update-information-through-the-api)
   - [Public API Endpoints (No Authentication Required)](#public-api-endpoints-no-authentication-required)
@@ -19,15 +19,15 @@
 
 ## Introduction
 
-The ThreeFold Zero-OS Hub allows you to do multiple things and acts as a public centralization of FLists.
+The ThreeFold Zero-OS Hub allows you to do multiple things and acts as a public centralization of flists.
 
-The ZOS Hub is mainly there to gives an easy way to distribute FList files, which are databases of metadata that you can use in any Zero-OS container or virtual machine.
+The ZOS Hub is mainly there to gives an easy way to distribute flist files, which are databases of metadata that you can use in any Zero-OS container or virtual machine.
 
 ## Upload Your Files
 In order to publish easily your files, you can upload a `.tar.gz` and the hub will convert it automatically to a flist
 and store the contents in the hub backend. After that you can use your flist directly on a container.
 
-## Merge Multiple FLists
+## Merge Multiple Flists
 In order to reduce the maintenance of your images, products, etc. flist allows you to keep your
 different products and files separately and then merge them with another flist to make it usable without
 keeping the system up-to-date.
@@ -38,21 +38,21 @@ You don't need to take care about the base system yourself, just merge it with t
 
 ## Convert Docker Images and Tar Files
 
-The ZOS Hub allows you to convert Docker Hub images and Tar files into FLists thanks to the Docker Hub Converter. 
+The ZOS Hub allows you to convert Docker Hub images and Tar files into flists thanks to the Docker Hub Converter. 
 
-You can convert a docker image (eg: `busybox`, `ubuntu`, `fedora`, `couchdb`, ...) to an FList directly from the backend, this allows you to use your existing docker image in our infrastructure out-of-the-box. Go to the [Docker Hub Converter](https://hub.grid.tf/docker-convert) to use this feature. For more information on the process, read the section [Convert Docker Image to FList](./convert_docker_image.md) of the TF Manual.
+You can convert a docker image (eg: `busybox`, `ubuntu`, `fedora`, `couchdb`, ...) to an flist directly from the backend, this allows you to use your existing docker image in our infrastructure out-of-the-box. Go to the [Docker Hub Converter](https://hub.grid.tf/docker-convert) to use this feature. For more information on the process, read the section [Convert Docker Image to flist](./convert_docker_image.md) of the TF Manual.
 
-You can also easily convert a Tar file into an FList via the [Upload section](https://hub.grid.tf/upload) of the ZOS Hub.
+You can also easily convert a Tar file into an flist via the [Upload section](https://hub.grid.tf/upload) of the ZOS Hub.
 
-## Upload Customize FLists
+## Upload Customize Flists
 
-The ZOS Hub also allows you to customize an FList via the [Customization section](https://hub.grid.tf/merge) of the ZOS Hub. Note that this is currently in beta.
+The ZOS Hub also allows you to customize an flist via the [Customization section](https://hub.grid.tf/merge) of the ZOS Hub. Note that this is currently in beta.
 
-## Upload Homemade FLists
+## Upload Homemade Flists
 
-The ZOS Hub allows you to upload FList that you've made yourself via the section [Upload a homemade flist](https://hub.grid.tf/upload-flist).
+The ZOS Hub allows you to upload flist that you've made yourself via the section [Upload a homemade flist](https://hub.grid.tf/upload-flist).
 
-## Upload your Existing FList to Reduce Bandwidth
+## Upload your Existing Flist to Reduce Bandwidth
 In addition with the hub-client (a side product) you can upload efficiently contents of file
 to make the backend up-to-date and upload a self-made flist. This allows you to do all the jobs yourself
 and gives you the full control of the chain. The only restriction is that the contents of the files you host
@@ -122,19 +122,19 @@ The main template to request information from the API is the following:
 curl -H "Authorization: bearer <API_token>" https://hub.grid.tf/api/flist/me/<flist_name> -X <COMMAND>
 ```
 
-For example, if we take the command `DELETE` of the previous section and we want to delete the FList `example-latest.flist` with the API Token `abc12`, we would write the following line:
+For example, if we take the command `DELETE` of the previous section and we want to delete the flist `example-latest.flist` with the API Token `abc12`, we would write the following line:
 
 ```bash
 curl -H "Authorization: bearer abc12" https://hub.grid.tf/api/flist/me/example-latest.flist -X DELETE
 ```
 
-As another template example, if we wanted to rename the FList `current-name-latest.flist` to `new-name-latest.flist`, we would use the following template:
+As another template example, if we wanted to rename the flist `current-name-latest.flist` to `new-name-latest.flist`, we would use the following template:
 
 ```bash
 curl -H "Authorization: bearer <API_token>" https://hub.grid.tf/api/flist/me/<current_flist_name>/rename/<new_flist_name> -X GET
 ```
 
-To upload an FList to the ZOS Hub, you would use the following template:
+To upload an flist to the ZOS Hub, you would use the following template:
 
 ```bash
 curl -H "Authorization: bearer <API_Token>" -X POST -F file=@my-local-archive.tar.gz \

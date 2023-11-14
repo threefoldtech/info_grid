@@ -1,15 +1,15 @@
-<h1> FList Case Study: Nextcloud All-in-One </h1>
+<h1> Flist Case Study: Nextcloud All-in-One </h1>
 
 ![nextcloud_logo](./img/nextcloud_logo.jpeg)
 
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
-  - [FList: What is It?](#flist-what-is-it)
+  - [Flist: What is It?](#flist-what-is-it)
   - [Case Study Objective](#case-study-objective)
   - [The Overall Process](#the-overall-process)
 - [Docker Image Creation](#docker-image-creation)
-  - [Nextcloud FList Directory Tree](#nextcloud-flist-directory-tree)
+  - [Nextcloud Flist Directory Tree](#nextcloud-flist-directory-tree)
   - [Caddyfile](#caddyfile)
   - [Dockerfile](#dockerfile)
   - [README.md File](#readmemd-file)
@@ -29,7 +29,7 @@
 - [Docker Publishing Steps](#docker-publishing-steps)
   - [Create Account and Access Token](#create-account-and-access-token)
   - [Build and Push the Docker Image](#build-and-push-the-docker-image)
-- [Convert the Docker Image to an FList](#convert-the-docker-image-to-an-flist)
+- [Convert the Docker Image to an Flist](#convert-the-docker-image-to-an-flist)
 - [Deploy Nextcloud AIO on the TFGrid with Terraform](#deploy-nextcloud-aio-on-the-tfgrid-with-terraform)
   - [Create the Terraform Files](#create-the-terraform-files)
   - [Deploy Nextcloud with Terraform](#deploy-nextcloud-with-terraform)
@@ -40,25 +40,25 @@
 
 # Introduction
 
-In this case study, we explain how to create a new FList on the ThreeFold Ecosystem. We will show the process of creating a Nextcloud All-in-One FList and we will deploy a micro VM on the ThreeFold Playground to access our Nextcloud instance. As a reference, the official Nextcloud FList is available [here](https://hub.grid.tf/tf-official-apps/threefoldtech-nextcloudaio-latest.flist.md).
+In this case study, we explain how to create a new flist on the ThreeFold ecosystem. We will show the process of creating a Nextcloud All-in-One flist and we will deploy a micro VM on the ThreeFold Playground to access our Nextcloud instance. As a reference, the official Nextcloud flist is available [here](https://hub.grid.tf/tf-official-apps/threefoldtech-nextcloudaio-latest.flist.md).
 
-To achieve all this, we will need to create a Docker Hub account, create a Dockerfile and its associated files, a docker image and a docker container, then convert the docker image to a Zero-OS FList. After all this, we will be deploying our Nextcloud instance on the ThreeFold Playground.
+To achieve all this, we will need to create a Docker Hub account, create a Dockerfile and its associated files, a docker image and a docker container, then convert the docker image to a Zero-OS flist. After all this, we will be deploying our Nextcloud instance on the ThreeFold Playground.
 
-As a general advice, before creating an FList for a ThreeFold deployment, you should make sure that you are able to deploy your workload properly by using a micro VM or a full VM on the TFGrid. Once you know all the steps to deploy your workload, and after some thorough tests, you can take what you've learned and incorporate all this into an FList.
+As a general advice, before creating an flist for a ThreeFold deployment, you should make sure that you are able to deploy your workload properly by using a micro VM or a full VM on the TFGrid. Once you know all the steps to deploy your workload, and after some thorough tests, you can take what you've learned and incorporate all this into an flist.
 
-## FList: What is It?
+## Flist: What is It?
 
-Before we go any further, let us recall what is an FList. In short, an FList is a very effective way to deal with software data and the end result is fast deployment and high reliability.
+Before we go any further, let us recall what is an flist. In short, an flist is a very effective way to deal with software data and the end result is fast deployment and high reliability.
 
-In an FList, we separate the metadata from the data. The metadata is a description of what files are in that particular image. It's thus the data providing information about the app/software. Thanks to FList, the 3Node doesn't need to install a complete software program in order to run properly. Only the necessary files are installed. Zero-OS can read the metadata of a container and only download and execute the necessary binaries and applications to run the workload when necessary.
+In an flist, we separate the metadata from the data. The metadata is a description of what files are in that particular image. It's thus the data providing information about the app/software. Thanks to flist, the 3Node doesn't need to install a complete software program in order to run properly. Only the necessary files are installed. Zero-OS can read the metadata of a container and only download and execute the necessary binaries and applications to run the workload when necessary.
 
-One amazing thing about the FList technology is that it is possible to convert any Docker image into an FList, thanks to the [ThreeFold Docker Hub Converter tool](https://hub.grid.tf/docker-convert). It is very easy to do and we will show you how to proceed in this case study. For a quick guide on converting Docker images into FLists, read [this section](../flist_hub/convert_docker_image.md) of the ThreeFold Manual.
+One amazing thing about the flist technology is that it is possible to convert any Docker image into an flist, thanks to the [ThreeFold Docker Hub Converter tool](https://hub.grid.tf/docker-convert). It is very easy to do and we will show you how to proceed in this case study. For a quick guide on converting Docker images into flists, read [this section](../flist_hub/convert_docker_image.md) of the ThreeFold Manual.
 
 ## Case Study Objective
 
-The goal of this case study is to give you enough information and tools so that you can build your own FList projects and deploy on the ThreeFold Grid.
+The goal of this case study is to give you enough information and tools so that you can build your own flist projects and deploy on the ThreeFold Grid.
 
-We will explore the different files needed to create the FList and explain the overall process. Instead of starting from scratch, we will analyze the Nextcloud FList directory in the [tf-images](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud) ThreeFold Tech repository. As the project is already done, it will be easier to get an overview of the process. Once you know the different components needed to create an FList, it will be easier for your to create your own.
+We will explore the different files needed to create the flist and explain the overall process. Instead of starting from scratch, we will analyze the Nextcloud flist directory in the [tf-images](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud) ThreeFold Tech repository. As the project is already done, it will be easier to get an overview of the process. Once you know the different components needed to create an flist, it will be easier for your to create your own.
 
 ## The Overall Process
 
@@ -66,28 +66,28 @@ To give you a bird's-eye view of the whole project, here are the main steps:
 
 * Create the Docker image
 * Push the Docker image to the Docker Hub
-* Convert the Docker image to a Zero-OS FList
-* Deploy a micro VM with the FList on the ThreeFold Playground with Terraform
+* Convert the Docker image to a Zero-OS flist
+* Deploy a micro VM with the flist on the ThreeFold Playground with Terraform
 
-One important thing to have in mind is that, when we create an FList, what we are doing is basically automating the required steps to deploy a given workload on the TFGrid. Usually, these steps would be done manually and step-by-step by an individual deploying on a micro or a full VM.
+One important thing to have in mind is that, when we create an flist, what we are doing is basically automating the required steps to deploy a given workload on the TFGrid. Usually, these steps would be done manually and step-by-step by an individual deploying on a micro or a full VM.
 
-Once we've successfully created an FList, we thus have a very quick way to deploy a specific workload while always obtaining the same result. This is why it is highly recommended to test a given deployment on a full or micro VM before building an FList. 
+Once we've successfully created an flist, we thus have a very quick way to deploy a specific workload while always obtaining the same result. This is why it is highly recommended to test a given deployment on a full or micro VM before building an flist. 
 
-For example, in the case of building a Nextcloud All-in-One FList, the prerequisites would be to successfully deploy a Nextcloud AIO instance on a full VM by executing each step sequentially. This specific example is documented in the Terraform section [Nextcloud All-in-One Guide](../../terraform/advanced/terraform_nextcloud_aio.md) of the System Administrators book.
+For example, in the case of building a Nextcloud All-in-One flist, the prerequisites would be to successfully deploy a Nextcloud AIO instance on a full VM by executing each step sequentially. This specific example is documented in the Terraform section [Nextcloud All-in-One Guide](../../terraform/advanced/terraform_nextcloud_aio.md) of the System Administrators book.
 
-In our case, the FList we will be using has some specific configurations depending on the way we deploy Nextcloud (e.g. using or not the gateway and a custom domain). The Terraform **main.tf** we will be sharing later on will thus take all this into account for a smooth deployment.
+In our case, the flist we will be using has some specific configurations depending on the way we deploy Nextcloud (e.g. using or not the gateway and a custom domain). The Terraform **main.tf** we will be sharing later on will thus take all this into account for a smooth deployment.
 
 # Docker Image Creation
 
-As we've said previously, we will explore the different components of the existing Nextcloud FList directory. We thus want to check the existing codes and try to understand as much as possible how the different components work together. This is also a very good introduction to the ThreeFold ecosystem.
+As we've said previously, we will explore the different components of the existing Nextcloud flist directory. We thus want to check the existing codes and try to understand as much as possible how the different components work together. This is also a very good introduction to the ThreeFold ecosystem.
 
 We will be using the codes available on the [ThreeFold Tech Github page](https://github.com/threefoldtech). In our case, we want to explore the repository [tf-images](https://github.com/threefoldtech/tf-images).
 
-If you go in the subsection [tfgrid3](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3), you can see many different FLists available. In our case, we want to deploy the [Nextcloud All-in-One Flist](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud). 
+If you go in the subsection [tfgrid3](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3), you can see many different flists available. In our case, we want to deploy the [Nextcloud All-in-One Flist](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud). 
 
-## Nextcloud FList Directory Tree
+## Nextcloud Flist Directory Tree
 
-The Nextcloud FList directory tree is the following:
+The Nextcloud flist directory tree is the following:
 
 ```
 .
@@ -112,7 +112,7 @@ The Nextcloud FList directory tree is the following:
 
 We can see that the directory is composed of a Caddyfile, a Dockerfile, a README.md and two directories, **scripts** and **zinit**. We will now explore each of those components to have a good grasp of the whole repository and to understand how it all works together.
 
-To get a big picture of this directory, we could say that the **README.md** file provides the necessary documentation for the users to understand the Nextcloud FList, how it is built and how it works, the **Caddyfile** provides the necessary requirements to run the reverse proxy, the **Dockerfile** provides the necessary requirements for the Docker image to be built, installing things such as [openssh](https://www.openssh.com/) and the [ufw firewall](https://wiki.ubuntu.com/UncomplicatedFirewall) for secure remote connection, while the two folders, **scripts** and **zinit**, could be said to work hand-in-hand. While commands can be executed in the .yaml files contained within the zinit folder, these files also serve as a way to organize the scripts. As we will see later on, zinit coupled with the `.yaml` files provides ordered steps for the scripts (i.e. the files with the extension `.sh`) to be executed. This ensures that the Nextcloud deployment gets built systematically in the proper order.
+To get a big picture of this directory, we could say that the **README.md** file provides the necessary documentation for the users to understand the Nextcloud flist, how it is built and how it works, the **Caddyfile** provides the necessary requirements to run the reverse proxy, the **Dockerfile** provides the necessary requirements for the Docker image to be built, installing things such as [openssh](https://www.openssh.com/) and the [ufw firewall](https://wiki.ubuntu.com/UncomplicatedFirewall) for secure remote connection, while the two folders, **scripts** and **zinit**, could be said to work hand-in-hand. While commands can be executed in the .yaml files contained within the zinit folder, these files also serve as a way to organize the scripts. As we will see later on, zinit coupled with the `.yaml` files provides ordered steps for the scripts (i.e. the files with the extension `.sh`) to be executed. This ensures that the Nextcloud deployment gets built systematically in the proper order.
 
 ## Caddyfile
 
@@ -219,7 +219,7 @@ With the second **RUN** command, we install **zinit** and we give it execution p
 
 With the third **RUN** command, we install **caddy** and we give it execution permission with the command `chmod +x`. Caddy is an extensible, cross-platform, open-source web server written in Go. For more information on Caddy, check the [Caddy website](https://caddyserver.com/).
 
-With fourth **RUN** command, we download and give proper permissions to the script `install-docker.sh`. On a terminal, the common line to install Docker would be `curl -fsSL https://get.docker.com | sudo sh`. To understand really what's going here, we can simply go to the link provided in the line [https://get.docker.com](https://get.docker.com) for more information. 
+With fourth **RUN** command, we download and give proper permissions to the script `install-docker.sh`. On a terminal, the common line to install Docker would be `curl -fsSL https://get.docker.com | sudo sh`. To understand really what's going here, we can simply go to the link provided at the line [https://get.docker.com](https://get.docker.com) for more information. 
 
 The fifth **RUN** command runs the `install-docker.sh` script to properly install Docker within the image.
 
@@ -229,9 +229,9 @@ Finally, we set an entrypoint in our Dockerfile. As per the [Docker documentatio
 
 ## README.md File
 
-The **README.md** file has the main goal of explaining clearly to the user the functioning of the Nextcloud directory and its associated FList. In this file, we can explain what our code is doing and offer steps to properly configure the whole deployment.
+The **README.md** file has the main goal of explaining clearly to the user the functioning of the Nextcloud directory and its associated flist. In this file, we can explain what our code is doing and offer steps to properly configure the whole deployment.
 
-We also give the necessary steps to create the Docker image and convert it into an FList starting directly with the Nextcloud directory. This can be useful for users that want to create their own FList, instead of using the [official ThreeFold Nextcloud FList](https://hub.grid.tf/tf-official-apps/threefoldtech-nextcloudaio-latest.flist.md).
+We also give the necessary steps to create the Docker image and convert it into an flist starting directly with the Nextcloud directory. This can be useful for users that want to create their own flist, instead of using the [official ThreeFold Nextcloud flist](https://hub.grid.tf/tf-official-apps/threefoldtech-nextcloudaio-latest.flist.md).
 
 To read the complete README.md file, go to [this link](https://github.com/threefoldtech/tf-images/blob/development/tfgrid3/nextcloud/README.md).
 
@@ -294,7 +294,7 @@ echo $SSH_KEY >> ~/.ssh/authorized_keys
 
 The first two symbols (`#!`) on the first line are often called shebang. When the file is used as an executable in a Unix-like system (sometimes referred to UN*X or nix), the loader, the part of the OS that is responsible for loading programs and libraries, will then parse the rest of the file's initial line as an interpreter directive. In our case, the first line `#!/bin/bash` will thus make sure that the file is executed using the [Bash shell](https://www.gnu.org/software/bash/).
 
-The goal of this script is to add the public key within the VM in order for the user to get a secure and remote connection to the VM. The two lines starting with `mkdir` create the necessary folders. The lines starting with `chmod` give the owner the permission to write and read the content within the folders. Finally, the line `echo` will write the public SSH key in a file within the VM. In our case, the SSH key is set in the Playground profile manager and passed as a variable when we deploy a micro VM running the Nextcloud FList.
+The goal of this script is to add the public key within the VM in order for the user to get a secure and remote connection to the VM. The two lines starting with `mkdir` create the necessary folders. The lines starting with `chmod` give the owner the permission to write and read the content within the folders. Finally, the line `echo` will write the public SSH key in a file within the VM. In our case, the SSH key is set in the Playground profile manager and passed as a variable when we deploy a micro VM running the Nextcloud flist.
 
 ### ufw_init.sh
 
@@ -357,11 +357,11 @@ Before discussing the main part of this script, we note that the `while` loop is
 
 The code section starting with `docker run` is taken from the [Nextcloud All-in-One repository on Github](https://github.com/nextcloud/all-in-one) with some slight modifications. The last line indicates that the Docker image being pulled will always be the latest version of Nextcloud All-in-One.
 
-We note here that Nextcloud AIO is published on the port 8000 and 8080. We also note that we set restart to **always**. This is very important as it will make sure that the Nextcloud instance is restarted if the Docker daemon reboots. We take the opportunity to note that, on a Linux system, the Docker daemon restarts automatically after a reboot. Thus, this latter fact combined with the line `--restart always` ensures that the user that the Nextcloud instance will restart after a VM reboot.
+We note here that Nextcloud AIO is published on the port 8000 and 8080. We also note that we set restart to **always**. This is very important as it will make sure that the Nextcloud instance is restarted if the Docker daemon reboots. We take the opportunity to note that the way zinit configures micro VMs, the Docker daemon restarts automatically after a reboot. Thus, this latter fact combined with the line `--restart always` ensures that the user that the Nextcloud instance will restart after a VM reboot.
 
 We also set **11000** as the Apache port with an IP binding of **0.0.0.0**. For our deployment, we want to skip the domain validation, thus it is set to **true**.
 
-Finally, we note that this docker run command is specifically written for a container on Linux, hence the line `--sig-proxy=false`.
+Considering the line `--sig-proxy=false`, when this command is run interactively, it prevents the user from accidentally killing the spawned AIO container. While it is not of great importance in our case, it means that zinit will not kill the container if the service is stopped.
 
 For more information on this, we invite the readers to consult the [Nextcloud documentation](https://github.com/nextcloud/all-in-one#how-to-use-this).
 
@@ -476,7 +476,7 @@ oneshot: true
 
 In this zinit service file, we define a service named `ssh-init.yaml`, where we tell zinit to execute the following command: `exec: /scripts/sshd_init.sh`.  This command thus runs the script `sshd_init.sh` we covered in a previous section. 
 
-We also note that `oneshot` is set to `true` and this means that it should only be executed once. This command is often used with zinit files and it comes up frequently in the Nextcloud FList directory.
+We also note that `oneshot` is set to `true` and this means that it should only be executed once. This command is often used with zinit files and it comes up frequently in the Nextcloud flist directory.
 
 Now, we take a look at the file `sshd.yaml`:
 
@@ -557,11 +557,11 @@ This file will execute the `nextcloud-conf.sh` script we saw earlier. We recall 
 
 ## Putting it All Together
 
-We've now went through all the files available in the Nextcloud FList directory. You should now have a proper understanding of the interplay between the zinit (.yaml) and the scripts (.sh) files as well as the basic steps to build a Dockerfile and to write clear documentation.
+We've now went through all the files available in the Nextcloud flist directory. You should now have a proper understanding of the interplay between the zinit (.yaml) and the scripts (.sh) files as well as the basic steps to build a Dockerfile and to write clear documentation.
 
 To build your own Nextcloud docker image, you would simply need to clone this directory to your local computer and to follow the steps presented in the next section [Docker Publishing Steps](#docker-publishing-steps).
 
-To have a look at the complete directory, you can always refer to the [Nextcloud FList directory](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud) on the ThreeFold tf-images repository.
+To have a look at the complete directory, you can always refer to the [Nextcloud flist directory](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud) on the ThreeFold tf-images repository.
 
 # Docker Publishing Steps
 
@@ -616,9 +616,9 @@ You now have access to the Docker Hub from your local computer. We will then pro
       https://hub.docker.com/u/<account_name>
       ```
 
-# Convert the Docker Image to an FList
+# Convert the Docker Image to an Flist
 
-We will now convert the Docker image into a Zero-OS FList.
+We will now convert the Docker image into a Zero-OS flist.
 
 * Go to the [ThreeFold Hub](https://hub.grid.tf/).
 * Sign in with the ThreeFold Connect app.
@@ -629,10 +629,10 @@ We will now convert the Docker image into a Zero-OS FList.
   * Example:
     * `dockerhubuser/nextcloudaio:latest`
 * Click `Convert the docker image`.
-* Once the conversion is done, the FList is available as a public link on the ThreeFold Hub.
-* To get the FList URL, go to the [TF Hub main page](https://hub.grid.tf/), scroll down to your 3Bot ID and click on it.
-* Under `Name`, you will see all your available FLists.
-* Right-click on the FList you want and select `Copy Clean Link`. This URL will be used when deploying on the ThreeFold Playground. We show below the template and an example of what the FList URL looks like.
+* Once the conversion is done, the flist is available as a public link on the ThreeFold Hub.
+* To get the flist URL, go to the [TF Hub main page](https://hub.grid.tf/), scroll down to your 3Bot ID and click on it.
+* Under `Name`, you will see all your available flists.
+* Right-click on the flist you want and select `Copy Clean Link`. This URL will be used when deploying on the ThreeFold Playground. We show below the template and an example of what the flist URL looks like.
   * Template:
     * ```
       https://hub.grid.tf/<3BOT_name.3bot>/<docker_username>-<docker_image_name>-<tagname>.flist
@@ -644,9 +644,9 @@ We will now convert the Docker image into a Zero-OS FList.
 
 # Deploy Nextcloud AIO on the TFGrid with Terraform
 
-We now proceed to deploy a Nextcloud All-in-One instance by using the Nextcloud FList we've just created.
+We now proceed to deploy a Nextcloud All-in-One instance by using the Nextcloud flist we've just created.
 
-To do so, we will deploy a micro VM with the Nextcloud FList on the TFGrid using Terraform.
+To do so, we will deploy a micro VM with the Nextcloud flist on the TFGrid using Terraform.
 
 ## Create the Terraform Files
 
@@ -678,7 +678,7 @@ Make sure to add your own seed phrase and SSH public key. Simply replace the thr
 
 Obviously, you can decide to increase or modify the quantity in the variables `size`, `cpu` and `memory`. 
 
-Note that in our case, we set the FList to be the official Nextcloud FList. Simply replace the URL with your newly created Nextcloud FList to test it!
+Note that in our case, we set the flist to be the official Nextcloud flist. Simply replace the URL with your newly created Nextcloud flist to test it!
 
 * Copy the following content and save the file under the name `main.tf`:
 
@@ -831,6 +831,6 @@ Once you've deployed Nextcloud, you can access the Nextcloud setup page by pasti
 
 # Conclusion
 
-In this case study, we've seen the overall process of creating a new FList to deploy a Nextcloud instance on a Micro VM on the TFGrid with Terraform.
+In this case study, we've seen the overall process of creating a new flist to deploy a Nextcloud instance on a Micro VM on the TFGrid with Terraform.
 
 If you have any questions or feedback, please let us know by either writing a post on the [ThreeFold Forum](https://forum.threefold.io/), or by chatting with us on the [TF Grid Tester Community](https://t.me/threefoldtesting) Telegram channel.
