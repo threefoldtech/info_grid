@@ -90,6 +90,7 @@ From deployment strategies to monitoring tools, from security best practices to 
   - [Contract Bills Reports](../advanced/contract_bill_report.md)
   - [Listing Free Public IPs](../advanced/list_public_ips.md)
   - [Redis](../advanced/grid3_redis.md) 
+  - [IPFS on a Full VM](../advanced/ipfs_fullvm.md) 
 - [Playground](../playground/home.md)
   - [Wallet Connector](../playground/wallet_connector.md)
   - [Basic Environments](../playground/basic_environments_readme.md)
