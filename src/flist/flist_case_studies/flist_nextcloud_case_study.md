@@ -467,6 +467,7 @@ When we start the Docker container, zinit will parse each unit file in the `/etc
 
 In the Nextcloud Flist case, there are seven **.yaml** files: 
 
+* **caddy.yaml**
 * **dockerd.yaml**
 * **nextcloud-conf.yaml**
 * **nextcloud.yaml**
@@ -474,6 +475,7 @@ In the Nextcloud Flist case, there are seven **.yaml** files:
 * **sshd.sh**
 * **ufw-init.sh**
 * **ufw.sh**
+
 
 ### ssh-init.yaml and sshd.yaml
 
@@ -525,6 +527,15 @@ after:
 ```
 
 We can see that the file `ufw.yaml` will only run once and only after the file `ufw-init.yaml` has been run. This is important since the file `ufw-init.yaml` executes the script `ufw_init.sh`. We recall this script allows different ports in the firewall. Once those ports are defined, we can then run the command `ufw --force enable`. This will start the ufw firewall.
+
+### caddy.yaml
+
+```yaml
+exec: /scripts/caddy.sh
+oneshot: true
+```
+
+This is also very similar to previous files and just runs the Caddy script as a oneshot.
 
 ### dockerd.yaml
 
