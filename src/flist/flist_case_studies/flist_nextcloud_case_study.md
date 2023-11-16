@@ -48,7 +48,7 @@ As a general advice, before creating an flist for a ThreeFold deployment, you sh
 
 ## Flist: What is It?
 
-Before we go any further, let us recall what is an flist. In short, an flist is a technology for storing and efficiently sharing sets of files. While it has some nice features, it's purpose in this case is just to deliver the image contents to Zero OS for execution as a micro VM. It acts just as a bundle of files like a normal archive.
+Before we go any further, let us recall what is an flist. In short, an flist is a technology for storing and efficiently sharing sets of files. While it has many great features, it's purpose in this case is simply to deliver the image contents to Zero-OS for execution as a micro VM. It thus acts as a bundle of files like a normal archive.
 
 One convenient thing about the flist technology is that it is possible to convert any Docker image into an flist, thanks to the [ThreeFold Docker Hub Converter tool](https://hub.grid.tf/docker-convert). It is very easy to do and we will show you how to proceed in this case study. For a quick guide on converting Docker images into flists, read [this section](../flist_hub/convert_docker_image.md) of the ThreeFold Manual.
 
@@ -56,7 +56,7 @@ One convenient thing about the flist technology is that it is possible to conver
 
 The goal of this case study is to give you enough information and tools so that you can build your own flist projects and deploy on the ThreeFold Grid.
 
-We will explore the different files needed to create the flist and explain the overall process. Instead of starting from scratch, we will analyze the Nextcloud flist directory in the [tf-images](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud) ThreeFold Tech repository. As the project is already done, it will be easier to get an overview of the process and different components so you can learn to create your own.
+We will explore the different files needed to create the flist and explain the overall process. Instead of starting from scratch, we will analyze the Nextcloud flist directory in the [tf-images](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud) ThreeFold Tech repository. As the project is already done, it will be easier to get an overview of the process and the different components so you can learn to create your own.
 
 ## The Overall Process
 
@@ -114,13 +114,13 @@ We can see that the directory is composed of a Caddyfile, a Dockerfile, a README
 
 To get a big picture of this directory, we could say that the **README.md** file provides the necessary documentation for the users to understand the Nextcloud flist, how it is built and how it works, the **Caddyfile** provides the necessary requirements to run the reverse proxy, the **Dockerfile** specifies how the Docker image is built, installing things such as [openssh](https://www.openssh.com/) and the [ufw firewall](https://wiki.ubuntu.com/UncomplicatedFirewall) for secure remote connection, while the two folders, **scripts** and **zinit**, could be said to work hand-in-hand. 
 
-Each `.yaml` file is a *unit file* for zinit. That means it specifies a single service for zinit to start. We'll learn more about these files later, but for now we can just note that each script file (ending with `.sh`) has an associated zinit file to make sure the script is run. There are also some other files for running programs aside from our scripts.
+Each `.yaml` file is a *unit file* for zinit. That means it specifies a single service for zinit to start. We'll learn more about these files later, but for now we can just note that each script file (ending with `.sh`) has an associated zinit file to make sure that the script is run. There are also some other files for running programs aside from our scripts.
 
 ## Caddyfile
 
 For our Nextcloud deployment, we are using Caddy as a reverse proxy. A reverse proxy is an application that sits in front of back-end applications and forwards client requests to those applications.
 
-Since Nextcloud AIO actually includes two web applications, both Nextcloud itself and the AIO management interface, we use the reverse proxy to serve them both on a single domain. It also allows us to make some on the fly changes to the content of the AIO site to enhance the user experience a bit. Finally, we also use Caddy to provide SSL termination if the user reserves a public IP and no gateway, since otherwise SSL termination is provided by the gateway.
+Since Nextcloud AIO actually includes two web applications, both Nextcloud itself and the AIO management interface, we use the reverse proxy to serve them both on a single domain. It also allows us to make some changes on the fly to the content of the AIO site to considerably enhance the user experience. Finally, we also use Caddy to provide SSL termination if the user reserves a public IP and no gateway, since otherwise SSL termination is provided by the gateway.
 
 File: `Caddyfile`
 ```
@@ -178,17 +178,17 @@ File: `Caddyfile`
 
 We can see in the first section (`trusted_proxies static`) that we set a range of IP addresses as trusted proxy addresses. These include the possible source addresses for gateway traffic, which we mark as trusted for compatibility with some Nextcloud features.
 
-After the global config at the top, the line `{$DOMAIN}:{$PORT}` defines the port Caddy will listen on and the domain we are using for our site. This is important, because in the case that port `443` is specified, Caddy will handle SSL certificates automatically.
+After the global config at the top, the line `{$DOMAIN}:{$PORT}` defines the port that Caddy will listen to and the domain that we are using for our site. This is important, because in the case that port `443` is specified, Caddy will handle SSL certificates automatically.
 
 The following blocks define behavior for different URL paths that users might try to access. 
 
-First is `/aio*`, and this is how we place the AIO management app in a "subfolder" of our main domain. To accomplish that we need a few rules that rewrite the contents of the returned pages to correct the links. We also add some text replacements here to accomplish the enhancements mentioned earlier, like auto filling the domain entry field.
+To beging, we have `/aio*`. This is how we place the AIO management app in a "subfolder" of our main domain. To accomplish that we need a few rules that rewrite the contents of the returned pages to correct the links. We also add some text replacements here to accomplish the enhancements mentioned earlier, like automatically filling the domain entry field.
 
 With the `reverse_proxy` line, we specify that requests to all URLs starting with `/aio` should be sent to the web server running on port `8000` of `localhost`. That's the port where the AIO server is listening, as we'll see below. There's also a couple of header rewrite rules here that correct the links for any redirects the AIO site makes.
 
 The `redir` line is needed to support a feature where users open the AIO interface from within Nextcloud. This redirects the original request to the correct equivalent within the `/aio` "subfolder".
 
-Then there's a second `reverse_proxy` line, which is the catch all for any traffic that didn't get intercepted earlier. This handles the actual Nextcloud app and sends the traffic to its separate server running on port `11000`.
+Then there's a second `reverse_proxy` line, which is the catch-all for any traffic that didn't get intercepted earlier. This handles the actual Nextcloud app and sends the traffic to its separate server running on port `11000`.
 
 The section starting with `handle_errors` ensures that the user will receive an understandable error message when trying to access the Nextcloud deployment before it has fully started up.
 
@@ -227,7 +227,7 @@ We can see from the first line that this Dockerfile uses a base image of Ubuntu 
 
 With the first **RUN** command, we refresh the package lists, and then install **openssh**, **ufw** and other dependencies for our Nextcloud uses. Note that we also install **curl** so that we can quickly install **Docker**.
 
-With the second **RUN** command, we install **zinit** and we give it execution permission with the command `chmod +x`. There's more about zinit in its section below
+With the second **RUN** command, we install **zinit** and we give it execution permission with the command `chmod +x`. More will be said about zinit in a section below.
 
 With the third **RUN** command, we install **caddy** and we give it execution permission with the command `chmod +x`. Caddy is an extensible, cross-platform, open-source web server written in Go. For more information on Caddy, check the [Caddy website](https://caddyserver.com/).
 
@@ -288,7 +288,7 @@ fi
 caddy run --config /etc/caddy/Caddyfile
 ```
 
-The script **caddy.sh** sets the proper port depending on the network configuration (e.g. IPv4 or Gateway) in the first if/else section. In the second if/else section, the script also makes sure that the proper domain is given to Nextcloud All-in-One. This quickens the installation process as the user doesn't have to set the domain in Nextcloud AIO after deployment. We also disable a feature that's not relevant if the user didn't reserve an IPv4 address and insert a note about that.
+The script **caddy.sh** sets the proper port depending on the network configuration (e.g. IPv4 or Gateway) in the first if/else section. In the second if/else section, the script also makes sure that the proper domain is given to Nextcloud All-in-One. This quickens the installation process as the user doesn't have to set the domain in Nextcloud AIO after deployment. We also disable a feature that's not relevant if the user didn't reserve an IPv4 address and we insert a note about that.
 
 ### sshd_init.sh
 
@@ -604,7 +604,7 @@ You now have access to the Docker Hub from your local computer. We will then pro
 ## Build and Push the Docker Image
 
 * Make sure the Docker Daemon is running
-* Build the docker container (note the tag is optional but can help to track different versions)
+* Build the docker container (note that, while the tag is optional, it can help to track different versions)
   * Template:
     * ```
       docker build -t <docker_username>/<docker_repo_name>:<tag> . 
