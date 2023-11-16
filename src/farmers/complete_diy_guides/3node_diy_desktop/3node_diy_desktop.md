@@ -319,7 +319,7 @@ Connect the computer cable, the ethernet cable, the mouse and keyboard cable and
 
 ![3node_diy_desktop_13.png](img/3node_diy_desktop_13.jpeg)
 
-Plug the ethernet cable in the router (or the switcher)
+Plug the ethernet cable in the router (or the switch)
 
 ![3node_diy_desktop_6.png](img/3node_diy_desktop_3.png)
 

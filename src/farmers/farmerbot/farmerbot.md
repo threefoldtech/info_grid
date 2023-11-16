@@ -1,4 +1,4 @@
-<h1>Farmerbot: Guide for All Networks</h1>
+<h1>Farmerbot Extensive Guide</h1>
 
 <h2>Table of Contents</h2>
 

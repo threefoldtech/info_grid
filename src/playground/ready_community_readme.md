@@ -12,6 +12,7 @@
 - [Mattermost](./mattermost.html)
 - [Node Pilot](./nodepilot.html)
 - [Owncloud](./owncloud.html)
+- [Nextcloud](./nextcloud.html)
 - [Peertube](./peertube.html)
 - [Presearch](./presearch.html)
 - [Subsquid](./subsquid.html)

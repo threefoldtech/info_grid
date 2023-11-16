@@ -9,7 +9,6 @@
 - [Set a Firewall](#set-a-firewall)
 - [Set the DNS Record for Your Domain](#set-the-dns-record-for-your-domain)
 - [Install Nextcloud All-in-One](#install-nextcloud-all-in-one)
-- [Access the AIO Interface with HTTPS](#access-the-aio-interface-with-https)
 - [Set BorgBackup](#set-borgbackup)
 - [Conclusion](#conclusion)
 
@@ -86,17 +85,11 @@ You now have enabled the firwall with proper security rules for your Nextcloud d
 ## Set the DNS Record for Your Domain
 
 * Go to your domain name registrar (e.g. Namecheap)
-  * In the section Advanced DNS, add a DNS A Record to your domain (both @ and www as hosts) and link it with the VM IP Address
-    * Record with @ as host
-      * Type: A Record
-      * Host: @
-      * Value: VM IP Address
-      * TTL: Automatic
-    * Record with www as host
-      * Type: A Record
-      * Host: www
-      * Value: VM IP Address
-      * TTL: Automatic
+  * In the section **Advanced DNS**, add a **DNS A Record** to your domain and link it to the IP address of the VM you deployed on:
+    * Type: A Record
+    * Host: @
+    * Value: <VM_IP_Address>
+    * TTL: Automatic
   * It might take up to 30 minutes to set the DNS properly.
   * To check if the A record has been registered, you can use a common DNS checker:
     * ```
@@ -126,10 +119,11 @@ For the rest of the guide, we follow the steps availabe on the Nextcloud website
     --volume /var/run/docker.sock:/var/run/docker.sock:ro \
     nextcloud/all-in-one:latest
     ```
-* Reach the AIO interface on your browser
+* Reach the AIO interface on your browser:
   * ```
-    https://<VM_IP_Address>:8080
+    https://<domain_name>:8443
     ```
+  * Example: `https://nextcloudwebsite.com:8443`
 * Take note of the Nextcloud password
 * Log in with the given password
 * Add your domain name and click `Submit`
@@ -137,25 +131,6 @@ For the rest of the guide, we follow the steps availabe on the Nextcloud website
 * Click `Open your Nextcloud`
 
 You can now easily access Nextcloud AIO with your domain URL!
-
-## Access the AIO Interface with HTTPS
-
-Once you've set the domain name for your Nextcloud AIO, you can access the AIO interface with the following HTTPS link:
-
-```
-https://<domain-name>.com:8443
-```
-
-If you need to stop the Apache server to access the AIO interface, use the following lines to stop and start the server:
-
-* Stop the apache server
-  * ```
-    sudo docker stop nextcloud-aio-apache
-    ```
-* Start the apache server
-  * ```
-    sudo docker start nextcloud-aio-apache
-    ```
 
 ***
 ## Set BorgBackup

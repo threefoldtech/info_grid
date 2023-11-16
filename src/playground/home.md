@@ -22,6 +22,7 @@ The backend for the weblets is introduced with [grid client](../javascript/grid3
   - [Peertube](./peertube.md)
   - [Taiga](./taiga.md)
   - [Owncloud](./owncloud.md)
+  - [Nextcloud](./nextcloud.md)
   - [Discourse](./discourse.md)
   - [Mattermost](./mattermost.md)
   - [Presearch](./presearch.md)

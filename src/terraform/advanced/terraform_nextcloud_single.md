@@ -63,7 +63,7 @@ To get an overview of the whole process, we present the main steps:
 
 # Prerequisites
 
-* [Install Terraform](https://developer.hashicorp.com/terraform/downloads)
+- [Install Terraform](../terraform_install.md)
 
 You need to download and install properly Terraform on your local computer. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
 

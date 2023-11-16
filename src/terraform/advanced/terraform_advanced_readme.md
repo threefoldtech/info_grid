@@ -14,3 +14,4 @@
   - [Nextcloud All-in-One Deployment](./terraform_nextcloud_aio.md)
   - [Nextcloud Single Deployment](./terraform_nextcloud_single.md)
   - [Nextcloud Redundant Deployment](./terraform_nextcloud_redundant.md)
+- [Nomad](./terraform_nomad.md)

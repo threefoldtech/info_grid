@@ -21,7 +21,7 @@
 
 # Introduction
 
-In this Threefold Guide, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3node with [OpenSSH](https://www.openssh.com/) on Linux, MAC and Windows with both an IPv4 and a Planetary Network connection.
+In this Threefold Guide, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3node with [OpenSSH](https://www.openssh.com/) on Linux, MAC and Windows with both an IPv4 and a Planetary Network connection. To connect to the 3Node with WireGuard, read [this documentation](./ssh_wireguard.md).
 
 To deploy different workloads, the SSH connection process should be very similar.
 
@@ -32,9 +32,9 @@ If you have any questions, feel free to write a post on the [Threefold Forum](ht
 
 The prerequisites are:
 
-* [Create a Threefold Connect Wallet](https://manual.grid.tf/getstarted/TF_Connect/TF_Connect.html)
-* [Buy TFT](https://manual.grid.tf/getstarted/TF_Token/TF_Token.html)
-* [Create a Threefold Dashboard Account and Transfer TFT](https://manual.grid.tf/getstarted/TF_Dashboard/TF_Dashboard.html)
+* [Create a Threefold Connect Wallet](../TF_Connect/TF_Connect.md)
+* [Buy TFT](../../threefold_token/buy_sell_tft/buy_sell_tft.md)
+* [Create a Threefold Dashboard Account and Transfer TFT](../TF_Dashboard/TF_Dashboard.md)
 
 The main steps for the whole process are the following:
 
@@ -51,12 +51,6 @@ The main steps for the whole process are the following:
 ## Linux
 
 ### SSH into a 3node with IPv4 on Linux
-
-<div class="youtubeVideoWrapper">
-<iframe title="SSH into a 3node with IPv4 on Linux" width="560" height="315" src="https://peertube.hostservice.nl/videos/embed/a049f97c-f366-451c-b9c0-05766b693c77" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
-</div>
-
-***
 
 * To create the SSH key pair, write in the terminal 
   * ```
@@ -99,12 +93,6 @@ The main steps for the whole process are the following:
 ***
 
 ### SSH into a 3node with the Planetary Network on Linux
-
-<div class="youtubeVideoWrapper">
-<iframe title="SSH into a 3node with the Planetary Network on Linux" width="560" height="315" src="https://peertube.hostservice.nl/videos/embed/793b6100-0f0c-4c76-b000-7f85e4ccd998" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
-</div>
-
-***
 
 * To download and connect to the Threefold Planetary Network Connector
   * Download the [.deb file](https://github.com/threefoldtech/planetary_network/releases/tag/v0.3-rc1-Linux)
@@ -157,12 +145,6 @@ The main steps for the whole process are the following:
 
 ### SSH into a 3node with IPv4 on MAC
 
-<div class="youtubeVideoWrapper">
-<iframe title="SSH into a 3node with IPv4 on MAC" width="560" height="315" src="https://peertube.hostservice.nl/videos/embed/1804a327-df69-430d-aef7-ba55f63dfacb" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
-</div>
-
-***
-
 * To create the SSH key pair, in the terminal write
     * ```
       ssh-keygen
@@ -204,12 +186,6 @@ The main steps for the whole process are the following:
 ***
 
 ### SSH into a 3node with the Planetary Network on MAC
-
-<div class="youtubeVideoWrapper">
-<iframe title="SSH into a 3node with the Planetary Network on MAC" width="560" height="315" src="https://peertube.hostservice.nl/videos/embed/0d11f28c-cf21-4fe5-9165-ae4a28f7c331" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
-</div>
-
-***
 
 * To download and connect to the Threefold Planetary Network Connector
   * Download the [.dmg file](https://github.com/threefoldtech/planetary_network/releases/tag/v0.3-rc1-MacOS)
@@ -276,13 +252,13 @@ The main steps for the whole process are the following:
       * Click `Add a feature`
         * Search OpenSSH
         * Install OpenSSH Client and OpenSSH Server
-* To create the SSH key pair, open the `Command Prompt` and write
+* To create the SSH key pair, open `PowerShell` and write
   * ```
     ssh-keygen
     ```
     * Save in default location
     * Write a password (optional)
-* To see the public key, write in the `Command Prompt`
+* To see the public key, write in `PowerShell`
   * ```
     cat ~/.ssh/id_rsa.pub
     ```
@@ -304,7 +280,7 @@ The main steps for the whole process are the following:
     * Click `Deploy`
     * Once the 3node is deployed
       * Copy the IPv4 address
-      * Open the `Command Prompt`, write (adjust your address)
+      * Open `PowerShell`, write (adjust your address)
         * ```
           ssh root@IPv4_address
           ```
@@ -339,13 +315,13 @@ The main steps for the whole process are the following:
       * Click `Add a feature`
         * Search OpenSSH
         * Install OpenSSH Client and OpenSSH Server
-* To create the SSH key pair, open the `Command Prompt` and write
+* To create the SSH key pair, open `PowerShell` and write
   * ```
     ssh-keygen
     ```
     * Save in default location
     * Write a password (optional)
-* To see the public key, write in the `Command Prompt`
+* To see the public key, write in `PowerShell`
   * ```
     cat ~/.ssh/id_rsa.pub
     ```
@@ -367,7 +343,7 @@ The main steps for the whole process are the following:
     * Click `Deploy`
     * Once the 3node is deployed
       * Copy the Planetary Network address
-      * Open the `Command Prompt`, write (adjust your address)
+      * Open `PowerShell`, write (adjust your address)
         * ```
           ssh root@planetary_network_address
           ```

@@ -9,6 +9,8 @@
 - [Advanced Booting Option - Network Booting (PXE)](#advanced-booting-option---network-booting-pxe)
   - [PXE Booting with OPNsense](#pxe-booting-with-opnsense)
   - [PXE Booting with pfSense](#pxe-booting-with-pfsense)
+- [Booting Issues](#booting-issues)
+  - [Multiple nodes can run with the same node ID](#multiple-nodes-can-run-with-the-same-node-id)
 
 
 ***
@@ -23,7 +25,7 @@ In this section of the ThreeFold Farmers book, we explain how to boot the 3Node.
 
 To boot Zero-OS, insert your Zero-OS Bootstrap Image, power on your computer and choose the right booting sequence and parameters ([BIOS or UEFI](./5_set_bios_uefi.md)) in your BIOS/UEFI settings. Then, restart the 3Node. Zero-OS should boot automatically.
 
-Note that you need an ethernet cable connected to your router or switcher. You cannot farm on the ThreeFold Grid with Wifi.
+Note that you need an ethernet cable connected to your router or switch. You cannot farm on the ThreeFold Grid with Wifi.
 
 The first time you boot a 3Node, it will be written: “This node is not registered (farmer ***: NameOfFarm). This is normal. The Grid will create a node ID and you will be able to see it on screen. This can take a couple of minutes.
 
@@ -186,9 +188,10 @@ That's it! You’ll want to ensure your clients are configured with boot priorit
 
 ***
 
+## Booting Issues
 
-### Other farmers can any node with your farmID
+### Multiple nodes can run with the same node ID
 
-It's a [known issue](https://github.com/threefoldtech/info_grid/issues/122), It's going to be resolved once the TPM effort gets finalized
+This is a [known issue](https://github.com/threefoldtech/info_grid/issues/122) and will be resolved once the TPM effort gets finalized.
 
 ***

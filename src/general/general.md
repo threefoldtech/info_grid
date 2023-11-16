@@ -11,6 +11,7 @@ This book serves as a central hub for gathering general information about ThreeF
     - [Dasboard Explorer](../dashboard/explorer/explorer_home.md)
       - [Find Capacity](../dashboard/explorer/explorer_find_capacity.md)
       - [A Glimpse Into GraphQL](../dashboard/explorer/explorer_graphql_intro.md)
+      - [GPU Support](../dashboard/explorer/explorer_gpu_support.md)
     - [TFChain Portal](../dashboard/portal/dashboard_portal_home.md)
       - [Manage TFTs on TFChain](../dashboard/portal/dashboard_portal_ui_tokens.md)
       - [Activate Farmer Account and Nodes on TFChain](../dashboard/portal/dashboard_portal_ui_farming.md)
@@ -32,4 +33,5 @@ This book serves as a central hub for gathering general information about ThreeF
 - [ThreeFold Roadmap](../roadmap/roadmap_readme.md)
   - [Release Notes](../roadmap/releasenotes/releasenotes_readme.md)
 - [FAQ](../faq/faq.md)
+- [Code of Conduct](../contribute/code_conduct.md)
 - [Legal](../legal/legal.md)
