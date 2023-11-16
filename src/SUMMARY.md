@@ -141,7 +141,7 @@
     - [Database](proxy/database.md)
     - [Production](proxy/production.md)
     - [Release](proxy/release.md)
-  - [FList](flist/flist.md)
+  - [Flist](flist/flist.md)
     - [Zero-OS Hub](flist/flist_hub/zos_hub.md)
     - [Generate an API Token](flist/flist_hub/api_token.md)
     - [Convert Docker Image Into Flist](flist/flist_hub/convert_docker_image.md)
