@@ -22,6 +22,7 @@
   - [zinit Folder](#zinit-folder)
     - [ssh-init.yaml and sshd.yaml](#ssh-inityaml-and-sshdyaml)
     - [ufw-init.yaml and ufw.yaml](#ufw-inityaml-and-ufwyaml)
+    - [caddy.yaml](#caddyyaml)
     - [dockerd.yaml](#dockerdyaml)
     - [nextcloud.yaml](#nextcloudyaml)
     - [nextcloud-conf.yaml](#nextcloud-confyaml)
@@ -465,16 +466,16 @@ But first, what is zinit? In a nutshell, zinit is a process manager (pid 1) that
 
 When we start the Docker container, zinit will parse each unit file in the `/etc/zinit` folder and execute the contained command according to the specified parameters.
 
-In the Nextcloud Flist case, there are seven **.yaml** files: 
+In the Nextcloud Flist case, there are eight **.yaml** files: 
 
 * **caddy.yaml**
 * **dockerd.yaml**
 * **nextcloud-conf.yaml**
 * **nextcloud.yaml**
-* **ssh-init.sh**
-* **sshd.sh**
-* **ufw-init.sh**
-* **ufw.sh**
+* **ssh-init.yaml**
+* **sshd.yaml**
+* **ufw-init.yaml**
+* **ufw.yaml**
 
 
 ### ssh-init.yaml and sshd.yaml
