@@ -182,7 +182,7 @@ After the global config at the top, the line `{$DOMAIN}:{$PORT}` defines the por
 
 The following blocks define behavior for different URL paths that users might try to access. 
 
-To beging, we have `/aio*`. This is how we place the AIO management app in a "subfolder" of our main domain. To accomplish that we need a few rules that rewrite the contents of the returned pages to correct the links. We also add some text replacements here to accomplish the enhancements mentioned earlier, like automatically filling the domain entry field.
+To begin, we have `/aio*`. This is how we place the AIO management app in a "subfolder" of our main domain. To accomplish that we need a few rules that rewrite the contents of the returned pages to correct the links. We also add some text replacements here to accomplish the enhancements mentioned earlier, like automatically filling the domain entry field.
 
 With the `reverse_proxy` line, we specify that requests to all URLs starting with `/aio` should be sent to the web server running on port `8000` of `localhost`. That's the port where the AIO server is listening, as we'll see below. There's also a couple of header rewrite rules here that correct the links for any redirects the AIO site makes.
 
