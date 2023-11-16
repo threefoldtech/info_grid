@@ -48,17 +48,15 @@ As a general advice, before creating an flist for a ThreeFold deployment, you sh
 
 ## Flist: What is It?
 
-Before we go any further, let us recall what is an flist. In short, an flist is a very effective way to deal with software data and the end result is fast deployment and high reliability.
+Before we go any further, let us recall what is an flist. In short, an flist is a technology for storing and efficiently sharing sets of files. While it has some nice features, it's purpose in this case is just to deliver the image contents to Zero OS for execution as a micro VM. It acts just as a bundle of files like a normal archive.
 
-In an flist, we separate the metadata from the data. The metadata is a description of what files are in that particular image. It's thus the data providing information about the app/software. Thanks to flist, the 3Node doesn't need to install a complete software program in order to run properly. Only the necessary files are installed. Zero-OS can read the metadata of a container and only download and execute the necessary binaries and applications to run the workload when necessary.
-
-One amazing thing about the flist technology is that it is possible to convert any Docker image into an flist, thanks to the [ThreeFold Docker Hub Converter tool](https://hub.grid.tf/docker-convert). It is very easy to do and we will show you how to proceed in this case study. For a quick guide on converting Docker images into flists, read [this section](../flist_hub/convert_docker_image.md) of the ThreeFold Manual.
+One convenient thing about the flist technology is that it is possible to convert any Docker image into an flist, thanks to the [ThreeFold Docker Hub Converter tool](https://hub.grid.tf/docker-convert). It is very easy to do and we will show you how to proceed in this case study. For a quick guide on converting Docker images into flists, read [this section](../flist_hub/convert_docker_image.md) of the ThreeFold Manual.
 
 ## Case Study Objective
 
 The goal of this case study is to give you enough information and tools so that you can build your own flist projects and deploy on the ThreeFold Grid.
 
-We will explore the different files needed to create the flist and explain the overall process. Instead of starting from scratch, we will analyze the Nextcloud flist directory in the [tf-images](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud) ThreeFold Tech repository. As the project is already done, it will be easier to get an overview of the process. Once you know the different components needed to create an flist, it will be easier for your to create your own.
+We will explore the different files needed to create the flist and explain the overall process. Instead of starting from scratch, we will analyze the Nextcloud flist directory in the [tf-images](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud) ThreeFold Tech repository. As the project is already done, it will be easier to get an overview of the process and different components so you can learn to create your own.
 
 ## The Overall Process
 
@@ -71,7 +69,7 @@ To give you a bird's-eye view of the whole project, here are the main steps:
 
 One important thing to have in mind is that, when we create an flist, what we are doing is basically automating the required steps to deploy a given workload on the TFGrid. Usually, these steps would be done manually and step-by-step by an individual deploying on a micro or a full VM.
 
-Once we've successfully created an flist, we thus have a very quick way to deploy a specific workload while always obtaining the same result. This is why it is highly recommended to test a given deployment on a full or micro VM before building an flist. 
+Once we've successfully created an flist, we thus have a very quick way to deploy a specific workload while always obtaining the same result. This is why it is highly recommended to test a given deployment on a full or micro VM before building an flist.
 
 For example, in the case of building a Nextcloud All-in-One flist, the prerequisites would be to successfully deploy a Nextcloud AIO instance on a full VM by executing each step sequentially. This specific example is documented in the Terraform section [Nextcloud All-in-One Guide](../../terraform/advanced/terraform_nextcloud_aio.md) of the System Administrators book.
 
@@ -79,9 +77,9 @@ In our case, the flist we will be using has some specific configurations dependi
 
 # Docker Image Creation
 
-As we've said previously, we will explore the different components of the existing Nextcloud flist directory. We thus want to check the existing codes and try to understand as much as possible how the different components work together. This is also a very good introduction to the ThreeFold ecosystem.
+As we've said previously, we will explore the different components of the existing Nextcloud flist directory. We thus want to check the existing files and try to understand as much as possible how the different components work together. This is also a very good introduction to the ThreeFold ecosystem.
 
-We will be using the codes available on the [ThreeFold Tech Github page](https://github.com/threefoldtech). In our case, we want to explore the repository [tf-images](https://github.com/threefoldtech/tf-images).
+We will be using the files available on the [ThreeFold Tech Github page](https://github.com/threefoldtech). In our case, we want to explore the repository [tf-images](https://github.com/threefoldtech/tf-images).
 
 If you go in the subsection [tfgrid3](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3), you can see many different flists available. In our case, we want to deploy the [Nextcloud All-in-One Flist](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud). 
 
@@ -90,6 +88,7 @@ If you go in the subsection [tfgrid3](https://github.com/threefoldtech/tf-images
 The Nextcloud flist directory tree is the following:
 
 ```
+tree tf-images/tfgrid3/nextcloud
 .
 ├── Caddyfile
 ├── Dockerfile
@@ -101,6 +100,7 @@ The Nextcloud flist directory tree is the following:
 │   ├── sshd_init.sh
 │   └── ufw_init.sh
 └── zinit
+    ├── caddy.yaml
     ├── dockerd.yaml
     ├── nextcloud-conf.yaml
     ├── nextcloud.yaml
@@ -112,11 +112,15 @@ The Nextcloud flist directory tree is the following:
 
 We can see that the directory is composed of a Caddyfile, a Dockerfile, a README.md and two directories, **scripts** and **zinit**. We will now explore each of those components to have a good grasp of the whole repository and to understand how it all works together.
 
-To get a big picture of this directory, we could say that the **README.md** file provides the necessary documentation for the users to understand the Nextcloud flist, how it is built and how it works, the **Caddyfile** provides the necessary requirements to run the reverse proxy, the **Dockerfile** provides the necessary requirements for the Docker image to be built, installing things such as [openssh](https://www.openssh.com/) and the [ufw firewall](https://wiki.ubuntu.com/UncomplicatedFirewall) for secure remote connection, while the two folders, **scripts** and **zinit**, could be said to work hand-in-hand. While commands can be executed in the .yaml files contained within the zinit folder, these files also serve as a way to organize the scripts. As we will see later on, zinit coupled with the `.yaml` files provides ordered steps for the scripts (i.e. the files with the extension `.sh`) to be executed. This ensures that the Nextcloud deployment gets built systematically in the proper order.
+To get a big picture of this directory, we could say that the **README.md** file provides the necessary documentation for the users to understand the Nextcloud flist, how it is built and how it works, the **Caddyfile** provides the necessary requirements to run the reverse proxy, the **Dockerfile** specifies how the Docker image is built, installing things such as [openssh](https://www.openssh.com/) and the [ufw firewall](https://wiki.ubuntu.com/UncomplicatedFirewall) for secure remote connection, while the two folders, **scripts** and **zinit**, could be said to work hand-in-hand. 
+
+Each `.yaml` file is a *unit file* for zinit. That means it specifies a single service for zinit to start. We'll learn more about these files later, but for now we can just note that each script file (ending with `.sh`) has an associated zinit file to make sure the script is run. There are also some other files for running programs aside from our scripts.
 
 ## Caddyfile
 
-For our Nextcloud deployment, we will be using Caddy as a reverse proxy. We note that a reverse proxy is an application that sits in front of back-end applications and forwards client requests to those applications.
+For our Nextcloud deployment, we are using Caddy as a reverse proxy. A reverse proxy is an application that sits in front of back-end applications and forwards client requests to those applications.
+
+Since Nextcloud AIO actually includes two web applications, both Nextcloud itself and the AIO management interface, we use the reverse proxy to serve them both on a single domain. It also allows us to make some on the fly changes to the content of the AIO site to enhance the user experience a bit. Finally, we also use Caddy to provide SSL termination if the user reserves a public IP and no gateway, since otherwise SSL termination is provided by the gateway.
 
 File: `Caddyfile`
 ```
@@ -172,13 +176,21 @@ File: `Caddyfile`
 }
 ```
 
-We can see in the first section (`trusted_proxies static`) that we set a range of static IP addresses as trusted proxy addresses.
+We can see in the first section (`trusted_proxies static`) that we set a range of IP addresses as trusted proxy addresses. These include the possible source addresses for gateway traffic, which we mark as trusted for compatibility with some Nextcloud features.
 
-In the section section, starting with `{$DOMAIN}:{$PORT}`, we provide the different rules to deal with different URLs that will be used during our deployment. We thus proceed with some replacement rules such as replace the end of the URL, **/**, by **/aio/**.
+After the global config at the top, the line `{$DOMAIN}:{$PORT}` defines the port Caddy will listen on and the domain we are using for our site. This is important, because in the case that port `443` is specified, Caddy will handle SSL certificates automatically.
 
-Afterward, with the line `redir /api/auth/getlogin /aio{uri`, we redirect `/api/auth/getlogi` to `/air{uri}`. We also set the port 11000 for the reverse proxy.
+The following blocks define behavior for different URL paths that users might try to access. 
 
-The section starting with `handle_errors` ensures that the user will receive an understandble error message when logging into the Nextcloud deployment before it is properly configured.
+First is `/aio*`, and this is how we place the AIO management app in a "subfolder" of our main domain. To accomplish that we need a few rules that rewrite the contents of the returned pages to correct the links. We also add some text replacements here to accomplish the enhancements mentioned earlier, like auto filling the domain entry field.
+
+With the `reverse_proxy` line, we specify that requests to all URLs starting with `/aio` should be sent to the web server running on port `8000` of `localhost`. That's the port where the AIO server is listening, as we'll see below. There's also a couple of header rewrite rules here that correct the links for any redirects the AIO site makes.
+
+The `redir` line is needed to support a feature where users open the AIO interface from within Nextcloud. This redirects the original request to the correct equivalent within the `/aio` "subfolder".
+
+Then there's a second `reverse_proxy` line, which is the catch all for any traffic that didn't get intercepted earlier. This handles the actual Nextcloud app and sends the traffic to its separate server running on port `11000`.
+
+The section starting with `handle_errors` ensures that the user will receive an understandable error message when trying to access the Nextcloud deployment before it has fully started up.
 
 ## Dockerfile
 
@@ -206,16 +218,16 @@ RUN sh /usr/local/bin/install-docker.sh
 COPY ./Caddyfile /etc/caddy/
 COPY ./scripts/ /scripts/
 COPY ./zinit/ /etc/zinit/
-RUN chmod +x /sbin/zinit && chmod +x /scripts/*.sh
+RUN chmod +x /scripts/*.sh
 
 ENTRYPOINT ["/sbin/zinit", "init"]
 ```
 
-We can see from the first line that this Dockerfile uses the Linux distribution Ubuntu 22.04. 
+We can see from the first line that this Dockerfile uses a base image of Ubuntu Linux version 22.04. 
 
-With the first **RUN** command, we update and upgrade the system, and we also install **openssh**, **ufw** and other dependencies for our Nextcloud uses. Note that we also install **curl** so that we can quickly install **Docker**.
+With the first **RUN** command, we refresh the package lists, and then install **openssh**, **ufw** and other dependencies for our Nextcloud uses. Note that we also install **curl** so that we can quickly install **Docker**.
 
-With the second **RUN** command, we install **zinit** and we give it execution permission with the command `chmod +x`. In a nutshell, zinit is a process manager (pid 1) that knows how to launch, monitor and sort dependencies. It thus executes targets in the proper order. For more information on zinit, check the [zinit repository](https://github.com/threefoldtech/zinit). Reading the rest of the case study will also help you to understand how zinit works.
+With the second **RUN** command, we install **zinit** and we give it execution permission with the command `chmod +x`. There's more about zinit in its section below
 
 With the third **RUN** command, we install **caddy** and we give it execution permission with the command `chmod +x`. Caddy is an extensible, cross-platform, open-source web server written in Go. For more information on Caddy, check the [Caddy website](https://caddyserver.com/).
 
@@ -223,7 +235,7 @@ With fourth **RUN** command, we download and give proper permissions to the scri
 
 The fifth **RUN** command runs the `install-docker.sh` script to properly install Docker within the image.
 
-Once those commands are run, we proceed to copy to our Docker image the necessary folders `scripts` and `zinit` as well as the Caddyfile. Once this is done, we want to give execution permissions to the folders by running the **RUN** command with `chmod +x`.
+Once those commands are run, we proceed to copy into our Docker image the necessary folders `scripts` and `zinit` as well as the Caddyfile. Once this is done, we give execution permissions to all scripts in the scripts folder using `chmod +x`.
 
 Finally, we set an entrypoint in our Dockerfile. As per the [Docker documentation](https://docs.docker.com/engine/reference/builder/), an entrypoint "allows you to configure a container that will run as an executable". Since we are using zinit, we set the entrypoint `/sbin/zinit`.
 
@@ -276,7 +288,7 @@ fi
 caddy run --config /etc/caddy/Caddyfile
 ```
 
-The script **caddy.sh** sets the proper port depending on the network configuration (e.g. IPv4 or Gateway) in the first if/else section. In the second if/else section, the script also makes sure that the proper domain is given to Nextcloud All-in-One. This quickens the installation process as the user doesn't have to set the domain in Nextcloud AIo after deployment.
+The script **caddy.sh** sets the proper port depending on the network configuration (e.g. IPv4 or Gateway) in the first if/else section. In the second if/else section, the script also makes sure that the proper domain is given to Nextcloud All-in-One. This quickens the installation process as the user doesn't have to set the domain in Nextcloud AIO after deployment. We also disable a feature that's not relevant if the user didn't reserve an IPv4 address and insert a note about that.
 
 ### sshd_init.sh
 
@@ -292,9 +304,9 @@ chmod 600 /etc/ssh/*
 echo $SSH_KEY >> ~/.ssh/authorized_keys
 ```
 
-The first two symbols (`#!`) on the first line are often called shebang. When the file is used as an executable in a Unix-like system (sometimes referred to UN*X or nix), the loader, the part of the OS that is responsible for loading programs and libraries, will then parse the rest of the file's initial line as an interpreter directive. In our case, the first line `#!/bin/bash` will thus make sure that the file is executed using the [Bash shell](https://www.gnu.org/software/bash/).
+This file starts with a shebang (`#!`) that instructs the operating system to execute the following lines using the [Bash shell](https://www.gnu.org/software/bash/). In essence, it lets us write `./sshd_init.sh` with the same outcome as `bash ./sshd_init.sh`, assuming the file is executable.
 
-The goal of this script is to add the public key within the VM in order for the user to get a secure and remote connection to the VM. The two lines starting with `mkdir` create the necessary folders. The lines starting with `chmod` give the owner the permission to write and read the content within the folders. Finally, the line `echo` will write the public SSH key in a file within the VM. In our case, the SSH key is set in the Playground profile manager and passed as a variable when we deploy a micro VM running the Nextcloud flist.
+The goal of this script is to add the public key within the VM in order for the user to get a secure and remote connection to the VM. The two lines starting with `mkdir` create the necessary folders. The lines starting with `chmod` give the owner the permission to write and read the content within the folders. Finally, the line `echo` will write the public SSH key in a file within the VM. In the case that the flist is used as a weblet, the SSH key is set in the Playground profile manager and passed as an environment variable when we deploy the solution.
 
 ### ufw_init.sh
 
@@ -313,13 +325,13 @@ ufw allow 3478
 ufw limit ssh
 ```
 
-The script `ufw_init.sh` goal is to set the correct firewall parameters to make sure that our deployment is secure while also providing the necessary access for the Nextcloud users. 
+The goal of the `ufw_init.sh` script is to set the correct firewall parameters to make sure that our deployment is secure while also providing the necessary access for the Nextcloud users. 
 
 The first two lines starting with `ufw default` are self-explanatory. We want to restrain incoming traffic while making sure that outgoing traffic has no restraints.
 
-The lines starting with `ufw allow` open the ports necessary for our Nextcloud instance. We note that **ssh** is port 22, **http** is port 80 and **https** is port 443. This means, for example, that the line `ufw allow 22` is equivalent to the line `ufw allow ssh`. The port 8443 is the default port that [Tomcat](https://tomcat.apache.org/) uses to open the SSL text service. In the case of the Nextcloud instance, it is used to access the Nextcloud interface through HTTPS secure connection. More on this will be said later. Finally, the port 3478 is used for Nextcloud Talk.
+The lines starting with `ufw allow` open the ports necessary for our Nextcloud instance. We note that **ssh** is port 22, **http** is port 80 and **https** is port 443. This means, for example, that the line `ufw allow 22` is equivalent to the line `ufw allow ssh`.
 
-We also note that there are two protocols, **tcp** and **udp**. When none of the protocols are specified, it allows both protocols to access the ports. For example, if we only wanted to allow the protocol tcp with port 22 (ssh), we would write `ufw allow ssh/tcp`. To allow both protocols, we write `ufw allow ssh`.
+Port 8443 can be used to access the AIO interface, as an alternative to using the `/aio` "subfolder" on deployments with a public IPv4 address. Finally, the port 3478 is used for Nextcloud Talk.
 
 The line `ufw limit ssh` will provide additional security by denying connection from IP addresses that attempt to initiate 6 or more connections within a 30-second period.
 
@@ -451,7 +463,7 @@ Next, we want to take a look at the zinit folder.
 
 But first, what is zinit? In a nutshell, zinit is a process manager (pid 1) that knows how to launch, monitor and sort dependencies. It thus executes targets in the proper order. For more information on zinit, check the [zinit repository](https://github.com/threefoldtech/zinit). 
 
-When we start the Docker container, the files in the folder zinit will be executed. Those zinit files will run commands that will either execute direct commands and also execute some of the scripts we've seen in the previous sections.
+When we start the Docker container, zinit will parse each unit file in the `/etc/zinit` folder and execute the contained command according to the specified parameters.
 
 In the Nextcloud Flist case, there are seven **.yaml** files: 
 
@@ -474,9 +486,9 @@ exec: /scripts/sshd_init.sh
 oneshot: true
 ```
 
-In this zinit service file, we define a service named `ssh-init.yaml`, where we tell zinit to execute the following command: `exec: /scripts/sshd_init.sh`.  This command thus runs the script `sshd_init.sh` we covered in a previous section. 
+In this zinit service file, we define a service named `ssh-init.yaml`, where we tell zinit to execute the following command: `exec: /scripts/sshd_init.sh`.  This unit file thus runs the script `sshd_init.sh` we covered in a previous section. 
 
-We also note that `oneshot` is set to `true` and this means that it should only be executed once. This command is often used with zinit files and it comes up frequently in the Nextcloud flist directory.
+We also note that `oneshot` is set to `true` and this means that it should only be executed once. This directive is often used for setup scripts that only need to run once. When it is not specified, the default value of `false` means that zinit will continue to start up a service if it ever dies.
 
 Now, we take a look at the file `sshd.yaml`:
 
@@ -488,7 +500,7 @@ after:
   - ssh-init
 ```
 
-We can see that this file executes a line from the Bash shell. It is important to note that, with zinit and .yaml files, you can easily order the executions of the files by setting lines such as the following: `after: - ssh-init`. In this case, it means that the file `sshd.yaml` will only be executed after the file `ssh-init.yaml` is executed.
+We can see that this file executes a line from the Bash shell. It is important to note that, with zinit and .yaml files, you can easily order the executions of the files with the `after` directive. In this case, it means that the service `sshd` will only run after `ssh-init`.
 
 ### ufw-init.yaml and ufw.yaml
 
@@ -501,7 +513,7 @@ exec: /scripts/ufw_init.sh
 oneshot: true
 ```
 
-The file `ufw-init.yaml` is very similar to the previous file `ssh-unit.yaml`. In this case, this file is ran only once and it runs the script `ufw_unit.sh`. 
+The file `ufw-init.yaml` is very similar to the previous file `ssh-init.yaml`. 
 
 File: `ufw.yaml`
 
@@ -512,7 +524,7 @@ after:
   - ufw-init
 ```
 
-We can see that the file `ufw.yaml` will only run once and only after the file `ufw-init.yaml` has been run. This is important since the file `ufw-unit.yaml` executes the script `unit_init.sh`. We recall this script allows different ports in the firewall. Once those ports are defined, we can then run the command `ufw --force enable`. This will start the ufw firewall.
+We can see that the file `ufw.yaml` will only run once and only after the file `ufw-init.yaml` has been run. This is important since the file `ufw-init.yaml` executes the script `ufw_init.sh`. We recall this script allows different ports in the firewall. Once those ports are defined, we can then run the command `ufw --force enable`. This will start the ufw firewall.
 
 ### dockerd.yaml
 
@@ -524,7 +536,7 @@ File: `dockerd.yaml`
 exec: /usr/bin/dockerd --data-root /mnt/data/docker
 ```
 
-This file will run the [dockerd daemon](https://docs.docker.com/engine/reference/commandline/dockerd/) which is the persistent process that manages containers. We also note that it sets the data to be stored in the directory **/mnt/data/docker**.
+This file will run the [dockerd daemon](https://docs.docker.com/engine/reference/commandline/dockerd/) which is the persistent process that manages containers. We also note that it sets the data to be stored in the directory **/mnt/data/docker**, which is important because we will mount a virtual disk there that will provide better performance, especially for Docker's storage driver.
 
 ### nextcloud.yaml
 
@@ -557,7 +569,7 @@ This file will execute the `nextcloud-conf.sh` script we saw earlier. We recall 
 
 ## Putting it All Together
 
-We've now went through all the files available in the Nextcloud flist directory. You should now have a proper understanding of the interplay between the zinit (.yaml) and the scripts (.sh) files as well as the basic steps to build a Dockerfile and to write clear documentation.
+We've now gone through all the files in the Nextcloud flist directory. You should now have a proper understanding of the interplay between the zinit (.yaml) and the scripts (.sh) files as well as the basic steps to build a Dockerfile and to write clear documentation.
 
 To build your own Nextcloud docker image, you would simply need to clone this directory to your local computer and to follow the steps presented in the next section [Docker Publishing Steps](#docker-publishing-steps).
 
@@ -592,10 +604,10 @@ You now have access to the Docker Hub from your local computer. We will then pro
 ## Build and Push the Docker Image
 
 * Make sure the Docker Daemon is running
-* Build the docker container
+* Build the docker container (note the tag is optional but can help to track different versions)
   * Template:
     * ```
-      docker build -t <docker_username>/<docker_repo_name> . 
+      docker build -t <docker_username>/<docker_repo_name>:<tag> . 
       ```
   * Example:
     * ```
