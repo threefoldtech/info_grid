@@ -26,7 +26,7 @@ The information provided here are specific to the Nextcloud workload, but it can
 
 Before building the Nextcloud weblet, we first deployed a [Nextcloud instance](../../terraform/advanced/terraform_nextcloud_aio.md) on the ThreeFold Grid with a full virtual machine. Once this deployment was working well, we built an [Nextcloud FList](../../flist/flist_case_studies/flist_nextcloud_case_study.md). Note that you can consult the Nextcloud FList code in the ThreeFold Tech [tf-images repository](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud). 
 
-Once we were confortable launching Nextcloud on a full VM and also using an FList, we were ready to tackle the building of a weblet. These steps should be taken into account when building your own weblet. We proceed this way to ensure that the workload is properly configured. Once we know the FList is working properly, we can focus on the weblet aspect of the deployment, knowing the deployment itself is working properly.
+In sum, once we were confortable launching Nextcloud on a full VM and also using an FList, we were ready to tackle the building of a weblet. These steps should be taken into account when building your own weblet. We proceed this way to ensure that the workload is properly configured. Once we know the FList is working properly, we can focus on the weblet aspect of the deployment, knowing the deployment itself is working properly.
 
 ## Questions and Feedback
 
