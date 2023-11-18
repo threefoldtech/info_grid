@@ -1,6 +1,6 @@
 <h1> IPFS on a Full VM</h1>
 
-![ipfs_logo](./img/ipfs_logo.png)
+![ipfs_logo](../img/ipfs_logo.png)
 
 <h2>Table of Contents</h2>
 
@@ -22,12 +22,14 @@ In this ThreeFold guide, we explore how to set an IPFS node on a Full VM using t
 
 ## Deploy a Full VM
 
+We start by deploying a full VM on the ThreeFold Playground.
+
 * Go to the [Threefold Playground](https://playground.grid.tf/#/)
 * Deploy a full VM (Ubuntu 20.04) with an IPv4 address and at least the minimum specs
   * IPv4 Address
   * Minimum vcores: 1vcore
-  * Minimum MB of RAM: 512GB
-  * Minimum storage: 15GB
+  * Minimum MB of RAM: 1024GB
+  * Minimum storage: 50GB
 * After deployment, note the VM IPv4 address
 * Connect to the VM via SSH
   * ``` 
@@ -35,6 +37,8 @@ In this ThreeFold guide, we explore how to set an IPFS node on a Full VM using t
     ```
 
 ## Create a Root-Access User
+
+We create a root-access user. Note that this step is optional.
 
 * Once connected, create a new user with root access (for this guide we use "newuser")
   * ``` 
@@ -76,11 +80,8 @@ In this ThreeFold guide, we explore how to set an IPFS node on a Full VM using t
 ## Set a Firewall
 
 We set a firewall to monitor and control incoming and outgoing network traffic. To do so, we will define predetermined security rules. As a firewall, we will be using [Uncomplicated Firewall](https://wiki.ubuntu.com/UncomplicatedFirewall) (ufw).
-
 For our security rules, we want to allow SSH, HTTP and HTTPS (443 and 8443).
-
 We thus add the following rules:
-
 * Allow SSH (port 22)
   * ```
     sudo ufw allow ssh
@@ -89,33 +90,26 @@ We thus add the following rules:
   * ```
     sudo ufw allow 4001
     ```
-
 * To enable the firewall, write the following:
   * ```
     sudo ufw enable
     ```
-
 * To see the current security rules, write the following:
   * ```
     sudo ufw status verbose
     ```
-
 You now have enabled the firewall with proper security rules for your IPFS deployment.
 
 ### Additional Ports
 
 We provided the basic firewall ports for your IPFS instance. There are other more advanced configurations possible.
-
 If you want to access your IPFS node remotely, you can allow **port 5001**. This will allow anyone to access your IPFS node. Make sure that you know what you are doing if you go this route. You should, for example, restrict which external IP address can access port 5001.
-
 If you want to run your deployment as a gateway node, you should allow **port 8080**. Read the IPFS documentation for more information on this.
-
 If you want to run pubsub capabilities, you need to allow **port 8081**. For more information, read the [IPFS documentation](https://blog.ipfs.tech/25-pubsub/).
 
 ## Install IPFS
 
-We install [IPFS](https://docs.ipfs.tech/install/command-line/#install-official-binary-distributions).
-
+We install the [IPFS Kubo binary](https://docs.ipfs.tech/install/command-line/#install-official-binary-distributions).
 * Download the binary
   * ```
     wget https://dist.ipfs.tech/kubo/v0.24.0/kubo_v0.24.0_linux-amd64.tar.gz
@@ -139,19 +133,21 @@ We install [IPFS](https://docs.ipfs.tech/install/command-line/#install-official-
 
 ## Set IPFS
 
-* Run IPFS
+We initialize IPFS and run the IPFS daemon.
+
+* Initialize IPFS
   * ```
     ipfs init --profile server
     ```
 * Increase the storage capacity (optional)
   * ```
-    ipfs config Datastore.StorageMax 12GB
+    ipfs config Datastore.StorageMax 30GB
     ```
-* Set IPFS to run at all time
+* Run the IPFS daemon
   * ```
     ipfs daemon
     ```
-* Set an Ubuntu systemd service to keep IPFS running after exiting the VM
+* Set an Ubuntu systemd service to keep the IPFS daemon running after exiting the VM
   * ```
     sudo nano /etc/systemd/system/ipfs.service
     ```
@@ -174,15 +170,12 @@ We install [IPFS](https://docs.ipfs.tech/install/command-line/#install-official-
     sudo systemctl enable ipfs
     sudo systemctl start ipfs
     ```
-* Verify that IPFS is properly running
+* Verify that the IPFS daemon is properly running
   * ```
     sudo systemctl status ipfs
     ```
-
 ## Final Verification
-
 We reboot and reconnect to the VM and verify that IPFS is properly running as a final verification.
-
 * Reboot the VM
   * ```
     sudo reboot
@@ -191,11 +184,9 @@ We reboot and reconnect to the VM and verify that IPFS is properly running as a 
   * ```
     ssh newuser@VM_IPv4_address
     ```
-* Check that the IPFS node is running
+* Check that the IPFS daemon is running
   * ```
     ipfs swarm peers
     ```
-
 ## Questions and Feedback
-
 If you have any questions or feedback, please let us know by either writing a post on the [ThreeFold Forum](https://forum.threefold.io/), or by chatting with us on the [TF Grid Tester Community](https://t.me/threefoldtesting) Telegram channel.
