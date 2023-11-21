@@ -253,7 +253,7 @@ SUBSTRATE=wss://tfchain.test.grid.tf:443
 
 ### Main Net
 
-For Main Net you should modify the NETWORK to main, the RELAY to wss://relay.grid.tf:443 and SUBSTRATE to wss://tfchain.grid.tf:443:
+For Main Net you should modify the NETWORK to main, the RELAY to `wss://relay.grid.tf:443` and SUBSTRATE to `wss://tfchain.grid.tf:443`:
 ```
 SECRET="MNEMONIC_OR_HEX_SECRET_OF_YOUR_FARM"
 NETWORK=main

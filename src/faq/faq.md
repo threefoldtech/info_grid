@@ -3737,7 +3737,6 @@ Yes, it is possible. You will most probably need to bypass the RAID controller f
 
 The onboard RAID controller is not linked to your PCIe SSDs. In this case, you can switch the RAID controller off.
 
-
 ***
 
 ### Can I change the name of my farm on polkadot.js?

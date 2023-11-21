@@ -12,25 +12,25 @@ It is the backbone of [ZOS](https://github.com/threefoldtech/zos) and other comp
 - Development network (Devnet):
 
   - Polkadot UI: [https://polkadot.js.org/apps/?rpc=wss%3A%2F%2F/tfchain.dev.grid.tf#/explorer](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2F/tfchain.dev.grid.tf#/explorer)
-  - Websocket url: wss://tfchain.dev.grid.tf
+  - Websocket url: `wss://tfchain.dev.grid.tf`
   - GraphQL UI: [https://graphql.dev.grid.tf/graphql](https://graphql.dev.grid.tf/graphql)
 
 - QA testing network (QAnet):
 
   - Polkadot UI: [https://polkadot.js.org/apps/?rpc=wss%3A%2F%2F/tfchain.qa.grid.tf#/explorer](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2F/tfchain.qa.grid.tf#/explorer)
-  - Websocket url: wss://tfchain.qa.grid.tf
+  - Websocket url: `wss://tfchain.qa.grid.tf`
   - GraphQL UI: [https://graphql.qa.grid.tf/graphql](https://graphql.qa.grid.tf/graphql)
 
 - Test network (Testnet):
 
   - Polkadot UI: [https://polkadot.js.org/apps/?rpc=wss%3A%2F%2F/tfchain.test.grid.tf#/explorer](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2F/tfchain.test.grid.tf#/explorer)
-  - Websocket url: wss://tfchain.test.grid.tf
+  - Websocket url: `wss://tfchain.test.grid.tf`
   - GraphQL UI: [https://graphql.test.grid.tf/graphql](https://graphql.test.grid.tf/graphql)
 
 - Production network (Mainnet):
 
   - Polkadot UI: [https://polkadot.js.org/apps/?rpc=wss%3A%2F%2F/tfchain.grid.tf#/explorer](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2F/tfchain.grid.tf#/explorer)
-  - Websocket url: wss://tfchain.grid.tf
+  - Websocket url: `wss://tfchain.grid.tf`
   - GraphQL UI: [https://graphql.grid.tf/graphql](https://graphql.grid.tf/graphql)
 
 ## Create a TFChain twin
