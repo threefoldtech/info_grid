@@ -31,7 +31,7 @@ The Grace Period feature acts as a safeguard, providing users with the opportuni
 Checking the state of your contracts within the ``Grace Period`` is simple and convenient. Here's how you can do it:
 
 ### Grid Weblets:
-The Contracts tab in the [__Grid Weblets__](https://manual.grid.tf/weblets/weblets_home.html) provides an easy way to monitor your contracts. Here, you can find comprehensive details about the desired ``contract``, including its ``State`` and ``Expiration date`` if the node is in the Grace Period.
+The Contracts tab on the Playground provides an easy way to monitor your contracts. Here, you can find comprehensive details about the desired ``contract``, including its ``State`` and ``Expiration date`` if the node is in the Grace Period.
 
 ![](./img/manual__grace_period_weblets.png)
 

@@ -15,7 +15,7 @@
 
 ![](img/mazraa.png)
 
-Alternatively, you can get TFT from Mazraa [(mazraa.io)](mazraa.io) farmers.
+Alternatively, you can get TFT from [Mazraa](https://mazraa.io) farmers.
 
 Mazraa is a pioneering provider of Peer2Peer Internet capacity on the ThreeFold Grid. Founded in the United Arab Emirates in early 2016, Mazraa has been at the forefront of leveraging the ThreeFold technology to offer decentralized and peer-to-peer compute and storage resources.
 
@@ -62,7 +62,7 @@ Verification Code: Check your email for the verification code and enter it on th
 
 Step 4: KYC Procedure: Complete the KYC (Know Your Customer) procedure by providing the required documents to Transcoin for verification. The specific documents needed will vary for each user.
 
-Specify the amount in euros (€) that you would like to purchase and provide the TFT wallet address where you want to receive the TFT. Your wallet address can be found in your [ThreeFold Connect App's wallet](/src/getstarted/TF_Connect/TF_Connect.md) or any other [TFT(Stellar) Wallet](../storetft/storetft_readme.md) you prefer.
+Specify the amount in euros (€) that you would like to purchase and provide the TFT wallet address where you want to receive the TFT. Your wallet address can be found in the [ThreeFold Connect a wallet](../storing_tft/tf_connect_app.md#create-a-wallet) or any other [TFT (Stellar) Wallet](../storing_tft/storing_tft.md) you prefer.
 
 ![](img/threefold__transcoin_amounts.jpg)
 

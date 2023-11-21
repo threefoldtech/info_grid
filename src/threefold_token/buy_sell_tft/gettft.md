@@ -27,7 +27,7 @@ Before you can buy TFT on [GetTFT.com](https://gettft.com/), there are a few pre
 
 - **BTC Wallet**: If you prefer to purchase TFT tokens using Bitcoin (BTC), make sure you have a BTC wallet of your own preference. This can be a hardware wallet, software wallet, or any other secure wallet that supports BTC transactions. You will need this wallet to send BTC from your personal wallet to GetTFT.com for the purchase.
 
-- **Mercuryo.io Account**: If you plan to buy TFT tokens using fiat currency (such as USD or EUR), you will need to create an account on [Mercuryo.io](https://mercuryo.io). Mercuryo.io is a fiat payment provider that allows you to purchase cryptocurrencies using traditional fiat currencies. This account will enable you to complete the fiat-to-TFT purchase process on GetTFT.com. See the complete mercuryio.io guide [here](https://help.mercuryo.io/en/collections/2396448-getting-started).
+- **Mercuryo.io Account**: If you plan to buy TFT tokens using fiat currency (such as USD or EUR), you will need to create an account on [Mercuryo.io](https://mercuryo.io). Mercuryo.io is a fiat payment provider that allows you to purchase cryptocurrencies using traditional fiat currencies. This account will enable you to complete the fiat-to-TFT purchase process on GetTFT.com.
 ***
 ## Get Started
 
@@ -67,7 +67,7 @@ To get started, complete the same login process described on '**Get Started: Lin
 
 ![](img/gettft_usd.png)
 
-Once clicked, you will be redirected to [https://exchange.mercuryo.io/](https://exchange.mercuryo.io/) widget. Please read [Mercuryo.io's FAQ](https://help.mercuryo.io/en/articles/4519473-mercuryo-widget-faq) to learn more about Mercuryo widget. Follow the prompts to complete the purchase, which typically involves connecting your bank account or using a supported payment method to transfer the USD equivalent for the desired amount of BTC tokens. 
+Once clicked, you will be redirected to [https://exchange.mercuryo.io/](https://exchange.mercuryo.io/) widget. Please read [Mercuryo.io's FAQ](https://help.mercuryo.io/) to learn more about Mercuryo widget. Follow the prompts to complete the purchase, which typically involves connecting your bank account or using a supported payment method to transfer the USD equivalent for the desired amount of BTC tokens. 
 
 ![](img/gettft_mercuryo.png)
 

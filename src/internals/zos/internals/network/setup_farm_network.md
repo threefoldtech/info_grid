@@ -10,7 +10,7 @@ For a node to have that ability to host user networks, we **strongly** advise to
 ## Running ZOS (v2) at home
 
 Running a ZOS Node at home is plain simple. Connect it to your router, plug it in the network, insert the preconfigured USB stick containing the bootloader and the `farmer_id`, power it on.
-You will then see it appear in the [Cockpit](https://cockpit.testnet.grid.tf/capacity), under your farm.
+You will then see it appear in the Cockpit (`https://cockpit.testnet.grid.tf/capacity`), under your farm.
 
 ## Running ZOS (v2) in a multi-node farm in a DC
 

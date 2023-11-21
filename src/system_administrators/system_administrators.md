@@ -117,7 +117,7 @@ From deployment strategies to monitoring tools, from security best practices to 
     - [Taiga](../playground/taiga.md)
     - [WordPress](../playground/wordpress.md)
     - [Umbrel](../playground/umbrel.md)
-- [Mastodon](../tf_mastodon/tf_mastodon_readme.md)
+<!-- - [Mastodon](../tf_mastodon/tf_mastodon_readme.md)
   - [Deploy Mastodon](../tf_mastodon/tf_mastodon_deploy.md)
-  - [Mastodon FAQ](../tf_mastodon/tf_mastodon_faq.md)
+  - [Mastodon FAQ](../tf_mastodon/tf_mastodon_faq.md) -->
 - [Users FAQ](../faq/faq.md#users-faq)

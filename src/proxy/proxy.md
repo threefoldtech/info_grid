@@ -76,7 +76,7 @@ To start the services for development or testing make sure first you have all th
    make all-start e=<MNEMONICS>
   ```
 
-  Now you can access the server at [:8080](http://loaclhost:8080)
+  Now you can access the server at `http://localhost:8080`
 - Run the tests
   
   ```bash

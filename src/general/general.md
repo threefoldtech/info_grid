@@ -29,6 +29,7 @@ This book serves as a central hub for gathering general information about ThreeF
   - [Website Deployer](../collaboration_tools/website_tool.md)
 - [How to Contribute](../contribute/contribute.md)
 - [How to Test](../testing/testing_readme.md)
+  - [TestLodge](../testing/testlodge.md)
 - [ThreeFold Video Gallery](../tf_video_gallery/tf_video_gallery.md)
 - [ThreeFold Roadmap](../roadmap/roadmap_readme.md)
   - [Release Notes](../roadmap/releasenotes/releasenotes_readme.md)

@@ -129,7 +129,6 @@
     - [How can I filter 3Nodes by country and by network (IPv4, IPv6 and Planetary Network)?](#how-can-i-filter-3nodes-by-country-and-by-network-ipv4-ipv6-and-planetary-network)
     - [Can I have the link to deploy a VM and other apps on the Grid?](#can-i-have-the-link-to-deploy-a-vm-and-other-apps-on-the-grid)
     - [What can I do on ThreeFold Grid?](#what-can-i-do-on-threefold-grid)
-    - [Can I deploy a Mastodon server on ThreeFold Grid?](#can-i-deploy-a-mastodon-server-on-threefold-grid)
     - [I want to become a ThreeFold validator. What are the steps?](#i-want-to-become-a-threefold-validator-what-are-the-steps)
     - [Is there delegated staking for TFT?](#is-there-delegated-staking-for-tft)
     - [What are the type of storage available on TF Grid?](#what-are-the-type-of-storage-available-on-tf-grid)
@@ -218,7 +217,6 @@
     - [What is Yggdrasil?](#what-is-yggdrasil)
     - [What does MAC mean when it comes to networking?](#what-does-mac-mean-when-it-comes-to-networking)
     - [I am a developer looking for a way to automatically convert BSC tokens into TFT. Could you please share tips on how to swap regular tokens into TFT, on backend, without and browser extensions, via any platform API?](#i-am-a-developer-looking-for-a-way-to-automatically-convert-bsc-tokens-into-tft-could-you-please-share-tips-on-how-to-swap-regular-tokens-into-tft-on-backend-without-and-browser-extensions-via-any-platform-api)
-    - [Where can I access the solidity code of the TFT contract on BSC?](#where-can-i-access-the-solidity-code-of-the-tft-contract-on-bsc)
   - [Dev Net \& Test Net](#dev-net--test-net)
     - [Is there a way to test the Grid with free TFT?](#is-there-a-way-to-test-the-grid-with-free-tft)
     - [Can I get some free TFT to test on Test Net](#can-i-get-some-free-tft-to-test-on-test-net)
@@ -399,7 +397,6 @@
     - [I try to delete a node on the TF Dashboard, but it doesn’t work. Is there any other way to proceed that could work?](#i-try-to-delete-a-node-on-the-tf-dashboard-but-it-doesnt-work-is-there-any-other-way-to-proceed-that-could-work)
     - [My 3Node has 2 ethernet ports in the back, with one written AMT above, what does it mean? Can I use this port to connect my 3Node to the ThreeFold Grid?](#my-3node-has-2-ethernet-ports-in-the-back-with-one-written-amt-above-what-does-it-mean-can-i-use-this-port-to-connect-my-3node-to-the-threefold-grid)
     - [My 3Node is based on a the hardware Z600, Z620 or Z820, can I run it headless or without a GPU?](#my-3node-is-based-on-a-the-hardware-z600-z620-or-z820-can-i-run-it-headless-or-without-a-gpu)
-    - [My 3Node is based on a Z800. The PSU is not working anymore. Is there an alternative to buying another expensive PSU?](#my-3node-is-based-on-a-z800-the-psu-is-not-working-anymore-is-there-an-alternative-to-buying-another-expensive-psu)
     - [Is it possible to add high-level GPU on rack servers to farm more TFT?](#is-it-possible-to-add-high-level-gpu-on-rack-servers-to-farm-more-tft)
     - [If I change farm, will my node IDs change on my 3Node servers?](#if-i-change-farm-will-my-node-ids-change-on-my-3node-servers)
   - [Troubleshooting and Error Messages](#troubleshooting-and-error-messages)
@@ -435,7 +432,7 @@
     - [When booting Zero-OS with IPV6 configurations, I get the errors (1) dial tcp: address IPV6-address too many columns in address and (2) no pools matches key: not routable. What can I do to fix this issue?](#when-booting-zero-os-with-ipv6-configurations-i-get-the-errors-1-dial-tcp-address-ipv6-address-too-many-columns-in-address-and-2-no-pools-matches-key-not-routable-what-can-i-do-to-fix-this-issue)
     - [When booting a 3Node, Zero-OS downloads fine, but then I get the message: error no route with default gateway found, and the message: info check if interface has a cable plugged in. What could fix this?](#when-booting-a-3node-zero-os-downloads-fine-but-then-i-get-the-message-error-no-route-with-default-gateway-found-and-the-message-info-check-if-interface-has-a-cable-plugged-in-what-could-fix-this)
     - [How can I update Dell and HP servers to Intel E5-2600v2, E5-2400v2 and E5-4600v2, when applicable?](#how-can-i-update-dell-and-hp-servers-to-intel-e5-2600v2-e5-2400v2-and-e5-4600v2-when-applicable)
-    - [How can I update a Dell PowerEdger server with a bootable ISO?](#how-can-i-update-a-dell-poweredger-server-with-a-bootable-iso)
+    - [How can I update the firmware and driver of a Dell PowerEdge server?](#how-can-i-update-the-firmware-and-driver-of-a-dell-poweredge-server)
     - [When I boot a 3Node in UEFI mode, it gets stuck at: Initializing Network Device, is there a way to fix this?](#when-i-boot-a-3node-in-uefi-mode-it-gets-stuck-at-initializing-network-device-is-there-a-way-to-fix-this)
     - [When I boot my 3Node, it gets stuck during the Zero-OS download. It never reaches 100%. What can I do to fix this issue?](#when-i-boot-my-3node-it-gets-stuck-during-the-zero-os-download-it-never-reaches-100-what-can-i-do-to-fix-this-issue)
     - [When booting a 3Node, I get the error=“context deadline exceeded” module=network error=failed to initialize rmb api failed to initialized admin mw: failed to get farm: farm not found: object not found. What can I do to fix this issue?](#when-booting-a-3node-i-get-the-errorcontext-deadline-exceeded-modulenetwork-errorfailed-to-initialize-rmb-api-failed-to-initialized-admin-mw-failed-to-get-farm-farm-not-found-object-not-found-what-can-i-do-to-fix-this-issue)
@@ -565,7 +562,6 @@ The [co-founders](https://threefold.io/memberships/cofounders/) of ThreeFold are
 
 - [Adnan Fatayerji](https://www.threefold.io/people/adnan-fatayerji/)
 - [Kristof de Spiegeleer](https://www.threefold.io/people/kristof-de-spiegeleer/)
-- [Nickolay Babenko](https://www.threefold.io/people/nickolay-babenko/)
 - [Owen Kemp](https://www.threefold.io/people/owen-kemp/)
 - [Rob Van Mieghem](https://www.threefold.io/people/rob-van-mieghem/)
 - [Weynand Kuijpers](https://www.threefold.io/people/weynand-kuijpers/)
@@ -622,7 +618,7 @@ There is ThreeFold VZW, in Belgium. Note that *VZW* is Belgium's denotation for 
 
 There is also ThreeFold DMCC, in Dubai. Read more [here](https://library.threefold.me/info/legal/#/threefold__threefold_dubai).
 
-There is also ThreeFold Tech NV, a software company which owns the IP of the code delivered. Read more [here](https://threefold.tech/) and [here](https://www.crunchbase.com/organization/threefold-tech).
+There is also ThreeFold Tech NV, a software company which owns the IP of the code delivered. Read more [here](https://threefold.tech/).
 
 
 ***
@@ -664,7 +660,7 @@ The Digital Twin will be a more advanced version of the 3bot.
 
 There are 2 ways to create a twin:
 
-You can create a twin via the ThreeFold Dashboard portal. See those related documentations for more information: [Polkadot Extension account](https://manual.grid.tf/getstarted/TF_Dashboard/TF_Dashboard.html#create-polkadot-extension-account) and [Create a Farm](https://manual.grid.tf/TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.html#1-create-a-farm).
+You can create a twin via the ThreeFold Dashboard portal. See those related documentations for more information: [Polkadot Extension account](../getstarted/TF_Dashboard/TF_Dashboard.md#create-polkadot-extension-account) and [Create a Farm](../farmers/3node_building/1_create_farm.md).
 
 You can also create a twin via the ThreeFold Connect app. Indeed, a twin is automatically generated while creating a farm. Note that, in this case, the twin will be created on mainnet.
 
@@ -774,7 +770,7 @@ Zero-OS is a stateless and lightweight operating system designed to host anythin
 
 ### ThreeFold uses Quantum Safe Storage technology, what does it mean?
 
-Quantum computers are theoretically capable of doing huge calculations in a short period of time. By this fact alone, it is a great potential threat to future online safety. ThreeFold solves this future problem before it even becomes a reality. Indeed, Zero-os can compress, encrypt, and disperse data across the Grid. Learn more [here](https://www2.threefold.io/developer/qsfs/).
+Quantum computers are theoretically capable of doing huge calculations in a short period of time. By this fact alone, it is a great potential threat to future online safety. ThreeFold solves this future problem before it even becomes a reality. Indeed, Zero-os can compress, encrypt, and disperse data across the Grid.
 
 ***
 
@@ -1059,7 +1055,7 @@ General Tips
 
 To set up ThreeFold token (TFT) on Metamask, you can follow those simple steps:
 
-* Download Metamask [here](https://metamask.io/download.html). Then, install the Metamask extension in your local browser.
+* Download Metamask [here](https://metamask.io/download/). Then, install the Metamask extension in your local browser.
 * Create a Metamask account
 * Switch the network to  `Binance chain` . You will have to create a new network with following information):
   * Mainnet
@@ -1413,8 +1409,7 @@ Note that you need a farm with at least one active 3Node to vote.
 ### How can I filter 3Nodes by country and by network (IPv4, IPv6 and Planetary Network)?
 
 You can use the official [Dashboard Explorer](https://dashboard.grid.tf/explorer/nodes).
-There are also wonderful tools built by people from the ThreeFold community. 
-See this [Explorer](https://www.app-yoke.com/explorer.html) by [Teisie](https://forum.threefold.io/t/grant-suggestion-improve-network-map-in-the-threefold-explorer/3429/8).
+There are also wonderful tools built by people from the ThreeFold community.
 
 ***
 
@@ -1433,7 +1428,6 @@ Since ThreeFold 3Nodes have their OS based on the Linux kernel, you can run just
 - [Peertube](https://play.grid.tf/#/peertube)
 - [Funkwhale](https://play.grid.tf/#/funkwhale)
 - [Mattermost](https://play.grid.tf/#/mattermost)
-- [Mastodon](https://play.grid.tf/#/mastodon)
 - [Discourse](https://play.grid.tf/#/discourse)
 - [Taiga](https://play.grid.tf/#/taiga)
 - [Owncloud](https://play.grid.tf/#/owncloud)
@@ -1441,6 +1435,8 @@ Since ThreeFold 3Nodes have their OS based on the Linux kernel, you can run just
 - [Casperlabs](https://play.grid.tf/#/casperlabs)
 
 When you take into consideration that with CapRover only, you get dozens and dozens of free and open source one-click applications, from Wordpress to Ruby, you realize the fun ahead.
+
+<!---
 
 ***
 
@@ -1450,6 +1446,8 @@ Yes! It is possible to [deploy a Mastodon server](https://getmastodon.threefold.
 Check this easy-to-follow guide right [here](https://library.threefold.me/info/manual/#/manual__threefold_mastodon_home).
 This is a beta tester version. The final version will be available on Threefold Grid 3.8.
 For more information, read this [TF Forum post](https://forum.threefold.io/t/beta-testers-wanted-mastodon-powered-by-threefold/3637).
+
+-->
 
 ***
 
@@ -2099,8 +2097,6 @@ You can use **scp** in the terminal to achieve this:
 scp -r folder root@Address_Deployment:/PATH
 ```
 
-For more information, read [this](http://www.whatismyipv6.com/blogs/macipv6/wordpress/?p=118). 
-
 ***
 
 ### On Linux, how can I see the resources being used on my server?
@@ -2332,11 +2328,9 @@ There are many ways to use Docker on the ThreeFold Grid.
 
 You can simply [run Docker in a virtual machine](https://docs.docker.com/desktop/install/ubuntu/) (Full VM and Micro VM) and then follow any instructions made for [Docker](https://docs.docker.com/). 
 
-Since the ThreeFold Hub has a [Docker to FList converter](https://hub.grid.tf/docker-convert), you can also [convert the Docker image to an FList](https://www2.manual.grid.tf/flist_hub/flist_hub.html?highlight=docker#convert-docker-to-flist) and run it directly as a micro VM, as shown in the ThreeFold Manual. This is covered in [this video on working with micro VM images](https://youtu.be/IM9fikszyss).
+Since the ThreeFold Hub has a [Docker to flist converter](https://hub.grid.tf/docker-convert), you can also [convert the Docker image to an flist](../flist/flist_hub/convert_docker_image.md) and run it directly as a micro VM.
 
-For examples on Docker running on ThreeFold, check this video on [deploying Wordpress with Docker](https://www2.manual.grid.tf/tf_video_gallery/tf_video_gallery.html?highlight=docker#running-a-wordpress-website-using-threefold-and-docker) or this guide on [deploying Apache Guacamole with Docker](https://forum.threefold.io/t/threefold-guide-deploy-a-full-vm-and-run-apache-guacamole-docker-install/3871).
-
-Note that you can also run Docker in [Kubernetes](https://www2.manual.grid.tf/weblets/weblets_k8s.html).
+Note that you can also run Docker in [Kubernetes](../playground/k8s.md).
 
 ***
 ### Can I convert an existing docker into an flist?
@@ -2389,15 +2383,6 @@ Swapping via Pancakeswap directly without a browser and extension can be done by
 TFT is a standard ERC-20 contract, called BEP20 on BSC. You will thus need to call the approved method in the TFT contract to allow Pancakeswap to transfer TFTs from your account.
 
 The TFT contract allows you to approve a large amount and when Pancakeswap makes the transfer, the TFT will be deducted from the transaction. This will not reset so you will not have to make a call to approve every swap. This will thus save some gas.
-
-For information on the solidity code of the TFT contract on BSC, read the next question.
-
-***
-
-### Where can I access the solidity code of the TFT contract on BSC?
-
-You can access the solidity code of the TFT contract on BSC [here](https://github.com/threefoldfoundation/tft/blob/main/solidity/contracts/tokenV0.sol).
-
 
 ***
 
@@ -2710,8 +2695,6 @@ When implemented : For certified Titans 3Nodes, it is 97% uptime per month (21.6
 ### How can I check the uptime of my 3Nodes? Is there a tool to check the uptime of 3Node servers on the ThreeFold Grid?
 
 You can go on the [ThreeFold Dashboard](https://dashboard.grid.tf/), and select "Farms" in the Portal menu.  When you select a specific 3Node in your farm, you can see a visual graph of the 3Node's uptime of the last month. By clicking on "Node Statistics", you can see past and present uptime periods.
-
-To check uptime, you can also use [this tool](http://publicuptime.tfcloud.us/uptimeCheck) made by a TF community member. This tool is also available with the Planetary Network [here](http://uptime.tfcloud.us/uptimeCheck). This link works when you are connected to the Planetary Network.
 
 ***
 
@@ -3326,7 +3309,7 @@ LINUX: In the Terminal, write *df*, find your disk (here we use sdX), write *sud
 
 For MAC, Linux and Windows, you can use [BalenaEtcher](https://www.balena.io/etcher/) to load/flash the image on a USB stick. This program also formats the USB in the process. Rufus can also be used for Windows.
 
-Also, got Linux systems, you can transfer the dowloaded image with the dd command: *dd if=created_boot_loader_file.img of=/dev/sd?* where the input file is the downloaded file from http:/bootloader.grid.tf and the output file (device) is the USB stick device. Read more [here](https://www.cyberciti.biz/faq/howto-use-wipefs-to-wipe-a-signature-from-disk-on-linux/).
+Also, got Linux systems, you can transfer the dowloaded image with the dd command: *dd if=created_boot_loader_file.img of=/dev/sd?* where the input file is the downloaded file from http:/bootloader.grid.tf and the output file (device) is the USB stick device.
 
 ***
 ### Should I do a UEFI image or a BIOS image to bootstrap Zero-OS?
@@ -3802,12 +3785,6 @@ For the Z620 and the Z820, you need to do some variation on the video above. In 
 Running your 3Node without the GPU can save some power consumption as well as giving you one more extra slot for other hardware.
 ***
 
-### My 3Node is based on a Z800. The PSU is not working anymore. Is there an alternative to buying another expensive PSU?
-
-It is possible to build your own PSU for the Z800. There is a great DIY guide by Linus on this [here](https://linustechtips.com/topic/1134357-hp-z800-alternative-power-supply-found/). This is clearly for advanced DIYer.
-
-***
-
 ### Is it possible to add high-level GPU on rack servers to farm more TFT?
 
 Some farmers had success installing GPUs such as the RTX3080 in servers as small as 2U (such as R730). Connections such as 250W 8-pin plug are needed on each riser. Generally, tower servers have more space to add high-level GPU.
@@ -4115,10 +4092,9 @@ There are many ressources online with steps on how to do this. You can check thi
 
 ***
 
-### How can I update a Dell PowerEdger server with a bootable ISO?
+### How can I update the firmware and driver of a Dell PowerEdge server?
 
-Dell has excellen documentation for this. Read [this](https://www.dell.com/support/kbdoc/en-ca/000178586/update-poweredge-servers-with-platform-specific-bootable-iso) for the detailed steps.
-
+Dell has excellen documentation for this. Read [this](https://www.dell.com/support/kbdoc/en-us/000128194/updating-firmware-and-drivers-on-dell-emc-poweredge-servers) for the detailed steps.
 
 ***
 

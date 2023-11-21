@@ -592,7 +592,6 @@ Date: 7 Sept 2022
 [Link to the video](https://www.youtube.com/watch?v=vksHcTMwK58)
 
 Date: 7 Sept 2022
-You can also watch [this video](https://www.youtube.com/watch?v=yd8_vWyRpuc) for more information on virtualization.
 
 ## Preparing Threefold 3node Drives in Less Than 5 Minutes
 
