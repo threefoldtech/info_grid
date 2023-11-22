@@ -96,7 +96,7 @@ In this method, you use the Bridge directly. Thus, it is normal if you do not se
 
 ## Setting Up TFT on Metamask
 
-* Download Metamask [here](https://metamask.io/download.html). Then, install the Metamask extension in your local browser.
+* Download Metamask [here](https://metamask.io/download/). Then, install the Metamask extension in your local browser.
 * Create a Metamask account
 * Switch the network to  `Binance chain` . You will have to create a new network with following information):
   * Mainnet

@@ -29,7 +29,7 @@
 
 - Enter an instance name.
 
-- You need to sign up on Presearch in order to get your *Presearch Registration Code*. To sign up, go to [Presearch](https://presearch.org/), create your account and then head to your [dashboard](https://nodes.presearch.org/dashboard) to find your registration code.
+- You need to sign up on Presearch in order to get your *Presearch Registration Code*. To sign up, go to the [Presearch](https://presearch.com) website, create your account and then head to your [dashboard](https://nodes.presearch.com/dashboard) to find your registration code.
 
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4
@@ -58,7 +58,7 @@ After that is done you can see a list of all of your deployed instances
 
 ![ ](./img/presearch4.jpg)
 
-Now head to your [dashboard](https://nodes.presearch.org/dashboard)again and scroll down to **Current Nodes**, you'll see your newly created node up and connected!
+Now head to your [dashboard](https://nodes.presearch.com/dashboard)again and scroll down to **Current Nodes**, you'll see your newly created node up and connected!
 
 ![ ](./img/presearch5.png)
 
@@ -89,7 +89,7 @@ You can do the following to verify if a Presearch workload deployed without a pu
 
 ## Learn More About Presearch
 
-To learn more about Presearch, you can read the [Presearch documentation](https://docs.presearch.org/).
+To learn more about Presearch, you can read the [Presearch documentation](https://docs.presearch.io/).
 
 ## Questions and Feedback
 

@@ -129,7 +129,6 @@
     - [How can I filter 3Nodes by country and by network (IPv4, IPv6 and Planetary Network)?](#how-can-i-filter-3nodes-by-country-and-by-network-ipv4-ipv6-and-planetary-network)
     - [Can I have the link to deploy a VM and other apps on the Grid?](#can-i-have-the-link-to-deploy-a-vm-and-other-apps-on-the-grid)
     - [What can I do on ThreeFold Grid?](#what-can-i-do-on-threefold-grid)
-    - [I want to become a ThreeFold validator. What are the steps?](#i-want-to-become-a-threefold-validator-what-are-the-steps)
     - [Is there delegated staking for TFT?](#is-there-delegated-staking-for-tft)
     - [What are the type of storage available on TF Grid?](#what-are-the-type-of-storage-available-on-tf-grid)
     - [What is ThreeFold's cloud pricing? Are there any discounts available for ThreeFold's cloud pricing?](#what-is-threefolds-cloud-pricing-are-there-any-discounts-available-for-threefolds-cloud-pricing)
@@ -1448,12 +1447,6 @@ This is a beta tester version. The final version will be available on Threefold 
 For more information, read this [TF Forum post](https://forum.threefold.io/t/beta-testers-wanted-mastodon-powered-by-threefold/3637).
 
 -->
-
-***
-
-### I want to become a ThreeFold validator. What are the steps?
-
-Excellent idea! This is a great contribution to the Grid. Read the documentation [here](https://library.threefold.me/info/publishtools#/tfgrid/threefold__dao_executors_validators). You can then register for [Layer 0](https://forum.threefold.io/t/procedure-to-register-your-l0-validator-nodes/1866) or register for [Layer 2](https://forum.threefold.io/t/procedure-to-register-your-l2-validator-node/1864) on the ThreeFold Forum.
 
 ***
 
