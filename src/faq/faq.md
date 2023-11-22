@@ -1551,7 +1551,7 @@ The following is a list of certain features related to containers as well as ful
   * a container image promoted to run as a VM by pairing with a generic kernel
   * more isolated than a container, thus more secure
   * generally lighter than a full VM
-  * can be created from any Docker container image by uploading it to the [TF Hub]([hub.grid.tf](https://hub.grid.tf/))
+  * can be created from any Docker container image by uploading it to the [TF Hub](https://hub.grid.tf/)
   * examples: on the [Playground](https://play.grid.tf/), we have Ubuntu 20.04, Alpine-3, CentOS-8 and more.
 * Full VM
   * contains a complete operating system including kernel
@@ -3000,7 +3000,7 @@ This is normal. Currently, not all 3Nodes are being utilized by users on the Thr
 
 ### What are the general requirements for a DIY 3Node server?
 
-Any 64-bit hardware with an Intel or AMD processor chip can run Zero-OS and become a 3Node. For a complete guide on building a 3Node, read the [Farming Guide](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md). The following configurations provide guidelines on compatible and recommended setups:
+Any 64-bit hardware with an Intel or AMD processor chip can run Zero-OS and become a 3Node. For a complete guide on building a 3Node, read the [Farming Guide](../farmers/3node_building/3node_building.md). The following configurations provide guidelines on compatible and recommended setups:
 
 - Servers, desktops and mini computers type hardware are compatible.
 - A minimum of 500 GB of SSD and a bare minimum of 2 GB of RAM is required.

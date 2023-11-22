@@ -240,7 +240,7 @@ log(">>>>>>>>>>>>>>>vm has been created<<<<<<<<<<<<<<<");
 log(vm_res);
 ```
 
-So this deployment is almost similiar to what we have in the [vm deployment section](grid3_javascript_vm). We only have a new section `qsfs_disks`
+So this deployment is almost similiar to what we have in the [vm deployment section](./grid3_javascript_vm.md). We only have a new section `qsfs_disks`
 
 ```ts
     qsfs_disks: [{

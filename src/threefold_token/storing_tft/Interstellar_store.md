@@ -27,7 +27,7 @@ In this guide, we will walk you through the process of buying TFT on the Interst
 
 If you already have some XLMs stored in another Stellar wallet or exchange, you could simply withdraw them to your new Interstellar account after you complete the signup process (we will explain how to do it later on). If not, there are multiple ways to acquire XLM and send it to your wallet. One option is to utilize XLM-supported exchanges, which provide a convenient platform for purchasing XLM. Click [**here**](https://www.coinlore.com/coin/stellar/exchanges) to access a comprehensive list of exchanges that support XLM.
 
-As an example, we have created a tutorial specifically focusing on how to buy XLM on Coinbase, one of the popular cryptocurrency exchanges. This tutorial provides step-by-step instructions on the process of purchasing XLM on **Coinbase Exchange**. You can find the tutorial [**here**](./coinbase_xlm.md).
+As an example, we have created a tutorial specifically focusing on how to buy XLM on Coinbase, one of the popular cryptocurrency exchanges. This tutorial provides step-by-step instructions on the process of purchasing XLM on **Coinbase Exchange**. You can find the tutorial [**here**](../buy_sell_tft/coinbase_xlm.md).
 
 ***
 ## Get Started
@@ -104,13 +104,13 @@ You can now store TFT into your Interstellar account by clicking on the TFT Asse
 ***
 ## Important Notice
 
-If you are looking for ways to get / purchase TFT (Stellar) on Interstellar by trading, you will find the according information [here](../buytft/interstellar.md).
+If you are looking for ways to get / purchase TFT (Stellar) on Interstellar by trading, you will find the according information [here](../buy_sell_tft/interstellar.md).
 
 While it is possible to keep your TFT in your exchange wallet on  Interstellar, it is generally not recommended to store your funds there for an extended period. Public exchanges are more susceptible to security breaches and hacking attempts compared to personal wallets.
 
 To ensure the safety and security of your TFT holdings, it is advisable to transfer them to a dedicated TFT wallet. There are several options available for creating a TFT wallet, each with its own unique features and benefits.
 
-To explore different TFT wallet options and choose the one that best suits your needs, you can refer to our comprehensive [**TFT Wallet guide**](../storetft/storetft_readme.md) that provides a list of recommended TFT wallets. This guide will help you understand the features, security measures, and compatibility of each wallet, enabling you to make an informed decision on where to store your TFT securely.
+To explore different TFT wallet options and choose the one that best suits your needs, you can refer to our comprehensive [**TFT Wallet guide**](../storing_tft/storing_tft.md) that provides a list of recommended TFT wallets. This guide will help you understand the features, security measures, and compatibility of each wallet, enabling you to make an informed decision on where to store your TFT securely.
 ***
 ## Disclaimer
 
