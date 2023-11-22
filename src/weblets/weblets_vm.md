@@ -6,12 +6,12 @@
 
 Deploy a new virtual machine on the Threefold Grid
 
-- Make sure you have an activated [profile](./weblets_profile_manager.md) 
+- Connect your TFChain Wallet to the Playground 
 - Click on the **Virtual Machine** tab
 
 __Process__ : 
 
-![ ](../weblets/img/new_vm1.png)
+![ ](./img/new_vm1.png)
 
 - Fill in the instance name: it's used to reference the VM in the future.
 - Choose the image from the drop down (e.g Alpine, Ubuntu) or you can click on `Other` and manually specify the flist URL and the entrypoint.

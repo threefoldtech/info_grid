@@ -6,7 +6,7 @@ With each release of a newer version of the ThreeFold Grid, the ThreeFold Commun
 The internal QA team conducts automation testing, where they automate various test scenarios and run them in nightly builds. This approach helps identify the status of the code and allows for the early detection of functionality and regression issues.
 
 ## Manual Testing
-The QA team, along with the grid testing community, performs manual testing. [TestLodge](./testlodge.md) is the chosen platform for managing test plans, test cases, and test runs. By joining TestLodge as a user, individuals can actively participate in running test use cases and reporting any issues encountered during product deployment. Issues can be reported by creating an issue on [ThreeFold's Test Feedback repository](https://github.com/threefoldtech/test_feedback/issues) on Github.
+The QA team, along with the grid testing community, performs manual testing. [TestLodge](./testlodge.html) is the chosen platform for managing test plans, test cases, and test runs. By joining TestLodge as a user, individuals can actively participate in running test use cases and reporting any issues encountered during product deployment. Issues can be reported by creating an issue on [ThreeFold's Test Feedback repository](https://github.com/threefoldtech/test_feedback/issues) on Github.
 
 ## Covered Tests
 The ThreeFold Grid 3 encompasses a wide range of functionalities that are thoroughly tested to ensure their reliability and performance. Some of the covered functionalities include:

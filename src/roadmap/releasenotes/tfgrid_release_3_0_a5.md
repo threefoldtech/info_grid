@@ -31,7 +31,7 @@ On this release, we have added **community and blockchain solutions** such as Di
 
 ### Uhuru Backend Changes
 
-[Uhuru](https://www.uhuru.me) is a digital product on top of a the TFGrid that enhance collaboration with features such as chat, videocall, office tools, and file storage, all in one platform. You can visit [beta.uhuru.me](https://beta.uhuru.me/) to try its latest beta release of v.1.0.0.
+[Uhuru](https://www.uhuru.me) is a digital product on top of a the TFGrid that enhance collaboration with features such as chat, videocall, office tools, and file storage, all in one platform.
 
 
 ## ThreeFold Wallet v3.0.0

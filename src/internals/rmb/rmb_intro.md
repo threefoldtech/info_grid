@@ -82,7 +82,8 @@ think of `rmb-peer` as a gateway that stands between you and the `relay`. `rmb-p
 
 Then it provide a simple (plain-text) api over `redis`. means to send messages (or handle requests) you just need to be able to push and pop messages from some redis queues. Messages are simple plain text json.
 
-> More details about the structure of the messages are also in the [docs](docs/readme.md) page
+> More details can be found [here](./rmb_specs.md)
+
 ***
 ## Download
 

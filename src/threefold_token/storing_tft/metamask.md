@@ -19,7 +19,7 @@
 
 ### Install & Create Metamask Account
 
-**Download Metamask** [**here**](https://metamask.io/download.html). Then, install the Metamask extension in your local browser. Follow [this tutorial](https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask) to install metamask to your preferred browser and create. 
+Go to the [Metamask website](https://metamask.io/) to download and install the Metamask extension for your browser. Follow [this tutorial](https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask) to install metamask to your preferred browser and create. 
 
 Once you’ve installed MetaMask, you’ll see the small fox icon at the top right of your screen, and a notification will appear, letting you know that the install was successful.
 
@@ -102,9 +102,9 @@ To deposit TFT tokens to your MetaMask BSC wallet, **you can only initiate a tra
 
 For example, you cannot transfer TFT tokens directly from the TFConnect app to MetaMask, because TFT tokens on TFT Connect operate on the Stellar network, while TFT on MetaMask lives on Binance Smart Chain (BSC) Network. 
 
-But don't worry! You can still swap your Stellar TFT into BSC TFT and vice versa by bridging them using our [TFT BSC Bridge](https://bridge.bsc.threefold.io/). See tutorial [here](/src/farmers/threefold_token/buy_sell_tft/tfchain_stellar_bridge.md).
+But don't worry! You can still swap your Stellar TFT into BSC TFT and vice versa by bridging them using our [TFT BSC Bridge](https://bridge.bsc.threefold.io/). See tutorial [here](../tft_bridges/bsc_stellar_bridge.md).
 
-You can also buy TFTs on BSC-supported exchangers like [Pancake Swap](https://pancakeswap.finance/). See tutorial [here](../buytft/pancakeswap.md)
+You can also buy TFTs on BSC-supported exchangers like [Pancake Swap](https://pancakeswap.finance/). See tutorial [here](../buy_sell_tft/pancakeswap.md)
 ***
 ## Disclaimer
 

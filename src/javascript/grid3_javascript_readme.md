@@ -6,8 +6,6 @@ Javascript has a huge ecosystem, and first class citizen when it comes to blockc
 
 Please make sure to check the [basics](../getstarted/tfgrid3_getstarted.md) before continuing.
 
-All code examples can be found [here](https://github.com/threefoldtech/grid3_client_ts/tree/development/scripts).
-
 <h2> Table of Contents </h2>
 
 - [Installation](../javascript/grid3_javascript_installation.md)

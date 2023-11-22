@@ -144,8 +144,6 @@ Note: This repository is private. You can visit the GetTFT Shop [here](https://g
 ### TF Grid3 Client TS
 A software component that serves as a client library for interacting with the Grid3 platform. It provides developers with a set of tools, functions, and interfaces to communicate with the ThreeFold Grid and utilize its resources. The Grid3 Client TS allows users to perform various operations, such as creating and managing virtual machines, deploying applications, accessing storage services, and interacting with the decentralized network. It acts as a bridge between developers and the ThreeFold Grid, enabling them to leverage the platform's decentralized infrastructure and harness its capabilities programmatically. 
 
-> [Component Repository on Github (Archived)](https://github.com/threefoldtech/grid3_client_ts)
-
 ### TF Grid Proxy
 A fundamental component which serves as a gateway that allows external applications and users to interact with the grid. Acting as a bridge between the decentralized infrastructure of the ThreeFold Grid and external networks, GridProxy facilitates seamless communication and integration. It provides a standardized interface for accessing and managing resources within the grid, enabling developers, businesses, and users to leverage the power and scalability of the ThreeFold Grid in their applications and workflows. By abstracting the complexities of the grid infrastructure, GridProxy simplifies the process of interacting with the grid, making it more accessible and user-friendly.
 

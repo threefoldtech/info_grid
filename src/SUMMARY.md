@@ -56,6 +56,7 @@
     - [Website Deployer](collaboration_tools/website_tool.md)
   - [How to Contribute](contribute/contribute.md)
   - [How to Test](testing/testing_readme.md)
+    - [TestLodge](testing/testlodge.md)
   - [ThreeFold Video Gallery](tf_video_gallery/tf_video_gallery.md)
   - [ThreeFold Roadmap](roadmap/roadmap_readme.md)
     - [Release Notes](roadmap/releasenotes/releasenotes_readme.md)
@@ -296,6 +297,6 @@
       - [Taiga](playground/taiga.md)
       - [WordPress](playground/wordpress.md)
       - [Umbrel](playground/umbrel.md)
-  - [Mastodon](tf_mastodon/tf_mastodon_readme.md)
+<!--  - [Mastodon](tf_mastodon/tf_mastodon_readme.md) 
     - [Deploy Mastodon](tf_mastodon/tf_mastodon_deploy.md)
-    - [Mastodon FAQ](tf_mastodon/tf_mastodon_faq.md)
+    - [Mastodon FAQ](tf_mastodon/tf_mastodon_faq.md)-->

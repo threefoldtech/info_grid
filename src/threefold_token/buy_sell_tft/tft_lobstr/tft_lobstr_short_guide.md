@@ -19,7 +19,7 @@ Lobstr Wallet is a secure and user-friendly wallet designed specifically for the
 
 - **XLM**: When getting TFT tokens using the Lobstr wallet, the process involves swapping XLM (Stellar Lumens) or other Stellar tokens into TFT. Please note that a certain amount of XLM funding is required to facilitate the sending and receiving of assets on the Stellar network.
 
-- **Create a Wallet and Add TFT Asset**: Create an Lobstr Wallet Account via the mobile app or desktop, and add TFT as an asset. Read [**here**](../storetft/lobstr_wallet.md) for the complete manual of how to create an Albedo Wallet.
+- **Create a Wallet and Add TFT Asset**: Create an Lobstr Wallet Account via the mobile app or desktop, and add TFT as an asset. Read [**here**](../../storing_tft/storing_tft.md) for the complete manual of how to create an Albedo Wallet.
 
 ## Get Started
 

@@ -21,10 +21,10 @@ DAOs are internet-native organizations collectively owned and managed by their m
 
 Voting for a DAO proposal is very simple. You first need to meet certain requirements to be able to vote.
 
-* Have a [Threefold farm](https://manual.grid.tf/TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.html#1-create-a-farm)
-* Have at least one active [3node server](https://manual.grid.tf/faq/faq.html#i-want-to-farm-tft-with-a-3node-what-are-my-choices) on the farm
+* Have a [Threefold farm](../../farmers/3node_building/1_create_farm.md)
+* Have at least one active [3node server](../../faq/faq.md#i-want-to-farm-tft-with-a-3node-what-are-my-choices) on the farm
 * If you created your farm with the Threefold Connect app
-  * [Import your farm on the Threefold Dashboard](https://manual.grid.tf/TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.html#move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs)
+  * [Import your farm on the Threefold Dashboard](../../threefold_token/storing_tft/tf_connect_app.md#move-farm-from-the-tf-connect-app-to-the-tf-portal-polkadotjs)
 
 ***
 

@@ -35,7 +35,6 @@ On this article we have aggregated a list of all of the services running on Thre
 ## Mainnet
 
 - [TFChain](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2F/tfchain.grid.tf#/explorer) `wss://tfchain.grid.tf`
-- [TFChain](https://tfchain.grid.tf) `wss://tfchain.grid.tf/ws`
 - [GraphQL](https://graphql.grid.tf/graphql)
 - [Activation Service](https://activation.grid.tf/activation/)
 - [TFChain-Stellar Bridge](https://bridge.bsc.threefold.io/)

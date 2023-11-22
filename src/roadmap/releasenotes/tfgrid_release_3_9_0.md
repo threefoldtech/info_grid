@@ -59,8 +59,7 @@ On this release, we modified the twin objects on TFChain and removed the notion 
 
 __Impacted Clients:__
 
-- [Grid3_Client_TS](https://github.com/threefoldtech/grid3_client_ts/releases/tag/1.5.3)
-- [Grid3_Client_RS](https://github.com/threefoldtech/grid3_client_rs/releases/tag/v0.2.0)
+- [Grid3_Client_RS](https://github.com/threefoldtecharchive/grid3_client_rs/releases/tag/v0.2.0)
 
 ### TFChain-GraphQL v2.9.0
 
@@ -73,7 +72,7 @@ Please make sure all data is wiped before restarting both services.
 
 ### TF Famerbot v1.0.0
 
-TF Farmerbot is a new component that aim as a power management solution that would allow farmer to setup to enable Wake-on-LAN mechanism on their farms. See [docs](https://manual.grid.tf/farmerbot/farmerbot.html) for a detailed guide on how to setup Farmerbot for your farms.
+TF Farmerbot is a new component that aim as a power management solution that would allow farmer to setup to enable Wake-on-LAN mechanism on their farms. See [docs](../../farmers/farmerbot/farmerbot.md) for a detailed guide on how to setup Farmerbot for your farms.
 
 ## Other Component Changelogs
 
@@ -142,9 +141,6 @@ Please follow [this milestone](https://github.com/threefoldtech/tfgrid_dashboard
 - Added size property to QSFS model
 - HTTP server mode allows configuration file for user credentials
 - Added fixes on 'Filter nodes by farmID' featue
-
-
-Please follow [this milestone](https://github.com/threefoldtech/grid3_client_ts/milestone/15) for more details
 
 ### Terraform v1.8.x
 

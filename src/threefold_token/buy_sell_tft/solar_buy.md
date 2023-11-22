@@ -18,7 +18,7 @@ Welcome to our guide on how to buy TFT tokens (Stellar) via the [**Solar Wallet*
 
 - **XLM**: When getting TFT tokens using the Solar wallet, the process involves swapping XLM (Stellar Lumens) or other Stellar tokens into TFT. Please note that a certain amount of XLM funding is required to facilitate the sending and receiving of assets on the Stellar network.
 
-- **Create a Wallet and Add TFT Asset**: Create a Solar Wallet Account via the mobile app or desktop, and add TFT as an asset. Read [**here**](../storetft/solar_wallet.md) for the complete manual of how to create an Albedo Wallet.
+- **Create a Wallet and Add TFT Asset**: Create a Solar Wallet Account via the mobile app or desktop, and add TFT as an asset. Read [**here**](../storing_tft/storing_tft.md) for the complete manual of how to create an Albedo Wallet.
 
 ## Get Started
 
@@ -26,31 +26,17 @@ Welcome to our guide on how to buy TFT tokens (Stellar) via the [**Solar Wallet*
 
  you can start trading TFT on Solar by clicking the menu bar and clicking '**TFT**' icon or 'My Account' on your wallet homepage to start trading your existing tokens to TFT, for example, XLM or USDC.
 
- ![](IMG/../img/solar_select.jpeg)
-
 You will now be redirected to your Asset List. Click on the **TFT asset** to start trading.
 
- ![](IMG/../img/solar_account.jpeg)
-
- You will now be redirected to TFT asser info page. Start trading TFT by clicking '**Trade**'.
-
-![](img/solar_tft_trade.png)
+You will now be redirected to TFT asser info page. Start trading TFT by clicking '**Trade**'.
 
 To start buying TFT, click '**Buy**' on the asset trading page.
 
-![](img/solar_buy.png)
-
 Choose the trading pair token that you want to trade with, in this tutorial we will be trading XLM to TFT. Specify the amount of XLM you would like to sell, and click '**Place order**' to start trading.
-
-![](img/solar_trade.png)
 
 Confirm your trade on the pop up box shown.
 
-![](img/solar_confirm.png)
-
-Wait until your order is successfully made. You will then be redirected to the wallet homepage, and Congratulations! the new TFT asset has been successfully added to your Solar Wallet account.
-
-![](img/solar_success.png)
+Wait until your order is successfully made. You will then be redirected to the wallet homepage, and Congratulations! The new TFT asset has been successfully added to your Solar Wallet account.
 
 > Read the full details about Solar trading feature on [Lobstr's knowledge base](https://docs.solarwallet.io/guide/08-dex.html#trade-view).
 ***

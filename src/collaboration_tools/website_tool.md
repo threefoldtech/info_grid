@@ -78,10 +78,6 @@ $ brew install zola
 ```
 Please make sure you have [Brew](https://brew.sh/) installed on your MacOS machine before installing Zola. 
 
-You should see a similar screen as below when successful:
-
-![](./img/brewsuccess.png)
-
 <b>Windows (scoop)</b>:
 
 ```
@@ -102,7 +98,7 @@ For more details on Zola Installation, and installation guidelines for other ope
 > - [Zola Installation for other OS](https://www.getzola.org/documentation/getting-started/installation/)
 > - [Command Line Cheat Sheet](https://cs.colby.edu/maxwell/courses/tutorials/terminal/)
 
-> Next Step: [Template Guide: How to use the TF Web Template](templateguide)
+> Next Step: [Template Guide: How to use the TF Web Template](#template-guide)
 
 ***
 
@@ -211,11 +207,6 @@ and ends with
 ```
 {% end %}
 ```
-
-For example, the first section of the homepage of [**www.mastodon.io**](www.mastodon.io) in Markdown:
-
-![](./img/codeexample.png)
-
 
 ### Adding Image
 
