@@ -22,8 +22,8 @@ BBefore you can buy TFT on 1inch.io, there are a few prerequisites you need to f
 
 - **BSC Wallet**: To interact with the Binance Smart Chain and 1inch.io, you'll need a BSC-compatible wallet. [Trust Wallet](https://trustwallet.com/) and [MetaMask](https://metamask.io/) are popular options that support BSC. Make sure to set up and secure your wallet before proceeding. On this tutorial, we will use Metamask as our connecting wallet.
 
-> [Set up a Metamask Wallet](../storetft/metamask.md)
-> [Set up a Trust Wallet](../storetft/trustwallet.md)
+> [Set up a Metamask Wallet](../storing_tft/metamask.md)
+> [Set up a Trust Wallet](../storing_tft/trustwallet.md)
 
 - **Get BNB Tokens**: As the native cryptocurrency of Binance Smart Chain, BNB is required to pay for transaction fees on the network. You will need to have Ensure you have some BNB tokens in your BSC wallet to cover these fees when buying TFT on 1inch.io. Read [this tutorial](https://fortunly.com/articles/how-to-buy-bnb/) to know where you can buy BNB and transfer them to your BSC Wallet.
 

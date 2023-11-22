@@ -55,8 +55,6 @@ When purchasing TFT tokens using fiat currency on GetTFT.com, the transaction is
 
 To get started, complete the same login process described on '**Get Started: Link TF Wallet to GetTFT.com**' section above. After successfully logged in, you will be redirected to the transaction page. select the amount of TFT you would like to buy and choose the 'USD' or 'EUR' icon as your payment method. Verify that you're providing the correct Stellar TFT wallet address (the wallet you have previously linked), read the t&c of the purchase and hit '**Submit**' once everything is verified.
 
-![](img/gettft_usd.png)
-
 Once clicked, you will be redirected to [https://exchange.mercuryo.io/](https://exchange.mercuryo.io/) widget. Please read [Mercuryo.io's FAQ](https://help.mercuryo.io/) to learn more about Mercuryo widget. Follow the prompts to complete the purchase, which typically involves connecting your bank account or using a supported payment method to transfer the USD equivalent for the desired amount of BTC tokens. 
 
 Once the BTC purchase is complete, the GetTFT.com platform will automatically convert the BTC amount into TFT tokens based on the prevailing exchange rate. The TFT tokens will be sent directly to your TF Connect wallet on the TF Connect app.

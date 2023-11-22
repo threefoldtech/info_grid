@@ -360,7 +360,7 @@ Note that you cannot have more than 16 sticks of ECC DIMM on the R620/R720. For 
 # Closing Words
 That's it. You have now built a DIY 3Node and you are farming on the ThreeFold Grid.
 
-If you encounter errors, you can read the section [Troubleshooting and Error Messages](../../faq/faq.md#troubleshooting-and-error-messages) of the Farmer FAQ.
+If you encounter errors, you can read the section [Troubleshooting and Error Messages](../../../faq/faq.md#troubleshooting-and-error-messages) of the Farmer FAQ.
 
 If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](https://forum.threefold.io/) or on the [ThreeFold Telegram Farmer Group](https://t.me/threefoldfarmers).
 

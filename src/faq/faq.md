@@ -1551,7 +1551,7 @@ The following is a list of certain features related to containers as well as ful
   * a container image promoted to run as a VM by pairing with a generic kernel
   * more isolated than a container, thus more secure
   * generally lighter than a full VM
-  * can be created from any Docker container image by uploading it to the [Hub](hub.grid.tf)
+  * can be created from any Docker container image by uploading it to the [TF Hub]([hub.grid.tf](https://hub.grid.tf/))
   * examples: on the [Playground](https://play.grid.tf/), we have Ubuntu 20.04, Alpine-3, CentOS-8 and more.
 * Full VM
   * contains a complete operating system including kernel
@@ -2928,7 +2928,7 @@ This is not possible. When you send tokens to a crypto exchange, you need to inc
 ***
 ### I received my farming rewards, now I want to sell my ThreeFold tokens (TFT). How can I do this?
 
-First, know that your TFT farming rewards are on the Stellar Blockchain. If you want to sell on Pancakeswap (on the Binance Chain), you will need to use the Stellar-BSC Bridge, where a 50 TFT fees is applicable. See the section *How to use the BSC-Stellar Bridge* in the [ThreeFold Farming Guide](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#how-to-use-the-bsc-stellar-bridge) for more information on this method.
+First, know that your TFT farming rewards are on the Stellar Blockchain. If you want to sell on Pancakeswap (on the Binance Chain), you will need to use the Stellar-BSC Bridge, where a 50 TFT fees is applicable. See the section on the [BSC-Stellar Bridge](../threefold_token/tft_bridges/bsc_stellar_bridge.md) for more information on this method.
 
 If you stay on Stellar blockchain, you can either swap your TFT, for example on [StellarX](https://stellarx.com/swap), where some XLM will be needed, or sell your TFT on an exchange using the Stellar blockchain. Currently, this can be done on [BTC-Alpha](https://btc-alpha.com). First, send your TFT to your exchange wallet and make sure you enter the memo correctly. Once your TFT are on the exchange, you can sell them on the market. Make sure to follow the exchange specific steps where applicable.
 

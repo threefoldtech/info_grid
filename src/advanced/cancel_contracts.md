@@ -2,7 +2,7 @@
 
 ## Playground
 
-Read about [How to cancle all contracts from the playground](/weblets/weblets_cancel_contracts.md)
+Read about [How to cancel all contracts from the playground](../weblets/weblets_cancel_contracts.md)
 
 ## Graphql
 
