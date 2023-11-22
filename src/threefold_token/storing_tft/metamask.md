@@ -19,7 +19,7 @@
 
 ### Install & Create Metamask Account
 
-**Download Metamask** [**here**](https://metamask.io/download). Then, install the Metamask extension in your local browser. Follow [this tutorial](https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask) to install metamask to your preferred browser and create. 
+Go to the [Metamask website](https://metamask.io/) and download the extension. Then, install the Metamask extension in your local browser. Follow [this tutorial](https://support.metamask.io/hc/en-us/articles/360015489531-Getting-started-with-MetaMask) to install metamask to your preferred browser and create. 
 
 Once you’ve installed MetaMask, you’ll see the small fox icon at the top right of your screen, and a notification will appear, letting you know that the install was successful.
 
