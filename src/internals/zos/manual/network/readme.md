@@ -11,6 +11,4 @@ In the simplest form a network workload consists of:
   - each peer has public key
   - sub-range
 
-Full network definition can be found [here](../../../pkg/gridtypes/zos/network.go)
-
-For more details on how the network work please refer to the [internal manual](../../internals/network/readme.md)
+Full network definition can be found [here](https://github.com/threefoldtech/zos/blob/main/pkg/gridtypes/zos/network.go)

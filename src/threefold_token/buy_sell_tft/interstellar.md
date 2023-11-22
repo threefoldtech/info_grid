@@ -20,7 +20,7 @@ In this guide, we will walk you through the process of buying TFT on the Interst
 
 - **XLM**: To get TFT tokens using Interstellar, a certain amount of XLM funding is required to facilitate the sending and receiving of assets on the Stellar network. 
 
-- **Create Interstellar Account and Add TFT Asset**: Create an Interstellar Account via desktop, and add TFT as an asset. Read [**here**](../storetft/lobstr_wallet.md) for the complete manual of how to create an Interstellar Account.
+- **Create Interstellar Account and Add TFT Asset**: Create an Interstellar Account via desktop, and add TFT as an asset. Read [**here**](../storing_tft/Interstellar_store.md) for the complete manual of how to create an Interstellar Account.
 ***
 ## Get Started
 
@@ -28,23 +28,13 @@ In this guide, we will walk you through the process of buying TFT on the Interst
 
 Once you have completed the prerequisites, signed up and added TFT as an asset, you can get TFT on Interstellar by clicking the menu bar and clicking '**Trading**' on the left menu on your homepage. 
 
-![](img/INTER_TRADE.png)
-
 On this page, we will try to trade some XLM into TFT. Click on the **custom** icon as shown
-
-![](img/inter_custom.png)
 
 Find **XLM** and **TFT** asset on the '**All (unverified)**' list.
 
-![](img/inter_find.png)
-
 Once all is set (XLM and TFT), click on '**Go**' to start trading
 
-![](img/inter_go.png)
-
 You can choose to fullfill sell orders, or create your own buy order. Once the buy order or trade has been fulfilled your TFT will show up in your wallet. Please Remember to review and double-check all order details before confirming the trade.
-
-![](img/inter_trading.png)
 
 ### Important Notice
 
@@ -52,7 +42,7 @@ While it is possible to keep your TFT in your exchange wallet on Interstellar, i
 
 To ensure the safety and security of your TFT holdings, it is advisable to transfer them to a dedicated TFT wallet. There are several options available for creating a TFT wallet, each with its own unique features and benefits.
 
-To explore different TFT wallet options and choose the one that best suits your needs, you can refer to our comprehensive [**TFT Wallet guide**](../storetft/storetft_readme.md) that provides a list of recommended TFT wallets. This guide will help you understand the features, security measures, and compatibility of each wallet, enabling you to make an informed decision on where to store your TFT securely.
+To explore different TFT wallet options and choose the one that best suits your needs, you can refer to our comprehensive [**TFT Wallet guide**](../storing_tft/storing_tft.md) that provides a list of recommended TFT wallets. This guide will help you understand the features, security measures, and compatibility of each wallet, enabling you to make an informed decision on where to store your TFT securely.
 ***
 ## Disclaimer
 

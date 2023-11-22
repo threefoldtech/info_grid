@@ -8,4 +8,4 @@ The `zlogs` workload needs to know what `zmachine` to stream logs of and also th
 
 For example, you can run [`logagg`](https://github.com/threefoldtech/logagg) which is a web-socket server that can work with `tailstream` web-socket protocol.
 
-Check `zlogs` configuration [here](../../../pkg/gridtypes/zos/zlogs.go)
+Check `zlogs` configuration [here](https://github.com/threefoldtech/zos/blob/main/pkg/gridtypes/zos/zlogs.go)

@@ -8,4 +8,4 @@ In minimal form, `IP` workload does not require any data. But in reality it has 
 - `ipv4` (`bool`): pick one from the contract public Ipv4
 - `ipv6` (`bool`): pick an IPv6 over SLAAC. Ipv6 are not reserved with a contract. They are basically free if the farm infrastructure allows Ipv6 over SLAAC.
 
-Full `IP` workload definition can be found [here](../../../pkg/gridtypes/zos/ipv4.go)
+Full `IP` workload definition can be found [here](https://github.com/threefoldtech/zos/blob/main/pkg/gridtypes/zos/ipv4.go)

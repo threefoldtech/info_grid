@@ -13,9 +13,7 @@
 ***
 ## Introduction
 
-![](img/mazraa.png)
-
-Alternatively, you can get TFT from Mazraa [(mazraa.io)](mazraa.io) farmers.
+Alternatively, you can get TFT from [Mazraa](https://mazraa.io) farmers.
 
 Mazraa is a pioneering provider of Peer2Peer Internet capacity on the ThreeFold Grid. Founded in the United Arab Emirates in early 2016, Mazraa has been at the forefront of leveraging the ThreeFold technology to offer decentralized and peer-to-peer compute and storage resources.
 
@@ -31,12 +29,8 @@ If you are interested in purchasing TFT from Mazraa, there are a few options ava
 
 Go to Mazraa.io and click on 'Purchase TFT' button.
 
-![](img/mazraa.png)
-
 From there, you will be redirected to the '**Contact**' Page where you can send Mazraa staff the details of your TFT Purchase request.
 You will then be contacted from Mazraa's official email **connect@Mazraa.io** to proceed to further steps.
-
-![](img/mazraa_contact.png)
 
 ### Get TFT via Wire Transfer
 Wire Transfer: To make a purchase via wire transfer, you can reach out to Mazraa directly at connect@Mazraa.io. They will provide you with the necessary instructions and facilitate the process for you.
@@ -54,21 +48,13 @@ Visit Mazraa's Official Transcoin Checkout on [**https://transcoin.me/pay_from_a
 
 Please keep in mind to double check that you are entering the exact web address provided. Beware of scammers pretending to be Mazraa's Transcoin.
 
-![](img/mazraa_trans.png)
-
 Verification Code: Check your email for the verification code and enter it on the Transcoin Checkout page.
-
-![](img/threefold__transcoin_mail.jpg)
 
 Step 4: KYC Procedure: Complete the KYC (Know Your Customer) procedure by providing the required documents to Transcoin for verification. The specific documents needed will vary for each user.
 
-Specify the amount in euros (€) that you would like to purchase and provide the TFT wallet address where you want to receive the TFT. Your wallet address can be found in your [ThreeFold Connect App's wallet](/src/getstarted/TF_Connect/TF_Connect.md) or any other [TFT(Stellar) Wallet](../storetft/storetft_readme.md) you prefer.
-
-![](img/threefold__transcoin_amounts.jpg)
+Specify the amount in euros (€) that you would like to purchase and provide the TFT wallet address where you want to receive the TFT. Your wallet address can be found in the [ThreeFold Connect a wallet](../storing_tft/tf_connect_app.md#create-a-wallet) or any other [TFT (Stellar) Wallet](../storing_tft/storing_tft.md) you prefer.
 
 Select your preferred payment method from the options provided by Transcoin.
-
-![](img/threefold__transcoin_psp.jpg)
 
 Once Mazraa receives the transaction details from Transcoin, they will initiate the transfer of TFT tokens to the wallet address you provided. Please note that it may take some time for the tokens to be received in your wallet.
 

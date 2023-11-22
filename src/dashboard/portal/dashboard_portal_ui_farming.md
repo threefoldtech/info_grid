@@ -63,6 +63,6 @@ You can also download a single node's receipts using the `Download Receipts` but
 
 ## Capacity Explorer
 
-In the upper right corner, you can click on `EXPLORER` to get a view of all capacity connected to TFGrid v3. For more info, see [here](explorer_home).
+In the upper right corner, you can click on `EXPLORER` to get a view of all capacity connected to TFGrid v3. For more info, see [here](../explorer/explorer_home.md).
 
 

@@ -1,6 +1,6 @@
 # Grid3 Client
 
-grid3_client is a client used for deploying workloads (VMs, ZDBs, k8s, etc.) on grid3.
+grid_client is a client used for deploying workloads (VMs, ZDBs, k8s, etc.) on grid3.
 
 ## Client Configurations
 
@@ -50,7 +50,7 @@ using e2e. That's similar to home servers by matrix
 - BackendStorage : can be `auto` which willl automatically adapt if running in node environment to use `filesystem backend` or the browser enviornment to use `localstorage backend`. Also you can set it to `kvstore` to use the tfchain keyvalue store module.
 - keypairType: is defaulted to `sr25519`, most likely you will never need to change it. `ed25519` is supported too.
 
-for more details, check [client options](https://github.com/threefoldtech/grid3_client_ts/blob/development/src/client.ts)
+for more details, check [client options](https://github.com/threefoldtech/tfgrid-sdk-ts/blob/development/packages/grid_client/docs/client_configuration.md)
 
 > Note: The choice of the node is completely up to the user at this point. They need to do the capacity planning. Check [Exploring Capacity](../dashboard/explorer/explorer_home.md) to know which nodes fits your deployment criteria.
 

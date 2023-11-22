@@ -19,7 +19,7 @@ Interstellar is a decentralized exchange built on the Stellar network that enabl
 
 In this guide, we will walk you through the process of buying TFT on the Interstellar exchange, allowing you to participate in the vibrant Stellar ecosystem.
 
-> If you are looking for ways to get / purchase TFT (Stellar) on Interstellar by trading, you will find the according information [here](../buytft/interstellar.md).
+> If you are looking for ways to get / purchase TFT (Stellar) on Interstellar by trading, you will find the according information [here](../buy_sell_tft/interstellar.md).
 ***
 ## Prerequisites
 

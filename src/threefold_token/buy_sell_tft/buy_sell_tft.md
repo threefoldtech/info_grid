@@ -1,7 +1,5 @@
 <h1> How to Buy and Sell TFT </h1>
 
-![](./img/tft.png)
-
 <h2> Table of Contents </h2>
 
 - [Lobstr Wallet](./tft_lobstr/tft_lobstr.md)
@@ -26,7 +24,7 @@
 
 ## Introduction
 
-There are multiple ways to acquire TFT depending on your preferences and the blockchain network you choose to transact on. To start, you need to have a supporting wallet to store your TFTs. Read more about how to store your TFTs [here](../storetft/storetft_readme.md)
+There are multiple ways to acquire TFT depending on your preferences and the blockchain network you choose to transact on. To start, you need to have a supporting wallet to store your TFTs. Read more about how to store your TFTs [here](../storing_tft/storing_tft.md)
 
 If you're interested in trading or swapping other cryptocurrencies for TFT, you can visit various crypto exchanges that list TFT as shown on te next section of this page. Additionally, you can leverage swapping services available on decentralized exchanges (DEXs) or automated market makers (AMMs) to exchange your tokens for TFT (BSC).
 

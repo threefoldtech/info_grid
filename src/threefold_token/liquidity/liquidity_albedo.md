@@ -17,11 +17,11 @@ Becoming a TFT liquidity provider on the Albedo wallet allows you to actively pa
 
 To become a liquidity provider on Albedo and join Stellar DEX Liquidity Pools, you'll need the following prerequisites:
 
-- **Albedo Wallet and TFT asset setup**: Set up an Albedo wallet and add the TFT (ThreeFold Token) asset to your Albedo wallet by following the instructions provided in [our manual](../storetft/albedo_store.md).
+- **Albedo Wallet and TFT asset setup**: Set up an Albedo wallet and add the TFT (ThreeFold Token) asset to your Albedo wallet by following the instructions provided in [our manual](../storing_tft/albedo_store.md).
 
 - **XLM for Transactions**: Have a sufficient amount of XLM (Stellar Lumens) in your Albedo wallet to cover transaction fees. XLM is required to execute transactions and interact with the Stellar network.
 
-- **Sufficient TFT**: To become a liquidity provider on Albedo, you will need a sufficient amount of TFT (Stellar) tokens. You can acquire these tokens by either depositing them from another wallet into your Albedo wallet or swapping other tokens within your Albedo wallet to obtain TFT. Additionally, you'll need an equivalent value of another token that you want to contribute to the desired liquidity pool. TFT tokens represent your share in the liquidity pool and allow you to earn a portion of the trading fees. For detailed instructions on how to obtain TFT on Albedo Wallet, please click [here](../buytft/albedo_buy.md).
+- **Sufficient TFT**: To become a liquidity provider on Albedo, you will need a sufficient amount of TFT (Stellar) tokens. You can acquire these tokens by either depositing them from another wallet into your Albedo wallet or swapping other tokens within your Albedo wallet to obtain TFT. Additionally, you'll need an equivalent value of another token that you want to contribute to the desired liquidity pool. TFT tokens represent your share in the liquidity pool and allow you to earn a portion of the trading fees. For detailed instructions on how to obtain TFT on Albedo Wallet, please click [here](../buy_sell_tft/albedo_buy.md).
 ***
 ## Get Started
 
