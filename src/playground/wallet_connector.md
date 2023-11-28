@@ -21,8 +21,7 @@ Start entering the following information required to create your new profile.
 
 - `Mnemonics` are the secret words of your Polkadot account. [Generate yours here](../getstarted/TF_Dashboard/TF_Dashboard.html#create-polkadot-extension-account) or use the **Generate Account** button.
 - `Password` is used to access your account
-- `Confirm Password` 
-
+- `Confirm Password`
 
 After you finish typing your credentials, click on **Connect**. Once your profile gets activated, you should find your **Twin ID** and **Address** generated under your **_Mnemonics_** for verification. Also, your **Account Balance** will be available at the top right corner under your profile name.
 

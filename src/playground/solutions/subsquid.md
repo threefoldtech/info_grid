@@ -7,7 +7,7 @@
 
 ## Process
 
-![ ](../img/subsquid.png)
+![ ](./img/subsquid.png)
 
 - Enter an instance name.
 
@@ -32,8 +32,8 @@
 
 After that is done you can see a list of all of your deployed instances
 
-![ ](../img/subsquid_list.png)
+![ ](./img/subsquid_list.png)
 
 Click on ***Visit*** to go to the homepage of your Subsquid indexer instance!
 
-![ ](../img/subsquid_graphql.png)
+![ ](./img/subsquid_graphql.png)

@@ -1,6 +1,6 @@
 <h1> CapRover </h1>
 
-![ ](../img/caprover_1.png)
+![ ](./img/caprover_1.png)
 
 <h2> Table of Contents </h2>
 
@@ -46,16 +46,16 @@ It has following benefits :
 
 ## Configs Tab
 
-![ ](../img/new_cap1.png)
+![ ](./img/new_cap1.png)
 
 - Enter domain for you Caprover instance, Be very careful about the domain name: it needs to be a wildcard domain name you can configure in your chosen domain name system.
 - Enter password for you Caprover instance.
 ***
 ## Admin and Workers Tabs
 
-![ ](../img/new_cap4.png)
+![ ](./img/new_cap4.png)
 
-![ ](../img/new_cap5.png)
+![ ](./img/new_cap5.png)
 Note: Worker nodes only accept SSH keys of RSA format.
 
 
@@ -65,7 +65,7 @@ Deployment will take couple of minutes.
 
 - e.g. I picked ```apps.openly.life``` which is a domain name that will point to the ip address of the CapRover instance (which we only know after deployment).
 
-![ ](../img/domain_name_caprover_config.png)
+![ ](./img/domain_name_caprover_config.png)
 
 
 > Note how the *.apps.openly.life points to the public IPv4 address that has been returned from the deployment.
@@ -74,7 +74,7 @@ Deployment will take couple of minutes.
 
 Go back to your CapRover weblet and go to the deployment list. Click on `Show Details`.
 
-![ ](../img/cap.jpg)
+![ ](./img/cap.jpg)
 
 - The public IPv4 address is visible in here
 - Now you can configure the domain name (see above, don't forget to point the wildcard domain to the public IP address)
@@ -134,11 +134,11 @@ Click on details if you want to see more details
 <br> 
 > The password is generated and visible behind the `Show Details` button of your CapRover deployment. 
 
-![ ](../img/caprover_login.png)
+![ ](./img/caprover_login.png)
 
 You should now see
 
-![ ](../img/captain_login+weblet_caprover_.png)
+![ ](./img/captain_login+weblet_caprover_.png)
 
 ## How to Work with CapRover
 

@@ -11,7 +11,7 @@ Deploy a new virtual machine on the Threefold Grid
 
 __Process__ : 
 
-![ ](../playground/img/vm.png)
+![ ](./img/vm.png)
 
 - Fill in the instance name: it's used to reference the VM in the future.
 - Choose the image from the drop down (e.g Alpine, Ubuntu) or you can click on `Other` and manually specify the flist URL and the entrypoint.
@@ -33,10 +33,10 @@ __Process__ :
    - `Farm Name`
 - Choose the node to deploy the Virtual Machine on 
 
-![](../img/nixos-micro2.png)
+![](./img/nixos-micro2.png)
 * In the section `Environment Variables`, you can add any environment variables that the machine might need
 
-![](../img/nixos-micro3.png)
+![](./img/nixos-micro3.png)
 
 * In the section `Disks`, You can attach one or more disks to the Virtual Machine by clicking on the Disks tab and the plus `+` sign and specify the following parameters
    - Disk name 
@@ -44,6 +44,6 @@ __Process__ :
 
 in the bottom of the page you can see a list of all of the virual machines you deployed. you can click on `Show details` for more details
 
-![](../img/vm_list.png)
+![](./img/vm_list.png)
 You can also go to JSON tab for full details
-![ ](../playground/img/vm_json.png)
+![ ](./img/vm_json.png)

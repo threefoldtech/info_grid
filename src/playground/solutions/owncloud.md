@@ -8,7 +8,7 @@
 
 __Process__ :
 
-![ ](../img/owncloud1.png)
+![ ](./img/owncloud1.png)
 
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. ***oc98newcloud*.gent02.dev.grid.tf**
 
@@ -31,12 +31,12 @@ __Process__ :
 
 There's also an optional **SMTP Server** tab if you'd like to have your Owncloud instance configured with an SMTP server.
 
-![ ](../img/owncloud4.png)
+![ ](./img/owncloud4.png)
 
 After that is done you can see a list of all of your deployed instances
 
-![ ](../img/owncloud5.png)
+![ ](./img/owncloud5.png)
 
 Click on ***Visit*** to go to the homepage of your Owncloud instance! If you'd like to be able to use TFConnect to login, you need to login using your admin username and password first and allow TFConnect login from settings.
 
-![ ](../img/owncloud6.png)
+![ ](./img/owncloud6.png)

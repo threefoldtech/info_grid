@@ -7,7 +7,7 @@
 
 **Process** :
 
-![Config](../img/wp1.png)
+![Config](./img/wp1.png)
 
 - Enter an instance name.
 - Enter admin information.
@@ -37,19 +37,19 @@
 
 You can see a list of all of your deployed instances
 
-![ ](../img/wp2.png)
+![ ](./img/wp2.png)
 
 - you can click on `Show details` for more details about the Wordpress deployment.
-    ![ ](../img/wp3.png)
+    ![ ](./img/wp3.png)
     and for more detailed information switch to `JSON` tap.
-    ![ ](../img/wp4.png)
+    ![ ](./img/wp4.png)
 
 - Click on ***Visit*** to go to the homepage of your Wordpress instance!
-    ![ ](../img/wp5.png)
+    ![ ](./img/wp5.png)
 - Click on ***Admin Panel*** to go to `wp-admin` of your WordPress instance!
-![ ](../img/wp6.png)
+![ ](./img/wp6.png)
 
   - Enter the ***Username*** and ***Password*** that you provided in `config` section to login into admin panel.
     > Forget the credentials? You can find them with `Show details` button.
 
-    ![ ](../img/wp7.png)
+    ![ ](./img/wp7.png)
