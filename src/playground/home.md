@@ -7,7 +7,7 @@ The backend for the weblets is introduced with [grid client](../javascript/grid3
 <h2> Table of Contents </h2>
 
 - [Wallet Connector](./wallet_connector.md)
-- [Dashboard]
+- [Dashboard](./dashboard/dashboard.md)
 - [Statistics]
 - [Nodes]
 - [Farms]
