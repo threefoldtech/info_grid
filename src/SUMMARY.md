@@ -272,6 +272,8 @@
     - [Redis](advanced/grid3_redis.md)
   - [Playground](playground/home.md)
     - [Wallet Connector](playground/wallet_connector.md)
+    - [Dashboard](playground/dashboard/dashboard.md)
+      - [DAO Voting](playground/dashboard/dao_voting.md)
     - [Solutions](playground/solutions/solutions.md)
       - [Basic Environments](playground/solutions/basic_environments_readme.md)
         - [Virtual Machines](playground/solutions/vm_intro.md)
