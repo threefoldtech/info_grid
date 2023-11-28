@@ -1,45 +1,31 @@
 <h1> Playground </h1>
 
-The ThreeFold Playground offers an easy-to-use browser experience to deploy solutions on the TFGrid via weblets. A weblet is a compiled javascript web component which can be embedded in HTML page of a web app.
+Explore, control, and manage your ThreeFold Grid resources effortlessly through our integrated Playground. Deploy solutions seamlessly while gaining full control, all within a unified interface.
 
 The backend for the weblets is introduced with [grid client](../javascript/grid3_javascript_readme.md) which communicate to TF Chain and TF Grid over RMB.
 
 <h2> Table of Contents </h2>
 
 - [Wallet Connector](./wallet_connector.md)
-
-- [Basic Environments](./basic_environments_readme.md)
-  - [Virtual Machines](./vm_intro.md)
-    - [Micro and Full VM Differences ](./vm_differences.md)
-    - [Full Virtual Machine](./fullVm.md)
-    - [Micro Virtual Machine](./vm.md)
-  - [Kubernetes](./k8s.md)
-  - [NixOS MicroVM](./nixos_micro.md)
-
-- [Ready Community Solutions](./ready_community_readme.md)
-  - [Caprover](./caprover.md)
-  - [Funkwhale](./funkwhale.md)
-  - [Peertube](./peertube.md)
-  - [Taiga](./taiga.md)
-  - [Owncloud](./owncloud.md)
-  - [Nextcloud](./nextcloud.md)
-  - [Discourse](./discourse.md)
-  - [Mattermost](./mattermost.md)
-  - [Presearch](./presearch.md)
-  - [CasperLabs](./casper.md)
-  - [Node Pilot](./nodepilot.md)
-  - [Subsquid](./subsquid.md)
-  - [Algorand](./algorand.md)
-  - [Wordpress](./wordpress.md)
-  - [Umbrel](./umbrel.md)
+- [Dashboard]
+- [Statistics]
+- [Nodes]
+- [Farms]
+- [Services]
+- [Calculator]
+- [Solutions](./solutions/solutions.md)
 
 ## Advantages
 
 - It is a non-code easy way to deploy a whole solution on the TFGrid.
 - It is 100% decentralized, there is no server involved.
+- It is powerful tool designed to empower individuals and organizations with seamless control and management over their ThreeFold Grid resources.
+- It provides an intuitive web-based interface that allows users to effortlessly deploy, monitor, and scale their workloads on the decentralized and sustainable ThreeFold Grid infrastructure.
 
 ## Playground
-Playground is a Vue app that has the weblets embedded. You can access the ThreeFold Playground on different TF Chain networks.
+
+You can access the ThreeFold Playground on different TF Chain networks.
+
 - [https://playground.dev.grid.tf](https://playground.dev.grid.tf) for Dev net.
 - [https://playground.qa.grid.tf](https://playground.qa.grid.tf) for QA net.
 - [https://playground.test.grid.tf](https://playground.test.grid.tf) for Test net.

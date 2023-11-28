@@ -22,10 +22,10 @@
 ### Run Default Node
 
 The basic type. you select any network you want. and for the node type select Default.
-![defaultdep](img/algorand_defaultdep.png)
+![defaultdep](../img/algorand_defaultdep.png)
 
 after the deployment is done. `ssh` to the node and run `goal node status` 
-![defaulttest](img/algorand_defaulttest.png)
+![defaulttest](../img/algorand_defaulttest.png)
 here you see your node run against mainnet.
 
 ### Run Relay Node
@@ -33,10 +33,10 @@ here you see your node run against mainnet.
 Relay nodes are where other nodes connect. Therefore, a relay node must be able to support a large number of connections and handle the processing load associated with all the data flowing to and from these connections. Thus, relay nodes require significantly more power than non-relay nodes. Relay nodes are always configured in archival mode.
 
 The relay node must be publicaly accessable. so it must have public ip.
-![relaydep](img/algorand_relaydep.png)
+![relaydep](../img/algorand_relaydep.png)
 
 after the deployment is done. `ssh` to the node and run `goal node status` to see the status of the node. and also you can check if the right port is listening (:4161 for testnet, and :4160 for mainnet)
-![relaytest](img/algorand_relaytest.png)
+![relaytest](../img/algorand_relaytest.png)
 
 The next step accourding to the [docs](https://developer.algorand.org/docs/run-a-node/setup/types/#relay-node) is to register your `ip:port` on Algorand Public SRV.
 
@@ -53,22 +53,22 @@ What you need?
   - [Test net explorer](https://testnet.algoexplorer.io/)
 
 - First Round: is the first block you need your participaiton node to validate from. you can choose the last block form the explorer.
-  ![partexp](img/algorand_partexp.png)
+  ![partexp](../img/algorand_partexp.png)
 - Last Round: is the final block your node can validate. let's make it 30M
 
-![partdep](img/algorand_partdep.png)
+![partdep](../img/algorand_partdep.png)
 
 after the deployment is done. `ssh` to the node and run `goal node status` to see the status of the node. you see it do catchup. and the fast catchup is to make the node sync with the latest block faster by only fetch the last 1k blocks. after it done it will start create the participation keys.
-![partstatus](img/algorand_partstatus.png)
+![partstatus](../img/algorand_partstatus.png)
 
 now if you check the explorer you can see the status of the account turned to Online
-![partonl](img/algorand_partonl.png)
+![partonl](../img/algorand_partonl.png)
 
 ### Run Indexer Node
 
 The primary purpose of this Indexer is to provide a REST API interface of API calls to support searching the Algorand Blockchain. The Indexer REST APIs retrieve the blockchain data from a PostgreSQL compatible database that must be populated. This database is populated using the same indexer instance or a separate instance of the indexer which must connect to the algod process of a running Algorand node to read block data. This node must also be an Archival node to make searching the entire blockchain possible.
 
-![indexernode](img/algorand_indexernode.png)
+![indexernode](../img/algorand_indexernode.png)
 
 After it finish you can access the indexer API at port `8980` and here are the [endpoint](https://developer.algorand.org/docs/rest-apis/indexer/) you can access.
 

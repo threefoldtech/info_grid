@@ -5,7 +5,7 @@
 - Click on the **Umbrel** tab
   
 **Process** :
-![Config](img/umbrel1.png)
+![Config](../img/umbrel1.png)
 
 - Enter an instance name.
 - Enter a Username
@@ -30,16 +30,16 @@
 
 You can see a list of all of your deployed instances
 
-![ ](img/umbrel2.png)
+![ ](../img/umbrel2.png)
 
 - you can click on `Show details` for more details about the Umbrel deployment.
-    ![ ](img/umbrel3.png)
+    ![ ](../img/umbrel3.png)
     and for more detailed information switch to `JSON` tap.
-    ![ ](img/umbrel4.png)
+    ![ ](../img/umbrel4.png)
 - Click on ***Admin Panel*** to go to the dashboard of your Umbrel instance!
   - Enter the ***Password*** that you provided in `config` section to login into Umbrel dashboard.
   > Forget the credentials? You can find them with `Show details` button.
 
-![ ](img/umbrel5.png)
+![ ](../img/umbrel5.png)
 
 > **Warning**: Due to the nature of the grid, shutdown, or restart your umbrel from the dashboard **MAY** make some unwanted behaviors.

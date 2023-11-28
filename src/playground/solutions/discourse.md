@@ -7,7 +7,7 @@
 
 __Process__ :
 
-![ ](./img/discourse1.png)
+![ ](../img/discourse1.png)
 
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. ***dc98newdisc*.gent02.dev.grid.tf**
 
@@ -29,12 +29,12 @@ __Process__ :
 
 Unlike other solutions, Discourse requires that you have an SMTP server. So make sure you fill the fields in the **Mail Server** tab in order to deploy your instance successfully.
 
-![ ](./img/discourse4.png)
+![ ](../img/discourse4.png)
 
 After that is done you can see a list of all of your deployed instances
 
-![ ](./img/discourse5.png)
+![ ](../img/discourse5.png)
 
 Click on ***Visit*** to go to the homepage of your Discourse instance! 
 
-![ ](./img/discourse6.png)
+![ ](../img/discourse6.png)

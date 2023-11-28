@@ -7,7 +7,7 @@
 
 __Process__ :
 
-![ ](./img/casper1.png)
+![ ](../img/casper1.png)
 
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. ***cl98casp*.gent02.dev.grid.tf**
 
@@ -30,8 +30,8 @@ __Process__ :
 
 After that is done you can see a list of all of your deployed instances
 
-![ ](./img/casper4.png)
+![ ](../img/casper4.png)
 
 Click on ***Visit*** to go to the homepage of your Casperlabs instance! The node takes a long time in order for the RPC service to be ready so be patient!
 
-![ ](./img/casper5.png)
+![ ](../img/casper5.png)

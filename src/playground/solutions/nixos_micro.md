@@ -39,7 +39,7 @@ We now present the main steps to properly configure your NixOS MicroVM running o
 
 * In the section `Config`, make sure to select `Nixos` as the `VM Image`. You can choose different parameters (CPU, Memory, etc.) for your deployment depending on your workload needs. 
 
-![](./img/nxios-micro1.png)
+![](../img/nxios-micro1.png)
 
 * In the section `Environment Variables`, you can add the default configurations for Nix. Here's an example:
   * ```
@@ -48,11 +48,11 @@ We now present the main steps to properly configure your NixOS MicroVM running o
     ```
     * This will be written to `/root/default.nix`. You can change the Nix shell configuration there.
 
-![](./img/nixos-micro2.png)
+![](../img/nixos-micro2.png)
 
 * In the section `Disks`, you should mount a disk large enough for Nix to store its files used for `nix-store`.
   
-![](./img/nixos-micro3.png)
+![](../img/nixos-micro3.png)
 
 * Once your configured the parameters, you can deploy the MicroVM.
 

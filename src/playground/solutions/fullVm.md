@@ -85,4 +85,4 @@ sudo mkfs.ext4 /dev/vdb
 sudo mount /dev/vdb /hdd6T/
 ```
 
-![mounting additional disk](img/fullvm6.png)
+![mounting additional disk](../img/fullvm6.png)

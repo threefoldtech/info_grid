@@ -1,6 +1,6 @@
 <h1> Presearch </h1>
 
-![ ](./img/presearch0.png)
+![ ](../img/presearch0.png)
 
 <h2> Table of Contents </h2>
 
@@ -25,7 +25,7 @@
 
 ## Deploy a Presearch Node
 
-![ ](./img/presearch1.png)
+![ ](../img/presearch1.png)
 
 - Enter an instance name.
 
@@ -52,15 +52,15 @@ We got you! All you need to do is:
 2. Run `docker cp presearch-node:/app/node/.keys presearch-node-keys` in order to generate your key-pair.
 3. Head to the *Restore* tab in the Presearch weblet and paste your key-pair in the fields below and you'll be good to deploy!
 
-![ ](./img/presearch6.png)
+![ ](../img/presearch6.png)
 
 After that is done you can see a list of all of your deployed instances
 
-![ ](./img/presearch4.jpg)
+![ ](../img/presearch4.jpg)
 
 Now head to your [dashboard](https://nodes.presearch.com/dashboard)again and scroll down to **Current Nodes**, you'll see your newly created node up and connected!
 
-![ ](./img/presearch5.png)
+![ ](../img/presearch5.png)
 
 
 ## Verify if a 3Node Already Runs a Presearch Workload
