@@ -15,6 +15,7 @@ The backend for the weblets is introduced with [grid client](../javascript/grid3
     - [Micro Virtual Machine](./vm.md)
   - [Kubernetes](./k8s.md)
   - [NixOS MicroVM](./nixos_micro.md)
+  - [Add a Domain](./add_domain.md)
 
 - [Ready Community Solutions](./ready_community_readme.md)
   - [Caprover](./caprover.md)
