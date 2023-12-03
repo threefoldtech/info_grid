@@ -43,15 +43,15 @@ Dedicated nodes are 3Nodes that can be reserved and rented entirely by one user.
 
 - See list of all dedicated node on `Dedicated Nodes` tab on the portal.
 
-    ![ ](../img/dedicated_nodes.png)
+    ![ ](./img/dedicated_nodes.png)
 
   - Hover over the price to see the applied discounts
 
-    ![](../img/dedicated_nodes_discounts.png)
+    ![](./img/dedicated_nodes_discounts.png)
 
   - Expand row to see more info on the node:
   
-    ![ ](../img/node_info.png)
+    ![ ](./img/node_info.png)
     - Resources
     - Location
     - Possible Public Ips *this depends on the farm it belongs to*
@@ -65,7 +65,7 @@ Dedicated nodes are 3Nodes that can be reserved and rented entirely by one user.
   - Type your password on the polkadot pop up window.
   - Wait for the pop up message said `Transaction succeeded`
 
-    ![ ](../img/rented_succeeded.png)
+    ![ ](./img/rented_succeeded.png)
 
 - Unreserve a node:
   - Simply as reserving but another check will be done to check you don't have any active workloads on the node before unreserving.

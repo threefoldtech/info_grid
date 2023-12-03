@@ -16,13 +16,27 @@ This document will explain how you can transfer TFT from Tfchain to Stellar and 
 
 ## Stellar to Tfchain
 
-You can deposit to Tfchain using the bridge page on the TF Dashboard, click *Deposit*:
+You can deposit to Tfchain using the bridge page on the TF Dashboard
+
+A deposit of tokens from the Stellar network onto TF-Chain needs to happen from a Stellar wallet, like in the ThreeFold Connect App.
+
+You have 2 options:
+
+- TFT needs to be sent to the bridge account
+- specifying in the memo field the twinID that was generated with the Twin creation e.g. twin_110 (dont forget twin_)
+- Note there is a transaction cost of 1 TFT.
+
+Or
+
+- You can scan the QR code
 
 ![bridge](./img/bridge/deposit.png)
 
 ## Tfchain to Stellar
 
-You can bridge back to stellar using the bridge page on the dashboard, click withdraw:
+You can bridge back to stellar using the bridge page on the dashboard, click *withdraw*:
+
+After indicating the destination address and the amount to be transferred, click *Send*.
 
 ![withdraw](./img/bridge/withdraw.png)
 
