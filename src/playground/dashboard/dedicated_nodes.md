@@ -65,7 +65,16 @@ Dedicated nodes are 3Nodes that can be reserved and rented entirely by one user.
   - Type your password on the polkadot pop up window.
   - Wait for the pop up message said `Transaction succeeded`
 
-    ![ ](./img/rented_succeeded.png)
+    ![ ](.- [What is a Dedicated Node?](#what-is-a-dedicated-node)
+- [Description](#description)
+- [Billing \& Pricing](#billing--pricing)
+- [Usage](#usage)
+- [GPU Support](#gpu-support)
+  - [Filter and Reserve a GPU Node](#filter-and-reserve-a-gpu-node)
+    - [Filter Nodes](#filter-nodes)
+    - [Reserve a Node](#reserve-a-node)
+  - [GPU Support Links](#gpu-support-links)
+/img/rented_succeeded.png)
 
 - Unreserve a node:
   - Simply as reserving but another check will be done to check you don't have any active workloads on the node before unreserving.
