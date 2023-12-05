@@ -12,7 +12,7 @@ jobs:
         id: link-report www
         uses: docker://ghcr.io/threefoldfoundation/website-link-checker:latest
         with:
-          args: 'https://www.manual.grid.tf -e 404 -w all'
+          args: 'https://www.manual.grid.tf -e 404 500 501 502 503 504 -w all'
 
   checkwww2:
     name: Check for Broken Links on www2
@@ -22,7 +22,7 @@ jobs:
         id: link-report www2
         uses: docker://ghcr.io/threefoldfoundation/website-link-checker:latest
         with:
-          args: 'https://www2.manual.grid.tf -e 404 -w all'
+          args: 'https://www2.manual.grid.tf -e 404 500 501 502 503 504 -w all'
         
   checkwww3:
     name: Check for Broken Links on www3
@@ -32,4 +32,4 @@ jobs:
         id: link-report www3
         uses: docker://ghcr.io/threefoldfoundation/website-link-checker:latest
         with:
-          args: 'https://www3.manual.grid.tf -e 404 -w all'
+          args: 'https://www3.manual.grid.tf -e 404 500 501 502 503 504 -w all'
