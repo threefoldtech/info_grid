@@ -4,7 +4,7 @@ on:
     - cron: '0 6 * * 5'
 
 jobs:
-  job_one:
+  checkwww:
     name: Check for Broken Links on www
     runs-on: ubuntu-latest
     steps:
@@ -12,10 +12,9 @@ jobs:
         id: link-report www
         uses: docker://ghcr.io/threefoldfoundation/website-link-checker:latest
         with:
-          args: 'https://www.manual.grid.tf -w 404'
+          args: 'https://www.manual.grid.tf -e 404 -w all'
 
-  job_two:
-    needs: job_one
+  checkwww2:
     name: Check for Broken Links on www2
     runs-on: ubuntu-latest
     steps:
@@ -23,10 +22,9 @@ jobs:
         id: link-report www2
         uses: docker://ghcr.io/threefoldfoundation/website-link-checker:latest
         with:
-          args: 'https://www2.manual.grid.tf -w 404'
+          args: 'https://www2.manual.grid.tf -e 404 -w all'
         
-  job_three:
-    needs: [job_one, job_two]
+  checkwww3:
     name: Check for Broken Links on www3
     runs-on: ubuntu-latest
     steps:
@@ -34,4 +32,4 @@ jobs:
         id: link-report www3
         uses: docker://ghcr.io/threefoldfoundation/website-link-checker:latest
         with:
-          args: 'https://www3.manual.grid.tf -w 404'
+          args: 'https://www3.manual.grid.tf -e 404 -w all'
