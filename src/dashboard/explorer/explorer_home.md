@@ -3,7 +3,7 @@
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
-- [Current Explorer List](#current-explorer-list)
+- [ThreeFold Explorer Links](#threefold-explorer-links)
 - [ExplorerUI](#explorerui)
   - [Statistics](#statistics)
   - [Exploring Farms](#exploring-farms)
@@ -16,18 +16,31 @@
 
 ## Introduction
 
-The ThreeFold Explorer allows you to find nodes in the grid which fulfil your requirements. We present here some of the key features of the ThreeFold Explorer
-
+The ThreeFold Explorer allows you to query information on the TFGrid such as Statistics, Nodes and Farms. We present here some of the key features of the ThreeFold Explorer. 
 ***
 
-##  Current Explorer List
+## ThreeFold Explorer Links
 
-The ThreeFold Explorer can give insights into the different ThreeFold networks. Each ThreeFold network has an associated ThreeFold Explorer. The links are the following:
+The ThreeFold Explorer can give insights into the different ThreeFold networks. Each ThreeFold network has an associated ThreeFold Explorer. You can use the ThreeFold Explorer to query information about ThreeFold Statistics, Nodes and Farms. The links are the following:
 
-- [Devnet Explorer](https://dashboard.dev.grid.tf)
-- [Qanet Explorer](https://dashboard.qa.grid.tf)
-- [Testnet Explorer](https://dashboard.test.grid.tf)
-- [Mainnet explorer](https://dashboard.grid.tf) 
+- [Devnet Dashboard](https://dashboard.dev.grid.tf)
+  - [Statistics](https://dashboard.dev.grid.tf/explorer/statistics)
+  - [Nodes](https://dashboard.dev.grid.tf/explorer/nodes)
+  - [Farms](https://dashboard.dev.grid.tf/explorer/farms)
+- [Qanet Dashboard](https://dashboard.qa.grid.tf)
+  - [Statistics](https://dashboard.qa.grid.tf/explorer/statistics)
+  - [Nodes](https://dashboard.qa.grid.tf/explorer/nodes)
+  - [Farms](https://dashboard.qa.grid.tf/explorer/farms)
+- [Testnet Dashboard](https://dashboard.test.grid.tf)
+  - [Statistics](https://dashboard.test.grid.tf/explorer/statistics)
+  - [Nodes](https://dashboard.test.grid.tf/explorer/nodes)
+  - [Farms](https://dashboard.test.grid.tf/explorer/farms)
+- [Mainnet Dashboard](https://dashboard.grid.tf) 
+  - [Statistics](https://dashboard.grid.tf/explorer/statistics)
+  - [Nodes](https://dashboard.grid.tf/explorer/nodes)
+  - [Farms](https://dashboard.grid.tf/explorer/farms)
+
+When you open an Explorer link, you will be asked to log in, but this is optional. You can simply close the login window and consult the Explorer.
 
 ***
 
