@@ -1,20 +1,20 @@
-<h1> GPU Support and the TF Explorer </h1>
+<h1> GPU Support </h1>
 
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
-- [TF Explorer](#tf-explorer)
+- [ThreeFold Explorer](#threefold-explorer)
 - [Statistics View](#statistics-view)
 
 ***
 
 ## Introduction
 
-The TFGrid now supports GPU. Note that to deploy a workload on the TFGrid and use a GPU, you will need to rent the whole 3Node as a dedicated server.
+The ThreeFold Explorer is a powerful tool that empowers users to navigate and interact with the ThreeFold Grid seamlessly. Offering a comprehensive Statistics View, the TF Explorer provides real-time insights into the network, enabling users to make informed decisions and optimize their experiences within the decentralized ecosystem.
 
-***
+One of the groundbreaking advancements introduced in the ThreeFold Grid is the support for GPUs. This addition opens up new possibilities for users seeking enhanced computational capabilities. However, it's important to note that, to leverage GPU support, users must rent the entire 3Node as a dedicated server. This ensures the optimal utilization of GPU resources and provides users with a dedicated environment for deploying GPU-accelerated workloads on the TFGrid.
 
-## TF Explorer
+## ThreeFold Explorer
 
 ![GPU support](../img/explorer_gpu.png)
 
@@ -31,8 +31,6 @@ Here’s an example of how it looks in case of reserved
 ![GPU details](../img/gpu_details_reserved.png)
 
 The TF Dashboard is where to reserve the nodes the farmer should be able to set the extra fees on the form and the user also should be able to reserve and get the details of the node (cost including the extrafees, GPU informations).
-
-***
 
 ## Statistics View
 

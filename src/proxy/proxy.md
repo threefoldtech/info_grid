@@ -1,14 +1,14 @@
-<h1> TFGrid Proxy </h1>
+<h1> Introducing Grid Proxy </h1>
  
 <h2> Table of Content</h2>
 
 - [About](#about)
-- [How to use the project](#how-to-use-the-project)
+- [How to Use the Project](#how-to-use-the-project)
 - [Used Technologies \& Prerequisites](#used-technologies--prerequisites)
 - [Start for Development](#start-for-development)
 - [Setup for Production](#setup-for-production)
-- [Get and install the binary](#get-and-install-the-binary)
-- [Add as a Systemd service](#add-as-a-systemd-service)
+- [Get and Install the Binary](#get-and-install-the-binary)
+- [Add as a Systemd Service](#add-as-a-systemd-service)
 
 <!-- About -->
 
@@ -23,7 +23,7 @@ The proxy is used as the backend of several threefold projects like:
 
 <!-- Usage -->
 
-## How to use the project
+## How to Use the Project
 
 If you don't want to care about setting up your instance you can use one of the live instances. each works against a different TFChain network.
 
@@ -103,7 +103,7 @@ For more illustrations about the commands needed to work on the project, see the
 
 ## Setup for Production
 
-## Get and install the binary
+## Get and Install the Binary
 
 - You can either build the project:
 
@@ -123,7 +123,7 @@ For more illustrations about the commands needed to work on the project, see the
     && mv server /usr/local/bin/gridproxy-server
   ```
 
-## Add as a Systemd service
+## Add as a Systemd Service
 
 - Create the service file
 

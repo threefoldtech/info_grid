@@ -134,7 +134,7 @@
     - [External Service Contract](tfchain/tfchain_external_service_contract.md)
     - [Become a Solution Provider](tfchain/tfchain_solution_provider.md)
   - [Grid Proxy](proxy/proxy_readme.md)
-    - [TFGrid Proxy](proxy/proxy.md)
+    - [Introducing Grid Proxy](proxy/proxy.md)
     - [Setup](proxy/setup.md)
     - [DB Testing](proxy/db_testing.md)
     - [Commands](proxy/commands.md)

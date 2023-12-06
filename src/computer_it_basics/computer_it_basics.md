@@ -1,6 +1,8 @@
 <h1> Computer and IT Basics </h1>
 
-This section provides computer and IT basic information for system administrators.
+Welcome to the *Computer and IT Basics* section of the ThreeFold Manual! 
+
+In this section, tailored specifically for system administrators, we'll delve into fundamental concepts and tools that form the backbone of managing and securing infrastructure. Whether you're a seasoned sysadmin or just starting your journey, these basics are essential for navigating the intricacies of the ThreeFold Grid.
 
 <h2> Table of Contents </h2>
 

@@ -1,5 +1,7 @@
 <h1>Introduction to Pulumi</h1>
 
+With Pulumi, you can express your infrastructure requirements using the languages you know and love, creating a seamless bridge between development and operations. Let's go!
+
 ![](./img/pulumi_logo.svg)
 
 <h2>Table of Contents</h2>
