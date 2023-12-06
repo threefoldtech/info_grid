@@ -1,8 +1,16 @@
-<h1> Playground </h1>
+<h1> ThreeFold Playground </h1>
 
-The ThreeFold Playground offers an easy-to-use browser experience to deploy solutions on the TFGrid via weblets. A weblet is a compiled javascript web component which can be embedded in HTML page of a web app.
+Welcome to the *Playground* section of the ThreeFold Manual, your portal to a user-friendly and immersive experience in deploying solutions on the TFGrid! 
 
-The backend for the weblets is introduced with [grid client](../javascript/grid3_javascript_readme.md) which communicate to TF Chain and TF Grid over RMB.
+The ThreeFold Playground is a revolutionary platform that simplifies the deployment process, allowing users to effortlessly interact with the TFGrid using intuitive web components known as weblets. 
+
+## What is the ThreeFold Playground?
+
+The ThreeFold Playground is a dynamic environment designed for both seasoned developers and newcomers alike. It offers a seamless and accessible browser experience, making it easy to deploy solutions on the TFGrid through the use of weblets. 
+
+In the context of the Playground, a weblet is a compiled JavaScript web component that can be effortlessly embedded within the HTML page of a web application. This modular approach allows for flexible and intuitive interactions, facilitating a user-friendly deployment process.
+
+The backend for the weblets is introduced with the [Javascript Client](../javascript/grid3_javascript_readme.md) which communicates to TFChain over RMB.
 
 <h2> Table of Contents </h2>
 
