@@ -34,11 +34,11 @@ The ThreeFold Dashboard is a unified admin interface for everything related to t
 
 ### Introduction
 
-The TFChain Wallet, seamlessly integrated within the TF Dashboard, stands as a secure and user-centric gateway to the world of decentralized finance (DeFi) within the ThreeFold ecosystem. As the digital landscape evolves, the TFChain Wallet empowers users with a streamlined and intuitive interface, facilitating effortless management of digital assets and transactions on the TF Grid. 
+The TFChain Wallet, seamlessly integrated within the ThreeFold Dashboard, stands as a secure and user-centric gateway to the world of decentralized finance (DeFi) within the ThreeFold ecosystem. As the digital landscape evolves, the TFChain Wallet empowers users with a streamlined and intuitive interface, facilitating effortless management of digital assets and transactions on the TFGrid. 
 
 More than just a repository for tokens, the TFChain Wallet is designed to offer a holistic financial experience. Users can securely store, send, and receive various digital assets while enjoying the benefits of deployable decentralized weblets built on the ThreeFold Grid. 
 
-Throughout this manual, we will explore the intricacies of the TFChain Wallet within the TF Dashboard, delving into its key features, security measures, and its role in facilitating decentralized financial activities.
+Throughout this manual, we will explore the intricacies of the TFChain Wallet within the ThreeFold Dashboard, delving into its key features, security measures, and its role in facilitating decentralized financial activities.
 
 ### Generate Account
 
@@ -57,7 +57,7 @@ After entering your information, you can connect your wallet seamlessly.
 
 ![login](./img/dashboard_login.png)
 
-Once you've logged in with the password used while connecting your wallet, you can access all of the TF Dashboard sections.
+Once you've logged in with the password used while connecting your wallet, you can access all of the ThreeFold Dashboard sections.
 
 ## Twin/Farm Management
 

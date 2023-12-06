@@ -1,4 +1,4 @@
-<h1>Threefold Connect: Create a Threefold Connect Account and Wallet</h1>
+<h1>ThreeFold Connect: Create a Threefold Connect Account and Wallet</h1>
 
 <div class="youtubeVideoWrapper">
 <iframe title="Threefold Connect Create Account and Wallet" width="560" height="315" src="https://www.youtube-nocookie.com/embed/jfIetL7DaRg" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
@@ -7,28 +7,28 @@
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
-- [Download the Threefold Connect App](#download-the-threefold-connect-app)
-- [Create a Threefold Connect Account](#create-a-threefold-connect-account)
+- [Download the ThreeFold Connect App](#download-the-threefold-connect-app)
+- [Create a ThreeFold Connect Account](#create-a-threefold-connect-account)
 - [Verify Your Email](#verify-your-email)
-- [Create a Threefold Connect Wallet](#create-a-threefold-connect-wallet)
+- [Create a ThreeFold Connect Wallet](#create-a-threefold-connect-wallet)
 
 ***
 
 ## Introduction
 
-TFConnect App emerges as a dynamic and essential companion for individuals seeking seamless access to the ThreeFold ecosystem on the go. Available for free download on both iOS and Android mobile platforms,  TFConnect App ensures that users can effortlessly engage with the ThreeFold Grid, empowers users to manage their digital assets, engage in secure transactions, and explore decentralized financial opportunities, all within a unified mobile experience.
+The ThreeFold Connect app emerges as a dynamic and essential companion for individuals seeking seamless access to the ThreeFold ecosystem on the go. Available for free download on both iOS and Android mobile platforms,  the TF Connect app ensures that users can effortlessly engage with the ThreeFold Grid, empowers users to manage their digital assets, engage in secure transactions, and explore decentralized financial opportunities, all within a unified mobile experience.
 
-In this tutorial, we show you how to create a Threefold Connect account and wallet. The main steps are simple and you will be done in no time. If you have any questions, feel free to write a post on the [Threefold Forum](http://forum.threefold.io/).
+In this tutorial, we show you how to create a ThreeFold Connect account and wallet. The main steps are simple and you will be done in no time. If you have any questions, feel free to write a post on the [ThreeFold Forum](http://forum.threefold.io/).
 
-## Download the Threefold Connect App
+## Download the ThreeFold Connect App
 
 
-The Threefold Connect app is available for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US) and [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885).
+The ThreeFold Connect app is available for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US) and [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885).
 
 - Note that for Android phones, you need at minimum Android 8.1
 - Note that for iOS phones, you need at minimum iOS 15
 
-Either use the links above, or search for the Threefold Connect app on the App Store or the Google Play Store. Then install and open the app. If you want to leave a 5-star review of the app, no one here will stop you!
+Either use the links above, or search for the ThreeFold Connect app on the App Store or the Google Play Store. Then install and open the app. If you want to leave a 5-star review of the app, no one here will stop you!
 
 ![farming_tf_wallet_1](./img/farming_tf_wallet_1.png)
 ![farming_tf_wallet_2](./img/farming_tf_wallet_2.png)
@@ -37,9 +37,9 @@ When you try to open the app, if you get an error message such as: "Error in ini
 
 ***
 
-## Create a Threefold Connect Account
+## Create a ThreeFold Connect Account
 
-Once you are in the app, you will see some introduction pages to help you familiarize with the TF Connect app. You will also be asked to read and accept Threefold's Terms and Conditions.
+Once you are in the app, you will see some introduction pages to help you familiarize with the TF Connect app. You will also be asked to read and accept ThreeFold's Terms and Conditions.
 
 ![farming_tf_wallet_3](./img/farming_tf_wallet_3.png)
 ![farming_tf_wallet_4](./img/farming_tf_wallet_4.png)
@@ -48,11 +48,11 @@ You will then be asked to either *SIGN UP* or *RECOVER ACCOUNT*. To create a new
 
 ![farming_tf_wallet_5](./img/farming_tf_wallet_5.png)
 
-Then, choose a *Threefold Connect Id*. This 3bot ID will be used, as well as the seed phrase, when you want to recover an account. Choose wisely. And do not forget it! Here we will use TFExample, as an example.
+Then, choose a *ThreeFold Connect Id*. This 3bot ID will be used, as well as the seed phrase, when you want to recover an account. Choose wisely. And do not forget it! Here we will use TFExample, as an example.
 
 ![farming_tf_wallet_6](./img/farming_tf_wallet_6.png)
 
-Next, you need to add a valid email address. You will need to access your email and confirm the Threefold validation email to fully use the Threefold Connect app.
+Next, you need to add a valid email address. You will need to access your email and confirm the ThreeFold validation email to fully use the ThreeFold Connect app.
 
 ![farming_tf_wallet_7](./img/farming_tf_wallet_7.png)
 
@@ -68,15 +68,15 @@ Then, you'll be asked to confirm your TF 3bot ID and the associated email.
 
 ![farming_tf_wallet_10](./img/farming_tf_wallet_10.png)
 
-Finally, you will be asked to choose a 4-digit pin. This will be needed to use the Threefold Connect app. If you ever forget this 4-digit pin, you will need to recover your account from your 3bot name and your seed phrase. You will need to confirm the new pin in the next step.
+Finally, you will be asked to choose a 4-digit pin. This will be needed to use the ThreeFold Connect app. If you ever forget this 4-digit pin, you will need to recover your account from your 3bot name and your seed phrase. You will need to confirm the new pin in the next step.
 
 ![farming_tf_wallet_11](./img/farming_tf_wallet_11.png)
 
-That's it! You've created your Threefold Connect account. You can press the hamburger menu on the top left to explore the Threefold Connect app.
+That's it! You've created your ThreeFold Connect account. You can press the hamburger menu on the top left to explore the ThreeFold Connect app.
 
 ![farming_tf_wallet_12](./img/farming_tf_wallet_12.png)
 
-In the next step, we will create a Threefold Connect wallet. You'll see, it's very simple!
+In the next step, we will create a ThreeFold Connect wallet. You'll see, it's very simple!
 
 But first, let's see how to verify your email.
 
@@ -100,17 +100,17 @@ If, for some reason, you did not receive the verification email, simply click on
 
 ![farming_tf_wallet_43](./img/farming_tf_wallet_43.png)
 
-That's it! You've now created a Threefold Connect account. 
+That's it! You've now created a ThreeFold Connect account. 
 
-All that is left to do is to create a Threefold Connect wallet. This is very simple. 
+All that is left to do is to create a ThreeFold Connect wallet. This is very simple. 
 
 Let's go!
 
 ***
 
-## Create a Threefold Connect Wallet
+## Create a ThreeFold Connect Wallet
 
-To create a wallet, click on the Threefold Connect app menu, then choose *Wallet*.
+To create a wallet, click on the ThreeFold Connect app menu, then choose *Wallet*.
 
 ![farming_tf_wallet_13](./img/farming_tf_wallet_13.png)
 
@@ -146,7 +146,7 @@ At the top of the section *Wallet*, we can see that the name has changed.
 
 ![farming_tf_wallet_21](./img/farming_tf_wallet_21.png)
 
-That's it! You now have a Threefold Connect account and wallet.
-This will be very useful for your TFT transactions on the Threefold ecosystem.
+That's it! You now have a ThreeFold Connect account and wallet.
+This will be very useful for your TFT transactions on the ThreeFold ecosystem.
 
 ***

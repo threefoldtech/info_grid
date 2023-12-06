@@ -1,11 +1,12 @@
 <h1>GPU Farming</h1>
 
-Welcome to the ThreeFold Grid's Manual, your go-to resource for exploring the cutting-edge possibilities of decentralized infrastructure. In this guide, we delve into the realm of GPU farming, shedding light on the significance of Graphics Processing Units (GPUs) and how they can be seamlessly integrated into the ThreeFold ecosystem.
+Welcome to the *GPU Farming* section of the ThreeFold Manual! 
+
+In this guide, we delve into the realm of GPU farming, shedding light on the significance of Graphics Processing Units (GPUs) and how they can be seamlessly integrated into the ThreeFold ecosystem.
 
 <h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-  - [Understanding GPUs:](#understanding-gpus)
+- [Understanding GPUs](#understanding-gpus)
 - [Get Started](#get-started)
 - [Install the GPU](#install-the-gpu)
 - [GPU Node and the Farmerbot](#gpu-node-and-the-farmerbot)
@@ -16,17 +17,15 @@ Welcome to the ThreeFold Grid's Manual, your go-to resource for exploring the cu
 
 ***
 
-## Introduction
+## Understanding GPUs
 
-### Understanding GPUs:
-
-A Graphics Processing Unit, or GPU, is a specialized electronic circuit designed to accelerate the rendering of images and videos. Originally developed for graphics-intensive tasks in gaming and multimedia applications, GPUs have evolved into powerful parallel processors with the ability to handle complex computations. 
+A Graphics Processing Unit, or GPU, is a specialized electronic circuit designed to accelerate the rendering of images and videos. Originally developed for graphics-intensive tasks in gaming and multimedia applications, GPUs have evolved into powerful parallel processors with the ability to handle complex computations, such as 3D rendering, AI and machine learning. 
 
 In the context of ThreeFold, GPU farming involves harnessing the computational power of Graphics Processing Units to contribute to the decentralized grid. This empowers users to participate in the network's mission of creating a more equitable and efficient internet infrastructure.
 
 ## Get Started
 
-In this guide, we focus on the integration of GPUs with the 3Node – a fundamental building block of the ThreeFold Grid. The process involves adding a GPU to enhance the capabilities of your node, providing increased processing power and versatility for a wide range of tasks. Note that any Nvidia or AMD graphics card should work as long as it's supported by the system.
+In this guide, we focus on the integration of GPUs with a 3Node, the fundamental building block of the ThreeFold Grid. The process involves adding a GPU to enhance the capabilities of your node, providing increased processing power and versatility for a wide range of tasks. Note that any Nvidia or AMD graphics card should work as long as it's supported by the system.
 
 ## Install the GPU
 

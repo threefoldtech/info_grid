@@ -2,14 +2,16 @@
 
 ![Farming_Title](./img/farming_30.png)
 
-Welcome to the ThreeFold Grid Farmer Guide, your comprehensive resource for understanding and navigating the world of ThreeFold Farmers. In this manual, we embark on a journey to demystify the role of ThreeFold Farmers and provide a detailed exploration of the ThreeFold Grid—a revolutionary, decentralized, and sustainable internet infrastructure.
+Welcome to the *ThreeFold Farmers* section of the ThreeFold Manual, your comprehensive resource for understanding and navigating the world of ThreeFold farming. 
+
+In this manual, we embark on a journey to demystify the role of ThreeFold Farmers and provide a detailed exploration of the ThreeFold Grid, a revolutionary, decentralized, and sustainable internet infrastructure.
 
 ## What is a ThreeFold Farmer?
-ThreeFold Farmers are the backbone of the ThreeFold Grid, responsible for hosting and managing the infrastructure that forms the foundation of a new, decentralized internet. A Farmer is an individual or organization that contributes computing resources—such as storage and processing power—to the ThreeFold Grid, creating a distributed and resilient network that is owned and operated by its users.
+ThreeFold Farmers are the backbone of the ThreeFold Grid, responsible for hosting and managing the infrastructure that forms the foundation of a new, decentralized internet. A Farmer is an individual or organization that contributes computing resources, such as storage and processing power, to the ThreeFold Grid, creating a distributed and resilient network that is owned and operated by its users.
 
-As a ThreeFold Farmer, you are not merely a participant in a traditional cloud infrastructure; you are a key stakeholder in a community-driven, sustainable, and inclusive digital ecosystem. By becoming a Farmer, you join a global network of like-minded individuals and entities, all working towards a common goal of fostering a more equitable and efficient internet.
+As a ThreeFold Farmer, you are not merely a participant in a traditional cloud infrastructure: you are a key stakeholder in a community-driven, sustainable, and inclusive digital ecosystem. By becoming a Farmer, you join a global network of like-minded individuals and entities, all working towards a common goal of fostering a more equitable and efficient internet.
 
-This Farmer Guide is designed to walk you through the essential concepts, tools, and practices that define the ThreeFold farming experience. Whether you are a seasoned infrastructure professional or someone exploring the world of decentralized computing for the first time, this guide will provide you with the insights and instructions needed to thrive as a ThreeFold Farmer.
+This guide is designed to walk you through the essential concepts, tools, and practices that define the ThreeFold farming experience. Whether you are a seasoned infrastructure professional or someone exploring the world of decentralized computing for the first time, this guide will provide you with the insights and instructions needed to thrive as a ThreeFold Farmer.
 
 ## Get Started
 
