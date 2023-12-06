@@ -10,9 +10,9 @@
 
 ## Introduction
 
-The TFGrid now supports GPU. Note that to deploy a workload on the TFGrid and use a GPU, you will need to rent the whole 3Node as a dedicated server.
+TF Explorer is a powerful tool that empowers users to navigate and interact with the ThreeFold Grid seamlessly. Offering a comprehensive Statistics View, the TF Explorer provides real-time insights into the network, enabling users to make informed decisions and optimize their experiences within the decentralized ecosystem.
 
-***
+One of the groundbreaking advancements introduced in the ThreeFold Grid is the support for GPUs. This addition opens up new possibilities for users seeking enhanced computational capabilities. However, it's important to note that to leverage GPU support, users must rent the entire 3Node as a dedicated server. This ensures the optimal utilization of GPU resources and provides users with a dedicated environment for deploying GPU-accelerated workloads on the TFGrid.
 
 ## TF Explorer
 

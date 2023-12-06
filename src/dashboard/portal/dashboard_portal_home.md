@@ -1,5 +1,10 @@
 # TF-Chain Portal
 
+The TFChain Portal is a central hub for users to manage their accounts, perform transactions, explore network capacities, and engage with the ThreeFold Grid's decentralized infrastructure within TF Dashboard.
+
+Whether you're exploring the development network (Devnet), the quality assurance network (Qanet), the testing network (Testnet), or the production network (Mainnet), this manual will guide you through the essential functionalities of the TF-Chain Portal. So, let's get started!
+
+
 ## Currently on:
 - [Devnet](https://dashboard.dev.grid.tf/)
 - [Qanet](https://dashboard.qa.grid.tf/)
@@ -11,8 +16,6 @@
 ## Installation and activation
 
 Follow the [Getting Started](../../getstarted/tfgrid3_getstarted.md) to make sure your tfchain account set up.
-
-
 
 ## Transfer TFT
 

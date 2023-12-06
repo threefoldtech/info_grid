@@ -4,6 +4,7 @@
 
 - [Introduction](#introduction)
 - [TFChain Wallet](#tfchain-wallet)
+  - [Introduction](#introduction-1)
   - [Generate Account](#generate-account)
   - [Connect Your Wallet](#connect-your-wallet)
   - [Login](#login)
@@ -30,6 +31,14 @@ The ThreeFold Dashboard is a unified admin interface for everything related to t
 ***
 
 ## TFChain Wallet
+
+### Introduction
+
+The TFChain Wallet, seamlessly integrated within the TF Dashboard, stands as a secure and user-centric gateway to the world of decentralized finance (DeFi) within the ThreeFold ecosystem. As the digital landscape evolves, the TFChain Wallet empowers users with a streamlined and intuitive interface, facilitating effortless management of digital assets and transactions on the TF Grid. 
+
+More than just a repository for tokens, the TFChain Wallet is designed to offer a holistic financial experience. Users can securely store, send, and receive various digital assets while enjoying the benefits of deployable decentralized weblets built on the ThreeFold Grid. 
+
+Throughout this manual, we will explore the intricacies of the TFChain Wallet within the TF Dashboard, delving into its key features, security measures, and its role in facilitating decentralized financial activities.
 
 ### Generate Account
 

@@ -16,9 +16,12 @@
 
 ## Introduction
 
-The ThreeFold Explorer allows you to find nodes in the grid which fulfil your requirements. We present here some of the key features of the ThreeFold Explorer
+The Explorer serves as a powerful and intuitive tool within TF Dashboard designed to empower users in navigating and interacting with the ThreeFold Grid.
 
-***
+At its core, the Explorer is a comprehensive platform that enables users to discover nodes within the grid that align with their specific requirements, facilitating a seamless and efficient exploration of the decentralized network. Whether you are seeking computational resources, specific geographic locations, or specialized hardware configurations, the ThreeFold Explorer provides a user-friendly interface to effortlessly identify and connect with nodes that best suit your needs.
+
+Throughout this manual, we will delve into the intricacies of the ThreeFold Explorer, highlighting key features, utilization strategies, and best practices for harnessing its capabilities effectively. 
+
 
 ##  Current Explorer List
 

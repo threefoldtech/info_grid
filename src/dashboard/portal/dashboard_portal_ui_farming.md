@@ -1,5 +1,7 @@
 # Create a Farm
 
+ In this section, we'll walk you through the process of activating your farmer account, an essential step if you're looking to participate in the innovative world of farming on the ThreeFold Grid.
+ 
 If you want to start farming, you need a farmID, the ID of the farm that is owning the hardware node(s) you connect to the TFGrid.
 
 ## Currently on:

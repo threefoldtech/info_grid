@@ -16,9 +16,9 @@
 
 ## Introduction
 
-In this tutorial, we show you how to create a Threefold Connect account and wallet. The main steps are simple and you will be done in no time. If you have any questions, feel free to write a post on the [Threefold Forum](http://forum.threefold.io/).
+TFConnect App emerges as a dynamic and essential companion for individuals seeking seamless access to the ThreeFold ecosystem on the go. Available for free download on both iOS and Android mobile platforms,  TFConnect App ensures that users can effortlessly engage with the ThreeFold Grid, empowers users to manage their digital assets, engage in secure transactions, and explore decentralized financial opportunities, all within a unified mobile experience.
 
-***
+In this tutorial, we show you how to create a Threefold Connect account and wallet. The main steps are simple and you will be done in no time. If you have any questions, feel free to write a post on the [Threefold Forum](http://forum.threefold.io/).
 
 ## Download the Threefold Connect App
 
