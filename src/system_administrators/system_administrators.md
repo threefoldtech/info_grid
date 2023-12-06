@@ -39,6 +39,8 @@ From deployment strategies to monitoring tools, from security best practices to 
   - [Pricing](../cloud/cloudunits_pricing.md)
 - [Planetary Network](../getstarted/planetarynetwork.md)
 - [TFGrid Services](../TF_Grid_Services/tf_grid_services_readme.md)
+- [GPU](../gpu/gpu_toc.md)
+  - [GPU Support](../gpu/gpu.md)
 - [Terraform](../terraform/terraform_readme.md)
   - [Installing Terraform](../terraform/terraform_install.md)
   - [Terraform Basics](../terraform/terraform_basics.md)

@@ -31,7 +31,7 @@ Whether you're interested in decentralized cloud computing, blockchain integrati
     - [Deploy Gateways](../go/grid3_go_gateways.md)
     - [Deploy Kubernetes](../go/grid3_go_kubernetes.md)
     - [Deploy a QSFS](../go/grid3_go_qsfs.md)
-    - [GPU Support](../go/grid3_go_gpu_support.md)
+    - [GPU Support](../go/grid3_go_gpu.md)
 - [TFGrid CLI](../tfgridcmd/grid3_cli_readme.md)
   - [Installation](../tfgridcmd/grid3_cli_installation.md)
   - [Login](../tfgridcmd/grid3_cli_login.md)
