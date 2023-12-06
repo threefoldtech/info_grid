@@ -7,10 +7,6 @@
 - [Billing \& Pricing](#billing--pricing)
 - [Usage](#usage)
 - [GPU Support](#gpu-support)
-  - [Filter and Reserve a GPU Node](#filter-and-reserve-a-gpu-node)
-    - [Filter Nodes](#filter-nodes)
-    - [Reserve a Node](#reserve-a-node)
-  - [GPU Support Links](#gpu-support-links)
 
 ***
 
@@ -72,39 +68,4 @@ Dedicated nodes are 3Nodes that can be reserved and rented entirely by one user.
 
 To use a GPU on the TFGrid, users need to rent a dedicated node. Once they have rented a dedicated node equipped with a GPU, users can deploy workloads on their dedicated GPU node.
 
-## Filter and Reserve a GPU Node
-
-You can filter and reserve a GPU node using the [Dedicated Nodes section](https://dashboard.grid.tf/portal/account-nodes) of the **Portal**.
-
-### Filter Nodes
-
-* Filter nodes using the vendor name
-  * In **Filters**, select **GPU's vendor name**
-  * A new window will appear below named **GPU'S VENDOR NAME**
-    * Write the name of the vendor desired (e.g. **nvidia**, **amd**)
-* Filter nodes using the device name
-  * In **Filters**, select **GPU's device name**
-  * A new window will appear below named **GPU'S DEVICE NAME**
-    * Write the name of the device desired (e.g. **GT218**)
-
-### Reserve a Node
-
-When you have decided which node to reserve, click on **Reserve** under the column named **Actions**. Once you've rented a dedicated node that has a GPU, you can deploy GPU workloads.
-
-## GPU Support Links
-
-The ThreeFold Manual covers many ways to use a GPU node on the TFGrid. A good place to start would be the **Full VM and GPU** documentation. 
-
-Feel free to explore the different possibilities!
-
-* Dashboard and GPU
-  * [ThreeFold Explorer](../explorer/explorer_gpu_support.md)
-  * [GraphQL and GPU](../explorer/explorer_graphql_intro.md#filtering-nodes-with-gpu-devices) 
-* [Javascript Client and GPU](../../javascript/grid3_javascript_gpu_support.md)
-* Go Client and GPU
-  * [GPU Support](../../go/grid3_go_gpu_support.md)
-  * [VM with GPU](../../go/grid3_go_vm_with_gpu.md)
-* [TFGrid CLI and GPU](../../tfgridcmd/grid3_cli_vm.md#deploy-a-vm-with-gpu)
-* [Terraform and GPU](../../terraform/terraform_gpu_support.md)
-* [Full VM and GPU](../../playground/fullVm.md)
-* [Zero-OS API and GPU](../../internals/zos/manual/api.md#gpus)
+For more information on GPU support, please read the [GPU section](../../gpu/gpu_toc.md) of the manual.
