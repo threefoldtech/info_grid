@@ -30,7 +30,7 @@ The backend for the weblets is introduced with the [Javascript Client](../javasc
   - [Funkwhale](./funkwhale.md)
   - [Peertube](./peertube.md)
   - [Taiga](./taiga.md)
-  - [Owncloud](./owncloud.md)
+  - [ownCloud](./owncloud.md)
   - [Nextcloud](./nextcloud.md)
   - [Discourse](./discourse.md)
   - [Mattermost](./mattermost.md)

@@ -293,7 +293,7 @@
       - [Funkwhale](playground/funkwhale.md)
       - [Mattermost](playground/mattermost.md)
       - [Node Pilot](playground/nodepilot.md)
-      - [Owncloud](playground/owncloud.md)
+      - [ownCloud](playground/owncloud.md)
       - [Nextcloud](playground/nextcloud.md)
       - [Peertube](playground/peertube.md)
       - [Presearch](playground/presearch.md)
