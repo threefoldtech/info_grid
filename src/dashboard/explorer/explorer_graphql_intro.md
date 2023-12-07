@@ -3,6 +3,7 @@
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
+- [Get Started](#get-started)
 - [GraphQL Examples](#graphql-examples)
   - [Getting Many Nodes](#getting-many-nodes)
   - [Finding Gateways](#finding-gateways)
@@ -17,6 +18,14 @@
 ***
 
 ## Introduction
+
+[GraphQL](https://graphql.org/), or Graph Query Language, is a powerful and flexible query language used for accessing and manipulating data. It serves as a fundamental component in the ThreeFold Grid ecosystem, offering a standardized and efficient means to interact with and retrieve information from various ThreeFold networks. 
+
+GraphQL allows users to request specific data they need, making it a more dynamic alternative to traditional REST APIs.
+
+In the context of TFGrid, GraphQL plays a pivotal role in indexing and organizing information related to TFChain, the decentralized blockchain technology powering the ThreeFold ecosystem. TFChain's data, including information about nodes, transactions, and network status, is indexed over GraphQL, providing a unified interface for querying the ThreeFold networks (Devnet, Qanet, Testnet, and Mainnet).
+
+## Get Started
 
 Information on TFChain is indexed over GraphQL and is available for queries.
 
