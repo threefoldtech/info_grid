@@ -4,15 +4,15 @@
 
 - [Introduction](#introduction)
 - [Network Setup for Farmers](#network-setup-for-farmers)
-  - [Step 1. Testing for IPv6 availability in your location](#step-1-testing-for-ipv6-availability-in-your-location)
-  - [Step 2. Choosing you setup for connecting you nodes](#step-2-choosing-you-setup-for-connecting-you-nodes)
+  - [Step 1. Testing for IPv6 Availability in Your Location](#step-1-testing-for-ipv6-availability-in-your-location)
+  - [Step 2. Choosing the Setup to Connect Your Nodes](#step-2-choosing-the-setup-to-connect-your-nodes)
     - [2.1 Home Setup](#21-home-setup)
     - [2.2 Data Center/Advanced Setup](#22-data-centeradvanced-setup)
 - [General Notes](#general-notes)
 
 ***
 
-## Introduction
+# Introduction
 
 0-OS nodes participating in the Threefold grid, need connectivity of course. They need to be able to communicate over 
 the Internet with each-other in order to do various things:
@@ -53,22 +53,22 @@ get IPv4, mostly at rates of 10-15 Euro per IP. Things tend to get costly that w
 
 So anyway, IPv6 is not an afterthought in 0-OS, we're starting with it.
 
-## Network Setup for Farmers
+# Network Setup for Farmers
 
 This is a quick manual to what is needed for connecting a node with zero-OS V2.0
 
-### Step 1. Testing for IPv6 availability in your location 
+## Step 1. Testing for IPv6 Availability in Your Location 
 As descibed above the network in which the node is instaleld has to be IPv6 enabled.  This is not an afterthought as we are building a new internet it has to ba based on the new and forward looking IP addressing scheme.  This is something you have to investigate, negotiate with you connectivity provider.  Many (but not all home connectivity products and certainly most datacenters can provide you with IPv6.  There are many sources of infromation on how to test and check whether your connection is IPv6 enabled, [here is a starting point](http://www.ipv6enabled.org/ipv6_enabled/ipv6_enable.php)
 
-### Step 2. Choosing you setup for connecting you nodes
+## Step 2. Choosing the Setup to Connect Your Nodes
 
 Once you have established that you have IPv6 enabled on the network you are about to deploy, you have to make sure that there is an IPv6 DHCP facility available.  Zero-OS does not work with static IPv6 addresses (at this point in time).  So you have choose and create one of the following setups:
 
-#### 2.1 Home Setup
+### 2.1 Home Setup
 
 Use your (home) ISP router Ipv6 DHCP capabilities to provide (private) IPv6 addresses.  The principle will work the same as for IPv4 home connections, everything happens enabled by Network Adress Translation (just like anything else that uses internet connectivity).  This should be relatively straightforward if you have established that your conenction has IPv6 enabled.
 
-#### 2.2 Data Center/Advanced Setup
+### 2.2 Data Center/Advanced Setup
 
 In this situation there are many options on how to setup you node.  This requires you as the expert to make a few decisions on how to connect what what the best setup is that you can support for the operaitonal time of your farm.  The same basics principles apply:
   - You have to have a block of (public) IPv6 routed to you router, or you have to have your router setup to provide Network Address Translation (NAT)
@@ -76,7 +76,7 @@ In this situation there are many options on how to setup you node.  This require
 
 As a farmer you are in charge of selecting and creating the appropriate network setup for your farm.  
 
-## General Notes
+# General Notes
 
 The above setup will allows your node(s) to appear in explorer on the TFGrid and will allowd you to earn farming tokens.  At stated in the introduction ThreeFold is creating next generation internet capacity and therefore has IPv6 as it's base building block.  Connecting to the current (dominant) IPv4 network happens for IT workloads through so called webgateways.  As the word sais these are gateways that provide connectivity between the currenct leading IPv4 adressing scheme and IPv6. 
 

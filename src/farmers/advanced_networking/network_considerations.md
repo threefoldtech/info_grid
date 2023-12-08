@@ -3,8 +3,8 @@
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
-- [Running ZOS (v2) at home](#running-zos-v2-at-home)
-- [Running ZOS (v2) in a multi-node farm in a DC](#running-zos-v2-in-a-multi-node-farm-in-a-dc)
+- [Running ZOS (v2) at Home](#running-zos-v2-at-home)
+- [Running ZOS (v2) in a Multi-Node Farm in a DC](#running-zos-v2-in-a-multi-node-farm-in-a-dc)
   - [Necessities](#necessities)
   - [IPv6](#ipv6)
   - [Routing/Firewalling](#routingfirewalling)
@@ -22,11 +22,11 @@ So a Node needs to be connected to a __wired__ network, providing a dhcp server 
 
 For a node to have that ability to host user networks, we **strongly** advise to have a working IPv6 setup, as that is the primary IP stack we're using for the User Network's Mesh to function.
 
-## Running ZOS (v2) at home
+## Running ZOS (v2) at Home
 
 Running a ZOS Node at home is plain simple. Connect it to your router, plug it in the network, insert the preconfigured USB stick containing the bootloader and the `farmer_id`, power it on.
 
-## Running ZOS (v2) in a multi-node farm in a DC
+## Running ZOS (v2) in a Multi-Node Farm in a DC
 
 Multi-Node Farms, where a farmer wants to host the nodes in a data centre, have basically the same simplicity, but the nodes can boot from a boot server that provides for DHCP, and also delivers the iPXE image to load, without the need for a USB stick in every Node.
 

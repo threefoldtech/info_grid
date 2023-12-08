@@ -8,6 +8,7 @@
 - [Notes and Warnings](#notes-and-warnings)
   - [Management Interfaces](#management-interfaces)
   - [Data Center Cable Management](#data-center-cable-management)
+  - [Static IP Uplink](#static-ip-uplink)
 - [Testing the Setup](#testing-the-setup)
 - [Questions and Feedback](#questions-and-feedback)
 
@@ -54,11 +55,6 @@ Note that redundancy can help in avoiding single point of failure [(SPOF)](https
 
 You should make sure to never expose management interfaces to the public internet.
 
-<!--
-
-### NIC
-
- QUESTION: Does it matter which NICs are used? -->
 
 ### Data Center Cable Management
 
@@ -72,6 +68,20 @@ Add info on this:
 There's a program floating around that allows farmers to configure the interfaces on their nodes. This is done over RMB, and I also developed a script for this purpose. Both might be deprecated with the 3.9 release and new RMB. There should be a documented way of doing this that's relatively accessible.
 
 -->
+
+<!--
+
+### NIC
+
+ QUESTION: Does it matter which NICs are used? -->
+
+### Static IP Uplink
+
+If your DC uplink is established by simple static IP (which is the case in most DCs), there is a simple setup possible. Note that if you have to use PPPoE or pptp/L2TP (like a consumer internet connection at most homes), this would not work. 
+
+If your WAN is established by static IP, you can simply attach the WAN uplink provided by the DC to one of the switches (and not to the WAN-side of your own router). Then, the WAN-side of the router needs to be attached to the switch too. By doing so, your nodes will be able to connect directly to the DC gateway, in the same way that the router is connecting its WAN-side to the gateway, without the public IP traffic being routed/bridged through the router (bypassing). 
+
+With a network configured like this, it is absolutely not important on which ports you connect which NIC of your nodes. You can just randomly plug them anywhere. But there is one restriction: the DC uplink must use a static IP. Dynamic IP would also not work because you would then have two DHCP servers in the same physical network (the one from the DC and your own router).
 
 ## Testing the Setup
 
