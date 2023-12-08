@@ -40,3 +40,5 @@ If you aspire to become a farmer on the ThreeFold Grid, you've come to the right
   - [Extensive Guide](./farmerbot/farmerbot.md)
   - [Additional Information](./farmerbot/farmerbot_information.md)
 - [Farmers FAQ](../faq/faq.md#farmers-faq)
+
+> Note: Bugs in the code (e.g. ZOS or other components) can happen. If this is the case, there might be a loss of tokens during minting which won't be refunded by ThreeFold. If there are minting code errors, ThreeFold will try its best to fix the minting code and remint nodes that were affected by such errors.
