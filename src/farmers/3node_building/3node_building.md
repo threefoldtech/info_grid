@@ -14,5 +14,4 @@ Note that we also include the information needed to set a certified 3Node.
 - [4. Wipe All the Disks](./4_wipe_all_disks.md)
 - [5. Set the BIOS/UEFI](./5_set_bios_uefi.md)
 - [6. Boot the 3Node](./6_boot_3node.md)
-- [Advanced Networking](./advanced_networking.md)
 - [GPU Farming](./gpu_farming.md)
