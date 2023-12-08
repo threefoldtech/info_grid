@@ -1,4 +1,4 @@
-<h1> Advanced Networking </h1>
+<h1> Networking Overview </h1>
 
 <h2> Table of Contents </h2>
 
@@ -15,11 +15,7 @@
 
 ## Introduction
 
-Welcome to the *Advanced Networking* section of the ThreeFold Manual.
-
 In this section, we provide advanced networking tips for farms with public IPs and in data centers (DC). The information available in this section is a combination of documentation from ThreeFold and tips and advice from community members who experienced first-hand the creation of ThreeFold farms that make use of public IPs block in data centers, personal data centers and home farms. A special thank you to those who contributed to improving the TFGrid and its knowledge base documentation.
-
-> Note: This documentation does not constitute a complete set of knolwedge on setting farms with public IP addresses in a data center. Please make sure to do your own research and communicate with your data center and your Internet service provider for any additional information.
 
 ## Possible Configurations
 
