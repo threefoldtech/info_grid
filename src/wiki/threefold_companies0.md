@@ -11,10 +11,12 @@ FOLLOWING COMPANIES ARE RELATED PARTIES TO THREEFOLD, OUR TERMS AND CONDITIONS A
 | TF Hub Limited                                                  | ThreeFold in BVI                                                                   |
 | Codescalers                                                     | Egypt-based software development team, creates a lot of code for ThreeFold         |
 
+
 | FARMING COOPERATIVES                 |                                                  |
 | ------------------------------------ | ------------------------------------------------ |
-| [Mazraa](threefold:mazraa)           | Farmer in Middle East (part of ThreeFold_Dubai ) |
-| [BetterToken](threefold:bettertoken) | Europe's first ThreeFold Farming Cooperative     |
+| [Mazraa](./mazraa.md)           | A farmer in Middle East who is part of ThreeFold_Dubai |
+| [BetterToken](./bettertoken.md) | BetterToken is the very first ThreeFold Farming Cooperative in Europe        |
+
 
 | SOME LARGER FARMERS |                                                                  |
 | ------------------- | ---------------------------------------------------------------- |

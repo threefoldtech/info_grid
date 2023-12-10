@@ -20,5 +20,3 @@ This blockchain is used for:
 - the backend for TFChainDB
 
 Is combination of tfchain_nodes
-
-!!!def alias:tf_chain,tfchain,tfgrid_chain,threefold_blockchain,TFChain,ThreeFold_Grid_BC,TFGBC

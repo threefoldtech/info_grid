@@ -1,4 +1,4 @@
-# Legal
+# Wiki
 
 ## TFGRID USER and/or FARMER TERMS AND CONDITIONS TFGRID 3.X
 

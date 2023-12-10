@@ -17,7 +17,7 @@ The ThreeFold Foundation (ThreeFold_Dubai) is a participant in the bigger ThreeF
 
 We acknowledge and support the many people and organizations around the world who bring crucial support to the growth and adoption of the ThreeFold_Grid.
 
-See [ThreeFold Dubai](threefold:threefold_dubai)
+See [ThreeFold Dubai](./threefold_dubai.md)
 
 > Work is ongoing to make the Foundation a global distributed concept with probably more than 1 legal entity.
 
@@ -27,7 +27,7 @@ TF TECH NV, a Belgian limited liability company, having its registered office at
 
 TF Tech is a software tech company and is a major contributor to the software as used on the TFGrid.
 
-See [TFTech](threefold:threefold_tech0)
+See [TFTech](./threefold_tech.md)
 
 ## Non For Profit
 
@@ -113,7 +113,7 @@ Atomic Swaps were difficult to use, this got resolved by switching to Stellar bl
 ## Cloud Units
 
 Units of IT capacity as sold from the TF Grid to Users.
-More info see [on our wiki](threefold:cloudunits)
+More info see [on our wiki](./cloudunits/cloudunits.md)
 
 ## ThreeFold Farming Pool (FP)
 
