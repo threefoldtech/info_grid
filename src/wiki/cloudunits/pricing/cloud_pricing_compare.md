@@ -40,3 +40,4 @@ Again, a good site to compare is Cloudorado: https://www.cloudorado.com/
 > Our price can easily be < 8 USD for 1 storage unit (CU) <BR>
 > In market, this is between 19 and 154 USD
 
+<!-- TODO: Update with current market and add generated_on -->

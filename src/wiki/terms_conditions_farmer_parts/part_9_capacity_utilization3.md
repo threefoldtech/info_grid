@@ -8,11 +8,11 @@ ThreeFold_Tokens (TFTs) are used to buy IT Capacity as delivered by the 3Nodes (
 
 #### 9.2 Utilization Mechanism
 
-IT capacity is expressed in network, compute & storage units.
+IT capacity is expressed in [network, compute & storage units](cloudunits/cloudunits.md).
 
-- CU = [Compute Units](cloudunits/cloudunits.md)
-- SU = [Storage Units](cloudunits/cloudunits.md)
-- NU = [Network Units](cloudunits/cloudunits.md)
+- CU = Compute Units
+- SU = Storage Units
+- NU = Network Units
 
 TF Explorer is the inventory of all IT capacity available for consumption on the ThreeFold_Grid. See http://explorer.grid.tf/
 

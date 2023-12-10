@@ -1,6 +1,6 @@
-![](img/farming_rewards_.png)
-
 # ThreeFold DAO rules for Proof of Capacity
+
+![](img/farming_rewards_.png)
 
 - The CU/SU reward gets expressed in TFT and registered in TFChain at 3Node registration time.
   - For certified Nodes, the CU/SU reward was specified at sales/promotion time, this process is managed by threefold_tech. 
@@ -40,10 +40,10 @@ This is for mainnet TFGrid 3.0:
 
 ## Remarks
 
-- Majority of 3Nodes are still registered on the [ThreeFold Grid v2 farming reward](./farming_reward2.md). The transition to ThreeFold Grid v3 farming rewards is expected for Q1 2022. More information about the upgrade can be found [here](farming_upgrade_2_3).
+- Majority of 3Nodes are still registered on the [ThreeFold Grid v2 farming reward](./farming_reward2.md). The transition to ThreeFold Grid v3 farming rewards is expected for Q1 2022.
 - The above described Farming Rewards are for ThreeFold Grid version 3.0.x on mainnet and will only apply for 3Nodes as registered in TF Chain for mainnet 3.0.x. Before this all farming is done using 2.x farming rules even on 3.x Testnet and 3.0 mainnet.
 - Above specifications will only be final once DAO is active and first vote has happened (expected Feb/March 2022).
-- More information about the upgrade see: [Upgrade from farming 2 to farming 3](farming_upgrade_2_3)
+- More information about the upgrade see: [Upgrade from farming 2 to farming 3](./farming_upgrade_2_3.md)
 
 ## Suggested: improvements to proof-of-capacity
 

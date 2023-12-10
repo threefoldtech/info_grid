@@ -1,5 +1,7 @@
 # Farming
 
+<h2>Table of Contents</h2>
+
 - [Farming Rewards](./farming_reward.md)
 - [Proof-of-Utilization](./proof_of_utilization.md)
 - [Proof-of-Capacity](./proof_of_capacity.md)
