@@ -72,7 +72,8 @@ If you make a request, we have one month to respond to you. If you would like to
 * email: dataprivacy@threefold.io
 
 * post address: 
-!!!include:threefold_fzc_address
+{{#include ./threefold_fzc_address.md}}
+
 
 ### What are cookies? 
 

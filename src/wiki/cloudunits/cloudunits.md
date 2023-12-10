@@ -59,6 +59,3 @@ See how we compare with market storage prices [here](./pricing/pricing.md).
 | GB transferred OUT or IN                   | 1        |
 
 > We use SU-month and CU-month to show SU monthly costs. This can be compared to kilowatts (kW) to see electricity usage per month. Learn more about how this is calculated with [Resource units](./resourceunits.md), a way to measure the compute and storage capacity produced by hardware.
-
-!!!def alias:cloudunits
-

@@ -6,7 +6,7 @@ Farmers who connect 3Nodes on an ongoing basis to the ThreeFold_Grid by running 
 
 #### 8.2 Calculation of Farmed TFTs
 
-The details of farming (minting of TFT’s) are described on our [farming logic](threefold:farming_reward) and this location serves as master for the TFT Reward Process. The wiki is version controlled (on github), so all changes can be followed.All connected IT Capacity gets registered on the TFChain, i.e. ThreeFolds blockchain software. Each month the TFChain issues new TFTs and transfers them to Farmers in respect of each 3Node that remained connected to the ThreeFold_Grid during the preceding month, using the following calculation in respect of each 3Node:
+The details of farming (minting of TFT’s) are described on our [farming logic](tfgrid/farming/farming_reward.md) and this location serves as master for the TFT Reward Process. The wiki is version controlled (on github), so all changes can be followed.All connected IT Capacity gets registered on the TFChain, i.e. ThreeFolds blockchain software. Each month the TFChain issues new TFTs and transfers them to Farmers in respect of each 3Node that remained connected to the ThreeFold_Grid during the preceding month, using the following calculation in respect of each 3Node:
 
 
 The amount of TFTs that are Farmed hence depends on three variables:
@@ -31,8 +31,8 @@ When connecting reliable hardware the Farmer can request a certification from TF
 
 The specific way how farming rewards are calculated is specified on:
 
-- https://library.threefold.me/info/threefold#/tfgrid/farming/farming_reward
-- https://library.threefold.me/info/threefold#/tfgrid/farming/proof_of_capacity
+- [Farming Reward](tfgrid/farming/farming_reward.md)
+- [Proof-of-Capacity]()
 
 
 #### 8.3 Uptime

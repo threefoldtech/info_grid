@@ -1,6 +1,6 @@
 ### 1. DEFINITIONS
 
-Unless defined otherwise in this Agreement below, capitalized terms in this Agreement shall have the meaning ascribed to them in the following links for [Definitions](definitions_legal).
+Unless defined otherwise in this Agreement below, capitalized terms in this Agreement shall have the meaning ascribed to them in the following links for [Definitions](definitions_legal.md).
 
 SPECIAL DEFINITIONS
 

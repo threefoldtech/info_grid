@@ -1,7 +1,6 @@
 **USER TERMS AND CONDITIONS**
 
 {{#include ./parties_threefold.md}}
-!!!include:parties_threefold
 , governing your usage of the ThreeFold software and related products (the “**TF Products**”), including but not limited to:
 
 - The ThreeFold software and technologies (the "**Software**"), including:
@@ -54,7 +53,7 @@ Two versions of ThreeFold_Tokens have been issued:
 - A first version of the ThreeFold_Token was issued as from March 2018 on ThreeFolds initial blockchain called Rivine. These TFTs are also referred to as "TFTv1" or “TFTA”. These tokens have now been migrated to the Stellar blockchain.
 - A second version of the ThreeFold_Token was issued as from May 2020 on the Stellar blockchain. These TFTs are also referred to as "TFTv2". This token is available on multiple blockchains, the total amount of tokens farmed is the same independent of blockchain used, TFBridges are used to migrate TFTs between blockchain technology.
 
-While the original TFTv1 kept all same properties and benefits, they are now called TFTA on the Stellar blockchain. Since the creation of the TFTv2, TFTA’s have become ThreeFolds voluntary staking pool of Tokens, which means these TFTs can only be used to buy IT Capacity and cannot be traded otherwise. However any User can convert TFTA’s into TFTs (i.e. TFTv2) by implementing a few simple migration steps which can be found [here](threefold:tfta_to_tft). Once converted, any TFT’s can be traded or transferred by various means as the User deems fit, as further explain [here](threefold:how_to_buy).
+While the original TFTv1 kept all same properties and benefits, they are now called TFTA on the Stellar blockchain. Since the creation of the TFTv2, TFTA’s have become ThreeFolds voluntary staking pool of Tokens, which means these TFTs can only be used to buy IT Capacity and cannot be traded otherwise. However any User can convert TFTA’s into TFTs (i.e. TFTv2) by implementing a few simple migration steps which can be found [here](./tfta_to_tft.md). Once converted, any TFT’s can be traded or transferred by various means as the User deems fit, as further explain [here](../threefold_token/buy_sell_tft/buy_sell_tft.md).
 
 The TF Foundation has chosen to use multiple blockchain technology for storing and managing the TFT. You can use any wallet that supports the chosen blockchain, including but not limited to the wallet included in the ThreeFold Connect app.
 

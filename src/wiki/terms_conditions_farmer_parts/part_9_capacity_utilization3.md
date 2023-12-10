@@ -10,9 +10,9 @@ ThreeFold_Tokens (TFTs) are used to buy IT Capacity as delivered by the 3Nodes (
 
 IT capacity is expressed in network, compute & storage units.
 
-- CU = [Compute Units](threefold:cloudunits)
-- SU = [Storage Units](threefold:cloudunits)
-- NU = [Network Units](threefold:cloudunits)
+- CU = [Compute Units](cloudunits/cloudunits.md)
+- SU = [Storage Units](cloudunits/cloudunits.md)
+- NU = [Network Units](cloudunits/cloudunits.md)
 
 TF Explorer is the inventory of all IT capacity available for consumption on the ThreeFold_Grid. See http://explorer.grid.tf/
 
@@ -23,9 +23,9 @@ TFT received for people using capacity is disributed as follows:
 | 35%        | needs to be burned                     | results in more TFT burned compared to generated once grid more mature.  |
 | 10%        | to TF Foundation                       | used to promote the manage the project.                                  |
 | 5%         | to Staking Pool for TF Validators | used to reward the people who run the TFChain 3.0 blockchain validators. |
-| 50%        | for solution providers & sales channel | managed by [ThreeFold DAO](/tfgrid/farming/tfdao).                                       |
+| 50%        | for solution providers & sales channel | managed by [ThreeFold DAO](dao/tfdao.md).                                       |
 
-the single source of truth for Utilization specifications is on https://library.threefold.me/info/threefold#/tfgrid/farming/proof_of_utilization
+The single source of truth for Utilization specifications is available [here](tfgrid/farming/proof_of_utilization.md).
 
 
 #### 9.4 Taxes
