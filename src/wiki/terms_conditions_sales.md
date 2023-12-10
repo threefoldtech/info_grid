@@ -4,7 +4,7 @@ These terms and conditions (the “Agreement") constitute a legal agreement betw
 
 ## DEFINITIONS AND RELATED TERMS
 
-The definitions which apply to this Agreement, unless stated otherwise herein, can be found at: https://library.threefold.me/info/legal/#/legal__definitions_legal, and are incorporated herein by reference.
+The definitions which apply to this Agreement, unless stated otherwise herein, can be found [here](./definitions_legal.md), and are incorporated herein by reference.
 
 
 ##  TF TECH GENERAL TERMS AND CONDITIONS OF SALE
@@ -89,4 +89,4 @@ Changes. TF Tech NV reserves the right to vary these T&Cs at any time. TF Tech N
 
 ## APPENDIX
 
-!!!include:the_single_source_truth
+{{#include ./sub/the_single_source_truth.md}}

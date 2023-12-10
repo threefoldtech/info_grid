@@ -42,3 +42,5 @@ This book serves as a central hub for gathering general information about ThreeF
   - [Terms & Conditions ThreeFold Related Websites](../wiki/terms_conditions_websites.md)
   - [Terms & Conditions TFGrid Users TFGrid 3](../wiki/terms_conditions_griduser.md)
   - [Terms & Conditions TFGrid Farmers TFGrid 3](../wiki/terms_conditions_farmer3.md)
+  - [ThreeFold Tech](../wiki/threefold_tech.md)
+    - [Terms & Conditions Sales](../wiki/terms_conditions_sales.md)
