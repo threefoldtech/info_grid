@@ -120,7 +120,7 @@ To explore different TFT wallet options and choose the one that best suits your 
 
 Remember, maintaining control over your private keys and taking precautions to protect your wallet information are essential for safeguarding your TFT investments.
 
-If you are looking for ways to get / purchase TFT (Stellar) on BTC-Alpha by trading, you will find the according information [here](../buytft/btc_alpha.md).
+If you are looking for ways to get / purchase TFT (Stellar) on BTC-Alpha by trading, you will find the according information [here](../buy_sell_tft/btc_alpha.md).
 ***
 ## Disclaimer
 
