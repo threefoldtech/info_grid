@@ -9,6 +9,7 @@
 - [Configs Tab](#configs-tab)
 - [Admin and Workers Tabs](#admin-and-workers-tabs)
 - [The Domain Name](#the-domain-name)
+  - [Domain Name Example](#domain-name-example)
 - [How to Know the IP Address](#how-to-know-the-ip-address)
 - [How to Access the Admin Interface](#how-to-access-the-admin-interface)
 - [How to Work with CapRover](#how-to-work-with-caprover)
@@ -36,13 +37,13 @@ It has following benefits :
 - easy to create new apps
 - super good monitoring
 - can be extended over the TFGrid
-***
+
 ## Requirements
 
 - You need an account on TF-Chain, and there needs to be TFT on the account (see getting started)
 - Make sure you have a [wallet](./wallet_connector.md)
 - Unlock your profile on profile manager, if already filled in before
-***
+
 
 ## Configs Tab
 
@@ -50,7 +51,7 @@ It has following benefits :
 
 - Enter domain for you Caprover instance, Be very careful about the domain name: it needs to be a wildcard domain name you can configure in your chosen domain name system.
 - Enter password for you Caprover instance.
-***
+
 ## Admin and Workers Tabs
 
 ![ ](./img/new_cap4.png)
@@ -60,16 +61,37 @@ Note: Worker nodes only accept SSH keys of RSA format.
 
 
 Deployment will take couple of minutes.
-***
+
 ## The Domain Name
 
-- e.g. I picked ```apps.openly.life``` which is a domain name that will point to the ip address of the CapRover instance (which we only know after deployment).
+As per the [CapRover documentation](https://caprover.com/docs/get-started.html), you need to point a wildcard DNS entry to the VM IP address of your CapRover instance. You have to do this after having deployed the CapRover instance, otherwise you won't have access to the VM IP address.
+
+Let’s say your domain is **example.com** and your subdomain is **subdomain**. You can set **\*.subdomain.example.com** as an A record in your DNS settings to point to the VM IP address of the server hosting the CapRover instance, where **\*** acts as the wildcard. To do this, go to the DNS settings of your domain name registrar, and set a wild card A record entry.
+
+On your domain name registrar, you can manage your DNS settings as such, with **subdomain** as an example:
+
+| Record | Host          | Value         | TTL       |
+| ------ | ------------- | ------------- | --------- |
+| A      | @             | VM IP address | Automatic |
+| A      | subdomain     | VM IP address | Automatic |
+| A      | \*.subdomain  | VM IP address | Automatic |
+
+We note here that **@** is the root domain (@ takes the value of your domain name, e.g. **example** in **example.com**), **subdomain** is the name of your subdomain (it can be anything you want), and **\*.subdomain** is the wildcard for **subdomain**. If you don't want to use a subdomain, but only the domain, you could use a wildcard linked to the domain instead of the subdomain (e.g. put **\*** instead of **\*.subdomain** in the column **Host**).
+
+Once you've point a wildcard DNS entry to your CapRover IP address and that the DNS is properly propagated, you can click the **Admin Panel** button to access CapRover. This will lead you to the following URL (with **subdomain.example.com** as an example):
+
+> captain.subdomain.example.com
+
+Note that, to confirm the DNS propagation, you can use a [DNS lookup tool](https://mxtoolbox.com/DNSLookup.aspx). As an example, you can use the URL **captain.subdomain.example.com** to check if the IP address resolves to the VM IP address.
+
+### Domain Name Example
+
+In the following example, we pick ```apps.openly.life``` which is a domain name that will point to the IP address of the CapRover instance (which we only know after deployment).
 
 ![ ](./img/domain_name_caprover_config.png)
 
+> Note how the *.apps.openly.life points to the public IPv4 address that has been returned from the deployment. 
 
-> Note how the *.apps.openly.life points to the public IPv4 address that has been returned from the deployment.
-***
 ## How to Know the IP Address
 
 Go back to your CapRover weblet and go to the deployment list. Click on `Show Details`.
@@ -125,18 +147,19 @@ Click on details if you want to see more details
     "description": "caprover leader machine/node"
 }
 ```
-***
+
 ## How to Access the Admin Interface
 
-- make sure your public IP address (in my case ```185.206.122.136```) is filled in in the domain name record.
+Make sure that you've point a wildcard DNS entry to your CapRover IP address (e.g. **185.206.122.136** in our example), as explained [here](#the-domain-name).
 
-> admin url: https://captain.apps.openly.life/   (note prefix captain, and the usage of our wildcard domain).
-<br> 
-> The password is generated and visible behind the `Show Details` button of your CapRover deployment. 
+* To access the CapRover admin interface, you can click the **Admin Panel** button or you can use the following admin URL template: **https://captain.subdomain.example.com**. 
+  * Note the prefix **captain** and the usage of our wildcard domain.
+
+* The admin password is generated and visible behind the `Show Details` button of your CapRover deployment. 
 
 ![ ](./img/caprover_login.png)
 
-You should now see
+* You should now see the following screen:
 
 ![ ](./img/captain_login+weblet_caprover_.png)
 
