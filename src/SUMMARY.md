@@ -28,7 +28,7 @@
       - [Albedo Wallet (TFT-Stellar)](./threefold_token/storing_tft/albedo_store.md)
       - [Solar Wallet (TFT-Stellar)](./threefold_token/storing_tft/solar_wallet.md)
       - [Lobstr Wallet (TFT-Stellar)](./threefold_token/storing_tft/lobstr_wallet.md)
-      - [Interstellar (TFT-Stellar)](./threefold_token/storing_tft/Interstellar_store.md)
+      - [Interstellar (TFT-Stellar)](./threefold_token/storing_tft/interstellar_store.md)
       - [BTC-Alpha (TFT-Stellar)](./threefold_token/storing_tft/btc_alpha_deposit.md)
     - [Buy and Sell TFT](./threefold_token/buy_sell_tft/buy_sell_tft.md)
       - [Lobstr Wallet](./threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr.md)
