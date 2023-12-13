@@ -1,6 +1,6 @@
 [book]
 title = "ThreeFold Manual"
-description= "A helpful example"
+description = "The official TFGrid documentation"
 
 [output.html.fold]
 enable = true
@@ -21,4 +21,3 @@ command = "mdbook-mermaid"
 [preprocessor.rss]
 files-glob = "src/**/*.md"
 url-base = "https://www2.manual.grid.tf/"
-
