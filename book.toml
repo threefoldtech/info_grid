@@ -1,5 +1,6 @@
 [book]
 title = "ThreeFold Manual"
+description= "A helpful example"
 
 [output.html.fold]
 enable = true
@@ -16,3 +17,8 @@ enable = false
 
 [preprocessor.mermaid]
 command = "mdbook-mermaid"
+
+[preprocessor.rss]
+files-glob = "src/**/*.md"
+url-base = "https://www2.manual.grid.tf/"
+
