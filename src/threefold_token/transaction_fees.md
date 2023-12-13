@@ -11,11 +11,11 @@
 
 ## Introduction
 
-Here are the TFT transactions fees. Note that these values can be subject to change. We will do our best to update this section of the manual as needed.
+Here are the TFT transaction fees. Note that these values can be subject to change. We will do our best to update this section of the manual as needed.
 
 ## Bridge Fees
 
-The following are the fixed fees for each type of bridge transfer.
+The following are the fees for each type of bridge transfer.
 
 - BSC-Stellar bridge
   - From Stellar to BSC
@@ -35,7 +35,7 @@ The following are the fixed fees for each type of bridge transfer.
 
 ## Chain Fees
 
-The following are the fees for each chain.
+The following are the transaction fees for each chain. Every time a transaction is done on a given chain, there are fees for the operation on chain.
 
 - Stellar chain
     - 0.01 TFT
@@ -52,6 +52,20 @@ The following are the fees for each chain.
 
 Here are some notes to take into account when doing TFT transfers:
 
-* When you use a bridge going from chain A to chain B, you will have to pay the bridge fees shown above, as well as the fees from the chain A itself, as discussed [here](#chain-fees).
-* For gas fees paid directly by users, they will be shown in the user's wallet at transaction time, not on the bridge page.
+* The fees paid directly by the users will be shown in the user's wallet at transaction time, not on the bridge page.
 * The bridge fees can vary based on current on-chain gas prices. The current fee will always be shown on the bridge page before a transaction is initiated.
+
+***
+*Generated on*
+
+<p id="transaction_fees_datetime"></p>
+
+<script>
+  // Get current date and time
+  var now = new Date();
+  var transaction_fees_datetime = now.toLocaleString();
+
+  // Insert date and time into HTML
+  document.getElementById("transaction_fees_datetime").innerHTML = transaction_fees_datetime;
+</script>
+***
