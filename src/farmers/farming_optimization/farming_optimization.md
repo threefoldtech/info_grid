@@ -15,3 +15,4 @@ The CPU passmark threshold is not yet implemented, but it constitutes a good way
 - [Calculate Your ROI](./calculate_roi.html)
 - [Room Parameters](./farm_room_parameters.html)
 - [Farming Costs](./farming_costs.html)
+- [Minting Periods](./minting_periods.md)

@@ -35,6 +35,7 @@ If you aspire to become a farmer on the ThreeFold Grid, you've come to the right
   - [Calculate Your ROI](./farming_optimization/calculate_roi.md)
   - [Room Parameters](./farming_optimization/farm_room_parameters.md)
   - [Farming Costs](./farming_optimization/farming_costs.md)
+  - [Minting Periods](./farming_optimization/minting_periods.md)
 - [Farmerbot](./farmerbot/farmerbot_intro.md)
   - [Quick Guide](./farmerbot/farmerbot_quick.md)
   - [Extensive Guide](./farmerbot/farmerbot.md)

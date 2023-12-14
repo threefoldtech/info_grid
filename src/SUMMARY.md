@@ -90,6 +90,7 @@
     - [Calculate Your ROI](farmers/farming_optimization/calculate_roi.md)
     - [Room Parameters](farmers/farming_optimization/farm_room_parameters.md)
     - [Farming Costs](farmers/farming_optimization/farming_costs.md)
+    - [Minting Periods](farmers/farming_optimization/minting_periods.md)
   - [Farmerbot](farmers/farmerbot/farmerbot_intro.md)
     - [Quick Guide](farmers/farmerbot/farmerbot_quick.md)
     - [Extensive Guide](farmers/farmerbot/farmerbot.md)
