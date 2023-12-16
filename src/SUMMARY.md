@@ -94,6 +94,7 @@
     - [Quick Guide](farmers/farmerbot/farmerbot_quick.md)
     - [Extensive Guide](farmers/farmerbot/farmerbot.md)
     - [Additional Information](farmers/farmerbot/farmerbot_information.md)
+    - [Minting and the Farmerbot](farmers/farmerbot/farmerbot_minting.md)
 - [Developers](developers/developers.md)
   - [Javascript Client](javascript/grid3_javascript_readme.md)
     - [Installation](javascript/grid3_javascript_installation.md)
