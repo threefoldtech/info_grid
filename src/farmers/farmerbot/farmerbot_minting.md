@@ -16,8 +16,10 @@ We cover essential features of ThreeFold minting in relation with the Farmerbot.
 
 There are certain minting rules that are very important when it comes to farming on the ThreeFold Grid while using the Farmerbot.
 
-- The 3Node should wake up within 30 minutes of setting the power target to **Up**
-- The 3Node must wake up at least once every 24 hours
+- The 3Node should wake up within 30 minutes of setting the power target to **Up**.
+  - If the 3Node does not respect this rule, the 3Node won't mint for the whole minting period.
+- The 3Node must wake up at least once every 24 hours.
+  - If the 3Node does not respect this rule, the 3Node won't mint for a 24-hour period.
 
 ## Disclaimer
 
