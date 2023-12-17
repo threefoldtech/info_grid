@@ -15,9 +15,9 @@ __Process__ :
 - Enter administrator information including **Username**, **Email** and **Password**. This admin user will have full permission on the deployed instance.
 
 - Select a capacity package:
-    - **Minimum**: { cpu: 2, memory: 1024 * 2, diskSize: 100 }
-    - **Standard**: { cpu: 2, memory: 1024 * 4, diskSize: 150 }
-    - **Recommended**: { cpu: 4, memory: 1024 * 4, diskSize: 250 }
+    - **Small**: { cpu: 2, memory: 4, diskSize: 100 }
+    - **Medium**: { cpu: 4, memory: 8, diskSize: 150 }
+    - **Large**: { cpu: 4, memory: 16, diskSize: 250 }
     - Or choose a **Custom** plan
 - Choose a gateway node to deploy your Taiga instance on.
 

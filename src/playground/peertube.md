@@ -13,9 +13,9 @@ __Process__
   the applied format `<solution-code><twin-id><solution-name>.<gateway-subdomain>` Ex. ***pt100peerprod*.gent02.dev.grid.tf**
 - Enter an email and password which will be used for the admin login.
 - Select a capacity package:
-    - **Minimum**: { cpu: 1, memory: 1024  * 2, diskSize: 15 }
-    - **Standard**: { cpu: 2, memory: 1024 * 2, diskSize: 100 }
-    - **Recommended**: { cpu: 4, memory: 1024 * 4, diskSize: 250 }
+    - **Small**: { cpu: 1, memory: 2, diskSize: 15 }
+    - **Medium**: { cpu: 2, memory: 4, diskSize: 100 }
+    - **Large**: { cpu: 4, memory: 16, diskSize: 250 }
     - Or choose a **Custom** plan
 
    - `Public IPv4` flag gives the virtual machine a Public IPv4
