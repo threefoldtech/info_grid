@@ -31,6 +31,11 @@
   - [VM](internals/vmd/index.md)
   - [Provision](internals/provision/index.md)
 - [Capacity](internals/capacity.md)
+- [Performance Monitor Package](./performance/performance.md)
+  - [Public IPs Validation Task](./performance/publicips.md)
+  - [CPUBenchmark](./performance/cpubench.md)
+  - [IPerf](./performance/iperf.md)
+  - [Health Check](./performance/healthcheck.md)
 - [API](manual/api.md)
 - [FAQ](faq/index.md)
 
