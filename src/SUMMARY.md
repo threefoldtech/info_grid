@@ -302,6 +302,7 @@
       - [Taiga](playground/taiga.md)
       - [WordPress](playground/wordpress.md)
       - [Umbrel](playground/umbrel.md)
+    - [Cloud Console](playground/cloud_console.md)
 <!--  - [Mastodon](tf_mastodon/tf_mastodon_readme.md) 
     - [Deploy Mastodon](tf_mastodon/tf_mastodon_deploy.md)
     - [Mastodon FAQ](tf_mastodon/tf_mastodon_faq.md)-->

@@ -42,6 +42,8 @@ The backend for the weblets is introduced with the [Javascript Client](../javasc
   - [Wordpress](./wordpress.md)
   - [Umbrel](./umbrel.md)
 
+- [Cloud Console](./cloud_console.md)
+
 ## Advantages
 
 - It is a non-code easy way to deploy a whole solution on the TFGrid.
