@@ -1,11 +1,19 @@
+<h1> Cloud Unit Pricing </h1>
 
 ![](img/tfgrid_pricing.jpg)
 
-## Cloud Unit Pricing
+<h2>Table of Contents</h2>
 
-Last updated: July 4, 2023
+- [Pricing Policy](#pricing-policy)
+- [Operation Fees](#operation-fees)
+- [Certified Capacity](#certified-capacity)
+- [Dedicated Nodes](#dedicated-nodes)
+- [Staking Discount](#staking-discount)
+  - [Silver Example: 40% Discount](#silver-example-40-discount)
 
-### Pricing Policy
+***
+
+## Pricing Policy
 
 - The current prices are for resources usage on mainnet (testnet get 50% discount)
 - A month is considered as 30 days (720 hours)
@@ -26,11 +34,15 @@ Last updated: July 4, 2023
 
 > Please check our [Cloud Pricing for utilization sheet](https://docs.google.com/spreadsheets/d/1E6MpGs15h1_flyT5AtyKp1TixH1ILuGo5tzHdmjeYdQ/edit#gid=2014089775) for more details.
 
-### Certified Capacity
+## Operation Fees
+
+Operations on TFChain have a base fee of 0.001 TFT. Creating and destroying deployments usually includes several operations.
+
+## Certified Capacity
 
 Renting capacity on certified nodes is charged 25% extra (x 1.25).
   
-### Dedicated Nodes
+## Dedicated Nodes
 
 Since April 2022, TFGrid has introduced dedicated server support. With dedicated servers, you can reserve a full server exclusively for your use. This comes with 50% discount, making it a cost-effective option.
 
@@ -45,7 +57,7 @@ These dedicated nodes come with a generous 5TB bandwidth usage per node per mont
 
 When renting a dedicated node, you receive a 50% discount for the entire node. However, it's important to note that you will still be required to pay for the entire node, even with the discount applied. This means that while you enjoy the discount, the cost of the dedicated node is not prorated based on the resources you utilize.
 
-### Staking Discount
+## Staking Discount
 
 | Type       | Pricing Level | Nr months of TFT linked to account |
 | ---------- | ------------- | ---------------------------------- |
@@ -59,7 +71,7 @@ TFChain charges users for proof of utilization on an hourly basis. The discount 
 
 This discount mechanism operates automatically, and users don't need to take any specific actions to avail themselves of this benefit. However, it's worth mentioning that the maximum discount for network-related services is 40%.
 
-#### Example for 40% discount [Silver]
+### Silver Example: 40% Discount
 
 Let's break down the example for a 40% discount on Internet Capacity consumption:
 
@@ -71,3 +83,7 @@ Let's break down the example for a 40% discount on Internet Capacity consumption
 - With the 40% discount, your effective payment for the consumption would be 6 TFT per hour, as long as the amount of TFT in your account falls within the range of 43,200 to 129,600 (as calculated above).
 
 Keep in mind that these calculations are based on the example provided and the specific discount levels mentioned.
+
+***
+Last updated: July 4, 2023
+***
