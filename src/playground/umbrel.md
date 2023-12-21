@@ -14,9 +14,9 @@
   - Will be used to login to the Umbrel dashboard.
   - Must be 12 to 30 characters .
 - Select a capacity package:
-  - **Minimum**: { cpu: 2, memory: 2048 , diskSize: 10 }
-  - **Standard**: { cpu: 2, memory: 4096 , diskSize: 50 }
-  - **Recommended**: { cpu: 4, memory: 4096 , diskSize: 100 }
+  - **Small**: { cpu: 1, memory: 2, diskSize: 10 }
+  - **Medium**: { cpu: 2, memory: 4 , diskSize: 50 }
+  - **Large**: { cpu: 4, memory: 16 , diskSize: 100 }
   - Or choose a **Custom** plan
 
 - `Dedicated` flag to retrieve only dedeicated nodes 

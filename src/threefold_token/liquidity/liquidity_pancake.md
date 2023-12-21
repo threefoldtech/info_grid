@@ -24,8 +24,9 @@ Before you can become a TFT(BSC)  LP on Pancake Swap, there are a few prerequisi
 
 - **BSC Wallet**: To interact with the Binance Smart Chain and Pancake Swap, you'll need a BSC-compatible wallet. [Trust Wallet](https://trustwallet.com/) and [MetaMask](https://metamask.io/) are popular options that support BSC. Make sure to set up and secure your wallet before proceeding.
 
-> [Set up a Metamask Wallet](../storetft/metamask.md)
-> [Set up a Trust Wallet](../storetft/trustwallet.md)
+> [Set up a Metamask Wallet](../storing_tft/metamask.md)
+> 
+> [Set up a Trust Wallet](../storing_tft/trustwallet.md)
 
 - **Connect BSC Wallet TO Pancake Swap**: Visit the Pancake Swap website and connect your BSC wallet to your Pancake Swap account.
 

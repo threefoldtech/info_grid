@@ -16,9 +16,9 @@ __Process__ :
 
 
 - Select a capacity package:
-    - **Minimum**: { cpu: 2, memory: 1024 * 16, diskSize: 250 }
-    - **Standard**: { cpu: 2, memory: 1024 * 16, diskSize: 500 }
-    - **Recommended**: { cpu: 4, memory: 1024 * 16, diskSize: 1000 }
+    - **Small**: { cpu: 2, memory: 8, diskSize: 250 }
+    - **Medium**: { cpu: 4, memory: 16, diskSize: 500 }
+    - **Large**: { cpu: 8, memory: 32, diskSize: 1000 }
     - Or choose a **Custom** plan
 - Choose a gateway node to deploy your Owncloud instance on.
 

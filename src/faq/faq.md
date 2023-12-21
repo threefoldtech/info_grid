@@ -1488,7 +1488,7 @@ The following is a list of certain features related to containers as well as ful
   * a container image promoted to run as a VM by pairing with a generic kernel
   * more isolated than a container, thus more secure
   * generally lighter than a full VM
-  * can be created from any Docker container image by uploading it to the [TF Hub]([hub.grid.tf](https://hub.grid.tf/))
+  * can be created from any Docker container image by uploading it to the [TF Hub](https://hub.grid.tf/)
   * examples: on the [Playground](https://playground.grid.tf/), we have Ubuntu 20.04, Alpine-3, CentOS-8 and more.
 * Full VM
   * contains a complete operating system including kernel
@@ -2703,7 +2703,7 @@ This is normal. Currently, not all 3Nodes are being utilized by users on the Thr
 
 ### What are the general requirements for a DIY 3Node server?
 
-Any 64-bit hardware with an Intel or AMD processor chip can run Zero-OS and become a 3Node. For a complete guide on building a 3Node, read the [Farming Guide](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md). The following configurations provide guidelines on compatible and recommended setups:
+Any 64-bit hardware with an Intel or AMD processor chip can run Zero-OS and become a 3Node. For a complete guide on building a 3Node, read the [Farming Guide](../farmers/3node_building/3node_building.md). The following configurations provide guidelines on compatible and recommended setups:
 
 - Servers, desktops and mini computers type hardware are compatible.
 - A minimum of 500 GB of SSD and a bare minimum of 2 GB of RAM is required.
@@ -2754,7 +2754,7 @@ No, as long as the 3Node is connected to the Internet via an ethernet cable (wif
 
 A small DIY 3Node based on a compact office computer will draw under 20W. A full size server will draw around 100W idling. Note that a 3Node actively used on the Grid (proof-of-utilization) will draw more power, but also generate passive income on top of farming if you have a public IP address. 
 
-For more information, read thes section [Calculate the Total Electricity Cost of Your Farm](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#calculate-the-total-electricity-cost-of-your-farm) of the Farming Guide.
+For more information, read thes section [Calculate the Total Electricity Cost of Your Farm](../farmers/farming_optimization/farming_costs.md#calculate-the-total-electricity-cost-of-your-farm) of the Farming Guide.
 
 ***
 
@@ -2770,7 +2770,7 @@ For a small farm set up, you could simply keep your normal air conditioner syste
 
 > Server Power in kW * 3413 * Number of Servers = Total BTU
 
-The total BTU will indicate the minimum number to look for when buying your air conditioner. For more information, read the section [Calculate the Minimum BTU Needed](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#calculate-the-minimum-btu-needed-for-the-ac) in the Farming Guide.
+The total BTU will indicate the minimum number to look for when buying your air conditioner. For more information, read the section [Calculate the Minimum BTU Needed](../farmers/farming_optimization/farm_room_parameters.md#calculate-the-minimum-btuh-needed-for-the-ac) in the Farming Guide.
 
 ***
 
@@ -2870,13 +2870,13 @@ The main steps to build a DIY 3Node are the following:
 5. Set the BIOS/UEFI 
 6. Boot the 3Node
 
-For a complete step-by-step guide on how to build a DIY 3Node, read the [Farming documentation](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md).
+For a complete step-by-step guide on how to build a DIY 3Node, read the [Farming documentation](../farmers/3node_building/3node_building.md).
 
 ***
 
 ### I wonder what type of desktop computer or server to use for my 3Node. Are there any recommendation when it comes to DIY 3Node hardware?
 
-The Farming documentation contains a list of typical DIY 3Nodes in the section [List of Common DIY 3Nodes](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#list-of-common-diy-3nodes).
+The Farming documentation contains a list of typical DIY 3Nodes in the section [List of Common DIY 3Nodes](../farmers/3node_building/3_set_hardware.md#list-of-common-diy-3nodes).
 
 Also, a good place to start is by checking [what other farmers have built](https://forum.threefold.io/t/lets-share-our-farming-setup/286).
 
@@ -2900,7 +2900,7 @@ sudo for i in /dev/nvme*; do wipefs -a $i; done
 
 This will wipe all of the disk devices in the hardware. Make sure you have SU permissions (write "sudo" before the command line). If needed, do a backup of the disks information before.
 
-For more information, read the section [Wipe All the Disks](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#4-wipe-all-the-disks) of the Farming Guide.
+For more information, read the section [Wipe All the Disks](../farmers/3node_building/4_wipe_all_disks.md) of the Farming Guide.
 
 ***
 
@@ -3016,7 +3016,7 @@ It depends on your 3Node's system. Newer computers and servers will accept UEFI.
 
 ### How do I set the BIOS or UEFI of my 3Node?
 
-You can read this [documentation](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#5-set-the-biosuefi) to learn more about BIOS and UEFI settings for a DIY 3Node.
+You can read this [documentation](../farmers/3node_building/5_set_bios_uefi.md) to learn more about BIOS and UEFI settings for a DIY 3Node.
 
 ***
 
@@ -3185,8 +3185,6 @@ At the end of the day, servers were manufactured for durability and efficiency, 
 
 The T stands for thermal throttled. The i7-6700T is 46% more energy efficient. While the i7-6700 has a 42% faster CPU speed and has a higher passmark. Note that the TFT reward is going to be the same. The difference is with power consumption: 35 Watt for the i7-6700t and 65 Watt for the i7-6700.
 
-For a more thorough comparison, read [this](https://cpu.userbenchmark.com/Compare/Intel-Core-i7-6700T-vs-Intel-Core-i7-6700/m36439vs3515).
-
 ***
 
 
@@ -3317,7 +3315,7 @@ If the first method did not work, you can try to remove the account and add it b
 ### I set up my farm on ThreeFold Connect App. Can I use the Polkadot extension Dashboard instead?
 
 
-If you want to use the Dashboard, you can take the TFChain Secret from the app and import it into the Polkadot extension. For more information, read [this section](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs) of the Farming Guide. For the other way around (TF Dashboad to TF Connect App), read [this section](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet) of the guide.
+If you want to use the Dashboard, you can take the TFChain Secret from the app and import it into the Polkadot extension. For more information, read [this section](../threefold_token/storing_tft/tf_connect_app.md#move-farm-from-the-tf-connect-app-to-the-tf-portal-polkadotjs) of the Farming Guide. For the other way around (TF Dashboad to TF Connect App), read [this section](../threefold_token/storing_tft/tf_connect_app.md#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet) of the guide.
 
 ***
 
