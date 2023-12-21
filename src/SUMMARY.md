@@ -2,7 +2,7 @@
 
 - [Introduction](intro/intro_readme.md)
 - [General Information](general/general.md)
-  - [How it Works](intro/grid3_howitworks.md)
+  - [How It Works](intro/grid3_howitworks.md)
   - [Dashboard](dashboard/dashboard.md)
     - [Dasboard Explorer](dashboard/explorer/explorer_home.md)
       - [Find Capacity](dashboard/explorer/explorer_find_capacity.md)
