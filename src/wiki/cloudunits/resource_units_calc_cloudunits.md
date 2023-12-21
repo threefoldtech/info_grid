@@ -1,7 +1,35 @@
 
-# Calculation from resource units to CU/SU for farming purposes
+<h1> Resource Units </h1>
+
+<h2>Table of Contents</h2>
+
+- [Resource Units Overview](#resource-units-overview)
+  - [Compute](#compute)
+  - [Storage](#storage)
+    - [Storage cost price verification Dec 2021](#storage-cost-price-verification-dec-2021)
+- [Change Log](#change-log)
+- [Remarks](#remarks)
+
+***
+
+## Resource Units Overview
 
 The threefold Zero-OS and TFChain software translates resource units (CRU, MRU, HRU, SRU) into cloud units (CU, SU) for farming reward purposes.
+
+Resource units are used to measure and convert capacity on the hardware level into cloud units: CU & SU.
+
+
+| Unit Type    | Description                          | Code |
+| ------------ | ------------------------------------ | ---- |
+| Core Unit    | 1 Logical Core (Hyperthreaded Core)  | CRU  |
+| Mem Unit     | 1 GB mem                             | MRU  |
+| HD Unit      | 1 GB                                 | HRU  |
+| SSD Unit     | 1 GB                                 | SRU  |
+| Network Unit | 1 GB of bandwidth transmitted in/out | NRU  |
+
+These are raw capacities as measured by the ThreeFold software running on Zero-OS.
+
+To learn how they convert into cloudunits see [here](./resourceunits_advanced.md)
 
 ### Compute
 

@@ -1,4 +1,4 @@
-# Farming
+# Farming Details
 
 <h2>Table of Contents</h2>
 

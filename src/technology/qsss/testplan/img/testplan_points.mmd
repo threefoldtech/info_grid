@@ -1,0 +1,34 @@
+graph TD  
+    subgraph Local laptop, computer or server
+    user[End User *11* ]
+    protocol[Storage Protocol *6*]
+    qsfs[Filesystem *7*]
+    0store[Storage Engine *8*]
+    end
+    subgraph Grid storage - metadata
+    etcd1[ETCD-1 *9*]
+    etcd2[ETCD-2 *9*]
+    etcd3[ETCD-3 *9*]
+    end
+    subgraph Grid storage - zero proof data
+    zdb1[ZDB-1 *10*]
+    zdb2[ZDB-2 *10*]
+    zdb3[ZDB-3 *10*]
+    zdb4[ZDB-4 *10*]
+    zdb5[ZDB-5 *10*]
+    zdb6[ZDB-... *10*]
+    zdb7[ZDB-N *10*]
+    user -.- |-1-| protocol
+    protocol -.- |-2-| qsfs
+    qsfs --- |-3-| 0store
+    0store --- |-4-| etcd1
+    0store --- |-4-| etcd2
+    0store --- |-4-| etcd3
+    0store <-.-> |-5-| zdb1
+    0store <-.-> |-5-| zdb2
+    0store <-.-> |-5-| zdb3
+    0store <-.-> |-5-| zdb4
+    0store <-.-> |-5-| zdb5
+    0store <-.-> |-5-| zdb6
+    0store <-.-> |-5-| zdb7
+    end
