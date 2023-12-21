@@ -22,9 +22,4 @@ With flists you need to modify your image to get configuration from environment.
   - no dynamic behavior for deployment at runtime
     
   - no process can start unless the files are 100% described on flist level
-    
-
-!!!def alias:deterministic_deployment
-
-!!!include:zos_toc
-
+  

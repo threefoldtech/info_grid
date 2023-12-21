@@ -26,12 +26,3 @@ As soon as you have the flist mounted, you can see the full directory tree, and 
 ## Benefits
 
 - Efficient usage of bandwidth makes this service perform with and without (much) bandwidth
-
-!!!include:flist_hub_
-
-!!!def alias:flist,zos_fs,zero_is_file_system,zero_fs
-
-
-
-
-!!!include:zos_toc

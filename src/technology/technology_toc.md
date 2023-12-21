@@ -7,7 +7,8 @@ ThreeFold has created an amazing technology system to allow anyone to host their
 <h2>Table of Contents</h2>
 
 - [Quantum Safe Storage](./qsss/qsss_home.md)
-- [Smart Contract for IT](smartcontract_it)
+- [Smart Contract for IT](./smartcontract_it/smartcontract_toc.md)
+- [Primitives](./primitives/primitives_toc.md)
 
 ***
 

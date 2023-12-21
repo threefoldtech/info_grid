@@ -22,7 +22,3 @@ presents itself as a filesystem to the ZMachine.
 ### Implementation
 
 > Is using qsss inside.
-
-!!!include:zos_toc
-
-!!!def alias:zstor_fs,zstor_filesystem,qsfs,quantum_safe_filesystem

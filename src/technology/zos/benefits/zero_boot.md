@@ -18,7 +18,7 @@ That's just the administration and operational part of maintaining a server esta
 In this image from fs, a small partition is mounted in memory to start booting the machine, it gets IPXE (downloads what it needs), and then 0-OS boots. 
 After that, going to the hub, downloading different lists. 
 
-There is 1 main flist that triggers downloads of multiple flists (see hub, and then https://hub.grid.tf/tf-zos/zos:development:latest.flist.md ). 
+There is 1 main flist that triggers downloads of multiple flists. Read more [here](../../../flist/flist.md). 
 In there all the components/daemons that do part of the 0-OS. 
 Also the download of the zos-bins, i.e. external binaries are triggered this way (https://hub.grid.tf/tf-zos-bins). 
 
@@ -38,8 +38,3 @@ The features of ZOS Boot are:
 - increased efficiency (deduplication, only one version of the OS stored for thousands of servers)
 - all server storage space is available for enduser workloads (average operating system size around 10GB)
 - bootloader is less than 1MB in size and can be presented to the servers as a PXE script, USB boot device, ISO boot image.
-
-!!!def alias:boot_process,zos_boot,z_boot,zero_boot
-
-!!!include:zos_toc
-

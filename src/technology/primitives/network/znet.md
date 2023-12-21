@@ -17,11 +17,11 @@ No connection is made with the internet.The ZNet is a single tenant network and 
 
 ### Redundancy
 
-As integrated with [WebGW](webgw):
+As integrated with [WebGW](./webgw3.md):
 
 ![](img/znet_redundancy.jpg)
 
-- Any app can get (securely) connected to the internet by any chosen IP address made available by ThreeFold network farmers through [WebGW](webgw).
+- Any app can get (securely) connected to the internet by any chosen IP address made available by ThreeFold network farmers through WebGW.
 - An app can be connected to multiple web gateways at once, the DNS round robin principle will provide load balancing and redundancy.
 - An easy clustering mechanism where web gateways and nodes can be lost and the public service will still be up and running.
 - Easy maintenance. When containers are moved or re-created the same end user connection can be reused as that connection is terminated on the Web Gateway. The moved or newly created Web Gateway will recreate the socket to the Web Gateway and receive inbound traffic.
@@ -29,12 +29,3 @@ As integrated with [WebGW](webgw):
 ### Interfaces in Zero-OS
 
 ![](img/znet_znic1.jpg)
-
-
-### Its a true peer2peer network
-
-see p2p_networking
-
-!!!def alias:zos_overlay_network,znet,zero_net,zos_net
-
-!!!include:zos_toc
