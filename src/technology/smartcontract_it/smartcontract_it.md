@@ -1,11 +1,10 @@
 # Smart Contract for IT
 
-Ability for every developer to launch IT workloads on the TFGrid using our tfgrid_primitives .
+Ability for every developer to launch IT workloads on the TFGrid using our TFGrid primitives.
 
 ![](img/smart_contract_it_.jpg)
 
-
-> TODO: need to describe better for 3.x TFGrid
+<!--  TODO: need to describe better for 3.x TFGrid -->
 
 ## Smart Contract Together with 3bot 
 
@@ -49,7 +48,3 @@ is optional but when required stakeholder can be defined to give consensus and s
 
 - in TFGrid 2.x smart contract for IT is implemented using ThreeFold Explorer and multisignature capabilities.
 - in TFGrid 3.0 this is being re-implemented on TF-Chain on Parity/Substrate blockchain, to become a fully decentralized process. See [here](smartcontract_tfgrid3).
-
-<!-- !!!include:smartcontract_toc -->
-
-!!!def alias:smartcontract_it

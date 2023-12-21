@@ -1,6 +1,6 @@
 ## Smart Contract on TFGrid 3.0
 
-As from TFGrid 3.0, the 'Smart Contract for IT' concept for reserving capacity is fully decentralized and runs on TF-Chain, the ThreeFold blockchain infrastructure on Parity Substrate. 
+From TFGrid 3.0, the 'Smart Contract for IT' concept for reserving capacity is fully decentralized and runs on TF-Chain, the ThreeFold blockchain infrastructure on Parity Substrate. 
 
 ### Architecture
 

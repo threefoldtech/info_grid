@@ -6,5 +6,3 @@ IAC = DevOps is a process framework that ensures collaboration between Developme
 
 
 ![](img/smartcontract_iac.jpg)
-
-<!-- !!!include:smartcontract_toc -->

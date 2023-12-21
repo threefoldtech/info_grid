@@ -1,5 +1,7 @@
-### More Info
+<h1>Smart Contract IT</h1>
 
-- [Smart Contract for IT Intro](smartcontract_it)
-- [IAC = Infrastructure As Code integration](smartcontract_iac)
-- [3Bot integration](smartcontract_3bot)
+<h2>Table of Contents</h2>
+
+- [Introduction](./smartcontract_tfgrid3.md)
+- [Infrastructure As Code (IAC)](./smartcontract_iac.md)
+- [3Bot Integration](./smartcontract_3bot.md)
