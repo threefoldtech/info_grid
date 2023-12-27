@@ -29,7 +29,7 @@ You can check [official documentation](https://caprover.com/docs/app-scaling-and
 - Add your `SSH private key` (you can use this command `cat ~/.ssh/id_rsa` to get your private key).
 - Click `Join cluster` button.
 
-You should see the new added node **Current Cluster Nodes**
+You should see the new added node under **Current Cluster Nodes**
 ![ ](./img/caprover_node_added.png)
 
 If you faced any problem you can use the `Alternative method`.
