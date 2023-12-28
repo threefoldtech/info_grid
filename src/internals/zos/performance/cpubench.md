@@ -45,7 +45,7 @@ The `CPUBenchmark` task is designed to measure the performance of the CPU. it ut
 ## Result Explanation
 
 The best way to know what's a good or bad value is by testing and comparing different hardware.
-Here are some example:
+Here are some examples:
 
 **1x Intel(R) Xeon(R) W-2145 CPU @ 3.70GHz** (Q3'2017)
 
