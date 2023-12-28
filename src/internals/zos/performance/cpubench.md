@@ -30,7 +30,7 @@ The `CPUBenchmark` task is designed to measure the performance of the CPU. it ut
 
 ```json
 {
-  "description": "Measures the performance of the node CPU by reporting the timespent of computing a task in seconds.",
+  "description": "Measures the performance of the node CPU by reporting the time spent of computing a task in seconds.",
   "name": "cpu-benchmark",
   "result": {
     "multi": 1.105,
