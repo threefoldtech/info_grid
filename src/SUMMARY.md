@@ -278,7 +278,7 @@
     - [Contract Bills Reports](advanced/contract_bill_report.md)
     - [Listing Free Public IPs](advanced/list_public_ips.md)
     - [Redis](advanced/grid3_redis.md)
-  - [Playground](playground/home.md)
+  - [Dashboard](playground/home.md)
     - [Wallet Connector](playground/wallet_connector.md)
     - [Dashboard](playground/dashboard/dashboard.md)
       - [Twin](playground/dashboard/twin.md)
