@@ -112,7 +112,7 @@ You can also transfer TFT to another stellar wallet by clicking the '**Send**' i
 ***
 ## Important Notice
 
-If you are looking for ways to get / purchase TFT (Stellar) on Solar Wallet, you will find the according information [here](../buytft/solar_buy.md).
+If you are looking for ways to get / purchase TFT (Stellar) on Solar Wallet, you will find the according information [here](../buy_sell_tft/solar_buy.md).
 ***
 ## Disclaimer
 

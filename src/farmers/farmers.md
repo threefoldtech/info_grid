@@ -2,7 +2,18 @@
 
 ![Farming_Title](./img/farming_30.png)
 
-Welcome to the ThreeFold Farmers section of the ThreeFold Manual! 
+Welcome to the *ThreeFold Farmers* section of the ThreeFold Manual, your comprehensive resource for understanding and navigating the world of ThreeFold farming. 
+
+In this manual, we embark on a journey to demystify the role of ThreeFold Farmers and provide a detailed exploration of the ThreeFold Grid, a revolutionary, decentralized, and sustainable internet infrastructure.
+
+## What is a ThreeFold Farmer?
+ThreeFold Farmers are the backbone of the ThreeFold Grid, responsible for hosting and managing the infrastructure that forms the foundation of a new, decentralized internet. A Farmer is an individual or organization that contributes computing resources, such as storage and processing power, to the ThreeFold Grid, creating a distributed and resilient network that is owned and operated by its users.
+
+As a ThreeFold Farmer, you are not merely a participant in a traditional cloud infrastructure: you are a key stakeholder in a community-driven, sustainable, and inclusive digital ecosystem. By becoming a Farmer, you join a global network of like-minded individuals and entities, all working towards a common goal of fostering a more equitable and efficient internet.
+
+This guide is designed to walk you through the essential concepts, tools, and practices that define the ThreeFold farming experience. Whether you are a seasoned infrastructure professional or someone exploring the world of decentralized computing for the first time, this guide will provide you with the insights and instructions needed to thrive as a ThreeFold Farmer.
+
+## Get Started
 
 If you aspire to become a farmer on the ThreeFold Grid, you've come to the right place. This comprehensive book is designed to provide you with all the necessary information, steps, and insights you need to embark on your journey as a ThreeFold farmer, from start to finish. By becoming a farmer, you'll be part of a global network powering a new era of decentralized computing. So, let's dive into this manual and discover the world of ThreeFold Farming!
 

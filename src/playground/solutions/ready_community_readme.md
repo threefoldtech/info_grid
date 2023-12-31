@@ -11,7 +11,7 @@
 - [Funkwhale](./funkwhale.html)
 - [Mattermost](./mattermost.html)
 - [Node Pilot](./nodepilot.html)
-- [Owncloud](./owncloud.html)
+- [ownCloud](./owncloud.html)
 - [Nextcloud](./nextcloud.html)
 - [Peertube](./peertube.html)
 - [Presearch](./presearch.html)

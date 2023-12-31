@@ -1,38 +1,29 @@
-![ ](./advanced/img/terraform_.png)
+<h1> Delete a Deployment </h1>
 
-# Terraform Delete
+![](./advanced/img/terraform_.png)
+
+<h2>Table of Contents</h2>
+
+- [Use Terraform](#use-terraform)
+- [Easier Management of Resources](#easier-management-of-resources)
+
+***
 
 ## Use Terraform
 
-go in directory of your terraform deployment
-
-do:
+Go in the directory of your terraform deployment and run the following command:
 
 ```
 terraform destroy
 ```
 
-## Use Weblets To Delete From Blockchains
+## Easier Management of Resources
 
-go to [https://play.dev.grid.tf/#/contractslist](https://play.dev.grid.tf/#/contractslist)
+Use multiple accounts on TFChain and group your resources per account.
 
-or
+This gives you the following benefits:
 
-[https://play.grid.tf/#/contractslist](https://play.grid.tf/#/contractslist)
-
-![ ](./img/weblets_contracts.png)
-
-select the contracts you want to cancel.
-
-There is a select all button this makes sure your account you use has nothing left
-
-## Easier management of resources (TIP)
-
-Use multiple accounts on TFChain, group your resources per account.
-
-This gives you following benefits
-
-- more control over TFT spending
-- easier to delete all your contracts
-- less chance to make mistakes
-- can use an account to share access with multiple people
+- More control over TFT spending
+- Easier to delete all your contracts
+- Less chance to make mistakes
+- Can use an account to share access with multiple people

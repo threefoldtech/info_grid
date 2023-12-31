@@ -8,3 +8,4 @@
   - [Micro Virtual Machine](./vm.md)
 - [Kubernetes](./k8s.md)
 - [NixOS MicroVM](./nixos_micro.md)
+- [Add a Domain](./add_domain.md)
