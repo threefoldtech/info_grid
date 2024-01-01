@@ -292,7 +292,7 @@
     - [Nodes](playground/nodes/nodes.md)
     - [Farms](playground/farms/farms.md)
     - [Services](playground/services/services.md)
-    - [Calculator](playground/calculator.md)
+    - [Calculators](playground/calculators/calculators.md)
     - [Solutions](playground/solutions/solutions.md)
       - [Basic Environments](playground/solutions/basic_environments_readme.md)
         - [Virtual Machines](playground/solutions/vm_intro.md)
