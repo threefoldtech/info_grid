@@ -2,8 +2,9 @@
 
 [Casper Network](https://casperlabs.io/) is a blockchain protocol built from the ground up to remain true to core Web3 principles and adapt to the needs of our evolving world.
 
-- Make sure you have a [wallet](./wallet_connector.md)
-- Click on the **Casperlabs** tab
+- Make sure you have a [wallet](../wallet_connector.md)
+- From the sidebar click on **Solutions**
+- Click on **Casperlabs**
 
 __Process__ :
 

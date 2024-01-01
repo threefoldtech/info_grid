@@ -4,8 +4,9 @@ Kubernetes is the standard container orchestration tool.
 
 On the TF grid, Kubernetes clusters can be deployed out of the box. We have implemented [K3S](https://k3s.io/), a full-blown Kubernetes offering that uses only half of the memory footprint. It is packaged as a single binary and made more lightweight to run workloads in resource-constrained locations (fits e.g. IoT, edge, ARM workloads).
 
-- Make sure you have a [wallet](./wallet_connector.md)
-- Click on the **Kubernetes** tab
+- Make sure you have a [wallet](../wallet_connector.md)
+- From the sidebar click on **Solutions**
+- Click on **Kubernetes**
 
 ### **Configs** tab
 

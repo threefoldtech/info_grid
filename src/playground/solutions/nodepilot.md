@@ -2,8 +2,9 @@
 
 This is a simple instance of upstream [Node Pilot](https://nodepilot.tech).
 
-- Make sure you have a [wallet](./wallet_connector.md)
-- Click on the **Node Pilot** tab
+- Make sure you have a [wallet](../wallet_connector.md)
+- From the sidebar click on **Solutions**
+- Click on **Node Pilot**
 
 __Process__
 

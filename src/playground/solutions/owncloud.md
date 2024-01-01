@@ -1,6 +1,6 @@
 <h1> ownCloud</h1>
 
-![owncloud_logo](./img/owncloud_logo.svg)
+![owncloud_logo](../img/owncloud_logo.svg)
 
 <h2>Table of Contents</h2>
 
@@ -18,8 +18,9 @@
 
 [ownCloud](https://owncloud.com/) develops and provides open-source software for content collaboration, allowing teams to easily share and work on files seamlessly regardless of device or location.
 
-- Make sure you have a [wallet](./wallet_connector.md)
-- Click on the **ownCloud** tab
+- Make sure you have a [wallet](../wallet_connector.md)
+- From the sidebar click on **Solutions**
+- Click on **ownCloud**
 
 ## Deploy ownCloud
 

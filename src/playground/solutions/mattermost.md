@@ -3,8 +3,9 @@
 [Mattermost](https://mattermost.com/) A single point of collaboration. Designed specifically for digital operations.
 
 
-- Make sure you have a [wallet](./wallet_connector.md)
-- Click on the **Mattermost** tab
+- Make sure you have a [wallet](../wallet_connector.md)
+- From the sidebar click on **Solutions**
+- Click on **Mattermost**
 
 __Process__ :
 

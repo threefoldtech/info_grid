@@ -36,7 +36,9 @@ Nextcloud provides functionality similar to Dropbox, Office 365 or Google Drive 
 
 # Prerequisites
 
-- Make sure you have a [wallet](./wallet_connector.md)
+- Make sure you have a [wallet](../wallet_connector.md)
+- From the sidebar click on **Solutions**
+- Click on **Nextcloud**
 
 ***
 

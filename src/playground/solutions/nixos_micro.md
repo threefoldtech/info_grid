@@ -23,13 +23,14 @@ For more information on Nix, you can read the [Nix Reference Manual](https://nix
 ## Access the ThreeFold Playground
 
 * Go to the ThreeFold Playground website, based on the deployment network you prefer:
-  * [Mainnet](https://playground.grid.tf)
-  * [Testnet](https://playground.test.grid.tf)
-  * [Devnet](https://playground.dev.grid.tf)
-  * [QAnet](https://playground.qa.grid.tf)
+  * [Mainnet](https://dashboard.grid.tf)
+  * [Testnet](https://dashboard.test.grid.tf)
+  * [Devnet](https://dashboard.dev.grid.tf)
+  * [QAnet](https://dashboard.qa.grid.tf)
 
-* Make sure you have a [wallet](./wallet_connector.md)
-* Click on the **Micro Virtual Machine** tab to start your NixOS MicroVM Deployment
+* Make sure you have a [wallet](../wallet_connector.md)
+* From the sidebar click on **Solutions**
+* Click on **Micro Virtual Machine** to start your NixOS MicroVM Deployment
 
 ***
 

@@ -6,8 +6,9 @@
 
 Deploy a new virtual machine on the Threefold Grid
 
-- Make sure you have a [wallet](./wallet_connector.md)
-- Click on the **Micro Virtual Machine** tab
+- Make sure you have a [wallet](../wallet_connector.md)
+- From the sidebar click on **Solutions**
+- Click on **Micro Virtual Machine**
 
 __Process__ : 
 

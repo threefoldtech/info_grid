@@ -4,8 +4,9 @@
 Funkwhale is a community-driven project that lets you listen and share music and audio within a decentralized, open network.
 
 
-- Make sure you have a [wallet](./wallet_connector.md)
-- Click on the **Funkwhale** tab
+- Make sure you have a [wallet](../wallet_connector.md)
+- From the sidebar click on **Solutions**
+- Click on **Funkwhale**
 
 __Process__ :
 

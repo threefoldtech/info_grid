@@ -40,10 +40,9 @@ It has following benefits :
 
 ## Requirements
 
-- You need an account on TF-Chain, and there needs to be TFT on the account (see getting started)
-- Make sure you have a [wallet](./wallet_connector.md)
-- Unlock your profile on profile manager, if already filled in before
-
+- Make sure you have a [wallet](../wallet_connector.md)
+- From the sidebar click on **Solutions**
+- Click on **CapRover**
 
 ## Configs Tab
 
