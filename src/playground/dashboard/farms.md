@@ -16,7 +16,7 @@ This comprehensive guide aims to provide users with detailed instructions and in
 
 ## Getting started
 
-After logging in to the TF Playground, on the sidebar click on **Dashboard** then *Farms* .
+After logging in to the TF Playground, on the sidebar click on **Dashboard** then *Your Farms* .
 
 ## Create a new Farm
 
@@ -29,13 +29,13 @@ If you want to start farming, you need a farmID, the ID of the farm that is owni
 - [Testnet](https://dashboard.test.grid.tf/)
 - [Mainnet](https://dashboard.grid.tf/)
 
-Click `CREATE FARM` and choose a name.
+Click `Create Farm` and choose a name.
 
-![ ](../img/dashboard_portal_farm.png ':size=600')
+![ ](./img/dashboard_farms.png)
 
-![ ](../img/dashboard_portal_create_farm.png ':size=300')
+![ ](./img/dashboard_farms_create.png)
 
-Click `Submit` and sign the action.
+Click on `Create`.
 
 The farm is by default set up as 'DIY'. A farm can become certified through certification program.
 Also a pricing policy is defined. Pricing policy is currently the same for all farms, the field is created for future use.
@@ -44,7 +44,7 @@ Also a pricing policy is defined. Pricing policy is currently the same for all f
 
 You can browse your Farms in *Farms* table; Farms table contains all your own farms and its your entry point to manage your farm as in the following sections.
 
-<!-- TODO add farms image -->
+![](./img/dashboard_farms_farms_table.png)
 
 ### Add a public IP to your Farm
 
@@ -58,33 +58,35 @@ You can add them one by one or using range of IPs.
 - Verify that both the gateway address and the IP address are correct.
 - Be careful not to include the same gateway address in a new IP range.
 
-![ ](../img/dashboard_portal_ip_add.png ':size=600')
-![ ](../img/dashboard_portal_ip_add_detail.png ':size=300')
-![ ](../img/dashboard_portal_ip_add_detail_range.png ':size=300')
+![ ](./img/dashboard_farms_farm_details.png)
+
+![ ](./img/dashboard_farms_add_ip_single.png)
+
+![ ](./img/dashboard_farms_add_ip_range.png)
 
 Deleting IPv4 addresses is also possible here. The `Deployed Contract ID` gives an indication of whether an IP is currently used. If it is 0, it is safe to remove it.
 
-![ ](../img/dashboard_portal_ip_result.png ':size=400')
+![ ](./img/dashboard_farms_ip_details.png)
 
 ### Add a Stellar address for payout
 
 In a first phase, farming of tokens still results in payout on the Stellar network. So to get the farming reward, a Stellar address needs to be provided.
 
-![ ](../img/dashboard_portal_farm0.png ':size=600')
+![ ](./img/dashboard_farms_farm_details.png)
 
-![ ](../img/dashboard_portal_stellar.png ':size=400')
+![ ](./img/dashboard_farms_stellar_address.png)
 
 ### Generate your node bootstrap image
 
-Once you know your farmID, you can set up your node on TFGrid3. Click on `View bootstrap`.
+Once you know your farmID, you can set up your node on TFGrid3. Click on `Bootstrap Node Image`.
 
-After booting a node, the info will become available in your portal, including the status info along with the minting and fixup receipts.
+After booting a node, the info will become available in `Your Nodes` table, including the status info along with the minting and fixup receipts.
 
-![ ](./img/dashboard_portal_node_info.png ':size=600')
+![ ](./img/dashboard_farms_node_details.png)
 
 Clicking on the node statistics will open up a calendar where you can view the periods the node was minting or undergoing a fixup. Clicking on the periods will show a popup with the start and end datetimes, receipt hash and the amount of TFTs minted (if it is a minting receipt).
 
-![ ](./img/dashboard_portal_ui_nodes_minting.png ':size=600')
+![ ](./img/dashboard_portal_ui_nodes_minting.png)
 
 You can also download a single node's receipts using the `Download Receipts` button within the node statistics. Moreover, you can download all of the nodes' receipts using the `Download Receipts` button on the top left corner of the farm nodes table.
 
@@ -100,12 +102,16 @@ Expand your node information by clicking on the expand button in the target node
 
 You can set a price for the special hardware you’re providing e.g. GPUs while renting.
 
+![](./img/dashboard_farms_extra_fee.png)
+
 - Under the **Your Nodes** table, locate the target node and click **Set Additional Fees** under **Actions**
-- Set a monthly fee (in USD) and click **Set**
+- Set a monthly fee (in USD) and click **Save**
 
 ### Public Configuration
 
 To configure public IP addresses to a specific Node
+
+![](./img/dashboard_farms_public_config.png)
 
 - Under the **Your Nodes** table, locate the target node and click **Add a public config** under **Actions**
 - Fill in the necessary information and click save. Only the IPv4 address and gateway are necessary.
