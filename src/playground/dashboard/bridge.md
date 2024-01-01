@@ -30,7 +30,7 @@ Or
 
 - You can scan the QR code
 
-![bridge](./img/bridge/deposit.png)
+![bridge](./img/bridge/dashboard_bridge_deposit.png)
 
 ## Tfchain to Stellar
 
@@ -38,7 +38,7 @@ You can bridge back to stellar using the bridge page on the dashboard, click *wi
 
 After indicating the destination address and the amount to be transferred, click *Send*.
 
-![withdraw](./img/bridge/withdraw.png)
+![withdraw](./img/bridge/dashboard_bridge_withdraw.png)
 
 A withdraw fee of 1 TFT will be taken, so make sure you send a larger amount as 1 TFT.
 The amount withdrawn from TFChain will be sent to your Stellar wallet.
