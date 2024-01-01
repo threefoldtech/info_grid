@@ -20,11 +20,11 @@ We cover the overall process to add a domain to a virtual machine running on the
 - Deploy a virtual machine
 - Click on the button **Manage Domains** under **Actions**
 
-![](./img/add_domain_6.png)
+![](../img/add_domain_6.png)
 
 - Open the **Add New Domain** tab
 
-![](./img/add_domain_10.png)
+![](../img/add_domain_10.png)
 
 ## Add New Domain
 
@@ -42,7 +42,7 @@ We cover the different domain parameters presented in the **Add New Domain** tab
     - In this case, instead of having a gateway subdomain and a gateway name as your domain, the domain will be the custom domain entered in this field.
   - If you select **Custom domain**, make sure to set a DNS A record pointing to the gateway IP address on your domain name registrar.
 
-![Custom Domain Name](./img/add_domain_8.png)
+![Custom Domain Name](../img/add_domain_8.png)
 
 - **Select domain**
   - Choose a gateway for your domain.
@@ -63,13 +63,13 @@ We cover the different domain parameters presented in the **Add New Domain** tab
 
 Once you've filled the domain parameters, click on the **Add** button. The message **Successfully deployed gateway** will be presented once the domain is properly added.
 
-![Success Domain](./img/add_new_domain_success.png)
+![Success Domain](../img/add_new_domain_success.png)
 
 ## Domains List
 
 Once your domain is set, you can access the **Domains List** tab to consult its parameters. To visit the domain, simply click on the **Visit** button under **Actions**.
 
-![List Domain For VM](./img/add_domain_9.png)
+![List Domain For VM](../img/add_domain_9.png)
 
 * **Name**
   * The name is the subdomain (without the prefix)
@@ -98,7 +98,7 @@ At all time, you can click on **Reload** to reload the Domains List parameters.
 
 To delete a domain, open the **Manage Domains** window, in the tab **Domains lists** select the domain you wish to delete and click **Delete**.
 
-![Select To Delete Domain](./img/add_domain_11.png)
+![Select To Delete Domain](../img/add_domain_11.png)
 
 By clicking the **Delete** button, the deletion will start and the domain will be deleted from this virtual machine.
 

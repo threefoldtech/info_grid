@@ -301,7 +301,7 @@
           - [Micro Virtual Machine](playground/solutions/vm.md)
         - [Kubernetes](playground/solutions/k8s.md)
         - [Nixos MicroVM](playground/solutions/nixos_micro.md)
-        - [Add a Domain](playground/add_domain.md)
+        - [Add a Domain](playground/solutions/add_domain.md)
       - [Ready Community Solutions](playground/solutions/ready_community_readme.md)
         - [Algorand](playground/solutions/algorand.md)
         - [CapRover](playground/solutions/caprover.md)
