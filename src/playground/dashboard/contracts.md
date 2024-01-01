@@ -4,7 +4,7 @@ From the Contracts section you can check your contracts by navigating to the `Da
 
 From there you will see the `Contracts List`
 
-![image](img/contracts_list.png)
+![image](img/dashboard_contracts.png)
 
 This list includes the following information about each contract.
 
@@ -20,14 +20,14 @@ This list includes the following information about each contract.
 - Node Status (Up, Down, Standby).
 - Show Details (This button will display the detailed information of the desired contract).
 
-![image](img/deleted_contract_info.png).
+![image](img/dashboard_contracts_details.png)
 
 ## Cancel Contract
 
 You can also cancel the target contract/s by select the contract you want to cancel
 
 - Click on the checkbox on the left side of the contract row
-- Click on the cancel button in the bottom right of the table
+- Click on the delete button in the bottom right of the table
 - Review the contract/s ID then click on *Delete* button
 
 Note:
