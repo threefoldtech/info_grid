@@ -339,9 +339,9 @@ First, we set Wireguard with the Terraform output.
      nano /usr/local/etc/wireguard/wg.conf
      ```
 
-* Paste the content provided by the Terraform deployment. You can use `terraform show` to see the Terraform output. The Wireguard output stands in between `EOT`.
+* Paste the content provided by the Terraform deployment. You can use `terraform show` to see the Terraform output. The WireGuard output stands in between `EOT`.
 
-* Start the wireguard on your local computer:
+* Start the WireGuard on your local computer:
   *  ```
      wg-quick up wg
      ```
@@ -351,7 +351,7 @@ First, we set Wireguard with the Terraform output.
      wg-quick down wg
      ```
 
-> Note: If it doesn't work and you already did a wireguard connection with the same file from Terraform (from a previous deployment perhaps), do `wg-quick down wg`, then `wg-quick up wg`.
+> Note: If it doesn't work and you already did a WireGuard connection with the same file from Terraform (from a previous deployment perhaps), do `wg-quick down wg`, then `wg-quick up wg`.
 This should set everything properly.
 
 * As a test, you can ping the virtual IP addresses of both VMs to make sure the Wireguard connection is correct:
@@ -363,6 +363,8 @@ This should set everything properly.
      ```
 
 If you correctly receive the packets for the two VMs, you know that the VPN is properly set.
+
+For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../getstarted/ssh_guide/ssh_wireguard.md).
 
 ***
 

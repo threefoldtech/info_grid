@@ -16,9 +16,9 @@
 - `Public IPv4` flag gives the virtual machine a Public IPv4
 
 - Select a capacity package:
-  - **Minimum**: { cpu: 1, memory: 1024 , diskSize: 50 }
-  - **Standard**: { cpu: 2, memory: 1024 * 2, diskSize: 100 }
-  - **Recommended**: { cpu: 4, memory: 1024 * 4, diskSize: 250 }
+  - **Small**: { cpu: 1, memory: 2 , diskSize: 50 }
+  - **Medium**: { cpu: 2, memory: 4, diskSize: 100 }
+  - **Large**: { cpu: 4, memory: 16, diskSize: 250 }
   - Or choose a **Custom** plan
 - Choose a gateway node to deploy your Subsquid instance on.
 

@@ -15,5 +15,6 @@ We present in this section of the developers book a partial list of system compo
   - [Workload Types](./zos/manual/workload_types.md)
   - [Internal Modules](./zos/internals/internals.md)
   - [Capacity](./zos/internals/capacity.md)
+  - [Performance Monitor Package](./zos/performance/performance.md)
   - [API](./zos/manual/api.md)
   - [FAQ](./zos/faq/index.md)

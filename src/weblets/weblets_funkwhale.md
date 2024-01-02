@@ -16,9 +16,9 @@ __Process__ :
 - Enter administrator information including **Username**, **Email** and **Password**. This admin user will have full permission on the deployed instance.
 
 - Select a capacity package:
-    - **Minimum**: {cpu: 2, memory: 1024, diskSize: 50 }
-    - **Standard**: {cpu: 2, memory: 1024 * 2, diskSize: 100 }
-    - **Recommended**: {cpu: 4, memory: 1024 * 4, diskSize: 250 }
+    - **Small**: {cpu: 1, memory: 2, diskSize: 50 }
+    - **Medium**: {cpu: 2, memory: 4, diskSize: 100 }
+    - **Large**: {cpu: 4, memory: 16, diskSize: 250 }
     - Or choose a **Custom** plan
 - Choose a gateway node to deploy your Funkwhale instance on.
 
