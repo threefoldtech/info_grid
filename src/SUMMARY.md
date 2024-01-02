@@ -290,6 +290,7 @@
       - [Contracts](playground/dashboard/contracts.md)
     - [Statistics](playground/statistics/statistics.md)
     - [Nodes](playground/nodes/nodes.md)
+      - [GPU Support](playground/nodes/gpu_support.md)
     - [Farms](playground/farms/farms.md)
     - [Services](playground/services/services.md)
     - [Calculators](playground/calculators/calculators.md)
