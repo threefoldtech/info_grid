@@ -11,7 +11,7 @@ __Process__ :
 
 ### **Base** tab
 
-![ ](./img/taiga1.png)
+![ ](./img/solutions_taiga.png)
 
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. ***tg98taigar*.gent02.dev.grid.tf**
 
@@ -41,6 +41,6 @@ After that is done you can see a list of all of your deployed instances
 
 ![ ](./img/taiga5.png)
 
-Click on ***Visit*** to go to the homepage of your Funkwhale instance!
+Click on ***Visit*** to go to the homepage of your Taiga instance!
 
 ![ ](./img/taiga6.png)

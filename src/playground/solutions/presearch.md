@@ -26,7 +26,7 @@
 
 ## Deploy a Presearch Node
 
-![ ](./img/presearch1.png)
+![ ](./img/solutions_presearch.png)
 
 - Enter an instance name.
 
@@ -59,7 +59,7 @@ After that is done you can see a list of all of your deployed instances
 
 ![ ](./img/presearch4.jpg)
 
-Now head to your [dashboard](https://nodes.presearch.com/dashboard)again and scroll down to **Current Nodes**, you'll see your newly created node up and connected!
+Now head to your [dashboard](https://nodes.presearch.com/dashboard) again and scroll down to **Current Nodes**, you'll see your newly created node up and connected!
 
 ![ ](./img/presearch5.png)
 

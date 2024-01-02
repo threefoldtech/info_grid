@@ -8,7 +8,7 @@
 
 __Process__ :
 
-![ ](./img/casper1.png)
+![ ](./img/solutions_casperlabs.png)
 
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. ***cl98casp*.gent02.dev.grid.tf**
 

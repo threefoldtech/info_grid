@@ -9,7 +9,7 @@
 
 __Process__ :
 
-![ ](./img/mattermost1.png)
+![ ](./img/solutions_mattermost.png)
 
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. ***matter*.gent02.dev.grid.tf**
 

@@ -8,7 +8,7 @@
 
 __Process__ :
 
-![ ](./img/discourse1.png)
+![ ](./img/solutions_discourse.png)
 
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. ***dc98newdisc*.gent02.dev.grid.tf**
 

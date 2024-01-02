@@ -10,7 +10,7 @@ Funkwhale is a community-driven project that lets you listen and share music and
 
 __Process__ :
 
-![ ](./img/new_funk1.png)
+![ ](./img/solutions_funkwhale.png)
 
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. ***fw100myfunk*.gent02.dev.grid.tf**
 

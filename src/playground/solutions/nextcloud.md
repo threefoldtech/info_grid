@@ -54,7 +54,7 @@ If you're not sure and just want the easiest, most affordable option, skip the p
 
 # Deploy Nextcloud
 
-* On the [ThreeFold Playground](https://playground.grid.tf/), click on the **Nextcloud** tab
+* On the [ThreeFold Dashboard](https://dashboard.grid.tf/), click on solutions from the sidebar, then click on **Nextcloud**
 * Choose a name for your deployment
   * Note: You can use the auto-generated name if you want
 * Select a capacity package:
@@ -63,7 +63,7 @@ If you're not sure and just want the easiest, most affordable option, skip the p
     * **Recommended**: {cpu: 4, memory: 16gb, diskSize: 1000gb }
     * Or choose a **Custom** plan
 * If want to reserve a public IPv4 address, click on Network then select **Public IPv4**
-* If you want a [dedicated](../dashboard/portal/dashboard_portal_dedicated_nodes.md) and/or a certified node, select the corresponding option
+* If you want a [dedicated](../dashboard/dedicated_nodes.md) and/or a certified node, select the corresponding option
 * Choose the location of the node
    * `Country`
    * `Farm Name`

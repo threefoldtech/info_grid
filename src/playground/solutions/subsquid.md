@@ -8,7 +8,7 @@
 
 ## Process
 
-![ ](./img/subsquid.png)
+![ ](./img/solutions_subsquid.png)
 
 - Enter an instance name.
 

@@ -9,7 +9,7 @@ Deploy a new full virtual machine on the Threefold Grid
 **Process:**
 
 
-![ ](./img/new_vm1.png)
+![ ](./img/solutions_fullvm.png)
 
 - Fill in the instance name: it's used to reference the Full VM in the future.
 - Choose the image from the drop down (e.g Alpine, Ubuntu) or you can click on `Other` and manually specify the flist URL and the entrypoint.
@@ -24,7 +24,7 @@ Deploy a new full virtual machine on the Threefold Grid
   - `Planetary Network` to connect the Virtual Machine to Planetary network
   - `Wireguard Access` to add a wireguard acces to the Virtual Machine
 - `GPU` flag to add GPU to the Virtual machine
-  - To deploy a Full VM with GPU, you first need to [rent a dedicated node](../dashboard/portal/dashboard_portal_dedicated_nodes.md#filter-and-reserve-a-gpu-node)
+  - To deploy a Full VM with GPU, you first need to [rent a dedicated node](../dashboard/dedicated_nodes.md#usage)
 - `Dedicated` flag to retrieve only dedicated nodes 
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node

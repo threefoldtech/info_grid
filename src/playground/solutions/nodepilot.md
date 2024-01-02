@@ -8,7 +8,7 @@ This is a simple instance of upstream [Node Pilot](https://nodepilot.tech).
 
 __Process__
 
-![ ](./img/nodePilot_1.png)
+![ ](./img/solutions_nodepilot.png)
 
 - Fill in the instance name: it's used to reference the node-pilot in the future.
 

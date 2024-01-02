@@ -46,16 +46,16 @@ It has following benefits :
 
 ## Configs Tab
 
-![ ](./img/new_cap1.png)
+![ ](./img/solutions_caprover.png)
 
 - Enter domain for you Caprover instance, Be very careful about the domain name: it needs to be a wildcard domain name you can configure in your chosen domain name system.
 - Enter password for you Caprover instance.
 
 ## Admin and Workers Tabs
 
-![ ](./img/new_cap4.png)
+![ ](./img/solutions_caprover_leader.png)
 
-![ ](./img/new_cap5.png)
+![ ](./img/solutions_caprover_workers.png)
 Note: Worker nodes only accept SSH keys of RSA format.
 
 

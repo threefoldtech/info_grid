@@ -6,7 +6,7 @@
 - Click on **Umbrel**
   
 **Process** :
-![Config](./img/umbrel1.png)
+![Config](./img/solutions_umbrel.png)
 
 - Enter an instance name.
 - Enter a Username

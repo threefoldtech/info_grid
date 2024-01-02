@@ -8,7 +8,7 @@
 
 __Process__
 
-![ ](./img/new_peer1.png)
+![ ](./img/solutions_peertube.png)
 
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. 
   the applied format `<solution-code><twin-id><solution-name>.<gateway-subdomain>` Ex. ***pt100peerprod*.gent02.dev.grid.tf**

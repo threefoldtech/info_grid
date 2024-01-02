@@ -8,7 +8,7 @@
 
 **Process** :
 
-![Config](./img/wp1.png)
+![Config](./img/solutions_wordpress.png)
 
 - Enter an instance name.
 - Enter admin information.

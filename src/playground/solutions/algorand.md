@@ -24,7 +24,7 @@
 ### Run Default Node
 
 The basic type. you select any network you want. and for the node type select Default.
-![defaultdep](./img/algorand_defaultdep.png)
+![defaultdep](./img/solutions_algorand.png)
 
 after the deployment is done. `ssh` to the node and run `goal node status` 
 ![defaulttest](./img/algorand_defaulttest.png)

@@ -12,7 +12,7 @@ Deploy a new virtual machine on the Threefold Grid
 
 __Process__ : 
 
-![ ](./img/vm.png)
+![ ](./img/solutions_microvm.png)
 
 - Fill in the instance name: it's used to reference the VM in the future.
 - Choose the image from the drop down (e.g Alpine, Ubuntu) or you can click on `Other` and manually specify the flist URL and the entrypoint.

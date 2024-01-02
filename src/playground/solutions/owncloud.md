@@ -68,13 +68,9 @@ When the deployment is ready, you will see a list of all of your deployed instan
 
 Click on the button **Visit** under **Actions** to open the ownCloud login window. If you see **bad gateway**, you might simply need to wait a couple of minutes until the deployment completes.
 
-![ ](./img/owncloud_visit.png)
+![ ](./img/solutions_owncloud_visit.png)
 
 To consult the deployment details,  click on the button **Details** under **Actions**. On this page, you can access the **ownCloud Admin Username** and the **ownCloud Admin Password**. Use those credentials to log in as an administrator on your ownCloud deployment.
-
-![ ](./img/owncloud_details.png)
-
-![ ](./img/owncloud_credentials.png)
 
 ![ ](./img/owncloud6.png)
 
@@ -83,15 +79,5 @@ To consult the deployment details,  click on the button **Details** under **Acti
 To connect to your ownCloud instance with the ThreeFold Connect app, you need to add permissions to your ThreeFold 3Bot ID by first [connecting as an administrator](#admin-connection).
 
 - Once you're connected as an admin, open the top-right menu and click on **Users**.
-
-![ ](./img/owncloud_users.png)
-
 - To create a new user, set your 3Bot ID as the username with its corresponding email address, and set **Groups** as **admin**. Then click **Create**.
-
-![ ](./img/owncloud_create_user.png)
-
 - You can now log out and connect to your ownCloud instance with the TF Connect app.
-
-![ ](./img/owncloud_logout.png)
-
-![ ](./img/owncloud_tfconnect.png)
