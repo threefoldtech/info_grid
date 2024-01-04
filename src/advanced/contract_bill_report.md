@@ -1,6 +1,6 @@
-# Contract Billing Rate (Playground)
+# Contract Billing Rate (Dashboard)
 
-Now you can check the billing rate of your contracts directly from the `Contracts` tab in the playground.
+Now you can check the billing rate of your contracts directly from the `Contracts` tab in the Dashboard.
 
 > It takes an hour for the contract to display the billing rate (Until it reaches the first billing cycle).
 
@@ -23,27 +23,25 @@ query MyQuery {
     discountReceived
   }
 }
-
 ```
 
 And for a specific contract
 
 ```graphql
 query MyQuery {
-  contractBillReports(where: {contractId_eq: 10}) {
+  contractBillReports(where: { contractId_eq: 10 }) {
     amountBilled
     discountReceived
     contractId
   }
 }
-
 ```
 
 ## consumption
 
 ```graphql
 query MyQuery {
-  consumptions(where: {contractId_eq: 10}) {
+  consumptions(where: { contractId_eq: 10 }) {
     contractId
     cru
     sru

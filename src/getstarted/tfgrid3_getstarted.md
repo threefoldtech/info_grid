@@ -20,7 +20,7 @@
 - [TF Portal](../dashboard/portal/dashboard_portal_home.md)
 - [TF Explorer](../dashboard/explorer/explorer_home.md)
 - [TF Flist Hub](../flist/flist_hub/zos_hub.md)
-- [TF Playground / Weblets](../playground/home.md)
+- [TF Dashboard / Weblets](../dashboard/home.md)
 
 ## TFGrid Services and Resources
 

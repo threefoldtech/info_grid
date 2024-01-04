@@ -1,4 +1,4 @@
-## Playground TOC
+## Dashboard TOC
 
 - [Home](./home.md)
 - [Wallet Connector](./wallet_connector.md)

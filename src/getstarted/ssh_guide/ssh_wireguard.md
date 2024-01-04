@@ -25,7 +25,7 @@ Note that WireGuard provides the connection to the 3Node deployment. It is up to
 
 # Prerequisites
 
-* Activated and funded account set up in the [TF Playground](https://playground.grid.tf/)
+* Activated and funded account set up in the [TF Dashboard](https://dashboard.grid.tf/)
   * [Create a Threefold Connect Wallet](../TF_Connect/TF_Connect.md)
   * [Buy TFT](../../threefold_token/buy_sell_tft/buy_sell_tft.md)
   * [Create a Threefold Dashboard Account and Transfer TFT](../TF_Dashboard/TF_Dashboard.md)
@@ -38,9 +38,9 @@ Note that WireGuard provides the connection to the 3Node deployment. It is up to
 
 # Deploy a Weblet with WireGuard Access
 
-The ThreeFold Playground proposes different [basic environments](../../playground/basic_environments_readme.md) and [ready community solutions](../../playground/ready_community_readme.md) in the form of easy-to-use weblets. For this guide on WireGuard access, we deploy a [Full VM](../../playground/fullVm.md). Note that the whole process is similar with other types of ThreeFold weblets on the Playground.
+The ThreeFold Dashboard proposes different [basic environments](../../dashboard/solutions/basic_environments_readme.md) and [ready community solutions](../../dashboard/solutions/ready_community_readme.md) in the form of easy-to-use weblets. For this guide on WireGuard access, we deploy a [Full VM](../../dashboard/solutions/fullVm.md). Note that the whole process is similar with other types of ThreeFold weblets on the Dashboard.
 
-* Go to the [ThreeFold Playground](https://playground.grid.tf/)
+* Go to the [ThreeFold Dashboard](https://dashboard.grid.tf/)
 * Select the weblet **Full Virtual Machine**
 * Click on **Network**
   * Check **Add WireGuard Access**
@@ -49,7 +49,7 @@ The ThreeFold Playground proposes different [basic environments](../../playgroun
 
 Once the Full VM is deployed, a window named **Details** will appear. You will need to take note of the **WireGuard Config** to set the WireGuard configurations and the **WireGuard IP** to SSH into the deployment.
 
-> Note: At anytime, you can open the **Details** window by clicking on the button **Show Details** under **Actions** on the Playground weblet page.
+> Note: At anytime, you can open the **Details** window by clicking on the button **Show Details** under **Actions** on the Dashboard weblet page.
 
 ***
 
@@ -67,7 +67,7 @@ When it comes to setting the WireGuard configurations, the steps are similar for
 
 To set the WireGuard connection on Linux or MAC, create a WireGuard configuration file and run WireGuard via the command line:
 
-* Copy the content **WireGuard Config** from the Playground **Details** window
+* Copy the content **WireGuard Config** from the Dashboard **Details** window
 * Paste the content to a file with the extension `.conf` (e.g. **wg.conf**) in the directory `/etc/wireguard`
   * ```
     sudo nano /etc/wireguard/wg.conf
@@ -94,7 +94,7 @@ To set the WireGuard connection on Windows, add and activate a tunnel with the W
 * Open the WireGuard GUI app
 * Click on **Add Tunnel** and then **Add empty tunnel**
 * Choose a name for the tunnel
-* Erase the content of the main window and paste the content **WireGuard Config** from the Playground **Details** window
+* Erase the content of the main window and paste the content **WireGuard Config** from the Dashboard **Details** window
 * Click **Save** and then click on **Activate**.
 
 ***
@@ -113,7 +113,7 @@ As a test, you can ping the virtual IP address of the VM to make sure the WireGu
 
 # SSH into the Deployment with Wireguard
 
-To SSH into the deployment with Wireguard, use the **WireGuard IP** shown in the Playground **Details** window.
+To SSH into the deployment with Wireguard, use the **WireGuard IP** shown in the Dashboard **Details** window.
 
 * SSH into the deployment
   * ```

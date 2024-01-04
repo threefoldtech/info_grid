@@ -11,7 +11,7 @@
 
 ## Overview
 
-From the Playground, you can check your contracts by navigating to the `Contracts` tab from the sidebar. On this page, you will see the `Contracts List`.
+From the Dashboard, you can check your contracts by navigating to the `Contracts` tab from the sidebar. On this page, you will see the `Contracts List`.
 
 ![image](img/contracts_list.png)
 

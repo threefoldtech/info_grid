@@ -16,7 +16,7 @@ This comprehensive guide aims to provide users with detailed instructions and in
 
 ## Getting started
 
-After logging in to the TF Playground, on the sidebar click on **Dashboard** then *Your Farms* .
+After logging in to the TF Dashboard, on the sidebar click on **Dashboard** then *Your Farms* .
 
 ## Create a new Farm
 

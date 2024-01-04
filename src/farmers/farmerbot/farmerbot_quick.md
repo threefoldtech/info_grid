@@ -47,7 +47,7 @@ Here are some examples to guide you:
 For this guide, we run the Farmerbot on a Full VM running on the TFGrid. Note that you do not need to run the Farmerbot on the TFGrid, but the whole process is very simple as presented here.
 
 * Deploy a full VM on the TFGrid with minimum specs (512 MB of memory, 1 vcore, 15 GB of storage)
-  * Read [this guide](../../getstarted/ssh_guide/ssh_guide.md) for more information on deploying a Full VM with the TF Playground
+  * Read [this guide](../../getstarted/ssh_guide/ssh_guide.md) for more information on deploying a Full VM with the TF Dashboard
 
 ***
 

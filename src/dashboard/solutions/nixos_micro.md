@@ -3,7 +3,7 @@
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
-- [Access the ThreeFold Playground](#access-the-threefold-playground)
+- [Access the ThreeFold Dashboard](#access-the-threefold-Dashboard)
 - [Deploy a NixOS MicroVM](#deploy-a-nixos-microvm)
 - [Questions and Feedback](#questions-and-feedback)
 
@@ -14,15 +14,15 @@
 __NixOS MicroVM__ refers to a minimalistic virtual machine environment based on the NixOS Linux distribution.
 The NixOS MicroVM leverages these principles to create a highly customizable and reproducible virtual machine environment. It allows users to define the entire system configuration, including packages, services, and dependencies, in a declarative manner using the Nix language. This ensures that the MicroVM is consistent, easily reproducible, and can be version-controlled.
 
-In this guide, will learn how to make reproducible, declarative and reliable systems by deploying a NixOS MicroVM weblet in ThreeFold Playground.
+In this guide, will learn how to make reproducible, declarative and reliable systems by deploying a NixOS MicroVM weblet in ThreeFold Dashboard.
 
 For more information on Nix, you can read the [Nix Reference Manual](https://nixos.org/manual/nix/stable/).
 
 ***
 
-## Access the ThreeFold Playground
+## Access the ThreeFold Dashboard
 
-* Go to the ThreeFold Playground website, based on the deployment network you prefer:
+* Go to the ThreeFold Dashboard website, based on the deployment network you prefer:
   * [Mainnet](https://dashboard.grid.tf)
   * [Testnet](https://dashboard.test.grid.tf)
   * [Devnet](https://dashboard.dev.grid.tf)
