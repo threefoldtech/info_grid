@@ -84,7 +84,7 @@ To see the uptime of a given node, on the Dashboard go to the **Farms** section 
 
 The uptime calculation is done as follows:
 
-> ((currentPeriod - downtime) / currentPeriod) * 100
+> ((uptime - downtime) / uptime) * 100
 
 ***
 
