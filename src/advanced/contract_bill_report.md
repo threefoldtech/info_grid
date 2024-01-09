@@ -1,4 +1,14 @@
-# Contract Billing Rate (Playground)
+<h1> Contract Bills Reports </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Contract Billing Report (GraphQL)](#contract-billing-report-graphql)
+- [Consumption](#consumption)
+
+***
+
+## Introduction
 
 Now you can check the billing rate of your contracts directly from the `Contracts` tab in the playground.
 
@@ -8,7 +18,7 @@ The `Billing Rate` is displayed in `TFT/Hour`
 
 ![image](img/billing_rate.png)
 
-## Contract Billing Report (graphql)
+## Contract Billing Report (GraphQL)
 
 - you need to find the contract ID
 - ask the graphql for the consumption
@@ -39,7 +49,7 @@ query MyQuery {
 
 ```
 
-## consumption
+## Consumption
 
 ```graphql
 query MyQuery {
