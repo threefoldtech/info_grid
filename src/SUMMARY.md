@@ -15,6 +15,7 @@
     - [DAO Voting](dashboard/dao_voting/dao_voting.md)
   - [ThreeFold Token](./threefold_token/threefold_token.md)
     - [Introduction to TFT](./threefold_token/tft_intro.md)
+    - [Token Overview](./threefold_token/token_overview.md)
     - [TFT Bridges](./threefold_token/tft_bridges/tft_bridges.md)
       - [TFChain-Stellar Bridge](./threefold_token/tft_bridges/tfchain_stellar_bridge.md)
       - [BSC-Stellar Bridge](./threefold_token/tft_bridges/bsc_stellar_bridge.md)
