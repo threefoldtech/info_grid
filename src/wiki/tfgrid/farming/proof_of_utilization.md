@@ -28,19 +28,20 @@ Every hour, the utilization is recorded in TFChain and the user is charged for t
 | 5%  | Validator Staking Pool | Rewards farmers that run TFChain 3.0 validator nodes.      |
 | 50% | Solution providers & sales channel | managed by [ThreeFold DAO](../../dao/tfdao.md).             |
 
+> Note: While the solution provider program is still active, the plan is to discontinue the program in the near future. We will update the manual as we get more information. We currently do not accept new solution providers.
+
 ## ThreeFold DAO rules in Relation To Proof-of-Utilization
 
 ### TFGrid Capacity Utilization
 
 - Each solution provider and sales channel gets registered in TFChain and as such the distribution can be defined and calculated at billing time.
-- For billing purposes, ThreeFold DAO will check if it is from a known sales channel or solution provider. If yes, then the billing smart contract code will know how to distribute the TFTs. If the channel of solution provider is not known, then the 50% will go to a DAO owned Community Grant Wallet.
+- For billing purposes, ThreeFold DAO will check if it is from a known sales channel or solution provider. If yes, then the billing smart contract code will know how to distribute the TFTs. If the channel of solution provider is not known, then the 50% will go to the ThreeFold Foundation.
 - For Certified Farming, [ThreeFold Tech](../../threefold_tech.md) can define the solution & sales channel parameters, these are channels as provided by ThreeFold Tech.
 - Burning can be lowered to 25% if too many tokens would be burned, ThreeFold DAO consensus needs to be achieved.
 
 ### Other Ways TFT are required
 
 - Anyone building solutions on top of the TFGrid can use TFT as a currency to charge for the added value they provide, this gives an extra huge requirement for TFT.
-- People also need TFT for staking (locking into) their Validators, validators secure the blockchain and give a good reward for the people who run the validators, this can be upto 50% of the TFT supply.
 - Some will use TFT as a store or exchange of value. Like money, because TFT is a valuable commodity, it could be a more reliable alternative to other digital currencies like BTC. The hoarding of TFT means that TFT are not available to be used on the TF Grid.
 
 
