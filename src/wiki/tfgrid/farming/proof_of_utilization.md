@@ -24,7 +24,8 @@ Every hour, the utilization is recorded in TFChain and the user is charged for t
 | Percentage | Description                            | Remark                                                                   |
 | ---------- | -------------------------------------- | ------------------------------------------------------------------------ |
 | 35% | TFT burning            | A mechanism used to maintain scarcity in the TFT economy.  |
-| 15% | ThreeFold Foundation   | Funds allocated to promote and grow the ThreeFold Grid.    |
+| 10% | ThreeFold Foundation   | Funds allocated to promote and grow the ThreeFold Grid.    |
+| 5%  | Validator Staking Pool | Rewards farmers that run TFChain 3.0 validator nodes.      |
 | 50% | Solution providers & sales channel | managed by [ThreeFold DAO](../../dao/tfdao.md).             |
 
 > Note: While the solution provider program is still active, the plan is to discontinue the program in the near future. We will update the manual as we get more information. We currently do not accept new solution providers.
