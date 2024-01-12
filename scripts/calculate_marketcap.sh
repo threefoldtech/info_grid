@@ -15,6 +15,6 @@ value=$(cat tft_value.md)
 
 product=$(echo "$liquidity * $value" | bc -l)
 
-echo "$product" | sed -re 's/([0-9]+\.[0-9]{2})[0-9]+/\1/g' > tft_marketcap.md
+printf "%.2f" $product > tft_marketcap.md
 
-echo "$value" | sed -re 's/([0-9]+\.[0-9]{4})[0-9]+/\1/g' > tft_value.md
+printf "%.4f" $value > tft_value.md
