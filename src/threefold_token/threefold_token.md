@@ -3,6 +3,7 @@
 <h2> Table of Contents </h2>
 
 - [Introduction to TFT](./tft_intro.md)
+- [Token Overview](./token_overview/token_overview.md)
 - [TFT Bridges](./tft_bridges/tft_bridges.md)
 - [Storing TFT](./storing_tft/storing_tft.md)
 - [Buy and Sell TFT](./buy_sell_tft/buy_sell_tft.md)

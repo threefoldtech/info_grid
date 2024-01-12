@@ -19,6 +19,7 @@ This book serves as a central hub for gathering general information about ThreeF
     - [DAO Voting](../dashboard/dao_voting/dao_voting.md)
 - [ThreeFold Token](../threefold_token/threefold_token.md)
   - [Introduction to TFT](../threefold_token/tft_intro.md)
+  - [Token Overview](../threefold_token/token_overview/token_overview.md)
   - [TFT Bridges](../threefold_token/tft_bridges/tft_bridges.md)
   - [Storing TFT](../threefold_token/storing_tft/storing_tft.md)
   - [Buy and Sell TFT](../threefold_token/buy_sell_tft/buy_sell_tft.md)
