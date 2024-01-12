@@ -5,6 +5,8 @@
 - Make
 - [mdbook](https://rust-lang.github.io/mdBook/guide/installation.html)
 - [mdbook-mermaid](https://github.com/badboy/mdbook-mermaid)
+- [jq](https://jqlang.github.io/jq/)
+- [bc](https://www.gnu.org/software/bc/)
 
 ## build
 
