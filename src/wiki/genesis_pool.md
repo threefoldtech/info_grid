@@ -36,7 +36,7 @@ All genesis pools were owned by the foundation. Many of those servers are at thi
   - This was a deal made mid 2018 and provided the ThreeFold Dubai with technology and a global engineering team.
 - The other part went to ThreeFold Dubai, to allow the Foundation to promote & further grow the project.
 
-> [See Token Overview](../threefold_token/token_overview.md) for more details.
+> [See Token Overview](../threefold_token/token_overview/token_overview.md) for more details.
 
 The tokens were used from out of ThreeFold_Dubai to create value for the ThreeFold Grid.
 

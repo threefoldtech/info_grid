@@ -16,7 +16,7 @@
   - [ThreeFold Token](./threefold_token/threefold_token.md)
     - [Introduction to TFT](./threefold_token/tft_intro.md)
     - [Token Overview](./threefold_token/token_overview/token_overview.md)
-      - [Special Wallets](./threefold_token/token_overview/stats_special_wallets.md)
+      - [Special Wallets](./threefold_token/token_overview/special_wallets/stats_special_wallets.md)
     - [TFT Bridges](./threefold_token/tft_bridges/tft_bridges.md)
       - [TFChain-Stellar Bridge](./threefold_token/tft_bridges/tfchain_stellar_bridge.md)
       - [BSC-Stellar Bridge](./threefold_token/tft_bridges/bsc_stellar_bridge.md)
