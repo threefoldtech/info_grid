@@ -6,7 +6,7 @@ coinId="threefold-token"
 
 url="https://api.coingecko.com/api/v3/simple/price?ids=${coinId}&vs_currencies=usd";
 
-curl -L -X GET ${url} \
+curl -sL ${url} \
 -H 'Accept: application/json' | jq '."threefold-token".usd' > tft_value.md
 
 liquidity=$(cat tft_liquidity.md)
