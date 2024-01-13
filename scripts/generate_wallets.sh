@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd src/threefold_token/token_overview/special_wallets/
+cd src/threefold_token/token_overview/special_wallets/special_wallets_archive/
 
 curl -L -X GET 'https://horizon.stellar.org/accounts/GA7OPN4A3JNHLPHPEWM4PJDOYYDYNZOM7ES6YL3O7NC3PRY3V3UX6ANM' \
 -H 'Accept: application/json' | jq --raw-output '.balances[] | select(.asset_code == "TFT") | .balance' | sed -re 's/([0-9]+\.[0-9]{2})[0-9]+/\1/g' > GA7OPN4A3JNHLPHPEWM4PJDOYYDYNZOM7ES6YL3O7NC3PRY3V3UX6ANM.md
