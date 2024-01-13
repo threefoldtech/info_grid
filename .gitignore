@@ -4,5 +4,5 @@ docs/
 book/
 .vscode
 .DS_Store
-src/threefold_token/token_overview/special_wallets/special_wallets_archive/
-src/threefold_token/token_overview/special_wallets/special_wallets_archive/*
+src/threefold_token/token_overview/special_wallets/wallet_data/
+src/threefold_token/token_overview/special_wallets/wallet_data/*
