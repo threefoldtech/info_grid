@@ -6,4 +6,4 @@ build:
 serve:
 	./scripts/generate_wallets.sh
 	./scripts/calculate_marketcap.sh
-	mdbook serve -o
+	mdbook serve -o -d docs -p 3004
