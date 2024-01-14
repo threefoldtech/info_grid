@@ -352,6 +352,7 @@
       - [Kubernetes](playground/k8s.md)
       - [Nixos MicroVM](playground/nixos_micro.md)
       - [Add a Domain](playground/add_domain.md)
+    - [Access Your Deployments](playground/access_your_deployments.md)
     - [Ready Community Solutions](playground/ready_community_readme.md)
       - [Algorand](playground/algorand.md)
       - [CapRover](playground/caprover.md)

@@ -24,7 +24,7 @@ The backend for the weblets is introduced with the [Javascript Client](../javasc
   - [Kubernetes](./k8s.md)
   - [NixOS MicroVM](./nixos_micro.md)
   - [Add a Domain](./add_domain.md)
-
+- [Access Your Deployments](./access_your_deployments.md)
 - [Ready Community Solutions](./ready_community_readme.md)
   - [Caprover](./caprover.md)
   - [Funkwhale](./funkwhale.md)
