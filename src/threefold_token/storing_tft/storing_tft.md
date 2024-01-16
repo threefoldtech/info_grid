@@ -9,7 +9,7 @@
 - [Albedo Wallet (TFT-Stellar)](./albedo_store.md)
 - [Solar Wallet (TFT-Stellar)](./solar_wallet.md)
 - [Lobstr Wallet (TFT-Stellar)](./lobstr_wallet.md)
-- [Interstellar (TFT-Stellar)](./Interstellar_store.md)
+- [Interstellar (TFT-Stellar)](./interstellar_store.md)
 - [BTC-Alpha (TFT-Stellar)](./btc_alpha_deposit.md)
 
 ***
