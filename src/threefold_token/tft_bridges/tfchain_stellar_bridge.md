@@ -4,6 +4,7 @@
 
 - [Introduction](#introduction)
 - [How to Use the TFChain-Stellar Bridge](#how-to-use-the-tfchain-stellar-bridge)
+- [Bridge Fees](#bridge-fees)
 - [Questions and Feedback](#questions-and-feedback)
 
 ***
@@ -12,7 +13,7 @@
 
 We present here the general steps to use the TFChain-Stellar Bridge. Note that the only difference between using the Main net or Test net TFChain-Stellar bridge lies in the ThreeFold Dashboard URL.
 
-***
+
 
 ## How to Use the TFChain-Stellar Bridge
 
@@ -29,7 +30,11 @@ We present here the general steps to use the TFChain-Stellar Bridge. Note that t
 
 Note: If you are on ThreeFold Connect App, you can export your account to the Polkadot extension. Look at the section [Move Farm from the TF app to the TF Portal (polkadot.js)](../storing_tft/tf_connect_app.md#move-farm-from-the-tf-connect-app-to-the-tf-portal-polkadotjs).
 
-***
+
+
+## Bridge Fees
+
+To learn more about the bridge fees, read [this documentation](../transaction_fees.md).
 
 ## Questions and Feedback
 

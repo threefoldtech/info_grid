@@ -23,6 +23,7 @@ This book serves as a central hub for gathering general information about ThreeF
   - [Storing TFT](../threefold_token/storing_tft/storing_tft.md)
   - [Buy and Sell TFT](../threefold_token/buy_sell_tft/buy_sell_tft.md)
   - [Liquidity Provider (LP)](../threefold_token/liquidity/liquidity_readme.md)
+  - [Transaction Fees](../threefold_token/transaction_fees.md)
 - [DAO Voting](../dashboard/dao_voting/dao_voting.md)
 - [Collaboration Tools](../collaboration_tools/collaboration_tools.md)
   - [Circle Tool](../collaboration_tools/circle_tool.md)

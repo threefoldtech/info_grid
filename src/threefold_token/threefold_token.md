@@ -7,6 +7,7 @@
 - [Storing TFT](./storing_tft/storing_tft.md)
 - [Buy and Sell TFT](./buy_sell_tft/buy_sell_tft.md)
 - [Liquidity Provider (LP)](./liquidity/liquidity_readme.md)
+- [Transaction Fees](./transaction_fees.md)
 
 ***
 ## Introduction

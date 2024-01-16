@@ -51,6 +51,7 @@
       - [Pancake Swap LP](./threefold_token/liquidity/liquidity_pancake.md)
       - [1inch.io LP](./threefold_token/liquidity/liquidity_1inch.md)
       - [Albedo LP](./threefold_token/liquidity/liquidity_albedo.md)
+    - [Transaction Fees](threefold_token/transaction_fees.md)
   - [Collaboration Tools](collaboration_tools/collaboration_tools.md)
     - [Circle Tool](collaboration_tools/circle_tool.md)
     - [Website Deployer](collaboration_tools/website_tool.md)
