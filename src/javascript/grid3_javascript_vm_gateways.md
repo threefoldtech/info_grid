@@ -87,7 +87,7 @@ log(d);
 
 ## Deploying a VM and exposing it over a Gateway using a Full domain
 
-After the [deployment of a VM](javascript/grid3_javascript_vm.md), now it's time to expose it to the world
+After the [deployment of a VM](./grid3_javascript_vm.md), now it's time to expose it to the world
 
 ### Example code
 

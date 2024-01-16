@@ -10,4 +10,4 @@
 For more details on all parameters needed to run a `zmachine` please refer to [`zmachine` data](https://github.com/threefoldtech/zos/blob/main/pkg/gridtypes/zos/zmachine.go)
 
 # Building your `flist`.
-Please refer to [this document](./zmachine.md) here about how to build an compatible `zmachine flist`
+Please refer to [this document](../manual.md) here about how to build an compatible `zmachine flist`

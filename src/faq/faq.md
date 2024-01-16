@@ -21,7 +21,6 @@
 - [GENERAL FAQ](#general-faq)
 - [USERS FAQ](#users-faq)
 - [DEVELOPERS FAQ](#developers-faq)
-- [VALIDATORS FAQ](#validators-faq)
 - [FARMERS FAQ](#farmers-faq)
 
 ***
@@ -77,11 +76,9 @@
     - [Where can I download the ThreeFold Planetary Network connector?](#where-can-i-download-the-threefold-planetary-network-connector)
     - [What is Proof-of-Capacity used by ThreeFold?](#what-is-proof-of-capacity-used-by-threefold)
     - [What is Proof-of-Utilization?](#what-is-proof-of-utilization)
-    - [How does Proof-of-Utilization work? How is the ThreeFold Token (TFT) distributed when there is utilization on the ThreeFold Grid?](#how-does-proof-of-utilization-work-how-is-the-threefold-token-tft-distributed-when-there-is-utilization-on-the-threefold-grid)
     - [What is the difference between a seed phrase (mnemonics) and an HEX secret?](#what-is-the-difference-between-a-seed-phrase-mnemonics-and-an-hex-secret)
   - [Buying and Transacting TFT](#buying-and-transacting-tft)
     - [How can I buy TFT?](#how-can-i-buy-tft)
-    - [What is the maximum supply of ThreeFold tokens? What is the current supply of ThreeFold tokens?](#what-is-the-maximum-supply-of-threefold-tokens-what-is-the-current-supply-of-threefold-tokens)
     - [How is the ThreeFold Token(TFT) created (minted)? ThreeFold Token is a pure utility token. What does this mean?](#how-is-the-threefold-tokentft-created-minted-threefold-token-is-a-pure-utility-token-what-does-this-mean)
     - [Where can I find TFT, concretely? On which blockchains is TFT available?](#where-can-i-find-tft-concretely-on-which-blockchains-is-tft-available)
     - [What are the uses for each different blockchains offering TFT?](#what-are-the-uses-for-each-different-blockchains-offering-tft)
@@ -142,7 +139,6 @@
     - [What is the monthly cost for an IPv4 or an IPv6 public address on the ThreeFold Grid?](#what-is-the-monthly-cost-for-an-ipv4-or-an-ipv6-public-address-on-the-threefold-grid)
     - [What are the differences between a container, a micro virtual machine and a full virtual machine (VM)?](#what-are-the-differences-between-a-container-a-micro-virtual-machine-and-a-full-virtual-machine-vm)
     - [What is a 3Node gateway? How can I configure a 3Node as a gateway node?](#what-is-a-3node-gateway-how-can-i-configure-a-3node-as-a-gateway-node)
-    - [The gateways are advertised as many-to-many. How can I have more than one gateway assigned to a deployment? Can more gateways be added after deployment?](#the-gateways-are-advertised-as-many-to-many-how-can-i-have-more-than-one-gateway-assigned-to-a-deployment-can-more-gateways-be-added-after-deployment)
     - [When connecting remotely with SSH, I get the following error: "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!...". What can I do to fix this?](#when-connecting-remotely-with-ssh-i-get-the-following-error-warning-remote-host-identification-has-changed-what-can-i-do-to-fix-this)
     - [How can I remove one host from known\_hosts?](#how-can-i-remove-one-host-from-known_hosts)
     - [How can I add ThreeFold peers in the Yggdrasil configuration file?](#how-can-i-add-threefold-peers-in-the-yggdrasil-configuration-file)
@@ -153,8 +149,8 @@
     - [How can I copy the clipboard content of a terminal output using the command cat? How can I copy the public key directly with the terminal?](#how-can-i-copy-the-clipboard-content-of-a-terminal-output-using-the-command-cat-how-can-i-copy-the-public-key-directly-with-the-terminal)
     - [What is ThreeFold's stance on sharded workload? Will ThreeFold embrace and move towards distributed data chunks or stay with the one deployment, one node model?](#what-is-threefolds-stance-on-sharded-workload-will-threefold-embrace-and-move-towards-distributed-data-chunks-or-stay-with-the-one-deployment-one-node-model)
   - [Tutorials and Guides](#tutorials-and-guides)
-    - [What are the prerequisites before using the ThreeFold Play Grid (play.grid.tf)?](#what-are-the-prerequisites-before-using-the-threefold-play-grid-playgridtf)
-    - [How can I create a profile manager on the ThreeFold Playground?](#how-can-i-create-a-profile-manager-on-the-threefold-playground)
+    - [What are the prerequisites before using the ThreeFold Play Grid (playground.grid.tf)?](#what-are-the-prerequisites-before-using-the-threefold-play-grid-playgroundgridtf)
+    - [How can I connect my wallet to the ThreeFold Playground Wallet Connector?](#how-can-i-connect-my-wallet-to-the-threefold-playground-wallet-connector)
     - [I want to deploy a virtual machine (VM) on ThreeFold. How can I do this?](#i-want-to-deploy-a-virtual-machine-vm-on-threefold-how-can-i-do-this)
     - [How can I use Caprover on ThreeFold Grid?](#how-can-i-use-caprover-on-threefold-grid)
     - [Is there a picture guide on how to deploy Wordpress on the ThreeFold Grid using Caprover?](#is-there-a-picture-guide-on-how-to-deploy-wordpress-on-the-threefold-grid-using-caprover)
@@ -164,7 +160,6 @@
     - [How can I deploy Kubernetes on the ThreeFold Grid?](#how-can-i-deploy-kubernetes-on-the-threefold-grid)
     - [How can I deploy Peertube on the ThreeFold Grid?](#how-can-i-deploy-peertube-on-the-threefold-grid)
     - [How can I deploy ownCloud on the ThreeFold Grid?](#how-can-i-deploy-owncloud-on-the-threefold-grid)
-    - [How can I use and install Yggdrasil?](#how-can-i-use-and-install-yggdrasil)
     - [How can I rent or reserve a 3Node dedicated node server on the ThreeFold Grid? What are the main steps when deploying workloads on a dedicated node?](#how-can-i-rent-or-reserve-a-3node-dedicated-node-server-on-the-threefold-grid-what-are-the-main-steps-when-deploying-workloads-on-a-dedicated-node)
     - [How can I import my Polkadot account on the mainnet and the testnet?](#how-can-i-import-my-polkadot-account-on-the-mainnet-and-the-testnet)
     - [Can I use the same seed phrase for my mainnet and testnest accounts? How can I transfer my TFT from mainnet to testnet or vice versa?](#can-i-use-the-same-seed-phrase-for-my-mainnet-and-testnest-accounts-how-can-i-transfer-my-tft-from-mainnet-to-testnet-or-vice-versa)
@@ -219,32 +214,6 @@
   - [Dev Net \& Test Net](#dev-net--test-net)
     - [Is there a way to test the Grid with free TFT?](#is-there-a-way-to-test-the-grid-with-free-tft)
     - [Can I get some free TFT to test on Test Net](#can-i-get-some-free-tft-to-test-on-test-net)
-  - [Solution Providers and Sales Channels](#solution-providers-and-sales-channels)
-    - [What does it mean to be a solution provider on the ThreeFold Grid?](#what-does-it-mean-to-be-a-solution-provider-on-the-threefold-grid)
-    - [How can I become a solution provider on top of the ThreeFold Grid?](#how-can-i-become-a-solution-provider-on-top-of-the-threefold-grid)
-    - [What is the relation between a solution provider and a sales channel?](#what-is-the-relation-between-a-solution-provider-and-a-sales-channel)
-    - [How can I receive a solution provider ID?](#how-can-i-receive-a-solution-provider-id)
-- [VALIDATORS FAQ](#validators-faq)
-  - [General Information of Validator](#general-information-of-validator)
-    - [What are Validators?](#what-are-validators)
-    - [Why are Validators important for ThreeFold?](#why-are-validators-important-for-threefold)
-    - [Can anyone run a validator node?](#can-anyone-run-a-validator-node)
-    - [What are the rewards?](#what-are-the-rewards)
-    - [How many validator nodes will there be?](#how-many-validator-nodes-will-there-be)
-    - [What’s the difference between L2 and L0?](#whats-the-difference-between-l2-and-l0)
-    - [What are the rewards for L0 and L2 validators?](#what-are-the-rewards-for-l0-and-l2-validators)
-    - [What is the current status on the validator and staking solution? Is there anything coming soon?](#what-is-the-current-status-on-the-validator-and-staking-solution-is-there-anything-coming-soon)
-  - [Validator Requirements](#validator-requirements)
-    - [What are the general requirements?](#what-are-the-general-requirements)
-    - [What are the hardware requirements to run a validator node?](#what-are-the-hardware-requirements-to-run-a-validator-node)
-    - [Can I run more than one validator node?](#can-i-run-more-than-one-validator-node)
-    - [Does this mean you only really need 50 000 TFT to run a validator node?](#does-this-mean-you-only-really-need-50-000-tft-to-run-a-validator-node)
-    - [If validator is running on Grid and the host shutdowns the machine, could stakers lose staking tokens?](#if-validator-is-running-on-grid-and-the-host-shutdowns-the-machine-could-stakers-lose-staking-tokens)
-    - [What happens if my validator is down for a while?](#what-happens-if-my-validator-is-down-for-a-while)
-    - [Could we run validator on our farming machine?](#could-we-run-validator-on-our-farming-machine)
-  - [Application to run a Validator Node](#application-to-run-a-validator-node)
-    - [When will verification of the validators' applications start?](#when-will-verification-of-the-validators-applications-start)
-    - [What are the next steps after the validator sign-up?](#what-are-the-next-steps-after-the-validator-sign-up)
 - [FARMERS FAQ](#farmers-faq)
   - [TFT Farming Basics](#tft-farming-basics)
     - [How can I create a ThreeFold farm?](#how-can-i-create-a-threefold-farm)
@@ -613,11 +582,11 @@ Apply [here](https://marketplace.3node.global/index.php?dispatch=companies.apply
 
 ThreeFold has different registrations and each serves a different purpose.
 
-There is ThreeFold VZW, in Belgium. Note that *VZW* is Belgium's denotation for non-profit association. Read more [here](https://library.threefold.me/info/legal/#/orgstructure/threefold__threefold_vzw).
+There is ThreeFold VZW, in Belgium. Note that *VZW* is Belgium's denotation for non-profit association. Read more [here](../wiki/threefold_vzw.md).
 
-There is also ThreeFold DMCC, in Dubai. Read more [here](https://library.threefold.me/info/legal/#/threefold__threefold_dubai).
+There is also ThreeFold DMCC, in Dubai. Read more [here](../wiki/threefold_dubai.md).
 
-There is also ThreeFold Tech NV, a software company which owns the IP of the code delivered. Read more [here](https://threefold.tech/).
+There is also ThreeFold Tech NV, a software company which owns the IP of the code delivered. Read more [here](../wiki/threefold_tech.md).
 
 
 ***
@@ -842,39 +811,15 @@ You can download pre-release versions [here](https://github.com/threefoldtech/pl
 
 ### What is Proof-of-Capacity used by ThreeFold?
 
-Proof-of-Capacity is an algorithm that verifies the Internet capacity provided by the 3nodes. More information can be found [here](https://library.threefold.me/info/threefold#/tfgrid/farming/threefold__proof_of_capacity).
+Proof-of-Capacity is an algorithm that verifies the Internet capacity provided by the 3nodes. More information can be found [here](../wiki/tfgrid/farming/proof_of_capacity.md).
 
 ***
 
 ### What is Proof-of-Utilization?
 
-[Proof-of-Utilization](https://library.threefold.me/info/manual/#/tfgrid/farming/threefold__proof_of_utilization) is the underlying mechanisms that verifies the utilization of Internet capacity on the ThreeFold Grid.
+[Proof-of-Utilization](../wiki/tfgrid/farming/proof_of_utilization.md) is the underlying mechanisms that verifies the utilization of Internet capacity on the ThreeFold Grid.
 
-Every hour, the utilization is recorded in [TFChain](https://library.threefold.me/info/manual/#/tfgrid/farming/threefold__tfchain) and the user is charged for the Internet capacity used on the ThreeFold Grid. Discount calculated in line with the amount of [TFT](https://library.threefold.me/info/manual/#/tfgrid/farming/threefold__threefold_token) users have in their accounts on TFChain. Learn more about the discount [here](https://library.threefold.me/info/manual/#/tfgrid/farming/threefold__staking_discount_levels).
-
-***
-
-### How does Proof-of-Utilization work? How is the ThreeFold Token (TFT) distributed when there is utilization on the ThreeFold Grid?
-
-Here are the general steps of the Proof-of-Utilization process:
-
-1. A user reserves Internet capacity on a given set of [3Nodes](https://library.threefold.me/info/manual/#/tfgrid/farming/threefold__3node). 
-2. [Zero-OS](https://library.threefold.me/info/manual/#/tfgrid/farming/threefold__zos) records the reserved and used CU, SU, NU and IPAddresses in correlation with [TFChain](https://library.threefold.me/info/manual/#/tfgrid/farming/threefold__tfchain) records. 
-3. The TFChain [DAO](https://library.threefold.me/info/manual/#/tfgrid/farming/threefold__dao) will charge the costs to the user in line with [discount mechanism](https://library.threefold.me/info/manual/#/tfgrid/farming/threefold__staking_discount_levels). 
-4. [TFT](https://library.threefold.me/info/manual/#/tfgrid/farming/threefold__threefold_token) from the user account are burned/distributed in line to table below.
-
-When people spend ThreeFold Tokens on the ThreeFold Grid for any kind of deployment, the TFT is distributed as per the Proof-of-Utilization distribution flow. 
-
-The Proof-of-Utilization distribution flow is the following:
-
-* 50% goes to solution providers and sales channels*
-* 35% goes to TFT burning
-* 10% goes to the ThreeFold Foundation
-* 5% goes to the Validator Staking Pool
-
-To see the Proof-of-Utilization distribution flow chart, check this [link](https://library.threefold.me/info/threefold#/tokens/threefold__token_overview).
-
-*Note: For billing purposes, ThreeFold DAO will check if the workload comes from a known sales channel and/or solution provider. If yes, then the billing smart contract code will know how to distribute the TFTs. If the sales channel and/or solution provider is not known, then the 50% will go to a DAO owned Community Grant Wallet. If less than 50% is allocated to the solution provider/sales channel, the remaining of the 50% will go to the DAO owned Community Grant Wallet.
+Every hour, the utilization is recorded in [TFChain](../wiki/tfchain.md) and the user is charged for the Internet capacity used on the ThreeFold Grid. Discount calculated in line with the amount of [TFT](../threefold_token/threefold_token.md) users have in their accounts on TFChain. Learn more about the discount [here](../wiki/cloudunits/pricing/staking_discount_levels.md).
 
 ***
 
@@ -891,14 +836,6 @@ In typical usage, multiple secrets can be derived from a seed phrase via a one-w
 ### How can I buy TFT?
 
 There are many ways to do this. You can buy on [PancakeSwap](https://pancakeswap.finance/), on [BTC-Alpha](https://btc-alpha.com/en/trade/TFT_BTC?layout=standard&type=spot) or on the [GetTFT website](https://gettft.com/gettft/). For more information, check [this link](https://library.threefold.me/info/threefold#/tokens/threefold__how_to_buy). 
-
-***
-
-### What is the maximum supply of ThreeFold tokens? What is the current supply of ThreeFold tokens? 
-
-The maximum token supply of the ThreeFold Token (TFT) is 4 billion. You can read more about this [here](https://library.threefold.me/info/threefold#/tokens/threefold__stats_token_overview_farmed).
-
-As of now, more than 880 000 000 ThreeFold tokens (TFT) have been farmed. 
 
 ***
 
@@ -962,7 +899,7 @@ The TFChain-Stellar Bridge is used to go between Stellar Chain and TF Chain.
 
 To go from BSC to TF Chain, or from TF Chain to BSC, you need to use the two bridges.
 
-BSC can be used to sell/buy TFT while TF Chain can be used to deploy Dapps on https://play.grid.tf
+BSC can be used to sell/buy TFT while TF Chain can be used to deploy Dapps on https://playground.grid.tf
 
 ***
 
@@ -1101,7 +1038,7 @@ Here it is:
 
 BSC TFT Token Address: 0x8f0FB159380176D324542b3a7933F0C2Fd0c2bbf
 
-For more information, read [this](https://library.threefold.me/info/threefold#/tokens/threefold__tft_bsc_metamask).
+For more information, read [this](../threefold_token/buy_sell_tft/pancakeswap.md).
 
 ***
 
@@ -1414,24 +1351,24 @@ There are also wonderful tools built by people from the ThreeFold community.
 
 ### Can I have the link to deploy a VM and other apps on the Grid?
 
-Yes. It’s https://play.grid.tf.
+Yes. It’s https://playground.grid.tf.
 ***
 
 ### What can I do on ThreeFold Grid?
 
 Since ThreeFold 3Nodes have their OS based on the Linux kernel, you can run just about anything that runs on Linux. The possibilities are almost endless. Here's a quick list of what you can do within a few clicks:
 
-- [Virtual Machine](https://play.grid.tf/#/vm)
-- [Kubernetes](https://play.grid.tf/#/kubernetes)
-- [CapRover](https://play.grid.tf/#/caprover)
-- [Peertube](https://play.grid.tf/#/peertube)
-- [Funkwhale](https://play.grid.tf/#/funkwhale)
-- [Mattermost](https://play.grid.tf/#/mattermost)
-- [Discourse](https://play.grid.tf/#/discourse)
-- [Taiga](https://play.grid.tf/#/taiga)
-- [Owncloud](https://play.grid.tf/#/owncloud)
-- [Presearch](https://play.grid.tf/#/presearch)
-- [Casperlabs](https://play.grid.tf/#/casperlabs)
+- [Virtual Machine](https://playground.grid.tf/#/vm)
+- [Kubernetes](https://playground.grid.tf/#/kubernetes)
+- [CapRover](https://playground.grid.tf/#/caprover)
+- [Peertube](https://playground.grid.tf/#/peertube)
+- [Funkwhale](https://playground.grid.tf/#/funkwhale)
+- [Mattermost](https://playground.grid.tf/#/mattermost)
+- [Discourse](https://playground.grid.tf/#/discourse)
+- [Taiga](https://playground.grid.tf/#/taiga)
+- [Owncloud](https://playground.grid.tf/#/owncloud)
+- [Presearch](https://playground.grid.tf/#/presearch)
+- [Casperlabs](https://playground.grid.tf/#/casperlabs)
 
 When you take into consideration that with CapRover only, you get dozens and dozens of free and open source one-click applications, from Wordpress to Ruby, you realize the fun ahead.
 
@@ -1468,7 +1405,7 @@ There’s two type of storage that van de used on the TF Grid.
 
 ### What is ThreeFold's cloud pricing? Are there any discounts available for ThreeFold's cloud pricing?
 
-You can read more about ThreeFold cloud pricing and discounts [here](https://library.threefold.me/info/threefold#/tfgrid/pricing/threefold__pricing). 
+You can read more about ThreeFold cloud pricing and discounts [here](../wiki/cloudunits/cloudunits.md). 
 
 By simply hodling TFT in your TF Chain wallet, you can benefit from TFT discounts up to 60%. This is an automatic form of staking, the user does not have to do anything to have this benefit.
 
@@ -1546,13 +1483,13 @@ The following is a list of certain features related to containers as well as ful
   * doesn't need to include a full operating system
   * relies on the kernel of the host system, no hypervisor needed
   * isolated from the rest of the host system for security and can be limited in resources used
-  * examples: on the [Playground](https://play.grid.tf/), we have [Kubernetes](https://library.threefold.me/info/manual/#/manual__weblets_k8s?id=kubernetes) and [Caprover](https://library.threefold.me/info/manual/#/manual__weblets_caprover?id=caprover), which are both environments that host containers
+  * examples: on the [Playground](https://playground.grid.tf/), we have [Kubernetes](https://library.threefold.me/info/manual/#/manual__weblets_k8s?id=kubernetes) and [Caprover](https://library.threefold.me/info/manual/#/manual__weblets_caprover?id=caprover), which are both environments that host containers
 * Micro VM
   * a container image promoted to run as a VM by pairing with a generic kernel
   * more isolated than a container, thus more secure
   * generally lighter than a full VM
-  * can be created from any Docker container image by uploading it to the [TF Hub]([hub.grid.tf](https://hub.grid.tf/))
-  * examples: on the [Playground](https://play.grid.tf/), we have Ubuntu 20.04, Alpine-3, CentOS-8 and more.
+  * can be created from any Docker container image by uploading it to the [TF Hub](https://hub.grid.tf/)
+  * examples: on the [Playground](https://playground.grid.tf/), we have Ubuntu 20.04, Alpine-3, CentOS-8 and more.
 * Full VM
   * contains a complete operating system including kernel
   * capable of anything that can be done with a Linux server
@@ -1560,7 +1497,7 @@ The following is a list of certain features related to containers as well as ful
   * normally contains systemd, unlike containers which normally do not
   * can load kernel modules or replace the kernel entirely, so has best compatibility
   * generally heavier than micro VM
-  * examples: on the [Playground](https://play.grid.tf/), we have Ubuntu 18.04, 20.04, 22.04 and more
+  * examples: on the [Playground](https://playground.grid.tf/), we have Ubuntu 18.04, 20.04, 22.04 and more
  
 Note that you can run Kubernetes on a micro VM and you can run a very minimal operating system in a full VM. There are many possibilities when using those technologies.
 
@@ -1606,18 +1543,6 @@ To configure a 3Node as a gateway node, follow these steps:
 Once this is done, you should see the IPv4 and IPv6 addresses in the section **PUB** of your 3Node screen.
 
 To learn more about this process, [watch this great video](https://youtu.be/axvKipK7MQM).
-
-***
-
-### The gateways are advertised as many-to-many. How can I have more than one gateway assigned to a deployment? Can more gateways be added after deployment?
-
-As of now, gateways are a simple one-to-one HTTPS proxy, one subdomain that comes from a gateway node. A domain points to one IP address.
-
-It is currently in development, but gateways will be a simple reservation (name + hashed secret).
-
-Connecting to gateways is done with a client tool (user needs to run this). More gateways can be added later (and client then connects to them). Webgw will be a layer 4 (TCP) proxy, so user process needs to do TLS termination. User will also need a domain name. Domain can be configured with multiple IP’s to support multiple gateways.
-Implementation itself will be functionally different from V2 gateways, but high lvl idea applies.
-This means name / domain reservation as they are now will become deprecated as we no longer support TLS termination on the gateway.
 
 ***
 
@@ -1806,7 +1731,7 @@ Self driving and self healing IT is one of the core concepts of ThreeFold. What 
 ## Tutorials and Guides
 
 
-### What are the prerequisites before using the ThreeFold Play Grid (play.grid.tf)?
+### What are the prerequisites before using the ThreeFold Play Grid (playground.grid.tf)?
 
 The prerequisites are simple:
 
@@ -1815,26 +1740,26 @@ The prerequisites are simple:
 3. Create an account (write down the mnemonics somewhere safe and offline).
 4. Buy TFT online. Go to [GetTFT.com](https://gettft.com/gettft/), where you can directly download the [ThreeFold Connect App](https://library.threefold.me/info/threefold#/tokens/threefold__threefold_connect), and then fund your TF wallet with USD, EUR or BTC. 
 5. Swap your TFT from Stellar Chain to TF Chain by using the swap function in the Portal menu of the Dashboard. (GetTFT sends TFT on Stellar Chain, while the Playground is on TF Chain.)
-6. Go to the [ThreeFold Play Grid](http://play.grid.tf) and start your deployment. (See next question to set a profile manager.)
+6. Go to the [ThreeFold Play Grid](http://playground.grid.tf) and start your deployment. (See next question to set a profile manager.)
 
 ***
 
-### How can I create a profile manager on the ThreeFold Playground?
+### How can I connect my wallet to the ThreeFold Playground Wallet Connector?
 
-You can create a profile manager on Testnet, Devnet and Mainnet. On the [ThreeFold Play Grid](https://play.grid.tf/#/), select the Profile Manager button on the top right of the screen and then select *Create Profile Manager*. For the detailed steps, read [this documentation](https://library.threefold.me/info/manual/#/manual__weblets_profile_manager). To generate SSH keys, read the next question.
+You can connect your wallet on Testnet, Devnet and Mainnet. On the [ThreeFold Play Grid](https://playground.grid.tf/#/). For the detailed steps, read [this documentation](../playground/wallet_connector.md). To generate SSH keys, read the next question.
 
 ***
 
 ### I want to deploy a virtual machine (VM) on ThreeFold. How can I do this?
 
-Read this [short documentation](https://library.threefold.me/info/manual/#/manual__weblets_vm) and you'll soon be exploring the virtual machine world!
+Read this [documentation](../playground/vm_intro.md) and you'll soon be exploring the virtual machine world!
 
 
 ***
 
 ### How can I use Caprover on ThreeFold Grid?
 
-Check [this video](https://forum.threefold.io/t/from-zero-to-hero-deploy-discourse-and-wordpress-in-under-10-5-minutes/2206) and find out for yourself! If you want to, read the documentation with step-by-step guide for [Caprover](https://library.threefold.me/info/manual/#/manual__weblets_caprover_admin).
+Check [this video](../playground/caprover.md).
 
 ***
 
@@ -1853,7 +1778,7 @@ Oh yes it is. Legend has it, it can even be done under 10 minutes. Would you giv
 
 ### Can I deploy a Presearch Node?
 
-It is possible to deploy a Presearch node on the ThreeFold Grid. You can easily deploy a Presearch node on the ThreeFold Playground. Follow [this link](https://play.grid.tf/#/presearch). 
+It is possible to deploy a Presearch node on the ThreeFold Grid. You can easily deploy a Presearch node on the ThreeFold Playground. Follow [this link](https://playground.grid.tf/#/presearch). 
 
 Note that each 3Node can deploy one Presearch node without the need of having a public IP. To deploy more than one Presearch node on a 3Node, you will need to select on the TF Grid a 3Node with a Public IP.
 
@@ -1874,49 +1799,26 @@ Note that a Presearch node requires about 3 days to stabilize.
 
 ### How can I deploy Kubernetes on the ThreeFold Grid?
 
-Read [this documentation](https://library.threefold.me/info/manual/#/manual__weblets_k8s) to find out.
+Read [this documentation](../playground/k8s.md) to find out.
 
 ***
 
 
 ### How can I deploy Peertube on the ThreeFold Grid?
 
-You can learn more about this [here](https://library.threefold.me/info/manual/#/manual__weblets_peertube).
+You can learn more about this [here](../playground/peertube.md).
 
 ***
 
 ### How can I deploy ownCloud on the ThreeFold Grid?
 
-Read the [documentation here](https://library.threefold.me/info/manual/#/manual__weblets_owncloud) to learn more.
-
-***
-
-### How can I use and install Yggdrasil?
-
-Learn all about this [here](https://library.threefold.me/info/manual/#/manual__yggdrasil_client).
-
-You can also follow [this link](https://github.com/yggdrasil-network/yggdrasil-go/releases/tag/v0.4.0) to download Yggdrasil for your specific operating systesm (`.msi` for Windows, `.deb` for Linux and `.pkg` for MAC).
+Read the [documentation here](../playground/owncloud.md) to learn more.
 
 ***
 
 ### How can I rent or reserve a 3Node dedicated node server on the ThreeFold Grid? What are the main steps when deploying workloads on a dedicated node?
 
-In short, you first need to rent the dedicated node, then deploy on the TF Grid by selecting your dedicated node. It won’t cost anything more when you select your dedicated node.
-
-* Rent a dedicated node
-  * go to the [ThreeFold Dashboard](https://dashboard.grid.tf/) 
-    * on the left menu: choose portal, then choose Dedicated Nodes
-      * choose a node
-        * rent it
-          * take note of the node ID in the section "MINE"
-* Deploy workload(s) with a dedicated node
-  * go to the [ThreeFold Playground](https://play.grid.tf/)
-    * choose a deployment
-      * select your dedicated node ID in the filter (manual mode)
-        * no additional TFT will be billed for the deployment
-    * you can deploy other workloads, as long as you have enough resources on the dedicated node
-
-For more information, read this [TF Forum post](https://forum.threefold.io/t/tf-product-focus-tfdashboards-dedicated-nodes-tfgrid-v3-8-0/3723).
+Read [this documentation](../dashboard/portal/dashboard_portal_dedicated_nodes.md) to learn how to reserve a dedicated node server.
 
 ***
 
@@ -1925,12 +1827,12 @@ For more information, read this [TF Forum post](https://forum.threefold.io/t/tf-
 To import your Polkadot account on mainnet, use those links:
 
 * https://dashboard.grid.tf/
-* https://play.grid.tf/
+* https://playground.grid.tf/
 
 To import your Polkadot account on testnet, use those links:
 
 * https://dashboard.test.grid.tf/
-* https://play.test.grid.tf/
+* https://playground.test.grid.tf/
 
 Exporting and importing your account through the Polkadot extension will allow you to transfer any TFT associated with the account, whether it is on testnet or mainnet. 
 
@@ -2399,204 +2301,6 @@ Of course! And they'll be happy to help you. [Reach the TF community on Telegram
 
 ***
 
-## Solution Providers and Sales Channels
-
-### What does it mean to be a solution provider on the ThreeFold Grid?
-
-A solution provider offers a solution on the ThreeFold Grid and receives up to 50% of the TFT utilization revenues from the workload related to the solution.
-
-A "solution" is something running on the grid, created by a community member. This can be brought forward to the council, who can vote on it to recognize it as a solution. On contract creation, a recognized solution can be referenced, in which case part of the payment goes toward the address coupled to the solution.
-
-To become a solution provider, read the next question.
-
-***
-
-### How can I become a solution provider on top of the ThreeFold Grid?
-
-ThreeFold uses the Proof-of-Utilization distribution where up to 50% of the TFT utilization revenues goes to the solution provider offering a solution. If there is no solution provider associated with the deployment, the 50% revenues goes to a DAO owned Community Grant Wallet.
-
-There are a few steps to follow to become a solution provider:
-
-1. Follow the steps detailed in this [documentation](https://github.com/threefoldtech/tfchain/blob/development/substrate-node/pallets/pallet-smart-contract/solution_provider.md)
-
-2. Then write a [ThreeFold Forum post](https://forum.threefold.io/c/threefold-grid-utilization/solutions-being-created/76) explaining what the solution provider does
-
-3. Once the two first steps are done, a DAO proposal will be launched to decide if the solution is approved
-
-***
-
-### What is the relation between a solution provider and a sales channel?
-
-Those two concepts are closely linked.
-
-On a technical level, the solution provider and the sales channel constitute a simple mechanism whereby up to 50% of the TFT spent on a deployment can be redirected to another wallet. The object in TF Chain that makes this possible, by linking the deployment contract and the wallet to be paid, is called a “solution provider”. This on-chain concept is thus called a solution provider, but it enables both solution providers and sales channels.
-
-***
-
-### How can I receive a solution provider ID?
-
-To receive a solution provider ID, you need to get approved as a solution provider.
-
-***
-
-# VALIDATORS FAQ
-![wethreepedia_validator](img/wethreepedia_validator.jpg)
-
-## General Information of Validator
-
-### What are Validators?
-
-A blockchain validator participates in consensus and maintains the record of transactions. Once transactions are verified. Validators are computers that maintain the blockchain's integrity by keeping a record of the whole transaction history, from the first block to the last. 
-
-In Proof-of-Stake (PoS) systems like ThreeFold L0 and L2 validators are given rewards as long as they stake [ThreeFold Tokens](https://threefold.io/tft) (TFT) and correctly participate in the network. This mechanism helps secure the network by imposing the need to lock up TFT in order to participate in the consensus decisions.
-
-***
-
-### Why are Validators important for ThreeFold?
-
-Validators are an essential part of the Proof-of-Stake consensus mechanism. They are essentially the moderators of the staking system and have the extremely important responsibility of authoring new blocks on the chain. To have the most decentralized system possible, ThreeFold needs a good number of validator nodes that can be elected. That’s the primary reason why we limited the amount of validators one person or entity can hold to 1.
-
-This creates the greatest variety of staking options for the community and also protects the system by preventing the chain from being controlled by one very wealthy individual. When there are more people validating the blockchain, it significantly increases the barrier to being elected and allows for a fairer ecosystem to emerge.
-
-***
-
-### Can anyone run a validator node?
-
-Validator nodes can be run by anyone with hardware that meets the minimum requirements (4TB of  storage, 32GB of RAM and 4 logical cores). Once the blockchain is set up on the hardware, all the verifications and voting is done on a web portal, a seamless process accessible to anyone. However, it is important to remember that if a validator fails to uphold their responsibilities, a portion of their stake will be slashed (fined), as such an event would impact the resilience and security of the network. 
-
-The responsibility of a validator (owner) can be summarized to:
-
-* Actively participating in the governance of the network the validator protects
-* Producing blocks (requires the node to be online 24/7 to sync with the latest blocks)
-* Validator owners are expected to be active members of the community and must always be up-to-date with the current state of the ecosystem, so that they can easily adapt to any changes.
-
-***
-
-### What are the rewards?
-
-To justify the running costs of the node as well as to gather a suitable income from supporting the blockchain, validator nodes earn rewards, see [here](https://library.threefold.me/info/threefold#/decentralization/validators/threefold__validator_l2_details) for L2 validators, and [here](https://library.threefold.me/info/threefold#/decentralization/validators/threefold__validator_l0_details) for L0 validators.
-
-***
-
-### How many validator nodes will there be?
-
-The amount of validators depends on type of validator.
-While there is a maximum of 100 validators for L2 (ThreeFold Hub), there will be max 100 L0 validators per sidechain of TFGrid. There will be many sidechains on the TF Grid.
-
-***
-
-### What’s the difference between L2 and L0?
-
-Our three layer blockchain approach provides for unlimited scale and security.
-
-Layer 2 is the top layer of our ThreeFold ecosystem, also called ThreeFold HUB. It’s a Cosmos-based blockchain that is secured by L2 validators.
-
-Layer 0 is the foundational layer of our ThreeFold ecosystem, also called ThreeFold Operators. It’s a network of validator node operators that secure the operating system layer of the ThreeFold Grid.
-
-***
-
-### What are the rewards for L0 and L2 validators?
-
-During the 2 first years, 5% yield will be rewarded to any staker. 10% of revenue of executors on the sidechain go to people staking L0. 5% of revenue of executors on the sidechain go to people staking L2. 
-
-10% will be deducted if you did delegated staking. In other words, if you do not own the validator node. This 10% is commission for the owner of the validator node.
-
-For more information, read [this](https://library.threefold.me/info/threefold#/decentralization/validators/threefold__validators).
-
-***
-
-### What is the current status on the validator and staking solution? Is there anything coming soon?
-
-We expect validators to arrive in the first half of the year 2023 (H1 of 2023).
-
-***
-
-## Validator Requirements
-
-### What are the general requirements?
-
-* Reliable electricity. Either the electricity is always on or the validator owner takes precautions to put his/her node in a data center or invests in a UPS.
-* Bandwidth > 50Mbit/s continuous connection. The higher the bandwidth, the better the validator can participate in the network.
-* A 24/7 connection.
-
-***
-
-### What are the hardware requirements to run a validator node?
-
-The hardware requirements to run a validator node are the following:
-
-* 4TB of SSD Storage (good quality SSD)
-* 32 GB of RAM
-* 4 physical cores
-
-Note that you can deploy a validator node on any 3Node on the ThreeFold Grid that satisfies those requirements.
-This means that you can also run a validator node on your own 3Node if the requirements are satisfied.
-
-***
-
-### Can I run more than one validator node?
-
-You can only have one validator node in each validator category. 
-
-***
-
-### Does this mean you only really need 50 000 TFT to run a validator node?
-
-Yes, for 50k TFT you can reserve a validator node for L0 Chain securing the TF Executors.
-An additional 50k, which can come from anyone, will be enough to get rewards and voting power.
-
-Thus, you need 50k TFT to reserver a validator, and 50k TFT to activate rewards and voting power.
-
-***
-
-### If validator is running on Grid and the host shutdowns the machine, could stakers lose staking tokens?
-
-No, you would not lose staked tokens, but there could be an impact on reward for the time you were off.
-
-***
-
-### What happens if my validator is down for a while?
-
-The technical implementation is not finished yet, we use Cosmos blockchain for this, we will check the more technical details, normally a node can be offline for quite a while before there are issues.
-
-***
-
-### Could we run validator on our farming machine?
-
-Yes you can, you can run validators wherever you want. You can deploy manually (using code) or through a weblet on a location of your choice.
-
-***
-
-## Application to run a Validator Node
-
-### When will verification of the validators' applications start?
-
-Starting February 21, 2022
-
-The Foundation will begin with verifying the applications:
-
-* Submitted validator requests will be vetted and checked on an individual basis
-* Submitted wallets will be checked on for the respective minimum TFT balance (for amount of TFT required see: [L2](https://library.threefold.me/info/threefold#/decentralization/validators/threefold__validator_l2_details), [L0](https://library.threefold.me/info/threefold#/decentralization/validators/threefold__validator_l0_details).
-* Submitted individuals / companies will be asked if they have more than one validator request. This request will be recorded.
-
-***
-
-### What are the next steps after the validator sign-up?
-
-After successfully completing the validation process, validator owners will be asked for their preferred way to deploy the validator. There are two options:
-  * On the ThreeFold Grid with a simple weblet.
-  * On bare metal that is owned and managed by the validator owner.
-
-*If you haven’t topped up your account, please do so now to meet the minimum amount of TFT required.*
-
-Once verified, the new validated sign-ups will receive an instructional link to their verified emails to activate their validator.
-
-If you have further questions, please let us know in the comments and we'll get back to you as soon as possible.
-
-We're looking forward to driving the expansion and decentralization of the ThreeFold Grid with all of you!
-
-***
-
 # FARMERS FAQ
 ![wethreepedia_grid](img/3nodes.png)
 ## TFT Farming Basics
@@ -2813,8 +2517,7 @@ No, this is not possible. In the future, we will implement some features in orde
 
 ### On the ThreeFold Connect App, it says I need to migrate my Titan farm from V2 to V3. What do I have to do? How long does this take?
 
-You simply need to press on the button *Migrate to V3* on the ThreeFold Connect App to migrate your Titan to V3.
-This process usually takes a couple of minutes but it can take a little bit longer. 
+To migrate, read [this documentation](https://forum.threefold.io/t/what-to-do-if-your-farm-is-still-on-grid-v2-closed/3761).
 
 ***
 
@@ -2916,7 +2619,7 @@ The general calculation is the following:
     + IPAddr used * IPAddr farming rewards
 
 
-Lear more about this [here](https://library.threefold.me/info/threefold/#/tfgrid/farming/threefold__proof_of_capacity).
+Lear more about this [here](../wiki/tfgrid/farming/proof_of_capacity.md).
 
 > Note: The farming rewards take into account the quantity of storage and compute units (e.g. TB of SSD/HDD, GB of RAM, # of virtual cores). The farming rewards do not take into account the specific type of RAM, SSD, HDD and CPU.
 
@@ -3000,7 +2703,7 @@ This is normal. Currently, not all 3Nodes are being utilized by users on the Thr
 
 ### What are the general requirements for a DIY 3Node server?
 
-Any 64-bit hardware with an Intel or AMD processor chip can run Zero-OS and become a 3Node. For a complete guide on building a 3Node, read the [Farming Guide](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md). The following configurations provide guidelines on compatible and recommended setups:
+Any 64-bit hardware with an Intel or AMD processor chip can run Zero-OS and become a 3Node. For a complete guide on building a 3Node, read the [Farming Guide](../farmers/3node_building/3node_building.md). The following configurations provide guidelines on compatible and recommended setups:
 
 - Servers, desktops and mini computers type hardware are compatible.
 - A minimum of 500 GB of SSD and a bare minimum of 2 GB of RAM is required.
@@ -3051,7 +2754,7 @@ No, as long as the 3Node is connected to the Internet via an ethernet cable (wif
 
 A small DIY 3Node based on a compact office computer will draw under 20W. A full size server will draw around 100W idling. Note that a 3Node actively used on the Grid (proof-of-utilization) will draw more power, but also generate passive income on top of farming if you have a public IP address. 
 
-For more information, read thes section [Calculate the Total Electricity Cost of Your Farm](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#calculate-the-total-electricity-cost-of-your-farm) of the Farming Guide.
+For more information, read thes section [Calculate the Total Electricity Cost of Your Farm](../farmers/farming_optimization/farming_costs.md#calculate-the-total-electricity-cost-of-your-farm) of the Farming Guide.
 
 ***
 
@@ -3067,7 +2770,7 @@ For a small farm set up, you could simply keep your normal air conditioner syste
 
 > Server Power in kW * 3413 * Number of Servers = Total BTU
 
-The total BTU will indicate the minimum number to look for when buying your air conditioner. For more information, read the section [Calculate the Minimum BTU Needed](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#calculate-the-minimum-btu-needed-for-the-ac) in the Farming Guide.
+The total BTU will indicate the minimum number to look for when buying your air conditioner. For more information, read the section [Calculate the Minimum BTU Needed](../farmers/farming_optimization/farm_room_parameters.md#calculate-the-minimum-btuh-needed-for-the-ac) in the Farming Guide.
 
 ***
 
@@ -3167,13 +2870,13 @@ The main steps to build a DIY 3Node are the following:
 5. Set the BIOS/UEFI 
 6. Boot the 3Node
 
-For a complete step-by-step guide on how to build a DIY 3Node, read the [Farming documentation](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md).
+For a complete step-by-step guide on how to build a DIY 3Node, read the [Farming documentation](../farmers/3node_building/3node_building.md).
 
 ***
 
 ### I wonder what type of desktop computer or server to use for my 3Node. Are there any recommendation when it comes to DIY 3Node hardware?
 
-The Farming documentation contains a list of typical DIY 3Nodes in the section [List of Common DIY 3Nodes](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#list-of-common-diy-3nodes).
+The Farming documentation contains a list of typical DIY 3Nodes in the section [List of Common DIY 3Nodes](../farmers/3node_building/3_set_hardware.md#list-of-common-diy-3nodes).
 
 Also, a good place to start is by checking [what other farmers have built](https://forum.threefold.io/t/lets-share-our-farming-setup/286).
 
@@ -3197,7 +2900,7 @@ sudo for i in /dev/nvme*; do wipefs -a $i; done
 
 This will wipe all of the disk devices in the hardware. Make sure you have SU permissions (write "sudo" before the command line). If needed, do a backup of the disks information before.
 
-For more information, read the section [Wipe All the Disks](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#4-wipe-all-the-disks) of the Farming Guide.
+For more information, read the section [Wipe All the Disks](../farmers/3node_building/4_wipe_all_disks.md) of the Farming Guide.
 
 ***
 
@@ -3313,7 +3016,7 @@ It depends on your 3Node's system. Newer computers and servers will accept UEFI.
 
 ### How do I set the BIOS or UEFI of my 3Node?
 
-You can read this [documentation](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#5-set-the-biosuefi) to learn more about BIOS and UEFI settings for a DIY 3Node.
+You can read this [documentation](../farmers/3node_building/5_set_bios_uefi.md) to learn more about BIOS and UEFI settings for a DIY 3Node.
 
 ***
 
@@ -3482,8 +3185,6 @@ At the end of the day, servers were manufactured for durability and efficiency, 
 
 The T stands for thermal throttled. The i7-6700T is 46% more energy efficient. While the i7-6700 has a 42% faster CPU speed and has a higher passmark. Note that the TFT reward is going to be the same. The difference is with power consumption: 35 Watt for the i7-6700t and 65 Watt for the i7-6700.
 
-For a more thorough comparison, read [this](https://cpu.userbenchmark.com/Compare/Intel-Core-i7-6700T-vs-Intel-Core-i7-6700/m36439vs3515).
-
 ***
 
 
@@ -3614,7 +3315,7 @@ If the first method did not work, you can try to remove the account and add it b
 ### I set up my farm on ThreeFold Connect App. Can I use the Polkadot extension Dashboard instead?
 
 
-If you want to use the Dashboard, you can take the TFChain Secret from the app and import it into the Polkadot extension. For more information, read [this section](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#move-farm-from-the-tf-app-to-the-tf-portal-polkadotjs) of the Farming Guide. For the other way around (TF Dashboad to TF Connect App), read [this section](../TF_Farmer_Guide/TF_Complete_Farmer_Guide/farmer_guide.md#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet) of the guide.
+If you want to use the Dashboard, you can take the TFChain Secret from the app and import it into the Polkadot extension. For more information, read [this section](../threefold_token/storing_tft/tf_connect_app.md#move-farm-from-the-tf-connect-app-to-the-tf-portal-polkadotjs) of the Farming Guide. For the other way around (TF Dashboad to TF Connect App), read [this section](../threefold_token/storing_tft/tf_connect_app.md#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet) of the guide.
 
 ***
 
