@@ -27,6 +27,7 @@ If you aspire to become a farmer on the ThreeFold Grid, you've come to the right
   - [5. Set the BIOS/UEFI](./3node_building/5_set_bios_uefi.md)
   - [6. Boot the 3Node](./3node_building/6_boot_3node.md)
   - [GPU Farming](./3node_building/gpu_farming.md)
+  - [Minting Receipts](./3node_building/minting_receipts.md)
 - [Complete DIY Guides](./complete_diy_guides/complete_diy_guides_readme.md)
   - [3Node Desktop DIY Guide](./complete_diy_guides/3node_diy_desktop/3node_diy_desktop.md)
   - [3Node Rack Server DIY Guide](./complete_diy_guides/3node_diy_rack_server/3node_diy_rack_server.md)

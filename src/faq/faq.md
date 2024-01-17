@@ -251,7 +251,6 @@
     - [How can I know the potential farming rewards for Grid Utilization?](#how-can-i-know-the-potential-farming-rewards-for-grid-utilization)
     - [What is the easiest way to farm ThreeFold tokens (TFT)?](#what-is-the-easiest-way-to-farm-threefold-tokens-tft)
     - [When do I receive my rewards?](#when-do-i-receive-my-rewards)
-    - [On ThreeFold Grid v3, how can I verify my 3Nodes' payments on Stellar Blockchain?](#on-threefold-grid-v3-how-can-i-verify-my-3nodes-payments-on-stellar-blockchain)
     - [Do farming rewards take into account the type of RAM, SSD, HDD and CPU of the 3Node server?](#do-farming-rewards-take-into-account-the-type-of-ram-ssd-hdd-and-cpu-of-the-3node-server)
     - [What is the farming reward calculation?](#what-is-the-farming-reward-calculation)
     - [Can I send my farming rewards directly to a crypto exchange?](#can-i-send-my-farming-rewards-directly-to-a-crypto-exchange)
@@ -2575,30 +2574,6 @@ Buy a [certified 3Node](https://marketplace.3node.global/index.php). This is mor
 They are distributed once a month, around the 8th*. Distributions are not daily, or after a certain threshold. Note that upcoming minting rules may have a 24 month lockup or until 30% utilization for 3 months on your 3Node. 
 
 *This can change slightly depending on the current situation.
-
-***
-
-### On ThreeFold Grid v3, how can I verify my 3Nodes' payments on Stellar Blockchain?
-
-Here's the summary on how to find the details of a 3Node's payment on the Stellar Blockchain using the ThreeFold Alpha Minting tool:
-
-1. Go to [https://stellar.expert](https://stellar.expert).
-
-2. Open the hamburger menu on the top right (mobile version).
-
-3. Paste your wallet address in the search bar.
-
-4. Go to the last payment you want details of.
-   
-5. Make sure the Memo (HASH) is in the HEX format. If it isn't, click on *base64* and change it to *hex*.
-
-6. Copy the Memo (HASH).
-
-7. Go to the ThreeFold Alpha minting tool at [https://alpha.minting.tfchain.grid.tf/](https://alpha.minting.tfchain.grid.tf/).
-
-8. Paste the Memo (HASH) you copied. You will find the details of the 3Node's payment.
-
-NB: A full period is 2630880 seconds.
 
 ***
 
