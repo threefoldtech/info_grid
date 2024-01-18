@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd src/threefold_token/token_overview/
+cd src/values
 
 coinId="threefold-token"
 
@@ -13,8 +13,6 @@ liquidity=$(cat tft_liquidity.md)
 
 value=$(cat tft_value.md)
 
-product=$(echo "$liquidity * $value" | bc -l)
+CU_MTFT_HOUR=$(echo "$liquidity * $value" | bc -l)
 
-printf "%.2f" $product > tft_marketcap.md
-
-printf "%.4f" $value > tft_value.md
+printf "%.2f" $CU_MTFT_HOUR > CU_MTFT_HOUR.md

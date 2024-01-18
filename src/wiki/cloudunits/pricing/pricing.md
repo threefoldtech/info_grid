@@ -1,36 +1,58 @@
+<h1> Cloud Unit Pricing </h1>
 
 ![](img/tfgrid_pricing.jpg)
 
-## Cloud Unit Pricing
+<h2>Table of Contents</h2>
 
-Last updated: July 4, 2023
+- [Pricing Policy](#pricing-policy)
+- [Pricing Expressed Per Month](#pricing-expressed-per-month)
+- [Certified Capacity](#certified-capacity)
+- [Dedicated Nodes](#dedicated-nodes)
+- [Staking Discount](#staking-discount)
+  - [Example for 40% discount \[Silver\]](#example-for-40-discount-silver)
 
-### Pricing Policy
+***
+
+## Pricing Policy
 
 - The current prices are for resources usage on mainnet (testnet get 50% discount)
 - A month is considered as 30 days (720 hours)
 
-| Cloud Units       | Description                                      | USD / hour      | USD / month | USD / GB |
-| ----------------- | ------------------------------------------------ | --------------- | ----------- | -------- |
-| Compute Unit (CU) | typically 2 vcpu, 4 GB mem, 50 GB storage        | 0.01            | 7.20        |          |
-| Storage Unit (SU) | typically 1 TB of netto usable storage           | 0.005           | 3.60        |          |
-| Network Unit (NU) | 1 GB transfer, bandwidth as used by TFGrid users |                 |             | 0.0015   |
+| Cloud Units       | Description                                      | mUSD               | mTFT               |
+| ----------------- | ------------------------------------------------ | ------------------ | ------------------ |
+| Compute Unit (CU) | typically 2 vcpu, 4 GB mem, 50 GB storage        | {{#include ../../../values/CU_MUSD_HOUR.md}}/hour | {{#include ../../../values/CU_MTFT_HOUR.md}}/hour |
+| Storage Unit (SU) | typically 1 TB of netto usable storage (*)       | {{#include ../../../values/SU_MUSD_HOUR.md}}/hour | {{#include ../../../values/SU_MTFT_HOUR.md}}/hour |
+| Network Unit (NU) | 1 GB transfer, bandwidth as used by TFGrid users | {{#include ../../../values/NU_MUSD_HOUR.md}}/hour     | {{#include ../../../values/NU_MTFT_HOUR.md}}/hour     |
 
 <br>
 
-| Network Addressing | Description                                |  USD / hour | USD / month |
-| ------------------ | ------------------------------------------ | ----------- | ----------- | 
-| IPv4 Address       | Public Ip Address as used by a TFGrid user | 0.004	    | 2.88        |
-| Unique Name        | Usable as name on webgateways              | 0.00025	    | 0.18        |
-| Unique Domain Name | Usable as dns name on webgateways          | 0.0005	    | 0.36        |
+| Network Addressing | Description                                | mUSD                  | mTFT                  |
+| ------------------ | ------------------------------------------ | --------------------- | --------------------- |
+| IPv4 Address       | Public Ip Address as used by a TFGrid user | {{#include ../../../values/IP_MUSD_HOUR.md}}/hour    | {{#include ../../../values/IP_MTFT_HOUR.md}}/hour    |
+| Unique Name        | Usable as name on webgateways              | {{#include ../../../values/NAME_MUSD_HOUR.md}}  | {{#include ../../../values/NAME_MTFT_HOUR.md}}/hour  |
+| Unique Domain Name | Usable as dns name on webgateways          | {{#include ../../../values/DNAME_MUSD_HOUR.md}}/hour | {{#include ../../../values/DNAME_MTFT_HOUR.md}}/hour |
+
+- mUSD = 1/1000 of USD, mTFT = 1/1000 of TFT
+- TFT pricing pegged to USD (pricing changes in line with TFT/USD rate)
+- The current TFT to USD price is {{#include ../../../values/tft_value.md}} USD
+- pricing is calculated per hour for the TFGrid 3.0
 
 > Please check our [Cloud Pricing for utilization sheet](https://docs.google.com/spreadsheets/d/1E6MpGs15h1_flyT5AtyKp1TixH1ILuGo5tzHdmjeYdQ/edit#gid=2014089775) for more details.
 
-### Certified Capacity
+## Pricing Expressed Per Month
+
+| Cloud Units       | description                                      | USD NO DISCOUNT     | USD 60% DISCOUNT                 |
+| ----------------- | ------------------------------------------------ | ------------------- | ---------------------------- |
+| Compute Unit (CU) | typically 2 vcpu, 4 GB mem, 50 GB storage        | 22.00/month | 8.80/month |
+| Storage Unit (SU) | typically 1 TB of netto usable storage      | 14.00/month | 5.60/month |
+| Network Unit (NU) | 1 GB transfer, bandwidth as used by TFGrid users | 0.05/GB       | 0.03/GB    |
+| IPv4 Address      | Public Ip Address as used by a TFGrid user       | 5.00/month | 3.00/month |
+
+## Certified Capacity
 
 Renting capacity on certified nodes is charged 25% extra (x 1.25).
   
-### Dedicated Nodes
+## Dedicated Nodes
 
 Since April 2022, TFGrid has introduced dedicated server support. With dedicated servers, you can reserve a full server exclusively for your use. This comes with 50% discount, making it a cost-effective option.
 
@@ -45,7 +67,7 @@ These dedicated nodes come with a generous 5TB bandwidth usage per node per mont
 
 When renting a dedicated node, you receive a 50% discount for the entire node. However, it's important to note that you will still be required to pay for the entire node, even with the discount applied. This means that while you enjoy the discount, the cost of the dedicated node is not prorated based on the resources you utilize.
 
-### Staking Discount
+## Staking Discount
 
 | Type       | Pricing Level | Nr months of TFT linked to account |
 | ---------- | ------------- | ---------------------------------- |
@@ -59,7 +81,7 @@ TFChain charges users for proof of utilization on an hourly basis. The discount 
 
 This discount mechanism operates automatically, and users don't need to take any specific actions to avail themselves of this benefit. However, it's worth mentioning that the maximum discount for network-related services is 40%.
 
-#### Example for 40% discount [Silver]
+### Example for 40% discount [Silver]
 
 Let's break down the example for a 40% discount on Internet Capacity consumption:
 
