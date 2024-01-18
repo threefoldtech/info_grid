@@ -39,7 +39,7 @@ The minting receipts contain the following information:
 - start: <start of minting period>
 - end: <end of minting period>
 - TFT: <TFT minted by the 3Node>
-- Clout Units: <3Nodes Resources>
+- Cloud Units: <3Node Resources>
 
 ## Alpha Minting Tool
 
@@ -59,9 +59,9 @@ The ThreeFold Alpha minting tool will present the following information for each
   - CU
   - SU
   - NU
-  - Cru
-  - Mru
-  - Sru
-  - Hru
+  - CRU
+  - MRU
+  - SRU
+  - HRU
 - TFT Farmed
 - Payout Address
