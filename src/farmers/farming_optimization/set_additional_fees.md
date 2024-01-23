@@ -24,7 +24,7 @@ Here are the steps to set additional fees to a 3Node.
 
 ## TFT Payments
 
-When a user reserves your 3Node, you will receive TFT payments once every 24 hours.
+When a user reserves your 3Node, you will receive TFT payments once every 24 hours. These TFT payments will be sent to the TFChain account of your farm's twin.
 
 ## Dedicated Nodes Notice
 
