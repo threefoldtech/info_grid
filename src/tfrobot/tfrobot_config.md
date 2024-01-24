@@ -4,9 +4,11 @@
 
 - [Introduction](#introduction)
 - [Examples](#examples)
+- [Create a Configuration File](#create-a-configuration-file)
+- [Configuration File Example](#configuration-file-example)
   - [YAML Example](#yaml-example)
   - [JSON Example](#json-example)
-- [Create a Configuration File](#create-a-configuration-file)
+- [Create a Configuration File](#create-a-configuration-file-1)
 
 ***
 
@@ -14,11 +16,28 @@
 
 To use TFROBOT, the user needs to create a yaml or a json configuration file that will contain the mass deployment information, such as the groups information, number of VMs to deploy how, the compute, storage and network resources needed, as well as the user's credentials, such as the SSH public key, the network (main, test, dev, qa) and the TFChain mnemonics.
 
+<<<<<<< HEAD
 ## Examples
+=======
+## Create a Configuration File
+
+You can start with the example above and adjust for your specific deployment needs.
+
+- Create directory
+  ```
+  mkdir tfrobot_deployments && cd $_
+  ```
+- Create configuration file and adjust with the provided example above
+  ```
+  nano config.yaml
+  ```
+
+## Configuration File Example
+>>>>>>> f749ec2 (updated tfrobot with config file)
 
 We present here a configuration file example that deploys a 3 nodes, with 2 vcores, 16GB of RAM and 100GB of SSD.
 
-You can use this example for guidance, and make sure to replace placeholders and adapt the groups based on your actual project details. To the minimum, `ss_key1` and `example1` should be replaced by the user SSH public key and `example-mnemonic` should be replaced by the user mnemonics.
+You can use this example for guidance, and make sure to replace placeholders and adapt the groups based on your actual project details. To the minimum, `<ssh_key>` should be replaced by the user SSH public key and `<mnemonic>` should be replaced by the user mnemonics.
 
 ### YAML Example
 
@@ -42,8 +61,8 @@ vms:
     cpu: 1 # number of logical cores
     mem: 256 # amount of memory in MB
     ssd: # list of ssd storage needed to be mounted to the vm
-      size: 5 # size in GB
-      mount_point: /mnt/ssd
+      - size: 5 # size in GB
+        mount_point: /mnt/ssd
     pubip4: false
     pubip6: false
     flist: https://hub.grid.tf/tf-official-apps/base:latest.flist
@@ -51,10 +70,11 @@ vms:
     root_size: 0 # root size in GB
     ssh_key: example1 # the name of the predefined ssh key
 
-ssh_key: # map of ssh keys with key=name and value=the actual ssh key
-  example1: ssh_key1
-mnemonic: example-mnemonic # mnemonic of the user
+ssh_keys: # map of ssh keys with key=name and value=the actual ssh key
+  example1: <ssh_key>
+mnemonic: <mnemonic> # mnemonic of the user
 network: dev # eg: main, test, qa, dev
+<<<<<<< HEAD
 ```
 
 ### JSON Example
@@ -122,3 +142,6 @@ You can start with the example above and adjust for your specific deployment nee
   ```
   nano config.yaml
   ```
+=======
+```
+>>>>>>> f749ec2 (updated tfrobot with config file)

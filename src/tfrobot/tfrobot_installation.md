@@ -46,6 +46,6 @@ You can run the command `tfrobot help` at any time to access the help section. T
 | help       | Help about any command                                     |
 | version    | Get latest build tag                                       |
 
-You can also use the -c (--config) and -h (--help) flags.
+You can also use the following flags: `-c` (`--config`) and `-h` (`--help`).
 
-Use "tfrobot [command] --help" for more information about a command.
+Use `tfrobot [command] --help` for more information about a command.
