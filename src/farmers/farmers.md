@@ -40,7 +40,6 @@ If you aspire to become a farmer on the ThreeFold Grid, you've come to the right
   - [Network Setup](./advanced_networking/network_setup.md)
 - [Farmerbot](./farmerbot/farmerbot_intro.md)
   - [Quick Guide](./farmerbot/farmerbot_quick.md)
-  - [Extensive Guide](./farmerbot/farmerbot.md)
   - [Additional Information](./farmerbot/farmerbot_information.md)
 - [Farming Details](../wiki/tfgrid/farming/farming_toc.md)
   - [Farming Rewards](../wiki/tfgrid/farming/farming_reward.md)

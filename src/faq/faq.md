@@ -429,7 +429,6 @@
     - [Does the Farmerbot need to run physically in the farm?](#does-the-farmerbot-need-to-run-physically-in-the-farm)
     - [How many Farmerbot can you run per farm?](#how-many-farmerbot-can-you-run-per-farm)
     - [On how many nodes can the Farmerbot run?](#on-how-many-nodes-can-the-farmerbot-run)
-    - [Can you run multiple Farmerbots on the same computer or VM?](#can-you-run-multiple-farmerbots-on-the-same-computer-or-vm)
     - [What is the uptime requirement for the Farmerbot?](#what-is-the-uptime-requirement-for-the-farmerbot)
     - [Can I run the Farmerbot on my farm?](#can-i-run-the-farmerbot-on-my-farm)
     - [Can the Farmerbot be the same node that wakes the other nodes?](#can-the-farmerbot-be-the-same-node-that-wakes-the-other-nodes)
@@ -440,28 +439,13 @@
     - [Is there a fail over setup possible for the Farmerbot?](#is-there-a-fail-over-setup-possible-for-the-farmerbot)
     - [How do 3Nodes power on and off with the Farmerbot?](#how-do-3nodes-power-on-and-off-with-the-farmerbot)
     - [Can you have only one 3Node in your farm with the Farmerbot?](#can-you-have-only-one-3node-in-your-farm-with-the-farmerbot)
-    - [Is there a way to access more error checking?](#is-there-a-way-to-access-more-error-checking)
     - [Do I need TFT to run the Farmerbot? How much?](#do-i-need-tft-to-run-the-farmerbot-how-much)
-    - [On the Farmerbot, I receive the error: "Balance is not enough to apply an extrinsic". What can I do to fix this issue?](#on-the-farmerbot-i-receive-the-error-balance-is-not-enough-to-apply-an-extrinsic-what-can-i-do-to-fix-this-issue)
-    - [When deploying the Farmerbot, I get an error in "root-grid3\_client-1". The farmerbot.log error is: "Error: Invalid twin id. Twin id must be postive integer". Is there a fix?](#when-deploying-the-farmerbot-i-get-an-error-in-root-grid3_client-1-the-farmerbotlog-error-is-error-invalid-twin-id-twin-id-must-be-postive-integer-is-there-a-fix)
     - [How are dedicated nodes power managed?](#how-are-dedicated-nodes-power-managed)
-    - [Can I run the Farmerbot on a Raspberry Pi?](#can-i-run-the-farmerbot-on-a-raspberry-pi)
-    - [I want to set up the Farmerbot for my 3Node farm. Should all my nodes have the same twin ID?](#i-want-to-set-up-the-farmerbot-for-my-3node-farm-should-all-my-nodes-have-the-same-twin-id)
     - [How can I use GraphQL to see if a 3Node is up or down in relation with the Farmerbot?](#how-can-i-use-graphql-to-see-if-a-3node-is-up-or-down-in-relation-with-the-farmerbot)
-    - [When setting up the Farmerbot, I get the error: dependency failed to start: container qa-redis-1 is unhealthy. What can I do?](#when-setting-up-the-farmerbot-i-get-the-error-dependency-failed-to-start-container-qa-redis-1-is-unhealthy-what-can-i-do)
-    - [With the Farmerbot, how can I set a node to never shut down?](#with-the-farmerbot-how-can-i-set-a-node-to-never-shut-down)
     - [How long does it take for the Farmerbot to do the periodic wake?](#how-long-does-it-take-for-the-farmerbot-to-do-the-periodic-wake)
-    - [The Farmerbot is set up and the containers are up and running, but in the logs I see following "Node xxx is not responding while we expect it to: timeout on blpop". Is this an issue?](#the-farmerbot-is-set-up-and-the-containers-are-up-and-running-but-in-the-logs-i-see-following-node-xxx-is-not-responding-while-we-expect-it-to-timeout-on-blpop-is-this-an-issue)
-    - [Does the Farmerbot operate in UTC or local time?](#does-the-farmerbot-operate-in-utc-or-local-time)
-    - [Setting up the Farmerbot, I get the following error: "Failed initializing the database: Invalid duration value" What can I do to fix this?](#setting-up-the-farmerbot-i-get-the-following-error-failed-initializing-the-database-invalid-duration-value-what-can-i-do-to-fix-this)
     - [How can I update the Farmerbot with the new release?](#how-can-i-update-the-farmerbot-with-the-new-release)
-    - [What are the changes brought in with the new Farmerbot release?](#what-are-the-changes-brought-in-with-the-new-farmerbot-release)
-    - [How can I properly stop the Farmerbot and start it again?](#how-can-i-properly-stop-the-farmerbot-and-start-it-again)
     - [Can I deploy the Farmerbot with Portainer or other container management tools?](#can-i-deploy-the-farmerbot-with-portainer-or-other-container-management-tools)
-    - [Can I run multiple Farmerbots on a single computer? How can I install a second Farmerbot for a different farm on the same computer?](#can-i-run-multiple-farmerbots-on-a-single-computer-how-can-i-install-a-second-farmerbot-for-a-different-farm-on-the-same-computer)
     - [I did an update on my Farmerbot and now all my 3Nodes are waking up. Is this an expected behaviour?](#i-did-an-update-on-my-farmerbot-and-now-all-my-3nodes-are-waking-up-is-this-an-expected-behaviour)
-    - [I deleted the log files in the config folder, but no new log files have been generated. How can I generate new log files for the Farmerbot?](#i-deleted-the-log-files-in-the-config-folder-but-no-new-log-files-have-been-generated-how-can-i-generate-new-log-files-for-the-farmerbot)
-    - [When running the Farmerbot, I get the following: "error: UnauthorizedToChangePowerTarget". What can I do to fix this?](#when-running-the-farmerbot-i-get-the-following-error-unauthorizedtochangepowertarget-what-can-i-do-to-fix-this)
     - [How can I manually change the Farmerbot's power target of my 3Nodes?](#how-can-i-manually-change-the-farmerbots-power-target-of-my-3nodes)
     - [I created my farm with the TFConnect app. What should I put in the parameter SECRET to properly set the Farmerbot?](#i-created-my-farm-with-the-tfconnect-app-what-should-i-put-in-the-parameter-secret-to-properly-set-the-farmerbot)
 - [Ask a Question to the ThreeFold Community](#ask-a-question-to-the-threefold-community)
@@ -3980,30 +3964,6 @@ Currently you can only deploy one Farmerbot for each farm, so the Farmerbot can 
 
 ***
 
-### Can you run multiple Farmerbots on the same computer or VM?
-
-You can run multiple Farmerbot on the same computer or VM. where each Farmerbot can take care of one farm at time. So, for example, with two Farmerbots, you could manage two different farms, and so on.
-
-In this case, you need to make sure that each Farmerbot is running in its own directory. We show here a directory tree example with two different Farmerbots running each a docker image.
-
-```
-.
-├── farmerbot_docker_1
-│   ├── config
-│   │   ├── config.md
-│   │   └── farmerbot.log
-│   └── docker-compose.yaml
-└── farmerbot_docker_2
-    ├── config
-    │   ├── config.md
-    │   └── farmerbot.log
-    └── docker-compose.yaml
-```
-
-To achieve this, you can simply follow the [Farmerbot Quick Guide](../farmers/farmerbot/farmerbot_quick.md) and create a distinct directory for each Farmerbot (`mkdir farmerbot_docker_1`, etc.) and complete the guide for each Farmerbot and farm combination.
-
-***
-
 ### What is the uptime requirement for the Farmerbot?
 
 The Farmerbot should be running all the time or not at all (this is up to the farmer)
@@ -4012,7 +3972,7 @@ The Farmerbot should be running all the time or not at all (this is up to the fa
 
 ### Can I run the Farmerbot on my farm?
 
-Though you can run the Farmerbot anywhere you want, it doesn’t have to be on a 3Node in your farm.
+Yes you can run the Farmerbot on your farm. Though you can run the Farmerbot anywhere you want, it doesn’t have to be on a 3Node in your farm.
 
 ***
 
@@ -4065,12 +4025,6 @@ No. Since you need at least one node to power up a second node. you can't test t
 
 ***
 
-### Is there a way to access more error checking?
-
-Yes. In the config-path where you run the docker-compose, you have more logging for error checking. Under the directory where you set up your Farmerbot, you have the directory “config” in there where it creates a *.log file if you start the bot via Docker-Compose. In this directory, you can search for errors if something doesn't work as expected.
-
-***
-
 ### Do I need TFT to run the Farmerbot? How much?
 
 Yes. How much depends on where you run the farmerbot and how many nodes it will power on/off. If you run the farmerbot on a node on the grid you will have to pay TFT to rent that node (or deploy on that node). Next to that, you will have to pay the transaction fees every time the farmerbot has to wakeup a node or shutdown a node. This is with the account tied to the twin of your farm. 
@@ -4081,50 +4035,9 @@ For the periodic wakeups, each node in the farm is shut down and powered on once
 
 ***
 
-### On the Farmerbot, I receive the error: "Balance is not enough to apply an extrinsic". What can I do to fix this issue?
-
-This means that you do not have sufficient funds (TFT) in your wallet for the Farmerbot's fees.
-
-You thus simply need to add some TFTs in the wallet that is connected to the farm on which you are running the Farmerbot. 1 TFT can suffice for many transactions. 
-
-For more information on the Farmerbot running cost, read this [QnA](#do-i-need-tft-to-run-the-farmerbot-how-much).
-
-***
-
-### When deploying the Farmerbot, I get an error in "root-grid3_client-1". The farmerbot.log error is: "Error: Invalid twin id. Twin id must be postive integer". Is there a fix?
-
-This indicates that the seed phrase has no associated twin. There can be many reasons behind this. 
-
-- You are using the wrong seed phrase for your farm.
-  - To fix it, simply find the proper seed phrase for the farm hosting your 3Nodes.
-- You created the farm in the TF Connect app and are using the seed phrase in words instead of the seed phrase in HEX format (the TFChain secret).
-  - To fix it, simply use the TFChain secret (HEX format) in the TF Connect app.
-
-***
-
 ### How are dedicated nodes power managed?
 
 Dedicated nodes are managed like any other node. Nodes marked as dedicated can only be rented completely. Whenever a user wants to rent a dedicated node the user sends a find_node job to the farmerbot. The farmerbot will find such a node, power it on if it is down and reserve the full node (for 30 minutes). The user can then proceed with creating a rent contract for that node. The farmerbot will get that information and keep that node powered on. It will no longer return that node as a possible node in future find_node jobs. Whenever the rent contract is canceled the farmerbot will notice this and shutdown the node if the resource usage allows it.
-
-***
-
-
-### Can I run the Farmerbot on a Raspberry Pi?
-
-It is possible to run the Farmerbot on a Pi. That being said, it is experimental and Threefold might never support it officially.
-
-To run the Farmerbot on a Raspberry Pi, read [this guide](https://forum.threefold.io/t/how-to-run-farmerbot-on-a-raspberry-pi/3879/).
-
-***
-
-### I want to set up the Farmerbot for my 3Node farm. Should all my nodes have the same twin ID?
-
-The farmerbot can only manage the nodes that you define in the configuration. So, for each node in your farm, you will need to fill in these required attributes:
-
-* id
-  * the id of the node
-* twinid
-  * the twin id of the node
 
 ***
 
@@ -4171,23 +4084,6 @@ query MyQuery {
 
 ***
 
-### When setting up the Farmerbot, I get the error: dependency failed to start: container qa-redis-1 is unhealthy. What can I do?
-
-There's some redis database state stored in a persistent volume. The issue is that the database got corrupted somehow and thus redis is crashing.
-
-To remove the volume, and thus actually get a clean start, you can do this:
-```
-docker compose down -v
-```
-
-***
-
-### With the Farmerbot, how can I set a node to never shut down?
-
-In the config file, set the following: `never_shutdown:true` for the node you want to never shut down.
-
-***
-
 ### How long does it take for the Farmerbot to do the periodic wake?
 
 The minimum period between two nodes to be waken is currently 5 minutes.
@@ -4197,86 +4093,9 @@ Once all nodes are awaken, they all shut down at the same time, except the node 
 
 ***
 
-###  The Farmerbot is set up and the containers are up and running, but in the logs I see following "Node xxx is not responding while we expect it to: timeout on blpop". Is this an issue?
-
-This always happens when you start the Farmerbot while the nodes are down. Although this is not an issue, it is recommended to have the nodes running when starting the Farmerbot. The nodes data will then be up to date and the nodes that are allowed to be shut down will be shut down.
-
-***
-
-### Does the Farmerbot operate in UTC or local time?
-
-The Farmerbot works in UTC, independently of the local time of your machine.
-
-***
-
-### Setting up the Farmerbot, I get the following error: "Failed initializing the database: Invalid duration value" What can I do to fix this?
-
-If you see this error, it's because you've used 24h time format in conjunction with AM/PM time format. Note that if you add AM/PM, the Farmerbot will use the 12h time format (AM/PM). Otherwise, it is the 24h time format.
-
-***
-
 ### How can I update the Farmerbot with the new release?
 
-Please follow these steps to update the Farmerbot with the new release:
-
-* Go to the Farmerbot folder
-* Stop the existing Farmerbot
-  * ```
-    docker compose rm -f -s -v
-    ```
-* Make a copy of the Farmerbot log file
-  * ```
-    cp config/farmerbot.log config/farmerbot.log.archive
-    ```
-* Remove the docker-compose file of the previous Farmerbot release
-  * ```
-    rm docker-compose.yaml
-    ```
-* Download the new docker-compose file
-  * ```
-    wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
-    ```
-* Run the new Farmerbot
-  * ```
-    docker compose up -d
-    ```
-
-This last command can take some time as it is downloading new docker images. Let the Farmerbot run for some time. If you think something is wrong or if you want to check if there is something wrong you should look into the config/farmerbot.log file. If you see some errors please share that file with us.
-
-***
-
-### What are the changes brought in with the new Farmerbot release?
-
-Among new changes, we adjusted the `periodic_wakeup_limit` which allows you to specify how much sleeping nodes you want to wake up at the same time during a periodic wakeup.
-
-Also, we got rid of the requirement to have at least one node up that is unused. So if you have two nodes and one of them is running the Farmerbot the other one will be able to shutdown (it wouldn't shut down before).
-
-***
-
-
-### How can I properly stop the Farmerbot and start it again?
-
-Here are the steps to properly stop the Farmerbot and start it again.
-
-* Make sure to fully stop the Farmerbot before starting it again:
-  * ```
-    docker compose rm -f -s -v
-    ```
-
-* You should also make sure that there are no containers left from the previous runs. First, list all containers:
-  * ```
-    docker container ls --all
-    ```
-
-* Then delete the remaining containers:
-  * ```
-    docker container rm -f -v NAME_OF_CONTAINER
-    ```
-
-* To start again the Farmerbot, write the following:
-  * ```
-    docker compose up -d
-    ```
+You need to stop the Farmerbot on your machine, download the new binaries or the new Dockerfile and re-instal the Farmerbot.
 
 ***
 
@@ -4288,33 +4107,9 @@ Concerning Portainer, some farmers tried it and it led to issues. It is thus rec
 
 ***
 
-### Can I run multiple Farmerbots on a single computer? How can I install a second Farmerbot for a different farm on the same computer? 
-
-You can run multiple Farmerbots on the same computer, as long as each Farmerbot is associated with only one farm. Note that you also need to have a separate twin for each farm. Currently, each Farmerbot can only control a single twin account, and each twin should only oversee a single farm.
-
-You can follow the same process as with the first Farmerbot, with the new seed phrase associated with the new farm. You simply need to install the second Farmerbot in a different directory and it won't interfere with the other Farmerbot. This means that  each Farmerbot will need its own `.env` and `config` files.
-
-***
-
 ### I did an update on my Farmerbot and now all my 3Nodes are waking up. Is this an expected behaviour?
 
 Yes, this is an expected behaviour. When you restart the Farmerbot, it will then proceed to reboot all the 3Nodes of your farm.
-
-***
-
-### I deleted the log files in the config folder, but no new log files have been generated. How can I generate new log files for the Farmerbot?
-
-You can always get the logs from docker too via `docker compose logs` (run this command in the folder where your docker compose file is located). You can restart the Farmerbot to start the logging to file again (keep in mind that it will execute the periodic wakeup for all nodes at startup).
-
-You should also make sure that you didn't use a different file structure.
-
-***
-
-### When running the Farmerbot, I get the following: "error: UnauthorizedToChangePowerTarget". What can I do to fix this?
-
-It means that the twin associated with the `SECRET` you loaded into the Farmerbot is not the owner of the farm. In other words, this error means that you provided a wrong mnemonic. 
-
-Note that only the twin of the farm is able to set the node power on chain (`setNodePower`). 
 
 ***
 
@@ -4337,7 +4132,7 @@ Go to [this link](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.grid.tf#
 
 ### I created my farm with the TFConnect app. What should I put in the parameter SECRET to properly set the Farmerbot?
 
-You need to use the TFChain secret from the farm page on the TFConnect app as the `SECRET`, which is in HEX format. The main template should look like this: `SECRET="0x12345ABCDEF..."`
+You need to use the TFChain secret from the farm page on the TFConnect app as the `SECRET`, which is in HEX format. The main template should look like this: `MNEMONIC_OR_SEED="0x12345ABCDEF..."`
 
 ***
 
