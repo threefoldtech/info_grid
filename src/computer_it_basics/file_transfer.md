@@ -199,13 +199,13 @@ Here are some common commands for SFTP.
 
 ### SFTP File Transfer
 
-Using SFTP to transfer file from the local machine to the remote VM is as simple as the following line:
+Using SFTP to transfer a file from the local machine to the remote VM is as simple as the following line:
 
 ```
 put /local/path/file
 ```
 
-This will transfer the file in `/root/` of the remote VM.
+This will transfer the file in the current user home directory of the remote VM.
 
 To transfer the file in a given directory, use the following:
 
@@ -213,10 +213,16 @@ To transfer the file in a given directory, use the following:
 put /local/path/file /remote/path/
 ```
 
-To transfer files from the remote VM to the local machine, you can use the command `get`:
+To transfer a file from the remote VM to the local machine, you can use the command `get`:
 
 ```
-get /root/Documents/file Users/user/Documents/file
+get /remote/path/file /local/path
+```
+
+To transfer (`get` or `put`) all the files within a directory, use the `-r` argument,  as shown in the following example
+
+```
+get -r /remote/path/to/directory /local/path
 ```
 
 ## SFTP with FileZilla
