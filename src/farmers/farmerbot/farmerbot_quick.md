@@ -143,7 +143,7 @@ We can set an Ubuntu systemd service to keep the Farmerbot running after exiting
     ExecStart=/usr/local/bin/farmerbot run -e /home/root/farmerbotfiles/.env -c /home/root/farmerbotfiles/config.yml -d
 
     [Install]
-    WantedBy=multi-user.target    
+    WantedBy=multi-user.target     
     ```
 * Enable the Farmerbot service
     ```
