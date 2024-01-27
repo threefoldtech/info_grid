@@ -7,7 +7,7 @@
 - [Additional Information](#additional-information)
   - [General Considerations](#general-considerations)
   - [YAML Configuration File Template](#yaml-configuration-file-template)
-  - [Supported Commands](#supported-commands)
+  - [Supported Commands and Flags](#supported-commands-and-flags)
   - [Minimum specs to run the Farmerbot](#minimum-specs-to-run-the-farmerbot)
   - [How to Prepare Your Farm for the Farmerbot with WOL](#how-to-prepare-your-farm-for-the-farmerbot-with-wol)
   - [WOL Requirements](#wol-requirements)
@@ -74,7 +74,7 @@ power:
   overprovision_cpu: "<how much node allows over provisioning the CPU , default is 1, range: [1;4], optional>"
 ```
 
-## Supported Commands
+## Supported Commands and Flags
 
 We present the different commands for the Farmerbot. 
 

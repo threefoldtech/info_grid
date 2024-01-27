@@ -124,6 +124,14 @@ We run the Farmerbot with the following command:
 farmerbot run -e ~/farmerbotfiles/.env -c ~/farmerbotfiles/config.yml -d
 ```
 
+For farmers with **ed25519** keys, the flag `-k` should be used. Note that by default, the Farmerbot uses the **sr25519** keys.
+
+```
+farmerbot run -k ed25519 -e ~/farmerbotfiles/.env -c ~/farmerbotfiles/config.yml -d
+```
+
+For more information on the supported commands, refer to the [Farmerbot repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot) or the [Additional Information section](farmerbot_information.md#supported-commands-and-flags). 
+
 We can set an Ubuntu systemd service to keep the Farmerbot running after exiting the VM.
 
 * Create the service file
@@ -201,6 +209,12 @@ We present how to run the Farmerbot using Docker.
     ```
     docker run -d --restart unless-stopped -v $(pwd)/config.yml:/config.yml -v $(pwd)/.env:/.env farmerbot run -e /.env -c /config.yml
     ```
+- For farmers with **ed25519** keys, the flag `-k` should be used. Note that by default, the Farmerbot uses the **sr25519** keys.
+    ```
+    docker run -d --restart unless-stopped -v $(pwd)/config.yml:/config.yml -v $(pwd)/.env:/.env farmerbot run -k ed25519 -e /.env -c /config.yml
+    ```
+
+For more information on the supported commands, refer to the [Farmerbot repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot) or the [Additional Information section](farmerbot_information.md#supported-commands-and-flags).
 
 ## Farmerbot Files
 
@@ -222,6 +236,18 @@ never_shutdown_nodes:
 power:
   periodic_wake_up_start: 01:00PM
 ```
+
+Note that if the user wants to include all the nodes within a farm, they can simply omit the `included_nodes` section. In this case, all nodes of the farm will be included in the Farmerbot, as shown in the example below:
+
+```
+farm_id: 1  
+never_shutdown_nodes:
+  - 1
+power:
+  periodic_wake_up_start: 01:00PM
+```
+
+For more information on the configuration file, refer to the [Farmerbot repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot) or the [Additional Information section](farmerbot_information.md#yaml-configuration-file-template).
 
 ### Environment Variables File Template (.env)
 
