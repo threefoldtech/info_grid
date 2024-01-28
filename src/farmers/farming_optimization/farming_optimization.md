@@ -16,6 +16,7 @@ The CPU passmark threshold is not yet implemented, but it constitutes a good way
 
 - [GPU Farming](../3node_building/gpu_farming.md)
 - [Set Additional Fees](./set_additional_fees.md)
+- [Minting Receipts](../3node_building/minting_receipts.md)
 - [Room Parameters](./farm_room_parameters.md)
 - [Farming Costs](./farming_costs.md)
 - [Calculate Your ROI](./calculate_roi.md)

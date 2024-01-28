@@ -32,6 +32,7 @@ If you aspire to become a farmer on the ThreeFold Grid, you've come to the right
 - [Farming Optimization](./farming_optimization/farming_optimization.md)
   - [GPU Farming](./3node_building/gpu_farming.md)
   - [Set Additional Fees](./farming_optimization/set_additional_fees.md)
+  - [Minting Receipts](./3node_building/minting_receipts.md)
   - [Room Parameters](./farming_optimization/farm_room_parameters.md)
   - [Calculate Your ROI](./farming_optimization/calculate_roi.md)
   - [Farming Costs](./farming_optimization/farming_costs.md)

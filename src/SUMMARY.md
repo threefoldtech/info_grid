@@ -144,6 +144,7 @@
   - [Farming Optimization](farmers/farming_optimization/farming_optimization.md)
     - [GPU Farming](farmers/3node_building/gpu_farming.md)
     - [Set Additional Fees](farmers/farming_optimization/set_additional_fees.md)
+    - [Minting Receipts](farmers/3node_building/minting_receipts.md)
     - [Room Parameters](farmers/farming_optimization/farm_room_parameters.md)
     - [Farming Costs](farmers/farming_optimization/farming_costs.md)
     - [Calculate Your ROI](farmers/farming_optimization/calculate_roi.md)
