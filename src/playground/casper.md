@@ -12,9 +12,9 @@ __Process__ :
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. ***cl98casp*.gent02.dev.grid.tf**
 
 - Select a capacity package:
-    - **Minimum**: {cpu: 1, memory: 1024 * 2, diskSize: 100 }
-    - **Standard**: {cpu: 2, memory: 16384, diskSize: 500 }
-    - **Recommended**: {cpu: 4, memory: 32768, diskSize: 100 }
+    - **Small**: {cpu: 2, memory: 4, diskSize: 100 }
+    - **Medium**: {cpu: 4, memory: 16, diskSize: 500 }
+    - **Large**: {cpu: 8, memory: 32, diskSize: 100 }
     - Or choose a **Custom** plan
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4

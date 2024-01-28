@@ -4,6 +4,7 @@
 
 - [Introduction](#introduction)
 - [How to Use the Ethereum-Stellar Bridge](#how-to-use-the-ethereum-stellar-bridge)
+- [Bridge Fees](#bridge-fees)
 - [Questions and Feedback](#questions-and-feedback)
 
 ***
@@ -12,7 +13,7 @@
 
 The TFT Stellar-Ethereum bridge serves as a vital link between the Stellar and Ethereum blockchains, enabling the seamless transfer of TFT tokens between these two networks. This bridge enhances interoperability and expands the utility of TFT by allowing users to leverage the strengths of both platforms. With the bridge in place, TFT holders can convert their tokens from the Stellar network to the Ethereum network and vice versa, unlocking new possibilities for engagement with decentralized applications, smart contracts, and the vibrant Ethereum ecosystem. This bridge promotes liquidity, facilitates cross-chain transactions, and encourages collaboration between the Stellar and Ethereum communities.
 
-***
+
 
 ## How to Use the Ethereum-Stellar Bridge
 
@@ -25,7 +26,11 @@ For the reverse operation, going from Ethereum to Stellar, there is a smart cont
 Note that the contract address for TFT on Ethereum is the following: `0x395E925834996e558bdeC77CD648435d620AfB5b`.
 
 To see the ThreeFold Token on Etherscan, check [this link](https://etherscan.io/token/0x395E925834996e558bdeC77CD648435d620AfB5b).
-***
+
+## Bridge Fees
+
+To learn more about the bridge fees, read [this documentation](../../transaction_fees.md).
+
 ## Questions and Feedback
 
 If you have any question, feel free to write a post on the [Threefold Forum](https://forum.threefold.io/).
