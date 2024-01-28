@@ -8,11 +8,11 @@ Note that the process is similar for other desktop computers.
 
 <div style="break-after:page"></div>
 
-***
+
 
 <h2>Table of Contents</h2>
 
-***
+
 
 - [Prerequisite](#prerequisite)
   - [DIY 3Node Computer Requirements](#diy-3node-computer-requirements)
@@ -38,15 +38,17 @@ Note that the process is similar for other desktop computers.
   - [Farming Rewards Distribution](#farming-rewards-distribution)
 - [Additional Information](#additional-information)
 
+***
+
 <div style="break-after:page"></div>
 
-***
+
 
 # Prerequisite
 
 ## DIY 3Node Computer Requirements
 
-***
+
 
 Any computer with the following specifications can be used as a DIY 3Node.
 
@@ -59,11 +61,11 @@ Any computer with the following specifications can be used as a DIY 3Node.
 
 In this guide, we are using a Dell Optiplex 7020. It constitutes a perfect affordable entry DIY 3Node as it can be bought refurbished with the proper ratio of 100GB of SSD and 8GB of RAM per thread, and this, without any need of upgrades or updates.
 
-***
+
 
 ## DIY 3Node Material List
 
-***
+
 
 * Any computer respecting the DIY 3Node Computer Requirements stated above
 * Ethernet cable
@@ -74,7 +76,7 @@ In this guide, we are using a Dell Optiplex 7020. It constitutes a perfect affor
 * Computer monitor and cable, keyboard and mouse
 * MAC/Linux/Windows Computer
 
-***
+
 
 <div style="break-after:page"></div>
 
@@ -82,7 +84,7 @@ In this guide, we are using a Dell Optiplex 7020. It constitutes a perfect affor
 
 ## ThreeFold Connect App Installation
 
-***
+
 
 The ThreeFold Connect App is available for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US) and [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885).
 
@@ -131,13 +133,13 @@ That's it! You've created your ThreeFold Connect account. You can press the hamb
 
 ![farming_tf_wallet_12](./img/farming_tf_wallet_12.png)
 
-***
+
 
 <div style="break-after:page"></div>
 
 ### Verify Your Identity (KYC) by Email
 
-***
+
 
 Once you've created your account, an email will be sent to the email address you've chosen in the account creation process. 
 
@@ -157,13 +159,13 @@ If for some reason, you did not receive the verification email, simply click on 
 
 ![farming_tf_wallet_43](./img/farming_tf_wallet_43.png)
 
-***
+
 
 <div style="break-after:page"></div>
 
 ## Create a Wallet
 
-***
+
 To create a wallet, click on the ThreeFold Connect App menu. This is what you see. Choose *Wallet*.
 
 ![farming_tf_wallet_13](./img/farming_tf_wallet_13.png)
@@ -186,11 +188,11 @@ Once inside your wallet, this is what you see.
 
 <div style="break-after:page"></div>
 
-***
+
 
 ## Create a Farm
 
-***
+
 
 To create a farm, follow those steps.
 
@@ -216,7 +218,7 @@ You can see on this screen the address were your farming rewards will be sent to
 
 We can see on the picture above that the Farm ID here is 1821. The farm ID will be used to create the Zero-OS Bootstrap Image in the next section.
 
-***
+
 
 <div style="break-after:page"></div>
 
@@ -224,7 +226,7 @@ We can see on the picture above that the Farm ID here is 1821. The farm ID will 
 
 ## Download the Zero-OS Boostrap Image
 
-***
+
 
 We will now learn how to create a Zero-OS Bootstrap Image in order to boot a DIY 3Node.
 
@@ -244,13 +246,13 @@ Write your farm ID and choose production mode.
 
 Download the bootstrap image. Next, we will burn the bootstrap image.
 
-***
+
 
 <div style="break-after:page"></div>
 
 ## Burn the Zero-OS Bootstrap Image
 
-***
+
 
 For **MAC**, **Linux** and **Windows**, you can use [BalenaEtcher](https://www.balena.io/etcher/) to load/flash the image on a USB stick. This program also formats the USB in the process. This will work for the option **EFI IMG** for UEFI boot, and with the option **USB** for BIOS boot. Simply follow the steps presented to you and make sure you select the correct bootstrap image file you downloaded previously.
 
@@ -295,7 +297,7 @@ General Steps:
 
 That's it. Now you have a bootstrap image on Zero-OS as a bootable removable media device.
 
-***
+
 
 <div style="break-after:page"></div>
 
@@ -323,7 +325,7 @@ Plug the ethernet cable in the router (or the switch)
 
 ![3node_diy_desktop_6.png](img/3node_diy_desktop_3.png)
 
-***
+
 
 <div style="break-after:page"></div>
 
@@ -331,20 +333,20 @@ Plug the ethernet cable in the router (or the switch)
 
 In this section, we will learn how to create a Linux bootstrap image, boot it in Try mode and then wipe all the disks in your 3Node. To create a Linux boostrap image, follow the same process as when we burnt the Zero-OS Boostrap Image.
 
-***
+
 
 ## 1. Create a Linux Boostrap Image
 
-***
+
 
 1. Download the Ubuntu 20.04 ISO file [here](https://releases.ubuntu.com/20.04/)
 2. Burn the ISO image on a USB key with Balena Etcher
 
-***
+
 
 ## 2. Boot Linux in Try Mode
 
-***
+
 
 1. Insert your Linux boostrap image USB key in your computer and boot it
 2. During boot, press F12 to enter into Settings
@@ -360,11 +362,11 @@ In this section, we will learn how to create a Linux bootstrap image, boot it in
 
 ![3node_diy_desktop_105.png](img/3node_diy_desktop_105.jpeg)
 
-***
+
 
 ## 3. Use wipefs to Wipe All Disks
 
-***
+
 
 Once Ubuntu is booted, you will land on the main page.
 
@@ -406,7 +408,7 @@ Power off the computer by selecting *Power Off* after having clicked on the butt
 
 That's it! The disks are all wiped. All that is left now is to set the BIOS/UEFI settings and then boot the 3Node!
 
-***
+
 
 <div style="break-after:page"></div>
 
@@ -416,7 +418,7 @@ Before booting the main operating system, in our case Zero-OS, a computer will b
 
 ## The Essential Features of BIOS/UEFI for a 3Node
 
-***
+
 
 There are certain things that you should make sure are set properly on your 3Node.
 
@@ -445,13 +447,13 @@ As a general advice, you can Load Defaults (Settings) on your BIOS, then make su
 * *Secure Boot* should be left at disabled
   * Enable it if you know what you are doing. Otherwise, it can be set at disabled.
 
-***
+
 
 <div style="break-after:page"></div>
 
 ## Set the BIOS/UEFI on a Dell Optiplex 7020
 
-***
+
 
 1. Insert your Zero-OS boostrap image USB key in your computer and boot it.
 2. During boot, press F12 to enter into *Settings* then choose *BIOS Setup*.
@@ -493,7 +495,7 @@ As a general advice, you can Load Defaults (Settings) on your BIOS, then make su
 
 ![3node_diy_desktop_126.png](img/3node_diy_desktop_126.png)
   
-***
+
 
 <div style="break-after:page"></div>
 
@@ -506,7 +508,7 @@ If your BIOS/UEFI settings are set properly and you have the Zero-OS bootstrap i
    * The first time it boots, the 3node will register to the TF Grid
 3. Verify the 3Node's status on ThreeFold Explorer
 
-The first time you boot a 3Node, it will be written: “This node is not registered (farmer ***: NameOfFarm). This is normal. The Grid will create a node ID and you will be able to see it on screen. This can take a couple of minutes.
+The first time you boot a 3Node, it will be written: “This node is not registered (farmer : NameOfFarm). This is normal. The Grid will create a node ID and you will be able to see it on screen. This can take a couple of minutes.
 
 This is the final screen you should see when your 3Node is connected to the ThreeFold Grid. Note that it is normal if it is written *no public config* next to *PUB* as we did not set any public IP address.
 
@@ -516,13 +518,13 @@ Naturally, your node ID as well as your farm ID and name will be shown.
 
 Once you have your node ID, you can also go on the ThreeFold Explorer to see your 3Node and verify that your 3Node is online.
 
-***
+
 
 <div style="break-after:page"></div>
 
 ## Check the 3Node's Status on the TF Explorer
 
-***
+
 In a browser, go on the [ThreeFold Explorer](https://dashboard.grid.tf/explorer/nodes). 
 
 Select **Grid V3**.
@@ -547,15 +549,15 @@ Now we can see the 3Nodes that are offline.
 
 ![Farming_Create_Farm_3](./img/farming_29.png)
 
-***
+
 
 ## Farming Rewards Distribution
 
-***
+
 
 The farming reward will be sent once per month directly in your ThreeFold Connect App wallet. Farming rewards are usually distributed around the 5th of each month.
 
-***
+
 
 # Additional Information
 
