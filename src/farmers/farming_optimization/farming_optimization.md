@@ -1,6 +1,8 @@
 <h1> Farming Optimization </h1>
 
-The last section covered the notions necessary to build a DIY 3Node server. The following section will give you additional information with the goal of optimizing your farm while also being able to plan ahead the costs in terms of energy and capitals. We note that the ThreeFold token entry priced is locked for 5 years when you connect a 3Node to the ThreeFold Grid v3. This means that you will farm a constant number of TFT per month, and this, for a duration of 60 months. This fact is very important as it gives you the basis for economic planning. 
+The section [Build a 3Node](../3node_building/3node_building.md) covered the notions necessary to build a DIY 3Node server. The following section will give you additional information with the goal of optimizing your farm while also being able to plan ahead the costs in terms of energy and capitals. We also cover how to set a GPU node and more.
+
+We note that the ThreeFold token entry priced is locked for 5 years when you connect a 3Node to the ThreeFold Grid v3. This means that you will farm a constant number of TFT per month, and this, for a duration of 60 months. This fact is very important as it gives you the basis for economic planning.
 
 As an economic comparative tool, many farmers will check the TFT per month for each dollar invested. This constitutes a good way to see if a 3Node build is economically sound. It's then easy to compare between two different 3Nodes configurations.
 
@@ -12,6 +14,8 @@ The CPU passmark threshold is not yet implemented, but it constitutes a good way
 
 <h2> Table of Contents </h2>
 
-- [Calculate Your ROI](./calculate_roi.html)
-- [Room Parameters](./farm_room_parameters.html)
-- [Farming Costs](./farming_costs.html)
+- [GPU Farming](../3node_building/gpu_farming.md)
+- [Set Additional Fees](./set_additional_fees.md)
+- [Room Parameters](./farm_room_parameters.md)
+- [Farming Costs](./farming_costs.md)
+- [Calculate Your ROI](./calculate_roi.md)
