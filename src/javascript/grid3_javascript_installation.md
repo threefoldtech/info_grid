@@ -25,7 +25,7 @@ The [Grid Client](https://github.com/threefoldtech/tfgrid-sdk-ts/tree/developmen
 
 To install the Grid Client, you will need the following on your machine:
 
-- node 16.13.1 or higher
+- [Node.js](https://nodejs.org/en) ^18
 - npm 8.2.0 or higher
 - may need to install libtool (**apt-get install libtool**)
 
@@ -33,9 +33,8 @@ To install the Grid Client, you will need the following on your machine:
 
 To use the Grid Client, you will need the following on the TFGrid:
 
-- An account
-- A twin
-- Mnemonics
+- A TFChain account
+- TFT in your wallet
 
 If it is not the case, please visit the [Get started section](../getstarted/tfgrid3_getstarted.md).
 
