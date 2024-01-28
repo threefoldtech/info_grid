@@ -54,11 +54,13 @@ If you are using the Farmerbot, it might be a good idea to first boot the GPU no
 
 ## Set a Price for the GPU Node
 
-You can set a price for your GPU dedicated node on the [TF Dashboard](https://dashboard.grid.tf/).
+You can [set additional fees](../farming_optimization/set_additional_fees.md) for your GPU dedicated node on the [TF Dashboard](https://dashboard.grid.tf/). 
 
 * On the Dashboard, go to **Portal -> Farms**
 * Under the section **Your Farm Nodes**, locate the GPU node and click **Set Additional Fees** under **Actions**
 * Set a monthly fee (in USD) and click **Set**
+
+When a user reserves your 3Node as a dedicated node, you will receive TFT payments once every 24 hours. These TFT payments will be sent to the TFChain account of your farm's twin.
 
 ## Check the GPU Node on the Explorer
 

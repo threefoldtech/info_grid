@@ -1,11 +1,24 @@
-# ZDBs
+<h1>ZDBs</h1>
 
-This document explains ZDBs related commands using tf-grid-cli.
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Deploy](#deploy)
+  - [Required Flags](#required-flags)
+  - [Optional Flags](#optional-flags)
+- [Get](#get)
+- [Cancel](#cancel)
+
+***
+
+## Introduction
+
+In this section, we explore how to use ZDBs related commands using `tfcmd` to interact with the TFGrid.
 
 ## Deploy
 
 ```bash
-tf-grid-cli deploy zdb [flags]
+tfcmd deploy zdb [flags]
 ```
 
 ### Required Flags
@@ -19,7 +32,7 @@ tf-grid-cli deploy zdb [flags]
 - farm: farm id zdbs should be deployed on, if set choose available node from farm that fits zdbs deployment specs (default 1). note: node and farm flags cannot be set both.
 - count: count of zdbs to be deployed (default 1).
 - names: a slice of names for the number of ZDBs.
-- password: passowrd for ZDBs deployed
+- password: password for ZDBs deployed
 - description: description for your ZDBs, it's optional.
 - mode: the enumeration of the modes 0-db can operate in (default user).
 - public: if zdb gets a public ip6 (default false).
@@ -29,7 +42,7 @@ Example:
 - Deploying ZDBs
 
 ```console
-$ tf-grid-cli deploy zdb --project_name examplezdb --size=10 --n=2 --password=password
+$ tfcmd deploy zdb --project_name examplezdb --size=10 --count=2 --password=password
 12:06PM INF deploying zdbs
 12:06PM INF zdb 'examplezdb0' is deployed
 12:06PM INF zdb 'examplezdb1' is deployed
@@ -38,15 +51,15 @@ $ tf-grid-cli deploy zdb --project_name examplezdb --size=10 --n=2 --password=pa
 ## Get
 
 ```bash
-tf-grid-cli get zdb <zdb-project-name>
+tfcmd get zdb <zdb-project-name>
 ```
 
-`zdb-project-name` is the name of the deployment specified in while deploying using tf-grid-cli.
+`zdb-project-name` is the name of the deployment specified in while deploying using tfcmd.
 
 Example:
 
 ```console
-$ tf-grid-cli get zdb examplezdb
+$ tfcmd get zdb examplezdb
 3:20PM INF zdb:
 {
         "Name": "examplezdb",
@@ -98,15 +111,15 @@ $ tf-grid-cli get zdb examplezdb
 ## Cancel
 
 ```bash
-tf-grid-cli cancel <zdb-project-name>
+tfcmd cancel <zdb-project-name>
 ```
 
-`zdb-project-name` is the name of the deployment specified in while deploying using tf-grid-cli.
+`zdb-project-name` is the name of the deployment specified in while deploying using tfcmd.
 
 Example:
 
 ```console
-$ tf-grid-cli cancel examplezdb
+$ tfcmd cancel examplezdb
 3:37PM INF canceling contracts for project examplezdb
 3:37PM INF examplezdb canceled
 ```
