@@ -23,7 +23,7 @@ Using the ThreeFold Nodes Explorer is a quick way to make sure that you are depl
 Each network has a specific Dashboard. Make sure to use the correct URL that corresponds to the network you are deploying on.
 
 - [Devnet Dashboard](https://dashboard.dev.grid.tf)
-  - [Nodes Explorer](https://dashboard.dev.grid.tf/explorer/nodes)
+  - [Nodes Explorer](https://dashboard.dev.grid.tf/#/deploy/nodes)
 - [Qanet Dashboard](https://dashboard.qa.grid.tf)
   - [Nodes Explorer](https://dashboard.qa.grid.tf/explorer/nodes)
 - [Testnet Dashboard](https://dashboard.test.grid.tf)

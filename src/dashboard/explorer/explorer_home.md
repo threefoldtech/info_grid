@@ -27,9 +27,9 @@ Throughout this manual, we will delve into the intricacies of the ThreeFold Expl
 The ThreeFold Explorer can give insights into the different ThreeFold networks. Each ThreeFold network has an associated ThreeFold Explorer. You can use the ThreeFold Explorer to query information about ThreeFold Statistics, Nodes and Farms. The links are the following:
 
 - [Devnet Dashboard](https://dashboard.dev.grid.tf)
-  - [Statistics](https://dashboard.dev.grid.tf/explorer/statistics)
-  - [Nodes](https://dashboard.dev.grid.tf/explorer/nodes)
-  - [Farms](https://dashboard.dev.grid.tf/explorer/farms)
+  - [Statistics](https://dashboard.dev.grid.tf/#/tf-grid/stats)
+  - [Nodes](https://dashboard.dev.grid.tf/#/deploy/nodes)
+  - [Farms](https://dashboard.dev.grid.tf/#/farms/farm-finder)
 - [Qanet Dashboard](https://dashboard.qa.grid.tf)
   - [Statistics](https://dashboard.qa.grid.tf/explorer/statistics)
   - [Nodes](https://dashboard.qa.grid.tf/explorer/nodes)
