@@ -11,7 +11,7 @@ Cloud units are a unified way to account for virtual hardware resources on the T
 - Storage Unit (SU): The amount of storage capacity in terms of Hard Disk Drives (HDDs) and Solid State Drives (SSDs) in Gigabytes (GB).
 - Network Unit (NU): The amount of data that travels in and out of storage units or compute units expressed in GB.
 
-> Note: [Resource units](./resourceunits.md) are used to calculate SU & CU. Resource Units are used to measure compute and storage capacity produced by hardware.
+> Note: [Resource units](./resource_units_calc_cloudunits.md) are used to calculate SU & CU. Resource Units are used to measure compute and storage capacity produced by hardware.
 
 When a solution is deployed on the ThreeFold Grid, the system automatically gathers the required amount of CU, SU, or NU. It is important to note that users are not billed upon reservation but only when utilizing the actualy CU, SU and NU. TF Certified Farmers can define the price of CU, SU, and NU they make available on the ThreeFold Grid. 
 

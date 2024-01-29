@@ -50,7 +50,7 @@ To streamline our development workflow, we have adopted the GitHub-style project
 
 ## Github Project
 
-When creating a new project, please use the [grid template project](https://github.com/orgs/threefoldtech/projects/205)
+When creating a new project, please use the grid template project (private repository) available at `https://github.com/orgs/threefoldtech/projects/205`.
 
 
 ### Github project columns
