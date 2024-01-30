@@ -157,6 +157,7 @@
     - [Quick Guide](farmers/farmerbot/farmerbot_quick.md)
     - [Extensive Guide](farmers/farmerbot/farmerbot.md)
     - [Additional Information](farmers/farmerbot/farmerbot_information.md)
+    - [Minting and the Farmerbot](farmers/farmerbot/farmerbot_minting.md)
   - [Farming Details](wiki/tfgrid/farming/farming_toc.md)
     - [Farming Rewards](wiki/tfgrid/farming/farming_reward.md)
     - [Proof-of-Utilization](wiki/tfgrid/farming/proof_of_utilization.md)
