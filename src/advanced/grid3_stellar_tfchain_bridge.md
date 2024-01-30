@@ -1,22 +1,33 @@
-# Transferring TFT between Stellar and Tfchain
+<h1> Transferring TFT Between Stellar and TFChain</h1>
+
+<h2>Table of Contents</h2>
+
+- [Usage](#usage)
+- [Prerequisites](#prerequisites)
+- [Stellar to TFChain](#stellar-to-tfchain)
+- [TFChain to Stellar](#tfchain-to-stellar)
+
+***
 
 ## Usage
 
 This document will explain how you can transfer TFT from Tfchain to Stellar and back.
 
+For more information on TFT bridges, read [this documentation](../threefold_token/tft_bridges/tft_bridges.md).
+
 ## Prerequisites
 
-- Stellar wallet
+- [Stellar wallet](../threefold_token/storing_tft/storing_tft.md)
 
-- Account on TFchain (use TF Dashboard to create one).
+- [Account on TFChain (use TF Dashboard to create one)](../dashboard/dashboard.md)
 
-## Stellar to Tfchain
+## Stellar to TFChain
 
 You can deposit to Tfchain using the bridge page on the TF Dashboard, click deposit:
 
 ![bridge](./img/deposit_bridge.png)
 
-## Tfchain to Stellar
+## TFChain to Stellar
 
 You can bridge back to stellar using the bridge page on the dashboard, click withdraw:
 
