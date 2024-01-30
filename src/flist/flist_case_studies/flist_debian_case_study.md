@@ -1,9 +1,9 @@
-<h1> FList Case Study: Debian 12 </h1>
+<h1> Flist Case Study: Debian 12 </h1>
 
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
-  - [You Said FList?](#you-said-flist)
+  - [You Said Flist?](#you-said-flist)
   - [Case Study Objective](#case-study-objective)
   - [The Overall Process](#the-overall-process)
 - [Docker Image Creation](#docker-image-creation)
@@ -15,37 +15,37 @@
 - [Docker Publishing Steps](#docker-publishing-steps)
   - [Create Account and Access Token](#create-account-and-access-token)
   - [Build and Push the Docker Image](#build-and-push-the-docker-image)
-- [Convert the Docker Image to an FList](#convert-the-docker-image-to-an-flist)
-- [Deploy the FList on the TF Playground](#deploy-the-flist-on-the-tf-playground)
+- [Convert the Docker Image to an Flist](#convert-the-docker-image-to-an-flist)
+- [Deploy the Flist on the TF Playground](#deploy-the-flist-on-the-tf-playground)
 - [Conclusion](#conclusion)
 
 ***
 
 ## Introduction
 
-For this tutorial, we will present a case study demonstrating how easy it is to create a new FList on the ThreeFold Ecosystem. We will be creating a Debian Flist and we will deploy a micro VM on the ThreeFold Playground and access our Debian deployment. 
+For this tutorial, we will present a case study demonstrating how easy it is to create a new flist on the ThreeFold ecosystem. We will be creating a Debian Flist and we will deploy a micro VM on the ThreeFold Playground and access our Debian deployment. 
 
-To do all this, we will need to create a Docker Hub account, create a Dockerfile, a docker image and a docker container, then convert the docker image to a Zero-OS FList. After all this, we will be deploying our Debian workload on the ThreeFold Playground. You'll see, it's pretty straightforward and fun to do.
+To do all this, we will need to create a Docker Hub account, create a Dockerfile, a docker image and a docker container, then convert the docker image to a Zero-OS flist. After all this, we will be deploying our Debian workload on the ThreeFold Playground. You'll see, it's pretty straightforward and fun to do.
 
 ***
 
-### You Said FList?
+### You Said Flist?
 
-First, let's recall what an FList actually is and does. In short, an FList is a very effective way to deal with software data and the end result is fast deployment and high reliability.
+First, let's recall what an flist actually is and does. In short, an flist is a very effective way to deal with software data and the end result is fast deployment and high reliability.
 
-In a FList, we separate the metadata from the data. The metadata is a description of what files are in that particular image. It's the data providing information about the app/software. Thanks to FList, the 3Node doesn't need to install a complete software program in order to run properly. Only the necessary files are installed. Zero-OS can read the metadata of a container and only download and execute the necessary binaries and applications to run the workload, when it is necessary.
+In a flist, we separate the metadata from the data. The metadata is a description of what files are in that particular image. It's the data providing information about the app/software. Thanks to flist, the 3Node doesn't need to install a complete software program in order to run properly. Only the necessary files are installed. Zero-OS can read the metadata of a container and only download and execute the necessary binaries and applications to run the workload, when it is necessary.
 
 Sounds great? It really is great, and very effective!
 
-One amazing thing about the FList technology is that it is possible to convert any Docker image into an FList, thanks to the [ThreeFold Docker Hub Converter tool](https://hub.grid.tf/docker-convert). If this sounds complicated, fear not. It is very easy and we will show you how to proceed in this case study.
+One amazing thing about the flist technology is that it is possible to convert any Docker image into an flist, thanks to the [ThreeFold Docker Hub Converter tool](https://hub.grid.tf/docker-convert). If this sounds complicated, fear not. It is very easy and we will show you how to proceed in this case study.
 
 ***
 
 ### Case Study Objective
 
-The goal of this case study is to give you enough information and tools so that you can yourself build your own FList projects and deploy on the ThreeFold Grid.
+The goal of this case study is to give you enough information and tools so that you can yourself build your own flist projects and deploy on the ThreeFold Grid.
 
-This case study is not meant to show you all the detailed steps on creating an FList from scratch. We will instead start with some files templates available on the ThreeFold repository [tf-images](https://github.com/threefoldtech/tf-images). This is one of the many advantages of working with open-source projects: we can easily get inspiration from the already available codes of the many ThreeFold repositories and work our way up from there.
+This case study is not meant to show you all the detailed steps on creating an flist from scratch. We will instead start with some files templates available on the ThreeFold repository [tf-images](https://github.com/threefoldtech/tf-images). This is one of the many advantages of working with open-source projects: we can easily get inspiration from the already available codes of the many ThreeFold repositories and work our way up from there.
 
 ***
 
@@ -55,18 +55,18 @@ To give you a bird's view of the whole project, here are the main steps:
 
 * Create the Docker image
 * Push the Docker image to the Docker Hub
-* Convert the Docker image to a Zero-OS FList
-* Deploy a micro VM with the FList on the ThreeFold Playground
+* Convert the Docker image to a Zero-OS flist
+* Deploy a micro VM with the flist on the ThreeFold Playground
 
 ***
 
 ## Docker Image Creation
 
-As we've said previously, we will not explore all the details of creating an FList from scratch. This would be done in a subsequent guide. For now, we want to take existing codes and work our way from there. This is not only quicker, but it is a good way to get to know the ThreeFold's ecosystem and repositories.
+As we've said previously, we will not explore all the details of creating an flist from scratch. This would be done in a subsequent guide. For now, we want to take existing codes and work our way from there. This is not only quicker, but it is a good way to get to know the ThreeFold's ecosystem and repositories.
 
 We will be using the code available on the [ThreeFold Tech's Github page](https://github.com/threefoldtech). In our case, we want to explore the repository [tf-images](https://github.com/threefoldtech/tf-images).
 
-If you go on the subsection [tfgrid3](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3), you can see many different FLists available. In our case, we want to deploy the Debian Linux distribution. It is thus logic to try and find similar Linux distributions to take inspiration from.
+If you go on the subsection [tfgrid3](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3), you can see many different flists available. In our case, we want to deploy the Debian Linux distribution. It is thus logic to try and find similar Linux distributions to take inspiration from.
 
 For this case study, we draw inspiration from the [Ubuntu 22.04](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/ubuntu22.04) directory.
 
@@ -187,7 +187,7 @@ Here another service `sshd.yaml` runs after the `ssh-init.yaml` process.
 
 As every good programmer knows, a good code is nothing without some good documentation to help others understand what's going on! This is where the `README.md` file comes into play.
 
-In this file, we can explain what our code is doing and offer steps to properly configure the whole deployment. For the users that will want to deploy the FList on the ThreeFold Playground, they would need the FLIst URL and the basic steps to deploy a Micro VM on the TFGrid. We will thus add this information in the README.md file. This information can be seen in the [section below](#deploy-the-flist-on-the-tf-playground). To read the complete README.md file, go to [this link](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/debian).
+In this file, we can explain what our code is doing and offer steps to properly configure the whole deployment. For the users that will want to deploy the flist on the ThreeFold Playground, they would need the FLIst URL and the basic steps to deploy a Micro VM on the TFGrid. We will thus add this information in the README.md file. This information can be seen in the [section below](#deploy-the-flist-on-the-tf-playground). To read the complete README.md file, go to [this link](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/debian).
 
 ### Putting it All Together
 
@@ -228,7 +228,7 @@ You now have access to the Docker Hub from your local computer. We will then pro
       ```
   * Example:
     * ```
-      docker build -t logismosis/debian12 . 
+      docker build -t username/debian12 . 
       ```
 * Push the docker container to the [Docker Hub](https://hub.docker.com/)
   * Template:
@@ -237,7 +237,7 @@ You now have access to the Docker Hub from your local computer. We will then pro
       ```
   * Example:
     * ```
-      docker push logismosis/debian12
+      docker push username/debian12
       ```
 * You should now see your docker image on the [Docker Hub](https://hub.docker.com/) when you go into the menu option `My Profile`.
   * Note that you can access this link quickly with the following template:
@@ -247,9 +247,9 @@ You now have access to the Docker Hub from your local computer. We will then pro
 
 ***
 
-## Convert the Docker Image to an FList
+## Convert the Docker Image to an Flist
 
-We will now convert the Docker image into a Zero-OS FList. This part is so easy you will almost be wondering why you never heard about FList before!
+We will now convert the Docker image into a Zero-OS flist. This part is so easy you will almost be wondering why you never heard about flist before!
 
 * Go to the [ThreeFold Hub](https://hub.grid.tf/).
 * Sign in with the ThreeFold Connect app.
@@ -258,30 +258,30 @@ We will now convert the Docker image into a Zero-OS FList. This part is so easy 
   * Template:
     * `<docker_username>/docker_image_name:tagname`
   * Example:
-    * `logismosis/debian12:latest`
+    * `username/debian12:latest`
 * Click `Convert the docker image`.
-* Once the conversion is done, the FList is available as a public link on the ThreeFold Hub.
-* To get the FList URL, go to the [TF Hub main page](https://hub.grid.tf/), scroll down to your 3Bot ID and click on it.
-* Under `Name`, you will see all your available FLists.
-* Right-click on the FList you want and select `Copy Clean Link`. This URL will be used when deploying on the ThreeFold Playground. We show below the template and an example of what the FList URL looks like.
+* Once the conversion is done, the flist is available as a public link on the ThreeFold Hub.
+* To get the flist URL, go to the [TF Hub main page](https://hub.grid.tf/), scroll down to your 3Bot ID and click on it.
+* Under `Name`, you will see all your available flists.
+* Right-click on the flist you want and select `Copy Clean Link`. This URL will be used when deploying on the ThreeFold Playground. We show below the template and an example of what the flist URL looks like.
   * Template:
     * ```
       https://hub.grid.tf/<3BOT_name.3bot>/<docker_username>-<docker_image_name>-<tagname>.flist
       ```
   * Example:
     * ```
-      https://hub.grid.tf/idrnd.3bot/logismosis-debian12-latest.flist
+      https://hub.grid.tf/idrnd.3bot/username-debian12-latest.flist
       ```
 
 ***
 
-## Deploy the FList on the TF Playground
+## Deploy the Flist on the TF Playground
 
 * Go to the [ThreeFold Playground](https://play.grid.tf).
 * Set your profile manager.
 * Go to the [Micro VM](https://play.grid.tf/#/vm) page.
 * Choose your parameters (name, VM specs, etc.).
-* Under `FList`, paste the Debian FList from the TF Hub you copied previously.
+* Under `flist`, paste the Debian flist from the TF Hub you copied previously.
 * Make sure the entrypoint is as follows:
   * ```
     /sbin/zinit init
@@ -295,6 +295,6 @@ That's it! You can now SSH into your Debian deployment and change the world one 
 
 ## Conclusion
 
-In this case study, we've seen the overall process of creating a new FList to deploy a Debian workload on a Micro VM on the ThreeFold Playground.
+In this case study, we've seen the overall process of creating a new flist to deploy a Debian workload on a Micro VM on the ThreeFold Playground.
 
 If you have any questions or feedback, please let us know by either writing a post on the [ThreeFold Forum](https://forum.threefold.io/), or by chatting with us on the [TF Grid Tester Community](https://t.me/threefoldtesting) Telegram channel.

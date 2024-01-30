@@ -1,4 +1,4 @@
-# Supported FLists
+# Supported Flists
 
 
 |flist|entrypoint|env vars|
