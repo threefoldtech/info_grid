@@ -1,4 +1,4 @@
-<h1>Nextcloud Redundant Deployment on Two 3node Servers</h1>
+<h1>Nextcloud Redundant Deployment</h1>
 
 ![ ](./img/terraform_.png)
 

@@ -335,6 +335,7 @@
         - [Nextcloud All-in-One Deployment](terraform/advanced/terraform_nextcloud_aio.md)
         - [Nextcloud Single Deployment](terraform/advanced/terraform_nextcloud_single.md)
         - [Nextcloud Redundant Deployment](terraform/advanced/terraform_nextcloud_redundant.md)
+        - [Nextcloud 2-Node VPN Deployment](terraform/advanced/terraform_nextcloud_vpn.md)
       - [Nomad](terraform/advanced/terraform_nomad.md)
   - [Pulumi](pulumi/pulumi_readme.md)
     - [Introduction to Pulumi](pulumi/pulumi_intro.md)

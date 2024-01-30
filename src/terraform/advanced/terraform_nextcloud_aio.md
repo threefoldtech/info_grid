@@ -1,4 +1,4 @@
-<h1> Nextcloud All-in-One Guide </h1>
+<h1> Nextcloud All-in-One Deployment </h1>
 
 ![ ](./img/terraform_.png)
 
