@@ -230,8 +230,6 @@
     - [What is the difference between a certified and a non-certified 3Node?](#what-is-the-difference-between-a-certified-and-a-non-certified-3node)
     - [What are the different certifications available for 3Node servers and farms? What are the Gold and Silver certifications?](#what-are-the-different-certifications-available-for-3node-servers-and-farms-what-are-the-gold-and-silver-certifications)
     - [What is the difference between V2 and V3 minting?](#what-is-the-difference-between-v2-and-v3-minting)
-    - [How long is the minting period of the tokens on ThreeFold? How long is the farming period?](#how-long-is-the-minting-period-of-the-tokens-on-threefold-how-long-is-the-farming-period)
-    - [What is the start and end of the current minting period? What are the minting periods for ThreeFold Farming in 2023?](#what-is-the-start-and-end-of-the-current-minting-period-what-are-the-minting-periods-for-threefold-farming-in-2023)
     - [What is the TFT minting address on Stellar Chain?](#what-is-the-tft-minting-address-on-stellar-chain)
     - [Can Titans and DIY 3Nodes share the same farm?](#can-titans-and-diy-3nodes-share-the-same-farm)
     - [Do I need one farm for each 3Node?](#do-i-need-one-farm-for-each-3node)
@@ -251,7 +249,6 @@
     - [How can I know the potential farming rewards for Grid Utilization?](#how-can-i-know-the-potential-farming-rewards-for-grid-utilization)
     - [What is the easiest way to farm ThreeFold tokens (TFT)?](#what-is-the-easiest-way-to-farm-threefold-tokens-tft)
     - [When do I receive my rewards?](#when-do-i-receive-my-rewards)
-    - [On ThreeFold Grid v3, how can I verify my 3Nodes' payments on Stellar Blockchain?](#on-threefold-grid-v3-how-can-i-verify-my-3nodes-payments-on-stellar-blockchain)
     - [Do farming rewards take into account the type of RAM, SSD, HDD and CPU of the 3Node server?](#do-farming-rewards-take-into-account-the-type-of-ram-ssd-hdd-and-cpu-of-the-3node-server)
     - [What is the farming reward calculation?](#what-is-the-farming-reward-calculation)
     - [Can I send my farming rewards directly to a crypto exchange?](#can-i-send-my-farming-rewards-directly-to-a-crypto-exchange)
@@ -1417,7 +1414,7 @@ In general, mainnet is more stable and it is better to use it for official workl
 * Go Client and GPU
   * [GPU Support](../go/grid3_go_gpu_support.md)
   * [VM with GPU](../go/grid3_go_vm_with_gpu.md)
-* [TFGrid CLI and GPU](../tfgridcmd/grid3_cli_vm.md#deploy-a-vm-with-gpu)
+* [TFCMD and GPU](../tfcmd/tfcmd_vm.md#deploy-a-vm-with-gpu)
 * [Terraform and GPU](../terraform/terraform_gpu_support.md)
 * [Full VM and GPU](../playground/fullVm.md)
 * [Zero-OS API and GPU](../internals/zos/manual/api.md#gpus)
@@ -2408,35 +2405,6 @@ On the tokenomics side, V2 rewards decrease as the difficulty level increases. F
 
 ***
 
-### How long is the minting period of the tokens on ThreeFold? How long is the farming period?
-
-Each period has: 2630880 seconds = 43848 minutes = 730.8 hours. For more info, read [this](../faq/faq.md#what-is-the-start-and-end-of-the-current-minting-period-what-are-the-minting-periods-for-threefold-farming-in-2023).
-
-***
-
-### What is the start and end of the current minting period? What are the minting periods for ThreeFold Farming in 2023?
-
-The minting periods for the 12 months of 2023 are the following:
-
-| Month    | Start of the Minting Period     | End of the Minting Period       |
-|----------|---------------------------------|---------------------------------|
-| Jan 2023 | December 31, 2022 at 4\:32\:40 am | January 30, 2023 at 3\:20\:40 pm  |
-| Feb 2023 | January 30, 2023 at 3\:20\:40 pm  | March 2, 2023 at 2\:08\:40 am     |
-| Mar 2023 | March 2, 2023 at 2\:08\:40 am     | April 1, 2023 at 12\:56\:40 pm    |
-| Apr 2023 | April 1, 2023 at 12\:56\:40 pm    | May 1, 2023 at 11\:44\:40 pm      |
-| May 2023 | May 1, 2023 at 11\:44\:40 pm      | June 1, 2023 at 10\:32\:40 am     |
-| Jun 2023 | June 1, 2023 at 10\:32\:40 am     | July 1, 2023 at 9\:20\:40 pm      |
-| Jul 2023 | July 1, 2023 at 9\:20\:40 pm      | August 1, 2023 at 8\:08\:40 am    |
-| Aug 2023 | August 1, 2023 at 8\:08\:40 am    | August 31, 2023 at 6\:56\:40 pm   |
-| Sep 2023 | August 31, 2023 at 6\:56\:40 pm   | October 1, 2023 at 5\:44\:40 am   |
-| Oct 2023 | October 1, 2023 at 5\:44\:40 am   | October 31, 2023 at 4\:32\:40 pm  |
-| Nov 2023 | October 31, 2023 at 4\:32\:40 pm  | December 1, 2023 at 3\:20\:40 am  |
-| Dec 2023 | December 1, 2023 at 3\:20\:40 am  | December 31, 2023 at 2\:08\:40 pm |
-
-Note: A minting period is 2630880 seconds
-
-***
-
 ### What is the TFT minting address on Stellar Chain?
 
 The TFT minting address on Stellar Chain is the following: GBOVQKJYHXRR3DX6NOX2RRYFRCUMSADGDESTDNBDS6CDVLGVESRTAC47
@@ -2559,30 +2527,6 @@ Buy a [certified 3Node](https://marketplace.3node.global/index.php). This is mor
 They are distributed once a month, around the 8th*. Distributions are not daily, or after a certain threshold. Note that upcoming minting rules may have a 24 month lockup or until 30% utilization for 3 months on your 3Node. 
 
 *This can change slightly depending on the current situation.
-
-***
-
-### On ThreeFold Grid v3, how can I verify my 3Nodes' payments on Stellar Blockchain?
-
-Here's the summary on how to find the details of a 3Node's payment on the Stellar Blockchain using the ThreeFold Alpha Minting tool:
-
-1. Go to [https://stellar.expert](https://stellar.expert).
-
-2. Open the hamburger menu on the top right (mobile version).
-
-3. Paste your wallet address in the search bar.
-
-4. Go to the last payment you want details of.
-   
-5. Make sure the Memo (HASH) is in the HEX format. If it isn't, click on *base64* and change it to *hex*.
-
-6. Copy the Memo (HASH).
-
-7. Go to the ThreeFold Alpha minting tool at [https://alpha.minting.tfchain.grid.tf/](https://alpha.minting.tfchain.grid.tf/).
-
-8. Paste the Memo (HASH) you copied. You will find the details of the 3Node's payment.
-
-NB: A full period is 2630880 seconds.
 
 ***
 

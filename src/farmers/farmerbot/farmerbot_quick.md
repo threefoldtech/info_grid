@@ -29,8 +29,6 @@ This version of the Farmerbot also works with ARM64. This means that if you have
 
 Read the [Additional Information](farmerbot_information.md) section for further details concerning the Farmerbot. 
 
-> For a script that can help automate the steps in this guide, [check this forum post](https://forum.threefold.io/t/new-farmerbot-install-script/4207).
-
 ## Prerequisites
 
 - The TFChain account associated with the farm should have at least 5 TFT (recommended is 50 TFT)
@@ -81,6 +79,8 @@ For this guide, we run the Farmerbot on a Full VM running on the TFGrid. Note th
 ## Farmerbot Setup
 
 We present the different steps to run the Farmerbot using the binaries.
+
+> For a script that can help automate the steps in this guide, [check this forum post](https://forum.threefold.io/t/new-farmerbot-install-script/4207).
 
 ### Download the Farmerbot Binaries
 
