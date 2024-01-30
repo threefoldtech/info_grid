@@ -1,9 +1,5 @@
 <h1>ThreeFold Connect: Create a Threefold Connect Account and Wallet</h1>
 
-<div class="youtubeVideoWrapper">
-<iframe title="Threefold Connect Create Account and Wallet" width="560" height="315" src="https://www.youtube-nocookie.com/embed/jfIetL7DaRg" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
-</div>
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)

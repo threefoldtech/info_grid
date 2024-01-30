@@ -12,8 +12,9 @@ ThreeFold Tokens are generated through a process called “Farming”. Farming h
 - [TFT Contract Addresses on Chains](#tft-contract-addresses-on-chains)
 - [Bridges Between Chains](#bridges-between-chains)
 - [Storing TFT](#storing-tft)
-- [Buy \& Sell TFT](#buy--sell-tft)
+- [Buy and Sell TFT](#buy-and-sell-tft)
 - [Liquidity Provider (LP)](#liquidity-provider-lp)
+- [Transaction Fees](#transaction-fees)
 - [Deploy on the TFGrid with TFT](#deploy-on-the-tfgrid-with-tft)
 - [Disclaimer](#disclaimer)
 
@@ -58,7 +59,7 @@ There are many ways to store TFT. The [TF Connect app wallet](./storing_tft/tf_c
 
 > [Easily Store TFT](./storing_tft/storing_tft.md)
 
-## Buy & Sell TFT
+## Buy and Sell TFT
 
 There are many ways to [buy and sell TFT](./buy_sell_tft/buy_sell_tft_toc.md). 
 
@@ -75,6 +76,12 @@ Learn about all the ways to buy TFT.
 A liquidity provider (LP) is an individual or entity that contributes liquidity to a decentralized exchange or automated market maker (AMM) platform
 
 > [Become a Liquidity Provider](./liquidity/liquidity_readme.md)
+
+## Transaction Fees
+
+Each time transactions are done on chains, transaction fees apply.
+
+> Learn about [Transaction Fees](./transaction_fees.md)
 
 ## Deploy on the TFGrid with TFT
 

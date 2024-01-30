@@ -13,9 +13,9 @@ __Process__ :
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. ***matter*.gent02.dev.grid.tf**
 
 - Select a capacity package:
-    - **Minimum**: {cpu: 1, memory: 1024 * 2, diskSize: 10 }
-    - **Standard**: {cpu: 2, memory: 1024 * 4, diskSize: 50 }
-    - **Recommended**: {cpu: 4, memory: 1024 * 4, diskSize: 100 }
+    - **Small**: {cpu: 1, memory: 2, diskSize: 15 }
+    - **Medium**: {cpu: 2, memory: 4, diskSize: 50 }
+    - **Large**: {cpu: 4, memory: 16, diskSize: 100 }
     - Or choose a **Custom** plan
 - Choose a gateway node to deploy your Mattermost instance on.
 
