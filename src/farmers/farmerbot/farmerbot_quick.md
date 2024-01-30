@@ -7,14 +7,10 @@
 - [Farmerbot Costs on the TFGrid](#farmerbot-costs-on-the-tfgrid)
 - [Enable Wake-On-Lan](#enable-wake-on-lan)
 - [Deploy a Full VM](#deploy-a-full-vm)
-- [Method 1: Binaries and Zinit](#method-1-binaries-and-zinit)
+- [Farmerbot Setup](#farmerbot-setup)
   - [Download the Farmerbot Binaries](#download-the-farmerbot-binaries)
   - [Create the Farmerbot Files](#create-the-farmerbot-files)
   - [Run the Farmerbot](#run-the-farmerbot)
-- [Method 2: Docker](#method-2-docker)
-  - [Build the Farmerbot Docker Image](#build-the-farmerbot-docker-image)
-  - [Create the Farmerbot Files](#create-the-farmerbot-files-1)
-  - [Run the Farmerbot](#run-the-farmerbot-1)
 - [Farmerbot Files](#farmerbot-files)
   - [Configuration File Template (config.yml)](#configuration-file-template-configyml)
   - [Environment Variables File Template (.env)](#environment-variables-file-template-env)
@@ -25,15 +21,15 @@
 
 ## Introduction
 
-In this guide, we show how to deploy the [Farmerbot](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot) on a full VM running on the TFGrid.
+In this guide, we show how to deploy the [Farmerbot](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot) on a full VM running on the TFGrid. 
 
-We show two distinct methods to run the Farmerbot. The first method is by running the Farmerbot binaries and the second method is by running the Farmerbot with Docker. Both methods can be done on bare metal or on a full VM running on the TFGrid.
+This guide can be done on bare metal or on a full VM running on the TFGrid. You need at least two 3Nodes on the same farm to make use of the Farmerbot.
 
-This version of the Farmerbot also works with ARM64. This means that if you have a Pi 3, 4, or Zero 2 with a 64 bit OS, you can just grab the appropriate release archive and it will work properly.
+This version of the Farmerbot also works with ARM64. This means that if you have a Pi 3, 4, or Zero 2 with a 64 bit OS, you can download the appropriate release archive and it will work properly.
 
-Note that you need at least two 3Nodes on the same farm to make use of the Farmerbot.
+Read the [Additional Information](farmerbot_information.md) section for further details concerning the Farmerbot. 
 
-Read the [Additional Information](farmerbot_information.md) section for further details concerning the Farmerbot.
+> For a script that can help automate the steps in this guide, [check this forum post](https://forum.threefold.io/t/new-farmerbot-install-script/4207).
 
 ## Prerequisites
 
@@ -82,9 +78,9 @@ For this guide, we run the Farmerbot on a Full VM running on the TFGrid. Note th
     reboot
     ```
 
-## Method 1: Binaries and Zinit
+## Farmerbot Setup
 
-We present how to run the Farmerbot using the binaries.
+We present the different steps to run the Farmerbot using the binaries.
 
 ### Download the Farmerbot Binaries
 
@@ -107,11 +103,11 @@ We present how to run the Farmerbot using the binaries.
     cd ~
     mkdir farmerbotfiles
     ```
-- Create the Farmerbot `config.yml` file (see template below)
+- Create the Farmerbot `config.yml` file ([see template below](#configuration-file-template-configyml))
     ```
     nano ~/farmerbotfiles/config.yml
     ```
-- Create the environment variables file and set the variables (see template below)
+- Create the environment variables file and set the variables ([see template below](#environment-variables-file-template-env))
     ```
     nano ~/farmerbotfiles/.env
     ```
@@ -146,9 +142,9 @@ We can set an Ubuntu systemd service to keep the Farmerbot running after exiting
 
     [Service]
     Restart=always
-    StandardOutput=append:/home/root/farmerbotfiles/farmerbot.log
-    StandardError=append:/home/root/farmerbotfiles/farmerbot.log
-    ExecStart=/usr/local/bin/farmerbot run -e /home/root/farmerbotfiles/.env -c /home/root/farmerbotfiles/config.yml -d
+    StandardOutput=append:/root/farmerbotfiles/farmerbot.log
+    StandardError=append:/root/farmerbotfiles/farmerbot.log
+    ExecStart=/usr/local/bin/farmerbot run -e /root/farmerbotfiles/.env -c /root/farmerbotfiles/config.yml -d
 
     [Install]
     WantedBy=multi-user.target     
@@ -163,58 +159,6 @@ We can set an Ubuntu systemd service to keep the Farmerbot running after exiting
     ```
     systemctl status farmerbot
     ```
-
-## Method 2: Docker
-
-We present how to run the Farmerbot using Docker.
-
-### Build the Farmerbot Docker Image
-
-- [Install Docker on the VM](../../computer_it_basics/docker_basics.md#install-docker-desktop-and-docker-engine)
-    ```
-    curl -fsSL https://get.docker.com -o get-docker.sh
-    sh get-docker.sh
-    ```
-- Clone the the ThreeFold Tech `tfgrid-sdk-go` repository and switch to the latest release tag
-    ```
-    git clone https://github.com/threefoldtech/tfgrid-sdk-go
-    git checkout tags/v0.13.16
-    ```
-- Build the Farmerbot Docker image
-    ```
-    cd tfgrid-sdk-go/farmerbot  
-    docker build -t farmerbot -f Dockerfile ../
-    ```
-
-### Create the Farmerbot Files
-
-- Create the Farmerbot directory
-    ```
-    cd ..
-    mkdir farmerbotgo
-    cd farmerbotgo
-    ```
-- Create the Farmerbot `config.yml` file (see template below)
-    ```
-    nano config.yml
-    ```
-- Create the environment variables file and set the variables (see template below)
-    ```
-    nano .env
-    ```
-
-### Run the Farmerbot
-
-- Run the Farmerbot docker image in the background
-    ```
-    docker run -d --restart unless-stopped -v $(pwd)/config.yml:/config.yml -v $(pwd)/.env:/.env farmerbot run -e /.env -c /config.yml
-    ```
-- For farmers with **ed25519** keys, the flag `-k` should be used. Note that by default, the Farmerbot uses the **sr25519** keys.
-    ```
-    docker run -d --restart unless-stopped -v $(pwd)/config.yml:/config.yml -v $(pwd)/.env:/.env farmerbot run -k ed25519 -e /.env -c /config.yml
-    ```
-
-For more information on the supported commands, refer to the [Farmerbot repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot) or the [Additional Information section](farmerbot_information.md#supported-commands-and-flags).
 
 ## Farmerbot Files
 
@@ -264,7 +208,26 @@ You can run multiple instances of the Farmerbot on the same VM.
 
 To do so, you need to create a directory for each instance of the Farmerbot. Each directory should contain the configuration and variables files as shown above. Once you've set the files, you can simply execute the Farmerbot `run` command to start each bot in each directory.
 
-If you are using Docker, it is a good idea to name each container differently so they're easier to distinguish later.
+It's recommended to use distinct names for the directories and the services to easily differentiate the multiple farmerbots running on the VM.
+
+For example, the directory tree of two Farmerbots could be:
+
+```
+└── farmerbotfiles
+    ├── farmerbot1
+    │   ├── .env
+    │   └── config.yml
+    └── farmerbot2
+        ├── .env
+        └── config.yml
+```
+
+For example, the services of two Farmerbots could be named as follows:
+
+```
+farmerbot1.service
+farmerbot2.service
+```
 
 ## Questions and Feedback
 
