@@ -1430,7 +1430,7 @@ In general, mainnet is more stable and it is better to use it for official workl
 * Go Client and GPU
   * [GPU Support](../go/grid3_go_gpu_support.md)
   * [VM with GPU](../go/grid3_go_vm_with_gpu.md)
-* [TFGrid CLI and GPU](../tfgridcmd/grid3_cli_vm.md#deploy-a-vm-with-gpu)
+* [TFCMD and GPU](../tfcmd/tfcmd_vm.md#deploy-a-vm-with-gpu)
 * [Terraform and GPU](../terraform/terraform_gpu_support.md)
 * [Full VM and GPU](../playground/fullVm.md)
 * [Zero-OS API and GPU](../internals/zos/manual/api.md#gpus)

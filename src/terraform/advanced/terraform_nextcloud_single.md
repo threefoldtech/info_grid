@@ -1,4 +1,4 @@
-<h1>Nextcloud Deployment </h1>
+<h1>Nextcloud Single Deployment </h1>
 
 ![ ](./img/terraform_.png)
 

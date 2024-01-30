@@ -34,7 +34,7 @@ Dedicated nodes are 3Nodes that can be reserved and rented entirely by one user.
 
 - Received Discounts for renting a node on TFGrid internet capacity
   - 50% for dedicated node (TF Pricing policies)
-  - A second level discount up to 60% for balance level see [Discount Levels](../../cloud/cloudunits_pricing.md#staking-discount)
+  - A second level discount up to 60% for balance level see [Discount Levels](../../wiki/cloudunits/pricing/staking_discount_levels.md)
 - Discounts are calculated every time the grid bills by checking the available TFT balance on the user wallet and seeing if it is sufficient to receive a discount. As a result, if the user balance drops below the treshold of a given discount, the deployment price increases.
 
 

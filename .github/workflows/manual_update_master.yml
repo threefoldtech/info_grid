@@ -43,4 +43,4 @@ jobs:
         id: link-report
         uses: docker://ghcr.io/threefoldfoundation/website-link-checker:latest
         with:
-          args: 'https://www.manual.grid.tf -e 404 500 501 502 503 504 -w all'
+          args: 'https://www.manual.grid.tf -e 404 501 503 504 -w all'

@@ -22,7 +22,7 @@ In this section, we provide advanced networking tips for farms with public IPs a
 
 For farmers who have public IPs, extra considerations are needed in setting up the network of the farm. We will go through the main considerations in this section.
 
-First, we must acknowledge that by the open-source and design of ThreeFold farming, a farm can range from a simple [single 3Node](./3node_building.md) setup, to a multi-rack farm hosted in a typical data center, and everything in-between, from the farmer experiencing with public IP blocks, to the entrepreneur who builds their own data center at home.
+First, we must acknowledge that by the open-source and design of ThreeFold farming, a farm can range from a simple [single 3Node](../3node_building/3node_building.md) setup, to a multi-rack farm hosted in a typical data center, and everything in-between, from the farmer experiencing with public IP blocks, to the entrepreneur who builds their own data center at home.
 
 There are thus many types of farms and each will have varying configurations. The simplest way to set up a farm has been extensively discussed in the first steps of creating a farm. But what are the other more complex configurations possible? Let's go through some of those:
 

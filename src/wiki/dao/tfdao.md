@@ -1,12 +1,15 @@
-![](img/dao_whatis_.jpg)
-
 # ThreeFold DAO
 
-The ThreeFold DAO allows autonomous operation of the TFChain and TFGrid .
+![](img/dao_whatis_.jpg)
+
+The ThreeFold DAO allows autonomous operation of the TFChain and TFGrid.
 
 Amongst others the DAO needs to arrange
 
-!!!include:utility_token_model
+| Utility Token model                          |                                            |
+| -------------------------------------------- | ------------------------------------------ |
+| [Proof Of Capacity](../tfgrid/farming/proof_of_capacity.md)       | Farming (creation) of TFT                  |
+| [Proof Of Utilization](../tfgrid/farming/proof_of_utilization.md) | Utilization (burning, distribution) of TFT |
 
 As well as
 
@@ -20,7 +23,5 @@ As well as
   - new features in TFChain
   - rewards for sales channels, solution providers (v3.2+)
 
-{{#include ./dao_more_info.md}}
-
-!!!def alias:tf_dao,tfdao
+{{#include ./dao_why.md}}
 
