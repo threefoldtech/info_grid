@@ -26,6 +26,7 @@
   - [Creating Page Section with Multiple Columns](#creating-page-section-with-multiple-columns)
   - [Important Links](#important-links-3)
   - [Build and Preview Your Website Locally](#build-and-preview-your-website-locally)
+  - [Check the Website Links](#check-the-website-links)
   - [Important Links](#important-links-4)
 - [Publish Your Website (Via Github Pages)](#publish-your-website-via-github-pages)
   - [Publish your Github page](#publish-your-github-page)
@@ -285,6 +286,16 @@ When successful, it will give you a link to a local preview of your website. Go 
 And, Congratulations! You just built your website locally!
 
 ![](./img/preview.png)
+
+### Check the Website Links
+
+When you are in the main directory of your Zola website, you can check the following command to check the links of the complete website locally:
+
+```
+zola check
+```
+
+Once your website is online, you can also use the [Website Link Checker](./website_link_checker.md).
 
 ### Important Links
 

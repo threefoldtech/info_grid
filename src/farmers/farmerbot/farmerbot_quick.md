@@ -19,7 +19,7 @@ We present a quick way to deploy the Farmerbot by deploying a Full VM on the TFG
 
 Note that you need at least two 3Nodes on the same farm to make use of the Farmerbot.
 
-***
+
 
 ## Enable Wake-On-Lan
 
@@ -40,7 +40,7 @@ Here are some examples to guide you:
 
 > Hint: Check the Z-OS monitor screen and make sure that all the 3Nodes are within the same lan (e.g. all 3Nodes addresses are between 192.168.15.00 and 192.168.15.255).
 
-***
+
 
 ## Deploy a Full VM
 
@@ -49,7 +49,7 @@ For this guide, we run the Farmerbot on a Full VM running on the TFGrid. Note th
 * Deploy a full VM on the TFGrid with minimum specs (512 MB of memory, 1 vcore, 15 GB of storage)
   * Read [this guide](../../getstarted/ssh_guide/ssh_guide.md) for more information on deploying a Full VM with the TF Playground
 
-***
+
 
 ## Farmerbot Costs on the TFGrid
 
@@ -61,7 +61,7 @@ For the periodic wakeups, each node in the farm is shut down and powered on once
 
 > average transaction fees cost per month = 0.001 TFT (extrinsic fee) * amount of nodes * 40 * 2 (1 for powering down, one for powering up)
 
-***
+
 
 ## Install Docker
 
@@ -74,7 +74,7 @@ curl -fsSL https://get.docker.com | sh
 If you want, you can also set up and install Docker Engine from [Docker’s apt repository](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository). For this method, simply follow the steps given in the sections `Set up the repository` and `Install Docker Engine`.
 
 
-***
+
 
 ## Create the Configuration Files
 
@@ -95,7 +95,7 @@ If you want, you can also set up and install Docker Engine from [Docker’s apt 
 
 > Note: It is can be a good idea to set only one node with `yes` for `never_shutdown`. A node with low power consumption is obviously a wise choice.
 
-***
+
 
 ## Run the Farmerbot
 
@@ -108,7 +108,7 @@ If you want, you can also set up and install Docker Engine from [Docker’s apt 
     docker compose up -d
     ```
 
-***
+
 
 ## Questions and Feedback
 

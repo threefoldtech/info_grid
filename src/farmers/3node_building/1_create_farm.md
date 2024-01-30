@@ -8,6 +8,7 @@
 - [Optional: Add Public IP Addresses](#optional-add-public-ip-addresses)
   - [How to configure public IP addresses for a ThreeFold farm or a 3Node](#how-to-configure-public-ip-addresses-for-a-threefold-farm-or-a-3node)
   - [The Difference Between IPs Assigned to Nodes Versus a Farm](#the-difference-between-ips-assigned-to-nodes-versus-a-farm)
+- [Farm Creation Note](#farm-creation-note)
 
 ***
 
@@ -174,3 +175,7 @@ Fill in the necessary information and click save. Only the IPv4 address and gate
 IPs assigned to a farm are available to be rented by workloads. They can be assigned to virtual machines for example. IPs assigned to nodes enable each node to become a gateway.
 
 ***
+
+## Farm Creation Note
+
+Please note that it is currently possible for anyone to create a node on any farm, by simply entering the farm ID on the [Zero-OS Boot Generator Assistant](https://bootstrap.grid.tf/). This is a known issue that we are working on.

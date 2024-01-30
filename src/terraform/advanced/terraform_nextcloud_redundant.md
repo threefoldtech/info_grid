@@ -1,4 +1,4 @@
-<h1>Nextcloud Redundant Deployment on Two 3node Servers</h1>
+<h1>Nextcloud Redundant Deployment</h1>
 
 ![ ](./img/terraform_.png)
 
@@ -343,7 +343,9 @@ After deployments, take note of the 3nodes' IPv4 address. You will need those ad
 
 ### Test the Wireguard Connection
 
-We now want to ping the VMs using Wireguard. This will ensure the connection is properly established.
+We now want to ping the VMs using Wireguard. This will ensure the connection is properly established. 
+
+For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../getstarted/ssh_guide/ssh_wireguard.md).
 
 First, we set Wireguard with the Terraform output.
 
@@ -383,7 +385,7 @@ If you correctly receive the packets from the two VMs, you know that the VPN is 
 
 ## Download MariaDB and Configure the Database
 
-* Download MariaDB's server and client
+* Download MariaDB's server and client on both VMs
   * ```
     apt install mariadb-server mariadb-client -y
     ```
@@ -394,7 +396,7 @@ If you correctly receive the packets from the two VMs, you know that the VPN is 
     * Do the following changes 
       * Add `#` in front of
         * `bind-address = 127.0.0.1`
-      * Remove `#` in front of the following lines and replace  `X` by `1` for the master VM and by `2` for the worker VM
+      * Remove `#` in front of the following lines and replace  `X` by `1` on the master VM and by `2` on the worker VM
         ```
         #server-id              = X
         #log_bin                = /var/log/mysql/mysql-bin.log
