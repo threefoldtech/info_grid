@@ -1,72 +1,124 @@
-The [client](https://github.com/threefoldtech/grid3_client_ts) is written using typescript to provide more convinient, type-checked code and it is used to deploy workloads like Virtual machines, kubernetes clusters, quantum storage, .. etc
+<h1>Installation</h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+  - [External Package](#external-package)
+  - [Local Usage](#local-usage)
+- [Getting Started](#getting-started)
+  - [Client Configuration](#client-configuration)
+- [Generate the Documentation](#generate-the-documentation)
+- [How to Run the Scripts](#how-to-run-the-scripts)
+- [Reference API](#reference-api)
+
+***
+
+## Introduction
+
+We present here the general steps required to install and use the ThreeFold Grid Client.
+
+The [Grid Client](https://github.com/threefoldtech/tfgrid-sdk-ts/tree/development/packages/grid_client) is written using [TypeScript](https://www.typescriptlang.org/) to provide more convenience and type-checked code. It is used to deploy workloads like virtual machines, kubernetes clusters, quantum storage, and more.
 
 ## Prerequisites
 
-- node 16.13.1 or higher
-- npm 8.2.0 or higher
+To install the Grid Client, you will need the following on your machine:
 
-> [nvm](https://nvm.sh/) is the recommended way for installing node.
+- [Node.js](https://nodejs.org/en) ^18
+- npm 8.2.0 or higher
+- may need to install libtool (**apt-get install libtool**)
+
+> Note: [nvm](https://nvm.sh/) is the recommended way for installing node.
+
+To use the Grid Client, you will need the following on the TFGrid:
+
+- A TFChain account
+- TFT in your wallet
+
+If it is not the case, please visit the [Get started section](../getstarted/tfgrid3_getstarted.md).
 
 ## Installation
 
-### External package
+### External Package
+
+To install the external package, simply run the following command:
 
 ```bash
-npm install grid3_client
+yarn add @threefold/grid_client
 ```
 
-or
+> Note: For the **qa**, **test** and **main** networks, please use @2.1.1 version.
 
-```bash
-yarn add grid3_client
-```
+### Local Usage
 
-### Local usage
+To use the Grid Client locally, clone the repository then install the Grid Client:
 
 - Clone the repository
+  - ```bash
+    git clone https://github.com/threefoldtech/tfgrid-sdk-ts
+    ```
+- Install the Grid Client
+  - With yarn
+      -   ```bash
+          yarn install
+          ```
+  - With npm
+      -   ```bash
+          npm install
+          ```
 
-```bash
-git clone https://github.com/threefoldtech/grid3_client_ts.git
-```
+> Note: In the directory **grid_client/scripts**, we provided a set of scripts to test the Grid Client.
 
-- Install it
+## Getting Started
 
-```bash
-npm install
-```
+You will need to set the client configuration either by setting the json file manually (**scripts/config.json**) or by using the provided script (**scripts/client_loader.ts**). 
 
-or
+### Client Configuration
 
-```bash
-yarn install
-```
+Make sure to set the client configuration properly before using the Grid Client.
 
-From now on in the document we will assume you already have
+- **network**: The network environment (**dev**, **qa**, **test** or **main**).
 
-- account
-- twin
-- mnemonics
+- **mnemonic**: The 12 words mnemonics for your account. 
+  - Learn how to create one [here](https://manual.grid.tf/getstarted/TF_Dashboard/TF_Dashboard.html#create-polkadot-extension-account).
 
-If you don't, please visit the [Get started section](../getstarted/tfgrid3_getstarted.md)
+- **storeSecret**: This is any word that will be used for encrypting/decrypting the keys on ThreeFold key-value store.
 
-We provided set of scripts to play around with in the repository in the `scripts` directory.
+- **ssh_key**: The public SSH key set on your machine.
 
-## How to run the scripts
+> Note: Only networks can't be isolated, all projects can see the same network.
 
-- Set your grid3 client configuration in `scripts/client_loader.ts` or easily use one of `config.json`
-- update your customized deployments specs
+## Generate the Documentation
+
+The easiest way to test the installation is to run the following command with either yarn or npm to generate the Grid Client documentation:
+
+* With yarn
+  * ```
+    yarn run serve-docs
+    ```
+* With npm
+  * ```
+    npm run serve-docs
+    ```
+
+> Note: You can also use the command **yarn run** to see all available options.
+
+## How to Run the Scripts
+
+You can explore the Grid Client by testing the different scripts proposed in **grid_client/scripts**.
+
+- Update your customized deployments specs if needed
 - Run using [ts-node](https://www.npmjs.com/ts-node)
-
-```bash
-npx ts-node --project tsconfig-node.json scripts/zdb.ts
-```
-
-or
-
-```bash
-yarn run ts-node --project tsconfig-node.json scripts/zdb.ts
-```
+  - With yarn
+    - ```bash
+      yarn run ts-node --project tsconfig-node.json scripts/zdb.ts
+      ```
+  - With npx
+    - ```bash
+      npx ts-node --project tsconfig-node.json scripts/zdb.ts
+      ```
 
 ## Reference API
 
-Still in progress, but you can check always [here](https://threefoldtech.github.io/grid3_client_ts/api/)
+While this is still a work in progress, you can have a look [here](https://threefoldtech.github.io/tfgrid-sdk-ts/packages/grid_client/docs/api/index.html).

@@ -36,6 +36,7 @@ Note that the process is similar for other rack servers.
   - [Different CPUs and RAMs Configurations for 3Node Dell Servers](#different-cpus-and-rams-configurations-for-3node-dell-servers)
 - [Closing Words](#closing-words)
 
+***
 
 # Setting Up the Hardware
 
@@ -142,15 +143,15 @@ Here you can see that the gap is not in the middle of the RAM stick. You must be
 ![3node_diy_rack_server_26](./img/3node_diy_rack_server_26.png)  
 
 When you want to put a RAM stick in its slot, make sure the plastic holders on the sides are opened and insert the RAM stick. Make sure you align the RAM stick properly. You can then push on one side at a time until the RAM stick clicks in. You can do it both sides at once if you are at ease.
-***
+
 ### General Rules when Installing RAM Sticks
-***
+
 First, always use RAM sticks of the same size and type. It should be noted on your motherboard which slots to populate first. 
 
 As a general guide, there is usually 2 slots A and B, with each 2 memory stick entries. You must then install the ram sticks on A1 and B1 in order to achieve dual channel, then A2 and B2 if you have more (visual order: A1 A2 B1 B2).
-***
+
 #### Procedure to Install RAM Sticks
-***
+
 You want to start with your largest sticks, evenly distributed between both processors and work your way down to your smallest. 
 
 As an example, let's say you have 2 processors and 4x 16GB sticks and 4x 8GB sticks. The arrangement would be A1-16GB, B1-16GB, A2-16GB, B2-16GB, A3-8GB, B3-8GB, A4-8GB, B4-8GB. 
@@ -285,19 +286,19 @@ You might need to wipe your disks if they are not brand new. To wipe your disks,
 ![3node_diy_rack_server_47](./img/3node_diy_rack_server_47.png)  
 
 Use the ISO image for DVD boot and the USB image for USB BIOS boot (not UEFI). We use the farm ID 1 here as an example. Put your own farm ID.
-***
+
 ### DVD ISO BIOS Image
 For the ISO image, download the file and burn it on a DVD.
-***
+
 ### USB BIOS Image
 Note: the USB key must be formatted before burning the Zero-OS bootstrap image.
 
 For Windows, MAC and Linux, you can use [balenaEtcher](https://www.balena.io/etcher/), a free and open source software that will let you create a bootstrap image on a USB key, while also formatting the USB key at the same time. 
 
 This is the **easiest way** to burn your Zero-OS bootstrap image. All the steps are clearly explained within the software.
-***
+
 For Windows, you can also use Rufus.
-***
+
 For the USB image, with Linux, you can also go through the command window and write:
 
 > dd status=progress if=FILELOCATION.ISO(or .IMG) of=/dev/sd*. 
@@ -331,7 +332,7 @@ You can also disable the booting options that are not need. It can be good to ha
 
 Boot Sequence Retry enabled will simply redo the booting sequence if the last time did not work.
 
-***
+
 That's it. You've set the BIOS settings properly and now is time to boot the 3Node and connect to the ThreeFold Grid.
 
 You can then save your preferences and exit. Your server should restart and load the bootstrap image. 
@@ -340,7 +341,7 @@ You can then save your preferences and exit. Your server should restart and load
 
 Once you've set the BIOS settings and restarted your computer, it will download the Zero-OS bootstrap image. This takes a couple of minutes.
 
-The first time you boot a 3Node, it will be written: “This node is not registered (farmer ***: NameOfFarm). This is normal. The Grid will create a node ID and you will be able to see it on screen. This can take a couple of minutes.
+The first time you boot a 3Node, it will be written: “This node is not registered (farmer : NameOfFarm). This is normal. The Grid will create a node ID and you will be able to see it on screen. This can take a couple of minutes.
 
 Once you have your node ID, you can also go on the ThreeFold Explorer to see your 3Node and verify that the connection is recognized by the Explorer.
 
@@ -360,7 +361,7 @@ Note that you cannot have more than 16 sticks of ECC DIMM on the R620/R720. For 
 # Closing Words
 That's it. You have now built a DIY 3Node and you are farming on the ThreeFold Grid.
 
-If you encounter errors, you can read the section [Troubleshooting and Error Messages](../../faq/faq.md#troubleshooting-and-error-messages) of the Farmer FAQ.
+If you encounter errors, you can read the section [Troubleshooting and Error Messages](../../../faq/faq.md#troubleshooting-and-error-messages) of the Farmer FAQ.
 
 If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](https://forum.threefold.io/) or on the [ThreeFold Telegram Farmer Group](https://t.me/threefoldfarmers).
 

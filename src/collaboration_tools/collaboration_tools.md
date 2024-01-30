@@ -11,3 +11,8 @@ These tools play a crucial role in enhancing as well as simplifying collaboratio
 
 - [Website Deployer](./website_tool.md)
   - This ThreeFold's website builder tool, made by using Zola, is a static site generator (SSG) and content management system (CMS) that empowers developers and content creators to build and manage websites efficiently. It is an open-source framework written in the Rust programming language, known for its performance, security, and reliability. 
+
+- [Website Link Checker](./website_link_checker.md)
+  - The ThreeFold website link checker is a wrapper around muffet to check for specific link errors on live websites written in Python.
+
+ 

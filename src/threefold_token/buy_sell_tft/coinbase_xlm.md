@@ -14,8 +14,6 @@ In order to engage in seamless TFT transactions on the Stellar network, it is es
 
 This section of the manual will guide you through the process of obtaining XLM using [**Coinbase Exchange**](https://www.coinbase.com/exchange/), a reputable cryptocurrency exchange service. Coinbase offers a user-friendly platform that simplifies the buying, selling, and storing of various cryptocurrencies, including XLM.
 
-![](img/coinbase_web.png)
-
 By acquiring XLM, you will have the necessary funds to cover transaction fees on the Stellar network, ensuring smooth and efficient TFT transactions within your chosen Stellar wallet. While this guide focuses on **Coinbase Exchange** as the preferred exchange platform, please note that XLM can also be purchased from other exchanges that support it.
 
 Follow the steps outlined in this manual to acquire XLM on Coinbase and lay the foundation for your TFT transactions. Let's get started on this crucial prerequisite to enable your seamless engagement with TFT on the Stellar network.
@@ -27,8 +25,6 @@ Follow the steps outlined in this manual to acquire XLM on Coinbase and lay the 
 - **Fiat Payment Methods**: Additionally, to purchase XLM (Stellar Lumens) on Coinbase Exchange, you will need link a fiat payment method to your Coinbase account, such as a linked bank account or a credit card. This fiat currency will be used to exchange for XLM. Click [here](https://help.coinbase.com/en/coinbase/getting-started/add-a-payment-method/how-do-i-add-a-payment-method-when-using-the-mobile-app) for the complete guide of adding payment method to Coinbase.
 ***  
 ## Tutorial
-
-![](img/xlm_exchange.png)
 
 Coinbase Exchange has taken steps to simplify the process of purchasing Stellar Lumens (XLM) by providing a this [**comprehensive XLM Purchase guide**](https://www.coinbase.com/how-to-buy/stellar). 
 
@@ -48,4 +44,4 @@ After successfully purchasing XLM from Coinbase, you can begin the process of wi
 
 To learn more about the steps involved in withdrawing XLM from Coinbase to another Stellar wallet, click [here](https://help.coinbase.com/en/exchange/trading-and-funding/withdraw-funds). This resource will provide you with detailed instructions and guidelines on how to initiate the withdrawal process and ensure a smooth transfer of your XLM to your preferred Stellar wallet.
 
-> Get a TFT (Stellar) Wallet of your choice [here](../storetft/storetft_readme.md)!
+> Get a TFT (Stellar) Wallet of your choice [here](../storing_tft/storing_tft.md)!

@@ -1,7 +1,5 @@
 # TFGrid release 3.0
 
-![](img/releasenotes.jpg)
-
 TFGrid 3.0 will be released gradually during Q3/Q4 2021. 
 
 ## What's new ?
@@ -43,6 +41,3 @@ E.g. if you have 12 months worth of TFT in your account in relation to the last 
 The feature overview split over different releases can be found [here](https://circles.threefold.me/project/despiegk-product_tfgrid3_roadmap/wiki/roadmap).
 
 More info and announcements on Grid 3.0 to be found on our [forum](https://forum.threefold.io/t/announcement-of-tfgrid-3-0/1132) 
-
-
-!!!def alias:tf_grid_3,threefold_grid_3

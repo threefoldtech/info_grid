@@ -1,4 +1,4 @@
-<h1> GPU Support and Go </h1>
+<h1> GPU Support </h1>
 
 <h2> Table of Contents </h2>
 

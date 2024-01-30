@@ -72,16 +72,16 @@ The steps are the following:
     git clone https://github.com/YOUR_GIT_ACCOUNT/info_grid
     ```
     * make sure to write your own Github account in the URL
-* To deploy the mdbook locally, write the following lines:
+* To deploy the mdbook locally, first go to the **info_grid** directory:
   * ```
     cd info_grid
     ```
+* Then write the following line. It will open the manual automatically.
   * ```
-    mdbook serve --port 3031
+    mdbook serve -o
     ```
-    * You can use a different port if you want.
-* To view the TF Manual, go to the following URL on a: [http://localhost:3031/](http://localhost:3031/)
-  * You should now be able to see your changes.
+  * Note that, by default, the URL is the following, using port `3000`, `http://localhost:3000/`
+* You should now be able to see your changes.
 
 ***
 

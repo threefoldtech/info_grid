@@ -20,7 +20,7 @@ BTC-Alpha is a cryptocurrency exchange platform that provides a secure and user-
 
 In this guide, we will walk you through the process of storing TFT on the BTC-Alpha exchange by depositing TFT from your external wallet to your BTC-Alpha Exchange.
 
-> If you are looking for ways to get / purchase TFT (Stellar) on BTC-Alpha by trading, you will find the according information [here](../buytft/btc_alpha.md).
+> If you are looking for ways to get / purchase TFT (Stellar) on BTC-Alpha by trading, you will find the according information [here](../buy_sell_tft/btc_alpha.md).
 ***
 ## Prerequisites
 
@@ -90,12 +90,10 @@ Log in to your BTC-Alpha account and Click on the "Wallets" tab located in the t
 
 Search for "**TFT**" in the list of available cryptocurrencies.
 
-![](../buytft/img/ALPHA_TFT_SEARCH.png)
+![](./img/alpha_tft.png)
 
 You will be provided with a TFT deposit address.
 Make sure you choose **ThreeFold Token (Stellar)** as your deposit method.
-
-![](../buytft/img/alpha_tftstellar.png)
 
 To deposit, Copy this address or scan the QR code associated with it. As well as the Memo.
 
@@ -104,8 +102,6 @@ Use your personal external TFT wallet or the wallet of another exchange to initi
 Ensure that you specify the correct deposit address and Memo. Double-check it before confirming the transaction.
 
 **IMPORTANT**: It is crucial to always include the correct memo when sending TFT (Stellar) tokens to ensure the transaction is processed accurately. Failing to include the memo or entering an incorrect memo can lead to the loss of TFT tokens.
-
-![](../buytft/img/ALPHA_MEMO.png)
 
 Wait for the transaction to be confirmed on the Stellar network. This may take some time depending on network congestion.
 Once the transaction is confirmed, the TFT will be credited to your BTC-Alpha account balance.
@@ -120,11 +116,11 @@ While it is possible to keep your TFT in your exchange wallet on BTC-Alpha, it i
 
 To ensure the safety and security of your TFT holdings, it is advisable to transfer them to a dedicated TFT wallet. There are several options available for creating a TFT wallet, each with its own unique features and benefits.
 
-To explore different TFT wallet options and choose the one that best suits your needs, you can refer to our comprehensive [**TFT Wallet guide**](../storetft/storetft_readme.md) that provides a list of recommended TFT wallets. This guide will help you understand the features, security measures, and compatibility of each wallet, enabling you to make an informed decision on where to store your TFT securely.
+To explore different TFT wallet options and choose the one that best suits your needs, you can refer to our comprehensive [**TFT Wallet guide**](../storing_tft/tf_connect_app.md#create-a-wallet) that provides a list of recommended TFT wallets. This guide will help you understand the features, security measures, and compatibility of each wallet, enabling you to make an informed decision on where to store your TFT securely.
 
 Remember, maintaining control over your private keys and taking precautions to protect your wallet information are essential for safeguarding your TFT investments.
 
-If you are looking for ways to get / purchase TFT (Stellar) on BTC-Alpha by trading, you will find the according information [here](../buytft/btc_alpha.md).
+If you are looking for ways to get / purchase TFT (Stellar) on BTC-Alpha by trading, you will find the according information [here](../buy_sell_tft/btc_alpha.md).
 ***
 ## Disclaimer
 

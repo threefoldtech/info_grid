@@ -35,7 +35,7 @@ To be able to contact the node directly you need to run
 - `yggdrasil`
 - `rmb` (correctly configured)
 
-Once you have those running you can now contact the node over `rmb`. For a reference implementation (function names and parameters) please refer to [client](../../client/)
+Once you have those running you can now contact the node over `rmb`. For a reference implementation (function names and parameters) please refer to [RMB documentation](../../rmb/rmb_toc.md)
 
 Here is a rough example of how low level creation of a deployment is done.
 
@@ -114,7 +114,6 @@ Each workload has a type which is associated with some data. So minimal definiti
 - `type`: workload type
 - `data`: workload data that is proper for the selected type.
 
-The full workload structure is defined in this [file](../../pkg/gridtypes/workload.go) as
 ```go
 
 // Workload struct
@@ -160,4 +159,4 @@ type Workload struct {
 ### API
 Node is always connected to the RMB network with the node `twin`. Means the node is always reachable over RMB with the node `twin-id` as an address.
 
-The [node client](../../client/node.go) should have a complete list of all available functions. documentations of the API can be found [here](api.md)
+The [node client](https://github.com/threefoldtech/zos/blob/main/client/node.go) should have a complete list of all available functions. documentations of the API can be found [here](./api.md)

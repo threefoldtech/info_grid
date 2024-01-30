@@ -7,8 +7,8 @@
   - [Bridge from Stellar to BSC](#bridge-from-stellar-to-bsc)
   - [Bridge from BSC to Stellar](#bridge-from-bsc-to-stellar)
 - [Setting Up TFT on Metamask](#setting-up-tft-on-metamask)
+- [Bridge Fees](#bridge-fees)
 - [Questions and Feedback](#questions-and-feedback)
-
 
 ***
 
@@ -16,7 +16,7 @@
 
 We present here the main steps to use the BSC-Stellar Bridge. 
 
-***
+
 
 ## How to Use the BSC-Stellar Bridge
 
@@ -28,9 +28,9 @@ It will cost 100 TFT* to bridge from Stellar to BSC, and 1 TFT to bridge from BS
 
 > Note: The bridge will process deposits/withdrawals within 48 hours.
 
-***
+
 ### Bridge from Stellar to BSC
-***
+
 **Pre-requisites:**
 
 * Metamask account
@@ -56,10 +56,10 @@ It will cost 100 TFT* to bridge from Stellar to BSC, and 1 TFT to bridge from BS
 
 In this method, you use the Bridge directly. Thus, it is normal if you do not see your standard MetaMask address. MetaMask is on ERC20 and TFT is on Stellar. You are sending TFT to the Bridge's address, and the Bridge sends money to your wallet afterward.
 
-***
+
 
 ### Bridge from BSC to Stellar
-***
+
 **Pre-requisites:**
 
 * Metamask account
@@ -92,11 +92,11 @@ In this method, you use the Bridge directly. Thus, it is normal if you do not se
 * Gas fees on BSC is usually around 5-20 gwei.
 * You can try the bridge later if gas fees are high at the moment of your transaction.
 
-***
+
 
 ## Setting Up TFT on Metamask
 
-* Download Metamask [here](https://metamask.io/download.html). Then, install the Metamask extension in your local browser.
+* Download Metamask [here](https://metamask.io/download/). Then, install the Metamask extension in your local browser.
 * Create a Metamask account
 * Switch the network to  `Binance chain` . You will have to create a new network with following information):
   * Mainnet
@@ -107,7 +107,9 @@ In this method, you use the Bridge directly. Thus, it is normal if you do not se
   * Block Explorer URL: [https://bscscan.com](https://bscscan.com/)
 * Add TFT token in Metamask -> custom token -> contract address =  `0x8f0FB159380176D324542b3a7933F0C2Fd0c2bbf`
 
-***
+## Bridge Fees
+
+To learn more about the bridge fees, read [this documentation](../transaction_fees.md).
 
 ## Questions and Feedback
 

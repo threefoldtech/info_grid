@@ -55,7 +55,6 @@ https://github.com/threefoldtech/tf-terraform-provider/releases
 - Cert type for nodes
 - public IPv6 support
 - TwinServer command to be used from other langauges
-https://github.com/threefoldtech/grid3_client_ts/releases
 
 
 ## Weblets v1.2.0
@@ -170,8 +169,6 @@ https://github.com/threefoldtech/tf-terraform-provider/releases
 - Support QSFS
 - Support Capacity Planning
 - Support Gateways
-
-https://github.com/threefoldtech/grid3_client_ts/releases
 
 
 ## Weblets

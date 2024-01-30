@@ -33,11 +33,8 @@ In this guide, we will walk you through the process of buying TFT on the BTC-Alp
 ### Sign up for an Account
 
 **Sign up for a BTC-Alpha Account:** Visit the BTC-Alpha website [https://btc-alpha.com/](https://btc-alpha.com/) and click on the "**Sign up**" button. Fill in the required information, including your email address, a secure password, and any additional details requested for the account creation process. 
-![](img/alpha_signup.png)
 
 **Login to your account**: You will then receive a notification that allow you to login to your new account. 
-
-![](img/alpha_login.png)
 
 Now, you can proceed to log in to your account and start exploring the platform. Follow these steps to log in:
 
@@ -45,16 +42,9 @@ Visit the BTC-Alpha website (https://btc-alpha.com/) on your web browser. Click 
 
 Enter the email address and password you used during the registration process in the respective fields.
 
-![](img/alpha_email.png)
-
-
 **Verify Your Account:** After completing the registration, you may need to verify your account by providing some personal identification information. This is a standard procedure for most cryptocurrency exchanges to ensure compliance with regulations and security measures. Follow the instructions provided by BTC-Alpha to complete the verification process.
 
-![](img/alpha_verify.png)
-
 Congratulations on completing the registration process for your BTC-Alpha account and are logged in to your account successfully! 
-
-![](img/alpha_home.png)
 
 ### Secure Your Account
 
@@ -68,11 +58,7 @@ Once you have installed the app, log in to your BTC-Alpha account.
 
 Right-Click on your name or profile icon located at the top-right corner of the website to access the account settings, and look for the option "**Enable Two-factor Authentication**" and click on it.
 
-![](img/alpha_auth.png)
-
 Follow the instructions provided to link your BTC-Alpha account with the Authy or Google Authenticator app. This usually involves scanning a QR code or manually entering a code provided by the app.
-
-![](img/alpha_2fa.png)
 
 Once the link is established, the app will start generating unique codes that you will need to enter during the login process for additional security.
 
@@ -88,15 +74,9 @@ To deposit BTC into your BTC-Alpha account, follow these steps:
 
 Log in to your BTC-Alpha account and Click on the "Wallets" tab located in the top menu.
 
-![](img/alpha_wallet.png)
-
 Search for "**BTC**" or "Bitcoin" in the list of available cryptocurrencies.
 
-![](img/alpha_search.png)
-
 You will be provided with a BTC deposit address. Copy this address or scan the QR code associated with it.
-
-![](img/alpha_deposit.png)
 
 Use your personal external BTC wallet or the wallet of another exchange to initiate a withdrawal to the provided deposit address.
 Ensure that you specify the correct deposit address and double-check it before confirming the transaction.
@@ -116,15 +96,9 @@ To trade BTC for TFT on the BTC-Alpha exchange, follow these steps:
 
 Log in to your BTC-Alpha account and Click on the "**Trade**" >  "**Spot Trading Terminal**" tab located in the top menu.
 
-![](img/alpha_trade.png)
-
 In the trading interface, find and select the trading pair that represents the BTC-TFT market at the top right corner. For example, it could be "BTC/TFT" or "TFT/BTC".
 
-![](img/alpha_tft)
-
 You will be presented with the trading chart and order book for the selected market on the left bottom of the page. Take some time to familiarize yourself with the interface and the available options. In the "Limit" section, enter the desired amount of TFT you want to acquire. You can choose to specify the quantity or the total value in BTC.
-
-![](img/alpha_limit.png)
 
 Review the order details, including the price and fees, before proceeding.
 
@@ -138,7 +112,7 @@ While it is possible to keep your TFT in your exchange wallet on BTC-Alpha, it i
 
 To ensure the safety and security of your TFT holdings, it is advisable to transfer them to a dedicated TFT wallet. There are several options available for creating a TFT wallet, each with its own unique features and benefits.
 
-To explore different TFT wallet options and choose the one that best suits your needs, you can refer to our comprehensive [**TFT Wallet guide**](../storetft/storetft_readme.md) that provides a list of recommended TFT wallets. This guide will help you understand the features, security measures, and compatibility of each wallet, enabling you to make an informed decision on where to store your TFT securely.
+To explore different TFT wallet options and choose the one that best suits your needs, you can refer to our comprehensive [**TFT Wallet guide**](../storing_tft/storing_tft.md) that provides a list of recommended TFT wallets. This guide will help you understand the features, security measures, and compatibility of each wallet, enabling you to make an informed decision on where to store your TFT securely.
 
 Remember, maintaining control over your private keys and taking precautions to protect your wallet information are essential for safeguarding your TFT investments.
 ***

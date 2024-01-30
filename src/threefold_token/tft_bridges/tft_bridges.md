@@ -2,10 +2,11 @@
 
 <h2> Table of Contents </h2>
 
-- [TFChain-Stellar Bridge](./tfchain_stellar_bridge.html)
-- [BSC-Stellar Bridge](./bsc_stellar_bridge.html)
-  - [BSC-Stellar Bridge Verification](./bsc_stellar_bridge_verification.html)
-- [Ethereum-Stellar Bridge](./tft_ethereum/tft_ethereum.html)
+- [TFChain-Stellar Bridge](./tfchain_stellar_bridge.md)
+- [BSC-Stellar Bridge](./bsc_stellar_bridge.md)
+  - [BSC-Stellar Bridge Verification](./bsc_stellar_bridge_verification.md)
+- [Ethereum-Stellar Bridge](./tft_ethereum/tft_ethereum.md)
+- [Bridge Fees](../transaction_fees.md)
 
 ***
 

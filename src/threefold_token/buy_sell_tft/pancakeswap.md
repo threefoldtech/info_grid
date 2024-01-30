@@ -22,8 +22,9 @@ Before you can buy TFT on Pancake Swap, there are a few prerequisites you need t
 
 - **BSC Wallet**: To interact with the Binance Smart Chain and Pancake Swap, you'll need a BSC-compatible wallet. [Trust Wallet](https://trustwallet.com/) and [MetaMask](https://metamask.io/) are popular options that support BSC. Make sure to set up and secure your wallet before proceeding.
 
-> [Set up a Metamask Wallet](../storetft/metamask.md)
-> [Set up a Trust Wallet](../storetft/trustwallet.md)
+> [Set up a Metamask Wallet](../storing_tft/metamask.md)
+> 
+> [Set up a Trust Wallet](../storing_tft/trustwallet.md)
 
 - **Connect BSC Wallet TO Pancake Swap**: Visit the Pancake Swap website and connect your BSC wallet to your Pancake Swap account.
 
@@ -35,19 +36,13 @@ Before you can buy TFT on Pancake Swap, there are a few prerequisites you need t
 ***
 ##  Buy TFT on PancakeSwap
 
-On Pancake Swap, you can easily convert your existing crypto assets on BSC network into TFT-BSC by using the Swap function. Once you have obtained TFT-BSC, you have the option to bridge it into TFT Native on the Stellar network by utilizing the [TFT-Stellar bridge](/src/farmers/threefold_token/buy_sell_tft/tfchain_stellar_bridge.md). Let's swap some tokens!
+On Pancake Swap, you can easily convert your existing crypto assets on BSC network into TFT-BSC by using the Swap function. Once you have obtained TFT-BSC, you have the option to bridge it into TFT Native on the Stellar network by utilizing the [TFT-Stellar bridge](../tft_bridges/tfchain_stellar_bridge.md). Let's swap some tokens!
 
 Now that you're all set, go to your [PancakeSwap homepage](https://pancakeswap.finance/) and click on **Trade > Swap** button as shown. Please Make sure you're on **BNB Smart Chain** network.
 
-![](img/pancake_home.png)
-
 On the Swap Page, you would see that it displays swapping from BNB to CAKE as default. Here we'd like to change that to BNB (or any other tokens you have) to TFT. click on '**CAKE**' and find TFT on the token listing pop up page, and click '**Import**'.
 
-![](img/pancake_tft.png)
-
 Once selected, define how much BNB or other token you would like to swap into TFT, and click on the '**Swap**' button.
-
-![](img/pancake_swap.png)
 
 That's it! You have officially swapped BNB into TFT. 
 ***

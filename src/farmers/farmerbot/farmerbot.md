@@ -44,7 +44,7 @@ The farmerbot is currently available for Dev Net, QA Net, Test Net and Main Net.
 
 Note that the Dev Net and the QA Net are testing environments and farmers do not receive farming rewards (TFT) when deploying on those networks. To farm TFT, you need to have your farm on the Test Net or the Main Net.
 
-***
+
 
 # Farmerbot: Video Guide
 
@@ -56,14 +56,14 @@ The following video made by Scott from the Threefold team explains how to set up
 
 If you have questions concerning the video, feel free to ask in the Threefold forum. Reading the present guide and the Farmerbot FAQ might also answer your questions.
 
-***
+
 
 # How to Prepare Your Farm for the Farmerbot with WOL
 
 ZOS can utilize 2 NIC's (Network Interface Card) of a node (server, workstation, desktop, ..). The first NIC on the motherboard will always be what we call the ZOS/dmz NIC, the second one is used for public config's (Gateway, public IP's for workloads, ..). So if you don't have public IP's in your farm, only the first NIC of your ZOS node will be used. This subnet is where the farmerbot operates. If you do have public IP's the same applies.
 
 Wake On LAN (WOL) is used to be able to boot (start) a ZOS node remotely that was shut down by the farmerbot. It works by sending what is called a 'magic packet' to the NIC MAC address of a ZOS node. If that NIC is setup correctly, aka 'listening' for the packet, the node will start up, post and boot ZOS. The farmerbot will keep a list of MAC addresses for nodes under it's management, so it knows where to send the packet if it's required.
-***
+
 ## WOL Requirements
 
 WOL comes with a few requirements. We list them in the sections that follow.
@@ -102,7 +102,7 @@ This is fully handled by ZOS. Every time ZOS boots it will enable WOL on links i
 
 Your farmerbot can be run on any system, including on a node. It doesn't have to be on the same network subnet as the nodes from the farm. The nodes of the farm on the other hand have to be in the same LAN. Don't hesitate to ask your technical questions here, we and the community will help you set things up!
 
-***
+
 
 # How to Move Your Farm to a Different Network
 
@@ -116,11 +116,11 @@ To download the Zero-OS bootstrap image, go to the usual bootstrap link [https:/
 
 Once you have your new bootstrap image for the new network, [wipe your disks](../3node_building/4_wipe_all_disks.md), insert the new bootstrap image and reboot the 3Node.
 
-***
+
 # How to Set the Farmerbot
 
 The sections on this page will guide you through the requirements, the required configuration and the steps to run the farmerbot.
-***
+
 ## Requirements
 The Farmerbot is shipped inside a docker image so that it is easy to run in a docker environment. Thus, the one and only requirement to run the farmerbot is docker so please [install docker](https://docs.docker.com/engine/install/) on your VM or your system. Next, you'll have to copy the [docker-compose file](https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml) that will start the farmerbot for you when executing the command specified in section [Running the farmerbot](#running-the-farmerbot).
 
@@ -130,7 +130,7 @@ With the minimum Ubuntu Full VM requirements, it currently costs 0.25TFT/hour to
 
 Note: The account that you are using to deploy the farmerbot needs to have some TFT available. Every time the farmerbot has to wakeup a node or shutdown a node it will have to call the chain and thus execute a transaction. The account executing those transactions will be billed (transaction fees).
 
-***
+
 ## Configuration
 Some configuration is required before running the farmerbot which should happen in a markdown file (*farmerbot.md* for example). This file should be located inside a folder called *config* in the directory of the docker-compose file. The possible configuration will be discussed in this section.
 
@@ -215,7 +215,7 @@ Power configuration
     wake_up_threshold:75
     periodic_wakeup:8:30AM
 ```
-***
+
 ## Deploying the Farmerbot
 Once the configuration is done you should create a *.env* file (next to the docker-compose file) with the content below. Make sure to change the fields to what is required: you should fill in the mnemonic of your farm, choose the appropriate network and modify the relay and substrate values if need be. 
 
@@ -253,7 +253,7 @@ SUBSTRATE=wss://tfchain.test.grid.tf:443
 
 ### Main Net
 
-For Main Net you should modify the NETWORK to main, the RELAY to wss://relay.grid.tf:443 and SUBSTRATE to wss://tfchain.grid.tf:443:
+For Main Net you should modify the NETWORK to main, the RELAY to `wss://relay.grid.tf:443` and SUBSTRATE to `wss://tfchain.grid.tf:443`:
 ```
 SECRET="MNEMONIC_OR_HEX_SECRET_OF_YOUR_FARM"
 NETWORK=main
@@ -288,13 +288,13 @@ mv config/farmerbot.log config/farmerbot.log.archive
 docker compose up -d
 ```
 
-***
+
 
 # Farmerbot FAQ
 
 Consult the Farmerbot FAQ [here](../../faq/faq.md#farmerbot).
 
-***
+
 
 # Feedback and Questions
 

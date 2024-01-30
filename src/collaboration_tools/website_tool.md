@@ -26,6 +26,7 @@
   - [Creating Page Section with Multiple Columns](#creating-page-section-with-multiple-columns)
   - [Important Links](#important-links-3)
   - [Build and Preview Your Website Locally](#build-and-preview-your-website-locally)
+  - [Check the Website Links](#check-the-website-links)
   - [Important Links](#important-links-4)
 - [Publish Your Website (Via Github Pages)](#publish-your-website-via-github-pages)
   - [Publish your Github page](#publish-your-github-page)
@@ -78,10 +79,6 @@ $ brew install zola
 ```
 Please make sure you have [Brew](https://brew.sh/) installed on your MacOS machine before installing Zola. 
 
-You should see a similar screen as below when successful:
-
-![](./img/brewsuccess.png)
-
 <b>Windows (scoop)</b>:
 
 ```
@@ -102,7 +99,7 @@ For more details on Zola Installation, and installation guidelines for other ope
 > - [Zola Installation for other OS](https://www.getzola.org/documentation/getting-started/installation/)
 > - [Command Line Cheat Sheet](https://cs.colby.edu/maxwell/courses/tutorials/terminal/)
 
-> Next Step: [Template Guide: How to use the TF Web Template](templateguide)
+> Next Step: [Template Guide: How to use the TF Web Template](#template-guide)
 
 ***
 
@@ -212,11 +209,6 @@ and ends with
 {% end %}
 ```
 
-For example, the first section of the homepage of [**www.mastodon.io**](www.mastodon.io) in Markdown:
-
-![](./img/codeexample.png)
-
-
 ### Adding Image
 
 To add image to your page please use 
@@ -294,6 +286,16 @@ When successful, it will give you a link to a local preview of your website. Go 
 And, Congratulations! You just built your website locally!
 
 ![](./img/preview.png)
+
+### Check the Website Links
+
+When you are in the main directory of your Zola website, you can check the following command to check the links of the complete website locally:
+
+```
+zola check
+```
+
+Once your website is online, you can also use the [Website Link Checker](./website_link_checker.md).
 
 ### Important Links
 

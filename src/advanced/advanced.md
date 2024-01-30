@@ -1,23 +1,21 @@
+<h1> TFGrid Advanced </h1>
+
+In this section, we delve into sophisticated topics and powerful functionalities that empower you to harness the full potential of TFGrid 3.0. Whether you're an experienced user seeking to deepen your understanding or a trailblazer venturing into uncharted territories, this manual is your gateway to mastering advanced concepts on the ThreeFold Grid.
+
 ![](img/advanced_.png)
 
-# TFGrid Advanced
+<h2>Table of Contents</h2>
 
-Advanced topics to do with TFGrid 3.0.
-
-- [More Info on TFT bridge between stellar & TFChain](grid3_stellar_tfchain_bridge.md)
-- [Transfer TFT between net's by using the keygenerator.](token_transfer_keygenerator.md)
-
-### Data Interface
-
-<!-- - [Query Interface TFChain = graphql](@graphql)
-  - [GraphQL support, a query language](explorer_graphql_intro) -->
+- [Grid3 Stellar-TFChain Bridge](./grid3_stellar_tfchain_bridge.md)
+- [Token Transfer Keygenerator](./token_transfer_keygenerator.md)
+- [Cancel Contracts](./cancel_contracts.md)
+- [Contract Bills Reports](./contract_bill_report.md)
+- [Listing Free Public IPs](./list_public_ips.md)
+- [Redis](./grid3_redis.md)
+- [IPFS](./ipfs/ipfs_toc.md)
+  - [IPFS on a Full VM](./ipfs/ipfs_fullvm.md)
+  - [IPFS on a Micro VM](./ipfs/ipfs_microvm.md)
 - [RMB Proxy](/proxy/proxy.md)
-
-### Manual way how to do things on TFChain
-
-- [TFChain Extrinsics = blockchain functions](/tfchain/tfchain.md)
+- [TFChain Extrinsics (Blockchain Functions)](/tfchain/tfchain.md)
 - [Create Farm](/dashboard/portal/dashboard_portal_ui_farming.md)
-- [Cancel contracts](cancel_contracts.md)
-- [Contract bills reports](contract_bill_report.md)
-- [Listing free public ips](list_public_ips.md)
-- [Become a Solution Provider](/tfchain/tfchain_solution_provider.md)
+- [Solution Provider](/tfchain/tfchain_solution_provider.md)

@@ -19,7 +19,7 @@ In this tutorial, we will walk you through the process of buying Stellar TFT tok
 
 - **XLM**: When buying TFT tokens using the Albedo wallet, the process involves swapping XLM (Stellar Lumens) or other Stellar tokens into TFT. Please note that a certain amount of XLM funding is required to facilitate the sending and receiving of assets on the Stellar network.
 
-- **Create a Wallet and Add TFT Asset**: Create an Albedo Wallet Account and add TFT as an asset. Read [**here**](../storetft/albedo_store.md) for the complete manual of how to create an Albedo Wallet.
+- **Create a Wallet and Add TFT Asset**: Create an Albedo Wallet Account and add TFT as an asset. Read [**here**](../storing_tft/storing_tft.md) for the complete manual of how to create an Albedo Wallet.
 ***
 ## Get Started
 
@@ -27,13 +27,9 @@ In this tutorial, we will walk you through the process of buying Stellar TFT tok
 
 Once you have completed the prerequisites, you can get TFT on Albedo by clicking 'Swap' and swapping your existing tokens to TFT, for example, XLM or USDC.
 
-![](img/albedo_swap.png)
+Insert the amount of TFT you'd like to buy or the amount of XLM you'd like to swap for TFT. Click 'Swap' to confirm the transaction.
 
- Insert the amount of TFT you'd like to buy or the amount of XLM you'd like to swap for TFT. Click 'Swap' to confirm the transaction.
-
- ![](img/albedo_swap1.png)
-
- Congratulations. You just swapped some XLM to TFT. Go to 'Balance' page to see your recently purchased TFT tokens.
+Congratulations. You just swapped some XLM to TFT. Go to 'Balance' page to see your recently purchased TFT tokens.
 ***
 ## Important Notice
 

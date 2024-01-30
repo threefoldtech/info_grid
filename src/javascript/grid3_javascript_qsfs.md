@@ -1,8 +1,23 @@
-first, make sure you have your [client](./grid3_javascript_loadclient.md) prepared
+<h1>Deploying a VM with QSFS</h1>
 
-## Deploying a VM with QSFS
+<h2>Table of Contents</h2>
 
-### Example code
+- [Prerequisites](#prerequisites)
+- [Code Example](#code-example)
+- [Detailed Explanation](#detailed-explanation)
+  - [Getting the Client](#getting-the-client)
+  - [Preparing QSFS](#preparing-qsfs)
+  - [Deploying a VM with QSFS](#deploying-a-vm-with-qsfs)
+  - [Getting the Deployment Information](#getting-the-deployment-information)
+  - [Deleting a Deployment](#deleting-a-deployment)
+
+***
+
+## Prerequisites
+
+First, make sure that you have your [client](./grid3_javascript_loadclient.md) prepared.
+
+## Code Example
 
 ```ts
 import { FilterOptions, MachinesModel, QSFSZDBSModel } from "../src";
@@ -125,15 +140,17 @@ async function main() {
 main();
 ```
 
-### Detailed explanation
+## Detailed Explanation
 
-#### Getting the client
+We present a detailed explanation of the example shown above.
+
+### Getting the Client
 
 ```ts
 const grid3 = getClient();
 ```
 
-#### preparing QSFS
+### Preparing QSFS
 
 ```ts
 const qsfs_name = "wed2710q1";
@@ -176,7 +193,7 @@ log(res);
 
 Here we deploy `8` ZDBs on nodes `2,3` with password `mypassword`, all of them having disk size of `10GB`
 
-#### Deploying a VM with QSFS
+### Deploying a VM with QSFS
 
 ```ts
 const vmQueryOptions: FilterOptions = {
@@ -240,7 +257,7 @@ log(">>>>>>>>>>>>>>>vm has been created<<<<<<<<<<<<<<<");
 log(vm_res);
 ```
 
-So this deployment is almost similiar to what we have in the [vm deployment section](grid3_javascript_vm). We only have a new section `qsfs_disks`
+So this deployment is almost similiar to what we have in the [vm deployment section](./grid3_javascript_vm.md). We only have a new section `qsfs_disks`
 
 ```ts
     qsfs_disks: [{
@@ -262,14 +279,14 @@ So this deployment is almost similiar to what we have in the [vm deployment sect
 - `minimal_shards`: the minimal possible amount of ZDBs to recover the data with when losing disks e.g due to failure
 - `mountpoint`: where it will be mounted on the VM `/myqsfsdisk`
 
-#### Getting deployment information
+### Getting the Deployment Information
 
 ```ts
 const l = await grid3.machines.getObj(vms.name);
 log(l);
 ```
 
-#### Deleting a deployment
+### Deleting a Deployment
 
 ```ts
 // delete
