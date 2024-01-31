@@ -11,6 +11,8 @@
   - [Download the Farmerbot Binaries](#download-the-farmerbot-binaries)
   - [Create the Farmerbot Files](#create-the-farmerbot-files)
   - [Run the Farmerbot](#run-the-farmerbot)
+  - [Set a Farmerbot Service](#set-a-farmerbot-service)
+  - [Check the Farmerbot Logs](#check-the-farmerbot-logs)
 - [Farmerbot Files](#farmerbot-files)
   - [Configuration File Template (config.yml)](#configuration-file-template-configyml)
   - [Environment Variables File Template (.env)](#environment-variables-file-template-env)
@@ -128,6 +130,8 @@ farmerbot run -k ed25519 -e ~/farmerbotfiles/.env -c ~/farmerbotfiles/config.yml
 
 For more information on the supported commands, refer to the [Farmerbot repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot) or the [Additional Information section](farmerbot_information.md#supported-commands-and-flags). 
 
+### Set a Farmerbot Service
+
 We can set an Ubuntu systemd service to keep the Farmerbot running after exiting the VM.
 
 * Create the service file
@@ -159,6 +163,25 @@ We can set an Ubuntu systemd service to keep the Farmerbot running after exiting
     ```
     systemctl status farmerbot
     ```
+
+### Check the Farmerbot Logs
+
+If you set a Farmerbot service [as show above](#set-a-farmerbot-service), the Farmerbot will start writing logs to the file `farmerbot.log` in the directory `farmerbotfiles`.
+
+Thus, you can get more details on the operation of the Farmerbot by inspecting the log file.
+
+* See all logs so far
+  ```
+  cat ~/farmerbotfiles/farmerbot.log
+  ```
+* See the last ten lines and new logs as they are generated
+  ```
+  tail -f ~/farmerbotfiles/farmerbot.log
+  ```
+* See all logs and new lines as they are generated
+  ```
+  tail -f -n +1 ~/farmerbotfiles/farmerbot.log
+  ```
 
 ## Farmerbot Files
 
