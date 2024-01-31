@@ -348,7 +348,7 @@
     - [Contract Bills Reports](advanced/contract_bill_report.md)
     - [Listing Free Public IPs](advanced/list_public_ips.md)
     - [Redis](advanced/grid3_redis.md) 
-  - [dashboard](dashboard/home.md)
+  - [Dashboard](dashboard/home.md)
     - [Wallet Connector](dashboard/wallet_connector.md)
     - [TFGrid](dashboard/tfgrid/tfgrid.md)
       - [Grid Status](dashboard/tfgrid/grid_status.md)

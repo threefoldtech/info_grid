@@ -1,4 +1,6 @@
-<h1> Ready Community Solutions </h1>
+<h1> Ready Community Applications </h1>
+
+Easily deploy your favourite applications on the ThreeFold grid with a click of a button.
 
 <h2> Table of Contents </h2>
 

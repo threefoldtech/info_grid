@@ -46,15 +46,15 @@ Dedicated nodes are 3Nodes that can be reserved and rented entirely by one user.
 
 - See list of all dedicated node on `Dedicated Nodes` tab on the portal.
 
-    ![ ](./img/dashboard_dedicated_nodes.png)
+    ![ ](../dashboard/img/dashboard_dedicated_nodes.png)
 
   - Hover over the price to see the applied discounts
 
-    ![](./img/dashboard_dedicated_nodes_discounts.png)
+    ![](../dashboard/img/dashboard_dedicated_nodes_discounts.png)
 
   - Expand row to see more info on the node:
   
-    ![ ](./img/dashboard_dedicated_nodes_details.png)
+    ![ ](../dashboard/img/dashboard_dedicated_nodes_details.png)
     - Resources
     - Location
     - Possible Public Ips *this depends on the farm it belongs to*
