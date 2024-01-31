@@ -1,4 +1,4 @@
-# Bridge
+# TF Token Bridge
 
 Transferring TFT between Stellar and Tfchain
 
@@ -6,7 +6,7 @@ Transferring TFT between Stellar and Tfchain
 
 This document will explain how you can transfer TFT from Tfchain to Stellar and back.
 
-![bridge page](./img/bridge/bridge.png)
+![bridge page](../dashboard/img/bridge/bridge.png)
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ Or
 
 - You can scan the QR code
 
-![bridge](./img/bridge/dashboard_bridge_deposit.png)
+![bridge](../dashboard/img/bridge/dashboard_bridge_deposit.png)
 
 ## Tfchain to Stellar
 
@@ -38,7 +38,7 @@ You can bridge back to stellar using the bridge page on the dashboard, click *wi
 
 After indicating the destination address and the amount to be transferred, click *Send*.
 
-![withdraw](./img/bridge/dashboard_bridge_withdraw.png)
+![withdraw](../dashboard/img/bridge/dashboard_bridge_withdraw.png)
 
 A withdraw fee of 1 TFT will be taken, so make sure you send a larger amount as 1 TFT.
 The amount withdrawn from TFChain will be sent to your Stellar wallet.
