@@ -324,8 +324,8 @@ If the Farmerbot is running and you want to add a new 3Node to your farm, you ca
 
 - Boot the new 3Node
   - Once the node is registered to the grid, a new node ID will be generated
-- If your configuration files are using `included_nodes` 
-  - Add the node ID to the YAML configuration file (e.g. `config.yml`)
+- If you set the section `included_nodes` in the YAML configuration file
+  - Add the new node ID to the configuration file
 - Restart the Farmerbot with the systemd command `restart` (in this example, the service is called `farmerbot`)
   ```
   systemctl restart farmerbot
