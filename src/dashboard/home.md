@@ -15,13 +15,10 @@ The backend for the weblets is introduced with the [Javascript Client](../javasc
 <h2> Table of Contents </h2>
 
 - [Wallet Connector](./wallet_connector.md)
-- [Dashboard](./dashboard/dashboard.md)
-- [Statistics](./statistics/statistics.md)
-- [Nodes](./nodes/nodes.md)
+- [TFGrid](./tfgrid/tfgrid.md)
+- [Deploy](./deploy/deploy.md)
 - [Farms](./farms/farms.md)
-- [Services](./services/services.md)
-- [Calculator](./calculators/calculators.md)
-- [Solutions](./solutions/solutions.md)
+- [TFChain](./tfchain/tfchain.md)
 
 ## Advantages
 

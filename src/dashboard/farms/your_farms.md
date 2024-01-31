@@ -1,6 +1,6 @@
-# Farms  <!-- omit from toc -->
+# Farms <!-- omit from toc -->
 
-This comprehensive guide aims to provide users with detailed instructions and insights into efficiently managing their *Farms*. Farms encompass servers and storage devices contributing computational and storage capabilities to the grid, empowering users to oversee, maintain, and optimize their resources effectively.
+This comprehensive guide aims to provide users with detailed instructions and insights into efficiently managing their _Farms_. Farms encompass servers and storage devices contributing computational and storage capabilities to the grid, empowering users to oversee, maintain, and optimize their resources effectively.
 
 - [Getting started](#getting-started)
 - [Create a new Farm](#create-a-new-farm)
@@ -16,7 +16,7 @@ This comprehensive guide aims to provide users with detailed instructions and in
 
 ## Getting started
 
-After logging in to the TF Dashboard, on the sidebar click on **Dashboard** then *Your Farms* .
+After logging in to the TF Dashboard, on the sidebar click on **Dashboard** then _Your Farms_ .
 
 ## Create a new Farm
 
@@ -42,7 +42,7 @@ Also a pricing policy is defined. Pricing policy is currently the same for all f
 
 ## Manage Your Farms
 
-You can browse your Farms in *Farms* table; Farms table contains all your own farms and its your entry point to manage your farm as in the following sections.
+You can browse your Farms in _Farms_ table; Farms table contains all your own farms and its your entry point to manage your farm as in the following sections.
 
 ![](./img/dashboard_farms_farms_table.png)
 
@@ -92,7 +92,7 @@ You can also download a single node's receipts using the `Download Receipts` but
 
 ## Manage Your Nodes
 
-as in farms table *Nodes* table contains all your own nodes and its your entry point to manage your farm as in the following sections.
+as in farms table _Nodes_ table contains all your own nodes and its your entry point to manage your farm as in the following sections.
 
 ### Node information
 
@@ -120,6 +120,6 @@ To configure public IP addresses to a specific Node
 
 #### The Difference Between IPs Assigned to Nodes Versus a Farm
 
-***
+---
 
 IPs assigned to a farm are available to be rented by workloads. They can be assigned to virtual machines for example. IPs assigned to nodes enable each node to become a gateway.
