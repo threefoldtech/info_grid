@@ -1,4 +1,4 @@
-<h1> Nextcloud All-in-One Guide </h1>
+<h1> Nextcloud All-in-One Deployment </h1>
 
 ![ ](./img/terraform_.png)
 
@@ -78,7 +78,7 @@ We thus add the following rules:
     ufw status verbose
     ```
 
-You now have enabled the firwall with proper security rules for your Nextcloud deployment.
+You now have enabled the firewall with proper security rules for your Nextcloud deployment.
 
 ***
 

@@ -1,0 +1,34 @@
+graph TD  
+    subgraph Local laptop, computer or server
+    user[End User]
+    protocol[Storage protocol]
+    qsfs[Filesystem on local OS]
+    0store[Quantum Safe storage engine]
+    end
+    subgraph Grid storage - metadata
+    etcd1[ETCD-1]
+    etcd2[ETCD-2]
+    etcd3[ETCD-3]
+    end
+    subgraph Grid storage - zero proof data
+    zdb1[ZDB-1]
+    zdb2[ZDB-2]
+    zdb3[ZDB-3]
+    zdb4[ZDB-4]
+    zdb5[ZDB-5]
+    zdb6[ZDB-6]
+    zdb7[ZDB-7]
+    user -.- protocol
+    protocol -.- qsfs
+    qsfs --- 0store
+    0store --- etcd1
+    0store --- etcd2
+    0store --- etcd3
+    0store <-.-> zdb1[ZDB-1]
+    0store <-.-> zdb2[ZDB-2]
+    0store <-.-> zdb3[ZDB-3]
+    0store <-.-> zdb4[ZDB-4]
+    0store <-.-> zdb5[ZDB-5]
+    0store <-.-> zdb6[ZDB-...]
+    0store <-.-> zdb7[ZDB-N]
+    end

@@ -1,0 +1,44 @@
+graph TD
+    subgraph Data Origin
+    file[Large chunk of data =  part_1part_2part_3part_4]
+    parta[part_1]
+    partb[part_2]
+    partc[part_3]
+    partd[part_4]
+    file -.- |split part_1|parta
+    file -.- |split part_2|partb
+    file -.- |split part 3|partc
+    file -.- |split part 4|partd
+    parta --> partb --> partc --> partd
+    parta -.-> vara[  A = part_1]
+    partb -.-> varb[  B = part_2]
+    partc -.-> varc[  C = part_3] 
+    partd -.-> vard[  D = part_4]
+    end
+    subgraph Create equations with the data parts 
+    eq1[A + B + C + D = 6]
+    eq2[A +  B +  C -  D = 3]
+    eq3[A +  B -  C -  D = 10]
+    eq4[ A -  B -  C -  D = -4]
+    eq5[ A -  B +  C +  D = 0]
+    eq6[ A -  B -  C +  D = 5]
+    vara & varb & varc & vard --> eq1 & eq2 & eq3 & eq4 & eq5 & eq6
+    end
+    subgraph Disk 1
+    eq1 --> |store the unique equation, not the parts|zdb1[A + B + C + D = 6]
+    end
+    subgraph Disk 2
+    eq2 --> |store the unique equation, not the parts|zdb2[A +  B +  C -  D = 3]
+    end
+    subgraph Disk 3
+    eq3 --> |store the unique equation, not the parts|zdb3[A +  B -  C -  D = 10]
+    end
+    subgraph Disk 4
+    eq4 --> |store the unique equation, not the parts|zdb4[A -  B -  C -  D = -4]
+    end
+    subgraph Disk 5
+    eq5 --> |store the unique equation, not the parts|zdb5[ A -  B +  C +  D = 0]
+    end
+    subgraph Disk 6
+    eq6 --> |store the unique equation, not the parts|zdb6[A -  B -  C +  D = 5]
+    end

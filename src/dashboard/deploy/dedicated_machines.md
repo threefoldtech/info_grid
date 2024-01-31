@@ -5,6 +5,7 @@
 - [What is a Dedicated Node?](#what-is-a-dedicated-node)
 - [Description](#description)
 - [Billing \& Pricing](#billing--pricing)
+- [Discounts](#discounts)
 - [Usage](#usage)
 - [GPU Support](#gpu-support)
   - [Filter and Reserve a GPU Node](#filter-and-reserve-a-gpu-node)
@@ -14,32 +15,34 @@
 
 ***
 
-# What is a Dedicated Node?
+## What is a Dedicated Node?
 
 Dedicated nodes are 3Nodes that can be reserved and rented entirely by one user. The user can thus reserve an entire node and use it exclusively to deploy solutions. This feature is ideal for users who want to host heavy deployments with the benefits of high reliability and cost effectiveness.
 
-***
 
-# Description
+## Description
 
 - Node reserved with deploying a `RentContract` on this node. node can has only one rentContract.
 - When a user create a RentContract against a node, the grid validate that there are no other active contracts on that node on the creation.
 - Once a RentContract is created, the grid can only accept contracts on this node from the tenant.
 - Only workloads from the tenant are accepted
 
-***
-
-# Billing & Pricing
+## Billing & Pricing
 
 - Once a node is rented, there is a fixed charge billed to the tenant regardless of deployed workloads.
 - Any subsequent NodeContract deployed on a node where a rentContract is active (and the same user is creating the nodeContracts) can be excluded from billing (apart from public ip and network usage).
+- Billing rates are calculated hourly on the TFGrid. 
+  - While some of the documentation mentions a monthly price, the chain expresses pricing per hour. The monthly price shown within the manual is offered as a convenience to users, as it provides a simple way to estimate costs.
+
+## Discounts
+
 - Received Discounts for renting a node on TFGrid internet capacity
   - 50% for dedicated node (TF Pricing policies)
-  - a second level discount up to 60% for balance level see [Discount Levels](../../cloud/cloudunits_pricing.md#staking-discount)
+  - A second level discount up to 60% for balance level see [Discount Levels](../../wiki/cloudunits/pricing/staking_discount_levels.md)
+- Discounts are calculated every time the grid bills by checking the available TFT balance on the user wallet and seeing if it is sufficient to receive a discount. As a result, if the user balance drops below the treshold of a given discount, the deployment price increases.
 
-***
 
-# Usage
+## Usage
 
 - See list of all dedicated node on `Dedicated Nodes` tab on the portal.
 
@@ -66,9 +69,7 @@ Dedicated nodes are 3Nodes that can be reserved and rented entirely by one user.
 - Unreserve a node:
   - Simply as reserving but another check will be done to check you don't have any active workloads on the node before unreserving.
 
-***
-
-# GPU Support
+## GPU Support
 
 To use a GPU on the TFGrid, users need to rent a dedicated node. Once they have rented a dedicated node equipped with a GPU, users can deploy workloads on their dedicated GPU node.
 
