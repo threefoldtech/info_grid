@@ -320,7 +320,16 @@ You can use the Polkadot Extrinsics for this.
 
 ## Add a 3Node to a running Farmerbot
 
-If the Farmerbot is running and you want to add a new 3Node to your farm, you will need to stop the Farmerbot, boot the new 3Node, adjust your configuration file and restart the Farmerbot.
+If the Farmerbot is running and you want to add a new 3Node to your farm, you can proceed as follows.
+
+- Boot the new 3Node
+  - Once the node is registered to the grid, a new node ID will be generated
+- If your configuration files are using `included_nodes` 
+  - Add the node ID to the YAML configuration file (e.g. `config.yml`)
+- Restart the Farmerbot with the systemd command `restart` (in this example, the service is called `farmerbot`)
+  ```
+  systemctl restart farmerbot
+  ```
 
 # Questions and Feedback
 
