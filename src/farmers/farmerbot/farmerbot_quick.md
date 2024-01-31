@@ -11,7 +11,7 @@
   - [Download the Farmerbot Binaries](#download-the-farmerbot-binaries)
   - [Create the Farmerbot Files](#create-the-farmerbot-files)
   - [Run the Farmerbot](#run-the-farmerbot)
-  - [Set a Farmerbot Service](#set-a-farmerbot-service)
+  - [Set a systemd Service](#set-a-systemd-service)
   - [Check the Farmerbot Logs](#check-the-farmerbot-logs)
 - [Farmerbot Files](#farmerbot-files)
   - [Configuration File Template (config.yml)](#configuration-file-template-configyml)
@@ -64,6 +64,8 @@ Here are some examples to guide you:
 
 > Hint: Check the Z-OS monitor screen and make sure that all the 3Nodes are within the same lan (e.g. all 3Nodes addresses are between 192.168.15.00 and 192.168.15.255).
 
+For more information on WOL, [read this section](farmerbot_information.md#how-to-prepare-your-farm-for-the-farmerbot-with-wol) of the manual.
+
 ## Deploy a Full VM
 
 For this guide, we run the Farmerbot on a Full VM running on the TFGrid. Note that you do not need to run the Farmerbot on the TFGrid, but the whole process is very simple as presented here.
@@ -86,11 +88,11 @@ We present the different steps to run the Farmerbot using the binaries.
 
 ### Download the Farmerbot Binaries
 
-- Download and Extract the [ThreeFold tfgrid-sdk-go release](https://github.com/threefoldtech/tfgrid-sdk-go/releases) for your specific setup (here we use `x86_64`)
+- Download and Extract the latest [ThreeFold tfgrid-sdk-go release](https://github.com/threefoldtech/tfgrid-sdk-go/releases) for your specific setup (here we use `x86_64`). On the line `wget ...`, make sure to replace `<latest_release>` with the latest Farmerbot release.
     ```
     mkdir tfgrid-sdk-go
     cd tfgrid-sdk-go
-    wget https://github.com/threefoldtech/tfgrid-sdk-go/releases/download/v0.13.16/tfgrid-sdk-go_Linux_x86_64.tar.gz
+    wget https://github.com/threefoldtech/tfgrid-sdk-go/releases/download/<latest_release>/tfgrid-sdk-go_Linux_x86_64.tar.gz
     tar -xvf tfgrid-sdk-go_Linux_x86_64.tar.gz
     ```
 - Move the Farmerbot
@@ -130,9 +132,11 @@ farmerbot run -k ed25519 -e ~/farmerbotfiles/.env -c ~/farmerbotfiles/config.yml
 
 For more information on the supported commands, refer to the [Farmerbot repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot) or the [Additional Information section](farmerbot_information.md#supported-commands-and-flags). 
 
-### Set a Farmerbot Service
+Once you've verified that the Farmerbot runs properly, you can stop the Farmerbot and go to the next section to set a Farmerbot service. This step will ensure the Farmerbot keeps running after exiting the VM.
 
-We can set an Ubuntu systemd service to keep the Farmerbot running after exiting the VM.
+### Set a systemd Service
+
+It is highly recommended to set a Ubuntu systemd service to keep the Farmerbot running after exiting the VM.
 
 * Create the service file
   * ```
@@ -166,7 +170,7 @@ We can set an Ubuntu systemd service to keep the Farmerbot running after exiting
 
 ### Check the Farmerbot Logs
 
-If you set a Farmerbot service [as show above](#set-a-farmerbot-service), the Farmerbot will start writing logs to the file `farmerbot.log` in the directory `farmerbotfiles`.
+Once you've set a Farmerbot systemd service [as show above](#set-a-systemd-service), the Farmerbot will start writing logs to the file `farmerbot.log` in the directory `farmerbotfiles`.
 
 Thus, you can get more details on the operation of the Farmerbot by inspecting the log file.
 
@@ -182,6 +186,8 @@ Thus, you can get more details on the operation of the Farmerbot by inspecting t
   ```
   tail -f -n +1 ~/farmerbotfiles/farmerbot.log
   ```
+
+This can also be used to see the **Farmerbot Report Table** as this table is printed in the Farmerbot log.
 
 ## Farmerbot Files
 
