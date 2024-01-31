@@ -83,7 +83,3 @@ Let's break down the example for a 40% discount on Internet Capacity consumption
 - With the 40% discount, your effective payment for the consumption would be 6 TFT per hour, as long as the amount of TFT in your account falls within the range of 43,200 to 129,600 (as calculated above).
 
 Keep in mind that these calculations are based on the example provided and the specific discount levels mentioned.
-
-***
-Last updated: July 4, 2023
-***
