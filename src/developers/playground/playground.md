@@ -7,3 +7,4 @@ The ThreeFold Playground offers an easy-to-use browser experience to deploy solu
 <h2> Table of Contents </h2>
 
 - [Deploy the Playground](./deploy_playground.md)
+- [Weblet Case Study: Nextcloud AIO](./weblet_case_study_nextcloud.md)

@@ -266,6 +266,7 @@
       - [FAQ](internals/zos/faq/readme.md)
   - [Playground](developers/playground/playground.md)
     - [Deploy the Playground](developers/playground/deploy_playground.md)
+    - [Weblet Case Study: Nextcloud AIO](developers/playground/weblet_case_study_nextcloud.md)
 
 - [System Administrators](system_administrators/system_administrators.md)
   - [Getting Started](getstarted/tfgrid3_getstarted.md)
