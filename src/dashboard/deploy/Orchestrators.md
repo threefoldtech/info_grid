@@ -2,6 +2,8 @@
 
 Deploy your favorite orchestrating services and enjoy the seamless coordination and automation of various software applications and services.
 
+![](../img/orchestrator_landing.png)
+
 ***
 
 ## Table of Contnet

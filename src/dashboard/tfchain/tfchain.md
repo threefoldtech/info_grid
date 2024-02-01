@@ -8,6 +8,9 @@ Here you will find everything related to the ThreeFold chain. this includes:
 - Transferring TFTs on the TFChain from the [TF Token Transfer](./tf_token_transfer.md) section.
 - getting miniting reports from the [TF Minting Reports](./tf_minting_reports.md) section.
 
+   ![](../img/sidebar_4.png)
+
+***
 ## Table of Content
 
 - [Your Profile](./your_profile.md)

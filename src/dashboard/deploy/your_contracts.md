@@ -1,10 +1,22 @@
 # Contracts
 
-From the Contracts section you can check your contracts by navigating to the `Dashboard` then `Contracts` tab from the sidebar.
+From the Contracts section you can check your contracts by navigating to the `Deploy` then `Your Contracts` tab from the sidebar.
 
-From there you will see the `Contracts List`
+From there you will see the `Contracts List`, the list is split into three different sections. these sections are:
 
-![image](img/dashboard_contracts.png)
+### Node contracts
+
+![image](../img/node_contracts.png)
+
+### Name contracts
+
+![image](../img/name_contracts.png)
+
+### Rent contracts
+
+![image](../img/rent_contracts.png)
+
+
 
 This list includes the following information about each contract.
 
@@ -20,7 +32,8 @@ This list includes the following information about each contract.
 - Node Status (Up, Down, Standby).
 - Show Details (This button will display the detailed information of the desired contract).
 
-![image](img/dashboard_contracts_details.png)
+   ![image](../img/contract_details.png)
+
 
 ## Cancel Contract
 

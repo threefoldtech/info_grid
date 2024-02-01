@@ -46,7 +46,7 @@ Dedicated nodes are 3Nodes that can be reserved and rented entirely by one user.
 
 - See list of all dedicated node on `Dedicated Nodes` tab on the portal.
 
-    ![ ](../dashboard/img/dashboard_dedicated_nodes.png)
+    ![ ](../dashboard/img/dedicated_machines.png)
 
   - Hover over the price to see the applied discounts
 

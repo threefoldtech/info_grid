@@ -2,7 +2,7 @@
 
 ***
 
-![GPU support](../img/explorer_gpu.png)
+![GPU support](../img/gpu_filter.png)
 
 - A new filter for GPU supported node is now available on the Nodes page.
 - GPU count

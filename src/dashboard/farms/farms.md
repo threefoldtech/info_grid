@@ -7,6 +7,8 @@ Here you will find everything farming related. this includes:
 - Generating your own boot device for your system from the [Node Installer](./node_installer.md) section.
 - Estimating and calculating potential earnings from farming on the ThreeFold Grid from the [Simulator](./simulator.md) section.
 
+   ![](../img/sidebar_3.png)
+
 ***
 
 ## Table of Content

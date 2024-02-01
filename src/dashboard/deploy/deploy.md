@@ -9,6 +9,8 @@ Here you will find everything related to deployments on the ThreeFold grid. This
 - Finding or publishing Flists from [Images](./images.md).
 - Updating or generating your SSH key from [SSH Keys](./ssh_keys.md)
 
+   ![](../img/sidebar_2.png)
+
 ***
 
 ## Table of Content
