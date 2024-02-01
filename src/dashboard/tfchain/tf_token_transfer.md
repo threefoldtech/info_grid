@@ -15,12 +15,12 @@ You can transfer TFTs by recipient address or recipient twin id; by selecting th
 
 Fill in the recipient twin id, the amount of tokens to transfer, and click on `Send`.
 
-![](../dashboard/img/dashboard_transfer_twin.png)
+![](../img/dashboard_transfer_twin.png)
 
 ### Transfer by address
 
 Fill in the recipient address, the amount of tokens to transfer, and click on `Send`.
 
-![](../dashboard/img/dashboard_transfer_address.png)
+![](../img/dashboard_transfer_address.png)
 
 There is no transfer fee, just a signing fee of `0.001` TFT.

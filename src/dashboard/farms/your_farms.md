@@ -31,9 +31,9 @@ If you want to start farming, you need a farmID, the ID of the farm that is owni
 
 Click `Create Farm` and choose a name.
 
-![ ](../dashboard/img/dashboard_farms.png)
+![ ](../img/dashboard_farms.png)
 
-![ ](../dashboard/img/dashboard_farms_create.png)
+![ ](../img/dashboard_farms_create.png)
 
 Click on `Create`.
 
@@ -44,7 +44,7 @@ Also a pricing policy is defined. Pricing policy is currently the same for all f
 
 You can browse your Farms in _Farms_ table; Farms table contains all your own farms and its your entry point to manage your farm as in the following sections.
 
-![](../dashboard/img/dashboard_farms_farms_table.png)
+![](../img/dashboard_farms_farms_table.png)
 
 ### Add a public IP to your Farm
 
@@ -58,23 +58,23 @@ You can add them one by one or using range of IPs.
 - Verify that both the gateway address and the IP address are correct.
 - Be careful not to include the same gateway address in a new IP range.
 
-![ ](../dashboard/img/dashboard_farms_farm_details.png)
+![ ](../img/dashboard_farms_farm_details.png)
 
-![ ](../dashboard/img/dashboard_farms_add_ip_single.png)
+![ ](../img/dashboard_farms_add_ip_single.png)
 
-![ ](../dashboard/img/dashboard_farms_add_ip_range.png)
+![ ](../img/dashboard_farms_add_ip_range.png)
 
 Deleting IPv4 addresses is also possible here. The `Deployed Contract ID` gives an indication of whether an IP is currently used. If it is 0, it is safe to remove it.
 
-![ ](../dashboard/img/dashboard_farms_ip_details.png)
+![ ](../img/dashboard_farms_ip_details.png)
 
 ### Add a Stellar address for payout
 
 In a first phase, farming of tokens still results in payout on the Stellar network. So to get the farming reward, a Stellar address needs to be provided.
 
-![ ](../dashboard/img/dashboard_farms_farm_details.png)
+![ ](../img/dashboard_farms_farm_details.png)
 
-![ ](../dashboard/img/dashboard_farms_stellar_address.png)
+![ ](../img/dashboard_farms_stellar_address.png)
 
 ### Generate your node bootstrap image
 
@@ -82,11 +82,11 @@ Once you know your farmID, you can set up your node on TFGrid3. Click on `Bootst
 
 After booting a node, the info will become available in `Your Nodes` table, including the status info along with the minting and fixup receipts.
 
-![ ](../dashboard/img/dashboard_farms_node_details.png)
+![ ](../img/dashboard_farms_node_details.png)
 
 Clicking on the node statistics will open up a calendar where you can view the periods the node was minting or undergoing a fixup. Clicking on the periods will show a popup with the start and end datetimes, receipt hash and the amount of TFTs minted (if it is a minting receipt).
 
-![ ](../dashboard/img/dashboard_portal_ui_nodes_minting.png)
+![ ](../img/dashboard_portal_ui_nodes_minting.png)
 
 You can also download a single node's receipts using the `Download Receipts` button within the node statistics. Moreover, you can download all of the nodes' receipts using the `Download Receipts` button on the top left corner of the farm nodes table.
 
@@ -102,7 +102,7 @@ Expand your node information by clicking on the expand button in the target node
 
 You can set a price for the special hardware you’re providing e.g. GPUs while renting.
 
-![](../dashboard/img/dashboard_farms_extra_fee.png)
+![](../img/dashboard_farms_extra_fee.png)
 
 - Under the **Your Nodes** table, locate the target node and click **Set Additional Fees** under **Actions**
 - Set a monthly fee (in USD) and click **Save**
@@ -111,7 +111,7 @@ You can set a price for the special hardware you’re providing e.g. GPUs while 
 
 To configure public IP addresses to a specific Node
 
-![](../dashboard/img/dashboard_farms_public_config.png)
+![](../img/dashboard_farms_public_config.png)
 
 - Under the **Your Nodes** table, locate the target node and click **Add a public config** under **Actions**
 - Fill in the necessary information and click save. Only the IPv4 address and gateway are necessary.
