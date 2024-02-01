@@ -5,7 +5,7 @@
 - [Introduction](#introduction)
 - [Add TFT to Metamask](#add-tft-to-metamask)
 - [Buy TFT on Metamask](#buy-tft-on-metamask)
-- [Questions and Feedback](#questions-and-feedback)
+- [Disclaimer](#disclaimer)
 
 ***
 
@@ -21,7 +21,7 @@ It is implemented as a wrapped asset with the following token address:
 We present here the basic steps to add TFT to Metamask. We also show how to buy TFT Metamask. Finally, we present the simple steps to use the [TFT Ethereum Bridge](https://bridge.eth.threefold.io/).
 
 
-***
+
 
 ## Add TFT to Metamask
 
@@ -51,7 +51,7 @@ To confirm, click on the button `Import tokens`:
 
 TFT is now added to Metamask.
 
-***
+
 
 ## Buy TFT on Metamask
 
@@ -65,8 +65,9 @@ When using Uniswap, paste the TFT token address in the field `Select a token` to
 
 ![Uniswap-selecttoken|315x500](./img/tft_on_ethereum_image_5.png) 
 
-***
 
-## Questions and Feedback
+## Disclaimer
 
-If you have any question, feel free to write a post on the [Threefold Forum](https://forum.threefold.io/).
+> The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
+> 
+> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](https://library.threefold.me/info/legal/#/legal__disclaimer) and seek advice from a qualified financial professional if needed.
