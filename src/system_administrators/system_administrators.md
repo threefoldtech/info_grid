@@ -91,6 +91,7 @@ From deployment strategies to monitoring tools, from security best practices to 
   - [Firewall Basics](../computer_it_basics/firewall_basics/firewall_basics.md)
     - [UFW Basics](../computer_it_basics/firewall_basics/ufw_basics.md)
     - [Firewalld Basics](../computer_it_basics/firewall_basics/firewalld_basics.md)
+  - [File Transfer](../computer_it_basics/file_transfer.md)
 - [Advanced](../advanced/advanced.md)
   - [Grid3 Stellar-TFChain Bridge](../advanced/grid3_stellar_tfchain_bridge.md)
   - [Token Transfer Keygenerator](../advanced/token_transfer_keygenerator.md)
