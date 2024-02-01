@@ -172,7 +172,7 @@ It is highly recommended to set a Ubuntu systemd service to keep the Farmerbot r
 
 Once you've set a Farmerbot systemd service [as show above](#set-a-systemd-service), the Farmerbot will start writing logs to the file `farmerbot.log` in the directory `farmerbotfiles`.
 
-Thus, you can get more details on the operation of the Farmerbot by inspecting the log file.
+Thus, you can get more details on the operation of the Farmerbot by inspecting the log file. This can also be used to see the **Farmerbot Report Table** as this table is printed in the Farmerbot log.
 
 * See all logs so far
   ```
@@ -186,8 +186,10 @@ Thus, you can get more details on the operation of the Farmerbot by inspecting t
   ```
   tail -f -n +1 ~/farmerbotfiles/farmerbot.log
   ```
-
-This can also be used to see the **Farmerbot Report Table** as this table is printed in the Farmerbot log.
+* See the last report table
+  ```
+  tac farmerbot.log | grep -B5000 -m1 "Nodes report" | tac
+  ```
 
 ## Farmerbot Files
 
