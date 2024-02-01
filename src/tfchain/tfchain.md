@@ -68,7 +68,7 @@ Every contract is billed every 1 hour on the chain, the amount that is due is de
 - 50% goes to certified sales channel
 - 35% TFT gets burned
 
-See [pricing](/cloud/cloudunits_pricing.md) for more information on how the cost for a contract is calculated.
+See [pricing](../wiki/cloudunits/pricing/pricing.md) for more information on how the cost for a contract is calculated.
 ***
 ## Contract locking
 

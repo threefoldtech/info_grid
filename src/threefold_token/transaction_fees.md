@@ -54,18 +54,3 @@ Here are some notes to take into account when doing TFT transfers:
 
 * The fees paid directly by the users will be shown in the user's wallet at transaction time, not on the bridge page.
 * The bridge fees can vary based on current on-chain gas prices. The current fee will always be shown on the bridge page before a transaction is initiated.
-
-***
-*Generated on*
-
-<p id="transaction_fees_datetime"></p>
-
-<script>
-  // Get current date and time
-  var now = new Date();
-  var transaction_fees_datetime = now.toLocaleString();
-
-  // Insert date and time into HTML
-  document.getElementById("transaction_fees_datetime").innerHTML = transaction_fees_datetime;
-</script>
-***
