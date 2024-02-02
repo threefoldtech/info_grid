@@ -2,7 +2,7 @@
 
 There are multiple ways to buy and sell [TFT](../threefold_token.md) depending on your preferences and the blockchain network you choose to transact on. 
 
-You can buy and sell TFT on [Stellar Chain](./tft_lobstr/tft_lobstr.md), [Ethereum Chain](./tft_metamask/tft_metamask.md) and [Binance Smart Chain](./pancakeswap.md), and you can use the [TFT bridges](../tft_bridges/tft_bridges.md) to go from one chain to another. For newcomers, we recommended using Lobstr as it is very easy and accessible.
+You can buy and sell TFT on [Stellar Chain](./tft_lobstr/tft_lobstr.md), [Ethereum Chain](./tft_metamask/tft_metamask.md) and [Binance Smart Chain](./pancakeswap.md), and you can use the [TFT bridges](../tft_bridges/tft_bridges.md) to go from one chain to another. For newcomers, we recommend using Lobstr as it is very easy and accessible.
 
 With TFTs, you can [deploy workloads](../../getstarted/tfgrid3_getstarted.md) on the ThreeFold Grid and benefit from [staking discounts](../../wiki/cloudunits/pricing/staking_discount_levels.md) up to 60%!
 
