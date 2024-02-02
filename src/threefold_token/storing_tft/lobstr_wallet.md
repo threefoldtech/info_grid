@@ -25,8 +25,6 @@ Lobster Wallet is a secure and user-friendly wallet designed specifically for th
 
 If you already have some XLMs stored in another Stellar wallet or exchange, you could simply withdraw them to your new Lobstr wallet account after you complete the signup process. If not, there are multiple ways to acquire XLM and send it to your wallet. One option is to utilize XLM-supported exchanges, which provide a convenient platform for purchasing XLM. Click [**here**](https://www.coinlore.com/coin/stellar/exchanges) to access a comprehensive list of exchanges that support XLM.
 
-As an example, we have created a tutorial specifically focusing on how to buy XLM on Coinbase, one of the popular cryptocurrency exchanges. This tutorial provides step-by-step instructions on the process of purchasing XLM on **Coinbase Exchange**. You can find the tutorial [**here**](../buy_sell_tft/coinbase_xlm.md).
-
 You could also purchase some XLMs directly inside yor new Lobstr wallet account by using Fiat currency payment like credit and debit cards.
 
 ## Get Started
@@ -102,4 +100,4 @@ If you are looking for ways to get / purchase TFT (Stellar) on Lobstr Wallet by 
 
 > The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
 > 
-> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](https://library.threefold.me/info/legal/#/legal__disclaimer) and seek advice from a qualified financial professional if needed.
+> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](../../wiki/disclaimer.md) and seek advice from a qualified financial professional if needed.
