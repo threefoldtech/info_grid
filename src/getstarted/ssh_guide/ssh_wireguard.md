@@ -104,7 +104,7 @@ To set the WireGuard connection on Windows, add and activate a tunnel with the W
 
 As a test, you can ping the virtual IP address of the VM to make sure the WireGuard connection is properly established. Make sure to replace `VM_WireGuard_IP` with the proper WireGuard IP address:
 
-* Ping the deployment
+* Ping the deployment (on Windows use `-n` instead of `-c`)
   * ```
     ping -c 2 VM_WireGuard_IP
     ```

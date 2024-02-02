@@ -354,7 +354,7 @@ First, we set Wireguard with the Terraform output.
 > Note: If it doesn't work and you already did a WireGuard connection with the same file from Terraform (from a previous deployment perhaps), do `wg-quick down wg`, then `wg-quick up wg`.
 This should set everything properly.
 
-* As a test, you can ping the virtual IP addresses of both VMs to make sure the Wireguard connection is correct:
+* As a test, you can ping the virtual IP addresses of both VMs to make sure the Wireguard connection is correct (on Windows use `-n` instead of `-c`):
   *  ```
      ping -c 2 10.1.3.2
      ```

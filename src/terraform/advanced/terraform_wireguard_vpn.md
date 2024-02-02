@@ -298,7 +298,7 @@ If you want to stop the Wireguard service, write the following on your terminal:
 
 > Note: If it doesn't work and you already did a Wireguard connection with the same file from terraform (from a previous deployment), write on the terminal `wg-quick down wg`, then `wg-quick up wg`.
 
-As a test, you can ping the virtual IP address of the VMs to make sure the Wireguard connection is correct. Make sure to replace `wg_vm_ip` with the proper IP address for each VM:
+As a test, you can ping the virtual IP address of the VMs to make sure the Wireguard connection is correct. Make sure to replace `wg_vm_ip` with the proper IP address for each VM (on Windows use `-n` instead of `-c`):
 * ```
   ping -c 2 wg_vm_ip
   ```

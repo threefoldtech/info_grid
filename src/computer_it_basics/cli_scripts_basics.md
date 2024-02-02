@@ -849,7 +849,7 @@ cat /sys/class/net/<ethernet_device>/carrier
     * ```
       ip addr add <Private_IP_Address_2>/24 dev <ethernet_interface_2>
       ```
-* Ping the address to confirm connection
+* Ping the address to confirm connection (on Windows use `-n` instead of `-c`)
   * ```
     ping -c 5 <Private_IP_Address>
     ```
