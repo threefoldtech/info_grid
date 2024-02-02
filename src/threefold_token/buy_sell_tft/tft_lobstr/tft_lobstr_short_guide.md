@@ -13,9 +13,9 @@
 
 ## Introduction
 
-Welcome to our guide on how to buy and sell TFTs on Stellar Chain with the [Lobstr wallet](https://lobstr.co/)! 
+In this tutorial, we will guide you through the process of getting TFT on the [Lobstr Wallet](https://lobstr.co/). The wallet is available for both desktop and mobile as a web and mobile app.
 
-Lobstr Wallet is a secure and user-friendly wallet designed specifically for the Stellar blockchain. It allows you to store, manage, and transact with your Stellar-based assets, including TFT (ThreeFold Token). In this tutorial, we will guide you through the process of getting TFT on Lobstr Wallet.
+Lobstr Wallet is a secure and user-friendly wallet designed specifically for the Stellar blockchain. It allows you to store, manage, and transact with your Stellar-based assets, including TFT (ThreeFold Token). 
 
 ## Prerequisites
 
@@ -39,13 +39,13 @@ Insert the amount of TFT you'd like to buy or the amount of XLM you'd like to sw
 
  Congratulations. You just swapped some XLM to TFT. Go to 'Assets' page from the menu bar to see your recently purchased TFT tokens.
 
- ### Get TFT by Trading
+### Get TFT by Trading
 
- For advanced traders, Lobstr provides access to the full orderbook trading functionality in the Trade section. 
+For advanced traders, Lobstr provides access to the full orderbook trading functionality in the Trade section. 
 
- you can start trading TFT on Lobstr by clicking the menu bar and clicking '**Trade**' to start trading your existing tokens to TFT, for example, XLM or USDC.
+You can start trading TFT on Lobstr by clicking the menu bar and clicking '**Trade**' to start trading your existing tokens to TFT, for example, XLM or USDC.
 
- ![](IMG/../img/lobstr_trade.jpeg)
+![](IMG/../img/lobstr_trade.jpeg)
 
 You can choose to fullfill sell orders, or create your own buy order. Once the buy order or trade has been fulfilled your TFT will show up in your wallet.
 
