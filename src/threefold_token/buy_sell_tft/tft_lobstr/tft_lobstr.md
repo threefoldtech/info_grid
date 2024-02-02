@@ -1,4 +1,4 @@
-<h1> Lobstr Wallet </h1>
+<h1> Get TFT on Lobstr Wallet </h1>
 
 It is very easy to purchase TFT on Lobstr Wallet. 
 

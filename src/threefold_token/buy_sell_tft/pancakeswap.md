@@ -1,4 +1,4 @@
-<h1>Get TFT on Pancake Swap (TFT-BSC)</h1>
+<h1>Get TFT on Pancake Swap</h1>
 
 <h2>Table of Contents</h2>
 
@@ -22,13 +22,11 @@ By following the steps outlined in this guide, you'll be able to purchase TFT to
 
 Before you can buy TFT on Pancake Swap, there are a few prerequisites you need to fulfill. Here's what you'll need:
 
-- **BSC Wallet**: To interact with the Binance Smart Chain and Pancake Swap, you'll need a BSC-compatible wallet. [Trust Wallet](https://trustwallet.com/) and [MetaMask](https://metamask.io/) are popular options that support BSC. Make sure to set up and secure your wallet before proceeding.
+- **BSC Wallet**: To interact with the Binance Smart Chain and Pancake Swap, you'll need a BSC-compatible wallet. [MetaMask](https://metamask.io/) is a popular option that supports BSC. Make sure to set up and secure your wallet before proceeding.
 
-> [Set up a Metamask Wallet](../storing_tft/metamask.md)
-> 
-> [Set up a Trust Wallet](../storing_tft/trustwallet.md)
+> [Set up a MetaMask Wallet](../storing_tft/metamask.md)
 
-- **Connect BSC Wallet TO Pancake Swap**: Visit the Pancake Swap website and connect your BSC wallet to your Pancake Swap account.
+- **Connect BSC Wallet to Pancake Swap**: Visit the Pancake Swap website and connect your BSC wallet to your Pancake Swap account.
 
 > [Connect Wallet to Pancake Swap](https://docs.pancakeswap.finance/readme/get-started/connection-guide)
 

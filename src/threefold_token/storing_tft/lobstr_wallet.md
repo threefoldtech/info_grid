@@ -1,4 +1,4 @@
-<h1> Lobstr Wallet (TFT-Stellar) </h1>
+<h1> Lobstr Wallet </h1>
 
 <h2> Table of Contents </h2>
 
@@ -10,13 +10,15 @@
   - [Adding TFT Asset to Lobstr Wallet](#adding-tft-asset-to-lobstr-wallet)
 - [Important Notice](#important-notice)
 - [Disclaimer](#disclaimer)
+
 ***
+
 ## Introduction
 
 Welcome to our guide on how to store TFT tokens (Stellar) via the [**Lobstr Wallet**](https://lobstr.co/)! 
 
 Lobster Wallet is a secure and user-friendly wallet designed specifically for the Stellar blockchain. It allows you to store, manage, and transact with your Stellar-based assets, including TFT (ThreeFold Token). In this tutorial, we will guide you through the process of setting up Lobster Wallet and storing your TFT (Stellar) tokens. By following the steps outlined in this guide, you will be able to access and manage your TFT assets with ease and confidence using the Lobster Wallet platform.
-***
+
 ## Prerequisites
 
 - **XLM**: When storing TFT tokens using Lobstr wallet, a certain amount of XLM funding is required to facilitate the sending and receiving of assets on the Stellar network. 
@@ -26,7 +28,7 @@ If you already have some XLMs stored in another Stellar wallet or exchange, you 
 As an example, we have created a tutorial specifically focusing on how to buy XLM on Coinbase, one of the popular cryptocurrency exchanges. This tutorial provides step-by-step instructions on the process of purchasing XLM on **Coinbase Exchange**. You can find the tutorial [**here**](../buy_sell_tft/coinbase_xlm.md).
 
 You could also purchase some XLMs directly inside yor new Lobstr wallet account by using Fiat currency payment like credit and debit cards.
-***
+
 ## Get Started
 
 ### Create a New Lobstr Wallet
@@ -90,13 +92,14 @@ Use the search at the top of the "Assets" screen. From there you can search for 
 Congratulations! TFT asset has been successfully added to your Lobstr Wallet account. If you've performed the steps above correctly and there are no assets displayed, contact [Lobstr support](https://lobstr.freshdesk.com/support/tickets/new) with the details and the home domain of the asset.
 
 You can now store TFT by depositing it from another wallet on your TFT Asset page.
-***
+
 ## Important Notice
 
 If you are looking for ways to get / purchase TFT (Stellar) on Lobstr Wallet by trading or swapping, you will find the according information [here](../buy_sell_tft/tft_lobstr/tft_lobstr.md).
-***
+
+
 ## Disclaimer
 
-The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
-
-**The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](https://library.threefold.me/info/legal/#/legal__disclaimer) and seek advice from a qualified financial professional if needed.
+> The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
+> 
+> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](https://library.threefold.me/info/legal/#/legal__disclaimer) and seek advice from a qualified financial professional if needed.

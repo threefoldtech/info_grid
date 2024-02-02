@@ -3,6 +3,9 @@
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
+- [TFT Addresses](#tft-addresses)
+  - [Ethereum Chain Address](#ethereum-chain-address)
+  - [BSC Address](#bsc-address)
 - [Add TFT to Metamask](#add-tft-to-metamask)
 - [Buy TFT on Metamask](#buy-tft-on-metamask)
 - [Disclaimer](#disclaimer)
@@ -11,6 +14,14 @@
 
 ## Introduction
 
+We present here the basic steps to add TFT to Metamask and to buy TFT on Metamask. 
+
+## TFT Addresses
+
+With MetaMask, you can buy and sell TFT on both Binance Smart Chain and the Ethereum chain. Make sure to use the correct TFT address when doing transactions.
+
+### Ethereum Chain Address
+
 The ThreeFold Token (TFT) is available on Ethereum.
 It is implemented as a wrapped asset with the following token address:
 
@@ -18,12 +29,18 @@ It is implemented as a wrapped asset with the following token address:
 0x395E925834996e558bdeC77CD648435d620AfB5b
 ```
 
-We present here the basic steps to add TFT to Metamask. We also show how to buy TFT Metamask. Finally, we present the simple steps to use the [TFT Ethereum Bridge](https://bridge.eth.threefold.io/).
+### BSC Address
 
+The ThreeFold Token (TFT) is available on BSC.
+It is implemented as a wrapped asset with the following token address:
 
-
+```
+0x8f0FB159380176D324542b3a7933F0C2Fd0c2bbf
+```
 
 ## Add TFT to Metamask
+
+We present the steps on Ethereum chain. Make sure to switch to BSC and to use the TFT BSC address if you want to proceed on BSC.
 
 Open Metamask and import the ThreeFold Token. First click on `import tokens`:
 
@@ -50,7 +67,6 @@ To confirm, click on the button `Import tokens`:
 ![Metamask-ImporttokensQuestion|298x500](./img/tft_on_ethereum_image_4.png) 
 
 TFT is now added to Metamask.
-
 
 
 ## Buy TFT on Metamask
