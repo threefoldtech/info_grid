@@ -23,7 +23,7 @@ To deploy workloads on the TFGrid with TFROBOT, you first need to [install TFROB
 
 ## Deploy Workloads
 
-Once you've installed TFROBOT and created a configuration file, you can run tfrobot by making sure to indicate the path to your configuration file.
+Once you've installed TFROBOT and created a configuration file, you deploy on the TFGrid with the following command. Make sure to indicate the path to your configuration file.
 
 - Run TFROBOT
   ```

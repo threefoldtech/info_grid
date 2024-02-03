@@ -4,38 +4,19 @@
 
 - [Introduction](#introduction)
 - [Examples](#examples)
-- [Create a Configuration File](#create-a-configuration-file)
-- [Configuration File Example](#configuration-file-example)
   - [YAML Example](#yaml-example)
   - [JSON Example](#json-example)
-- [Create a Configuration File](#create-a-configuration-file-1)
+- [Create a Configuration File](#create-a-configuration-file)
 
 ***
 
 ## Introduction
 
-To use TFROBOT, the user needs to create a yaml or a json configuration file that will contain the mass deployment information, such as the groups information, number of VMs to deploy how, the compute, storage and network resources needed, as well as the user's credentials, such as the SSH public key, the network (main, test, dev, qa) and the TFChain mnemonics.
+To use TFROBOT, the user needs to create a YAML or a JSON configuration file that will contain the mass deployment information, such as the groups information, number of VMs to deploy how, the compute, storage and network resources needed, as well as the user's credentials, such as the SSH public key, the network (main, test, dev, qa) and the TFChain mnemonics.
 
-<<<<<<< HEAD
 ## Examples
-=======
-## Create a Configuration File
 
-You can start with the example above and adjust for your specific deployment needs.
-
-- Create directory
-  ```
-  mkdir tfrobot_deployments && cd $_
-  ```
-- Create configuration file and adjust with the provided example above
-  ```
-  nano config.yaml
-  ```
-
-## Configuration File Example
->>>>>>> f749ec2 (updated tfrobot with config file)
-
-We present here a configuration file example that deploys a 3 nodes, with 2 vcores, 16GB of RAM and 100GB of SSD.
+We present here a configuration file example that deploys a 3 nodes, with 2 vcores, 16GB of RAM and 100GB of SSD. The same deployment is shown with a YAML file and with a JSON file.
 
 You can use this example for guidance, and make sure to replace placeholders and adapt the groups based on your actual project details. To the minimum, `<ssh_key>` should be replaced by the user SSH public key and `<mnemonic>` should be replaced by the user mnemonics.
 
@@ -74,7 +55,6 @@ ssh_keys: # map of ssh keys with key=name and value=the actual ssh key
   example1: <ssh_key>
 mnemonic: <mnemonic> # mnemonic of the user
 network: dev # eg: main, test, qa, dev
-<<<<<<< HEAD
 ```
 
 ### JSON Example
@@ -142,6 +122,5 @@ You can start with the example above and adjust for your specific deployment nee
   ```
   nano config.yaml
   ```
-=======
-```
->>>>>>> f749ec2 (updated tfrobot with config file)
+
+Once you've set your configuration file, all that's left is to deploy on the TFGrid. Read the next section for more information on how to deploy with TFROBOT.
