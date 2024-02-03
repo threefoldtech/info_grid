@@ -4,7 +4,6 @@
 
 - [Introduction](#introduction)
 - [Installation](#installation)
-- [Commands and Flags](#commands-and-flags)
 
 ***
 
@@ -35,17 +34,3 @@ To install TFROBOT, simply download and extract the TFROBOT binaries to your pat
     ```bash
     mv tfrobot /usr/local/bin
     ```
-
-## Commands and Flags
-
-You can run the command `tfrobot help` at any time to access the help section. This will also display the available commands.
-
-| Command    | Description                                                |
-| ---------- | ---------------------------------------------------------- |
-| completion     | Generate the autocompletion script for the specified shell                        |
-| help       | Help about any command                                     |
-| version    | Get latest build tag                                       |
-
-You can also use the following flags: `-c` (`--config`) and `-h` (`--help`).
-
-Use `tfrobot [command] --help` for more information about a command.

@@ -16,7 +16,7 @@ To use TFROBOT, the user needs to create a YAML or a JSON configuration file tha
 
 ## Examples
 
-We present here a configuration file example that deploys a 3 nodes, with 2 vcores, 16GB of RAM and 100GB of SSD. The same deployment is shown with a YAML file and with a JSON file.
+We present here a configuration file example that deploys a 3 nodes, with 2 vcores, 16GB of RAM and 100GB of SSD. The same deployment is shown with a YAML file and with a JSON file. Parsing is based on file extension, TFROBOT will use JSON format if the file has a JSON extension and YAML format otherwise.
 
 You can use this example for guidance, and make sure to replace placeholders and adapt the groups based on your actual project details. To the minimum, `<ssh_key>` should be replaced by the user SSH public key and `<mnemonic>` should be replaced by the user mnemonics.
 

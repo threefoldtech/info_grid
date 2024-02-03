@@ -7,9 +7,9 @@
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Deploy Workloads](#deploy-workloads)
+- [Delete Workloads](#delete-workloads)
 - [Using TFCMD with TFROBOT](#using-tfcmd-with-tfrobot)
   - [Get Contracts](#get-contracts)
-  - [Delete Contracts](#delete-contracts)
 
 ***
 
@@ -23,12 +23,19 @@ To deploy workloads on the TFGrid with TFROBOT, you first need to [install TFROB
 
 ## Deploy Workloads
 
-Once you've installed TFROBOT and created a configuration file, you deploy on the TFGrid with the following command. Make sure to indicate the path to your configuration file.
+Once you've installed TFROBOT and created a configuration file, you can deploy on the TFGrid with the following command. Make sure to indicate the path to your configuration file.
 
-- Run TFROBOT
-  ```
-  tfrobot -c ./config.yaml
-  ```
+```
+tfrobot -c ./config.yaml
+```
+
+## Delete Workloads
+
+To delete the contracts, you can use the following line. Make sure to indicate the path to your configuration file.
+
+```
+tfrobot cancel -c ./config.yaml
+```
 
 ## Using TFCMD with TFROBOT
 
@@ -38,14 +45,6 @@ The TFCMD tool works well with TFROBOT, as it can be used to query the TFGrid, f
 
 ```
 tfcmd get contracts
-```
-
-### Delete Contracts
-
-To delete the contracts, you can use the following line:
-
-```
-tfcmd cancel contracts --all
 ```
 
 For more information on TFCMD, [read the documentation](../tfcmd/tfcmd.md).

@@ -206,6 +206,8 @@
     - [Installation](tfrobot/tfrobot_installation.md)
     - [Configuration File](tfrobot/tfrobot_config.md)
     - [Deployment](tfrobot/tfrobot_deploy.md)
+    - [Commands and Flags](tfrobot/tfrobot_commands_flags.md)
+    - [Supported Configurations](tfrobot/tfrobot_configurations.md)
   - [ThreeFold Chain](tfchain/tfchain.md)
     - [Introduction](tfchain/introduction.md)
     - [Farming Policies](tfchain/farming_policies.md)
