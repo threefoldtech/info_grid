@@ -55,6 +55,8 @@ Currently, you can run only one Farmerbot per farm. Since you can only deploy on
 
 Since you need at least one node to power up a second node, you can't use the Farmerbot with just one node. You need at least two 3Nodes in your farm to correctly use the Farmerbot.
 
+The Farmerbot gets its data completely from TFChain. This means that, unlike the previous version, the Farmerbot will not start all the nodes when it restarts.
+
 ## YAML Configuration File Template
 
 The quick guide showed a simple form of the YAML configuration file. Here are all the parameters that can be set for the configuration file.
