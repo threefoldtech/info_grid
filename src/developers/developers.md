@@ -87,4 +87,5 @@ Whether you're interested in decentralized cloud computing, blockchain integrati
 - [Grid Deployment](../grid_deployment/grid_deployment.md)
   - [TFGrid Stacks](../grid_deployment/tfgrid_stacks.md)
   - [Grid Snapshots](../grid_deployment/snapshots.md)
+  - [Guardians of the Grid](../grid_deployment/tfgrid_guardians.md)
 - [Developers FAQ](../faq/faq.md#developers-faq)

@@ -4,7 +4,7 @@
 
 - [Introduction](#introduction)
 - [Concrete Example](#concrete-example)
-- [Snapshots and Docker](#snapshots-and-docker)
+- [Run Your Own Stack](#run-your-own-stack)
 
 
 ***
@@ -23,6 +23,8 @@ For example, there is a TFGrid backend at this URL: [https://dashboard.bknd1.nin
 
 Setting such instances of the TFGrid ensures resiliency and decentralization of the ThreeFold ecosystem.
 
-## Snapshots and Docker
+## Run Your Own Stack
 
-To set your own instance of the TFGrid, download a snapshot of the grid and use Docker to deploy the instance on a server. Read more about snapshots in the [next section](./snapshots.md).
+To set your own instance of the TFGrid, you can download a snapshot of the grid and deploy the TFGrid services with Docker. We even provide scripts to quicken the whole process! 
+
+Read more about snapshots in the [next section](./snapshots.md).
