@@ -26,7 +26,7 @@
       - [MetaMask (BSC & ETH)](./threefold_token/storing_tft/metamask.md)
       - [Hardware Wallet](./threefold_token/storing_tft/hardware_wallet.md)
     - [Buy and Sell TFT](./threefold_token/buy_sell_tft/buy_sell_tft_toc.md)
-      - [Quick Start](./threefold_token/buy_sell_tft/quick_start_lobstr.md)
+      - [Quick Start (Stellar)](./threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr_short_guide.md)
       - [Lobstr Wallet (Stellar)](./threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr_complete_guide.md)
       - [MetaMask (BSC & ETH)](./threefold_token/buy_sell_tft/tft_metamask/tft_metamask.md)
       - [Pancake Swap (BSC)](./threefold_token/buy_sell_tft/pancakeswap.md)

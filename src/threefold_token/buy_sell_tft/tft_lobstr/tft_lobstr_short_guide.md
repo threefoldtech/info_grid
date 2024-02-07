@@ -1,55 +1,75 @@
-<h1> Lobstr Wallet: Quick Guide </h1>
+<h1>Get TFT: Quick Start</h1>
 
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Get Started](#get-started)
-  - [Get TFT By Swapping](#get-tft-by-swapping)
-  - [Get TFT by Trading](#get-tft-by-trading)
+- [Install Lobstr](#install-lobstr)
+- [Create Wallet](#create-wallet)
+- [Buy XLM](#buy-xlm)
+- [Swap XLM for TFT](#swap-xlm-for-tft)
 - [Disclaimer](#disclaimer)
 
 ***
 
 ## Introduction
 
-In this tutorial, we will guide you through the process of getting TFT on the [Lobstr Wallet](https://lobstr.co/). The wallet is available for both desktop and mobile as a web and mobile app.
+In this guide, you'll learn how to buy ThreeFold Tokens with Lobstr wallet using a credit or a debit card. This is a simple method that works well for small to medium purchases. You can buy TFT on Lobstr with your smartphone (Android and iOS) and on your computer.
 
-Lobstr Wallet is a secure and user-friendly wallet designed specifically for the Stellar blockchain. It allows you to store, manage, and transact with your Stellar-based assets, including TFT (ThreeFold Token). 
+Lobstr is an app for managing digital assets like TFT on the Stellar blockchain. In this case, we'll first obtain Stellar's native currency, Lumens (XLM) and swap them for TFT.
 
-## Prerequisites
+ThreeFold also provides a wallet for TFT as part of the ThreeFold Connect App. If you already have the TF Connect App, you can use the same wallet within Lobstr. If not, you can always import your wallet from Lobstr into TF Connect later.
 
-- **XLM**: When getting TFT tokens using the Lobstr wallet, the process involves swapping XLM (Stellar Lumens) or other Stellar tokens into TFT. Please note that a certain amount of XLM funding is required to facilitate the sending and receiving of assets on the Stellar network.
+> [Moonpay](https://www.moonpay.com/) is the service integrated in Lobstr to enable users to buy digital assets like XLM with fiat currencies like US Dollars and Euros. Moonpay is available in most regions, but there are some [exceptions](https://support.moonpay.com/hc/en-gb/articles/6557330712721-What-are-our-non-supported-countries-states-and-territories-for-on-ramp-product). If your country or state isn't supported by Moonpay, you will need to find another cryptocurrency exchange or on ramp to obtain XLM. From there, you can follow the rest of this guide.
 
-- **Create a Lobstr Wallet and Add TFT Asset**: Create a [Lobstr Wallet](https://lobstr.co/) account via the mobile app or desktop, and [add TFT as an asset](https://lobstr.freshdesk.com/support/solutions/articles/151000001061-adding-custom-assets-on-lobstr) (with either the code `TFT` or the home domain `threefold.io`).
+## Install Lobstr
 
-## Get Started
+To get Lobstr, just head to [lobstr.co](https://lobstr.co/) where you'll find buttons to download the app for both Android and iOS. Once the app is installed, open it to continue. To use Lobstr directly on your browser, simply click on **Get Started** in the top menu of the Lobstr website. This allows you to use Lobstr on your computer instead of your smartphone.
 
-### Get TFT By Swapping
+Hit the **Create Account** button and proceed to create an account by entering your email address and choosing a password. Verify your email address and then sign in.
 
-On this tutorial, we will be using the mobile app to guide you through the process of buying TFT via Lobstr.
+## Create Wallet
 
-Once you have completed the prerequisites, you can get TFT on Lobstr by clicking the menu bar and clicking '**Swap**' to start swapping your existing tokens to TFT, for example, XLM or USDC.
+After you sign in to Lobstr for the first time, you'll be prompted to create or connect a Stellar wallet. If you already have the TF Connect App, follow the instructions at [this link](./tft_lobstr_complete_guide.html#connect-your-tf-connect-app-wallet) to import your existing wallet into Lobstr. Otherwise, just press the **Create Stellar Wallet** button.
 
-![](IMG/../img/lobstr_swap.jpeg)
+Lobstr will then present you with 12 words to write down and store safely. Keep in mind that anyone who can access these words can also access any funds in your account. They can also be used to recover your account later. Be sure not to lose them.
 
-Insert the amount of TFT you'd like to buy or the amount of XLM you'd like to swap for TFT. Click '**Swap XLM to TFT**' to confirm the transaction.
+## Buy XLM
 
-![](img/threefold__lobstr_swap_tft_.jpg)
+In this step, we'll buy XLM with a credit or debit card (actually a few forms of bank transfer and other payment methods are [supported](https://support.moonpay.com/hc/en-gb/articles/360017624078-What-are-your-supported-payment-methods) too).
 
- Congratulations. You just swapped some XLM to TFT. Go to 'Assets' page from the menu bar to see your recently purchased TFT tokens.
+On the Lobstr app, click on the hamburger menu button:
 
-### Get TFT by Trading
+![image](./img/gettft_19.png)
 
-For advanced traders, Lobstr provides access to the full orderbook trading functionality in the Trade section. 
+Then click on **Buy Crypto**:
 
-You can start trading TFT on Lobstr by clicking the menu bar and clicking '**Trade**' to start trading your existing tokens to TFT, for example, XLM or USDC.
+![image](./img/gettft_20.png)
 
-![](IMG/../img/lobstr_trade.jpeg)
+By default XLM is selected to buy, which is what we want. Above you can choose how much to buy in the currency of your choosing. Press **ALL** to see a full list of available currencies.
 
-You can choose to fullfill sell orders, or create your own buy order. Once the buy order or trade has been fulfilled your TFT will show up in your wallet.
+Once you've entered the amount you want to buy, hit **Continue** and proceed through the checkout process with Moonpay. On the final screen, you'll see a message that it can take some time to complete the order:
 
-> Read the full details about Lobstr trading feature on [Lobstr's knowledge base](https://lobstr.freshdesk.com/support/solutions/articles/151000001080-trading-in-lobstr-wallet).
+![image](./img/gettft_27.png)
+
+Usually this happens quickly and you'll receive a notification if notifications are enabled for the Lobstr app. 
+
+## Swap XLM for TFT
+
+Once you have the XLM, use the hamburger menu again and this time select **Swap**:
+
+![image](./img/gettft_31.png)
+
+Enter TFT in the search bar and select the entry that includes **threefold.io**.
+
+> Be careful at this step! There are fake scam coins using the ThreeFold logo. We can't remove these tokens from Stellar, unfortunately, so you will need to be sure to choose the right one.
+
+![image](./img/gettft_32.png)
+
+On the next screen, XLM will be automatically selected as the currency to trade for TFT. The amount that's available to trade will be shown in blue. You can just tap this amount to trade the maximum amount. A couple XLM will be reserved to keep your account open and pay for future Stellar transaction fees.
+
+Hit the green button at the bottom to complete the trade. There will be a few more prompts and potentially some warnings about scam tokens (again, look for **threefold.io**).
+
+When you're finished you'll see a screen that says **Swap completed**. Congrats, you just bought TFT!
 
 ## Disclaimer
 

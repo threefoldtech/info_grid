@@ -61,11 +61,11 @@ There are many ways to store TFT. The [TF Connect app wallet](./storing_tft/tf_c
 
 ## Buy and Sell TFT
 
-You can buy and sell TFT on [Stellar Chain](./buy_sell_tft/tft_lobstr/tft_lobstr.md), [Ethereum Chain](./buy_sell_tft/tft_metamask/tft_metamask.md) and [Binance Smart Chain](./buy_sell_tft/pancakeswap.md).
+You can buy and sell TFT on [Stellar Chain](./buy_sell_tft/tft_lobstr/tft_lobstr_complete_guide.md), [Ethereum Chain](./buy_sell_tft/tft_metamask/tft_metamask.md) and [Binance Smart Chain](./buy_sell_tft/pancakeswap.md).
 
 Using Lobstr is very effective to buy TFT with fiat or crypto in no time. 
 
-> [Get TFT with Lobstr](./buy_sell_tft/tft_lobstr/tft_lobstr.md)
+> [Get TFT: Quick Guide](./buy_sell_tft/tft_lobstr/tft_lobstr_short_guide.md)
 
 ## Liquidity Provider (LP)
 
