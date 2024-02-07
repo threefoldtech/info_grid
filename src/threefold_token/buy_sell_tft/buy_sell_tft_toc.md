@@ -1,6 +1,6 @@
-> [Buy TFT on Lobstr](./tft_lobstr/tft_lobstr_short_guide.md)
+<h1>Buy and Sell TFT</h1>
 
-<h1> Buy and Sell TFT </h1>
+> If you're looking for a simple way to get started with TFT, check out the [quick start guide](./quick_start_lobstr.md).
 
 There are multiple ways to buy and sell [TFT](../threefold_token.md) depending on your preferences and the blockchain network you choose to transact on. 
 
