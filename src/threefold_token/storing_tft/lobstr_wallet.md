@@ -93,7 +93,7 @@ You can now store TFT by depositing it from another wallet on your TFT Asset pag
 
 ## Important Notice
 
-If you are looking for ways to get / purchase TFT (Stellar) on Lobstr Wallet by trading or swapping, you will find the according information [here](../buy_sell_tft/tft_lobstr/tft_lobstr.md).
+If you are looking for ways to get / purchase TFT (Stellar) on Lobstr Wallet by trading or swapping, you will find the according information [here](../buy_sell_tft/tft_lobstr/tft_lobstr_complete_guide.md).
 
 
 ## Disclaimer
