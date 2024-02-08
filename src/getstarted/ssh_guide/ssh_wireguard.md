@@ -27,7 +27,7 @@ Note that WireGuard provides the connection to the 3Node deployment. It is up to
 
 * Activated and funded account set up in the [TF Playground](https://playground.grid.tf/)
   * [Create a Threefold Connect Wallet](../TF_Connect/TF_Connect.md)
-  * [Buy TFT](../../threefold_token/buy_sell_tft/buy_sell_tft_toc.md)
+  * [Buy TFT](../../threefold_token/buy_sell_tft/buy_sell_tft.md)
   * [Create a Threefold Dashboard Account and Transfer TFT](../TF_Dashboard/TF_Dashboard.md)
 * SSH client of your choice
   * [Open-SSH](./ssh_openssh.md)
