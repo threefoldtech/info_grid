@@ -29,7 +29,7 @@ This book serves as a central hub for gathering general information about ThreeF
     - [Lobstr Wallet (Stellar)](../threefold_token/storing_tft/lobstr_wallet.md)
     - [MetaMask (BSC & ETH)](../threefold_token/storing_tft/metamask.md)
     - [Hardware Wallet](../threefold_token/storing_tft/hardware_wallet.md)
-  - [Buy and Sell TFT](../threefold_token/buy_sell_tft/buy_sell_tft_toc.md)
+  - [Buy and Sell TFT](../threefold_token/buy_sell_tft/buy_sell_tft.md)
     - [Quick Start (Stellar)](../threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr_short_guide.md)
     - [Lobstr Wallet (Stellar)](../threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr_complete_guide.md)
     - [MetaMask (BSC & ETH)](../threefold_token/buy_sell_tft/tft_metamask/tft_metamask.md)
