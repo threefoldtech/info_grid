@@ -5,195 +5,78 @@
 
 - [Introduction](#introduction)
 - [Additional Information](#additional-information)
-  - [General Considerations](#general-considerations)
-  - [YAML Configuration File Template](#yaml-configuration-file-template)
-  - [Supported Commands and Flags](#supported-commands-and-flags)
+  - [General considerations](#general-considerations)
   - [Minimum specs to run the Farmerbot](#minimum-specs-to-run-the-farmerbot)
-  - [How to Prepare Your Farm for the Farmerbot with WOL](#how-to-prepare-your-farm-for-the-farmerbot-with-wol)
-  - [WOL Requirements](#wol-requirements)
-    - [Enabling WOL in the BIOS](#enabling-wol-in-the-bios)
-    - [ZOS Nodes and NIC](#zos-nodes-and-nic)
-    - [NIC Firmware and WOL](#nic-firmware-and-wol)
-  - [How to Move Your Farm to a Different Network](#how-to-move-your-farm-to-a-different-network)
   - [The differences between power "state" and power "target"](#the-differences-between-power-state-and-power-target)
   - [The differences between uptime, status and power state](#the-differences-between-uptime-status-and-power-state)
   - [The sequence of events for a node managed by the Farmerbot](#the-sequence-of-events-for-a-node-managed-by-the-farmerbot)
+  - [Farmerbot Uptime Report and Wakeups](#farmerbot-uptime-report-and-wakeups)
   - [The problematic states of a 3node set with the Farmerbot](#the-problematic-states-of-a-3node-set-with-the-farmerbot)
   - [Using the ThreeFold Node Status Bot](#using-the-threefold-node-status-bot)
   - [CPU overprovisioning](#cpu-overprovisioning)
   - [Seed phrase and HEX secret](#seed-phrase-and-hex-secret)
   - [Farmerbot directory tree](#farmerbot-directory-tree)
+  - [Run multiple Farmerbots on the same computer or VM](#run-multiple-farmerbots-on-the-same-computer-or-vm)
   - [Dedicated Nodes and the Farmerbot](#dedicated-nodes-and-the-farmerbot)
+  - [Run the Farmerbot on Raspberry Pi](#run-the-farmerbot-on-raspberry-pi)
+  - [Deploy the Farmerbot with Portainer or other container management tools](#deploy-the-farmerbot-with-portainer-or-other-container-management-tools)
   - [Periodic wakeup](#periodic-wakeup)
   - [Time period between random wakeups and power target update](#time-period-between-random-wakeups-and-power-target-update)
+  - [Farmerbot and UTC time](#farmerbot-and-utc-time)
+  - [Upgrade the Old Farmerbot to the New Farmerbot](#upgrade-the-old-farmerbot-to-the-new-farmerbot)
+  - [Set the Farmerbot without the mnemonics with a twin associated with a polkadot.js extension account](#set-the-farmerbot-without-the-mnemonics-with-a-twin-associated-with-a-polkadotjs-extension-account)
 - [Maintenance](#maintenance)
-  - [See the power state and power target of a 3Node with GraphQL](#see-the-power-state-and-power-target-of-a-3node-with-graphql)
+  - [See the power state and power target of 3Nodes with GraphQL](#see-the-power-state-and-power-target-of-3nodes-with-graphql)
   - [Change manually the power target of a 3Node](#change-manually-the-power-target-of-a-3node)
   - [Properly reboot the node if power target "Down" doesn't work](#properly-reboot-the-node-if-power-target-down-doesnt-work)
   - [Add a 3Node to a running Farmerbot](#add-a-3node-to-a-running-farmerbot)
+- [Troubleshooting](#troubleshooting)
+  - [Retrieve the Farmerbot log after receiving the error: "Error grabbing logs"](#retrieve-the-farmerbot-log-after-receiving-the-error-error-grabbing-logs)
+  - [Fix the error: "WebSocket protocol error: Connection reset without closing handshake"](#fix-the-error-websocket-protocol-error-connection-reset-without-closing-handshake)
+  - [Fix the error: "Balance is not enough to apply an extrinsic"](#fix-the-error-balance-is-not-enough-to-apply-an-extrinsic)
+  - [Fix the error: "Error: Invalid twin id. Twin id must be postive integer"](#fix-the-error-error-invalid-twin-id-twin-id-must-be-postive-integer)
+  - [Fix the error: "Dependency failed to start: container qa-redis-1 is unhealthy"](#fix-the-error-dependency-failed-to-start-container-qa-redis-1-is-unhealthy)
+  - [Fix the error: "Node xxx is not responding while we expect it to: timeout on blpop"](#fix-the-error-node-xxx-is-not-responding-while-we-expect-it-to-timeout-on-blpop)
+  - [Fix the error: "Failed initializing the database: Invalid duration value"](#fix-the-error-failed-initializing-the-database-invalid-duration-value)
+  - [Fix the error: "Invalid characters for a local volume name... If you intended to pass a host directory, use absolute path."](#fix-the-error-invalid-characters-for-a-local-volume-name-if-you-intended-to-pass-a-host-directory-use-absolute-path)
 - [Questions and Feedback](#questions-and-feedback)
 
 ***
 
-# Introduction
+## Introduction
 
 We present some general information concerning the Farmerbot as well as some advice for proper maintenance and troubleshooting.
 
-# Additional Information
+## Additional Information
 
-We present additional information to complement the [Quick Guide](farmerbot_quick.md).
-
-## General Considerations
+### General considerations
 
 The Farmerbot doesn’t have to run physically in the farm since it instructs nodes over RMB to power on and off. The Farmerbot should be running at all time. 
 
-The Farmerbot uses the nodes in the farm to send WOL packets to the node that needs to wakeup. For this reason, you need at least one node per farm to be powered on at all time. If you do not specify one node to be always on, the Farmerbot will randomly choose a node to stay on for each cycle. If all nodes in a subnet are powered off, there is no way other nodes in other subnets will be able to power them on again.
+The Farmerbot uses the nodes in the farm to send WOL packets to the node that needs to wakeup. For this reason, you need at least one node per farm to be powered on at all time. If you do not specify one node to be always on (**never_shutdown:true**), the Farmerbot will randomly choose a node to stay on for each cycle. If all nodes in a subnet are powered off, there is no way other nodes in other subnets will be able to power them on again.
 
-Note that if you run the Farmerbot on your farm, it is logical to set the node running the Farmerbot as always on. In this case, it will always be this node that wakes up the other nodes.
+Note that if you run the Farmerbot on your farm, it is logical to set the node running the Farmerbot as always on (**never_shutdown:true**). In this case, it will always be this node that wakes up the other nodes.
 
 Currently, you can run only one Farmerbot per farm. Since you can only deploy one Farmerbot per farm, the Farmerbot can only run on one node at a time. 
 
 Since you need at least one node to power up a second node, you can't use the Farmerbot with just one node. You need at least two 3Nodes in your farm to correctly use the Farmerbot.
 
-The Farmerbot gets its data completely from TFChain. This means that, unlike the previous version, the Farmerbot will not start all the nodes when it restarts.
 
-## YAML Configuration File Template
 
-The quick guide showed a simple form of the YAML configuration file. Here are all the parameters that can be set for the configuration file.
-
-```
-farm_id: "<your farm ID, required>"
-included_nodes: [optional, if no nodes are added then the farmerbot will include all nodes in the farm, farm should contain at least 2 nodes]
-  - "<your node ID to be included, required at least 2>"
-excluded_nodes:
-  - "<your node ID to be excluded, optional>"
-never_shutdown_nodes:
-  - "<your node ID to be never shutdown, optional>"
-power:
-  periodic_wake_up_start: "<daily time to wake up nodes for your farm, default is the time your run the command, format is 00:00AM or 00:00PM, optional>"
-  wake_up_threshold: "<the threshold number for resources usage that will need another node to be on, default is 80, optional>"
-  periodic_wake_up_limit: "<the number (limit) of nodes to be waken up everyday, default is 1, optional>"
-  overprovision_cpu: "<how much node allows over provisioning the CPU , default is 1, range: [1;4], optional>"
-```
-
-## Supported Commands and Flags
-
-We present the different commands for the Farmerbot. 
-
-- `start`: to start (power on) a node
-
-```bash
-farmerbot start --node <node ID> -m <mnemonic> -n dev -d
-```
-
-Where:
-
-```bash
-Flags:
-    --node uint32       the node ID you want to use
-
-Global Flags:
--d, --debug             by setting this flag the farmerbot will print debug logs too
--m, --mnemonic string   the mnemonic of the account of the farmer
--n, --network string    the grid network to use (default "main")
--s, --seed string       the hex seed of the account of the farmer
--k, --key-type string   key type for mnemonic (default "sr25519")
-```
-
-- `start all`:  to start (power on) all nodes in a farm
-
-```bash
-farmerbot start all --farm <farm ID> -m <mnemonic> -n dev -d
-```
-
-Where:
-
-```bash
-Flags:
-    --farm uint32       the farm ID you want to start your nodes ins
-
-Global Flags:
--d, --debug             by setting this flag the farmerbot will print debug logs too
--m, --mnemonic string   the mnemonic of the account of the farmer
--n, --network string    the grid network to use (default "main")
--s, --seed string       the hex seed of the account of the farmer
--k, --key-type string   key type for mnemonic (default "sr25519")
-```
-
-- `version`: to get the current version of farmerbot
-
-```bash
-farmerbot version
-```
-
-## Minimum specs to run the Farmerbot
+### Minimum specs to run the Farmerbot
 
 The Farmerbot can run on any computer/server, it could even run on a laptop, so to speak. As long as it has an internet connection, the Farmerbot will be working fine.
 
 The Farmerbot runs fine on a VM with a single vcore and 2GB of RAM. For the storage, you need to have room for Docker and its dependencies. Thus 1 or 2GB of free storage, with the OS already installed, should be sufficient.
 
-## How to Prepare Your Farm for the Farmerbot with WOL
 
-ZOS can utilize 2 NIC's (Network Interface Card) of a node (server, workstation, desktop, ..). The first NIC on the motherboard will always be what we call the ZOS/dmz NIC, the second one is used for public config's (Gateway, public IP's for workloads, ..). So if you don't have public IP's in your farm, only the first NIC of your ZOS node will be used. This subnet is where the farmerbot operates. If you do have public IP's the same applies.
-
-Wake On LAN (WOL) is used to be able to boot (start) a ZOS node remotely that was shut down by the farmerbot. It works by sending what is called a 'magic packet' to the NIC MAC address of a ZOS node. If that NIC is setup correctly, aka 'listening' for the packet, the node will start up, post and boot ZOS. The farmerbot will keep a list of MAC addresses for nodes under it's management, so it knows where to send the packet if it's required.
-
-## WOL Requirements
-
-WOL comes with a few requirements. We list them in the sections that follow.
-
-### Enabling WOL in the BIOS
-
-Enable WOL in the BIOS of your ZOS node.
-
-A ZOS node must be capable of doing WOL. Have a look at your node hardware / BIOS manual. If so make sure to enable it in the BIOS! A bit of research will quickly tell you how to enable for your hardware. Some older motherboards do not support this, sometimes you can be lucky it does after a BIOS upgrade, but that is brand/model specific.
-
-Some examples:
-
-![farmerbot_bios_1|517x291](img/farmerbot_bios_1.jpeg) 
-
-![farmerbot_bios_2|499x375](img/farmerbot_bios_2.jpeg) 
-
-### ZOS Nodes and NIC
-
-All your ZOS nodes and their first NIC (ZOS/dmz) should be in the same network subnet (also called network segment or broadcast domain).
-
-This requires some basic network knowledge. WOL packets can not be send across different subnets by default, it can but this requires specific configuration on the firewall that connects the two subnets. Though cross-subnet WOL is currently not supported by the farmerbot.
-
-A 'magic' WOL packet is sent only on networking layer 2 (L2 or the 'data link layer') based on MAC address. So not on L3 based on ip address. This is why all nodes that should be brought up via WOL, need to be in the same subnet.
-
-You can check if this is the case like this: if for example one node has the ip 192.168.0.20/24, then all other nodes should have an ip between 192.168.0.1 and 192.168.0.254. You can calculate subnet ranges easely here: https://www.tunnelsup.com/subnet-calculator/
-
-So for the 192.168.0.0/24 example, you can see the range under 'Usable Host Range':
-
-![farmerbot_bios_3|499x500](img/farmerbot_bios_3.png) 
-
-### NIC Firmware and WOL
-
-Some NIC's require WOL to be set on the NIC firmware.
-
-This is fully handled by ZOS. Every time ZOS boots it will enable WOL on links if they require it. So if a ZOS node then is added to a farmerbot, it will have WOL enabled on its NIC when it's turned off (by the farmerbot).
-
-Your farmerbot can be run on any system, including on a node. It doesn't have to be on the same network subnet as the nodes from the farm. The nodes of the farm on the other hand have to be in the same LAN. Don't hesitate to ask your technical questions here, we and the community will help you set things up!
-
-## How to Move Your Farm to a Different Network
-
-Note that the Farmerbot is currently available for Dev Net, QA Net, Test Net and Main Net. Thus, it might not be necessary to move your farm to a different network.
-
-To move your farm to a different network, you need to create a new bootstrap image for the new network instead of your current network. You should also wipe your 3Nodes' disks before moving to a different network.
-
-To download the Zero-OS bootstrap image, go to the usual bootstrap link [https://v3.bootstrap.grid.tf/](https://v3.bootstrap.grid.tf/) and select the network you want.
-
-![test_net|690x422](img/farmerbot_5.png) 
-
-Once you have your new bootstrap image for the new network, [wipe your disks](../3node_building/4_wipe_all_disks.md), insert the new bootstrap image and reboot the 3Node.
-
-## The differences between power "state" and power "target"
+### The differences between power "state" and power "target"
 
 The target is what is set by the Farmerbot or can be set by the farmer manually on TF Chain. Power state can only be set by the node itself, in response to power targets it observes on chain.
 
 
-## The differences between uptime, status and power state
+
+### The differences between uptime, status and power state
 
 There are three distinctly named endpoints or fields that exist in the back end systems:
 
@@ -204,7 +87,9 @@ There are three distinctly named endpoints or fields that exist in the back end 
 * Power state
   * this is a field that only exists on GraphQL, and it's the self reported power state of the node. This only goes to "down" if the node shut itself down at request of the Farmerbot.
 
-## The sequence of events for a node managed by the Farmerbot
+
+
+### The sequence of events for a node managed by the Farmerbot
 
 The sequence of events for a node managed by farmerbot should look like this:
 
@@ -219,7 +104,13 @@ The sequence of events for a node managed by farmerbot should look like this:
 
 At that point the cycle is completed and will repeat. 
 
-## The problematic states of a 3node set with the Farmerbot
+### Farmerbot Uptime Report and Wakeups
+
+The farmerbot needs to wake nodes up for uptime report even if they are unused and shut down because we want to know that the node is still available (is still there to be used). 
+
+A farmer can unplug a node at any time so we can't distinct a node that has been unplugged from a node that is off.
+
+### The problematic states of a 3node set with the Farmerbot
 
 These are problematic states:
 
@@ -228,41 +119,97 @@ These are problematic states:
 3. Target is "Down" but state and status are up (Zos is potentially not responding to power target correctly).
 4. State is "Up" but status is "Down" (node shutdown unexpectedly).
 
-## Using the ThreeFold Node Status Bot
+
+
+### Using the ThreeFold Node Status Bot
 
 You can use the [ThreeFold Node Status Bot](https://t.me/tfnodestatusbot) to see the nodes' status in relation to the Farmerbot.
 
-## CPU overprovisioning
+
+
+### CPU overprovisioning
 
 In the context of the ThreeFold grid, overprovisioning a CPU means that you can allocate more than one deployment to one CPU.
 
 In relation to the Farmerbot, you can set a value between 1 and 4 of how much the CPU can be overprovisioned. For example, a value of 2 means that the Farmerbot can allocate up to 2 deployments to one CPU.
 
-## Seed phrase and HEX secret
+
+
+### Seed phrase and HEX secret
 
 When setting up the Farmerbot, you will need to enter either the seed phrase or the HEX secret of your farm. For farms created in the TF Connect app, the HEX secret from the app is correct. For farms created in the TF Dashboard, you'll need the seed phrase provided by the Polkadot extension when you created the account.
 
-## Farmerbot directory tree
+
+
+### Farmerbot directory tree
 
 As a general template, the directory tree of the Farmerbot will look like this:
 
 ```
-└── farmerbot_directory
+└── farmerbot_docker
     ├── .env
-    └── conf.yml
+    ├── config
+    │   ├── config.md
+    │   └── farmerbot.log
+    └── docker-compose.yaml
 ```
 
-## Dedicated Nodes and the Farmerbot
+Note that the directory tree and its associated files can be created automatically when using the [file creator](./farmerbot_quick.md#create-the-configuration-files).
+
+
+
+### Run multiple Farmerbots on the same computer or VM
+
+You can run multiple Farmerbot on the same computer or VM, where each Farmerbot can take care of one farm at time. For example, with two Farmerbots, you could manage two different farms, and so on. In this case, you will need to set different farms in different LANs and set one Farmerbot per farm.
+
+In this case, you need to make sure that each Farmerbot is running in its own directory. We show here a directory tree example with two different Farmerbots running each a docker image.
+
+```
+.
+├── farmerbot_docker_1
+    ├── .env
+│   ├── config
+│   │   ├── config.md
+│   │   └── farmerbot.log
+│   └── docker-compose.yaml
+└── farmerbot_docker_2
+    ├── .env
+    ├── config
+    │   ├── config.md
+    │   └── farmerbot.log
+    └── docker-compose.yaml
+```
+
+To achieve this, you can simply follow the [Farmerbot Quick Guide](./farmerbot_quick.md) and create a distinct directory for each Farmerbot (`mkdir farmerbot_docker_1`, etc.) and complete the guide for each Farmerbot and farm combination.
+
+
+
+### Dedicated Nodes and the Farmerbot
 
 Dedicated nodes are managed like any other node. Nodes marked as dedicated can only be rented completely. Whenever a user wants to rent a dedicated node the user sends a find_node job to the farmerbot. The farmerbot will find such a node, power it on if it is down and reserve the full node (for 30 minutes). The user can then proceed with creating a rent contract for that node. The farmerbot will get that information and keep that node powered on. It will no longer return that node as a possible node in future find_node jobs. Whenever the rent contract is canceled the farmerbot will notice this and shutdown the node if the resource usage allows it.
 
-## Periodic wakeup
+
+
+### Run the Farmerbot on Raspberry Pi
+
+While it is possible to run the Farmerbot on a Pi, this feature is not officially supported by ThreeFold and is experimental. Note that Threefold might never support it officially.
+
+To run the Farmerbot on a Raspberry Pi, read [this guide](https://forum.threefold.io/t/how-to-run-farmerbot-on-a-raspberry-pi/3879/).
+
+
+### Deploy the Farmerbot with Portainer or other container management tools
+
+The Farmerbot should be compatible with Portainer and other container management tools, but there may be practical issues when deploying the Farmerbot. In that regard, ThreeFold can only support such tools on a best effort basis.
+
+### Periodic wakeup
 
 The minimum period between two nodes to be waken up is currently 5 minutes. This means that every 5 minutes a new node wakes up during the periodic wakeup.
 
 Once all nodes are awaken, they all shut down at the same time, except the node that stays awaken to wake up the other during the next periodic wake.
 
-## Time period between random wakeups and power target update
+
+
+### Time period between random wakeups and power target update
 
 The time period between a random wakeup and the moment the power target is set to down is between 30 minutes and one hour.
 
@@ -275,11 +222,50 @@ This ensures an optimal user experience and reliablity in 3Nodes' reports.
 
 Note that each node managed by the Farmerbot will randomly wakeup on average 10 times a month.
 
-# Maintenance
+### Farmerbot and UTC time
 
-## See the power state and power target of a 3Node with GraphQL
+The Farmerbot works in UTC, independently of the local time of your machine.
 
-On [GraphQL](https://graphql.grid.tf/graphql), write the following lines, with the proper farm ID (here we set **1**):
+### Upgrade the Old Farmerbot to the New Farmerbot
+
+If you are still running the old version of the Farmerbot (written in V), you can easily upgrade to the new Farmerbot (written in Go). You simply need to properly stop the old Farmerbot and then follow the new [Farmerbot guide](./farmerbot_quick.md).
+
+Here are the steps to properly stop the old Farmerbot.
+
+* Go to the diretory with the old Farmerbot docker files and fully stop the old Farmerbot:
+  ```
+  docker compose rm -f -s -v
+  ```
+* You should also make sure that there are no containers left from the previous runs. First, list all containers:
+  ```
+  docker container ls --all
+  ```
+* Then delete the remaining containers:
+  ```
+  docker container rm -f -v NAME_OF_CONTAINER
+  ```
+
+Once the old Farmerbot is properly stopped and deleted, follow the new [Farmerbot guide](./farmerbot_quick.md).
+
+### Set the Farmerbot without the mnemonics with a twin associated with a polkadot.js extension account
+
+If your twin is associated with a polkadot.js extension account, but you do not have the mnemonics, you can set the Farmerbot with certain conditions.
+
+This is possible if your exported JSON lists `ed25519` under encoding. If it lists `sr25519`, it is not possible. 
+
+For `ed25519`, you will need to extract the hex secret.
+
+That being said, if you do not have your mnemonics for your polkadot.js extension account, the simplest way forward is to create a new polkadot.js account and generate a new twin. Then you will need to create a new farm and migrate the existing nodes to the new twin and farm. This is actually very simple: when you boot your new bootstrap image of the new farm, your node will move to the new farm, with its current node ID. 
+
+If you are using the Farmerbot, at this point, you will be able to set it with the mnemonics associated with the new farm.
+
+## Maintenance
+
+### See the power state and power target of 3Nodes with GraphQL
+
+You can use [GraphQL](https://graphql.grid.tf/graphql) to see the power state and power target of 3Nodes. 
+
+To find all nodes within one farm, use the following line with the proper farm ID (here we set farm **1** as an example):
 
 ```
 query MyQuery {
@@ -293,9 +279,20 @@ query MyQuery {
 }
 ```
 
+To find a specific node, write the following with the proper nodeID (here we set node **655** as an example):
 
+```
+query MyQuery {
+  nodes(where: {nodeID_eq: 655}) {
+    power {
+      state
+    }
+    nodeID
+  }
+}
+```
 
-## Change manually the power target of a 3Node
+### Change manually the power target of a 3Node
 
 You can use the Polkadot Extrinsics for this.
 
@@ -314,25 +311,104 @@ You can use the Polkadot Extrinsics for this.
 
 
 
-## Properly reboot the node if power target "Down" doesn't work
+### Properly reboot the node if power target "Down" doesn't work
 
 * Set the power target to "Down" manually
 * Reboot the node and wait for it to set its power state to "Down"
 * Once power target and state are both set to "Down", you can manually power off the node and reboot it
 
-## Add a 3Node to a running Farmerbot
 
-If the Farmerbot is running and you want to add a new 3Node to your farm, you can proceed as follows.
+### Add a 3Node to a running Farmerbot
 
-- Boot the new 3Node
-  - Once the node is registered to the grid, a new node ID will be generated
-- If you set the section `included_nodes` in the YAML configuration file
-  - Add the new node ID to the configuration file
-- Restart the Farmerbot with the systemd command `restart` (in this example, the service is called `farmerbot`)
-  ```
-  systemctl restart farmerbot
-  ```
+If the Farmerbot is running and you want to add a new 3Node to your farm, you will need to [stop and restart the Farmerbot](#stop-and-restart-the-farmerbot) once the new 3Node is connected to the TFGrid.
 
-# Questions and Feedback
+
+
+
+## Troubleshooting
+
+### Retrieve the Farmerbot log after receiving the error: "Error grabbing logs"
+
+If the farmerbot logs are corrupted, you can retrieve them with the following method.
+
+You will need to find and grab the whole log file from the docker backend. Here are the general steps:
+
+* In the terminal, write the following command:
+  * ```
+    docker ps -a
+    ```
+* Look for the container named `xxxx-farmerbot-x` (the name can differ in your situation).  
+  * If there are more than one, take the one that's either running or most recently exited. 
+* Then find where its log file is. Here's an example with `main-farmerbot-1`. Make sure to adjust the line with your container name:
+  * ```
+    docker inspect main-farmerbot-1 | grep LogPath
+    ```
+  * The output given will look like this `/var/lib/docker/containers/...`. This is the path to the json formatted log file.
+* You can then copy and inspect the json formatted log file.
+  * ```
+    sudo cp /path/to/json_formatted_log_file /destination/path
+    ```
+
+
+
+### Fix the error: "WebSocket protocol error: Connection reset without closing handshake"
+
+To fix this error, make sure that you are only running one instance of the Farmerbot.
+
+
+
+### Fix the error: "Balance is not enough to apply an extrinsic"
+
+This error means that you do not have sufficient funds (TFT) in your wallet for the Farmerbot's fees.
+
+You thus simply need to add some TFTs in the wallet that is connected to the farm on which you are running the Farmerbot. For example, 1 TFT can suffice for many transactions. For more information, read [this documentation](./farmerbot_quick.html#farmerbot-costs-on-the-tfgrid).
+
+
+
+### Fix the error: "Error: Invalid twin id. Twin id must be postive integer"
+
+This indicates that the seed phrase has no associated twin. There can be many reasons behind this. 
+
+- You are using the wrong seed phrase for your farm.
+  - To fix it, simply find the proper seed phrase for the farm hosting your 3Nodes.
+- You created the farm in the TF Connect app and are using the seed phrase in words instead of the seed phrase in HEX format (the TFChain secret).
+  - To fix it, simply use the TFChain secret (HEX format) in the TF Connect app.
+
+
+
+### Fix the error: "Dependency failed to start: container qa-redis-1 is unhealthy"
+
+This means that there is some redis database state stored in a persistent volume. The issue is that the database got corrupted somehow and thus redis is crashing.
+
+To remove the volume, and thus actually get a clean start, you can use the following command:
+```
+docker compose down -v
+```
+
+
+
+### Fix the error: "Node xxx is not responding while we expect it to: timeout on blpop"
+
+This error happens when you start the Farmerbot while the nodes are down. Although this is not an issue, it is recommended to have the nodes running when starting the Farmerbot. The nodes data will then be up to date and the nodes that are allowed to be shut down will be shut down.
+
+
+
+### Fix the error: "Failed initializing the database: Invalid duration value"
+
+If you see this error, it's because you've used 24h time format in conjunction with AM/PM time format. Note that if you add AM/PM, the Farmerbot will use the 12h time format (AM/PM). Otherwise, it is the 24h time format.
+
+
+
+### Fix the error: "Invalid characters for a local volume name... If you intended to pass a host directory, use absolute path."
+
+If you see this error, simply make sure that you are using the absolute path. Here is an example using `$(pwd)` to pass the absolute path:
+
+```
+docker run --name fbot_config_container -v $(pwd):/farmerbot -ti ghcr.io/threefoldtech/farmerbot_config:0.2.0
+```
+
+
+
+## Questions and Feedback
 
 If you have questions concerning the Farmerbot, feel free to ask for help on the [ThreeFold Forum](https://forum.threefold.io/) or on the [ThreeFold Farmer chat](https://t.me/threefoldfarmers).
