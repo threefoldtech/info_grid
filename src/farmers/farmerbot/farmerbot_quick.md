@@ -147,9 +147,11 @@ It is highly recommended to set a Ubuntu systemd service to keep the Farmerbot r
     ```
     [Unit]
     Description=ThreeFold Farmerbot
+    StartLimitIntervalSec=0
 
     [Service]
     Restart=always
+    RestartSec=5
     StandardOutput=append:/root/farmerbotfiles/farmerbot.log
     StandardError=append:/root/farmerbotfiles/farmerbot.log
     ExecStart=/usr/local/bin/farmerbot run -e /root/farmerbotfiles/.env -c /root/farmerbotfiles/config.yml -d
