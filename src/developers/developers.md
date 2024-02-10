@@ -86,6 +86,6 @@ Whether you're interested in decentralized cloud computing, blockchain integrati
   - [Weblet Case Study: Nextcloud AIO](./playground/weblet_case_study_nextcloud.md)
 - [Grid Deployment](../grid_deployment/grid_deployment.md)
   - [TFGrid Stacks](../grid_deployment/tfgrid_stacks.md)
-  - [Grid Snapshots](../grid_deployment/snapshots.md)
+  - [Full VM Grid Deployment](../grid_deployment/grid_deployment_full_vm.md)
   - [Guardians of the Grid](../grid_deployment/tfgrid_guardians.md)
 - [Developers FAQ](../faq/faq.md#developers-faq)
