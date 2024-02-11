@@ -5,6 +5,7 @@
 - Make
 - [mdbook](https://rust-lang.github.io/mdBook/guide/installation.html)
 - [mdbook-mermaid](https://github.com/badboy/mdbook-mermaid)
+- [mdbook-last-changed](https://github.com/badboy/mdbook-last-changed)
 
 ## build
 
