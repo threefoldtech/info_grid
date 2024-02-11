@@ -22,12 +22,12 @@ Many hundreds of servers have been used to develop the technology which now make
 
 Most of the servers are in Dubai and in Ghent (Belgium).
 
-- To see the [genesis pool in Ghent, see here](./genesis_pool_ghent)
-- To see the [genesis pool in Dubai, see here](./genesis_pool_dubai)
+- To see the [genesis pool in Ghent, see here](./genesis_pool_ghent.md)
+- To see the [genesis pool in Dubai, see here](./genesis_pool_dubai.md)
 
 All genesis pools were owned by the foundation. Many of those servers are at this point no longer active. The operations were done by ThreeFold_Dubai and BetterToken as Farming Cooperative.
 
-> For information about genesis pool/block, see [here](./genesis_block_pool_details).
+> For information about genesis pool/block, see [here](./genesis_block_pool_details.md).
 
 ## Genesis Pool Token Usage
 
