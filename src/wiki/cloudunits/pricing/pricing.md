@@ -6,10 +6,11 @@
 
 - [Pricing Policy](#pricing-policy)
 - [Pricing Expressed Per Month](#pricing-expressed-per-month)
+- [Operation Fees](#operation-fees)
 - [Certified Capacity](#certified-capacity)
 - [Dedicated Nodes](#dedicated-nodes)
 - [Staking Discount](#staking-discount)
-  - [Example for 40% discount \[Silver\]](#example-for-40-discount-silver)
+  - [Example for 40% discount (Silver)](#example-for-40-discount-silver)
 
 ***
 
@@ -48,6 +49,10 @@
 | Network Unit (NU) | 1 GB transfer, bandwidth as used by TFGrid users | 0.05/GB       | 0.03/GB    |
 | IPv4 Address      | Public Ip Address as used by a TFGrid user       | 5.00/month | 3.00/month |
 
+## Operation Fees
+
+Operations on TFChain have a base fee of 0.001 TFT. Creating and destroying deployments usually includes several operations.
+
 ## Certified Capacity
 
 Renting capacity on certified nodes is charged 25% extra (x 1.25).
@@ -81,7 +86,7 @@ TFChain charges users for proof of utilization on an hourly basis. The discount 
 
 This discount mechanism operates automatically, and users don't need to take any specific actions to avail themselves of this benefit. However, it's worth mentioning that the maximum discount for network-related services is 40%.
 
-### Example for 40% discount [Silver]
+### Example for 40% discount (Silver)
 
 Let's break down the example for a 40% discount on Internet Capacity consumption:
 

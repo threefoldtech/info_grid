@@ -11,7 +11,9 @@
   - [Start Trading](#start-trading)
   - [Important Notice](#important-notice)
 - [Disclaimer](#disclaimer)
+
 ***
+
 ## Introduction
 
 Welcome to our tutorial on how to get TFT (Stellar) using [**BTC-Alpha**](https://btc-alpha.com/en)! 
@@ -19,7 +21,7 @@ Welcome to our tutorial on how to get TFT (Stellar) using [**BTC-Alpha**](https:
 BTC-Alpha is a cryptocurrency exchange platform that provides a secure and user-friendly environment for trading various digital assets, including TFT (Stellar). With its robust features and intuitive interface, BTC-Alpha offers a convenient way to buy and sell cryptocurrencies. 
 
 In this guide, we will walk you through the process of buying TFT on the BTC-Alpha exchange.
-***
+
 ## Prerequisites
 
 - **ID for verification:** To get TFT (Stellar) on the BTC-Alpha exchange, you will need to have your identification (ID) ready for the verification process. This is a standard requirement to ensure compliance with regulatory guidelines and maintain a secure trading environment. Your ID may include documents such as a valid passport or government-issued identification card. 
@@ -27,7 +29,7 @@ In this guide, we will walk you through the process of buying TFT on the BTC-Alp
 - **BTC-Alpha Account**: You must have an active account on the BTC-Alpha exchange. If you don't have one, you can sign up on their website and complete the registration process. Make sure to secure your account with strong passwords and two-factor authentication for enhanced security.
 
 - **Funds for Deposit**: To buy TFT (Stellar), you will need to have funds in your BTC-Alpha account. BTC-Alpha supports various deposit options, including USDT (Tether), USDC (USD Coin), BTC (Bitcoin), and other tokens listed on the exchange. You can deposit these tokens from your external wallet or exchange into your BTC-Alpha account to use for purchasing TFT.
-***
+
 ## Get Started
 
 ### Sign up for an Account
@@ -115,11 +117,9 @@ To ensure the safety and security of your TFT holdings, it is advisable to trans
 To explore different TFT wallet options and choose the one that best suits your needs, you can refer to our comprehensive [**TFT Wallet guide**](../storing_tft/storing_tft.md) that provides a list of recommended TFT wallets. This guide will help you understand the features, security measures, and compatibility of each wallet, enabling you to make an informed decision on where to store your TFT securely.
 
 Remember, maintaining control over your private keys and taking precautions to protect your wallet information are essential for safeguarding your TFT investments.
-***
+
 ## Disclaimer
 
-The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
-
-**The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](https://library.threefold.me/info/legal/#/legal__disclaimer) and seek advice from a qualified financial professional if needed.
-
-
+> The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
+> 
+> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](https://library.threefold.me/info/legal/#/legal__disclaimer) and seek advice from a qualified financial professional if needed.
