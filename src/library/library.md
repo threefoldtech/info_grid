@@ -5,11 +5,11 @@ The TFGrid is built on the principles of decentralization, empowering individual
 <h2>Table of Contents</h2>
 
 - [How It Works](../intro/grid3_howitworks.md)
-- [Introduction to TFT](../threefold_token/tft_intro.md)
 - [Technology](../technology/technology_toc.md)
 - [Cloud](../wiki/cloudunits/cloudunits_toc.md)
-- [Farming Details](../wiki/tfgrid/farming/farming_toc.md)
 - [Grid Concepts](../concepts/concepts_readme.md)
+- [Token Overview](../threefold_token/token_overview/token_overview.md)
+- [Farming Details](../wiki/tfgrid/farming/farming_toc.md)
 - [Wiki](../wiki/terms_conditions_all3.md)
 - [ThreeFold Roadmap](../roadmap/roadmap_readme.md)
 - [Collaboration](../contribute/collaboration_toc.md)

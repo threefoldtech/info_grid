@@ -28,7 +28,6 @@ From deployment strategies to monitoring tools, from security best practices to 
   - [Infrastructure as Code](../concepts/grid3_iac.md)
   - [Proof of Utilization](../concepts/proof_of_utilization.md)
   - [Contract Grace Period](../concepts/contract_grace_period.md)
-  - [Buying and Storing TFTs](../concepts/buying_storing_tft.md)
   - [What's New on TFGrid v3.x](../concepts/grid3_whatsnew.md)
   - [TFChain](../concepts/tfchain.md)
   - [TFGrid by Design](../concepts/tfgrid_by_design.md)
