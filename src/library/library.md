@@ -14,4 +14,3 @@ The TFGrid is built on the principles of decentralization, empowering individual
 - [ThreeFold Roadmap](../roadmap/roadmap_readme.md)
 - [Collaboration](../contribute/collaboration_toc.md)
 - [Code of Conduct](../contribute/code_conduct.md)
-
