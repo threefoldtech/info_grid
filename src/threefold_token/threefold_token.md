@@ -1,13 +1,8 @@
 <h1> ThreeFold Token </h1>
 
-The ThreeFold Token (TFT) is a decentralized digital currency used to buy autonomous and decentralized Internet services (compute, storage, and application) on the ThreeFold Grid.
-
-ThreeFold Tokens are generated through a process called “Farming”. Farming happens when active internet capacity is added to the ThreeFold Grid. Independent farmers earn ThreeFold Tokens (TFT) by providing neutral and decentralized internet capacity, thus expending the usable TF Grid. Therefore no central entity controls the internet.
-
-> [Learn the basics of the ThreeFold token (TFT)](./tft_intro.md)
-
 <h2> Table of Contents </h2>
 
+- [Introduction to TFT](#introduction-to-tft)
 - [Chains with TFT](#chains-with-tft)
 - [TFT Contract Addresses on Chains](#tft-contract-addresses-on-chains)
 - [Bridges Between Chains](#bridges-between-chains)
@@ -19,6 +14,16 @@ ThreeFold Tokens are generated through a process called “Farming”. Farming h
 - [Disclaimer](#disclaimer)
 
 ***
+
+## Introduction to TFT
+
+The ThreeFold Token (TFT) is a decentralized digital currency used to buy autonomous and decentralized Internet services (compute, storage, and application) on the ThreeFold Grid.
+
+> [Learn the basics of the ThreeFold token](./tft_intro.md)
+
+ThreeFold Tokens are generated through a process called “Farming”. Farming happens when active internet capacity is added to the ThreeFold Grid. Independent farmers earn ThreeFold Tokens (TFT) by providing neutral and decentralized internet capacity, thus expending the usable TF Grid. Therefore no central entity controls the internet.
+
+> [Get an overview of the ThreeFold token](./token_overview/token_overview.md)
 
 ## Chains with TFT
 
@@ -61,15 +66,11 @@ There are many ways to store TFT. The [TF Connect app wallet](./storing_tft/tf_c
 
 ## Buy and Sell TFT
 
-There are many ways to [buy and sell TFT](./buy_sell_tft/buy_sell_tft_toc.md). 
+You can buy and sell TFT on [Stellar Chain](./buy_sell_tft/tft_lobstr/tft_lobstr_complete_guide.md), [Ethereum Chain](./buy_sell_tft/tft_metamask/tft_metamask.md) and [Binance Smart Chain](./buy_sell_tft/pancakeswap.md).
 
 Using Lobstr is very effective to buy TFT with fiat or crypto in no time. 
 
-> [Get TFT with Lobstr](./buy_sell_tft/tft_lobstr/tft_lobstr_complete_guide.md)
-
-Learn about all the ways to buy TFT.
-
-> [All Methods to Buy & Sell TFT](./buy_sell_tft/buy_sell_tft_methods.md)
+> [Get TFT: Quick Guide](./buy_sell_tft/tft_lobstr/tft_lobstr_short_guide.md)
 
 ## Liquidity Provider (LP)
 

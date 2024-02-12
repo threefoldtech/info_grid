@@ -10,9 +10,6 @@ From deployment strategies to monitoring tools, from security best practices to 
 
 - [Getting Started](../getstarted/tfgrid3_getstarted.md)
   - [ThreeFold Connect](../getstarted/TF_Connect/TF_Connect.md)
-  - [ThreeFold Token](../getstarted/TF_Token/tft_toc.md)
-    - [TFT on Lobstr](../getstarted/TF_Token/tft_lobstr/tft_lobstr.md)
-    - [TFT on Ethereum](../getstarted/TF_Token/tft_ethereum/tft_ethereum.md)
   - [ThreeFold Dashboard](../getstarted/TF_Dashboard/TF_Dashboard.md)
   - [Tutorial: Find Node](../dashboard/explorer/explorer_find_capacity.md)
   - [Tutorial: Deploy Your First VM](../weblets/weblets_vm.md)

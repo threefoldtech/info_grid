@@ -18,6 +18,7 @@
   - [Send TFT](#send-tft)
   - [Receive TFT](#receive-tft)
   - [Send TFT to Hardware Wallet on Stellar Blockchain](#send-tft-to-hardware-wallet-on-stellar-blockchain)
+- [Disclaimer](#disclaimer)
 
 ***
 
@@ -32,7 +33,7 @@ It is available for [Android](https://play.google.com/store/apps/details?id=org.
 - Note that for Android phones, you need at minimum Android Nougat, the 8.0 software version.
 - Note that for iOS phones, you need at minimum iOS 14.5. It will be soon available to iOS 13.
 
-***
+
 ## ThreeFold Connect Installation
 
 Either use the links above, or search for the ThreeFold Connect App on the Apple Store or the Google Play store. Then install and open the app. If you want to leave a 5 star review of the App, no one here will stop you!
@@ -80,9 +81,9 @@ That's it! You've created your ThreeFold Connect account. You can press the hamb
 ![farming_tf_wallet_12](./img/farming_tf_wallet_12.png)
 
 In the next step, we will create a ThreeFold Connect Wallet. You'll see, it's very simple!
-***
+
 ### Verify your identity by Email
-***
+
 Once you've created your account, an email will be sent to the email address you've chosen in the account creation process. 
 
 To verify your email, go on your email account and open the email sent by *info@openkyc.live* with the subject *Verify your email address*. 
@@ -100,14 +101,14 @@ If for some reason, you did not receive the verification email, simply click on 
 ![farming_tf_wallet_42](./img/farming_tf_wallet_42.png)
 
 ![farming_tf_wallet_43](./img/farming_tf_wallet_43.png)
-***
+
 ### Change email associated with TF account
-***
+
 If you want to change your email, simply click on the *pencil* next to your email and write another email. You will need to redo the KYC verification process.
 
 ![farming_tf_wallet_44](./img/farming_tf_wallet_44.png)
 
-***
+
 ## Create a Wallet
 
 To create a wallet, click on the ThreeFold Connect App menu. This is what you see. Choose *Wallet*.
@@ -151,7 +152,7 @@ Now, if you want to copy your Stellar Address, simply click on the button presen
 In some situations, you will want to access the Stellar and TF Chain secrets. To do so, simply click on the "eye" button of the desired chain, and then copy the secret.
 
 ![farming_tf_wallet_23](./img/farming_tf_wallet_23.png)
-***
+
 ## Create a Farm
 
 Now, being a farmer, you might wonder: can I create a ThreeFold Farm with the ThreeFold Connect App. Well, yes! Here is how to do so.
@@ -175,13 +176,13 @@ The TF Connect App will give you a confirmation message if the farm was created 
 You can see on this screen the address were your farming rewards will be sent to. It is the Stellar address associated with the ThreeFold Wallet used to create the farm.
 
 ![farming_tf_wallet_28](./img/farming_tf_wallet_28.png)
-***
+
 ## See ThreeFold Connect App and Wallet Transactions
 
 To see your transactions, simply click on the two arrows at the bottom of the screen, as shown below.
 
 ![farming_tf_wallet_29](./img/farming_tf_wallet_29.png)
-***
+
 ## Connect to the Planetary Network
 
 To connect to the Planetary Network, click on the Planetary Network on the TF menu as shown below.
@@ -191,7 +192,7 @@ To connect to the Planetary Network, click on the Planetary Network on the TF me
 Connecting to the Planetary Network couldn't be easier. Simply click on the connection button and you will see *Connected* on the screen once the connection is settled.
 
 ![farming_tf_wallet_31](./img/farming_tf_wallet_31.png)
-***
+
 ## Show Seed Phrase - Remove Account from TF Connect App
 
 To see your seed phrase or remove your account from the TF Connect App, choose *Settings* in the ThreeFold Connect App menu.
@@ -211,7 +212,7 @@ Now, we will remove the account from the ThreeFold Connect App. In Settings, cli
 You will be asked to confirm your action as a security check.
 
 ![farming_tf_wallet_34](./img/farming_tf_wallet_34.png)
-***
+
 ## Recover Account on the ThreeFold Connect App
 
 Once you're removed your account, if you want to recover your account, choose the option *RECOVER ACCOUNT* on the opening screen on the app.
@@ -228,7 +229,7 @@ You will then be asked to choose and confirm a new 4-digit pin code. Once this i
 
 That's it! You've recovered your account.
 
-***
+
 ## Move Farm from the TF Connect App to the TF Portal (polkadot.js)
 
 If you want to move your farm from the ThreeFold Connect App to the portal.grif.tf (polkadot.js), follow these steps. Note that you cannot, for now, move your farm from the Portal to the ThreeFold Connect App.
@@ -287,7 +288,7 @@ You can see here that the farming reward address is the same as before.
 
 That's it! You have successfully move the farm from the ThreeFold Connect App to the ThreeFold Portal.
 
-***
+
 
 ## Import TF Portal (polkadot.js) Wallet to the TF Connect App Wallet
 
@@ -305,25 +306,31 @@ Then in the Wallet section, you will now see the wallet.
 
 ![farming_tf_wallet_59](./img/farming_tf_wallet_59.png)
 
-***
+
 
 ## Send and Receive TFT between TF Connect Wallets
 
 To send and receive TFT between TF Connect Wallet, go into Wallet and select the wallet you want to use.Remember that you must always send and receive TFT on the same chain, so choose either Stellar or TFChain.
-***
+
 ### Send TFT
-***
+
 To send tokens, select *Send Coins* in the wallet section. To send TFT, you can scan the QR code of the address you wish to send tokens to. This will enter automatically the necessary information. Make sure to double check that the information is correct to avoid any complications. Otherwise, you can simply enter the correct address in the section *To*. Choose the amount you want to send. Then click on *SEND TOKENS*. 
 
 Note that, for such transactions, there is a maximum fee of 0.10 TFT on the Stellar blockchain, and a maximum fee of 0.01 TFT on the TFChain. This amount is taken from the amount you are sending. It is not taken directly in your wallet. 
-***
+
 ### Receive TFT
-***
+
 To receive tokens, select *Receive Coins* in the wallet section. To receive TFT, you can generate a QR code to share to the person waiting to send you tokens. Otherwise, the sender can simply use your Stellar or TFChain address and send you TFT.
 
 To generate the QR Code, select the chain you want to use, Stellar or TFChain, enter the amount and the message if needed and click on *GENERATE QR CODE*. Note that there is no message option for TFChain, only for Stellar. This will generate a QR Code that can be scanned by other devices.
 
-***
+
 ### Send TFT to Hardware Wallet on Stellar Blockchain
-***
+
 Before sending TFT to a hardware wallet, make sure the hardware wallet has a TFT trustline on the Stellar Blockchain. For more information, read the section below.
+
+## Disclaimer
+
+> The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
+> 
+> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](../../wiki/disclaimer.md) and seek advice from a qualified financial professional if needed.
