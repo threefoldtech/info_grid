@@ -64,13 +64,13 @@ Here are some examples to guide you:
 
 > Hint: Check the Z-OS monitor screen and make sure that all the 3Nodes are within the same lan (e.g. all 3Nodes addresses are between 192.168.15.00 and 192.168.15.255).
 
-For more information on WOL, [read this section](farmerbot_information.md#how-to-prepare-your-farm-for-the-farmerbot-with-wol) of the manual.
+For more information on WOL, [read this section](farmerbot_information.md#how-to-prepare-your-farm-for-the-farmerbot-with-wol).
 
 ## Deploy a Full VM
 
-For this guide, we run the Farmerbot on a Full VM running on the TFGrid. Note that you do not need to run the Farmerbot on the TFGrid, but the whole process is very simple as presented here.
+For this guide, we run the Farmerbot on a Full VM running on the TFGrid. Note that while you do not need to run the Farmerbot on the TFGrid, the whole process is very simple as presented here.
 
-- [Deploy full vm on the Playground with WireGuard network](../../getstarted/ssh_guide/ssh_guide.md)
+- Deploy a full VM on the TFGrid
 - Update and upgrade the VM
     ```
     apt update && apt upgrade
@@ -130,7 +130,7 @@ For farmers with **ed25519** keys, the flag `-k` should be used. Note that by de
 farmerbot run -k ed25519 -e ~/farmerbotfiles/.env -c ~/farmerbotfiles/config.yml -d
 ```
 
-For more information on the supported commands, refer to the [Farmerbot repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot) or the [Additional Information section](farmerbot_information.md#supported-commands-and-flags). 
+For more information on the supported commands, the [Additional Information section](farmerbot_information.md#supported-commands-and-flags). You can also consult the [Farmerbot repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot).
 
 Once you've verified that the Farmerbot runs properly, you can stop the Farmerbot and go to the next section to set a Farmerbot service. This step will ensure the Farmerbot keeps running after exiting the VM.
 
@@ -224,7 +224,9 @@ power:
   periodic_wake_up_start: 01:00PM
 ```
 
-For more information on the configuration file, refer to the [Farmerbot repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot) or the [Additional Information section](farmerbot_information.md#yaml-configuration-file-template).
+For more information on the configuration file, refer to the [Additional Information section](farmerbot_information.md#yaml-configuration-file-template).
+
+You can also consult the [Farmerbot repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot).
 
 ### Environment Variables File Template (.env)
 
@@ -266,7 +268,7 @@ farmerbot2.service
 
 This guide is meant to get you started quickly with the Farmerbot. That being said, there is a lot more that can be done with the Farmerbot.
 
-For more information on the Farmerbot, please refer to the [official Farmerbot Go repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot).
+For more information on the Farmerbot, please refer to the [Additional Information section](./farmerbot_information.md). You can also consult the [official Farmerbot Go repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot).
 
 If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](https://forum.threefold.io/) or on the [ThreeFold Farmers Chat](https://t.me/threefoldfarmers) on Telegram.
 
