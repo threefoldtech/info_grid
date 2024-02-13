@@ -8,5 +8,5 @@ The ThreeFold Grid is built on the principles of decentralization, empowering in
 - [Technology](../technology/technology_toc.md)
 - [Farming](../wiki/tfgrid/farming/farming_toc.md)
 - [Cloud](../wiki/cloudunits/cloudunits_toc.md)
-- [Collaboration](contribute/collaboration_toc.md)
+- [Collaboration](../contribute/collaboration_toc.md)
 - [Legal](../wiki/terms_conditions_all3.md)
