@@ -10,3 +10,4 @@ To become a farmer, a developer or a sysadmin on the ThreeFold, read the [tutori
 - [Development Process](./development_process.md)
 - [Collaboration Tools](../collaboration_tools/collaboration_tools.md)
 - [How to Test](../testing/testing_readme.md)
+- [Code of Conduct](../contribute/code_conduct.md)
