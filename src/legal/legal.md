@@ -7,3 +7,11 @@ At [**legal.threefold.io**](https://legal.threefold.io), users can find importan
 These legal documents outline the rights, responsibilities, and obligations of both ThreeFold and its users, ensuring a clear understanding of the legal framework within which the platform operates. By visiting the legal section, users can familiarize themselves with the legal aspects of engaging with the ThreeFold ecosystem, promoting a trustworthy and accountable environment. 
  
 You're invited to explore the ThreeFold Legal Wiki by visiting [this link](https://library.threefold.me/info/legal/#/).
+
+- [Disclaimer](../wiki/disclaimer.md)
+- [Definitions](../wiki/definitions_legal.md)
+- [Privacy Policy](../wiki/privacypolicy.md)
+- [Terms & Conditions ThreeFold Related Websites](../wiki/terms_conditions_websites.md)
+- [Terms & Conditions TFGrid Users TFGrid 3](../wiki/terms_conditions_griduser.md)
+  - [TFTA to TFT](../wiki/tfta_to_tft.md)
+- [Terms & Conditions TFGrid Farmers TFGrid 3](../wiki/terms_conditions_farmer3.md)

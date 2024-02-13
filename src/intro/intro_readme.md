@@ -1,17 +1,17 @@
-# ThreeFold Knowledge Base
+# ThreeFold Grid Manual
 
 ![header](../intro/img/intro_header.png)
 
-*Welcome to the ThreeFold Knowledge Base!*
+*Welcome to the ThreeFold Grid Manual!*
 
 This documentation is organized in two main sections: 
 
-- [The ThreeFold Library](../library/library.md)
-- [The ThreeFold Manual](../manual/manual.md)
+- [ThreeFold Library](../library/library.md)
+- [ThreeFold Tutorials](../tutorials/tutorials.md)
 
-The ThreeFold Library contains all information needed to understand how the whole ThreeFold ecosystem works. 
+The *ThreeFold Library* section contains all information needed to understand how the whole ThreeFold ecosystem works. 
 
-The ThreeFold Manual contains all the practical information for [farmers](../farmers/farmers.md), [developers](../developers/developers.md) and [system administrators](../system_administrators/system_administrators.md).
+The *ThreeFold Tutorials* section contains all the practical information of the ThreeFold Grid, from general information covering the multi-functional [Dashboard](../dashboard/dashboard.md), [TFT](../threefold_token/threefold_token.md) and our community-based [FAQ](../faq/faq.md), to specific tutorials for [developers](../developers/developers.md), [farmers](../farmers/farmers.md) and [system administrators](../system_administrators/system_administrators.md).
 
 > Explore the TFGrid status page for live updates on Threefold services!
 > 
@@ -32,4 +32,4 @@ To explore this manual, you can use the search function by hitting **'s'** on yo
 
 If you can't find the answer to your question, our dedicated [ThreeFold Support](https://threefoldfaq.crisp.help/en/) team is here to help.
 
-Welcome to the ThreeFold Grid, where together we can shape a more sustainable and inclusive digital future!
+*Welcome to the ThreeFold Grid, where together we can shape a more sustainable, self-sovereign and autonomous digital future!*

@@ -4,7 +4,9 @@
 
 Welcome to the *ThreeFold Farmers* section of the ThreeFold Manual, your comprehensive resource for understanding and navigating the world of ThreeFold farming. 
 
-In this manual, we embark on a journey to demystify the role of ThreeFold Farmers and provide a detailed exploration of the ThreeFold Grid, a revolutionary, decentralized, and sustainable internet infrastructure.
+This section of the manual covers all practical tutorials on how to farm on the ThreeFold Grid.
+
+For complementary information on ThreeFold farming, read the [Farming](../wiki/tfgrid/farming/farming_toc.md) section of the Library.
 
 ## What is a ThreeFold Farmer?
 ThreeFold Farmers are the backbone of the ThreeFold Grid, responsible for hosting and managing the infrastructure that forms the foundation of a new, decentralized internet. A Farmer is an individual or organization that contributes computing resources, such as storage and processing power, to the ThreeFold Grid, creating a distributed and resilient network that is owned and operated by its users.
