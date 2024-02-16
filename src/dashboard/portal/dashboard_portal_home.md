@@ -1,11 +1,27 @@
-# TF-Chain Portal
+<h1> TF-Chain Portal </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Networks](#networks)
+- [Installation and activation](#installation-and-activation)
+- [Transfer TFT](#transfer-tft)
+- [Be a Farmer, manage your information](#be-a-farmer-manage-your-information)
+- [Capacity Explorer](#capacity-explorer)
+- [Modify you Twin Info](#modify-you-twin-info)
+- [Dedicated Nodes](#dedicated-nodes)
+
+***
+
+## Introduction
 
 The TFChain Portal is a central hub within the ThreeFold Dashboard built for users to manage their accounts, perform transactions, explore network capacities, and engage with the ThreeFold Grid decentralized infrastructure.
 
 Whether you're exploring the development network (Devnet), the quality assurance network (Qanet), the testing network (Testnet), or the production network (Mainnet), this manual will guide you through the essential functionalities of the TF-Chain Portal. So, let's get started!
 
 
-## Currently on:
+## Networks
+
 - [Devnet](https://dashboard.dev.grid.tf/)
 - [Qanet](https://dashboard.qa.grid.tf/)
 - [Testnet](https://dashboard.test.grid.tf/)

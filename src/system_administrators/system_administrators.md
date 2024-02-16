@@ -58,7 +58,6 @@ From deployment strategies to monitoring tools, from security best practices to 
     - [Virtual Machine](../terraform/resources/terraform_vm.md)
     - [Web Gateway](../terraform/resources/terraform_vm_gateway.md)
     - [Kubernetes Cluster](../terraform/resources/terraform_k8s.md)
-      - [Demo](../terraform/resources/terraform_k8s_demo.md)
     - [ZDB](../terraform/resources/terraform_zdb.md)
     - [Quantum Safe Filesystem](../terraform/resources/terraform_qsfs.md)
       - [QSFS on Micro VM](../terraform/resources/terraform_qsfs_on_microvm.md)

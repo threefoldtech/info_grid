@@ -1,4 +1,15 @@
-# Testing the ThreeFold Grid: Ensuring Reliability and User Feedback
+<h1>Testing the ThreeFold Grid: Ensuring Reliability and User Feedback</h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Automation Testing](#automation-testing)
+- [Manual Testing](#manual-testing)
+- [Covered Tests](#covered-tests)
+
+***
+
+## Introduction
 
 With each release of a newer version of the ThreeFold Grid, the ThreeFold Community plays a vital role in testing the product components and providing constructive feedback to the engineering team. This article explores the testing strategy employed by ThreeFold, which includes both automation and manual testing, and highlights the covered functionality tested by the procedures.
 

@@ -1,6 +1,24 @@
-![ ](../advanced/img/terraform_.png)
+<h1> VM Deployment </h1>
 
-## VM Deployment
+<h2>Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Template](#template)
+- [Using scheduler](#using-scheduler)
+- [Using Grid Explorer](#using-grid-explorer)
+- [Describing the overlay network for the project](#describing-the-overlay-network-for-the-project)
+- [Describing the deployment](#describing-the-deployment)
+- [Which flists to use](#which-flists-to-use)
+- [Remark multiple VMs](#remark-multiple-vms)
+- [Reference](#reference)
+
+***
+
+## Introduction
+
+The following provides the basic information to deploy a VM with Terraform on the TFGrid.
+
+## Template
 
 ```terraform
 terraform {
@@ -82,15 +100,15 @@ output "vm2_ygg_ip" {
 
 ```
 
-### Using scheduler
+## Using scheduler
 
 - If the user decided to choose [scheduler](terraform_scheduler.md) to find a node for him, then he will use the node returned from the scheduler as the example above
 
-### Using Grid Explorer
+## Using Grid Explorer
 
 - If not, the user can still specify the node directly if he wants using the grid explorer to find a node that matches his requirements
 
-### Describing the overlay network for the project
+## Describing the overlay network for the project
 
 ```terraform
 resource "grid_network" "net1" {
@@ -104,7 +122,7 @@ resource "grid_network" "net1" {
 
 We tell terraform we will have a network one node `having the node ID returned from the scheduler` using the IP Range `10.1.0.0/16` and add wireguard access for this network
 
-### Describing the deployment
+## Describing the deployment
 
 ```terraform
 resource "grid_deployment" "d1" {

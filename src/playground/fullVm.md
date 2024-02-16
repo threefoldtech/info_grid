@@ -1,4 +1,23 @@
-# Full Virtual Machine
+<h1> Full Virtual Machine </h1>
+
+<h2>Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Deployment](#deployment)
+- [Difference Between Full VM and Micro VM](#difference-between-full-vm-and-micro-vm)
+- [Manually Mounting Additional Disk](#manually-mounting-additional-disk)
+  - [Check All Disks Attached to the VM](#check-all-disks-attached-to-the-vm)
+  - [Create a Mount Directory](#create-a-mount-directory)
+  - [New file system](#new-file-system)
+  - [Mount drive](#mount-drive)
+
+***
+
+## Introduction
+
+We present the steps to deploy a full VM on the TFGrid.
+
+## Deployment
 
 Deploy a new full virtual machine on the Threefold Grid
 
@@ -6,7 +25,6 @@ Deploy a new full virtual machine on the Threefold Grid
 - Click on the **Full Virtual Machine** tab
 
 **Process:**
-
 
 ![ ](../playground/img/new_vm1.png)
 
@@ -44,7 +62,7 @@ in the bottom of the page you can see a list of all of the virual machines you d
 You can also go to JSON tab for full details
 ![ ](../playground/img/weblet_vm6.png)
 
-## Difference Between Full Virtual Machine and Micro Virtual Machine
+## Difference Between Full VM and Micro VM
 
 - Full VM contains a default disk attached to it which is not the case in the Micro VM where you needed to make sure to attach a disk to it or the VM will fail
 - The default disk is mounted on / so if you want to attach any additional disks, you have to choose a different mounting point
@@ -55,19 +73,19 @@ You can also go to JSON tab for full details
 
 - You can follow the following commands to add your disk manually:
 
-### Check all disks attached to the VM
+### Check All Disks Attached to the VM
 
 ```bash
 fdisk -l
 ```
 
-### The additional disk won't be mounted and you won't find it listed
+The additional disk won't be mounted and you won't find it listed
 
 ```bash
 df -h
 ```
 
-### Create mount dir
+### Create a Mount Directory
 
 ```bash
 sudo mkdir /hdd6T

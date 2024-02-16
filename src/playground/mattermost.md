@@ -1,12 +1,23 @@
-# Mattermost
+<h1> Mattermost <h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Deployment](#deployment)
+
+***
+
+## Introduction
 
 [Mattermost](https://mattermost.com/) A single point of collaboration. Designed specifically for digital operations.
 
+## Prerequisites
 
 - Make sure you have a [wallet](./wallet_connector.md)
 - Click on the **Mattermost** tab
 
-__Process__ :
+## Deployment
 
 ![ ](./img/mattermost1.png)
 

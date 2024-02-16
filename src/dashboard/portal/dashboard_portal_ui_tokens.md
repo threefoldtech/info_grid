@@ -1,4 +1,13 @@
-# Manage your TFT on TFChain
+<h1> Manage your TFT on TFChain </h1>
+
+<h2>Table of Contents</h2>
+
+- [Transfer TFT between TFChain accounts](#transfer-tft-between-tfchain-accounts)
+- [Transfer TFT between Stellar Network and TF-Chain](#transfer-tft-between-stellar-network-and-tf-chain)
+  - [Deposit](#deposit)
+  - [Withdraw](#withdraw)
+
+***
 
 ## Transfer TFT between TFChain accounts
 

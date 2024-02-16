@@ -1,7 +1,5 @@
 <h1> QSFS on Full VM </h1>
 
-![ ](../advanced/img/terraform_.png)
-
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
@@ -21,7 +19,7 @@ The steps are very simple. You first need to create the Terraform files, and the
 
 The main goal of this guide is to show you all the necessary steps to deploy a Full VM with QSFS disk on the TGrid using Terraform.
 
-***
+
 
 ## Prerequisites
 
@@ -29,7 +27,7 @@ The main goal of this guide is to show you all the necessary steps to deploy a F
 
 You need to download and install properly Terraform. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
 
-***
+
 
 ## Create the Terraform Files
 
@@ -62,7 +60,7 @@ Let modify the qsfs-on-microVM [example](./terraform_qsfs_on_microvm.md) to depl
 - We also need to specify the flist for our FullVM, inside the `grid_deployment` in the `vms` block, change the flist filed to use this image:
   - https://hub.grid.tf/tf-official-vms/ubuntu-22.04.flist
 
-***
+
 
 ## Full Example
 The full example would be like this:
@@ -190,7 +188,7 @@ output "ygg_ip" {
 
 **note**: the `grid_deployment.qsfs.name` should be the same as the qsfs disk name in `grid_deployment.vms.mounts.disk_name`.
 
-***
+
 
 ## Mounting the QSFS Disk
 After applying this terraform file, you will need to manually mount the disk.
@@ -201,7 +199,7 @@ mkdir /qsfs
 mount -t virtiofs qsfs /qsfs
 ```
 
-***
+
 
 ## Debugging
 

@@ -1,8 +1,19 @@
-![ ](../advanced/img/terraform_.png)
+<h1> Terraform Web Gateway With VM </h1>
 
-# Terraform Web Gateway With VM
+<h2>Table of Contents</h2>
 
-## Expose with prefix
+- [Introduction](#introduction)
+- [Expose with Prefix](#expose-with-prefix)
+- [Expose with Full Domain](#expose-with-full-domain)
+- [Using Gateway Name on Private Networks (WireGuard)](#using-gateway-name-on-private-networks-wireguard)
+
+***
+
+## Introduction
+
+In this section, we provide the basic information for a VM web gateway using Terraform on the TFGrid.
+
+## Expose with Prefix
 
 A complete list of gateway name workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/name_proxy.md).
 
@@ -80,7 +91,7 @@ Here
 - we created a grid domain resource `ashraf` to be deployed on gateway node `7` to end up with a domain `ashraf.ghent01.devnet.grid.tf`
 - we create a proxy for the gateway to send the traffic coming to `ashraf.ghent01.devnet.grid.tf` to the vm as a backend, we say `tls_passthrough is false` to let the gateway terminate the traffic, if you replcae it with `true` your backend service needs to be able to do the TLS termination
 
-## Expose with fulldomain
+## Expose with Full Domain
 
 A complete list of gateway fqdn workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/fqdn_proxy.md).
 
@@ -101,7 +112,7 @@ output "fqdn" {
 }
 ```
 
-## using gatway name on private networks (wireguard)
+## Using Gateway Name on Private Networks (WireGuard)
 
 It is possible to create a vm with private ip (wireguard) and use it as a backend for a gateway contract. this is done as the following
 

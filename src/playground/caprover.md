@@ -1,7 +1,5 @@
 <h1> CapRover </h1>
 
-![ ](./img/caprover_1.png)
-
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)

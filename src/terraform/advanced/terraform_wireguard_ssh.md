@@ -1,7 +1,5 @@
 <h1>SSH Into a 3Node with Wireguard</h1>
 
-![ ](./img/terraform_.png)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
@@ -15,11 +13,12 @@
 - [Conclusion](#conclusion)
 
 ***
+
 ## Introduction
 
 In this ThreeFold Guide, we show how simple it is to deploy a micro VM on the ThreeFold Grid with Terraform and to make an SSH connection with Wireguard.
 
-***
+
 
 ## Prerequisites
 
@@ -28,7 +27,7 @@ In this ThreeFold Guide, we show how simple it is to deploy a micro VM on the Th
 
 You need to download and install properly Terraform and Wireguard on your local computer. Simply follow the linked documentation depending on your operating system (Linux, MAC and Windows).
 
-***
+
 
 ## Find a 3Node with the ThreeFold Explorer
 
@@ -54,7 +53,7 @@ We show here how to find a suitable 3Node using the ThreeFold Explorer.
 
 Once you've found a proper node, take node of its node ID. You will need to use this ID when creating the Terraform files.
 
-***
+
 
 ## Create the Terraform Files
 
@@ -192,7 +191,7 @@ output "node1_zmachine1_ip" {
 
 Make sure to add your own seed phrase and SSH public key. You will also need to specify the node ID of the 3Node server you wish to deploy on. Simply replace the three dots by the proper content.
 
-***
+
 
 ## Deploy the Micro VM with Terraform
 
@@ -215,7 +214,7 @@ Note that, at any moment, if you want to see the information on your Terraform d
     terraform show
     ```
 
-***
+
 
 ## Set the Wireguard Connection
 
@@ -247,7 +246,7 @@ As a test, you can ping the virtual IP address of the VM to make sure the Wiregu
   ping -c 2 vm_wg_ip
   ```
   * Note that, with this Terraform deployment, the Wireguard IP address of the micro VM is named `node1_zmachine1_ip`
-***
+
 
 ## SSH into the 3Node with Wireguard
 
@@ -259,7 +258,7 @@ ssh root@vm_wg_ip
 
 You now have access into the VM over Wireguard SSH connection.
 
-***
+
 
 ## Destroy the Terraform Deployment
 
@@ -272,7 +271,7 @@ If you want to destroy the Terraform deployment, write the following in the term
 
 Make sure that you are in the corresponding Terraform folder when writing this command. In this guide, the folder is `deployment-wg-ssh`.
 
-***
+
 
 ## Conclusion
 

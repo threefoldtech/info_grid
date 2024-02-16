@@ -1,4 +1,20 @@
-# Storage Module
+<h1> Storage Module</h1>
+
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [ZBus](#zbus)
+- [Overview](#overview)
+- [List of sub-modules](#list-of-sub-modules)
+- [On Node Booting](#on-node-booting)
+	- [zinit unit](#zinit-unit)
+	- [Interface](#interface)
+
+***
+
+## Introduction
+
+This module is responsible to manage everything related with storage. 
 
 ## ZBus
 
@@ -8,12 +24,14 @@ Storage module is available on zbus over the following channel
 |--------|--------|---------|
 | storage|[storage](#interface)| 0.0.1|
 
-## Introduction
 
-This module responsible to manage everything related with storage. On start, storaged holds ownership of all node disks, and it separate it into 2 different sets:
+## Overview
+
+On start, storaged holds ownership of all node disks, and it separate it into 2 different sets:
 
 - SSD Storage: For each ssd disk available, a storage pool of type SSD is created
 - HDD Storage: For each HDD disk available, a storage pool of type HDD is created
+
 
 Then `storaged` can provide the following storage primitives:
 - `subvolume`: (with quota). The btrfs subvolume can be used by used by `flistd` to support read-write operations on flists. Hence it can be used as rootfs for containers and VMs. This storage primitive is only supported on `ssd` pools.
@@ -23,7 +41,7 @@ Then `storaged` can provide the following storage primitives:
 
 You already can tell that ZOS can work fine with no HDD (it will not be able to server zdb workloads though), but not without SSD. Hence a zos with no SSD will never register on the grid.
 
-List of sub-modules:
+## List of sub-modules
 
 - disks
 - 0-db

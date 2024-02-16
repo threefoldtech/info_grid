@@ -84,7 +84,6 @@ Whether you're interested in decentralized cloud computing, blockchain integrati
       - [IPerf](../internals/zos/performance/iperf.md)
       - [Health Check](../internals/zos/performance/healthcheck.md)
     - [API](../internals/zos/manual/api.md)
-    - [FAQ](../internals/zos/faq/index.md)
 - [Playground](./playground/playground.md)
   - [Deploy the Playground](./playground/deploy_playground.md)
   - [Weblet Case Study: Nextcloud AIO](./playground/weblet_case_study_nextcloud.md)

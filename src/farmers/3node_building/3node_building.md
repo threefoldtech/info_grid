@@ -1,5 +1,3 @@
-![Farming_Title](./img/farming_30.png)
-
 <h1>  Building a DIY 3Node </h1>
 
 This section of the ThreeFold Farmers book presents the necessary and basic steps to build a DIY 3Node. Note that we also include the information needed to set a certified 3Node. 

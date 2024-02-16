@@ -1,4 +1,14 @@
-# Flist module
+<h1>Flist Module</h1>
+
+<h2> Table of Contents </h2>
+
+- [Zbus](#zbus)
+- [Home Directory](#home-directory)
+- [Introduction](#introduction)
+- [Public interface ](#public-interface-)
+- [zinit unit](#zinit-unit)
+
+***
 
 ## Zbus
 

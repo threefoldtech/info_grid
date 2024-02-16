@@ -1,12 +1,24 @@
-## Deploying Gateways
+<h1> Deploying Gateways</h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Gateway Name](#gateway-name)
+- [Example](#example)
+- [Gateway FQDN](#gateway-fqdn)
+- [Example](#example-1)
+
+***
+
+## Introduction
 
 After [deploying a VM](./grid3_go_vm.md) you can deploy Gateways to further expose your VM.
 
-### Gateway Name
+## Gateway Name
 
 This generates a FQDN for your VM.
 
-#### Example
+## Example
 
 ```go
 import (
@@ -54,11 +66,11 @@ This deploys a Gateway Name Proxy that forwards requests to your VM. You should 
 mydomain.gent01.dev.grid.tf
 ```
 
-### Gateway FQDN
+## Gateway FQDN
 
 In case you have a FQDN already pointing to the node, you can expose your VM using Gateway FQDN.
 
-#### Example
+## Example
 
 ```go
 import (

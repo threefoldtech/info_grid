@@ -1,5 +1,17 @@
 <h1> Micro and Full VM Differences </h1>
 
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Micro Virtual Machine](#micro-virtual-machine)
+- [Full Virtual Machine](#full-virtual-machine)
+
+***
+
+## Introduction
+
+We present the main differences between a micro VM and a full VM. This is useful information when it comes to choosing the proper deployment on the TFGrid.
+
 ## Micro Virtual Machine
 
 - It's meant to host microservice. and the user should enter the entrypoint.

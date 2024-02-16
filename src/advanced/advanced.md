@@ -2,8 +2,6 @@
 
 In this section, we delve into sophisticated topics and powerful functionalities that empower you to harness the full potential of TFGrid 3.0. Whether you're an experienced user seeking to deepen your understanding or a trailblazer venturing into uncharted territories, this manual is your gateway to mastering advanced concepts on the ThreeFold Grid.
 
-![](img/advanced_.png)
-
 <h2>Table of Contents</h2>
 
 - [Grid3 Stellar-TFChain Bridge](./grid3_stellar_tfchain_bridge.md)

@@ -1,5 +1,3 @@
-![ ](././img/endlessscalable.png)
-
 # TFGrid Manual - Get Started
 
 ## Get Started - Your First Virtual Machine

@@ -1,4 +1,25 @@
-# Farming Logic v2.0 
+<h1>Farming Logic v2.0 </h1>
+
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+  - [1. Proof-of-Capacity](#1-proof-of-capacity)
+  - [2. Grid Specs](#2-grid-specs)
+  - [3. The price of TFT in USD](#3-the-price-of-tft-in-usd)
+  - [4. Certification](#4-certification)
+- [Minting Rules V2.0](#minting-rules-v20)
+  - [Maximum amount of TFT](#maximum-amount-of-tft)
+  - [Calculation of TFT minted per Node per Period](#calculation-of-tft-minted-per-node-per-period)
+  - [Cloud Production Rate (CPR)](#cloud-production-rate-cpr)
+    - [Cloud Units](#cloud-units)
+    - [CPR expressed in TFT](#cpr-expressed-in-tft)
+  - [Difficulty Level](#difficulty-level)
+- [Python Pseudo Farming Code](#python-pseudo-farming-code)
+- [History of changes](#history-of-changes)
+
+***
+
+## Introduction
 
 TFT are only created (minted) when new capacity (storage & compute) is added to the ThreeFold Grid in the form of hardware. This is done by TF_Farmers, ThreeFolds more sustainable equivalent of cryptocurrency miners. Farming is calculated once a month by the opensource minting software, on the first day of the next month.
 

@@ -1,4 +1,18 @@
-# Node module
+<h1> Node Module</h1>
+
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Zbus](#zbus)
+- [Example](#example)
+
+***
+
+## Introduction
+
+This module is responsible of registering the node on the grid, and handling of grid events. The node daemon broadcast the intended events on zbus for other modules that are interested in those events.
+
+The node also provide zbus interfaces to query some of the node information.
 
 ## Zbus
 
@@ -10,12 +24,7 @@ Node module is available on [zbus](https://github.com/threefoldtech/zbus) over t
 |system   |system| 0.0.1
 |events  |events| 0.0.1
 
-
-## Introduction
-
-This module is responsible of registering the node on the grid, and handling of grid events. The node daemon broadcast the intended events on zbus for other modules that are interested in those events.
-
-The node also provide zbus interfaces to query some of the node information
+## Example
 
 ```go
 

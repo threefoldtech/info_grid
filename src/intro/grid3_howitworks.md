@@ -13,7 +13,7 @@
 - [Provisioning: Empowering Resource Deployment](#provisioning-empowering-resource-deployment)
 - [Conclusion](#conclusion)
 
-
+***
 
 ## Welcome to the ThreeFold Ecosystem
 

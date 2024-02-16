@@ -1,4 +1,19 @@
-# DB for testing
+<h1>DB for testing</h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Run postgresql container](#run-postgresql-container)
+- [Create the DB](#create-the-db)
+  - [Method 1: Generate a db with relevant schema using the db helper tool:](#method-1-generate-a-db-with-relevant-schema-using-the-db-helper-tool)
+  - [Method 2: Fill the DB from a Production db dump file, for example if you have `dump.sql` file, you can run:](#method-2-fill-the-db-from-a-production-db-dump-file-for-example-if-you-have-dumpsql-file-you-can-run)
+
+***
+
+## Introduction
+
+We show how to use a database for testing.
+
 ## Run postgresql container
     
   ```bash

@@ -1,10 +1,26 @@
-first, make sure you have your [client](./grid3_javascript_loadclient.md) prepared
+<h1>Using TFChain KVStore</h1>
 
-## Using tfchain KVStore
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Example code](#example-code)
+  - [setting values](#setting-values)
+  - [getting key](#getting-key)
+  - [listing keys](#listing-keys)
+  - [deleting key](#deleting-key)
+
+***
+
+## Introduction
 
 As part of the tfchain, we support a keyvalue store module that can be used for any value within `2KB` range. practically it's used to save the user configurations state, so it can be built up again on any machine, given they used the same mnemonics and same secret.
 
-### Example code
+## Prerequisites
+
+- Make sure you have your [client](./grid3_javascript_loadclient.md) prepared
+
+## Example code
 
 ```ts
 import { getClient } from "./client_loader";
@@ -50,7 +66,7 @@ main();
 
 ```
 
-#### setting values
+### setting values
 
 `db.set` is used to set key to any value `serialized as string`
 
@@ -58,7 +74,7 @@ main();
 await db.set({ key, value: JSON.stringify(exampleObj) });
 ```
 
-#### getting key
+### getting key
 
 `db.get` is used to get a specific key
 
@@ -67,7 +83,7 @@ const data = await db.get({ key });
 log(JSON.parse(data));
 ```
 
-#### listing keys
+### listing keys
 
 `db.list` is used to list all the keys.
 
@@ -76,7 +92,7 @@ const keys = await db.list();
 log(keys);
 ```
 
-#### deleting key
+### deleting key
 
 `db.remove` is used to delete a specific key.
 

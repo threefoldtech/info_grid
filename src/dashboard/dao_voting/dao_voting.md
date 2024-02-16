@@ -15,7 +15,7 @@
 
 DAOs are internet-native organizations collectively owned and managed by their members. They have built-in treasuries that are only accessible with the approval of their members. Decisions are made via proposals the group votes on during a specified period. 
 
-***
+
 
 ## Prerequisites to Vote
 
@@ -26,7 +26,7 @@ Voting for a DAO proposal is very simple. You first need to meet certain require
 * If you created your farm with the Threefold Connect app
   * [Import your farm on the Threefold Dashboard](../../threefold_token/storing_tft/tf_connect_app.md#move-farm-from-the-tf-connect-app-to-the-tf-portal-polkadotjs)
 
-***
+
 
 ## How to Vote for a Proposal
 
@@ -39,8 +39,6 @@ You can watch this short video to learn how to vote for a Threefold DAO proposal
 </div>
 
 If you have any questions, ask around on the [Threefold forum DAO section](https://forum.threefold.io/c/dao/).
-
-***
 
 ## The Goal of the Threefold DAO 
 

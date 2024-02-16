@@ -1,6 +1,15 @@
-# BetterToken NV
+<h1> BetterToken NV </h1>
 
-![](img/bettertoken_web.jpg)
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Income](#income)
+- [Structure](#structure)
+- [Expected Changes](#expected-changes)
+
+***
+
+## Introduction
 
 European Farming Cooperative for the foundation:
 

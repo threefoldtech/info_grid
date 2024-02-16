@@ -1,13 +1,30 @@
-![ ](../advanced/img/terraform_.png)
+<h1> Terraform Caprover </h1>
 
-# Terraform Caprover
+<h2>Table of Contents</h2>
 
-### What is CapRover?
+- [What is CapRover?](#what-is-caprover)
+- [Features of Caprover](#features-of-caprover)
+- [Prerequisites](#prerequisites)
+- [How to Run CapRover on ThreeFold Grid 3](#how-to-run-caprover-on-threefold-grid-3)
+  - [Clone the Project Repo](#clone-the-project-repo)
+  - [A) leader node deployment/setup:](#a-leader-node-deploymentsetup)
+    - [Step 1: Deploy a Leader Node](#step-1-deploy-a-leader-node)
+    - [Step 2: Connect Root Domain](#step-2-connect-root-domain)
+      - [Note](#note)
+    - [Step 3: CapRover Root Domain Configurations](#step-3-caprover-root-domain-configurations)
+    - [Step 4: Access the Captain Dashboard](#step-4-access-the-captain-dashboard)
+      - [To allow cluster mode](#to-allow-cluster-mode)
+  - [B) Worker Node Deployment/setup:](#b-worker-node-deploymentsetup)
+- [Implementations Details:](#implementations-details)
+
+***
+
+## What is CapRover?
 
 [CapRover](https://caprover.com/) is an easy-to-use app/database deployment and web server manager that works for a variety of applications such as Node.js, Ruby, PHP, Postgres, and MongoDB. It runs fast and is very robust, as it uses Docker, Nginx, LetsEncrypt, and NetData under the hood behind its user-friendly interface.
 Here’s a link to CapRover's open source repository on [GitHub](https://github.com/caprover/caprover).
 
-### Features of Caprover:
+## Features of Caprover
 
 - CLI for automation and scripting
 - Web GUI for ease of access and convenience
@@ -21,7 +38,7 @@ Here’s a link to CapRover's open source repository on [GitHub](https://github.
 - **Increase Productivity** : Focus on your apps ! Not the bells and whistles, just to run your apps.
 - **Easy Deploy** : Many ways to deploy. You can upload your source from dashboard, use command line caprover deploy, use webhooks and build upon git push
 
-### Pre-requisites
+## Prerequisites
 
 - Domain Name:
   after installation, you will need to point a wildcard DNS entry to your CapRover IP Address.
@@ -31,19 +48,19 @@ Here’s a link to CapRover's open source repository on [GitHub](https://github.
 - account created on [Polkadot](https://polkadot.js.org/apps/?rpc=wss://tfchain.dev.threefold.io/ws#/accounts) and got an twin id, and saved you mnemonics.
 - TFTs in your account balance (in development, Transferer some test TFTs from ALICE account).
 
-### How to run CapRover on ThreeFold Grid 3:
+## How to Run CapRover on ThreeFold Grid 3
 
 In this guide, we will use Caprover to setup your own private Platform as a service (PaaS) on TFGrid 3 infrastructure.
 
-#### Clone the project repo
+### Clone the Project Repo
 
 ```sh
 git clone https://github.com/freeflowuniverse/freeflow_caprover.git
 ```
 
-#### A) leader node deployment/setup:
+### A) leader node deployment/setup:
 
-##### step 1: Deploy a Leader Node
+#### Step 1: Deploy a Leader Node
 
 Create a leader caprover node using terraform, here's an example :
 
@@ -277,7 +294,7 @@ vim main.tf
 
   Wait until you see \***\* Installation is done! \*\*\*** in the caprover service log.
 
-##### Step 2: Connect Root Domain
+#### Step 2: Connect Root Domain
 
 After the container runs, you will now need to connect your CapRover instance to a Root Domain.
 
@@ -294,11 +311,11 @@ TTL: (doesn’t really matter)
 
 To confirm, go to https://mxtoolbox.com/DNSLookup.aspx and enter `somethingrandom.something.example.com` and check if IP address resolves to the IP you set in your DNS.
 
-###### Note
+##### Note
 
 `somethingrandom` is needed because you set a wildcard entry in your DNS by setting `*.something.example.com` as your host, not `something.example.com`.
 
-##### Step 3: CapRover Root Domain Configurations
+#### Step 3: CapRover Root Domain Configurations
 
 skip this step if you provided your root domain in the TerraFrom configuration file
 
@@ -306,13 +323,13 @@ Once the CapRover is initialized, you can visit `http://[IP_OF_YOUR_SERVER]:3000
 
 In the UI enter you root domain and press Update Domain button.
 
-##### Step 4: Access the Captain Dashboard
+#### Step 4: Access the Captain Dashboard
 
 Once you set your root domain as caprover.example.com, you will be redirected to captain.caprover.example.com.
 
 Now CapRover is ready and running in a single node.
 
-###### To allow cluster mode
+##### To allow cluster mode
 
 - Enable HTTPS
 
@@ -341,11 +358,9 @@ Now CapRover is ready and running in a single node.
 
 This information is required in the next section to run CapRover in cluster mode.
 
-#### B) Worker Node Deployment/setup:
+### B) Worker Node Deployment/setup:
 
-##### Step 1: Deploy a Worker Node
-
-example worker terraform file
+We show how to deploy a worker node by providing an example worker Terraform file.
 
 ```
 terraform {
@@ -473,7 +488,7 @@ Now CapRover is ready in cluster mode (more than one server).
 
 To run One-Click Apps please follow this [tutorial](https://caprover.com/docs/one-click-apps.html)
 
-### Implementations Details:
+## Implementations Details:
 
 - we use Ubuntu 18.04 to minimize the production issues as CapRover is tested on Ubuntu 18.04 and Docker 19.03.
 - In standard installation, CapRover has to be installed on a machine with a public IP address.

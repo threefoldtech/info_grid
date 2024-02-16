@@ -1,7 +1,5 @@
 <h1> ThreeFold Grid Primitives: Empowering Your Solutions </h1>
 
-![layers](./img/layers.jpeg)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)

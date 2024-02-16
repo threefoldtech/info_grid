@@ -21,7 +21,7 @@ In this Threefold Guide, we show how to set up [WireGuard](https://www.wireguard
 
 Note that WireGuard provides the connection to the 3Node deployment. It is up to you to decide which SSH client you want to use. This means that the steps to SSH into a 3Node deployment will be similar to the steps proposed in the guides for [Open-SSH](./ssh_openssh.md), [PuTTy](ssh_putty.md) and [WSL](./ssh_wsl.md). Please refer to [this documentation](./ssh_guide.md) if you have any questions concerning SSH clients. The main difference will be that we connect to the 3Node deployment using a WireGuard connection instead of an IPv4 or a Planetary Network connection.
 
-***
+
 
 # Prerequisites
 
@@ -34,7 +34,7 @@ Note that WireGuard provides the connection to the 3Node deployment. It is up to
   * [PuTTy](ssh_putty.md)
   * [WSL](./ssh_wsl.md)
 
-***
+
 
 # Deploy a Weblet with WireGuard Access
 
@@ -51,13 +51,13 @@ Once the Full VM is deployed, a window named **Details** will appear. You will n
 
 > Note: At anytime, you can open the **Details** window by clicking on the button **Show Details** under **Actions** on the Playground weblet page.
 
-***
+
 
 # Install WireGuard
 
 To install WireGuard, please refer to the official [WireGuard installation documentation](https://www.wireguard.com/install/).
 
-***
+
 
 # Set the WireGuard Configurations
 
@@ -97,7 +97,7 @@ To set the WireGuard connection on Windows, add and activate a tunnel with the W
 * Erase the content of the main window and paste the content **WireGuard Config** from the Playground **Details** window
 * Click **Save** and then click on **Activate**.
 
-***
+
   
 
 # Test the WireGuard Connection
@@ -109,7 +109,7 @@ As a test, you can ping the virtual IP address of the VM to make sure the WireGu
     ping -c 2 VM_WireGuard_IP
     ```
 
-***
+
 
 # SSH into the Deployment with Wireguard
 
@@ -122,7 +122,7 @@ To SSH into the deployment with Wireguard, use the **WireGuard IP** shown in the
 
 You now have access to the deployment over a WireGuard SSH connection.
 
-***
+
 
 # Questions and Feedback
 

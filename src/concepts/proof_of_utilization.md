@@ -1,6 +1,20 @@
-# Proof of Utilization
+<h1> Proof of Utilization </h1>
 
-The ThreeFold Grid employs a unique mechanism called __Proof of Utilization__ to track and measure resource utilization within its decentralized network. This system records resource usage on an hourly basis and serves as a transparent and reliable way to validate and verify the utilization of various components of the grid.
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Overview](#overview)
+- [CU, SU, NU](#cu-su-nu)
+
+***
+
+## Introduction
+
+The ThreeFold Grid employs a unique mechanism called __Proof of Utilization__ to track and measure resource utilization within its decentralized network. We provide here an overview of this mechanism.
+
+## Overview
+
+Proof of Utilization is a system that records resource usage on an hourly basis and serves as a transparent and reliable way to validate and verify the utilization of various components of the grid.
 
 The Proof of Utilization concept encompasses the monitoring and tracking of three key types of resources within the ThreeFold Grid:__Compute Resources (CU)__, __Storage Resources (SU)__, and __Network resources (NU)__. These resources are essential for supporting the diverse needs of users and applications on the grid.
 

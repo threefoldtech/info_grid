@@ -1,7 +1,5 @@
 <h1>Terraform Basics</h1>
 
-![ ](./advanced/img//terraform_.png)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)

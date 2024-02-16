@@ -1,8 +1,18 @@
-# Deploying a VM with Mounts Using Terraform
+<h1> Deploying a VM with Mounts Using Terraform </h1>
 
-![ ](./img//terraform_.png)
+<h2> Table of Contents</h2>
 
-In this [example](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/mounts/main.tf) we will see how to deploy a VM and mount disks on it on the Threefold grid v3
+- [Introduction](#introduction)
+- [Example](#example)
+- [More Info](#more-info)
+
+***
+
+## Introduction
+
+In this [example](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/mounts/main.tf), we will see how to deploy a VM and mount disks on it on the TFGrid.
+
+## Example
 
 ```terraform
 terraform {

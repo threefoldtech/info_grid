@@ -19,8 +19,6 @@ In this section, we show how to deploy CapRover with the Javascript client.
 
 This deployment is very similar to what we have in the section [Deploy a VM](./grid3_javascript_vm.md), but the environment variables are different.
 
-***
-
 ## Leader Node
 
 We present here a code example and the environment variables to deploy a CapRover Leader node. 
@@ -113,7 +111,7 @@ async function main() {
 main();
 ```
 
-***
+
 
 ### Environment Variables
 
@@ -122,7 +120,7 @@ main();
 - CAPROVER_ROOT_DOMAIN: The domain which you we will use to bind the deployed VM.
 - DEFAULT_PASSWORD: Caprover default password you want to deploy with.
 
-***
+
 
 ## Worker Node
 
@@ -217,7 +215,7 @@ async function main() {
 main();
 ```
 
-***
+
 
 ### Environment Variables
 
@@ -227,7 +225,7 @@ The deployment of the Worker node is similar to the deployment of the Leader nod
 - SWM_NODE_MODE: Caprover Node type which must be `worker` as we are deploying a worker node.
 - LEADER_PUBLIC_IP: Leader node public IP.
 
-***
+
 
 ## Questions and Feedback
 

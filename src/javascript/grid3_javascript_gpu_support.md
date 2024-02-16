@@ -1,10 +1,21 @@
 <h1> GPU Support and JavaScript </h1>
 
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Example](#example)
+
+***
+
+## Introduction
+
 We present here a quick introduction to GPU support with JavaScript. 
 
 There are a couple of updates regarding finding nodes with GPU, querying node for GPU information and deploying with support of GPU. 
 
 This is an ongoing development and this section will be updated as new information comes in.
+
+## Example
 
 Here is an example script to deploy with GPU support:
 

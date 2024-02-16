@@ -1,7 +1,26 @@
 
-## Deploying a VM
+<h1> Deploying a VM </h1>
 
-### Example code
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Example](#example)
+- [Detailed Explanation](#detailed-explanation)
+  - [Building Network](#building-network)
+- [Building the Disk Model](#building-the-disk-model)
+- [Building the VM](#building-the-vm)
+- [Building VMs Collection](#building-vms-collection)
+- [deployment](#deployment)
+- [Getting Deployment Information](#getting-deployment-information)
+- [Deleting a Deployment](#deleting-a-deployment)
+
+***
+
+## Introduction
+
+We present information on how to deploy a VM with the Javascript client with concrete examples.
+
+## Example
 
 ```ts
 import { DiskModel, FilterOptions, MachineModel, MachinesModel, NetworkModel } from "../src";
@@ -72,9 +91,9 @@ async function main() {
 main();
 ```
 
-### Detailed explanation
+## Detailed Explanation
 
-#### building network
+### Building Network
 
 ```ts
 // create network Object
@@ -85,7 +104,7 @@ n.ip_range = "10.249.0.0/16";
 
 Here we prepare the network model that is going to be used by specifying a name to our network and the range it will be spanning over
 
-### building the disk model
+## Building the Disk Model
 
 ```ts
 // create disk Object
@@ -97,7 +116,7 @@ disk.mountpoint = "/testdisk";
 
 here we create the disk model specifying its name, size in GB and where it will be mounted eventually
 
-### building the VM
+## Building the VM
 
 ```ts
 // create vm node Object
@@ -132,7 +151,7 @@ We need to specify its
 - public ip: if we want to have a public ip attached to the VM
 - planetary: to enable planetary network on VM
 
-### building VMs collection
+## Building VMs Collection
 
 ```ts
 // create VMs Object
@@ -146,7 +165,7 @@ vms.description = "test deploying VMs via ts grid3 client";
 
 Here it's quite simple we can add one or more VM to the `machines` property to have them deployed as part of our project
 
-### deployment
+## deployment
 
 ```ts
 // deploy vms
@@ -154,7 +173,7 @@ const res = await grid3.machines.deploy(vms);
 log(res);
 ```
 
-### getting deployment information
+## Getting Deployment Information
 
 can do so based on the name you gave to the `vms` collection
 
@@ -164,7 +183,7 @@ const l = await grid3.machines.getObj(vms.name);
 log(l);
 ```
 
-### deleting a deployment
+## Deleting a Deployment
 
 ```ts
 // delete

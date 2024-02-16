@@ -23,7 +23,7 @@ In this ThreeFold guide, we explore how to deploy the ThreeFold Playground local
 
 In brief, you will need to clone the Playground repository, install the prerequisites, adjust your network config file and run the playground. You will then be able to access the local playground by using a web browser. Make sure to have an Internet connection while running the playground.
 
-***
+
 
 ## Playground Prerequisites
 
@@ -50,7 +50,7 @@ If you plan on using a web server, you will need to install NGINX or Caddy and t
 ### Caddy
 [Caddy](https://caddyserver.com/) is an extensible, cross-platform, open-source web server written in Go. At its core, Caddy is an extensible platform for deploying long-running services ("apps") using a single, unified configuration that can be updated on-line with a REST API.
 
-***
+
 
 ## Deploy the Playground Locally
 
@@ -105,7 +105,7 @@ If you plan on using a web server, you will need to install NGINX or Caddy and t
     ```
 * Open a browser and reach the local URL shown (usually `localhost:5173`)
 
-***
+
 
 ### Manual Configuration
 
@@ -147,13 +147,13 @@ window.env = {
 };
 ```
 
-***
+
 
 ## Fund Your TFChain Account
 
 To test the Playground, you need some TFT in your TFChain wallet. You can learn more about TFT and how to acquire some tokens by reading [this section](https://manual.grid.tf/threefold_token/threefold_token.html) of the TF Manual.
 
-***
+
 
 ## Exploring the Playground Locally
 
@@ -161,7 +161,7 @@ If you deploy on Test or Main networks, you can access the same experience as th
 
 If you make any change to a weblet, you will be able to test it immediately. This is a good environment to test new weblets or adjust existing weblets.
 
-***
+
 
 ## Conclusion
 

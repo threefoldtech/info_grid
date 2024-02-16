@@ -1,8 +1,21 @@
-# Kubernetes cluster
+<h1> Kubernetes Cluster </h1>
 
-![ ](../advanced/img//terraform_.png)
+<h2>Table of Contents</h2>
 
-Kubernetes deployment can be quite difficult and requiring lots of experience, but I think we provided a very simple way to provision Kubernetes cluster on grid 3.
+- [Introduction](#introduction)
+- [Example](#example)
+- [Grid Kubernetes Resource](#grid-kubernetes-resource)
+  - [Kubernetes Outputs](#kubernetes-outputs)
+- [More Info](#more-info)
+- [Demo Video](#demo-video)
+
+***
+
+## Introduction
+
+While Kubernetes deployments can be quite difficult and can require lots of experience, we provide here a very simple way to provision Kubernetes cluster on the TFGrid.
+
+## Example
 
 An example for deploying a kubernetes cluster could be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/k8s/main.tf)
 
@@ -112,7 +125,7 @@ output "wg_config" {
 
 Everything looks similar to our first example, the global terraform section, the provider section and the network section.
 
-## grid kubernetes resource
+## Grid Kubernetes Resource
 
 ```terraform
 resource "grid_kubernetes" "k8s1" {
@@ -169,7 +182,7 @@ Then, we describe the the master and worker nodes in terms of:
 - memory
 - whether or not this node needs a public ip
 
-### Kubernetes outputs
+### Kubernetes Outputs
 
 ```terraform
 output "master_public_ip" {
@@ -187,3 +200,11 @@ We will be mainly interested in the master node public ip `computed IP` and the 
 ## More Info
 
 A complete list of k8s resource parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/kubernetes.md).
+
+## Demo Video 
+
+Here is a video showing how to deploying k8s with Terraform.
+
+<div class="aspect-w-16 aspect-h-9">
+<iframe src="https://player.vimeo.com/video/654552300?h=c61feb579b" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+</div>

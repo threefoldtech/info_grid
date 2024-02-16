@@ -1,16 +1,21 @@
 
-# CoreX
+<h1> CoreX </h1>
 
-![](img/corex.jpg)
+<h2>Table of Contents </h2>
 
-This tool allows you to manage your ZMachine over web remotely.
+- [Introduction](#introduction)
+- [ZMachine Process Manager](#zmachine-process-manager)
 
-ZMachine process manager
+***
+
+## Introduction
+
+CoreX allows you to manage your ZMachine over web remotely.
+
+## ZMachine Process Manager
 
 - Provide a web interface and a REST API to control your processes.
 - Allow to watch the logs of your processes.
 - Or use it as a web terminal (access over https to your terminal)!
 
-!!!def
-
-!!!include:zos_toc
+![](img/corex.jpg)

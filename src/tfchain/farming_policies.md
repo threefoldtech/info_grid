@@ -1,6 +1,20 @@
-# Farming Policies
+<h1> Farming Policies </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Farming Policy Fields](#farming-policy-fields)
+- [Limits on linked policy](#limits-on-linked-policy)
+- [Creating a Policy](#creating-a-policy)
+- [Linking a policy to a Farm](#linking-a-policy-to-a-farm)
+
+***
+
+## Introduction
 
 A farming policy defines how farming rewards are handed out for nodes. Every node has a farming policy attached. A farming policy is either linked to a farm, in which case new nodes are given the farming policy of the farm they are in once they register themselves. Alternatively a farming policy can be a "default". These are not attached to a farm, but instead they are used for nodes registered in farms which don't have a farming policy. Multiple defaults can exist at the same time, and the most fitting should be chosen.
+
+## Farming Policy Fields
 
 A farming policy has the following fields:
 
@@ -26,7 +40,7 @@ In case a farming policy is not attached to a farm, new nodes will pick the most
 
 Important here is that certification of a node only happens after it comes live for the first time. As such, when a node gets certified, farming certification needs to be re evaluated, but only if the currently attached farming policy on the node is a `Default` policy (as specifically linked policies have priority over default ones). When evaluating again, we first consider if we are eligible for the farming policy linked to the farm, if any.
 
-### Limits on linked policy
+## Limits on linked policy
 
 When a council member attaches a policy to a farm, limits can be set. These limits define how much a policy can be used for nodes, before it becomes unusable and gets removed. The limits currently are:
 

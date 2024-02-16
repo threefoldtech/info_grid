@@ -11,7 +11,7 @@
 
 The TFGrid now supports GPUs. We present here a quick example. This section will be expanded as new information comes in.
 
-***
+
 
 ## Example
 

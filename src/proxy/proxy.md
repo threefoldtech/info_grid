@@ -10,6 +10,8 @@
 - [Get and Install the Binary](#get-and-install-the-binary)
 - [Add as a Systemd Service](#add-as-a-systemd-service)
 
+***
+
 <!-- About -->
 
 ## About

@@ -1,7 +1,5 @@
 # ThreeFold Farmers
 
-![Farming_Title](./img/farming_30.png)
-
 Welcome to the *ThreeFold Farmers* section of the ThreeFold Manual, your comprehensive resource for understanding and navigating the world of ThreeFold farming. 
 
 This section of the manual covers all practical tutorials on how to farm on the ThreeFold Grid.

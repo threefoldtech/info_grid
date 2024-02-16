@@ -1,4 +1,18 @@
-# Wallet Connector
+<h1> Wallet Connector </h1>
+
+<h2>Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Supported Networks](#supported-networks)
+- [Process](#process)
+
+***
+
+## Introduction
+
+To interact with TFChain, users need to set a wallet connector.
+
+## Supported Networks
 
 Currently, we're supporting four different networks:
 
@@ -13,7 +27,7 @@ Currently, we're supporting four different networks:
 
 ![ ](./img/profile_manager1.png)
 
-### Process
+## Process
 
 Start entering the following information required to create your new profile.
 

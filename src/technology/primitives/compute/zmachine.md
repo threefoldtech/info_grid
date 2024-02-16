@@ -1,6 +1,18 @@
-# ZMachine
+<h1> ZMachine </h1>
 
-### Features
+<h2>Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Architecture](#architecture)
+
+***
+
+## Introduction
+
+ZMachine is a unified container/virtual machine type. This can be used to start a virtual machine on a zos node.
+
+## Features
 
 *   import from docker (market std for containers)
 *   can be easily deployed at the edge (edge cloud)
@@ -11,7 +23,7 @@
 *   [WebGateway](../network/webgw3.md:) intelligent connection between web (internet) and container services
 *   integration with [ZNet](../network/znet.md) (efficient, secure encrypted network between the zmachines)
 
-### Architecture
+## Architecture
 
 ![](img/zmachine_zos_.jpg)
 

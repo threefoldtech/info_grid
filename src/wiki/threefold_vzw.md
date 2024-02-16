@@ -1,4 +1,15 @@
-# ThreeFold VZW
+<h1> ThreeFold VZW </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Functions](#functions)
+- [Some History](#some-history)
+- [Belgium Official Doc](#belgium-official-doc)
+
+***
+
+## Introduction
 
 ThreeFold VZW is a non for profit organization based in Belgium.
 

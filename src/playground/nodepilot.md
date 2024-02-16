@@ -1,11 +1,23 @@
-# NodePilot
+<h1> NodePilot </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Deployment](#deployment)
+
+***
+
+## Introduction
 
 This is a simple instance of upstream [Node Pilot](https://nodepilot.tech).
+
+## Prerequisites
 
 - Make sure you have a [wallet](./wallet_connector.md)
 - Click on the **Node Pilot** tab
 
-__Process__
+## Deployment
 
 ![ ](./img/nodePilot_1.png)
 

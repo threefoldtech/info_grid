@@ -1,6 +1,18 @@
-# ThreeFold Chain
+<h1> ThreeFold Chain </h1>
+
+<h2>Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Overview](#overview)
+- [Key Functionalities](#key-functionalities)
+
+***
+
+## Introduction
 
 __TFChain__, also known as __ThreeFold Chain__, is the blockchain at the core of managing the ThreeFold Grid, which operates as a decentralized autonomous organization (DAO). Built on Substrate, TFChain provides the infrastructure to support the seamless functioning of the ThreeFold Grid ecosystem.
+
+## Overview
 
 One of the key features of TFChain is its __compatibility with multiple blockchains__. The native token of the ThreeFold ecosystem, TFT, can be utilized across different blockchain networks including TFChain, Stellar, and Binance Smart Chain. This compatibility enables users to transfer their TFT tokens seamlessly between these blockchains, providing flexibility and convenience.
 

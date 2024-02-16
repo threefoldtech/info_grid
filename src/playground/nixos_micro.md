@@ -18,7 +18,7 @@ In this guide, will learn how to make reproducible, declarative and reliable sys
 
 For more information on Nix, you can read the [Nix Reference Manual](https://nixos.org/manual/nix/stable/).
 
-***
+
 
 ## Access the ThreeFold Playground
 
@@ -31,7 +31,7 @@ For more information on Nix, you can read the [Nix Reference Manual](https://nix
 * Make sure you have a [wallet](./wallet_connector.md)
 * Click on the **Micro Virtual Machine** tab to start your NixOS MicroVM Deployment
 
-***
+
 
 ## Deploy a NixOS MicroVM
 
@@ -58,7 +58,7 @@ We now present the main steps to properly configure your NixOS MicroVM running o
 
 If you need more information on how to SSH into your deployment, read [this section](../getstarted/ssh_guide/ssh_guide.md) of the TF Manual.
 
-***
+
 
 ## Questions and Feedback
 

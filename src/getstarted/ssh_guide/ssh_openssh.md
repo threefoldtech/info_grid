@@ -1,7 +1,5 @@
 <h1> SSH Remote Connection with OpenSSH </h1>
 
-***
-
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
@@ -17,6 +15,7 @@
     - [SSH into a 3node with IPv4 on Windows](#ssh-into-a-3node-with-ipv4-on-windows)
     - [SSH into a 3node with the Planetary Network on Windows](#ssh-into-a-3node-with-the-planetary-network-on-windows)
 - [Questions and Feedback](#questions-and-feedback)
+
 ***
 
 # Introduction
@@ -27,7 +26,7 @@ To deploy different workloads, the SSH connection process should be very similar
 
 If you have any questions, feel free to write a post on the [Threefold Forum](http://forum.threefold.io/).
 
-***
+
 # Main Steps and Prerequisites
 
 The prerequisites are:
@@ -44,7 +43,7 @@ The main steps for the whole process are the following:
 * SSH into the 3node
   * For the Planetary Network, download the Planetary Network Connector
 
-***
+
 
 # Step-by-Step Process with OpenSSH
 
@@ -90,7 +89,7 @@ The main steps for the whole process are the following:
                   ```
 * You now have an SSH connection on Linux with IPv4
 
-***
+
 
 ### SSH into a 3node with the Planetary Network on Linux
 
@@ -139,7 +138,7 @@ The main steps for the whole process are the following:
                   ```
 * You now have an SSH connection on Linux with the Planetary Network
 
-***
+
 
 ## MAC
 
@@ -183,7 +182,7 @@ The main steps for the whole process are the following:
                   ```
 * You now have an SSH connection on MAC with IPv4
 
-***
+
 
 ### SSH into a 3node with the Planetary Network on MAC
 
@@ -231,7 +230,7 @@ The main steps for the whole process are the following:
                   ```
 * You now have an SSH connection on MAC with the Planetary Network
 
-***
+
 
 ## Windows
 
@@ -241,7 +240,7 @@ The main steps for the whole process are the following:
 <iframe title="SSH into a 3node with IPv4 on Windows" width="560" height="315" src="https://www.youtube-nocookie.com/embed/FhKOyW-ZH7Q" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
 </div>
 
-***
+
 
 * To download OpenSSH client and OpenSSH server
   * Open the `Settings` and select `Apps`
@@ -290,7 +289,7 @@ The main steps for the whole process are the following:
                   ```
 * You now have an SSH connection on Window with IPv4
 
-***
+
 
 ### SSH into a 3node with the Planetary Network on Windows
 
@@ -298,7 +297,7 @@ The main steps for the whole process are the following:
 <iframe title="SSH into a 3node with the Planetary Network on Windows" width="560" height="315" src="https://www.youtube-nocookie.com/embed/0wyKYcJeitk" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
 </div>
 
-***
+
 
 * To download and connect to the Threefold Planetary Network Connector
   * Download the [.msi file](https://github.com/threefoldtech/planetary_network/releases/tag/v0.3-rc1-Windows10)
@@ -353,7 +352,7 @@ The main steps for the whole process are the following:
                   ```
 * You now have an SSH connection on Window with the Planetary Network
 
-***
+
 
 # Questions and Feedback
 

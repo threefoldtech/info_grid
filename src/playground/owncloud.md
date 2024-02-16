@@ -1,7 +1,5 @@
 <h1> ownCloud</h1>
 
-![owncloud_logo](./img/owncloud_logo.svg)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)

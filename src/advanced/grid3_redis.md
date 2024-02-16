@@ -16,7 +16,7 @@ Redis is an open-source, in-memory data structure store that is widely used as a
 
 Redis is widely used in various use cases, including caching, session management, real-time analytics, leaderboards, task queues, and more. Its simplicity, speed, and flexibility make it a popular choice for developers who need a fast and reliable data store for their applications. In Threefold's ecosystem context, Redis can be used as a backend mechanism to communicate with the nodes on the ThreeFold Grid using the Reliable Message Bus.
 
-***
+
 
 ## Install Redis
 
@@ -35,7 +35,7 @@ brew install redis
 
 Alternatively, it can be built from source, using the same [download page](https://redis.io/download/) as shown above.
 
-***
+
 
 ## Run Redis
 

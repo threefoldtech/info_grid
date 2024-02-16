@@ -1,5 +1,19 @@
 <h1> Convert Docker Image to Flist </h1>
 
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Upload the Image](#upload-the-image)
+- [Flist on the Hub](#flist-on-the-hub)
+
+***
+
+## Introduction
+
+We show the steps to convert a docker image to an Flist.
+
+## Upload the Image
+
 1. Upload the Docker image to Docker Hub with the following command:
 
 ```bash
@@ -16,6 +30,8 @@ docker push <image_name>
 When the image is ready, some information will be displayed.
 
 ![ ](./img/flist_ready.png)
+
+## Flist on the Hub
 
 To navigate to the created flist, you can search with the newly created file name in the search tab.
 

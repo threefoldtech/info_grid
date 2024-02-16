@@ -1,4 +1,4 @@
-<h1>Get TFT: Quick Start</h1>
+<h1>Get TFT: Quick Start (Stellar)</h1>
 
 <h2>Table of Contents</h2>
 

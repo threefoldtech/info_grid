@@ -1,11 +1,24 @@
-# Funkwhale
+<h1> Funkwhale </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Deployment](#deployment)
+
+***
+
+## Introduction
 
 [Funkwhale](https://funkwhale.audio/) is social platform to enjoy and share music.
 Funkwhale is a community-driven project that lets you listen and share music and audio within a decentralized, open network.
 
+## Prerequisites
 
 - Make sure you have a [wallet](./wallet_connector.md)
 - Click on the **Funkwhale** tab
+
+## Deployment
 
 __Process__ :
 

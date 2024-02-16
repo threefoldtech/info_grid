@@ -1,7 +1,5 @@
 <h1> Presearch </h1>
 
-![ ](./img/presearch0.png)
-
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)

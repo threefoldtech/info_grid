@@ -1,10 +1,24 @@
-# Create a Farm
+<h1> Create a Farm </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Networks](#networks)
+- [Add a public IP to your Farm](#add-a-public-ip-to-your-farm)
+- [Add a Stellar address for payout](#add-a-stellar-address-for-payout)
+- [Generate your node bootstrap image](#generate-your-node-bootstrap-image)
+- [Capacity Explorer](#capacity-explorer)
+
+***
+
+## Introduction
 
 In this section, we'll walk you through the process of activating your farmer account, an essential step if you're looking to participate in the innovative world of farming on the ThreeFold Grid.
  
 If you want to start farming, you need a farmID, which is the ID of the farm that is owning the hardware node(s) you connect to the TFGrid.
 
-## Currently on:
+## Networks
+
 - [Devnet](https://dashboard.dev.grid.tf/)
 - [Qanet](https://dashboard.qa.grid.tf/)
 - [Testnet](https://dashboard.test.grid.tf/)

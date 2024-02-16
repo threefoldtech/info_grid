@@ -41,7 +41,7 @@ Git is a free and open source distributed version control system designed to han
 
 GitHub is a platform and cloud-based service for software development and version control using Git, allowing developers to store and manage their code.
 
-***
+
 
 ## Install Git
 
@@ -70,7 +70,7 @@ You can install git on MAC, Windows and Linux. You can consult Git's documentati
 
 You can download Git for Windows at [this link](https://git-scm.com/download/win).
 
-***
+
 
 ## Basic Commands
 
@@ -80,7 +80,7 @@ You can download Git for Windows at [this link](https://git-scm.com/download/win
 git --version
 ```
 
-***
+
 
 ### Clone a repository
 
@@ -88,7 +88,7 @@ git --version
 git clone <repository_url>
 ```
 
-***
+
 
 ### Clone a single branch
 
@@ -96,7 +96,7 @@ git clone <repository_url>
 git clone <repository_url> --branch <branch> --single-branch <folder>
 ```
 
-***
+
 
 ### Check all available branches
 
@@ -104,7 +104,7 @@ git clone <repository_url> --branch <branch> --single-branch <folder>
 git branch -r
 ```
 
-***
+
 
 ### Check the current branch
 
@@ -112,7 +112,7 @@ git branch -r
 git branch
 ```
 
-***
+
 
 ### Go to another branch
 
@@ -120,7 +120,7 @@ git branch
 git checkout <branch_name>
 ```
 
-***
+
 
 ### Add your changes to a local branch
 
@@ -133,7 +133,7 @@ git checkout <branch_name>
     git add <path_to_file>/<file_name>
     ```
 
-***
+
 
 ### Push changes of a local branch to the remote Github branch
 
@@ -149,7 +149,7 @@ To push changes to Github, you can use the following commands:
   git push
   ```
 
-***
+
 
 ### Count the differences between two branches
 
@@ -165,7 +165,7 @@ git rev-list --count branch1..branch2
 git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
 ```
 
-***
+
 
 ### Force a push
 
@@ -173,7 +173,7 @@ git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@'
 git push --force
 ```
 
-***
+
 
 ### Merge a branch to a different branch
 
@@ -190,7 +190,7 @@ git push --force
     git push -u origin/head
     ```
 
-***
+
 
 ### Clone completely one branch to another branch locally then push the changes to Github
 
@@ -213,7 +213,7 @@ For this example, we copy **branchB** into **branchA**.
     git push --force
     ```
 
-***
+
 
 ### The 3 levels of the command reset
 
@@ -237,7 +237,7 @@ Note 1: If you're using **--hard**, make sure to run git status to verify that y
 
 Note 2: The argument **--mixed** is the default option, so **git reset** is equivalent to **git reset --mixed**.
 
-***
+
 
 ### Reverse modifications to a file where changes haven't been staged yet
 
@@ -247,7 +247,7 @@ You can use the following to reverse the modifications of a file that hasn't bee
 git checkout <filename>
 ```
 
-***
+
 
 ### Download binaries from Github
 
@@ -256,7 +256,7 @@ git checkout <filename>
     wget -O <file_name> https://raw.githubusercontent.com/<user_name>/<repository>/<path_to_file>/<file_name>
     ```
 
-***
+
 
 ### Resolve conflicts between branches
 
@@ -289,7 +289,7 @@ We show how to resolve conflicts in a development branch (e.g. **branch_dev**) a
     git push
     ```
 
-***
+
 
 ### Download all repositories of an organization
 
@@ -304,7 +304,7 @@ We show how to resolve conflicts in a development branch (e.g. **branch_dev**) a
     done
     ```
 
-***
+
 
 ### Revert a push commited with git
 
@@ -321,7 +321,7 @@ We show how to resolve conflicts in a development branch (e.g. **branch_dev**) a
     git push
     ```
 
-***
+
 
 ### Make a backup of a branch
 
@@ -329,7 +329,7 @@ We show how to resolve conflicts in a development branch (e.g. **branch_dev**) a
 git clone -b <branch_name> --single-branch /<path_to_repo>/<repo_name>.git
 ```
 
-***
+
 
 ### Revert to a backup branch
 
@@ -342,7 +342,7 @@ git clone -b <branch_name> --single-branch /<path_to_repo>/<repo_name>.git
     git reset --hard <backup_branch>
     ```
 
-***
+
 
 ### Start over local branch and pull remote branch 
 
@@ -356,7 +356,7 @@ git pull
 
 Note that this will not work for untracked and new files. See below for untracked and new files.
 
-***
+
 
 ### Overwrite local files and pull remote branch
 
@@ -381,7 +381,7 @@ This method can be used to overwrite local files. This will work even if you hav
 
 Then, to delete the stash, you can use **git stash drop**.
 
-***
+
 
 ### Stash command and parameters
 
@@ -412,7 +412,7 @@ The stash command is used to record the current state of the working directory.
     git stash drop
     ```
 
-***
+
 
 ## Code Editors
 
@@ -443,7 +443,7 @@ There are many ways to install VS-Codium. Visit the [official website](https://v
     choco install vscodium
     ```
 
-***
+
 
 ## References
 
