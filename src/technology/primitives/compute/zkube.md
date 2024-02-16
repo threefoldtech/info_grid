@@ -30,7 +30,7 @@ Each eVDC as shown above is a full blown Kubernetes deployment.
 
 ## ZMachine Benefits
 
-*   [ZOS Protect](../../zos/benefits/zos_protect.md): no hacking surface to the Zero-Nodes, integrate silicon route of trust
+*   [ZOS Protect](../../zos/benefits/zos_advantages.md#zero-os-protect): no hacking surface to the Zero-Nodes, integrate silicon route of trust
 
 
 ![](img/kubernetes_0_.jpg)

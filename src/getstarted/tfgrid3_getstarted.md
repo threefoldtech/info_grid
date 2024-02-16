@@ -6,7 +6,6 @@
 - [Buy TFT on Lobstr and Store it in Your Threefold Connect Wallet](../threefold_token/buy_sell_tft/tft_lobstr/tft_lobstr_complete_guide.md)
 - [Create an Account on the Threefold Dashboard](./TF_Dashboard/TF_Dashboard.md)
 - [Find a 3Node to Deploy Your Workload](../dashboard/explorer/explorer_find_capacity.md)
-- [Deploy Your First Virtual Machine](../weblets/weblets_vm.md)
 - [SSH Remote Connection](./ssh_guide/ssh_guide.md)
   - [SSH with OpenSSH](./ssh_guide/ssh_openssh.md)
   - [SSH with PuTTY](./ssh_guide/ssh_putty.md)

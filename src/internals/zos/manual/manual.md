@@ -165,17 +165,17 @@ type Workload struct {
 
 ### Types
 - Virtual machine related
-  - [`network`](./network/index.md)
-  - [`ip`](./ip/index.md)
-  - [`zmount`](./zmount/index.md)
-  - [`zmachine`](./zmachine/index.md)
-  - [`zlogs`](./zlogs/index.md)
+  - [`network`](./workload_types.md#network-type)
+  - [`ip`](./workload_types.md#ip-type)
+  - [`zmount`](./workload_types.md#zmount-type)
+  - [`zmachine`](./workload_types.md#zmachine-type)
+  - [`zlogs`](./workload_types.md#zlogs-type)
 - Storage related
-  - [`zdb`](./zdb/index.md)
-  - [`qsfs`](./qsfs/index.md)
+  - [`zdb`](./workload_types.md#zdb-type)
+  - [`qsfs`](./workload_types.md#qsfs-type)
 - Gateway related
-  - [`gateway-name-proxy`](./gateway/name-proxy.md)
-  - [`gateway-fqdn-proxy`](./gateway/fqdn-proxy.md)
+  - [`gateway-name-proxy`](./workload_types.md#gateway-name-proxy-type)
+  - [`gateway-fqdn-proxy`](./workload_types.md#gateway-fqdn-proxy-type)
 
 ### API
 Node is always connected to the RMB network with the node `twin`. Means the node is always reachable over RMB with the node `twin-id` as an address.

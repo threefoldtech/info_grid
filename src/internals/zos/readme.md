@@ -26,4 +26,3 @@
   - [IPerf](./performance/iperf.md)
   - [Health Check](./performance/healthcheck.md)
 - [API](manual/api.md)
-- [FAQ](faq/index.md)
