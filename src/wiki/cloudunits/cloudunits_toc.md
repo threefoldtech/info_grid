@@ -1,6 +1,6 @@
 <h1> Cloud </h1>
 
-This section of the manual covers the essential information concerning Cloud utilization.
+This section covers the essential information concerning Cloud utilization.
 
 To deploy on the ThreeFold Grid, read the [System Administrators tutorials](../../system_administrators/system_administrators.md).
 

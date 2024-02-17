@@ -1,14 +1,8 @@
 # ThreeFold System Administrators
 
-Welcome to the ThreeFold System Administrators section of the ThreeFold Manual! 
-
-The book is designed specifically for system administrators, providing a comprehensive resource for all the documentation, guides, and how-tos related to managing and maintaining the ThreeFold products and technologies. Whether you're responsible for overseeing infrastructures, ensuring optimal performance, or troubleshooting issues, this section has got you covered. 
-
-This section of the manual covers all practical tutorials for system administrators working on the ThreeFold Grid.
+This section covers all practical tutorials for system administrators working on the ThreeFold Grid.
 
 For complementary information on ThreeFold grid and its cloud component, read the [Cloud](../wiki/cloudunits/cloudunits_toc.md) section of the Library.
-
-From deployment strategies to monitoring tools, from security best practices to network configuration, you'll find a wealth of information to support your role as a system administrator. With this comprehensive resource at your fingertips, you'll be equipped to handle the intricacies of the decentralized and sustainable ThreeFold ecosystem and ensure a smooth and efficient operation.
 
 <h2> Table of Contents </h2>
 

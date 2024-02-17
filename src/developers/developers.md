@@ -1,14 +1,8 @@
 # ThreeFold Developers
 
-Welcome to the ThreeFold Developers section of the ThreeFold Manual! 
-
-This comprehensive book is your go-to resource for all documentation, tools, and tutorials tailored specifically for developers. Whether you're a seasoned developer or just starting your journey, this section is designed to provide you with everything you need to dive into the exciting world of ThreeFold products and technologies. From APIs to SDKs, from how-tos to best practices, you'll find a wealth of information to help you integrate, build, and innovate on the ThreeFold platform. 
-
-This section of the manual covers all practical tutorials on how to develop and build on the ThreeFold Grid.
+This section covers all practical tutorials on how to develop and build on the ThreeFold Grid.
 
 For complementary information on the technology developed by ThreeFold, read the [Technology](../technology/technology_toc.md) section of the Library.
-
-Whether you're interested in decentralized cloud computing, blockchain integration, or exploring new possibilities in digital sovereignty, this developer-focused section will equip you with the knowledge and tools to unleash your creativity and transform ideas into reality.
 
 <h2> Table of Contents </h2>
 

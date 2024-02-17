@@ -1,6 +1,8 @@
 <h1> ThreeFold Library </h1>
 
-The ThreeFold Grid is built on the principles of decentralization, empowering individuals and organizations to take control of their digital assets, data, and interactions. The ThreeFold Library is the place to learn about the ThreeFold ecosystem, its technology and its history.
+The section contains information about the ThreeFold ecosystem, its technology and its history.
+
+For practical information for farmers, developers and system administrators, refer to the [ThreeFold Tutorials](../tutorials/tutorials.md).
 
 <h2>Table of Contents</h2>
 

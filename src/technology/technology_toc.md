@@ -1,6 +1,6 @@
 <h1>Technology</h1>
 
-This section of the manual covers the technology behind the ThreeFold Grid. ThreeFold has created an amazing technology system to allow anyone to host their applications and data close to them.
+This section covers the technology behind the ThreeFold Grid. ThreeFold has created an amazing technology system to allow anyone to host their applications and data close to them.
 
 To build on the ThreeFold Grid, read the [Developers tutorials](../developers/developers.md).
 

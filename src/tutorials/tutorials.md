@@ -1,8 +1,8 @@
 <h1> ThreeFold Tutorials </h1>
 
-The ThreeFold Tutorials section of the manual contains all the practical information for farmers, developers and system administrators of the ThreeFold Grid.
+The section contains all the practical information for farmers, developers and system administrators of the ThreeFold Grid.
 
-Whether you are an individual user, a farmer, a developer, or a business entity, this manual will guide you through the process of accessing, deploying, and managing resources on the grid.
+For complementary information on ThreeFold, refer to the [ThreeFold Library](../library/library.md).
 
 <h2>Table of Contents</h2>
 
