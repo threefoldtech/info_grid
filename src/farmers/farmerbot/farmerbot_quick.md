@@ -190,7 +190,7 @@ Thus, you can get more details on the operation of the Farmerbot by inspecting t
   ```
 * See the last report table
   ```
-  tac farmerbot.log | grep -B5000 -m1 "Nodes report" | tac
+  tac ~/farmerbotfiles/farmerbot.log | grep -B5000 -m1 "Nodes report" | tac
   ```
 
 ## Farmerbot Files
