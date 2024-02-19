@@ -72,7 +72,7 @@ Please make sure all data is wiped before restarting both services.
 
 ### TF Famerbot v1.0.0
 
-TF Farmerbot is a new component that aim as a power management solution that would allow farmer to setup to enable Wake-on-LAN mechanism on their farms. See [docs](../../farmers/farmerbot/farmerbot.md) for a detailed guide on how to setup Farmerbot for your farms.
+TF Farmerbot is a new component that aim as a power management solution that would allow farmer to setup to enable Wake-on-LAN mechanism on their farms. See [docs](../../farmers/farmerbot/farmerbot_intro.md) for a detailed guide on how to setup Farmerbot for your farms.
 
 ## Other Component Changelogs
 
