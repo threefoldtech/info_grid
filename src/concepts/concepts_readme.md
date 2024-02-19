@@ -9,7 +9,6 @@ On this section we will explore the fundamental principles and concepts behind t
 - [ThreeFold's Infrastructure as Code (IaC)](./grid3_iac.md)
 - [Proof of Utilization](./proof_of_utilization.md)
 - [Contract Grace Period](./contract_grace_period.md)
-- [Buying and Storing TFTs](./buying_storing_tft.md)
 - [What's New on TFGrid v3.x](./grid3_whatsnew.md)
 - [TFChain](./tfchain.md)
 - [TFGrid by Design](./tfgrid_by_design.md)

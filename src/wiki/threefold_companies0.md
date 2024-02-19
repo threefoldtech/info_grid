@@ -27,19 +27,3 @@ FOLLOWING COMPANIES ARE RELATED PARTIES TO THREEFOLD, OUR TERMS AND CONDITIONS A
 
 > Please note, ThreeFold Grid 3.x operates as a [DAO](./dao/dao.md) every party who wants to participate with the ThreeFold Grid uses the [TFChain](./tfchain.md) and our Forums.
 > [Click here for more info about our DAO](./dao/tfdao.md)
-
-***
-*Generated on*
-
-<p id="threefold_companies0_datetime"></p>
-
-<script>
-  // Get current date and time
-  var now = new Date();
-  var threefold_companies0_datetime = now.toLocaleString();
-
-  // Insert date and time into HTML
-  document.getElementById("threefold_companies0_datetime").innerHTML = threefold_companies0_datetime;
-
-</script>
-***

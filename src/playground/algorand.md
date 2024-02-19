@@ -48,11 +48,9 @@ Participation node is responsible for hosting participation keys for one or more
 What you need?
 - Account mnemonics on the network you deploy on (offline) you can check the status for you account on the AlgoExplorer. search by your account id.
 
-  The account needs to have some microAlgo to sign the participation transaction.
-  - [Main net explorer](https://algoexplorer.io/)
-  - [Test net explorer](https://testnet.algoexplorer.io/)
+  The account needs to have some microAlgo to sign the participation transaction. You can use [Dappflow](https://app.dappflow.org/explorer/home) to consult the different Algorand networks.
 
-- First Round: is the first block you need your participaiton node to validate from. you can choose the last block form the explorer.
+- First Round: is the first block you need your participation node to validate from. you can choose the last block form the explorer.
   ![partexp](img/algorand_partexp.png)
 - Last Round: is the final block your node can validate. let's make it 30M
 
