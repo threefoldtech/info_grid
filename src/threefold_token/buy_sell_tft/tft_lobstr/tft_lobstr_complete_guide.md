@@ -1,4 +1,4 @@
-<h1>Threefold Token: Buy TFT on Lobstr</h1>
+<h1> Get TFT on Lobstr </h1>
 
 <div class="youtubeVideoWrapper">
 <iframe title="How to Buy TFT on Lobstr" width="560" height="315" src="https://www.youtube-nocookie.com/embed/1N15bKztiqk" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
@@ -11,6 +11,7 @@
 - [Connect Your TF Connect App Wallet](#connect-your-tf-connect-app-wallet)
 - [Buy XLM with Fiat Currency](#buy-xlm-with-fiat-currency)
 - [Swap XLM for TFT](#swap-xlm-for-tft)
+- [Disclaimer](#disclaimer)
 
 ***
 
@@ -214,3 +215,9 @@ Note that the TFT is directly sent on your TF Connect app wallet.
 That's it. You've swapped XLM for TFT.
 
 You can now use your TFT to deploy workloads on the Threefold Grid.
+
+## Disclaimer
+
+> The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
+> 
+> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](../../../wiki/disclaimer.md) and seek advice from a qualified financial professional if needed.
