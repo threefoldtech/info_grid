@@ -71,7 +71,7 @@ If you plan on using a web server, you will need to install NGINX or Caddy and t
   * Clone the repository
     * ```
       git clone https://github.com/threefoldtech/tfgrid-sdk-ts
-      cd tfgrid-sdk-tf
+      cd tfgrid-sdk-ts
       ```
   * Set the **config.js** file
     * Set the permissions to run the script
@@ -89,9 +89,9 @@ If you plan on using a web server, you will need to install NGINX or Caddy and t
       * ```
         MODE=main ../scripts/build-env.sh
         ```
-    * Go back to the **playground** directory
+    * Go back to the `tfgrid-sdk-ts` directory
       * ```
-        cd ..
+        cd ../../..
         ```
   * Build the Playground
     * ```
