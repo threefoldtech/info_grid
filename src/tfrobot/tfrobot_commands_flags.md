@@ -36,9 +36,13 @@ You can use subcommands to deploy and cancel workloads on the TFGrid.
     ```bash
     tfrobot deploy -c path/to/your/config.yaml
     ```
--   **cancel:** used to cancel all vms deployed using specific configurations
+- **cancel:** used to cancel all vms deployed using specific configurations
     ```bash
     tfrobot cancel -c path/to/your/config.yaml
+    ```
+- **load:** used to load all vms deployed using specific configurations
+    ```bash
+    tfrobot load -c path/to/your/config.yaml
     ```
 
 ## Flags

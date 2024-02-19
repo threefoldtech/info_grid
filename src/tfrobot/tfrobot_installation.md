@@ -24,7 +24,7 @@ To install TFROBOT, simply download and extract the TFROBOT binaries to your pat
   ```
 - Download latest release from [releases](https://github.com/threefoldtech/tfgrid-sdk-go/releases)
   - ```
-    wget https://github.com/threefoldtech/tfgrid-sdk-go/releases/download/v0.13.22/tfgrid-sdk-go_Linux_x86_64.tar.gz
+    wget https://github.com/threefoldtech/tfgrid-sdk-go/releases/download/v0.14.4/tfgrid-sdk-go_Linux_x86_64.tar.gz
     ```
 - Extract the binaries
   - ```
