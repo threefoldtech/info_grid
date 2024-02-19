@@ -129,7 +129,6 @@
       - [Network Setup](farmers/advanced_networking/network_setup.md)
     - [Farmerbot](farmers/farmerbot/farmerbot_intro.md)
       - [Quick Guide](farmers/farmerbot/farmerbot_quick.md)
-      - [Extensive Guide](farmers/farmerbot/farmerbot.md)
       - [Additional Information](farmers/farmerbot/farmerbot_information.md)
       - [Minting and the Farmerbot](farmers/farmerbot/farmerbot_minting.md)
   - [System Administrators](system_administrators/system_administrators.md)
