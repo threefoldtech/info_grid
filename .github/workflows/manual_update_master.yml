@@ -21,7 +21,7 @@ jobs:
           git log -1
           git fetch
           git reset --hard origin/master
-          mdbook build -d docs
+          make build
 
   wait:
     needs: deploy
