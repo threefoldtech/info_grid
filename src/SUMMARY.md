@@ -170,6 +170,11 @@
     - [Playground](developers/playground/playground.md)
       - [Deploy the Playground](developers/playground/deploy_playground.md)
       - [Weblet Case Study: Nextcloud AIO](developers/playground/weblet_case_study_nextcloud.md)
+    - [Grid Deployment](grid_deployment/grid_deployment.md)
+      - [TFGrid Stacks](grid_deployment/tfgrid_stacks.md)
+      - [Full VM Grid Deployment](grid_deployment/grid_deployment_full_vm.md)
+      - [Guardians of the Grid](grid_deployment/tfgrid_guardians.md)
+      <!--- [Grid Snapshots](grid_deployment/snapshots.md)-->
   - [System Administrators](system_administrators/system_administrators.md)
     - [Getting Started](getstarted/tfgrid3_getstarted.md)
       - [ThreeFold Connect](getstarted/TF_Connect/TF_Connect.md)
