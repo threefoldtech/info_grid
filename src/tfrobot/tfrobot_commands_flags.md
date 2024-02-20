@@ -6,6 +6,7 @@
 - [Commands](#commands)
 - [Subcommands](#subcommands)
 - [Flags](#flags)
+- [Logs](#logs)
 
 ***
 
@@ -23,8 +24,6 @@ You can run the command `tfrobot help` at any time to access the help section. T
 | completion     | Generate the autocompletion script for the specified shell                        |
 | help       | Help about any command                                     |
 | version    | Get latest build tag                                       |
-
-You can also use the following flags: `-c` (`--config`) and `-h` (`--help`).
 
 Use `tfrobot [command] --help` for more information about a command.
 
@@ -57,3 +56,11 @@ You can use different flags to configure your deployment.
 | -h | help |
 
 > **Note:** Make sure to use every flag once. If the flag is repeated, it will ignore all values and take the last value of the flag.
+
+## Logs
+
+To ensure a complete log history, append `2>&1 | tee path/to/log/file` to the command being executed.
+
+```bash
+tfrobot deploy -c ./config.yaml 2>&1 | tee path/to/log/file
+```

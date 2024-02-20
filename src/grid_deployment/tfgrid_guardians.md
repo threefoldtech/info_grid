@@ -9,7 +9,7 @@
 
 ## Introduction
 
-[Backups of the TFGrid](./snapshots.md) are available on websites such as [ThreeFold Ninja backup](https://dashboard.bknd1.ninja.tf/) and anyone can host an instance of the ThreeFold Grid. Concretely, this means that you can participate in the ThreeFold ecosystem by hosting your own instance of the complete set of all ThreeFold services on your own domain! 
+Backups of the TFGrid are available on websites such as [ThreeFold Ninja backup](https://dashboard.bknd1.ninja.tf/) and anyone can host an instance of the ThreeFold Grid. Concretely, this means that you can participate in the ThreeFold ecosystem by hosting your own instance of the complete set of all ThreeFold services on your own domain! 
 
 Trusted guardians of the ThreeFold Grid can then be listed in the ThreeFold Manual, thus providing to users around the world different instances of the ThreeFold Grid in multiple locations, ensuring a resilient system that is highly decentralized and truly open-source.
 

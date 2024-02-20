@@ -64,5 +64,5 @@ When deploying with TFROBOT, you can set different configurations allowing for p
 
 | Field | Description| Supported Values|
 | :---:   | :---: | :---: |
-| Size | disk size in GB| positive integer min = 15 |
-| Mount | disk mount point | path to mountpoint |
+| size | disk size in GB| positive integer min = 15 |
+| mount_point | disk mount point | path to mountpoint |
