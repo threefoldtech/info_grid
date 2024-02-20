@@ -6,7 +6,6 @@
 - [Commands](#commands)
 - [Subcommands](#subcommands)
 - [Flags](#flags)
-- [Logs](#logs)
 
 ***
 
@@ -55,12 +54,4 @@ You can use different flags to configure your deployment.
 | -d | allow debug logs to appear in the output logs |
 | -h | help |
 
-> **Note:** Make sure to use every flag once. If the flag is repeated, it will ignore all values and take the last value of the flag.
-
-## Logs
-
-To ensure a complete log history, append `2>&1 | tee path/to/log/file` to the command being executed.
-
-```bash
-tfrobot deploy -c ./config.yaml 2>&1 | tee path/to/log/file
-```
+> **Note:** Make sure to use every flag once. If the flag is repeated, it will ignore all values and take the last value of the flag.`
