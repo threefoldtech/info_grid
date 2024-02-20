@@ -8,7 +8,6 @@ Deploy a new full virtual machine on the Threefold Grid
 
 **Process:**
 
-
 ![ ](./img/solutions_fullvm.png)
 
 - Fill in the instance name: it's used to reference the Full VM in the future.
@@ -22,7 +21,8 @@ Deploy a new full virtual machine on the Threefold Grid
   - `Public IPv4` flag gives the virtual machine a Public IPv4
   - `Public IPv6` flag gives the virtual machine a Public IPv6
   - `Planetary Network` to connect the Virtual Machine to Planetary network
-  - `Wireguard Access` to add a wireguard acces to the Virtual Machine
+  - `Myceluim` to enable mycelium on the virtual machine
+  - `Wireguard Access` to add a wireguard access to the Virtual Machine
 - `GPU` flag to add GPU to the Virtual machine
   - To deploy a Full VM with GPU, you first need to [rent a dedicated node](../dashboard/dedicated_nodes.md#usage)
 - `Dedicated` flag to retrieve only dedicated nodes 
@@ -30,20 +30,20 @@ Deploy a new full virtual machine on the Threefold Grid
 - Choose the location of the node
   - `Country`
   - `Farm Name`
-- Choose the node to deploy the Full Virtual Machine on 
+- Choose the node to deploy the Full Virtual Machine on
+  ![](./img/node_selection.png)
 
-
-![ ](./img/new_vm3.png)
 You can attach one or more disks to the Virtual Machine by clicking on the Disks tab and the plus `+` sign and specify the following parameters
+![ ](./img/new_vm3.png)
 
 - Disk name
 - Disk size
 
-in the bottom of the page you can see a list of all of the virual machines you deployed. you can click on `Show details` for more details
+in the bottom of the page you can see a list of all of the virtual machines you deployed. you can click on `Show details` for more details
 
 ![ ](./img/new_vm5.png)
 You can also go to JSON tab for full details
-![ ](./img/weblet_vm6.png)
+![ ](./img/new_vm6.png)
 
 ## Difference Between Full Virtual Machine and Micro Virtual Machine
 
