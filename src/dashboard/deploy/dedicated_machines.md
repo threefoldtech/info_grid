@@ -1,24 +1,23 @@
-<h1> Dedicated Nodes </h1>
+<h1> Dedicated Machines </h1>
 
 <h2> Table of Contents </h2>
 
-- [What is a Dedicated Node?](#what-is-a-dedicated-node)
+- [What is a Dedicated Machine?](#what-is-a-dedicated-machine)
 - [Description](#description)
 - [Billing \& Pricing](#billing--pricing)
 - [Discounts](#discounts)
 - [Usage](#usage)
 - [GPU Support](#gpu-support)
-  - [Filter and Reserve a GPU Node](#filter-and-reserve-a-gpu-node)
-    - [Filter Nodes](#filter-nodes)
-    - [Reserve a Node](#reserve-a-node)
-  - [GPU Support Links](#gpu-support-links)
+- [Filter and Reserve a GPU Node](#filter-and-reserve-a-gpu-node)
+  - [Filter Nodes](#filter-nodes)
+  - [Reserve a Node](#reserve-a-node)
+- [GPU Support Links](#gpu-support-links)
 
 ***
 
-## What is a Dedicated Node?
+## What is a Dedicated Machine?
 
-Dedicated nodes are 3Nodes that can be reserved and rented entirely by one user. The user can thus reserve an entire node and use it exclusively to deploy solutions. This feature is ideal for users who want to host heavy deployments with the benefits of high reliability and cost effectiveness.
-
+Dedicated machines are 3Nodes that can be reserved and rented entirely by one user. The user can thus reserve an entire node and use it exclusively to deploy solutions. This feature is ideal for users who want to host heavy deployments with the benefits of high reliability and cost effectiveness.
 
 ## Description
 
@@ -41,10 +40,9 @@ Dedicated nodes are 3Nodes that can be reserved and rented entirely by one user.
   - A second level discount up to 60% for balance level see [Discount Levels](../../wiki/cloudunits/pricing/staking_discount_levels.md)
 - Discounts are calculated every time the grid bills by checking the available TFT balance on the user wallet and seeing if it is sufficient to receive a discount. As a result, if the user balance drops below the treshold of a given discount, the deployment price increases.
 
-
 ## Usage
 
-- See list of all dedicated node on `Dedicated Nodes` tab on the portal.
+- See list of all dedicated node on `Dedicated Machines` tab on the portal.
 
     ![ ](../img/dedicated_machines.png)
 
@@ -75,7 +73,7 @@ To use a GPU on the TFGrid, users need to rent a dedicated node. Once they have 
 
 ## Filter and Reserve a GPU Node
 
-You can filter and reserve a GPU node using the [Dedicated Nodes section](https://dashboard.grid.tf/portal/account-nodes) of the **Dashboard**.
+You can filter and reserve a GPU node using the [Dedicated Machines section](https://dashboard.grid.tf/#/deploy/dedicated-nodes/) of the **Dashboard**.
 
 ### Filter Nodes
 
@@ -100,7 +98,7 @@ Feel free to explore the different possibilities!
 - Go Client and GPU
   - [GPU Support](../../go/grid3_go_gpu_support.md)
   - [VM with GPU](../../go/grid3_go_vm_with_gpu.md)
-- [TFGrid CLI and GPU](../../tfgridcmd/grid3_cli_vm.md#deploy-a-vm-with-gpu)
+- [TFGrid CLI and GPU](../../tfcmd/tfcmd_vm.md/#deploy-a-vm-with-gpu)
 - [Terraform and GPU](../../terraform/terraform_gpu_support.md)
 - [Full VM and GPU](../../dashboard/solutions/fullVm.md)
 - [Zero-OS API and GPU](../../internals/zos/manual/api.md#gpus)
