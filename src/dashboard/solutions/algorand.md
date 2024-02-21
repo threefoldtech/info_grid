@@ -5,8 +5,9 @@
 ## Prerequisites
 
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Application**
 - Click on **Algorand**
+
 ### Algorand Structure
 
 - Algorand has two main [types](https://developer.algorand.org/docs/run-a-node/setup/types/#:~:text=The%20Algorand%20network%20is%20comprised,%2C%20and%20non%2Drelay%20nodes.) of nodes (Relay or Participant) you can run also a 4 networks you can run your node against. Combining the types you can get:
@@ -26,7 +27,7 @@
 The basic type. you select any network you want. and for the node type select Default.
 ![defaultdep](./img/solutions_algorand.png)
 
-after the deployment is done. `ssh` to the node and run `goal node status` 
+after the deployment is done. `ssh` to the node and run `goal node status`
 ![defaulttest](./img/algorand_defaulttest.png)
 here you see your node run against mainnet.
 
