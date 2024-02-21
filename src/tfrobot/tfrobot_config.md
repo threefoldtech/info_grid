@@ -20,6 +20,8 @@ We present here a configuration file example that deploys 3 nodes with 2 vcores,
 
 You can use this example for guidance, and make sure to replace placeholders and adapt the groups based on your actual project details. To the minimum, `ssh_key1` should be replaced by the user SSH public key and `example-mnemonic` should be replaced by the user mnemonics.
 
+Note that if no IPs are specified as true (IPv4 or IPv6), an Yggdrasil IP address will automatically be assigned to the VM, as at least one IP should be set to allow an SSH connection to the VM.
+
 ### YAML Example
 
 ```
@@ -30,14 +32,19 @@ node_groups:
     free_mru: 16
     free_ssd: 100
     free_hdd: 50
-    pubip4: true
-    pubip6: false
+    dedicated: false
+    public_ip4: true
+    public_ip6: false
+    certified: false 
+    region: europe
 vms:
   - name: examplevm123
     vms_count: 5
     node_group: group_a
     cpu: 1
     mem: 0.25
+    public_ip4: true
+    public_ip6: false
     ssd:
       - size: 15
         mount_point: /mnt/ssd
@@ -67,8 +74,11 @@ max_retries: 5
       "free_mru": 16,
       "free_ssd": 100,
       "free_hdd": 50,
+      "dedicated": false,
       "public_ip4": true,
       "public_ip6": false,
+      "certified": false, 
+      "region": europe,
     }
   ],
   "vms": [
@@ -78,6 +88,8 @@ max_retries: 5
       "node_group": "group_a",
       "cpu": 1,
       "mem": 0.25,
+      "public_ip4": true,
+      "public_ip6": false,
       "ssd": [
         {
           "size": 15,
