@@ -41,7 +41,7 @@ It has following benefits :
 ## Requirements
 
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Orchestrators**
 - Click on **CapRover**
 
 ## Configs Tab
@@ -57,7 +57,6 @@ It has following benefits :
 
 ![ ](./img/solutions_caprover_workers.png)
 Note: Worker nodes only accept SSH keys of RSA format.
-
 
 Deployment will take couple of minutes.
 
@@ -95,7 +94,7 @@ In the following example, we pick ```apps.openly.life``` which is a domain name 
 
 Go back to your CapRover weblet and go to the deployment list. Click on `Show Details`.
 
-![ ](./img/cap.jpg)
+![ ](./img/solution_caprover_list.png)
 
 - The public IPv4 address is visible in here
 - Now you can configure the domain name (see above, don't forget to point the wildcard domain to the public IP address)
