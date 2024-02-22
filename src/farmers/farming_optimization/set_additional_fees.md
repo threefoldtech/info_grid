@@ -16,10 +16,10 @@ This can be useful for farmers who provide additional values to their 3Nodes, e.
 
 ## Steps
 
-Here are the steps to set additional fees to a 3Node. 
+Here are the steps to [set additional fees](../../dashboard/farms/your_farms.md#extra-fees) to a 3Node. 
 
-* On the Dashboard, go to **Portal -> Farms**
-* Under the section **Your Farm Nodes**, locate the 3Node and click **Set Additional Fees** under **Actions**
+* On the Dashboard, go to **Farms** -> **Your Farms**
+* Under the section **Your Nodes**, locate the 3Node and click **Set Additional Fees** under **Actions**
 * Set a monthly fee (in USD) and click **Set**
 
 ## TFT Payments

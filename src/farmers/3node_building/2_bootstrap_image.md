@@ -25,7 +25,13 @@ Note: For certified 3Nodes, read [this section](#bootstrap-image-for-certified-3
 
 ## Download the Zero-OS Bootstrap Image
 
-Go on the [ThreeFold Zero-OS Bootstrap Link](https://v3.bootstrap.grid.tf):
+Let's download the Zero-OS bootstrap image.
+
+In the Farms section of the Dashboard, click on **Bootstrap Node Image** 
+
+![dashboard_bootstrap_farm](./img/dashboard_bootstrap_farm.png)
+
+or use the direct link [https://v3.bootstrap.grid.tf](https://v3.bootstrap.grid.tf):
 
 ```
 https://v3.bootstrap.grid.tf

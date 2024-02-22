@@ -15,11 +15,9 @@ Note that the process is similar for other desktop computers.
 - [Prerequisite](#prerequisite)
   - [DIY 3Node Computer Requirements](#diy-3node-computer-requirements)
   - [DIY 3Node Material List](#diy-3node-material-list)
-- [1. Create a Farm with ThreeFold Connect App](#1-create-a-farm-with-threefold-connect-app)
-  - [ThreeFold Connect App Installation](#threefold-connect-app-installation)
-    - [Verify Your Identity (KYC) by Email](#verify-your-identity-kyc-by-email)
-  - [Create a Wallet](#create-a-wallet)
-  - [Create a Farm](#create-a-farm)
+- [1. Create a Farm](#1-create-a-farm)
+  - [Using Dashboard](#using-dashboard)
+  - [Using TF Connect App](#using-tf-connect-app)
 - [2. Create a Zero-OS Bootstrap Image](#2-create-a-zero-os-bootstrap-image)
   - [Download the Zero-OS Boostrap Image](#download-the-zero-os-boostrap-image)
   - [Burn the Zero-OS Bootstrap Image](#burn-the-zero-os-bootstrap-image)
@@ -32,7 +30,7 @@ Note that the process is similar for other desktop computers.
   - [The Essential Features of BIOS/UEFI for a 3Node](#the-essential-features-of-biosuefi-for-a-3node)
   - [Set the BIOS/UEFI on a Dell Optiplex 7020](#set-the-biosuefi-on-a-dell-optiplex-7020)
 - [6. Boot the 3Node](#6-boot-the-3node)
-  - [Check the 3Node's Status on the TF Explorer](#check-the-3nodes-status-on-the-tf-explorer)
+  - [Check the Node Status](#check-the-node-status)
   - [Farming Rewards Distribution](#farming-rewards-distribution)
 - [Additional Information](#additional-information)
 
@@ -78,157 +76,24 @@ In this guide, we are using a Dell Optiplex 7020. It constitutes a perfect affor
 
 <div style="break-after:page"></div>
 
-# 1. Create a Farm with ThreeFold Connect App
+# 1. Create a Farm
 
-## ThreeFold Connect App Installation
+You can create a farm with either the ThreeFold Dashboard or the ThreeFold Connect app.
 
+## Using Dashboard
 
+The Dashboard section contains all the information required to [create a farm](../../../dashboard/farms/your_farms.md).
 
-The ThreeFold Connect App is available for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US) and [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885).
+## Using TF Connect App
 
-- Note that for Android phones, you need at minimum Android Nougat, the 8.0 software version.
-- Note that for iOS phones, you need at minimum iOS 14.5. It will be soon available to iOS 13.
+You can [create a ThreeFold farm](../../../threefold_token/storing_tft/tf_connect_app.md) with the ThreeFold Connect App.
 
-Either use the links above, or search for the ThreeFold Connect App on the Apple Store or the Google Play store. Then install and open the app. If you want to leave a 5 star review of the App, no one here will stop you!
-
-![farming_tf_wallet_1](./img/farming_tf_wallet_1.png)
-
-![farming_tf_wallet_2](./img/farming_tf_wallet_2.png)
-
-Once you are in the application, you will see some introduction pages to help you familiarize with the TF Connect App. You will also be asked to read and accept ThreeFold's Terms and conditions.
-
-![farming_tf_wallet_4](./img/farming_tf_wallet_4.png)
-
-You will then be asked to either *SIGN UP* or *RECOVER ACCOUNT*. For now, we will show how to sign up. Later in the guide, we will show you how to recover an account.
-
-![farming_tf_wallet_5](./img/farming_tf_wallet_5.png)
-
-You will then be asked to choose a *ThreeFold Connect Id*. This ID will be used, as well as the seed phrase, when you want to recover an account. Choose wisely. And do not forget it! Here we will use TFExample, as an example.
-
-![farming_tf_wallet_6](./img/farming_tf_wallet_6.png)
-
-Next, you need to add a valid email address. This will be used as a broad KYC. You will need to access your email and confirm the validation email from ThreeFold to use properly the TF Connect App Wallet.
-
-![farming_tf_wallet_7](./img/farming_tf_wallet_7.png)
-
-Then, the next step is crucial! Make sure no one is around looking at your screen. You will be shown your seed phrase. Keep this in a secure and offline place. You will need the 3bot ID and the seed phrase to recover your account. This seed phrase is of utmost important. Do not lose it nor give it to anyone.
-
-![farming_tf_wallet_8](./img/farming_tf_wallet_8.png)
-
-Once you've hit Next, you will be asked to write down 3 random words of your seed phrase. This is a necessary step to ensure you have taken the time to write down your seed phrase.
-
-![farming_tf_wallet_9](./img/farming_tf_wallet_9.png)
-
-Then, you'll be asked to confirm your TF 3bot name and the associated email.
-
-![farming_tf_wallet_10](./img/farming_tf_wallet_10.png)
-
-Finally, you will be asked to choose a 4-digit pin. This will be needed to use the ThreeFold Connect App. If you ever forget this 4-digit pin, you will need to recover your account from your 3bot name and your seed phrase. You will need to confirm the new pin in the next step.
-
-![farming_tf_wallet_11](./img/farming_tf_wallet_11.png)
-
-That's it! You've created your ThreeFold Connect account. You can press the hamburger menu on the top left to explore the ThreeFold Connect App.
-
-![farming_tf_wallet_12](./img/farming_tf_wallet_12.png)
-
-
-
-<div style="break-after:page"></div>
-
-### Verify Your Identity (KYC) by Email
-
-
-
-Once you've created your account, an email will be sent to the email address you've chosen in the account creation process. 
-
-To verify your email, go on your email account and open the email sent by *info@openkyc.live* with the subject *Verify your email address*. 
-
-In this email, click on the link *Verify my email address*. This will lead you to a *login.threefold.me* link. The process should be automatic. Once this is done, you will receive a confirmation on screen, as well as on your phone.
-
-![farming_tf_wallet_39](./img/farming_tf_wallet_39.png)
-
-![farming_tf_wallet_40](./img/farming_tf_wallet_40.png)
-
-![farming_tf_wallet_41](./img/farming_tf_wallet_41.png)
-
-If for some reason, you did not receive the verification email, simply click on *Verify* and another email will be sent.
-
-![farming_tf_wallet_42](./img/farming_tf_wallet_42.png)
-
-![farming_tf_wallet_43](./img/farming_tf_wallet_43.png)
-
-
-
-<div style="break-after:page"></div>
-
-## Create a Wallet
-
-
-To create a wallet, click on the ThreeFold Connect App menu. This is what you see. Choose *Wallet*.
-
-![farming_tf_wallet_13](./img/farming_tf_wallet_13.png)
-
-Once you are in the section *Wallet*, click on *Create Initial Wallet*. 
-
-![farming_tf_wallet_14](./img/farming_tf_wallet_14.png)
-
-This is what you see when the TF Grid is initializing your wallet.
-
-![farming_tf_wallet_15](./img/farming_tf_wallet_15.png)
-
-Once your wallet is initialized, you will see *No blanace found for this wallet*. You can click on this button to enter the wallet.
-
-![farming_tf_wallet_16](./img/farming_tf_wallet_16.png)
-
-Once inside your wallet, this is what you see.
-
-![farming_tf_wallet_17](./img/farming_tf_wallet_17.png)
-
-<div style="break-after:page"></div>
-
-
-
-## Create a Farm
-
-
-
-To create a farm, follow those steps.
-
-Click on the hamburger menu on the top left of your screen and select *Farmer Migration*. This title is somehow misleading, as you can not only migrate farms, but create farms too!
-
-![farming_tf_wallet_24](./img/farming_tf_wallet_24.png)
-
-To create a farm, either click on the *plus* sign at the top right, or click on *Click to create ->*.
-
-![farming_tf_wallet_25](./img/farming_tf_wallet_25.png)
-
-To create a farm, choose the wallet associated with the farm. Also, choose a Farm Name then read and accept the Terms and Conditions. Finally, click *submit*.
-
-![farming_tf_wallet_26](./img/farming_tf_wallet_26.png)
-
-The TF Connect App will give you a confirmation message if the farm was created successfully. If it doesn't work the first time, make sure you have a good Internet connection and try again. If you click on the down arrow, you will be able to see your *Farm Information*.
-
-![farming_tf_wallet_27](./img/farming_tf_wallet_27.png)
-
-You can see on this screen the address were your farming rewards will be sent to. It is the Stellar address associated with the ThreeFold Wallet used to create the farm.
-
-![farming_tf_wallet_28](./img/farming_tf_wallet_28.png)
-
-We can see on the picture above that the Farm ID here is 1821. The farm ID will be used to create the Zero-OS Bootstrap Image in the next section.
-
-
-
-<div style="break-after:page"></div>
 
 # 2. Create a Zero-OS Bootstrap Image
 
 ## Download the Zero-OS Boostrap Image
 
-
-
 We will now learn how to create a Zero-OS Bootstrap Image in order to boot a DIY 3Node.
-
-    https://v3.bootstrap.grid.tf
 
 Go on the [ThreeFold Zero-OS Bootstrap Link](https://v3.bootstrap.grid.tf) as shown above.
 
@@ -514,40 +379,17 @@ Naturally, your node ID as well as your farm ID and name will be shown.
 
 ![3node_diy_desktop_76.png](img/3node_diy_desktop_130.png)
 
-Once you have your node ID, you can also go on the ThreeFold Explorer to see your 3Node and verify that your 3Node is online.
+Once you have your node ID, you can also go on the ThreeFold Dashboard to see your 3Node and verify that your 3Node is online.
 
 
 
 <div style="break-after:page"></div>
 
-## Check the 3Node's Status on the TF Explorer
+## Check the Node Status
 
+You can use the [Node Finder](../../../dashboard/deploy/node_finder.md) on the [TF Dashboard](https://dashboard.grid.tf/) to verify that the node is online.
 
-In a browser, go on the [ThreeFold Explorer](https://dashboard.grid.tf/explorer/nodes). 
-
-Select **Grid V3**.
-
-![Farming_Create_Farm_3](./img/farming_25.png)
-
-Then select **Mainnet**.
-
-![Farming_Create_Farm_3](./img/farming_26.png)
-
-In this example, we will look for the farm 100. Use your farm ID.
-
-We can see here that 5 x 3Nodes of the Farm 100 are online. 
-
-![Farming_Create_Farm_3](./img/farming_27.png)
-
-On the top right of this section, you can click on "Show offline nodes". 
-
-![Farming_Create_Farm_3](./img/farming_28.png)
-
-Now we can see the 3Nodes that are offline.
-
-![Farming_Create_Farm_3](./img/farming_29.png)
-
-
+Enter your node ID and click **Apply**.
 
 ## Farming Rewards Distribution
 

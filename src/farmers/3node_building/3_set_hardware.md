@@ -25,11 +25,12 @@
 
 ***
 
+
 ## Introduction
 
 In this section of the ThreeFold Farmers book, we cover the essential farming requirements when it comes to ThreeFold 3Node hardware.
 
-***
+
 
 ## Hardware Requirements
 
@@ -46,11 +47,11 @@ Also, note that ThreeFold runs its own OS, which is Zero-OS. You thus need to st
 
 Note: Once you have the necessary hardware, you need to [create a farm](./1_create_farm.md), [create a Zero-OS bootstrap image](./2_bootstrap_image.md), [wipe your disks](./4_wipe_all_disks.md) and [set the BIOS/UEFI](./5_set_bios_uefi.md) . Then you can [boot your 3Node](./6_boot_3node.md). If you are planning in building a farm in data center, [read this section](../advanced_networking/advanced_networking_toc.md).
 
-***
+
 
 ### 3Node Requirements Summary
 
-***
+
 
 Any computer with the following specifications can be used as a DIY 3Node.
 
@@ -63,7 +64,7 @@ Any computer with the following specifications can be used as a DIY 3Node.
 
 *A passmark of 1000 per core is recommend and will be a minimum requirement in the future. This is not yet an official requirement. A 3Node with less than 1000 passmark per core of CPU would not be penalized if it is registered before the DAO settles the [Passmark Question](https://forum.threefold.io/t/cpu-benchmarking-for-reward-calculations/2479).
 
-***
+
 
 ## Bandwidth Requirements
 
@@ -78,7 +79,7 @@ Note that the TFDAO will need to discuss and settle on clearer guidelines in the
 > **The strict minimum for one Titan is 1 mbps of bandwidth**. 
 
 If you want to expand your ThreeFold farm, you should check the following to make sure your bandwidth will be sufficient when there will be Grid utilization.
-***
+
 **Bandwidth per 3Node Equation**
 
 > min Bandwidth per 3Node (mbps) = 10 * max((Total SSD TB / 1 TB),(Total Threads / 8 Threads),(Total GB / 64 GB)) + 10 * (Total HDD TB / 2)
@@ -87,14 +88,14 @@ This equation means that for each TB of HDD you need 5 mbps of bandwidth, and fo
 
 This means a proper bandwidth for a Titan would be 10 mbps. As stated, 1 mbps is the strict minimum for one Titan.
 
-***
+
 
 ## Link to Share Farming Setup
 
 
 If you want ideas and suggestions when it comes to building DIY 3Nodes, a good place to start is by checking what other farmers have built. [This post on the Forum](https://forum.threefold.io/t/lets-share-our-farming-setup/286) is a great start. The following section also contains great DIY 3Node ideas.
 
-***
+
 
 ## List of Common DIY 3Nodes
 
@@ -111,13 +112,13 @@ We regroup the 3Node builds in 5 main categories:
 4. [Tower Server](#the-tower-server-diy-3node)
 5. [Rack Server](#the-rack-server-diy-3node)
 
-***
+
 
 ### The Mini PC DIY 3Node
 
 Many farmers start with a Titan plug n play and then explore the world of Mini PC DIY 3Nodes. 
 
-***
+
 
 **Lenovo M900 Tiny**
 
@@ -132,11 +133,11 @@ A common Mini PC is the Lenovo M900 tiny. Equipped with an i7-6700T CPU (or i7-6
 
 For this DIY 3Node, you usually need to buy the RAM and SSD separately to get the best price. Here's an [amazing TF video](https://www.youtube.com/watch?v=-AmDJYWWS5M) to get you started on this 3Node DIY journey.
 
-***
+
 
 ### The Desktop PC DIY 3Node
 
-***
+
 
 **DELL OptiPlex 7020**
 
@@ -150,7 +151,7 @@ This 3Node is a great way to start your ThreeFold adventure: it requires no upgr
 
 It has the minimum SSD requirement as well as 32GB of RAM. This SSD/RAM ratio optimizes the farming reward. In short, for around 240$, you can farm around 257 TFT per month. With the current TFT price of 8 cents, this gives you a return on investment of less than 12 months. Building the New Internet isn't that hard after all!
 
-***
+
 
 **HP EliteDesk 800 G1 Desktop**
 
@@ -166,9 +167,9 @@ This model has a nice CPU Passmark ratio and has the same basic specs as a Titan
 
 This build can be upgraded to 64GB of RAM, but it requires SODIMM RAM, which can be expenseive. DYOR.
 
-***
+
 ### The Mini Server DIY 3Node
-***
+
 
 **Supermicro Pizza Box Chassis** 
 
@@ -182,11 +183,11 @@ This build can be upgraded to 64GB of RAM, but it requires SODIMM RAM, which can
 
 This 3Node build is very effective and has a good ratio investment/TFT rewards if you can get the parts online. This takes a little bit of DIY working as you need to assemble the parts. The CPU mark is also excellent.
 
-***
+
 
 ### The Tower Server DIY 3Node
 
-***
+
 
 **HP Z800**
 
@@ -197,7 +198,7 @@ This 3Node build is very effective and has a good ratio investment/TFT rewards i
 - 3TB SSD (1x1TB + 1x2TB)
 - Zero-OS boot mode: UEFI
 
-***
+
 
 **Dell Precision T5810**
 
@@ -208,17 +209,17 @@ This 3Node build is very effective and has a good ratio investment/TFT rewards i
 - 256GB SK Hynix DDR4 ECC RAM
 - 4TB Crucial MX500 SSD
 
-***
+
 
 A Tower Server DIY 3Node is a good way to get major TFT rewards while also having an ergonomic and quiet 3Node. Note that the Rack Server DIY 3Node are usually louder, due to the fans spinning.
 
 Building tower servers as DIY 3Nodes is also has a clear advantage: when GPU will be available on TF Grid, you will have ample room to add a decent GPU. This is thus future-proof in that regard.
 
-***
+
 
 ### The Rack Server DIY 3Node
 
-***
+
 
 **DELL R720**
 
@@ -246,7 +247,7 @@ This 3Node build by @Valentine969 is quite amazing. You get great TFT rewards in
 
 Note that 2U servers are quieter than 1U. The reason is simple, 2U servers have larger fans, thus they can move more volume of air with a slower speed than would 1U fans. This is a general statement and it depends on the specific hardware.
 
-***
+
 
 **DELL R620**
 
@@ -263,7 +264,7 @@ Note that 2U servers are quieter than 1U. The reason is simple, 2U servers have 
 
 You can usually build the same 3Node build with a R620 as with a R720. The difference is that the R620 is a 1U server so it can generate more noise. The smaller form factor is a plus though. The HP Proliant 
 
-***
+
 
 **DELL R630**
 
@@ -275,7 +276,7 @@ You can usually build the same 3Node build with a R620 as with a R720. The diffe
 
 This server has the same specs as the R620 above, but it is a newer generation of server.
 
-***
+
 
 **HP Proliant DL 580 G8**
 
@@ -288,23 +289,23 @@ This server has the same specs as the R620 above, but it is a newer generation o
 
 This server is an amazing 3Node with a great CPU passmark ratio. The HDD won't make much difference in terms of farming rewards, but it's alway a nice addition if you have some spare disks to add for your 3Node!
 
-***
+
 
 Those were examples of what you can do as a DIY 3Node build. The possibilities are huge. Explore and build the New Internet!
 
-***
+
 
 ## Powering the 3Node
 
 ### Surge Protector
 
 A surge protector is highly recommended for your farm and your 3Nodes. This ensures your 3Nodes will not overcharge if a power surge happens. Whole-house surge protectors are also an option.
-***
+
 ### Power Distribution Unit (PDU)
 
 A PDU (power distribution unit) is useful in big server settings in order to manage your wattage and keep track of your power consumption.
 
-***
+
 ### Uninterrupted Power Supply (UPS)
 
 
@@ -312,13 +313,13 @@ A UPS (uninterrupted power supply) is great for a 3Node if your power goes on an
 
 Note: Make sure to have AC Recovery Power set properly so your 3Node goes back online if power shutdowns momentarily. UPS are generally used in data center to make sure people have enough time to do a "graceful" shutdown of the units when power goes off. In the case of 3Nodes, they do not need graceful shutdowns as Zero-OS cannot lose data while functioning. The only way to power down a 3Node is simply to turn it off directly on the machine.
 
-***
+
 ### Generator
 
 
 A generator will be needed for very large installation with or without an unsteady main power supply.
 
-***
+
 
 ## Connecting the 3Node to the Internet
 
@@ -330,7 +331,7 @@ The general route from the 3Node to the Internet is the following:
 
 Note that most home routers come with a built-in switch to provide multiple Ethernet ports. Using a stand-alone switch is optional, but can come quite handy when farmers have many 3Nodes.
 
-***
+
 
 ### Z-OS and Switches
 
@@ -348,7 +349,7 @@ Unmanaged are the most common type and if someone just says "switch" this is pro
 
 Managed switches have more capabilities than unmanaged switches and they are not very common in home settings (at least not as standalone units). Some of our farmers do use managed switches. These switches offer much more control and also require configuration. They can enable advanced features like virtual LANs to segment the network.
 
-***
+
 
 ## Using Onboard Storage (3Node Servers)
 
@@ -368,15 +369,15 @@ For HP servers, you simply turn on the HBA mode (Host Bus Adapter).
 
 For Dell servers, you can either cross, or [re-flash](https://fohdeesha.com/docs/perc.html), the RAID controller with an “IT-mode-Firmware” (see this [video](https://www.youtube.com/watch?v=h5nb09VksYw)) or get a DELL H310-controller (which has the non-RAID option). Otherwise, you can install a NVME SSD with a PCIe adaptor, and turn off the RAID controller.
 
-***
+
 
 Once the disks are wiped, you can shutdown your 3Node and remove the Linux Bootstrap Image (USB key). Usually, there will be a message telling you when to do so.
 
 
-***
+
 ## Upgrading a DIY 3Node
 
-***
+
 
 As we've seen in the [List of Common DIY 3Nodes](#list-of-common-diy-3nodes), it is sometimes necessary, and often useful, to upgrade your hardware.
 

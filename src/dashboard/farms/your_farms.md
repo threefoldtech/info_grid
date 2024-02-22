@@ -8,6 +8,7 @@ This comprehensive guide aims to provide users with detailed instructions and in
   - [Add a public IP to your Farm](#add-a-public-ip-to-your-farm)
   - [Add a Stellar address for payout](#add-a-stellar-address-for-payout)
   - [Generate your node bootstrap image](#generate-your-node-bootstrap-image)
+  - [Additional information](#additional-information)
 - [Manage Your Nodes](#manage-your-nodes)
   - [Node information](#node-information)
   - [Extra Fees](#extra-fees)
@@ -76,9 +77,17 @@ In a first phase, farming of tokens still results in payout on the Stellar netwo
 
 ![ ](../img/dashboard_farms_stellar_address.png)
 
+You can read about different ways to store TFT [here](../../threefold_token/storing_tft/storing_tft.md). Make sure to use a Stellar wallet for your farming rewards.
+
 ### Generate your node bootstrap image
 
 Once you know your farmID, you can set up your node on TFGrid3. Click on `Bootstrap Node Image`.
+
+![dashboard_bootstrap_farm](../img/dashboard_bootstrap_farm.png)
+
+Read more Zero-OS bootstrap image [here](../../farmers/3node_building/2_bootstrap_image.md).
+
+### Additional information
 
 After booting a node, the info will become available in `Your Nodes` table, including the status info along with the minting and fixup receipts.
 

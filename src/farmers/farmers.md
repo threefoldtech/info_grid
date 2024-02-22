@@ -32,13 +32,6 @@ For complementary information on ThreeFold farming, read the [Farming](../wiki/t
   - [Quick Guide](./farmerbot/farmerbot_quick.md)
   - [Additional Information](./farmerbot/farmerbot_information.md)
   - [Minting and the Farmerbot](./farmerbot/farmerbot_minting.md)
-- [Farming Details](../wiki/tfgrid/farming/farming_toc.md)
-  - [Farming Rewards](../wiki/tfgrid/farming/farming_reward.md)
-  - [Proof-of-Utilization](../wiki/tfgrid/farming/proof_of_utilization.md)
-  - [Proof-of-Capacity](../wiki/tfgrid/farming/proof_of_capacity.md)
-  - [PoC DAO Rules](../wiki/tfgrid/farming/poc_dao_rules.md)
-  - [Farming Reward v2](../wiki/tfgrid/farming/farming_reward2.md)
-  - [Farming Upgrade](../wiki/tfgrid/farming/farming_upgrade_2_3.md)
 - [Farmers FAQ](../faq/faq.md#farmers-faq)
 
 > Note: Bugs in the code (e.g. ZOS or other components) can happen. If this is the case, there might be a loss of tokens during minting which won't be refunded by ThreeFold. If there are minting code errors, ThreeFold will try its best to fix the minting code and remint nodes that were affected by such errors.
