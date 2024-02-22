@@ -39,9 +39,12 @@
 - `Dedicated` flag to retrieve only dedeicated nodes 
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
+   - `Region`
    - `Country`
    - `Farm Name`
+
 - Choose the node to deploy the Virtual Machine on 
+> Or you can select a specific node with manual selection.
 
 ## Migrate an Existing Presearch Node to the TFGrid
 

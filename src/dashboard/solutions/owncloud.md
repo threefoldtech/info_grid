@@ -44,9 +44,11 @@
 - Enable the `Dedicated` flag to retrieve only dedicated nodes 
 - Enable the `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
+   - `Region`
    - `Country`
    - `Farm Name`
-- Choose the node to deploy on 
+- Choose the node to deploy on
+> Or you can select a specific node with manual selection.
 - Enable the `Custom Domain` flag to use a custom domain
 - Choose a gateway node to deploy your ownCloud instance on.
 

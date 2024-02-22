@@ -30,9 +30,11 @@ __Process__ :
 - `Dedicated` flag to retrieve only dedicated nodes 
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
+   - `Region`
    - `Country`
    - `Farm Name`
 - Choose the node to deploy the Virtual Machine on 
+> Or you can select a specific node with manual selection.
 
 ![](./img/nixos-micro2.png)
 * In the section `Environment Variables`, you can add any environment variables that the machine might need

@@ -18,11 +18,12 @@ __Process__
 - `Certified` flag to retrieve only certified nodes 
 
 - Choose the location of the node
+   - `Region`
    - `Country`
    - `Farm Name`
-
 - Select a node to deploy your node-pilot instance on.
 
+> Or you can select a specific node with manual selection.
 
 - When using the [flist](https://hub.grid.tf/tf-official-vms/node-pilot-zdbfs.flist) you get a node pilot instance ready out-of-box. You need to get a public ipv4 to get it to works.
 

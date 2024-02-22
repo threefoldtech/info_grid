@@ -25,9 +25,11 @@ __Process__ :
 - `Dedicated` flag to retrieve only dedeicated nodes 
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
+   - `Region`
    - `Country`
    - `Farm Name`
 - Choose the node to deploy the Tiaga instance on
+> Or you can select a specific node with manual selection.
 - `Custom Domain` flag lets the user to use a custom domain
 - Choose a gateway node to deploy your Funkwhale instance on.
 
