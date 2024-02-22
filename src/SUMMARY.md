@@ -1,7 +1,7 @@
 ## ThreeFold Grid Manual Summary
 
 - [Introduction](intro/intro_readme.md)
-- [Tutorials](tutorials/tutorials.md)
+- [Documentation](documentation/documentation.md)
   - [Dashboard](dashboard/dashboard.md)
     - [Wallet Connector](dashboard/wallet_connector.md)
     - [TFGrid](dashboard/tfgrid/tfgrid.md)
@@ -268,7 +268,7 @@
       - [Albedo LP](threefold_token/liquidity/liquidity_albedo.md)
     - [Transaction Fees](threefold_token/transaction_fees.md)
   - [FAQ](faq/faq.md)
-- [Library](library/library.md)
+- [Knowledge Base](knowledge_base/knowledge_base.md)
   - [About](wiki/about.md)
     - [ThreeFold History](wiki/threefold_history.md)
       - [Token History](wiki/token_history.md)

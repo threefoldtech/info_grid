@@ -1,8 +1,8 @@
-<h1> ThreeFold Tutorials </h1>
+<h1> ThreeFold Documentation </h1>
 
 The section contains all the practical information for farmers, developers and system administrators of the ThreeFold Grid.
 
-For complementary information on ThreeFold, refer to the [ThreeFold Library](../library/library.md).
+For complementary information on ThreeFold, refer to the [ThreeFold Knowledge Base](../knowledge_base/knowledge_base.md).
 
 <h2>Table of Contents</h2>
 

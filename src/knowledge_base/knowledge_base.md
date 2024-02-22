@@ -1,8 +1,8 @@
-<h1> ThreeFold Library </h1>
+<h1> ThreeFold Knowledge Base </h1>
 
 The section contains information about the ThreeFold ecosystem, its technology and its history.
 
-For practical information for farmers, developers and system administrators, refer to the [ThreeFold Tutorials](../tutorials/tutorials.md).
+For practical information for farmers, developers and system administrators, refer to the [ThreeFold Documentation](../documentation/documentation.md).
 
 <h2>Table of Contents</h2>
 
