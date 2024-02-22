@@ -2,7 +2,7 @@
 
 ThreeFold strongly believes in the power of open-source projects and community-driven collaboration. The following documentation is ideal for anyone who wants to know ways to collaborate to the ThreeFold ecosystem.
 
-To become a farmer, a developer or a sysadmin on the ThreeFold, read the [tutorials](../tutorials/tutorials.md).
+To become a farmer, a developer or a sysadmin on the ThreeFold, read the [documentation](../documentation/documentation.md).
 
 <h2>Table of Contents</h2
 
