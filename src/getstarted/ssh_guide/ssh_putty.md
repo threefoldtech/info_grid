@@ -21,11 +21,7 @@ If you have any questions, feel free to write a post on the [Threefold Forum](ht
 
 ## Main Steps and Prerequisites
 
-The prerequisites are:
-
-* [Create a Threefold Connect Wallet](../../threefold_token/storing_tft/tf_connect_app.md#create-a-wallet)
-* [Buy TFT](../../threefold_token/buy_sell_tft/buy_sell_tft.md)
-* [Create a Threefold Dashboard Account and Transfer TFT](../TF_Dashboard/TF_Dashboard.md#create-polkadot-extension-account)
+Make sure to [read the introduction](../tfgrid3_getstarted.md#get-started---your-first-deployment) before going further.
 
 The main steps for the whole process are the following:
 

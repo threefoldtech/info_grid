@@ -163,7 +163,7 @@ It's bit long for sure but let's try to dissect it a bit
   ip_range = lookup(grid_network.net1.nodes_ip_range, 2, "")
 ```
 
-- `node = grid_scheduler.sched.nodes["node1"]` means this deployment will happen on node returned from the scheduler. Otherwise the user can specify the node as `node = 2` and in this case the choice of the node is completely up to the user at this point. They need to do the capacity planning. Check [Exploring Capacity](../../dashboard/explorer/explorer_home.md) to know which nodes fits your deployment criteria.
+- `node = grid_scheduler.sched.nodes["node1"]` means this deployment will happen on node returned from the scheduler. Otherwise the user can specify the node as `node = 2` and in this case the choice of the node is completely up to the user at this point. They need to do the capacity planning. Check the [Node Finder](../../dashboard/deploy/node_finder.md) to know which nodes fits your deployment criteria.
 - `network_name` which network to deploy our project on, and here we choose the `name` of network `net1`
 - `ip_range` here we [lookup](https://www.terraform.io/docs/language/functions/lookup.html) the iprange of node `2` and initially load it with `""`
 

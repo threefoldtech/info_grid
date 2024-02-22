@@ -43,7 +43,7 @@ Deploy a new full virtual machine on the Threefold Grid
   - `Myceluim` to enable mycelium on the virtual machine
   - `Wireguard Access` to add a wireguard access to the Virtual Machine
 - `GPU` flag to add GPU to the Virtual machine
-  - To deploy a Full VM with GPU, you first need to [rent a dedicated node](../dashboard/dedicated_nodes.md#usage)
+  - To deploy a Full VM with GPU, you first need to [rent a dedicated node](../../dashboard/deploy/dedicated_machines.md)
 - `Dedicated` flag to retrieve only dedicated nodes 
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node

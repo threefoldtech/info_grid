@@ -108,7 +108,7 @@ There are three main solution categories on the TFGrid: DIY workloads, independe
 
 ## DIY Workloads
 
-Out-of-the-box weblets are available on the [TF Dashboard](../dashboard/solutions/ready_community_readme.md) and [Terraform](../terraform/terraform_readme.md), where anyone can [buy TFTs](../threefold_token/buy_sell_tft/buy_sell_tft.md) and deploy on the decentralized and open-source grid. The reliability of those deployments depend on the capacity and resources of each DIY system administrator.
+Out-of-the-box applications are available on the [TF Dashboard](../dashboard/solutions/solutions.md) and [Terraform](../terraform/terraform_readme.md), where anyone can [buy TFTs](../threefold_token/buy_sell_tft/buy_sell_tft.md) and deploy on the decentralized and open-source grid. The reliability of those deployments depend on the capacity and resources of each DIY system administrator.
 
 In essence, when you deploy on the decentralized and open-source TFGrid, you act as a centralized entity building the solution architecture. You must design the solution in a way that it can be reliable with high-availability and resilience levels that suit the needs of your project.
 

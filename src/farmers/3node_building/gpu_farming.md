@@ -75,7 +75,7 @@ You can use the Explorer on the [TF Dashboard](https://dashboard.grid.tf/) to ve
 
 ## Reserving the GPU Node
 
-Now, users can reserve the node in the **Dedicated Nodes** section of the Dashboard and then deploy workloads using the GPU. For more information on how to deploy workloads with a GPU node, read [this documentation](../../dashboard/portal/dashboard_portal_dedicated_nodes.md#gpu-support).
+Now, users can reserve the node in the **Dedicated Nodes** section of the Dashboard and then deploy workloads using the GPU. For more information, read [this documentation](../../dashboard/deploy/dedicated_machines.md).
 
 ## Questions and Feedback
 

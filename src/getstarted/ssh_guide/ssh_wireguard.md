@@ -25,10 +25,8 @@ Note that WireGuard provides the connection to the 3Node deployment. It is up to
 
 # Prerequisites
 
-* Activated and funded account set up in the [TF Dashboard](https://dashboard.grid.tf/)
-  * [Create a Threefold Connect Wallet](../TF_Connect/TF_Connect.md)
-  * [Buy TFT](../../threefold_token/buy_sell_tft/buy_sell_tft.md)
-  * [Create a Threefold Dashboard Account and Transfer TFT](../TF_Dashboard/TF_Dashboard.md)
+Make sure to [read the introduction](../tfgrid3_getstarted.md#get-started---your-first-deployment) before going further.
+
 * SSH client of your choice
   * [Open-SSH](./ssh_openssh.md)
   * [PuTTy](ssh_putty.md)
@@ -38,7 +36,7 @@ Note that WireGuard provides the connection to the 3Node deployment. It is up to
 
 # Deploy a Weblet with WireGuard Access
 
-The ThreeFold Dashboard proposes different [basic environments](../../dashboard/solutions/basic_environments_readme.md) and [ready community solutions](../../dashboard/solutions/ready_community_readme.md) in the form of easy-to-use weblets. For this guide on WireGuard access, we deploy a [Full VM](../../dashboard/solutions/fullVm.md). Note that the whole process is similar with other types of ThreeFold weblets on the Dashboard.
+For this guide on WireGuard access, we deploy a [Full VM](../../dashboard/solutions/fullVm.md). Note that the whole process is similar with other types of ThreeFold weblets on the Dashboard.
 
 * Go to the [ThreeFold Dashboard](https://dashboard.grid.tf/)
 * Select the weblet **Full Virtual Machine**

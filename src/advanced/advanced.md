@@ -4,7 +4,6 @@ In this section, we delve into sophisticated topics and powerful functionalities
 
 <h2>Table of Contents</h2>
 
-- [Grid3 Stellar-TFChain Bridge](./grid3_stellar_tfchain_bridge.md)
 - [Token Transfer Keygenerator](./token_transfer_keygenerator.md)
 - [Cancel Contracts](./cancel_contracts.md)
 - [Contract Bills Reports](./contract_bill_report.md)
@@ -13,7 +12,3 @@ In this section, we delve into sophisticated topics and powerful functionalities
 - [IPFS](./ipfs/ipfs_toc.md)
   - [IPFS on a Full VM](./ipfs/ipfs_fullvm.md)
   - [IPFS on a Micro VM](./ipfs/ipfs_microvm.md)
-- [RMB Proxy](/proxy/proxy.md)
-- [TFChain Extrinsics (Blockchain Functions)](/tfchain/tfchain.md)
-- [Create Farm](/dashboard/portal/dashboard_portal_ui_farming.md)
-- [Solution Provider](/tfchain/tfchain_solution_provider.md)

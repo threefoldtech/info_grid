@@ -105,7 +105,6 @@
     - [What is ThreeFold's cloud pricing? Are there any discounts available for ThreeFold's cloud pricing?](#what-is-threefolds-cloud-pricing-are-there-any-discounts-available-for-threefolds-cloud-pricing)
     - [How can I see the available capacity of a 3Node server on the ThreeFold Grid?](#how-can-i-see-the-available-capacity-of-a-3node-server-on-the-threefold-grid)
     - [What is the difference between the Playground and Dashboard on mainnet and testnet?](#what-is-the-difference-between-the-playground-and-dashboard-on-mainnet-and-testnet)
-    - [What are the different TF Manual links for GPU support?](#what-are-the-different-tf-manual-links-for-gpu-support)
   - [Deployments on the ThreeFold Grid](#deployments-on-the-threefold-grid)
     - [Can I use the TFChain secret on the ThreeFold Connect App for the Profile settings on the ThreeFold Playground?](#can-i-use-the-tfchain-secret-on-the-threefold-connect-app-for-the-profile-settings-on-the-threefold-playground)
     - [Does the ThreeFold Grid charge the total resources rented or it only charges the resources used during deployment?](#does-the-threefold-grid-charge-the-total-resources-rented-or-it-only-charges-the-resources-used-during-deployment)
@@ -124,20 +123,11 @@
     - [What is ThreeFold's stance on sharded workload? Will ThreeFold embrace and move towards distributed data chunks or stay with the one deployment, one node model?](#what-is-threefolds-stance-on-sharded-workload-will-threefold-embrace-and-move-towards-distributed-data-chunks-or-stay-with-the-one-deployment-one-node-model)
   - [Tutorials and Guides](#tutorials-and-guides)
     - [What are the prerequisites before using the ThreeFold Play Grid (playground.grid.tf)?](#what-are-the-prerequisites-before-using-the-threefold-play-grid-playgroundgridtf)
-    - [How can I connect my wallet to the ThreeFold Playground Wallet Connector?](#how-can-i-connect-my-wallet-to-the-threefold-playground-wallet-connector)
-    - [I want to deploy a virtual machine (VM) on ThreeFold. How can I do this?](#i-want-to-deploy-a-virtual-machine-vm-on-threefold-how-can-i-do-this)
-    - [How can I use Caprover on ThreeFold Grid?](#how-can-i-use-caprover-on-threefold-grid)
     - [Is there a picture guide on how to deploy Wordpress on the ThreeFold Grid using Caprover?](#is-there-a-picture-guide-on-how-to-deploy-wordpress-on-the-threefold-grid-using-caprover)
     - [I've heard rumours that you can install Wordpress and Discourse on the TF Grid in less than 15 minutes, is it true?](#ive-heard-rumours-that-you-can-install-wordpress-and-discourse-on-the-tf-grid-in-less-than-15-minutes-is-it-true)
     - [Can I deploy a Presearch Node?](#can-i-deploy-a-presearch-node)
     - [What is the minimum amount of TFT to deploy a Presearch node? How can I get a TFT discount when I deploy a Presearch node?](#what-is-the-minimum-amount-of-tft-to-deploy-a-presearch-node-how-can-i-get-a-tft-discount-when-i-deploy-a-presearch-node)
-    - [How can I deploy Kubernetes on the ThreeFold Grid?](#how-can-i-deploy-kubernetes-on-the-threefold-grid)
-    - [How can I deploy Peertube on the ThreeFold Grid?](#how-can-i-deploy-peertube-on-the-threefold-grid)
-    - [How can I deploy ownCloud on the ThreeFold Grid?](#how-can-i-deploy-owncloud-on-the-threefold-grid)
-    - [How can I rent or reserve a 3Node dedicated node server on the ThreeFold Grid? What are the main steps when deploying workloads on a dedicated node?](#how-can-i-rent-or-reserve-a-3node-dedicated-node-server-on-the-threefold-grid-what-are-the-main-steps-when-deploying-workloads-on-a-dedicated-node)
-    - [How can I import my Polkadot account on the mainnet and the testnet?](#how-can-i-import-my-polkadot-account-on-the-mainnet-and-the-testnet)
     - [Can I use the same seed phrase for my mainnet and testnest accounts? How can I transfer my TFT from mainnet to testnet or vice versa?](#can-i-use-the-same-seed-phrase-for-my-mainnet-and-testnest-accounts-how-can-i-transfer-my-tft-from-mainnet-to-testnet-or-vice-versa)
-    - [Can I recover my seed phrase?](#can-i-recover-my-seed-phrase)
     - [Do I need a full or micro virtual machine (VM) when I run QSFS, quantum safe file system, on the ThreeFold Grid?](#do-i-need-a-full-or-micro-virtual-machine-vm-when-i-run-qsfs-quantum-safe-file-system-on-the-threefold-grid)
     - [To deploy a load on the ThreeFold Grid, I need to generate SSH keys. How can I generate SSH keys on MAC, Linux or Windows?](#to-deploy-a-load-on-the-threefold-grid-i-need-to-generate-ssh-keys-how-can-i-generate-ssh-keys-on-mac-linux-or-windows)
     - [What is the method to SSH into a 3Node on IPv4, IPv6 and the Planetary Network?](#what-is-the-method-to-ssh-into-a-3node-on-ipv4-ipv6-and-the-planetary-network)
@@ -163,11 +153,8 @@
     - [Is there a command line tool for Terraform when deploying on the ThreeFold Grid?](#is-there-a-command-line-tool-for-terraform-when-deploying-on-the-threefold-grid)
   - [Users Troubleshooting and Error Messages](#users-troubleshooting-and-error-messages)
     - [When deploying a virtual machine (VM) on the ThreeFold Grid, I get the following message after trying a full system update and upgrade: GRUB failed to install to the following devices... Is there a fix to this issue?](#when-deploying-a-virtual-machine-vm-on-the-threefold-grid-i-get-the-following-message-after-trying-a-full-system-update-and-upgrade-grub-failed-to-install-to-the-following-devices-is-there-a-fix-to-this-issue)
-    - [I tried exporting my account to another computer but my password doesn't activate my profile manager on the ThreeFold Playground. What should I do?](#i-tried-exporting-my-account-to-another-computer-but-my-password-doesnt-activate-my-profile-manager-on-the-threefold-playground-what-should-i-do)
-    - [While deploying on the TF Playground, I get the following error :"global workload with the same name exists: conflict". What can I do to fix this issue?](#while-deploying-on-the-tf-playground-i-get-the-following-error-global-workload-with-the-same-name-exists-conflict-what-can-i-do-to-fix-this-issue)
-    - [How can I set the relay on the TF Dashboard?](#how-can-i-set-the-relay-on-the-tf-dashboard)
-    - [When I paste the SSH public key in the Profile Manager window, the SSH public key isn't accepted and it either doesn't stay in the window, or it gets removed and the older SSH public key reappear. What can I do to fix this?](#when-i-paste-the-ssh-public-key-in-the-profile-manager-window-the-ssh-public-key-isnt-accepted-and-it-either-doesnt-stay-in-the-window-or-it-gets-removed-and-the-older-ssh-public-key-reappear-what-can-i-do-to-fix-this)
-    - [When I try to add my mnemonics in the ThreeFold Playground's profile manager, I get the error: "Unable to connect due to Maximum number of attempts exceeded". How can I fix this?](#when-i-try-to-add-my-mnemonics-in-the-threefold-playgrounds-profile-manager-i-get-the-error-unable-to-connect-due-to-maximum-number-of-attempts-exceeded-how-can-i-fix-this)
+    - [I tried exporting my account to another computer but my password doesn't activate my profile manager on the ThreeFold Dashboard. What should I do?](#i-tried-exporting-my-account-to-another-computer-but-my-password-doesnt-activate-my-profile-manager-on-the-threefold-dashboard-what-should-i-do)
+    - [While deploying on the TF Dashboard, I get the following error :"global workload with the same name exists: conflict". What can I do to fix this issue?](#while-deploying-on-the-tf-dashboard-i-get-the-following-error-global-workload-with-the-same-name-exists-conflict-what-can-i-do-to-fix-this-issue)
   - [ThreeFold Connect App](#threefold-connect-app)
     - [TF Connect App is now asking for a 4-digit password (PIN). I don't remember it as I usually use touch or face ID to unlock the app. What can I do?](#tf-connect-app-is-now-asking-for-a-4-digit-password-pin-i-dont-remember-it-as-i-usually-use-touch-or-face-id-to-unlock-the-app-what-can-i-do)
     - [Is there a way to have more than one wallet in TF Connect App?](#is-there-a-way-to-have-more-than-one-wallet-in-tf-connect-app)
@@ -1336,24 +1323,6 @@ You can use the [ThreeFold Grid Proxy](https://gridproxy.grid.tf/swagger/index.h
 In general, mainnet is more stable and it is better to use it for official workload deployments. Mainnet and testnet offer the same features, but testnet costs 50% less TFT to run workload. 
 
 
-
-### What are the different TF Manual links for GPU support?
-
-* [Dedicated Nodes and GPU](../dashboard/portal/dashboard_portal_dedicated_nodes.md#filter-and-reserve-a-gpu-node)
-* Dashboard and GPU
-  * [ThreeFold Explorer](../dashboard/explorer/explorer_gpu_support.md)
-  * [GraphQL and GPU](../dashboard/explorer/explorer_graphql_intro.md#filtering-nodes-with-gpu-devices) 
-* [Javascript Client and GPU](../javascript/grid3_javascript_gpu_support.md)
-* Go Client and GPU
-  * [GPU Support](../go/grid3_go_gpu_support.md)
-  * [VM with GPU](../go/grid3_go_vm_with_gpu.md)
-* [TFCMD and GPU](../tfcmd/tfcmd_vm.md#deploy-a-vm-with-gpu)
-* [Terraform and GPU](../terraform/terraform_gpu_support.md)
-* [Full VM and GPU](../playground/fullVm.md)
-* [Zero-OS API and GPU](../internals/zos/manual/api.md#gpus)
-
-
-
 ## Deployments on the ThreeFold Grid
 
 ### Can I use the TFChain secret on the ThreeFold Connect App for the Profile settings on the ThreeFold Playground?
@@ -1657,26 +1626,6 @@ The prerequisites are simple:
 6. Go to the [ThreeFold Play Grid](http://playground.grid.tf) and start your deployment. (See next question to set a profile manager.)
 
 
-
-### How can I connect my wallet to the ThreeFold Playground Wallet Connector?
-
-You can connect your wallet on Testnet, Devnet and Mainnet. On the [ThreeFold Play Grid](https://playground.grid.tf/#/). For the detailed steps, read [this documentation](../playground/wallet_connector.md). To generate SSH keys, read the next question.
-
-
-
-### I want to deploy a virtual machine (VM) on ThreeFold. How can I do this?
-
-Read this [documentation](../playground/vm_intro.md) and you'll soon be exploring the virtual machine world!
-
-
-
-
-### How can I use Caprover on ThreeFold Grid?
-
-Check [this video](../playground/caprover.md).
-
-
-
 ### Is there a picture guide on how to deploy Wordpress on the ThreeFold Grid using Caprover?
 
 We're glad you ask, Kristof wrote something you might really dig. Read it [here](https://forum.threefold.io/t/easily-deploy-wordpress-the-most-popular-website-builder-on-tf-grid/2136)!
@@ -1711,46 +1660,6 @@ Note that a Presearch node requires about 3 days to stabilize.
 
 
 
-### How can I deploy Kubernetes on the ThreeFold Grid?
-
-Read [this documentation](../playground/k8s.md) to find out.
-
-
-
-
-### How can I deploy Peertube on the ThreeFold Grid?
-
-You can learn more about this [here](../playground/peertube.md).
-
-
-
-### How can I deploy ownCloud on the ThreeFold Grid?
-
-Read the [documentation here](../playground/owncloud.md) to learn more.
-
-
-
-### How can I rent or reserve a 3Node dedicated node server on the ThreeFold Grid? What are the main steps when deploying workloads on a dedicated node?
-
-Read [this documentation](../dashboard/portal/dashboard_portal_dedicated_nodes.md) to learn how to reserve a dedicated node server.
-
-
-
-### How can I import my Polkadot account on the mainnet and the testnet?
-
-To import your Polkadot account on mainnet, use those links:
-
-* https://dashboard.grid.tf/
-* https://playground.grid.tf/
-
-To import your Polkadot account on testnet, use those links:
-
-* https://dashboard.test.grid.tf/
-* https://playground.test.grid.tf/
-
-Exporting and importing your account through the Polkadot extension will allow you to transfer any TFT associated with the account, whether it is on testnet or mainnet. 
-
-
 
 ### Can I use the same seed phrase for my mainnet and testnest accounts? How can I transfer my TFT from mainnet to testnet or vice versa?
 
@@ -1765,18 +1674,6 @@ To transfer your TFT from mainnet to testnet or vice versa, you need to send you
 To go from testnet to mainnet, simply use the URLs in the opposite order.
 
 > Note that the fees are of 1 TFT per transfer.
-
-
-
-### Can I recover my seed phrase?
-
-This answer covers the ThreeFold Playground, the Polkadot.js extension and the ThreeFold Connect App.
-
-You can recover your seed phrase from the ThreeFold Playground if you have your profile manager password. On the ThreeFold Playground, click on the top right button to open up your profile manager settings. Write your password, then click "Load Profiles". On the following screen, your seed phrase is under **Mnemonics**. Locate on the right of this line an "eye" button and click on it to make your seed phrase visible.
-
-You can't recover the seed phrase from the Polkadot.js extension. On the Polkadot.js extension, you can only export and import private keys. In short, this allows you to move tokens but not to manage deployments through the ThreeFold Playground.
-
-To recover your seed phrase on the ThreeFold Connect App, go to the Wallet section of the app and click on the encircled "i" button at the bottom right of the screen. Go to the Secrets subsection and click to see your Steller or TFChain secret.
 
 
 
@@ -2050,54 +1947,15 @@ This should fix the issue.
 
 
 
-### I tried exporting my account to another computer but my password doesn't activate my profile manager on the ThreeFold Playground. What should I do?
+### I tried exporting my account to another computer but my password doesn't activate my profile manager on the ThreeFold Dashboard. What should I do?
 
-Your Playground profile is stored in the local browser storage, so it won't show up on a different computer with the same password. Instead, simply recreate the profile, using your seed phrase, and it will populate all information about your deployments on the different computer.
-
-
-
-### While deploying on the TF Playground, I get the following error :"global workload with the same name exists: conflict". What can I do to fix this issue?
-
-This error happens if you deployed a workload on the TF Playground with the same deployment name of a previous deployment. In general, you can simply refresh the TF Playground browser page and/or change the deployment name for a new one. This should fix the issue.
+Your Dashboard profile is stored in the local browser storage, so it won't show up on a different computer with the same password. Instead, simply recreate the profile, using your seed phrase, and it will populate all information about your deployments on the different computer.
 
 
 
-### How can I set the relay on the TF Dashboard? 
+### While deploying on the TF Dashboard, I get the following error :"global workload with the same name exists: conflict". What can I do to fix this issue?
 
-To set the relay on the TF Dashboard, follow those steps:
-
-* Go to the [TF Dashboard](https://dashboard.grid.tf).
-* Select the account which needs to have the relay set.
-* In the menu, select `Portal` and then `Twin`.
-* Under `Twin Details`, if `Relay` is set to `null`, click on `Edit`.
-* Select the relay `relay.grid.tf` then click `Submit`.
-* Enter your password and sign the transaction.
-
-Note that if you are using the TF Playground and the twin doesn't have the relay set, the TF Playground will set the relay automatically.
-
-
-
-### When I paste the SSH public key in the Profile Manager window, the SSH public key isn't accepted and it either doesn't stay in the window, or it gets removed and the older SSH public key reappear. What can I do to fix this?
-
-This issue is usually happening when the SSH public key isn't in the proper format.
-
-The less technical fix is to take your SSH public key and paste it in a browser's URL search bar, then recopy and paste it in the Profile Manager. This should give the proper format to the SSH public key.
-
-Also, you can simply query the SSH public key in your terminal/command prompt with the proper format with a command like this:
-
-```
-cat ~/.ssh/id_rsa.pub
-```
-
-You can also refer to [this question](#how-can-i-copy-the-clipboard-content-of-a-terminal-output-using-the-command-cat-how-can-i-copy-the-public-key-directly-with-the-terminal) for a direct way to obtain your SSH public key in your clipboard.
-
-
-
-
-### When I try to add my mnemonics in the ThreeFold Playground's profile manager, I get the error: "Unable to connect due to Maximum number of attempts exceeded". How can I fix this?
-
-A quick fix to this is to simply add a space at the end of the mnemonics and then to delete the mnemonics. Then you should be able to rewrite the mnemonics.
-
+This error happens if you deployed a workload on the TF Dashboard with the same deployment name of a previous deployment. In general, you can simply refresh the TF Dashboard browser page and/or change the deployment name for a new one. This should fix the issue.
 
 
 
@@ -2137,8 +1995,6 @@ There are many ways to use Docker on the ThreeFold Grid.
 You can simply [run Docker in a virtual machine](https://docs.docker.com/desktop/install/ubuntu/) (Full VM and Micro VM) and then follow any instructions made for [Docker](https://docs.docker.com/). 
 
 Since the ThreeFold Hub has a [Docker to flist converter](https://hub.grid.tf/docker-convert), you can also [convert the Docker image to an flist](../flist/flist_hub/convert_docker_image.md) and run it directly as a micro VM.
-
-Note that you can also run Docker in [Kubernetes](../playground/k8s.md).
 
 
 ### Can I convert an existing docker into an flist?
