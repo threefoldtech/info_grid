@@ -63,7 +63,7 @@ The main steps for the whole process are the following:
     cat ~/.ssh/id_rsa.pub
     ```
   * Select and copy the public key when needed
-* To deploy, go to the [Threefold Playground](https://play.grid.tf/)
+* To deploy, go to the [Threefold Dashboard](https://dashboard.grid.tf/)
   * In the profile manager settings
     * Paste the seed phrase
     * Paste the SSH public key
@@ -112,7 +112,7 @@ The main steps for the whole process are the following:
     cat ~/.ssh/id_rsa.pub
     ```
   * Select and copy the public key when needed
-* To deploy, go to the [Threefold Playground](https://play.grid.tf/)
+* To deploy, go to the [Threefold Dashboard](https://dashboard.grid.tf/)
   * In the profile manager settings
     * Paste the seed phrase
     * Paste the SSH public key
@@ -156,7 +156,7 @@ The main steps for the whole process are the following:
       cat ~/.ssh/id_rsa.pub
       ```
     * Select and copy the public key when needed
-* To deploy, go to the [Threefold Playground](https://play.grid.tf/)
+* To deploy, go to the [Threefold Dashboard](https://dashboard.grid.tf/)
   * In the profile manager settings
     * Paste the seed phrase
     * Paste the SSH public key
@@ -204,7 +204,7 @@ The main steps for the whole process are the following:
       cat ~/.ssh/id_rsa.pub
       ```
     * Select and copy the public key when needed
-* To deploy, go to the [Threefold Playground](https://play.grid.tf/)
+* To deploy, go to the [Threefold Dashboard](https://dashboard.grid.tf/)
   * In the profile manager settings
     * Paste the seed phrase
     * Paste the SSH public key
@@ -263,7 +263,7 @@ The main steps for the whole process are the following:
     cat ~/.ssh/id_rsa.pub
     ```
   * Select and copy the public key when needed
-* To deploy, go to the [Threefold Playground](https://play.grid.tf/)
+* To deploy, go to the [Threefold Dashboard](https://dashboard.grid.tf/)
   * In the profile manager settings
     * Paste the seed phrase
     * Paste the SSH public key
@@ -326,7 +326,7 @@ The main steps for the whole process are the following:
     cat ~/.ssh/id_rsa.pub
     ```
   * Select and copy the public key when needed
-* To deploy, go to the [Threefold Playground](https://play.grid.tf/)
+* To deploy, go to the [Threefold Dashboard](https://dashboard.grid.tf/)
   * In the profile manager settings
     * Paste the seed phrase
     * Paste the SSH public key

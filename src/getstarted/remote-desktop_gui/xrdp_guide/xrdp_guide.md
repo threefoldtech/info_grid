@@ -26,7 +26,7 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
 
 ## Server Side: Deploy the Full VM, install a desktop and XRDP
 
-* Go to the [Threefold Playground](https://play.grid.tf/#/)
+* Go to the [Threefold Dashboard](https://dashboard.grid.tf/#/)
 * Deploy a full VM (Ubuntu 20.04)
   * With an IPv4 Address
 * After deployment, copy the IPv4 address

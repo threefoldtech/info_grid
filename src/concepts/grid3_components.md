@@ -30,7 +30,7 @@
   - [Node-Pilot](#node-pilot)
   - [Oauth-Proxy](#oauth-proxy)
   - [TF Planetary Network Tool](#tf-planetary-network-tool)
-  - [TF Playground and Weblets](#tf-playground-and-weblets)
+  - [TF Dashboard and Weblets](#tf-Dashboard-and-weblets)
   - [QSFS](#qsfs)
   - [Reliable Message Bus Relay (RMB-RS)](#reliable-message-bus-relay-rmb-rs)
   - [RMB-SDK-Go](#rmb-sdk-go)
@@ -215,8 +215,8 @@ A software application or platform that provides users with the necessary tools 
 
 > [Component Repository on Github](https://github.com/threefoldtech/planetary_network)
 
-### TF Playground and Weblets
-TF Playground and TF Weblets are two interconnected components of the ThreeFold ecosystem. TF Playground is a user-friendly web-based interface that serves as a sandbox environment for developers, allowing them to experiment, test, and deploy their applications on the ThreeFold Grid. It provides an intuitive interface where users can write, compile, and execute code, explore various programming languages and frameworks, and interact with the ThreeFold infrastructure. 
+### TF Dashboard and Weblets
+TF Dashboard and TF Weblets are two interconnected components of the ThreeFold ecosystem. TF Dashboard is a user-friendly web-based interface that serves as a sandbox environment for developers, allowing them to experiment, test, and deploy their applications on the ThreeFold Grid. It provides an intuitive interface where users can write, compile, and execute code, explore various programming languages and frameworks, and interact with the ThreeFold infrastructure. 
 
 TF Weblets, on the other hand, are modular, lightweight applications that run on the ThreeFold Grid. They are designed to be decentralized, secure, and easily deployable, enabling users to create and deploy their own web-based services and applications on the ThreeFold network.
 
