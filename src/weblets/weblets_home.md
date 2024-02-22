@@ -36,12 +36,12 @@ There are several weblets you can use like:
   - [Profile Manager](./weblets_profile_manager.md)
   - [Make sure your profile is activated](./weblets_profile_manager.md)
 
-## Playground
-Playground is a Vue app that has the weblets embedded. so you can try it out on different TF Chain networks.
-- [https://play.dev.grid.tf](https://play.dev.grid.tf) for Devnet.
-- [https://play.qa.grid.tf](https://play.qa.grid.tf) for QAnet.
-- [https://play.test.grid.tf](https://play.test.grid.tf) for Testnet.
-- [https://play.grid.tf](https://play.grid.tf) for Mainnet.
+## Dashboard
+Dashboard is a Vue app that has the weblets embedded. so you can try it out on different TF Chain networks.
+- [https://play.dev.grid.tf](https://dashboard.dev.grid.tf) for Devnet.
+- [https://dashboard.qa.grid.tf](https://dashboard.qa.grid.tf) for QAnet.
+- [https://dashboard.test.grid.tf](https://dashboard.test.grid.tf) for Testnet.
+- [https://dashboard.grid.tf](https://dashboard.grid.tf) for Mainnet.
 
 ## Limitations
 

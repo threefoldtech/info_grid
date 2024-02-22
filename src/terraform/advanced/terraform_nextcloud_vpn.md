@@ -294,9 +294,9 @@ We need to install a few things on the Nextcloud VM before going further.
 
 # Prepare the VMs for the Rsync Daily Backup
 
-* Test the VPN (Optional)
+* Test the VPN (Optional) with [ping](../../computer_it_basics/cli_scripts_basics.md#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping)
   * ```
-    ping -c 4 <WireGuard_VM_IP_Address>
+    ping <WireGuard_VM_IP_Address>
     ```
 * Generate an SSH key pair on the Backup VM
   * ```

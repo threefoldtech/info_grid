@@ -16,6 +16,6 @@ Feel free to explore the different possibilities!
   - [Deploy a VM with GPU](../go/grid3_go_vm_with_gpu.md)
 - [TFCMD and GPU](../tfcmd/tfcmd_vm.md#deploy-a-vm-with-gpu)
 - [Terraform and GPU](../terraform/terraform_gpu_support.md)
-- [Full VM and GPU](../playground/fullVm.md)
+- [Full VM and GPU](../dashboard/solutions/fullVm.md)
 - [Zero-OS API and GPU](../internals/zos/manual/api.md#gpus)
 - [GPU Farming](../farmers/3node_building/gpu_farming.md)

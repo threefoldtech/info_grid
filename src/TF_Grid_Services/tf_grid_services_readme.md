@@ -24,8 +24,8 @@ On this article we have aggregated a list of all of the services running on Thre
 - [GraphQL](https://graphql.dev.grid.tf/graphql)
 - [Activation Service](https://activation.dev.grid.tf/activation/)
 - [TFGrid Proxy](https://gridproxy.dev.grid.tf)
-- [Grid Playground](https://play.dev.grid.tf)
-- [Dashboard](https://dashboard.dev.grid.tf)
+- [Grid Dashboard](https://dashboard.dev.grid.tf)
+
 
 ## QAnet
 
@@ -33,8 +33,7 @@ On this article we have aggregated a list of all of the services running on Thre
 - [GraphQL](https://graphql.qa.grid.tf/graphql)
 - [Activation Service](https://activation.qa.grid.tf/activation/)
 - [TFGrid Proxy](https://gridproxy.qa.grid.tf)
-- [Grid Playground](https://play.qa.grid.tf)
-- [Dashboard](https://dashboard.qa.grid.tf)
+- [Grid Dashboard](https://dashboard.qa.grid.tf)
 
 ## Testnet
 
@@ -42,8 +41,7 @@ On this article we have aggregated a list of all of the services running on Thre
 - [GraphQL](https://graphql.test.grid.tf/graphql)
 - [Activation Service](https://activation.test.grid.tf/activation/)
 - [TFGrid Proxy](https://gridproxy.test.grid.tf)
-- [Grid Playground](https://play.test.grid.tf)
-- [Dashboard](https://dashboard.test.grid.tf)
+- [Grid Dashboard](https://dashboard.test.grid.tf)
 
 ## Mainnet
 
@@ -53,8 +51,7 @@ On this article we have aggregated a list of all of the services running on Thre
 - [TFChain-Stellar Bridge](https://bridge.bsc.threefold.io/)
 - [TFChain-Ethereum Bridge](https://bridge.eth.threefold.io/)
 - [TFGrid Proxy](https://gridproxy.grid.tf)
-- [Grid Playground](https://play.grid.tf)
-- [Dashboard](https://dashboard.grid.tf)
+- [Grid Dashboard](https://dashboard.grid.tf)
 
 ### Supported Planetary Network Nodes
 

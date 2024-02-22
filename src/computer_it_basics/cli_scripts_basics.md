@@ -6,6 +6,7 @@
 - [Introduction](#introduction)
 - [Basic Commands](#basic-commands)
   - [Update and upgrade packages](#update-and-upgrade-packages)
+  - [Test the network connectivity of a domain or an IP address with ping](#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping)
   - [Install Go](#install-go)
   - [Install Brew](#install-brew)
   - [Brew basic commands](#brew-basic-commands)
@@ -92,6 +93,34 @@ sudo apt upgrade
 ```
 
 
+
+### Test the network connectivity of a domain or an IP address with ping
+
+To test the network connectivity of a domain or an IP address, you can use `ping` on Linux, MAC and Windows:
+
+* Template
+  ```
+  ping <IP-Address_Or_Domain>
+  ```
+* Example
+  ```
+  ping threefold.io
+  ```
+
+On Windows, by default, the command will send 4 packets. On MAC and Linux, it will keep on sending packets, so you will need to press `Ctrl-C` to stop the command from running.
+
+You can also set a number of counts with `-c` on Linux and MAC and `-n` on Windows.
+
+* Send a given number of packets on Linux and MAC (e.g 5 packets)
+  ```
+  ping -c 5 threefold.io
+  ```
+* Send a given number of packets on Windows (e.g 5 packets)
+  ```
+  ping -n 5 threefold.io
+  ```
+
+***
 
 ### Install Go
 
@@ -849,9 +878,10 @@ cat /sys/class/net/<ethernet_device>/carrier
     * ```
       ip addr add <Private_IP_Address_2>/24 dev <ethernet_interface_2>
       ```
-* Ping the address to confirm connection
+
+* [Ping](#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the address to confirm connection
   * ```
-    ping -c 5 <Private_IP_Address>
+    ping <Private_IP_Address>
     ```
 
 To set and view the address for either DHCP or static, go to **Networks** then **Details**. 

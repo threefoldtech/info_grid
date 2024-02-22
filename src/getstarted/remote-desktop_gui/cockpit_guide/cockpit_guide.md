@@ -29,7 +29,7 @@ Note that the two sections [Change the Network System Daemon](#change-the-networ
 
 To start, you must [deploy and SSH into a full VM](../../ssh_guide/ssh_guide.md).
 
-* Go to the [Threefold Playground](https://play.grid.tf/#/)
+* Go to the [Threefold dashboard](https://dashboard.grid.tf/#/)
 * Deploy a full VM (e.g. Ubuntu 22.04)
   * With an IPv4 Address
 * After deployment, copy the IPv4 address

@@ -322,9 +322,9 @@ To SSH with WireGuard, we first need to set the proper WireGuard configurations.
   *  ```
      wg-quick up wg
      ```
-* As a test, you can ping the WireGuard IP of a node to make sure the connection is correct
+* As a test, you can [ping](../../computer_it_basics/cli_scripts_basics.md#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the WireGuard IP of a node to make sure the connection is correct
   *  ```
-     ping -c 2 wg_ip
+     ping wg_ip
      ```
 
 We are now ready to SSH into the client and server nodes with WireGuard.

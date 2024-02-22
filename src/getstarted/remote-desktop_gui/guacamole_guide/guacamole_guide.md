@@ -29,7 +29,7 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
 
 ## Deploy a Full VM and Create a Root-Access User
 
-* Go to the [Threefold Playground](https://play.grid.tf/#/)
+* Go to the [Threefold Dashboard](https://dashboard.grid.tf/#/)
 * Deploy a full VM (Ubuntu 20.04) with at least the minimum specs for a desktop environment
   * IPv4 Address
   * Minimum vcores: 2vcores

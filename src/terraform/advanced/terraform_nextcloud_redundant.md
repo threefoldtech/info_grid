@@ -367,12 +367,12 @@ First, we set Wireguard with the Terraform output.
 If it doesn't work and you already did a wireguard connection with the same file from Terraform (from a previous deployment perhaps), do `wg-quick down wg`, then `wg-quick up wg`.
 This should set everything properly.
 
-* As a test, you can ping the virtual IP addresses of both VMs to make sure the Wireguard connection is correct:
+* As a test, you can [ping](../../computer_it_basics/cli_scripts_basics.md#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the virtual IP addresses of both VMs to make sure the Wireguard connection is correct:
   *  ```
-     ping -c 2 10.1.3.2
+     ping 10.1.3.2
      ```
   *  ```
-     ping -c 2 10.1.4.2
+     ping 10.1.4.2
      ```
 
 If you correctly receive the packets from the two VMs, you know that the VPN is properly set.
