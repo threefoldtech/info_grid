@@ -314,6 +314,7 @@
       - [Pricing Overview](wiki/cloudunits/pricing/pricing.md)
       - [Staking Discounts](wiki/cloudunits/pricing/staking_discount_levels.md)
       - [Cloud Pricing Compare](wiki/cloudunits/pricing/cloud_pricing_compare.md)
+      - [Grid Billing](grid_billing/grid_billing.md)
     - [Resource Units](wiki/cloudunits/resource_units_calc_cloudunits.md)
     - [Resource Units Advanced](wiki/cloudunits/resourceunits_advanced.md)
   - [Grid Concepts](concepts/concepts_readme.md)
