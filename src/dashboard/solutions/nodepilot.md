@@ -28,9 +28,9 @@ __Process__
 
 After that is done you can see a list of all of your deployed instances
 
-![ ](./img/nodeP_2.jpg)
+![ ](./img/nodeP_2.png)
 
-Click on ***Visit*** to go to the registeration page of your Node Pilot instance!
+Click on ***Visit*** to go to the registration page of your Node Pilot instance!
 
 ![ ](./img/nodePilot_3.png)
 

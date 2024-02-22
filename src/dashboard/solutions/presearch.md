@@ -57,7 +57,7 @@ We got you! All you need to do is:
 
 After that is done you can see a list of all of your deployed instances
 
-![ ](./img/presearch4.jpg)
+![ ](./img/presearch4.png )
 
 Now head to your [dashboard](https://nodes.presearch.com/dashboard) again and scroll down to **Current Nodes**, you'll see your newly created node up and connected!
 
