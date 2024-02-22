@@ -33,7 +33,7 @@ Here is an overview of the tool.
 
 ## Prerequisites
 
-You would need to install and create an account on the [TF Connect App](../getstarted/TF_Connect/TF_Connect.md) before being able to register and use the Circle Tool.
+You would need to install and create an account on the [TF Connect App](../threefold_token/storing_tft/tf_connect_app.md) before being able to register and use the Circle Tool.
 
 ## How to Use the Circle Tool
 

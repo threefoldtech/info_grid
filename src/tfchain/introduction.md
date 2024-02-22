@@ -45,8 +45,10 @@ It is the backbone of [ZOS](https://github.com/threefoldtech/zos) and other comp
 A twin is a unique identifier linked to a specific account on a given TFChain network.
 Actually there are 2 ways to create a twin:
 
-- via Dashboard portal: see related [documentation](../getstarted/TF_Dashboard/TF_Dashboard.html#create-polkadot-extension-account).
-- via TFConnect app: a twin is automatically generated while creating a farm (in this case the twin will be created on mainnet)
+- With the [Dashboard](../dashboard/wallet_connector.md)
+  - a twin is automatically generated while creating a TFChain account
+- With the TFConnect app
+  - a twin is automatically generated while creating a farm (in this case the twin will be created on mainnet)
 
 ## Get your twin ID
 

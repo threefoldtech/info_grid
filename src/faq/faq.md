@@ -543,7 +543,7 @@ The Digital Twin will be a more advanced version of the 3bot.
 
 There are 2 ways to create a twin:
 
-You can create a twin via the ThreeFold Dashboard portal. See those related documentations for more information: [Polkadot Extension account](../getstarted/TF_Dashboard/TF_Dashboard.md#create-polkadot-extension-account) and [Create a Farm](../farmers/3node_building/1_create_farm.md).
+You can create a twin via the [ThreeFold Dashboard](../dashboard/wallet_connector.md).
 
 You can also create a twin via the ThreeFold Connect app. Indeed, a twin is automatically generated while creating a farm. Note that, in this case, the twin will be created on mainnet.
 

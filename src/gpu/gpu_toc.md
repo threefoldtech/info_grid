@@ -7,7 +7,7 @@ Feel free to explore the different possibilities!
 <h2>Table of Contents</h2>
 
 - [GPU Support](./gpu.md)
-- [Node Finder and GPU](../dashboard/deploy/node_finder#gpu-support.md)
+- [Node Finder and GPU](../dashboard/deploy/node_finder.md#gpu-support)
 - [Javascript Client and GPU](../javascript/grid3_javascript_gpu_support.md)
 - [GPU and Go](../go/grid3_go_gpu.md)
   - [GPU Support](../go/grid3_go_gpu_support.md)
