@@ -23,7 +23,9 @@ Currently, we're supporting four different networks:
 - Test net, for testing purposes
   - [https://dashboard.test.grid.tf](https://dashboard.test.grid.tf)
 - Main net, for production-ready purposes
-  - [https://dashboard.grid.tf](https://dashboard.grid.tf)
+  - [https://next.dashboard.grid.tf](https://next.dashboard.grid.tf)
+
+> Note: Only dev and main nets currently offer the new Dashboard UI. Updates coming soon for all networks.
 
 ![ ](./img/profile_manager1.png)
 
@@ -33,7 +35,7 @@ Start entering the following information required to create your new profile.
 
 ![ ](./img/profile_manager2.png)
 
-- `Mnemonics` are the secret words of your Polkadot account. [Generate yours here](../getstarted/TF_Dashboard/TF_Dashboard.html#create-polkadot-extension-account) or use the **Create Account** button.
+- `Mnemonics` are the secret words of your Polkadot account. Click on the **Create Account** button to generate yours.
 - `Password` is used to access your account
 - `Confirm Password`
 

@@ -32,9 +32,11 @@ The backend for the weblets is introduced with the [Javascript Client](../javasc
 You can access the ThreeFold Dashboard on different TF Chain networks.
 
 - [https://dashboard.dev.grid.tf](https://dashboard.dev.grid.tf) for Dev net.
-- [https://dashboard.qa.grid.tf](https://dashboard.qa.grid.tf) for QA net.
+- [https://dashboard.qa.grid.tf](https://dashboard.qa.grid.tf) for QA net.  <!-- note: qa does not have next version -->
 - [https://dashboard.test.grid.tf](https://dashboard.test.grid.tf) for Test net. <!-- note: test does not have next version -->
 - [https://next.dashboard.grid.tf](https://next.dashboard.grid.tf) for Main net.
+
+> Note: Only dev and main nets currently offer the new Dashboard UI. Updates coming soon for all networks.
 
 ## Limitations
 
