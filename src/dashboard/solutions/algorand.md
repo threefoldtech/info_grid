@@ -4,7 +4,7 @@
 
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
-- [Algorand Structure](#algorand-structure)
+  - [Algorand Structure](#algorand-structure)
 - [Run Default Node](#run-default-node)
 - [Run Relay Node](#run-relay-node)
 - [Run Participant Node](#run-participant-node)
@@ -19,17 +19,11 @@
 
 ## Prerequisites
 
-<<<<<<< HEAD:src/playground/algorand.md
-- Make sure you have a [wallet](./wallet_connector.md)
-  
-## Algorand Structure
-=======
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Application**
+- From the sidebar click on **Applications**
 - Click on **Algorand**
 
 ### Algorand Structure
->>>>>>> development:src/dashboard/solutions/algorand.md
 
 - Algorand has two main [types](https://developer.algorand.org/docs/run-a-node/setup/types/#:~:text=The%20Algorand%20network%20is%20comprised,%2C%20and%20non%2Drelay%20nodes.) of nodes (Relay or Participant) you can run also a 4 networks you can run your node against. Combining the types you can get:
   - Defualt:

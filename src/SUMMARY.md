@@ -138,7 +138,6 @@
     - [Getting Started](getstarted/tfgrid3_getstarted.md)
       - [ThreeFold Connect](getstarted/TF_Connect/TF_Connect.md)
       - [ThreeFold Dashboard](getstarted/TF_Dashboard/TF_Dashboard.md)
-      - [ThreeFold Nodes Explorer](dashboard/explorer/explorer_find_capacity.md)
       - [SSH Remote Connection](getstarted/ssh_guide/ssh_guide.md)
         - [SSH with OpenSSH](getstarted/ssh_guide/ssh_openssh.md)
         - [SSH with PuTTY](getstarted/ssh_guide/ssh_putty.md)

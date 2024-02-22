@@ -3,7 +3,6 @@
 <h2>Table of Contents </h2>
 
 - [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
 - [Deployment](#deployment)
 
 ***
@@ -12,16 +11,9 @@
 
 [Casper Network](https://casperlabs.io/) is a blockchain protocol built from the ground up to remain true to core Web3 principles and adapt to the needs of our evolving world.
 
-<<<<<<< HEAD:src/playground/casper.md
-## Prerequisites
-
-- Make sure you have a [wallet](./wallet_connector.md)
-- Click on the **Casperlabs** tab
-=======
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Casperlabs**
->>>>>>> development:src/dashboard/solutions/casper.md
 
 ## Deployment
 

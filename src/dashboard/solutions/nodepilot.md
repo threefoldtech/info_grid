@@ -12,16 +12,11 @@
 
 This is a simple instance of upstream [Node Pilot](https://nodepilot.tech).
 
-<<<<<<< HEAD:src/playground/nodepilot.md
 ## Prerequisites
 
-- Make sure you have a [wallet](./wallet_connector.md)
-- Click on the **Node Pilot** tab
-=======
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Node Pilot**
->>>>>>> development:src/dashboard/solutions/nodepilot.md
 
 ## Deployment
 

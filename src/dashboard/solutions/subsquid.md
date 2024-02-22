@@ -12,16 +12,11 @@
 
 [Subsquid](https://www.subsquid.io/) indexer is a piece of software that reads all the blocks from a Substrate based blockchain, decodes and stores them for processing in a later stage.
 
-<<<<<<< HEAD:src/playground/subsquid.md
 ## Prerequisites
 
-- Make sure you have a [wallet](./wallet_connector.md)
-- Click on the **Subsquid** tab
-=======
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Subsquid**
->>>>>>> development:src/dashboard/solutions/subsquid.md
 
 ## Deployment
 

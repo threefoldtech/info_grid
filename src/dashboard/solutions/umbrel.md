@@ -4,7 +4,6 @@
 
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
-- [Deployment](#deployment)
 
 ***
 
@@ -12,23 +11,14 @@
 
 [Umbrel](https://umbrel.com/) is an OS for running a personal server in your home. Self-host open source apps like Nextcloud, Bitcoin node, and more.
 
-<<<<<<< HEAD:src/playground/umbrel.md
 ## Prerequisites
 
-- Make sure you have a [wallet](./wallet_connector.md)
-- Click on the **Umbrel** tab
-  
-## Deployment
-
-![Config](img/umbrel1.png)
-=======
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Umbrel**
   
 **Process** :
 ![Config](./img/solutions_umbrel.png)
->>>>>>> development:src/dashboard/solutions/umbrel.md
 
 - Enter an instance name.
 - Enter a Username

@@ -16,7 +16,7 @@ Funkwhale is a community-driven project that lets you listen and share music and
 ## Prerequisites
 
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Funkwhale**
 
 ## Deployment

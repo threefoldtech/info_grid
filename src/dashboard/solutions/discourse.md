@@ -3,7 +3,6 @@
 <h2>Table of Contents </h2>
 
 - [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
 - [Deployment](#deployment)
 
 ***
@@ -12,16 +11,9 @@
 
 [Discourse](https://www.discourse.org/) is the 100% open source discussion platform built for the next decade of the Internet. Use it as a mailing list, discussion forum, long-form chat room, and more!
 
-<<<<<<< HEAD:src/playground/discourse.md
-## Prerequisites
-
-- Make sure you have a [wallet](./wallet_connector.md)
-- Click on the **Discourse** tab
-=======
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Discourse**
->>>>>>> development:src/dashboard/solutions/discourse.md
 
 ## Deployment
 

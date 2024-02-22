@@ -3,6 +3,7 @@
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
 - [Configs tab](#configs-tab)
 - [Master and Workers tabs](#master-and-workers-tabs)
 - [Kubeconfig](#kubeconfig)
@@ -16,8 +17,10 @@ Kubernetes is the standard container orchestration tool.
 
 On the TF grid, Kubernetes clusters can be deployed out of the box. We have implemented [K3S](https://k3s.io/), a full-blown Kubernetes offering that uses only half of the memory footprint. It is packaged as a single binary and made more lightweight to run workloads in resource-constrained locations (fits e.g. IoT, edge, ARM workloads).
 
+## Prerequisites
+
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Kubernetes**
 
 ## Configs tab

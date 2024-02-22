@@ -3,7 +3,7 @@
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
-- [Access the ThreeFold Dashboard](#access-the-threefold-Dashboard)
+- [Access the ThreeFold Dashboard](#access-the-threefold-dashboard)
 - [Deploy a NixOS MicroVM](#deploy-a-nixos-microvm)
 - [Questions and Feedback](#questions-and-feedback)
 
@@ -17,8 +17,6 @@ The NixOS MicroVM leverages these principles to create a highly customizable and
 In this guide, will learn how to make reproducible, declarative and reliable systems by deploying a NixOS MicroVM weblet in ThreeFold Dashboard.
 
 For more information on Nix, you can read the [Nix Reference Manual](https://nixos.org/manual/nix/stable/).
-
-
 
 ## Access the ThreeFold Dashboard
 

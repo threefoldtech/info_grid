@@ -22,16 +22,12 @@ We present the steps to deploy a full VM on the TFGrid.
 Deploy a new full virtual machine on the Threefold Grid
 
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Full Virtual Machine**
 
 **Process:**
 
-<<<<<<< HEAD:src/playground/fullVm.md
-![ ](../playground/img/new_vm1.png)
-=======
 ![ ](./img/solutions_fullvm.png)
->>>>>>> development:src/dashboard/solutions/fullVm.md
 
 - Fill in the instance name: it's used to reference the Full VM in the future.
 - Choose the image from the drop down (e.g Alpine, Ubuntu) or you can click on `Other` and manually specify the flist URL and the entrypoint.

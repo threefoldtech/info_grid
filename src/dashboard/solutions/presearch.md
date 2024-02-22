@@ -19,7 +19,7 @@
 ## Prerequisites
 
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Presearch**
 
 ## Deploy a Presearch Node
