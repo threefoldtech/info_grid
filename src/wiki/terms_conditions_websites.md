@@ -1,19 +1,4 @@
-***
-*Generated on*
-
-<p id="terms_conditions_websites_datetime"></p>
-
-<script>
-  // Get current date and time
-  var now = new Date();
-  var terms_conditions_websites_datetime = now.toLocaleString();
-
-  // Insert date and time into HTML
-  document.getElementById("terms_conditions_websites_datetime").innerHTML = terms_conditions_websites_datetime;
-</script>
-***
-
- **TERMS OF USE**
+**TERMS OF USE**
 
 {{#include ./terms_conditions_websites/part_0_agreement_terms.md}}
 {{#include ./terms_conditions_websites/part_1_ip_rights.md}}

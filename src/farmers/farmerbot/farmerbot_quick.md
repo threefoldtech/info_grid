@@ -3,23 +3,47 @@
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Farmerbot Costs on the TFGrid](#farmerbot-costs-on-the-tfgrid)
 - [Enable Wake-On-Lan](#enable-wake-on-lan)
 - [Deploy a Full VM](#deploy-a-full-vm)
-- [Farmerbot Costs on the TFGrid](#farmerbot-costs-on-the-tfgrid)
-- [Install Docker](#install-docker)
-- [Create the Configuration Files](#create-the-configuration-files)
-- [Run the Farmerbot](#run-the-farmerbot)
+- [Farmerbot Setup](#farmerbot-setup)
+  - [Download the Farmerbot Binaries](#download-the-farmerbot-binaries)
+  - [Create the Farmerbot Files](#create-the-farmerbot-files)
+  - [Run the Farmerbot](#run-the-farmerbot)
+  - [Set a systemd Service](#set-a-systemd-service)
+  - [Check the Farmerbot Logs](#check-the-farmerbot-logs)
+- [Farmerbot Files](#farmerbot-files)
+  - [Configuration File Template (config.yml)](#configuration-file-template-configyml)
+  - [Environment Variables File Template (.env)](#environment-variables-file-template-env)
+- [Running Multiple Farmerbots on the Same VM](#running-multiple-farmerbots-on-the-same-vm)
 - [Questions and Feedback](#questions-and-feedback)
 
 ***
 
 ## Introduction
 
-We present a quick way to deploy the Farmerbot by deploying a Full VM on the TFGrid and using the file creator to quickly generate the `.env` and `config.md` files.
+In this guide, we show how to deploy the [Farmerbot](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot) on a full VM running on the TFGrid. 
 
-Note that you need at least two 3Nodes on the same farm to make use of the Farmerbot.
+This guide can be done on bare metal or on a full VM running on the TFGrid. You need at least two 3Nodes on the same farm to make use of the Farmerbot.
 
+This version of the Farmerbot also works with ARM64. This means that if you have a Pi 3, 4, or Zero 2 with a 64 bit OS, you can download the appropriate release archive and it will work properly.
 
+Read the [Additional Information](farmerbot_information.md) section for further details concerning the Farmerbot. 
+
+## Prerequisites
+
+- The TFChain account associated with the farm should have at least 5 TFT (recommended is 50 TFT)
+
+## Farmerbot Costs on the TFGrid
+
+If you run the Farmerbot on a 3Node on the TFGrid, you will have to pay TFT to deploy on that 3Node. You can run a full VM at minimum specs for the Farmerbot, that is 1vcore, 15GB of SSD storage and 512MB of RAM. Note that you can use the Planetary Network. You do not need to deploy a 3Node with IPv4. The cost on main net for this kind of workload is around 0.175TFT/hour (as of the date 11-07-23).
+
+Next to that, you will have to pay the transaction fees every time the Farmerbot has to wake up or shut down a node. This means that you need some TFT on the account tied to the twin of your farm. 
+
+For the periodic wakeups, each node in the farm is shut down and powered on once a day, i.e. 30 times per month. Also, there is 10 random wakeups per month for each node. This means that each node is turned off and on 40 times per month in average. In that case, the average cost per month to power on nodes and shut them back down equals:
+
+> average transaction fees cost per month = 0.001 TFT (extrinsic fee) * amount of nodes * 40 * 2 (1 for powering down, one for powering up)
 
 ## Enable Wake-On-Lan
 
@@ -40,76 +64,212 @@ Here are some examples to guide you:
 
 > Hint: Check the Z-OS monitor screen and make sure that all the 3Nodes are within the same lan (e.g. all 3Nodes addresses are between 192.168.15.00 and 192.168.15.255).
 
-
+For more information on WOL, [read this section](farmerbot_information.md#how-to-prepare-your-farm-for-the-farmerbot-with-wol).
 
 ## Deploy a Full VM
 
-For this guide, we run the Farmerbot on a Full VM running on the TFGrid. Note that you do not need to run the Farmerbot on the TFGrid, but the whole process is very simple as presented here.
+For this guide, we run the Farmerbot on a Full VM running on the TFGrid. Note that while you do not need to run the Farmerbot on the TFGrid, the whole process is very simple as presented here.
 
-* Deploy a full VM on the TFGrid with minimum specs (512 MB of memory, 1 vcore, 15 GB of storage)
-  * Read [this guide](../../getstarted/ssh_guide/ssh_guide.md) for more information on deploying a Full VM with the TF Dashboard
+- Deploy a full VM on the TFGrid
+- Update and upgrade the VM
+    ```
+    apt update && apt upgrade
+    ```
+- Reboot and reconnect to the VM
+    ```
+    reboot
+    ```
 
+## Farmerbot Setup
 
+We present the different steps to run the Farmerbot using the binaries.
 
-## Farmerbot Costs on the TFGrid
+> For a script that can help automate the steps in this guide, [check this forum post](https://forum.threefold.io/t/new-farmerbot-install-script/4207).
 
-If you run the Farmerbot on a 3Node on the TFGrid, you will have to pay TFT to deploy on that 3Node. You can run a full VM at minimum specs for the Farmerbot, that is 1vcore, 15GB of SSD storage and 512MB of RAM. Note that you can use the Planetary Network. You do not need to deploy a 3Node with IPv4. The cost on main net for this kind of workload is around 0.175TFT/hour (as of the date 11-07-23).
+### Download the Farmerbot Binaries
 
-Next to that, you will have to pay the transaction fees every time the Farmerbot has to wake up or shut down a node. This means that you need some TFT on the account tied to the twin of your farm. 
+- Download and Extract the latest [ThreeFold tfgrid-sdk-go release](https://github.com/threefoldtech/tfgrid-sdk-go/releases) for your specific setup (here we use `x86_64`). On the line `wget ...`, make sure to replace `<latest_release>` with the latest Farmerbot release.
+    ```
+    mkdir tfgrid-sdk-go
+    cd tfgrid-sdk-go
+    wget https://github.com/threefoldtech/tfgrid-sdk-go/releases/download/<latest_release>/tfgrid-sdk-go_Linux_x86_64.tar.gz
+    tar -xvf tfgrid-sdk-go_Linux_x86_64.tar.gz
+    ```
+- Move the Farmerbot
+    ```
+    mv farmerbot /usr/local/bin
+    ```
 
-For the periodic wakeups, each node in the farm is shut down and powered on once a day, i.e. 30 times per month. Also, there is 10 random wakeups per month for each node. This means that each node is turned off and on 40 times per month in average. In that case, the average cost per month to power on nodes and shut them back down equals:
+### Create the Farmerbot Files
 
-> average transaction fees cost per month = 0.001 TFT (extrinsic fee) * amount of nodes * 40 * 2 (1 for powering down, one for powering up)
+- Create Farmerbot files directory
+    ```
+    cd ~
+    mkdir farmerbotfiles
+    ```
+- Create the Farmerbot `config.yml` file ([see template below](#configuration-file-template-configyml))
+    ```
+    nano ~/farmerbotfiles/config.yml
+    ```
+- Create the environment variables file and set the variables ([see template below](#environment-variables-file-template-env))
+    ```
+    nano ~/farmerbotfiles/.env
+    ```
 
+### Run the Farmerbot
 
-
-## Install Docker
-
-For this guide, we need to install Docker Engine. The quickest way is to use the Docker convenience script. This method installs the latest stable release of Docker on Linux:
+We run the Farmerbot with the following command:
 
 ```
-curl -fsSL https://get.docker.com | sh
+farmerbot run -e ~/farmerbotfiles/.env -c ~/farmerbotfiles/config.yml -d
 ```
 
-If you want, you can also set up and install Docker Engine from [Docker’s apt repository](https://docs.docker.com/engine/install/ubuntu/#install-using-the-repository). For this method, simply follow the steps given in the sections `Set up the repository` and `Install Docker Engine`.
+For farmers with **ed25519** keys, the flag `-k` should be used. Note that by default, the Farmerbot uses the **sr25519** keys.
 
+```
+farmerbot run -k ed25519 -e ~/farmerbotfiles/.env -c ~/farmerbotfiles/config.yml -d
+```
 
+For more information on the supported commands, the [Additional Information section](farmerbot_information.md#supported-commands-and-flags). You can also consult the [Farmerbot repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot).
 
+Once you've verified that the Farmerbot runs properly, you can stop the Farmerbot and go to the next section to set a Farmerbot service. This step will ensure the Farmerbot keeps running after exiting the VM.
 
-## Create the Configuration Files
+### Set a systemd Service
 
-* Create the parent folder
+It is highly recommended to set a Ubuntu systemd service to keep the Farmerbot running after exiting the VM.
+
+* Create the service file
   * ```
-    mkdir -p farmerbot_docker && cd $_
+    nano /etc/systemd/system/farmerbot.service
     ```
-    * Note: you can choose a different name for your parent folder
-* Pull the file creator image from the GitHub Container Registry
-  * ```
-    docker pull ghcr.io/threefoldtech/farmerbot_config:0.2.0
+* Set the Farmerbot systemd service
+    
     ```
-* Run the file creator image and answer the questions to generate the files
-  * ```
-    docker run --name fbot_config_container -v ./:/farmerbot -ti ghcr.io/threefoldtech/farmerbot_config:0.2.0
+    [Unit]
+    Description=ThreeFold Farmerbot
+    StartLimitIntervalSec=0
+
+    [Service]
+    Restart=always
+    RestartSec=5
+    StandardOutput=append:/root/farmerbotfiles/farmerbot.log
+    StandardError=append:/root/farmerbotfiles/farmerbot.log
+    ExecStart=/usr/local/bin/farmerbot run -e /root/farmerbotfiles/.env -c /root/farmerbotfiles/config.yml -d
+
+    [Install]
+    WantedBy=multi-user.target     
     ```
-    * The `config/config.md` and `.env` files are saved in the parent folder
-
-> Note: It is can be a good idea to set only one node with `yes` for `never_shutdown`. A node with low power consumption is obviously a wise choice.
-
-
-
-## Run the Farmerbot
-
-* Download the Farmerbot `.yaml` file with this command:
-  * ```
-    wget https://raw.githubusercontent.com/threefoldtech/farmerbot/development/docker-compose.yaml
+* Enable the Farmerbot service
     ```
-* Run the Farmerbot with this command
-  * ```
-    docker compose up -d
+    systemctl daemon-reload
+    systemctl enable farmerbot
+    systemctl start farmerbot
+    ```
+* Verify that the Farmerbot service is properly running
+    ```
+    systemctl status farmerbot
     ```
 
+### Check the Farmerbot Logs
 
+Once you've set a Farmerbot systemd service [as show above](#set-a-systemd-service), the Farmerbot will start writing logs to the file `farmerbot.log` in the directory `farmerbotfiles`.
+
+Thus, you can get more details on the operation of the Farmerbot by inspecting the log file. This can also be used to see the **Farmerbot Report Table** as this table is printed in the Farmerbot log.
+
+* See all logs so far
+  ```
+  cat ~/farmerbotfiles/farmerbot.log
+  ```
+* See the last ten lines and new logs as they are generated
+  ```
+  tail -f ~/farmerbotfiles/farmerbot.log
+  ```
+* See all logs and new lines as they are generated
+  ```
+  tail -f -n +1 ~/farmerbotfiles/farmerbot.log
+  ```
+* See the last report table
+  ```
+  tac ~/farmerbotfiles/farmerbot.log | grep -B5000 -m1 "Nodes report" | tac
+  ```
+
+## Farmerbot Files
+
+### Configuration File Template (config.yml)
+
+In this example, the farm ID is 1, we are setting the Farmerbot with 4 nodes and the node 1 never shuts down, we set a periodic wakeup at 1:00PM.
+
+Note that the timezone of the farmerbot will be the same as the time zone of the machine the farmerbot running inside. By default, a full VM on the TFGrid will be set in UTC.
+
+```
+farm_id: 1
+included_nodes:
+  - 1
+  - 2 
+  - 3 
+  - 4  
+never_shutdown_nodes:
+  - 1
+power:
+  periodic_wake_up_start: 01:00PM
+```
+
+Note that if the user wants to include all the nodes within a farm, they can simply omit the `included_nodes` section. In this case, all nodes of the farm will be included in the Farmerbot, as shown in the example below:
+
+```
+farm_id: 1  
+never_shutdown_nodes:
+  - 1
+power:
+  periodic_wake_up_start: 01:00PM
+```
+
+For more information on the configuration file, refer to the [Additional Information section](farmerbot_information.md#yaml-configuration-file-template).
+
+You can also consult the [Farmerbot repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot).
+
+### Environment Variables File Template (.env)
+
+The network can be either `main`, `tets`, `dev` or `qa`. The following example is with the main network.
+
+```
+MNEMONIC_OR_SEED="word1 word2 word3 ... word12"
+NETWORK="main"
+```
+
+## Running Multiple Farmerbots on the Same VM
+
+You can run multiple instances of the Farmerbot on the same VM.
+
+To do so, you need to create a directory for each instance of the Farmerbot. Each directory should contain the configuration and variables files as shown above. Once you've set the files, you can simply execute the Farmerbot `run` command to start each bot in each directory.
+
+It's recommended to use distinct names for the directories and the services to easily differentiate the multiple farmerbots running on the VM.
+
+For example, the directory tree of two Farmerbots could be:
+
+```
+└── farmerbotfiles
+    ├── farmerbot1
+    │   ├── .env
+    │   └── config.yml
+    └── farmerbot2
+        ├── .env
+        └── config.yml
+```
+
+For example, the services of two Farmerbots could be named as follows:
+
+```
+farmerbot1.service
+farmerbot2.service
+```
 
 ## Questions and Feedback
 
-If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Farmers Channel](https://t.me/threefoldfarmers) on Telegram.
+This guide is meant to get you started quickly with the Farmerbot. That being said, there is a lot more that can be done with the Farmerbot.
+
+For more information on the Farmerbot, please refer to the [Additional Information section](./farmerbot_information.md). You can also consult the [official Farmerbot Go repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot).
+
+If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](https://forum.threefold.io/) or on the [ThreeFold Farmers Chat](https://t.me/threefoldfarmers) on Telegram.
+
+> This is the new version of the Farmerbot written in Go. If you have any feedback and issues, please let us know!
