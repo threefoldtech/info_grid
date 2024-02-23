@@ -1,6 +1,16 @@
-# Genesis Pool
+<h1> Genesis Pool </h1>
 
-End of March 2018, ThreeFold launched the public blockchain.
+<h2>Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Genesis Pool Token Usage](#genesis-pool-token-usage)
+- [Remarks](#remarks)
+
+***
+
+## Introduction
+
+At the end of March 2018, ThreeFold launched the public blockchain.
 
 ThreeFold developed their own blockchain software called Rivine, which was probably the first proof of blockstake blockchain in the world. We did not like the way how the other blockchains at that time were doing proof of work, which is basically burning a lot of energy to prove the validity of their blockchain.
 

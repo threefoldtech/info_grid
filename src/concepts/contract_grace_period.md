@@ -1,4 +1,23 @@
-# Grace Period: Ensuring Seamless Operations
+<h1> Grace Period: Ensuring Seamless Operations </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [What is the Grace Period?](#what-is-the-grace-period)
+- [How does it work?](#how-does-it-work)
+- [When does the Grace Period kick in?](#when-does-the-grace-period-kick-in)
+- [How to resume your workloads:](#how-to-resume-your-workloads)
+- [Grace Period Contract State: Easily Accessible Information](#grace-period-contract-state-easily-accessible-information)
+  - [Grid Weblets:](#grid-weblets)
+  - [ThreeFold Grid Proxy:](#threefold-grid-proxy)
+- [TFChain GraphQL:](#tfchain-graphql)
+  - [Node Contract](#node-contract)
+  - [Rent Contract](#rent-contract)
+- [PolkadotJS UI:](#polkadotjs-ui)
+
+***
+
+## Introduction
 
 __The Grace Period__ serves as a crucial aspect of the ThreeFold ecosystem, providing a safety net for users when their funds run low. Let's explore the key details in a user-friendly manner:
 
@@ -31,7 +50,7 @@ The Grace Period feature acts as a safeguard, providing users with the opportuni
 Checking the state of your contracts within the ``Grace Period`` is simple and convenient. Here's how you can do it:
 
 ### Grid Weblets:
-The Contracts tab on the Playground provides an easy way to monitor your contracts. Here, you can find comprehensive details about the desired ``contract``, including its ``State`` and ``Expiration date`` if the node is in the Grace Period.
+The Contracts tab on the Dashboard provides an easy way to monitor your contracts. Here, you can find comprehensive details about the desired ``contract``, including its ``State`` and ``Expiration date`` if the node is in the Grace Period.
 
 ![](./img/manual__grace_period_weblets.png)
 

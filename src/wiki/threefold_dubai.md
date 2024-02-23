@@ -1,14 +1,27 @@
-# ThreeFold Dubai
+<h1> ThreeFold Dubai </h1>
 
-The original team of ThreeFold operated from Dubai and Belgium. We started in 2016.
+<h2>Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Responsibilities](#responsibilities)
+- [NEW 2023](#new-2023)
+- [Some memories from 2015+](#some-memories-from-2015)
+- [Structure: Oct 2021 - Dec 2022](#structure-oct-2021---dec-2022)
+- [Official License](#official-license)
+
+***
+
+## Introduction
+
+ThreeFold Dubai is the original team of ThreeFold operated from Dubai and Belgium. We started in 2016.
 
 ## Responsibilities
 
-- promote ThreeFold Grid and the ThreeFold Token
-- work with [ThreeFold Tech](./threefold_tech.md) for the creation and maintenance of the technology.
-- legal: signing party with all T&C (terms and conditions) with all future farmers
-- work with many people and companies around the world to grow the threefold ecosystem
-- look for partners who are willing to grow the threefold ecosystem
+- Promote ThreeFold Grid and the ThreeFold Token
+- Work with [ThreeFold Tech](./threefold_tech.md) for the creation and maintenance of the technology.
+- Legal: signing party with all T&C (terms and conditions) with all future farmers
+- Work with many people and companies around the world to grow the threefold ecosystem
+- Look for partners who are willing to grow the threefold ecosystem
 
 ## NEW 2023
 

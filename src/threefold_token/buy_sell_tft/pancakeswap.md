@@ -1,4 +1,4 @@
-<h1>Get TFT on Pancake Swap</h1>
+<h1>Get TFT: Pancake Swap (BSC)</h1>
 
 <h2>Table of Contents</h2>
 

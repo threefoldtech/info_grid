@@ -1,7 +1,5 @@
 <h1> IPFS on a Micro VM</h1>
 
-![ipfs_logo](../img/ipfs_logo.png)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)

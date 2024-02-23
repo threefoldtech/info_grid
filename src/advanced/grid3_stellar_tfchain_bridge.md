@@ -19,19 +19,21 @@ For more information on TFT bridges, read [this documentation](../threefold_toke
 
 - [Stellar wallet](../threefold_token/storing_tft/storing_tft.md)
 
-- [Account on TFChain (use TF Dashboard to create one)](../dashboard/dashboard.md)
+- [Account on TFChain (use TF Dashboard to create one)](../dashboard/wallet_connector.md)
+
+![](./img/bridge.png)
 
 ## Stellar to TFChain
 
 You can deposit to Tfchain using the bridge page on the TF Dashboard, click deposit:
 
-![bridge](./img/deposit_bridge.png)
+![bridge](./img/bridge_deposit.png)
 
 ## TFChain to Stellar
 
 You can bridge back to stellar using the bridge page on the dashboard, click withdraw:
 
-![withdraw](./img/withdraw_bridge.png)
+![withdraw](./img/bridge_withdraw.png)
 
 A withdrawfee of 1 TFT will be taken, so make sure you send a larger amount as 1 TFT.
 The amount withdrawn from TFChain will be sent to your Stellar wallet.

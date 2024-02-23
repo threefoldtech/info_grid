@@ -1,7 +1,17 @@
+<h1>Proof-of-Capacity</h1>
 
-# Proof-of-Capacity
+<h2> Table of Contents </h2>
 
-![](img/farming_rewards_.png)
+- [Introduction](#introduction)
+- [What is proof-of-capacity?](#what-is-proof-of-capacity)
+- [Why proof-of-capacity?](#why-proof-of-capacity)
+- [How does Proof-of-Capacity work?](#how-does-proof-of-capacity-work)
+- [PoC Rewards](#poc-rewards)
+- [Farming Reward Calculation](#farming-reward-calculation)
+
+***
+
+## Introduction
 
 The ThreeFold Blockchain (TFChain) uses work algorythm called "Proof-of-Capacity" to verify the Internet capacity provided by 3Nodes. Put simply, PoC verifies, on an ongoing basis, that farms are honestly representing the Internet capacity they provide to the network.
 
@@ -46,4 +56,42 @@ The main advantage of PoC to farmers it makes it really easy to run a 3Node. It 
 
 - Additional TFT are farmed to compensate for Carbon and deliver the yield for the Layer 2 Staking pools
 
-{{#include farming_reward_calculation.md}}
+## Farming Reward Calculation
+
+Each 3Node has certain amount of compute, storage and network resources:
+
+- Compute Capacity (CPU)
+- Memory Capacity (RAM)
+- Storage Capacity (SSD/HDD)
+- Network Capacity (Bandwidth, IP Addresses)
+
+For making this Internet Capacity available, Farmers are rewarded with TFT.
+
+The amount of resources availabe in a 3Node are translated into compute units (CU), storage units (SU), Network units (NU) and IP addresses (IPAddr) to calculate farming rewards. See also [Cloud Units Calculation For Farming](../../cloudunits/resource_units_calc_cloudunits.md).
+
+> **Unless explicitly specified otherwise, calculations of "gigabytes" use base
+> 1024. That is, 1 GB is equal to 1073741824 bytes.**
+
+The formula to calculate farming rewards is the following:
+
+```python
+TFT earned per month = 
+    CU farmed * CU farming rewards 
+    + SU farmed * SU farming rewards
+    + NU used * NU farming rewards
+    + IPAddr used * IPAddr farming rewards
+
+```
+
+The below table expands on CU, SU, NU and IPAddr and their farming rewards:
+
+| Unit                | description                                                       | v3 farming rewards in TFT |
+| ------------------- | ----------------------------------------------------------------- | ------------------------- |
+| Compute Unit (CU)   | typically 2 vcpu, 4 GB mem, 50 GB storage                         | 30.00 TFT/month |
+| Storage Unit (SU)   | typically 1 TB of netto usable storage                            | 12.50 TFT/month  |
+| Network Unit (NU)   | 1 GB of data transfered as used by TFGrid user for Public IP Addr | 0.38 TFT/GB     |
+| Public IPv4 Address | Public IP Address as used by a TFGrid user                        | 0.06 TFT/hour   |
+
+> **The rewards above are calculated according to the current TFT to USD price in TFChain of 0.08. TFDAO is responsible to change this price in accordance to current marketsituation and liquidity.**
+
+The above farming rewards apply for 3Nodes registered in TFChain for ThreeFold Grid v3. Anyone can calculate their potential rewards using the [Farming Reward Calculator](https://dashboard.grid.tf/calculator/simulator). The same CU, SU, NU and IPAddr principles apply to the sales of Internet capacity in the form of [cloud units](../../cloudunits/cloudunits.md).

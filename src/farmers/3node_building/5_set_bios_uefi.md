@@ -55,7 +55,7 @@ You can [set a static IP for the public config of a 3Node or a farm](./1_create_
 
 You can [set a static IP address to remotely manage a 3Node](#setting-the-remote-management-of-a-server-static-ip-address).
 
-***
+
 
 ## The Essential Features of BIOS/UEFI for a 3Node
 
@@ -85,9 +85,9 @@ As a general advice, you can Load Defaults (Settings) on your BIOS, then make su
 
 
 
-***
+
 ## Setting the Remote Management of a Server (Static IP Address)
-***
+
 
 Note from the list above that by enabling the DHCP and DNS in BIOS, dynamic IP addresses will be assigned to 3Nodes. This way, you do not need any specific port configuration when booting a 3Node.
 
@@ -98,25 +98,25 @@ You can set up a node through static routing at the router without DHCP by assig
 With a static IP address, you can then configure remote management on servers. For Dell, [iDRAC](https://www.dell.com/support/kbdoc/en-us/000134243/how-to-setup-and-manage-your-idrac-or-cmc-for-dell-poweredge-servers-and-blades) is used, and for HP, [ILO](https://support.hpe.com/hpesc/public/docDisplay?docId=a00045463en_us&docLocale=en_US) is used.
 
 
-***
+
 ## Update the BIOS/UEFI firmware
-***
+
 
 Updating the BIOS firmware is not always necessary, but to do so can help prevent future errors and troubleshootings. Making sure the Date and Time are set correctly can also help the booting process.
 
 Note: updating the BIOS/UEFI firmware is optional, but recommended.
 
-***
+
 ### Check the BIOS/UEFI version on Windows
-***
+
 Hit *Start*, type in *cmd* in the search box and click on *Command Prompt*. Write the line
 
 > wmic bios get smbiosbiosversion
 
 This will give you the BIOS or UEFI firmware of your PC.
-***
+
 ### Check the BIOS/UEFI version on Linux
-***
+
 Simply type the following command 
 
 > sudo dmidecode | less
@@ -124,18 +124,18 @@ Simply type the following command
 or this line:
 
 > sudo dmidecode -s bios-version
-***
+
 ### Update the BIOS firmware
-***
+
 1. On the manufacturer's website, download the latest BIOS/UEFI firmware
 2. Put the file on a USB flash drive (+unzip if necessary)
 3. Restart your hardware and enter the BIOS/UEFI settings
 4. Navigate the menus to update the BIOS/UEFI
 
 
-***
+
 ## BIOS/UEFI and Zero-OS Bootstrap Image Combinations
-***
+
 To boot your 3Node, you need to create your own boot device for your system. This might sound like a big project to accomplish, but it's actually pretty simple. As simple as can be, you need a removable media (USB key for example) where you will burn/install the Zero-OS bootstrap image on it. The type of file you burn on the removable media will change depending if your system is old or recent. Older system uses BIOS and newer system uses UEFI.
 
 Whether you use BIOS or UEFI, 3Nodes are also self-healing, so once you set up your 3Node, maintenance is minimal. 
@@ -171,16 +171,16 @@ You might have to try UEFI first and if it doesn't work, try BIOS. Usually when 
 
 And then... nothing. This means that you are still in the BIOS of the hardware and boot is not even started yet. When this happens, try the BIOS mode of your computer. 
 
-***
+
 
 **Additional information :** One of the great features of Zero-OS is that it can be completely run within the cache of your 3Node. Indeed, the booting device, that contains your farm ID, will connect to the ThreeFold Grid and download everything needed to run smoothly. There are many benefits in terms of security and protection of data that comes with this.
 
-***
+
 
 Let's go into BIOS mode now!
 
 ## Example of BIOS Settings - Rack Server - Dell R720
-***
+
 
 The following covers proper settings for the BIOS mode of a DIY 3Node. Note that it is also called the normal BIOS or legacy BIOS.
 
@@ -188,7 +188,7 @@ There might be other ways to configure those settings, depending on the specific
 
 It is possible that your 3Node needs to be booted with the UEFI mode. In this case, refer to the [next section](#example-of-uefi-settings---desktop-computer---dell-optiplex-7010).
 
-***
+
 
 Note that the settings are similar for UEFI and non-UEFI. But some details are important.
 
@@ -197,14 +197,14 @@ To boot Zero-OS, you need to use the bootstrap image [here](https://bootstrap.gr
 Old servers/desktops will need to use the 4th and 5th options (named: ISO and USB). Newer servers/desktops can use UEFI (1st and 2nd option).
 
 The BIOS setting in BIOS (non-UEFI) mode presented here is mostly based on a Dell R720. We also add information to cover more broadly the subject. There may be differences with your specific 3Node hardware. The following should give you a good overview of how to set it up and you can adjust the details. For newer servers, UEFI mode might be the preferred option.
-***
+
 
 Please note that you can set your iDRAC with remote access. In this section, we set up the 3Node directly with a monitor and keyboard. Once this BIOS settings are set and the 3Node is running, you will not need to do much maintenance on the server's BIOS or iDRAC settings, thanks to the Self-Healing properly of ThreeFold's Zero-OS.
 
-***
+
 
 SYSTEM SETUP
-***
+
 
 To enter into system setup, you need to press a certain key when the computer is powered on. With Dell server R720, hit F2 to get into System Setup.
 
@@ -215,14 +215,14 @@ To set the 3Node running, you will need to configure the following sections:
 
 First, let's go into System BIOS.
 
-***
+
 
 **System BIOS**
 
-***
+
 
 MEMORY SETTINGS
-***
+
 
 In `System BIOS`, go into `Memory Settings` and make sure the Memory parameters are correct (Size, Type, Speed, Voltage). If you have less GB of RAM than expected, perhaps the RAM sticks are not well seated. 
 
@@ -242,9 +242,9 @@ Usually your system will run faster with this option `disabled`.
 
 When `enabled`, Node Interleaving will interleave the memory addresses across the memory in each processor. In some situation and for certain workload, this can improve the performance.
 
-***
+
 PROCESSOR SETTINGS 
-***
+
 Next, we will adjust the proper settings for the processors in `Processor Settings`. 
 
 | #  | Settings  | Option  |
@@ -266,10 +266,10 @@ Setting Logical Processor at Enabled is particularly important. If you're suppos
 
 Next in the section Processor Settings, you will see the information of your processor(s). The number of cores per processor will also be shown. In short, make sure you have the expected processors and number of cores.
 
-***
+
 
 SATA SETTINGS
-***
+
 
 Next, we will adjust the proper software settings for the SATA connections and hardware in `SATA Settings`.
 
@@ -284,9 +284,9 @@ If you are using SATA disks, you probably want #1 set to AHCI. Depending on your
 
 The rest of the settings are for the Ports. You can always check in the User's Guide of your server to check which ports are for which hardware. For example, on Dell R720, Port E is for the optical drive (CD/DVD).
 
-***
+
 BOOT SETTINGS
-***
+
 
 Next, we will adjust the proper settings for the processors `BOOT Settings`.
 
@@ -303,9 +303,9 @@ You can have Boot Sequence Retry Enabled, but your server should boot fine witho
 
 Then you need to save these changes and come back to access BIOS Boot Settings (if you were previously set to UEFI mode).
 
-***
+
 BIOS Boot Settings
-***
+
 
 Next, we will adjust the proper settings for the processors `BIOS Boot Settings`. Note that USB keys will often be called **Hard drive C:**. Click on **Boot Sequence** and choose the proper order for your 3Node configuration. Here we choose **Hard drive C:** as we will be booting from USB key. If you use another method than a USB key, make sure you select it. 
 
@@ -322,10 +322,10 @@ Next, we will adjust the proper settings for the processors `BIOS Boot Settings`
 
 In Boot Option Enable/Disable, you can check the option you will be using for your booting device. Here we check `Hard drive C:`, as we are booting Zero-OS from a USB key.
 
-***
+
 
 INTEGRATED DEVICES
-***
+
 
 Next, we will adjust the proper settings for the `Integrated Devices`.
 This will change depending on your hardware configuration.
@@ -373,9 +373,9 @@ This will change depending on your hardware configuration.
 
 All slots should be set at Enabled in Slot Disablement. You might want to disable unused slots depending on your spectific configuration.
 
-***
+
 SERIAL COMMUNICATION
-***
+
 
 Next, we will adjust the proper settings for the `Serial Communication`.
 This can change depending on your hardware configuration.
@@ -394,10 +394,10 @@ In general, this section can be left with the default parameters. It can be usef
 1. To select serial communication devices.
 2. This can be used to set the port address for serial devices.
 
-***
+
 
 SYSTEM PROFILE
-***
+
 
 Next, we will adjust the proper settings for the `System Profile`.
 This can change depending on your hardware configuration.
@@ -420,10 +420,10 @@ System Profile Settings can be at Performance Per Watt. In this case, all the pa
 
 You can also use custom parameters. Make sure you know what you are doing. Many things can be done such as changing the frequency and the DIMM voltage selection. This can, in certain situations, increase the 3Node's performance.
 
-***
+
 
 SYSTEM SECURITY
-***
+
 
 Next, we will adjust the proper settings for the `System Security`. Here you can set a password for the BIOS and also set the AC Power Recovery with a set detay.
 
@@ -434,16 +434,16 @@ Next, we will adjust the proper settings for the `System Security`. Here you can
 | 3  | Power Button  | **Enabled** / Disabled  |
 | 4  | ...  | ...  |
 | 5  | AC Power Recovery  | **Last** / On / Off  |
-| 6  |  AC Power Recovery Delay | **User Defined***  |
+| 6  |  AC Power Recovery Delay | **User Defined  |
 | 7  | ...  | ...  |
 
 *In System Security, it can be very useful to set AC Power Recovery at **Last**. If your 3Node is powered on and you have an electric outage, your 3Node will power back on when the power outage is over. You can also set it to **power on** after X seconds (from 0 to 240 with Dell servers). Imagine if you have 15 power outage in the same 30 minutes, your serves would constantly power back on, and this could damage the unit if this is done too frequently. For this reason, it is good to set the power on after 30 seconds or more.
 
 To reset your Trusted Platform Module (TPM), use TPM Clear.
 
-***
+
 MISCELLANEOUS SETTINGS
-***
+
 
 Next, we will adjust the proper settings for the `Miscellaneous Settings`.
 This can change depending on your hardware configuration.
@@ -458,96 +458,96 @@ This can change depending on your hardware configuration.
 
 The settings in this section can be left at default. It is good to verify that the date and time are correct. Some farmers have reported that their 3Nodes were not booting easily when they were out of sync.
 
-***
+
 
 **iDRAC Settings**
-***
+
 
 The next section covers the basic to set a iDRAC that will run properly with the 3Node and help ease the farming maintenance. It is possible to set the iDRAC completely with a remote access. This will be partly covered here, but it is not the focus. Once your 3Node is booted and connected to the TF Grid, minimal maintenances are required.
-***
+
 SYSTEM SUMMARY
-***
+
 In System Summary, you can see your computer informations. It's a good thing to make sure you have the latest iDRAC Firmware. Here you can make sure IPv4 and DHCP are Enabled.
 
 To set the iDRAC remotely, you can look at the iDRAC MAC Address.
-***
+
 SYSTEM EVENT LOG
-***
+
 In System Event Log, you can Clear Records. This can be a good thing to do when you buy a used server. 
 In Display System Event Log, you can check the history of your 3Node. This can be good for specific troubleshootings.
-***
+
 NETWORK
-***
+
 In Network, make sure to set Enabled at Enable NIC and Auto Dedicated NIC. You will also need to enable DHCP and IPV4 (and IPV6 if needed). For remote access, you will need to Enabled Register DRAC on DNS and Use DHCP to obtain DNS server addresses.
-***
+
 FRONT PANEL SECURITY
-***
+
 In Front Panel Security, you want to make sure Disable Power Button is set at No. Front Panel Access can be set to Full Capabilities as this can be useful to check your server's parameters. 
-***
+
 VIRTUAL MEDIA
-***
+
 Virtual Media setting can be set at Auto attach. This is for remote usage of software image files (ISO-files). This is used to update servers and install operating systems.
 
-***
+
 vFlash Media
-***
+
 Enable vFlash can be set at Disabled in the vFlash Media section. This SD card can be used as a storage device to boot Zero-OS. It can also be used as a storage backup when replacing the motherboard.
 
-***
+
 LIFECYCLE CONTROLLER
-***
+
 It's good to set Enabled at Lifecycle Controller and Collect System Inventory on Restart. This checks if anything new was added to the server between usages. Also Lifecycle Controller can be used to set iDRAC remotely.
-***
+
 POWER CONFIGURATION
-***
+
 You can disable Power Cap Policy and set Power Supply Options - Redundant Policy at Not Redundant. If you want to put a power limit on the system, you can set Power Cap Policy at enabled.
 
 You can enable Power Factor Correction to improve the server's efficiency and reduce current, but this is not necessary.
 
 Make sure **Hot Spare is Enabled**. This feature makes sure the server will function properly if one of the two PSU (power supply unit) is damaged or removed during use.
 
-***
+
 
 SMART CARD
-***
+
 The Smart Card option can be Disabled. This can be used to connect to iDRAC with a Two Factor Authetication (2FA).
-***
+
 THERMAL
-***
+
 In the section Thermal, you can set Thermal Base Algorithm at Auto and the Cooling Options at Default.
-***
+
 COMMUNICATION PERMISSIONS
-***
+
 Communication Permissions can be disabled. When enabled, you can launch the browswer in the host OS, but this does not really apply to a 3Node.
-***
+
 USER CONFIGURATION
-***
+
 In User Configuration, you want to enable Enable User. You can set a password.
-***
+
 REMOTE ENABLEMENT
-***
+
 To use iDRAC remotely with Dell OpenManage Server Administrator (OMSA), you will need to set Enable Auto-Discovery at Enabled. Otherwise, you can set it at Disabled.
-***
+
 SYSTEM LOCATION
-***
+
 System Location can be useful if you are in a data center. You don't need to fill in any information.
-***
+
 RESET iDRAC
-***
+
 If ever needed, you can do a Factory Reset of the iDRAC configuration.
-***
+
 We have been through the BIOS settings and th iDRAC settings of a typical Dell R720 Server. With these notions in mind, you should be able to properly set your DIY 3Node. Some changes may be needed depending on your hardware and desired configuration. 
 
 ## Example of UEFI Settings - Desktop Computer - Dell Optiplex 7010
-***
+
 
 The UEFI mode is usually needed for newer hardware.
-***
+
 There might be other ways to configure those settings, depending on the specific computer. Depending on your hardware (disks connections, RAID controller, etc.), you might need to change some settings to fit your specific computer model. Most of the time, if you follow these lines, your 3Node should work 100% with the ThreeFold Grid. Check the [Troubleshooting and Error Messages](/faq/faq.md#troubleshooting-and-error-messages) section if you have trouble on your way to booting Zero-OS.
 
 It is possible that your 3Node needs to be booted with the BIOS mode. In this case, refer to the [previous section](#example-of-bios-settings---rack-server---dell-r720).
 
-***
+
 To boot Zero-OS, you need to use the bootstrap image [here](https://bootstrap.grid.tf/).
 
 Old servers/desktops will need to use the non-UEFI mode, which are the 4th and 5th options (named: ISO and USB). Newer servers/desktops can use UEFI (1st and 2nd option).
@@ -556,36 +556,36 @@ We will now present the BIOS/UEFI settings that work with ThreeFold Zero-OS.
 Note that the settings are similar for UEFI and non-UEFI. But some details are important.
 
 The UEFI settings are from a HP G1 EliteDesk Desktop. These should give you a good overview of how to set it up.
-***
+
 
 **UEFI mode with HP EliteDesk.**
 
-***
+
 
 The following section will propose UEFI settings to boot a 3Node properly on the TF Grid. Note that the settings might need some modifications in your specific situations. These guidelines will help you set your 3Node properly.
 
 Start your computer and hit Escape to get into the startup Menu. For some other computers, it can be another key. It's usually shown at the start of the boot.
 Hit F10 or click on Computer Setup.
 
-***
+
 It can be a good idea to first check in System Information that your setup is as expected.
 
 Here you can see your computer model and manufacturer. You can check that the processors are properly recognized and that you have the correct quantity of RAM. It's a good idea to check the BIOS and Firmware Versions. Updating the UEFI can help to boot the 3Node.
 
-***
+
 
 In Storage -> Device Configuration, you can see if all your disks are well connected (SATA, USB, etc.). Usually, to be recognized, you need to plug your removable media before booting the 3Node.
-***
+
 
 In Storage -> Storage Options, select AHCI as SATA Emulation and make sure Removable Media Boot is Enabled. For some specific configurations, you will want to use another paramter than AHCI.
 
-***
+
 
 In Storage -> Boot Order, you can choose the UEFI Boot Sources. If you are using a removable media, make sure it is the first in the list. Options can be: USB Hard Drive, USB Floppy/CD, CD/DVD Drive and more.
 
 If you are booting from a USB key, you'll want to select USB Hard Drive first for the Boot Order.
 
-***
+
 
 In the section Security -> Device Security, you can see that your devices are available. 
 
@@ -596,69 +596,69 @@ In the section Security -> Device Security, you can see that your devices are av
 - ...
 In the section Device Security, make sure all are set to Device Available.
 
-***
+
 
 In Security -> USB Security, make sure the port you want to use is Enabled. The easy way is to make them all Enabled.
 
-***
+
 
 In Security -> Slot Security, you can enable the PCI Express (PCIe) slots. This can be useful when you have SSD NVME disk to use via a PCIe adapter.
 
-***
+
 
 Network boot can be set at Disabled if you are booting with a removable media (USB key, CD/DVD). If you are using PXE mode, you will need to set the Network Boot at Enabled.
 
-***
+
 
 In Security -> Master Boot Record Security, you can se it at Disabled. This is used to successfully boot from a disk while accessing the data it contains. In the case of Zero-OS, the OS is on the removable media.
-***
+
 
 In Security -> System Security, you can enable Data Execution Prevention and OS management of Embedded Security Device. This is the place to set the Virtualization Technology (VTx). It is needed with Zero-OS in order for users to deploy virtual machines on the 3Nodes.
-***
+
 
 In Security -> Secure Boot Configuration, make sure you have Legacy Support set at Enabled (without this, your 3Node can't boot without a monitor). You should also Disabled the Secure Boot. Sometimes Zero-OS won't boot otherwise. There is no security problem when doing so to a 3Node running on Zero-OS. 
 
 Enabling Secure Boot can be helpful when setting a 3Node and you want to be sure no one can access the BIOS/UEFI and change the settings.
 
-***
+
 
 In Power -> OS Power Management, it can be set to Enabled Extended and Disabled.
 
-***
+
 
 In Power -> Hardware Power Management, both SATA Power Management and PCI Express Power Mangement can be set at Enabled. It can be set to Enabled Extended and Disabled. Here are the settings for Hard Power Management. S5 Maximum Power Savings can be set at Disabled. This function, when the computer is off, will turn off the power of all nonessential hardware.
-***
+
 In Advanted -> Power-On Options, it is a good idea to have After Power Loss set at Previous State. You can select a proper POST Delay (in seconds). This means if your servers are running and you get a power outage, they will turn back on when power comes back. As 3Nodes don't have "graceful shutdown", if you lose electricity momentarily, the 3Node will symply reboot and continue its work. No data can be lost when a 3Node is shutdown.
 
 If you have different 3Nodes on the same breaker, it can be a good idea to set different POST delay timer. This will ensure that you do not have a sudden high power demand when they power on.
 
-***
+
 
 In Advanced -> BIOS Power-On, you can set all the BIOS Power-On Option at Disabled.
 
-***
+
 In Advanced -> Bus Options, you can set PCI SERR# Generation at Enabled, but it is simply concerning ill-behaved PCI add-in cards. PCI VGA Palette Snooping concerns graphics and can be set at Disabled.
-***
+
 
 In Advanced -> Device Options, you can Enabled Turbo Mode. It is very important to have **Multi-Processor and Hyperthreading at Enabled.** Sometimes, it will be written Virtual Cores, or Logical Cores. 
 
-***
+
 
 In Advanced -> Management Operations, you can set the Active Management Technology (AMT). This is for remote access and is not necessary when it comes to booting and running a 3Node.
 
-***
+
 
 In Advanced -> Option ROM Launch Policy, you can all all the parameters at Legacy Only. In Legacy mode, the computer will be able to boot from all bootage devices. 
 
-***
+
 
 In Advanced -> Update BIOS via Network, you can set automatic BIOS Update and enabled Update via Network. You can either leave it Enabled or Disabled. To upgrade the BIOS, you can also use a booting removable device (USB key) containing the newer firmware file.
 
-***
+
 
 In Advanced -> Ethernet Connection -> NIC Configuration, make sure your Link Status is at Connected.
 
-***
+
 
 That's it. You went through the whole Computer Setup and this should get your 3Node working good.
 

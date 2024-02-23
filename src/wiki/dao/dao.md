@@ -1,14 +1,26 @@
-## DAO
+<h1> DAO </h1>
 
-> DAO = Decentralized Autonomous Organization
+<h2>Table of Contents</h2>
 
+- [Introduction](#introduction)
+- [Overview of a DAO](#overview-of-a-dao)
+- [Comparisons](#comparisons)
+- [DAO Rules](#dao-rules)
+- [DAO and Blockchain](#dao-and-blockchain)
 
-![](img/dao_whatis_.jpg)
+***
 
+## Introduction
+
+We present the main concept of a DAO.
+
+A DAO is a decentralized autonomous organization. To be more precise, this means the following:
 
 - Decentralized = Online, global, uncensorable.
 - Autonomous = Self-governing.
 - Organization = Coordination & collaboration around shared objectives.
+
+## Overview of a DAO
 
 DAOs are an effective and safe way to work with like-minded folks around the globe.
 
@@ -18,6 +30,9 @@ This opens up so many new opportunities for global collaboration and coordinatio
 
 DAOs operate using smart contracts, which are essentially chunks of code that automatically execute whenever a set of criteria are met. These smart contracts establish the DAO’s rules. Those with a stake in a DAO then get voting rights and may influence how the organization operates by deciding on or creating new governance proposals.
 
+## Comparisons
+
+The following table provides some comparisons between a DAO and a traditional organization.
 
 | DAO                                                                                                                     | A traditional organization                                                                              |
 | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -29,7 +44,11 @@ DAOs operate using smart contracts, which are essentially chunks of code that au
 
 *Info from https://ethereum.org/en/dao/, picture from https://cointelegraph.com/ethereum-for-beginners*
 
+## DAO Rules
+
 Decentralized autonomous organization (DAO), is an organization represented by rules encoded as a computer program that is transparent, controlled by the organization members and not influenced by a central government. A DAO's financial and voting transaction record and program rules are maintained on a blockchain.
+
+## DAO and Blockchain
 
 Decentralized autonomous organizations are typified by the use of blockchain technology to provide a secure digital ledger to track financial and other community interactions across the internet, hardened against forgery by trusted timestamping and dissemination of a distributed database. This approach eliminates the need to involve a mutually acceptable trusted third party in a transaction, simplifying the transaction. The costs of a blockchain-enabled transaction and of the associated data reporting may be substantially offset by the elimination of both the trusted third party and of the need for repetitive recording of contract exchanges in different records. For example, the blockchain data could, in principle and if regulatory structures permit it, replace public documents such as deeds and titles. In theory, a blockchain approach allows multiple cloud computing users to enter a loosely coupled peer-to-peer smart contract collaboration.
 

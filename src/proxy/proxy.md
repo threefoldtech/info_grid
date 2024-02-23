@@ -10,6 +10,8 @@
 - [Get and Install the Binary](#get-and-install-the-binary)
 - [Add as a Systemd Service](#add-as-a-systemd-service)
 
+***
+
 <!-- About -->
 
 ## About
@@ -18,7 +20,6 @@ The TFGrid client Proxy acts as an interface to access information about the gri
 
 The proxy is used as the backend of several threefold projects like:
 
-- [Playground](../playground/home.md)
 - [Dashboard](../dashboard/dashboard.md)
 
 <!-- Usage -->

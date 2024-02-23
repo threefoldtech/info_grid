@@ -1,21 +1,19 @@
 <h1> Scheduler Resource </h1>
 
-![ ](../advanced/img/terraform_.png)
-
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
 - [How the Scheduler Works](#how-the-scheduler-works)
 - [Quick Example](#quick-example)
 
-
 ***
+
 
 ## Introduction
 
 Using the TFGrid scheduler enables users to automatically get the nodes that match their criterias. We present here some basic information on this resource.
 
-***
+
 
 ## How the Scheduler Works
 
@@ -25,7 +23,7 @@ To better understand the scheduler, we summarize the main process:
   - If so it will try to find a suitable node using the Farmerbot.
 - If the Farmerbot is not enabled, it will use grid proxy to find a suitable node.
 
-***
+
 
 ## Quick Example 
 

@@ -25,11 +25,11 @@ This guide can be done on a Windows, MAC, or Linux computer. For more informatio
 
 If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](../../tfgrid3_getstarted.md) of the Threefold Manual.
 
-***
+
 
 ## Deploy a Full VM and Create a Root-Access User
 
-* Go to the [Threefold Playground](https://play.grid.tf/#/)
+* Go to the [Threefold Dashboard](https://dashboard.grid.tf/#/)
 * Deploy a full VM (Ubuntu 20.04) with at least the minimum specs for a desktop environment
   * IPv4 Address
   * Minimum vcores: 2vcores
@@ -65,7 +65,7 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
         ```
 * Exit the VM and reconnect with the new user
 
-***
+
 
 ## SSH with Root-Access User, Install Prerequisites and Apache Guacamole 
 
@@ -88,7 +88,7 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
     sudo ./guac-install.sh
     ```
 
-***
+
 
 ## Access Apache Guacamole and Create Admin-Access User
 
@@ -115,7 +115,7 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
     * Delete the default user
 * Apache Guacamole is now installed
 
-***
+
 
 ## Download the Desktop Environment and Run xrdp
 
@@ -140,7 +140,7 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
     bash xrdp-installer-1.4.6.sh
     ```
 
-***
+
 
 ## Create an RDP Connection and Access the Server Remotely
 
@@ -169,13 +169,13 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
     * Click on the new connection
     * The remote desktop access is done
 
-***
+
 
 ## Feedback and Questions
 
 If you have any questions, let us know by writing a post on the [Threefold Forum](https://forum.threefold.io/).
 
-***
+
 
 ## References
 

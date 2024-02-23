@@ -1,6 +1,17 @@
-# Commands
+<h1>Commands</h1>
 
-The Makefile make it easier to do mostly all the frequently commands needed to work on the project.
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Work on Docs](#work-on-docs)
+- [To start the GridProxy server](#to-start-the-gridproxy-server)
+- [Run tests](#run-tests)
+
+***
+
+## Introduction
+
+The Makefile makes it easier to do mostly all the frequently commands needed to work on the project.
 
 ## Work on Docs
 

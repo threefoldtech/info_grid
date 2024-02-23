@@ -6,7 +6,6 @@
 - [Virtual Machine](./terraform_vm.html)
 - [Web Gateway](./terraform_vm_gateway.html)
 - [Kubernetes Cluster](./terraform_k8s.html)
-  - [Demo](./terraform_k8s_demo.html)
 - [ZDB](./terraform_zdb.html)
 - [Quantum Safe Filesystem](./terraform_qsfs.md)
   - [QSFS on Micro VM](./terraform_qsfs_on_microvm.md)

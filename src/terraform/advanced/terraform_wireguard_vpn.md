@@ -1,7 +1,5 @@
 <h1>Deploy Micro VMs and Set a Wireguard VPN</h1>
 
-![ ](./img/terraform_.png)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
@@ -15,13 +13,14 @@
 - [Conclusion](#conclusion)
 
 ***
+
 ## Introduction
 
 In this ThreeFold Guide, we will learn how to deploy two micro virtual machines (Ubuntu 22.04) with Terraform. The Terraform deployment will be composed of a virtual private network (VPN) using Wireguard. The two VMs will thus be connected in a private and secure network.
 
 Note that this concept can be extended with more than two micro VMs. Once you understand this guide, you will be able to adjust and deploy your own personalized Wireguard VPN on the ThreeFold Grid.
 
-***
+
 ## Prerequisites
 
 * [Install Terraform](../terraform_install.md)
@@ -29,7 +28,7 @@ Note that this concept can be extended with more than two micro VMs. Once you un
 
 You need to download and install properly Terraform and Wireguard on your local computer. Simply follow the linked documentation depending on your operating system (Linux, MAC and Windows).
 
-***
+
 
 ## Find a 3Node with the ThreeFold Explorer
 
@@ -57,7 +56,7 @@ We show here how to find a suitable 3Node using the ThreeFold Explorer.
 
 Once you've found a proper node, take node of its node ID. You will need to use this ID when creating the Terraform files.
 
-***
+
 
 ## Create a Two Servers Wireguard VPN with Terraform
 
@@ -251,7 +250,7 @@ Make sure to add your own seed phrase and SSH public key. You will also need to 
 
 Set the parameters for your VMs as you wish. The two servers will have the same parameters. For this example, we use the minimum parameters.
 
-***
+
 ## Deploy the Micro VMs with Terraform
 
 We now deploy the VPN with Terraform. Make sure that you are in the correct folder `terraform/deployment-wg-vpn` containing the main and variables files.
@@ -271,7 +270,7 @@ Note that, at any moment, if you want to see the information on your Terraform d
     terraform show
     ```
 
-***
+
 
 ## Set the Wireguard Connection
 
@@ -298,12 +297,13 @@ If you want to stop the Wireguard service, write the following on your terminal:
 
 > Note: If it doesn't work and you already did a Wireguard connection with the same file from terraform (from a previous deployment), write on the terminal `wg-quick down wg`, then `wg-quick up wg`.
 
-As a test, you can ping the virtual IP address of the VMs to make sure the Wireguard connection is correct. Make sure to replace `wg_vm_ip` with the proper IP address for each VM:
+As a test, you can [ping](../../computer_it_basics/cli_scripts_basics.md#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the virtual IP address of the VMs to make sure the Wireguard connection is correct. Make sure to replace `wg_vm_ip` with the proper IP address for each VM:
+
 * ```
-  ping -c 2 wg_vm_ip
+  ping wg_vm_ip
   ```
 
-***
+
 
 ## SSH into the 3Node
 
@@ -323,7 +323,7 @@ ssh root@vm_IPv4
 
 You now have an SSH connection access to the VMs over Wireguard and IPv4.
 
-***
+
 
 ## Destroy the Terraform Deployment
 
@@ -336,7 +336,7 @@ If you want to destroy the Terraform deployment, write the following in the term
 
 Make sure that you are in the corresponding Terraform folder when writing this command. In this guide, the folder is `deployment-wg-vpn`.
 
-***
+
 
 ## Conclusion
 

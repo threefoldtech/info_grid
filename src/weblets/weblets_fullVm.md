@@ -36,7 +36,7 @@ Deploy a new full virtual machine on the Threefold Grid
 ***
 ## New Released Features
 
-Currently the playground is the easiest way to deploy a VM.
+Currently the Dashboard is the easiest way to deploy a VM.
 
 ![Disks tab](img/fullvm2.png)
 You can attach one or more disks to the Full Virtual Machine by clicking on the Disks tab and the plus `+` sign and specify the following parameters

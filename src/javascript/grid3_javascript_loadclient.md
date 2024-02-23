@@ -1,6 +1,16 @@
-# Grid3 Client
+<h1> Grid3 Client</h1>
 
-grid_client is a client used for deploying workloads (VMs, ZDBs, k8s, etc.) on grid3.
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Client Configurations](#client-configurations)
+- [Creating/Initializing The Grid3 Client](#creatinginitializing-the-grid3-client)
+- [What is `rmb-rs` | Reliable Message Bus --rust](#what-is-rmb-rs--reliable-message-bus---rust)
+- [Grid3 Client Options](#grid3-client-options)
+
+## Introduction
+
+Grid3 Client is a client used for deploying workloads (VMs, ZDBs, k8s, etc.) on the TFGrid.
 
 ## Client Configurations
 
@@ -52,7 +62,7 @@ using e2e. That's similar to home servers by matrix
 
 for more details, check [client options](https://github.com/threefoldtech/tfgrid-sdk-ts/blob/development/packages/grid_client/docs/client_configuration.md)
 
-> Note: The choice of the node is completely up to the user at this point. They need to do the capacity planning. Check [Exploring Capacity](../dashboard/explorer/explorer_home.md) to know which nodes fits your deployment criteria.
+> Note: The choice of the node is completely up to the user at this point. They need to do the capacity planning. Check [Node Finder](../dashboard/deploy/node_finder.md) to know which nodes fits your deployment criteria.
 
 Check the document for [capacity planning using code](../javascript/grid3_javascript_capacity_planning.md) if you want to automate it
 > Note: this feature is still experimental

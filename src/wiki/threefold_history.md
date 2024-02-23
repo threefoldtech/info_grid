@@ -1,6 +1,4 @@
-<h1> ThreeFold Project History </h1>
-
-![alt](img/foundation_header_image.jpg)
+<h1> ThreeFold History </h1>
 
 <h2>Table of Contents</h2>
 

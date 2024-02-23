@@ -1,8 +1,22 @@
-# Setup Prerequisites
+<h1>Setup</h1>
 
-## Golang
+<h2>Table of Contents</h2>
 
-Install Golang official [guide](https://go.dev/doc/install).
+- [Introduction](#introduction)
+- [Install Golang](#install-golang)
+- [Docker](#docker)
+- [Postgres](#postgres)
+- [Get Mnemonics](#get-mnemonics)
+
+***
+
+## Introduction
+
+We show how to set up grid proxy.
+
+## Install Golang
+
+To install Golang, you can follow the official [guide](https://go.dev/doc/install).
 
 ## Docker
 

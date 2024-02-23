@@ -1,7 +1,5 @@
 <h1>Deploy a Nomad Cluster</h1>
 
-![ ](./img/terraform_.png)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
@@ -18,11 +16,12 @@
 - [Conclusion](#conclusion)
 
 ***
+
 ## Introduction
 
 In this ThreeFold Guide, we will learn how to deploy a Nomad cluster on the TFGrid with Terraform. We cover a basic two client and three server nodes Nomad cluster. After completing this guide, you will have sufficient knowledge to build your own personalized Nomad cluster.
 
-***
+
 
 ## What is Nomad?
 
@@ -34,7 +33,7 @@ Nomad's elegance lies in its lightweight architecture and ease of use. It operat
 
 Nomad's versatility extends beyond its user-friendliness. It seamlessly handles a wide array of workloads, including legacy applications, microservices, and batch jobs. Its adaptability extends to diverse environments, effortlessly orchestrating workloads across on-premises infrastructure and public clouds. It's more of Kubernetes for humans!
 
-***
+
 
 ## Prerequisites
 
@@ -45,7 +44,7 @@ You need to download and install properly Terraform and Wireguard on your local 
 
 If you are new to Terraform, feel free to read this basic [Terraform Full VM guide](../terraform_full_vm.md) to get you started.
 
-***
+
 
 ## Create the Terraform Files
 
@@ -274,7 +273,7 @@ We create a credentials file that will contain the environment variables. This f
 
 Make sure to replace the three dots by your own information for `mnemonics` and `SSH_KEY`. You will also need to find a suitable node for your deployment and set its node ID (`tfnodeid`). Feel free to adjust the parameters `size`, `cpu` and `memory` if needed.
 
-***
+
 
 ## Deploy the Nomad Cluster
 
@@ -290,7 +289,7 @@ We now deploy the Nomad Cluster with Terraform. Make sure that you are in the di
      terraform apply
      ```
 
-***
+
 
 ## SSH into the Client and Server Nodes
 
@@ -323,9 +322,9 @@ To SSH with WireGuard, we first need to set the proper WireGuard configurations.
   *  ```
      wg-quick up wg
      ```
-* As a test, you can ping the WireGuard IP of a node to make sure the connection is correct
+* As a test, you can [ping](../../computer_it_basics/cli_scripts_basics.md#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the WireGuard IP of a node to make sure the connection is correct
   *  ```
-     ping -c 2 wg_ip
+     ping wg_ip
      ```
 
 We are now ready to SSH into the client and server nodes with WireGuard.
@@ -337,7 +336,7 @@ We are now ready to SSH into the client and server nodes with WireGuard.
 
 You now have an SSH connection access over WireGuard to the client and server nodes of your Nomad cluster. For more information on connecting with WireGuard, read [this documentation](../../getstarted/ssh_guide/ssh_wireguard.md).
 
-***
+
 
 ## Destroy the Nomad Deployment
 
@@ -349,7 +348,7 @@ If you want to destroy the Nomad deployment, write the following in the terminal
   * Then write `yes` to confirm. 
 
 Make sure that you are in the corresponding Terraform folder when writing this command.
-***
+
 
 ## Conclusion
 

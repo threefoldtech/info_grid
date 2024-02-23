@@ -1,8 +1,29 @@
-first, make sure you have your [client](./grid3_javascript_loadclient.md) prepared
+<h1> Deploying a Kubernetes Cluster </h1>
 
-## Deploying a kubernetes cluster
+<h2>Table of Contents</h2>
 
-### Example code
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Example code](#example-code)
+- [Detailed explanation](#detailed-explanation)
+  - [Building network](#building-network)
+  - [Building nodes](#building-nodes)
+  - [Building cluster](#building-cluster)
+  - [Deploying](#deploying)
+  - [Getting deployment information](#getting-deployment-information)
+  - [Deleting deployment](#deleting-deployment)
+
+***
+
+## Introduction
+
+We show how to deploy a Kubernetes cluster on the TFGrid with the Javascript client.
+
+## Prerequisites
+
+- Make sure you have your [client](./grid3_javascript_loadclient.md) prepared
+
+## Example code
 
 ```ts
 import { FilterOptions, K8SModel, KubernetesNodeModel, NetworkModel } from "../src";
@@ -85,9 +106,9 @@ async function main() {
 main();
 ```
 
-### Detailed explanation
+## Detailed explanation
 
-#### Building network
+### Building network
 
 ```typescript
 // create network Object
@@ -97,7 +118,7 @@ n.ip_range = "10.238.0.0/16";
 
 ```
 
-#### Building nodes
+### Building nodes
 
 ```typescript
 // create k8s node Object
@@ -124,7 +145,7 @@ worker.planetary = true;
 
 ```
 
-#### Building cluster
+### Building cluster
 
 Here we specify the cluster project name, cluster secret, network model to be used, master and workers nodes and sshkey to access them
 
@@ -141,7 +162,7 @@ k.description = "test deploying k8s via ts grid3 client";
 k.ssh_key = config.ssh_key;
 ```
 
-#### Deploying
+### Deploying
 
 use `deploy` function to deploy the kubernetes project
 
@@ -150,14 +171,14 @@ const res = await grid3.k8s.deploy(k);
 log(res);
 ```
 
-#### Getting deployment information
+### Getting deployment information
 
 ```ts
 const l = await grid3.k8s.getObj(k.name);
 log(l);
 ```
 
-#### Deleting deployment
+### Deleting deployment
 
 ```ts
 const d = await grid3.k8s.delete({ name: k.name });

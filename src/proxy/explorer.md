@@ -1,8 +1,18 @@
-# The Grid Explorer
+<h1>The Grid Explorer</h1>
 
-A REST API used to index a various information from the TF Chain.
+<h2>Table of Contents</h2>
 
-## How the explorer work?
+- [Introduction](#introduction)
+- [Explorer Overview](#explorer-overview)
+- [Explorer Endpoints](#explorer-endpoints)
+
+***
+
+## Introduction
+
+The Grid Explorer is a rest API used to index a various information from the TFChain.
+
+## Explorer Overview
 
 - Due to limitations on indexing information from the blockchain, Complex inter-tables queries and limitations can't be applied directly on the chain.
 - Here comes the TFGridDB, a shadow database contains all the data on the chain which is being updated each 2 hours.

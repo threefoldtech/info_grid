@@ -1,8 +1,21 @@
-> Click [here](../concepts/grid3_components.md) to see the complete TFGrid Component List
+<h1> What's New on ThreeFold Grid v3.x </h1>
 
-# What's new on ThreeFold Grid v3.x
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [TFChain v3.x](#tfchain-v3x)
+  - [Key Features of  TFChain v3.x:](#key-features-of--tfchain-v3x)
+- [Proof of Utilization: Enhancing Your Cloud Experience](#proof-of-utilization-enhancing-your-cloud-experience)
+  - [Key Features:](#key-features)
+  - [New TFGrid Explorer UI](#new-tfgrid-explorer-ui)
+
+***
+
+## Introduction
 
 The ThreeFold Grid v3.x is packed with exciting new features and enhancements. This marks a significant milestone in the evolution of our decentralized grid infrastructure, bringing even more power, flexibility, and innovation to our users. In this introduction, we will highlight some of the key new features that make ThreeFold Grid v3.x a game-changer in the world of decentralized technologies.
+
+> Click [here](../concepts/grid3_components.md) to see the complete TFGrid Component List
 
 ## TFChain v3.x
 

@@ -1,9 +1,27 @@
-# Manual
+<h1> ZOS Manual</h1>
+
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Farm? Network? What are these?](#farm-network-what-are-these)
+- [Creating a farm](#creating-a-farm)
+- [Interaction](#interaction)
+- [Deployment](#deployment)
+	- [Workload](#workload)
+	- [Types](#types)
+	- [API](#api)
+- [Raid Controller Configuration](#raid-controller-configuration)
+
+***
+
+## Introduction
+
 This document explain the usage of `ZOS`. `ZOS` usually pronounced (zero OS), got it's name from the idea of zero configuration. Since after the initial `minimal` configuration which only include which `farm` to join and what `network` (`development`, `testing`, or `production`) the owner of the node does not has to do anything more, and the node work fully autonomous.
 
 The farmer himself cannot control the node, or access it by any mean. The only way you can interact with a node is via it's public API.
 
 ## Farm? Network? What are these?
+
 Well, `zos` is built to allow people to run `workloads` around the world this simply is enabled by allowing 3rd party data-centers to run `ZOS` on their hardware. Then a user can then find any nearby `farm` (is what we call a cluster of nodes that belong to the same `farmer`) and then they can choose to deploy capacity on that node/farm. A `farm` can consist of one or more nodes.
 
 So what is `network`.Well, to allow developers to build and `zos` itself and make it available during the early stages of development for testers and other enthusiastic people to try it out. To allow this we created 3 `networks`
@@ -12,9 +30,11 @@ So what is `network`.Well, to allow developers to build and `zos` itself and mak
 - `production`: Well, as the name indicates this is the most stable network (also full price) once new features are fully tested on `testing` network they are released on `production`.
 
 ## Creating a farm
+
 While this is outside the scope of this document here you are a [link](https://library.threefold.me/info/manual/#/manual__create_farm)
 
-# Interaction
+## Interaction
+
 `ZOS` provide a simple `API` that can be used to:
 - Query node runtime information
   - Network information
@@ -94,7 +114,8 @@ if err != nil {
 
 Once the node receives the deployment. It will then fetch the contract (using the contract id) from the node recompute the deployment hash and compare with the one set on the contract. If matches, the node proceeds to process the deployment.
 
-# Deployment
+## Deployment
+
 A deployment is a set of workloads that are contextually related. Workloads in the same deployment can reference to other workloads in the same deployment. But can't be referenced from another deployment. Well, except the network workload which can be referenced from a different deployment as long it belongs to the same user.
 
 Workloads has unique IDs (per deployment) that are set by the user, hence he can create multiple workloads then reference to them with the given IDs (`names`)
@@ -108,7 +129,7 @@ For example, a deployment can define
   - The container can get assign the public IP to itself like by referencing the IP with id `ip`.
   - etc.
 
-## Workload
+### Workload
 Each workload has a type which is associated with some data. So minimal definition of a workload contains:
 - `name`: unique per deployment (id)
 - `type`: workload type
@@ -144,19 +165,23 @@ type Workload struct {
 
 ### Types
 - Virtual machine related
-  - [`network`](./network/index.md)
-  - [`ip`](./ip/index.md)
-  - [`zmount`](./zmount/index.md)
-  - [`zmachine`](./zmachine/index.md)
-  - [`zlogs`](./zlogs/index.md)
+  - [`network`](./workload_types.md#network-type)
+  - [`ip`](./workload_types.md#ip-type)
+  - [`zmount`](./workload_types.md#zmount-type)
+  - [`zmachine`](./workload_types.md#zmachine-type)
+  - [`zlogs`](./workload_types.md#zlogs-type)
 - Storage related
-  - [`zdb`](./zdb/index.md)
-  - [`qsfs`](./qsfs/index.md)
+  - [`zdb`](./workload_types.md#zdb-type)
+  - [`qsfs`](./workload_types.md#qsfs-type)
 - Gateway related
-  - [`gateway-name-proxy`](./gateway/name-proxy.md)
-  - [`gateway-fqdn-proxy`](./gateway/fqdn-proxy.md)
+  - [`gateway-name-proxy`](./workload_types.md#gateway-name-proxy-type)
+  - [`gateway-fqdn-proxy`](./workload_types.md#gateway-fqdn-proxy-type)
 
 ### API
 Node is always connected to the RMB network with the node `twin`. Means the node is always reachable over RMB with the node `twin-id` as an address.
 
 The [node client](https://github.com/threefoldtech/zos/blob/main/client/node.go) should have a complete list of all available functions. documentations of the API can be found [here](./api.md)
+
+## Raid Controller Configuration
+
+0-OS goal is to expose raw capacity. So it is best to always try to give it access to the most raw access to the disks. In case of raid controllers, the best is to try to set it up in [JBOD](https://en.wikipedia.org/wiki/Non-RAID_drive_architectures#JBOD) mode if available.

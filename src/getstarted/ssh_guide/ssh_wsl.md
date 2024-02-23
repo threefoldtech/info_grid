@@ -15,7 +15,7 @@
 In this Threefold Guide, we show how easy it is to SSH into a 3node on Windows with [Windows Subsystem for Linux (WSL)](https://ubuntu.com/wsl).
 
 If you have any questions, feel free to write a post on the [Threefold Forum](http://forum.threefold.io/).
-***
+
 ## SSH Key Generation
 
 Make sure SSH is installed by entering following command at the command prompt:
@@ -47,8 +47,8 @@ If you open the public key in a text editor it should contain something similar 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDNqqi1mHLnryb1FdbePrSZQdmXRZxGZbo0gTfglysq6KMNUNY2VhzmYN9JYW39yNtjhVxqfW6ewc+eHiL+IRRM1P5ecDAaL3V0ou6ecSurU+t9DR4114mzNJ5SqNxMgiJzbXdhR+j55GjfXdk0FyzxM3a5qpVcGZEXiAzGzhHytUV51+YGnuLGaZ37nebh3UlYC+KJev4MYIVww0tWmY+9GniRSQlgLLUQZ+FcBUjaqhwqVqsHe4F/woW1IHe7mfm63GXyBavVc+llrEzRbMO111MogZUcoWDI9w7UIm8ZOTnhJsk7jhJzG2GpSXZHmly/a/buFaaFnmfZ4MYPkgJD username@example.com
 ```
 
-Copying the entire text you can specify your public SSH key while connecting your wallet before [deploying a VM](../../weblets/weblets_vm.md).
-***
+Copying the entire text you can specify your public SSH key while connecting your wallet before deploying a VM.
+
 ## Connect to Remote Host with SSH
 
 With the SSH key you should be able to SSH to your account on the remote system from the computer that has your private key using the following command:
@@ -64,7 +64,7 @@ For example, to invoke the private key `my_key`, stored in the `~/.ssh/keys` dir
 ```sh
 ssh -i ~/.ssh/keys/my_key username@remote_IP_host
 ```
-***
+
 ## Enable Port 22 in Windows Firewall
 
 The port 22 is used for Secure Shell (SSH) communication and allows remote administration access to the VM.
@@ -83,7 +83,7 @@ This is not recommend especially for portable device (Laptop, Tablets) that conn
 - under `Name`
   - Name: `SSH Server`
   - Description: `SSH Server`
-***
+
 ## Questions and Feedback
 
 If you have any questions, let us know by writing a post on the [Threefold Forum](http://forum.threefold.io/).

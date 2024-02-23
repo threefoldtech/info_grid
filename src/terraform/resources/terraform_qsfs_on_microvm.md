@@ -1,7 +1,5 @@
 <h1> QSFS on Micro VM with Terraform</h1>
 
-![ ](../advanced/img/terraform_.png)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
@@ -20,14 +18,14 @@
 
 In this ThreeFold Guide, we will learn how to deploy a Quantum Safe File System (QSFS) deployment with Terraform. The main template for this example can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/qsfs/main.tf). 
 
-***
+
 ## Prerequisites
 
 In this guide, we will be using Terraform to deploy a QSFS workload on a micro VM that runs on the TFGrid. Make sure to have the latest Terraform version.
 
 - [Install Terraform](../terraform_install.md)
 
-***
+
 
 
 ## Find a 3Node
@@ -56,7 +54,7 @@ We show here how to find a suitable 3Node using the ThreeFold Explorer.
 
 Once you've found a proper node, take node of its node ID. You will need to use this ID when creating the Terraform files.
 
-***
+
 
 ## Create the Terraform Files
 
@@ -306,7 +304,7 @@ Set the parameters for your VMs as you wish. For this example, we use the minimu
 
 For the section QSFS Parameters, you can decide on how many VMs your data will be sharded. You can also decide the minimum of VMs to recover the whole of your data. For example, a 16 minimum, 20 expected configuration will disperse your data on 20 3Nodes, and the deployment will only need at any time 16 VMs to recover the whole of your data. This gives resilience and redundancy to your storage. A 2 minimum, 4 expected configuration is given here for the main template.
 
-***
+
 
 ## Deploy the Micro VM with Terraform
 
@@ -327,7 +325,7 @@ Note that, at any moment, if you want to see the information on your Terraform d
     terraform show
     ```
 
-***
+
 
 ## SSH into the 3Node
 
@@ -343,7 +341,7 @@ Note that the IP address should be the value of the parameter **ygg_ip** from th
 
 You now have an SSH connection access to the VM over Planetary Network.
 
-***
+
 
 ## Questions and Feedback
 

@@ -1,5 +1,3 @@
-![Farming_Title](./img/farming_30.png)
-
 <h1>Building a DIY 3Node: Rack Server</h1>
 
 In the following 3Node DIY guide, you will learn how to turn a Dell server (R620, R720) into a 3Node farming on the ThreeFold Grid. 
@@ -22,7 +20,9 @@ Note that the process is similar for other rack servers.
   - [Removing the DVD Optical Drive - Installing a SSD disk in the DVD Optical Drive Slot](#removing-the-dvd-optical-drive---installing-a-ssd-disk-in-the-dvd-optical-drive-slot)
   - [Using Onboard Storage - RAID Controller Details](#using-onboard-storage---raid-controller-details)
 - [Zero-OS Bootstrap Image](#zero-os-bootstrap-image)
-  - [Creating a ThreeFold Farm](#creating-a-threefold-farm)
+  - [Creating a Farm](#creating-a-farm)
+    - [Using Dashboard](#using-dashboard)
+    - [Using TF Connect App](#using-tf-connect-app)
   - [Wiping All the Disks](#wiping-all-the-disks)
   - [Downloading the Zero-OS Bootstrap Image](#downloading-the-zero-os-bootstrap-image)
     - [DVD ISO BIOS Image](#dvd-iso-bios-image)
@@ -266,20 +266,25 @@ Go on https://bootstrap.grid.tf/ and download the appropriate image: option **IS
 
 Write your farmer ID and make sure you select production mode.
 
-## Creating a ThreeFold Farm
+## Creating a Farm
 
-If you haven't created a ThreeFold farm yet, you have two options: 
+You can create a farm with either the ThreeFold Dashboard or the ThreeFold Connect app.
 
-1. [Create a Farm with the Polkadot.js Extension](../../3node_building/1_create_farm.md) 
-2. [Create a Farm with ThreeFold Connect App](../../../threefold_token/storing_tft/tf_connect_app.md#create-a-farm)
+### Using Dashboard
 
-Note: It is possible to move your farm from the [TF Connect App to the TF Portal](../../../threefold_token/storing_tft/tf_connect_app.md#move-farm-from-the-tf-connect-app-to-the-tf-portal-polkadotjs) (via the Polkadot.js Extension). You can also [import your farm from the TF Portal to the TF Connect App](../../../threefold_token/storing_tft/tf_connect_app.md#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet).
+The Dashboard section contains all the information required to [create a farm](../../../dashboard/farms/your_farms.md).
+
+### Using TF Connect App
+
+You can [create a ThreeFold farm](../../../threefold_token/storing_tft/tf_connect_app.md) with the ThreeFold Connect App.
 
 ## Wiping All the Disks
 
 You might need to wipe your disks if they are not brand new. To wipe your disks, read the section [Wipe All the Disks](../../3node_building/4_wipe_all_disks.md) of the ThreeFold Farming Documentation.
 
 ## Downloading the Zero-OS Bootstrap Image
+
+You can then download the [Zero-OS bootstrap image](https://v3.bootstrap.grid.tf) for your farm.
 
 ![3node_diy_rack_server_46](./img/3node_diy_rack_server_46.png)  
 

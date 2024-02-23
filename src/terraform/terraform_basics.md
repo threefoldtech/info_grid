@@ -1,7 +1,5 @@
 <h1>Terraform Basics</h1>
 
-![ ](./advanced/img//terraform_.png)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
@@ -53,10 +51,8 @@ There are two options when it comes to finding a node to deploy on. You can use 
 - Use the [scheduler](resources/terraform_scheduler.md)
   - Scheduler will help you find a node that matches your criteria
 - Use the Nodes Explorer
-  - You can check the [Explorer](../dashboard/explorer/explorer_home.md) to know which nodes fits your deployment criteria.
+  - You can check the [Node Finder](../dashboard/deploy/node_finder.md) to know which nodes fits your deployment criteria.
   - Make sure you choose a node which has enough capacity and is available (up and running).
-
-For more information on finding a node, read [this documentation](../dashboard/explorer/explorer_find_capacity.md).
 
 ## Preparation
 

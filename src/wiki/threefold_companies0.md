@@ -1,6 +1,6 @@
-### THREEFOLD RELATED COMPANIES
+<h1> ThreeFold Related Companies </h1>
 
-FOLLOWING COMPANIES ARE RELATED PARTIES TO THREEFOLD, OUR TERMS AND CONDITIONS APPLY 
+The following companies are related parties to ThreeFold. Our terms and conditions apply.
 
 | THREEFOLD RELATED COMPANIES                                     | Description                                                                        |
 | --------------------------------------------------------------- | ---------------------------------------------------------------------------------- |

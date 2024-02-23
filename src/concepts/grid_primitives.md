@@ -1,7 +1,5 @@
 <h1> ThreeFold Grid Primitives: Empowering Your Solutions </h1>
 
-![layers](./img/layers.jpeg)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
@@ -45,14 +43,14 @@ Harness our network Primitives, measured in [network units](../wiki/cloudunits/c
 
 ## Zero-OS Advantages
 
-Enjoy the numerous advantages that Zero-OS brings to the table.
+Enjoy the [numerous advantages](../technology/zos/benefits/zos_advantages.md) that Zero-OS brings to the table.
 
-- [Zero Install](../technology/zos/benefits/zero_install.md): Experience hassle-free deployment without the need for complex installations.
-- [Unbreakable Storage](../technology/zos/benefits/unbreakable_storage.md): Ensure the integrity and security of your data with our robust storage mechanisms.
-- [Zero Hacking Surface](../technology/zos/benefits/zero_hacking_surface.md): Benefit from a minimized attack surface, bolstering the security of your infrastructure.
-- [Zero Boot](../technology/zos/benefits/zero_boot.md): Enjoy lightning-fast boot times, allowing for swift and efficient system initialization.
-- [Deterministic Deployment](../technology/zos/benefits/deterministic_deployment.md): Achieve consistent and predictable deployments, streamlining your development process.
-- [ZOS Protect](../technology/zos/benefits/zos_protect.md): Experience enhanced protection and security measures to safeguard your infrastructure.
+- [Zero Install](../technology/zos/benefits/zos_advantages.md#zero-os-installation): Experience hassle-free deployment without the need for complex installations.
+- [Unbreakable Storage](../technology/zos/benefits/zos_advantages.md#unbreakable-storage): Ensure the integrity and security of your data with our robust storage mechanisms.
+- [Zero Hacking Surface](../technology/zos/benefits/zos_advantages.md#zero-hacking-surface): Benefit from a minimized attack surface, bolstering the security of your infrastructure.
+- [Zero Boot](../technology/zos/benefits/zos_advantages.md#zero-boot): Enjoy lightning-fast boot times, allowing for swift and efficient system initialization.
+- [Deterministic Deployment](../technology/zos/benefits/zos_advantages.md#deterministic-deployment): Achieve consistent and predictable deployments, streamlining your development process.
+- [ZOS Protect](../technology/zos/benefits/zos_advantages.md#zero-os-protect): Experience enhanced protection and security measures to safeguard your infrastructure.
 
 ## Conclusion
 

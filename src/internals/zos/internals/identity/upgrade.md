@@ -1,4 +1,19 @@
-# Upgrade module
+<h1> Node Upgrade</h1>
+
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Philosophy](#philosophy)
+- [Booting a new node](#booting-a-new-node)
+- [Runtime upgrade of a node](#runtime-upgrade-of-a-node)
+- [Technical](#technical)
+  - [Flist layout](#flist-layout)
+
+***
+
+## Introduction
+
+We provide information concerning node upgrade with ZOS. We also explain the philosophy behind ZOS.
 
 ## Philosophy
 

@@ -1,7 +1,5 @@
 <h1>MariaDB Synced Databases Between Two VMs</h1>
 
-![ ](./img/terraform_.png)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
@@ -32,7 +30,7 @@
 
 In this ThreeFold Guide, we show how to deploy a VPN with Wireguard and create a synced MariaDB database between the two servers using GlusterFS, a scalable network filesystem. Any change in one VM's database will be echoed in the other VM's database. This kind of deployment can lead to useful server architectures. 
 
-***
+
 
 # Main Steps
 
@@ -46,7 +44,7 @@ To get an overview of the whole process, we present the main steps:
 * Create a MariaDB database
 * Set GlusterFS
 
-***
+
 
 # Prerequisites
 
@@ -55,7 +53,7 @@ To get an overview of the whole process, we present the main steps:
 
 You need to download and install properly Terraform and Wireguard on your local computer. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
 
-***
+
 
 # Find Nodes with the ThreeFold Explorer
 
@@ -83,7 +81,7 @@ We thus start by finding two 3Nodes with sufficient resources. For this current 
 
 Once you've found a proper node, take node of its node ID. You will need to use this ID when creating the Terraform files.
 
-***
+
 
 # Set the VMs
 ## Create a Two Servers Wireguard VPN with Terraform
@@ -97,7 +95,7 @@ On your local computer, create a new folder named `terraform` and a subfolder ca
 
 Modify the variable files to take into account your own seed phras and SSH keys. You should also specifiy the node IDs of the two 3Nodes you will be deploying on.
 
-***
+
 
 ### Create the Terraform Files
 
@@ -280,7 +278,7 @@ In this guide, the virtual IP for `vm1` is 10.1.3.2 and the virtual IP for `vm2`
 
 Make sure to add your own seed phrase and SSH public key. You will also need to specify the two node IDs of the servers used. Simply replace the three dots by the content. Obviously, you can decide to increase or modify the quantity in the variables `size`, `cpu` and `memory`.
 
-***
+
 
 ### Deploy the 3Nodes with Terraform
 
@@ -303,7 +301,7 @@ Note that, at any moment, if you want to see the information on your Terraform d
     terraform show
     ```
 
-***
+
 
 ### SSH into the 3Nodes
 
@@ -312,7 +310,7 @@ Note that, at any moment, if you want to see the information on your Terraform d
      ssh root@3node_IPv4_Address
      ```
 
-***
+
 
 ### Preparing the VMs for the Deployment
 
@@ -326,7 +324,7 @@ Note that, at any moment, if you want to see the information on your Terraform d
     ``` 
 * Reconnect to the VMs
 
-***
+
 
 ### Test the Wireguard Connection
 
@@ -354,19 +352,19 @@ First, we set Wireguard with the Terraform output.
 > Note: If it doesn't work and you already did a WireGuard connection with the same file from Terraform (from a previous deployment perhaps), do `wg-quick down wg`, then `wg-quick up wg`.
 This should set everything properly.
 
-* As a test, you can ping the virtual IP addresses of both VMs to make sure the Wireguard connection is correct:
+* As a test, you can [ping](../../computer_it_basics/cli_scripts_basics.md#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the virtual IP addresses of both VMs to make sure the Wireguard connection is correct:
   *  ```
-     ping -c 2 10.1.3.2
+     ping 10.1.3.2
      ```
   *  ```
-     ping -c 2 10.1.4.2
+     ping 10.1.4.2
      ```
 
 If you correctly receive the packets for the two VMs, you know that the VPN is properly set.
 
 For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../getstarted/ssh_guide/ssh_wireguard.md).
 
-***
+
 
 # Configure the MariaDB Database
 
@@ -403,7 +401,7 @@ For more information on WireGuard, notably in relation to Windows, please read [
     mysql
     ```
 
-***
+
 
 ## Create User with Replication Grant
 
@@ -415,7 +413,7 @@ For more information on WireGuard, notably in relation to Windows, please read [
     show master status\G;
     ```
 
-***
+
 
 ## Verify the Access of the User
 * Verify the access of repuser user
@@ -424,7 +422,7 @@ For more information on WireGuard, notably in relation to Windows, please read [
     ```
   * You want to see `%` in Host
 
-***
+
 
 ## Set the VMs to accept the MariaDB Connection
 
@@ -445,7 +443,7 @@ For more information on WireGuard, notably in relation to Windows, please read [
     show slave status\G;
     ```
 
-***
+
 
 ### TF Template Master Server Data
 
@@ -464,7 +462,7 @@ For more information on WireGuard, notably in relation to Windows, please read [
     show slave status\G;
     ```
 
-***
+
 
 ## Set the MariaDB Databases on Both 3Nodes
 
@@ -498,7 +496,7 @@ We now set the MariaDB database. You should choose your own username and passwor
     exit;
     ```
 
-***
+
 
 # Install and Set GlusterFS
 
@@ -575,7 +573,7 @@ We now update the mount with the filse fstab on both master and worker.
 
 The databases of both VMs are accessible in `/var/www`. This means that any change in either folder `/var/www` of each VM will be reflected in the same folder of the other VM. In order words, the databases are now synced in real-time.
 
-***
+
 
 # Conclusion
 

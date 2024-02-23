@@ -11,7 +11,7 @@ In this guide, we delve into the realm of GPU farming, shedding light on the sig
 - [Install the GPU](#install-the-gpu)
 - [GPU Node and the Farmerbot](#gpu-node-and-the-farmerbot)
 - [Set a Price for the GPU Node](#set-a-price-for-the-gpu-node)
-- [Check the GPU Node on the Explorer](#check-the-gpu-node-on-the-explorer)
+- [Check the GPU Node on the Node Finder](#check-the-gpu-node-on-the-node-finder)
 - [Reserving the GPU Node](#reserving-the-gpu-node)
 - [Questions and Feedback](#questions-and-feedback)
 
@@ -62,11 +62,11 @@ You can [set additional fees](../farming_optimization/set_additional_fees.md) fo
 
 When a user reserves your 3Node as a dedicated node, you will receive TFT payments once every 24 hours. These TFT payments will be sent to the TFChain account of your farm's twin.
 
-## Check the GPU Node on the Explorer
+## Check the GPU Node on the Node Finder
 
-You can use the Explorer on the [TF Dashboard](https://dashboard.grid.tf/) to verify that the node is displayed as having a GPU.
+You can use the [Node Finder](../../dashboard/deploy/node_finder.md) on the [TF Dashboard](https://dashboard.grid.tf/) to verify that the node is displayed as having a GPU.
 
-* On the Dashboard, go to **Explorer -> Nodes**
+* On the Dashboard, go to the Node Finder
 * Under **Node ID**, write the node ID of the GPU node
 * Once the results are displayed, you should see **1** under **GPU**
    * If you are using the Status bot, you might need to change the node status under **Select Nodes Status** (e.g. **Down**, **Standby**) to see the node's information
@@ -75,7 +75,7 @@ You can use the Explorer on the [TF Dashboard](https://dashboard.grid.tf/) to ve
 
 ## Reserving the GPU Node
 
-Now, users can reserve the node in the **Dedicated Nodes** section of the Dashboard and then deploy workloads using the GPU. For more information on how to deploy workloads with a GPU node, read [this documentation](../../dashboard/portal/dashboard_portal_dedicated_nodes.md#gpu-support).
+Now, users can reserve the node in the **Dedicated Nodes** section of the Dashboard and then deploy workloads using the GPU. For more information, read [this documentation](../../dashboard/deploy/dedicated_machines.md).
 
 ## Questions and Feedback
 

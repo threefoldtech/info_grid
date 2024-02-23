@@ -1,7 +1,5 @@
 <h1> Nextcloud Deployments </h2>
 
-![ ](./img/terraform_.png)
-
 We present here different Nextcloud deployments. While this section is focused on Nextcloud, those deployment architectures can be used as templates for other kind of deployments on the TFGrid.
 
 <h2> Table of Contents </h2>

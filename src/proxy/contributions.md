@@ -1,4 +1,18 @@
-# Contributions guide
+<h1>Contributions Guide</h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Project structure](#project-structure)
+  - [Internal](#internal)
+  - [Pkg](#pkg)
+- [Writing tests](#writing-tests)
+
+***
+
+## Introduction
+
+We propose a quick guide to learn how to contribute.
 
 ## Project structure
 

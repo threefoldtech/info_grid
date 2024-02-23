@@ -1,10 +1,19 @@
-![](img/blockchain.png)
+<h1> TFChain </h1>
 
-# TFChain
+<h2>Table of Contents</h2>
 
-> ThreeFold Chain
+- [Introduction](#introduction)
+- [TFChain Uses](#tfchain-uses)
 
-Blockchain based on Parity Substrate which manages the TFGrid 3.x.
+***
+
+## Introduction
+
+TFChain is a blockchain based on Parity Substrate which manages the TFGrid 3.x.
+
+TFChain is a combination of TFChain nodes.
+
+## TFChain Uses
 
 This blockchain is used for:
 
@@ -19,4 +28,3 @@ This blockchain is used for:
 - smartcontract_it layer (how to provision workloads on top of TFGrid)
 - the backend for TFChainDB
 
-Is combination of tfchain_nodes

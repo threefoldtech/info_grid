@@ -21,14 +21,14 @@
 
 We present here the relevant information when it comes to deploying a virtual machine with Wireguard and a gateway.
 
-***
+
 
 
 ## Client Configurations
 
 To configure the client, have a look at [this section](./grid3_javascript_loadclient.md).
 
-***
+
 
 ## Code Example
 
@@ -126,7 +126,7 @@ async function main() {
 main();
 
 ```
-***
+
 
 ## Detailed Explanation
 
@@ -293,7 +293,7 @@ If we want to delete the deployments we can just do this:
   log(deletedGW);
 ```
 
-***
+
 
 ## Conclusion
 

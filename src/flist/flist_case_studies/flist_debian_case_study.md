@@ -27,7 +27,7 @@ For this tutorial, we will present a case study demonstrating how easy it is to 
 
 To do all this, we will need to create a Docker Hub account, create a Dockerfile, a docker image and a docker container, then convert the docker image to a Zero-OS flist. After all this, we will be deploying our Debian workload on the ThreeFold Playground. You'll see, it's pretty straightforward and fun to do.
 
-***
+
 
 ### You Said Flist?
 
@@ -39,7 +39,7 @@ Sounds great? It really is great, and very effective!
 
 One amazing thing about the flist technology is that it is possible to convert any Docker image into an flist, thanks to the [ThreeFold Docker Hub Converter tool](https://hub.grid.tf/docker-convert). If this sounds complicated, fear not. It is very easy and we will show you how to proceed in this case study.
 
-***
+
 
 ### Case Study Objective
 
@@ -47,7 +47,7 @@ The goal of this case study is to give you enough information and tools so that 
 
 This case study is not meant to show you all the detailed steps on creating an flist from scratch. We will instead start with some files templates available on the ThreeFold repository [tf-images](https://github.com/threefoldtech/tf-images). This is one of the many advantages of working with open-source projects: we can easily get inspiration from the already available codes of the many ThreeFold repositories and work our way up from there.
 
-***
+
 
 ### The Overall Process
 
@@ -58,7 +58,7 @@ To give you a bird's view of the whole project, here are the main steps:
 * Convert the Docker image to a Zero-OS flist
 * Deploy a micro VM with the flist on the ThreeFold Playground
 
-***
+
 
 ## Docker Image Creation
 
@@ -195,7 +195,7 @@ We've now went through all the files available in the Ubuntu 22.04 directory on 
 
 To have a look at the final result of the changes we bring to the Ubuntu 22.04 version, have a look at this [Debian directory](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/debian) on the ThreeFold's tf-images repository.
 
-***
+
 
 ## Docker Publishing Steps
 
@@ -245,7 +245,7 @@ You now have access to the Docker Hub from your local computer. We will then pro
       https://hub.docker.com/u/<account_name>
       ```
 
-***
+
 
 ## Convert the Docker Image to an Flist
 
@@ -273,7 +273,7 @@ We will now convert the Docker image into a Zero-OS flist. This part is so easy 
       https://hub.grid.tf/idrnd.3bot/username-debian12-latest.flist
       ```
 
-***
+
 
 ## Deploy the Flist on the TF Playground
 
@@ -291,7 +291,7 @@ We will now convert the Docker image into a Zero-OS flist. This part is so easy 
 
 That's it! You can now SSH into your Debian deployment and change the world one line of code at a time!
 
-****
+*
 
 ## Conclusion
 

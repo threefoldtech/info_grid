@@ -1,7 +1,5 @@
 <h1> Nextcloud All-in-One Deployment </h1>
 
-![ ](./img/terraform_.png)
-
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
@@ -18,11 +16,11 @@
 
 We present a quick way to install Nextcloud All-in-One on the TFGrid. This guide is based heavily on the Nextcloud documentation available [here](https://nextcloud.com/blog/how-to-install-the-nextcloud-all-in-one-on-linux/). It's mostly a simple adaptation to the TFGrid with some additional information on how to set correctly the firewall and the DNS record for your domain.
 
-***
+
 
 ## Deploy a Full VM
 
-* Deploy a Full VM with the [TF Playground](https://www.manual.grid.tf/getstarted/ssh_guide/ssh_openssh.html) or [Terraform](https://www.manual.grid.tf/terraform/terraform_full_vm.html)
+* Deploy a Full VM with the [TF Dashboard](https://www.manual.grid.tf/getstarted/ssh_guide/ssh_openssh.html) or [Terraform](https://www.manual.grid.tf/terraform/terraform_full_vm.html)
   * Minimum specs:
     * IPv4 Address
     * 2 vcores 
@@ -31,7 +29,7 @@ We present a quick way to install Nextcloud All-in-One on the TFGrid. This guide
 * Take note of the VM IP address
 * SSH into the Full VM
 
-***
+
 
 ## Set a Firewall
 
@@ -80,7 +78,7 @@ We thus add the following rules:
 
 You now have enabled the firewall with proper security rules for your Nextcloud deployment.
 
-***
+
 
 ## Set the DNS Record for Your Domain
 
@@ -96,7 +94,7 @@ You now have enabled the firewall with proper security rules for your Nextcloud 
       https://dnschecker.org/#A/<domain-name>
       ```
 
-***
+
 
 ## Install Nextcloud All-in-One
 
@@ -132,11 +130,11 @@ For the rest of the guide, we follow the steps availabe on the Nextcloud website
 
 You can now easily access Nextcloud AIO with your domain URL!
 
-***
+
 ## Set BorgBackup
 
 On the AIO interface, you can easily set BorgBackup. Since we are using Linux, we use the mounting directory `/mnt/backup`. Make sure to take note of the backup password.
-***
+
 ## Conclusion
 
 Most of the information in this guide can be found on the Nextcloud official website. We presented this guide to show another way to deploy Nextcloud on the TFGrid.

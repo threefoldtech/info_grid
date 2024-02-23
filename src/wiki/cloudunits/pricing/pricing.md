@@ -1,7 +1,5 @@
 <h1> Cloud Unit Pricing </h1>
 
-![](img/tfgrid_pricing.jpg)
-
 <h2>Table of Contents</h2>
 
 - [Pricing Policy](#pricing-policy)

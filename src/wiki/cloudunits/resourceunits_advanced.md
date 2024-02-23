@@ -1,10 +1,19 @@
-# Resource Units Calculation
+<h1>Resource Units Calculation</h1>
+
+<h2> Table of Contents </h2>
+
+- [Calculation from resource units to CU/SU for farming purposes](#calculation-from-resource-units-to-cusu-for-farming-purposes)
+- [Compute](#compute)
+- [Storage](#storage)
+  - [Storage cost price verification Dec 2021](#storage-cost-price-verification-dec-2021)
+
+***
 
 ## Calculation from resource units to CU/SU for farming purposes
 
 The threefold Zero-OS and TFChain software translates resource units (CRU, MRU, HRU, SRU) into cloud units (CU, SU) for farming reward purposes.
 
-### Compute
+## Compute
 
 For farming, 1 CU equals:
 
@@ -20,7 +29,7 @@ cu = min((mru - 1) / 4, cru * 4 / 2, sru / 50)
 - please note minimal passmark per CU (with 4GB mem), needs to be 1000 passmark at farming side, this is not being checked today but might be done in future. If your chosen CPU has less than 1000 passmark per CU (of 4 GB mem), it could be your final CU's will be lower once that feature is introduced.
 
 
-### Storage
+## Storage
 
 For farming, 1 SU equals to:
 - 1.2 TB of HD capacity (which can deliver 1 TB of net usable storage) 
@@ -30,7 +39,7 @@ For farming, 1 SU equals to:
 su = hru / 1200 + sru * 0.8 / 200
 ```
 
-#### Storage cost price verification Dec 2021
+### Storage cost price verification Dec 2021
 
 - price for 16 TB HDD = 300 USD
   - 16000 / 1200 = 13.3 SU

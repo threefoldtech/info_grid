@@ -1,4 +1,14 @@
-# Genesis Block / Pool Details
+<h1> Genesis Pool Details </h1>
+
+<h2>Table of Contents </h2>
+
+- [Genesis Pool](#genesis-pool)
+- [Genesis Block](#genesis-block)
+  - [Genesis Block Value](#genesis-block-value)
+  - [Calculation](#calculation)
+- [Genesis Pool Details](#genesis-pool-details)
+
+***
 
 ## Genesis Pool
 

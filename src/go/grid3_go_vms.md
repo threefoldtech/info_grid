@@ -1,6 +1,17 @@
-## Deploying Multiple VMs
+<h1> Deploying Multiple VMs</h1>
 
-### Example
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Example](#example)
+
+***
+
+## Introduction
+
+We show how to deploy multiple VMs with the Go client.
+
+## Example
 
 ```go
 import (

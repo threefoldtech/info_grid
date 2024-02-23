@@ -1,13 +1,24 @@
+<h1> Farming Reward 3.0</h1>
 
-# Farming Reward 3.0
+<h2> Table of Contents </h2>
 
-![](img/farming_rewards_.png ':size=350x')
+- [Introduction](#introduction)
+- [How do farmer earn TFT?](#how-do-farmer-earn-tft)
+- [Proof-of-Capacity](#proof-of-capacity)
+- [What is proof-of-capacity?](#what-is-proof-of-capacity)
+- [Why proof-of-capacity?](#why-proof-of-capacity)
+- [How does Proof-of-Capacity work?](#how-does-proof-of-capacity-work)
+- [TFT Rewards for TFGrid Mainnet](#tft-rewards-for-tfgrid-mainnet)
 
-The amount of ThreeFold_Token earned by farmers is relative to the amount of compute, storage or network capacity they provide to the ThreeFold Grid as recorded by the proof-of-capacity algorythm. This section covers some farming and token reward basics. 
+***
+
+## Introduction
+
+The amount of TFT earned by farmers is relative to the amount of compute, storage or network capacity they provide to the ThreeFold Grid as recorded by the proof-of-capacity algorythm. This section covers some farming and token reward basics. 
 
 ## How do farmer earn TFT? 
 
-ThreeFold Blockchain (TFChain) rewards farmers for providing Internet capacity and expanding the ThreeFold Grid. They earn ThreeFold_Token. When successfully verified by proof-of-capacity, farmers earn TFT according to the amount of Internet capacity registered in TFChain.
+ThreeFold Blockchain (TFChain) rewards farmers for providing Internet capacity and expanding the ThreeFold Grid. They earn TFT. When successfully verified by proof-of-capacity, farmers earn TFT according to the amount of Internet capacity registered in TFChain.
 
 ## Proof-of-Capacity
 

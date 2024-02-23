@@ -1,21 +1,8 @@
 # ThreeFold Farmers
 
-![Farming_Title](./img/farming_30.png)
+This section covers all practical tutorials on how to farm on the ThreeFold Grid.
 
-Welcome to the *ThreeFold Farmers* section of the ThreeFold Manual, your comprehensive resource for understanding and navigating the world of ThreeFold farming. 
-
-In this manual, we embark on a journey to demystify the role of ThreeFold Farmers and provide a detailed exploration of the ThreeFold Grid, a revolutionary, decentralized, and sustainable internet infrastructure.
-
-## What is a ThreeFold Farmer?
-ThreeFold Farmers are the backbone of the ThreeFold Grid, responsible for hosting and managing the infrastructure that forms the foundation of a new, decentralized internet. A Farmer is an individual or organization that contributes computing resources, such as storage and processing power, to the ThreeFold Grid, creating a distributed and resilient network that is owned and operated by its users.
-
-As a ThreeFold Farmer, you are not merely a participant in a traditional cloud infrastructure: you are a key stakeholder in a community-driven, sustainable, and inclusive digital ecosystem. By becoming a Farmer, you join a global network of like-minded individuals and entities, all working towards a common goal of fostering a more equitable and efficient internet.
-
-This guide is designed to walk you through the essential concepts, tools, and practices that define the ThreeFold farming experience. Whether you are a seasoned infrastructure professional or someone exploring the world of decentralized computing for the first time, this guide will provide you with the insights and instructions needed to thrive as a ThreeFold Farmer.
-
-## Get Started
-
-If you aspire to become a farmer on the ThreeFold Grid, you've come to the right place. This comprehensive book is designed to provide you with all the necessary information, steps, and insights you need to embark on your journey as a ThreeFold farmer, from start to finish. By becoming a farmer, you'll be part of a global network powering a new era of decentralized computing. So, let's dive into this manual and discover the world of ThreeFold Farming!
+For complementary information on ThreeFold farming, read the [Farming](../wiki/tfgrid/farming/farming_toc.md) section of the Library.
 
 <h2> Table of Contents </h2>
 
@@ -45,13 +32,6 @@ If you aspire to become a farmer on the ThreeFold Grid, you've come to the right
   - [Quick Guide](./farmerbot/farmerbot_quick.md)
   - [Additional Information](./farmerbot/farmerbot_information.md)
   - [Minting and the Farmerbot](./farmerbot/farmerbot_minting.md)
-- [Farming Details](../wiki/tfgrid/farming/farming_toc.md)
-  - [Farming Rewards](../wiki/tfgrid/farming/farming_reward.md)
-  - [Proof-of-Utilization](../wiki/tfgrid/farming/proof_of_utilization.md)
-  - [Proof-of-Capacity](../wiki/tfgrid/farming/proof_of_capacity.md)
-  - [PoC DAO Rules](../wiki/tfgrid/farming/poc_dao_rules.md)
-  - [Farming Reward v2](../wiki/tfgrid/farming/farming_reward2.md)
-  - [Farming Upgrade](../wiki/tfgrid/farming/farming_upgrade_2_3.md)
 - [Farmers FAQ](../faq/faq.md#farmers-faq)
 
 > Note: Bugs in the code (e.g. ZOS or other components) can happen. If this is the case, there might be a loss of tokens during minting which won't be refunded by ThreeFold. If there are minting code errors, ThreeFold will try its best to fix the minting code and remint nodes that were affected by such errors.

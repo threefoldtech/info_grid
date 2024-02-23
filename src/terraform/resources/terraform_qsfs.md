@@ -1,7 +1,5 @@
 <h1> Quantum Safe Filesystem (QSFS) </h1>
 
-![ ](../advanced/img/terraform_.png)
-
 <h2> Table of Contents </h2>
 
 - [QSFS on Micro VM](./terraform_qsfs_on_microvm.md)
@@ -14,8 +12,6 @@
 Quantum Storage is a FUSE filesystem that uses mechanisms of forward error correction (Reed Solomon codes) to make sure data (files and metadata) are stored in multiple remote places in a way that we can afford losing x number of locations without losing the data. 
 
 The aim is to support unlimited local storage with remote backends for offload and backup which cannot be broken, even by a quantum computer.
-
-***
 
 ## QSFS Workload Parameters and Documentation
 

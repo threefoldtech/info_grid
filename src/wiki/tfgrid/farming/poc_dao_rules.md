@@ -1,6 +1,18 @@
-# ThreeFold DAO rules for Proof of Capacity
+<h1>ThreeFold DAO rules for Proof of Capacity</h1>
 
-![](img/farming_rewards_.png)
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Technical Farming Requirements](#technical-farming-requirements)
+- [Automatic staking of farming rewards](#automatic-staking-of-farming-rewards)
+- [Remarks](#remarks)
+- [Suggested: improvements to proof-of-capacity](#suggested-improvements-to-proof-of-capacity)
+- [TFGrid is a DAO](#tfgrid-is-a-dao)
+- [Grid Enhancement Proposal](#grid-enhancement-proposal)
+
+***
+
+## Introduction
 
 - The CU/SU reward gets expressed in TFT and registered in TFChain at 3Node registration time.
   - For certified Nodes, the CU/SU reward was specified at sales/promotion time, this process is managed by threefold_tech. 
@@ -60,7 +72,7 @@ Suggestions will be made to improve PoC, the DAO will have to come to consensus 
 - All of above information is public and can be see by everone of the community as per 3Node and Farmer (part of TFChain).
 - Farming rewards methodology can and probably will get revised if the community wants this, DAO consensus needs to be achieved before changes can happen, this happens by means of a GEP.
 
-## Grid Enhancement Proposal (\*)
+## Grid Enhancement Proposal
 
 - Changes to above described mechanism or any other change request for the TFGrid is managed by gep.
 - Because we are a DAO, everything is open for change as long as consensus of community in accordance of TFDAO has been achieved.

@@ -1,6 +1,19 @@
-# Terraform Provider
+<h1> Terraform Provider </h1>
 
-![ ](./img/terraform_.png)
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Example](#example)
+- [Environment Variables](#environment-variables)
+- [Remarks](#remarks)
+
+***
+
+## Introduction
+
+We present the basics of the Terraform Provider.
+
+## Example
 
 ``` terraform
 terraform {
@@ -20,7 +33,7 @@ provider "grid" {
 }
 ```
 
-## environment variables
+## Environment Variables
 
 should be recognizable as Env variables too
 
@@ -33,7 +46,7 @@ should be recognizable as Env variables too
 
 The *_URL variables can be used to override the dafault urls associated with the specified network
 
-### Remarks
+## Remarks
 
 - Grid terraform provider is hosted on terraform registry [here](https://registry.terraform.io/providers/threefoldtech/grid/latest/docs?pollNotifications=true)
 - All provider input variables and their description can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/index.md)

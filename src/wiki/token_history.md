@@ -1,4 +1,22 @@
-# The Path from TFT v1 Towards TFT v2
+<h1> Token History </h1>
+
+<h2>Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Quick History Overview](#quick-history-overview)
+- [Organic Growth](#organic-growth)
+- [Farming Model Improvements](#farming-model-improvements)
+  - [TFT Versions](#tft-versions)
+- [Migration](#migration)
+  - [Migration from TFTv1 Rivine to TFTv1 Stellar (2020)](#migration-from-tftv1-rivine-to-tftv1-stellar-2020)
+  - [Migration from TFTv1 Stellar (Staking Pool=TFTA) to TFTv2 Stellar (Trading or Production Pool=TFT)](#migration-from-tftv1-stellar-staking-pooltfta-to-tftv2-stellar-trading-or-production-pooltft)
+  - [Technical Information](#technical-information)
+
+***
+
+## Introduction
+
+We present the ThreeFold token history and the path from TFT v1 towards TFT v2.
 
 ## Quick History Overview
 
@@ -20,7 +38,9 @@
   - TF Foundation Dubai has provisioned the TFTv1 & TFTv2 on Stellar blockchain, but has no influence or access to any of the wallets or for that matter the 3Nodes (the boxes providing IT capacity)
   - See below for more info, this was the result of 12 months of work with our community and of-course consensus to do this.
 
-## We didn't artificially pump the value of the tokens
+## Organic Growth
+
+We didn't artificially pump the value of the tokens.
 
 We did not issue (print) tokens and go out onto an exchange to offer these tokens to the market. This is referred to as a public ICO. Some ICOs were not very clean in how they created hype and convinced people to invest. Because of our decision not to do a public ICO, we have not been able to raise much money, but we feel that this was more aligned with our values.
 
@@ -49,7 +69,7 @@ In Q3 2021 we launched TF Grid 3.0 which has again brought improvement to the fa
 
 ## Migration
 
-### migration from TFTv1 Rivine to TFTv1 Stellar (2020)
+### Migration from TFTv1 Rivine to TFTv1 Stellar (2020)
 
 - TF Tech decided to no longer support development of Rivine, at this time there are better technologies available as blockchain
 - The Foundation investigated many blockchain platforms & recommended to use Stellar

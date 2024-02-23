@@ -1,6 +1,17 @@
-## Deploying a VM
+<h1> Deploying a VM</h1>
 
-### Example
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Example](#example)
+
+***
+
+## Introduction
+
+We show how to deploy a VM with the Go client.
+
+## Example
 
 ```go
 import (

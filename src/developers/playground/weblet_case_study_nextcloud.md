@@ -1,7 +1,5 @@
 <h1>Weblet Case Study: Nextcloud AIO</h1>
 
-![](./img/nextcloud_aio.png)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)

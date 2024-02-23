@@ -1,10 +1,27 @@
-<!-- !!!include:grid3_javascript_loadclient -->
+<h1> Deploying a VM and exposing it over a Gateway Prefix </h1>
 
-## Deploying a VM and exposing it over a Gateway Prefix
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Example code](#example-code)
+- [Detailed explanation](#detailed-explanation)
+  - [deploying](#deploying)
+  - [getting deployment object](#getting-deployment-object)
+  - [deletion](#deletion)
+- [Deploying a VM and exposing it over a Gateway using a Full domain](#deploying-a-vm-and-exposing-it-over-a-gateway-using-a-full-domain)
+- [Example code](#example-code-1)
+- [Detailed explanation](#detailed-explanation-1)
+  - [deploying](#deploying-1)
+  - [get deployment object](#get-deployment-object)
+  - [deletion](#deletion-1)
+
+***
+
+## Introduction
 
 After the [deployment of a VM](./grid3_javascript_vm.md), now it's time to expose it to the world
 
-### Example code
+## Example code
 
 ```ts
 import { FilterOptions, GatewayNameModel } from "../src";
@@ -46,7 +63,7 @@ main();
 
 ```
 
-### Detailed explanation
+## Detailed explanation
 
 ```ts
 const gw = new GatewayNameModel();
@@ -59,7 +76,7 @@ gw.backends = ["http://185.206.122.35:8000"];
 - we created a gateway name model and gave it a `name` -that's why it's called GatewayName- `test` to be deployed on gateway node to end up with a domain `test.gent01.devnet.grid.tf`,
 - we create a proxy for the gateway to send the traffic coming to `test.ghent01.devnet.grid.tf` to the backend  `http://185.206.122.35`, we say `tls_passthrough is false` to let the gateway terminate the traffic, if you replace it with `true` your backend service needs to be able to do the TLS termination
 
-#### deploying
+### deploying
 
 ```ts
 // deploy
@@ -69,7 +86,7 @@ log(res);
 
 this deploys `GatewayName` on the grid
 
-#### getting deployment object
+### getting deployment object
 
 ```ts
 const l = await grid3.gateway.getObj(gw.name);
@@ -78,7 +95,7 @@ log(l);
 
 getting the deployment information can be done using `getObj`
 
-#### deletion
+### deletion
 
 ```ts
 const d = await grid3.gateway.delete_name({ name: gw.name });
@@ -89,7 +106,7 @@ log(d);
 
 After the [deployment of a VM](./grid3_javascript_vm.md), now it's time to expose it to the world
 
-### Example code
+## Example code
 
 ```ts
 import { FilterOptions, GatewayFQDNModel } from "../src";
@@ -130,7 +147,7 @@ async function main() {
 main();
 ```
 
-### Detailed explanation
+## Detailed explanation
 
 ```ts
 const gw = new GatewayFQDNModel();
@@ -145,7 +162,7 @@ gw.backends = ["my yggdrasil IP"];
 - we created a record on our name provider for `test.hamada.grid.tf` to point to the IP of gateway node `1`
 - we specified the backened would be an yggdrassil ip so once this is deployed when we go to `test.hamada.grid.tf` we go to the gateway server and from their our traffic goes to the backend.
 
-#### deploying
+### deploying
 
 ```ts
 // deploy
@@ -155,7 +172,7 @@ log(res);
 
 this deploys `GatewayName` on the grid
 
-#### get deployment object
+### get deployment object
 
 ```ts
 const l = await grid3.gateway.getObj(gw.name);
@@ -164,7 +181,7 @@ log(l);
 
 getting the deployment information can be done using `getObj`
 
-#### deletion
+### deletion
 
 ```ts
 const d = await grid3.gateway.delete_fqdn({ name: gw.name });

@@ -1,4 +1,8 @@
-# Farming Details
+# Farming
+
+This section covers the essential information concerning ThreeFold Farming.
+
+To farm on the ThreeFold Grid, read the [Farmers tutorials](../../../farmers/farmers.md).
 
 <h2>Table of Contents</h2>
 

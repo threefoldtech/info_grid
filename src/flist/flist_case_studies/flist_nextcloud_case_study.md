@@ -1,7 +1,5 @@
 <h1> Flist Case Study: Nextcloud All-in-One </h1>
 
-![nextcloud_logo](./img/nextcloud_logo.jpeg)
-
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)

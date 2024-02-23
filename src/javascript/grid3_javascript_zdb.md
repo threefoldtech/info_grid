@@ -1,8 +1,29 @@
-first, make sure you have your [client](./grid3_javascript_loadclient.md) prepared
+<h1>Deploying ZDB</h1>
 
-## Deploying ZDB
+<h2>Table of Contents</h2>
 
-### Example code
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Example code](#example-code)
+- [Detailed explanation](#detailed-explanation)
+  - [Getting the client](#getting-the-client)
+  - [Building the model](#building-the-model)
+  - [preparing ZDBs collection](#preparing-zdbs-collection)
+  - [Deployment](#deployment)
+  - [Getting Deployment information](#getting-deployment-information)
+  - [Deleting a deployment](#deleting-a-deployment)
+
+***
+
+## Introduction
+
+We show how to deploy ZDB on the TFGrid with the Javascript client.
+
+## Prerequisites
+
+- Make sure you have your [client](./grid3_javascript_loadclient.md) prepared
+
+## Example code
 
 ```ts
 import { FilterOptions, ZDBModel, ZdbModes, ZDBSModel } from "../src";
@@ -52,15 +73,15 @@ async function main() {
 main();
 ```
 
-### Detailed explanation
+## Detailed explanation
 
-#### Getting the client
+### Getting the client
 
 ```ts
 const grid3 = getClient();
 ```
 
-#### Building the model
+### Building the model
 
 ```ts
 // create zdb object
@@ -82,7 +103,7 @@ Here we define a `ZDB model` and setting the relevant properties e.g
 - publicNamespace: a public namespace can be read-only if a password is set
 - password: namespace password
 
-#### preparing ZDBs collection
+### preparing ZDBs collection
 
 ```ts
 // create zdbs object
@@ -94,14 +115,14 @@ zdbs.metadata = '{"test": "test"}';
 
 you can attach multiple ZDBs into the collection and send it for deployment
 
-#### Deployment
+### Deployment
 
 ```ts
 const res = await grid3.zdbs.deploy(zdbs);
 log(res);
 ```
 
-#### Getting Deployment information
+### Getting Deployment information
 
 `getObj` gives detailed information about the workload.
 
@@ -111,7 +132,7 @@ const l = await grid3.zdbs.getObj(zdbs.name);
 log(l);
 ```
 
-#### Deleting a deployment
+### Deleting a deployment
 
 `.delete` method helps cancelling the relevant contracts related to that ZDBs deployment
 

@@ -1,7 +1,18 @@
 
-## Deploying multiple VMs
+<h1> Deploying multiple VMs</h1>
 
-### Example code
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Example code](#example-code)
+
+***
+
+## Introduction
+
+It is possible to deploy multiple VMs with the Javascript client.
+
+## Example code
 
 ```ts
 import { DiskModel, FilterOptions, MachineModel, MachinesModel, NetworkModel } from "../src";

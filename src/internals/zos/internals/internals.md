@@ -1,4 +1,19 @@
-# Introduction
+<h1> Internal Modules</h1>
+
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Booting](#booting)
+- [Bootstrap](#bootstrap)
+- [Zinit](#zinit)
+- [Architecture](#architecture)
+  - [IPC](#ipc)
+- [ZOS Processes (modules)](#zos-processes-modules)
+- [Capacity](#capacity)
+
+***
+
+## Introduction
 
 This document explains in a nutshell the internals of ZOS. This includes the boot process, architecture, the internal modules (and their responsibilities), and the inter-process communication.
 

@@ -22,11 +22,11 @@ For more information on deploying a full VM and using SSH remote connection, rea
 
 If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](../../tfgrid3_getstarted.md) of the Threefold Manual.
 
-***
+
 
 ## Server Side: Deploy the Full VM, install a desktop and XRDP
 
-* Go to the [Threefold Playground](https://play.grid.tf/#/)
+* Go to the [Threefold Dashboard](https://dashboard.grid.tf/#/)
 * Deploy a full VM (Ubuntu 20.04)
   * With an IPv4 Address
 * After deployment, copy the IPv4 address
@@ -134,7 +134,7 @@ Move to home directory
     * ```
       sudo ufw status
       ```
-***
+
 
 ## Client Side: Install Remote Desktop Connection for Windows, MAC or Linux
 
@@ -161,7 +161,7 @@ Simply download the app, open it and write the IPv4 address of the VM. You then 
     * the VM root-access username and password
   * You now have remote desktop connection to your VM
 
-***
+
 
 ## Conclusion
 

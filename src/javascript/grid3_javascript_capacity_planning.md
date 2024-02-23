@@ -1,6 +1,17 @@
-## Capacity Planning
+<h1> Capacity Planning </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Example](#example)
+
+***
+
+## Introduction
 
 It's almost the same as in [deploying a single VM](../javascript/grid3_javascript_vm.md) the only difference is you can automate the choice of the node to deploy on using code. We now support `FilterOptions` to filter nodes based on specific criteria e.g the node resources (CRU, SRU, HRU, MRU) or being part of a specific farm or located in some country, or being a gateway or not
+
+## Example
 
 ```ts
 FilterOptions: { accessNodeV4?: boolean; accessNodeV6?: boolean; city?: string; country?: string; cru?: number; hru?: number; mru?: number; sru?: number; farmId?: number; farmName?: string; gateway?: boolean; publicIPs?: boolean; certified?: boolean; dedicated?: boolean; availableFor?: number; page?: number;}
