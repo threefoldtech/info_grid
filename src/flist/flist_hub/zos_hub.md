@@ -19,7 +19,7 @@
 
 ## Introduction
 
-The ThreeFold Zero-OS Hub allows you to do multiple things and acts as a public centralization of flists.
+The [ThreeFold Zero-OS Hub](https://hub.grid.tf/) allows you to do multiple things and acts as a public centralization of flists.
 
 The ZOS Hub is mainly there to gives an easy way to distribute flist files, which are databases of metadata that you can use in any Zero-OS container or virtual machine.
 

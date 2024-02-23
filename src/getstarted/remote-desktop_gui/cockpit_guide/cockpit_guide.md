@@ -23,7 +23,7 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
 
 Note that the two sections [Change the Network System Daemon](#change-the-network-system-daemon) and [Set a Firewall](#set-a-firewall) are optional. That being said, they provide more features and security to the deployment.
 
-***
+
 
 ## Deploy a Full VM and Create a Root-Access User
 
@@ -69,7 +69,7 @@ To start, you must [deploy and SSH into a full VM](../../ssh_guide/ssh_guide.md)
       ssh newuser@VM_IPv4_address
       ```
 
-***
+
 
 ## Set the VM and Install Cockpit
 
@@ -82,7 +82,7 @@ To start, you must [deploy and SSH into a full VM](../../ssh_guide/ssh_guide.md)
     . /etc/os-release && sudo apt install -t ${UBUNTU_CODENAME}-backports cockpit -y
     ```
 
-***
+
 
 ## Change the Network System Daemon
 
@@ -132,7 +132,7 @@ We now change the system daemon that manages network configurations. We will be 
   * ``` 
     ssh newuser@VM_IPv4_address
     ```
-***
+
 
 ## Set a Firewall
 
@@ -160,7 +160,7 @@ We now set a firewall. We note that [ufw](https://wiki.ubuntu.com/UncomplicatedF
     sudo firewall-cmd --state
     ```
 
-***
+
 
 ## Access Cockpit
 
@@ -173,13 +173,13 @@ We now set a firewall. We note that [ufw](https://wiki.ubuntu.com/UncomplicatedF
   * On the top right of the Cockpit window, click on `Limited access`
     * Enter the root-access user password then click `Authenticate`
 
-***
+
 
 ## Conclusion
 
 You now have access to a web-based graphical interface to manage your VM. You can read [Cockpit's documentation](https://cockpit-project.org/documentation.html) to explore further this interface.
 
-***
+
 
 ## Acknowledgements and References
 

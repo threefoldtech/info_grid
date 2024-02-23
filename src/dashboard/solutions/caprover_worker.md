@@ -1,11 +1,16 @@
-<h1> Add a New Worker Node </h1>
+<h1> CapRover Worker </h1>
 
 <h2> Table of Contents </h2>
 
+- [Introduction](#introduction)
 - [Step 1: Add a Default Docker Registry](#step-1-add-a-default-docker-registry)
 - [Step 2: Attach a New Node to the Cluster](#step-2-attach-a-new-node-to-the-cluster)
 
 ***
+
+## Introduction
+
+We present the steps to manage a CapRover Worker node.
 
 ## Step 1: Add a Default Docker Registry
 
@@ -19,7 +24,7 @@ You'll have to add a default docker registry so other CapRover nodes in the clus
 
 You can check [official documentation](https://caprover.com/docs/app-scaling-and-cluster.html#setup-docker-registry) to know more about Docker registry options.
 
-***
+
 
 ## Step 2: Attach a New Node to the Cluster
 

@@ -24,17 +24,17 @@ The steps are simple:
 * Explain briefly the issue you found
 * Click `Submit New Issue`
 
-***
+
 
 ## Advanced Method: Create a Pull Request
 
 If you found an issue in the manual and you wish to fix the issue yourself, you can always fork the repository and propose the changes in a pull request. We present the main steps in this section as well as further details on how to proceed efficiently.
 
-***
+
 
 ### Main Steps to Add Content
 
-***
+
 
 We present here the main steps to add content to the Threefold Manual by forking the repository [`threefoldtech/info_grid`](https://github.com/threefoldtech/info_grid) to your own Github account.
 
@@ -55,11 +55,11 @@ We present here the main steps to add content to the Threefold Manual by forking
 
 Note: You can update your forked repository by clicking `Sync fork -> Update branch`.
 
-***
+
 
 ### How to View the mdbook Locally
 
-***
+
 
 Once you've forked the TF Manual repository to your Github account, you might want to see the changes you've made before asking for a pull request. This will ensure that the final output is exactly what you have in mind.
 
@@ -83,11 +83,11 @@ The steps are the following:
   * Note that, by default, the URL is the following, using port `3000`, `http://localhost:3000/`
 * You should now be able to see your changes.
 
-***
+
 
 ### How to Install git and mdbook
 
-***
+
 
 To install git, follow the steps provided [here](https://github.com/git-guides/install-git).
 
@@ -95,11 +95,11 @@ To install mdbook, you can download the executable binaries available on the [Gi
 
 For more information, read the [mdbook Documentation](https://rust-lang.github.io/mdBook/guide/installation.html).
 
-***
+
 
 ### Markdown File Template (Optional)
 
-***
+
 
 Here are some suggestions on how to organize a Markdown file (`.md`) when you submit contents to the ThreeFold Manual. This is not necessary, but it will ease the whole process.
 
@@ -112,7 +112,7 @@ Here are some suggestions on how to organize a Markdown file (`.md`) when you su
 * If your text reaches heading level 4, you might want to separate your file into two or more files.
    *  A long article can be spread in many subsections.
 
-***
+
 
 ## Questions and Feedback
 

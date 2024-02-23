@@ -1,8 +1,17 @@
-# Quantum Safe Filesystem
+<h1> Quantum Safe Filesystem </h1>
 
-![](img/zos_zstor.jpg)
+<h2>Table of Contents</h2>
 
-presents itself as a filesystem to the ZMachine.
+- [Introduction](#introduction)
+  - [Benefits](#benefits)
+  - [Use Cases](#use-cases)
+  - [Implementation](#implementation)
+ 
+***
+
+## Introduction
+
+Quantum safe filesystem presents itself as a filesystem to the ZMachine.
 
 ### Benefits
 
@@ -13,12 +22,13 @@ presents itself as a filesystem to the ZMachine.
 - Ultra Scalable
 - Self Healing = recovers service automatically in the event of outage with no human 
 
+![](img/zos_zstor.jpg)
 
-### Can be used as
+### Use Cases
 
-- backup and archive system
+- Backup and archive system
 - Blockchain Storage Backend (OEM ONLY)
 
 ### Implementation
 
-> Is using qsss inside.
+> QSFS is using QSSS inside.

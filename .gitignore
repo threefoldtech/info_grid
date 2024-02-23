@@ -6,3 +6,5 @@ book/
 .DS_Store
 src/threefold_token/token_overview/special_wallets/wallet_data/
 src/threefold_token/token_overview/special_wallets/wallet_data/*
+src/values/
+src/values/*

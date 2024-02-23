@@ -1,7 +1,5 @@
 <h1> Zola Website Deployer</h1>
 
-![](./img/websitetool.jpeg)  
-
 <h2> Table of Contents </h2>
 
 - [Overview](#overview)
@@ -33,7 +31,6 @@
 - [Important Links](#important-links-5)
 - [Questions and Feedback](#questions-and-feedback)
 
-
 ***
 
 ## Overview
@@ -47,7 +44,7 @@ At ThreeFold, we utilized Website Tool to deploy all of our web presences. For e
 
 While you can also publish a static website using Zola alone, we at ThreeFold have customized the framework and created a static website template that makes it even easier for anyone to build a website by simply cloning template and fill it with their own website content.
 
-***
+
 
 ## Prerequisites
 
@@ -66,7 +63,7 @@ In order to deploy and publish a website using ThreeFold Website Tool, you would
 > - [Learn Markdown Language](https://www.markdownguide.org/)
 > - [Command Line Cheat Sheet](https://cs.colby.edu/maxwell/courses/tutorials/terminal/)
 
-***
+
 
 ## Installing Zola Onto Your Machine
 
@@ -101,7 +98,7 @@ For more details on Zola Installation, and installation guidelines for other ope
 
 > Next Step: [Template Guide: How to use the TF Web Template](#template-guide)
 
-***
+
 
 ## Get Started
 
@@ -172,7 +169,7 @@ And then go to **_index.md** file and replace the **logo_path**: images/yourlogo
 
 > - [TF Web Template](https://github.com/threefoldfoundation/www_examplezola)
 
-***
+
 
 ## Customization
 
@@ -301,7 +298,7 @@ Once your website is online, you can also use the [Website Link Checker](./websi
 
 > - [Command Line Cheat Sheet](https://cs.colby.edu/maxwell/courses/tutorials/terminal/)
 
-***
+
 
 ## Publish Your Website (Via Github Pages)
 
@@ -327,14 +324,14 @@ And you are done! Your website will be published, and it will take only a minute
 
 ![](./img/done.png)
 
-***
+
 
 ## Important Links
 > - [Pushing Changes to Github](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/pushing-changes-to-github)
 > - [Github Pages How-to](https://docs.github.com/en/pages)
 > - [Adding Custom Domain to my Github Page](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages)
 
-***
+
 
 ## Questions and Feedback
 

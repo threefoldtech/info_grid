@@ -51,5 +51,3 @@ The reward for above items are linked (pegged) to the USD
 See below for more info about USD price which will be used to calculate your farming reward as well as any other specifics in relation to farming calculations.
 
 The above farming rewards apply for 3Nodes registered in TFChain for ThreeFold Grid v3. Anyone can calculate their potential rewards using the [Farming Reward Calculator](https://dashboard.grid.tf/calculator/simulator). The same CU, SU, NU and IPAddr principles apply to the sales of Internet capacity in the form [cloud units](../../cloudunits/cloudunits.md).
-
-{{#include poc_dao_rules.md}}

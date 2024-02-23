@@ -1,9 +1,20 @@
 
-# ZOS FileSystem (ZOS-FS)
+<h1> ZOS FileSystem (ZOS-FS) </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Uses Flist Inside](#uses-flist-inside)
+  - [Why this ZFlist Concept](#why-this-zflist-concept)
+- [Benefits](#benefits)
+
+***
+
+## Introduction
 
 A deduped filesystem which is more efficient compared to images as used in other Virtual Machine technology.
 
-## Uses FLIST Inside
+## Uses Flist Inside
 
 In Zero-OS, `flist` is the format used to store zmachine images. This format is made to provide
 a complete mountable remote filesystem but downloading only the files contents that you actually needs.

@@ -1,8 +1,29 @@
-First, make sure you have your [client](./grid3_javascript_loadclient.md) prepared
+<h1>Deploying ZDBs for QSFS</h1>
 
-## Deploying ZDBs for QSFS
+<h2>Table of Contents</h2>
 
-### Example code
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Example code](#example-code)
+- [Detailed explanation](#detailed-explanation)
+  - [Getting the client](#getting-the-client)
+  - [Preparing the nodes](#preparing-the-nodes)
+  - [Preparing ZDBs](#preparing-zdbs)
+  - [Deploying the ZDBs](#deploying-the-zdbs)
+  - [Getting deployment information](#getting-deployment-information)
+  - [Deleting a deployment](#deleting-a-deployment)
+
+***
+
+## Introduction
+
+We show how to deploy ZDBs for QSFS on the TFGrid with the Javascript client.
+
+## Prerequisites
+
+- Make sure you have your [client](./grid3_javascript_loadclient.md) prepared
+
+## Example code
 
 ````typescript
 import { FilterOptions, QSFSZDBSModel } from "../src";
@@ -49,15 +70,15 @@ main();
 
 ````
 
-### Detailed explanation
+## Detailed explanation
 
-#### Getting the client
+### Getting the client
 
 ```typescript
 const grid3 = getClient();
 ```
 
-#### Preparing the nodes
+### Preparing the nodes
 
 we need to deploy the zdbs on two different nodes so, we setup the filters here to retrieve the available nodes.
 
@@ -80,7 +101,7 @@ if (allNodes.length >= 2) {
 
 Now we have two nodes in `qsfsNode`.
 
-#### Preparing ZDBs
+### Preparing ZDBs
 
 ````typescript
 const qsfs_name = "zdbsQsfsDemo";
@@ -88,7 +109,7 @@ const qsfs_name = "zdbsQsfsDemo";
 
 We prepare here a name to use across the client for the QSFS ZDBs
 
-#### Deploying the ZDBs
+### Deploying the ZDBs
 
 ````typescript
 const qsfs: QSFSZDBSModel = {
@@ -106,14 +127,14 @@ log(deploy_res);
 
 Here we deploy `12` ZDBs on nodes in  `qsfsNode` with password `mypassword`, all of them having disk size of `1GB`, the client already add 4 zdbs for metadata.
 
-#### Getting deployment information
+### Getting deployment information
 
 ````typescript
 const zdbs_data = await grid3.qsfs_zdbs.get({ name: qsfs_name });
 log(zdbs_data);
 ````
 
-#### Deleting a deployment
+### Deleting a deployment
 
 ````typescript
 const delete_response = await grid3.qsfs_zdbs.delete({ name: qsfs_name });

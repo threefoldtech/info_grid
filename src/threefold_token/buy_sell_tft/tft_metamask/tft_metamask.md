@@ -1,4 +1,4 @@
-<h1>Get TFT on MetaMask</h2>
+<h1>Get TFT: MetaMask (BSC & ETH)</h2>
 
 <h2>Table of Contents</h2>
 

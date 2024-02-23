@@ -1,7 +1,5 @@
 <h1> Presearch </h1>
 
-![ ](./img/presearch0.png)
-
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
@@ -21,7 +19,7 @@
 ## Prerequisites
 
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Presearch**
 
 ## Deploy a Presearch Node

@@ -1,8 +1,20 @@
-# Updating (NOT FULLY SUPPORTED)
+<h1> Updating </h1>
 
-![ ](./img//terraform_.png)
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Updating with Terraform](#updating-with-terraform)
+- [Adjustments](#adjustments)
+
+***
+
+## Introduction
+
+We present ways to update using Terraform. Note that this is not fully supported.
 
 Some of the updates are working, but the code is not finished, use at your own risk.
+
+## Updating with Terraform
 
 Updates are triggered by changing the deployments fields.
 So for example, if you have the following network resource:
@@ -34,7 +46,9 @@ After calling `terraform apply`, the provider does the following:
 - Update the version of the deployment.
 - Update the hash in the contract (the contract id will stay the same)
 
-> There are workloads that doesn't support in-place updates (e.g. Zmachines). To change them there are a couple of options (all performs destroy/create so data can be lost):
+## Adjustments
+
+There are workloads that doesn't support in-place updates (e.g. Zmachines). To change them there are a couple of options (all performs destroy/create so data can be lost):
 
 1. `terraform taint grid_deployment.d1` (next apply will destroy ALL workloads within grid_deployment.d1 and create a new deployment)
 2. `terraform destroy --target grid_deployment.d1 && terraform apply --target grid_deployment.d1` (same as above)

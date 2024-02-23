@@ -1,8 +1,22 @@
-# Deploying a VM and Applying Provisioner Commands After Deployment
+<h1> Terraform and Provisioner </h1>
 
-![ ](./img//terraform_.png)
+<h2>Table of Contents</h2>
 
-In this [example](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/external_provisioner/remote-exec_hello-world/main.tf) we will see how to deploy a VM and apply provisioner commands on it on the Threefold grid v3
+- [Introduction](#introduction)
+- [Example](#example)
+- [Params docs](#params-docs)
+  - [Requirements](#requirements)
+  - [Connection Block](#connection-block)
+  - [Provisioner Block](#provisioner-block)
+  - [More Info](#more-info)
+
+***
+
+## Introduction
+
+In this [example](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/external_provisioner/remote-exec_hello-world/main.tf), we will see how to deploy a VM and apply provisioner commands on it on the TFGrid.
+
+## Example
 
 ```terraform
 terraform {

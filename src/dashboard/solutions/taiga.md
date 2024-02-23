@@ -1,15 +1,24 @@
-# Taiga
+<h1> Taiga </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Deployment](#deployment)
+
+***
+
+## Introduction
 
 [Taiga](https://www.taiga.io/) is the project management tool for multi-functional agile teams. It has a rich feature set and at the same time it is very simple to start with through its intuitive user interface.
 
+## Prerequisites
 
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Taiga**
 
-__Process__ :
-
-### **Base** tab
+## Deployment
 
 ![ ](./img/solutions_taiga.png)
 

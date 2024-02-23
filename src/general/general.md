@@ -1,6 +1,6 @@
-# General Information
+# ThreeFold General
 
-This section contains informationn relevant for farmers, developers and system administrators of the ThreeFold Grid.
+This section contains general information relevant for farmers, developers and system administrators of the ThreeFold Grid.
 
 <h2> Table of Contents </h2>
 

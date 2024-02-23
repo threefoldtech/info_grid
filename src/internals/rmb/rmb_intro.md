@@ -15,6 +15,7 @@
 - [Running tests](#running-tests)
 
 ***
+
 ## What is RMB
 
 Reliable message bus is a secure communication panel that allows `bots` to communicate together in a `chat` like way. It makes it very easy to host a service or a set of functions to be used by anyone, even if your service is running behind NAT.

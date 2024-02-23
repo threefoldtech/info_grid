@@ -1,10 +1,8 @@
 # ThreeFold Developers
 
-Welcome to the ThreeFold Developers section of the ThreeFold Manual! 
+This section covers all practical tutorials on how to develop and build on the ThreeFold Grid.
 
-This comprehensive book is your go-to resource for all documentation, tools, and tutorials tailored specifically for developers. Whether you're a seasoned developer or just starting your journey, this section is designed to provide you with everything you need to dive into the exciting world of ThreeFold products and technologies. From APIs to SDKs, from how-tos to best practices, you'll find a wealth of information to help you integrate, build, and innovate on the ThreeFold platform. 
-
-Whether you're interested in decentralized cloud computing, blockchain integration, or exploring new possibilities in digital sovereignty, this developer-focused section will equip you with the knowledge and tools to unleash your creativity and transform ideas into reality. Let's now explore the depths of the ThreeFold Developers section!
+For complementary information on the technology developed by ThreeFold, read the [Technology](../technology/technology_toc.md) section of the Library.
 
 <h2> Table of Contents </h2>
 
@@ -86,12 +84,14 @@ Whether you're interested in decentralized cloud computing, blockchain integrati
       - [IPerf](../internals/zos/performance/iperf.md)
       - [Health Check](../internals/zos/performance/healthcheck.md)
     - [API](../internals/zos/manual/api.md)
-    - [FAQ](../internals/zos/faq/index.md)
-- [Playground](./playground/playground.md)
-  - [Deploy the Playground](./playground/deploy_playground.md)
-  - [Weblet Case Study: Nextcloud AIO](./playground/weblet_case_study_nextcloud.md)
 - [Grid Deployment](../grid_deployment/grid_deployment.md)
   - [TFGrid Stacks](../grid_deployment/tfgrid_stacks.md)
   - [Full VM Grid Deployment](../grid_deployment/grid_deployment_full_vm.md)
   - [Guardians of the Grid](../grid_deployment/tfgrid_guardians.md)
 - [Developers FAQ](../faq/faq.md#developers-faq)
+
+<!--
+- [Playground](./playground/playground.md)
+  - [Deploy the Playground](./playground/deploy_playground.md)
+  - [Weblet Case Study: Nextcloud AIO](./playground/weblet_case_study_nextcloud.md)
+-->

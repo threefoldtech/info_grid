@@ -1,10 +1,21 @@
-# CasperLabs
+<h1> CasperLabs </h1>
+
+<h2>Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Deployment](#deployment)
+
+***
+
+## Introduction
 
 [Casper Network](https://casperlabs.io/) is a blockchain protocol built from the ground up to remain true to core Web3 principles and adapt to the needs of our evolving world.
 
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Casperlabs**
+
+## Deployment
 
 __Process__ :
 

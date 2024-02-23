@@ -3,12 +3,41 @@
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
-- [Download Minting Receipts of Your Farm](#download-minting-receipts-of-your-farm)
-- [Download Minting Receipts of a 3Node](#download-minting-receipts-of-a-3node)
-- [Minting Receipts Information](#minting-receipts-information)
-- [Alpha Minting Tool](#alpha-minting-tool)
+- [Access the Reports](#access-the-reports)
+- [Available Information](#available-information)
 
 ***
+
+## Introduction
+
+Once you have the receipt hash of your node minting, you can get the [minting report](../../dashboard/tfchain/tf_minting_reports.md) of your node.
+
+## Access the Reports
+
+- On the Dashboard, go to **TFChain** -> **TF Minting Reports**
+- Enter your receipt hash
+- Consult your minting report
+
+## Available Information
+
+The ThreeFold Alpha minting tool will present the following information for each minting receipt hash:
+
+- Node Info
+  - Node ID
+  - Farm Name and ID
+  - Measured Uptime
+- Node Resources
+  - CU
+  - SU
+  - NU
+  - CRU
+  - MRU
+  - SRU
+  - HRU
+- TFT Farmed
+- Payout Address
+
+<!-- NOTE: This is removed from the new dashboard, but might be brought back.
 
 ## Introduction
 
@@ -18,7 +47,7 @@ You can easily consult minting receipts of all your 3Nodes on the ThreeFold Dash
 
 You can download minting receipts of your whole farm directly on the ThreeFold Dashboard.
 
-- On the [ThreeFold Dashboard](https://dashboard.grid.tf/), go to **Portal** -> **Farms**
+- On the [ThreeFold Dashboard](https://dashboard.grid.tf/), go to **TFChain** -> **TF Minting Reports**
 - In the section **Your Farms**, on the left of your **Farm ID**, click on the down arrow button
 - Click on **Download Minting Receipts**
 
@@ -65,3 +94,5 @@ The ThreeFold Alpha minting tool will present the following information for each
   - HRU
 - TFT Farmed
 - Payout Address
+
+-->

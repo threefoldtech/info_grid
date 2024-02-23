@@ -1,8 +1,20 @@
-# Umbrel
+<h1> Umbrel </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+
+***
+
+## Introduction
+
 [Umbrel](https://umbrel.com/) is an OS for running a personal server in your home. Self-host open source apps like Nextcloud, Bitcoin node, and more.
 
+## Prerequisites
+
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Umbrel**
   
 **Process** :

@@ -1,8 +1,21 @@
-## Smart Contract on TFGrid 3.0
+<h1> Smart Contract on TFGrid 3.0 </h1>
+
+<h2>Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Architecture](#architecture)
+- [1: To deploy a workload, the user interacts with this smart contract pallet and calls: `create_contract` with the input being:](#1-to-deploy-a-workload-the-user-interacts-with-this-smart-contract-pallet-and-calls-create_contract-with-the-input-being)
+- [2: The user sends the contractID and workload through the RMB to the destination Node.](#2-the-user-sends-the-contractid-and-workload-through-the-rmb-to-the-destination-node)
+- [3: The Node sends consumption reports to the chain](#3-the-node-sends-consumption-reports-to-the-chain)
+- [Notes](#notes)
+
+***
+
+## Introduction
 
 From TFGrid 3.0, the 'Smart Contract for IT' concept for reserving capacity is fully decentralized and runs on TF-Chain, the ThreeFold blockchain infrastructure on Parity Substrate. 
 
-### Architecture
+## Architecture
 
 Two main components play a role in achieving a decentralised consensus between a user and a farmer.
 
@@ -79,6 +92,6 @@ Billing will be done in Database Tokens and will be send to the corresponding fa
 
 The main currency of this chain. More information on this is explained here: TODO
 
-### Footnote
+## Notes
 
 Sending the workloads encrypted to the chain makes sure that nobody except the user can read his deployment data. It also facilitates a way for the user to recreate his workload data from the chain.

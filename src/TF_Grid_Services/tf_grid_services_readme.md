@@ -1,4 +1,17 @@
-# ThreeFold Grid Services
+<h1> ThreeFold Grid Services </h1>
+
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Devnet](#devnet)
+- [QAnet](#qanet)
+- [Testnet](#testnet)
+- [Mainnet](#mainnet)
+  - [Supported Planetary Network Nodes](#supported-planetary-network-nodes)
+
+***
+
+## Introduction
 
 On this article we have aggregated a list of all of the services running on Threefold Grid 3 infrastructure for your convenience
 

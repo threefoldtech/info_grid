@@ -1,8 +1,18 @@
-# Micro Virtual Machine
+<h1> Micro Virtual Machine </h1>
 
-<div class="youtubeVideoWrapper">
-<iframe title="How to Deploy a Full VM on the ThreeFold Dashboard" width="560" height="315" src="https://www.youtube-nocookie.com/embed/MDSIBkcYdqg" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
-</div>
+<h2>Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Deployment](#deployment)
+
+***
+
+## Introduction
+
+We present the steps to deploy a micro VM on the TFGrid.
+
+
+## Deployment
 
 Deploy a new virtual machine on the Threefold Grid
 

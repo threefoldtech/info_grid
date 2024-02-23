@@ -11,15 +11,15 @@
 
 ## Introduction
 
-Farmers can set additional fees for their 3Nodes on the [TF Dashboard](https://dashboard.grid.tf/). By doing so, users will then be able to [reserve the 3Node and use it as a dedicated node](../../dashboard/portal/dashboard_portal_dedicated_nodes.md).
+Farmers can set additional fees for their 3Nodes on the [TF Dashboard](https://dashboard.grid.tf/). By doing so, users will then be able to [reserve the 3Node and use it as a dedicated node](../../dashboard/deploy/dedicated_machines.md).
 This can be useful for farmers who provide additional values to their 3Nodes, e.g. a GPU card and/or high-quality hardware.
 
 ## Steps
 
-Here are the steps to set additional fees to a 3Node. 
+Here are the steps to [set additional fees](../../dashboard/farms/your_farms.md#extra-fees) to a 3Node. 
 
-* On the Dashboard, go to **Portal -> Farms**
-* Under the section **Your Farm Nodes**, locate the 3Node and click **Set Additional Fees** under **Actions**
+* On the Dashboard, go to **Farms** -> **Your Farms**
+* Under the section **Your Nodes**, locate the 3Node and click **Set Additional Fees** under **Actions**
 * Set a monthly fee (in USD) and click **Set**
 
 ## TFT Payments

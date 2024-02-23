@@ -92,7 +92,7 @@ The command **upgrade** downloads and installs the updates for each outdated pac
 sudo apt upgrade
 ```
 
-***
+
 
 ### Test the network connectivity of a domain or an IP address with ping
 
@@ -135,7 +135,7 @@ Here are the steps to install [Go](https://go.dev/).
     go version
     ```
 
-***
+
 
 ### Install Brew
 
@@ -158,7 +158,7 @@ Follow those steps to install [Brew](https://brew.sh/)
     brew doctor
     ```
 
-***
+
 
 ### Brew basic commands
 
@@ -187,7 +187,7 @@ Follow those steps to install [Brew](https://brew.sh/)
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh)"
     ```
 
-***
+
 
 ### Install Terraform with Brew
 
@@ -202,7 +202,7 @@ Installing Terraform with Brew is very simple by following the [Terraform docume
     brew install hashicorp/tap/terraform
     ```
 
-***
+
 
 ### Yarn basic commands
 
@@ -231,7 +231,7 @@ Installing Terraform with Brew is very simple by following the [Terraform docume
     yarn cache clean
     ```
 
-***
+
 
 ### Set default terminal
 
@@ -245,7 +245,7 @@ update-alternatives --config x-terminal-emulator
 pwd
 ```
 
-***
+
 
 ### List hidden files
 
@@ -253,7 +253,7 @@ pwd
 ls -ld .?*
 ```
 
-***
+
 
 ### Display the content of a directory
 
@@ -268,7 +268,7 @@ You can use **tree** to display the files and organization of a directory:
     tree -a
     ```
 
-***
+
 
 ### Vim modes and basic commands
 
@@ -302,7 +302,7 @@ Here are some basic commands:
 * Delete the current line
   * **dd**
 
-***
+
 
 ### Check the listening ports using netstat
 
@@ -312,7 +312,7 @@ Use the command:
 netstat
 ```
 
-***
+
 
 
 ### See the disk usage of different folders
@@ -322,7 +322,7 @@ du -sh *
 ```
 
 
-***
+
 
 ### Verify the application version
 
@@ -330,7 +330,7 @@ du -sh *
 which <application_name>
 ```
 
-***
+
 
 ### Find the path of a file with only the file name
 
@@ -343,7 +343,7 @@ On MAC and Linux, you can use **coreutils** and **realpath** from Brew:
   realpath file_name
   ```
 
-***
+
 
 ### Become the superuser (su) on Linux
 
@@ -358,7 +358,7 @@ You can use either command:
     sudo -s
     ```
 
-***
+
 
 ### Exit a session
 
@@ -371,7 +371,7 @@ You can use either command depending on your shell:
   logout
   ```
 
-***
+
 
 ### Know the current user
 
@@ -381,7 +381,7 @@ You can use the following command:
   whoami
   ```
 
-***
+
 
 ### See the path of a package
 
@@ -391,7 +391,7 @@ To see the path of a package, you can use the following command:
   whereis <package_name>
   ```
 
-***
+
 
 ### Set the path of a package
 
@@ -400,7 +400,7 @@ export PATH=$PATH:/snap/bin
 
 ```
 
-***
+
 
 
 ### See the current path
@@ -409,7 +409,7 @@ export PATH=$PATH:/snap/bin
 pwd
 ```
   
-***
+
 
 ### Find the current shell
 
@@ -422,7 +422,7 @@ pwd
     ls -l /proc/$$/exe
     ```
 
-***
+
 
 ### SSH into Remote Server
 
@@ -463,7 +463,7 @@ pwd
 
 To enable remote login on a MAC, [read this section](#enable-remote-login-on-mac).
 
-***
+
 
 ### Replace a string by another string in a text file
 
@@ -476,7 +476,7 @@ To enable remote login on a MAC, [read this section](#enable-remote-login-on-mac
     sed -i "s/old_string/$env_variable/g" <file_path>/<file_name>
     ```
 
-***
+
 
 ### Replace extensions of files in a folder
 
@@ -486,7 +486,7 @@ Replace **ext1** and **ext2** by the extensions in question.
 find ./ -depth -name "*.ext1" -exec sh -c 'mv "$1" "${1%.ext1}.ext2"' _ {} \;
 ```
 
-***
+
 
 ### Remove extension of files in a folder
 
@@ -498,7 +498,7 @@ for file in *.ext; do
 done
 ```
 
-***
+
 
 ### See the current date and time on Linux
 
@@ -506,7 +506,7 @@ done
 date
 ```
 
-***
+
 
 ### Special variables in Bash Shell
 
@@ -522,7 +522,7 @@ date
 | $!                | Process id of the last executed command         |
 | $-                | Print current set of option in current shell    |
 
-***
+
 
 ### Gather DNS information of a website
 
@@ -539,7 +539,7 @@ You can use [Dig](https://man.archlinux.org/man/dig.1) to gather DNS information
 
 You can also use online tools such as [DNS Checker](https://dnschecker.org/).
 
-***
+
 
 ### Partition and mount a disk
 
@@ -574,7 +574,7 @@ We present one of many ways to partition and mount a disk.
     sudo chmod -R 0777 /mnt/disk
     ```
 
-***
+
 
 ## Encryption
 
@@ -615,7 +615,7 @@ You can use [gocryptfs](https://github.com/rfjakob/gocryptfs) to encrypt files.
     * ```
       rmdir mountdir
       ```
-***
+
 
 ### Encrypt files with Veracrypt
 
@@ -648,7 +648,7 @@ You can visit [Veracrypt download page](https://www.veracrypt.fr/en/Downloads.ht
     ```
 * Veracrypt documentation is very complete. To begin using the application, visit the [Beginner's Tutorial](https://www.veracrypt.fr/en/Beginner%27s%20Tutorial.html).
 
-***
+
 
 ## Network-related Commands
 
@@ -656,7 +656,7 @@ You can visit [Veracrypt download page](https://www.veracrypt.fr/en/Downloads.ht
 
 ifconfig
 
-***
+
 
 ### See identity and info of IP address
 
@@ -669,7 +669,7 @@ ifconfig
     https://www.whois.com/whois/<IP_Address>
     ```
 
-***
+
 
 ### ip basic commands
 
@@ -799,7 +799,7 @@ device em1
 
 References: https://www.commandlinux.com/man-page/man8/ip.8.html
 
-***
+
 
 ### Display socket statistics
 
@@ -828,7 +828,7 @@ Note: You can combine parameters, e.g. **ss -aeo**.
 
 References: https://www.commandlinux.com/man-page/man8/ss.8.html
 
-***
+
 
 ### Query or control network driver and hardware settings
 
@@ -851,7 +851,7 @@ References: https://www.commandlinux.com/man-page/man8/ss.8.html
 
 References: https://man.archlinux.org/man/ethtool.8.en
 
-***
+
 
 ### See if ethernet port is active
 
@@ -861,7 +861,7 @@ Replace <ethernet_device> with the proper device:
 cat /sys/class/net/<ethernet_device>/carrier
 ```
 
-***
+
 
 ### Add IP address to hardware port (ethernet)
 
@@ -886,7 +886,7 @@ cat /sys/class/net/<ethernet_device>/carrier
 
 To set and view the address for either DHCP or static, go to **Networks** then **Details**. 
 
-***
+
 
 ### Private IP address range
 
@@ -896,7 +896,7 @@ The private IP range is the following:
 * 172.16.0.0–172.31.255.255
 * 192.168.0.0–192.168.255.255
 
-***
+
 
 ### Set IP Address manually
 
@@ -909,7 +909,7 @@ You can use the following template when you set an IP address manually:
 * Gateway
   * optional
 
-***
+
 
 ## Basic Scripts
 
@@ -942,7 +942,7 @@ You can use the following template to add arguments when running a script:
   * ```bash
     sh example_script.sh arg1 arg2
     ```
-***
+
 
 ### Iterate over arguments
 
@@ -972,7 +972,7 @@ You can use the following template to add arguments when running a script:
       done
     ```
 
-***
+
 
 ### Count lines in files given as arguments
 
@@ -994,7 +994,7 @@ You can use the following template to add arguments when running a script:
     sh count_lines.sh count_lines.sh
     ```
 
-***
+
 
 ### Find path of a file
 
@@ -1010,7 +1010,7 @@ You can use the following template to add arguments when running a script:
     sh find.sh <filename>
     ```
 
-***
+
 
 ### Print how many arguments are passed in a script
 
@@ -1024,7 +1024,7 @@ You can use the following template to add arguments when running a script:
   * ```
     sh print_qty_args.sh <filename>
     ```
-***
+
 
 ## Linux
 
@@ -1057,7 +1057,7 @@ Note that the Terraform documentation also covers other methods to install Terra
   * Use **System Preferences**
   * Go to **System Preferences** -> **Sharing** -> **Enable Remote Login**.
 
-***
+
 
 ### Find Other storage on MAC
 
@@ -1067,7 +1067,7 @@ Note that the Terraform documentation also covers other methods to install Terra
     ~/Library/Caches
     ```
 
-*** 
+ 
 
 ### Sort files by size and extension on MAC
 
@@ -1077,7 +1077,7 @@ Note that the Terraform documentation also covers other methods to install Terra
 * From the **Search Attributes** window
   * tick **File Size** and **File Extension**.
 
-***
+
 
 ## Windows
 
@@ -1100,7 +1100,7 @@ To install Chocolatey on Windows, we follow the [official Chocolatey website](ht
     ```
 * Note: You might need to restart PowerShell to use Chocolatey
 
-***
+
 
 ### Install Terraform with Chocolatey
 
@@ -1111,7 +1111,7 @@ Once you've installed Chocolatey on Windows, installing Terraform is as simple a
     choco install terraform
     ```
 
-***
+
 
 ### Find the product key
 
@@ -1121,7 +1121,7 @@ Write the following in **Command Prompt** (run as administrator):
 wmic path SoftwareLicensingService get OA3xOriginalProductKey
 ```
 
-***
+
 
 ### Find Windows license type
 
@@ -1131,7 +1131,7 @@ Write the following in **Command Prompt**:
 slmgr /dli
 ```
 
-***
+
 
 ## References
 

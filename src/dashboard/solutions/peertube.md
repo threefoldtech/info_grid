@@ -1,12 +1,24 @@
-# Peertube
+<h1> Peertube </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Deployment](#deployment)
+
+***
+
+## Introduction
 
 [Peertube](https://joinpeertube.org/) aspires to be a decentralized and free/libre alternative to video broadcasting services.
 
+## Prerequisites
+
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Peertube**
 
-__Process__
+## Deployment
 
 ![ ](./img/solutions_peertube.png)
 

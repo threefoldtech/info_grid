@@ -1,6 +1,14 @@
-# Cloud Units
+<h1>Cloud Units</h1>
 
-![](img/cloudunits_abstract.jpg)
+<h2> Table of Contents </h2>
+
+- [What are Cloud Units?](#what-are-cloud-units)
+- [How is the price of Cloud Units (v4) calculated?](#how-is-the-price-of-cloud-units-v4-calculated)
+  - [Compute Capacity](#compute-capacity)
+  - [Storage Capacity](#storage-capacity)
+  - [Network](#network)
+
+***
 
 ## What are Cloud Units?
 Cloud units are the basis for price calculation for anyone intending to use/deploy on the Threefold Grid. 

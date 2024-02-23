@@ -1,7 +1,5 @@
 <h1>Nextcloud Single Deployment </h1>
 
-![ ](./img/terraform_.png)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
@@ -41,7 +39,7 @@ As always, if you have questions concerning this guide, you can write a post on 
 
 Let's go!
 
-***
+
 
 # Main Steps
 
@@ -59,7 +57,7 @@ To get an overview of the whole process, we present the main steps:
 * Add HTTPS protection
 * Set a firewall
 
-***
+
 
 # Prerequisites
 
@@ -67,7 +65,7 @@ To get an overview of the whole process, we present the main steps:
 
 You need to download and install properly Terraform on your local computer. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
 
-***
+
 
 # Find a 3Node with the ThreeFold Explorer
 
@@ -95,7 +93,7 @@ We thus start by finding a 3Node with sufficient resources. For this current Nex
 
 Once you've found a 3Node, take note of its node ID. You will need to use this ID when creating the Terraform files.
 
-***
+
 
 # Set the Full VM
 
@@ -281,7 +279,7 @@ After deployments, take note of the 3Node's IPv4 address. You will need this add
     ``` 
 * Reconnect to the VM
 
-***
+
 
 # Create the MariaDB Database
 
@@ -342,7 +340,7 @@ We now set the Nextcloud database. You should choose your own username and passw
     ```
     exit;
     ```
-***
+
 
 # Install PHP and Nextcloud
 
@@ -378,7 +376,7 @@ We will now install Nextcloud.
      chown www-data:www-data /var/www/nextcloud/ -R
      ```
 
-***
+
 
 # Create a Subdomain with DuckDNS
 
@@ -393,7 +391,7 @@ We create a public subdomain with DuckDNS. To set DuckDNS, you simply need to fo
 
 Hint: make sure to save the DuckDNS folder in the home menu. Write `cd ~` before creating the folder to be sure.
 
-***
+
 
 # Set Apache
 
@@ -443,7 +441,7 @@ The file should look like this, with your own subdomain instead of `subdomain`:
      systemctl reload apache2 && systemctl restart apache2
      ```
 
-***
+
 
 # Access Nextcloud on a Web Browser
 
@@ -476,7 +474,7 @@ We use `localhost` as the database location. You do not need to specifiy MariaDB
 
 After the installation, you can now access Nextcloud. To provide further security, we want to enable HTTPS for the subdomain.
 
-***
+
 
 # Enable HTTPS 
 
@@ -571,7 +569,7 @@ We thus add the following rules:
 
 You now have enabled the firewall with proper security rules for your Nextcloud deployment.
 
-***
+
 
 # Conclusion
 
@@ -583,7 +581,7 @@ You should now have a basic understanding of the Threefold Grid, the ThreeFold E
 
 This Nextcloud deployment could be improved in many ways and other guides might be published in the future with enhanced functionalities. Stay tuned for more Threefold Guides. If you have ideas on how to improve this guide, please let us know. We learn best when sharing knowledge.
 
-***
+
 
 # Acknowledgements and References
 

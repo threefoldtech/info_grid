@@ -1,7 +1,5 @@
 <h1>Nextcloud 2-Node VPN Deployment</h1>
 
-![ ](./img/terraform_.png)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)

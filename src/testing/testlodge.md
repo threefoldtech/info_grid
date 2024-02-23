@@ -1,4 +1,17 @@
-# How to Use TestLodge for Testing the ThreeFold Grid
+<h1>How to Use TestLodge for Testing the ThreeFold Grid</h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Getting Started on TestLodge](#getting-started-on-testlodge)
+  - [Joining the TF GRID Project on TestLodge by Invitation](#joining-the-tf-grid-project-on-testlodge-by-invitation)
+- [Accessing the TF GRID 3.x Projects](#accessing-the-tf-grid-3x-projects)
+  - [Project Overview](#project-overview)
+  - [Creating Your Own Personal Test Run](#creating-your-own-personal-test-run)
+
+***
+
+## Introduction
 
 After each release of a newer version of the ThreeFold Grid, we encourage the ThreeFold Community to participate in testing the grid's product components and provide valuable feedback to our engineering team. To facilitate this process, we have adopted TestLodge as our QA and testing platform. TestLodge allows us to efficiently manage test plans, test cases, and test runs for our products. By joining TestLodge as a user, you can assist us in running test cases and reporting any issues encountered during our product deployment processes.
 

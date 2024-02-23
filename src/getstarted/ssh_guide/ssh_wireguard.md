@@ -21,24 +21,22 @@ In this Threefold Guide, we show how to set up [WireGuard](https://www.wireguard
 
 Note that WireGuard provides the connection to the 3Node deployment. It is up to you to decide which SSH client you want to use. This means that the steps to SSH into a 3Node deployment will be similar to the steps proposed in the guides for [Open-SSH](./ssh_openssh.md), [PuTTy](ssh_putty.md) and [WSL](./ssh_wsl.md). Please refer to [this documentation](./ssh_guide.md) if you have any questions concerning SSH clients. The main difference will be that we connect to the 3Node deployment using a WireGuard connection instead of an IPv4 or a Planetary Network connection.
 
-***
+
 
 # Prerequisites
 
-* Activated and funded account set up in the [TF Dashboard](https://dashboard.grid.tf/)
-  * [Create a Threefold Connect Wallet](../TF_Connect/TF_Connect.md)
-  * [Buy TFT](../../threefold_token/buy_sell_tft/buy_sell_tft.md)
-  * [Create a Threefold Dashboard Account and Transfer TFT](../TF_Dashboard/TF_Dashboard.md)
+Make sure to [read the introduction](../tfgrid3_getstarted.md#get-started---your-first-deployment) before going further.
+
 * SSH client of your choice
   * [Open-SSH](./ssh_openssh.md)
   * [PuTTy](ssh_putty.md)
   * [WSL](./ssh_wsl.md)
 
-***
+
 
 # Deploy a Weblet with WireGuard Access
 
-The ThreeFold Dashboard proposes different [basic environments](../../dashboard/solutions/basic_environments_readme.md) and [ready community solutions](../../dashboard/solutions/ready_community_readme.md) in the form of easy-to-use weblets. For this guide on WireGuard access, we deploy a [Full VM](../../dashboard/solutions/fullVm.md). Note that the whole process is similar with other types of ThreeFold weblets on the Dashboard.
+For this guide on WireGuard access, we deploy a [Full VM](../../dashboard/solutions/fullVm.md). Note that the whole process is similar with other types of ThreeFold weblets on the Dashboard.
 
 * Go to the [ThreeFold Dashboard](https://dashboard.grid.tf/)
 * Select the weblet **Full Virtual Machine**
@@ -51,13 +49,13 @@ Once the Full VM is deployed, a window named **Details** will appear. You will n
 
 > Note: At anytime, you can open the **Details** window by clicking on the button **Show Details** under **Actions** on the Dashboard weblet page.
 
-***
+
 
 # Install WireGuard
 
 To install WireGuard, please refer to the official [WireGuard installation documentation](https://www.wireguard.com/install/).
 
-***
+
 
 # Set the WireGuard Configurations
 
@@ -97,7 +95,7 @@ To set the WireGuard connection on Windows, add and activate a tunnel with the W
 * Erase the content of the main window and paste the content **WireGuard Config** from the Dashboard **Details** window
 * Click **Save** and then click on **Activate**.
 
-***
+
   
 
 # Test the WireGuard Connection
@@ -109,7 +107,7 @@ As a test, you can [ping](../../computer_it_basics/cli_scripts_basics.md#test-th
     ping VM_WireGuard_IP
     ```
 
-***
+
 
 # SSH into the Deployment with Wireguard
 
@@ -122,7 +120,7 @@ To SSH into the deployment with Wireguard, use the **WireGuard IP** shown in the
 
 You now have access to the deployment over a WireGuard SSH connection.
 
-***
+
 
 # Questions and Feedback
 

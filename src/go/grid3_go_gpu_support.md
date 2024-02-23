@@ -12,7 +12,7 @@
 
 We present here an example on how to deploy using the Go client. This is part of our integration tests.
 
-***
+
 
 ## Example
 
@@ -109,7 +109,7 @@ func TestVMWithGPUDeployment(t *testing.T) {
 }
 ```
 
-***
+
 
 ## More Information
 

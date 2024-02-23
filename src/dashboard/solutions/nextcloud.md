@@ -32,15 +32,15 @@
 
 Nextcloud provides functionality similar to Dropbox, Office 365 or Google Drive when used with integrated office suites like Collabora Online or OnlyOffice.
 
-***
+
 
 # Prerequisites
 
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Nextcloud**
 
-***
+
 
 # Domain Names and Public IPs
 
@@ -50,7 +50,7 @@ Another choice to make before launching your Nextcloud instance is whether you w
 
 If you're not sure and just want the easiest, most affordable option, skip the public IP and use a gateway domain.
 
-***
+
 
 # Deploy Nextcloud
 
@@ -63,7 +63,7 @@ If you're not sure and just want the easiest, most affordable option, skip the p
     * **Recommended**: {cpu: 4, memory: 16gb, diskSize: 1000gb }
     * Or choose a **Custom** plan
 * If want to reserve a public IPv4 address, click on Network then select **Public IPv4**
-* If you want a [dedicated](../dashboard/dedicated_nodes.md) and/or a certified node, select the corresponding option
+* If you want a [dedicated](../deploy/dedicated_machines.md) and/or a certified node, select the corresponding option
 * Choose the location of the node
    * `Country`
    * `Farm Name`
@@ -74,7 +74,7 @@ If you're not sure and just want the easiest, most affordable option, skip the p
   * If you are also using a custom domain, you must set your DNS record now before proceeding. The IP of the gateway will appear on screen. Check [below](#set-the-dns-record) for more information
 * Click **Deploy**
 
-***
+
 
 # Nextcloud Setup
 
@@ -94,7 +94,7 @@ Before you can access Nextcloud itself, you'll need to decide which addons you w
 
 The installation is now complete and you have access to your Nextcloud instance.
 
-***
+
 
 # DNS Details
 
@@ -114,7 +114,7 @@ When setting your own custom domain, it might take time for DNS to propagate. It
 
 This is normal. You might simply need to wait for the DNS to propagate completely.
 
-***
+
 
 # Talk
 
@@ -152,7 +152,7 @@ Once you've installed Talk and optionally added a TURN server, you can use Talk 
 
 Note that the host of the video meeting might need to turn the VPN off before creating a new conversation.
 
-***
+
 
 # Backups and Updates
 
@@ -174,7 +174,7 @@ After the first manual backup of your Nextcloud instance is complete, you can se
 * In the section **Daily backup and automatic updates**, choose a time for your daily backup and click **Submit backup time**.
   * To set automatic updates, make sure that the option **Automatically update all containers, the mastercontainer and on** is selected.
 
-***
+
 
 # Troubleshooting
 
@@ -194,13 +194,13 @@ To access the Nextcloud interface page, follow those stepse
 * In the top right Profile menu, select **Administration Settings**
 * Under **Nextcloud All-in-One**, click **Open Nextcloud AIO Interface**
 
-***
+
 
 ## Check the DNS Propagation
 
 You can check if the DNS records are propagated globally with DNS propagation check services such as [DNS Checker](https://dnschecker.org/). You can use this tool to verify that your domain is properly pointing to the IPv4 address of the VM you deployed on.
 
-***
+
 
 # Questions and Feedback
 

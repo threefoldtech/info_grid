@@ -8,7 +8,7 @@ Deploy your favorite orchestrating services and enjoy the seamless coordination 
 
 ## Table of Contnet
 
-- [Kubernetes](../solutions/k8s.md).
+- [Kubernetes](../solutions/k8s.md)
 - [Caprover](../solutions/caprover.md)
     - [Caprover Admin](../solutions/caprover_admin.md)
     - [Caprover Worker](../solutions/caprover_worker.md)

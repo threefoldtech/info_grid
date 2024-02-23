@@ -1,9 +1,28 @@
-# Full Virtual Machine
+<h1> Full Virtual Machine </h1>
+
+<h2>Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Deployment](#deployment)
+- [Difference Between Full VM and Micro VM](#difference-between-full-vm-and-micro-vm)
+- [Manually Mounting Additional Disk](#manually-mounting-additional-disk)
+  - [Check All Disks Attached to the VM](#check-all-disks-attached-to-the-vm)
+  - [Create a Mount Directory](#create-a-mount-directory)
+  - [New file system](#new-file-system)
+  - [Mount drive](#mount-drive)
+
+***
+
+## Introduction
+
+We present the steps to deploy a full VM on the TFGrid.
+
+## Deployment
 
 Deploy a new full virtual machine on the Threefold Grid
 
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Full Virtual Machine**
 
 **Process:**
@@ -24,7 +43,7 @@ Deploy a new full virtual machine on the Threefold Grid
   - `Myceluim` to enable mycelium on the virtual machine
   - `Wireguard Access` to add a wireguard access to the Virtual Machine
 - `GPU` flag to add GPU to the Virtual machine
-  - To deploy a Full VM with GPU, you first need to [rent a dedicated node](../dashboard/dedicated_nodes.md#usage)
+  - To deploy a Full VM with GPU, you first need to [rent a dedicated node](../../dashboard/deploy/dedicated_machines.md)
 - `Dedicated` flag to retrieve only dedicated nodes 
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
@@ -45,7 +64,7 @@ in the bottom of the page you can see a list of all of the virtual machines you 
 You can also go to JSON tab for full details
 ![ ](./img/new_vm6.png)
 
-## Difference Between Full Virtual Machine and Micro Virtual Machine
+## Difference Between Full VM and Micro VM
 
 - Full VM contains a default disk attached to it which is not the case in the Micro VM where you needed to make sure to attach a disk to it or the VM will fail
 - The default disk is mounted on / so if you want to attach any additional disks, you have to choose a different mounting point
@@ -56,19 +75,19 @@ You can also go to JSON tab for full details
 
 - You can follow the following commands to add your disk manually:
 
-### Check all disks attached to the VM
+### Check All Disks Attached to the VM
 
 ```bash
 fdisk -l
 ```
 
-### The additional disk won't be mounted and you won't find it listed
+The additional disk won't be mounted and you won't find it listed
 
 ```bash
 df -h
 ```
 
-### Create mount dir
+### Create a Mount Directory
 
 ```bash
 sudo mkdir /hdd6T

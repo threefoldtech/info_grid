@@ -3,7 +3,7 @@
 <h2>Table of Contents </h2>
 
 - [Introduction](#introduction)
-- [Using the Dashboard](#using-the-Dashboard)
+- [Using the Dashboard](#using-the-dashboard)
 - [Using GraphQL and Polkadot UI](#using-graphql-and-polkadot-ui)
 - [Using grid3\_client\_ts](#using-grid3_client_ts)
 
@@ -15,7 +15,7 @@ We present different methods to delete contracts on the TFGrid.
 
 ## Using the Dashboard
 
-To cancel contracts with the Dashboard, consult the [Contracts List](../dashboard/contracts_list.md) documentation.
+To cancel contracts with the Dashboard, consult the [Contracts List](../dashboard/deploy/your_contracts.md) documentation.
 
 ## Using GraphQL and Polkadot UI
 
@@ -31,7 +31,7 @@ query MyQuery {
 
 ```
 
-replace `TWIN_ID` with your twin id. The information should be available on the [Dashboard](../dashboard/home.md).
+replace `TWIN_ID` with your twin id. The information should be available on the [Dashboard](../dashboard/dashboard.md).
 
 Then from [polkadot UI](https://polkadot.js.org/apps/), add the tfchain endpoint to development.
 

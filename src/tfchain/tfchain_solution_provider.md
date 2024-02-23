@@ -1,4 +1,15 @@
-# Solution Provider
+<h1>Solution Provider</h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Changes to Contract Creation](#changes-to-contract-creation)
+- [Creating a Provider](#creating-a-provider)
+- [Council needs to approve a provider before it can be used](#council-needs-to-approve-a-provider-before-it-can-be-used)
+
+***
+
+## Introduction
 
 > Note: While the solution provider program is still active, the plan is to discontinue the program in the near future. We will update the manual as we get more information. We currently do not accept new solution providers.
 
@@ -25,11 +36,11 @@ A forum post should be created with the details of the created solution provider
 
 Note that a solution can be deleted. In this case, existing contracts should fall back to the default behavior (i.e. if code not found -> default).
 
-### Changes to contract creation
+## Changes to Contract Creation
 
 When creating a contract, a `solution_provider_id` can be passed. An error will be returned if an invalid or non-approved solution provider id is passed.
 
-## Creating a provider
+## Creating a Provider
 
 Creating a provider is as easy as going to the [polkadotJS UI](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.dev.grid.tf#/extrinsics) (Currently only on devnet)
 

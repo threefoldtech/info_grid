@@ -1,7 +1,5 @@
 <h1>Nextcloud Redundant Deployment</h1>
 
-![ ](./img/terraform_.png)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
@@ -53,7 +51,7 @@ As always, if you have questions concerning this guide, you can write a post on 
 
 Let's go!
 
-***
+
 
 # Main Steps
 
@@ -73,7 +71,7 @@ To get an overview of the whole process, we present the main steps:
 * Add HTTPS protection
 * Set a firewall
 
-***
+
 
 # Prerequisites
 
@@ -82,7 +80,7 @@ To get an overview of the whole process, we present the main steps:
 
 You need to download and install properly Terraform and Wireguard on your local computer. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
 
-***
+
 
 # Find Nodes with the ThreeFold Explorer
 
@@ -110,7 +108,7 @@ We thus start by finding two 3Nodes with sufficient resources. For this current 
 
 Once you've found two 3Nodes, take note of their node IDs. You will need to use those IDs when creating the Terraform files.
 
-***
+
 
 # Set the VMs
 ## Create a Two Servers Wireguard VPN with Terraform
@@ -339,7 +337,7 @@ After deployments, take note of the 3nodes' IPv4 address. You will need those ad
     ``` 
 * Reconnect to the VMs
 
-***
+
 
 ### Test the Wireguard Connection
 
@@ -379,7 +377,7 @@ This should set everything properly.
 
 If you correctly receive the packets from the two VMs, you know that the VPN is properly set.
 
-***
+
 
 # Create the MariaDB Database
 
@@ -500,7 +498,7 @@ We now set the Nextcloud database. You should choose your own username and passw
     exit;
     ```
 
-***
+
 
 # Install and Set GlusterFS
 
@@ -576,7 +574,7 @@ We now update the mount with the filse fstab on both VMs.
      10.1.4.2:/vol1 /var/www glusterfs defaults,_netdev 0 0
      ```
 
-***
+
 
 # Install PHP and Nextcloud
 
@@ -620,7 +618,7 @@ You only need to download on the master VM, since you set a peer-to-peer connect
      chown www-data:www-data /var/www/nextcloud/ -R
      ```
 
-***
+
 
 # Create a Subdomain with DuckDNS
 
@@ -655,7 +653,7 @@ fi
 
 Note: When the master VM goes offline, after 5 minutes maximum DuckDNS will change the IP address from the master’s to the worker’s. Without clearing the DNS cache, your browser might have some difficulties connecting to the updated IP address when reaching the URL `subdomain.duckdns.org`. Thus you might need to [clear your DNS cache](https://blog.hubspot.com/website/flush-dns). You can also use the [Tor browser](https://www.torproject.org/) to connect to Nextcloud. If the IP address changes, you can simply leave the browser and reopen another session as the browser will automatically clear the DNS cache.
 
-***
+
 
 # Set Apache
 
@@ -705,7 +703,7 @@ The file should look like this, with your own subdomain instead of `subdomain`:
      systemctl reload apache2 && systemctl restart apache2
      ```
 
-***
+
 
 # Access Nextcloud on a Web Browser with the Subdomain
 
@@ -738,7 +736,7 @@ We use `localhost` as the database location. You do not need to specifiy MariaDB
 
 After the installation, you can now access Nextcloud. To provide further security, we want to enable HTTPS for the subdomain.
 
-***
+
 
 # Enable HTTPS 
 
@@ -885,7 +883,7 @@ We thus add the following rules:
 
 You now have enabled the firewall with proper security rules for your Nextcloud deployment.
 
-***
+
 
 # Conclusion
 
@@ -899,7 +897,7 @@ You should now have a basic understanding of the Threefold Grid, the ThreeFold E
 
 This Nextcloud deployment could be improved in many ways and other guides might be published in the future with enhanced functionalities. Stay tuned for more Threefold Guides. If you have ideas on how to improve this guide, please let us know. We learn best when sharing knowledge.
 
-***
+
 
 # Acknowledgements and References
 

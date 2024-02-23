@@ -1,8 +1,16 @@
-# Capacity Planning
+<h1> Capacity Planning </h1>
 
-![ ](./img//terraform_.png)
+<h2>Table of Contents</h2>
 
-In this [example](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/simple-dynamic/main.tf) we will discuss capacity planning on top of Threefold grid v3
+- [Introduction](#introduction)
+- [Example](#example)
+- [Preparing the Requests](#preparing-the-requests)
+
+***
+
+## Introduction
+
+In this [example](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/simple-dynamic/main.tf) we will discuss capacity planning on top of the TFGrid.
 
 ## Example
 
@@ -81,7 +89,7 @@ output "vm2_ygg_ip" {
 }
 ```
 
-### preparing the requests
+## Preparing the Requests
 
 ```terraform
 resource "grid_scheduler" "sched" {

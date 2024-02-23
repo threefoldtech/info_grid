@@ -13,6 +13,8 @@
 
 We present here the general steps to use the TFChain-Stellar Bridge. Note that the only difference between using the Main net or Test net TFChain-Stellar bridge lies in the ThreeFold Dashboard URL.
 
+Read the [Dashboard section](../../dashboard/tfchain/tf_token_bridge.md) for more information.
+
 
 
 ## How to Use the TFChain-Stellar Bridge
@@ -20,9 +22,8 @@ We present here the general steps to use the TFChain-Stellar Bridge. Note that t
 1. Go on the ThreeFold Dashboard
    1. [Main Net](https://dashboard.grid.tf/)
    2. [Test Net](https://dashboard.test.grid.tf/)
-2. Sign-in with your Polkadot extension account
-3. Go in the section **Swap** of the Portal menu
-4. 2-Way Bridge:
+2. Go to  **TFChain** -> **TF Token Bridge** 
+3. 2-Way Bridge:
    * Transfer TFT from Stellar to TFChain
       * Click on *Deposit*
    * Transfer TFT from TFChain to Stellar

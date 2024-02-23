@@ -1,4 +1,21 @@
-# ZOSv2 network considerations
+<h1>Setup</h1>
+
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Running ZOS (v2) at home](#running-zos-v2-at-home)
+- [Running ZOS (v2) in a multi-node farm in a DC](#running-zos-v2-in-a-multi-node-farm-in-a-dc)
+  - [Necessities](#necessities)
+  - [IPv6](#ipv6)
+  - [Routing/firewalling](#routingfirewalling)
+  - [Multi-NIC Nodes](#multi-nic-nodes)
+  - [Farmers and the grid](#farmers-and-the-grid)
+
+***
+
+## Introduction
+
+We present ZOSv2 network considerations.
 
 Running ZOS on a node is just a matter of booting it with a USB stick, or with a dhcp/bootp/tftp server with the right configuration so that the node can start the OS.
 Once it starts booting, the OS detects the NICs, and starts the network configuration. A Node can only continue it's boot process till the end when it effectively has received an IP address and a route to the Internet. Without that, the Node will  retry indefinitely to obtain Internet access and not finish it's startup.

@@ -2,16 +2,16 @@
 
 <h2>Table of Contents</h2>
 
-- [Overall Process](#overall-process)
-  - [Preparation](#preparation)
-  - [Add New Domain](#add-new-domain)
-  - [Domains List](#domains-list)
-  - [Delete a Domain](#delete-a-domain)
+- [Introduction](#introduction)
+- [Preparation](#preparation)
+- [Add New Domain](#add-new-domain)
+- [Domains List](#domains-list)
+- [Delete a Domain](#delete-a-domain)
 - [Questions and Feedback](#questions-and-feedback)
 
 ***
 
-# Overall Process
+## Introduction
 
 We cover the overall process to add a domain to a virtual machine running on the ThreeFold Grid. 
 
@@ -102,6 +102,6 @@ To delete a domain, open the **Manage Domains** window, in the tab **Domains lis
 
 By clicking the **Delete** button, the deletion will start and the domain will be deleted from this virtual machine.
 
-# Questions and Feedback
+## Questions and Feedback
 
 If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Grid Tester Community](https://t.me/threefoldtesting) on Telegram.

@@ -1,6 +1,13 @@
-# ThreeFold Tech
+<h1> ThreeFold Tech </h1>
 
-![](img/threefold_tech.jpg)
+<h2>Table of Contents </h2>
+
+- [Overview](#overview)
+- [Location](#location)
+
+***
+
+## Overview
 
 Company developing & promoting software for self-healing, self-driving cloud & blockchain workloads. Has developed most of the software as used in the ThreeFold_Grid.
 
@@ -27,6 +34,7 @@ The company is 80% engineering centric today.
 
 > TFTech has no links to tokens, at this point (March 2021) does not own any of them either. All Token & TFGrid activities are coordinate from ThreeFold Dubai.
 
+![](img/threefold_tech.jpg)
 
 ## Location
 

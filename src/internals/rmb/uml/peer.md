@@ -1,6 +1,17 @@
 <h1> RMB Peer </h1>
 
+<h2> Table of Contents </h2>
+
+- [Introduction](#introduction)
+- [Example](#example)
+
+***
+
+## Introduction
+
 We present an example of RMB peer. Note that the extension for this kind of file is `.wsd`.
+
+## Example
 
 ```
 @startuml RMB

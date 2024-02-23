@@ -1,14 +1,29 @@
-# Kubernetes 
+<h1> Kubernetes </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
+- [Configs tab](#configs-tab)
+- [Master and Workers tabs](#master-and-workers-tabs)
+- [Kubeconfig](#kubeconfig)
+- [Manage Workers](#manage-workers)
+
+***
+
+## Introduction
 
 Kubernetes is the standard container orchestration tool.
 
 On the TF grid, Kubernetes clusters can be deployed out of the box. We have implemented [K3S](https://k3s.io/), a full-blown Kubernetes offering that uses only half of the memory footprint. It is packaged as a single binary and made more lightweight to run workloads in resource-constrained locations (fits e.g. IoT, edge, ARM workloads).
 
+## Prerequisites
+
 - Make sure you have a [wallet](../wallet_connector.md)
-- From the sidebar click on **Solutions**
+- From the sidebar click on **Applications**
 - Click on **Kubernetes**
 
-### **Configs** tab
+## Configs tab
 
 ![ ](./img/solutions_k8s.png)
 
@@ -16,7 +31,7 @@ On the TF grid, Kubernetes clusters can be deployed out of the box. We have impl
 - `Cluster Token`: It's used for authentication between your worker nodes and master node. You could use the auto-generated one or type your own.
 
 
-### **Master** and **Workers** tabs
+## Master and Workers tabs
 
 ![ ](./img/solutions_k8s_master.png)
 ![ ](./img/solutions_k8s_workers.png)
@@ -24,7 +39,7 @@ On the TF grid, Kubernetes clusters can be deployed out of the box. We have impl
 > Currently, we only support "single-master-multi-worker" k8s clusters. So you could always add more than one worker node by clicking on the **+** in the ***Worker*** tab.
 
 
-### Kubeconfig
+## Kubeconfig
 Once the cluster is ready, you can SSH into the cluster using `ssh root@IP`
 > IP can be the public IP or the planetary network IP
 
@@ -63,7 +78,7 @@ If you want to use kubectl through another machine, you need to change the line 
 replace PLANETARYIP_OR_PUBLICIP with the IP you want to reach th cluster through.
 
 
-### Manage Workers
+## Manage Workers
 Add or Remove workers in any **Kubernetes cluster**.
 
 

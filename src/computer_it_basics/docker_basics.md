@@ -48,7 +48,7 @@ The following can serve as a quick reference guide when deploying workloads on t
 
 We invite the readers to consult the [official Docker documentation](https://docs.docker.com/) for more information.
 
-***
+
 
 ## Basic Commands
 
@@ -63,7 +63,7 @@ curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 ```
 
-***
+
 
 ### Remove completely Docker
 
@@ -88,7 +88,7 @@ To completely remove docker from your machine, you can follow these steps:
 
 You can also use the command **whereis docker** to see if any Docker folders and files remain. If so, remove them with 
 
-***
+
 
 ### List containers
 
@@ -101,7 +101,7 @@ You can also use the command **whereis docker** to see if any Docker folders and
     docker ps -a
     ```
 
-***
+
 
 ### Pull an image
 
@@ -120,7 +120,7 @@ To pull an image from [Docker Hub](https://hub.docker.com/):
     docker pull <image_name> -a
     ```
 
-***
+
 
 ### Push an image
 
@@ -139,7 +139,7 @@ To pull an image to [Docker Hub](https://hub.docker.com/):
     docker pull <image_name> -a
     ```
 
-***
+
 
 ### Inspect and pull an image with GHCR
 
@@ -152,7 +152,7 @@ To pull an image to [Docker Hub](https://hub.docker.com/):
     docker pull ghcr.io/<repository>/<image>:<tag>
     ```
 
-***
+
 
 ### See a docker image (no download)
 
@@ -167,7 +167,7 @@ Make sure to write the proper information for the repository and the image.
 To install Skopeo, read [this documentation](https://github.com/containers/skopeo/blob/main/install.md).
 
 
-***
+
 
 ### Build a container
 
@@ -191,7 +191,7 @@ Use **docker build** to build a container based on a Dockerfile
     docker build --no-cache
     ```
 
-***
+
 
 ### List all available docker images
 
@@ -199,7 +199,7 @@ Use **docker build** to build a container based on a Dockerfile
 docker images
 ```
 
-***
+
 
 ### Run a container
 
@@ -222,7 +222,7 @@ You can combine arguments, e.g. **docker run -itd**.
 
 You can also specify the shell, e.g. **docker run -it <image_name> /bin/bash**
 
-***
+
 
 ### Run a new command in an existing container
 
@@ -233,7 +233,7 @@ To run a new command in an existing container, use **docker exec**.
     docker exec -it <container_name> sh
     ```
 
-***
+
 
 ### Bash shell into container 
 
@@ -248,7 +248,7 @@ To run a new command in an existing container, use **docker exec**.
 
 Note: if bash is not available, you can use `/bin/sh`
 
-***
+
 
 ### Pass arguments with a bash script and a Dockerfile
 
@@ -287,7 +287,7 @@ RUN chmod +x /script_example.sh
 CMD ["/script_example.sh"]
 ```
 
-***
+
 
 ### Copy files from a container to the local computer
 
@@ -295,7 +295,7 @@ CMD ["/script_example.sh"]
 docker cp <container_id>:<file_path> <file_path_destination>
 ```
 
-***
+
 
 ### Delete all the containers, images and volumes
 
@@ -319,7 +319,7 @@ docker cp <container_id>:<file_path> <file_path_destination>
     docker compose rm -f -s -v && docker rmi -f $(docker images -aq) && docker volume rm $(docker volume ls -qf dangling=true)
     ```
 
-***
+
 
 ### Kill all the Docker processes
 
@@ -328,7 +328,7 @@ docker cp <container_id>:<file_path> <file_path_destination>
     killall Docker && open /Applications/Docker.app
     ```
 
-***
+
 
 ### Output full logs for all containers
 
@@ -338,7 +338,7 @@ The following command output the full logs for all containers in the file **cont
 docker compose logs > containers.log
 ```
 
-***
+
 
 ## Resources Usage
 
@@ -348,7 +348,7 @@ docker compose logs > containers.log
 docker ps -s
 ```
 
-***
+
 
 ### Examine disks usage
 
@@ -361,7 +361,7 @@ docker ps -s
     docker system df -v
     ```
 
-***
+
 
 ## Wasted Resources
 
@@ -409,7 +409,7 @@ docker image prune -a --force --filter "until=<date>"
 
 Note: An example of a complete date would be `2023-01-04T00:00:00`
 
-***
+
 
 ## Command Combinations
 
@@ -419,7 +419,7 @@ Note: An example of a complete date would be `2023-01-04T00:00:00`
 docker kill $(docker ps -q)
 ```
 
-***
+
 
 ### Stop all running containers
 
@@ -427,14 +427,14 @@ docker kill $(docker ps -q)
 docker stop $(docker ps -a -q)
 ```
 
-***
+
 
 ### Delete all stopped containers
 
 ```
 docker rm $(docker ps -a -q)
 ```
-***
+
 
 ### Delete all images 
 
@@ -442,7 +442,7 @@ docker rm $(docker ps -a -q)
 docker rmi $(docker images -q)
 ```
 
-***
+
 
 ### Update and stop a container in a crash-loop 
 
@@ -450,7 +450,7 @@ docker rmi $(docker images -q)
 docker update –restart=no && docker stop
 ```
 
-***
+
 
 ## References
 

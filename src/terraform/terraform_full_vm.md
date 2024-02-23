@@ -1,7 +1,5 @@
 <h1>Terraform Complete Full VM Deployment</h1>
 
-![ ](./advanced/img/terraform_.png)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
@@ -16,7 +14,7 @@
 - [Delete the Deployment](#delete-the-deployment)
 - [Conclusion](#conclusion)
 
----
+***
 
 ## Introduction
 
@@ -26,7 +24,7 @@ The steps are very simple. You first need to create the Terraform files, the var
 
 The main goal of this guide is to show you all the necessary steps to deploy a Full VM on the TGrid using Terraform. Once you get acquainted with this first basic deployment, you should be able to explore on your own the possibilities that the TFGrid and Terraform combined provide.
 
----
+
 
 ## Main Process
 
@@ -40,7 +38,7 @@ Modify the variable file to take into account your own seed phrase and SSH keys.
 
 Once this is done, initialize and apply Terraform to deploy your workload, then SSH into the Full VM. That's it! Now let's go through all these steps in further details.
 
----
+
 
 ## Prerequisites
 
@@ -48,7 +46,7 @@ Once this is done, initialize and apply Terraform to deploy your workload, then 
 
 You need to download and install properly Terraform. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
 
----
+
 
 ## Find a 3Node with the ThreeFold Explorer
 
@@ -56,13 +54,13 @@ We want to find a proper 3Node to deploy our workload. For this guide, we want a
 
 We present two options to find a suitable node: the scheduler and the TFGrid Explorer.
 
-***
+
 
 ### Using the Grid Scheduler
 
 Using the TFGrid scheduler can be very efficient depending on what you are trying to achieve. To learn more about the scheduler, please refer to this [Scheduler Guide](resources/terraform_scheduler.md).
 
-***
+
 
 ### Using the Grid Explorer
 
@@ -88,7 +86,7 @@ We show here how to find a suitable 3Node using the ThreeFold Explorer.
 
 Once you've found a proper node, take node of its node ID. You will need to use this ID when creating the Terraform files.
 
----
+
 
 ## Create the Terraform Files
 
@@ -233,7 +231,7 @@ Make sure to add your own seed phrase and SSH public key. You will also need to 
 
 We set here the minimum specs for a full VM, but you can adjust these parameters.
 
----
+
 
 ## Deploy the Full VM with Terraform
 
@@ -252,7 +250,7 @@ We now deploy the full VM with Terraform. Make sure that you are in the correct 
 
 After deployments, take note of the 3node' IPv4 address. You will need this address to SSH into the 3node.
 
----
+
 
 ## SSH into the 3node
 
@@ -261,7 +259,7 @@ After deployments, take note of the 3node' IPv4 address. You will need this addr
     ssh root@VM_IPv4_Address
     ```
 
----
+
 
 ## Delete the Deployment
 
@@ -273,7 +271,7 @@ terraform destroy
 
 Make sure that you are in the Terraform directory you created for this deployment.
 
----
+
 
 ## Conclusion
 

@@ -3,7 +3,7 @@
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
-- [Access the ThreeFold Dashboard](#access-the-threefold-Dashboard)
+- [Access the ThreeFold Dashboard](#access-the-threefold-dashboard)
 - [Deploy a NixOS MicroVM](#deploy-a-nixos-microvm)
 - [Questions and Feedback](#questions-and-feedback)
 
@@ -18,8 +18,6 @@ In this guide, will learn how to make reproducible, declarative and reliable sys
 
 For more information on Nix, you can read the [Nix Reference Manual](https://nixos.org/manual/nix/stable/).
 
-***
-
 ## Access the ThreeFold Dashboard
 
 * Go to the ThreeFold Dashboard website, based on the deployment network you prefer:
@@ -32,7 +30,7 @@ For more information on Nix, you can read the [Nix Reference Manual](https://nix
 * From the sidebar click on **Solutions**
 * Click on **Micro Virtual Machine** to start your NixOS MicroVM Deployment
 
-***
+
 
 ## Deploy a NixOS MicroVM
 
@@ -59,7 +57,7 @@ We now present the main steps to properly configure your NixOS MicroVM running o
 
 If you need more information on how to SSH into your deployment, read [this section](../../getstarted/ssh_guide/ssh_guide.md) of the TF Manual.
 
-***
+
 
 ## Questions and Feedback
 

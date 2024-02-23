@@ -1,7 +1,5 @@
 <h1> Installing Pulumi </h1>
 
-![](./img/pulumi_logo.svg)
-
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)

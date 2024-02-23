@@ -1,7 +1,5 @@
 <h1> SSH Remote Connection with PuTTY </h1>
 
-***
-
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
@@ -19,15 +17,11 @@ To deploy different workloads, the SSH connection process should be very similar
 
 If you have any questions, feel free to write a post on the [Threefold Forum](http://forum.threefold.io/).
 
-***
+
 
 ## Main Steps and Prerequisites
 
-The prerequisites are:
-
-* [Create a Threefold Connect Wallet](../../threefold_token/storing_tft/tf_connect_app.md#create-a-wallet)
-* [Buy TFT](../../threefold_token/buy_sell_tft/buy_sell_tft.md)
-* [Create a Threefold Dashboard Account and Transfer TFT](../TF_Dashboard/TF_Dashboard.md#create-polkadot-extension-account)
+Make sure to [read the introduction](../tfgrid3_getstarted.md#get-started---your-first-deployment) before going further.
 
 The main steps for the whole process are the following:
 
@@ -37,7 +31,7 @@ The main steps for the whole process are the following:
 * SSH into the 3node
   * For the Planetary Network, download the Planetary Network Connector
 
-***
+
 
 ## SSH with PuTTY on Windows
 
@@ -87,7 +81,7 @@ Here are the main steps to SSH into a full VM using PuTTY on a Windows machine.
 
 You now have an SSH connection on Windows with IPv4.
 
-***
+
 
 ## Questions and Feedback
 
