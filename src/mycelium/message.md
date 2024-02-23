@@ -13,7 +13,7 @@
 The message subsystem can be used to send arbitrary length messages to receivers. A receiver is any
 other node in the network. It can be identified both by its public key, or an IP address in its announced
 range. The message subsystem can be interacted with both via the HTTP API, which is
-[documented here](./api.yaml), or via the `mycelium` binary. By default, the messages do not interpret
+[documented here](./api_yaml.md), or via the `mycelium` binary. By default, the messages do not interpret
 the data in any way. When using the binary, the message is slightly modified to include an optional
 topic at the start of the message. Note that in the HTTP API, all messages are encoded in base64. This
 might make it difficult to consume these messages without additional tooling.
