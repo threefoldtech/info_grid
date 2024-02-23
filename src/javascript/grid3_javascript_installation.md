@@ -81,7 +81,7 @@ Make sure to set the client configuration properly before using the Grid Client.
 - **network**: The network environment (**dev**, **qa**, **test** or **main**).
 
 - **mnemonic**: The 12 words mnemonics for your account. 
-  - Learn how to create one [here](https://manual.grid.tf/getstarted/TF_Dashboard/TF_Dashboard.html#create-polkadot-extension-account).
+  - Learn how to create one [here](../dashboard/wallet_connector.md).
 
 - **storeSecret**: This is any word that will be used for encrypting/decrypting the keys on ThreeFold key-value store.
 
