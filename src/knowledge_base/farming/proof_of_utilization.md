@@ -27,7 +27,7 @@ Every hour, the utilization is recorded in TFChain and the user is charged for t
 
 1. A user reserves Internet capacity on a given set of 3Nodes.
 2. Zero-OS records the reserved and used CU, SU, NU and IPAddresses in correlation with TFChain records.
-3. The TFChain DAO will charge the costs to the user in line with [discount mechanism](../../cloudunits/pricing/staking_discount_levels.md).
+3. The TFChain DAO will charge the costs to the user in line with [discount mechanism](../cloud/pricing/staking_discount_levels.md).
 4. TFT from the user account are burned/distributed in line to table below.
 
 | Percentage | Description                            | Remark                                                                   |
@@ -35,7 +35,7 @@ Every hour, the utilization is recorded in TFChain and the user is charged for t
 | 35% | TFT burning            | A mechanism used to maintain scarcity in the TFT economy.  |
 | 10% | ThreeFold Foundation   | Funds allocated to promote and grow the ThreeFold Grid.    |
 | 5%  | Validator Staking Pool | Rewards farmers that run TFChain 3.0 validator nodes.      |
-| 50% | Solution providers & sales channel | managed by [ThreeFold DAO](../../dao/tfdao.md).             |
+| 50% | Solution providers & sales channel | managed by [ThreeFold DAO](../about/dao/dao.md).             |
 
 > Note: While the solution provider program is still active, the plan is to discontinue the program in the near future. We will update the manual as we get more information. We currently do not accept new solution providers.
 
@@ -45,7 +45,7 @@ Every hour, the utilization is recorded in TFChain and the user is charged for t
 
 - Each solution provider and sales channel gets registered in TFChain and as such the distribution can be defined and calculated at billing time.
 - For billing purposes, ThreeFold DAO will check if it is from a known sales channel or solution provider. If yes, then the billing smart contract code will know how to distribute the TFTs. If the channel of solution provider is not known, then the 50% will go to the ThreeFold Foundation.
-- For Certified Farming, [ThreeFold Tech](../../threefold_tech.md) can define the solution & sales channel parameters, these are channels as provided by ThreeFold Tech.
+- For Certified Farming, [ThreeFold Tech](../about/threefold_tech.md) can define the solution & sales channel parameters, these are channels as provided by ThreeFold Tech.
 - Burning can be lowered to 25% if too many tokens would be burned, ThreeFold DAO consensus needs to be achieved.
 
 ### Other Ways TFT are required

@@ -15,7 +15,7 @@ We present different methods to delete contracts on the TFGrid.
 
 ## Using the Dashboard
 
-To cancel contracts with the Dashboard, consult the [Contracts List](../dashboard/deploy/your_contracts.md) documentation.
+To cancel contracts with the Dashboard, consult the [Contracts List](../../dashboard/deploy/your_contracts.md) documentation.
 
 ## Using GraphQL and Polkadot UI
 
@@ -31,7 +31,7 @@ query MyQuery {
 
 ```
 
-replace `TWIN_ID` with your twin id. The information should be available on the [Dashboard](../dashboard/dashboard.md).
+replace `TWIN_ID` with your twin id. The information should be available on the [Dashboard](../../dashboard/dashboard.md).
 
 Then from [polkadot UI](https://polkadot.js.org/apps/), add the tfchain endpoint to development.
 

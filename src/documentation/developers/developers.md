@@ -63,7 +63,7 @@ For complementary information on the technology developed by ThreeFold, read the
   - [ThreeFold Hub Intro](./flist/flist_hub/zos_hub.md)
   - [Generate an API Token](./flist/flist_hub/api_token.md)
   - [Convert Docker Image Into Flist](./flist/flist_hub/convert_docker_image.md)
-  - [Supported Flists](./manual3_iac/grid3_supported_flists.md)
+  - [Supported Flists](./flist/grid3_supported_flists.md)
   - [Flist Case Studies](./flist/flist_case_studies/flist_case_studies.md)
     - [Case Study: Debian 12](./flist/flist_case_studies/flist_debian_case_study.md)
     - [Case Study: Nextcloud AIO](./flist/flist_case_studies/flist_nextcloud_case_study.md)

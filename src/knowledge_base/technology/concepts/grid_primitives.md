@@ -17,7 +17,7 @@ Within the ThreeFold Grid, we offer a range of __low-level constructs known as P
 
 ## Compute
 
-Harness the power of computation with our compute primitives, measured in [compute units](../../wiki/cloudunits/cloudunits_toc.md) (CU).
+Harness the power of computation with our compute primitives, measured in [compute units](../../cloud/cloudunits.md) (CU).
 
 - [ZKube](../../technology/primitives/compute/zkube.md): Deploy and manage Kubernetes clusters effortlessly.
 - [ZMachine](../../technology/primitives/compute/zmachine.md): Run your applications within containers or virtual machines powered by the Zero-OS operating system.
