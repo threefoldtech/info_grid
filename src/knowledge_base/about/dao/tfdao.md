@@ -24,8 +24,8 @@ Amongst others the DAO needs to arrange
 
 | Utility Token model                          |                                            |
 | -------------------------------------------- | ------------------------------------------ |
-| [Proof Of Capacity](../tfgrid/farming/proof_of_capacity.md)       | Farming (creation) of TFT                  |
-| [Proof Of Utilization](../tfgrid/farming/proof_of_utilization.md) | Utilization (burning, distribution) of TFT |
+| [Proof Of Capacity](../../farming/proof_of_capacity.md)       | Farming (creation) of TFT                  |
+| [Proof Of Utilization](../../farming/proof_of_utilization.md) | Utilization (burning, distribution) of TFT |
 
 As well as
 

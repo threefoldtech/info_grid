@@ -247,7 +247,7 @@ Contract cost/hour = CU cost/hour + SU cost/hour
 
 ### Applying the Dedicated Node Discount
 
-There's a default `50%` discount for renting a node, this discount is not related to the staking discount. For more information on dedicated node discounts, please [read this section](../dashboard/deploy/dedicated_machines.md).
+There's a default `50%` discount for renting a node, this discount is not related to the staking discount. For more information on dedicated node discounts, please [read this section](../../../documentation/dashboard/deploy/dedicated_machines.md).
 
 ```
 Cost with 50% discount = 35.72532 * 0.5
@@ -256,7 +256,7 @@ Cost with 50% discount = 35.72532 * 0.5
 
 ### Applying the Staking Discount
 
-Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../wiki/cloudunits/pricing/staking_discount_levels.md).
+Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../pricing/staking_discount_levels.md).
 
 For this example, let's assume that this twin has 18 months worth of TFTs staked, so the user will be eligible for a Gold discount level (60% discount).
 

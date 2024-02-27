@@ -6,7 +6,7 @@ There are multiple ways to buy and sell [TFT](../threefold_token.md) depending o
 
 You can buy and sell TFT on Stellar Chain, Ethereum Chain and Binance Smart Chain, and you can use the [TFT bridges](../tft_bridges/tft_bridges.md) to go from one chain to another.
 
-With TFTs, you can [deploy workloads](../../getstarted/tfgrid3_getstarted.md) on the ThreeFold Grid and benefit from [staking discounts](../../wiki/cloudunits/pricing/staking_discount_levels.md) up to 60%!
+With TFTs, you can [deploy workloads](../../system_administrators/getstarted/tfgrid3_getstarted.md) on the ThreeFold Grid and benefit from [staking discounts](../../../knowledge_base/cloud/pricing/staking_discount_levels.md) up to 60%!
 
 <h2>Table of Contents</h2>
 

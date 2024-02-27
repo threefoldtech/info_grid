@@ -35,7 +35,7 @@ The operating system is not installed on any local storage medium (hard disk, ss
 
 The mechanism to allow this to work in a safe and efficient manner is a ThreeFold innovation called our container virtual filesystem. 
 
-For more information on setting a 3Node, please refer to the [Farmers documentation](../../../farmers/farmers.md).
+For more information on setting a 3Node, please refer to the [Farmers documentation](../../../../documentation/farmers/farmers.md).
 
 
 ## Unbreakable Storage
@@ -79,7 +79,7 @@ That's just the administration and operational part of maintaining a server esta
 In this image from fs, a small partition is mounted in memory to start booting the machine, it gets IPXE (downloads what it needs), and then 0-OS boots. 
 After that, going to the hub, downloading different lists. 
 
-There is 1 main flist that triggers downloads of multiple flists. Read more [here](../../../flist/flist.md). 
+There is 1 main flist that triggers downloads of multiple flists. Read more [here](../../../../documentation/developers/flist/flist.md). 
 In there all the components/daemons that do part of the 0-OS. 
 Also the download of the zos-bins, i.e. external binaries are triggered this way (https://hub.grid.tf/tf-zos-bins). 
 

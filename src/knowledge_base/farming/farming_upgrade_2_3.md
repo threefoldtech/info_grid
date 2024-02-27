@@ -20,7 +20,7 @@ Any farmer who is interested to switch over to this new release will have to do 
 - Electronically sign the terms and conditions of TFGrid 3.0
 - Download new boot loader (USB stick or PXE process) and reboot your 3Node(s)
 
-All of above instructions are available [here](../../../farmers/farmers.md).
+All of above instructions are available [here](../../documentation/farmers/farmers.md).
 
 ## Help us to Test the TFGrid 3.0 on Devnet and Testnet
 

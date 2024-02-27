@@ -10,7 +10,7 @@ The ThreeFold Dashboard is a dynamic environment designed for both seasoned deve
 
 In the context of the Dashboard, a weblet is a compiled JavaScript web component that can be effortlessly embedded within the HTML page of a web application. This modular approach allows for flexible and intuitive interactions, facilitating a user-friendly deployment process.
 
-The backend for the weblets is introduced with the [Javascript Client](../javascript/grid3_javascript_readme.md) which communicates to TFChain over RMB.
+The backend for the weblets is introduced with the [Javascript Client](../developers/javascript/grid3_javascript_readme.md) which communicates to TFChain over RMB.
 
 <h2> Table of Contents </h2>
 

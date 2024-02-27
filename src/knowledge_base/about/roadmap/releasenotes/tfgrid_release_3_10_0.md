@@ -67,7 +67,7 @@ Below are some of the key highlights of the TFGrid v3.10.0 component upgrades an
 #### TF-Grid-CLI
 
 - Introduced a simple tool for creating virtual machines and Kubernetes clusters. Note that `TF-Grid-CLI` is now `TFCMD`.
-- Get started [here](../../tfcmd/tfcmd.md).
+- Get started [here](../../../../documentation/developers/tfcmd/tfcmd.md).
 
 #### Gridify
 

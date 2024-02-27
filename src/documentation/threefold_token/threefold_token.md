@@ -21,7 +21,7 @@ The ThreeFold Token (TFT) is a decentralized digital currency used to buy autono
 
 ThreeFold Tokens are generated through a process called “Farming”. Farming happens when active internet capacity is added to the ThreeFold Grid. Independent farmers earn ThreeFold Tokens (TFT) by providing neutral and decentralized internet capacity, thus expending the usable TF Grid. Therefore no central entity controls the internet.
 
-> [Get an overview of the ThreeFold token](./token_overview/token_overview.md)
+> [Get an overview of the ThreeFold token](../../knowledge_base/about/token_overview/token_overview.md)
 
 ## Chains with TFT
 
@@ -86,10 +86,10 @@ Each time transactions are done on chains, transaction fees apply.
 
 You can do almost anything on the TFGrid, as long as you're doing Linux stuff, ZOS got your back!
 
-> [Get Started on the TFGrid](../getstarted/tfgrid3_getstarted.md)
+> [Get Started on the TFGrid](../system_administrators/getstarted/tfgrid3_getstarted.md)
 
 ## Disclaimer
 
 > The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
 >
-> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](https://library.threefold.me/info/legal/#/legal__disclaimer) and seek advice from a qualified financial professional if needed.
+> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](../../knowledge_base/legal/disclaimer.md) and seek advice from a qualified financial professional if needed.

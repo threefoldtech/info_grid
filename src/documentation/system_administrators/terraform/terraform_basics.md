@@ -51,7 +51,7 @@ There are two options when it comes to finding a node to deploy on. You can use 
 - Use the [scheduler](resources/terraform_scheduler.md)
   - Scheduler will help you find a node that matches your criteria
 - Use the Nodes Explorer
-  - You can check the [Node Finder](../dashboard/deploy/node_finder.md) to know which nodes fits your deployment criteria.
+  - You can check the [Node Finder](../../dashboard/deploy/node_finder.md) to know which nodes fits your deployment criteria.
   - Make sure you choose a node which has enough capacity and is available (up and running).
 
 ## Preparation
@@ -160,7 +160,7 @@ terraform destroy
 
 ## Available Flists
 
-You can consult the [list of Flists](../manual3_iac/grid3_supported_flists.md)  to learn more about the available Flist to use with a virtual machine.
+You can consult the [list of Flists](../../developers/flist/flist.md)  to learn more about the available Flist to use with a virtual machine.
 
 ## Full and Micro Virtual Machines
 

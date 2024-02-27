@@ -67,7 +67,7 @@ Each 3Node has certain amount of compute, storage and network resources:
 
 For making this Internet Capacity available, Farmers are rewarded with TFT.
 
-The amount of resources availabe in a 3Node are translated into compute units (CU), storage units (SU), Network units (NU) and IP addresses (IPAddr) to calculate farming rewards. See also [Cloud Units Calculation For Farming](../../cloudunits/resource_units_calc_cloudunits.md).
+The amount of resources availabe in a 3Node are translated into compute units (CU), storage units (SU), Network units (NU) and IP addresses (IPAddr) to calculate farming rewards. See also [Cloud Units Calculation For Farming](../cloud/resource_units_calc_cloudunits.md).
 
 > **Unless explicitly specified otherwise, calculations of "gigabytes" use base
 > 1024. That is, 1 GB is equal to 1073741824 bytes.**
@@ -94,4 +94,4 @@ The below table expands on CU, SU, NU and IPAddr and their farming rewards:
 
 > **The rewards above are calculated according to the current TFT to USD price in TFChain of 0.08. TFDAO is responsible to change this price in accordance to current marketsituation and liquidity.**
 
-The above farming rewards apply for 3Nodes registered in TFChain for ThreeFold Grid v3. Anyone can calculate their potential rewards using the [Farming Reward Calculator](https://dashboard.grid.tf/calculator/simulator). The same CU, SU, NU and IPAddr principles apply to the sales of Internet capacity in the form of [cloud units](../../cloudunits/cloudunits.md).
+The above farming rewards apply for 3Nodes registered in TFChain for ThreeFold Grid v3. Anyone can calculate their potential rewards using the [Farming Reward Calculator](https://dashboard.grid.tf/calculator/simulator). The same CU, SU, NU and IPAddr principles apply to the sales of Internet capacity in the form of [cloud units](../cloud/cloudunits.md).

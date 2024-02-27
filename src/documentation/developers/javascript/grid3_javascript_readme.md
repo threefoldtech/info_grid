@@ -4,7 +4,7 @@ This section covers developing projects on top of Threefold Grid using Javascrip
 
 Javascript has a huge ecosystem, and first class citizen when it comes to blockchain technologies like substrate and that was one of the reasons for it to become one the very first supported languages on the grid.
 
-Please make sure to check the [basics](../../getstarted/tfgrid3_getstarted.md) before continuing.
+Please make sure to check the [basics](../../system_administrators/getstarted/tfgrid3_getstarted.md) before continuing.
 
 <h2> Table of Contents </h2>
 

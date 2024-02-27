@@ -81,7 +81,7 @@ In Q3 2021 we launched TF Grid 3.0 which has again brought improvement to the fa
 
 ### Migration from TFTv1 Stellar (Staking Pool=TFTA) to TFTv2 Stellar (Trading or Production Pool=TFT)
 
-- See [TFTA to TFT](./tfta_to_tft.md)
+- See [TFTA to TFT](../legal/terms_conditions/tfta_to_tft.md)
 
 ### Technical Information
 

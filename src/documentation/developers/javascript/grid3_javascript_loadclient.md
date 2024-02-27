@@ -62,7 +62,7 @@ using e2e. That's similar to home servers by matrix
 
 for more details, check [client options](https://github.com/threefoldtech/tfgrid-sdk-ts/blob/development/packages/grid_client/docs/client_configuration.md)
 
-> Note: The choice of the node is completely up to the user at this point. They need to do the capacity planning. Check [Node Finder](../dashboard/deploy/node_finder.md) to know which nodes fits your deployment criteria.
+> Note: The choice of the node is completely up to the user at this point. They need to do the capacity planning. Check [Node Finder](../../dashboard/deploy/node_finder.md) to know which nodes fits your deployment criteria.
 
 Check the document for [capacity planning using code](../javascript/grid3_javascript_capacity_planning.md) if you want to automate it
 > Note: this feature is still experimental

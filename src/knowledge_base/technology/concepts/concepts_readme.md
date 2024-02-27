@@ -15,5 +15,5 @@ On this section we will explore the fundamental principles and concepts behind t
 
 ## Take an In-Depth Looks
 
-- [TF Technology](../technology/technology_toc.md)
+- [TF Technology](../technology_toc.md)
 - [What's New on TFGrid v3.x](./grid3_whatsnew.md)
