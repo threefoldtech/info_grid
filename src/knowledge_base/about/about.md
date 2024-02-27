@@ -9,5 +9,5 @@ It's a good place to start if you want to have an overview of ThreeFold since it
 - [ThreeFold History](./threefold_history.md)
 - [ThreeFold Tech](./threefold_tech.md)
 - [Organisation Structure](./orgstructure.md)
-- [ThreeFold Roadmap](../roadmap/roadmap_readme.md)
-- [ThreeFold Token](../threefold_token/token_overview/token_overview.md)
+- [ThreeFold Roadmap](./roadmap/roadmap_readme.md)
+- [ThreeFold Token](./token_overview/token_overview.md)

@@ -52,8 +52,8 @@ TFT is used on the TFGrid to purchase network, compute and storage resources thr
 
 | **Description**           | **Value**     |
 | ------------------------- | ------------- |
-| Total Liquid Tokens       | {{#include ../../values/tft_liquidity.md}}     |
-| TFT Marketcap at {{#include ../../values/tft_value.md}} USD | {{#include ../../values/tft_marketcap.md}}  USD |
+| Total Liquid Tokens       | {{#include ../../../values/tft_liquidity.md}}     |
+| TFT Marketcap at {{#include ../../../values/tft_value.md}} USD | {{#include ../../../values/tft_marketcap.md}}  USD |
 
 ## Current Distribution Values
 
