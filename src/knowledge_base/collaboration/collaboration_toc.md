@@ -8,6 +8,6 @@ To become a farmer, a developer or a sysadmin on the ThreeFold, read the [docume
 
 - [How to Contribute](./contribute.md)
 - [Development Process](./development_process.md)
-- [Collaboration Tools](../collaboration_tools/collaboration_tools.md)
-- [How to Test](../testing/testing_readme.md)
-- [Code of Conduct](../contribute/code_conduct.md)
+- [Collaboration Tools](./collaboration_tools/collaboration_tools.md)
+- [How to Test](./testing/testing_readme.md)
+- [Code of Conduct](./code_conduct.md)
