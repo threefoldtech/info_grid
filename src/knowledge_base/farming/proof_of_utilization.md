@@ -21,7 +21,7 @@ Each ThreeFold Grid user can now use this capacity. The ThreeFold Chain ("TFChai
 
 Proof-of-utilization is the underlying mechanisms that verifies the utilization of Internet capacity on the ThreeFold Grid. 
 
-Every hour, the utilization is recorded in TFChain and the user is charged for the Internet capacity used on the ThreeFold Grid. Discount calculated in line with the amount of TFT users have in their accounts on TFChain. Learn more about the discount [here](../../cloudunits/pricing/staking_discount_levels.md).
+Every hour, the utilization is recorded in TFChain and the user is charged for the Internet capacity used on the ThreeFold Grid. Discount calculated in line with the amount of TFT users have in their accounts on TFChain. Learn more about the discount [here](../cloud/pricing/staking_discount_levels.md).
 
 ## How does Proof-of-Utilization work?
 

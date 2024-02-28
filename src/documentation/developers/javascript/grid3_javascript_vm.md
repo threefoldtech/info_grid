@@ -145,7 +145,7 @@ We need to specify its
 - disks: disks model collection
 - memory
 - root filesystem size
-- flist: the image it is going to start from. Check the [supported flists](/manual3_iac/grid3_supported_flists.md)
+- flist: the image it is going to start from. Check the [supported flists](../flist/grid3_supported_flists.md)
 - entry point: entrypoint command / script to execute
 - env: has the environment variables needed e.g sshkeys used
 - public ip: if we want to have a public ip attached to the VM

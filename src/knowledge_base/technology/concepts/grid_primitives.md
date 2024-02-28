@@ -25,7 +25,7 @@ Harness the power of computation with our compute primitives, measured in [compu
 
 ## Storage
 
-Leverage our robust storage Primitives, measured in [storage units](../../wiki/cloudunits/cloudunits_toc.md) (SU), to meet your data storage requirements efficiently.
+Leverage our robust storage Primitives, measured in [storage units](../../cloud/cloudunits.md) (SU), to meet your data storage requirements efficiently.
 
 - [ZOS Filesystem](../../technology/primitives/storage/zos_fs.md): Enjoy a deduplicated and immutable filesystem for secure and reliable data storage.
 - [ZOS Mount](../../technology/primitives/storage/zmount.md): Utilize a portion of a high-speed SSD (Solid State Drive) as a mounted disk directly accessible within your ZMachine.
@@ -35,7 +35,7 @@ Leverage our robust storage Primitives, measured in [storage units](../../wiki/c
 
 ## Network
 
-Harness our network Primitives, measured in [network units](../../wiki/cloudunits/cloudunits_toc.md) (CU), to enable seamless communication and connectivity.
+Harness our network Primitives, measured in [network units](../../cloud/cloudunits.md) (CU), to enable seamless communication and connectivity.
 
 - [ZNET](../../technology/primitives/network/znet.md): Establish private networks between ZMachines, ensuring secure and efficient communication.
 - [ZNIC](../../technology/primitives/network/znic.md): Access and manage network interfaces within the Planetary Network, enabling efficient data transfer and communication.

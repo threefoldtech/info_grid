@@ -80,7 +80,7 @@ Virtual CPUs (vCPUs) are virtual representations of physical CPUs that allow mul
 
 ### Kubernetes
 
-[Kubernetes](../dashboard/solutions/k8s.md) is an open-source container orchestration system for automating software deployment, scaling, and management. On the TFGrid, Kubernetes clusters can be deployed out of the box. Thus, system administrators can seamlessly deploy solutions on the TFGrid that are reliable in terms of compute units.
+[Kubernetes](../../../documentation/dashboard/solutions/k8s.md) is an open-source container orchestration system for automating software deployment, scaling, and management. On the TFGrid, Kubernetes clusters can be deployed out of the box. Thus, system administrators can seamlessly deploy solutions on the TFGrid that are reliable in terms of compute units.
 
 ### TF Grid-SDK-Go and TF Grid-SDK-TS
 
@@ -88,9 +88,9 @@ The [TFGrid-SDK-Go](./grid3_components.md#tf-grid-sdk-go) and [TFGrid-SDK-TS](./
 
 ## Network Units
 
-Network units are related to the data transmitted over the Internet. While TFGrid does not provide direct ISP services, elements such as gateways are clearly related to the network. [Gateways](../terraform/resources/terraform_vm_gateway.md) can be used to balance network workloads. A deployment could consist of two different gateways with a master node gateway and a worker node gateway. If the master gateway would fail, the worker gateway would take the lead and become the master gateway. Deploying solutions with several gateways can help system administrators build reliable solutions.
+Network units are related to the data transmitted over the Internet. While TFGrid does not provide direct ISP services, elements such as gateways are clearly related to the network. [Gateways](../../../documentation/system_administrators/terraform/resources/terraform_vm_gateway.md) can be used to balance network workloads. A deployment could consist of two different gateways with a master node gateway and a worker node gateway. If the master gateway would fail, the worker gateway would take the lead and become the master gateway. Deploying solutions with several gateways can help system administrators build reliable solutions.
 
-Note that it is also possible to deploy a Wireguard virtual private network (VPN) between different 3Nodes and synchronize their databases. This provides resilience and redundancy. Read more on VPN and synced databases [here](../terraform/advanced/terraform_mariadb_synced_databases.md).
+Note that it is also possible to deploy a Wireguard virtual private network (VPN) between different 3Nodes and synchronize their databases. This provides resilience and redundancy. Read more on VPN and synced databases [here](../../../documentation/system_administrators/terraform/advanced/terraform_mariadb_synced_databases.md).
 
 Let's explore some network components of the ThreeFold Grid.
 
@@ -108,11 +108,11 @@ There are three main solution categories on the TFGrid: DIY workloads, independe
 
 ## DIY Workloads
 
-Out-of-the-box applications are available on the [TF Dashboard](../dashboard/deploy/applications.md) and [Terraform](../terraform/terraform_readme.md), where anyone can [buy TFTs](../threefold_token/buy_sell_tft/buy_sell_tft.md) and deploy on the decentralized and open-source grid. The reliability of those deployments depend on the capacity and resources of each DIY system administrator.
+Out-of-the-box applications are available on the [TF Dashboard](../dashboard/deploy/applications.md) and [Terraform](../../../documentation/system_administrators/terraform/terraform_toc.md), where anyone can [buy TFTs](../../../documentation/threefold_token/buy_sell_tft/buy_sell_tft.md) and deploy on the decentralized and open-source grid. The reliability of those deployments depend on the capacity and resources of each DIY system administrator.
 
 In essence, when you deploy on the decentralized and open-source TFGrid, you act as a centralized entity building the solution architecture. You must design the solution in a way that it can be reliable with high-availability and resilience levels that suit the needs of your project.
 
-Note that when you deploy on the ThreeFold Grid, you are doing so in accordance with the [ThreeFold Terms and Conditions](../wiki/terms_conditions_all3.md).
+Note that when you deploy on the ThreeFold Grid, you are doing so in accordance with the [ThreeFold Terms and Conditions](../../legal/terms_conditions_all3.md).
 
 ## Independent Commercial Offerings
 
@@ -120,7 +120,7 @@ Since the TFGrid is open-source, anyone could decide to build a commercial offer
 
 In this case, the commercial offering is the centralized entity and if the company makes a mistake, it would be liable to the users to the extent discussed in the T&C.
 
-The ThreeFold Manual already contains a lot of resourceful information on how to [deploy applications](../dashboard/deploy/applications.md) on the TFGrid. We invite everyone to develop independent commercial offerings on top of the ThreeFold Grid.
+The ThreeFold Manual already contains a lot of resourceful information on how to [deploy applications](../../../documentation/dashboard/deploy/applications.md) on the TFGrid. We invite everyone to develop independent commercial offerings on top of the ThreeFold Grid.
 
 ## ThreeFold Commercial Offerings
 

@@ -99,6 +99,6 @@ If you're having issues wiping the disks, you might need to use **--force** or *
 
 If you're having trouble getting your disks recognized by Zero-OS, some farmers have had success enabling AHCI mode for SATA in their BIOS.
 
-If you are using a server with onboard storage, you might need to [re-flash the RAID card](/faq/faq.md#is-there-a-way-to-bypass-raid-in-order-for-zero-os-to-have-bare-metals-on-the-system-no-raid-controller-in-between-storage-and-the-grid).
+If you are using a server with onboard storage, you might need to [re-flash the RAID card](../../faq/faq.md#is-there-a-way-to-bypass-raid-in-order-for-zero-os-to-have-bare-metals-on-the-system-no-raid-controller-in-between-storage-and-the-grid).
 
 

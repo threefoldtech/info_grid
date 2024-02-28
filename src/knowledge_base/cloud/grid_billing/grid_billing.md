@@ -130,7 +130,7 @@ Contract cost/hour = CU cost/hour + SU cost/hour
 
 ### Applying the Discounts
 
-Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../wiki/cloudunits/pricing/staking_discount_levels.md).
+Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../pricing/staking_discount_levels.md).
 
 For this example, we assume that this twin has 18 months worth of TFTs staked, so the user will be eligible for a Gold discount level (60% discount).
 
@@ -291,7 +291,7 @@ uniqueName in TFT = 0.00025 * 100
 
 ### Applying the Staking Discount
 
-Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../wiki/cloudunits/pricing/staking_discount_levels.md).
+Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../pricing/staking_discount_levels.md).
 
 For this example, let's assume that this twin has 18 months worth of TFTs staked, so the user will be eligible for a Gold discount level (60% discount).
 
@@ -326,7 +326,7 @@ Public IP in TFT = 0.004 * 100
 
 ### Applying the Staking Discount
 
-Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../wiki/cloudunits/pricing/staking_discount_levels.md).
+Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../pricing/staking_discount_levels.md).
 
 For this example, let's assume that this twin has 18 months worth of TFTs staked, so the user will be eligible for a Gold discount level (60% discount).
 
@@ -378,7 +378,7 @@ NU price in TFT = 0.0015 * 100
 
 ### Applying the Staking Discount
 
-Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../wiki/cloudunits/pricing/staking_discount_levels.md).
+Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../pricing/staking_discount_levels.md).
 
 For this example, let's assume that this twin has 18 months worth of TFTs staked, so the user will be eligible for a Gold discount level (60% discount).
 

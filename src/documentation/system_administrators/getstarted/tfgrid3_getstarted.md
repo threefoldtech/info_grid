@@ -4,10 +4,10 @@
 
 It's easy to get started on the TFGrid and deploy applications.
 
-- [Create a TFChain Account](../dashboard/wallet_connector.md)
-- [Get TFT](../threefold_token/buy_sell_tft/buy_sell_tft.md)
-- [Bridge TFT to TChain](../threefold_token/tft_bridges/tft_bridges.md)
-- [Deploy an Application](../dashboard/deploy/deploy.md)
+- [Create a TFChain Account](../../dashboard/wallet_connector.md)
+- [Get TFT](../../threefold_token/buy_sell_tft/buy_sell_tft.md)
+- [Bridge TFT to TChain](../../threefold_token/tft_bridges/tft_bridges.md)
+- [Deploy an Application](../../dashboard/deploy/deploy.md)
 - [SSH Remote Connection](./ssh_guide/ssh_guide.md)
   - [SSH with OpenSSH](./ssh_guide/ssh_openssh.md)
   - [SSH with PuTTY](./ssh_guide/ssh_putty.md)
@@ -16,12 +16,12 @@ It's easy to get started on the TFGrid and deploy applications.
 
 ## Grid Platforms
 
-- [TF Dashboard](../dashboard/dashboard.md)
-- [TF Flist Hub](../flist/flist_hub/zos_hub.md)
+- [TF Dashboard](../../dashboard/dashboard.md)
+- [TF Flist Hub](../../developers/flist/flist_hub/zos_hub.md)
 
 ## TFGrid Services and Resources
 
-- [TFGrid Services](../TF_Grid_Services/tf_grid_services_readme.md)
+- [TFGrid Services](./tfgrid_services/tf_grid_services_readme.md)
 
 ## Advanced Deployment Techniques
 

@@ -184,7 +184,7 @@ Let's go into BIOS mode now!
 
 The following covers proper settings for the BIOS mode of a DIY 3Node. Note that it is also called the normal BIOS or legacy BIOS.
 
-There might be other ways to configure those settings, depending on the specific computer. Depending on your hardware (disks connections, RAID controller, etc.), you might need to change some settings to fit the specific model. Most of the time, if you follow these lines, your 3Node should work 100% with the Grid. Check the [Troubleshooting and Error Messages](/faq/faq.md#troubleshooting-and-error-messages) section if you have trouble on your way to booting Zero-OS.
+There might be other ways to configure those settings, depending on the specific computer. Depending on your hardware (disks connections, RAID controller, etc.), you might need to change some settings to fit the specific model. Most of the time, if you follow these lines, your 3Node should work 100% with the Grid. Check the [Troubleshooting and Error Messages](../../faq/faq.md#troubleshooting-and-error-messages) section if you have trouble on your way to booting Zero-OS.
 
 It is possible that your 3Node needs to be booted with the UEFI mode. In this case, refer to the [next section](#example-of-uefi-settings---desktop-computer---dell-optiplex-7010).
 

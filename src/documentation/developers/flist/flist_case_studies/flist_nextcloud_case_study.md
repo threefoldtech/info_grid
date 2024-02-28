@@ -70,7 +70,7 @@ One important thing to have in mind is that, when we create an flist, what we ar
 
 Once we've successfully created an flist, we thus have a very quick way to deploy a specific workload while always obtaining the same result. This is why it is highly recommended to test a given deployment on a full or micro VM before building an flist.
 
-For example, in the case of building a Nextcloud All-in-One flist, the prerequisites would be to successfully deploy a Nextcloud AIO instance on a full VM by executing each step sequentially. This specific example is documented in the Terraform section [Nextcloud All-in-One Guide](../../terraform/advanced/terraform_nextcloud_aio.md) of the System Administrators book.
+For example, in the case of building a Nextcloud All-in-One flist, the prerequisites would be to successfully deploy a Nextcloud AIO instance on a full VM by executing each step sequentially. This specific example is documented in the Terraform section [Nextcloud All-in-One Guide](../../../system_administrators/terraform/advanced/terraform_nextcloud_aio.md) of the System Administrators book.
 
 In our case, the flist we will be using has some specific configurations depending on the way we deploy Nextcloud (e.g. using or not the gateway and a custom domain). The Terraform **main.tf** we will be sharing later on will thus take all this into account for a smooth deployment.
 

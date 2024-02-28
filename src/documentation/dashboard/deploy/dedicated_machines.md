@@ -37,7 +37,7 @@ Dedicated machines are 3Nodes that can be reserved and rented entirely by one us
 
 - Received Discounts for renting a node on TFGrid internet capacity
   - 50% for dedicated node (TF Pricing policies)
-  - A second level discount up to 60% for balance level see [Discount Levels](../../wiki/cloudunits/pricing/staking_discount_levels.md)
+  - A second level discount up to 60% for balance level see [Discount Levels](../../../knowledge_base/cloud/pricing/staking_discount_levels.md)
 - Discounts are calculated every time the grid bills by checking the available TFT balance on the user wallet and seeing if it is sufficient to receive a discount. As a result, if the user balance drops below the treshold of a given discount, the deployment price increases.
 
 ## Usage
@@ -90,15 +90,4 @@ When you have decided which node to reserve, click on **Reserve** under the colu
 
 ## GPU Support Links
 
-The ThreeFold Manual covers many ways to use a GPU node on the TFGrid. A good place to start would be the **Full VM and GPU** documentation.
-
-Feel free to explore the different possibilities!
-
-- [Javascript Client and GPU](../../javascript/grid3_javascript_gpu_support.md)
-- Go Client and GPU
-  - [GPU Support](../../go/grid3_go_gpu_support.md)
-  - [VM with GPU](../../go/grid3_go_vm_with_gpu.md)
-- [TFGrid CLI and GPU](../../tfcmd/tfcmd_vm.md/#deploy-a-vm-with-gpu)
-- [Terraform and GPU](../../terraform/terraform_gpu_support.md)
-- [Full VM and GPU](../../dashboard/solutions/fullVm.md)
-- [Zero-OS API and GPU](../../internals/zos/manual/api.md#gpus)
+The ThreeFold Manual covers many ways to use a GPU node on the TFGrid. Read [this section](../../system_administrators/gpu/gpu_toc.md) to learn more.

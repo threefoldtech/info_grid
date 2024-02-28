@@ -36,7 +36,7 @@ Make sure to [read the introduction](../tfgrid3_getstarted.md#get-started---your
 
 # Deploy a Weblet with WireGuard Access
 
-For this guide on WireGuard access, we deploy a [Full VM](../../dashboard/solutions/fullVm.md). Note that the whole process is similar with other types of ThreeFold weblets on the Dashboard.
+For this guide on WireGuard access, we deploy a [Full VM](../../../dashboard/solutions/fullVm.md). Note that the whole process is similar with other types of ThreeFold weblets on the Dashboard.
 
 * Go to the [ThreeFold Dashboard](https://dashboard.grid.tf/)
 * Select the weblet **Full Virtual Machine**

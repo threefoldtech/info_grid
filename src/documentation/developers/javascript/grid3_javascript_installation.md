@@ -36,7 +36,7 @@ To use the Grid Client, you will need the following on the TFGrid:
 - A TFChain account
 - TFT in your wallet
 
-If it is not the case, please visit the [Get started section](../getstarted/tfgrid3_getstarted.md).
+If it is not the case, please visit the [Get started section](../../system_administrators/getstarted/tfgrid3_getstarted.md).
 
 ## Installation
 
@@ -81,7 +81,7 @@ Make sure to set the client configuration properly before using the Grid Client.
 - **network**: The network environment (**dev**, **qa**, **test** or **main**).
 
 - **mnemonic**: The 12 words mnemonics for your account. 
-  - Learn how to create one [here](../dashboard/wallet_connector.md).
+  - Learn how to create one [here](../../dashboard/wallet_connector.md).
 
 - **storeSecret**: This is any word that will be used for encrypting/decrypting the keys on ThreeFold key-value store.
 
