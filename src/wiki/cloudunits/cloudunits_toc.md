@@ -2,7 +2,7 @@
 
 This section covers the essential information concerning Cloud utilization.
 
-To deploy on the ThreeFold Grid, read the [System Administrators tutorials](../../system_administrators/system_administrators.md).
+To deploy on the ThreeFold Grid, refer to the [System Administrators](../../system_administrators/system_administrators.md) section.
 
 <h2>Table of Contents</h2>
 

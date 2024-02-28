@@ -2,7 +2,7 @@
 
 This section covers all practical tutorials on how to farm on the ThreeFold Grid.
 
-For complementary information on ThreeFold farming, read the [Farming](../wiki/tfgrid/farming/farming_toc.md) section of the Library.
+For complementary information on ThreeFold farming, refer to the [Farming](../wiki/tfgrid/farming/farming_toc.md) section.
 
 <h2> Table of Contents </h2>
 
