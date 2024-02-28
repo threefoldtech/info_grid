@@ -726,7 +726,7 @@ You can download pre-release versions [here](https://github.com/threefoldtech/pl
 
 ### What is Proof-of-Capacity used by ThreeFold?
 
-Proof-of-Capacity is an algorithm that verifies the Internet capacity provided by the 3nodes. More information can be found [here](../wiki/tfgrid/farming/proof_of_capacity.md).
+Proof-of-Capacity is an algorithm that verifies the Internet capacity provided by the 3nodes. More information can be found [here](../../knowledge_base/farming/proof_of_capacity.md).
 
 
 
@@ -1306,7 +1306,7 @@ There’s two type of storage that van de used on the TF Grid.
 
 ### What is ThreeFold's cloud pricing? Are there any discounts available for ThreeFold's cloud pricing?
 
-You can read more about ThreeFold cloud pricing and discounts [here](../wiki/cloudunits/cloudunits.md). 
+You can read more about ThreeFold cloud pricing and discounts [here](../../knowledge_base/cloud/pricing/pricing_toc.md). 
 
 By simply hodling TFT in your TF Chain wallet, you can benefit from TFT discounts up to 60%. This is an automatic form of staking, the user does not have to do anything to have this benefit.
 
@@ -1701,7 +1701,7 @@ ssh root@Address_Deployment
 
 To connect to the Planetary Network, [download and install the ThreeFold Planetary Network Connector](https://github.com/threefoldtech/planetary_network/releases). Once it is installed, open up the connector and click "Connect". Before connecting to the Planetary Network, make sure to disconnect your VPN if you have one.
 
-For more information on SSH Remote Connection, read this [ThreeFold SSH Guide](../getstarted/ssh_guide/ssh_guide.md).
+For more information on SSH Remote Connection, read this [ThreeFold SSH Guide](../system_administrators/getstarted/ssh_guide/ssh_guide.md).
 
 
 
