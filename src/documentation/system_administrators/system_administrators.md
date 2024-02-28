@@ -2,7 +2,7 @@
 
 This section covers all practical tutorials for system administrators working on the ThreeFold Grid.
 
-For complementary information on ThreeFold grid and its cloud component, read the [Cloud](././wiki/cloudunits/cloudunits_toc.md) section of the Library.
+For complementary information on ThreeFold grid and its cloud component, read the [Cloud](../../knowledge_base/cloud/cloud_toc.md) section of the Library.
 
 <h2> Table of Contents </h2>
 
@@ -17,7 +17,7 @@ For complementary information on ThreeFold grid and its cloud component, read th
     - [XRDP: an Open-Source Remote Desktop Protocol](./getstarted/remote-desktop_gui/xrdp_guide/xrdp_guide.md)
     - [Apache Guacamole: a Clientless Remote Desktop Gateway](./getstarted/remote-desktop_gui/guacamole_guide/guacamole_guide.md)
 - [Planetary Network](./getstarted/planetarynetwork.md)
-- [TFGrid Services](./TF_Grid_Services/tf_grid_services_readme.md)
+- [TFGrid Services](./getstarted/tfgrid_services/tf_grid_services_readme.md)
 - [GPU](./gpu/gpu_toc.md)
   - [GPU Support](./gpu/gpu.md)
 - [Terraform](./terraform/terraform_toc.md)

@@ -497,11 +497,11 @@ Apply [here](https://marketplace.3node.global/index.php?dispatch=companies.apply
 
 ThreeFold has different registrations and each serves a different purpose.
 
-There is ThreeFold VZW, in Belgium. Note that *VZW* is Belgium's denotation for non-profit association. Read more [here](../wiki/threefold_vzw.md).
+There is ThreeFold VZW, in Belgium. Note that *VZW* is Belgium's denotation for non-profit association. Read more [here](../../knowledge_base/about/threefold_vzw.md).
 
-There is also ThreeFold DMCC, in Dubai. Read more [here](../wiki/threefold_dubai.md).
+There is also ThreeFold DMCC, in Dubai. Read more [here](../../knowledge_base/about/threefold_dubai.md).
 
-There is also ThreeFold Tech NV, a software company which owns the IP of the code delivered. Read more [here](../wiki/threefold_tech.md).
+There is also ThreeFold Tech NV, a software company which owns the IP of the code delivered. Read more [here](../../knowledge_base/about/threefold_tech.md).
 
 
 
@@ -732,9 +732,9 @@ Proof-of-Capacity is an algorithm that verifies the Internet capacity provided b
 
 ### What is Proof-of-Utilization?
 
-[Proof-of-Utilization](../wiki/tfgrid/farming/proof_of_utilization.md) is the underlying mechanisms that verifies the utilization of Internet capacity on the ThreeFold Grid.
+[Proof-of-Utilization](../../knowledge_base/farming/proof_of_utilization.md) is the underlying mechanisms that verifies the utilization of Internet capacity on the ThreeFold Grid.
 
-Every hour, the utilization is recorded in [TFChain](../wiki/tfchain.md) and the user is charged for the Internet capacity used on the ThreeFold Grid. Discount calculated in line with the amount of [TFT](../threefold_token/threefold_token.md) users have in their accounts on TFChain. Learn more about the discount [here](../wiki/cloudunits/pricing/staking_discount_levels.md).
+Every hour, the utilization is recorded in [TFChain](../../knowledge_base/about/tfchain.md) and the user is charged for the Internet capacity used on the ThreeFold Grid. Discount calculated in line with the amount of [TFT](../threefold_token/threefold_token.md) users have in their accounts on TFChain. Learn more about the discount [here](../../knowledge_base/cloud/pricing/staking_discount_levels.md).
 
 
 
@@ -1556,7 +1556,7 @@ http://[319:3cf0:dd1d:47b9:20c:29ff:fe2c:39be]/
 
 If you can reach this website, it means that you are properly connected.
 
-For more information on how to connect to Yggrasil (and the Planetary Network), read [this guide](../../getstarted/ssh_guide/ssh_guide.md).
+For more information on how to connect to Yggrasil (and the Planetary Network), read [this guide](../system_administrators/getstarted/ssh_guide/ssh_guide.md).
 
 
 
@@ -1687,7 +1687,7 @@ QSFS can be run on both a full virtual machine or a micro virtual machine (VM). 
 
 There are many methods to generate SSH keys.
 
-You can read this [ThreeFold SSH Guide](../getstarted/ssh_guide/ssh_guide.md) to learn more about the whole process.
+You can read this [ThreeFold SSH Guide](../system_administrators/getstarted/ssh_guide/ssh_guide.md) to learn more about the whole process.
 
 
 
@@ -1994,7 +1994,7 @@ There are many ways to use Docker on the ThreeFold Grid.
 
 You can simply [run Docker in a virtual machine](https://docs.docker.com/desktop/install/ubuntu/) (Full VM and Micro VM) and then follow any instructions made for [Docker](https://docs.docker.com/). 
 
-Since the ThreeFold Hub has a [Docker to flist converter](https://hub.grid.tf/docker-convert), you can also [convert the Docker image to an flist](../flist/flist_hub/convert_docker_image.md) and run it directly as a micro VM.
+Since the ThreeFold Hub has a [Docker to flist converter](https://hub.grid.tf/docker-convert), you can also [convert the Docker image to an flist](../developers/flist/flist_hub/convert_docker_image.md) and run it directly as a micro VM.
 
 
 ### Can I convert an existing docker into an flist?
@@ -2335,7 +2335,7 @@ The general calculation is the following:
     + IPAddr used * IPAddr farming rewards
 
 
-Lear more about this [here](../wiki/tfgrid/farming/proof_of_capacity.md).
+Lear more about this [here](../../knowledge_base/farming/proof_of_capacity.md).
 
 > Note: The farming rewards take into account the quantity of storage and compute units (e.g. TB of SSD/HDD, GB of RAM, # of virtual cores). The farming rewards do not take into account the specific type of RAM, SSD, HDD and CPU.
 

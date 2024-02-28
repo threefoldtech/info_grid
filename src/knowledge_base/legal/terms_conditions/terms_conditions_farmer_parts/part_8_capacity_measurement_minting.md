@@ -6,7 +6,7 @@ Farmers who connect 3Nodes on an ongoing basis to the ThreeFold_Grid by running 
 
 #### 8.2 Calculation of Farmed TFTs
 
-The details of farming (minting of TFT’s) are described on our [farming logic TFGrid 2](threefold:farming_reward2) and this location serves as master for the TFT Reward Process. 
+The details of farming (minting of TFT’s) are described on our [farming logic TFGrid 2](threefold:farming_reward2zz) and this location serves as master for the TFT Reward Process. 
 
 Farming for TFGrid 2.x is on https://library.threefold.me/info/threefold/#/farming_reward2
 

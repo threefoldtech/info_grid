@@ -2,7 +2,7 @@
 
 *This privacy policy will explain how ThreeFold Movement ("companies", “we”, or “us”) uses the personal data we collect from you when you use any of our:*
 
-{{#include ./sub/websites.md}}
+{{#include ./terms_conditions/sub/websites.md}}
 
 ### What data do we collect? 
 
@@ -117,4 +117,4 @@ If you have any questions about our privacy policy, the data we hold on you, or 
 
 Email us at: dataprivacy@threefold.io
 
-{{#include ./sub/the_single_source_truth.md}}
+{{#include ./terms_conditions/sub/the_single_source_truth.md}}

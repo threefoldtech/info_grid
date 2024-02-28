@@ -36,7 +36,7 @@ The maximum amount of tokens is 4 billion, but its very unlikely we ever get the
 
 ThreeFold uses proof-of-capacity to mint tokens. Since the genenis pool, all tokens that are being minted are the result of farming. 
 
-> For more details, see [Proof of Capacity](../../wiki/tfgrid/farming/proof_of_capacity.md)
+> For more details, see [Proof of Capacity](../../farming/proof_of_capacity.md)
 
 ## Proof-of-Utilization
 
@@ -46,7 +46,7 @@ TFT is used on the TFGrid to purchase network, compute and storage resources thr
 
 ![](img/token_distribution.png)
 
-> For more details, see [Proof-of-Utilization](../../wiki/tfgrid/farming/proof_of_utilization.md)
+> For more details, see [Proof-of-Utilization](../../farming/proof_of_utilization.md)
 
 ## TFT Marketcap
 
@@ -69,8 +69,8 @@ TFT is used on the TFGrid to purchase network, compute and storage resources thr
 
 ## Complemetary Information
 
-- [ThreeFold History](../../wiki/threefold_history.md)
-- [Token History](../../wiki/token_history.md)
+- [ThreeFold History](../../about/threefold_history.md)
+- [Token History](../../about/token_history.md)
 - [Special Wallets](./special_wallets/stats_special_wallets.md)
 
 ## Disclaimer

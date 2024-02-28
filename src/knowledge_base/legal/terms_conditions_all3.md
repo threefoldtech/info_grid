@@ -12,4 +12,4 @@ THESE TERMS AND CONDITIONS (THE "**AGREEMENTS**") CONSTITUTE A LEGAL AGREEMENT B
 - [X] [Terms & Conditions ThreeFold Related Websites](./terms_conditions/terms_conditions_websites.md)
 - [X] [Terms & Conditions TFGrid Users TFGrid 3](./terms_conditions/terms_conditions_griduser.md)
 - [X] [Terms & Conditions TFGrid Farmers TFGrid 3](./terms_conditions/terms_conditions_farmer3.md)
-- [X] [Terms & Conditions TFGrid Sakes](./terms_conditions/terms_conditions_sales.md)
+- [X] [Terms & Conditions TFGrid Sales](./terms_conditions/terms_conditions_sales.md)

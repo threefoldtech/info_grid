@@ -14,8 +14,8 @@ The reservation and use of the Farmer’s IT Capacity by the User is effected th
 
 IT capacity is expressed in compute & storage units.
 
-- CU = [Compute Units](threefold:cloudunits)
-- SU = [Storage Units](threefold:cloudunits)
+- CU = [Compute Units](../../cloud/cloudunits.md)
+- SU = [Storage Units](../../cloud/cloudunits.md)
 
 The pricing is expressed as follows:
 

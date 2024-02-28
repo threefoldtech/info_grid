@@ -171,7 +171,7 @@ It's bit long for sure but let's try to dissect it a bit
 
 ## Which flists to use
 
-see [list of flists](../../manual3_iac/grid3_supported_flists.md)
+see [list of flists](../../../developers/flist/grid3_supported_flists.md)
 
 ## Remark multiple VMs
 
@@ -204,7 +204,7 @@ So to add a VM
 ```
 
 - We give it a name within our deployment `vm1`
-- `flist` is used to define the flist to run within the VM. Check the [list of flists](../../manual3_iac/grid3_supported_flists.md)
+- `flist` is used to define the flist to run within the VM. Check the [list of flists](../../../developers/flist/grid3_supported_flists.md)
 - `cpu` and `memory` are used to define the cpu and memory
 - `publicip` is usued to define if it requires a public IP or not
 - `entrypoint` is used define the entrypoint which in most of the cases in `/sbin/zinit init`, but in case of flists based on vms it can be specific to each flist

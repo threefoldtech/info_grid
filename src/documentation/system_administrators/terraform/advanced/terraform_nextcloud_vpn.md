@@ -263,9 +263,9 @@ Note that, at any moment, if you want to see the information on your Terraform d
 # Nextcloud Setup
 
 * Access Nextcloud Setup
-  * Once you've deployed Nextcloud, you can access the Nextcloud Setup page by pasting on a browser the URL displayed on the line `fqdn = "..."` of the `terraform show` output. For more information on this, [read this documentation](../../dashboard/solutions/nextcloud.md#nextcloud-setup).
+  * Once you've deployed Nextcloud, you can access the Nextcloud Setup page by pasting on a browser the URL displayed on the line `fqdn = "..."` of the `terraform show` output. For more information on this, [read this documentation](../../../dashboard/solutions/nextcloud.md#nextcloud-setup).
 * Create a backup and set a daily backup and update
-  * Make sure to create a backup with `/mnt/backup` as the mount point, and set a daily update and backup for your Nextcloud VM. For more information, [read this documentation](../../dashboard/solutions/nextcloud.md#backups-and-updates).
+  * Make sure to create a backup with `/mnt/backup` as the mount point, and set a daily update and backup for your Nextcloud VM. For more information, [read this documentation](../../../dashboard/solutions/nextcloud.md#backups-and-updates).
 
 > Note: By default, the daily Borgbackup is set at 4:00 UTC. If you change this parameter, make sure to adjust the moment the [Rsync backup](#create-a-cron-job-for-the-rsync-daily-backup) is done.
 
