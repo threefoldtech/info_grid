@@ -33,4 +33,4 @@ If and to the extend you have purchased or otherwise acquired tokens from ThreeF
 - Prescription. No action in any form arising out of or in connection with this Agreement may be brought by the Purchaser more than one (1) year after the cause of action has accrued.
 - No limitations for own intent. Nothing in this Agreement shall (or shall be deemed to, or construed to) exclude or restrict any liability either Party may incur as a result of fraud, willful intent or for any death or personal injury resulting from its gross negligence or that of its employees, agents or subcontractors.
 
-{{#include ./sub/the_single_source_truth.md}}
+{{#include ./terms_conditions/sub/the_single_source_truth.md}}

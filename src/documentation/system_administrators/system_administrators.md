@@ -2,7 +2,7 @@
 
 This section covers all practical tutorials for system administrators working on the ThreeFold Grid.
 
-For complementary information on ThreeFold grid and its cloud component, read the [Cloud](../../knowledge_base/cloud/cloud_toc.md) section of the Library.
+For complementary information on ThreeFold grid and its cloud component, refer to the [Cloud](../../knowledge_base/cloud/cloud_toc.md) section.
 
 <h2> Table of Contents </h2>
 

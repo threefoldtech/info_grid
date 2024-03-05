@@ -1,6 +1,6 @@
 **USER TERMS AND CONDITIONS**
 
-{{#include ./parties_threefold.md}}
+{{#include ./sub/parties_threefold.md}}
 , governing your usage of the ThreeFold software and related products (the “**TF Products**”), including but not limited to:
 
 - The ThreeFold software and technologies (the "**Software**"), including:

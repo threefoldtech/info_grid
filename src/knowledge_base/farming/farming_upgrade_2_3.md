@@ -4,7 +4,7 @@
 
 - [Introduction](#introduction)
 - [How to Switch](#how-to-switch)
-- [Help us to Test the TFGrid 3.0 on Devnet and Testnet](#help-us-to-test-the-tfgrid-30-on-devnet-and-testnet)
+- [Help Us to Test the TFGrid 3.0 on Devnet and Testnet](#help-us-to-test-the-tfgrid-30-on-devnet-and-testnet)
 
 ***
 
@@ -22,7 +22,7 @@ Any farmer who is interested to switch over to this new release will have to do 
 
 All of above instructions are available [here](../../documentation/farmers/farmers.md).
 
-## Help us to Test the TFGrid 3.0 on Devnet and Testnet
+## Help Us to Test the TFGrid 3.0 on Devnet and Testnet
 
 Please boot your node for devnet or testnet, your farming reward will be the same as for TFGrid 2.0.
 

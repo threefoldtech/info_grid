@@ -2,7 +2,7 @@
 
 This section covers all practical tutorials on how to develop and build on the ThreeFold Grid.
 
-For complementary information on the technology developed by ThreeFold, read the [Technology](../../knowledge_base/technology/technology_toc.md) section of the Library.
+For complementary information on the technology developed by ThreeFold, refer to the [Technology](../../knowledge_base/technology/technology_toc.md) section.
 
 <h2> Table of Contents </h2>
 
