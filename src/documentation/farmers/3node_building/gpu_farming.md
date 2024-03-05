@@ -34,12 +34,6 @@ We cover the basic steps to install the GPU on your 3Node.
 * Find a proper GPU model for your specific 3Node hardware
 * Install the GPU on the server 
   * Note: You might need to move or remove some pieces of your server to make room for the GPU
-  * Here is a quick example with a Dell R720 rack server and an AMD Radeon GPU
-
-<div class="youtubeVideoWrapper">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/o10Ef963vsY?si=-64Tu-xx_VIX9JAM" title="ThreeFold GPU Farming" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
-
 * (Optional) Boot the 3Node with a Linux distro (e.g. Ubuntu) and use the terminal to check if the GPU is recognized by the system
   * ```
     sudo lshw -C Display

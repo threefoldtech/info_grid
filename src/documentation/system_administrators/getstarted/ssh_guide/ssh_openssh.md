@@ -232,12 +232,6 @@ The main steps for the whole process are the following:
 
 ### SSH into a 3node with IPv4 on Windows
 
-<div class="youtubeVideoWrapper">
-<iframe title="SSH into a 3node with IPv4 on Windows" width="560" height="315" src="https://www.youtube-nocookie.com/embed/FhKOyW-ZH7Q" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
-</div>
-
-
-
 * To download OpenSSH client and OpenSSH server
   * Open the `Settings` and select `Apps`
   * Click `Apps & Features`
@@ -288,12 +282,6 @@ The main steps for the whole process are the following:
 
 
 ### SSH into a 3node with the Planetary Network on Windows
-
-<div class="youtubeVideoWrapper">
-<iframe title="SSH into a 3node with the Planetary Network on Windows" width="560" height="315" src="https://www.youtube-nocookie.com/embed/0wyKYcJeitk" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
-</div>
-
-
 
 * To download and connect to the Threefold Planetary Network Connector
   * Download the [.msi file](https://github.com/threefoldtech/planetary_network/releases/tag/v0.3-rc1-Windows10)
