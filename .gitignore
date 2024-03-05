@@ -6,5 +6,5 @@ book/
 .DS_Store
 src/knowledge_base/about/token_overview/special_wallets/wallet_data/
 src/knowledge_base/about/token_overview/special_wallets/wallet_data/*
-src/values/
-src/values/*
+src/values/*_MTFT_HOUR.md
+src/values/tft_value.md
