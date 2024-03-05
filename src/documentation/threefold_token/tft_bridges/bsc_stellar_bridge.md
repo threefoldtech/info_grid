@@ -85,7 +85,7 @@ In this method, you use the Bridge directly. Thus, it is normal if you do not se
 **General Tips**
 
 * It's a good idea to start with a small amount the first time.
-* The process is usually quick, but it can take up to 48h. In doubt, contact [TF Support](https://threefold.io/support/).
+* The process is usually quick, but it can take up to 48h. In doubt, contact [TF Support](https://threefoldfaq.crisp.help/en/).
 * Going from Stellar to BSC costs 100 TFT.
 * Going from BSC to Stellar costs 1 TFT.
 * There is also fixed fee of 0.01 TFT when using the Stellar Blockchain.
