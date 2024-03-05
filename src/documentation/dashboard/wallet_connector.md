@@ -23,9 +23,7 @@ Currently, we're supporting four different networks:
 - Test net, for testing purposes
   - [https://dashboard.test.grid.tf](https://dashboard.test.grid.tf)
 - Main net, for production-ready purposes
-  - [https://next.dashboard.grid.tf](https://next.dashboard.grid.tf)
-
-> Note: Only dev and main nets currently offer the new Dashboard UI. Updates coming soon for all networks.
+  - [https://dashboard.grid.tf](https://dashboard.grid.tf)
 
 ![ ](./img/profile_manager1.png)
 

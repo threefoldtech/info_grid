@@ -28,6 +28,6 @@ __TFChain__, also known as __ThreeFold Chain__, is the powerful blockchain that 
 
 ## ThreeFold Dashboard
 
-The [**ThreeFold Dashboard**](https://next.dashboard.grid.tf/) serves as an indispensable tool for farmers and users of the ThreeFold Grid, facilitating node registration, resource management, workload deployments and much more.
+The [**ThreeFold Dashboard**](https://dashboard.grid.tf/) serves as an indispensable tool for farmers and users of the ThreeFold Grid, facilitating node registration, resource management, workload deployments and much more.
 
 > [Learn more about the ThreeFold Dashboard](../../documentation/dashboard/dashboard.md)
