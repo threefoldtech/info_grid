@@ -23,15 +23,14 @@
 
 ## Introduction
 
-The easiest way to send your farming rewards is to use the free ThreeFold Connect app. 
+In this section, we cover the basics of the ThreeFold Connect app.
 
-It is available for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US) and [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885).
-
-![farming_wallet_5](./img/farming_wallet_5.png)
+This app is available for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US) and [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885).
 
 - Note that for Android phones, you need at minimum Android Nougat, the 8.0 software version.
 - Note that for iOS phones, you need at minimum iOS 14.5. It will be soon available to iOS 13.
 
+![farming_wallet_5](./img/farming_wallet_5.png)
 
 ## ThreeFold Connect Installation
 
