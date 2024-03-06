@@ -61,7 +61,7 @@ Here are the steps to SSH into a 3Node with IPv4 on Linux.
     ```
   * Select and copy the public key when needed
 * To deploy a full VM
-  * Go to the following section of the [Threefold Dashboard](https://dashboard.grid.tf/): Deploy -> Virtual Machines -> Full Virtual Machine
+  * On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
   * Choose the parameters you want
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
@@ -103,7 +103,7 @@ Here are the steps to SSH into a 3Node with the Planetary Network on Linux.
     ```
   * Select and copy the public key when needed
 * To deploy a full VM
-  * Go to the following section of the [Threefold Dashboard](https://dashboard.grid.tf/): Deploy -> Virtual Machines -> Full Virtual Machine
+  * On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
   * Choose the parameters you want
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
@@ -140,7 +140,7 @@ Here are the steps to SSH into a 3Node with IPv4 on MAC.
       ```
     * Select and copy the public key when needed
 * To deploy a full VM
-  * Go to the following section of the [Threefold Dashboard](https://dashboard.grid.tf/): Deploy -> Virtual Machines -> Full Virtual Machine
+  * On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
   * Choose the parameters you want
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
@@ -181,7 +181,7 @@ Here are the steps to SSH into a 3Node with the Planetary Network on MAC.
       ```
     * Select and copy the public key when needed
 * To deploy a full VM
-  * Go to the following section of the [Threefold Dashboard](https://dashboard.grid.tf/): Deploy -> Virtual Machines -> Full Virtual Machine
+  * On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
   * Choose the parameters you want
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
@@ -225,7 +225,7 @@ You now have an SSH connection on MAC with the Planetary Network.
     ```
   * Select and copy the public key when needed
 * To deploy a full VM
-  * Go to the following section of the [Threefold Dashboard](https://dashboard.grid.tf/): Deploy -> Virtual Machines -> Full Virtual Machine
+  * On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
   * Choose the parameters you want
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
@@ -273,7 +273,7 @@ You now have an SSH connection on Window with IPv4.
     ```
   * Select and copy the public key when needed
 * To deploy a full VM
-  * Go to the following section of the [Threefold Dashboard](https://dashboard.grid.tf/): Deploy -> Virtual Machines -> Full Virtual Machine
+  * On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
   * Choose the parameters you want
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb

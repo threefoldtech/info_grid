@@ -38,12 +38,14 @@ Make sure to [read the introduction](../tfgrid3_getstarted.md#get-started---your
 
 For this guide on WireGuard access, we deploy a [Full VM](../../../dashboard/solutions/fullVm.md). Note that the whole process is similar with other types of ThreeFold weblets on the Dashboard.
 
-* Go to the [ThreeFold Dashboard](https://dashboard.grid.tf/)
-* Select the weblet **Full Virtual Machine**
-* Click on **Network**
-  * Check **Add WireGuard Access**
-* Select a node to deploy on
-* Click **Deploy**
+* On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
+* Choose the parameters you want
+  * Minimum CPU: 1 vCore
+  * Minimum Memory: 512 Mb
+  * Minimum Disk Size: 15 Gb
+* Select `Add WireGuard Access` in `Network`
+* In `Node Selection`, click on `Load Nodes`
+* Click `Deploy`
 
 Once the Full VM is deployed, a window named **Details** will appear. You will need to take note of the **WireGuard Config** to set the WireGuard configurations and the **WireGuard IP** to SSH into the deployment.
 
