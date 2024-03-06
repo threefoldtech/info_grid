@@ -11,6 +11,7 @@ additional-js = ["mermaid.min.js", "mermaid-init.js"]
 additional-css = ["last-changed.css"]
 site-url = "/"
 input-404 = "page_not_found.md"
+cname = "manual.grid.tf"
 
 [output.html.print]
 enable = false
