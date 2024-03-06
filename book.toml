@@ -9,6 +9,7 @@ level = 1
 no-section-label = true
 additional-js = ["mermaid.min.js", "mermaid-init.js"]
 additional-css = ["last-changed.css"]
+site-url = "/"
 input-404 = "page_not_found.md"
 
 [output.html.print]
