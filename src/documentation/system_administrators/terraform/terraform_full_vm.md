@@ -10,7 +10,7 @@
   - [Using the Grid Explorer](#using-the-grid-explorer)
 - [Create the Terraform Files](#create-the-terraform-files)
 - [Deploy the Full VM with Terraform](#deploy-the-full-vm-with-terraform)
-- [SSH into the 3node](#ssh-into-the-3node)
+- [SSH into the 3Node](#ssh-into-the-3node)
 - [Delete the Deployment](#delete-the-deployment)
 - [Conclusion](#conclusion)
 
@@ -34,7 +34,7 @@ To facilitate the deployment, only the environment variables file needs to be ad
 
 On your local computer, create a new folder named `terraform` and a subfolder called `deployments`. In the subfolder, store the files `main.tf` and `credentials.auto.tfvars`.
 
-Modify the variable file to take into account your own seed phrase and SSH keys. You should also specifiy the node ID of the 3node you will be deploying on.
+Modify the variable file to take into account your own seed phrase and SSH keys. You should also specifiy the node ID of the 3Node you will be deploying on.
 
 Once this is done, initialize and apply Terraform to deploy your workload, then SSH into the Full VM. That's it! Now let's go through all these steps in further details.
 
@@ -248,13 +248,13 @@ We now deploy the full VM with Terraform. Make sure that you are in the correct 
     terraform apply
     ```
 
-After deployments, take note of the 3node' IPv4 address. You will need this address to SSH into the 3node.
+After deployments, take note of the 3Node' IPv4 address. You will need this address to SSH into the 3Node.
 
 
 
-## SSH into the 3node
+## SSH into the 3Node
 
-- To [SSH into the 3node](../getstarted/ssh_guide/ssh_guide.md), write the following:
+- To [SSH into the 3Node](../getstarted/ssh_guide/ssh_guide.md), write the following:
   - ```
     ssh root@VM_IPv4_Address
     ```

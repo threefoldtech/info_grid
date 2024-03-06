@@ -6,74 +6,37 @@
   - [Basic Facts](#basic-facts)
     - [What is the the ThreeFold blockchain?](#what-is-the-the-threefold-blockchain)
     - [What is the architecture of the ThreeFold Grid in simple terms?](#what-is-the-architecture-of-the-threefold-grid-in-simple-terms)
-    - [What is the ThreeFold Token? What are the uses of the ThreeFold token (TFT)?](#what-is-the-threefold-token-what-are-the-uses-of-the-threefold-token-tft)
-    - [How are ThreeFold Token (TFT) produced?](#how-are-threefold-token-tft-produced)
-    - [How are the TFT managed?](#how-are-the-tft-managed)
     - [What is the difference between Internet capacity and connectivity? Does ThreeFold replace my Internet service provider (ISP)?](#what-is-the-difference-between-internet-capacity-and-connectivity-does-threefold-replace-my-internet-service-provider-isp)
-    - [I've read that ThreeFold is Carbon Negative, what does this imply?](#ive-read-that-threefold-is-carbon-negative-what-does-this-imply)
     - [What are the priorities of ThreeFold (the Three P of ThreeFold)? ThreeFold is a Planet first project, what does it mean?](#what-are-the-priorities-of-threefold-the-three-p-of-threefold-threefold-is-a-planet-first-project-what-does-it-mean)
-    - [I want to farm TFT with a 3node. What are my choices?](#i-want-to-farm-tft-with-a-3node-what-are-my-choices)
-    - [I want to buy a certified 3node server from a reliable source. Who are ThreeFold's partners offering certified 3nodes?](#i-want-to-buy-a-certified-3node-server-from-a-reliable-source-who-are-threefolds-partners-offering-certified-3nodes)
     - [I want to help build the new Internet. How can I become a ThreeFold certified 3node partner?](#i-want-to-help-build-the-new-internet-how-can-i-become-a-threefold-certified-3node-partner)
-    - [How is ThreeFold registered as an entity?](#how-is-threefold-registered-as-an-entity)
-    - [Where is ThreeFold Tech's headquarters?](#where-is-threefold-techs-headquarters)
-    - [Can I have more information on ThreeFold Tech NV and ThreeFold S.A.?](#can-i-have-more-information-on-threefold-tech-nv-and-threefold-sa)
-    - [Is ThreeFold using Wireguard?](#is-threefold-using-wireguard)
-    - [Is the 3bot the same as the Digital Twin?](#is-the-3bot-the-same-as-the-digital-twin)
     - [How can I create a twin on the TF Grid?](#how-can-i-create-a-twin-on-the-tf-grid)
   - [ThreeFold Communication](#threefold-communication)
     - [Is there a ThreeFold app for mobile?](#is-there-a-threefold-app-for-mobile)
     - [I want to reach the ThreeFold community. What are ThreeFold social links?](#i-want-to-reach-the-threefold-community-what-are-threefold-social-links)
-    - [Is there a Discord group for ThreeFold?](#is-there-a-discord-group-for-threefold)
-    - [How can I reach ThreeFold Support?](#how-can-i-reach-threefold-support)
     - [Could we reach out someone for publishing research work on ThreeFold?](#could-we-reach-out-someone-for-publishing-research-work-on-threefold)
-    - [Is there a ThreeFold podcast?](#is-there-a-threefold-podcast)
     - [Who can I write to for a proposal? Where can I send a proposal email for a new partnership opportunity with ThreeFold?](#who-can-i-write-to-for-a-proposal-where-can-i-send-a-proposal-email-for-a-new-partnership-opportunity-with-threefold)
     - [How can I track and follow the progress and development of ThreeFold?](#how-can-i-track-and-follow-the-progress-and-development-of-threefold)
     - [Why do some forum posts need to be approved?](#why-do-some-forum-posts-need-to-be-approved)
   - [The Technology of ThreeFold](#the-technology-of-threefold)
-    - [What is a 3node?](#what-is-a-3node)
+    - [What is a 3Node?](#what-is-a-3node)
     - [What is the difference between a 3node and a ThreeFold farm?](#what-is-the-difference-between-a-3node-and-a-threefold-farm)
-    - [I've read that ThreeFold built an Operating System (OS) from scratch, is it true?](#ive-read-that-threefold-built-an-operating-system-os-from-scratch-is-it-true)
     - [What is Zero-OS from ThreeFold?](#what-is-zero-os-from-threefold)
     - [ThreeFold uses Quantum Safe Storage technology, what does it mean?](#threefold-uses-quantum-safe-storage-technology-what-does-it-mean)
     - [Quantum Safe File System (QSFS) allows for part of the storage to go down and it can self repair, however it’s still attached to a single VM and a single point of failure. Can a QSFS instance be reattached to another VM to recover it?](#quantum-safe-file-system-qsfs-allows-for-part-of-the-storage-to-go-down-and-it-can-self-repair-however-its-still-attached-to-a-single-vm-and-a-single-point-of-failure-can-a-qsfs-instance-be-reattached-to-another-vm-to-recover-it)
     - [Where does the ThreeFold Explorer take its data from?](#where-does-the-threefold-explorer-take-its-data-from)
     - [How can I use the Gridproxy to query information on the TF Grid?](#how-can-i-use-the-gridproxy-to-query-information-on-the-tf-grid)
-    - [Is there a way to see the ThreeFold Grid's metrics?](#is-there-a-way-to-see-the-threefold-grids-metrics)
     - [How can I see the stats of the ThreeFold Grid?](#how-can-i-see-the-stats-of-the-threefold-grid)
-    - [How can I connect to the ThreeFold Planetary Network?](#how-can-i-connect-to-the-threefold-planetary-network)
-    - [Where can I download the ThreeFold Planetary Network connector?](#where-can-i-download-the-threefold-planetary-network-connector)
-    - [What is Proof-of-Capacity used by ThreeFold?](#what-is-proof-of-capacity-used-by-threefold)
-    - [What is Proof-of-Utilization?](#what-is-proof-of-utilization)
     - [What is the difference between a seed phrase (mnemonics) and an HEX secret?](#what-is-the-difference-between-a-seed-phrase-mnemonics-and-an-hex-secret)
   - [Buying and Transacting TFT](#buying-and-transacting-tft)
-    - [How can I buy TFT?](#how-can-i-buy-tft)
-    - [How is the ThreeFold Token(TFT) created (minted)? ThreeFold Token is a pure utility token. What does this mean?](#how-is-the-threefold-tokentft-created-minted-threefold-token-is-a-pure-utility-token-what-does-this-mean)
-    - [Where can I find TFT, concretely? On which blockchains is TFT available?](#where-can-i-find-tft-concretely-on-which-blockchains-is-tft-available)
-    - [How to set up a Stellar address for TFT transactions?](#how-to-set-up-a-stellar-address-for-tft-transactions)
     - [How long does it take when you use the BSC-Stellar Bridge?](#how-long-does-it-take-when-you-use-the-bsc-stellar-bridge)
-    - [What are the cost when bridging from Stellar to MetaMask (BSC) and from MetaMask to Stellar?](#what-are-the-cost-when-bridging-from-stellar-to-metamask-bsc-and-from-metamask-to-stellar)
-    - [What is the network information to access BSC for the ThreeFold token? What is the token address for adding the token in the MetaMask app?](#what-is-the-network-information-to-access-bsc-for-the-threefold-token-what-is-the-token-address-for-adding-the-token-in-the-metamask-app)
-    - [How can I trade TFT on Pancake Swap? How can I add TFT on Pancake Swap?](#how-can-i-trade-tft-on-pancake-swap-how-can-i-add-tft-on-pancake-swap)
-    - [How can I swap ThreeFold tokens (TFT) on Stellar Blockchain?](#how-can-i-swap-threefold-tokens-tft-on-stellar-blockchain)
     - [On my website, users can donate TFT on the Stellar Chain. Is there a way for users on my website to easily track the total sum of TFT donated?](#on-my-website-users-can-donate-tft-on-the-stellar-chain-is-there-a-way-for-users-on-my-website-to-easily-track-the-total-sum-of-tft-donated)
-    - [How can I use the TFT Stellar-Ethereum bridge?](#how-can-i-use-the-tft-stellar-ethereum-bridge)
-    - [What is the contract address for TFT on Ethereum?](#what-is-the-contract-address-for-tft-on-ethereum)
   - [TF Connect App, TF Dashboard, GraphQL, Grix Proxy and Polkadot Substrate](#tf-connect-app-tf-dashboard-graphql-grix-proxy-and-polkadot-substrate)
-    - [What is the ThreeFold Connect App download link?](#what-is-the-threefold-connect-app-download-link)
-    - [What is the ThreeFold Dashboard link?](#what-is-the-threefold-dashboard-link)
-    - [To access the TF Dashboard, I need to use the Polkadot Extension. What is the link for the Polkadot Extension (polkadot.js)? Which browsers support the Polkadot Extension?](#to-access-the-tf-dashboard-i-need-to-use-the-polkadot-extension-what-is-the-link-for-the-polkadot-extension-polkadotjs-which-browsers-support-the-polkadot-extension)
     - [Is there a way to create or import another wallet in TF Connect App?](#is-there-a-way-to-create-or-import-another-wallet-in-tf-connect-app)
     - [I created a farm on the TF Chain. On the TF Connect App Farmer Migration section, my farm is under Other v3 farms, is this normal?](#i-created-a-farm-on-the-tf-chain-on-the-tf-connect-app-farmer-migration-section-my-farm-is-under-other-v3-farms-is-this-normal)
     - [I am trying to access my wallet in the ThreeFold Connect App. It worked fine before, but now I just get a white screen. What does it mean and what can I do?](#i-am-trying-to-access-my-wallet-in-the-threefold-connect-app-it-worked-fine-before-but-now-i-just-get-a-white-screen-what-does-it-mean-and-what-can-i-do)
     - [When I open the ThreeFold Connect App, I get the error: Error in initialization in Flagsmith. How can I fix this issue?](#when-i-open-the-threefold-connect-app-i-get-the-error-error-in-initialization-in-flagsmith-how-can-i-fix-this-issue)
-    - [I have some problems connecting to the Polkadot extension. What can I do?](#i-have-some-problems-connecting-to-the-polkadot-extension-what-can-i-do)
     - [Apart form the ThreeFold Connect App Wallet, how can I check my TFT balance?](#apart-form-the-threefold-connect-app-wallet-how-can-i-check-my-tft-balance)
     - [Is it possible to export the transaction history of a wallet to a CSV file?](#is-it-possible-to-export-the-transaction-history-of-a-wallet-to-a-csv-file)
-    - [What is the role of the middleware?](#what-is-the-role-of-the-middleware)
-    - [What is Polkadot UI? What can I do with Polkadot UI?](#what-is-polkadot-ui-what-can-i-do-with-polkadot-ui)
-    - [What are the links for the TFchain network Substrate endpoints on Polkadot.js?](#what-are-the-links-for-the-tfchain-network-substrate-endpoints-on-polkadotjs)
     - [How can I use GraphQl to find information on the ThreeFold Grid?](#how-can-i-use-graphql-to-find-information-on-the-threefold-grid)
     - [What are the different links to ThreeFold's Graph QL depending on the network?](#what-are-the-different-links-to-threefolds-graph-ql-depending-on-the-network)
     - [How can I find 3Nodes with IPv6 addresses?](#how-can-i-find-3nodes-with-ipv6-addresses)
@@ -82,19 +45,10 @@
     - [Who is hosting GraphQL and Grid Proxy on the ThreeFold Grid?](#who-is-hosting-graphql-and-grid-proxy-on-the-threefold-grid)
     - [What is the difference between uptime, status and power state?](#what-is-the-difference-between-uptime-status-and-power-state)
     - [I do not remember the name (ThreeFold 3bot ID) associated with my seed phrase on the ThreeFold Connect app. Can I recover my TF Connect app account with only the seed phrase and not the name (3bot ID) associated with it?](#i-do-not-remember-the-name-threefold-3bot-id-associated-with-my-seed-phrase-on-the-threefold-connect-app-can-i-recover-my-tf-connect-app-account-with-only-the-seed-phrase-and-not-the-name-3bot-id-associated-with-it)
-    - [How can I vote for a ThreeFold DAO proposal?](#how-can-i-vote-for-a-threefold-dao-proposal)
 - [USERS FAQ](#users-faq)
   - [TF Grid Functionalities](#tf-grid-functionalities)
-    - [How can I filter 3Nodes by country and by network (IPv4, IPv6 and Planetary Network)?](#how-can-i-filter-3nodes-by-country-and-by-network-ipv4-ipv6-and-planetary-network)
-    - [Can I have the link to deploy a VM and other apps on the Grid?](#can-i-have-the-link-to-deploy-a-vm-and-other-apps-on-the-grid)
-    - [What can I do on ThreeFold Grid?](#what-can-i-do-on-threefold-grid)
-    - [Is there delegated staking for TFT?](#is-there-delegated-staking-for-tft)
     - [What are the type of storage available on TF Grid?](#what-are-the-type-of-storage-available-on-tf-grid)
-    - [What is ThreeFold's cloud pricing? Are there any discounts available for ThreeFold's cloud pricing?](#what-is-threefolds-cloud-pricing-are-there-any-discounts-available-for-threefolds-cloud-pricing)
-    - [How can I see the available capacity of a 3Node server on the ThreeFold Grid?](#how-can-i-see-the-available-capacity-of-a-3node-server-on-the-threefold-grid)
-    - [What is the difference between the Playground and Dashboard on mainnet and testnet?](#what-is-the-difference-between-the-playground-and-dashboard-on-mainnet-and-testnet)
   - [Deployments on the ThreeFold Grid](#deployments-on-the-threefold-grid)
-    - [Can I use the TFChain secret on the ThreeFold Connect App for the Profile settings on the ThreeFold Playground?](#can-i-use-the-tfchain-secret-on-the-threefold-connect-app-for-the-profile-settings-on-the-threefold-playground)
     - [Does the ThreeFold Grid charge the total resources rented or it only charges the resources used during deployment?](#does-the-threefold-grid-charge-the-total-resources-rented-or-it-only-charges-the-resources-used-during-deployment)
     - [Do I pay for Internet traffic while deploying workloads on IPv4, IPv6 or Planetary Network?](#do-i-pay-for-internet-traffic-while-deploying-workloads-on-ipv4-ipv6-or-planetary-network)
     - [What is the monthly cost for an IPv4 or an IPv6 public address on the ThreeFold Grid?](#what-is-the-monthly-cost-for-an-ipv4-or-an-ipv6-public-address-on-the-threefold-grid)
@@ -107,28 +61,14 @@
     - [How can I ping an Yggdrasil IP or IPv6 address?](#how-can-i-ping-an-yggdrasil-ip-or-ipv6-address)
     - [Is there a way to test if I am properly connected to the Yggdrasil network (Planetary Network)?](#is-there-a-way-to-test-if-i-am-properly-connected-to-the-yggdrasil-network-planetary-network)
     - [How can I change the username of my SSH key?](#how-can-i-change-the-username-of-my-ssh-key)
-    - [How can I copy the clipboard content of a terminal output using the command cat? How can I copy the public key directly with the terminal?](#how-can-i-copy-the-clipboard-content-of-a-terminal-output-using-the-command-cat-how-can-i-copy-the-public-key-directly-with-the-terminal)
     - [What is ThreeFold's stance on sharded workload? Will ThreeFold embrace and move towards distributed data chunks or stay with the one deployment, one node model?](#what-is-threefolds-stance-on-sharded-workload-will-threefold-embrace-and-move-towards-distributed-data-chunks-or-stay-with-the-one-deployment-one-node-model)
   - [Tutorials and Guides](#tutorials-and-guides)
-    - [What are the prerequisites before using the ThreeFold Play Grid (playground.grid.tf)?](#what-are-the-prerequisites-before-using-the-threefold-play-grid-playgroundgridtf)
-    - [Is there a picture guide on how to deploy Wordpress on the ThreeFold Grid using Caprover?](#is-there-a-picture-guide-on-how-to-deploy-wordpress-on-the-threefold-grid-using-caprover)
-    - [I've heard rumours that you can install Wordpress and Discourse on the TF Grid in less than 15 minutes, is it true?](#ive-heard-rumours-that-you-can-install-wordpress-and-discourse-on-the-tf-grid-in-less-than-15-minutes-is-it-true)
-    - [Can I deploy a Presearch Node?](#can-i-deploy-a-presearch-node)
     - [What is the minimum amount of TFT to deploy a Presearch node? How can I get a TFT discount when I deploy a Presearch node?](#what-is-the-minimum-amount-of-tft-to-deploy-a-presearch-node-how-can-i-get-a-tft-discount-when-i-deploy-a-presearch-node)
     - [Can I use the same seed phrase for my mainnet and testnest accounts? How can I transfer my TFT from mainnet to testnet or vice versa?](#can-i-use-the-same-seed-phrase-for-my-mainnet-and-testnest-accounts-how-can-i-transfer-my-tft-from-mainnet-to-testnet-or-vice-versa)
     - [Do I need a full or micro virtual machine (VM) when I run QSFS, quantum safe file system, on the ThreeFold Grid?](#do-i-need-a-full-or-micro-virtual-machine-vm-when-i-run-qsfs-quantum-safe-file-system-on-the-threefold-grid)
-    - [To deploy a load on the ThreeFold Grid, I need to generate SSH keys. How can I generate SSH keys on MAC, Linux or Windows?](#to-deploy-a-load-on-the-threefold-grid-i-need-to-generate-ssh-keys-how-can-i-generate-ssh-keys-on-mac-linux-or-windows)
-    - [What is the method to SSH into a 3Node on IPv4, IPv6 and the Planetary Network?](#what-is-the-method-to-ssh-into-a-3node-on-ipv4-ipv6-and-the-planetary-network)
   - [Linux, Github, Containers and More](#linux-github-containers-and-more)
     - [Where should I start to learn more about Linux?](#where-should-i-start-to-learn-more-about-linux)
-    - [How can I see if a package is installed on Linux?](#how-can-i-see-if-a-package-is-installed-on-linux)
-    - [How can I copy a file or a folder on terminal from one location to another on Linux?](#how-can-i-copy-a-file-or-a-folder-on-terminal-from-one-location-to-another-on-linux)
     - [How can I clone a single branch of a repository on Github?](#how-can-i-clone-a-single-branch-of-a-repository-on-github)
-    - [How can I exit a container without stopping it?](#how-can-i-exit-a-container-without-stopping-it)
-    - [How can I start and run a container in detached mode?](#how-can-i-start-and-run-a-container-in-detached-mode)
-    - [How can I transfer a file from my computer to the virtual machine (VM) deployed on the ThreeFold Grid? How can I do SSH file transfer from Remote to Local and vice versa?](#how-can-i-transfer-a-file-from-my-computer-to-the-virtual-machine-vm-deployed-on-the-threefold-grid-how-can-i-do-ssh-file-transfer-from-remote-to-local-and-vice-versa)
-    - [On Linux, how can I see the resources being used on my server?](#on-linux-how-can-i-see-the-resources-being-used-on-my-server)
-    - [In Vlang, how can I format my code?](#in-vlang-how-can-i-format-my-code)
   - [Grace Period (Status Paused)](#grace-period-status-paused)
     - [The status of my deployment is paused, in grace period, how can I resume the deployment?](#the-status-of-my-deployment-is-paused-in-grace-period-how-can-i-resume-the-deployment)
     - [Once I refund my TF wallet, how long does it take for the deployment to resume from grace period?](#once-i-refund-my-tf-wallet-how-long-does-it-take-for-the-deployment-to-resume-from-grace-period)
@@ -138,10 +78,8 @@
     - [Working with Terraform, I get the following error: failed to create contract: ContractIsNotUnique. Is there a fix to this issue?](#working-with-terraform-i-get-the-following-error-failed-to-create-contract-contractisnotunique-is-there-a-fix-to-this-issue)
     - [I am working with Terraform. What do I have to write in the file env.tfvars?](#i-am-working-with-terraform-what-do-i-have-to-write-in-the-file-envtfvars)
     - [I am working with Terraform and I am using the example in Terraform Provider Grid. How can I use the example main.tf file with environment variables? Why am I getting the message Error: account not found, when deploying with Terraform?](#i-am-working-with-terraform-and-i-am-using-the-example-in-terraform-provider-grid-how-can-i-use-the-example-maintf-file-with-environment-variables-why-am-i-getting-the-message-error-account-not-found-when-deploying-with-terraform)
-    - [Is there a command line tool for Terraform when deploying on the ThreeFold Grid?](#is-there-a-command-line-tool-for-terraform-when-deploying-on-the-threefold-grid)
   - [Users Troubleshooting and Error Messages](#users-troubleshooting-and-error-messages)
     - [When deploying a virtual machine (VM) on the ThreeFold Grid, I get the following message after trying a full system update and upgrade: GRUB failed to install to the following devices... Is there a fix to this issue?](#when-deploying-a-virtual-machine-vm-on-the-threefold-grid-i-get-the-following-message-after-trying-a-full-system-update-and-upgrade-grub-failed-to-install-to-the-following-devices-is-there-a-fix-to-this-issue)
-    - [I tried exporting my account to another computer but my password doesn't activate my profile manager on the ThreeFold Dashboard. What should I do?](#i-tried-exporting-my-account-to-another-computer-but-my-password-doesnt-activate-my-profile-manager-on-the-threefold-dashboard-what-should-i-do)
     - [While deploying on the TF Dashboard, I get the following error :"global workload with the same name exists: conflict". What can I do to fix this issue?](#while-deploying-on-the-tf-dashboard-i-get-the-following-error-global-workload-with-the-same-name-exists-conflict-what-can-i-do-to-fix-this-issue)
   - [ThreeFold Connect App](#threefold-connect-app)
     - [TF Connect App is now asking for a 4-digit password (PIN). I don't remember it as I usually use touch or face ID to unlock the app. What can I do?](#tf-connect-app-is-now-asking-for-a-4-digit-password-pin-i-dont-remember-it-as-i-usually-use-touch-or-face-id-to-unlock-the-app-what-can-i-do)
@@ -149,29 +87,19 @@
     - [What is the difference between 10.x.y.z and 192.168.x.y addresses?](#what-is-the-difference-between-10xyz-and-192168xy-addresses)
 - [DEVELOPERS FAQ](#developers-faq)
   - [General Information for Developer](#general-information-for-developer)
-    - [How can I use Docker on the ThreeFold Grid?](#how-can-i-use-docker-on-the-threefold-grid)
-    - [Can I convert an existing docker into an flist?](#can-i-convert-an-existing-docker-into-an-flist)
-    - [How does a FList work?](#how-does-a-flist-work)
-    - [What is stored in the metadata of a software?](#what-is-stored-in-the-metadata-of-a-software)
-    - [What is the ratio between the metadata and the actual files on a container?](#what-is-the-ratio-between-the-metadata-and-the-actual-files-on-a-container)
     - [Does Zero-OS assign private IPv4 addresses to workloads?](#does-zero-os-assign-private-ipv4-addresses-to-workloads)
     - [Why does each 3Node server have two IP addresses associated with it?](#why-does-each-3node-server-have-two-ip-addresses-associated-with-it)
     - [Can Zero-OS assign public IPv4 or IPv6 addresses to workloads?](#can-zero-os-assign-public-ipv4-or-ipv6-addresses-to-workloads)
-    - [What is Yggdrasil?](#what-is-yggdrasil)
     - [What does MAC mean when it comes to networking?](#what-does-mac-mean-when-it-comes-to-networking)
     - [I am a developer looking for a way to automatically convert BSC tokens into TFT. Could you please share tips on how to swap regular tokens into TFT, on backend, without and browser extensions, via any platform API?](#i-am-a-developer-looking-for-a-way-to-automatically-convert-bsc-tokens-into-tft-could-you-please-share-tips-on-how-to-swap-regular-tokens-into-tft-on-backend-without-and-browser-extensions-via-any-platform-api)
-  - [Dev Net \& Test Net](#dev-net--test-net)
-    - [Is there a way to test the Grid with free TFT?](#is-there-a-way-to-test-the-grid-with-free-tft)
+  - [Test Net](#test-net)
     - [Can I get some free TFT to test on Test Net](#can-i-get-some-free-tft-to-test-on-test-net)
 - [FARMERS FAQ](#farmers-faq)
   - [TFT Farming Basics](#tft-farming-basics)
-    - [How can I create a ThreeFold farm?](#how-can-i-create-a-threefold-farm)
     - [My Titan is v2.1 and the ThreeFold Grid is v3., what is the distinction?](#my-titan-is-v21-and-the-threefold-grid-is-v3-what-is-the-distinction)
-    - [Is there a way to know the current TFT price for the farming rewards?](#is-there-a-way-to-know-the-current-tft-price-for-the-farming-rewards)
     - [When will I receive the farming rewards for my 3Nodes?](#when-will-i-receive-the-farming-rewards-for-my-3nodes)
     - [What is the TFT minting process? Is it fully automated?](#what-is-the-tft-minting-process-is-it-fully-automated)
     - [What should I do if I did not receive my farming rewards this month?](#what-should-i-do-if-i-did-not-receive-my-farming-rewards-this-month)
-    - [Is there a ThreeFold simulator to calculate farming rewards?](#is-there-a-threefold-simulator-to-calculate-farming-rewards)
     - [What is the TFT entry price of my 3Node farming rewards?](#what-is-the-tft-entry-price-of-my-3node-farming-rewards)
     - [What is the necessary uptime for a 3Node per period of one month?](#what-is-the-necessary-uptime-for-a-3node-per-period-of-one-month)
     - [How can I check the uptime of my 3Nodes? Is there a tool to check the uptime of 3Node servers on the ThreeFold Grid?](#how-can-i-check-the-uptime-of-my-3nodes-is-there-a-tool-to-check-the-uptime-of-3node-servers-on-the-threefold-grid)
@@ -199,11 +127,7 @@
     - [What is the easiest way to farm ThreeFold tokens (TFT)?](#what-is-the-easiest-way-to-farm-threefold-tokens-tft)
     - [When do I receive my rewards?](#when-do-i-receive-my-rewards)
     - [Do farming rewards take into account the type of RAM, SSD, HDD and CPU of the 3Node server?](#do-farming-rewards-take-into-account-the-type-of-ram-ssd-hdd-and-cpu-of-the-3node-server)
-    - [What is the farming reward calculation?](#what-is-the-farming-reward-calculation)
     - [Can I send my farming rewards directly to a crypto exchange?](#can-i-send-my-farming-rewards-directly-to-a-crypto-exchange)
-    - [I received my farming rewards, now I want to sell my ThreeFold tokens (TFT). How can I do this?](#i-received-my-farming-rewards-now-i-want-to-sell-my-threefold-tokens-tft-how-can-i-do-this)
-    - [Which wallets are recommended for ThreeFold token (TFT) farming rewards?](#which-wallets-are-recommended-for-threefold-token-tft-farming-rewards)
-    - [Can I have more details on storing ThreeFold tokens (TFT) on hardware wallets?](#can-i-have-more-details-on-storing-threefold-tokens-tft-on-hardware-wallets)
     - [Do I need collateral to farm ThreeFold tokens?](#do-i-need-collateral-to-farm-threefold-tokens)
     - [Can I add external drives to the 3Nodes to increase rewards and resources available to the ThreeFold Grid?](#can-i-add-external-drives-to-the-3nodes-to-increase-rewards-and-resources-available-to-the-threefold-grid)
     - [Do I have access to the TFT rewards I receive each month when farming?](#do-i-have-access-to-the-tft-rewards-i-receive-each-month-when-farming)
@@ -213,19 +137,12 @@
     - [What is the difference between uptime and downtime, and between online and offline, when it comes to 3Nodes?](#what-is-the-difference-between-uptime-and-downtime-and-between-online-and-offline-when-it-comes-to-3nodes)
     - [My 3Node server grid utilization is low, is it normal?](#my-3node-server-grid-utilization-is-low-is-it-normal)
   - [3Node Farming Requirements](#3node-farming-requirements)
-    - [What are the general requirements for a DIY 3Node server?](#what-are-the-general-requirements-for-a-diy-3node-server)
-    - [What kind of computer do I need to make a 3Node server?](#what-kind-of-computer-do-i-need-to-make-a-3node-server)
-    - [I found a decent computer (or server) to buy online, but it doesn't come with a CPU. How can I know what CPU models would work with a specific computer or server?](#i-found-a-decent-computer-or-server-to-buy-online-but-it-doesnt-come-with-a-cpu-how-can-i-know-what-cpu-models-would-work-with-a-specific-computer-or-server)
     - [Can I host more than one 3Node server at my house?](#can-i-host-more-than-one-3node-server-at-my-house)
     - [Is Wifi supported? Can I farm via Wifi instead of an Ethernet cable?](#is-wifi-supported-can-i-farm-via-wifi-instead-of-an-ethernet-cable)
     - [I have 2 routers with each a different Internet service provider. I disconnected the ethernet cable from one router and connected it to the other router. Do I need to reboot the 3Node?](#i-have-2-routers-with-each-a-different-internet-service-provider-i-disconnected-the-ethernet-cable-from-one-router-and-connected-it-to-the-other-router-do-i-need-to-reboot-the-3node)
     - [Do I need any specific port configuration when booting a 3Node?](#do-i-need-any-specific-port-configuration-when-booting-a-3node)
     - [How much electricity does a 3Node use?](#how-much-electricity-does-a-3node-use)
     - [Has anyone run stress tests to know the power consumption at heavy load of certain 3Nodes?](#has-anyone-run-stress-tests-to-know-the-power-consumption-at-heavy-load-of-certain-3nodes)
-    - [How much AC power do you need (in BTU) to compensate for the heat generated by the 3Node servers? How can I ensure proper relative humidity range for my 3Node server farm?](#how-much-ac-power-do-you-need-in-btu-to-compensate-for-the-heat-generated-by-the-3node-servers-how-can-i-ensure-proper-relative-humidity-range-for-my-3node-server-farm)
-    - [How can I ensure the relative humidity in my server room stays within a proper range?](#how-can-i-ensure-the-relative-humidity-in-my-server-room-stays-within-a-proper-range)
-    - [How can I ensure the air changes per hour is optimal in the 3Node servers' room?](#how-can-i-ensure-the-air-changes-per-hour-is-optimal-in-the-3node-servers-room)
-    - [What are the maximum and minimum temperatures or humidity levels a 3Node server can handle?](#what-are-the-maximum-and-minimum-temperatures-or-humidity-levels-a-3node-server-can-handle)
     - [Can the Titan 3Node be run on PoE? (Power Over Ethernet)](#can-the-titan-3node-be-run-on-poe-power-over-ethernet)
     - [What is the relationship between the 3Node's resources and bandwidth?](#what-is-the-relationship-between-the-3nodes-resources-and-bandwidth)
     - [What is the bandwidth needed when it comes to running 3Nodes on the Grid?](#what-is-the-bandwidth-needed-when-it-comes-to-running-3nodes-on-the-grid)
@@ -235,11 +152,6 @@
     - [What is the minimum SSD requirement for a 3Node server to farm ThreeFold tokens (TFT)?](#what-is-the-minimum-ssd-requirement-for-a-3node-server-to-farm-threefold-tokens-tft)
     - [Is it possible to have a 3Node server running on only HDD disks?](#is-it-possible-to-have-a-3node-server-running-on-only-hdd-disks)
   - [Building a 3Node - Steps and Details](#building-a-3node---steps-and-details)
-    - [What are the main steps to build a DIY 3Node, from start to finish?](#what-are-the-main-steps-to-build-a-diy-3node-from-start-to-finish)
-    - [I wonder what type of desktop computer or server to use for my 3Node. Are there any recommendation when it comes to DIY 3Node hardware?](#i-wonder-what-type-of-desktop-computer-or-server-to-use-for-my-3node-are-there-any-recommendation-when-it-comes-to-diy-3node-hardware)
-    - [What can you do to zero out your disks? How can I wipe the disks of my 3Node server with Linux?](#what-can-you-do-to-zero-out-your-disks-how-can-i-wipe-the-disks-of-my-3node-server-with-linux)
-    - [How can I wipe a disk with Windows?](#how-can-i-wipe-a-disk-with-windows)
-    - [Do I need to wipe all the disks on my 3Node server? Can I have one disk with a different operating systesm (OS)?](#do-i-need-to-wipe-all-the-disks-on-my-3node-server-can-i-have-one-disk-with-a-different-operating-systesm-os)
     - [How can I be sure that I properly wiped my disks?](#how-can-i-be-sure-that-i-properly-wiped-my-disks)
     - [If I wipe my disk to create a new node ID, will I lose my farming rewards during the month?](#if-i-wipe-my-disk-to-create-a-new-node-id-will-i-lose-my-farming-rewards-during-the-month)
     - [My disks have issues with Zero-OS and my 3Nodes. How can I do a factory reset of the disks?](#my-disks-have-issues-with-zero-os-and-my-3nodes-how-can-i-do-a-factory-reset-of-the-disks)
@@ -260,35 +172,27 @@
     - [How can I know how many GB of SSD and RAM do I need?](#how-can-i-know-how-many-gb-of-ssd-and-ram-do-i-need)
     - [What is the optimal ratio of virtual cores (vcores or threads), SSD storage and RAM memory? What is the best optimization scenario for a 3Node, in terms of ThreeFold tokens (TFT) farming rewards?](#what-is-the-optimal-ratio-of-virtual-cores-vcores-or-threads-ssd-storage-and-ram-memory-what-is-the-best-optimization-scenario-for-a-3node-in-terms-of-threefold-tokens-tft-farming-rewards)
     - [What does TBW mean? What is a good TBW level for a SSD disk?](#what-does-tbw-mean-what-is-a-good-tbw-level-for-a-ssd-disk)
-    - [Do I need a surge protector?](#do-i-need-a-surge-protector)
-    - [Do I need a power distribution unit (PDU)?](#do-i-need-a-power-distribution-unit-pdu)
-    - [Do I need an uninterrupted power supply (UPS)?](#do-i-need-an-uninterrupted-power-supply-ups)
     - [Are SATA and SAS drives interchangeable?](#are-sata-and-sas-drives-interchangeable)
     - [What is the speed difference between SAS and SATA disks?](#what-is-the-speed-difference-between-sas-and-sata-disks)
     - [Is it possible to do a graceful shutdown to a 3Node server? How can you shutdown or power off a 3Node server?](#is-it-possible-to-do-a-graceful-shutdown-to-a-3node-server-how-can-you-shutdown-or-power-off-a-3node-server)
     - [Is it possible to have direct access to Zero-OS's core to force a reboot?](#is-it-possible-to-have-direct-access-to-zero-oss-core-to-force-a-reboot)
     - [Do I need some port forwarding in my router for each 3Node server?](#do-i-need-some-port-forwarding-in-my-router-for-each-3node-server)
-    - [Are 3Node servers noisy? Are there certain servers that are less noisy than others?](#are-3node-servers-noisy-are-there-certain-servers-that-are-less-noisy-than-others)
     - [Are there ways to reduce 3Node servers' noises?](#are-there-ways-to-reduce-3node-servers-noises)
-    - [What is the difference between the two CPUs: i7-6700 and i7-6700T?](#what-is-the-difference-between-the-two-cpus-i7-6700-and-i7-6700t)
     - [I built a 3Node out of old hardware. Is it possible that my BIOS or UEFI has improper time and date set as factory default?](#i-built-a-3node-out-of-old-hardware-is-it-possible-that-my-bios-or-uefi-has-improper-time-and-date-set-as-factory-default)
     - [I have rack servers in my ThreeFold farm. Can I set rack servers vertically?](#i-have-rack-servers-in-my-threefold-farm-can-i-set-rack-servers-vertically)
   - [Farming and Maintenance](#farming-and-maintenance)
     - [How can I check if there is utilization on my 3Nodes?](#how-can-i-check-if-there-is-utilization-on-my-3nodes)
     - [Do I need the Zero-OS bootstrap image drive (USB or CD-DVD) when I reboot, or can I boot Zero-OS from the 3Node main hard drive?](#do-i-need-the-zero-os-bootstrap-image-drive-usb-or-cd-dvd-when-i-reboot-or-can-i-boot-zero-os-from-the-3node-main-hard-drive)
-    - [When I set my farm on the ThreeFold Dashboard with polkadot.js, it asks for a Stellar payout address. What should I write?](#when-i-set-my-farm-on-the-threefold-dashboard-with-polkadotjs-it-asks-for-a-stellar-payout-address-what-should-i-write)
     - [It's written that my node is using 100% of HRU. What does it mean?](#its-written-that-my-node-is-using-100-of-hru-what-does-it-mean)
-    - [On the ThreeFold Explorer, I only see half of the virtual cores or threads my 3Node has, what can I do?](#on-the-threefold-explorer-i-only-see-half-of-the-virtual-cores-or-threads-my-3node-has-what-can-i-do)
-    - [Why are the 3Nodes' resources different on the ThreeFold Explorer and the ThreeFold Dashboard?](#why-are-the-3nodes-resources-different-on-the-threefold-explorer-and-the-threefold-dashboard)
+    - [On the ThreeFold Node Finder, I only see half of the virtual cores or threads my 3Node has, what can I do?](#on-the-threefold-node-finder-i-only-see-half-of-the-virtual-cores-or-threads-my-3node-has-what-can-i-do)
+    - [Why are the 3Nodes' resources different on the ThreeFold Node Finder and the ThreeFold Dashboard?](#why-are-the-3nodes-resources-different-on-the-threefold-node-finder-and-the-threefold-dashboard)
     - [How can I test the health of my disks?](#how-can-i-test-the-health-of-my-disks)
     - [How can I transfer my 3Node from one farm to another?](#how-can-i-transfer-my-3node-from-one-farm-to-another)
-    - [What do CRU, MRU, HRU and SRU mean on the ThreeFold Explorer?](#what-do-cru-mru-hru-and-sru-mean-on-the-threefold-explorer)
+    - [What do CRU, MRU, HRU and SRU mean on the ThreeFold Node Finder?](#what-do-cru-mru-hru-and-sru-mean-on-the-threefold-node-finder)
     - [I have more than one ThreeFold 3Node farm, but I want all my 3Nodes on only one farm. How can I put all my 3Nodes on one farm? How can I change the farm ID of my 3Node?](#i-have-more-than-one-threefold-3node-farm-but-i-want-all-my-3nodes-on-only-one-farm-how-can-i-put-all-my-3nodes-on-one-farm-how-can-i-change-the-farm-id-of-my-3node)
-    - [How can I know if my 3Node is online on the Grid? Is there an Explorer for Grid V3?](#how-can-i-know-if-my-3node-is-online-on-the-grid-is-there-an-explorer-for-grid-v3)
-    - [I booted my 3Node and the monitor says it's online and connected to the Grid. But the ThreeFold Explorer says it is offline? What can I do?](#i-booted-my-3node-and-the-monitor-says-its-online-and-connected-to-the-grid-but-the-threefold-explorer-says-it-is-offline-what-can-i-do)
-    - [My 3Node does show on the ThreeFold Explorer, but not on the ThreeFold Dashboard, what can I do?](#my-3node-does-show-on-the-threefold-explorer-but-not-on-the-threefold-dashboard-what-can-i-do)
-    - [I set up my farm on ThreeFold Connect App. Can I use the Polkadot extension Dashboard instead?](#i-set-up-my-farm-on-threefold-connect-app-can-i-use-the-polkadot-extension-dashboard-instead)
-    - [Is it equivalent to create a farm on ThreeFold Connect App or via the Polkadot extension?](#is-it-equivalent-to-create-a-farm-on-threefold-connect-app-or-via-the-polkadot-extension)
+    - [How can I know if my 3Node is online on the Grid?](#how-can-i-know-if-my-3node-is-online-on-the-grid)
+    - [I booted my 3Node and the monitor says it's online and connected to the Grid. But the ThreeFold Node Finder says it is offline? What can I do?](#i-booted-my-3node-and-the-monitor-says-its-online-and-connected-to-the-grid-but-the-threefold-node-finder-says-it-is-offline-what-can-i-do)
+    - [My 3Node does show on the ThreeFold Node Finder, but not on the ThreeFold Dashboard, what can I do?](#my-3node-does-show-on-the-threefold-node-finder-but-not-on-the-threefold-dashboard-what-can-i-do)
     - [If I upgrade my 3Node, will it increase my rewards?](#if-i-upgrade-my-3node-will-it-increase-my-rewards)
     - [I booted my 3Node for the first time at the beginning of the month, then I did some upgrade or downgrade, will the ThreeFold Grid recognize the new hardware? Will it still be the same 3Node ID?](#i-booted-my-3node-for-the-first-time-at-the-beginning-of-the-month-then-i-did-some-upgrade-or-downgrade-will-the-threefold-grid-recognize-the-new-hardware-will-it-still-be-the-same-3node-id)
     - [Is it possible to ask the 3Node to refetch the node information on the monitor?](#is-it-possible-to-ask-the-3node-to-refetch-the-node-information-on-the-monitor)
@@ -314,7 +218,6 @@
     - [If I change farm, will my node IDs change on my 3Node servers?](#if-i-change-farm-will-my-node-ids-change-on-my-3node-servers)
   - [Troubleshooting and Error Messages](#troubleshooting-and-error-messages)
     - [Is it possible to access the Error Screen or Log Screen?](#is-it-possible-to-access-the-error-screen-or-log-screen)
-    - [I plugged an HDMI cable from my monitor into the node and the monitor is displaying nothing. What can I do?](#i-plugged-an-hdmi-cable-from-my-monitor-into-the-node-and-the-monitor-is-displaying-nothing-what-can-i-do)
     - [What does it mean when I see, during the 3Node boot, the message: error = context deadline exceeded?](#what-does-it-mean-when-i-see-during-the-3node-boot-the-message-error--context-deadline-exceeded)
     - [I try to boot a 3Node, but I get the error: "No Route to Host on Linux". What does it mean?](#i-try-to-boot-a-3node-but-i-get-the-error-no-route-to-host-on-linux-what-does-it-mean)
     - [How can I fix the error: "Network configuration succeed but Zero-OS kernel could not be downloaded" when booting a 3Node?](#how-can-i-fix-the-error-network-configuration-succeed-but-zero-os-kernel-could-not-be-downloaded-when-booting-a-3node)
@@ -354,8 +257,8 @@
     - [How does communication happen on the ThreeFold Grid at the 3Node's level?](#how-does-communication-happen-on-the-threefold-grid-at-the-3nodes-level)
     - [What is the ThreeFold Node Status bot Telegram link?](#what-is-the-threefold-node-status-bot-telegram-link)
     - [How does the ThreeFold Node Status bot work? How can I use the ThreeFold Node Status bot to verify if my 3Node is online?](#how-does-the-threefold-node-status-bot-work-how-can-i-use-the-threefold-node-status-bot-to-verify-if-my-3node-is-online)
-    - [How does the Telegram Status Bot get information from my 3Node? My 3Node is online on the ThreeFold Explorer, but offline on the Telegram Status Bot, is this normal?](#how-does-the-telegram-status-bot-get-information-from-my-3node-my-3node-is-online-on-the-threefold-explorer-but-offline-on-the-telegram-status-bot-is-this-normal)
-    - [I noticed that when I reboot my 3Node, the uptime counter on the ThreeFold Explorer goes back to zero. Does it mean I lose uptime and the uptime start over again when I reboot the 3Node?](#i-noticed-that-when-i-reboot-my-3node-the-uptime-counter-on-the-threefold-explorer-goes-back-to-zero-does-it-mean-i-lose-uptime-and-the-uptime-start-over-again-when-i-reboot-the-3node)
+    - [How does the Telegram Status Bot get information from my 3Node? My 3Node is online on the ThreeFold Node Finder, but offline on the Telegram Status Bot, is this normal?](#how-does-the-telegram-status-bot-get-information-from-my-3node-my-3node-is-online-on-the-threefold-node-finder-but-offline-on-the-telegram-status-bot-is-this-normal)
+    - [I noticed that when I reboot my 3Node, the uptime counter on the ThreeFold Node Finder goes back to zero. Does it mean I lose uptime and the uptime start over again when I reboot the 3Node?](#i-noticed-that-when-i-reboot-my-3node-the-uptime-counter-on-the-threefold-node-finder-goes-back-to-zero-does-it-mean-i-lose-uptime-and-the-uptime-start-over-again-when-i-reboot-the-3node)
     - [One of my nodes is showing the wrong location. Any problem with that?](#one-of-my-nodes-is-showing-the-wrong-location-any-problem-with-that)
   - [Memory](#memory)
     - [Can I use different type of RAM for the same 3Node?](#can-i-use-different-type-of-ram-for-the-same-3node)
@@ -382,28 +285,11 @@ ThreeFold blockchain is the layer 0 infrastructure for an open source peer-to-pe
 
 ### What is the architecture of the ThreeFold Grid in simple terms?
 
-Essentially, the ThreeFold Grid is composed of the people using it, the 3node servers offering compute, storage and network resources, and the TF Chain, which is the blockchain of ThreeFold.
+Essentially, the ThreeFold Grid is composed of the people using it, the 3Node servers offering compute, storage and network resources, and the TF Chain, which is the blockchain of ThreeFold.
 
-Middleware is also used, such as GraphQL and GrixProxy, to get and organize data from the ThreeFold Chain.
-Middleware helps to make data available and to manage load.
+Middlewares are also used, such as GraphQL and GrixProxy, to get and organize data from the ThreeFold Chain. They help to make data available and to manage load.
 
-3nodes store workloads data and can report on their state to the TF Grid and to middleware.
-
-
-
-### What is the ThreeFold Token? What are the uses of the ThreeFold token (TFT)?
-
-ThreeFold Token (TFT) is a decentralized digital currency used to buy autonomous and decentralized Internet services (compute, storage, applications) on the ThreeFold Network – generated only when active capacity is added to the ThreeFold Grid.
-It has a specific commercial utility, since ThreeFold Tokens were conceived as the designated currency for buying and selling capacity on the ThreeFold Grid.
-
-### How are ThreeFold Token (TFT) produced?
-
-ThreeFold Tokens are exclusively produced through a process called farming, which means that TFT are generated only when new Internet capacity is added to the ThreeFold Grid. There is no wasteful mining.
-
-### How are the TFT managed?
-
-TFT are managed by the ThreeFold Blockchain (“TF Chain”). 
-
+3Nodes store workloads data and can report on their state to the TF Grid and to middlewares.
 
 
 ### What is the difference between Internet capacity and connectivity? Does ThreeFold replace my Internet service provider (ISP)?
@@ -413,82 +299,14 @@ In simple terms, the Internet is composed of both capacity and connectivity. Cap
 ThreeFold’s technology enables distributed capacity generation, but ThreeFold doesn’t deal in connectivity.
 3nodes offer Internet capacity, but farmers still rely on connectivity provider like the usual Internet service provider (ISP).
 
-
-
-### I've read that ThreeFold is Carbon Negative, what does this imply?
-
-In short, to accomplish a Carbon Negative footprint, ThreeFold has a general strategy and many tactics that are all aimed at building and contributing to a regenerative and resilient environment. In long, read this [post](https://forum.threefold.io/t/supporting-initiatives-to-regenerate-the-planet/).
-
-
-
 ### What are the priorities of ThreeFold (the Three P of ThreeFold)? ThreeFold is a Planet first project, what does it mean?
 
 ThreeFold is working for the Planet, the People and Profit, in this very order of importance. Planet comes first as it is our home to us all. A humane enterprise always has people before profit, and serious entrepreneurs know profit cannot be left out of the equation of a thriving project.
 
 
-
-
-### I want to farm TFT with a 3node. What are my choices?
-
-There are two possibilities. Either [buy a certified 3node](https://marketplace.3node.global/) (plug n play) or build yourself a [DIY 3node](#what-are-the-general-requirements-for-a-diy-3node-server).
-
-
-
-### I want to buy a certified 3node server from a reliable source. Who are ThreeFold's partners offering certified 3nodes?
-
-You can find the continually growing list of ThreeFold's partners provoding high-quality 3nodes [here](https://marketplace.3node.global/index.php?dispatch=companies.catalog).
-
-
-
 ### I want to help build the new Internet. How can I become a ThreeFold certified 3node partner?
 
 Apply [here](https://marketplace.3node.global/index.php?dispatch=companies.apply_for_vendor) to become a ThreeFold certified 3node partner.
-
-
-
-### How is ThreeFold registered as an entity?
-
-ThreeFold has different registrations and each serves a different purpose.
-
-There is ThreeFold VZW, in Belgium. Note that *VZW* is Belgium's denotation for non-profit association. Read more [here](../../knowledge_base/about/threefold_vzw.md).
-
-There is also ThreeFold DMCC, in Dubai. Read more [here](../../knowledge_base/about/threefold_dubai.md).
-
-There is also ThreeFold Tech NV, a software company which owns the IP of the code delivered. Read more [here](../../knowledge_base/about/threefold_tech.md).
-
-
-
-
-### Where is ThreeFold Tech's headquarters?
-
-ThreeFold Tech is located in Lochristi, Oost-Vlaanderen, Belgium.
-
-
-
-### Can I have more information on ThreeFold Tech NV and ThreeFold S.A.?
-
-Of course. Here are the basic information:
-
-* TF Tech NV (ThreeFold Tech)
-  * Registered at the Belgian Chamber of Commerce under number 0712845674.
-  * TF Tech NV is a limited liability organisation under the laws of Belgium. TF TECH NV. Antwerpse Steenweg 19 9000 - Lochristi, Belgium info@threefold.tech BE 0712.845.674
-(RPR Gent) Tel: 0032-93242057
-
-* ThreeFold S.A. (TF LUX)
-  * A public limited liability company under the Company Number B265333, governed by the laws of the Grand Duchy of Luxembourg.
-  * ThreeFold S.A., 6, Rue Dicks, 1417, Luxembourg.
-
-
-
-### Is ThreeFold using Wireguard?
-
-Wireguard is built directly into the ThreeFold Grid. It's called "Znet" or "private overlay network". Actually all deployments belong to a private overlay network, but the only way to get your wireguard config file to access the network is to use Terraform.
-
-
-
-### Is the 3bot the same as the Digital Twin?
-
-The Digital Twin will be a more advanced version of the 3bot.
 
 
 
@@ -514,45 +332,12 @@ The News section gives you the latest information on the fast ThreeFold developm
 
 ### I want to reach the ThreeFold community. What are ThreeFold social links?
 
-You can find links to the ThreeFold community [here](https://www.threefold.io/). Here's a quick list:
-
-- [ThreeFold Twitter](https://twitter.com/threefold_io)
-- [ThreeFold Forum](https://forum.threefold.io/)
-- [ThreeFold Github](https://github.com/threefoldtech)
-- [ThreeFold Telegram News](https://t.me/threefoldnews)
-- [ThreeFold Telegram General](https://t.me/threefold)
-- [ThreeFold Telegram Grid Tester Community](https://t.me/threefoldtesting)
-- [ThreeFold Telegram Farmer](https://t.me/threefoldfarmers)
-- [ThreeFold Reddit](https://www.reddit.com/r/threefold/)
-- [ThreeFold Youtube](https://www.youtube.com/threefoldfoundation)
-- [ThreeFold LinkedIn](https://www.linkedin.com/authwall?trk=qf&originalReferer=https://threefold.me/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fthreefold-foundation%2F)
-
-
-
-### Is there a Discord group for ThreeFold?
-
-Yes! It’s [right here](https://discord.com/invite/PaQtT7A72E). ThreeFold is decentralized. This is a community initiative. Come and talk. Let's New Internet!
-
-
-
-### How can I reach ThreeFold Support?
-
-The easiest way to contact the ThreeFold support is to use [this link](https://threefoldfaq.crisp.help/en/) and click on the chat icon.
-
-You can also go on the [ThreeFold Connect App](#is-there-a-threefold-app-for-mobile) and select Support or go on the [ThreeFold website](https://threefold.io), accept the cookies and click on the bottom right icon for chat.
-
+You can find links to the ThreeFold community at the bottom of the main page of the [ThreeFold website](https://www.threefold.io/). 
 
 
 ### Could we reach out someone for publishing research work on ThreeFold?
 
 You can send an email to info@threefold.io for publishing research on ThreeFold.
-
-
-
-### Is there a ThreeFold podcast?
-
-Yes, there is a ThreeFold podcast! Hosted by Kyle Ellicot, it is available to listen on [Spotify](https://open.spotify.com/show/5RPjpvCYECrkq4sAM6hOfq) and on [anchor.fm](https://anchor.fm/threefoldpodcast).
-
 
 
 ### Who can I write to for a proposal? Where can I send a proposal email for a new partnership opportunity with ThreeFold?
@@ -580,7 +365,7 @@ Also, note that certain posts can automatically get flagged for moderation based
 
 ## The Technology of ThreeFold
 
-### What is a 3node?
+### What is a 3Node?
 
 It is essentially a single server that makes up a larger network of servers which together form the ThreeFold Grid. Essentially any modern computer can be turned into a 3node (DIY Farming) and you can [buy plug and play 3nodes](https://marketplace.3node.global/index.php) as state of the art modern computer.
 
@@ -589,13 +374,6 @@ It is essentially a single server that makes up a larger network of servers whic
 ### What is the difference between a 3node and a ThreeFold farm?
 
 A 3node is a single server connected to the Grid. Each 3node is linked to a farm. A farm can be composed of multiple 3nodes. 
-
-
-
-### I've read that ThreeFold built an Operating System (OS) from scratch, is it true?
-
-Indeed, to have a quantum safe technology and nodes capabling on running the widest range of softwares, the team built an operating system from the ground up, the almighty Zero-OS. Read the next question for more info on Zero-OS.
-
 
 
 ### What is Zero-OS from ThreeFold?
@@ -645,50 +423,11 @@ When you know the URL representation of the query, you can simply use the URL di
 
 
 
-### Is there a way to see the ThreeFold Grid's metrics?
-
-You can see the ThreeFold Grid Devnet's metrics on the page [metrics.grid.tf](https://metrics.grid.tf/). The metric tool is using Grafana, an open source visualization web application.
-
-To see the statistics of the ThreeFold Grid in general, visit the [ThreeFold Dashboard](https://dashboard.grid.tf/explorer/statistics) and select Statistics in the left menu Explorer.
-
-
-
 ### How can I see the stats of the ThreeFold Grid?
 
 You can go to think link: [https://stats.grid.tf/](https://stats.grid.tf/) to see the stats of the ThreeFold Grid.
 
 You can also check this [thread](https://forum.threefold.io/t/grid-stats-new-nodes-utilization-overview/3291/) on the ThreeFold forum.
-
-
-
-### How can I connect to the ThreeFold Planetary Network?
-
-You can connect with your phone by using the ThreeFold Connect App.
-Simply select the Planetary Network option in the menu.
-
-To connect on a computer, you can download the pre-release vesion of the [ThreeFold Planetary Network connector](https://github.com/threefoldtech/planetary_network).
- 
-
-
-### Where can I download the ThreeFold Planetary Network connector?
-
-It is available in the ThreeFold [Planetary Network](https://github.com/threefoldtech/planetary_network) repository on Github.
-You can download pre-release versions [here](https://github.com/threefoldtech/planetary_network/releases) for MAC, Linux and Windows.
-
-
-
-### What is Proof-of-Capacity used by ThreeFold?
-
-Proof-of-Capacity is an algorithm that verifies the Internet capacity provided by the 3nodes. More information can be found [here](../../knowledge_base/farming/proof_of_capacity.md).
-
-
-
-### What is Proof-of-Utilization?
-
-[Proof-of-Utilization](../../knowledge_base/farming/proof_of_utilization.md) is the underlying mechanisms that verifies the utilization of Internet capacity on the ThreeFold Grid.
-
-Every hour, the utilization is recorded in [TFChain](../../knowledge_base/about/tfchain.md) and the user is charged for the Internet capacity used on the ThreeFold Grid. Discount calculated in line with the amount of [TFT](../threefold_token/threefold_token.md) users have in their accounts on TFChain. Learn more about the discount [here](../../knowledge_base/cloud/pricing/staking_discount_levels.md).
-
 
 
 ### What is the difference between a seed phrase (mnemonics) and an HEX secret?
@@ -701,74 +440,10 @@ In typical usage, multiple secrets can be derived from a seed phrase via a one-w
 
 ## Buying and Transacting TFT
 
-### How can I buy TFT?
-
-There are many ways to do this. You can buy on [PancakeSwap](https://pancakeswap.finance/), on [BTC-Alpha](https://btc-alpha.com/en/trade/TFT_BTC?layout=standard&type=spot) or on the [GetTFT website](https://gettft.com/gettft/). For more information, check [this link](https://library.threefold.me/info/threefold#/tokens/threefold__how_to_buy). 
-
-
-
-### How is the ThreeFold Token(TFT) created (minted)? ThreeFold Token is a pure utility token. What does this mean?
-
-ThreeFold Tokens (TFT) are created (minted) by the ThreeFold Blockchain (TFChain) only when new Internet capacity is added to the ThreeFold Grid by farmers. For this reason, TFT is a pure utility token as minting is solely the result of farming on the ThreeFold Grid.
-
-
-
-### Where can I find TFT, concretely? On which blockchains is TFT available?
-
-- Stellar Chain
-  - Most TFT exist on Stellar at the moment and this is the chain where all farming rewards are currently distributed.
-- ThreeFold Chain
-  - the new ThreeFold blockchain that’s used for billing on Grid v3 and will be used to pay Grid v3 farmers at some point in the future.
-- Binance Smart Chain
-  - Binance Smart Chain (BSC) - this TFT exists mostly for buying, selling, and providing liquidity on Pancake Swap 2.
-
-### How to set up a Stellar address for TFT transactions?
-
-In general, to set up a Stellar address to transact TFT on Stellar chain, you can use any Stellar wallet that has a TFT trustline enabled. Note that on Stellar chain, fees are paid in XLM. 
-
-The easiest way is to simply create an account on the ThreeFold Connect App (for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin) and [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885)) and to then use the TFT wallet of the app, which has by default a TFT trustline on Stellar chain and also comes with 1 XLM sponsored by ThreeFold for transaction fees.
-
-
 
 ### How long does it take when you use the BSC-Stellar Bridge?
 
 The bridge will process deposits/withdrawals within 48 hours.
-
-
-
-### What are the cost when bridging from Stellar to MetaMask (BSC) and from MetaMask to Stellar?
-
-It will cost 100 TFT for the former, and 1 TFT for the latter. There is a fixed fee of 0.01 TFT when using the Stellar blockchain. Those fees are taken from the total of what you are bridging. For example, if you Bridge 200 TFT, from Stellar to MetaMask (BSC), you will receive 100 TFT.
-
-
-
-### What is the network information to access BSC for the ThreeFold token? What is the token address for adding the token in the MetaMask app?
-
-Here it is:
-* Mainnet
-* Network Name: Smart Chain
-* New RPC URL: https://bsc-dataseed.binance.org/
-* ChainID: 56
-* Symbol: BNB
-* Block Explorer URL: [https://bscscan.com](https://bscscan.com/)
-
-BSC TFT Token Address: 0x8f0FB159380176D324542b3a7933F0C2Fd0c2bbf
-
-For more information, read [this](../threefold_token/buy_sell_tft/pancakeswap.md).
-
-
-
-### How can I trade TFT on Pancake Swap? How can I add TFT on Pancake Swap?
-
-When searching for a Token on Pancake Swap (Select a Token), paste the TFT Token Address : 0x8f0FB159380176D324542b3a7933F0C2Fd0c2bbf, then select TFT. You can now trade TFT on Binance Smart Chain.
-
-
-
-### How can I swap ThreeFold tokens (TFT) on Stellar Blockchain?
-
-It is possible to swap TFT on Stellar Chain. Here's how to do it with [StellarX](https://stellarx.com).
-
-First, make sure your wallet has a TFT trustline. Second, go on [StellarX Swap section](https://stellarx.com/swap). Third, choose TFT and the other token of the swapping pair then swap. If you do not see TFT, make sure you have a TFT trustline linked to your wallet.
 
 
 
@@ -779,42 +454,7 @@ There is a simple way to do this. The [Stellar Explorer](https://stellar.expert/
 Simply go to the account you’re interested in showing the balance of, look for “Balance History”, select TFT, and finally click the small icon next to the heading to reveal the embed code. In your WordPress page editor, in HTML mode, paste the embed code.
 
 
-
-### How can I use the TFT Stellar-Ethereum bridge?
-
-When you go to the [TFT Stellar-Ethereum bridge website](https://bridge.eth.threefold.io/), connect your Ethereum wallet. Then the bridge will present a QR code which you scan with your Stellar wallet. This will populate a transaction with the bridge wallet as the destination and an encoded form of your Ethereum address as the memo. The bridge will scan the transaction, decode the Ethereum wallet address, and deliver newly minted TFT on Ethereum, minus the bridge fees.
-
-For the reverse operation, going from Ethereum to Stellar, there is a smart contract interaction that burns TFT on Ethereum while embedding your Stellar wallet address. The bridge will scan that transaction and release TFT from its vault wallet to the specified Stellar address, again minus the bridge fees.
-
-
-
-### What is the contract address for TFT on Ethereum?
-
-The contract address for TFT on Ethereum is the following: `0x395E925834996e558bdeC77CD648435d620AfB5b`.
-
-You can see it on Etherscan [here](https://etherscan.io/token/0x395E925834996e558bdeC77CD648435d620AfB5b).
-
-
 ## TF Connect App, TF Dashboard, GraphQL, Grix Proxy and Polkadot Substrate
-
-### What is the ThreeFold Connect App download link?
-
-ThreeFold Connect App (TF Connect App) is available for download on [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin) and on [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885).
-
-
-
-### What is the ThreeFold Dashboard link?
-
-To go on the ThreeFold Dashboard, use this link [https://dashboard.grid.tf/](https://dashboard.grid.tf/).
-
-
-### To access the TF Dashboard, I need to use the Polkadot Extension. What is the link for the Polkadot Extension (polkadot.js)? Which browsers support the Polkadot Extension?
-
-The link to the Polkadot Extension is the following: [https://polkadot.js.org/extension/](https://polkadot.js.org/extension/).
-
-Polkadot.js is available for the following browsers: Chrome, Brave and Firefox. To install it on Brave, use the Chrome link.
-
-
 
 ### Is there a way to create or import another wallet in TF Connect App?
 
@@ -843,16 +483,6 @@ To fix this Flagsmith error message on the ThreeFold Connect app, you can try th
 * Update the date and time on your phone
 
 
-
-### I have some problems connecting to the Polkadot extension. What can I do?
-
-You could try to delete the cache in your browser or try to open it with another browser (Firefox/Brave/Chrome). Sometimes, removing the account and re-entering the seed phrase can also help to fix some issues. Use your seed phrase carefully.
-
-If you have issues on Firefox, [refreshing the browser](https://support.mozilla.org/en-US/kb/refresh-firefox-reset-add-ons-and-settings#w_refresh-firefox) can help.
-
-
-
-
 ### Apart form the ThreeFold Connect App Wallet, how can I check my TFT balance?
 
 You can go on [Stellar.Expert](https://stellar.expert). With your wallet address, you will be able to see your transactions and wallet details.
@@ -866,38 +496,6 @@ Yes, every blockchain has an explorer function and these explorer functions allo
 For Stellar based TFT’s there is an explorer here: https://stellar.expert/explorer/public. Enter you wallet address in the top left search box, and after pressing enter you should see every transaction related to your account.
 
 If you are not deploying/doing things on the TF Grid (dev, test or mainnet) you will not have transferred any tokens to the TF Chain, therefore all your tokens/wallets will be on the Stellar Chain.
-
-
-
-### What is the role of the middleware?
-
-The middleware takes data from the TF blockchain and present it in a searchable manner.
-
-
-
-### What is Polkadot UI? What can I do with Polkadot UI?
-
-It is based on substrate, a framework for building blockchains in the polkadot ecosystem
-
-You can use polkadot UI to querry information about farms on TF Chain.
-
-For example, on Polkadot UI, you can see blocks minted on TF Chain. Have a look [here](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.grid.tf#/explorer).
-
-
-
-### What are the links for the TFchain network Substrate endpoints on Polkadot.js?
-
-The links are the following for the different ThreeFold networks:
-
-* [Main net](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.grid.tf#/extrinsics)
-  * Endpoint: `wss://tfchain.grid.tf`
-* [Test net](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.test.grid.tf#/extrinsics)
-  * Endpoint: `wss://tfchain.test.grid.tf`
-* [Dev net](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.dev.grid.tf#/extrinsics)
-  * Endpoint: `wss://tfchain.dev.grid.tf`
-* [QA net](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.qa.grid.tf#/extrinsics)
-  * Endpoint: `wss://tfchain.qa.grid.tf`
-
 
 
 ### How can I use GraphQl to find information on the ThreeFold Grid?
@@ -1030,69 +628,9 @@ If you forgot the name associated with your seed phrase on the TF Connect app, y
 Since the Connect App is also used for identity and authentication, you need both the name (3bot ID) and seed phrase to fully recover your account. The wallet is only linked to the seed phrase and not the name (3bot ID).
 
 
-
-### How can I vote for a ThreeFold DAO proposal?
-
-Go to the [ThreeFold Dashboard](https://dashboard.grid.tf/). In the menu on the left, select **Portal** and then select **DAO**.
-Then vote for the DAO proposal you are interested in.
-
-Note that you need a farm with at least one active 3Node to vote.
-
-
-
 # USERS FAQ
 
 ## TF Grid Functionalities
-
-### How can I filter 3Nodes by country and by network (IPv4, IPv6 and Planetary Network)?
-
-You can use the official [Dashboard Explorer](https://dashboard.grid.tf/explorer/nodes).
-There are also wonderful tools built by people from the ThreeFold community.
-
-
-
-### Can I have the link to deploy a VM and other apps on the Grid?
-
-Yes. It’s https://playground.grid.tf.
-
-
-### What can I do on ThreeFold Grid?
-
-Since ThreeFold 3Nodes have their OS based on the Linux kernel, you can run just about anything that runs on Linux. The possibilities are almost endless. Here's a quick list of what you can do within a few clicks:
-
-- [Virtual Machine](https://playground.grid.tf/#/vm)
-- [Kubernetes](https://playground.grid.tf/#/kubernetes)
-- [CapRover](https://playground.grid.tf/#/caprover)
-- [Peertube](https://playground.grid.tf/#/peertube)
-- [Funkwhale](https://playground.grid.tf/#/funkwhale)
-- [Mattermost](https://playground.grid.tf/#/mattermost)
-- [Discourse](https://playground.grid.tf/#/discourse)
-- [Taiga](https://playground.grid.tf/#/taiga)
-- [Owncloud](https://playground.grid.tf/#/owncloud)
-- [Presearch](https://playground.grid.tf/#/presearch)
-- [Casperlabs](https://playground.grid.tf/#/casperlabs)
-
-When you take into consideration that with CapRover only, you get dozens and dozens of free and open source one-click applications, from Wordpress to Ruby, you realize the fun ahead.
-
-<!---
-
-
-
-### Can I deploy a Mastodon server on ThreeFold Grid?
-
-Yes! It is possible to [deploy a Mastodon server](https://getmastodon.threefold.io/) on the ThreeFold Grid.
-Check this easy-to-follow guide right [here](https://library.threefold.me/info/manual/#/manual__threefold_mastodon_home).
-This is a beta tester version. The final version will be available on Threefold Grid 3.8.
-For more information, read this [TF Forum post](https://forum.threefold.io/t/beta-testers-wanted-mastodon-powered-by-threefold/3637).
-
--->
-
-
-
-### Is there delegated staking for TFT?
-
-Delegated staking is a feature that will soon be implement. Stay tuned.
-
 
 
 ### What are the type of storage available on TF Grid?
@@ -1103,37 +641,7 @@ There’s two type of storage that van de used on the TF Grid.
 2. Quantum safe storage. Quantum safe storage uses a “Storage Engine” that parts, compresses, encrypts and then mathematically describes the data.
 
 
-
-
-### What is ThreeFold's cloud pricing? Are there any discounts available for ThreeFold's cloud pricing?
-
-You can read more about ThreeFold cloud pricing and discounts [here](../../knowledge_base/cloud/pricing/pricing_toc.md). 
-
-By simply hodling TFT in your TF Chain wallet, you can benefit from TFT discounts up to 60%. This is an automatic form of staking, the user does not have to do anything to have this benefit.
-
-
-
-### How can I see the available capacity of a 3Node server on the ThreeFold Grid?
-
-You can use the [ThreeFold Grid Proxy](https://gridproxy.grid.tf/swagger/index.html#/GridProxy/) to see available capacity of a 3Node server.
-
-
-
-### What is the difference between the Playground and Dashboard on mainnet and testnet?
-
-In general, mainnet is more stable and it is better to use it for official workload deployments. Mainnet and testnet offer the same features, but testnet costs 50% less TFT to run workload. 
-
-
 ## Deployments on the ThreeFold Grid
-
-### Can I use the TFChain secret on the ThreeFold Connect App for the Profile settings on the ThreeFold Playground?
-
-No, this is not possible. The twin created in the farming section of the TF Connect app is not directly associated with the mnemonics from the ThreeFold Playground.
-
-To generate the seed phrase, you can go to the [ThreeFold Dashboard](https://dashboard.grid.tf/). You will be able to install the Polkadot extension, create an account within it (keep the seed phrase safe), then activate a twin for that account on the [ThreeFold Dashboard](https://dashboard.grid.tf/).
-
-You will then be able to use the seed phrase to create a profile manager.
-
 
 
 ### Does the ThreeFold Grid charge the total resources rented or it only charges the resources used during deployment?
@@ -1373,31 +881,6 @@ ssh-keygen -C newname
 Make sure to replace "newname" by the name you want.
 
 
-
-### How can I copy the clipboard content of a terminal output using the command cat? How can I copy the public key directly with the terminal?
-
-We use here the example of copying the public key in the default folder of OpenSSL.
-You can use this command to copy any content of a given text file for Linux, Mac and Windows.
-
-You can use the following terminal command line:
-
-* Linux
-  * ```
-    cat ~/.ssh/id_rsa.pub | xclip -sel clip
-    ```
-* MAC
-  * ```
-    cat ~/.ssh/id_rsa.pub | pbcopy
-    ```
-* Windows
-  * ```
-    cat ~/.ssh/id_rsa.pub | clip.exe 
-    ```
-
-After writing this command, your clipboard will contain your public key. You can paste it on the profile manager to connect with a 3Node when deploying on the ThreeFold Grid.
-
-
-
 ###  What is ThreeFold's stance on sharded workload? Will ThreeFold embrace and move towards distributed data chunks or stay with the one deployment, one node model?
 
 The ThreeFold Grid is basically agnostic when it comes to how you structure your deployment. 
@@ -1413,39 +896,6 @@ Self driving and self healing IT is one of the core concepts of ThreeFold. What 
 
 
 ## Tutorials and Guides
-
-
-### What are the prerequisites before using the ThreeFold Play Grid (playground.grid.tf)?
-
-The prerequisites are simple:
-
-1. Go to the [TF Dashboard Grid](http://dashboard.grid.tf).
-2. Add the [Polkadot Substrate Extension](https://polkadot.js.org/extension/) to your browser.
-3. Create an account (write down the mnemonics somewhere safe and offline).
-4. Buy TFT online. Go to [GetTFT.com](https://gettft.com/gettft/), where you can directly download the [ThreeFold Connect App](https://library.threefold.me/info/threefold#/tokens/threefold__threefold_connect), and then fund your TF wallet with USD, EUR or BTC. 
-5. Swap your TFT from Stellar Chain to TF Chain by using the swap function in the Portal menu of the Dashboard. (GetTFT sends TFT on Stellar Chain, while the Playground is on TF Chain.)
-6. Go to the [ThreeFold Play Grid](http://playground.grid.tf) and start your deployment. (See next question to set a profile manager.)
-
-
-### Is there a picture guide on how to deploy Wordpress on the ThreeFold Grid using Caprover?
-
-We're glad you ask, Kristof wrote something you might really dig. Read it [here](https://forum.threefold.io/t/easily-deploy-wordpress-the-most-popular-website-builder-on-tf-grid/2136)!
-
-
-
-
-### I've heard rumours that you can install Wordpress and Discourse on the TF Grid in less than 15 minutes, is it true?
-
-Oh yes it is. Legend has it, it can even be done under 10 minutes. Would you give it a try? Check [this video](https://forum.threefold.io/t/from-zero-to-hero-deploy-discourse-and-wordpress-in-under-10-5-minutes/2206).
-
-
-
-### Can I deploy a Presearch Node?
-
-It is possible to deploy a Presearch node on the ThreeFold Grid. You can easily deploy a Presearch node on the ThreeFold Playground. Follow [this link](https://playground.grid.tf/#/presearch). 
-
-Note that each 3Node can deploy one Presearch node without the need of having a public IP. To deploy more than one Presearch node on a 3Node, you will need to select on the TF Grid a 3Node with a Public IP.
-
 
 
 ### What is the minimum amount of TFT to deploy a Presearch node? How can I get a TFT discount when I deploy a Presearch node?
@@ -1483,29 +933,6 @@ To go from testnet to mainnet, simply use the URLs in the opposite order.
 QSFS can be run on both a full virtual machine or a micro virtual machine (VM). The QSFS is a "mountable" object, like a disk. It's defined in its own block, then specified as a mount within a VM. 
 
 
-
-### To deploy a load on the ThreeFold Grid, I need to generate SSH keys. How can I generate SSH keys on MAC, Linux or Windows?
-
-There are many methods to generate SSH keys.
-
-You can read this [ThreeFold SSH Guide](../system_administrators/getstarted/ssh_guide/ssh_guide.md) to learn more about the whole process.
-
-
-
-### What is the method to SSH into a 3Node on IPv4, IPv6 and the Planetary Network?
-
-To SSH into a 3Node, find the IP address of your ThreeFold deployment and do the following on your local computer terminal (Command Prompt for Windows):
-
-``` 
-ssh root@Address_Deployment
-```
-
-To connect to the Planetary Network, [download and install the ThreeFold Planetary Network Connector](https://github.com/threefoldtech/planetary_network/releases). Once it is installed, open up the connector and click "Connect". Before connecting to the Planetary Network, make sure to disconnect your VPN if you have one.
-
-For more information on SSH Remote Connection, read this [ThreeFold SSH Guide](../system_administrators/getstarted/ssh_guide/ssh_guide.md).
-
-
-
 ## Linux, Github, Containers and More
 
 ### Where should I start to learn more about Linux?
@@ -1519,104 +946,12 @@ Before doing any web search, you can use the resources already on hand in the te
 Some ThreeFold users also point out that using different AI and LLM can be very helpful in the process of learning Linux and computers in general.
 
 
-
-### How can I see if a package is installed on Linux?
-
-You can use the following line to see if a package is installed:
-
-```
-dpkg -s <package_name>
-```
-
-
-
-### How can I copy a file or a folder on terminal from one location to another on Linux?
-
-You can use the following command to copy a file:
-
-```
-cp source destination
-```
-
-You can use the following command to copy a folder:
-
-```
-cp -R source destination
-```
-
-
-
 ### How can I clone a single branch of a repository on Github?
 
 You can clone a single branch of a repository with the following line:
 
 ```
 git clone --single-branch --branch branch_name https://github.com/GITHUB_ACCOUNT/REPOSITORY_NAME
-```
-
-
-
-
-### How can I exit a container without stopping it?
-
-You can do `Ctrl+P` then `Ctrl+Q` to exit a container without stopping it.
-
-You can then check which containers are running with the following command:
-
-`docker ps`
-
-If the keyboard sequence doesn't work, you can try the following on a second terminal:
-
-```
-ps -ef | grep attach
-```
-
-Then, note the PID number of your container and write the following:
-
-```
-kill -9 <PID>
-```
-
-To return to the container's interactive shell, do the following
-
-```
-docker attach <name_of_container>
-```
-
-
-
-### How can I start and run a container in detached mode?
-
-To start and run the container in detached mode, simply add the `-d` option in the docker run command:
-
-```
-docker run -d <name_of_container>
-```
-
-
-
-
-### How can I transfer a file from my computer to the virtual machine (VM) deployed on the ThreeFold Grid? How can I do SSH file transfer from Remote to Local and vice versa?
-
-You can use **scp** in the terminal to achieve this:
-
-```
-scp -r folder root@Address_Deployment:/PATH
-```
-
-
-
-### On Linux, how can I see the resources being used on my server?
-
-You can use the command `top` or `htop` in the terminal to see resources being used.
-
-
-
-### In Vlang, how can I format my code?
-
-To format automatically the code with Vlang, write the following: 
-```
-v fmt -w file_name.v
 ```
 
 
@@ -1720,22 +1055,6 @@ Within the file main.tf, set those lines:
 Note: Make sure that you properly set your variables in the file env.tfvars.
 
 
-
-### Is there a command line tool for Terraform when deploying on the ThreeFold Grid?
-
-There is a command line tool for Terraform built by a community member.
-
-Have a look at this [forum post](https://forum.threefold.io/t/terraform-helper-script/3720) to learn more.
-
-The tool has the following options:
-
-1. Install Terraform
-2. Generate a main.tf
-3. Generate an env.tfvars
-4. Modify an existing example main.tf for deployment with env.tfvars file.
-
-
-
 ## Users Troubleshooting and Error Messages
 
 ### When deploying a virtual machine (VM) on the ThreeFold Grid, I get the following message after trying a full system update and upgrade: GRUB failed to install to the following devices... Is there a fix to this issue?
@@ -1745,13 +1064,6 @@ When deploying a virtual machine and doing a full system update and upgrade (apt
 > apt-mark hold grub-efi-amd64-signed
 
 This should fix the issue.
-
-
-
-### I tried exporting my account to another computer but my password doesn't activate my profile manager on the ThreeFold Dashboard. What should I do?
-
-Your Dashboard profile is stored in the local browser storage, so it won't show up on a different computer with the same password. Instead, simply recreate the profile, using your seed phrase, and it will populate all information about your deployments on the different computer.
-
 
 
 ### While deploying on the TF Dashboard, I get the following error :"global workload with the same name exists: conflict". What can I do to fix this issue?
@@ -1789,29 +1101,6 @@ A 10.x.y.z address is just as valid as a 192.168.x.y address for a private netwo
 
 ## General Information for Developer
 
-### How can I use Docker on the ThreeFold Grid?
-
-There are many ways to use Docker on the ThreeFold Grid.
-
-You can simply [run Docker in a virtual machine](https://docs.docker.com/desktop/install/ubuntu/) (Full VM and Micro VM) and then follow any instructions made for [Docker](https://docs.docker.com/). 
-
-Since the ThreeFold Hub has a [Docker to flist converter](https://hub.grid.tf/docker-convert), you can also [convert the Docker image to an flist](../developers/flist/flist_hub/convert_docker_image.md) and run it directly as a micro VM.
-
-
-### Can I convert an existing docker into an flist?
-Yes you can. Go on this [link](https://hub.grid.tf/docker-convert) and you will be able to convert a docker into an flist.
-
-### How does a FList work?
-In a flist, we separate the metadata from the data. The metadata is a description of what files are in that particular image. It's the data providing information about the app/software. Thanks to flist, the 3Node doesn't need to install a complete software program in order to run properly. Only the necessary files are installed. Zero-OS can read the metadata of a container and only download and execute the necessary binaries and applications to run the workload, when it is necessary.
-
-For more information, check this [TF video](https://www.youtube.com/watch?v=HmEzGcd3Dlg).
-
-### What is stored in the metadata of a software?
-The metadata stores information such as: location, properties, ownership, rights, etc.
-
-### What is the ratio between the metadata and the actual files on a container?
-Metadata is usually less than 5% of the container. The rest (95%+) is the actual files (binaries, applications).
-
 ### Does Zero-OS assign private IPv4 addresses to workloads?
 
 No. Zero-OS will request two IP address from the DHCP. If you only have one physical NIC connected, Zero-OS will assign the second IP address as a virtual device.
@@ -1829,9 +1118,6 @@ Note: Zero-OS will request two IP address from the DHCP. If you only have one ph
 ### Can Zero-OS assign public IPv4 or IPv6 addresses to workloads?
 Yes it can provide both standard and Yggdrasil connections.
 
-### What is Yggdrasil?
-
-Yggdrasil is an "[overlay network](https://yggdrasil-network.github.io/) implementation of a new routing scheme for mesh networks".
 
 ### What does MAC mean when it comes to networking?
 MAC means *media access control*. It is a unique hardware ID. It helps the network to recognize your machine. It is then, for example, possible to assign a specific and fixed IP address to your hardware.
@@ -1851,13 +1137,7 @@ The TFT contract allows you to approve a large amount and when Pancakeswap makes
 
 
 
-## Dev Net & Test Net
-
-### Is there a way to test the Grid with free TFT?
-
-You can get free TFT on the Dev Net, but note that these are not real TFTs. They are simply there for people to try and explore the Grid.
-
-
+## Test Net
 
 ### Can I get some free TFT to test on Test Net
 
@@ -1865,36 +1145,15 @@ The TFT on Test Net is real TFT. There are ways to get free TFT to explore Test 
 
 
 
-I want to test the Grid, is there a Grid Tester Community to reach out TF testers?
-
-Of course! And they'll be happy to help you. [Reach the TF community on Telegram](https://t.me/threefoldtesting) and explore the New Internet.
-
-
-
 # FARMERS FAQ
 
 ## TFT Farming Basics
-
-### How can I create a ThreeFold farm?
-
-There are two ways to create a ThreeFold farm.
-
-You can install the [ThreeFold Connect App](#is-there-a-threefold-app-for-mobile), set an account and then create a farm in the section Farming.
-
-You can also create a ThreeFold farm on the [ThreeFold Dashboard](https://dashboard.grid.tf/) after having created an account on the [Polkadot extension](https://polkadot.js.org/extension/).
-
-
 
 ### My Titan is v2.1 and the ThreeFold Grid is v3., what is the distinction?
 
 Titan v2.1 is the hardware. Before v2.1, there was 2.0. The hardware currently being shipped is the Titan v2.1.
 
 When you read v3, it refers to the ThreeFold Grid. Titans are now being sent ready for TF Grid v3 so they are being referred to as Titan v3. In short, the current Titans are v2.1 hardware ready for ThreeFold Grid v3.
-
-
-### Is there a way to know the current TFT price for the farming rewards?
-
-Yes! Go [here](https://library.threefold.me/info/threefold/#/tfgrid/farming/threefold__farming_reward?id=farming-reward-calculation) and scroll down, you'll be able to find the TFT price at the line: current TFT to USD price.
 
 
 
@@ -1939,12 +1198,6 @@ For the TF Connect app, select the Support option.
 For the other websites, it is a blue icon on the right bottom part of the page.
 
 The easiest way to contact the ThreeFold support is to use [this link](https://threefoldfaq.crisp.help/en/) and click on the chat icon.
-
-
-
-### Is there a ThreeFold simulator to calculate farming rewards?
-
-Of course! Go to the [ThreeFold Simulator](https://simulator.grid.tf/) and select DIY or Titan.
 
 ### What is the TFT entry price of my 3Node farming rewards?
 
@@ -2124,47 +1377,9 @@ They are distributed once a month, around the 8th*. Distributions are not daily,
 No. The farming rewards do not take into account the specific type of RAM, SSD, HDD and CPU. The farming rewards take into account the quantity of storage and compute units (e.g. TB of SSD/HDD, GB of RAM, # of virtual cores).
 
 
-
-### What is the farming reward calculation?
-
-The general calculation is the following:
-
-    TFT earned per month = 
-    CU farmed * CU farming rewards 
-    + SU farmed * SU farming rewards
-    + NU used * NU farming rewards
-    + IPAddr used * IPAddr farming rewards
-
-
-Lear more about this [here](../../knowledge_base/farming/proof_of_capacity.md).
-
-> Note: The farming rewards take into account the quantity of storage and compute units (e.g. TB of SSD/HDD, GB of RAM, # of virtual cores). The farming rewards do not take into account the specific type of RAM, SSD, HDD and CPU.
-
-
-
 ### Can I send my farming rewards directly to a crypto exchange?
 
 This is not possible. When you send tokens to a crypto exchange, you need to include a memo with your wallet address and the current farming rewards system of ThreeFold is already using that memo space to send the correct farming information.
-
-### I received my farming rewards, now I want to sell my ThreeFold tokens (TFT). How can I do this?
-
-First, know that your TFT farming rewards are on the Stellar Blockchain. If you want to sell on Pancakeswap (on the Binance Chain), you will need to use the Stellar-BSC Bridge, where a 50 TFT fees is applicable. See the section on the [BSC-Stellar Bridge](../threefold_token/tft_bridges/bsc_stellar_bridge.md) for more information on this method.
-
-If you stay on Stellar blockchain, you can either swap your TFT, for example on [StellarX](https://stellarx.com/swap), where some XLM will be needed, or sell your TFT on an exchange using the Stellar blockchain. Currently, this can be done on [BTC-Alpha](https://btc-alpha.com). First, send your TFT to your exchange wallet and make sure you enter the memo correctly. Once your TFT are on the exchange, you can sell them on the market. Make sure to follow the exchange specific steps where applicable.
-
-
-
-### Which wallets are recommended for ThreeFold token (TFT) farming rewards?
-
-The most straightforward wallet possible when it comes to farming TFT is simply to use the wallet included with the ThreeFold Connect App. It is also possible to use other wallets that are connected to the Stellar Blockchain. In these cases, you will need to establish a trustline with TFT. You can also store your TFT on a Ledger or a Trezor via the Stellar Blockchain. See stellarterm.com, stellarx.com and solarwallet.io.
-
-
-
-### Can I have more details on storing ThreeFold tokens (TFT) on hardware wallets?
-
-Yes of course! In short, you will need to use a hardware wallet (Ledger/Trezor/etc.) to sign in, add TFT as an asset (trustline), then send TFT to the Stellar address. For more information, read the section [Store TFT in a Hardware Wallet](../threefold_token/storing_tft/hardware_wallet.md).
-
-
 
 
 ### Do I need collateral to farm ThreeFold tokens?
@@ -2218,29 +1433,6 @@ This is normal. Currently, not all 3Nodes are being utilized by users on the Thr
 
 ## 3Node Farming Requirements
 
-### What are the general requirements for a DIY 3Node server?
-
-Any 64-bit hardware with an Intel or AMD processor chip can run Zero-OS and become a 3Node. For a complete guide on building a 3Node, read the [Farming Guide](../farmers/3node_building/3node_building.md). The following configurations provide guidelines on compatible and recommended setups:
-
-- Servers, desktops and mini computers type hardware are compatible.
-- A minimum of 500 GB of SSD and a bare minimum of 2 GB of RAM is required.
-- A ratio of 1:4 between vCPU and RAM (e.g. 8vCPU and 32 GB of RAM) is recommended.
-- The recommended upper limit is 8 GB of RAM per vCPU as farming rewards do not increase beyond that ratio.
-- A wired ethernet connection is highly recommended to maximize reliability and the ability to farm TFT.
-
-
-
-### What kind of computer do I need to make a 3Node server?
-
-Any modern computer should be sufficient, especially once you upgrade the amount of RAM and storage to increase your TFT rewards. While CPU specs are not currently measured, they may be in the future. To insure your 3Node provides meaningful capacity to the network, you should have at least 1000 CPU passmark per core as measured on https://www.cpubenchmark.net/cpu_list.php
-
-
-
-### I found a decent computer (or server) to buy online, but it doesn't come with a CPU. How can I know what CPU models would work with a specific computer or server?
-
-You can usually find this information in the owner manual of the server in the section Technical Specifications. Here's a link for [Dell servers](https://www.dell.com/support/kbdoc/en-ca/000144474/poweredge-servers-supported-processors-cpus-and-where-to-find-technical-specifications).
-
-
 
 ### Can I host more than one 3Node server at my house?
 
@@ -2278,46 +1470,6 @@ For more information, read thes section [Calculate the Total Electricity Cost of
 ### Has anyone run stress tests to know the power consumption at heavy load of certain 3Nodes?
 
 The community is starting to gather some data on this. As of now, we know that a R720 with 2x2690v2 cpu, 4TB NVME SSE P4510 and 320GB ram will draw 390W @100% load. With 2x2650L v2, it's around 300W with fans at full speed. More info will be added as we gather more data.
-
-
-
-### How much AC power do you need (in BTU) to compensate for the heat generated by the 3Node servers? How can I ensure proper relative humidity range for my 3Node server farm?
-
-For a small farm set up, you could simply keep your normal air conditioner system and it should be fine. For large set up, you need to take into account the power consumption of your servers and turn it into BTU consumption. The quick equation to know the total BTU needed per ThreeFold Farm is:
-
-> Server Power in kW * 3413 * Number of Servers = Total BTU
-
-The total BTU will indicate the minimum number to look for when buying your air conditioner. For more information, read the section [Calculate the Minimum BTU Needed](../farmers/farming_optimization/farm_room_parameters.md#calculate-the-minimum-btuh-needed-for-the-ac) in the Farming Guide.
-
-
-
-### How can I ensure the relative humidity in my server room stays within a proper range?
-
-Look in your server's user manual to know the proper range of relative humidity your server can handle. If necessary, use an hygrometer to measure relative humidity and make sure it stays within an acceptable range for your 3Nodes. 
-
-Depending on your geographical location and your current situation, it could be interesting to consider having a AC unit equipped with a dehumidifier. Read your servers' manual to check the proper relative humidity range and set the unit accordingly.
-
-
-
-### How can I ensure the air changes per hour is optimal in the 3Node servers' room?
-
-If deemed necessary, it is recommended to ventilate the server room in other to disperse or evacuate heat from the place. In those cases, ventilation flow will be set depending on the air changes per hour (ACPH) needed. Note that the [ASHRAE](https://www.ashrae.org/File%20Library/Technical%20Resources/Standards%20and%20Guidelines/Standards%20Addenda/62-2001/62-2001_Addendum-n.pdf) recommends from 10 to 15 ACPH for a computer room.
-
-
-
-### What are the maximum and minimum temperatures or humidity levels a 3Node server can handle?
-
-This will depend on the specific server/computer you are using. You should check the server's technical guide/manual to get the proper information.
-
-We will use here the Dell R720 as an example since it is a popular 3Node choice. In this case, the [Technical Guide](https://downloads.dell.com/manuals/all-products/esuprt_ser_stor_net/esuprt_poweredge/poweredge-r720_reference-guide_en-us.pdf).
-
-For the R720, between 35˚C and 40˚C (or 95˚F and 104˚F), with 5% to 85% relative humidity, you can have this <10% of annual operating hours (around 36 days per year), and between 40˚C and 45˚C (or 104˚F and 113˚F), with 5 to 90% relative humidity, it’s <1% of annual operating hours (around 3.6 day per year). All this considers that there is no direct sunlight.
-
-From 10˚C to 35˚C (thus from 50˚F to 95˚F), it’s considered standard operating temperature. With relative humidity from 10% to 80%.
-
-This can give you a good idea of the conditions a 3Node can handle, but make sure you verify with your specific server's manual.
-
-
 
 ### Can the Titan 3Node be run on PoE? (Power Over Ethernet)
 
@@ -2375,70 +1527,6 @@ This is not possible. A 3Node needs at least one SSD disk of 500 GB.
 
 
 ## Building a 3Node - Steps and Details
-
-### What are the main steps to build a DIY 3Node, from start to finish?
-
-The main steps to build a DIY 3Node are the following:
-
-1. Create a ThreeFold farm
-2. Create a Zero-OS bootstrap image
-3. Set the hardware
-4. Wipe all the disks
-5. Set the BIOS/UEFI 
-6. Boot the 3Node
-
-For a complete step-by-step guide on how to build a DIY 3Node, read the [Farming documentation](../farmers/3node_building/3node_building.md).
-
-
-
-### I wonder what type of desktop computer or server to use for my 3Node. Are there any recommendation when it comes to DIY 3Node hardware?
-
-The Farming documentation contains a list of typical DIY 3Nodes in the section [List of Common DIY 3Nodes](../farmers/3node_building/3_set_hardware.md#list-of-common-diy-3nodes).
-
-Also, a good place to start is by checking [what other farmers have built](https://forum.threefold.io/t/lets-share-our-farming-setup/286).
-
-
-
-### What can you do to zero out your disks? How can I wipe the disks of my 3Node server with Linux?
-
-For zero out disks unix has a tool called “wipefs”. Every distribution should have it. So if you take an ISO image of any Linux distribution and boot in “Try” mode, you can then go in a terminal or shell and write the following command:
-
-Wipe all the disks in the 3Node:
-
-```
-sudo for i in /dev/sd*; do wipefs -a $i; done
-```
-
-Wipe all the nvme disks in the 3Node:
-
-```
-sudo for i in /dev/nvme*; do wipefs -a $i; done
-```
-
-This will wipe all of the disk devices in the hardware. Make sure you have SU permissions (write "sudo" before the command line). If needed, do a backup of the disks information before.
-
-For more information, read the section [Wipe All the Disks](../farmers/3node_building/4_wipe_all_disks.md) of the Farming Guide.
-
-
-
-### How can I wipe a disk with Windows?
-
-Follow these simple steps:
-
-1. Open up the command line. 
-2. Write *diskpart*
-3. Write *list disk*
-4. Write *select disk x* (replace x with the disk you want to wipe)
-5. Write *clean*
-
-You're done! Note: do not format the disk.
-
-
-
-### Do I need to wipe all the disks on my 3Node server? Can I have one disk with a different operating systesm (OS)?
-
-Zero-OS will not boot properly if not all disks are wiped. All disks must be wiped. So for example, you can't have one SSD disk wiped and another one SSD with Windows OS on it. In this case, Zero-OS won't boot. You can only have one operating system (OS), Zero-OS, when running a 3Node server.
-
 
 
 ### How can I be sure that I properly wiped my disks?
@@ -2565,7 +1653,7 @@ This probably means that you either haven't connected a SSD or that you need to 
 
 ### The first time I boot my 3 node, the node gets registered and it says cache disk : OK, but the table System Used Capacity is empty. What can I do?
 
-Most of the time, just wait and data will appear. If you want to be sure your 3Node is online on the Grid, you can check the [Explorer](https://explorerv3.grid.tf/), which fetch information every 2 hours. If it persist, first try to simply reboot your 3Node.
+Most of the time, just wait and data will appear. If you want to be sure your 3Node is online on the Grid, you can check the [Node Finder](https://dashboard.grid.tf/), which fetch information every 2 hours. If it persist, first try to simply reboot your 3Node.
 
 
 
@@ -2623,23 +1711,6 @@ TBW means Terabytes Written. TBW directly measures how much you can write cumula
 *Note that TBW is not a technical specification, but a general claim from the manufacturer. For this reason, it can also be good to check the warranty of the disk. For example, if a manufacturer offers a 5-year warranty to its product, it indicates that the company thinks its product will last a long time.
 
 
-### Do I need a surge protector?
-
-A surge protector is highly recommended for your farm and your 3Nodes. This ensures your 3Nodes will not overcharge if a power surge happens. Whole-house surge protectors are also an option.
-
-### Do I need a power distribution unit (PDU)?
-
-A PDU (power distribution unit) is useful in big server settings in order to manage your wattage and keep track of your power consumption.
-
-
-### Do I need an uninterrupted power supply (UPS)?
-
-A UPS (uninterrupted power supply) is great for a 3Node if your power goes on and off frequently for short periods of time. This ensures your 3Node does not need to constantly reboot. If your electricity provider is very reliable, a UPS might not be needed, as the small downtime resulting from rare power outages with not exceed the DIY downtime limit*. (95% uptime, 5% downtime = 36 hours per month.)
-
-*That being said, make sure to have settings such as AC Recovery Power set properly so your 3Node goes back online if the power shutdowns momentarily. UPS are generally used in data center to make sure people have enough time to do a "graceful" shutdown of the units when power goes off. (See next question)
-
-
-
 ### Are SATA and SAS drives interchangeable?
 
 This goes only one way. You can put a SATA drive in a SAS slot, but you can’t put a SAS drive in a SATA slot. See the [next question](#what-is-the-speed-difference-between-sas-and-sata-disks) for more information.
@@ -2677,31 +1748,11 @@ No, this is not possible. The general philosophy with Zero-OS is: no shell, no G
 No, this is not needed.
 
 
-
-
-### Are 3Node servers noisy? Are there certain servers that are less noisy than others? 
-
-The noises from a server can be similar to the noise of a conventional pedestal fan. As a general rule, the bigger the server, the bigger the fans (which are mostly the source of sounds). Smaller fans need to spin faster to disperse as much heat as bigger fans. So, for example, 1U servers are noisier than 2U servers. Also, note that in general, tower servers are quieter than rack servers. Go for a tower server or desktop if you want a quieter 3Node.
-
-It has been stated that Dell servers are quieter than HP. For Dell, R710-R720 are quieter than Compellent. You can check the server's manual and see directly the noise they produce in decibels.
-
-Note that servers generate *white noise*. White noise is often used for sound masking. For some, it helps them to relax and to fall asleep. A server in your bedroom, why not?
-
-
-
 ### Are there ways to reduce 3Node servers' noises?
 
 To reduce the noise, you can remove all the unnecessary cards in the servers as well as the HDD disks if you don't use them. Unplugging the SAS cables can also help. You can also set the fans to adjust their speed instead of being constant.
 
 At the end of the day, servers were manufactured for durability and efficiency, and not for being quiet. Most servers are placed in server rooms where noise doesn't matter much.
-
-
-
-
-### What is the difference between the two CPUs: i7-6700 and i7-6700T?
-
-The T stands for thermal throttled. The i7-6700T is 46% more energy efficient. While the i7-6700 has a 42% faster CPU speed and has a higher passmark. Note that the TFT reward is going to be the same. The difference is with power consumption: 35 Watt for the i7-6700t and 65 Watt for the i7-6700.
-
 
 
 
@@ -2737,23 +1788,18 @@ It is advised to keep the bootstrap image plugged in your 3Node. Once your node 
 You need the bootstrap image device plugged in every time you reboot a 3Node and it's a good practice to keep it plugged in all the time. The technical explanation is: (1) at first boot, it creates a minimum requirement on SSD which is used as cache (2) each time the system restarts it reuses this SSD piece but Zero-OS bootstrap is also needed to download the last image. Indeed, image is not stored on the machine and also no boot loader is installed.
 
 
-
-### When I set my farm on the ThreeFold Dashboard with polkadot.js, it asks for a Stellar payout address. What should I write?
-
-The easiest method would be to write the address on your ThreeFold Connect App. You can also write any address that is on the Stellar blockchain and has a trustline enabled with ThreeFold Token.
-
 ### It's written that my node is using 100% of HRU. What does it mean?
 
 HRU stands for your HDD space available. It means that you are using 100% of the HDD space available, or equivalently that you have no HDD on your system.
 
 
-### On the ThreeFold Explorer, I only see half of the virtual cores or threads my 3Node has, what can I do?
+### On the ThreeFold Node Finder, I only see half of the virtual cores or threads my 3Node has, what can I do?
 
 Check in the BIOS settings and make sure you have enabled Virtual Cores (or Hyper Threading/Logical Cores).
 
 
 
-### Why are the 3Nodes' resources different on the ThreeFold Explorer and the ThreeFold Dashboard?
+### Why are the 3Nodes' resources different on the ThreeFold Node Finder and the ThreeFold Dashboard?
 
 There is a difference because one shows the resources in GiB and the other in GB. It's just a way to display information, the resources are ultimately the same, but shown differently. 1 GiB = 1.073741824 GB.
 
@@ -2773,7 +1819,7 @@ Note that you can use [balenaEtcher](https://etcher.balena.io/) to format and bu
 
 
 
-### What do CRU, MRU, HRU and SRU mean on the ThreeFold Explorer?
+### What do CRU, MRU, HRU and SRU mean on the ThreeFold Node Finder?
 
 CRU means the number of virtual cores. MRU means the GB of ram (memory). HRU means the HDD capacity storage and SRU means the SSD capacity storage.
 
@@ -2793,25 +1839,25 @@ Note: If you want a new node ID for your 3Node, you will need to wipe the main S
 
 
 
-### How can I know if my 3Node is online on the Grid? Is there an Explorer for Grid V3?
+### How can I know if my 3Node is online on the Grid?
 
 There are multiple answers to this.
 
 (1) You can plug a monitor to your 3Node and check directly its status. 
 
-(2) You can check your 3Node status by using the Explorer of the [ThreeFold Dashboard](https://dashboard.grid.tf/).
+(2) You can check your 3Node status by using the Node Finder of the [ThreeFold Dashboard](https://dashboard.grid.tf/).
 
 (3) You can also use the unofficial, but highly useful [ThreeFold Node Status Bot](https://t.me/tfnodestatusbot) on Telegram. 
 
 
 
-### I booted my 3Node and the monitor says it's online and connected to the Grid. But the ThreeFold Explorer says it is offline? What can I do?
+### I booted my 3Node and the monitor says it's online and connected to the Grid. But the ThreeFold Node Finder says it is offline? What can I do?
 
-The Explorer refetches information every 2 hours. You can wait 2 hours and see if the problem persists. Then/or, you could reboot the 3Node and see if the Explorer sees it as online. 
+The Node Finder refetches information every 2 hours. You can wait 2 hours and see if the problem persists. Then/or, you could reboot the 3Node and see if the Node Finder sees it as online. 
 
 
 
-### My 3Node does show on the ThreeFold Explorer, but not on the ThreeFold Dashboard, what can I do?
+### My 3Node does show on the ThreeFold Node Finder, but not on the ThreeFold Dashboard, what can I do?
 
 If you're 3Node is correctly registered on the ThreeFold Grid but you cannot see it on the ThreeFold Dashboard, there can be many different ways to solve this issue.
 
@@ -2820,24 +1866,9 @@ One way to fix this is to go in the TF Dashboard, select *change the address* an
 If the first method did not work, you can try to remove the account and add it back up on the Polkadot.js extension. Before doing so, make sure you have a back up of your seed phrase as you will need it to re-enter the account. Your 3Node should then appear.
 
 
-
-### I set up my farm on ThreeFold Connect App. Can I use the Polkadot extension Dashboard instead?
-
-
-If you want to use the Dashboard, you can take the TFChain Secret from the app and import it into the Polkadot extension. For more information, read [this section](../threefold_token/storing_tft/tf_connect_app.md#move-farm-from-the-tf-connect-app-to-the-tf-portal-polkadotjs) of the Farming Guide. For the other way around (TF Dashboad to TF Connect App), read [this section](../threefold_token/storing_tft/tf_connect_app.md#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet) of the guide.
-
-
-
- 
-### Is it equivalent to create a farm on ThreeFold Connect App or via the Polkadot extension?
-
-Yes it is. Farm setup through the app and using the Polkadot extension with the Dashboard are equivalent. 
-
-
-
 ### If I upgrade my 3Node, will it increase my rewards?
 
-Yes. Use the simulator.grid.tf to verify the additional rewards. But note that, currently, upgrades are not recognized until the next minting cycle.
+Yes. Use the simulator to verify the additional rewards. But note that, currently, upgrades are not recognized until the next minting cycle.
 
 
 ### I booted my 3Node for the first time at the beginning of the month, then I did some upgrade or downgrade, will the ThreeFold Grid recognize the new hardware? Will it still be the same 3Node ID?
@@ -3005,14 +2036,6 @@ You can move 3Nodes between farms without losing the node IDs. You simply need t
 ### Is it possible to access the Error Screen or Log Screen?
 
 Yes! On the Zero-OS console, hit alt-F2 to open up the Error/Log Screen, and hit alt-F3 to go back to the main screen. 
-
-
-
-### I plugged an HDMI cable from my monitor into the node and the monitor is displaying nothing. What can I do?
-
-You may have to reboot with HDMI cable already connected. Video does not seem to be turned on unless HDMI is present at boot. Once you boot with HDMI in, you can unplug and replug and it will work.
-
-To simply see if your 3Node is online, you can go on the [ThreeFold Explorer](https://explorer.threefold.io) or check with the [Telegram ThreeFold Farm Status Bot](https://t.me/tfnodestatusbot).
 
 
 ### What does it mean when I see, during the 3Node boot, the message: error = context deadline exceeded?
@@ -3362,21 +2385,21 @@ Note: The bot should send you alerts when it considers any registered node to be
 
 
 
-### How does the Telegram Status Bot get information from my 3Node? My 3Node is online on the ThreeFold Explorer, but offline on the Telegram Status Bot, is this normal?
+### How does the Telegram Status Bot get information from my 3Node? My 3Node is online on the ThreeFold Node Finder, but offline on the Telegram Status Bot, is this normal?
 
 The status bot communicates directly by sending pings to the nodes over Yggdrasil every five minutes. Therefore, it will report on temporary network interruptions that might not affect your total uptime calculation as used for minting.
 
 
 
-### I noticed that when I reboot my 3Node, the uptime counter on the ThreeFold Explorer goes back to zero. Does it mean I lose uptime and the uptime start over again when I reboot the 3Node?
+### I noticed that when I reboot my 3Node, the uptime counter on the ThreeFold Node Finder goes back to zero. Does it mean I lose uptime and the uptime start over again when I reboot the 3Node?
 
-No. The only uptime you lose is the time your 3Node was offline from the ThreeFold Grid. This ThreeFold Grid still has the data of your total uptime of the month. The Explorer only shows this statistics as: "*This node has been up non-stop without being rebooted for now* [insert time]". If you maintain a total uptime above the minimum uptime, you're fine.
+No. The only uptime you lose is the time your 3Node was offline from the ThreeFold Grid. This ThreeFold Grid still has the data of your total uptime of the month. The Node Finder only shows this statistics as: "*This node has been up non-stop without being rebooted for now* [insert time]". If you maintain a total uptime above the minimum uptime, you're fine.
 
 *For now the farming rewards are proportional to the total uptime.
 
 
 ### One of my nodes is showing the wrong location. Any problem with that?
-The ThreeFold Explorer is showing your ISP location. This is perfectly normal.
+The ThreeFold Node Finder is showing your ISP location. This is perfectly normal.
 
 
 ## Memory
