@@ -57,15 +57,15 @@ TFT is used on the TFGrid to purchase network, compute and storage resources thr
 
 ## Current Distribution Values
 
-| **Tokens**                                  | **Distribution** | **Done**  |
-| ------------------------------------------- | ---------------- | --------- |
-| Farming rewards after April 19 2018         | 75%              | 224 M     |
-| Ecosystem Grants                            | 3%               | 22 M      |
-| Promotion & Marketing Effort                | 5%               | 100 M     |
-| Ecosystem Contribution, Liquidity Exchanges | 4%               | 40 M      |
-| Technology Acquisition + Starting Team      | 7%               | 290 M     |
-| Advisors, Founders & Team                   | 6%               | 241 M     |
-| **Total**                                   | **100%**         | **919 M** |
+| **Tokens**                                  | **Quantity**  |
+| ------------------------------------------- | --------- |
+| Farming rewards after April 19 2018         | 224 M     |
+| Ecosystem Grants                            | 22 M      |
+| Promotion & Marketing Effort                | 100 M     |
+| Ecosystem Contribution, Liquidity Exchanges | 40 M      |
+| Technology Acquisition + Starting Team      | 290 M     |
+| Advisors, Founders & Team                   | 241 M     |
+| **Total**                                   | **919 M** |
 
 ## Complemetary Information
 
