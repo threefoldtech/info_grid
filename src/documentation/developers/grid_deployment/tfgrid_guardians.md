@@ -18,5 +18,3 @@ Trusted guardians of the ThreeFold Grid can then be listed in the ThreeFold Manu
 You can become a guardian of the ThreeFold Grid by deploying your own instance of the full ThreeFold stack (main, test and dev networks) on your own domain.
 
 Information concerning trusted guardians of the ThreeFold Grid can then be displayed in the ThreeFold ecosystem, e.g. TF Manual, TF Forum, and more. Then, grid users can use any of the different grid instances to interact with the TFGrid. This cooperative system allows for a strong grid ecosystem that is resilient and decentralized by design.
-
-Join the discussions on the [ThreeFold Forum](https://forum.threefold.io/).

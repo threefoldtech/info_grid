@@ -18,8 +18,6 @@ This means that you could host your own instance of the ThreeFold Dashboard at `
 
 The process is actually very straightforward and we even provide a script to streamline the process.
 
-> Note: This currently works for devnet only. Soon it will also be possible to deploy stacks of the test and main networks. Stay tuned.
-
 ## Concrete Example
 
 For example, there is a TFGrid backend at this URL: [https://dashboard.bknd1.ninja.tf/](https://dashboard.bknd1.ninja.tf/).

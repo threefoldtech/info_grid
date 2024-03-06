@@ -16,7 +16,9 @@
 
 ## Introduction
 
-We present the steps to deploy a development network (devnet) instance of the TFGrid on a full VM.
+We present the steps to deploy a network instance of the TFGrid on a full VM. 
+
+For this guide, we will be deploying a devnet instance. While the steps are similar for testnet and mainnet, you will have to adjust your deployment depending on which network you use.
 
 ## Prerequisites
 
@@ -75,7 +77,7 @@ You can use tools such as [DNSChecker](https://dnschecker.org/) or [dig](https:/
   - **ACTIVATION_SERVICE_MNEMONIC**
     - Write the seed phrase of an account on devnet with at least 10 TFT in the wallet
   - **GRID_PROXY_MNEMONIC**
-    - Write the seed phrase of an account on devenet with at least 10 TFT in the wallet and a registered twin ID\*
+    - Write the seed phrase of an account on devnet with at least 10 TFT in the wallet and a registered twin ID\*
 
 > \*Note: If you've created an account using the ThreeFold Dashboard on devnet, the twin ID is automatically registered.
 ## Launch the Script
@@ -127,7 +129,7 @@ This can be helpful to troubleshoot errors.
 
 ## Update the Deployment
 
-Go into the correct folder for the network your deploying for, e.g. devnet, and run the following commands
+Go into the folder of the proper network, e.g. devnet, and run the following commands:
 
 ```
 git pull -r
