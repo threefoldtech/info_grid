@@ -7,13 +7,12 @@
   - [Verify your identity by Email](#verify-your-identity-by-email)
   - [Change email associated with TF account](#change-email-associated-with-tf-account)
 - [Create a Wallet](#create-a-wallet)
-- [Create a Farm](#create-a-farm)
 - [See ThreeFold Connect App and Wallet Transactions](#see-threefold-connect-app-and-wallet-transactions)
 - [Connect to the Planetary Network](#connect-to-the-planetary-network)
 - [Show Seed Phrase - Remove Account from TF Connect App](#show-seed-phrase---remove-account-from-tf-connect-app)
 - [Recover Account on the ThreeFold Connect App](#recover-account-on-the-threefold-connect-app)
-- [Move Farm from the TF Connect App to the TF Portal (polkadot.js)](#move-farm-from-the-tf-connect-app-to-the-tf-portal-polkadotjs)
-- [Import TF Portal (polkadot.js) Wallet to the TF Connect App Wallet](#import-tf-portal-polkadotjs-wallet-to-the-tf-connect-app-wallet)
+- [Import Farm from the TF Connect App to the TF Dashboard](#import-farm-from-the-tf-connect-app-to-the-tf-dashboard)
+- [Import TF Dashboard Wallet to the TF Connect App Wallet](#import-tf-dashboard-wallet-to-the-tf-connect-app-wallet)
 - [Send and Receive TFT between TF Connect Wallets](#send-and-receive-tft-between-tf-connect-wallets)
   - [Send TFT](#send-tft)
   - [Receive TFT](#receive-tft)
@@ -24,7 +23,7 @@
 
 ## Introduction
 
-The easiest way to send your farming rewards is to use the free ThreeFold Connect App. 
+The easiest way to send your farming rewards is to use the free ThreeFold Connect app. 
 
 It is available for [Android](https://play.google.com/store/apps/details?id=org.jimber.threebotlogin&hl=en&gl=US) and [iOS](https://apps.apple.com/us/app/threefold-connect/id1459845885).
 
@@ -36,14 +35,14 @@ It is available for [Android](https://play.google.com/store/apps/details?id=org.
 
 ## ThreeFold Connect Installation
 
-Either use the links above, or search for the ThreeFold Connect App on the Apple Store or the Google Play store. Then install and open the app. If you want to leave a 5 star review of the App, no one here will stop you!
+Either use the links above, or search for the ThreeFold Connect app on the Apple Store or the Google Play store. Then install and open the app. If you want to leave a 5 star review of the app, no one here will stop you!
 
 ![farming_tf_wallet_1](./img/farming_tf_wallet_1.png)
 ![farming_tf_wallet_2](./img/farming_tf_wallet_2.png)
 
-When you try to open the App, if you get an error message such as : "Error in initialization in Flagsmith...", you might need to upgrade your phone to a newer software version (8.0 for Android and 13 for iOS).
+When you try to open the app, if you get an error message such as : "Error in initialization in Flagsmith...", you might need to upgrade your phone to a newer software version (8.0 for Android and 13 for iOS).
 
-Once you are in the application, you will see some introduction pages to help you familiarize with the TF Connect App. You will also be asked to read and accept ThreeFold's Terms and conditions.
+Once you are in the application, you will see some introduction pages to help you familiarize with the TF Connect app. You will also be asked to read and accept ThreeFold's Terms and conditions.
 
 ![farming_tf_wallet_3](./img/farming_tf_wallet_3.png)
 ![farming_tf_wallet_4](./img/farming_tf_wallet_4.png)
@@ -56,7 +55,7 @@ You will then be asked to choose a *Threefold Connect Id*. This ID will be used,
 
 ![farming_tf_wallet_6](./img/farming_tf_wallet_6.png)
 
-Next, you need to add a valid email address. This will be used as a broad KYC. You will need to access your email and confirm the validation email from ThreeFold to use properly the TF Connect App Wallet.
+Next, you need to add a valid email address. This will be used as a broad KYC. You will need to access your email and confirm the validation email from ThreeFold to use properly the TF Connect app wallet.
 
 ![farming_tf_wallet_7](./img/farming_tf_wallet_7.png)
 
@@ -72,11 +71,11 @@ Then, you'll be asked to confirm your TF 3bot name and the associated email.
 
 ![farming_tf_wallet_10](./img/farming_tf_wallet_10.png)
 
-Finally, you will be asked to choose a 4-digit pin. This will be needed to use the ThreeFold Connect App. If you ever forget this 4-digit pin, you will need to recover your account from your 3bot name and your seed phrase. You will need to confirm the new pin in the next step.
+Finally, you will be asked to choose a 4-digit pin. This will be needed to use the ThreeFold Connect app. If you ever forget this 4-digit pin, you will need to recover your account from your 3bot name and your seed phrase. You will need to confirm the new pin in the next step.
 
 ![farming_tf_wallet_11](./img/farming_tf_wallet_11.png)
 
-That's it! You've created your ThreeFold Connect account. You can press the hamburger menu on the top left to explore the ThreeFold Connect App.
+That's it! You've created your ThreeFold Connect account. You can press the hamburger menu on the top left to explore the ThreeFold Connect app.
 
 ![farming_tf_wallet_12](./img/farming_tf_wallet_12.png)
 
@@ -111,7 +110,7 @@ If you want to change your email, simply click on the *pencil* next to your emai
 
 ## Create a Wallet
 
-To create a wallet, click on the ThreeFold Connect App menu. This is what you see. Choose *Wallet*.
+To create a wallet, click on the ThreeFold Connect app menu. This is what you see. Choose *Wallet*.
 
 ![farming_tf_wallet_13](./img/farming_tf_wallet_13.png)
 
@@ -145,37 +144,13 @@ At the top of the section *Wallet*, we can see that the name has changed.
 
 ![farming_tf_wallet_21](./img/farming_tf_wallet_21.png)
 
-Now, if you want to copy your Stellar Address, simply click on the button presented with the green circle. To access the TF Chain address, click on the button presented with the red circle. When your phone has copied the address, the TF App will give show a confirmation message as shown below.
+Now, if you want to copy your Stellar Address, simply click on the button presented with the green circle. To access the TF Chain address, click on the button presented with the red circle. When your phone has copied the address, the TF Connect app will give show a confirmation message as shown below.
 
 ![farming_tf_wallet_22](./img/farming_tf_wallet_22.png)
 
 In some situations, you will want to access the Stellar and TF Chain secrets. To do so, simply click on the "eye" button of the desired chain, and then copy the secret.
 
 ![farming_tf_wallet_23](./img/farming_tf_wallet_23.png)
-
-## Create a Farm
-
-Now, being a farmer, you might wonder: can I create a ThreeFold Farm with the ThreeFold Connect App. Well, yes! Here is how to do so.
-
-Click on the hamburger menu on the top left of your screen and select *Farmer Migration*. This title is somehow misleading, as you can not only migrate farms, but create farms too!
-
-![farming_tf_wallet_24](./img/farming_tf_wallet_24.png)
-
-To create a farm, either click on the *plus* sign at the top right, or click on *Click to create ->*.
-
-![farming_tf_wallet_25](./img/farming_tf_wallet_25.png)
-
-To create a farm, choose the wallet associated with the farm. Also, choose a Farm Name then read and accept the Terms and Conditions. Finally, click *submit*.
-
-![farming_tf_wallet_26](./img/farming_tf_wallet_26.png)
-
-The TF Connect App will give you a confirmation message if the farm was created successfully. If it doesn't work the first time, make sure you have a good Internet connection and try again. If you click on the down arrow, you will be able to see your *Farm Information*.
-
-![farming_tf_wallet_27](./img/farming_tf_wallet_27.png)
-
-You can see on this screen the address were your farming rewards will be sent to. It is the Stellar address associated with the ThreeFold Wallet used to create the farm.
-
-![farming_tf_wallet_28](./img/farming_tf_wallet_28.png)
 
 ## See ThreeFold Connect App and Wallet Transactions
 
@@ -195,7 +170,7 @@ Connecting to the Planetary Network couldn't be easier. Simply click on the conn
 
 ## Show Seed Phrase - Remove Account from TF Connect App
 
-To see your seed phrase or remove your account from the TF Connect App, choose *Settings* in the ThreeFold Connect App menu.
+To see your seed phrase or remove your account from the TF Connect app, choose *Settings* in the ThreeFold Connect app menu.
 
 ![farming_tf_wallet_32](./img/farming_tf_wallet_32.png)
 
@@ -205,7 +180,7 @@ First, to see your seed phrase, click on this button as shown below:
 
 You will then be able to see your seed phrase. You can make sure you have your seed phrase somewhere safe, offline, before removing your account.
 
-Now, we will remove the account from the ThreeFold Connect App. In Settings, click on the arrow circled in green and click on the red button with a white dashed in it. Beware: once done, you can only recover your account with your **3bot ID** and your **seed phrase**.
+Now, we will remove the account from the ThreeFold Connect app. In Settings, click on the arrow circled in green and click on the red button with a white dashed in it. Beware: once done, you can only recover your account with your **3bot ID** and your **seed phrase**.
 
 ![farming_tf_wallet_33](./img/farming_tf_wallet_33.png)
 
@@ -230,13 +205,15 @@ You will then be asked to choose and confirm a new 4-digit pin code. Once this i
 That's it! You've recovered your account.
 
 
-## Move Farm from the TF Connect App to the TF Portal (polkadot.js)
+## Import Farm from the TF Connect App to the TF Dashboard
 
-If you want to move your farm from the ThreeFold Connect App to the portal.grif.tf (polkadot.js), follow these steps. Note that you cannot, for now, move your farm from the Portal to the ThreeFold Connect App.
+If you want to import your farm from the ThreeFold Connect app to the ThreeFold Dashboard, follow these steps.  You will need to use the old version of the Dashboard for this ([https://old.dashboard.grid.tf](https://old.dashboard.grid.tf)).
+
+Note that as of now, you cannot import your farm from the TF Dashboard to the ThreeFold Connect app, but it is possible to import your wallet.
 
 First, you want to find the TF Chain Secret, this is, in short, a hex version of the private key. To find the secret, head over to the *Farmer migration* (via the TF Menu).
 
-In the *Farming migration* section, click on the arrow (in green here) of the farm you want to export on the ThreeFold Portal.
+In the *Farming migration* section, click on the arrow (in green here) of the farm you want to export on the ThreeFold Dashboard.
 
 ![farming_tf_wallet_45](./img/farming_tf_wallet_45.png)
 
@@ -244,7 +221,7 @@ Then, click on the arrow (in green) to see your TF Chain Secret.
 
 ![farming_tf_wallet_46](./img/farming_tf_wallet_46.png)
 
-Click on the button to copy the Secret. The App will show a confirmation message. 
+Click on the button to copy the Secret. The app will show a confirmation message. 
 
 ![farming_tf_wallet_47](./img/farming_tf_wallet_47.png)
 
@@ -274,11 +251,11 @@ Choose a name for your account. Choose a password.
 
 ![farming_tf_wallet_53](./img/farming_tf_wallet_53.png)
 
-When you go on the [ThreeFold Portal](https://portal.grid.tf/), you will now see your newly added account. Click on it.
+When you go on the [ThreeFold Dashboard](https://old.dashboard.grid.tf), you will now see your newly added account. Click on it.
 
 ![farming_tf_wallet_54](./img/farming_tf_wallet_54.png)
 
-In the Farm section, you can now see your farm. You have successfully move the farm from the ThreeFold Connect App to the ThreeFold Portal.
+In the Farm section, you can now see your farm. You have successfully move the farm from the ThreeFold Connect app to the ThreeFold Dashboard.
 
 ![farming_tf_wallet_55](./img/farming_tf_wallet_55.png)
 
@@ -286,19 +263,19 @@ You can see here that the farming reward address is the same as before.
 
 ![farming_tf_wallet_56](./img/farming_tf_wallet_56.png)
 
-That's it! You have successfully move the farm from the ThreeFold Connect App to the ThreeFold Portal.
+That's it! You have successfully imported the farm from the ThreeFold Connect app to the ThreeFold Dashboard.
 
 
 
-## Import TF Portal (polkadot.js) Wallet to the TF Connect App Wallet
+## Import TF Dashboard Wallet to the TF Connect App Wallet
 
-Now that we've seen how to go from the TF Connect App to the ThreeFold Portal (Polkadot.js), we will now show how to go the other way around. This method is very simple. You will need your Polkadot.js seed phrase handy.
+Now that we've seen how to go from the TF Connect app to the ThreeFold Dashboard, we will now show how to go the other way around. This method is very simple. You will need your TF Dashboard seed phrase handy.
 
-Go in the Wallet section of the ThreeFold Connect App and click on import at the bottom right (in green).
+Go in the Wallet section of the ThreeFold Connect app and click on import at the bottom right (in green).
 
 ![farming_tf_wallet_57](./img/farming_tf_wallet_57.png)
 
-Then simply name your wallet and enter the Polkadot.js seed phrase.
+Then simply name your wallet and enter the TF Dashboard seed phrase.
 
 ![farming_tf_wallet_58](./img/farming_tf_wallet_58.png)
 
@@ -327,7 +304,7 @@ To generate the QR Code, select the chain you want to use, Stellar or TFChain, e
 
 ### Send TFT to Hardware Wallet on Stellar Blockchain
 
-Before sending TFT to a hardware wallet, make sure the hardware wallet has a TFT trustline on the Stellar Blockchain. For more information, read the section below.
+Before sending TFT to a hardware wallet, make sure the hardware wallet has a TFT trustline on the Stellar Blockchain. For more information, read [this section](./hardware_wallet.md).
 
 ## Disclaimer
 
