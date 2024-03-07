@@ -3,12 +3,11 @@
 <h2>Table of Contents </h2>
 
 - [Introduction to TFT](#introduction-to-tft)
-- [Maximum Supply](#maximum-supply)
 - [Proof-of-Capacity](#proof-of-capacity)
 - [Proof-of-Utilization](#proof-of-utilization)
   - [Proof-of-Utility Distribution Flow](#proof-of-utility-distribution-flow)
-- [TFT Marketcap](#tft-marketcap)
-- [Current Distribution Values](#current-distribution-values)
+- [TFT Distribution](#tft-distribution)
+- [TFT Marketcap and Market Price](#tft-marketcap-and-market-price)
 - [Complemetary Information](#complemetary-information)
 - [Disclaimer](#disclaimer)
 
@@ -18,7 +17,7 @@
 
 ThreeFold tokens, or TFTs, are exclusively generated when new capacity is added to the TF Grid. There are no centralized issuers. Tokens have not been created out of thin air. 
 
-While the ThreeFold Grid can expand, a maximum of 4 Billion TFTs can ever be in circulation. This limit ensures stability of value and incentivization for all stakeholders. 
+While the ThreeFold Grid can expand, a maximum of 1 billion TFTs can ever be in circulation. This limit ensures stability of value and incentivization for all stakeholders. 
 
 TFT lives on the Stellar Blockchain. TFT holders benefit from a big ecosystem of proven wallets and mediums of exchange. 
 
@@ -28,13 +27,9 @@ Anyone with internet connection, power supply and necessary hardware can become 
 
 By farming, buying, holding, and utilizing ThreeFold Tokens, you are actively supporting the expansion of the ThreeFold Grid and its use cases — creating a more sustainable, fair, and equally accessible Internet.
 
-## Maximum Supply
-
-The maximum amount of tokens is 4 billion, but its very unlikely we ever get there because of our burning process and recent decision to stop minting TFT. [Read more about this here](https://forum.threefold.io/t/december-22-2023-update-from-the-team/4170).
-
 ## Proof-of-Capacity
 
-ThreeFold uses proof-of-capacity to mint tokens. Since the genenis pool, all tokens that are being minted are the result of farming. 
+ThreeFold uses proof-of-capacity to mint tokens. Since the genenis pool, all tokens that are being minted are the result of farming. Minting will stop during 2024, to keep the total amount of TFT at 1 billion, instead of the previously planned 4 billion. Read more about this [here](https://forum.threefold.io/t/end-feb-2024-update-from-the-team/4233).
 
 > For more details, see [Proof of Capacity](../../farming/proof_of_capacity.md)
 
@@ -48,24 +43,39 @@ TFT is used on the TFGrid to purchase network, compute and storage resources thr
 
 > For more details, see [Proof-of-Utilization](../../farming/proof_of_utilization.md)
 
-## TFT Marketcap
+## TFT Distribution
+
+The current supply distribution of TFT is as follows:
+
+| Current Supply Distribution                 | Qty (Millions) |
+| ------------------------------------------- | -------------- |
+| Farming rewards (as of 02-24 minting)       | 290            |
+| Ecosystem Grants                            | 22             |
+| Promotion & Marketing Effort                | 100            |
+| Ecosystem Contribution, Liquidity Exchanges | 40             |
+| Technology Acquisition + Starting Team      | 290            |
+| Advisors, Founders & Team                   | 241            |
+| Current supply                              | 983            |
+
+The supply distribution of TFT is as follows:
+
+| Supply Distribution | Qty (Millions) |
+| ------------------- | -------------- |
+| Current supply      | 983            |
+| Illiquid Supply     | 66.5           |
+| Circulating supply  | 916.5          |
+| Maximum supply      | 1000           |
+
+## TFT Marketcap and Market Price
+
+The TFT market price and marketcap are as follows:
 
 | **Description**           | **Value**     |
 | ------------------------- | ------------- |
-| Total Liquid Tokens       | {{#include ../../../values/tft_liquidity.md}}     |
-| TFT Marketcap at {{#include ../../../values/tft_value.md}} USD | {{#include ../../../values/tft_marketcap.md}}  USD |
+| TFT Market Price       | {{#include ../../../values/tft_value.md}} USD |
+| TFT Market Cap | {{#include ../../../values/tft_marketcap.md}}  USD |
 
-## Current Distribution Values
-
-| **Tokens**                                  | **Quantity**  |
-| ------------------------------------------- | --------- |
-| Farming rewards after April 19 2018         | 224 M     |
-| Ecosystem Grants                            | 22 M      |
-| Promotion & Marketing Effort                | 100 M     |
-| Ecosystem Contribution, Liquidity Exchanges | 40 M      |
-| Technology Acquisition + Starting Team      | 290 M     |
-| Advisors, Founders & Team                   | 241 M     |
-| **Total**                                   | **919 M** |
+> Note: The values here are subject to change. Check the current market conditions.
 
 ## Complemetary Information
 
