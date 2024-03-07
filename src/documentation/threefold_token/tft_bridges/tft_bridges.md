@@ -63,3 +63,7 @@ As shown in the diagram, to go from BSC to TF Chain, or from TF Chain to BSC, yo
 BSC, Stellar and Ethereum can be used to sell/buy TFT, while TFChain can be used to deploy Dapps on the [ThreeFold Dashboard](https://dashboard.grid.tf). The TFT minting process happens on Stellar Blockchain.
 
 > Note: You should always start with a small amount the first time you try a bridge.
+
+## Bridge Details
+
+When you bridge TFT from Stellar to another chain, the TFT on Stellar is vaulted. When you bridge TFT back to Stellar, the TFT on the other chain is burned and the vaulted TFT is released.
