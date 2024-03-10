@@ -305,7 +305,7 @@ Note that, at any moment, if you want to see the information on your Terraform d
 
 ### SSH into the 3Nodes
 
-* To [SSH into the 3Nodes](https://www2.manual.grid.tf/getstarted/ssh_guide/ssh_guide.html), write the following while making sure to set the proper IP address for each VM:
+* To [SSH into the 3Nodes](../../getstarted/ssh_guide/ssh_guide.md), write the following while making sure to set the proper IP address for each VM:
   *  ```
      ssh root@3node_IPv4_Address
      ```
