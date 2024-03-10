@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-mkdir -p src/threefold_token/token_overview/special_wallets/wallet_data
-cd src/threefold_token/token_overview/special_wallets/wallet_data
+mkdir -p src/knowledge_base/about/token_overview/special_wallets/wallet_data
+cd src/knowledge_base/about/token_overview/special_wallets/wallet_data
 
 wallets=(
 GA7OPN4A3JNHLPHPEWM4PJDOYYDYNZOM7ES6YL3O7NC3PRY3V3UX6ANM
