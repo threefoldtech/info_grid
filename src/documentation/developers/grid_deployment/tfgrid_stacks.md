@@ -3,7 +3,6 @@
 
 
 - [Introduction](#introduction)
-- [Concrete Example](#concrete-example)
 - [Advantages](#advantages)
 - [Run Your Own Stack](#run-your-own-stack)
 
@@ -17,10 +16,6 @@ ThreeFold is an open-source project and anyone can run the full stack of the TFG
 This means that you could host your own instance of the ThreeFold Dashboard at `dashboard.yourdomain.com` that would serve your own instance of the complete TFGrid stack! Users could then access the ThreeFold Dashboard via your own domain.
 
 The process is actually very straightforward and we even provide a script to streamline the process.
-
-## Concrete Example
-
-For example, there is a TFGrid backend at this URL: [https://dashboard.bknd1.ninja.tf/](https://dashboard.bknd1.ninja.tf/).
 
 ## Advantages
 
