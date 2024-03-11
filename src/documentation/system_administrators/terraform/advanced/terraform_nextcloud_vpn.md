@@ -328,7 +328,7 @@ We now set a daily cron job that will make a backup between the Nextcloud VM and
 
 > Note: By default, the Nextcloud automatic backup is set at 4:00 UTC. For this reason, we set the Rsync daily backup at 8:00 UTC.
 
-> Note: To set Rsync with a script, [read this documentation](https://manual.grid.tf/computer_it_basics/cli_scripts_basics.html#automate-backup-with-rsync). 
+> Note: To set Rsync with a script, [read this documentation](../../computer_it_basics/file_transfer.md#automate-backup-with-rsync). 
 
 # Future Projects
 
