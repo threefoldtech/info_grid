@@ -25,7 +25,7 @@ To use a GPU on the TFGrid, users need to rent a dedicated node. Once they have 
 
 ## Filter and Reserve a GPU Node
 
-You can filter and reserve a GPU node using the [Dedicated Nodes section](https://dashboard.grid.tf/portal/account-nodes) of the **ThreeFold Portal**.
+You can filter and reserve a GPU node using the [Dedicated Nodes section](../../dashboard/deploy/dedicated_machines.md) of the **ThreeFold Dashboard**.
 
 ### Filter Nodes
 

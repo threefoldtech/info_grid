@@ -34,7 +34,7 @@ We want to find a proper 3Node to deploy our workload. For this guide, we want a
 
 We show here how to find a suitable 3Node using the ThreeFold Explorer.
 
-* Go to the ThreeFold Grid's [Explorer](https://dashboard.grid.tf/explorer/nodes) (Main Net)
+* Go to the ThreeFold Grid [Node Finder](https://dashboard.grid.tf/#/deploy/node-finder/) (Main Net)
 * Find a 3Node with suitable resources for the deployment and take note of its node ID on the leftmost column `ID`
 * For proper understanding, we give further information on some relevant columns:
   * `ID` refers to the node ID
