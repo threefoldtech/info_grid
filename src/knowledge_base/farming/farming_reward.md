@@ -26,7 +26,7 @@ The Proof-of-Capacity records Internet resources from the 3Node:
 
 The ThreeFold Blockchain (TFChain) uses work algorythm called "Proof-of-Capacity" to verify the Internet capacity provided by 3Nodes. Put simply, PoC verifies, on an ongoing basis, that farms are honestly representing the Internet capacity they provide to the network.
 
-**See Proof-of-Capacity in action** by visiting the [ThreeFold Grid Capacity Explorer](https://dashboard.grid.tf/explorer/nodes) which represents the best resource to view POC-related data. 
+**See Proof-of-Capacity in action** by visiting the [ThreeFold Grid Node Finder](https://dashboard.grid.tf/#/deploy/node-finder/) which represents the best resource to view POC-related data. 
 
 ## What is proof-of-capacity? 
  
@@ -56,7 +56,7 @@ The main advantage of PoC to farmers it makes it really easy to run a 3Node. It 
 3. Zero-OS reports used IT capacity towards TFChain
 4. TFChain and TFDAO will calculate rewards as required for the farmer (TFGrid 3.1.x)
 5. TFChain will mint the required TFT and send them to account on TFChain of TFFarmer.
-6. Everyone can use the [ThreeFold Explorer](https://dashboard.grid.tf/explorer/nodes) to see where capacity is available. This info comes from the TFChain.
+6. Everyone can use the [ThreeFold Node Finder](https://dashboard.grid.tf/#/deploy/node-finder/) to see where capacity is available. This info comes from the TFChain.
 
 
 ## TFT Rewards for TFGrid Mainnet

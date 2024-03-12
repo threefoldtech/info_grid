@@ -13,9 +13,7 @@
 
 ## Introduction
 
-The ThreeFold Blockchain (TFChain) uses work algorythm called "Proof-of-Capacity" to verify the Internet capacity provided by 3Nodes. Put simply, PoC verifies, on an ongoing basis, that farms are honestly representing the Internet capacity they provide to the network.
-
-**See Proof-of-Capacity in action** by visiting the [ThreeFold Grid Capacity Explorer](https://dashboard.grid.tf/explorer/statistics) which represents the best resource to view POC-related data. 
+The ThreeFold Blockchain (TFChain) uses work algorythm called "Proof-of-Capacity" to verify the Internet capacity provided by 3Nodes. Put simply, PoC verifies, on an ongoing basis, that farms are honestly representing the Internet capacity they provide to the network. 
 
 ## What is proof-of-capacity? 
  
@@ -45,7 +43,7 @@ The main advantage of PoC to farmers it makes it really easy to run a 3Node. It 
 3. Zero-OS reports used IT capacity towards TFChain
 4. TFChain and TFDAO will calculate rewards as required for the farmer (TFGrid 3.1.x)
 5. TFChain will mint the required TFT and send them to account on TFChain of TFFarmer.
-6. Everyone can use the [ThreeFold Explorer](https://dashboard.grid.tf/explorer/statistics) to see where capacity is available. This info comes from the TFChain.
+6. Everyone can use the [ThreeFold Node Finder](https://dashboard.grid.tf/#/deploy/node-finder/) to see where capacity is available. This info comes from the TFChain.
 
 
 ## PoC Rewards
@@ -94,4 +92,4 @@ The below table expands on CU, SU, NU and IPAddr and their farming rewards:
 
 > **The rewards above are calculated according to the current TFT to USD price in TFChain of 0.08. TFDAO is responsible to change this price in accordance to current marketsituation and liquidity.**
 
-The above farming rewards apply for 3Nodes registered in TFChain for ThreeFold Grid v3. Anyone can calculate their potential rewards using the [Farming Reward Calculator](https://dashboard.grid.tf/calculator/simulator). The same CU, SU, NU and IPAddr principles apply to the sales of Internet capacity in the form of [cloud units](../cloud/cloudunits.md).
+The above farming rewards apply for 3Nodes registered in TFChain for ThreeFold Grid v3. Anyone can calculate their potential rewards using the [Farming Reward Simulator](https://dashboard.grid.tf/#/farms/simulator/). The same CU, SU, NU and IPAddr principles apply to the sales of Internet capacity in the form of [cloud units](../cloud/cloudunits.md).

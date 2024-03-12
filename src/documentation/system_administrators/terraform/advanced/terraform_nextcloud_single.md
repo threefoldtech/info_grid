@@ -73,7 +73,7 @@ We first need to decide on which 3Node we will be deploying our workload.
 
 We thus start by finding a 3Node with sufficient resources. For this current Nextcloud guide, we will be using 1 CPU, 2 GB of RAM and 50 GB of storage. We are also looking for a 3Node with a public IPv4 address.
 
-* Go to the ThreeFold Grid's [Explorer](https://dashboard.grid.tf/explorer/nodes) (Main Net)
+* Go to the ThreeFold Grid [Node Finder](https://dashboard.grid.tf/#/deploy/node-finder/) (Main Net)
 * Find a 3Node with suitable resources for the deployment and take note of its node ID on the leftmost column `ID`
 * For proper understanding, we give further information on some relevant columns:
   * `ID` refers to the node ID

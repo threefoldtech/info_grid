@@ -286,6 +286,7 @@
         - [Genesis Pool Details](knowledge_base/about/genesis_block_pool_details.md)
     - [ThreeFold Tech](knowledge_base/about/threefold_tech.md)
     - [Organisation Structure](knowledge_base/about/orgstructure.md)
+      - [Governance](knowledge_base/about/governance.md)
       - [ThreeFold Companies](knowledge_base/about/threefold_companies.md)
       - [ThreeFold Dubai](knowledge_base/about/threefold_dubai.md)
       - [ThreeFold VZW](knowledge_base/about/threefold_vzw.md)
