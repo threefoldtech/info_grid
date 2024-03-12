@@ -1,26 +1,26 @@
-name: manual.dev.grid.tf
+name: www2.manual.dev.grid.tf
 on:
   push:
-    branches: [ development ]
+    branches: [ development_staging ]
 
 jobs:
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: pushing latest change on manual.dev.grid.tf
+    - name: pushing latest change on www2.manual.dev.grid.tf
       uses: appleboy/ssh-action@master
       with:
-        host: manual.dev.grid.tf
+        host: www2.manual.dev.grid.tf
         username: ${{ secrets.TF_USER }}
         key: ${{ secrets.TF_SECRET }}
         port: ${{ secrets.TF_PORT }}
         script: |
-          cd websites/development/info_grid/
-          git checkout development
+          cd websites/development/staging/info_grid/
+          git checkout development_staging
           git log -1
           git fetch
-          git reset --hard origin/development
+          git reset --hard origin/development_staging
           make build
 
   wait:
@@ -43,4 +43,4 @@ jobs:
         id: link-report
         uses: docker://ghcr.io/threefoldfoundation/website-link-checker:latest
         with:
-          args: 'https://www.manual.dev.grid.tf -e 404 501 503 504 -w all'
+          args: 'https://www2.manual.dev.grid.tf -e 404 501 503 504 -w all'

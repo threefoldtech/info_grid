@@ -16,7 +16,7 @@ jobs:
         key: ${{ secrets.TF_SECRET }}
         port: ${{ secrets.TF_PORT }}
         script: |
-          cd websites/info_grid/
+          cd websites/master/info_grid/
           git checkout master
           git log -1
           git fetch
