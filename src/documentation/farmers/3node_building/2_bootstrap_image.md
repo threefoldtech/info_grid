@@ -7,7 +7,6 @@
 - [Burn the Zero-OS Bootstrap Image](#burn-the-zero-os-bootstrap-image)
   - [CD/DVD BIOS](#cddvd-bios)
   - [USB Key BIOS+UEFI](#usb-key-biosuefi)
-- [Bootstrap Image for Certified 3Node](#bootstrap-image-for-certified-3node)
 - [Expert Mode](#expert-mode)
   - [Use a Specific Kernel](#use-a-specific-kernel)
   - [Disable GPU](#disable-gpu)
@@ -20,8 +19,6 @@
 ## Introduction
 
 We will now learn how to create a Zero-OS bootstrap image in order to boot a DIY 3Node.
-
-Note: For certified 3Nodes, read [this section](#bootstrap-image-for-certified-3node).
 
 ## Download the Zero-OS Bootstrap Image
 
@@ -92,17 +89,6 @@ Here the * is to indicate that you must adjust according to your disk. To see yo
 For Windows, if you are using the "dd" able image, instead of writing command line, you can use the free USB flashing program called [Rufus](https://sourceforge.net/projects/rufus.mirror/) and it will automatically do this with no need for Linux or command line. Rufus also formats the boot media in the process.
 
 
-
-## Bootstrap Image for Certified 3Node
-
-After creating a farm, to enable the certified farming status on your 3Node, you need to provide your farm ID and your farm name to the ThreeFold Support. You can do this by either using the [ThreeFold live chat](https://threefoldfaq.crisp.help/en/) or by sending an email at [info@threefold.io](mailto:info@threefold.io). The ThreeFold team will then send you a bootstrap image for your certified 3Node. You will need to replace the existing bootstrap image present on the USB key attached to the 3Node with this new bootstrap image for certified 3Node. Simply follow the steps below:
-
-* Download the zip file containing your new bootstrap image.
-* When you unzip the file, you’ll see a file named `BOOTX64.EFI` within the `BOOT/EFI` directory.
-  * Simply copy this file onto the USB key within the same directories that exist there, to overwrite the existing `BOOTX64.EFI` file.
-* Insert the USB key in the 3Node and boot it again.
-
-Your 3Node has now a bootstrap image for certified 3Node.
 
 ## Expert Mode
 
