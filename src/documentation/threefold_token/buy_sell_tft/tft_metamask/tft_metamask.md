@@ -20,7 +20,7 @@ In this guide, we present how to buy and sell ThreeFold Tokens on BNB Smart Chai
 
 ## TFT Addresses
 
-With MetaMask, you can buy and sell TFT on both Binance Smart Chain and the Ethereum chain. Make sure to use the correct TFT address when doing transactions.
+With MetaMask, you can buy and sell TFT on both BNB Smart Chain and the Ethereum chain. Make sure to use the correct TFT address when doing transactions.
 
 ### Ethereum Chain Address
 
