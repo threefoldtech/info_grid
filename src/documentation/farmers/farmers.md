@@ -1,6 +1,6 @@
 # ThreeFold Farmers
 
-This section covers all practical tutorials on how to farm on the ThreeFold Grid.
+This section covers all practical information on how to become a cloud service provider (farmer) on the ThreeFold Grid.
 
 For complementary information on ThreeFold farming, refer to the [Farming](../../knowledge_base/farming/farming_toc.md) section.
 

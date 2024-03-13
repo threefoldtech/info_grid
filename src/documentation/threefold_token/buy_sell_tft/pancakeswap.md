@@ -12,17 +12,15 @@
 
 ## Introduction
 
-Welcome to our tutorial on how to buy TFT on Binance Smart Chain (BSC) using [Pancake Swap](https://pancakeswap.finance/)! 
+In this guide, we present how to buy and sell ThreeFold Tokens on BNB Smart Chain (BSC) using [Pancake Swap](https://pancakeswap.finance/).
 
-[**Binance Smart Chain**](https://coinmarketcap.com/alexandria/article/what-is-binance-smart-chain) is a blockchain network that enables the execution of smart contracts and decentralized applications, while **Pancake Swap** is a popular decentralized exchange (DEX) built on BSC. 
-
-By following the steps outlined in this guide, you'll be able to purchase TFT tokens on Pancake Swap seamlessly and take advantage of the benefits offered by the Binance Smart Chain network.
+**BNB Smart Chain** is a blockchain network that enables the execution of smart contracts and decentralized applications, while **Pancake Swap** is a popular decentralized exchange (DEX) built on BSC. 
 
 ## Prerequisites
 
 Before you can buy TFT on Pancake Swap, there are a few prerequisites you need to fulfill. Here's what you'll need:
 
-- **BSC Wallet**: To interact with the Binance Smart Chain and Pancake Swap, you'll need a BSC-compatible wallet. [MetaMask](https://metamask.io/) is a popular option that supports BSC. Make sure to set up and secure your wallet before proceeding.
+- **BSC Wallet**: To interact with the BNB Smart Chain and Pancake Swap, you'll need a BSC-compatible wallet. [MetaMask](https://metamask.io/) is a popular option that supports BSC. Make sure to set up and secure your wallet before proceeding.
 
 > [Set up a MetaMask Wallet](../storing_tft/metamask.md)
 
@@ -30,7 +28,7 @@ Before you can buy TFT on Pancake Swap, there are a few prerequisites you need t
 
 > [Connect Wallet to Pancake Swap](https://docs.pancakeswap.finance/readme/get-started/connection-guide)
 
-- **Get BNB Tokens**: As the native cryptocurrency of Binance Smart Chain, BNB is required to pay for transaction fees on the network. Ensure you have some BNB tokens in your BSC wallet to cover these fees when buying TFT on Pancake Swap. Read [this tutorial](https://fortunly.com/articles/how-to-buy-bnb/) to know where you can buy BNB and transfer them to your BSC Wallet.
+- **Get BNB Tokens**: As the native cryptocurrency of BNB Smart Chain, BNB is required to pay for transaction fees on the network. Ensure you have some BNB tokens in your BSC wallet to cover these fees when buying TFT on Pancake Swap. Read [this tutorial](https://fortunly.com/articles/how-to-buy-bnb/) to know where you can buy BNB and transfer them to your BSC Wallet.
 
 > [Get BNB Tokens](https://docs.pancakeswap.finance/readme/get-started/bep20-guide)
 
@@ -48,7 +46,7 @@ That's it! You have officially swapped BNB into TFT.
 
 ## Important Notice
 
-If you are looking for ways to provide liquidity for TFT on Binance Smart Chain on Pancake Swap, you will find the according information [here](../liquidity/liquidity_pancake.md).
+If you are looking for ways to provide liquidity for TFT on BNB Smart Chain on Pancake Swap, you will find the according information [here](../liquidity/liquidity_pancake.md).
 
 ## Disclaimer
 

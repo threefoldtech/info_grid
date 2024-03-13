@@ -13,30 +13,11 @@
 
 ## Introduction
 
-The Threefold token (TFT) is the utility token of the Threefold Grid, a decentralized and open-source project offering network, compute and storage capacity.
+In this guide, you'll learn how to buy ThreeFold Tokens with [Lobstr](https://lobstr.co/) using a credit or a debit card and a TF Connect wallet. This is a simple method that works well for small to medium purchases.
 
-Threefold Tokens (TFT) are created (minted) by the ThreeFold Blockchain (TFChain) only when new Internet capacity is added to the ThreeFold Grid by farmers. For this reason, TFT is a pure utility token as minting is solely the result of farming on the Threefold Grid.
+Lobstr is an app for managing digital assets like TFT on the Stellar blockchain. In this case, we'll first obtain Stellar's native currency, Lumens (XLM) and swap them for TFT.
 
-* To **farm** TFT, read the [complete farming guide](https://forum.threefold.io/t/threefold-farming-guide-part-1/2989).
-
-* To **buy** TFT, follow this guide.
-
-There are many ways to buy TFT:
-
-* You can buy TFT on [Lobstr](https://lobstr.co/)
-
-* You can buy TFT at [GetTFT.com](https://gettft.com/gettft/)
-
-* You can buy TFT on [Pancake Swap](https://pancakeswap.finance/swap?inputCurrency=BNB&outputCurrency=0x8f0FB159380176D324542b3a7933F0C2Fd0c2bbf)
-
-For the current guide, we will show how to buy TFT on the [Lobstr app](https://lobstr.co/).
-The process is simple.
-
-Note that it is possible to do these steps without connecting the Lobstr wallet to the TF Connect App wallet. But doing this has a clear advantage: when we buy and swap on Lobstr, the TFT is directly accessible on the TF Connect app wallet.
-
-Here we go!
-
-***
+> Note that it is possible to do these steps without connecting the Lobstr wallet to the TF Connect App wallet (read [docs](./tft_lobstr_short_guide.md)). But doing this has a clear advantage: when we buy and swap on Lobstr, the TFT is directly accessible on the TF Connect app wallet.
 
 ## Download the App and Create an Account
 
@@ -82,7 +63,7 @@ Once your email is verified, you can sign in to your Lobstr account:
 
 ![image](./img/gettft_10.png)
 
-***
+
 
 ## Connect Your TF Connect App Wallet
 

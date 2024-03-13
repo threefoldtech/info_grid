@@ -1,6 +1,6 @@
 <h1>  Building a DIY 3Node </h1>
 
-This section of the ThreeFold Farmers book presents the necessary and basic steps to build a DIY 3Node. Note that we also include the information needed to set a certified 3Node. 
+This section of the ThreeFold Farmers book presents the necessary and basic steps to build a DIY 3Node.
 
 For advanced farming information, such as GPU farming and room parameters, refer to the section [Farming Optimization](../farming_optimization/farming_optimization.md).
 

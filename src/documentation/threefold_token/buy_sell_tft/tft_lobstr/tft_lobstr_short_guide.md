@@ -13,11 +13,9 @@
 
 ## Introduction
 
-In this guide, you'll learn how to buy ThreeFold Tokens with Lobstr wallet using a credit or a debit card. This is a simple method that works well for small to medium purchases. You can buy TFT on Lobstr with your smartphone (Android and iOS) and on your computer.
+In this guide, we show how to buy and sell ThreeFold Tokens with [Lobstr wallet](https://lobstr.co/) using a credit or a debit card. This is a simple method that works well for small to medium purchases. You can buy TFT on Lobstr with your smartphone (Android and iOS) and your computer.
 
 Lobstr is an app for managing digital assets like TFT on the Stellar blockchain. In this case, we'll first obtain Stellar's native currency, Lumens (XLM) and swap them for TFT.
-
-ThreeFold also provides a wallet for TFT as part of the ThreeFold Connect App. If you already have the TF Connect App, you can use the same wallet within Lobstr. If not, you can always import your wallet from Lobstr into TF Connect later.
 
 > [Moonpay](https://www.moonpay.com/) is the service integrated in Lobstr to enable users to buy digital assets like XLM with fiat currencies like US Dollars and Euros. Moonpay is available in most regions, but there are some [exceptions](https://support.moonpay.com/hc/en-gb/articles/6557330712721-What-are-our-non-supported-countries-states-and-territories-for-on-ramp-product). If your country or state isn't supported by Moonpay, you will need to find another cryptocurrency exchange or on ramp to obtain XLM. From there, you can follow the rest of this guide.
 
@@ -35,7 +33,7 @@ Lobstr will then present you with 12 words to write down and store safely. Keep 
 
 ## Buy XLM
 
-In this step, we'll buy XLM with a credit or debit card (actually a few forms of bank transfer and other payment methods are [supported](https://support.moonpay.com/hc/en-gb/articles/360017624078-What-are-your-supported-payment-methods) too).
+In this step, we'll buy XLM with a credit or debit card (actually a few forms of bank transfer and other payment methods are [supported](https://support.moonpay.com/customers/docs/moonpays-supported-payment-methods-1) too).
 
 On the Lobstr app, click on the hamburger menu button:
 
