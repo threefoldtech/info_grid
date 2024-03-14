@@ -186,7 +186,3 @@ As we've seen in the [List of Common DIY 3Nodes](#list-of-common-diy-3nodes), it
 For some DIY 3Node, no upgrades are required and this constitutes a good start if you want to explore DIY building without going into too much additional steps.
 
 For in-depth videos on how to upgrade mini-pc and rack servers, watch these great [DIY videos](https://www.youtube.com/user/floridanelson).
-
-For a DIY picture guide on how to build a 3Node desktop computer, read [this documentation](../complete_diy_guides/3node_diy_desktop/3node_diy_desktop.md).
-
-For a DIY picture guide on how to build a 3Node rack server, read [this documentation](../complete_diy_guides/3node_diy_rack_server/3node_diy_rack_server.md).
