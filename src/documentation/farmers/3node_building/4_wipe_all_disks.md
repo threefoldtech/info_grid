@@ -19,6 +19,8 @@ In this section of the ThreeFold Farmers book, we explain how to wipe all the di
 
 ## Main Steps
 
+It only takes a few steps to wipe all the disks of a 3Node.
+
 1. Create a Linux Bootstrap Image
 2. Boot Linux in *Try Mode*
 3. Wipe All the Disks
@@ -33,7 +35,7 @@ We will show how to do this with Ubuntu 20.04. LTS. This distribution is easy to
 
 ## 1. Create a Linux Bootstrap Image
 
-Download the Ubuntu 20.04 ISO file [here](https://releases.ubuntu.com/20.04/) and burn the ISO image on a USB key. Make sure you have enough space on your USB key. You can also use other Linux Distro such as [GRML](https://grml.org/download/), if you want a ligther ISO image.
+Download the Ubuntu 20.04 ISO file [here](https://releases.ubuntu.com/20.04/) and burn the ISO image on a USB key. Make sure you have enough space on your USB key. You can also use other Linux Distro such as [GRML](https://grml.org/download/), if you want a lighter ISO image.
 
 The process here is the same as in section [Burning the Bootstrap Image](./2_bootstrap_image.md#burn-the-zero-os-bootstrap-image), but with the Linux ISO instead of the Zero-OS ISO. [BalenaEtcher](https://www.balena.io/etcher/) is recommended as it formats your USB in the process, and it is available for MAC, Windows and Linux.
 

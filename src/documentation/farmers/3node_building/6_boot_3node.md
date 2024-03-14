@@ -3,10 +3,10 @@
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
-- [1. Booting the 3Node with the Zero-OS bootstrap image](#1-booting-the-3node-with-the-zero-os-bootstrap-image)
+- [1. Booting the 3Node with Zero-OS](#1-booting-the-3node-with-zero-os)
 - [2. Check the 3Node Status Online](#2-check-the-3node-status-online)
 - [3. Receive the Farming Rewards](#3-receive-the-farming-rewards)
-- [Advanced Booting Option - Network Booting (PXE)](#advanced-booting-option---network-booting-pxe)
+- [Advanced Booting Methods (Optional)](#advanced-booting-methods-optional)
   - [PXE Booting with OPNsense](#pxe-booting-with-opnsense)
   - [PXE Booting with pfSense](#pxe-booting-with-pfsense)
 - [Booting Issues](#booting-issues)
@@ -17,13 +17,13 @@
 
 ## Introduction
 
-In this section of the ThreeFold Farmers book, we explain how to boot the 3Node.
+We explain how to boot the 3Node with the Zero-OS bootstrap image with a USB key. We also include optional advanced booting methods using OPNSense and pfSense.
 
+One of the great features of Zero-OS is that it can be completely run within the cache of your 3Node. Indeed, the booting device that contains your farm ID will connect to the ThreeFold Grid and download everything needed to run smoothly. There are many benefits in terms of security and protection of data that comes with this.
 
+## 1. Booting the 3Node with Zero-OS
 
-## 1. Booting the 3Node with the Zero-OS bootstrap image
-
-To boot Zero-OS, insert your Zero-OS Bootstrap Image, power on your computer and choose the right booting sequence and parameters ([BIOS or UEFI](./5_set_bios_uefi.md)) in your BIOS/UEFI settings. Then, restart the 3Node. Zero-OS should boot automatically.
+To boot Zero-OS, insert your Zero-OS bootstrap image USB key, power on your computer and choose the right booting sequence and parameters ([BIOS or UEFI](./5_set_bios_uefi.md)) in your BIOS/UEFI settings. Then, restart the 3Node. Zero-OS should boot automatically.
 
 Note that you need an ethernet cable connected to your router or switch. You cannot farm on the ThreeFold Grid with Wifi.
 
@@ -45,17 +45,11 @@ You can use the ThreeFold [Node Finder](../../dashboard/deploy/node_finder.md) t
 
 ## 3. Receive the Farming Rewards
 
-The farming reward will be sent once per month at the address you gave when you set up your farm. You can review this process in the section [Creating the Farm on ThreeFold Grid](./1_create_farm.md). If you created a TF farm with the TF Connect App, the address will be your TF Connect Wallet address.
+The farming reward will be sent once per month at the address you gave when you set up your farm. You can review this process [here](./1_create_farm.md#add-a-stellar-address-for-payout).
 
-For the TF V3, rewards are locked for a 24 months period of after 30% of farm utilization. As of now, this is not implemented. This means that you can withdraw your farming rewards anytime you want. For more details on this, please refer to the section [ThreeFold Token (TFT)](../../threefold_token/threefold_token.md). Details of this locking system implementation will most likely be discussed by the upcoming DAO. Stay tuned.
+That's it. You've now completed the necessary steps to build a DIY 3Node and to connect it to the Grid.
 
-
-
-That's it. You've now completed the necessary steps to build a DIY 3Node and to connect it to the Grid. In the next section, we will give you more details on Farming Optimization and Planification. This will maximize your farming efficiency as well as help you plan the economics of farming.
-  
-
-
-## Advanced Booting Option - Network Booting (PXE)
+## Advanced Booting Methods (Optional)
 
 ### PXE Booting with OPNsense
 
@@ -166,8 +160,6 @@ These are the steps required to enable PXE booting on pfSense. This guide assume
   * Enter ipxe-prod.efi in Default BIOS file name field
   
 That's it! You’ll want to ensure your clients are configured with boot priority set as IPv4 in first spot. You might need to disable secure boot and enable legacy boot within BIOS.
-
-
 
 ## Booting Issues
 
