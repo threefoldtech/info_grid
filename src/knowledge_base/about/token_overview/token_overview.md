@@ -45,26 +45,24 @@ TFT is used on the TFGrid to purchase network, compute and storage resources thr
 
 ## TFT Distribution
 
-The current supply distribution of TFT is as follows:
-
-| Current Supply Distribution                 | Qty (Millions) |
-| ------------------------------------------- | -------------- |
-| Farming rewards (as of 02-24 minting)       | 290            |
-| Ecosystem Grants                            | 22             |
-| Promotion & Marketing Effort                | 100            |
-| Ecosystem Contribution, Liquidity Exchanges | 40             |
-| Technology Acquisition + Starting Team      | 290            |
-| Advisors, Founders & Team                   | 241            |
-| Current supply                              | 983            |
-
 The supply distribution of TFT is as follows:
 
 | Supply Distribution | Qty (Millions) |
 | ------------------- | -------------- |
-| Current supply      | 983            |
-| Illiquid Supply     | 66.5           |
-| Circulating supply  | 916.5          |
+| Current supply      | 942            |
+| Circulating supply  | 942          |
 | Maximum supply      | 1000           |
+
+> Note: The current supply and the circulating supply are the same, i.e. 942 million TFT. This means that all TFT supply is liquid and circulating. In other words, no TFT supply is locked or not in circulation.
+
+The current supply of TFT is distributed as follows:
+
+| Current Supply Distribution                | Qty (Millions) |
+| ------------------------------------------- | -------------- |
+| Ecosystem Grants                            | 22             |
+| Promotion & Marketing Effort                | 100            |
+| Ecosystem Contribution & Liquidity Exchanges | 40             |
+| Genesis Pool & Farming Rewards             | 780            |
 
 ## TFT Marketcap and Market Price
 
@@ -75,7 +73,11 @@ The TFT market price and marketcap are as follows:
 | TFT Market Price       | {{#include ../../../values/tft_value.md}} USD |
 | TFT Market Cap | {{#include ../../../values/tft_marketcap.md}}  USD |
 
-> Note: The values here are subject to change. Check the current market conditions.
+The market cap is equal to the product of the TFT market price and the circulating supply.
+
+> Market Cap = (TFT Market Price) X (TFT Circulating Supply)
+
+The values here are subject to change. Check the current market conditions.
 
 ## Complemetary Information
 

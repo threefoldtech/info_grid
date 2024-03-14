@@ -64,9 +64,9 @@ There are many ways to store TFT. The [TF Connect app wallet](./storing_tft/tf_c
 
 ## Buy and Sell TFT
 
-You can buy and sell TFT on [Stellar Chain](./buy_sell_tft/tft_lobstr/tft_lobstr_complete_guide.md), [Ethereum Chain](./buy_sell_tft/tft_metamask/tft_metamask.md) and [Binance Smart Chain](./buy_sell_tft/pancakeswap.md).
+You can [buy and sell TFT](./buy_sell_tft/buy_sell_tft.md) with cryptocurrencies on Stellar Chain, Ethereum Chain and BNB Smart Chain.
 
-Using Lobstr is very effective to buy TFT with fiat or crypto in no time. 
+Using Lobstr is very effective to buy TFT with fiat or crypto in no time:
 
 > [Get TFT: Quick Guide](./buy_sell_tft/tft_lobstr/tft_lobstr_short_guide.md)
 
@@ -84,7 +84,7 @@ Each time transactions are done on chains, transaction fees apply.
 
 ## Deploy on the TFGrid with TFT
 
-You can do almost anything on the TFGrid, as long as you're doing Linux stuff, ZOS got your back!
+You can do almost anything on the TFGrid: as long as you're doing Linux stuff, ZOS got your back!
 
 > [Get Started on the TFGrid](../system_administrators/getstarted/tfgrid3_getstarted.md)
 

@@ -3,7 +3,7 @@
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
-- [Liquidity Wallets](#liquidity-wallets)
+- [Exchange and OTC Wallets](#exchange-and-otc-wallets)
 - [ThreeFold Contribution Wallets](#threefold-contribution-wallets)
 - [Wisdom Council Wallets](#wisdom-council-wallets)
 - [Important Note](#important-note)
@@ -15,7 +15,7 @@
 
 We present special wallets that hold a given amount of TFT.
 
-## Liquidity Wallets
+## Exchange and OTC Wallets
 
 | **Description**    | **TFT Balance** | **Address**                                                                      |
 | ------------------ | ----------- | -------------------------------------------------------------------------------- |

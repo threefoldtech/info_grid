@@ -14,11 +14,13 @@
 
 ## Introduction
 
-We present here the basic steps to add TFT to Metamask and to buy TFT on Metamask. 
+In this guide, we present how to buy and sell ThreeFold Tokens on BNB Smart Chain and Ethereum using [Metamask](https://metamask.io/).
+
+**BNB Smart Chain** and **Ethereum** chain are blockchain networks that enable the execution of smart contracts and decentralized applications, while **MetaMask** is a software cryptocurrency wallet used to interact with Ethereum and BNB Smart Chain.
 
 ## TFT Addresses
 
-With MetaMask, you can buy and sell TFT on both Binance Smart Chain and the Ethereum chain. Make sure to use the correct TFT address when doing transactions.
+With MetaMask, you can buy and sell TFT on both BNB Smart Chain and the Ethereum chain. Make sure to use the correct TFT address when doing transactions.
 
 ### Ethereum Chain Address
 
