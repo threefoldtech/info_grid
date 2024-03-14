@@ -7,12 +7,16 @@
 - [Burn the Zero-OS Bootstrap Image](#burn-the-zero-os-bootstrap-image)
   - [CD/DVD BIOS](#cddvd-bios)
   - [USB Key BIOS+UEFI](#usb-key-biosuefi)
-- [Expert Mode](#expert-mode)
-  - [Use a Specific Kernel](#use-a-specific-kernel)
-  - [Disable GPU](#disable-gpu)
-- [Bootstrap Image URL](#bootstrap-image-url)
-  - [Zeros-OS Bootstrapping](#zeros-os-bootstrapping)
-  - [Zeros-OS Expert Bootstrap](#zeros-os-expert-bootstrap)
+    - [BalenaEtcher (MAC, Linux, Windows)](#balenaetcher-mac-linux-windows)
+    - [CLI (Linux)](#cli-linux)
+    - [Rufus (Windows)](#rufus-windows)
+- [Additional Information (Optional)](#additional-information-optional)
+  - [Expert Mode](#expert-mode)
+    - [Use a Specific Kernel](#use-a-specific-kernel)
+    - [Disable GPU](#disable-gpu)
+  - [Bootstrap Image URL](#bootstrap-image-url)
+    - [Zeros-OS Bootstrapping](#zeros-os-bootstrapping)
+    - [Zeros-OS Expert Bootstrap](#zeros-os-expert-bootstrap)
 
 ***
 
@@ -56,16 +60,23 @@ Download the bootstrap image. Next, we will burn the bootstrap image.
 
 ## Burn the Zero-OS Bootstrap Image
 
+We show how to burn the Zero-OS bootstrap image. A quick and modern way is to burn the bootstrap image on a USB key.
+
 ### CD/DVD BIOS 
 
 For the BIOS **ISO** image, download the file and burn it on a DVD.
 
-
 ### USB Key BIOS+UEFI
+
+There are many ways to burn the bootstrap image on a USB key. The easiest way that works for all operating systems is to use BalenaEtcher. We also provide other methods.
+
+#### BalenaEtcher (MAC, Linux, Windows)
 
 For **MAC**, **Linux** and **Windows**, you can use [BalenaEtcher](https://www.balena.io/etcher/) to load/flash the image on a USB stick. This program also formats the USB in the process. This will work for the option **EFI IMG** for UEFI boot, and with the option **USB** for BIOS boot. Simply follow the steps presented to you and make sure you select the bootstrap image file you downloaded previously.
 
-General Steps:
+> Note: There are alternatives to BalenaEtcher (e.g. [usbimager](https://gitlab.com/bztsrc/usbimager/)).
+
+**General Steps with BalenaEtcher:**
 
 1. Download BalenaEtcher
 2. Open BalenaEtcher
@@ -77,32 +88,37 @@ General Steps:
 That's it. Now you have a bootstrap image on Zero-OS as a bootable removable media device.
 
 
-For the BIOS **USB** and the UEFI **EFI IMG** images, with Linux, you will want to do:
+#### CLI (Linux)
 
-    sudo dd status=progress if=FILELOCATION.ISO(or .IMG) of=/dev/sd*.
+For the BIOS **USB** and the UEFI **EFI IMG** images, you can do the following on Linux:
+
+    sudo dd status=progress if=FILELOCATION.ISO(or .IMG) of=/dev/sd*
 
 Here the * is to indicate that you must adjust according to your disk. To see your disks, write lsblk in the command window. Make sure you select the proper disk!
 
 *If you USB key is not new, make sure that you format it before burning the Zero-OS image.
 
+#### Rufus (Windows)
 
-For Windows, if you are using the "dd" able image, instead of writing command line, you can use the free USB flashing program called [Rufus](https://sourceforge.net/projects/rufus.mirror/) and it will automatically do this with no need for Linux or command line. Rufus also formats the boot media in the process.
+For Windows, if you are using the "dd" able image, instead of writing command line, you can use the free USB flashing program called [Rufus](https://sourceforge.net/projects/rufus.mirror/) and it will automatically do this without needing to use the command line. Rufus also formats the boot media in the process.
 
+## Additional Information (Optional)
 
+We cover some additional information. Note that the following information is not needed for a basic farm setup.
 
-## Expert Mode
+### Expert Mode
 
 You can use the [expert mode](https://v3.bootstrap.grid.tf/expert) to generate specific Zero-OS bootstrap images.
 
 Along the basic options of the normal bootstrap mode, the expert mode allows farmers to add extra kernel arguments and decide which kernel to use from a vast list of Zero-OS kernels.
 
-### Use a Specific Kernel
+#### Use a Specific Kernel
 
 You can use the expert mode to choose a specific kernel. Simply set the information you normally use and then select the proper kernel you need in the **Kernel** drop-down list.
 
 ![](./img/bootstrap_kernel_list.png)
 
-### Disable GPU
+#### Disable GPU
 
 You can use the expert mode to disable GPU on your 3Node.
 
@@ -125,7 +141,7 @@ In the expert mode of the Zero-OS Bootstrap generator, fill in the following inf
 - Click on **Generate**
 - Click on **Download**
 
-## Bootstrap Image URL
+### Bootstrap Image URL
 
 In both normal and expert mode, you can use the generated URL to quickly download a Zero-OS bootstrap image based on your farm specific setup. 
 
@@ -139,7 +155,7 @@ Note that the arguments and the kernel are optional.
 
 The following content will provide some examples.
 
-### Zeros-OS Bootstrapping
+#### Zeros-OS Bootstrapping
 
 On the [main page](https://v3.bootstrap.grid.tf/), once you've written your farm ID and selected a network, you can copy the generated URL of any given image format.
 
@@ -149,7 +165,7 @@ For example, the following URL is a download link to an **EFI IMG** of the Zero-
 https://v3.bootstrap.grid.tf/uefimg/prod/1
 ```
 
-### Zeros-OS Expert Bootstrap
+#### Zeros-OS Expert Bootstrap
 
 You can use the generated sublink at the **Generate step** of the expert mode to get a quick URL to download your bootstrap image.
 

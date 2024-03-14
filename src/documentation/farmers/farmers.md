@@ -1,6 +1,6 @@
 # ThreeFold Farmers
 
-This section covers all practical tutorials on how to farm on the ThreeFold Grid.
+This section covers all practical information on how to become a cloud service provider (farmer) on the ThreeFold Grid.
 
 For complementary information on ThreeFold farming, refer to the [Farming](../../knowledge_base/farming/farming_toc.md) section.
 
@@ -15,9 +15,6 @@ To buy a certified node from an official ThreeFold vendor, check the [ThreeFold 
   - [4. Wipe All the Disks](./3node_building/4_wipe_all_disks.md)
   - [5. Set the BIOS/UEFI](./3node_building/5_set_bios_uefi.md)
   - [6. Boot the 3Node](./3node_building/6_boot_3node.md)
-- [Complete DIY Guides](./complete_diy_guides/complete_diy_guides_readme.md)
-  - [3Node Desktop DIY Guide](./complete_diy_guides/3node_diy_desktop/3node_diy_desktop.md)
-  - [3Node Rack Server DIY Guide](./complete_diy_guides/3node_diy_rack_server/3node_diy_rack_server.md)
 - [Farming Optimization](./farming_optimization/farming_optimization.md)
   - [GPU Farming](./3node_building/gpu_farming.md)
   - [Set Additional Fees](./farming_optimization/set_additional_fees.md)
