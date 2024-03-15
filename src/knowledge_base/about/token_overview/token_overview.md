@@ -60,7 +60,7 @@ The total supply of TFT is distributed as follows:
 | ------------------------------------------- | -------------- |
 | TF Foundation: Ecosystem Grants                            | 22             |
 | TF Foundation: Promotion & Marketing Effort                | 100            |
-| TF Foundation:Ecosystem Contribution & Liquidity Exchanges | 40             |
+| TF Foundation: Ecosystem Contribution & Liquidity Exchanges | 40             |
 | Genesis Pool & Farming Rewards             | 780            |
 
 ## TFT Marketcap and Market Price
