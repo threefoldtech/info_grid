@@ -7,6 +7,7 @@
 - [DNS Settings](#dns-settings)
   - [DNS Verification](#dns-verification)
 - [Prepare the VM](#prepare-the-vm)
+- [Set the Firewall](#set-the-firewall)
 - [Launch the Script](#launch-the-script)
 - [Access the Grid Services](#access-the-grid-services)
 - [Manual Commands](#manual-commands)
@@ -18,7 +19,7 @@
 
 We present the steps to deploy a network instance of the TFGrid on a full VM. 
 
-For this guide, we will be deploying a devnet instance. While the steps are similar for testnet and mainnet, you will have to adjust your deployment depending on which network you use.
+For this guide, we will be deploying a mainnet instance. While the steps are similar for testnet and devnet, you will have to adjust your deployment depending on which network you use.
 
 ## Prerequisites
 
@@ -53,13 +54,13 @@ You can use tools such as [DNSChecker](https://dnschecker.org/) or [dig](https:/
 - Download the ThreeFold Tech `grid_deployment` repository
     ```
     git clone https://github.com/threefoldtech/grid_deployment
-    cd grid_deployment/docker-compose/devnet
+    cd grid_deployment/docker-compose/mainnet
     ```
 - Generate a TFChain node key with `subkey`
     ```
-    echo .subkey_devnet >> .gitignore
-    ../subkey generate-node-key > .nodekey_devnet
-    cat .nodekey_devnet
+    echo .subkey_mainnet >> .gitignore
+    ../subkey generate-node-key > .nodekey_mainnet
+    cat .nodekey_mainnet
     ```
 - Create and the set environment variables file
     ```
@@ -70,16 +71,30 @@ You can use tools such as [DNSChecker](https://dnschecker.org/) or [dig](https:/
     nano .secrets.env
     ```
 - To adjust the `.secrets.env` file, take into account the following:
-  - **DOMAIN**
-    - Write your own domain (e.g. example.com)
-  - **TFCHAIN_NODE_KEY**
-    - Write the output of the command `cat .nodekey_devnet`
-  - **ACTIVATION_SERVICE_MNEMONIC**
-    - Write the seed phrase of an account on devnet with at least 10 TFT in the wallet
-  - **GRID_PROXY_MNEMONIC**
-    - Write the seed phrase of an account on devnet with at least 10 TFT in the wallet and a registered twin ID\*
+  - **DOMAIN**="example.com"
+    - Write your own domain
+  - **TFCHAIN_NODE_KEY**="abc123"
+    - Write the output of the command `cat .nodekey_mainnet`
+  - **ACTIVATION_SERVICE_MNEMONIC**="word1 word2 ... word24"
+    - Write the seed phrase of an account on mainnet with at least 10 TFT in the wallet
+  - **GRID_PROXY_MNEMONIC**="word1 word2 ... word24"
+    - Write the seed phrase of an account on mainnet with at least 10 TFT in the wallet and a registered twin ID\*
 
-> \*Note: If you've created an account using the ThreeFold Dashboard on devnet, the twin ID is automatically registered.
+> \*Note: If you've created an account using the ThreeFold Dashboard on mainnet, the twin ID is automatically registered.
+
+## Set the Firewall
+
+You can use UFW to set the firewall:
+
+```
+ufw allow 80/tcp
+ufw allow 443/tcp
+ufw allow 30333/tcp
+ufw allow 22/tcp
+ufw enable
+ufw status
+```
+
 ## Launch the Script
 
 Once you've prepared the VM, you can simply run the script to install the grid stack and deploy it online.
@@ -88,7 +103,7 @@ Once you've prepared the VM, you can simply run the script to install the grid s
 sh install_grid_bknd.sh
 ```
 
-This will take a few minutes since you are downloading the whole devnet grid snapshots.
+This will take some time since you are downloading the whole mainnet grid snapshots.
 
 ## Access the Grid Services
 
@@ -129,7 +144,7 @@ This can be helpful to troubleshoot errors.
 
 ## Update the Deployment
 
-Go into the folder of the proper network, e.g. devnet, and run the following commands:
+Go into the folder of the proper network, e.g. mainnet, and run the following commands:
 
 ```
 git pull -r

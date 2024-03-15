@@ -35,6 +35,7 @@
   - [Change manually the power target of a 3Node](#change-manually-the-power-target-of-a-3node)
   - [Properly reboot the node if power target "Down" doesn't work](#properly-reboot-the-node-if-power-target-down-doesnt-work)
   - [Add a 3Node to a running Farmerbot](#add-a-3node-to-a-running-farmerbot)
+  - [Update the Farmerbot with a new release](#update-the-farmerbot-with-a-new-release)
 - [Questions and Feedback](#questions-and-feedback)
 
 ***
@@ -402,6 +403,32 @@ If the Farmerbot is running and you want to add a new 3Node to your farm, you ca
 - Restart the Farmerbot with the systemd command `restart` (in this example, the service is called `farmerbot`)
   ```
   systemctl restart farmerbot
+  ```
+
+## Update the Farmerbot with a new release
+
+There are only a few steps needed to update the Farmerbot to a new release.
+
+- Download the latest [ThreeFold tfgrid-sdk-go release](https://github.com/threefoldtech/tfgrid-sdk-go/releases) and extract the farmerbot for your specific setup (here we use `x86_64`). On the line `wget ...`, make sure to replace `<latest_release>` with the latest Farmerbot release.
+    ```
+    wget https://github.com/threefoldtech/tfgrid-sdk-go/releases/download/<latest_release>/tfgrid-sdk-go_Linux_x86_64.tar.gz
+    tar xf tfgrid-sdk-go_Linux_x86_64.tar.gz farmerbot
+    ```
+- Make a copy of the old version in case you need it in the future:
+    ```
+    mv /usr/local/bin/farmerbot /usr/local/bin/farmerbot_archive
+    ```
+- Move the new Farmerbot to the local bin
+    ```
+    mv farmerbot /usr/local/bin
+    ```
+- Restart the bot
+  ```
+  systemctl restart farmerbot
+  ```
+- Remove the tar file
+  ```
+  rm tfgrid-sdk-go_Linux_x86_64.tar.gz
   ```
 
 # Questions and Feedback
