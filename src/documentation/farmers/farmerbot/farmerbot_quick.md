@@ -89,17 +89,19 @@ We present the different steps to run the Farmerbot using the binaries.
 
 ### Download the Farmerbot Binaries
 
-- Download and Extract the latest [ThreeFold tfgrid-sdk-go release](https://github.com/threefoldtech/tfgrid-sdk-go/releases) for your specific setup (here we use `x86_64`). On the line `wget ...`, make sure to replace `<latest_release>` with the latest Farmerbot release.
+- Download the latest [ThreeFold tfgrid-sdk-go release](https://github.com/threefoldtech/tfgrid-sdk-go/releases) and extract the farmerbot for your specific setup (here we use `x86_64`). On the line `wget ...`, make sure to replace `<latest_release>` with the latest Farmerbot release.
     ```
-    mkdir tfgrid-sdk-go
-    cd tfgrid-sdk-go
     wget https://github.com/threefoldtech/tfgrid-sdk-go/releases/download/<latest_release>/tfgrid-sdk-go_Linux_x86_64.tar.gz
-    tar -xvf tfgrid-sdk-go_Linux_x86_64.tar.gz
+    tar xf tfgrid-sdk-go_Linux_x86_64.tar.gz farmerbot
     ```
 - Move the Farmerbot
     ```
     mv farmerbot /usr/local/bin
     ```
+- Remove the tar file
+  ```
+  rm tfgrid-sdk-go_Linux_x86_64.tar.gz
+  ```
 
 ### Create the Farmerbot Files
 
