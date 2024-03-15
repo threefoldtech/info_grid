@@ -13,6 +13,7 @@
   - [Run the Farmerbot](#run-the-farmerbot)
   - [Set a systemd Service](#set-a-systemd-service)
   - [Check the Farmerbot Logs](#check-the-farmerbot-logs)
+  - [Stop the Farmerbot](#stop-the-farmerbot)
 - [Farmerbot Files](#farmerbot-files)
   - [Configuration File Template (config.yml)](#configuration-file-template-configyml)
   - [Environment Variables File Template (.env)](#environment-variables-file-template-env)
@@ -192,6 +193,20 @@ Thus, you can get more details on the operation of the Farmerbot by inspecting t
   ```
   tac ~/farmerbotfiles/farmerbot.log | grep -B5000 -m1 "Nodes report" | tac
   ```
+
+### Stop the Farmerbot
+
+You can stop the farmerbot with the following command:
+
+```
+systemctl stop farmerbot
+```
+
+After stopping the farmerbot, any nodes in standby mode will remain in standby. To bring them online, use this command:
+
+```
+farmerbot start all -e /root/farmerbotfiles/.env --farm <farm_id>
+```
 
 ## Farmerbot Files
 
