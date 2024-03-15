@@ -49,19 +49,18 @@ The supply distribution of TFT is as follows:
 
 | Supply Distribution | Qty (Millions) |
 | ------------------- | -------------- |
-| Current supply      | 942            |
-| Circulating supply  | 942          |
+| Total supply      | 942            |
+| TF Foundation Supply      | 162            |
+| Circulating supply  | 780          |
 | Maximum supply      | 1000           |
 
-> Note: The current supply and the circulating supply are the same, i.e. 942 million TFT. This means that all TFT supply is liquid and circulating. In other words, no TFT supply is locked or not in circulation.
+The total supply of TFT is distributed as follows:
 
-The current supply of TFT is distributed as follows:
-
-| Current Supply Distribution                | Qty (Millions) |
+| Total Supply Distribution                | Qty (Millions) |
 | ------------------------------------------- | -------------- |
-| Ecosystem Grants                            | 22             |
-| Promotion & Marketing Effort                | 100            |
-| Ecosystem Contribution & Liquidity Exchanges | 40             |
+| TF Foundation: Ecosystem Grants                            | 22             |
+| TF Foundation: Promotion & Marketing Effort                | 100            |
+| TF Foundation: Ecosystem Contribution & Liquidity Exchanges | 40             |
 | Genesis Pool & Farming Rewards             | 780            |
 
 ## TFT Marketcap and Market Price
