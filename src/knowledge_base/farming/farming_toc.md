@@ -2,7 +2,7 @@
 
 This section covers the essential information concerning ThreeFold Farming.
 
-To farm on the ThreeFold Grid, refer to the [Farmers](../../knowledge_base/farming/farming_toc.md) section.
+To farm on the ThreeFold Grid, refer to the [Farmers](../../documentation/farmers/farmers.md) section.
 
 <h2>Table of Contents</h2>
 
