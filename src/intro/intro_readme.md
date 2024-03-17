@@ -1,8 +1,6 @@
 # ThreeFold Grid Manual
 
-![header](../intro/img/intro_header.png)
-
-*Welcome to the ThreeFold Grid Manual!*
+*Welcome to the ThreeFold Manual!*
 
 This manual is organized in two main sections: 
 
