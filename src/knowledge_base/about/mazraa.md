@@ -5,7 +5,6 @@
 - [Introduction](#introduction)
 - [History](#history)
 - [Mission](#mission)
-- [Website](#website)
 
 ***
 
@@ -21,7 +20,3 @@ Mazraa was established in early 2016 in the United Arab Emirates and was one of 
 ## Mission
 
 Mazraa supports ThreeFold Foundation's mission to create a responsible Internet for all, one that is accessible, affordable and environmentally conscious. Mazraa is a founding capacity farmer on the ThreeFold Network and actively supports the expansion and adoption of ThreeFold's P2P Cloud. Mazraa's focus is to provide P2P Cloud capacity for developers,  nodes for new and existing farmers, as well as, providing over the counter access to TFT's to  enable reservations of Internet capacity.  Additionally, Mazraa supports the promotion and growth of the ThreeFold Network, through marketing resources and funding contributions. We believe it's time for the internet to have a major upgrade to empower people and protect our planet.
-
-## Website
-
-To learn more about Mazraa, visit the [Mazraa website](https://www.mazraa.io/).

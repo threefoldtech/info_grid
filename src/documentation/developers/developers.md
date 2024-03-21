@@ -87,4 +87,4 @@ For complementary information on the technology developed by ThreeFold, refer to
 - [Grid Deployment](./grid_deployment/grid_deployment.md)
   - [TFGrid Stacks](./grid_deployment/tfgrid_stacks.md)
   - [Full VM Grid Deployment](./grid_deployment/grid_deployment_full_vm.md)
-  - [Guardians of the Grid](./grid_deployment/tfgrid_guardians.md)
+  - [Grid Snapshots](./grid_deployment/snapshots.md)

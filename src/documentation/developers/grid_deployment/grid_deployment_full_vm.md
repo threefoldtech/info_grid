@@ -150,5 +150,3 @@ Go into the folder of the proper network, e.g. mainnet, and run the following co
 git pull -r
 docker compose --env-file .secrets.env --env-file .env up -d
 ```
-
-If you're interested about hosting your own instance of the grid to strenghten the ThreeFold ecosystem, make sure to read the next section, [Guardians of the Grid](./tfgrid_guardians.md).
