@@ -1,5 +1,5 @@
 [book]
-title = "ThreeFold Grid Manual"
+title = "ThreeFold Manual"
 
 [output.html.fold]
 enable = true
