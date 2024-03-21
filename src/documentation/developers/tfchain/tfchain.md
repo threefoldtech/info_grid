@@ -72,7 +72,7 @@ See [pricing](../../../knowledge_base/cloud/pricing/pricing.md) for more informa
 
 ## Contract locking
 
-To not overload the chain with transfer events and others we choose to lock the amount due for a contract every hour and after 24 hours unlock the amount and deduct it in 1 go. This lock is saved on a user's account, if the user has multiple contracts the locked amount will be stacked.
+To not overload the chain with transfer events and others we choose to lock the amount due for a contract every hour and after 24 hours unlock the amount and deduct it in one go. This lock is saved on a user's account, if the user has multiple contracts the locked amount will be stacked.
 
 ## Contract grace period
 

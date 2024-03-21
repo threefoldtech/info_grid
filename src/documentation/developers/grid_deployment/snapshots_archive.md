@@ -2,12 +2,13 @@
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
+- [Prerequisites](#prerequisites)
 - [Services](#services)
 - [ThreeFold Public Snapshots](#threefold-public-snapshots)
 - [Deploy the Services with Scripts](#deploy-the-services-with-scripts)
-  - [Create the Snapshots](#create-the-snapshots)
   - [Start All the Services](#start-all-the-services)
   - [Stop All the Services](#stop-all-the-services)
+  - [Create the Snapshots](#create-the-snapshots)
 - [Expose the Snapshots with Rsync](#expose-the-snapshots-with-rsync)
   - [Create the Service Configuration File](#create-the-service-configuration-file)
   - [Start the Service](#start-the-service)
@@ -18,7 +19,12 @@
 
 To facilitate deploying grid backend services, we provide snapshots to significantly reduce sync time. This can be setup anywhere from scratch. Once all services are synced, one can use the scripts to create snapshots automatically.
 
-To learn how to deploy your own grid stack, read [this section](./grid_deployment_full_vm.md).
+## Prerequisites
+
+There are a few prerequisites to properly run the ThreeFold services.
+
+- [Docker engine](../computer_it_basics/docker_basics.md#install-docker-desktop-and-docker-engine)
+- [Rsync](../computer_it_basics/file_transfer.md#rsync)
 
 ## Services
 
@@ -51,44 +57,15 @@ ThreeFold hosts all available snapshots at: [https://bknd.snapshot.grid.tf/](htt
     rsync -Lv --progress --partial rsync://bknd.snapshot.grid.tf:34873/gridsnapshotsdev/processor-devnet-latest.tar.gz .   
     ```
 
+Let's now see how to use those snapshots to run the services via scripts.
+
 ## Deploy the Services with Scripts
 
-You can deploy the 3 individual services using known methods such as [Docker](../../system_administrators/computer_it_basics/docker_basics.md). To facilitate the process, scripts are provided that run the necessary docker commands. 
+You can deploy the 3 individual services using known methods such as [Docker](https://manual.grid.tf/computer_it_basics/docker_basics.html). To facilitate the process, scripts are provided that run the necessary docker commands. 
 
 The first script creates the snapshots, while the second and third scripts serve to start and stop all services.
 
 You can use the start script to start all services and then set a cron job to execute periodically the snapshot creation script. This will ensure that you always have the latest version available on your server.
-
-### Create the Snapshots
-
-You can set a cron job to execute a script running rsync to create the snapshots and generate logs at a given interval.
-
-- First download the script.
-  - Main net
-    ```
-    wget https://github.com/threefoldtech/grid_deployment/blob/development/grid-snapshots/mainnet/create_snapshot.sh
-    ```
-  - Test net
-    ```
-    wget https://github.com/threefoldtech/grid_deployment/blob/development/grid-snapshots/testnet/create_snapshot.sh
-    ```
-  - Dev net
-    ```
-    wget https://github.com/threefoldtech/grid_deployment/blob/development/grid-snapshots/devnet/create_snapshot.sh
-    ```
-- Set the permissions of the script
-    ```
-    chmod +x create_snapshot.sh
-    ```
-- Make sure to a adjust the snapshot creation script for your specific deployment
-- Set a cron job
-    ```
-    crontab -e
-    ```
-  - Here is an example of a cron job where we execute the script every day at 1 AM and send the logs to `/var/log/snapshots/snapshots-cron.log`.
-      ```sh
-      0 1 * * * sh /opt/snapshots/create-snapshot.sh > /var/log/snapshots/snapshots-cron.log 2>&1
-      ```
 
 ### Start All the Services
 
@@ -142,6 +119,37 @@ You can stop all services by running the provided scripts.
     ./stopall.sh
     ```
 
+### Create the Snapshots
+
+You can set a cron job to execute a script running rsync to create the snapshots and generate logs at a given interval.
+
+- First download the script.
+  - Main net
+    ```
+    wget https://github.com/threefoldtech/grid_deployment/blob/development/grid-snapshots/mainnet/create_snapshot.sh
+    ```
+  - Test net
+    ```
+    wget https://github.com/threefoldtech/grid_deployment/blob/development/grid-snapshots/testnet/create_snapshot.sh
+    ```
+  - Dev net
+    ```
+    wget https://github.com/threefoldtech/grid_deployment/blob/development/grid-snapshots/devnet/create_snapshot.sh
+    ```
+- Set the permissions of the script
+    ```
+    chmod +x create_snapshot.sh
+    ```
+- Make sure to a adjust the snapshot creation script for your specific deployment
+- Set a cron job
+    ```
+    crontab -e
+    ```
+  - Here is an example of a cron job where we execute the script every day at 1 AM and send the logs to `/var/log/snapshots/snapshots-cron.log`.
+      ```sh
+      0 1 * * * sh /opt/snapshots/create-snapshot.sh > /var/log/snapshots/snapshots-cron.log 2>&1
+      ```
+
 ## Expose the Snapshots with Rsync
 
 We use rsync with a systemd service to expose the snapshots to the community.
@@ -194,3 +202,5 @@ systemctl start rsync
 systemctl enable rsync
 systemctl status rsync
 ```
+
+If you're interested about hosting your own instance of the grid to strenghten the ThreeFold ecosystem, make sure to read the next section, [Guardians of the Grid](./tfgrid_guardians.md).

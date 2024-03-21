@@ -11,6 +11,8 @@
 
 ***
 
+> Note: The proof-of-capacity parameters will be updated for the next 3.14 grid release. Stay tuned.
+
 ## Introduction
 
 The ThreeFold Blockchain (TFChain) uses work algorythm called "Proof-of-Capacity" to verify the Internet capacity provided by 3Nodes. Put simply, PoC verifies, on an ongoing basis, that farms are honestly representing the Internet capacity they provide to the network. 
@@ -30,7 +32,7 @@ The PoC algorythm records four different types of Internet capacity:
 
 PoC comes with a number of benefits, including: 
 
-- Energy efficiency: earning reward in form of TFT does not waste energy, farming TFT is a carbon_negative operation.
+- Energy efficiency: earning reward in form of TFT does not waste energy.
 - Lower barriers to entry with reduced hardware requirements: no need for elite hardware to stand a chance for earning rewards.
 - Decentralized: allows anyone to connect a 3node to the network. TFGrid runs as a DAO.
 
@@ -42,17 +44,13 @@ The main advantage of PoC to farmers it makes it really easy to run a 3Node. It 
 2. Zero-OS is a low level OS, with no shell, farmers cannot access Zero-OS
 3. Zero-OS reports used IT capacity towards TFChain
 4. TFChain and TFDAO will calculate rewards as required for the farmer (TFGrid 3.1.x)
-5. TFChain will mint the required TFT and send them to account on TFChain of TFFarmer.
+5. TFChain will mint the required TFT and send them to account on TFChain of the farmer.
 6. Everyone can use the [ThreeFold Node Finder](https://dashboard.grid.tf/#/deploy/node-finder/) to see where capacity is available. This info comes from the TFChain.
 
 
 ## PoC Rewards
 
-| Percentage                                         | Description    | Remark                           |
-| -------------------------------------------------- | -------------- | -------------------------------- |
-| 100% of specified [farming reward](farming_reward.md) | goes to Farmer | Allows for a pure Utility Token. |
-
-- Additional TFT are farmed to compensate for Carbon and deliver the yield for the Layer 2 Staking pools
+100% of specified [farming rewards](./farming_reward.md) goes to the farmer.
 
 ## Farming Reward Calculation
 
@@ -90,6 +88,6 @@ The below table expands on CU, SU, NU and IPAddr and their farming rewards:
 | Network Unit (NU)   | 1 GB of data transfered as used by TFGrid user for Public IP Addr | 0.38 TFT/GB     |
 | Public IPv4 Address | Public IP Address as used by a TFGrid user                        | 0.06 TFT/hour   |
 
-> **The rewards above are calculated according to the current TFT to USD price in TFChain of 0.08. TFDAO is responsible to change this price in accordance to current marketsituation and liquidity.**
+> **The rewards above are calculated according to the current TFT to USD price in TFChain of 0.08. TFDAO is responsible to change this price in accordance to the current market and liquidity.**
 
 The above farming rewards apply for 3Nodes registered in TFChain for ThreeFold Grid v3. Anyone can calculate their potential rewards using the [Farming Reward Simulator](https://dashboard.grid.tf/#/farms/simulator/). The same CU, SU, NU and IPAddr principles apply to the sales of Internet capacity in the form of [cloud units](../cloud/cloudunits.md).

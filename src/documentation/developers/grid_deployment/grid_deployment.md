@@ -6,4 +6,4 @@ The TFGrid whole source code is open-source and instances of the grid can be dep
 
 - [TFGrid Stacks](./tfgrid_stacks.md)
 - [Full VM Grid Deployment](./grid_deployment_full_vm.md)
-- [Guardians of the Grid](./tfgrid_guardians.md)
+- [Grid Snapshots](./snapshots.md)

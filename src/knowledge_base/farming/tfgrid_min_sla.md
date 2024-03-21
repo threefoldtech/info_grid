@@ -1,19 +1,16 @@
 ## Minimum requirement Service Level Agreement (SLA)
 
-Minimal SLA's need to be achieved before the farming reward can be earned (uptime, bandwidth, latency, ...)
-
-Today a subset is active:
-
-- Uptime 99% (which is upto 7.2h downtime per month.)
+Minimal SLA's need to be achieved before the farming reward can be earned (uptime, bandwidth, latency, ...). This is not yet fully implemented.
 
 More service levels agreements will be required, the DAO will decide on those changes. 
 Requests can be made by everyone by means of GEP.
 
 Some Ideas
 
-- minimal bandwidth requirement.
-- minimal network latency requirement.
-- minimal distance between Certified Nodes for the super node concept.
+- minimal uptime
+- minimal bandwidth requirement
+- minimal network latency requirement
+- minimal distance between Certified Nodes for the super node concept
 - different uptime requirement for Certified vs DIY nodes
 
 
