@@ -1,4 +1,4 @@
-<h1> Farming Reward 3.0</h1>
+<h1> Farming Reward </h1>
 
 <h2> Table of Contents </h2>
 
@@ -8,9 +8,10 @@
 - [What is proof-of-capacity?](#what-is-proof-of-capacity)
 - [Why proof-of-capacity?](#why-proof-of-capacity)
 - [How does Proof-of-Capacity work?](#how-does-proof-of-capacity-work)
-- [TFT Rewards for TFGrid Mainnet](#tft-rewards-for-tfgrid-mainnet)
 
 ***
+
+> Note: Farming rewards will be updated for the next 3.14 grid release. Stay tuned.
 
 ## Introduction
 
@@ -57,15 +58,6 @@ The main advantage of PoC to farmers it makes it really easy to run a 3Node. It 
 4. TFChain and TFDAO will calculate rewards as required for the farmer (TFGrid 3.1.x)
 5. TFChain will mint the required TFT and send them to account on TFChain of TFFarmer.
 6. Everyone can use the [ThreeFold Node Finder](https://dashboard.grid.tf/#/deploy/node-finder/) to see where capacity is available. This info comes from the TFChain.
-
-
-## TFT Rewards for TFGrid Mainnet
-
-| Percentage                                         | Description    | Remark                           |
-| -------------------------------------------------- | -------------- | -------------------------------- |
-| 100% of specified farming reward | goes to Farmer | Allows for a pure Utility Token. |
-
-- Additional TFT are farmed to compensate for Carbon and deliver the yield for the Layer 2 Staking pools
 
 
 {{#include farming_reward_disclaimer.md}}
