@@ -53,7 +53,7 @@ ThreeFold hosts all available snapshots at: [https://bknd.snapshot.grid.tf/](htt
 
 ## Deploy the Services with Scripts
 
-You can deploy the 3 individual services using known methods such as [Docker](https://manual.grid.tf/computer_it_basics/docker_basics.html). To facilitate the process, scripts are provided that run the necessary docker commands. 
+You can deploy the 3 individual services using known methods such as [Docker](../../system_administrators/computer_it_basics/docker_basics.md). To facilitate the process, scripts are provided that run the necessary docker commands. 
 
 The first script creates the snapshots, while the second and third scripts serve to start and stop all services.
 
