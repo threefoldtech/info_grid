@@ -34,6 +34,7 @@
         - [ownCloud](documentation/dashboard/solutions/owncloud.md)
         - [Peertube](documentation/dashboard/solutions/peertube.md)
         - [Presearch](documentation/dashboard/solutions/presearch.md)
+        - [Static Website](documentation/dashboard/solutions/static_website.md)
         - [Subsquid](documentation/dashboard/solutions/subsquid.md)
         - [Taiga](documentation/dashboard/solutions/taiga.md)
         - [Umbrel](documentation/dashboard/solutions/umbrel.md)
