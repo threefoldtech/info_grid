@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Static Website is an application where a user provides a github repository url and its file are automatically served using caddy.
+Static Website is an application where a user provides a GitHub repository URL for the files to be automatically served online using Caddy.
 
 ## Prerequisites
 
@@ -22,11 +22,11 @@ Static Website is an application where a user provides a github repository url a
 
 ![ ](./img/solutions_staticwebsite.png)
 
-- Enter an instance name.
+- Enter an instance name
 
-- Enter a Github repository url that needs to be clonned
+- Enter a GitHub repository URL that needs to be cloned
 
-- Enter the title for the clonned repository
+- Enter the title for the cloned repository
 
 - Select a capacity package:
 
@@ -35,19 +35,19 @@ Static Website is an application where a user provides a github repository url a
   - **Large**: {cpu: 4, memory: 16, diskSize: 250 }
   - Or choose a **Custom** plan
 
-- `Dedicated` flag to retrieve only dedeicated nodes
+- `Dedicated` flag to retrieve only dedicated nodes
 - `Certified` flag to retrieve only certified nodes
 - Choose the location of the node
   - `Region`
   - `Country`
   - `Farm Name`
 - Choose the node to deploy on
-  > Or you can select a specific node with manual selection.
-- `Custom Domain` flag lets the user to use a custom domain
-- Choose a gateway node to deploy your Subsquid instance on.
+  - Note: You can select a specific node with manual selection
+- `Custom Domain` flag allows the user to use a custom domain
+- Choose a gateway node to deploy your static website
 
-After that is done you can see a list of all of your deployed instances
+Once this is done, you can see a list of all of your deployed instances:
 
 ![ ](./img/staticwebsite_list.png)
 
-Click on **_Visit_** to go to your static website!
+Click on the button **Visit** under **Actions** to go to your static website!
