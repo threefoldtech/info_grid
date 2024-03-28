@@ -14,6 +14,7 @@
 - [API](#api)
 - [Message System](#message-system)
 - [Inspecting Node Keys](#inspecting-node-keys)
+- [Permanently Enable Mycelium](#permanently-enable-mycelium)
 
 ***
 
@@ -151,3 +152,9 @@ Where the output could be something like this:
 Public key: a47c1d6f2a15b2c670d3a88fbe0aeb301ced12f7bcb4c8e3aa877b20f8559c02
 Address: 27f:b2c5:a944:4dad:9cb1:da4:8bf7:7e65
 ```
+
+## Permanently Enable Mycelium
+
+It is possible to permenently enable Mycelium on your client.
+
+As an example with systemd on Linux, you can consult [this page](https://github.com/threefoldtech/mycelium/blob/master/systemd/mycelium.service).
