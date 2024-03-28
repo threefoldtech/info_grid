@@ -14,6 +14,12 @@ The ThreeFold Grid supports any application that can run on Linux, guaranteeing 
 
 > [Deploy on the TFGrid](../../documentation/system_administrators/getstarted/tfgrid3_getstarted.md)
 
+## Z-OS: A New Operating System
+
+Z-OS (Zero Operating System) is a lightweight and secure operating system designed specifically for running workloads on the ThreeFold Grid. Z-OS provides a minimalistic and containerized environment for applications, enabling efficient resource allocation and management.
+
+> [Learn more about Z-OS](./concepts/zos.md)
+
 ## Internet as a Resource
 
 In a similar manner to purchasing electricity or other utilities, the internet capacity provided by the ThreeFold Grid is produced and allocated locally. This decentralized approach empowers digital service and application providers to host their offerings closer to end-users, resulting in exceptional performance, competitive pricing, and improved profit margins. The TFGrid is fueled by the ThreeFold Token.
