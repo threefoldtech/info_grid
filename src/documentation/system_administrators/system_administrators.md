@@ -72,6 +72,7 @@ For complementary information on ThreeFold grid and its cloud component, refer t
     - [UFW Basics](./computer_it_basics/firewall_basics/ufw_basics.md)
     - [Firewalld Basics](./computer_it_basics/firewall_basics/firewalld_basics.md)
   - [File Transfer](./computer_it_basics/file_transfer.md)
+  - [Screenshots](./computer_it_basics/screenshots.md)
 - [Advanced](./advanced/advanced.md)
   - [Token Transfer Keygenerator](./advanced/token_transfer_keygenerator.md)
   - [Cancel Contracts](./advanced/cancel_contracts.md)
