@@ -242,6 +242,7 @@
         - [UFW Basics](documentation/system_administrators/computer_it_basics/firewall_basics/ufw_basics.md)
         - [Firewalld Basics](documentation/system_administrators/computer_it_basics/firewall_basics/firewalld_basics.md)
       - [File Transfer](documentation/system_administrators/computer_it_basics/file_transfer.md)
+      - [Screenshots](documentation/system_administrators/computer_it_basics/screenshots.md)
     - [Advanced](documentation/system_administrators/advanced/advanced.md)
       - [Token Transfer Keygenerator](documentation/system_administrators/advanced/token_transfer_keygenerator.md)
       - [Cancel Contracts](documentation/system_administrators/advanced/cancel_contracts.md)
