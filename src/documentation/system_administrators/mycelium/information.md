@@ -157,4 +157,28 @@ Address: 27f:b2c5:a944:4dad:9cb1:da4:8bf7:7e65
 
 It is possible to permenently enable Mycelium on your client.
 
-As an example with systemd on Linux, you can consult [this page](https://github.com/threefoldtech/mycelium/blob/master/systemd/mycelium.service).
+For Linux, we use systemd to manage the mycelium daemon in `/storage/`. Here's an example:
+
+```
+[Unit]
+Description=End-2-end encrypted IPv6 overlay network
+Wants=network.target
+After=network.target
+Documentation=https://github.com/threefoldtech/mycelium
+
+[Service]
+ProtectHome=true
+ProtectSystem=true
+SyslogIdentifier=mycelium
+CapabilityBoundingSet=CAP_NET_ADMIN
+StateDirectory=mycelium
+StateDirectoryMode=0700
+ExecStartPre=+-/sbin/modprobe tun
+ExecStart=/storage/mycelium --no-tun --disable-peer-discovery -k %S/mycelium/key.bin --peers tcp://[2a01:4f8:221:1e0b::2]:9651 tcp://[2a01:4f8:212:fa6::2]:9651 tcp://[2a02:1802:5e:0:8478:51ff:fee2:3331]:9651 tcp://[2a02:1802:5e:0:8c9e:7dff:fec9:f0d2]:9651 tcp://[2a01:4f9:5a:1042::2]:9651
+Restart=always
+RestartSec=5
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target
+```
