@@ -12,3 +12,4 @@ In this section, we delve into sophisticated topics and powerful functionalities
 - [IPFS](./ipfs/ipfs_toc.md)
   - [IPFS on a Full VM](./ipfs/ipfs_fullvm.md)
   - [IPFS on a Micro VM](./ipfs/ipfs_microvm.md)
+- [AI & ML Workloads](./ai_ml_workloads.md)
