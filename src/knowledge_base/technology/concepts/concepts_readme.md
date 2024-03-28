@@ -4,6 +4,7 @@ On this section we will explore the fundamental principles and concepts behind t
 
 ## Learn the Basics
 
+- [Zero-OS](./zos.md)
 - [TFGrid Primitives](./grid_primitives.md)
 - [TFGrid Component List](./grid3_components.md)
 - [ThreeFold's Infrastructure as Code (IaC)](./grid3_iac.md)
