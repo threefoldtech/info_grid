@@ -80,9 +80,7 @@ As a general example, here's what it looks like:
 
 ![Wallet example](./img/polkadot_wallet_example.png)
 
-The parameter `nonce` shows the quantity of token that has been moved. 
-
-Here are the outputs for three wallets shown above
+Here are the outputs for three wallets shown above:
 
 - Mainnet ThreeFold Foundation
 
