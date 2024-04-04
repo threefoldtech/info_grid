@@ -251,6 +251,7 @@
       - [IPFS](documentation/system_administrators/advanced/ipfs/ipfs_toc.md)
         - [IPFS on a Full VM](documentation/system_administrators/advanced/ipfs/ipfs_fullvm.md)
         - [IPFS on a Micro VM](documentation/system_administrators/advanced/ipfs/ipfs_microvm.md) 
+      - [MinIO Operator with Helm3](documentation/system_administrators/advanced/minio_helm3.md)
   - [ThreeFold Token](documentation/threefold_token/threefold_token.md)
     - [TFT Bridges](documentation/threefold_token/tft_bridges/tft_bridges.md)
       - [TFChain-Stellar Bridge](documentation/threefold_token/tft_bridges/tfchain_stellar_bridge.md)
