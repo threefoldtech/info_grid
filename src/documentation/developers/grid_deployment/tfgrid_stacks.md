@@ -4,7 +4,7 @@
 
 - [Introduction](#introduction)
 - [Advantages](#advantages)
-- [Run Your Own Stack](#run-your-own-stack)
+- [Deploy a Grid Instance](#deploy-a-grid-instance)
 
 
 ***
@@ -25,8 +25,8 @@ As a very concrete example, image that one instance of the Dashboard goes offlin
 
 The overall ThreeFold ecosystem becomes more resilient to failures of individual nodes.
 
-## Run Your Own Stack
+## Deploy a Grid Instance
 
-To set your own instance of the TFGrid, you can download a snapshot of the grid and deploy the TFGrid services with Docker. We even provide scripts to quicken the whole process! 
+You can deploy an instance of the TFGrid on a full VM.
 
-Read more about snapshots in the [next section](./grid_deployment_full_vm.md).
+Read more about this in [next section](./grid_deployment_full_vm.md).

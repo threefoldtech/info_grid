@@ -17,7 +17,7 @@
 
 ## Introduction
 
-We present the steps to deploy a network instance of the TFGrid on a full VM. 
+We present the steps to deploy an instance of the TFGrid on a full VM. 
 
 For this guide, we will be deploying a mainnet instance. While the steps are similar for testnet and devnet, you will have to adjust your deployment depending on which network you use.
 
