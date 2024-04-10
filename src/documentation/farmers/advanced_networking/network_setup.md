@@ -28,7 +28,7 @@ The nodes themselves can have connectivity in a few different ways:
 
 - Only have RFC1918 private addresses, connected to the Internet through NAT, NO IPv6
   Mostly, these are single-NIC (Network card) machines that can host some workloads through the Overlay Network, but 
-  cant't expose services directly. These are HIDDEN nodes, and are mostly booted with an USB stick from 
+  can't expose services directly. These are HIDDEN nodes, and are mostly booted with an USB stick from 
   bootstrap.grid.tf .
 - Dual-stacked: having RFC1918 private IPv4 and public IPv6 , where the IPv6 addresses are received from a home router, 
 but firewalled for outgoing traffic only. These nodes are effectively also HIDDEN
@@ -70,9 +70,9 @@ Use your (home) ISP router Ipv6 DHCP capabilities to provide (private) IPv6 addr
 
 ### 2.2 Data Center/Advanced Setup
 
-In this situation there are many options on how to setup you node.  This requires you as the expert to make a few decisions on how to connect what what the best setup is that you can support for the operaitonal time of your farm.  The same basics principles apply:
-  - You have to have a block of (public) IPv6 routed to you router, or you have to have your router setup to provide Network Address Translation (NAT)
-  - You have to have a DHCP server in your network that manages and controls IPV6 ip adress leases.  Depending on your specific setup you have this DHCP server manage a public IPv6y range which makes all nodes directly connected to the public internet or you have this DHCP server manage a private block og IPv6 addresses which makes all you nodes connect to the internet through NAT.  
+In this situation there are many options on how to setup your node.  This requires you as the expert to make a few decisions on how to connect what what the best setup is that you can support for the operaitonal time of your farm.  The same basics principles apply:
+  - You have to have a block of (public) IPv6 routed to your router, or you have to have your router setup to provide Network Address Translation (NAT)
+  - You have to have a DHCP server in your network that manages and controls IPV6 ip adress leases.  Depending on your specific setup you have this DHCP server manage a public IPv6 range which makes all nodes directly connected to the public internet or you have this DHCP server manage a private block of IPv6 addresses which makes all your nodes connect to the internet through NAT.  
 
 As a farmer you are in charge of selecting and creating the appropriate network setup for your farm.  
 
