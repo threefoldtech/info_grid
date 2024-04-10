@@ -39,4 +39,4 @@ If you want to contribute to [Manual.grid.tf](https://manual.grid.tf/), you shou
 2. Add the path of the md file to [SUMMARY](./src/SUMMARY.md).
 3. Then use `make build` and `make serve` to see your changes on the browser.
 
-Read the section [How to Contribute](https://manual.grid.tf/contribute/contribute.html) for more information.
+Read the section [How to Contribute](https://manual.grid.tf/knowledge_base/collaboration/contribute.html) for more information.
