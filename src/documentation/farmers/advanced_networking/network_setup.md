@@ -72,7 +72,7 @@ Use your (home) ISP router Ipv6 DHCP capabilities to provide (private) IPv6 addr
 
 In this situation there are many options on how to setup your node.  This requires you as the expert to make a few decisions on how to connect what what the best setup is that you can support for the operaitonal time of your farm.  The same basics principles apply:
   - You have to have a block of (public) IPv6 routed to your router, or you have to have your router setup to provide Network Address Translation (NAT)
-  - You have to have a DHCP server in your network that manages and controls IPV6 ip adress leases.  Depending on your specific setup you have this DHCP server manage a public IPv6y range which makes all nodes directly connected to the public internet or you have this DHCP server manage a private block og IPv6 addresses which makes all your nodes connect to the internet through NAT.  
+  - You have to have a DHCP server in your network that manages and controls IPV6 ip adress leases.  Depending on your specific setup you have this DHCP server manage a public IPv6 range which makes all nodes directly connected to the public internet or you have this DHCP server manage a private block of IPv6 addresses which makes all your nodes connect to the internet through NAT.  
 
 As a farmer you are in charge of selecting and creating the appropriate network setup for your farm.  
 
