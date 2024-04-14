@@ -152,6 +152,7 @@
       - [TFGrid Stacks](documentation/developers/grid_deployment/tfgrid_stacks.md)
       - [Full VM Grid Deployment](documentation/developers/grid_deployment/grid_deployment_full_vm.md)
       - [Grid Snapshots](documentation/developers/grid_deployment/snapshots.md)
+      - [Deploy the Dashboard](documentation/developers/grid_deployment/deploy_dashboard.md)
   - [Farmers](documentation/farmers/farmers.md)
     - [Build a 3Node](documentation/farmers/3node_building/3node_building.md)
       - [1. Create a Farm](documentation/farmers/3node_building/1_create_farm.md)
