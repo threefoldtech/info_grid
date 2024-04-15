@@ -5,7 +5,7 @@
 
 - [Introduction](#introduction)
 - [Connect to Other Nodes](#connect-to-other-nodes)
-- [Possible Peers](#possible-peers)
+- [Hosted Public Nodes](#hosted-public-nodes)
 - [Default Port](#default-port)
 - [Check Network Information](#check-network-information)
 - [Test the Network](#test-the-network)
@@ -14,6 +14,7 @@
 - [API](#api)
 - [Message System](#message-system)
 - [Inspecting Node Keys](#inspecting-node-keys)
+- [Permanently Enable Mycelium](#permanently-enable-mycelium)
 
 ***
 
@@ -36,18 +37,32 @@ If you are using other tun inferface, e.g. utun3 (default), you can set a differ
 mycelium --peers tcp://83.231.240.31:9651 quic://185.206.122.71:9651 --tun-name utun9
 ```
 
-## Possible Peers
+## Hosted Public Nodes
 
-Here are some possible peers.
+A couple of public nodes are provided, which can be freely connected to. This allows
+anyone to join the global network. These are hosted in 3 geographic regions, on both
+IPv4 and IPv6, and supporting both the Tcp and Quic protocols. The nodes are the
+following:
 
-```
-tcp://146.185.93.83:9651
-quic://83.231.240.31:9651
-quic://185.206.122.71:9651
-tcp://[2a04:f340:c0:71:28cc:b2ff:fe63:dd1c]:9651
-tcp://[2001:728:1000:402:78d3:cdff:fe63:e07e]:9651
-quic://[2a10:b600:1:0:ec4:7aff:fe30:8235]:9651
-```
+| Node ID | Region | IPv4 | IPv6 | Tcp port | Quic port |
+| --- | --- | --- | --- | --- | --- |
+| 01 | DE | 188.40.132.242 | 2a01:4f8:221:1e0b::2 | 9651 | 9651 |
+| 02 | DE | 136.243.47.186 | 2a01:4f8:212:fa6::2 | 9651 | 9651 |
+| 03 | BE | 185.69.166.7 | 2a02:1802:5e:0:8478:51ff:fee2:3331 | 9651 | 9651 |
+| 04 | BE | 185.69.166.8 | 2a02:1802:5e:0:8c9e:7dff:fec9:f0d2 | 9651 | 9651 |
+| 05 | FI | 65.21.231.58 | 2a01:4f9:6a:1dc5::2 | 9651 | 9651 |
+| 06 | FI | 65.109.18.113 | 2a01:4f9:5a:1042::2 | 9651 | 9651 |
+
+These nodes are all interconnected, so 2 peers who each connect to a different node
+(or set of disjoint nodes) will still be able to reach each other. For optimal performance,
+it is recommended to connect to all of the above at once however. An example connection
+string could be:
+
+`--peers tcp://188.40.132.242:9651 "tcp://[2a01:4f8:212:fa6::2]:9651" quic://185.69.166.7:9651 "tcp://[2a02:1802:5e:0:8c9e:7dff:fec9:f0d2]:9651" tcp://65.21.231.58:9651 "quic://[2a01:4f9:5a:1042::2]:9651"`
+
+It is up to the user to decide which peers he wants to use, over which protocol.
+Note that quotation may or may not be required, depending on which shell is being
+used.
 
 ## Default Port
 
@@ -136,4 +151,34 @@ Where the output could be something like this:
 ```sh
 Public key: a47c1d6f2a15b2c670d3a88fbe0aeb301ced12f7bcb4c8e3aa877b20f8559c02
 Address: 27f:b2c5:a944:4dad:9cb1:da4:8bf7:7e65
+```
+
+## Permanently Enable Mycelium
+
+It is possible to permenently enable Mycelium on your client.
+
+For Linux, we use systemd to manage the mycelium daemon in `/storage/`. Here's an example:
+
+```
+[Unit]
+Description=End-2-end encrypted IPv6 overlay network
+Wants=network.target
+After=network.target
+Documentation=https://github.com/threefoldtech/mycelium
+
+[Service]
+ProtectHome=true
+ProtectSystem=true
+SyslogIdentifier=mycelium
+CapabilityBoundingSet=CAP_NET_ADMIN
+StateDirectory=mycelium
+StateDirectoryMode=0700
+ExecStartPre=+-/sbin/modprobe tun
+ExecStart=/storage/mycelium --tun-name mycelium -k %S/mycelium/key.bin --peers tcp://[2a01:4f8:221:1e0b::2]:9651 tcp://[2a01:4f8:212:fa6::2]:9651 tcp://[2a02:1802:5e:0:8478:51ff:fee2:3331]:9651 tcp://[2a02:1802:5e:0:8c9e:7dff:fec9:f0d2]:9651 tcp://[2a01:4f9:6a:1dc5::2]:9651 tcp://[2a01:4f9:5a:1042::2]:9651
+Restart=always
+RestartSec=5
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target
 ```
