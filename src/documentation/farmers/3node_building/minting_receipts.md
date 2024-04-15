@@ -5,6 +5,7 @@
 - [Introduction](#introduction)
 - [Access the Reports](#access-the-reports)
 - [Available Information](#available-information)
+- [Notes](#notes)
 
 ***
 
@@ -22,11 +23,11 @@ Once you have the receipt hash of your node minting, you can get the [minting re
 
 The ThreeFold Alpha minting tool will present the following information for each minting receipt hash:
 
-- Node Info
+- Node Info: This contains the basic information in relation to your node.
   - Node ID
   - Farm Name and ID
   - Measured Uptime
-- Node Resources
+- Node Resources: these resources are related to the clout units. Read more about cloud units [here](../../../knowledge_base/cloud/cloudunits.md).
   - CU
   - SU
   - NU
@@ -34,8 +35,12 @@ The ThreeFold Alpha minting tool will present the following information for each
   - MRU
   - SRU
   - HRU
-- TFT Farmed
-- Payout Address
+- TFT Farmed: The quantity of TFT farmed during the minting period.
+- Payout Address: The payout address is the Stellar address you set to receive your farming rewards.
+
+## Notes
+
+Minting is set at a TFT value of 0.08 USD. This can be seen as a difficulty level. This number is not related to the TFT market price and is currently fixed. The DAO can vote to change this number. For example, if the DAO decides later to increase the TFT minting value to 0.10, the farming difficulty would be increased by 25% (0.08 * 1.25 = 0.10).
 
 <!-- NOTE: This is removed from the new dashboard, but might be brought back.
 
