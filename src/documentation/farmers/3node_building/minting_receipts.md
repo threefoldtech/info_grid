@@ -5,7 +5,7 @@
 - [Introduction](#introduction)
 - [Access the Reports](#access-the-reports)
 - [Available Information](#available-information)
-- [Notes](#notes)
+- [TFT Farming Registration Price](#tft-farming-registration-price)
 
 ***
 
@@ -27,7 +27,7 @@ The ThreeFold Alpha minting tool will present the following information for each
   - Node ID
   - Farm Name and ID
   - Measured Uptime
-- Node Resources: these resources are related to the clout units. Read more about cloud units [here](../../../knowledge_base/cloud/cloudunits.md).
+- Node Resources: These resources are related to the [cloud units](../../../knowledge_base/cloud/cloudunits.md) and the [resource units](../../../knowledge_base/cloud/resource_units_calc_cloudunits.md).
   - CU
   - SU
   - NU
@@ -35,12 +35,14 @@ The ThreeFold Alpha minting tool will present the following information for each
   - MRU
   - SRU
   - HRU
-- TFT Farmed: The quantity of TFT farmed during the minting period.
+- TFT Farmed: This is the quantity of TFT farmed during the minting period.
 - Payout Address: The payout address is the Stellar address you set to receive your farming rewards.
 
-## Notes
+## TFT Farming Registration Price
 
-Minting is set at a TFT value of 0.08 USD. This can be seen as a difficulty level. This number is not related to the TFT market price and is currently fixed. The DAO can vote to change this number. For example, if the DAO decides later to increase the TFT minting value to 0.10, the farming difficulty would be increased by 25% (0.08 * 1.25 = 0.10).
+Currently, minting is set at a TFT value of 0.08 USD. This TFT farming registration price (i.e. the TFT minting value) can be seen as a farming difficulty level. The higher this number is, the less TFT is minted for the same given node. This number is not related to the TFT market price and is currently fixed. 
+
+The ThreeFold DAO can vote to change this number. For example, if the ThreeFold DAO decides to increase the TFT minting value to 0.10 USD, the farming difficulty would be increased by 25% (0.08 * 1.25 = 0.10). This change in the TFT farming registration price would then affect all new nodes that are registered after this change.
 
 <!-- NOTE: This is removed from the new dashboard, but might be brought back.
 
