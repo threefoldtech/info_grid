@@ -42,7 +42,7 @@ The ThreeFold Alpha minting tool will present the following information for each
 
 Currently, minting is set at a TFT value of 0.08 USD. This TFT farming registration price (i.e. the TFT minting value) can be seen as a farming difficulty level. The higher this number is, the less TFT is minted for the same given node. This number is not related to the TFT market price and is currently fixed. 
 
-The ThreeFold DAO can vote to change this number. For example, if the ThreeFold DAO decides to increase the TFT minting value to 0.10 USD, the farming difficulty would be increased by 25% (0.08 * 1.25 = 0.10). This change in the TFT farming registration price would then affect all new nodes that are registered after this change.
+The ThreeFold DAO can vote to change this number. For example, if the ThreeFold DAO decides to increase the TFT minting value to 0.10 USD, the farming difficulty would be increased by 25% (0.08 * 1.25 = 0.10). This updated TFT farming registration price would then affect all new nodes that are registered after the DAO vote is passed.
 
 <!-- NOTE: This is removed from the new dashboard, but might be brought back.
 
