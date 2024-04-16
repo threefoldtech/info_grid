@@ -11,7 +11,7 @@
 
 ## Introduction
 
-To interact with TFChain, users can connect their TFChain wallet to the wallet connector available on the the ThreeFold Dashboard.
+To interact with TFChain, users can connect their TFChain wallet to the wallet connector available on the ThreeFold Dashboard.
 
 You can create a new wallet or import an existing wallet.
 
@@ -40,7 +40,7 @@ Open the ThreeFold Dashboard and enter the following information to create your 
 - `Password` is used to access your account.
 - `Confirm Password`
 
-After you finish typing your credentials, click on **Connect**. Once your profile gets activated, you should find your **Twin ID** and **Address** generated under your **_Mnemonics_** for verification. Your **Account Balance** will be available at the top right corner under your profile name.
+After setting your credentials, click on **Connect**. Once your profile gets activated, you should find your **Twin ID** and **Address** generated under your **_Mnemonics_**. Your **Account Balance** will be available at the top right corner.
 
 ![ ](./img/profile_manager3.png)
 
