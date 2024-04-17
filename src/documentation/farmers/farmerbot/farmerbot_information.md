@@ -36,6 +36,8 @@
   - [Properly reboot the node if power target "Down" doesn't work](#properly-reboot-the-node-if-power-target-down-doesnt-work)
   - [Add a 3Node to a running Farmerbot](#add-a-3node-to-a-running-farmerbot)
   - [Update the Farmerbot with a new release](#update-the-farmerbot-with-a-new-release)
+- [Troubleshooting](#troubleshooting)
+  - [Can't Find the Logs](#cant-find-the-logs)
 - [Questions and Feedback](#questions-and-feedback)
 
 ***
@@ -430,6 +432,18 @@ There are only a few steps needed to update the Farmerbot to a new release.
   ```
   rm tfgrid-sdk-go_Linux_x86_64.tar.gz
   ```
+
+# Troubleshooting
+
+## Can't Find the Logs
+
+If you can't find the logs of the Farmerbot, make sure that you ran the bot before! Once the Farmerbot runs, it should print logs in a file called `farmerbot.log` in the directory where it is running.
+
+You can try a search for any files under the home directory with the `.log` extension in case it's been moved:
+
+```
+find ~/ -name '*.log'
+```
 
 # Questions and Feedback
 
