@@ -445,7 +445,7 @@ You can try a search for any files under the home directory with the `.log` exte
 find ~/ -name '*.log'
 ```
 
-If you've deleted the log file while the bot is running, the log files won't be recreated. In this case, you will need to restart the bot, e.g. `systemctl restart farmerbot`. The bot will then automatically create a log file.
+If you've deleted the log file while the bot is running, the bot won't recreated it whille running. In this case, you will need to restart the bot, e.g. `systemctl restart farmerbot`. The bot will then automatically create a log file.
 
 # Questions and Feedback
 
