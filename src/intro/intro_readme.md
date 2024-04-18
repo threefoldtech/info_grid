@@ -1,4 +1,4 @@
-# ThreeFold Grid Manual
+# ThreeFold Manual
 
 *Welcome to the ThreeFold Manual!*
 
