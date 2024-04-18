@@ -437,13 +437,15 @@ There are only a few steps needed to update the Farmerbot to a new release.
 
 ## Can't Find the Logs
 
-If you can't find the logs of the Farmerbot, make sure that you ran the bot before! Once the Farmerbot runs, it should print logs in a file called `farmerbot.log` in the directory where it is running.
+If you can't find the logs of the Farmerbot, make sure that you ran the bot before! Once the Farmerbot runs, it prints logs in a file called `farmerbot.log` in the directory where it is running.
 
 You can try a search for any files under the home directory with the `.log` extension in case it's been moved:
 
 ```
 find ~/ -name '*.log'
 ```
+
+If you've deleted the log file while the bot is running, the log files won't be recreated. In this case, you will need to restart the bot, e.g. `systemctl restart farmerbot`. The bot will then automatically create a log file.
 
 # Questions and Feedback
 
