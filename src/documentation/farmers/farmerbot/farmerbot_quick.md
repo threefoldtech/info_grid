@@ -231,7 +231,7 @@ power:
   periodic_wake_up_start: 01:00PM
 ```
 
-Note that if the user wants to include all the nodes within a farm, they can simply omit the `included_nodes` section. In this case, all nodes of the farm will be included in the Farmerbot, as shown in the example below:
+Note that if the user wants to include all the nodes within a farm, they can simply omit the `included_nodes` section. In this case, all nodes of the farm will be included in the Farmerbot, as shown in the example below. If you are proceeding like this, make sure that you don't have any unused node IDs on your farm, as the Farmerbot would try to wake up nodes that aren't running anymore on the grid.
 
 ```
 farm_id: 1  
