@@ -15,6 +15,11 @@
 - [Message System](#message-system)
 - [Inspecting Node Keys](#inspecting-node-keys)
 - [Permanently Enable Mycelium](#permanently-enable-mycelium)
+- [Troubleshooting](#troubleshooting)
+  - [Root Access](#root-access)
+  - [Enable IPv6 at the OS Level](#enable-ipv6-at-the-os-level)
+  - [VPN Can Block Mycelium](#vpn-can-block-mycelium)
+  - [Add Peers](#add-peers)
 
 ***
 
@@ -182,3 +187,38 @@ TimeoutStopSec=5
 [Install]
 WantedBy=multi-user.target
 ```
+
+## Troubleshooting
+
+### Root Access
+
+You might need to run Mycelium as root. Some error messages could be something like: `Error: NixError(EPERM)`.
+
+### Enable IPv6 at the OS Level
+
+You need to enable IPv6 at the OS level. Some error messages could be something like: `Permission denied (os error 13)`.
+
+- Check if IPv66 is enabled
+  - If disabled, output is 1, if enabled, output is 0
+  ```
+  sysctl net.ipv6.conf.all.disable_ipv6
+  ```
+- Enable IPv6
+  ```
+  sudo sysctl net.ipv6.conf.all.disable_ipv6=0
+  ```
+
+Here's some commands to troubleshoot IPv6:
+
+```
+sudo ip6tables -S INPUT
+sudo ip6tables -S OUTPUT
+```
+
+### VPN Can Block Mycelium
+
+You might need to disconnect your VPN when using Mycelium.
+
+### Add Peers
+
+It can help to connect to other peers. Check the Mycelium repository for [peers](https://github.com/threefoldtech/mycelium?tab=readme-ov-file#hosted-public-nodes).
