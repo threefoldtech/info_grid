@@ -2,39 +2,50 @@
 
 <h2>Table of Contents</h2>
 
-- [Nodes](#nodes)
-- [GPU Support](#gpu-support)
+- [Overview](#overview)
+- [Filters](#filters)
+- [Node Details](#node-details)
+- [Dedicated Nodes](#dedicated-nodes)
+- [GPU Nodes](#gpu-nodes)
 
 ***
 
-## Nodes
+## Overview
 
-The Node Finder page provides a more detailed view for the nodes available on the ThreeFold grid With detailed information and statistics about any of the available nodes.
+The Node Finder page provides a more detailed view for the nodes available on the ThreeFold grid with detailed information and statistics about nodes.
 
-![](../img/nodes.png)
+![](../img/dashboard_node_finder.png)
 
-You can get a node with the desired specifications using the filters available in the nodes page.
+## Filters
 
-![](../img/nodes_filters.png)
+You can use the filters to narrow your search and find a node with the desired specifications.
 
-You can see all of the node details by clicking on a node record.
+![](../img/dashboard_node_finder_filters.png)
 
-![](../img/nodes_details.png)
+## Node Details
 
-## GPU Support
+You can see all of the node details when you click on its row.
 
-![GPU support](../img/gpu_filter.png)
+![](../img/dashboard_node_finder_node_view.png)
 
-- A new filter for GPU supported node is now available on the Nodes page.
-- GPU count
-- Filtering capabilities based on the model / device
+## Dedicated Nodes
 
-On the details pages is shown the card information and its status (`reserved` or `available`) also the ID that’s needed to be used during deployments is easily accessible and has a copy to clipboard button.
+To see only dedicated nodes, enable **Dedicated Nodes** in the filters.
 
-![GPU details](../img/gpu_details.png)
+![](../img/dashboard_node_finder_dedicated.png)
 
-Here’s an example of how it looks in case of reserved
+## GPU Nodes
 
-![GPU details](../img/gpu_details_reserved.png)
+To see only nodes with GPU, enable **GPU Node** in the filters.
 
-The TF Dashboard is where to reserve the nodes the farmer should be able to set the extra fees on the form and the user also should be able to reserve and get the details of the node (cost including the extrafees, GPU informations).
+![](../img/dashboard_node_finder_gpu.png)
+
+This will filter nodes and only show nodes with GPU. You can see several information such as the model of the GPU and a GPU score. 
+
+![](../img/dashboard_node_finder_gpu2.png)
+
+You can click on a given GPU node and see the GPU details.
+
+![](../img/dashboard_node_finder_gpu3.png)
+
+The ID that’s needed to be used during deployments is easily accessible and has a button to copy to the clipboard.
