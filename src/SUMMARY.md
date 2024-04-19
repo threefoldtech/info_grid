@@ -169,6 +169,7 @@
       - [Room Parameters](documentation/farmers/farming_optimization/farm_room_parameters.md)
       - [Farming Costs](documentation/farmers/farming_optimization/farming_costs.md)
       - [Calculate Your ROI](documentation/farmers/farming_optimization/calculate_roi.md)
+      - [Farming Requirements](documentation/farmers/farming_optimization/farming_requirements.md)
     - [Advanced Networking](documentation/farmers/advanced_networking/advanced_networking_toc.md)
       - [Networking Overview](documentation/farmers/advanced_networking/networking_overview.md)
       - [Network Considerations](documentation/farmers/advanced_networking/network_considerations.md)
