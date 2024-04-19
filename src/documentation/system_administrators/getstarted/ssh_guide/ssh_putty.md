@@ -29,7 +29,7 @@ The main steps for the whole process are the following:
 * Deploy a 3Node
   * Choose IPv4 or the Planetary Network
 * SSH into the 3Node
-  * For the Planetary Network, download the Planetary Network Connector
+  * For the Planetary Network, set a [Planetary Network connection](../planetarynetwork.md)
 
 
 

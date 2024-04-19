@@ -84,13 +84,7 @@ You now have an SSH connection on Linux with IPv4.
 
 Here are the steps to SSH into a 3Node with the Planetary Network on Linux.
 
-* To download and connect to the Threefold Planetary Network Connector
-  * Download the [.deb file](https://github.com/threefoldtech/planetary_network/releases/tag/v0.3-rc1-Linux)
-  * Right-click and select `Open with other application`
-    * Select `Software Install`
-  * Search the `Threefold Planetary Connector` and open it
-  * Disconnect your VPN if you have one
-  * In the connector, click `Connect`
+* Set a [Planetary Network connection](../planetarynetwork.md)
 * To create the SSH key pair, write in the terminal
   * ```
     ssh-keygen
@@ -163,12 +157,7 @@ You now have an SSH connection on MAC with IPv4.
 
 Here are the steps to SSH into a 3Node with the Planetary Network on MAC.
 
-* To download and connect to the Threefold Planetary Network Connector
-  * Download the [.dmg file](https://github.com/threefoldtech/planetary_network/releases/tag/v0.3-rc1-MacOS)
-  * Run the dmg installer
-  * Search the Threefold Planetary Connector in `Applications` and open it
-  * Disconnect your VPN if you have one
-  * In the connector, click `Connect`
+* Set a [Planetary Network connection](../planetarynetwork.md)
 * To create the SSH key pair, write in the terminal 
     * ```
       ssh-keygen
@@ -246,12 +235,7 @@ You now have an SSH connection on Window with IPv4.
 
 ### SSH into a 3Node with the Planetary Network on Windows
 
-* To download and connect to the Threefold Planetary Network Connector
-  * Download the [.msi file](https://github.com/threefoldtech/planetary_network/releases/tag/v0.3-rc1-Windows10)
-  * Search the `Threefold Planetary Connector`
-    * Right-click and select `Install`
-  * Disconnect your VPN if you have one
-  * Open the TF connector and click `Connect`
+* Set a [Planetary Network connection](../planetarynetwork.md)
 * To download OpenSSH client and OpenSSH server
   * Open the `Settings` and select `Apps`
   * Click `Apps & Features`

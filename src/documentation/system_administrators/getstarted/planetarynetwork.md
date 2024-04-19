@@ -14,7 +14,6 @@
   - [MacOS](#macos-1)
 - [Get Yggdrasil IP](#get-yggdrasil-ip)
 - [Add Peers](#add-peers)
-- [Clients](#clients)
 - [Peers](#peers)
   - [Central europe](#central-europe)
     - [Ghent](#ghent)
@@ -140,10 +139,6 @@ You'll need this address when registering your twin on TFChain later.
 - Restart yggdrasil by
 
         systemctl restart yggdrasil
-
-## Clients
-
-- [planetary network connector](https://github.com/threefoldtech/planetary_network)
 
 ## Peers
 
