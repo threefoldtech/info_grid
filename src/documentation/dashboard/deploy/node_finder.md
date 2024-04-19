@@ -28,6 +28,8 @@ You can see all of the node details when you click on its row.
 
 ![](../img/dashboard_node_finder_node_view.png)
 
+Note that the network speed test displayed in the Node Finder is updated every 6 hours.
+
 ## Dedicated Nodes
 
 To see only dedicated nodes, enable **Dedicated Nodes** in the filters.
