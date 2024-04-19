@@ -2047,6 +2047,8 @@ In general, this message means that the ThreeFold Grid asked something to your 3
 
 This often indicates that the real-time clock of the system is not synced with current time. You can fix this manually in the BIOS. Go to the BIOS settings and adjust the **Time** and **Date** settings.
 
+You can also try to adjust the clock by NTP over the network, if it applies to your case.
+
 ### I try to boot a 3Node, but I get the error: "No Route to Host on Linux". What does it mean?
 
 There are many potential answers to this. Perhaps the Host is offline, the service isn't running. This is usually the reason with TF Grid. It means the Grid is not responsive. In this case, try to boot the 3Node later. If it persists ask TF Support.
