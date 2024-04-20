@@ -14,7 +14,6 @@
 - [API](#api)
 - [Message System](#message-system)
 - [Inspecting Node Keys](#inspecting-node-keys)
-- [Permanently Enable Mycelium](#permanently-enable-mycelium)
 - [Troubleshooting](#troubleshooting)
   - [Root Access](#root-access)
   - [Enable IPv6 at the OS Level](#enable-ipv6-at-the-os-level)
@@ -156,36 +155,6 @@ Where the output could be something like this:
 ```sh
 Public key: a47c1d6f2a15b2c670d3a88fbe0aeb301ced12f7bcb4c8e3aa877b20f8559c02
 Address: 27f:b2c5:a944:4dad:9cb1:da4:8bf7:7e65
-```
-
-## Permanently Enable Mycelium
-
-It is possible to permenently enable Mycelium on your client.
-
-For Linux, we use systemd to manage the mycelium daemon in `/storage/`. Here's an example:
-
-```
-[Unit]
-Description=End-2-end encrypted IPv6 overlay network
-Wants=network.target
-After=network.target
-Documentation=https://github.com/threefoldtech/mycelium
-
-[Service]
-ProtectHome=true
-ProtectSystem=true
-SyslogIdentifier=mycelium
-CapabilityBoundingSet=CAP_NET_ADMIN
-StateDirectory=mycelium
-StateDirectoryMode=0700
-ExecStartPre=+-/sbin/modprobe tun
-ExecStart=/storage/mycelium --tun-name mycelium -k %S/mycelium/key.bin --peers tcp://[2a01:4f8:221:1e0b::2]:9651 tcp://[2a01:4f8:212:fa6::2]:9651 tcp://[2a02:1802:5e:0:8478:51ff:fee2:3331]:9651 tcp://[2a02:1802:5e:0:8c9e:7dff:fec9:f0d2]:9651 tcp://[2a01:4f9:6a:1dc5::2]:9651 tcp://[2a01:4f9:5a:1042::2]:9651
-Restart=always
-RestartSec=5
-TimeoutStopSec=5
-
-[Install]
-WantedBy=multi-user.target
 ```
 
 ## Troubleshooting
