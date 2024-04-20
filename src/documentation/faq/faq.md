@@ -2045,7 +2045,11 @@ In general, this message means that the ThreeFold Grid asked something to your 3
 
 ### How can I fix the error messages: "context deadline exceeded" accompanied with "node is behind acceptable delay with timestamp"?
 
-This often indicates that the real-time clock of the system is not synced with current time. You can fix this manually in the BIOS. Go to the BIOS settings and adjust the **Time** and **Date** settings.
+This often indicates that the real-time clock of the system is not synced with current time. There have been different fixes reported to this issue.
+
+You can boot the node using a Ubuntu live image to sync the hardware time. After that, you can reboot the node and it should boot normally.
+
+You can fix this manually in the BIOS. Go to the BIOS settings and adjust the **Time** and **Date** settings.
 
 You can also try to adjust the clock by NTP over the network, if it applies to your case.
 
