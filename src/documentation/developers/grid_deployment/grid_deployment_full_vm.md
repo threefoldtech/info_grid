@@ -4,6 +4,7 @@
 
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
+- [Deploy All 3 Network Instances](#deploy-all-3-network-instances)
 - [DNS Settings](#dns-settings)
   - [DNS Verification](#dns-verification)
 - [Prepare the VM](#prepare-the-vm)
@@ -17,9 +18,11 @@
 
 ## Introduction
 
-We present the steps to deploy a network instance of the TFGrid on a full VM. 
+We present the steps to deploy an instance of the TFGrid on a full VM.
 
-For this guide, we will be deploying a mainnet instance. While the steps are similar for testnet and devnet, you will have to adjust your deployment depending on which network you use.
+For this guide, we will be deploying a mainnet instance. While the steps are similar for testnet and devnet, you will have to adjust your deployment depending on which network you use. Details are provided when needed.
+
+We also provide information to deploy the 3 different network instances.
 
 ## Prerequisites
 
@@ -33,17 +36,30 @@ For this guide, you will need to deploy a full VM on the ThreeFold Grid with at 
 
 After deploying the full VM, take note of the IPv4 and IPv6 addresses to properly set the DNS records and then SSH into the VM.
 
+It is recommended to deploy on a machine with modern hardware and NVME storage disk.
+
+## Deploy All 3 Network Instances
+
+To deploy the 3 network instances, mainnet, testnet and mainnet, you need to follow the same process for each network on a separate machine or at least on a different VM. 
+
+This means that you can either deploy each network instance on 3 different machines, or you can also deploy 3 different VMs on the same machine, e.g. a dedicated node. Then, each VM will run a different network instance. In this case, you will certainly need a machine with NVME storage disk and modern hardware.
+
 ## DNS Settings
 
 You need to set an A record for the IPv4 address and an AAAA record for the IPv6 address with a wildcard subdomain.
 
-The following table explicitly shows how to set the A and AAAA records for your domain.
+The following table explicitly shows how to set the A and AAAA records for your domain for all 3 networks. Note that both `testnet` and `devnet` have a subdomain. The last two lines are for mainnet since no subdomain is needed in this case.
 
 | Type | Host | Value          |
 | ---- | ---- | -------------- |
-| A    | \*   | <ipv4_address> |
-| AAAA | \*   | <ipv6_address> |
+| A    | \*.dev   | <devnet_ipv4_address> |
+| AAAA | \*.dev  | <devnet_ipv6_address> |
+| A    | \*.test   | <testnet_ipv4_address> |
+| AAAA | \*.test  | <testnet_ipv6_address> |
+| A    | \*  | <mainnet_ipv4_address> |
+| AAAA | \*  | <mainnet_ipv6_address> |
 
+As stated above, each network instance must be on its own VM or machine to work properly. Make sure to adjust the DNS records accordingly.
 
 ### DNS Verification
 
@@ -51,12 +67,17 @@ You can use tools such as [DNSChecker](https://dnschecker.org/) or [dig](https:/
 
 ## Prepare the VM
 
+We show the steps to prepare the VM to run the network instance.
+
+If you are deploying on testnet or devnet, simply replace `mainnet` by the proper network in the following lines.
+
 - Download the ThreeFold Tech `grid_deployment` repository
     ```
     git clone https://github.com/threefoldtech/grid_deployment
     cd grid_deployment/docker-compose/mainnet
     ```
 - Generate a TFChain node key with `subkey`
+  - Note: If you deploy the 3 network instances, you can use the same node key for all 3 networks. But it is recommended to use 3 different keys to facilitate management.
     ```
     echo .subkey_mainnet >> .gitignore
     ../subkey generate-node-key > .nodekey_mainnet
@@ -80,7 +101,7 @@ You can use tools such as [DNSChecker](https://dnschecker.org/) or [dig](https:/
   - **GRID_PROXY_MNEMONIC**="word1 word2 ... word24"
     - Write the seed phrase of an account on mainnet with at least 10 TFT in the wallet and a registered twin ID\*
 
-> \*Note: If you've created an account using the ThreeFold Dashboard on mainnet, the twin ID is automatically registered.
+> \*Note: If you've created an account using the ThreeFold Dashboard on a given network, the twin ID is automatically registered for this network.
 
 ## Set the Firewall
 
@@ -110,15 +131,17 @@ This will take some time since you are downloading the whole mainnet grid snapsh
 Once you've deployed the grid stack online, you can access the different grid services by usual the usual subdomains:
 
 ```
-dashboard.your.domain
-metrics.your.domain
-tfchain.your.domain
-graphql.your.domain
-relay.your.domain
-gridproxy.your.domain
-activation.your.domain
-stats.your.domain
+dashboard.example.com
+metrics.example.com
+tfchain.example.com
+graphql.example.com
+relay.example.com
+gridproxy.example.com
+activation.example.com
+stats.example.com
 ```
+
+In the case of testnet and devnet, links will also have the given subdomain, such as `dashboard.test.example.com` for a `testnet` instance.
 
 ## Manual Commands
 
