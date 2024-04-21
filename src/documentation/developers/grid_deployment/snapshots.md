@@ -4,6 +4,10 @@
 - [Introduction](#introduction)
 - [Services](#services)
 - [ThreeFold Public Snapshots](#threefold-public-snapshots)
+- [Requirements](#requirements)
+  - [Files for Each Net](#files-for-each-net)
+  - [Deploy All 3 Network Instances](#deploy-all-3-network-instances)
+- [Deploy a Snapshot Backend](#deploy-a-snapshot-backend)
 - [Deploy the Services with Scripts](#deploy-the-services-with-scripts)
   - [Create the Snapshots](#create-the-snapshots)
   - [Start All the Services](#start-all-the-services)
@@ -51,6 +55,65 @@ ThreeFold hosts all available snapshots at: [https://bknd.snapshot.grid.tf/](htt
     rsync -Lv --progress --partial rsync://bknd.snapshot.grid.tf:34873/gridsnapshotsdev/processor-devnet-latest.tar.gz .   
     ```
 
+## Requirements
+
+To run your own snapshot backend, you need the following:
+
+- Configuration
+  - A working docker environment 
+  - 'node key' for the TFchain public RPC node, generated with `subkey generate-node-key`
+
+   Hardware
+  - min of 8 modern CPU cores
+  - min of 32GB RAM
+  - min of 1TB SSD storage (high preference for NVMe based storage), preferably more (as the chain keeps growing in size)
+  - min of 2TB HDD storage (to store and share the snapshots)
+
+Dev, QA and Testnet can do with a Sata SSD setup. Mainnet requires NVMe based SSDs due to the data size.
+
+**Note**: If a deployment does not have enough disk input/output operations per second (iops) available, you might see the processor container restarting regulary and grid_proxy errors regarding processor database timeouts.
+
+### Files for Each Net
+
+Each folder contains the required deployment files for its net. Make sure to work in the folder that has the name of the network you want to create snapshots for.
+
+What does each file do:
+- `.env` - contains environment files maintaned by Threefold Tech
+- `.gitignore` - has a list of files to ignore once the repo has been cloned. This has the purpose to not have uncommited changes to files when working in this repo
+- `.secrets.env-examples` - is where you have to add all your unique environment variables
+- `create_snapshot.sh` - script to create a snapshot (used by cron)
+- `docker-compose.yml` - has all the required docker-compose configuration to deploy a working Grid stack
+- `open_logs_tmux.sh` - opens all the docker logs in tmux sessions
+- `typesBundle.json` - contains data for the Graphql indexer and is not to be touched
+- `startall.sh` - starts all the (already deployed) containers
+- `stopall.sh` - stops all the (already deployed) containers
+
+### Deploy All 3 Network Instances
+
+To deploy the 3 network instances, mainnet, testnet and mainnet, you need to follow the same process for each network on a separate machine or at least on a different VM. 
+
+This means that you can either deploy each network instance on 3 different machines, or you can also deploy 3 different VMs on the same machine, e.g. a dedicated node. Then, each VM will run a different network instance. In this case, you will certainly need a machine with NVME storage disk and modern hardware.
+
+## Deploy a Snapshot Backend
+
+Here's how to deploy a snapshot backend of a given network. 
+
+- Go to the corresponding network folder (e.g. `mainnet`).
+  ```sh
+  cd mainnet
+  cp .secrets.env-example .secrets.env
+  ```
+- Open `.secrets.env` and add your generated subkey node-key.
+- Check that all environment variables are correct.
+  ```
+  docker compose --env-file .secrets.env --env-file .env config
+  ```
+- Deploy the snapshot backend. Depending on the disk iops available, it can take up until a week to sync from block 0.
+
+  ```sh
+  docker compose --env-file .secrets.env --env-file .env up -d
+  ```
+
 ## Deploy the Services with Scripts
 
 You can deploy the 3 individual services using known methods such as [Docker](../../system_administrators/computer_it_basics/docker_basics.md). To facilitate the process, scripts are provided that run the necessary docker commands. 
@@ -87,7 +150,7 @@ You can set a cron job to execute a script running rsync to create the snapshots
     ```
   - Here is an example of a cron job where we execute the script every day at 1 AM and send the logs to `/var/log/snapshots/snapshots-cron.log`.
       ```sh
-      0 1 * * * sh /opt/snapshots/create-snapshot.sh > /var/log/snapshots/snapshots-cron.log 2>&1
+      0 1 * * * sh /root/code/grid_deployment/grid-snapshots/mainnet/create_snapshot.sh > /var/log/snapshots/snapshots-cron.log 2>&1
       ```
 
 ### Start All the Services
