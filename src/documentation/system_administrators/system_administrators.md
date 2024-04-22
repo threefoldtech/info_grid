@@ -83,3 +83,6 @@ For complementary information on ThreeFold grid and its cloud component, refer t
     - [IPFS on a Full VM](./advanced/ipfs/ipfs_fullvm.md)
     - [IPFS on a Micro VM](./advanced/ipfs/ipfs_microvm.md) 
   - [AI & ML Workloads](./advanced/ai_ml_workloads.md)
+  - [Ecommerce](./advanced/ecommerce/ecommerce.md)
+    - [WooCommerce](./advanced/ecommerce/woocommerce.md)
+    - [nopCommerce](./advanced/ecommerce/nopcommerce.md)

@@ -13,3 +13,6 @@ In this section, we delve into sophisticated topics and powerful functionalities
   - [IPFS on a Full VM](./ipfs/ipfs_fullvm.md)
   - [IPFS on a Micro VM](./ipfs/ipfs_microvm.md)
 - [AI & ML Workloads](./ai_ml_workloads.md)
+- [Ecommerce](./ecommerce/ecommerce.md)
+  - [WooCommerce](./ecommerce/woocommerce.md)
+  - [nopCommerce](./ecommerce/nopcommerce.md)
