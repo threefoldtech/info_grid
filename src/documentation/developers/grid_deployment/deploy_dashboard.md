@@ -5,7 +5,7 @@
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Create an SSH Tunnel](#create-an-ssh-tunnel)
-- [VSCode SSH Remote Connection](#vscode-ssh-remote-connection)
+- [Editor SSH Remote Connection](#editor-ssh-remote-connection)
 - [Set the VM](#set-the-vm)
 - [Build the Dashboard](#build-the-dashboard)
 - [Dashboard Public Access](#dashboard-public-access)
@@ -24,6 +24,8 @@ We also show how to provide a public access to the Dashboard by setting a gatewa
 - TFChain account with TFT
 - [Deploy full VM with WireGuard connection](../../system_administrators/getstarted/ssh_guide/ssh_wireguard.md)
 - [Make sure you can connect via SSH on the terminal](../../system_administrators/getstarted/ssh_guide/ssh_openssh.md)
+
+In this guide, we use WireGuard, but you can use other connection methods, such as [Mycelium](../../system_administrators/mycelium/mycelium_toc.md).
   
 ## Create an SSH Tunnel
 
@@ -34,11 +36,13 @@ We also show how to provide a public access to the Dashboard by setting a gatewa
 
 Simply leave this window open and follow the next steps.
 
-## VSCode SSH Remote Connection
+If you use an IPv6 address, e.g. with Mycelium, set `-6` in the line above instead of `-4`.
+
+## Editor SSH Remote Connection
 
 You can connect via SSH through the source-code editor to a VM on the grid. In this example, WireGuard is set.
 
-- Add the SSH Remote extension to VSCodium
+- Add the SSH Remote extension to [VSCodium](https://vscodium.com/)
 - Add a new SSH remote connection
 - Set the following (adjust with your own username and host)
   ``` 
