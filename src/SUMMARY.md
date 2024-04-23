@@ -22,7 +22,6 @@
         - [Caprover](documentation/dashboard/solutions/caprover.md)
             - [Caprover Admin](documentation/dashboard/solutions/caprover_admin.md)
             - [Caprover Worker](documentation/dashboard/solutions/caprover_worker.md)
-      - [Dedicated Machines](documentation/dashboard/deploy/dedicated_machines.md)
       - [Applications](documentation/dashboard/deploy/applications.md)
         - [Algorand](documentation/dashboard/solutions/algorand.md)
         - [CasperLabs](documentation/dashboard/solutions/casper.md)
