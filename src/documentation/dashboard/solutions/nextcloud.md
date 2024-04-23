@@ -63,7 +63,6 @@ If you're not sure and just want the easiest, most affordable option, skip the p
     * **Recommended**: {cpu: 4, memory: 16gb, diskSize: 1000gb }
     * Or choose a **Custom** plan
 * If want to reserve a public IPv4 address, click on Network then select **Public IPv4**
-* If you want a [dedicated](../deploy/dedicated_machines.md) and/or a certified node, select the corresponding option
 * Choose the location of the node
    * `Country`
    * `Farm Name`
