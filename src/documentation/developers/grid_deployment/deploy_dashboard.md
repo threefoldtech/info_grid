@@ -1,4 +1,4 @@
-<h1>Deploy the Dashboard Locally</h1>
+<h1>Deploy the Dashboard</h1>
 
 <h2>Table of Contents</h2>
 
@@ -8,12 +8,16 @@
 - [VSCode SSH Remote Connection](#vscode-ssh-remote-connection)
 - [Set the VM](#set-the-vm)
 - [Build the Dashboard](#build-the-dashboard)
+- [Dashboard Public Access](#dashboard-public-access)
+- [Questions and Feedback](#questions-and-feedback)
 
 ***
 
 ## Introduction
 
 We show how to deploy the Dashboard (devnet) on a full VM. To do so, we set an SSH tunnel and use the VSCodium Remote Explorer function. We will then be able to use a source-code editor to explore the code and see changes on a local browser.
+
+We also show how to provide a public access to the Dashboard by setting a gateway domain to your full VM deployment. Note that this method is not production-ready and should only be used to test the Dashboard.
 
 ## Prerequisites
 
@@ -62,8 +66,6 @@ export NVM_DIR="$HOME/.nvm"
 
 nvm install 18
 
-apt install wget
-
 npm install -g yarn
 
 ```
@@ -89,3 +91,33 @@ make run project=playground
 ```
 
 You can then access the dev net Dashboard on your local browser.
+
+To stop running the Dashboard, simply enter ̀`Ctrl-C` on the terminal window.
+
+
+## Dashboard Public Access
+
+> Note: This method is not production-ready. Use only for testing purposes.
+
+Once you've tested the Dashboard with the SSH tunnel, you can explore how to access it from the public Internet. For this, we will create a gateway domain and bind the host to `0.0.0.0`.
+
+On the Full VM page, [add a domain](../../dashboard/solutions/add_domain.md) to access your deployment from the public Internet.
+
+- Under `Actions`, click on `Manage Domains`
+- Go to `Add New Domain`
+- Choose a gateway domain under `Select domain`
+- Set the port 5173
+- Click on `Add`
+
+To run the Dashboard from the added domain, use this instead of the previous `make run` line:
+
+```
+cd packages/playground
+yarn dev --host 0.0.0.0
+```
+
+You can then access the Dashboard from the domain you just created.
+
+## Questions and Feedback
+
+If you have any questions or feedback, please let us know by either writing a post on the [ThreeFold Forum](https://forum.threefold.io/), or by chatting with us on the [TF Grid Tester Community](https://t.me/threefoldtesting) Telegram channel.
