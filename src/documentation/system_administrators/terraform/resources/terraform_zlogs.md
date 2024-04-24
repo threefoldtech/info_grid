@@ -1,10 +1,21 @@
-# Zlogs
+<h1> Zlogs </h1>
+
+<h2>Table of Contents</h2>
+
+- [Introduction](#introduction)
+- [Using Zlogs](#using-zlogs)
+  - [Creating a server](#creating-a-server)
+  - [Streaming logs](#streaming-logs)
+
+---
+
+## Introduction
 
 Zlogs is a utility that allows you to stream VM logs to a remote location. You can find the full description [here](https://github.com/threefoldtech/zos/tree/main/docs/manual/zlogs)
 
 ## Using Zlogs
 
-In terraform, a vm has a zlogs field, this field should contain a list of target URLs to stream logs to.
+In Terraform, a vm has a zlogs field, this field should contain a list of target URLs to stream logs to.
 
 Valid protocols are: `ws`, `wss`, and `redis`.
 

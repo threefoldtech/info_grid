@@ -8,6 +8,7 @@ In this section, we delve into sophisticated topics and powerful functionalities
 - [Cancel Contracts](./cancel_contracts.md)
 - [Contract Bills Reports](./contract_bill_report.md)
 - [Listing Free Public IPs](./list_public_ips.md)
+- [Cloud Console](./cloud_console.md)
 - [Redis](./grid3_redis.md)
 - [IPFS](./ipfs/ipfs_toc.md)
   - [IPFS on a Full VM](./ipfs/ipfs_fullvm.md)
