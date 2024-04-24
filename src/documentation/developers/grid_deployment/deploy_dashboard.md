@@ -62,8 +62,6 @@ export NVM_DIR="$HOME/.nvm"
 
 nvm install 18
 
-apt install wget
-
 npm install -g yarn
 
 ```
