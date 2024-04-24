@@ -11,7 +11,7 @@
 
 ## Introduction
 
-Farmers can set additional fees for their 3Nodes on the [TF Dashboard](https://dashboard.grid.tf/). By doing so, users will then be able to [reserve the 3Node and use it as a dedicated node](../../dashboard/deploy/dedicated_machines.md).
+Farmers can set additional fees for their 3Nodes on the [TF Dashboard](https://dashboard.grid.tf/). By doing so, users will then be able to [reserve the 3Node and use it as a dedicated node](../../dashboard/deploy/node_finder.md#dedicated-nodes).
 This can be useful for farmers who provide additional values to their 3Nodes, e.g. a GPU card and/or high-quality hardware.
 
 ## Steps
