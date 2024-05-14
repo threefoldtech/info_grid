@@ -5,6 +5,7 @@
 - [Introduction](#introduction)
 - [Access the Reports](#access-the-reports)
 - [Available Information](#available-information)
+- [TFT Farming Registration Price](#tft-farming-registration-price)
 
 ***
 
@@ -22,11 +23,11 @@ Once you have the receipt hash of your node minting, you can get the [minting re
 
 The ThreeFold Alpha minting tool will present the following information for each minting receipt hash:
 
-- Node Info
+- Node Info: This contains the basic information in relation to your node.
   - Node ID
   - Farm Name and ID
   - Measured Uptime
-- Node Resources
+- Node Resources: These resources are related to the [cloud units](../../../knowledge_base/cloud/cloudunits.md) and the [resource units](../../../knowledge_base/cloud/resource_units_calc_cloudunits.md).
   - CU
   - SU
   - NU
@@ -34,8 +35,14 @@ The ThreeFold Alpha minting tool will present the following information for each
   - MRU
   - SRU
   - HRU
-- TFT Farmed
-- Payout Address
+- TFT Farmed: This is the quantity of TFT farmed during the minting period.
+- Payout Address: The payout address is the Stellar address you set to receive your farming rewards.
+
+## TFT Farming Registration Price
+
+Currently, minting is set at a TFT value of 0.08 USD. This TFT farming registration price (i.e. the TFT minting value) can be seen as a farming difficulty level. The higher this number is, the less TFT is minted for the same given node. This number is not related to the TFT market price and is currently fixed. 
+
+The ThreeFold DAO can vote to change this number. For example, if the ThreeFold DAO decides to increase the TFT minting value to 0.10 USD, the farming difficulty would be increased by 25% (0.08 * 1.25 = 0.10). This updated TFT farming registration price would then affect all new nodes that are registered after the DAO vote is passed.
 
 <!-- NOTE: This is removed from the new dashboard, but might be brought back.
 

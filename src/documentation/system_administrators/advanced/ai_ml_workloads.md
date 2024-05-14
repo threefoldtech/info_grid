@@ -23,7 +23,7 @@ In the second part, we show how to use PyTorch to run AI/ML tasks.
 
 ## Prerequisites
 
-You need to reserve a [dedicated GPU node](../../dashboard/deploy/dedicated_machines.md) on the ThreeFold Grid.
+You need to reserve a [dedicated GPU node](../../dashboard/deploy/node_finder.md#dedicated-nodes) on the ThreeFold Grid.
 
 ## Prepare the System
 

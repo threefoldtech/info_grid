@@ -14,7 +14,7 @@
 
 ## Resource Units Overview
 
-The threefold Zero-OS and TFChain software translates resource units (CRU, MRU, HRU, SRU) into cloud units (CU, SU) for farming reward purposes.
+The ThreeFold Zero-OS and TFChain software translates resource units (CRU, MRU, HRU, SRU) into cloud units (CU, SU) for farming reward purposes.
 
 Resource units are used to measure and convert capacity on the hardware level into cloud units: CU & SU.
 

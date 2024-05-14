@@ -24,7 +24,7 @@
     - [ThreeFold uses Quantum Safe Storage technology, what does it mean?](#threefold-uses-quantum-safe-storage-technology-what-does-it-mean)
     - [Quantum Safe File System (QSFS) allows for part of the storage to go down and it can self repair, however it’s still attached to a single VM and a single point of failure. Can a QSFS instance be reattached to another VM to recover it?](#quantum-safe-file-system-qsfs-allows-for-part-of-the-storage-to-go-down-and-it-can-self-repair-however-its-still-attached-to-a-single-vm-and-a-single-point-of-failure-can-a-qsfs-instance-be-reattached-to-another-vm-to-recover-it)
     - [Where does the ThreeFold Explorer take its data from?](#where-does-the-threefold-explorer-take-its-data-from)
-    - [How can I use the Gridproxy to query information on the TF Grid?](#how-can-i-use-the-gridproxy-to-query-information-on-the-tf-grid)
+    - [How can I use the Gridproxy public API to query information on the TFGrid?](#how-can-i-use-the-gridproxy-public-api-to-query-information-on-the-tfgrid)
     - [How can I see the stats of the ThreeFold Grid?](#how-can-i-see-the-stats-of-the-threefold-grid)
     - [What is the difference between a seed phrase (mnemonics) and an HEX secret?](#what-is-the-difference-between-a-seed-phrase-mnemonics-and-an-hex-secret)
   - [Buying and Transacting TFT](#buying-and-transacting-tft)
@@ -219,6 +219,7 @@
   - [Troubleshooting and Error Messages](#troubleshooting-and-error-messages)
     - [Is it possible to access the Error Screen or Log Screen?](#is-it-possible-to-access-the-error-screen-or-log-screen)
     - [What does it mean when I see, during the 3Node boot, the message: error = context deadline exceeded?](#what-does-it-mean-when-i-see-during-the-3node-boot-the-message-error--context-deadline-exceeded)
+    - [How can I fix the error messages: "context deadline exceeded" accompanied with "node is behind acceptable delay with timestamp"?](#how-can-i-fix-the-error-messages-context-deadline-exceeded-accompanied-with-node-is-behind-acceptable-delay-with-timestamp)
     - [I try to boot a 3Node, but I get the error: "No Route to Host on Linux". What does it mean?](#i-try-to-boot-a-3node-but-i-get-the-error-no-route-to-host-on-linux-what-does-it-mean)
     - [How can I fix the error: "Network configuration succeed but Zero-OS kernel could not be downloaded" when booting a 3Node?](#how-can-i-fix-the-error-network-configuration-succeed-but-zero-os-kernel-could-not-be-downloaded-when-booting-a-3node)
     - [Using SAS disks, I get the error; "No ssd found, failed to register". What can I do to fix this?](#using-sas-disks-i-get-the-error-no-ssd-found-failed-to-register-what-can-i-do-to-fix-this)
@@ -409,9 +410,9 @@ See the next Q&A for more information on Swagger.
 
 
 
-### How can I use the Gridproxy to query information on the TF Grid?
+### How can I use the Gridproxy public API to query information on the TFGrid?
 
-You can go to the Gridproxy Swagger index: [https://gridproxy.grid.tf/swagger/index.html](https://gridproxy.grid.tf/swagger/index.html).
+You can go to the Gridproxy public API Swagger index: [https://gridproxy.grid.tf/swagger/index.html](https://gridproxy.grid.tf/swagger/index.html).
 
 There you can query information such as information on a 3node.
 
@@ -2042,6 +2043,15 @@ Yes! On the Zero-OS console, hit alt-F2 to open up the Error/Log Screen, and hit
 
 In general, this message means that the ThreeFold Grid asked something to your 3Node, and your 3Node could not respond fast enough. It is usually necessary to read the following error message to understand the situation more specifically.
 
+### How can I fix the error messages: "context deadline exceeded" accompanied with "node is behind acceptable delay with timestamp"?
+
+This often indicates that the real-time clock of the system is not synced with current time. There have been different fixes reported to this issue.
+
+You can boot the node using a Ubuntu live image to sync the hardware time. After that, you can reboot the node and it should boot normally.
+
+You can fix this manually in the BIOS. Go to the BIOS settings and adjust the **Time** and **Date** settings.
+
+You can also try to adjust the clock by NTP over the network, if it applies to your case.
 
 ### I try to boot a 3Node, but I get the error: "No Route to Host on Linux". What does it mean?
 
