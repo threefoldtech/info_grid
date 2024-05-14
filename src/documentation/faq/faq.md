@@ -24,7 +24,7 @@
     - [ThreeFold uses Quantum Safe Storage technology, what does it mean?](#threefold-uses-quantum-safe-storage-technology-what-does-it-mean)
     - [Quantum Safe File System (QSFS) allows for part of the storage to go down and it can self repair, however it’s still attached to a single VM and a single point of failure. Can a QSFS instance be reattached to another VM to recover it?](#quantum-safe-file-system-qsfs-allows-for-part-of-the-storage-to-go-down-and-it-can-self-repair-however-its-still-attached-to-a-single-vm-and-a-single-point-of-failure-can-a-qsfs-instance-be-reattached-to-another-vm-to-recover-it)
     - [Where does the ThreeFold Explorer take its data from?](#where-does-the-threefold-explorer-take-its-data-from)
-    - [How can I use the Gridproxy to query information on the TF Grid?](#how-can-i-use-the-gridproxy-to-query-information-on-the-tf-grid)
+    - [How can I use the Gridproxy public API to query information on the TFGrid?](#how-can-i-use-the-gridproxy-public-api-to-query-information-on-the-tfgrid)
     - [How can I see the stats of the ThreeFold Grid?](#how-can-i-see-the-stats-of-the-threefold-grid)
     - [What is the difference between a seed phrase (mnemonics) and an HEX secret?](#what-is-the-difference-between-a-seed-phrase-mnemonics-and-an-hex-secret)
   - [Buying and Transacting TFT](#buying-and-transacting-tft)
@@ -409,9 +409,9 @@ See the next Q&A for more information on Swagger.
 
 
 
-### How can I use the Gridproxy to query information on the TF Grid?
+### How can I use the Gridproxy public API to query information on the TFGrid?
 
-You can go to the Gridproxy Swagger index: [https://gridproxy.grid.tf/swagger/index.html](https://gridproxy.grid.tf/swagger/index.html).
+You can go to the Gridproxy public API Swagger index: [https://gridproxy.grid.tf/swagger/index.html](https://gridproxy.grid.tf/swagger/index.html).
 
 There you can query information such as information on a 3node.
 
