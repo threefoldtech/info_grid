@@ -9,6 +9,7 @@
 - [Set the VM](#set-the-vm)
 - [Build the Dashboard](#build-the-dashboard)
 - [Dashboard Public Access](#dashboard-public-access)
+- [Set the Network](#set-the-network)
 - [Questions and Feedback](#questions-and-feedback)
 
 ***
@@ -121,6 +122,17 @@ yarn dev --host 0.0.0.0
 ```
 
 You can then access the Dashboard from the domain you just created.
+
+## Set the Network
+
+You can set the network by running the configuration script. Simply set the network as the **MODE** (e.g. **main**, **test**, **dev**):
+
+```
+cd packages/playground/public
+MODE=main ../scripts/build-env.sh
+```
+
+Once you've set the configuration file, you can build and run the Dashboard.
 
 ## Questions and Feedback
 
