@@ -87,10 +87,12 @@ power:
 
 We present the different commands for the Farmerbot. 
 
+Note that any argument containing spaces needs to be wrapped in quotes (e.g. mnemonic: "word1 word2 ... word12").
+
 - `start`: to start (power on) a node
 
 ```bash
-farmerbot start --node <node ID> -m <mnemonic> -n dev -d
+farmerbot start --node <node ID> -m "<mnemonic>" -n <network> -d
 ```
 
 Where:
@@ -110,7 +112,7 @@ Global Flags:
 - `start all`:  to start (power on) all nodes in a farm
 
 ```bash
-farmerbot start all --farm <farm ID> -m <mnemonic> -n dev -d
+farmerbot start all --farm <farm ID> -m "<mnemonic>" -n <network> -d
 ```
 
 Where:
