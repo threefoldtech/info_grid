@@ -40,11 +40,11 @@ We show how to deploy a free and open-source ecommerce on the ThreeFold Grid. We
 We start by deploying a full VM on the ThreeFold Dashboard.
 
 * On the [Threefold Dashboard](https://dashboard.grid.tf/#/), go to the [full virtual machine deployment page](https://dashboard.grid.tf/#/deploy/virtual-machines/full-virtual-machine/)
-* Deploy a full VM (Ubuntu 22.04) with an IPv4 address and at least the minimum specs for a full VM
+* Deploy a full VM (Ubuntu 22.04) with an IPv4 address and at least the minimum specs shown below
   * IPv4 Address
-  * Minimum vcores: 1vcore
-  * Minimum MB of RAM: 512MB
-  * Minimum storage: 15GB
+  * Minimum vcores: 2 vcores
+  * Minimum GB of RAM: 4 GB
+  * Minimum storage: 50 GB
 * After deployment, note the VM IPv4 address
 
 ## Create an SSH Tunnel
