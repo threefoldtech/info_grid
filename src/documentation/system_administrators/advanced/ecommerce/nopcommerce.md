@@ -84,6 +84,7 @@ You can set a firewall to your VM for further security. This should be used in p
   * ```
     ufw allow 80
     ufw allow 443
+    ufw allow 22
     ```
 * Enable the firewall
   * ```
