@@ -119,6 +119,7 @@
     - [Internals](documentation/developers/internals/internals.md)
       - [Reliable Message Bus (RMB)](documentation/developers/internals/rmb/rmb_toc.md)
         - [Introduction to RMB](documentation/developers/internals/rmb/rmb_intro.md)
+        - [Coding Guides](documentation/developers/internals/rmb/rmb_coding_guides.md)
         - [RMB Specs](documentation/developers/internals/rmb/rmb_specs.md)
         - [RMB Peer](documentation/developers/internals/rmb/uml/peer.md)
         - [RMB Relay](documentation/developers/internals/rmb/uml/relay.md)
