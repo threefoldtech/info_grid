@@ -49,6 +49,7 @@
     - [TFChain](documentation/dashboard/tfchain/tfchain.md)
       - [Your Profile](documentation/dashboard/tfchain/your_profile.md)
       - [TF DAO](documentation/dashboard/tfchain/tf_dao.md)
+        - [Voting Weight Example](documentation/dashboard/tfchain/tf_dao_voting_weight.md)
       - [TF Token Bridge](documentation/dashboard/tfchain/tf_token_bridge.md)
       - [TF Token Transfer](documentation/dashboard/tfchain/tf_token_transfer.md)
       - [TF Minting Reports](documentation/dashboard/tfchain/tf_minting_reports.md)

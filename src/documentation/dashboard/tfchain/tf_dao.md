@@ -54,3 +54,5 @@ The DAO votes are weighted as follows:
   ```
 
 Voting weights are tracked per farm to keep it easy and traceable. Thus, if an account has multiple farms, the vote will be registered per farm.
+
+For more information on voting weight, [check this example](./tf_dao_voting_weight.md).
