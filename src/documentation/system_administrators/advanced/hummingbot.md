@@ -43,7 +43,7 @@ We start by deploying a full VM on the ThreeFold Dashboard.
 
 ## Preparing the VM
 
-We prepare the full to run Hummingbot.
+We prepare the full VM to run Hummingbot.
 
 * Update the VM
    ```
