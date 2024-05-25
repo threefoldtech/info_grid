@@ -18,3 +18,4 @@ In this section, we delve into sophisticated topics and powerful functionalities
   - [WooCommerce](./ecommerce/woocommerce.md)
   - [nopCommerce](./ecommerce/nopcommerce.md)
 - [Hummingbot](./hummingbot.md)
+- [HTTPS with Caddy](./https_caddy.md)
