@@ -136,8 +136,8 @@ resource "grid_deployment" "d0" {
 output "wg_config" {
     value = grid_network.net0.access_wg_config
 }
-output "ygg_ip" {
-    value = grid_deployment.d0.vms[0].ygg_ip
+output "planetary_ip" {
+    value = grid_deployment.d0.vms[0].planetary_ip
 }
 output "vm_ip" {
     value = grid_deployment.d0.vms[0].ip
@@ -427,8 +427,8 @@ resource "grid_deployment" "d2" {
 output "wg_config" {
     value = grid_network.net2.access_wg_config
 }
-output "ygg_ip" {
-    value = grid_deployment.d2.vms[0].ygg_ip
+output "planetary_ip" {
+    value = grid_deployment.d2.vms[0].planetary_ip
 }
 output "vm_ip" {
     value = grid_deployment.d2.vms[0].ip

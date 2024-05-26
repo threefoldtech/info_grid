@@ -77,8 +77,8 @@ output "public_ip" {
     value = split("/",grid_deployment.d1.vms[0].computedip)[0]
 }
 
-output "ygg_ip" {
-    value = grid_deployment.d1.vms[0].ygg_ip
+output "planetary_ip" {
+    value = grid_deployment.d1.vms[0].planetary_ip
 }
 
 ```

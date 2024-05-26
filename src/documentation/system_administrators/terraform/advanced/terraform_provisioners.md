@@ -61,7 +61,7 @@ resource "grid_deployment" "d1" {
     type  = "ssh"
     user  = "root"
     agent = true
-    host  = grid_deployment.d1.vms[0].ygg_ip
+    host  = grid_deployment.d1.vms[0].planetary_ip
   }
 
   provisioner "remote-exec" {
@@ -88,7 +88,7 @@ resource "grid_deployment" "d1" {
     type     = "ssh"
     user     = "root"
     agent    = true
-    host     = grid_deployment.d1.vms[0].ygg_ip
+    host     = grid_deployment.d1.vms[0].planetary_ip
   }
 ```
 

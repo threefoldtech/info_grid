@@ -277,7 +277,7 @@ resources:
 
 outputs:
   node_deployment_id: ${deployment.node_deployment_id}
-  ygg_ip: ${deployment.vms_computed[0].ygg_ip}
+  planetary_ip: ${deployment.vms_computed[0].planetary_ip}
 ```
 
 We have a scheduler, and a network just like before. But now, we also have a deployment `grid:internal:Deployment` object that can have one or more disks and virtual machines.
@@ -357,7 +357,7 @@ We now see how to deploy a [Kubernetes cluster using Pulumi](https://github.com/
 
 outputs:
   node_deployment_id: ${kubernetes.node_deployment_id}
-  ygg_ip: ${kubernetes.master_computed.ygg_ip}
+  planetary_ip: ${kubernetes.master_computed.planetary_ip}
 ```
 
 Now, we define the Kubernetes resource `grid:internal:Kubernetes` that has master and workers blocks. You define almost everything like a normal VM except for the FLiist. Also note that the token is the `cluster token`. This will ensure that the workers and the master communicate properly.
@@ -435,7 +435,7 @@ Here's an [example](https://github.com/threefoldtech/pulumi-provider-grid/blob/d
       node_id: 14
       fqdn: mydomain.com
       backends:
-        - http://[${deployment.vms_computed[0].ygg_ip}]:9000
+        - http://[${deployment.vms_computed[0].planetary_ip}]:9000
 ```
 
 Here, we informed the gateway that any request coming for the domain `mydomain.com` needs to be balanced through the backends.
