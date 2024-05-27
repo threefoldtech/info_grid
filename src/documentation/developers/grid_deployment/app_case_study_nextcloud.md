@@ -36,7 +36,7 @@ The bulk of the files needed for the Nextcloud application can be found in the [
 
 While there are many ways to proceed in the development of a ThreeFold application for the Dashboard, we present here a general method that works efficiently and is well organized.
 
-The information provided here are specific to the Nextcloud workload, but it can be applied to other types of workload.
+The information provided here is specific to the Nextcloud workload, but it can be applied to other types of workload.
 
 Before building the Nextcloud application, we first deployed a [Nextcloud instance](../../system_administrators/terraform/advanced/terraform_nextcloud_aio.md) on the ThreeFold Grid with a full virtual machine. Once this deployment was working well, we built a [Nextcloud flist](../flist/flist_case_studies/flist_nextcloud_case_study.md). You can consult the Nextcloud flist code in the ThreeFold Tech [tf-images repository](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud). We note that the flist uses a micro VM. There are some differences between a full VM and a micro VM. We propose users to first start deploying with a full VM and then adjust their work when they want to publish a flist with a micro VM, since full VM are easier to work with. You can of course start directly with a micro VM if you want.
 
