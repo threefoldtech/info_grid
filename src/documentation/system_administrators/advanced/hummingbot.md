@@ -20,10 +20,10 @@ In this guide, we go through the basic steps to deploy a [Hummingbot](https://hu
 
 ## Prerequisites
 
-- [A TFChain account](../../../dashboard/wallet_connector.md)
+- [A TFChain account](../../dashboard/wallet_connector.md)
 - TFT in your TFChain account
-  - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft.md)
-  - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge.md)
+  - [Buy TFT](../../threefold_token/buy_sell_tft/buy_sell_tft.md)
+  - [Send TFT to TFChain](../../threefold_token/tft_bridges/tfchain_stellar_bridge.md)
 
 ## Deploy a Full VM
 
@@ -43,7 +43,7 @@ We start by deploying a full VM on the ThreeFold Dashboard.
 
 ## Preparing the VM
 
-We prepare the full to run Hummingbot.
+We prepare the full VM to run Hummingbot.
 
 * Update the VM
    ```

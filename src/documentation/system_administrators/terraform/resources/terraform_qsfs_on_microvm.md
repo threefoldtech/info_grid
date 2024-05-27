@@ -266,8 +266,8 @@ resource "grid_deployment" "qsfs" {
 output "metrics" {
   value = grid_deployment.qsfs.qsfs[0].metrics_endpoint
 }
-output "ygg_ip" {
-  value = grid_deployment.qsfs.vms[0].ygg_ip
+output "planetary_ip" {
+  value = grid_deployment.qsfs.vms[0].planetary_ip
 }
 ```
 
@@ -337,7 +337,7 @@ To SSH with Planetary Network, write the following:
 ssh root@planetary_IP
 ```
 
-Note that the IP address should be the value of the parameter **ygg_ip** from the Terraform Outputs.
+Note that the IP address should be the value of the parameter **planetary_ip** from the Terraform Outputs.
 
 You now have an SSH connection access to the VM over Planetary Network.
 

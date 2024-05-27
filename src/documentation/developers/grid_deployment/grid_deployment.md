@@ -10,3 +10,4 @@ This section also covers the steps to deploy the Dashboard locally. This can be 
 - [Full VM Grid Deployment](./grid_deployment_full_vm.md)
 - [Grid Snapshots](./snapshots.md)
 - [Deploy the Dashboard](./deploy_dashboard.md)
+- [Application Case Study: Nextcloud](./app_case_study_nextcloud.md)

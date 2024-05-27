@@ -20,13 +20,15 @@ Static Website is an application where a user provides a GitHub repository URL f
 
 ## Deployment
 
-![ ](./img/solutions_staticwebsite.png)
+![ ](./img/staticwebsite.png)
 
 - Enter an instance name
 
-- Enter a GitHub repository URL that needs to be cloned
+- Enter the HTTPS URL for the Git repository that needs to be cloned
 
-- Enter the title for the cloned repository
+- Enter the Git Branch if available
+
+- Enter the html directory that needs to be served if available
 
 - Select a capacity package:
 

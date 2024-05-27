@@ -91,11 +91,11 @@ This means that, to execute, you just need to type `make run` and to destroy, yo
 
 ## Creating a Network
 
-We address here how to create a [network](https://github.com/threefoldtech/pulumi-provider-grid/blob/development/examples/network).
+We address here how to create a [network](https://github.com/threefoldtech/pulumi-provider-grid/blob/development/examples/yaml/network).
 
 ### Pulumi File
 
-You can find the original file [here](https://github.com/threefoldtech/pulumi-provider-grid/blob/development/examples/network/Pulumi.yaml).
+You can find the original file [here](https://github.com/threefoldtech/pulumi-provider-grid/blob/development/examples/yaml/network/Pulumi.yaml).
 
 ```yml
 name: pulumi-provider-grid
@@ -206,7 +206,7 @@ outputs:
 
 ## Creating a Virtual Machine
 
-Now, we will check an [example](https://github.com/threefoldtech/pulumi-provider-grid/blob/development/examples/virtual_machine) on how to create a virtual machine.
+Now, we will check an [example](https://github.com/threefoldtech/pulumi-provider-grid/blob/development/examples/yaml/virtual_machine) on how to create a virtual machine.
 
 Just like we've seen above, we will have two files `Makefile` and `Pulumi.yaml` where we describe the infrastructure.
 
@@ -277,7 +277,7 @@ resources:
 
 outputs:
   node_deployment_id: ${deployment.node_deployment_id}
-  ygg_ip: ${deployment.vms_computed[0].ygg_ip}
+  planetary_ip: ${deployment.vms_computed[0].planetary_ip}
 ```
 
 We have a scheduler, and a network just like before. But now, we also have a deployment `grid:internal:Deployment` object that can have one or more disks and virtual machines.
@@ -320,7 +320,7 @@ That's it! You can now execute `make run` to bring the infrastructure up.
 
 ## Kubernetes
 
-We now see how to deploy a [Kubernetes cluster using Pulumi](https://github.com/threefoldtech/pulumi-provider-grid/blob/development/examples/kubernetes/Pulumi.yaml).
+We now see how to deploy a [Kubernetes cluster using Pulumi](https://github.com/threefoldtech/pulumi-provider-grid/blob/development/examples/yaml/kubernetes/Pulumi.yaml).
 
 ```yaml
   content was removed for brevity
@@ -357,14 +357,14 @@ We now see how to deploy a [Kubernetes cluster using Pulumi](https://github.com/
 
 outputs:
   node_deployment_id: ${kubernetes.node_deployment_id}
-  ygg_ip: ${kubernetes.master_computed.ygg_ip}
+  planetary_ip: ${kubernetes.master_computed.planetary_ip}
 ```
 
 Now, we define the Kubernetes resource `grid:internal:Kubernetes` that has master and workers blocks. You define almost everything like a normal VM except for the FLiist. Also note that the token is the `cluster token`. This will ensure that the workers and the master communicate properly.
 
 ## Creating a Domain
 
-The ThreeFold Pulumi repository also covers examples on [how to work with TFGrid gateways](https://github.com/threefoldtech/pulumi-provider-grid/blob/development/examples/gateway_name/Pulumi.yaml). 
+The ThreeFold Pulumi repository also covers examples on [how to work with TFGrid gateways](https://github.com/threefoldtech/pulumi-provider-grid/blob/development/examples/yaml/gateway_name/Pulumi.yaml). 
 
 The basic idea is that you have a virtual machine workload on a specific IP, e.g. public IPv4, IPv6, or Planetary Network, and you want to access it using domains.
 
@@ -420,7 +420,7 @@ Some things to note:
 
 ### Example of a Fully Controlled Domain
 
-Here's an [example](https://github.com/threefoldtech/pulumi-provider-grid/blob/development/examples/gateway_fqdn/Pulumi.yaml) of a more complicated, but fully controlled domain.
+Here's an [example](https://github.com/threefoldtech/pulumi-provider-grid/blob/development/examples/yaml/gateway_fqdn/Pulumi.yaml) of a more complicated, but fully controlled domain.
 
 ```yml
   code removed for brevity
@@ -435,7 +435,7 @@ Here's an [example](https://github.com/threefoldtech/pulumi-provider-grid/blob/d
       node_id: 14
       fqdn: mydomain.com
       backends:
-        - http://[${deployment.vms_computed[0].ygg_ip}]:9000
+        - http://[${deployment.vms_computed[0].planetary_ip}]:9000
 ```
 
 Here, we informed the gateway that any request coming for the domain `mydomain.com` needs to be balanced through the backends.

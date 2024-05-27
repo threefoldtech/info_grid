@@ -234,19 +234,19 @@ output "client2_wg_ip" {
 }
 
 output "server1_planetary_ip" {
-  value = grid_deployment.d1.vms[0].ygg_ip
+  value = grid_deployment.d1.vms[0].planetary_ip
 }
 output "server2_planetary_ip" {
-  value = grid_deployment.d1.vms[1].ygg_ip
+  value = grid_deployment.d1.vms[1].planetary_ip
 }
 output "server3_planetary_ip" {
-  value = grid_deployment.d1.vms[2].ygg_ip
+  value = grid_deployment.d1.vms[2].planetary_ip
 }
 output "client1_planetary_ip" {
-  value = grid_deployment.d1.vms[3].ygg_ip
+  value = grid_deployment.d1.vms[3].planetary_ip
 }
 output "client2_planetary_ip" {
-  value = grid_deployment.d1.vms[4].ygg_ip
+  value = grid_deployment.d1.vms[4].planetary_ip
 }
 ```
 
