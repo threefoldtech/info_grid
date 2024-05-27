@@ -24,11 +24,11 @@ Static Website is an application where a user provides a GitHub repository URL f
 
 - Enter an instance name
 
-- Enter HTTPS URL for a Git repository that needs to be cloned
+- Enter the HTTPS URL for the Git repository that needs to be cloned
 
-- Enter Git Branch if available
+- Enter the Git Branch if available
 
-- Enter the html directory that need to be served if available
+- Enter the html directory that needs to be served if available
 
 - Select a capacity package:
 
