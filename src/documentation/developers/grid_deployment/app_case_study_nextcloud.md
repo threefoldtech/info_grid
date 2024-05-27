@@ -38,15 +38,15 @@ While there are many ways to proceed in the development of a ThreeFold applicati
 
 The information provided here are specific to the Nextcloud workload, but it can be applied to other types of workload.
 
-Before building the Nextcloud application, we first deployed a [Nextcloud instance](../../system_administrators/terraform/advanced/terraform_nextcloud_aio.md) on the ThreeFold Grid with a full virtual machine. Once this deployment was working well, we built an [Nextcloud flist](../flist/flist_case_studies/flist_nextcloud_case_study.md). You can consult the Nextcloud flist code in the ThreeFold Tech [tf-images repository](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud). We note that the flist uses a micro VM. There are some differences between a full VM and a micro VM. We propose users to first start deploying with a full VM and then adjust their work when they want to publish an flist with a micro VM, since full VM are easier to work with. You can of course start directly with a micro VM if you want.
+Before building the Nextcloud application, we first deployed a [Nextcloud instance](../../system_administrators/terraform/advanced/terraform_nextcloud_aio.md) on the ThreeFold Grid with a full virtual machine. Once this deployment was working well, we built a [Nextcloud flist](../flist/flist_case_studies/flist_nextcloud_case_study.md). You can consult the Nextcloud flist code in the ThreeFold Tech [tf-images repository](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud). We note that the flist uses a micro VM. There are some differences between a full VM and a micro VM. We propose users to first start deploying with a full VM and then adjust their work when they want to publish a flist with a micro VM, since full VM are easier to work with. You can of course start directly with a micro VM if you want.
 
-In sum, once we were confortable launching Nextcloud on a full VM and also using an flist, we were ready to tackle the building of a application. These steps should be taken into account when building your own application. We proceed this way to ensure that the workload is properly configured. Once we know the flist is working properly, we can focus on the application aspect of the deployment, knowing the deployment itself is working properly.
+In sum, once we were comfortable launching Nextcloud on a full VM and also using an flist, we were ready to tackle the building of an application. These steps should be taken into account when building your own application. We proceed this way to ensure that the workload is properly configured. Once we know the flist is working properly, we can focus on the application aspect of the deployment, knowing the deployment itself is working properly.
 
 # Building an Application
 
-In the subsections that follow, we cover all the different files that either need to be updated or created when building a application on the Dashboard. 
+In the subsections that follow, we cover all the different files that either need to be updated or created when building an application on the Dashboard. 
 
-For the most part, the work consist of updating existing files to add the Nextcloud information. As you will see, the bulk of the work is happening with the file named **tf_nextcloud.vue**, where we set the main application page seen on the Dashboard.
+For the most part, the work consists of updating existing files to add the Nextcloud information. As you will see, the bulk of the work is happening with the file named **tf_nextcloud.vue**, where we set the main application page seen on the Dashboard.
 
 ## Add an Icon
 
@@ -58,7 +58,7 @@ We added a description to the Nextcloud application by adding a markdown file at
 
 ## Update deployment_list.ts
 
-In the file **deployment_list.ts**, we set parameters to be shared to the Nextcloud application during deployment. The file is available at the following directory **packages/playground/src/constants/deployment_list.ts**. 
+In the file **deployment_list.ts**, we set parameters to be shared with the Nextcloud application during deployment. The file is available in the following directory **packages/playground/src/constants/deployment_list.ts**. 
 
 In our case, the Nextcloud content is the following:
 
@@ -70,11 +70,11 @@ In our case, the Nextcloud content is the following:
   },
 ```
 
-We can see here that the application will receive the SSH public key, the Nextcloud setup and domain links. The SSH public key will allow users to connect to the VM via SSH. The Nextcloud setup link is linked to the  The Nextcloud domain is used to set the domain name to the Nextcloud instance. The Nextcloud setup and domain links will be linked to the **Actions** buttons once the workload is deployed. 
+We can see here that the application will receive the SSH public key, the Nextcloud setup, and domain links. The SSH public key will allow users to connect to the VM via SSH. The Nextcloud setup link is linked to the Nextcloud domain is used to set the domain name to the Nextcloud instance. The Nextcloud setup and domain links will be linked to the **Actions** buttons once the workload is deployed. 
 
 ## Update \/types\/index.ts
 
-In the file **index.ts**, located at the directory **packages/playground/src/types/**, we set the **ProjectName**, **SolutionCode** and **solutionType** for the Nextcloud application.
+In the file **index.ts**, located in the directory **packages/playground/src/types/**, we set the **ProjectName**, **SolutionCode**, and **solutionType** for the Nextcloud application.
 
 We added the line **Nextcloud = "Nextcloud",** in the array **export enum ProjectName**. This will provide a name for the Nextcloud application, which will be used in the Deployment table shown on the Dashboard.
 
@@ -115,7 +115,7 @@ We can see that this section makes use of the Nextcloud description seen in the 
 
 ## Update vm_deployment_table.vue
 
-In the file **vm_deployment_table.vue**, located at the directory **packages/playground/src/components/**, we added the line **ProjectName.Nextcloud** in the constant section named **IPV4Solutions**. 
+In the file **vm_deployment_table.vue**, located in the directory **packages/playground/src/components/**, we added the line **ProjectName.Nextcloud** in the constant section named **IPV4Solutions**. 
 
 The Nextcloud IPv4 address will thus be shown in the deployment table after the user has deployed the Nextcloud application.
 
@@ -123,7 +123,7 @@ If, for example, we wanted to display the WireGuard address in the deployment ta
 
 ## Update delete_deployment.ts
 
-In the file **delete_deployment.ts**, located at the directory **packages/playground/src/utils**, we added the line **ProjectName.Nextcloud,** in the function **solutionHasGateway(projectName: ProjectName)**.
+In the file **delete_deployment.ts**, located in the directory **packages/playground/src/utils**, we added the line **ProjectName.Nextcloud,** in the function **solutionHasGateway(projectName: ProjectName)**.
 
 ## Update tf_deployment_list.vue
 
@@ -194,9 +194,9 @@ We also note that this file imports the variables **TfDeploymentList** and **TfN
 
 ## Create tf_nextcloud.vue
 
-Still in the directory **packages/playground/src/weblets**, we created a file named **tf_nextcloud.vue**. Instead of starting from scratch, it can be recommended to start from a template of a application that is close to the current application you are building. In our case, we started with the file **owncloud.vue**. That being said, since the Nextcloud application uses the gateway as well as gateway domains, some major updates were necessary. This file constitutes the bulk of the work when building a application for the Dashboard. For this reason, we dedicate more attention to this file and explore it section by section.
+Still in the directory **packages/playground/src/weblets**, we created a file named **tf_nextcloud.vue**. Instead of starting from scratch, it can be recommended to start from a template of an application that is close to the current application you are building. In our case, we started with the file **owncloud.vue**. That being said, since the Nextcloud application uses the gateway as well as gateway domains, some major updates were necessary. This file constitutes the bulk of the work when building an application for the Dashboard. For this reason, we dedicate more attention to this file and explore it section by section.
 
-This file is mainly composed of three sections. The first section, **template** will be used to configure and set the proper deployment configurations. The second section, the first **script** section will import the necessary modules and variables, set the constants and set the asynchronous function that will query the TFGrid to deploy the application instance. The third section, the second **script** section, imports modules and variables and export them.
+This file is mainly composed of three sections. The first section, **template** will be used to configure and set the proper deployment configurations. The second section, the first **script** section will import the necessary modules and variables, set the constants, and set the asynchronous function that will query the TFGrid to deploy the application instance. The third section, the second **script** section, imports modules and variables and exports them.
 
 ### Template Section
 
@@ -220,13 +220,13 @@ The first **input-tooltip** of the Nextcloud instance provides a hyperlink leadi
 
 The second **input-tooltip** is about certified node. As with the previous tool-tip, it is accompanied by a **v-switch** named **certified**. Also further in the document, we can see at line 123 that this option is set as a constant and set to false by default (**set(false)**).
 
-The subsection **template #footer-actions** configures the **Deploy** button. As we can see here, we set **validateBeforeDeploy** to ensure that the user selects a proper node and deloyment configurations before being able to query the TFGrid to deploy the application instance.
+The subsection **template #footer-actions** configures the **Deploy** button. As we can see here, we set **validateBeforeDeploy** to ensure that the user selects a proper node and deployment configurations before being able to query the TFGrid to deploy the application instance.
 
 By the end of this subsection, we arrive at the end of the **weblet-layout** subsection and of the **template** section.
 
 ### First Script Section (Setup)
 
-The first part of this section consists of importing modules from the **src** directory as well as **GridClient** from **@threefold/grid_client** and **computed**, **type Ref** and **ref** from **vue**. Then we set constants based on the **template** section. 
+The first part of this section consists of importing modules from the **src** directory as well as **GridClient** from **@threefold/grid_client** and **computed**, **type Ref**, and **ref** from **vue**. Then we set constants based on the **template** section. 
 
 One constant to notice is **flist**. This constant is given the URL to the Nextcloud flist that we created for the application deployment. For more information on how to create this flist, read the [Nextcloud flist case study](../flist/flist_case_studies/flist_nextcloud_case_study.md) available on the ThreeFold Manual.
 
@@ -252,13 +252,13 @@ The constant **aio_link** is composed of the **domain** variable set earlier fol
 
 > const aio_link = domain + "/aio";
 
-Once the susmentioned constants are set, the asynchronous function **deploy** will deploy the application instance on the TFGrid. This can be seen in the section **try**. 
+Once the above-mentioned constants are set, the asynchronous function **deploy** will deploy the application instance on the TFGrid. This can be seen in the section **try**. 
 
-This section references to all the necessary parameters to deploy the application instance as defined by the user on the TFGrid. For example, the subsection **envs** contains all the necessary environment variables for the deployment, such as the SSH public key (**SSH_KEY**), as well as the domain and Nextcloudt setup URLs (**NEXTCLOUD_DOMAIN**, **NEXTCLOUD_AIO_LINK**). We also pass a boolean telling the deployer if there is a gateway within the deeployment (**GATEWAY**) as well as the IPv4 address (**IPV4**).
+This section references to all the necessary parameters to deploy the application instance as defined by the user on the TFGrid. For example, the subsection **envs** contains all the necessary environment variables for the deployment, such as the SSH public key (**SSH_KEY**), as well as the domain and Nextcloudt setup URLs (**NEXTCLOUD_DOMAIN**, **NEXTCLOUD_AIO_LINK**). We also pass a boolean telling the deployer if there is a gateway within the deployment (**GATEWAY**) as well as the IPv4 address (**IPV4**).
 
 If this **try** function fails, we catch the error and display **Failed to deploy a Nextcloud instance.** as shown in the section **catch (e)**.
 
-The next section is an **if** statement that will be triggered if the deployment consist of a custom domain and an IPv4 connection. In this case, we call the function **finalize** to deploy the application instance by passing the **vm** as a parameter.
+The next section is an **if** statement that will be triggered if the deployment consists of a custom domain and an IPv4 connection. In this case, we call the function **finalize** to deploy the application instance by passing the **vm** as a parameter.
 
 If this is not the case, we trigger the second **try** function where we set the gateway. Once this is done, we finally trigger the function **finalize** to deploy the application instance with the gateway set.
 
@@ -270,11 +270,11 @@ The import section of this script section should be common for all applications 
 
 The export section (**export default**) is set with **TFNextcloud** as its **name**.
 
-# Testing a application
+# Testing an application
 
 You can test this application or the application you are creating by deploying the Dashboard locally. For more information on this, feel free to read the documentation [Deploy the Dashboard](./deploy_dashboard.md) of the ThreeFold Manual.
 
-This is very useful, if not necessary, when testing and building your own application.
+This is very useful, if not necessary when testing and building your own application.
 
 # Contributing to the Dashboard
 
