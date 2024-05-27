@@ -25,10 +25,10 @@ The Node Status bot provides realtime status updates and alerts on status change
 
 To run the bot, you need to have a TFChain account activated with a twin. For this, you can simply create an account on the ThreeFold Dashboard.
 
-- [A TFChain account](../../../dashboard/wallet_connector.md)
+- [A TFChain account](../../dashboard/wallet_connector.md)
 - TFT in your TFChain account
-  - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft.md)
-  - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge.md)
+  - [Buy TFT](../../threefold_token/buy_sell_tft/buy_sell_tft.md)
+  - [Send TFT to TFChain](../../threefold_token/tft_bridges/tft_bridges.md)
 
 ## Deploy a Micro VM
 
