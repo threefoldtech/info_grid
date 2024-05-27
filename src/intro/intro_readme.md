@@ -15,6 +15,24 @@ The *ThreeFold Documentation* section contains all the practical information of 
 > 
 > [Access with Grid.tf](https://status.grid.tf) | [Access with ThreeFold.io](https://status.threefold.io)
 
+## Get Started
+
+It's easy to get started on the TFGrid. 
+
+If you want to farm TFT, check out [how to build a 3Node](../documentation/farmers/3node_building/3node_building.md). 
+
+If you want to deploy or develop on the grid, you will first need to get TFT on TFChain:
+
+- [Create a TFChain account](../documentation/dashboard/wallet_connector.md)
+- Get TFT in your TFChain account
+  - [Buy TFT](../documentation/threefold_token/buy_sell_tft/buy_sell_tft.md)
+  - [Send TFT to TFChain](../documentation/threefold_token/tft_bridges/tft_bridges.md)
+
+To develop on the Grid, read the [developers documentation](../documentation/developers/developers.md).
+
+To deploy applications, read the [deploy section](../documentation/dashboard/deploy/deploy.md) then [access the deployment via SSH](../documentation/system_administrators/getstarted/ssh_guide/ssh_guide.md).
+
+
 ## Join the ThreeFold Community
 
 The ThreeFold community is very active and its members will be more than happy to discuss and help you get started.
