@@ -89,3 +89,4 @@ For complementary information on the technology developed by ThreeFold, refer to
   - [Full VM Grid Deployment](./grid_deployment/grid_deployment_full_vm.md)
   - [Grid Snapshots](./grid_deployment/snapshots.md)
   - [Deploy the Dashboard](./grid_deployment/deploy_dashboard.md)
+  - [Application Case Study: Nextcloud](./grid_deployment/app_case_study_nextcloud.md)
