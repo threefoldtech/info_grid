@@ -4,7 +4,7 @@ Here you will find everything related to deployments on the ThreeFold grid. This
 
 - Checking the cost of a deployment using [Pricing Calculator](./pricing_calculator.md)
 - Finding a node to deploy on using the [Node Finder](./node_finder.md)
-- Deploying your desired workload from [Virtual Machines](../solutions/vm_intro.md), [Orchestrators](./orchestrators.md), or [Applictions](./applications.md)
+- Deploying a workload: [Virtual Machines](../solutions/vm_intro.md), [Orchestrators](./orchestrators.md), or [Applications](./applications.md)
 - Consulting [Your Contracts](./your_contracts.md) on the TFGrid
 - Finding or publishing Flists from [Images](./images.md)
 - Updating or generating your SSH key from [SSH Keys](./ssh_keys.md)
