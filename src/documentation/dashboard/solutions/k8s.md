@@ -30,6 +30,7 @@ On the TF grid, Kubernetes clusters can be deployed out of the box. We have impl
 - `Name`: Your Kubernetes Cluster name.
 - `Cluster Token`: It's used for authentication between your worker nodes and master node. You could use the auto-generated one or type your own.
 
+If you have more than one SSH keys set, you can click on `Manage SSH keys` to select which one to use for this deployment.
 
 ## Master and Workers tabs
 

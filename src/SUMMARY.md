@@ -30,7 +30,6 @@
         - [Mattermost](documentation/dashboard/solutions/mattermost.md)
         - [Nextcloud](documentation/dashboard/solutions/nextcloud.md)
         - [Node Pilot](documentation/dashboard/solutions/nodepilot.md)
-        - [ownCloud](documentation/dashboard/solutions/owncloud.md)
         - [Peertube](documentation/dashboard/solutions/peertube.md)
         - [Presearch](documentation/dashboard/solutions/presearch.md)
         - [Static Website](documentation/dashboard/solutions/static_website.md)

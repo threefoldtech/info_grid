@@ -58,5 +58,7 @@ __Process__ :
 in the bottom of the page you can see a list of all of the virual machines you deployed. you can click on `Show details` for more details
 
 ![](./img/vm_list.png)
+
 You can also go to JSON tab for full details
+
 ![ ](./img/vm_json.png)

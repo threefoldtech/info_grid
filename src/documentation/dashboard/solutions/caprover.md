@@ -49,6 +49,8 @@ It has following benefits :
 - Enter domain for you Caprover instance, Be very careful about the domain name: it needs to be a wildcard domain name you can configure in your chosen domain name system.
 - Enter password for you Caprover instance.
 
+If you have more than one SSH keys set, you can click on `Manage SSH keys` to select which one to use for this deployment.
+
 ## Admin and Workers Tabs
 
 ![ ](./img/solutions_caprover_leader.png)
