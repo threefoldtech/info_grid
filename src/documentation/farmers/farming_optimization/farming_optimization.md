@@ -12,4 +12,3 @@ The section [Build a 3Node](../3node_building/3node_building.md) covered the not
 - [Farming Costs](./farming_costs.md)
 - [Calculate Your ROI](./calculate_roi.md)
 - [Farming Requirements](./farming_requirements.md)
-- [Farming Troubleshooting](./farming_troubleshooting.md)
