@@ -171,6 +171,7 @@
       - [Farming Costs](documentation/farmers/farming_optimization/farming_costs.md)
       - [Calculate Your ROI](documentation/farmers/farming_optimization/calculate_roi.md)
       - [Farming Requirements](documentation/farmers/farming_optimization/farming_requirements.md)
+      - [Farming Troubleshooting](documentation/farmers/farming_optimization/farming_troubleshooting.md)
     - [Advanced Networking](documentation/farmers/advanced_networking/advanced_networking_toc.md)
       - [Networking Overview](documentation/farmers/advanced_networking/networking_overview.md)
       - [Network Considerations](documentation/farmers/advanced_networking/network_considerations.md)

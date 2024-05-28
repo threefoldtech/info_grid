@@ -24,6 +24,7 @@ To buy a certified node from an official ThreeFold vendor, check the [ThreeFold 
   - [Farming Costs](./farming_optimization/farming_costs.md)
   - [Calculate Your ROI](./farming_optimization/calculate_roi.md)
   - [Farming Requirements](./farming_optimization/farming_requirements.md)
+  - [Farming Troubleshooting](./farming_optimization/farming_troubleshooting.md)
 - [Advanced Networking](./advanced_networking/advanced_networking_toc.md)
   - [Networking Overview](./advanced_networking/networking_overview.md)
   - [Network Considerations](./advanced_networking/network_considerations.md)
