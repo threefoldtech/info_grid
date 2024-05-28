@@ -33,8 +33,6 @@
   - [TF Connect App, TF Dashboard, GraphQL, Grix Proxy and Polkadot Substrate](#tf-connect-app-tf-dashboard-graphql-grix-proxy-and-polkadot-substrate)
     - [Is there a way to create or import another wallet in TF Connect App?](#is-there-a-way-to-create-or-import-another-wallet-in-tf-connect-app)
     - [I created a farm on the TF Chain. On the TF Connect App Farmer Migration section, my farm is under Other v3 farms, is this normal?](#i-created-a-farm-on-the-tf-chain-on-the-tf-connect-app-farmer-migration-section-my-farm-is-under-other-v3-farms-is-this-normal)
-    - [I am trying to access my wallet in the ThreeFold Connect App. It worked fine before, but now I just get a white screen. What does it mean and what can I do?](#i-am-trying-to-access-my-wallet-in-the-threefold-connect-app-it-worked-fine-before-but-now-i-just-get-a-white-screen-what-does-it-mean-and-what-can-i-do)
-    - [When I open the ThreeFold Connect App, I get the error: Error in initialization in Flagsmith. How can I fix this issue?](#when-i-open-the-threefold-connect-app-i-get-the-error-error-in-initialization-in-flagsmith-how-can-i-fix-this-issue)
     - [Apart form the ThreeFold Connect App Wallet, how can I check my TFT balance?](#apart-form-the-threefold-connect-app-wallet-how-can-i-check-my-tft-balance)
     - [Is it possible to export the transaction history of a wallet to a CSV file?](#is-it-possible-to-export-the-transaction-history-of-a-wallet-to-a-csv-file)
     - [How can I use GraphQl to find information on the ThreeFold Grid?](#how-can-i-use-graphql-to-find-information-on-the-threefold-grid)
@@ -44,7 +42,6 @@
     - [How can I use Grid Proxy to find information on the ThreeFold Grid and 3Nodes?](#how-can-i-use-grid-proxy-to-find-information-on-the-threefold-grid-and-3nodes)
     - [Who is hosting GraphQL and Grid Proxy on the ThreeFold Grid?](#who-is-hosting-graphql-and-grid-proxy-on-the-threefold-grid)
     - [What is the difference between uptime, status and power state?](#what-is-the-difference-between-uptime-status-and-power-state)
-    - [I do not remember the name (ThreeFold 3bot ID) associated with my seed phrase on the ThreeFold Connect app. Can I recover my TF Connect app account with only the seed phrase and not the name (3bot ID) associated with it?](#i-do-not-remember-the-name-threefold-3bot-id-associated-with-my-seed-phrase-on-the-threefold-connect-app-can-i-recover-my-tf-connect-app-account-with-only-the-seed-phrase-and-not-the-name-3bot-id-associated-with-it)
 - [USERS FAQ](#users-faq)
   - [TF Grid Functionalities](#tf-grid-functionalities)
     - [What are the type of storage available on TF Grid?](#what-are-the-type-of-storage-available-on-tf-grid)
@@ -81,9 +78,6 @@
   - [Users Troubleshooting and Error Messages](#users-troubleshooting-and-error-messages)
     - [When deploying a virtual machine (VM) on the ThreeFold Grid, I get the following message after trying a full system update and upgrade: GRUB failed to install to the following devices... Is there a fix to this issue?](#when-deploying-a-virtual-machine-vm-on-the-threefold-grid-i-get-the-following-message-after-trying-a-full-system-update-and-upgrade-grub-failed-to-install-to-the-following-devices-is-there-a-fix-to-this-issue)
     - [While deploying on the TF Dashboard, I get the following error :"global workload with the same name exists: conflict". What can I do to fix this issue?](#while-deploying-on-the-tf-dashboard-i-get-the-following-error-global-workload-with-the-same-name-exists-conflict-what-can-i-do-to-fix-this-issue)
-  - [ThreeFold Connect App](#threefold-connect-app)
-    - [TF Connect App is now asking for a 4-digit password (PIN). I don't remember it as I usually use touch or face ID to unlock the app. What can I do?](#tf-connect-app-is-now-asking-for-a-4-digit-password-pin-i-dont-remember-it-as-i-usually-use-touch-or-face-id-to-unlock-the-app-what-can-i-do)
-    - [Is there a way to have more than one wallet in TF Connect App?](#is-there-a-way-to-have-more-than-one-wallet-in-tf-connect-app)
     - [What is the difference between 10.x.y.z and 192.168.x.y addresses?](#what-is-the-difference-between-10xyz-and-192168xy-addresses)
 - [DEVELOPERS FAQ](#developers-faq)
   - [General Information for Developer](#general-information-for-developer)
@@ -117,7 +111,6 @@
     - [When it comes to the Zero-OS bootstrap image, can I simply duplicate the first image I burnt when I build another 3Node?](#when-it-comes-to-the-zero-os-bootstrap-image-can-i-simply-duplicate-the-first-image-i-burnt-when-i-build-another-3node)
     - [If a node is unused for certain time (e.g. many months offline), will it be erased by the Grid?](#if-a-node-is-unused-for-certain-time-eg-many-months-offline-will-it-be-erased-by-the-grid)
     - [Can a farm be erased from TF Grid?](#can-a-farm-be-erased-from-tf-grid)
-    - [On the ThreeFold Connect App, it says I need to migrate my Titan farm from V2 to V3. What do I have to do? How long does this take?](#on-the-threefold-connect-app-it-says-i-need-to-migrate-my-titan-farm-from-v2-to-v3-what-do-i-have-to-do-how-long-does-this-take)
     - [How can I migrate my DIY farm from V2 to V3?](#how-can-i-migrate-my-diy-farm-from-v2-to-v3)
     - [What does the pricing policy ID of a farm represent?](#what-does-the-pricing-policy-id-of-a-farm-represent)
     - [What is the difference between TiB and TB? Why doesn't the TF Explorer shows the same storage space as my disk?](#what-is-the-difference-between-tib-and-tb-why-doesnt-the-tf-explorer-shows-the-same-storage-space-as-my-disk)
@@ -469,20 +462,6 @@ Yes this is normal. Farms created on TF Chain instead of the TF Connect App will
 
 
 
-### I am trying to access my wallet in the ThreeFold Connect App. It worked fine before, but now I just get a white screen. What does it mean and what can I do?
-
-On the TF Connect App, when you get a white screen, it means that there is a connection issue. It can help to try other networks; maybe try switching between ethernet cable or wifi. Or you can also try it later when the connection might be more stable.
-
-
-
-### When I open the ThreeFold Connect App, I get the error: Error in initialization in Flagsmith. How can I fix this issue?
-
-To fix this Flagsmith error message on the ThreeFold Connect app, you can try the following methods:
-
-* Check your internet connection
-* Update your phone current operating system (OS) version
-* Update the date and time on your phone
-
 
 ### Apart form the ThreeFold Connect App Wallet, how can I check my TFT balance?
 
@@ -620,13 +599,6 @@ There are three distinctly named endpoints or fields that exist in the back end 
 * Power state
   * this is a field that only exists on GraphQL, and it's the self reported power state of the node. This only goes to "down" if the node shut itself down at request of the Farmerbot.
 
-
-
-### I do not remember the name (ThreeFold 3bot ID) associated with my seed phrase on the ThreeFold Connect app. Can I recover my TF Connect app account with only the seed phrase and not the name (3bot ID) associated with it?
-
-If you forgot the name associated with your seed phrase on the TF Connect app, you can always create a new identity (ThreeFold 3bot ID) and import your wallet using the old seed phrase. 
-
-Since the Connect App is also used for identity and authentication, you need both the name (3bot ID) and seed phrase to fully recover your account. The wallet is only linked to the seed phrase and not the name (3bot ID).
 
 
 # USERS FAQ
@@ -1073,23 +1045,6 @@ This error happens if you deployed a workload on the TF Dashboard with the same 
 
 
 
-## ThreeFold Connect App
-
-### TF Connect App is now asking for a 4-digit password (PIN). I don't remember it as I usually use touch or face ID to unlock the app. What can I do?
-
-When you set up your the app, you are asked a 4-digit password (PIN). After some time, the app will be asking for this PIN when users may have been exclusively using touch/face ID. You can reset it by recovering the account with your seedphrase.
-
-
-### Is there a way to have more than one wallet in TF Connect App?
-
-Yes, this is perfectly possible. You can have multiple wallets in the TF Connect app. You can have multiple wallets for the Stellar network and multiple wallets for Polkadot Substrate.
-
-For example, you can create a wallet on the Stellar Blockchain and import it on TF Connect App with the function *Import Wallet*. Just copy the seedphrase and it will be imported in TF Connect App. 
-
-Note: There will not be an automatic function in the app to create a new wallet. You must do it manually.
-
-
-
 ### What is the difference between 10.x.y.z and 192.168.x.y addresses?
 
 The addresses 10.x.y.z and 192.168.x.y are on the private network.
@@ -1307,13 +1262,6 @@ No, nodes only get deleted if the farm owner chooses to do so. Old "nodes" are r
 ### Can a farm be erased from TF Grid?
 
 No, this is not possible. In the future, we will implement some features in order to allow the cleaning of unused farms. As of now, this is not possible. Also, an old farm does not take resources on the TF Grid, or very little. 
-
-
-
-### On the ThreeFold Connect App, it says I need to migrate my Titan farm from V2 to V3. What do I have to do? How long does this take?
-
-To migrate, read [this documentation](https://forum.threefold.io/t/what-to-do-if-your-farm-is-still-on-grid-v2-closed/3761).
-
 
 
 
