@@ -15,7 +15,6 @@ Easily deploy your favourite applications on the ThreeFold grid with a click of 
 - [Mattermost](../solutions/mattermost.md)
 - [Nextcloud](../solutions/nextcloud.md)
 - [Node Pilot](../solutions/nodepilot.md)
-- [ownCloud](../solutions/owncloud.md)
 - [Peertube](../solutions/peertube.md)
 - [Presearch](../solutions/presearch.md)
 - [Static Website](../solutions/static_website.md)

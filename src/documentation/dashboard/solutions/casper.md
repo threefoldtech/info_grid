@@ -42,6 +42,8 @@ __Process__ :
 - `Custom Domain` flag lets the user to use a custom domain
 - Choose a gateway node to deploy your Casperlab instance on.
 
+If you have more than one SSH keys set, you can click on `Manage SSH keys` to select which one to use for this deployment.
+
 After that is done you can see a list of all of your deployed instances
 
 ![ ](./img/casper4.png)

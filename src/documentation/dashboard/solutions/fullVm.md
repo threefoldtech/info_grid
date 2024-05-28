@@ -50,18 +50,24 @@ Deploy a new full virtual machine on the Threefold Grid
   - `Country`
   - `Farm Name`
 - Choose the node to deploy the Full Virtual Machine on
+
+
   ![](./img/node_selection.png)
 
+- If you have more than one SSH keys set, you can click on `Manage SSH keys` to select which one to use for this deployment.
+
 You can attach one or more disks to the Virtual Machine by clicking on the Disks tab and the plus `+` sign and specify the following parameters
+
 ![ ](./img/new_vm3.png)
 
 - Disk name
 - Disk size
 
-in the bottom of the page you can see a list of all of the virtual machines you deployed. you can click on `Show details` for more details
+At the bottom of the page, you can see a list of all of the virtual machines you deployed. You can click on `Show details` for more details:
 
 ![ ](./img/new_vm5.png)
-You can also go to JSON tab for full details
+You can also go to JSON tab for full details:
+
 ![ ](./img/new_vm6.png)
 
 ## Difference Between Full VM and Micro VM
