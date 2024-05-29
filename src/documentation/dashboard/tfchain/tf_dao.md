@@ -8,6 +8,7 @@ The TFChain DAO (i.e. Decentralized Autonomous Organization) feature integrates 
 - [Prerequisites to Vote](#prerequisites-to-vote)
 - [How to Vote for a Proposal](#how-to-vote-for-a-proposal)
 - [The Goal of the Threefold DAO](#the-goal-of-the-threefold-dao)
+- [Voting Weight](#voting-weight)
 
 ***
 
@@ -39,3 +40,19 @@ To vote, you need to log into your Threefold Dashboard account, go to **TF DAO**
 The goal of DAO voting system is to gather the thoughts and will of the Threefold community and build projects that are aligned with the ethos of the project.
 
 We encourage anyone to share their ideas. Who knows? Your sudden spark of genius might lead to an accepted proposal on the Threefold DAO!
+
+## Voting Weight
+
+The DAO votes are weighted as follows:
+
+- Get all linked farms to the account
+- Get all nodes per farm
+- Get compute and storage units per node (CU and SU)
+- Compute the weight of a farm:
+  ```
+  2 * (sum of CU of all nodes) + (sum of SU of all nodes)
+  ```
+
+Voting weights are tracked per farm to keep it easy and traceable. Thus, if an account has multiple farms, the vote will be registered per farm.
+
+For more information on voting weight, [check this example](./tf_dao_voting_weight.md).

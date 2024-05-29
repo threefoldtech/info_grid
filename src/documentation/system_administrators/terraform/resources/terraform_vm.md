@@ -87,15 +87,15 @@ resource "grid_deployment" "d1" {
 output "vm1_ip" {
   value = grid_deployment.d1.vms[0].ip
 }
-output "vm1_ygg_ip" {
-  value = grid_deployment.d1.vms[0].ygg_ip
+output "vm1_planetary_ip" {
+  value = grid_deployment.d1.vms[0].planetary_ip
 }
 
 output "vm2_ip" {
   value = grid_deployment.d1.vms[1].ip
 }
-output "vm2_ygg_ip" {
-  value = grid_deployment.d1.vms[1].ygg_ip
+output "vm2_planetary_ip" {
+  value = grid_deployment.d1.vms[1].planetary_ip
 }
 
 ```
@@ -276,7 +276,7 @@ output "public_ip" {
     value = grid_deployment.d1.vms[0].computedip
 }
 
-output "ygg_ip" {
-    value = grid_deployment.d1.vms[0].ygg_ip
+output "planetary_ip" {
+    value = grid_deployment.d1.vms[0].planetary_ip
 }
 ```

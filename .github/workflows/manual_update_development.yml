@@ -1,4 +1,4 @@
-name: www2.manual.grid.tf
+name: www.manual.dev.grid.tf
 on:
   push:
     branches: [ development ]
@@ -8,10 +8,10 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: pushing latest change on www2.manual.grid.tf
+    - name: pushing latest change on www.manual.dev.grid.tf
       uses: appleboy/ssh-action@master
       with:
-        host: www2.manual.grid.tf
+        host: www.manual.dev.grid.tf
         username: ${{ secrets.TF_USER }}
         key: ${{ secrets.TF_SECRET }}
         port: ${{ secrets.TF_PORT }}
@@ -43,4 +43,4 @@ jobs:
         id: link-report
         uses: docker://ghcr.io/threefoldfoundation/website-link-checker:latest
         with:
-          args: 'https://www2.manual.grid.tf -e 404 501 503 504 -w all'
+          args: 'https://www.manual.dev.grid.tf -e 404 501 503 504 -w all'

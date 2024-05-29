@@ -5,6 +5,7 @@
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Deployment](#deployment)
+- [Troubleshooting](#troubleshooting)
 
 ***
 
@@ -57,3 +58,7 @@ Click on ***Visit*** to go to the homepage of your Peertube instance!
 ![ ](./img/weblet_peertube_instance.png)
 
 > Please note it may take sometime to be ready
+
+## Troubleshooting
+
+If you get a `Bad Gateway` while connecting to the website, you might simply need to wait for the deployment to complete.

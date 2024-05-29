@@ -213,8 +213,8 @@ output "node1_zmachine1_ip" {
   value = grid_deployment.d1.vms[0].ip
 }
 
-output "ygg_ip1" {
-  value = grid_deployment.d1.vms[0].ygg_ip
+output "planetary_ip1" {
+  value = grid_deployment.d1.vms[0].planetary_ip
 }
 
 output "ipv4_vm1" {

@@ -65,7 +65,7 @@ You can use the [Node Finder](../../dashboard/deploy/node_finder.md) on the [TF 
 
 ## Reserving the GPU Node
 
-Now, users can reserve the node in the **Dedicated Nodes** section of the Dashboard and then deploy workloads using the GPU. For more information, read [this documentation](../../dashboard/deploy/dedicated_machines.md).
+Now, users can reserve the node in the **Dedicated Nodes** section of the Dashboard and then deploy workloads using the GPU. For more information, read [this documentation](../../dashboard/deploy/node_finder.md#dedicated-nodes).
 
 ## Questions and Feedback
 

@@ -14,7 +14,11 @@
 - [API](#api)
 - [Message System](#message-system)
 - [Inspecting Node Keys](#inspecting-node-keys)
-- [Permanently Enable Mycelium](#permanently-enable-mycelium)
+- [Troubleshooting](#troubleshooting)
+  - [Root Access](#root-access)
+  - [Enable IPv6 at the OS Level](#enable-ipv6-at-the-os-level)
+  - [VPN Can Block Mycelium](#vpn-can-block-mycelium)
+  - [Add Peers](#add-peers)
 
 ***
 
@@ -153,32 +157,37 @@ Public key: a47c1d6f2a15b2c670d3a88fbe0aeb301ced12f7bcb4c8e3aa877b20f8559c02
 Address: 27f:b2c5:a944:4dad:9cb1:da4:8bf7:7e65
 ```
 
-## Permanently Enable Mycelium
+## Troubleshooting
 
-It is possible to permenently enable Mycelium on your client.
+### Root Access
 
-For Linux, we use systemd to manage the mycelium daemon in `/storage/`. Here's an example:
+You might need to run Mycelium as root. Some error messages could be something like: `Error: NixError(EPERM)`.
+
+### Enable IPv6 at the OS Level
+
+You need to enable IPv6 at the OS level. Some error messages could be something like: `Permission denied (os error 13)`.
+
+- Check if IPv66 is enabled
+  - If disabled, output is 1, if enabled, output is 0
+  ```
+  sysctl net.ipv6.conf.all.disable_ipv6
+  ```
+- Enable IPv6
+  ```
+  sudo sysctl net.ipv6.conf.all.disable_ipv6=0
+  ```
+
+Here's some commands to troubleshoot IPv6:
 
 ```
-[Unit]
-Description=End-2-end encrypted IPv6 overlay network
-Wants=network.target
-After=network.target
-Documentation=https://github.com/threefoldtech/mycelium
-
-[Service]
-ProtectHome=true
-ProtectSystem=true
-SyslogIdentifier=mycelium
-CapabilityBoundingSet=CAP_NET_ADMIN
-StateDirectory=mycelium
-StateDirectoryMode=0700
-ExecStartPre=+-/sbin/modprobe tun
-ExecStart=/storage/mycelium --tun-name mycelium -k %S/mycelium/key.bin --peers tcp://[2a01:4f8:221:1e0b::2]:9651 tcp://[2a01:4f8:212:fa6::2]:9651 tcp://[2a02:1802:5e:0:8478:51ff:fee2:3331]:9651 tcp://[2a02:1802:5e:0:8c9e:7dff:fec9:f0d2]:9651 tcp://[2a01:4f9:6a:1dc5::2]:9651 tcp://[2a01:4f9:5a:1042::2]:9651
-Restart=always
-RestartSec=5
-TimeoutStopSec=5
-
-[Install]
-WantedBy=multi-user.target
+sudo ip6tables -S INPUT
+sudo ip6tables -S OUTPUT
 ```
+
+### VPN Can Block Mycelium
+
+You might need to disconnect your VPN when using Mycelium.
+
+### Add Peers
+
+It can help to connect to other peers. Check the Mycelium repository for [peers](https://github.com/threefoldtech/mycelium?tab=readme-ov-file#hosted-public-nodes).

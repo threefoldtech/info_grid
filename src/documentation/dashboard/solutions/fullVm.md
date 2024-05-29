@@ -43,25 +43,31 @@ Deploy a new full virtual machine on the Threefold Grid
   - `Myceluim` to enable mycelium on the virtual machine
   - `Wireguard Access` to add a wireguard access to the Virtual Machine
 - `GPU` flag to add GPU to the Virtual machine
-  - To deploy a Full VM with GPU, you first need to [rent a dedicated node](../../dashboard/deploy/dedicated_machines.md)
+  - To deploy a Full VM with GPU, you first need to [rent a dedicated node](../../dashboard/deploy/node_finder.md#dedicated-nodes)
 - `Dedicated` flag to retrieve only dedicated nodes 
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
   - `Country`
   - `Farm Name`
 - Choose the node to deploy the Full Virtual Machine on
+
+
   ![](./img/node_selection.png)
 
+- If you have more than one SSH keys set, you can click on `Manage SSH keys` to select which one to use for this deployment.
+
 You can attach one or more disks to the Virtual Machine by clicking on the Disks tab and the plus `+` sign and specify the following parameters
+
 ![ ](./img/new_vm3.png)
 
 - Disk name
 - Disk size
 
-in the bottom of the page you can see a list of all of the virtual machines you deployed. you can click on `Show details` for more details
+At the bottom of the page, you can see a list of all of the virtual machines you deployed. You can click on `Show details` for more details:
 
 ![ ](./img/new_vm5.png)
-You can also go to JSON tab for full details
+You can also go to JSON tab for full details:
+
 ![ ](./img/new_vm6.png)
 
 ## Difference Between Full VM and Micro VM

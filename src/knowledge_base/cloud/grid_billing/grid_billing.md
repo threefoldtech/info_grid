@@ -247,7 +247,7 @@ Contract cost/hour = CU cost/hour + SU cost/hour
 
 ### Applying the Dedicated Node Discount
 
-There's a default `50%` discount for renting a node, this discount is not related to the staking discount. For more information on dedicated node discounts, please [read this section](../../../documentation/dashboard/deploy/dedicated_machines.md).
+There's a default `50%` discount for renting a node, this discount is not related to the staking discount. For more information on dedicated node discounts, please [read this section](../../../documentation/dashboard/deploy/node_finder.md#dedicated-nodes).
 
 ```
 Cost with 50% discount = 35.72532 * 0.5
