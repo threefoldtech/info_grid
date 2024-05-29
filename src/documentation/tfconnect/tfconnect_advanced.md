@@ -215,13 +215,7 @@ Click on the button to copy the Secret. The app will show a confirmation message
 
 Now head over to the ThreeFold Dashboard and enter the TF Chain Secret as the mnemonics.
 
-In the Farm section, you can now see your farm. You have successfully moved the farm from the ThreeFold Connect app to the ThreeFold Dashboard.
-
-![farming_tf_wallet_55](./img/farming_tf_wallet_55.png)
-
-You can see here that the farming reward address is the same as before.
-
-![farming_tf_wallet_56](./img/farming_tf_wallet_56.png)
+In the Farm section, you can now see your farm. You can see here that the farming reward address is the same as before.
 
 That's it! You have successfully imported the farm from the ThreeFold Connect app to the ThreeFold Dashboard.
 
