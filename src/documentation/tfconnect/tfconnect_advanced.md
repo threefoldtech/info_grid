@@ -40,7 +40,7 @@ Either use the links above, or search for the ThreeFold Connect app on the Apple
 
 When you try to open the app, if you get an error message such as : "Error in initialization in Flagsmith...", you might need to upgrade your phone to a newer software version (8.0 for Android and 13 for iOS).
 
-Once you are in the application, you will see some introduction pages to help you familiarize with the TF Connect app. You will also be asked to read and accept ThreeFold's Terms and conditions.
+Once you are in the application, you will see some introduction pages to help you familiarize yourself with the TF Connect app. You will also be asked to read and accept ThreeFold's Terms and conditions.
 
 ![farming_tf_wallet_3](./img/farming_tf_wallet_3.png)
 ![farming_tf_wallet_4](./img/farming_tf_wallet_4.png)
@@ -57,7 +57,7 @@ Next, you need to add a valid email address. This will be used as a broad KYC. Y
 
 ![farming_tf_wallet_7](./img/farming_tf_wallet_7.png)
 
-Then, the next step is crucial! Make sure no one is around looking at your screen. You will be shown your seed phrase. Keep this in a secure and offline place. You will need the 3bot ID and the seed phrase to recover your account. This seed phrase is of utmost important. Do not lose it nor give it to anyone.
+Then, the next step is crucial! Make sure no one is around looking at your screen. You will be shown your seed phrase. Keep this in a secure and offline place. You will need the 3bot ID and the seed phrase to recover your account. This seed phrase is of utmost importance. Do not lose it nor give it to anyone.
 
 ![farming_tf_wallet_8](./img/farming_tf_wallet_8.png)
 
@@ -69,7 +69,7 @@ Then, you'll be asked to confirm your TF 3bot name and the associated email.
 
 ![farming_tf_wallet_10](./img/farming_tf_wallet_10.png)
 
-Finally, you will be asked to choose a 4-digit pin. This will be needed to use the ThreeFold Connect app. If you ever forget this 4-digit pin, you will need to recover your account from your 3bot name and your seed phrase. You will need to confirm the new pin in the next step.
+Finally, you will be asked to choose a 4-digit PIN. This will be needed to use the ThreeFold Connect app. If you ever forget this 4-digit PIN, you will need to recover your account from your 3bot name and your seed phrase. You will need to confirm the new pin in the next step.
 
 ![farming_tf_wallet_11](./img/farming_tf_wallet_11.png)
 
@@ -83,7 +83,7 @@ In the next step, we will create a ThreeFold Connect Wallet. You'll see, it's ve
 
 Once you've created your account, an email will be sent to the email address you've chosen in the account creation process. 
 
-To verify your email, go on your email account and open the email sent by *info@openkyc.live* with the subject *Verify your email address*. 
+To verify your email, go to your email account and open the email sent by *info@openkyc.live* with the subject *Verify your email address*. 
 
 In this email, click on the link *Verify my email address*. This will lead you to a *login.threefold.me* link. The process should be automatic. Once this is done, you will receive a confirmation on screen, as well as on your phone.
 
@@ -128,7 +128,7 @@ Once inside your wallet, this is what you see.
 
 ![farming_tf_wallet_17](./img/farming_tf_wallet_17.png)
 
-We will now see where the Stellar and the TF Chain Addresses and Secrets are to be found. We will also changing the wallet name. To do so, click on the *circled i* at the bottom right of the screen.
+We will now see where the Stellar and the TF Chain Addresses and Secrets are to be found. We will also change the wallet name. To do so, click on the *circled i* at the bottom right of the screen.
 
 ![farming_tf_wallet_18](./img/farming_tf_wallet_18.png)
 
@@ -215,7 +215,7 @@ Click on the button to copy the Secret. The app will show a confirmation message
 
 Now head over to the ThreeFold Dashboard and enter the TF Chain Secret as the mnemonics.
 
-In the Farm section, you can now see your farm. You have successfully move the farm from the ThreeFold Connect app to the ThreeFold Dashboard.
+In the Farm section, you can now see your farm. You have successfully moved the farm from the ThreeFold Connect app to the ThreeFold Dashboard.
 
 ![farming_tf_wallet_55](./img/farming_tf_wallet_55.png)
 
