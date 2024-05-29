@@ -134,9 +134,9 @@ It's usually easy to set servers such as a HP Proliant with the HBA mode. For De
 
 There is a possibility that this happens because you are booting your 3Node on a HDD. A 3Node needs a minimum of 500GB of SSD to work properly.
 
-Also, make sure that you are using the correct boot option (Legacy BIOS or UEFI) in the Settings and that it corresponds to the correct booting image on the ThreeFold Bootstrap page.
+Also, make sure that you are using the correct boot option (Legacy BIOS or UEFI) in Settings and that it corresponds to the correct booting image on the ThreeFold Bootstrap page.
 
-This problem often arises when you plugged your disks in the wrong controller. For example, try unpluging the disks from the SAS controller, and plug them in the SATA controller. Also, disable the SAS controller if needed.
+This problem often arises when you plug your disks in the wrong controller. For example, try unplugging the disks from the SAS controller, and plug them in the SATA controller. Also, disable the SAS controller if needed.
 
 In a Legacy BIOS boot, make sure Legacy is enabled and disable *Data Execution Prevention* if possible.
 
@@ -146,7 +146,7 @@ Also, it might have to do with your RAID controller configuration. Make sure thi
 
 ### I  get the error Certificate is not yet valid when booting my 3Node server, what can I do?
 
-Make sure your firmware is up to date. If necessary, reinstall it. You might have to install then re-install the firmware if your system is very old. 
+Make sure your firmware is up to date. If necessary, reinstall it. You might have to install and then re-install the firmware if your system is very old. 
 
 
 
@@ -268,11 +268,11 @@ The most probable fix to this error is simply to properly [wipe your disks](./3n
 
 ### I did a format on my SSD disk, but Zero-OS still does not recognize them. What's wrong?
 
-Formatting is one thing, but to boot properly, Zero-OS needs to work on a completely wipe disk. Thus, make sure you [wipe your disks](./3node_building/4_wipe_all_disks.md). Formatting is not enough.
+Formatting is one thing, but to boot properly, Zero-OS needs to work on a completely wiped disk. Thus, make sure you [wipe your disks](./3node_building/4_wipe_all_disks.md). Formatting is not enough.
 
 ### My 3Node doesn't boot properly without a monitor plugged in. What can I do?
 
-First, try to disable the "Halt On" mode in BIOS. If you do not have this option, try simply enabling the Legacy Support (Dell BIOS for example). If this doesn't work, try to plug in a Dummy Plug/Headless Ghost/Display Emulator in your 3Node. This will simulate a plugged monitor. This should fix the problem.
+First, try to disable the "Halt On" mode in BIOS. If you do not have this option, try simply enabling Legacy Support (Dell BIOS for example). If this doesn't work, try to plug in a Dummy Plug/Headless Ghost/Display Emulator in your 3Node. This will simulate a plugged monitor. This should fix the problem.
 
 
 
@@ -309,7 +309,7 @@ To fix this issue, it is often necessary to adjust the IPV6 settings related to 
 
 ### I try to boot a 3Node, but I get the message no route with default gateway found. What does it mean?
 
-First, let's see the main terms. Default gateway act as an access point to other networks, in this case the TF Grid, when there is a back and forth exchange of data packets.
+First, let's see the main terms. Default gateway acts as an access point to other networks, in this case the TF Grid, when there is a back and forth exchange of data packets.
 
 While the last question implied a communication problem from the Grid, this error message usually means that the 3Node has communication problem. In short, it has difficulty reaching the TF Grid. There are many ways to troubleshoot this error. First, let's give the most direct solution. Make sure you have a direct connection with your Internet Service Provider (ISP): your 3Node should be connected to a router or a switch via an ethernet cable. Wifi doesn't work. Make sure your DHCP is set correctly.
 
