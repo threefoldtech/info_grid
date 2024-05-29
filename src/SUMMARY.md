@@ -178,6 +178,7 @@
       - [Quick Guide](documentation/farmers/farmerbot/farmerbot_quick.md)
       - [Additional Information](documentation/farmers/farmerbot/farmerbot_information.md)
       - [Minting and the Farmerbot](documentation/farmers/farmerbot/farmerbot_minting.md)
+    - [Farming Troubleshooting](documentation/farmers/farming_troubleshooting.md)
   - [System Administrators](documentation/system_administrators/system_administrators.md)
     - [Getting Started](documentation/system_administrators/getstarted/tfgrid3_getstarted.md)
       - [SSH Remote Connection](documentation/system_administrators/getstarted/ssh_guide/ssh_guide.md)
