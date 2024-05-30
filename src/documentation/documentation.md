@@ -6,7 +6,8 @@ For complementary information on ThreeFold, refer to the [ThreeFold Knowledge Ba
 
 <h2>Table of Contents</h2>
 
-- [Dashboard](./dashboard/dashboard.md)
+- [ThreeFold Dashboard](./dashboard/dashboard.md)
+- [ThreeFold Connect](./tfconnect/tfconnect_toc.md)
 - [Developers](./developers/developers.md)
 - [Farmers](./farmers/farmers.md)
 - [System Administrators](./system_administrators/system_administrators.md)

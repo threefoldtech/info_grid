@@ -7,6 +7,8 @@
 - [1. Create a Linux Bootstrap Image](#1-create-a-linux-bootstrap-image)
 - [2. Boot Linux in *Try Mode*](#2-boot-linux-in-try-mode)
 - [3. Use wipefs to Wipe All the Disks](#3-use-wipefs-to-wipe-all-the-disks)
+  - [SATA Disks](#sata-disks)
+  - [NVMe Disks](#nvme-disks)
 
 ***
 
@@ -26,10 +28,9 @@ It only takes a few steps to wipe all the disks of a 3Node.
 
 ThreeFold runs its own OS, which is Zero-OS. You thus need to start with completely wiped disks. Note that ALL disks must be wiped. Otherwise, Zero-OS won't boot.
 
-An easy method is to simply download a Linux distribution and wipe the disk with the proper command line in the Terminal.
+An easy method is to simply download a Linux distribution and wipe the disks by running simple commands on the command-line interface.
 
 We will show how to do this with Ubuntu 20.04. LTS. This distribution is easy to use and it is thus a good introduction for Linux, in case you haven't yet explored this great operating system.
-
 
 
 ## 1. Create a Linux Bootstrap Image
@@ -37,7 +38,6 @@ We will show how to do this with Ubuntu 20.04. LTS. This distribution is easy to
 Download the Ubuntu 20.04 ISO file [here](https://releases.ubuntu.com/20.04/) and burn the ISO image on a USB key. Make sure you have enough space on your USB key. You can also use other Linux Distro such as [GRML](https://grml.org/download/), if you want a lighter ISO image.
 
 The process here is the same as in section [Burning the Bootstrap Image](./2_bootstrap_image.md#burn-the-zero-os-bootstrap-image), but with the Linux ISO instead of the Zero-OS ISO. [BalenaEtcher](https://www.balena.io/etcher/) is recommended as it formats your USB in the process, and it is available for MAC, Windows and Linux.
-
 
 
 ## 2. Boot Linux in *Try Mode*
@@ -48,50 +48,52 @@ When you boot the Linux ISO image, make sure to choose *Try Mode*. Otherwise, it
 
 ## 3. Use wipefs to Wipe All the Disks
 
-When you use wipefs, you are removing all the data on your disk. Make sure you have no important data on your disks, or make sure you have copies of your disks before doing this operation, if needed. 
+We will now use `wipefs` to remove all the data on the disks.
 
-Once Linux is booted, go into the terminal and write the following command lines.
+> Important: Make sure that you have no important data on your disks, or make sure that you have copies of your disks before proceeding. 
 
-First, you can check the available disks by writing in a terminal or in a shell:
+Once Linux is booted, open the terminal.
+
+First, you can check the available disks by writing the command:
 
 ```
 lsblk
 ```
 
-To see what disks are connected, write this command:
+The types of disk you can see are:
+
+- `sdX`
+  - SATA type
+  - e.g. `sda`
+  - Note: It can be an SSD disk or a USB key
+- `nvmeX`
+  - NVMe type
+  - e.g. `nvme0n1`
+
+### SATA Disks
+
+To wipe one specific SATA disk at a time, use the following command by replacing `sdX`  with the specific disk (e.g. `sdb`):
 
 ```
-fdisk -l
+sudo wipefs -af /dev/sdX
 ```
 
-If you want to wipe one specific disk, here we use *sda* as an example, write this command:
+To wipe all SATA disks (except the Linux distro USB disk you are currently using to run Ubuntu in *Try Mode*), take note of the Linux distro USB disk (e.g. `sdb`) and replace `sdX` with it in the following line:
 
 ```
-sudo wipefs -af /dev/sda
+sudo for i in /dev/sd*; do if [ "$i"!= "/dev/sdX"* ]; then wipefs -af $i; fi; done
 ```
 
-And replace the "a" in sda by the letter of your disk, as shown when you did *lsblk*. The term *sudo* gives you the correct permission to do this. 
+### NVMe Disks
 
-To wipe all the disks in your 3Node, write the command:
-
-```
-sudo for i in /dev/sd*; do wipefs -af $i; done
-```
-
-If you have any `fdisk` entries that look like `/dev/nvme`, you'll need to adjust the command line.
-
-For a nvme disk, here we use *nvme0* as an example, write:
+To wipe one specific NVMe disk at a time, use the following command by replacing `nvmeX` with the specific disk (e.g. `nvme0n1`) :
 
 ```
-sudo wipefs -af /dev/nvme0
+sudo wipefs -af /dev/nvmeX
 ```
 
-And replace the "0" in nvme0 by the number corresponding to your disk, as shown when you did *lsblk*. 
-
-To wipe all the nvme disks, write this command line:
+To wipe all NVMe disks, use the following line: 
 
 ```
-sudo for i in /dev/nvme*; do wipefs -a $i; done
+sudo for i in /dev/nvme*; do wipefs -af $i; done
 ```
-
-

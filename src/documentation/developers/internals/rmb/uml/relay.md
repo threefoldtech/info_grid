@@ -1,4 +1,4 @@
-<h1> RMB Peer </h1>
+<h1> RMB Relay </h1>
 
 <h2> Table of Contents </h2>
 
