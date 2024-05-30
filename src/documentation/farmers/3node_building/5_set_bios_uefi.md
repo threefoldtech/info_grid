@@ -14,7 +14,6 @@
   - [Update the BIOS firmware](#update-the-bios-firmware)
 - [Additional Information](#additional-information)
   - [BIOS/UEFI and Zero-OS Bootstrap Image Combinations](#biosuefi-and-zero-os-bootstrap-image-combinations)
-  - [Troubleshoot](#troubleshoot)
 
 
 ***
@@ -163,10 +162,3 @@ Refer to [this previous section](./2_bootstrap_image.md) for more information on
 
 For information on how to boot Zero-OS with iPXE, read [this section](./6_boot_3node.md#advanced-booting-methods-optional).
 
-### Troubleshoot
-
-You might have to try UEFI first and if it doesn't work, try BIOS. Usually when this is the case (UEFI doesn't work with your current computer), the following message will be shown:
-
-> Initializing Network Devices...
-
-And then... nothing. This means that you are still in the BIOS of the hardware and boot is not even started yet. When this happens, try the BIOS mode of your computer. 

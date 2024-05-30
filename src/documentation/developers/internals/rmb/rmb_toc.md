@@ -13,6 +13,7 @@ Out of the box RMB provides the following:
 <h2> Table of Contents </h2>
 
 - [Introduction to RMB](rmb_intro.md)
+- [Coding Guides](./rmb_coding_guides.md)
 - [RMB Specs](rmb_specs.md)
 - [RMB Peer](uml/peer.md)
 - [RMB Relay](uml/relay.md)

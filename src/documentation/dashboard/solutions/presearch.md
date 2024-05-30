@@ -8,7 +8,6 @@
 - [Migrate an Existing Presearch Node to the TFGrid](#migrate-an-existing-presearch-node-to-the-tfgrid)
 - [Verify if a 3Node Already Runs a Presearch Workload](#verify-if-a-3node-already-runs-a-presearch-workload)
 - [Learn More About Presearch](#learn-more-about-presearch)
-- [Questions and Feedback](#questions-and-feedback)
 
 ***
 
@@ -92,7 +91,3 @@ You can do the following to verify if a Presearch workload deployed without a pu
 ## Learn More About Presearch
 
 To learn more about Presearch, you can read the [Presearch documentation](https://docs.presearch.io/).
-
-## Questions and Feedback
-
-If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Grid Tester Community](https://t.me/threefoldtesting) on Telegram.

@@ -14,7 +14,7 @@
   - [WordPress Instance Website](#wordpress-instance-website)
   - [WordPress Instance Admin Page](#wordpress-instance-admin-page)
 - [WordPress Instance Credentials](#wordpress-instance-credentials)
-- [Questions and Feedback](#questions-and-feedback)
+- [Troubleshooting](#troubleshooting)
 
 ***
 
@@ -142,6 +142,6 @@ At any time, you can find the credentials of your WordPress instance by clicking
 
 ![ ](img/wp8.png)
 
-# Questions and Feedback
+# Troubleshooting
 
-If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Grid Tester Community](https://t.me/threefoldtesting) on Telegram.
+If you get a `Bad Gateway` while connecting to the website, you might simply need to wait for the deployment to complete.

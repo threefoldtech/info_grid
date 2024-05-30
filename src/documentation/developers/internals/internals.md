@@ -6,6 +6,7 @@ We present in this section of the developers book a partial list of system compo
 
 - [Reliable Message Bus (RMB)](rmb/rmb_toc.md)
   - [Introduction to RMB](rmb/rmb_intro.md)
+  - [Coding Guides](rmb/rmb_coding_guides.md)
   - [RMB Specs](rmb/rmb_specs.md)
   - [RMB Peer](rmb/uml/peer.md)
   - [RMB Relay](rmb/uml/relay.md)

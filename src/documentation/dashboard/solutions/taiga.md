@@ -5,6 +5,7 @@
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Deployment](#deployment)
+- [Troubleshooting](#troubleshooting)
 
 ***
 
@@ -55,3 +56,7 @@ After that is done you can see a list of all of your deployed instances
 Click on ***Visit*** to go to the homepage of your Taiga instance!
 
 ![ ](./img/taiga6.png)
+
+## Troubleshooting
+
+If you get a `Bad Gateway` while connecting to the website, you might simply need to wait for the deployment to complete.
