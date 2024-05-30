@@ -89,4 +89,6 @@ For complementary information on ThreeFold grid and its cloud component, refer t
   - [Ecommerce](./advanced/ecommerce/ecommerce.md)
     - [WooCommerce](./advanced/ecommerce/woocommerce.md)
     - [nopCommerce](./advanced/ecommerce/nopcommerce.md)
+  - [Hummingbot](./advanced/hummingbot.md)
+  - [HTTPS with Caddy](./advanced/https_caddy.md)
   - [Node Status Bot](./advanced/node_status_bot.md)

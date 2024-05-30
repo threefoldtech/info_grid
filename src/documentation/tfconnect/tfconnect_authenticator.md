@@ -28,7 +28,7 @@ To connect with the authenticator:
 
 - Take note of the icon shown on your screen
 
-![](./img/tfconnect_authenticator_3.png>)
+![](./img/tfconnect_authenticator_3.png)
 
 - On your phone, open TFConnect and enter your password
 
