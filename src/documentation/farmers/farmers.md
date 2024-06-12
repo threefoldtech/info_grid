@@ -32,6 +32,7 @@ To buy a certified node from an official ThreeFold vendor, check the [ThreeFold 
   - [Quick Guide](./farmerbot/farmerbot_quick.md)
   - [Additional Information](./farmerbot/farmerbot_information.md)
   - [Minting and the Farmerbot](./farmerbot/farmerbot_minting.md)
+- [Node Status Bot](./node_status_bot/node_status_bot.md)
 - [Farming Troubleshooting](./farming_troubleshooting.md)
 - [Farmers FAQ](../faq/faq.md#farmers-faq)
 
