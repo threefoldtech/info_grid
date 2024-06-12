@@ -4,7 +4,7 @@
 
 - [Introduction](#introduction)
 - [Disclaimer](#disclaimer)
-- [Set the Bot](#set-the-bot)
+- [Getting Started with the Bot](#getting-started-with-the-bot)
 - [Commands](#commands)
 - [Bugs and Features](#bugs-and-features)
 - [Node Status Bot News](#node-status-bot-news)
@@ -116,8 +116,8 @@ Here is a reference for all supported commands and their different forms:
 
 ## Bugs and Features
 
-To report bugs and request features, please open an issue on the [GitHub repo](https://github.com/threefoldfoundation/node-status-bot) contact [Scott Yeager on Telegram](https://t.me/scottyeager). 
+To report bugs and request features, please open an issue on the [GitHub repo](https://github.com/threefoldfoundation/node-status-bot) or contact [Scott Yeager on Telegram](https://t.me/scottyeager). 
 
 ## Node Status Bot News
 
-If you use the bot, please also subscribe to the [Node Status Bot News channel](https://t.me/node_bot_updates) on Telegram to receive very occasional updates and news concerning the bot.
+If you use the bot, please also subscribe to the [Node Status Bot News channel](https://t.me/node_bot_updates) on Telegram to receive occasional updates and news concerning the bot.
