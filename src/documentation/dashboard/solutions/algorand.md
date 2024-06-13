@@ -27,7 +27,7 @@
 An Algorand node can be either a `Default`, `Relay` or `Indexer` node.
   
 - Default:
-  - This is a non-relay node
+  - This is a non-relay node.
   - It can run on Devnet, Testnet, Betanet and Mainnet.
 - Relay:
   - It can run only on Testnet and Mainnet.
