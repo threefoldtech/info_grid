@@ -35,6 +35,7 @@
         - [Static Website](documentation/dashboard/solutions/static_website.md)
         - [Subsquid](documentation/dashboard/solutions/subsquid.md)
         - [Taiga](documentation/dashboard/solutions/taiga.md)
+        - [TFRobot](documentation/dashboard/solutions/tfrobot.md)
         - [Umbrel](documentation/dashboard/solutions/umbrel.md)
         - [WordPress](documentation/dashboard/solutions/wordpress.md)
       - [Your Contracts](documentation/dashboard/deploy/your_contracts.md)

@@ -20,5 +20,6 @@ Easily deploy your favourite applications on the ThreeFold grid with a click of 
 - [Static Website](../solutions/static_website.md)
 - [Subsquid](../solutions/subsquid.md)
 - [Taiga](../solutions/taiga.md)
+- [TFRobot](../solutions/tfrobot.md)
 - [Umbrel](../solutions/umbrel.md)
 - [WordPress](../solutions/wordpress.md)
