@@ -15,7 +15,7 @@
 
 ## Introduction
 
-We present a simple guide on how to deploy large language models on the grid using CPU. For this guide, we will be deploying Llama on a full VM using the OpenWebUI bundled with Ollama support.
+We present a simple guide on how to deploy large language models on the grid using CPU. For this guide, we will be deploying Llama on a full VM using OpenWebUI bundled with Ollama support.
 
 Llama is a large language model trained by Meta AI. It is an open-source model, meaning that it is free to use and customize for various applications. This LLM is designed to be a more conversational AI allowing users to engage in natural-sounding conversations. Llama is trained on a massive dataset of text from the internet and can generate responses to a wide range of topics and questions.
 
@@ -70,7 +70,9 @@ We now install OpenWebUI with bundled Ollama support. Note that you might need t
 
 You should now see the OpenWebUI page. You can register by entering your email and setting a password. This information will stay on the machine running OpenWebUI.
 
-![](./img/openwebui_page.png)
+<p align="center">
+  <img src="./img/openwebui_page.png" />
+</p>
 
 ## Pull a Model
 
