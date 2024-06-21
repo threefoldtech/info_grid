@@ -1,4 +1,4 @@
-<h1> AI & ML Workloads </h1>
+<h1> AI & ML Workloads: GPU and Pytorch</h1>
 
 <h2> Table of Contents </h2>
 
