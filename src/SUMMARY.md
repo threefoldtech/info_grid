@@ -277,6 +277,7 @@
         - [Overview](documentation/system_administrators/advanced/quantum_safe_storage/quantum_safe_storage_overview.md)
         - [Deploy with Bootstrap](documentation/system_administrators/advanced/quantum_safe_storage/quantum_safe_storage_bootstrap.md)
         - [Deploy with Ubuntu](documentation/system_administrators/advanced/quantum_safe_storage/quantum_safe_storage_ubuntu.md)
+        - [Troubleshooting](documentation/system_administrators/advanced/quantum_safe_storage/quantum_safe_storage_troubleshooting.md)
   - [ThreeFold Token](documentation/threefold_token/threefold_token.md)
     - [TFT Bridges](documentation/threefold_token/tft_bridges/tft_bridges.md)
       - [TFChain-Stellar Bridge](documentation/threefold_token/tft_bridges/tfchain_stellar_bridge.md)

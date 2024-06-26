@@ -7,6 +7,7 @@
 - [Deploy a Full VM](#deploy-a-full-vm)
 - [VM Prerequisistes](#vm-prerequisistes)
 - [Prepare the Grid Client](#prepare-the-grid-client)
+- [Encryption](#encryption)
 - [Set ZDB](#set-zdb)
 - [Directories](#directories)
 - [Install the individual components](#install-the-individual-components)
@@ -14,7 +15,7 @@
   - [Zstor](#zstor)
 - [Local 0-db](#local-0-db)
 - [0-db-fs](#0-db-fs)
-- [It does not work](#it-does-not-work)
+- [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -111,6 +112,16 @@ cd grid_client
 nano ./scripts/config.json
 ```
 
+## Encryption
+
+When deploying with the grid client, you will need to set encryption keys for the nodes. The AES encryption keys are 32 random bytes in hexadecimal representation.
+
+They can easily be generated on the commandline using openssl:
+
+```sh
+openssl rand -hex 32
+```
+
 ## Set ZDB
 
 In order to store the data in remote locations, you need to have 0-db's.
@@ -126,6 +137,12 @@ This is already working if you are setting up QSFS on a VM on the grid, if not t
 A QSFS mount point is required and a directory for qsfs to store the temporary data.
 This guide assumes `/mnt/qsfs` for the mount point and `/data` for the qsfs temporary data. Create them if they do not exist yet.
 
+- Create mount points:
+```
+mkdir /mnt/qsfs
+mkdir /data
+```
+
 ## Install the individual components
 
 `wget` the latest released binaries from the following components:
@@ -134,7 +151,17 @@ This guide assumes `/mnt/qsfs` for the mount point and `/data` for the qsfs temp
 - 0-db: <https://github.com/threefoldtech/0-db/releases>: take the static binary and sace at `/bin/0-db`
 - 0-stor: <https://github.com/threefoldtech/0-stor_v2/releases>: take `linux-musl` binary and save at `/bin/zstor`
 
-Make sure all binaries are executable:`chmod a+x /bin/0-db-fs /bin/0-db /bin/zstor`
+Make sure all binaries are executable, e.g. `chmod a+x /bin/0-db-fs /bin/0-db /bin/zstor`
+
+- The following will download and set the latest binaries at the time of publishing.
+
+```
+wget -O /usr/local/bin/zdbfs https://github.com/threefoldtech/0-db-fs/releases/download/v0.1.11/zdbfs-0.1.11-amd64-linux-static
+wget -O /usr/local/bin/zdb https://github.com/threefoldtech/0-db/releases/download/v2.0.8/zdb-2.0.8-linux-amd64-static
+wget -O /usr/local/bin/zstor_v2 https://github.com/threefoldtech/0-stor_v2/releases/download/v0.4.0/zstor_v2-x86_64-linux-musl
+wget -O /usr/local/bin/zdb-hook.sh https://github.com/threefoldtech/quantum-storage/blob/master/lib/zdb-hook.sh
+chmod +x /usr/local/bin/*
+```
 
 ## 0-stor
 
@@ -201,6 +228,7 @@ Finally, we will start 0-db-fs. This guides opts to mount the fuse filesystem in
 
 You should now have the qsfs filesystem mounted at `/mnt/qsfs`. As you write data, it will save it in the local 0-db, and it's data containers will be periodically encoded and uploaded to the backend data storage 0-db's.
 
-## It does not work
 
-Check the [troubleshooting guide](./troubleshooting.md).
+## Troubleshooting
+
+Check the [troubleshooting guide](./quantum_safe_troubleshooting.md).
