@@ -53,10 +53,10 @@ We start by deploying a full VM on the ThreeFold Dashboard.
 
 We start by installing the prerequisites on the VM:
 
-- Install fuse3
+- Update the VM
 
 ```
-apt-get update && apt-get install fuse3
+apt-get update
 ```
 
 - Install npm and node
@@ -70,16 +70,46 @@ export NVM_DIR="$HOME/.nvm"
 nvm install 18
 ```
 
-- Install the grid client with yarn
-
+- Install yarn
 ```
 apt install cmdtest
-yarn add @threefold/grid_client
+```
+
+- Install the ThreeFold Grid dependencies
+```
+npm install @threefold/types
+npm install @threefold/tfchain_client
+```
+
+- [Install the grid client](../../../developers/javascript/grid3_javascript_installation.md)
+
+```
+git clone https://github.com/threefoldtech/tfgrid-sdk-ts
+cd tfgrid-sdk-ts
+npm install
+```
+
+- Go to the grid client subdirectory
+```
+cd packages/grid_client
+
+```
+
+- Test the grid client by generating the docs
+```
+npm run serve-docs
 ```
 
 ## Prepare the Grid Client
 
-
+- Go to the grid client subdirectory
+```
+cd grid_client
+```
+- Set the `config.json` file with the network, mnemonics, storeSecret and your computer public SSH key.
+```
+nano ./scripts/config.json
+```
 
 ## Set ZDB
 
