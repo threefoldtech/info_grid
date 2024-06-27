@@ -13,7 +13,7 @@
 
 ## Introduction
 
-The TFT Stellar-Ethereum bridge serves as a vital link between the Stellar and Ethereum blockchains, enabling the seamless transfer of TFT tokens between these two networks. This bridge enhances interoperability and expands the utility of TFT by allowing users to leverage the strengths of both platforms. With the bridge in place, TFT holders can convert their tokens from the Stellar network to the Ethereum network and vice versa, unlocking new possibilities for engagement with decentralized applications, smart contracts, and the vibrant Ethereum ecosystem. This bridge promotes liquidity, facilitates cross-chain transactions, and encourages collaboration between the Stellar and Ethereum communities.
+The TFT Stellar-Ethereum bridge serves as a vital link between the Stellar and Ethereum blockchains, enabling the seamless transfer of TFT tokens between these two networks. This bridge enhances interoperability by allowing users to leverage the strengths of both platforms. With the bridge in place, TFT holders can convert their tokens from the Stellar network to the Ethereum network and vice versa, unlocking new possibilities for engagement with decentralized applications, smart contracts, and the vibrant Ethereum ecosystem. This bridge promotes liquidity, facilitates cross-chain transactions, and encourages collaboration between the Stellar and Ethereum communities.
 
 ***
 
