@@ -19,8 +19,6 @@ The project is grateful of the support of its community and the commercial entit
 
 ThreeFold is fundamentally a decentralized initiative. Within this framework, ThreeFold Dubai plays a pivotal role in championing and advancing the ThreeFold Grid and the broader movement.
 
-For more information, read the [ThreeFold History](./threefold_history.md).
-
 ## Governance Process
 
 To make sure that all our funds are used properly and that decisions are taken for the benefit of ThreeFold and its community as a whole, we make use of different tools and features, such as multi-signature wallets, the [ThreeFold DAO](./dao/tfdao.md) and the [ThreeFold Forum](https://forum.threefold.io/).
