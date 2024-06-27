@@ -16,9 +16,7 @@
 
 ## Introduction
 
-The Threefold token (TFT) is the utility token of the Threefold Grid, a decentralized and open-source project offering network, compute and storage capacity.
-
-Threefold Tokens (TFT) are created (minted) by the ThreeFold Blockchain (TFChain) only when new Internet capacity is added to the ThreeFold Grid by farmers. For this reason, TFT is a pure utility token as minting is solely the result of farming on the Threefold Grid.
+The Threefold token (TFT) is the token of the Threefold Grid, a decentralized and open-source project offering network, compute and storage capacity.
 
 * To **farm** TFT, read the [complete farming guide](https://forum.threefold.io/t/threefold-farming-guide-part-1/2989).
 
