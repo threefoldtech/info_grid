@@ -10,33 +10,24 @@
 
 ## Introduction
 
-Quantum Storage is a FUSE filesystem that uses mechanisms of forward error correction (Reed Solomon codes) to make sure data (files and metadata) are stored in multiple remote places in a way that we can afford losing `x` number of locations without losing the data. There is other factors that are involved into this operation like encryption. Please check [0-stor](https://github.com/threefoldtech/0-stor_v2) documentations for details.
+Quantum Safe Storage (also known as Quantum Safe Filesystem or QSFS) is a distributed data store that is designed to provide resilience, security, and good performance. It is implemented on the front end as a FUSE filesystem that can be mounted on any Linux machine. All files written to this filesystem are then dispersed among a configurable number of back ends, such that failure of X nodes or Y groups of nodes can be tolerated without losing any data.
 
-The aim is to support unlimited local storage with remote backends for offload and backup which cannot be broken, even by a quantum computer.
+The system can support petabytes of total capacity, and the front end serves as a cache of configurable size. Data blocks are encrypted and dispersed using forward look error correcting codes (FLECC). Once stored in the back ends, blocks can be freed from the front end to make room for fresh data once the cache is full. When that data is needed again, it is reconstructed and decrypted on the fly.
+
+Thanks to the methods used, not even a quantum computer capable of breaking encryption can decode data stored in the back ends.
 
 ## Components
 
-To have a working quantum safe file system (QSFS) there are multiple components that need to work together to make it work. These components are:
+There are three main components comprising QSFS. These components are:
 
-- [0-db-fs](https://github.com/threefoldtech/0-db-fs) this is what creates the `FUSE` mount (the actual user facing filesystem) this component does not know about qsfs or forward error correction. It's main job is to expose the fuse filesystem and store it's data in a local zdb instacne
-- [0-db](https://github.com/threefoldtech/0-db) is a local `cache` db. this is what is used by the `0-db-fs` to store the actual data of the filesystem. This means that any read/write operations triggered by the `0-db-fs` directly access this (single) instance of `0-db` for the data blocks
-- [0-stor](https://github.com/threefoldtech/0-stor_v2) zero stor is listening to `0-db` events (with a hooks system) to upload and/or download zdb data files segments to remote locations. that's where the encryption and forward error correction happens.
+- [0-db-fs](https://github.com/threefoldtech/0-db-fs) (also known as zdbfs) this is what creates the FUSE mount (the actual user facing filesystem) this component is not aware of the back end operations like encryption and FLECC. It's main job is to expose the FUSE filesystem and store its data in a local zdb instance
+- [0-db](https://github.com/threefoldtech/0-db) (also known as zdb) is used both for the local cache db and also for the back end data stores. Zdb is a fast and efficient append only key value database
+- [0-stor](https://github.com/threefoldtech/0-stor_v2) (also known as zstor) is responsible for the encryption and FLECC operations on data blocks and database indexes, storing them among the configured backends
 
-Since zdb is an `append-only` database, the local db will just keep growing linearly with each write (and delete) operation. ZDB will then create db segment files that are granted to **not** change in the future. What happens once a segment file is closed (it hit it's max file size) a hook is triggered which in return will trigger `0-stor` to chunk and upload this file to the remote locations (zdbs).
+Each component is also capable of independent operation. For example, zstor can be used to store individual files of any kind. Zdb is a general purpose key value store compatible with a subset of Redis operations, and zdbfs can be used without any offloading of data to back ends.
 
-The segment file will then be deleted (at some point) in the future when the number of segment files reaches a certain number, older files will get deleted.
-
-If the filesystem then is trying to access a piece of old data, it will make a read call to the local `zdb`. If the zdb is trying to access an old segment of the db that is no longer on disk, another hook is triggered to `0-stor` to download that segment. 0-stor then will re-download the required segment from the remote locations and re-build it.
-
-Once the zdb segment file is restored, the read operation continues.
+More information about these projects can be found in their repositories linked above.
 
 ## Repository
 
-The Quantum Safe Storage repository is available [here](https://github.com/threefoldtech/quantum-storage).
-
-You will need to clone the repository to work with Quantum Safe Storage:
-
-```
-git clone https://github.com/threefoldtech/quantum-storage
-cd quantum-storage
-```
+There is also a Quantum Safe Storage repository available [here](https://github.com/threefoldtech/quantum-storage). It provides some set up scripts, documentation, and other resources. Be advised that the contents of the repository may be outdated or incomplete in places. All the necessary information to get started with QSFS is contained in this guide.
