@@ -276,7 +276,7 @@
       - [Quantum Safe Storage](documentation/system_administrators/advanced/quantum_safe_storage/quantum_safe_storage_toc.md)
         - [Overview](documentation/system_administrators/advanced/quantum_safe_storage/quantum_safe_storage_overview.md)
         - [Deployment Planning](documentation/system_administrators/advanced/quantum_safe_storage/quantum_safe_storage_planning.md)
-        - [Deploy](documentation/system_administrators/advanced/quantum_safe_storage/quantum_safe_storage_deploy.md)
+        - [Manual Deployment](documentation/system_administrators/advanced/quantum_safe_storage/quantum_safe_storage_deploy.md)
   - [ThreeFold Token](documentation/threefold_token/threefold_token.md)
     - [TFT Bridges](documentation/threefold_token/tft_bridges/tft_bridges.md)
       - [TFChain-Stellar Bridge](documentation/threefold_token/tft_bridges/tfchain_stellar_bridge.md)

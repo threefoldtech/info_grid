@@ -93,7 +93,3 @@ For complementary information on ThreeFold grid and its cloud component, refer t
   - [HTTPS with Caddy](./advanced/https_caddy.md)
   - [Node Status Bot](./advanced/node_status_bot.md)
   - [Quantum Safe Storage](./advanced/quantum_safe_storage/quantum_safe_storage_toc.md)
-    - [Overview](./advanced/quantum_safe_storage/quantum_safe_storage_overview.md)
-    - [Deploy with Bootstrap](./advanced/quantum_safe_storage/quantum_safe_storage_bootstrap.md)
-    - [Deploy with Ubuntu](./advanced/quantum_safe_storage/quantum_safe_storage_ubuntu.md)
-    - [Troubleshooting](./advanced/quantum_safe_storage/quantum_safe_storage_troubleshooting.md)
