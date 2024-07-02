@@ -276,6 +276,7 @@
         - [nopCommerce](documentation/system_administrators/advanced/ecommerce/nopcommerce.md)
       - [HTTPS with Caddy](documentation/system_administrators/advanced/https_caddy.md)
       - [Node Status Bot](documentation/system_administrators/advanced/node_status_bot.md)
+      - [Minetest](documentation/system_administrators/advanced/minetest.md)
   - [ThreeFold Token](documentation/threefold_token/threefold_token.md)
     - [TFT Bridges](documentation/threefold_token/tft_bridges/tft_bridges.md)
       - [TFChain-Stellar Bridge](documentation/threefold_token/tft_bridges/tfchain_stellar_bridge.md)

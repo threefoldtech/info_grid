@@ -94,3 +94,4 @@ For complementary information on ThreeFold grid and its cloud component, refer t
   - [Hummingbot](./advanced/hummingbot.md)
   - [HTTPS with Caddy](./advanced/https_caddy.md)
   - [Node Status Bot](./advanced/node_status_bot.md)
+  - [Minetest](./advanced/minetest.md)
