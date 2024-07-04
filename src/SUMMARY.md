@@ -252,6 +252,7 @@
       - [CLI and Scripts Basics](documentation/system_administrators/computer_it_basics/cli_scripts_basics.md)
       - [Docker Basics](documentation/system_administrators/computer_it_basics/docker_basics.md)
       - [Git and GitHub Basics](documentation/system_administrators/computer_it_basics/git_github_basics.md)
+      - [Gitea Basics](documentation/system_administrators/computer_it_basics/gitea.md)
       - [Firewall Basics](documentation/system_administrators/computer_it_basics/firewall_basics/firewall_basics.md)
         - [UFW Basics](documentation/system_administrators/computer_it_basics/firewall_basics/ufw_basics.md)
         - [Firewalld Basics](documentation/system_administrators/computer_it_basics/firewall_basics/firewalld_basics.md)
