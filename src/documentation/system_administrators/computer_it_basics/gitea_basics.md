@@ -44,6 +44,8 @@ You should have git installed on your computer to work easily with Gitea. It is 
   - Enter and confirm a `Password`
 - Click on `Register Account`
 
+![](./img/gitea_register.png)
+
 ## Sign In
 
 - Go to the main Gitea URL, e.g. [https://git.ourworld.tf](https://git.ourworld.tf)
@@ -52,6 +54,8 @@ You should have git installed on your computer to work easily with Gitea. It is 
   - Enter your `Username` or your `Email Address`
   - Enter your `Password`
 - Click on `Sign In`
+
+![](./img/gitea_sign_in.png)
 
 ## Set an SSH Key Pair
 
