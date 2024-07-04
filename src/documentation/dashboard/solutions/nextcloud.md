@@ -16,8 +16,12 @@
   - [TURN](#turn)
   - [Use Talk](#use-talk)
 - [Backups and Updates](#backups-and-updates)
-  - [Create a Backup](#create-a-backup)
-  - [Automatic Backups and Updates](#automatic-backups-and-updates)
+  - [BorgBackup](#borgbackup)
+    - [Create a BorgBackup](#create-a-borgbackup)
+    - [Automatic Borg Backups and Updates](#automatic-borg-backups-and-updates)
+  - [Secondary VM Backup](#secondary-vm-backup)
+    - [SSH Connection](#ssh-connection)
+    - [Secondary VM Backup Script](#secondary-vm-backup-script)
 - [Troubleshooting](#troubleshooting)
   - [Retrieve the Nextcloud AIO Password](#retrieve-the-nextcloud-aio-password)
   - [Access the Nextcloud Interface Page](#access-the-nextcloud-interface-page)
@@ -155,7 +159,11 @@ Note that the host of the video meeting might need to turn the VPN off before cr
 
 # Backups and Updates
 
-## Create a Backup
+In this section, we cover how to make a BorgBackup on the Nextcloud VM and we also cover how to make a backup of the Nextcloud BorgBackup to a secondary VM for additional redundancy.
+
+## BorgBackup
+
+### Create a BorgBackup
 
 In the section **Backup and restore**, you can set a [BorgBackup](https://www.borgbackup.org/) of your Nextcloud instance.
 
@@ -165,7 +173,7 @@ In the section **Backup and restore**, you can set a [BorgBackup](https://www.bo
   * This will stop all containers, run the backup container and create the backup. 
 * Once the backup is complete, you can click on **Start containers** to restart the Nextcloud instance.
 
-## Automatic Backups and Updates
+### Automatic Borg Backups and Updates
 
 After the first manual backup of your Nextcloud instance is complete, you can set automatic backups and updates.
 
@@ -173,7 +181,88 @@ After the first manual backup of your Nextcloud instance is complete, you can se
 * In the section **Daily backup and automatic updates**, choose a time for your daily backup and click **Submit backup time**.
   * To set automatic updates, make sure that the option **Automatically update all containers, the mastercontainer and on** is selected.
 
+## Secondary VM Backup
 
+To allow for another layer of redundancy, you can set a secondary VM on the grid and make a daily backup from the BorgBackup of your Nextcloud instance to the secondary VM. The following shows how to do this. It is based on the [File Transfer section](../../system_administrators/computer_it_basics/file_transfer.md#automate-backup-with-rsync) of the manual.
+
+For the following, we take into account that the BorgBackup is located at `/mnt/backup` on the VM running Nextcloud. 
+
+You will need to deploy a full VM on the TFGrid and SSH into this secondary VM.
+
+### SSH Connection
+
+We want to set an SSH connection between the Nextcloud VM and the secondary VM.
+
+* Create SSH key pair on the secondary VM
+  * ```
+    ssh-keygen
+    ```
+* Install openssh-client on the secondary VM
+  * ```
+    apt install openssh-client
+    ```
+* Install openssh-server on the Nextcloud VM
+  * ```
+    apt install openssh-server
+    ```
+* Copy the public key of the secondary VM
+  * ```
+    cat ~/.ssh/id_rsa.pub
+    ```
+* Create the SSH directory on the Nextcloud VM
+  * ```
+    mkdir ~/.ssh
+    ```
+* Add the secondary VM public key in the file **authorized_keys** on the Nextcloud VM
+  * ```
+    nano ~/.ssh/authorized_keys
+    ```
+* Check the openssh-server status
+  * ``` 
+    service ssh status
+    ```
+* As a test, you can check if you can SSH into the Nextcloud VM from the secondary VM
+  * ```
+    ssh root@<Nextcloud_VM_IP_Address>
+    ```
+
+Once the SSH connection is set up, we need to prepare a backup script. This is covered in the next subsection.
+
+### Secondary VM Backup Script
+
+We now cover how to set up a backup script on the secondary VM.
+
+On the secondary VM, do the following:
+
+* Set a directory for your Nextcloud backup
+  * ```
+    mkdir -p /root/nextcloud_backup
+    ```
+* Create the script file
+  * ```
+    nano /root/rsync_nextcloud_backup.sh
+    ```
+* Write the following script. Here the log is saved in the same directory.
+  * ```
+    #!/bin/bash
+
+    sudo rsync -avz --progress --delete --log-file=/root/nextcloud_backup/rsync_nextcloud_storage.log /root/nextcloud_backup/ root@<Nextcloud_VM_IP_Address>:/mnt/backup
+    ```
+* Give permission to execute the script
+  * ```
+    sudo chmod +x /root/rsync_nextcloud_backup.sh
+    ```
+* Set a cron job to run the script periodically
+  * Open the cron file
+    * ```
+      sudo crontab -e
+      ```
+  * At the bottom of the cron file, add the following to run the script everyday. For this example, we set the time at 18:00PM
+    * ```
+      0 18 * * * /root/rsync_nextcloud_backup.sh
+      ```
+
+Once this is set up, this secondary VM will make a daily backup of the Nextcloud BorgBackup. It is a good idea to set this secondary backup to run the script a few hours after the daily BorgBackup.
 
 # Troubleshooting
 
