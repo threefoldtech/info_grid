@@ -6,6 +6,8 @@
 - [Prerequisites](#prerequisites)
 - [Register](#register)
 - [Sign In](#sign-in)
+- [Set an SSH Key Pair](#set-an-ssh-key-pair)
+- [Start the SSH Agent](#start-the-ssh-agent)
 - [Clone a Repository](#clone-a-repository)
 - [Create and Push a New Branch](#create-and-push-a-new-branch)
   - [On the Browser and Git](#on-the-browser-and-git)
@@ -23,10 +25,14 @@ ThreeFold hosts its own git server on [Gitea OurWorld](https://git.ourworld.tf).
 
 ## Prerequisites
 
-You should have git installed on your computer to work easily with Gitea.
+You should have git installed on your computer to work easily with Gitea. It is not necessary to use Gitea but recommended to work with files.
 
 - Install [git](./git_github_basics.md#install-git)
-- Use [VSCodium](./git_github_basics.md#vs-codium) to edit your files (Optional)
+  - Optional, to update repositories from your local computer
+- Install [VSCodium](./git_github_basics.md#vs-codium)
+  - Optional, to edit your files
+- Install [OpenSSH](../getstarted/ssh_guide/ssh_openssh.md)
+  - Optional, to use SSH
 
 ## Register
 
@@ -46,6 +52,40 @@ You should have git installed on your computer to work easily with Gitea.
   - Enter your `Username` or your `Email Address`
   - Enter your `Password`
 - Click on `Sign In`
+
+## Set an SSH Key Pair
+
+- Generate an SSH key pair. You can leave default option `~/.ssh/id_rsa.pub`
+```
+ssh-keygen
+```
+- Note the public key
+```
+cat ~/.ssh/id_rsa.pub
+```
+- Add the SSH public key on [git.ourworld.tf](https://git.ourworld.tf/user/settings/keys)
+  - Click on `Add Key` on the top right
+  - Paste the public key in `Content`
+  - The `Key Name` will be added automatically
+  - Click on `Add key` under `Content`
+
+![](./img/gitea_ssh_key.png)
+
+- Optional: on git.ourworld.tf, verify the key. Make sure to put the proper token.
+```
+echo -n 'token' | ssh-keygen -Y sign -n gitea -f ~/.ssh/id_rsa
+```
+
+## Start the SSH Agent
+
+- Start the ssh agent
+```
+eval $(ssh-agent)
+```
+- Add private key to the agent
+```
+ssh-add ~/.ssh/id_rsa.pub
+```
 
 ## Clone a Repository
 
@@ -130,3 +170,4 @@ git branch -r
 ```
 git status
 ```
+
