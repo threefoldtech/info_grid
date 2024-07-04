@@ -19,7 +19,7 @@
 
 ## Introduction
 
-The [__ThreeFold Circle Tool__](https://circles.threefold.me ) is our own self-hosted (desktop only) project management tool based on [Taiga](https://www.taiga.io/), an open-source project management tool for cross-functional agile. It offers a lot of different project management kits and features such as the scrum board, kanban board, issues management, and many more. 
+The [__ThreeFold Circle Tool__](https://circles.threefold.me ) is our own self-hosted (desktop only) project management tool based on [Taiga](https://taiga.io/), an open-source project management tool for cross-functional agile. It offers a lot of different project management kits and features such as the scrum board, kanban board, issues management, and many more. 
 
 Our teams at ThreeFold use the Circle Tool to self-manage our tasks, thus it is deemed necessary for the new onboarded team members to learn how to use the tool. Unfortunately we only provide the desktop version of the tool at this moment since we normally manage our projects on the computer.
 

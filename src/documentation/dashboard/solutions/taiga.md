@@ -11,7 +11,7 @@
 
 ## Introduction
 
-[Taiga](https://www.taiga.io/) is the project management tool for multi-functional agile teams. It has a rich feature set and at the same time it is very simple to start with through its intuitive user interface.
+[Taiga](https://taiga.io/) is the project management tool for multi-functional agile teams. It has a rich feature set and at the same time it is very simple to start with through its intuitive user interface.
 
 ## Prerequisites
 
