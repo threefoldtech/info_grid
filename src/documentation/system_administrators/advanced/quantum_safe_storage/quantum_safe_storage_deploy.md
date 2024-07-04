@@ -23,7 +23,11 @@
   - [Zstor Config](#zstor-config)
   - [Start Zstor](#start-zstor)
   - [Local Zdb](#local-zdb)
-- [Zdbfs](#zdbfs)
+  - [Zdbfs](#zdbfs)
+- [System Services Setup](#system-services-setup)
+  - [Systemd Unit Files](#systemd-unit-files)
+  - [Systemd Enable Services](#systemd-enable-services)
+  - [Zinit Config Files](#zinit-config-files)
 - [Conclusion](#conclusion)
 
 ---
@@ -400,7 +404,7 @@ zdb \
   --background
 ```
 
-## Zdbfs
+### Zdbfs
 
 Finally, we will start zdbfs. This guides shows mounting the FUSE filesystem in `/mnt/qsfs`. If you want to change this, also change the mount point option in `zstor-default.toml`.
 
@@ -411,6 +415,222 @@ zdbfs /mnt/qsfs -o logfile ~/zdbfs.log -o autons -o background
 You should now have the QSFS filesystem mounted at `/mnt/qsfs`. As you write data, it will save it in the local zdb, and its data blocks will be periodically encoded and uploaded to the back end zdbs.
 
 If you need to start up zdbfs again, you will see an error regarding namespace creation if the `autons` option is presented again. This error is harmless and operation will continue normally. You can also remove the option after the first run to avoid this error.
+
+## System Services Setup
+
+At this point we have successfully deployed a QSFS instance. However, if any of the component programs exits for any reason or if the machine they are running on is rebooted, the services won't start up again automatically. To address that, we'll show examples of how to use process managers to start each program on boot and keep them alive while the machine runs.
+
+Two versions are presented below. The first is for systemd based systems, such as our full VMs on the ThreeFold network. The second shows how to accomplish the same using zinit, which is the process manager inside our micro VMs. Choose the one that fits your use case and skip the other.
+
+### Systemd Unit Files
+
+We will create three systemd unit files, one for each service. Simply copy and paste each into a new file at the specified path.
+
+There are a couple of important values to note in the examples below and potentially tune to your needs. By default, systemd limits restarts to five within ten seconds before giving up. Along with a default 100ms restart wait, this means that services entering a crash loop quickly become defunct with no further retries until some intervention occurs.
+
+By setting StartLimitIntervalSec to zero, we have disabled the restart limit entirely. Thus systemd will continue trying to restart the services forever, no matter how many consecutive exits occur. The examples here are also retaining the 100ms default, but presenting it explicitly for ease of tuning.
+
+Taken together, this means that any unexpected exits of the three services will result in a speedy restart but in the event of a crash loop this will put a fair amount of strain on the CPU. While crash loops are by no means expected, you may wish to increase `RestartSec` if this is a concern to you.
+
+Let's start then with the zstor unit file:
+
+
+```sh
+nano /etc/systemd/system/zstor.service
+```
+
+Another important value to make note of here is `TimeoutStopSec`, which is how long systemd will wait before terminating zstor when stopping the service (such as when the system is shutting down gracefully). In this case, this represents how much time zstor will have to upload its final data block to the backends before the process is killed. Here we provide a fairly generous five minute window, which on the other hand is how long the system might wait to shutdown if zstor fails to exit for some other reason. A longer timeout might be safer, especially under bad network conditions.
+
+```
+[Unit]
+Wants=network.target
+After=network.target
+StartLimitIntervalSec=0
+
+[Service]
+ProtectHome=true
+ProtectSystem=true
+ReadWritePaths=/data /var/log
+ExecStart=/bin/zstor \
+  --log_file /var/log/zstor.log \
+  -c /etc/zstor-default.toml \
+  monitor
+Restart=always
+RestartSec=100ms
+TimeoutStopSec=5m
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Next we'll set up a unit file for zdb:
+
+```sh
+nano /etc/systemd/system/zdb.service
+```
+
+In this case, we use a shorter `TimeoutStopSec`, to give some time for zdb to flush remaining data to disk, but with the assumption that this happens much more quickly than zstor's network based operations.
+
+```
+[Unit]
+Wants=network.target zstor.service
+After=network.target zstor.service
+
+[Service]
+ProtectHome=true
+ProtectSystem=true
+ReadWritePaths=/data /var/log
+ExecStart=/usr/local/bin/zdb \
+    --index /data/index \
+    --data /data/data \
+    --logfile /var/log/zdb.log \
+    --datasize 67108864 \
+    --hook /usr/local/bin/zdb-hook.sh \
+    --rotate 900
+Restart=always
+RestartSec=5
+TimeoutStopSec=60
+
+[Install]
+WantedBy=multi-user.target
+```
+
+Finally, here's the unit file for zdbfs:
+
+```
+nano /etc/systemd/system/zdb.service
+```
+
+In the case of zdbfs, `TimeoutStopSec` is less relevant. When zdbfs receives `TERM` it will exit regardless of any ongoing writes, and those writes operations will encounter an error. There is a final flush to the zdb, but this happens very quickly when the zdb is running on the same machine so five seconds should be more than enough.
+
+```
+[Unit]
+Wants=network.target zdb.service
+After=network.target zdb.service
+
+[Service]
+ProtectHome=true
+ProtectSystem=true
+ExecStart=/usr/local/bin/zdbfs /mnt/qsfs -o autons
+Restart=always
+RestartSec=5
+TimeoutStopSec=5
+
+[Install]
+WantedBy=multi-user.target
+```
+
+### Systemd Enable Services
+
+With the unit files written, the last step is to enable the units and start them up. First, we'll stop all of the manually started processes from before:
+
+```
+pkill zdbfs
+pkill zdb
+pkill zstor
+```
+
+Next we'll instruct systemd to reload the unit files and enable the services with an immediate start:
+
+```
+systemctl daemon-reload
+systemctl enable --now zstor
+systemctl enable --now zstor
+systemctl enable --now zdbfs
+```
+
+Check that zstor is working well:
+
+```sh
+zstor --log_file ~/zstor.log -c /etc/zstor-default.toml status
+```
+
+And check that zdbfs is mounted:
+
+```sh
+df
+```
+
+All of the services should start up in the correct order anytime the machine is rebooted. You can now skip ahead of the next two sections on zinit, to the conclusion section.
+
+### Zinit Config Files
+
+```sh
+nano /etc/zinit/zstor.yaml
+```
+
+The shutdown timeout is the maximum time that zstor will have to write any pending data to the backends before it is killed by zinit. Here we specify five minutes, which is fairly generous, but can also mean a long wait to stop the service if it hangs for some reason. A longer timeout might be safer, especially under bad network conditions.
+
+```yaml
+exec: /bin/zstor \
+  --log_file /var/log/zstor.log \
+  -c /etc/zstor-default.toml \
+  monitor
+shutdown_timeout: 300
+```
+
+Next the zinit config for zdb:
+
+```sh
+nano /etc/zinit/zdb.yaml
+```
+
+In this case, we use a shorter shutdown timeout, to give some time for zdb to flush remaining data to disk, but with the assumption that this happens much more quickly than zstor's network based operations.
+
+```yaml
+exec: /usr/local/bin/zdb \
+    --index /data/index \
+    --data /data/data \
+    --logfile /var/log/zdb.log \
+    --datasize 67108864 \
+    --hook /usr/local/bin/zdb-hook.sh \
+    --rotate 900
+shutdown_timeout: 60
+after: zstor
+```
+
+Finally for zdbfs:
+
+```sh
+nano /etc/zinit/zdbfs.yaml
+```
+
+In the case of zdbfs, the shutdown timeout is less relevant. When zdbfs receives `TERM` it will exit regardless of any ongoing writes, and those writes operations will encounter an error. There is a final flush to the zdb, but this happens very quickly when the zdb is running on the same machine so five seconds should be more than enough.
+
+```yaml
+exec: /usr/local/bin/zdbfs /mnt/qsfs -o autons
+after: zdb
+```
+
+With the config files written, the last step is to enable the units and start them up. First, we'll stop all of the manually started processes from before:
+
+```
+pkill zdbfs
+pkill zdb
+pkill zstor
+```
+
+Next we'll instruct zinit to load the config files and start the services:
+
+```
+zinit monitor zdbfs
+zinit monitor zdb
+zinit monitor zstor
+```
+
+Check that zstor is working well:
+
+```sh
+zstor --log_file ~/zstor.log -c /etc/zstor-default.toml status
+```
+
+And check that zdbfs is mounted:
+
+```sh
+df
+```
+
+All of the services should start up in the correct order anytime the machine is rebooted.
 
 ## Conclusion
 
