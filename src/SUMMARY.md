@@ -158,6 +158,7 @@
       - [TFGrid Stacks](documentation/developers/grid_deployment/tfgrid_stacks.md)
       - [Full VM Grid Deployment](documentation/developers/grid_deployment/grid_deployment_full_vm.md)
       - [Grid Snapshots](documentation/developers/grid_deployment/snapshots.md)
+      - [Z-OS Boot Generator](documentation/developers/grid_deployment/zos_boot_generator/zos_boot_generator.md)
       - [Deploy the Dashboard](documentation/developers/grid_deployment/deploy_dashboard.md)
       - [Application Case Study: Nextcloud](documentation/developers/grid_deployment/app_case_study_nextcloud.md)
   - [Farmers](documentation/farmers/farmers.md)
