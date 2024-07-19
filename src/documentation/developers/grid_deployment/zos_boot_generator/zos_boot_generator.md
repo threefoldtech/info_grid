@@ -54,7 +54,6 @@ Set the machine to deploy the server
 ```
 dpkg --add-architecture i386
 ```
-
 - Update the packages
 ```
 apt update
@@ -176,6 +175,10 @@ cd 0-bootstrap
 - Copy the sample file to config.py and add the proper info (e.g. set domain)
 ```
 cp config.py.sample config.py
+```
+- In config.py, set the proper info, e.g. replace `http://default.tld` with your own domain, e.g. `https://example.com`
+```
+sed -i 's/http:\/\/default\.tld/https:\/\/example\.com/g' config.py
 ```
 - Create the database
 ```
