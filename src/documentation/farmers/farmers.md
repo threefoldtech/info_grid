@@ -18,6 +18,7 @@ To buy a certified node from an official ThreeFold vendor, check the [ThreeFold 
 - [Farming Requirements](./farming_requirements.md)
 - [Farming Optimization](./farming_optimization/farming_optimization.md)
   - [GPU Farming](./3node_building/gpu_farming.md)
+  - [HDD-Only Nodes](./farming_optimization/hdd_only_nodes.md)
   - [Set Additional Fees](./farming_optimization/set_additional_fees.md)
   - [Minting Receipts](./3node_building/minting_receipts.md)
   - [Minting Periods](./farming_optimization/minting_periods.md)
