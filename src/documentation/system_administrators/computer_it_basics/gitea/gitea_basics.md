@@ -13,7 +13,9 @@
   - [On the Browser and Git](#on-the-browser-and-git)
   - [Only With Git](#only-with-git)
 - [Create a Pull Request](#create-a-pull-request)
+  - [Create a Draft Pull Request](#create-a-draft-pull-request)
 - [Useful Commands](#useful-commands)
+- [Gitea References](#gitea-references)
 
 ---
 
@@ -27,11 +29,11 @@ ThreeFold hosts its own git server on [Gitea OurWorld](https://git.ourworld.tf).
 
 You should have git installed on your computer to work easily with Gitea. It is not necessary to use Gitea but recommended to work with files.
 
-- Install [git](./git_github_basics.md#install-git)
+- Install [git](../git_github_basics.md#install-git)
   - Optional, to update repositories from your local computer
-- Install [VSCodium](./git_github_basics.md#vs-codium)
+- Install [VSCodium](../git_github_basics.md#vs-codium)
   - Optional, to edit your files
-- Install [OpenSSH](../getstarted/ssh_guide/ssh_openssh.md)
+- Install [OpenSSH](../../getstarted/ssh_guide/ssh_openssh.md)
   - Optional, to use SSH
 
 ## Register
@@ -67,7 +69,7 @@ ssh-keygen
 ```
 cat ~/.ssh/id_rsa.pub
 ```
-- Add the SSH public key on [git.ourworld.tf](https://git.ourworld.tf/user/settings/keys)
+- [Add the SSH public key on git.ourworld.tf](https://git.ourworld.tf/user/settings/keys)
   - Click on `Add Key` on the top right
   - Paste the public key in `Content`
   - The `Key Name` will be added automatically
@@ -160,6 +162,15 @@ git push --set-upstream origin development_new_branch
 
 ![](./img/gitea_close_pr.png)
 
+### Create a Draft Pull Request
+
+To create a draft pull request, you simply need to add `WIP:` before the title of your pull request. This will set the pull request in Draft mode.
+
+- Example of a draft pull request:
+```
+WIP: New Pull Request in Draft Mode
+```
+
 ## Useful Commands
 
 - See current branch
@@ -174,3 +185,10 @@ git branch -r
 ```
 git status
 ```
+
+## Gitea References
+
+There are great Gitea references available online.
+
+- [Gitea Docs](https://docs.gitea.com/)
+- [Gitea Cheat Sheet](https://docs.gitea.com/administration/config-cheat-sheet)
