@@ -23,3 +23,4 @@ In this section, we delve into sophisticated topics and powerful functionalities
 - [Hummingbot](./hummingbot.md)
 - [HTTPS with Caddy](./https_caddy.md)
 - [Node Status Bot](./node_status_bot.md)
+- [Quantum Safe Storage](./quantum_safe_storage/quantum_safe_storage_toc.md)
