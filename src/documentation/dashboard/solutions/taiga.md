@@ -38,7 +38,7 @@
    - `Region`
    - `Country`
    - `Farm Name`
-- Choose the node to deploy the Tiaga instance on
+- Choose the node to deploy the Taiga instance on
 > Or you can select a specific node with manual selection.
 - `Custom Domain` flag lets the user to use a custom domain
 - Choose a gateway node to deploy your Funkwhale instance on.

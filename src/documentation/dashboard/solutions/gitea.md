@@ -5,6 +5,7 @@
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Deployment](#deployment)
+- [Setting Up Gitea](#setting-up-gitea)
 
 ***
 
@@ -19,6 +20,10 @@
 - Click on **Gitea**
 
 ## Deployment
+
+![](./img/gitea_config.png)
+
+![](./img/gitea_mail_server.png)
 
 - Enter a name for your deployment or keep the default name
 - Select a capacity package:
@@ -40,13 +45,37 @@
        - `Region`
        - `Country`
        - `Farm Name`
-
     - Click on `Load Nodes`
     - Click on the node you want to deploy on
   - Manual selection
     - Select a specific node ID
+- Choose a domain
+  - Use a custom domain by enabling `Custom Domain`
+  - Choose a gateway domain for your instance
+- Set the `Mail Server`
+  - In the tab `Mail Server` you can adjust the parameters or leave the default parameters
+    - The `Admin Email` by default is the email you used when logging into the Dashboard
+    - The `Admin Password` is generated automatically but you can modify it
+    - By default the SMTP server used for the `Hostname` is `smtp.gmail.com` with its associated port `587`
+    - Enable TLS by clicking on the `TLS` button
 - Click `Deploy`
 
-By default, the admin email is the email you set in the Dashboard when connecting your wallet. To update it, open the `Mail Server` tab.
+After deployment, you can see a list of all your deployed instances.
 
-After deployment, you can see a list of all of your deployed instances.
+To access the Gitea instance, click on the `Actions` button called `Visit`.
+
+![](./img/gitea_instances.png)
+
+## Setting Up Gitea
+
+Once you've accessed the Gitea instance, you can adjust the `Initial Configuration` if needed. 
+
+![](./img/gitea_initial_configuration.png)
+
+Once you're ready, click on `Install Gitea`.
+
+![](./img/gitea_install.png)
+
+Once the configuration is completed, you can register to the Gitea instance and start using it.
+
+![](./img/gitea_register.png)

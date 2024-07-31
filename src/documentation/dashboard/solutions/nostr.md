@@ -20,6 +20,8 @@
 
 ## Deployment
 
+![](./img/nostr_config.png)
+
 - Enter a name for your deployment or keep the default name
 - Select a capacity package:
     - **Small**: {cpu: 1, memory: 2, diskSize: 25 }
@@ -45,6 +47,13 @@
     - Click on the node you want to deploy on
   - Manual selection
     - Select a specific node ID
+- Choose a domain
+  - Use a custom domain by enabling `Custom Domain`
+  - Choose a gateway domain for your instance
 - Click `Deploy`
 
-After deployment, you can see a list of all of your deployed instances.
+After deployment, you can see a list of all your deployed instances.
+
+To access the Nostr instance, click on the `Actions` button called `Visit`.
+
+![](./img/nostr_instances.png)
