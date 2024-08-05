@@ -100,7 +100,6 @@
     - [I set up a 3Node in the middle of the month, does it affect uptime requirements and rewards?](#i-set-up-a-3node-in-the-middle-of-the-month-does-it-affect-uptime-requirements-and-rewards)
     - [What is the difference between a certified and a non-certified 3Node?](#what-is-the-difference-between-a-certified-and-a-non-certified-3node)
     - [What are the different certifications available for 3Node servers and farms? What are the Gold and Silver certifications?](#what-are-the-different-certifications-available-for-3node-servers-and-farms-what-are-the-gold-and-silver-certifications)
-    - [What is the difference between V2 and V3 minting?](#what-is-the-difference-between-v2-and-v3-minting)
     - [What is the TFT minting address on Stellar Chain?](#what-is-the-tft-minting-address-on-stellar-chain)
     - [Can Titans and DIY 3Nodes share the same farm?](#can-titans-and-diy-3nodes-share-the-same-farm)
     - [Do I need one farm for each 3Node?](#do-i-need-one-farm-for-each-3node)
@@ -117,7 +116,6 @@
   - [Farming Rewards and Related Notions](#farming-rewards-and-related-notions)
     - [What are the rewards of farming? Can I get more rewards when my 3Node is being utilized?](#what-are-the-rewards-of-farming-can-i-get-more-rewards-when-my-3node-is-being-utilized)
     - [How can I know the potential farming rewards for Grid Utilization?](#how-can-i-know-the-potential-farming-rewards-for-grid-utilization)
-    - [What is the easiest way to farm ThreeFold tokens (TFT)?](#what-is-the-easiest-way-to-farm-threefold-tokens-tft)
     - [When do I receive my rewards?](#when-do-i-receive-my-rewards)
     - [Do farming rewards take into account the type of RAM, SSD, HDD and CPU of the 3Node server?](#do-farming-rewards-take-into-account-the-type-of-ram-ssd-hdd-and-cpu-of-the-3node-server)
     - [Can I send my farming rewards directly to a crypto exchange?](#can-i-send-my-farming-rewards-directly-to-a-crypto-exchange)
@@ -163,7 +161,6 @@
   - [Farming Optimization](#farming-optimization)
     - [What is the difference between a ThreeFold 3Node and a ThreeFold farm? What is the difference between the farm ID and the node ID?](#what-is-the-difference-between-a-threefold-3node-and-a-threefold-farm-what-is-the-difference-between-the-farm-id-and-the-node-id)
     - [How can I know how many GB of SSD and RAM do I need?](#how-can-i-know-how-many-gb-of-ssd-and-ram-do-i-need)
-    - [What is the optimal ratio of virtual cores (vcores or threads), SSD storage and RAM memory? What is the best optimization scenario for a 3Node, in terms of ThreeFold tokens (TFT) farming rewards?](#what-is-the-optimal-ratio-of-virtual-cores-vcores-or-threads-ssd-storage-and-ram-memory-what-is-the-best-optimization-scenario-for-a-3node-in-terms-of-threefold-tokens-tft-farming-rewards)
     - [What does TBW mean? What is a good TBW level for a SSD disk?](#what-does-tbw-mean-what-is-a-good-tbw-level-for-a-ssd-disk)
     - [Are SATA and SAS drives interchangeable?](#are-sata-and-sas-drives-interchangeable)
     - [What is the speed difference between SAS and SATA disks?](#what-is-the-speed-difference-between-sas-and-sata-disks)
@@ -1142,12 +1139,7 @@ DIY certified 3Nodes are a future possibility.
 Farms can also be certified. The certifications are: [gold certified farming](https://forum.threefold.io/t/gep-gold-certified-farming-specs-closed/2925) and [silver certified farming](https://forum.threefold.io/t/silver-booster-request-for-comments/3416).
 
 Note that gold and silver certifications are still being discussed. Join the discussion on the [ThreeFold Forum](http://forum.threefold.io/).
- 
 
-### What is the difference between V2 and V3 minting?
-
-V2 is being sunset. New miners should directly onboard to V3.
-On the tokenomics side, V2 rewards decrease as the difficulty level increases. For the V3 rewards, the rewards are constant for 5 years. In short, V3 is more profitable in the long run. For more information, read [this post](https://forum.threefold.io/t/comparison-v2-vs-v3-minting/2122). 
 
 
 
@@ -1254,13 +1246,6 @@ By connecting a 3Node to the Grid, you get Farming Rewards. If you set a public 
 Go on the [ThreeFold simulator](https://simulator.grid.tf/), enter your 3Node resources, check the Public IP address. This will enable farming rewards from the parameter NU Required Per CU. Check the difference in the farming rewards per month. Note that you will need a Public IP address.
 
 
-
-### What is the easiest way to farm ThreeFold tokens (TFT)?
-
-Buy a [certified 3Node](https://marketplace.3node.global/index.php). This is more or less *plug n play*! You can also build a [DIY 3Node](#what-are-the-general-requirements-for-a-diy-3node-server). It's fun and there are many resources to help you along the way.
-
-
-
 ### When do I receive my rewards?
 
 They are distributed once a month, around the 8th*. Distributions are not daily, or after a certain threshold. Note that upcoming minting rules may have a 24 month lockup or until 30% utilization for 3 months on your 3Node. 
@@ -1281,8 +1266,7 @@ This is not possible. When you send tokens to a crypto exchange, you need to inc
 
 ### Do I need collateral to farm ThreeFold tokens?
 
-Many decentralized data projects require collateral, but not ThreeFold. There is an ongoing discussion on collateral. Join the discussion [here](https://forum.threefold.io/t/should-tft-collateral-be-required-for-3nodes/3724).
-
+Many decentralized data projects require collateral, but not ThreeFold.
 
 ### Can I add external drives to the 3Nodes to increase rewards and resources available to the ThreeFold Grid?
 
@@ -1587,18 +1571,6 @@ A farm is a composition of one or many 3Nodes. A 3Node is a computer connected t
 You need 50 GB of SSD per compute units (CU) and a minimum of 500 GB SSD and 2 GB of RAM per 3Node.
 
 A 3Node has, in general, 2 compute units (CU) per thread. Thus, for peak optimisation, you need 100 GB SSD and 8GB RAM per thread.
-
-### What is the optimal ratio of virtual cores (vcores or threads), SSD storage and RAM memory? What is the best optimization scenario for a 3Node, in terms of ThreeFold tokens (TFT) farming rewards?
-
-In short, for peak optimization, aim for 100 GB SSD of storage and 8GB RAM of memory per virtual core (vcore or thread).
-
-For example, a 32 threads (32 vcores) 3Nodes would need 3.2 TB SSD and 256GB RAM to be optimal, reward-wise. 
-That is: 32 * 100 = 3200 GB SSD = 3.2TB SSD, and 32 * 8 = 256 GB RAM total.
-
-Adding more GB of RAM would not increase your TFT rewards. You would need more vcores if you want to expand.
-
-NB: This is purely based on reward considerations. Some users might need different ratios for different specific uses of the Grid.
-
 
 
 ### What does TBW mean? What is a good TBW level for a SSD disk?

@@ -11,7 +11,7 @@
 
 ## Introduction
 
-[Taiga](https://www.taiga.io/) is the project management tool for multi-functional agile teams. It has a rich feature set and at the same time it is very simple to start with through its intuitive user interface.
+[Taiga](https://taiga.io/) is the project management tool for multi-functional agile teams. It has a rich feature set and at the same time it is very simple to start with through its intuitive user interface.
 
 ## Prerequisites
 
@@ -38,7 +38,7 @@
    - `Region`
    - `Country`
    - `Farm Name`
-- Choose the node to deploy the Tiaga instance on
+- Choose the node to deploy the Taiga instance on
 > Or you can select a specific node with manual selection.
 - `Custom Domain` flag lets the user to use a custom domain
 - Choose a gateway node to deploy your Funkwhale instance on.

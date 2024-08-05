@@ -24,6 +24,8 @@
 
 We will now learn how to create a Zero-OS bootstrap image in order to boot a DIY 3Node.
 
+If you are building an HDD-only node, read [this section](../farming_optimization/hdd_only_nodes.md) too.
+
 ## Download the Zero-OS Bootstrap Image
 
 Let's download the Zero-OS bootstrap image.

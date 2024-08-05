@@ -5,10 +5,10 @@ The section [Build a 3Node](../3node_building/3node_building.md) covered the not
 <h2> Table of Contents </h2>
 
 - [GPU Farming](../3node_building/gpu_farming.md)
+- [HDD-Only Nodes](./hdd_only_nodes.md)
 - [Set Additional Fees](./set_additional_fees.md)
 - [Minting Receipts](../3node_building/minting_receipts.md)
 - [Minting Periods](./minting_periods.md)
 - [Room Parameters](./farm_room_parameters.md)
 - [Farming Costs](./farming_costs.md)
 - [Calculate Your ROI](./calculate_roi.md)
-- [Farming Requirements](./farming_requirements.md)

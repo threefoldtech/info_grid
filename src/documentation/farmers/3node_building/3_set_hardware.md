@@ -31,6 +31,8 @@ The essential information are available in the section [3Node Requirements Summa
 
 You need a theoretical minimum of 500 GB of SSD and 2 GB of RAM on a mini pc, desktop or server. In short, for peak optimization, aim for 100 GB of SSD and 8GB of RAM per thread. (Thread is equivalent to virtual core or logical core.)
 
+If you are building an HDD-only node, read [this section](../farming_optimization/hdd_only_nodes.md) too.
+
 Also, TFDAO might implement a farming parameter based on [passmark](https://www.cpubenchmark.net/cpu_list.php). From the ongoing discussion on the Forum, you should aim at a CPU mark of 1000 and above per core.
 
 > 3Node optimal farming hardware ratio -> 100 GB of SSD + 8 GB of RAM per Virtual Core
@@ -45,8 +47,6 @@ Note: Once you have the necessary hardware, you need to [create a farm](./1_crea
 
 ### 3Node Requirements Summary
 
-
-
 Any computer with the following specifications can be used as a DIY 3Node.
 
 - Any 64-bit hardware with an Intel or AMD processor chip.
@@ -58,7 +58,7 @@ Any computer with the following specifications can be used as a DIY 3Node.
 
 *A passmark of 1000 per core is recommend and will be a minimum requirement in the future. This is not yet an official requirement. A 3Node with less than 1000 passmark per core of CPU would not be penalized if it is registered before the DAO settles the [Passmark Question](https://forum.threefold.io/t/cpu-benchmarking-for-reward-calculations/2479).
 
-
+> Note: It is also possible to build an HDD-only node. Read more about this [here](../farming_optimization/hdd_only_nodes.md).
 
 ## Bandwidth Requirements
 
