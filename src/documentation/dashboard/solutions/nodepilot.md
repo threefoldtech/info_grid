@@ -24,7 +24,10 @@ This is a simple instance of upstream [Node Pilot](https://nodepilot.tech).
 
 - Fill in the instance name: it's used to reference the node-pilot in the future.
 
-- Minimum CPU allowed is 8 cores and minimum memory allowed is 8192.
+- Minimum specs:
+  - 1 vcore
+  - 256 MB of memory
+  - 15 GB of storage
 
 - `Dedicated` flag to retrieve only dedeicated nodes 
 - `Certified` flag to retrieve only certified nodes 
