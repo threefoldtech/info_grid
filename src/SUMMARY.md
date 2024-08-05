@@ -279,6 +279,7 @@
       - [AI & ML Workloads](documentation/system_administrators/advanced/ai_ml_workloads/ai_ml_workloads_toc.md)
         - [CPU and Llama](documentation/system_administrators/advanced/ai_ml_workloads/cpu_and_llama.md)
         - [GPU and Pytorch](documentation/system_administrators/advanced/ai_ml_workloads/gpu_and_pytorch.md)
+        - [GPU and Fooocus](documentation/system_administrators/advanced/ai_ml_workloads/gpu_and_fooocus.md)
       - [Ecommerce](documentation/system_administrators/advanced/ecommerce/ecommerce.md)
         - [WooCommerce](documentation/system_administrators/advanced/ecommerce/woocommerce.md)
         - [nopCommerce](documentation/system_administrators/advanced/ecommerce/nopcommerce.md)
