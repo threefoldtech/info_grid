@@ -91,6 +91,7 @@ For complementary information on ThreeFold grid and its cloud component, refer t
   - [AI & ML Workloads](./advanced/ai_ml_workloads/ai_ml_workloads_toc.md)
     - [CPU and Llama](./advanced/ai_ml_workloads/cpu_and_llama.md)
     - [GPU and Pytorch](./advanced/ai_ml_workloads/gpu_and_pytorch.md)
+    - [GPU and Fooocus](./advanced/ai_ml_workloads/gpu_and_fooocus.md)
   - [Ecommerce](./advanced/ecommerce/ecommerce.md)
     - [WooCommerce](./advanced/ecommerce/woocommerce.md)
     - [nopCommerce](./advanced/ecommerce/nopcommerce.md)
