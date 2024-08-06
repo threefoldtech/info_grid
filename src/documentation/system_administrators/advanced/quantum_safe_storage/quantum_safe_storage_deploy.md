@@ -4,8 +4,8 @@
 
 - [Introduction](#introduction)
 - [Deployment Prerequisites](#deployment-prerequisites)
-- [Deploy front end VM](#deploy-front-end-vm)
-- [Deploy Back End Zdbs](#deploy-back-end-zdbs)
+- [Deploy Frontend VM](#deploy-frontend-vm)
+- [Deploy Backend Zdbs](#deploy-backend-zdbs)
   - [Prerequisites](#prerequisites)
   - [Set Your EDITOR](#set-your-editor)
   - [Install Tfcmd](#install-tfcmd)
@@ -44,9 +44,9 @@
 
 ## Introduction
 
-This section covers the manual deployment steps for QSFS, including both the back end zdbs and an Ubuntu VM to host the front end. It is also possible to host the front end on pretty much any other Linux machine as long as FUSE is available. At this point you should already have node IDs selected for your back end zdbs. If not, please see the [previous section](./quantum_safe_storage_planning.md) for more details.
+This section covers the manual deployment steps for QSFS, including both the backend zdbs and an Ubuntu VM to host the frontend. It is also possible to host the frontend on pretty much any other Linux machine as long as FUSE is available. At this point you should already have node IDs selected for your backend zdbs. If not, please see the [previous section](./quantum_safe_storage_planning.md) for more details.
 
-While there are several ways to deploy zdbs on the ThreeFold Grid, including using Terraform and custom code using one of the SDKs, this guide shows how to to do this with our simple command line tool, tfcmd. This tool is available both for Linux and MacOS. For best security of the seed phrase used to create the deployments, it is recommended to run tfcmd on your local machine. However, it is also possible to use it inside the VM deployed for the QSFS front end.
+While there are several ways to deploy zdbs on the ThreeFold Grid, including using Terraform and custom code using one of the SDKs, this guide shows how to to do this with our simple command line tool, tfcmd. This tool is available both for Linux and MacOS. For best security of the seed phrase used to create the deployments, it is recommended to run tfcmd on your local machine. However, it is also possible to use it inside the VM deployed for the QSFS frontend.
 
 ## Deployment Prerequisites
 
@@ -56,24 +56,24 @@ Before proceeding, we assume that you have an activated TFChain account funded w
 - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft.md)
 - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge.md)
 
-## Deploy front end VM
+## Deploy Frontend VM
 
-Both full and micro VMs work fine for the QSFS front end.
+Both full and micro VMs work fine for the QSFS frontend.
 
 There are a few considerations to keep in mind for this VM:
 
 - QSFS will consume more CPU and RAM as load increases.
 - 1 vCPU and 2 GB of RAM can work for light loads, but at least an additional vCPU will be helpful for heavier loads.
-- The SSD capacity of the VM is the maximum available front end cache size for QSFS.
+- The SSD capacity of the VM is the maximum available frontend cache size for QSFS.
 - You should enable Mycelium networking, as this will be required to connect to the zdbs.
 
 You can deploy this VM using the [Dashboard](https://dashboard.grid.tf/#/deploy/virtual-machines/) or via the various other methods described in the ThreeFold Manual.
 
-If you plan to use the front end VM to run tfcmd and deploy the zdbs, then connect to the VM via SSH now and run all the following commands on the VM.
+If you plan to use the frontend VM to run tfcmd and deploy the zdbs, then connect to the VM via SSH now and run all the following commands on the VM.
 
-## Deploy Back End Zdbs
+## Deploy Backend Zdbs
 
-Now we will deploy the back end zdbs using tfcmd. To assist with creating multiple deployments efficiently, some short scripts will be shown below. These scripts have been tested in bash and might not work in other shells. At the same time, we will also create our zstor config file, which must contain information about the back ends.
+Now we will deploy the backend zdbs using tfcmd. To assist with creating multiple deployments efficiently, some short scripts will be shown below. These scripts have been tested in bash and might not work in other shells. At the same time, we will also create our zstor config file, which must contain information about the backends.
 
 ### Prerequisites
 
@@ -112,7 +112,7 @@ tfcmd version
 
 ### Create Stub Zstor Config
 
-Next we will create a stub of the zstor config file. This will contain all of the information that needs to be filled manually. The final sections with the back end info will be filled automatically using scripts.
+Next we will create a stub of the zstor config file. This will contain all of the information that needs to be filled manually. The final sections with the backend info will be filled automatically using scripts.
 
 Open a file `zstor-default.toml` in a text editor and paste in the template below. For example:
 
@@ -169,13 +169,13 @@ Now we will deploy the zdbs and write their details into the config file in the 
 CONFIG=zstor-default.toml
 PASSWORD=$(openssl rand -base64 18)
 METADATA_NODES="1 2 3 4"
-back end_NODES="1 2 3 4 5 6 7 8"
-back end_SIZE=1
+BACKEND_NODES="1 2 3 4 5 6 7 8"
+BACKEND_SIZE=1
 ```
 
 This will generate a strong random password that will be used to secure each zdb. You can replace the code that generates the password with your own password if you wish. For now, don't worry about having to save the randomly generated password. It will get written to the config file and you can take note of it later.
 
-For the metadata and back end nodes, replace the example values with the node IDs you selected before. Set your desired back end size too, which is specified in gigabtyes.
+For the metadata and backend nodes, replace the example values with the node IDs you selected before. Set your desired backend size too, which is specified in gigabtyes.
 
 
 ### Deploy Metadata Zdbs
@@ -228,7 +228,7 @@ for node in $METADATA_NODES; do
   password=$(echo $json | jq .Zdbs[0].password)
 
   echo \# Node $node >> $CONFIG
-  echo [[meta.config.back ends]] >> $CONFIG
+  echo [[meta.config.backends]] >> $CONFIG
   echo address = \"\[$ip\]:$port\" >> $CONFIG
   echo namespace = $namespace >> $CONFIG
   echo password = $password >> $CONFIG
@@ -240,7 +240,7 @@ Once that has completed, you can check inside your `zstor-default.toml` file to 
 
 ```
 # Node 1
-[[meta.config.back ends]]
+[[meta.config.backends]]
 address = "[2a02:1802:5e:0:c11:7dff:fe8e:83bb]:9900"
 namespace = "18-532404-node1meta0"
 password = "Your password"
@@ -261,14 +261,14 @@ Then check the file again. Make sure that all the metadata nodes you specified h
 
 ### Deploy Data Zdbs
 
-This process is very similar to the deployment of the metadata back ends, with a few small changes to the scripts.
+This process is very similar to the deployment of the metadata backends, with a few small changes to the scripts.
 
 To deploy:
 
 ```sh
-for node in $back end_NODES; do
-  name=node${node}back end
-  tfcmd deploy zdb --mode seq --node $node -n $name --size $back end_SIZE --password $PASSWORD
+for node in $BACKEND_NODES; do
+  name=node${node}backend
+  tfcmd deploy zdb --mode seq --node $node -n $name --size $BACKEND_SIZE --password $PASSWORD
 done
 ```
 
@@ -276,7 +276,7 @@ As before, you might need to replace some node IDs and try again:
 
 ```sh
 # Example: Node 3 wasn't working, replace it with node 9
-back end_NODES="1 2 4 5 6 7 8 9"
+BACKEND_NODES="1 2 4 5 6 7 8 9"
 ```
 
 Then run the deployment loop again.
@@ -286,8 +286,8 @@ Then run the deployment loop again.
 Likewise, if you need to cancel the data zdb deployments, use this script:
 
 ```sh
-for node in $back end_NODES; do
-  name=node${node}back end
+for node in $BACKEND_NODES; do
+  name=node${node}backend
   tfcmd cancel $name
 done
 ```
@@ -301,8 +301,8 @@ To write the config for the data zdbs, use the following script:
 sleep 5
 
 echo [[groups]] >> $CONFIG
-for node in $back end_NODES; do
-  name=node${node}back end
+for node in $BACKEND_NODES; do
+  name=node${node}backend
   echo Fetching and writing config for $name
   json=$(tfcmd get zdb $name 2>&1 | tail -n +3 | sed $'s/\e\[0m//')
   ip=$(echo $json | jq .Zdbs[0].ips[-1] | tr -d \")
@@ -311,7 +311,7 @@ for node in $back end_NODES; do
   password=$(echo $json | jq .Zdbs[0].password)
 
   echo \# Node $node >> $CONFIG
-  echo [[groups.back ends]] >> $CONFIG
+  echo [[groups.backends]] >> $CONFIG
   echo address = \"\[$ip\]:$port\" >> $CONFIG
   echo namespace = $namespace >> $CONFIG
   echo password = $password >> $CONFIG
@@ -319,24 +319,24 @@ for node in $back end_NODES; do
 done
 ```
 
-Notice this time that the data back ends have an extra line `[[groups]]` separating them from the top of the file. This script just creates a single group. If you want to use more groups, add more groups lines to separate the back ends in each group.
+Notice this time that the data backends have an extra line `[[groups]]` separating them from the top of the file. This script just creates a single group. If you want to use more groups, add more groups lines to separate the backends in each group.
 
 As before, check the output for any failures to retrieve data. You can retry them in the same way:
 
 ```sh
 # Note that we skipped the line with [[groups]]
-for node in $back end_NODES; do
+for node in $BACKEND_NODES; do
   # The rest of the script is the same
   # ...
 ```
 
-Once every data back end has a valid entry in the config file, we are done with this section of the deployment.
+Once every data backend has a valid entry in the config file, we are done with this section of the deployment.
 
 ### Storing Zstor Config
 
 The `zstor-default.toml` file contains sensitive information that is sufficient to recover and decrypt all of the data stored in your QSFS. Needless to say, you should keep the contents of this file secure.
 
-If your front end machine is lost for any reason, the zstor config file can be used to recover the data. On the other hand, if the contents of this file are lost, the data in the back ends can never be recovered.
+If your frontend machine is lost for any reason, the zstor config file can be used to recover the data. On the other hand, if the contents of this file are lost, the data in the backends can never be recovered.
 
 *Consider storing the entire contents of your `zstor-default.toml` file in a durable and secure data store like a password manager.*
 
@@ -458,7 +458,7 @@ shutdown_timeout: 300
 
 Next is zdb. There are two arguments here that might be of interest for tuning. The first is `--datasize`, which is the maximum size of data blocks, in bytes. Here use 64MiB.
 
-The other argument to consider is `--rotate`, which is the time at which incomplete data blocks are closed and backed up. This value is in seconds, so the example is 15 minutes. Reducing this time can help reduce the chance of data loss if the front end is lost, but it will also result in more data fragmentation which can impact performance
+The other argument to consider is `--rotate`, which is the time at which incomplete data blocks are closed and backed up. This value is in seconds, so the example is 15 minutes. Reducing this time can help reduce the chance of data loss if the frontend is lost, but it will also result in more data fragmentation which can impact performance
 
 In this case, we use a shorter `TimeoutStopSec`, to give some time for zdb to flush remaining data to disk, but with the assumption that this happens much more quickly than zstor's network based operations.
 
@@ -591,4 +591,4 @@ There should be an entry with type `zdbfs` mounted at your specified mount point
 
 ## Conclusion
 
-Deployment of QSFS is now complete. In the next section, we'll cover concerns regarding the ongoing operation of a QSFS system, including how to recover from back end failures.
+Deployment of QSFS is now complete. In the next section, we'll cover concerns regarding the ongoing operation of a QSFS system, including how to recover from backend failures.
