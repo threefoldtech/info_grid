@@ -17,6 +17,7 @@ In this section, we delve into sophisticated topics and powerful functionalities
 - [AI & ML Workloads](./ai_ml_workloads/ai_ml_workloads_toc.md)
   - [CPU and Llama](./ai_ml_workloads/cpu_and_llama.md)
   - [GPU and Pytorch](./ai_ml_workloads/gpu_and_pytorch.md)
+  - [GPU and Fooocus](./ai_ml_workloads/gpu_and_fooocus.md)
 - [Ecommerce](./ecommerce/ecommerce.md)
   - [WooCommerce](./ecommerce/woocommerce.md)
   - [nopCommerce](./ecommerce/nopcommerce.md)
