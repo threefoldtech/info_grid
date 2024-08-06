@@ -22,7 +22,8 @@ We show how to use a ThreeFold GPU node on the grid to deploy AI workloads for g
   - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft.md)
   - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge.md)
 - Reserve a [dedicated GPU node](../../../dashboard/deploy/node_finder.md#dedicated-nodes) on the ThreeFold Grid
-- [SSH](../../getstarted/ssh_guide/ssh_guide.md) into the node with [Wireguard](../../getstarted/ssh_guide/ssh_wireguard.md)
+- Deploy a full VM running Ubuntu 22.04
+- [SSH](../../getstarted/ssh_guide/ssh_guide.md) into the node with [Wireguard](../../getstarted/ssh_guide/ssh_wireguard.md) 
 
 ## Prepare the System
 
@@ -70,6 +71,7 @@ We install the prerequisites, including Miniconda, clone the repository, downloa
   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
   bash Miniconda3-latest-Linux-x86_64.sh
   ```
+- Reload the shell to enable Conda
 - Clone the Fooocus directory and install the Python requirements with Miniconda
   ```
   git clone https://github.com/lllyasviel/Fooocus.git
@@ -83,11 +85,25 @@ We install the prerequisites, including Miniconda, clone the repository, downloa
   conda activate fooocus
   python entry_with_update.py
   ```
+- Create an SSH tunnel to the VM
+  ```
+  ssh -4 -L 7865:127.0.0.1:7865 root@10.20.4.2
+  ```
 
 ## Use Fooocus
 
-You can then access Fooocus on `0.0.0.0:7865` via the Wireguard connection.
+You can then access Fooocus:
 
-Here is an example:
+```
+127.0.0.1:7865
+```
+
+Here are some image generated with Fooocus:
 
 ![](./img/fooocus_dog_ocean.png)
+
+![](./img/fooocus_ship.png)
+
+![](./img/fooocus_jungle.png)
+
+![](./img/fooocus_stadium.png)
