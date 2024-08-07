@@ -104,11 +104,12 @@ chmod +x /usr/local/bin/tfcmd
 rm tfgrid-sdk-go.tar.gz
 ```
 
-To test that it worked, you can use the following command:
+To test that it worked, try logging in. You'll need to complete this step before creating any deployments:
 
 ```sh
-tfcmd version
+tfcmd login
 ```
+
 
 ### Create Stub Zstor Config
 
@@ -153,6 +154,8 @@ key = "write your key here"
 
 Make sure to edit the file as needed. You can change the minimal and expected shards according to your own plan. Another important value is `max_zdb_data_dir_size`, which is how large the cache is allowed to grow before data blocks are removed. This value is given in MiB. Therefore, the example shown is 25GiB.
 
+The `zdbfs_mountpoint` can also be adjusted to wherever you want to mount the filesystem, and that could be any location of your choosing. This configuration value does not actually control the placement of the mount, however, it is just used by zstor for monitoring purposes. The actualy mounting will happen later. Likewise `zdb_data_dir_path` should be updated if you want to place the zdb data directory somewhere else.
+
 It is also necessary to fill in the encryption keys with your own. You can use the same or different keys for data and metadata, at your own preference. The key must be 32 bytes in hex format. Here's an example of how to generate a key in this format:
 
 ```sh
@@ -175,7 +178,8 @@ BACKEND_SIZE=1
 
 This will generate a strong random password that will be used to secure each zdb. You can replace the code that generates the password with your own password if you wish. For now, don't worry about having to save the randomly generated password. It will get written to the config file and you can take note of it later.
 
-For the metadata and backend nodes, replace the example values with the node IDs you selected before. Set your desired backend size too, which is specified in gigabtyes.
+
+For the metadata and back end nodes, replace the example values with the node IDs you selected before. Set your desired back end size too, which is specified in gigabtyes. For more details on selection of backend nodes, and how many of each type to specify, see the previous section on planning a deployment.
 
 
 ### Deploy Metadata Zdbs
@@ -369,7 +373,9 @@ One note here is that the name and location of the `zstor` executable must match
 
 ### Directories
 
-Two directories will be needed for QSFS operation. You can create them as follows:
+Two directories will be needed for QSFS operation. These are example locations and you can change them if you wish. However if you choose to use different locations for either the mount point or the data folder, don't forget to update them accordingly in the zstor config file and also substitute them throughout the guide below.
+
+Make sure both directories exist like this:
 
 ```sh
 mkdir -p /mnt/qsfs
@@ -521,7 +527,7 @@ Note that upon subsequent starts when using the `autons` option, zdbfs will give
 #### Zdbfs Systemd
 
 ```
-$EDITOR /etc/systemd/system/zdb.service
+$EDITOR /etc/systemd/system/zdbfs.service
 ```
 
 ```
