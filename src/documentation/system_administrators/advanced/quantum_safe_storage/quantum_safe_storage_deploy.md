@@ -179,12 +179,12 @@ BACKEND_SIZE=1
 This will generate a strong random password that will be used to secure each zdb. You can replace the code that generates the password with your own password if you wish. For now, don't worry about having to save the randomly generated password. It will get written to the config file and you can take note of it later.
 
 
-For the metadata and back end nodes, replace the example values with the node IDs you selected before. Set your desired back end size too, which is specified in gigabtyes. For more details on selection of backend nodes, and how many of each type to specify, see the previous section on planning a deployment.
+For the metadata and backend nodes, replace the example values with the node IDs you selected before. Set your desired backend size too, which is specified in gigabtyes. For more details on selection of backend nodes, and how many of each type to specify, see the previous section on planning a deployment.
 
 
 ### Deploy Metadata Zdbs
 
-Here is an example script to deploy the metadata zdbs based on the variables set above. This uses a fixed size of 1 GB, which should be plenty:
+Here is an example script to deploy the metadata zdbs based on the variables set above. This uses a fixed size of 1 GB, which is the minimum when deploying via tfcmd and should be plenty for storing all of the metadata ever needed by a typical QSFS deployment. Metadata zdbs run in `user` mode.
 
 ```sh
 for node in $METADATA_NODES; do
@@ -265,7 +265,7 @@ Then check the file again. Make sure that all the metadata nodes you specified h
 
 ### Deploy Data Zdbs
 
-This process is very similar to the deployment of the metadata backends, with a few small changes to the scripts.
+This process is very similar to the deployment of the metadata backends, with a few small changes to the scripts. We use the variable `BACKEND_SIZE` we defined above and `seq` mode this time.
 
 To deploy:
 
@@ -373,7 +373,9 @@ One note here is that the name and location of the `zstor` executable must match
 
 ### Directories
 
-Two directories will be needed for QSFS operation. These are example locations and you can change them if you wish. However if you choose to use different locations for either the mount point or the data folder, don't forget to update them accordingly in the zstor config file and also substitute them throughout the guide below.
+Two directories will be needed for QSFS operation. First is the QSFS mount point and second is the data directory for the local zdb.
+
+The locations shown below are examples and you can change them if you wish. However if you choose to use different locations for either the mount point or the data folder, don't forget to update them accordingly in the zstor config file and also substitute them throughout the guide below.
 
 Make sure both directories exist like this:
 
