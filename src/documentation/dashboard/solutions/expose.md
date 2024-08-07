@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Expose application allows users to securely expose servers hosted on local machines or VMs to the public internet. Users are required to specify the machine's IP, which can be a Mycelium IP, Yggdrasil IP, or a public IP (IPv4 or IPv6).
+The Expose application allows users to securely expose servers hosted on local machines or VMs to the public internet. Users are required to specify the machine's IP, which can be a Mycelium IP, Yggdrasil IP, or a public IP (IPv4 or IPv6).
 
 ## Prerequisites
 
@@ -52,4 +52,4 @@ Once this is done, you can see a list of all of your deployed instances:
 
 ![ ](./img/expose_list.png)
 
-Click on the button **Visit** under **Actions** to go to your expose website!
+Click on the button **Visit** under **Actions** to go to your exposed website!
