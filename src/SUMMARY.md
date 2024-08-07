@@ -26,6 +26,7 @@
         - [Algorand](documentation/dashboard/solutions/algorand.md)
         - [CasperLabs](documentation/dashboard/solutions/casper.md)
         - [Discourse](documentation/dashboard/solutions/discourse.md)
+        - [Expose](documentation/dashboard/solutions/expose.md)
         - [Funkwhale](documentation/dashboard/solutions/funkwhale.md)
         - [Gitea](documentation/dashboard/solutions/gitea.md)
         - [Mattermost](documentation/dashboard/solutions/mattermost.md)
