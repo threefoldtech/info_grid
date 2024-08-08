@@ -13,6 +13,7 @@ In this section, we'll embark on a journey to explore the powerful capabilities 
 - [Get Started](#get-started)
 - [Features](#features)
 - [What is Not Supported](#what-is-not-supported)
+- [OpenTofu: Alternative to Terraform](#opentofu-alternative-to-terraform)
 
 ***
 
@@ -43,3 +44,7 @@ Threefold loves Open Source! In v3.0 we are integrating one of the most popular 
 ## What is Not Supported
 
 - we don't support updates/upgrades, if you want a change you need to destroy a deployment & re-create your deployment this in case you want to change the current running instances properties or change the node, but adding a vm to an existing deployment this shouldn't affect other running vm and same if we need to decommission a vm from a deployment this also shouldn't affect the others
+
+## OpenTofu: Alternative to Terraform
+
+[OpenTofu](https://opentofu.org/) is a fully open-source Terraform fork that is backward compatible with all prior versions of Terraform up to version 1.6. This alternative can be used instead of Terraform for the following sections. You might need to make changes depending on the version you are working with. Check the [OpenTofu Docs](https://opentofu.org/docs/) for more information.
