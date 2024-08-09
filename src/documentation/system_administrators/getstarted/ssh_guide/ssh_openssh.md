@@ -7,25 +7,21 @@
 - [Step-by-Step Process with OpenSSH](#step-by-step-process-with-openssh)
   - [Linux](#linux)
     - [SSH into a 3Node with IPv4 on Linux](#ssh-into-a-3node-with-ipv4-on-linux)
-    - [SSH into a 3Node with the Planetary Network on Linux](#ssh-into-a-3node-with-the-planetary-network-on-linux)
+    - [SSH into a 3Node with Mycelium on Linux](#ssh-into-a-3node-with-mycelium-on-linux)
   - [MAC](#mac)
     - [SSH into a 3Node with IPv4 on MAC](#ssh-into-a-3node-with-ipv4-on-mac)
-    - [SSH into a 3Node with the Planetary Network on MAC](#ssh-into-a-3node-with-the-planetary-network-on-mac)
+    - [SSH into a 3Node with Mycelium on MAC](#ssh-into-a-3node-with-mycelium-on-mac)
   - [Windows](#windows)
     - [SSH into a 3Node with IPv4 on Windows](#ssh-into-a-3node-with-ipv4-on-windows)
-    - [SSH into a 3Node with the Planetary Network on Windows](#ssh-into-a-3node-with-the-planetary-network-on-windows)
-- [Questions and Feedback](#questions-and-feedback)
+    - [SSH into a 3Node with Mycelium on Windows](#ssh-into-a-3node-with-mycelium-on-windows)
 
 ***
 
 # Introduction
 
-In this Threefold Guide, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3Node with [OpenSSH](https://www.openssh.com/) on Linux, MAC and Windows with both an IPv4 and a Planetary Network connection. To connect to the 3Node with WireGuard, read [this documentation](./ssh_wireguard.md).
+In this Threefold Guide, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3Node with [OpenSSH](https://www.openssh.com/) on Linux, MAC and Windows with both an IPv4 or a Mycelium connection. To get started with Mycelium, read [this section](../../mycelium/mycelium_toc.md).
 
 To deploy different workloads, the SSH connection process should be very similar.
-
-If you have any questions, feel free to write a post on the [Threefold Forum](http://forum.threefold.io/).
-
 
 # Main Steps and Prerequisites
 
@@ -35,11 +31,8 @@ The main steps for the whole process are the following:
 
 * Create an SSH Key pair
 * Deploy a 3Node
-  * Choose IPv4 or the Planetary Network
+  * Choose IPv4 or Mycelium
 * SSH into the 3Node
-  * For the Planetary Network, download the Planetary Network Connector
-
-
 
 # Step-by-Step Process with OpenSSH
 
@@ -80,11 +73,11 @@ You now have an SSH connection on Linux with IPv4.
 
 
 
-### SSH into a 3Node with the Planetary Network on Linux
+### SSH into a 3Node with Mycelium on Linux
 
-Here are the steps to SSH into a 3Node with the Planetary Network on Linux.
+Here are the steps to SSH into a 3Node with Mycelium on Linux.
 
-* Set a [Planetary Network connection](../planetarynetwork.md)
+* Set [Mycelium](../../mycelium/mycelium_toc.md)
 * To create the SSH key pair, write in the terminal
   * ```
     ssh-keygen
@@ -102,17 +95,17 @@ Here are the steps to SSH into a 3Node with the Planetary Network on Linux.
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
     * Minimum Disk Size: 15 Gb
-  * Select Planetary Network in `Network`
+  * Select Mycelium in `Network`
   * In `Node Selection`, click on `Load Nodes`
   * Click `Deploy`
 * To SSH into the VM once the 3Node is deployed
-  * Copy the Planetary Network address
+  * Copy the Mycelium address
   * Open the terminal, write the following with the deployment address and write **yes** to confirm
     * ```
-      ssh root@planetary_network_address
+      ssh root@mycelium_address
       ```
 
-You now have an SSH connection on Linux with the Planetary Network.
+You now have an SSH connection on Linux with Mycelium.
 
 
 
@@ -153,11 +146,11 @@ You now have an SSH connection on MAC with IPv4.
 
 
 
-### SSH into a 3Node with the Planetary Network on MAC
+### SSH into a 3Node with Mycelium on MAC
 
-Here are the steps to SSH into a 3Node with the Planetary Network on MAC.
+Here are the steps to SSH into a 3Node with Mycelium on MAC.
 
-* Set a [Planetary Network connection](../planetarynetwork.md)
+* Set [Mycelium](../../mycelium/mycelium_toc.md)
 * To create the SSH key pair, write in the terminal 
     * ```
       ssh-keygen
@@ -175,17 +168,17 @@ Here are the steps to SSH into a 3Node with the Planetary Network on MAC.
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
     * Minimum Disk Size: 15 Gb
-  * Select Planetary Network in `Network`
+  * Select Mycelium in `Network`
   * In `Node Selection`, click on `Load Nodes`
   * Click `Deploy`
 * To SSH into the VM once the 3Node is deployed
-  * Copy the Planetary Network address
+  * Copy the Mycelium address
   * Open the terminal, write the following with the deployment address and write **yes** to confirm
     * ```
-      ssh root@planetary_network_address
+      ssh root@mycelium_address
       ```
 
-You now have an SSH connection on MAC with the Planetary Network.
+You now have an SSH connection on MAC with Mycelium.
 
 
 
@@ -233,9 +226,9 @@ You now have an SSH connection on Window with IPv4.
 
 
 
-### SSH into a 3Node with the Planetary Network on Windows
+### SSH into a 3Node with Mycelium on Windows
 
-* Set a [Planetary Network connection](../planetarynetwork.md)
+* Set [Mycelium](../../mycelium/mycelium_toc.md)
 * To download OpenSSH client and OpenSSH server
   * Open the `Settings` and select `Apps`
   * Click `Apps & Features`
@@ -262,20 +255,14 @@ You now have an SSH connection on Window with IPv4.
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
     * Minimum Disk Size: 15 Gb
-  * Select Planetary Network address in `Network`
+  * Select Mycelium address in `Network`
   * In `Node Selection`, click on `Load Nodes`
   * Click `Deploy`
 * To SSH into the VM once the 3Node is deployed
-  * Copy the Planetary Network address
+  * Copy the Mycelium address
   * Open `PowerShell`, write the following with the deployment address and write **yes** to confirm
     * ```
-      ssh root@planetary_network_address
+      ssh root@mycelium_address
       ```
 
-You now have an SSH connection on Window with the Planetary Network.
-
-
-
-# Questions and Feedback
-
-If you have any questions, let us know by writing a post on the [Threefold Forum](http://forum.threefold.io/).
+You now have an SSH connection on Window with Mycelium.

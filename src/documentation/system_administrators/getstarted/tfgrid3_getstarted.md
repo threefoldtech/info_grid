@@ -8,11 +8,7 @@ It's easy to get started on the TFGrid and deploy applications.
 - [Get TFT](../../threefold_token/buy_sell_tft/buy_sell_tft.md)
 - [Bridge TFT to TChain](../../threefold_token/tft_bridges/tft_bridges.md)
 - [Deploy an Application](../../dashboard/deploy/deploy.md)
-- [SSH Remote Connection](./ssh_guide/ssh_guide.md)
-  - [SSH with OpenSSH](./ssh_guide/ssh_openssh.md)
-  - [SSH with PuTTY](./ssh_guide/ssh_putty.md)
-  - [SSH with WSL](./ssh_guide/ssh_wsl.md)
-  - [SSH and WireGuard](./ssh_guide/ssh_wireguard.md)
+- [Connect to the Application](./ssh_guide/ssh_guide.md)
 
 ## Grid Platforms
 
@@ -27,6 +23,6 @@ It's easy to get started on the TFGrid and deploy applications.
 
 - [Advanced Topics](../advanced/advanced.md)
 
-***
+## Questions and Feedback
 
 If you have any question, feel free to ask for help on the [Threefold Forum](https://forum.threefold.io/c/threefold-grid-utilization/support/).
