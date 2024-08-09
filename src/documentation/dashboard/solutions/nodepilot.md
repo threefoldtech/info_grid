@@ -40,7 +40,7 @@ This is a simple instance of upstream [Node Pilot](https://nodepilot.tech).
 
 > Or you can select a specific node with manual selection.
 
-- When using the [flist](https://hub.grid.tf/tf-official-vms/node-pilot-zdbfs.flist) you get a node pilot instance ready out-of-box. You need to get a public ipv4 to get it to works.
+- When using the [flist](https://hub.grid.tf/tf-official-vms/node-pilot-zdbfs.flist) you get a node pilot instance ready out-of-box. You need to get a public IPv4 to get it to works.
 
 After that is done you can see a list of all of your deployed instances
 
