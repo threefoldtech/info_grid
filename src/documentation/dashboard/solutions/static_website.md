@@ -36,7 +36,9 @@ Static Website is an application where a user provides a GitHub repository URL f
   - **Medium**: {cpu: 2, memory: 4, diskSize: 100 }
   - **Large**: {cpu: 4, memory: 16, diskSize: 250 }
   - Or choose a **Custom** plan
-
+- Choose the network
+   - `Public IPv4` flag gives the virtual machine a Public IPv4
+   - `Mycelium` flag gives the virtual machine a Mycelium address
 - `Dedicated` flag to retrieve only dedicated nodes
 - `Certified` flag to retrieve only certified nodes
 - Choose the location of the node

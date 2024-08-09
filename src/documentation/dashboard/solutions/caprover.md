@@ -5,7 +5,7 @@
 - [Introduction](#introduction)
 - [Requirements](#requirements)
 - [Configs Tab](#configs-tab)
-- [Admin and Workers Tabs](#admin-and-workers-tabs)
+- [Leader and Workers Tabs](#leader-and-workers-tabs)
 - [The Domain Name](#the-domain-name)
   - [Domain Name Example](#domain-name-example)
 - [How to Know the IP Address](#how-to-know-the-ip-address)
@@ -31,10 +31,10 @@ Caprover is a very cool management app for containers based on Docker Swarm.
 
 It has following benefits : 
 
-- easy to deploy apps (in seconds)
-- easy to create new apps
-- super good monitoring
-- can be extended over the TFGrid
+- Easy to deploy apps (in seconds)
+- Easy to create new apps
+- Super good monitoring
+- Can be extended over the TFGrid
 
 ## Requirements
 
@@ -46,23 +46,51 @@ It has following benefits :
 
 ![ ](./img/solutions_caprover.png)
 
-- Enter domain for you Caprover instance, Be very careful about the domain name: it needs to be a wildcard domain name you can configure in your chosen domain name system.
+- Enter domain for you Caprover instance. 
+  - Be very careful about the domain name: it needs to be a wildcard domain name you can configure in your chosen domain name system.
 - Enter password for you Caprover instance.
 
 If you have more than one SSH keys set, you can click on `Manage SSH keys` to select which one to use for this deployment.
 
-## Admin and Workers Tabs
+## Leader and Workers Tabs
+
+Each deployment will have one leader and there can be many workers. By default, CapRover is deployed on nodes with IPv4.
 
 ![ ](./img/solutions_caprover_leader.png)
 
 ![ ](./img/solutions_caprover_workers.png)
+
+Use the Leader and Workers tabs to add nodes to your deployment.
+
+- Enter a name for the deployment or keep the default name
+- Select a capacity package:
+    - **Small**: {cpu: 1, memory: 2, diskSize: 25 }
+    - **Medium**: {cpu: 2, memory: 4, diskSize: 50 }
+    - **Large**: {cpu: 4, memory: 16, diskSize: 100 }
+    - Or choose a **Custom** plan
+- Choose the network
+   - `Mycelium` flag gives the virtual machine a Mycelium address
+- `Dedicated` flag to retrieve only dedicated nodes 
+- `Certified` flag to retrieve only certified nodes 
+- Choose the node 
+  - Automated
+    - Choose the location of the node
+       - `Region`
+       - `Country`
+       - `Farm Name`
+    - Click on `Load Nodes`
+    - Click on the node you want to deploy on
+  - Manual selection
+    - Select a specific node ID
+- Click `Deploy`
+
 Note: Worker nodes only accept SSH keys of RSA format.
 
 Deployment will take couple of minutes.
 
 ## The Domain Name
 
-As per the [CapRover documentation](https://caprover.com/docs/get-started.html), you need to point a wildcard DNS entry to the VM IP address of your CapRover instance. You have to do this after having deployed the CapRover instance, otherwise you won't have access to the VM IP address.
+As per the [CapRover documentation](https://caprover.com/docs/get-started.html), you need to point a wildcard DNS entry to the VM IP address of your CapRover Leader instance. You have to do this after having deployed the CapRover instance, otherwise you won't have access to the VM IP address.
 
 Let’s say your domain is **example.com** and your subdomain is **subdomain**. You can set **\*.subdomain.example.com** as an A record in your DNS settings to point to the VM IP address of the server hosting the CapRover instance, where **\*** acts as the wildcard. To do this, go to the DNS settings of your domain name registrar, and set a wild card A record entry.
 
@@ -97,54 +125,14 @@ Go back to your CapRover weblet and go to the deployment list. Click on `Show De
 ![ ](./img/solution_caprover_list.png)
 
 - The public IPv4 address is visible in here
+
+![](./img/solutions_caprover_ipaddress.png)
+
 - Now you can configure the domain name (see above, don't forget to point the wildcard domain to the public IP address)
 
-Click on details if you want to see more details
+Go to the `JSON` tab to see the Json ouput:
 
-```json
-
-{
-    "version": 0,
-    "name": "caprover_leader_cr_156e44f0",
-    "created": 1637843368,
-    "status": "ok",
-    "message": "",
-    "flist": "https://hub.grid.tf/samehabouelsaad.3bot/tf-caprover-main-a4f186da8d.flist",
-    "publicIP": {
-        "ip": "185.206.122.136/24",
-        "gateway": "185.206.122.1"
-    },
-    "planetary": false,
-    "yggIP": "",
-    "interfaces": [
-        {
-            "network": "caprover_network_cr_156e44f0",
-            "ip": "10.200.4.2"
-        }
-    ],
-    "capacity": {
-        "cpu": 4,
-        "memory": 8192
-    },
-    "mounts": [
-        {
-            "name": "data0",
-            "mountPoint": "/var/lib/docker",
-            "size": 107374182400,
-            "state": "ok",
-            "message": ""
-        }
-    ],
-    "env": {
-        "SWM_NODE_MODE": "leader",
-        "CAPROVER_ROOT_DOMAIN": "apps.openly.life",
-        "PUBLIC_KEY": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/9RNGKRjHvViunSOXhBF7EumrWvmqAAVJSrfGdLaVasgaYK6tkTRDzpZNplh3Tk1aowneXnZffygzIIZ82FWQYBo04IBWwFDOsCawjVbuAfcd9ZslYEYB3QnxV6ogQ4rvXnJ7IHgm3E3SZvt2l45WIyFn6ZKuFifK1aXhZkxHIPf31q68R2idJ764EsfqXfaf3q8H3u4G0NjfWmdPm9nwf/RJDZO+KYFLQ9wXeqRn6u/mRx+u7UD+Uo0xgjRQk1m8V+KuLAmqAosFdlAq0pBO8lEBpSebYdvRWxpM0QSdNrYQcMLVRX7IehizyTt+5sYYbp6f11WWcxLx0QDsUZ/J"
-    },
-    "entrypoint": "/sbin/zinit init",
-    "metadata": "",
-    "description": "caprover leader machine/node"
-}
-```
+![](./img/solutions_caprover_json.png)
 
 ## How to Access the Admin Interface
 
