@@ -5,6 +5,7 @@
 - [Introduction](#introduction)
 - [1. Booting the 3Node with Zero-OS](#1-booting-the-3node-with-zero-os)
 - [2. Check the 3Node Status Online](#2-check-the-3node-status-online)
+  - [Check Node Health](#check-node-health)
 - [3. Receive the Farming Rewards](#3-receive-the-farming-rewards)
 - [Advanced Booting Methods (Optional)](#advanced-booting-methods-optional)
   - [PXE Booting with OPNsense](#pxe-booting-with-opnsense)
@@ -42,6 +43,9 @@ You can use the ThreeFold [Node Finder](../../dashboard/deploy/node_finder.md) t
 * [ThreeFold Dev Net Dashboard](https://dashboard.dev.grid.tf/)
 * [ThreeFold QA Net Dashboard](https://dashboard.qa.grid.tf/)
 
+### Check Node Health
+
+It is also possible to check the node health via the Node Finder. Read [this section](../../dashboard/deploy/node_finder.md#node-details) for more information.
 
 ## 3. Receive the Farming Rewards
 
