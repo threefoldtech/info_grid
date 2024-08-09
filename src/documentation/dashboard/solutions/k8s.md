@@ -42,7 +42,7 @@ If you have more than one SSH keys set, you can click on `Manage SSH keys` to se
 
 ## Kubeconfig
 Once the cluster is ready, you can SSH into the cluster using `ssh root@IP`
-> IP can be the public IP or the planetary network IP
+> IP can be the public IP, Mycelium or the Planetary Network IP
 
 Onced connected via SSH, you can execute commands on the cluster like `kubectl get nodes`, and to get the kubeconfig, you can find it in `/root/.kube/config` 
 
