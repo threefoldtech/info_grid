@@ -276,7 +276,7 @@ Note that, at any moment, if you want to see the information on your Terraform d
 
 To set the Wireguard connection, on your local computer, you will need to take the terraform `wg_config` output and create a `wg.conf` file in the directory: `/usr/local/etc/wireguard/wg.conf`. Note that the Terraform output starts and ends with EOT.
 
-For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../getstarted/ssh_guide/ssh_wireguard.md).
+For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../getstarted/ssh_guide/advanced_methods/ssh_wireguard.md).
 
 * Create a file named `wg.conf` in the directory: `/usr/local/etc/wireguard/wg.conf`.
   * ```
