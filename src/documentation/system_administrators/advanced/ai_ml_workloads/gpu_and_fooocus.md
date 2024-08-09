@@ -23,7 +23,7 @@ We show how to use a ThreeFold GPU node on the grid to deploy AI workloads for g
   - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge.md)
 - Reserve a [dedicated GPU node](../../../dashboard/deploy/node_finder.md#dedicated-nodes) on the ThreeFold Grid
 - Deploy a full VM running Ubuntu 22.04
-- [SSH](../../getstarted/ssh_guide/ssh_guide.md) into the node with [Wireguard](../../getstarted/ssh_guide/ssh_wireguard.md) 
+- [SSH](../../getstarted/ssh_guide/ssh_guide.md) into the node with [Wireguard](../../getstarted/ssh_guide/advanced_methods/ssh_wireguard.md) 
 
 ## Prepare the System
 
