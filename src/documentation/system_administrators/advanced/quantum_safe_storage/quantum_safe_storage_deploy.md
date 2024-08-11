@@ -154,7 +154,7 @@ key = "write your key here"
 
 Make sure to edit the file as needed. You can change the minimal and expected shards according to your own plan. Another important value is `max_zdb_data_dir_size`, which is how large the cache is allowed to grow before data blocks are removed. This value is given in MiB. Therefore, the example shown is 25GiB.
 
-The `zdbfs_mountpoint` can also be adjusted to wherever you want to mount the filesystem, and that could be any location of your choosing. This configuration value does not actually control the placement of the mount, however, it is just used by zstor for monitoring purposes. The actualy mounting will happen later. Likewise `zdb_data_dir_path` should be updated if you want to place the zdb data directory somewhere else.
+The `zdbfs_mountpoint` can also be adjusted to wherever you want to mount the filesystem, and that could be any location of your choosing. This configuration value does not actually control the placement of the mount, however, it is just used by zstor for monitoring purposes. The actual mounting will happen later. Likewise `zdb_data_dir_path` should be updated if you want to place the zdb data directory somewhere else.
 
 It is also necessary to fill in the encryption keys with your own. You can use the same or different keys for data and metadata, at your own preference. The key must be 32 bytes in hex format. Here's an example of how to generate a key in this format:
 
