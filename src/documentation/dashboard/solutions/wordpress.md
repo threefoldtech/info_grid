@@ -86,10 +86,9 @@ In this section, we cover the steps to deploy a WordPress instance on the Playgr
   - **Medium**: { cpu: 2, memory: 4 , diskSize: 50 }
   - **Large**: { cpu: 4, memory: 16 , diskSize: 100 }
   - Or choose a **Custom** plan
-
 - Choose the network
-   - **Public IPv4** flag gives the virtual machine a Public IPv4
-
+  - `Public IPv4` flag gives the virtual machine a Public IPv4
+  - `Mycelium` to enable Mycelium on the virtual machine
 - **Dedicated** flag to retrieve only dedicated nodes 
 - **Certified** flag to retrieve only certified nodes 
 - Choose the location of the node

@@ -23,7 +23,7 @@ We also show how to provide a public access to the Dashboard by setting a gatewa
 ## Prerequisites
 
 - TFChain account with TFT
-- [Deploy full VM with WireGuard connection](../../system_administrators/getstarted/ssh_guide/ssh_wireguard.md)
+- [Deploy full VM with WireGuard connection](../../system_administrators/getstarted/ssh_guide/advanced_methods/ssh_wireguard.md)
 - [Make sure you can connect via SSH on the terminal](../../system_administrators/getstarted/ssh_guide/ssh_openssh.md)
 
 In this guide, we use WireGuard, but you can use other connection methods, such as [Mycelium](../../system_administrators/mycelium/mycelium_toc.md).

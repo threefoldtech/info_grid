@@ -362,7 +362,7 @@ This should set everything properly.
 
 If you correctly receive the packets for the two VMs, you know that the VPN is properly set.
 
-For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../getstarted/ssh_guide/ssh_wireguard.md).
+For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../getstarted/ssh_guide/advanced_methods/ssh_wireguard.md).
 
 
 

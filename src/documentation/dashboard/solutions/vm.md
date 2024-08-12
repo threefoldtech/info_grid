@@ -32,10 +32,11 @@ __Process__ :
     - **Large**: {cpu: 4, memory: 16, diskSize: 100}
     - Or choose a **Custom** plan
 - Choose the network
-   - `Public IPv4` flag gives the virtual machine a Public IPv4
-   - `Public IPv6` flag gives the virtual machine a Public IPv6
-   - `Planetary Network` to connect the Virtual Machine to Planetary network
-   - `Wireguard Access` to add a wireguard acces to the Virtual Machine
+  - `Public IPv4` flag gives the virtual machine a Public IPv4
+  - `Public IPv6` flag gives the virtual machine a Public IPv6
+  - `Planetary Network` to connect the Virtual Machine to Planetary network
+  - `Mycelium` to enable Mycelium on the virtual machine
+  - `Wireguard Access` to add a wireguard acces to the Virtual Machine
 - `GPU` flag to add GPU to the Virtual machine
 - `Dedicated` flag to retrieve only dedicated nodes 
 - `Certified` flag to retrieve only certified nodes 

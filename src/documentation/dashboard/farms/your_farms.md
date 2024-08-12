@@ -2,24 +2,24 @@
 
 This comprehensive guide aims to provide users with detailed instructions and insights into efficiently managing their _Farms_. Farms encompass servers and storage devices contributing computational and storage capabilities to the grid, empowering users to oversee, maintain, and optimize their resources effectively.
 
-- [Getting started](#getting-started)
-- [Create a new Farm](#create-a-new-farm)
+- [Getting Started](#getting-started)
+- [Create a New Farm](#create-a-new-farm)
 - [Manage Your Farms](#manage-your-farms)
-  - [Add a public IP to your Farm](#add-a-public-ip-to-your-farm)
-  - [Add a Stellar address for payout](#add-a-stellar-address-for-payout)
-  - [Generate your node bootstrap image](#generate-your-node-bootstrap-image)
-  - [Additional information](#additional-information)
+  - [Add a Public IP to Your Farm](#add-a-public-ip-to-your-farm)
+  - [Add a Stellar Address for Payout](#add-a-stellar-address-for-payout)
+  - [Generate Your Node Bootstrap Image](#generate-your-node-bootstrap-image)
+  - [Additional Information](#additional-information)
 - [Manage Your Nodes](#manage-your-nodes)
-  - [Node information](#node-information)
+  - [Node Information](#node-information)
   - [Extra Fees](#extra-fees)
   - [Public Configuration](#public-configuration)
     - [The Difference Between IPs Assigned to Nodes Versus a Farm](#the-difference-between-ips-assigned-to-nodes-versus-a-farm)
 
-## Getting started
+## Getting Started
 
 After logging in to the TF Dashboard, on the sidebar click on **Dashboard** then _Your Farms_ .
 
-## Create a new Farm
+## Create a New Farm
 
 If you want to start farming, you need a farmID, the ID of the farm that is owning the hardware node(s) you connect to the TFGrid.
 
@@ -47,7 +47,7 @@ You can browse your Farms in _Farms_ table; Farms table contains all your own fa
 
 ![](../img/dashboard_farms_farms_table.png)
 
-### Add a public IP to your Farm
+### Add a Public IP to Your Farm
 
 If you have public IPv4 addresses available that can be used for usage on the TFGrid, you can add them in your farm.
 Click `ADD IP`, specify the addresses, the gateway and click `CREATE`.
@@ -69,7 +69,7 @@ Deleting IPv4 addresses is also possible here. The `Deployed Contract ID` gives 
 
 ![ ](../img/dashboard_farms_ip_details.png)
 
-### Add a Stellar address for payout
+### Add a Stellar Address for Payout
 
 In a first phase, farming of tokens still results in payout on the Stellar network. So to get the farming reward, a Stellar address needs to be provided.
 
@@ -79,7 +79,7 @@ In a first phase, farming of tokens still results in payout on the Stellar netwo
 
 You can read about different ways to store TFT [here](../../threefold_token/storing_tft/storing_tft.md). Make sure to use a Stellar wallet for your farming rewards.
 
-### Generate your node bootstrap image
+### Generate Your Node Bootstrap Image
 
 Once you know your farmID, you can set up your node on TFGrid3. Click on `Bootstrap Node Image`.
 
@@ -87,7 +87,7 @@ Once you know your farmID, you can set up your node on TFGrid3. Click on `Bootst
 
 Read more Zero-OS bootstrap image [here](../../farmers/3node_building/2_bootstrap_image.md).
 
-### Additional information
+### Additional Information
 
 After booting a node, the info will become available in `Your Nodes` table, including the status info along with the minting and fixup receipts.
 
@@ -103,7 +103,7 @@ You can also download a single node's receipts using the `Download Receipts` but
 
 as in farms table _Nodes_ table contains all your own nodes and its your entry point to manage your farm as in the following sections.
 
-### Node information
+### Node Information
 
 Expand your node information by clicking on the expand button in the target node row.
 
@@ -128,7 +128,5 @@ To configure public IP addresses to a specific Node
 > The IPv6 address and the Domain are optional but if you provide The IPv6 you have to provide its Domain.
 
 #### The Difference Between IPs Assigned to Nodes Versus a Farm
-
----
 
 IPs assigned to a farm are available to be rented by workloads. They can be assigned to virtual machines for example. IPs assigned to nodes enable each node to become a gateway.

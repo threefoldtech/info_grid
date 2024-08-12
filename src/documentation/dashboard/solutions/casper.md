@@ -30,6 +30,7 @@ __Process__ :
     - Or choose a **Custom** plan
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4
+   - `Mycelium` flag gives the virtual machine a Mycelium address
 
 - `Dedicated` flag to retrieve only dedeicated nodes 
 - `Certified` flag to retrieve only certified nodes 
@@ -46,7 +47,7 @@ If you have more than one SSH keys set, you can click on `Manage SSH keys` to se
 
 After that is done you can see a list of all of your deployed instances
 
-![ ](./img/casper4.png)
+![](./img/casper4.png)
 
 Click on ***Visit*** to go to the homepage of your Casperlabs instance! The node takes a long time in order for the RPC service to be ready so be patient!
 

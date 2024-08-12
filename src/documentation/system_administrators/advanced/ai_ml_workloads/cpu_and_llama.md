@@ -39,7 +39,7 @@ We start by deploying a full VM on the ThreeFold Dashboard. The more cores we se
   * Vcores: 8 vcores
   * MB of RAM: 4096 GB
   * GB of storage: 100 GB
-* After deployment, [set the Wireguard configurations](../../getstarted/ssh_guide/ssh_wireguard.md)
+* After deployment, [set the Wireguard configurations](../../getstarted/ssh_guide/advanced_methods/ssh_wireguard.md)
 * Connect to the VM via SSH
   * ``` 
     ssh root@VM_Wireguard_Address
