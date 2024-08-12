@@ -45,11 +45,15 @@ If your deployment has some minimum requirements, you can easily filter relevant
 
 ## Node Details
 
-You can see all of the node details when you click on its row.
+You can see all of the node details when you click on its row:
 
 ![](../img/dashboard_node_finder_node_view.png)
 
-Note that the network speed test displayed in the Node Finder is updated every 6 hours.
+> Note: The network speed test displayed in the Node Finder is updated every 6 hours.
+
+To access the public Grafana page displaying additional information, click on `Check Node Health`:
+
+![](../img/node_finder_grafana.png)
 
 ## Gateway Nodes
 
