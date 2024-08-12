@@ -15,10 +15,10 @@
 - [Get Yggdrasil IP](#get-yggdrasil-ip)
 - [Add Peers](#add-peers)
 - [Peers](#peers)
-  - [Central europe](#central-europe)
+  - [Central Europe](#central-europe)
     - [Ghent](#ghent)
   - [Austria](#austria)
-- [Peers config for usage in every Yggdrasil - Planetary Network client](#peers-config-for-usage-in-every-yggdrasil---planetary-network-client)
+- [Planetary Network Clients](#planetary-network-clients)
 
 ***
 
@@ -142,7 +142,7 @@ You'll need this address when registering your twin on TFChain later.
 
 ## Peers
 
-### Central europe
+### Central Europe
 
 #### Ghent
 
@@ -181,7 +181,7 @@ You'll need this address when registering your twin on TFChain later.
 - tcp://gw424.vienna2.greenedgecloud.com:9943
 - tcp://gw425.vienna2.greenedgecloud.com:9943
 
-## Peers config for usage in every Yggdrasil - Planetary Network client
+## Planetary Network Clients
 
 ```
           Peers:
