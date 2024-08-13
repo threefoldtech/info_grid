@@ -1,13 +1,14 @@
 <h1> Terraform</h1>
 
+Welcome to the *Terraform* section of the ThreeFold Manual! 
+
+In this section, we'll embark on a journey to explore the powerful capabilities of Terraform within the ThreeFold Grid ecosystem. Terraform, a cutting-edge infrastructure as code (IaC) tool, empowers you to define and provision your infrastructure efficiently and consistently.
+
 <h2>Table of Contents</h2>
 
-- [Overview](./terraform_readme.md)
+- [Introduction to Terraform](./terraform_readme.md)
 - [Installing Terraform](./terraform_install.md)
-- [Terraform Basics](./terraform_basics.md)
 - [Full VM Deployment](./terraform_full_vm.md)
-- [GPU Support](./terraform_gpu_support.md)
+- [Terraform Basics](./terraform_basics.md)
 - [Resources](./resources/terraform_resources_readme.md)
-- [QSFS on Micro VM](./resources/terraform_qsfs_on_microvm.md)
-- [QSFS on Full VM](./resources/terraform_qsfs_on_full_vm.md)
 - [Advanced](./advanced/terraform_advanced_readme.md)

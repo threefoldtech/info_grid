@@ -23,7 +23,7 @@ Resource units are used to measure and convert capacity on the hardware level in
 | ------------ | ------------------------------------ | ---- |
 | Core Unit    | 1 Logical Core (Hyperthreaded Core)  | CRU  |
 | Mem Unit     | 1 GB mem                             | MRU  |
-| HD Unit      | 1 GB                                 | HRU  |
+| HDD Unit      | 1 GB                                 | HRU  |
 | SSD Unit     | 1 GB                                 | SRU  |
 | Network Unit | 1 GB of bandwidth transmitted in/out | NRU  |
 
