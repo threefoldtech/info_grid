@@ -25,7 +25,6 @@ The steps are very simple. You first need to create the Terraform files, the var
 The main goal of this guide is to show you all the necessary steps to deploy a Full VM on the TGrid using Terraform. Once you get acquainted with this first basic deployment, you should be able to explore on your own the possibilities that the TFGrid and Terraform combined provide.
 
 
-
 ## Main Process
 
 For this guide, we use two files to deploy with Terraform. The first file contains the environment variables and the second file contains the parameters to deploy our workload.
@@ -228,10 +227,9 @@ cpu = "1"
 memory = "512"
 ```
 
-Make sure to add your own seed phrase and SSH public key. You will also need to specify the node ID of the server used. Simply replace the three dots by the content.
+Make sure to add your own mnemonics and SSH public key. You will also need to specify the node ID of the server used. Simply replace the three dots by the content.
 
-We set here the minimum specs for a full VM, but you can adjust these parameters.
-
+We set here the minimum specs for a full VM, but you can adjust these parameters. Here `size` is the SSD storage capacity in GB, `cpu` is the number of virtual core and `memory` is the memory capacity in MB.
 
 
 ## Deploy the Full VM with Terraform

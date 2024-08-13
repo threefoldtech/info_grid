@@ -55,5 +55,5 @@ Here is a list of all of the services running on Threefold Grid 3 infrastructure
 
 ## General
 
-- [TF Flist Hub](../../developers/flist/flist_hub/zos_hub.md)
-- [TF Boot Generator](../../dashboard/farms/node_installer.md)
+- [TF Flist Hub](../../../developers/flist/flist_hub/zos_hub.md)
+- [TF Boot Generator](../../../dashboard/farms/node_installer.md)
