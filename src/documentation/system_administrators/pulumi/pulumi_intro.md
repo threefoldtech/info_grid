@@ -8,13 +8,12 @@ With Pulumi, you can express your infrastructure requirements using the language
 - [Benefits of Using Pulumi](#benefits-of-using-pulumi)
 - [Declarative vs. Imperative Programming](#declarative-vs-imperative-programming)
   - [Declaration Programming Example](#declaration-programming-example)
-  - [Benefits of declarative programming in IaC](#benefits-of-declarative-programming-in-iac)
+  - [Benefits of Declarative Programming in IaC](#benefits-of-declarative-programming-in-iac)
 - [Concepts](#concepts)
   - [Pulumi Project](#pulumi-project)
   - [Project File](#project-file)
   - [Stacks](#stacks)
   - [Resources](#resources)
-- [Questions and Feedback](#questions-and-feedback)
 
 ***
 
@@ -22,7 +21,7 @@ With Pulumi, you can express your infrastructure requirements using the language
 
 [ThreeFold Grid](https://threefold.io) is a decentralized cloud infrastructure platform that provides developers with a secure and scalable way to deploy and manage their applications. It is based on a peer-to-peer network of nodes that are distributed around the world.
 
-[Pulumi](https://www.pulumi.com/) is a cloud-native infrastructure as code (IaC) platform that allows developers to manage their infrastructure using code. It supports a wide range of cloud providers, including ThreeFold Grid.
+[Pulumi](https://www.pulumi.com/) is a cloud-native infrastructure as code (IaC) platform that allows developers to manage their infrastructure using code. It supports a wide range of cloud providers, including ThreeFold Grid. Consult the official [Pulumi documentation](https://www.pulumi.com/docs/) for more information.
 
 The [Pulumi plugin for ThreeFold Grid](https://github.com/threefoldtech/pulumi-provider-grid) provides developers with a way to deploy and manage their ThreeFold Grid resources using Pulumi. This means that developers can benefit from all of the features and benefits that Pulumi offers, such as cross-cloud support, type safety, preview and diff, and parallel execution -still in the works-.
 
@@ -55,7 +54,7 @@ Say I want an infrastructure of two virtual machines with X disks. The following
 
 As you can see, the declarative code is much simpler and easier to read. It also makes it easier to make changes to your infrastructure, as you only need to change the desired state, and the IaC tool will figure out how to achieve it.
 
-### Benefits of declarative programming in IaC
+### Benefits of Declarative Programming in IaC
 
 There are several benefits to using declarative programming in IaC:
 
@@ -124,7 +123,3 @@ resources:
     properties: ...args
     options: ...options
 ```
-
-## Questions and Feedback
-
-If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Grid Tester Community](https://t.me/threefoldtesting) on Telegram.

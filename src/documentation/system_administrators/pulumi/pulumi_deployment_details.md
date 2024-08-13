@@ -98,29 +98,26 @@ We address here how to create a [network](https://github.com/threefoldtech/pulum
 You can find the original file [here](https://github.com/threefoldtech/pulumi-provider-grid/blob/development/examples/yaml/network/Pulumi.yaml).
 
 ```yml
-name: pulumi-provider-grid
+name: pulumi-threefold
 runtime: yaml
-
-plugins:
-  providers:
-    - name: grid
-      path: ../..
 
 resources:
   provider:
-    type: pulumi:providers:grid
+    type: pulumi:providers:threefold
+    options:
+      pluginDownloadURL: github://api.github.com/threefoldtech/pulumi-threefold # optional
     properties:
       mnemonic:
 
   scheduler:
-    type: grid:internal:Scheduler
+    type: threefold:provider:Scheduler
     options:
       provider: ${provider}
     properties:
       farm_ids: [1]
 
   network:
-    type: grid:internal:Network
+    type: threefold:provider:Network
     options:
       provider: ${provider}
       dependsOn:
@@ -139,34 +136,26 @@ outputs:
 
 We will now go through this file section by section to properly understand what is happening.
 
+Here we set the name for the project. It can be anything. We also set the runtime. It can be some code in yaml, python, go, etc.
+
 ```yml
 name: pulumi-provider-grid
 runtime: yaml
 ```
 
-- name is for the project name (can be anything)
-- runtime: the runtime we are using can be code in yaml, python, go, etc.
+We then start by initializing the resources. The provider which we loaded in the plugins section is also a resource that has properties (the main one now is just the mnemonic of TFChain).
 
 ```yml
-plugins:
-  providers:
-    - name: grid
-      path: ../..
-
-```
-
-Here, we define the plugins we are using within our project and their locations. Note that we use `../..` due to the repository hierarchy.
-
-```yml
-resources:
   provider:
-    type: pulumi:providers:grid
+    type: pulumi:providers:threefold
+    options:
+      pluginDownloadURL: github://api.github.com/threefoldtech/pulumi-threefold # optional
     properties:
       mnemonic:
 
 ```
 
-We then start by initializing the resources. The provider which we loaded in the plugins section is also a resource that has properties (the main one now is just the mnemonic of TCHhain).
+Then, we create a scheduler `grid:internal:Scheduler`, that does the planning for us. Instead of being too specific about node IDs, we just give it some generic information. For example, "I want to work against these data centers (farms)". As long as the necessary criteria are provided, the scheduler can be more specific in the planning and select the appropriate resources available on the TFGrid.
 
 ```yaml
   scheduler:
@@ -177,7 +166,8 @@ We then start by initializing the resources. The provider which we loaded in the
       farm_ids: [1]
 ```
 
-Then, we create a scheduler `grid:internal:Scheduler`, that does the planning for us. Instead of being too specific about node IDs, we just give it some generic information. For example, "I want to work against these data centers (farms)". As long as the necessary criteria are provided, the scheduler can be more specific in the planning and select the appropriate resources available on the TFGrid.
+Now, that we created the scheduler, we can go ahead and create the network resource `grid:internal:Network`. Please note that the network depends on the scheduler's existence. If we remove it, the scheduler and the network will be created in parallel, that's why we have the `dependsOn` section. We then proceed to specify the network resource properties, e.g. the name, the description, which nodes to deploy our network on, the IP range of the network. In our case, we only choose one node.
+
 
 ```yaml
   network:
@@ -194,8 +184,6 @@ Then, we create a scheduler `grid:internal:Scheduler`, that does the planning fo
       ip_range: 10.1.0.0/16
 ```
 
-Now, that we created the scheduler, we can go ahead and create the network resource `grid:internal:Network`. Please note that the network depends on the scheduler's existence. If we remove it, the scheduler and the network will be created in parallel, that's why we have the `dependsOn` section. We then proceed to specify the network resource properties, e.g. the name, the description, which nodes to deploy our network on, the IP range of the network. In our case, we only choose one node.
-
 To access information related to our deployment, we set the section **outputs**. This will display results that we can use, or reuse, while we develop our infrastructure further.
 
 ```yaml
@@ -204,6 +192,7 @@ outputs:
   nodes_ip_range: ${network.nodes_ip_range}
 ```
 
+
 ## Creating a Virtual Machine
 
 Now, we will check an [example](https://github.com/threefoldtech/pulumi-provider-grid/blob/development/examples/yaml/virtual_machine) on how to create a virtual machine.
@@ -211,31 +200,28 @@ Now, we will check an [example](https://github.com/threefoldtech/pulumi-provider
 Just like we've seen above, we will have two files `Makefile` and `Pulumi.yaml` where we describe the infrastructure.
 
 ```yml
-name: pulumi-provider-grid
+name: pulumi-threefold
 runtime: yaml
-
-plugins:
-  providers:
-    - name: grid
-      path: ../..
 
 resources:
   provider:
-    type: pulumi:providers:grid
+    type: pulumi:providers:threefold
+    options:
+      pluginDownloadURL: github://api.github.com/threefoldtech/pulumi-threefold # optional
     properties:
-      mnemonic: <to be filled>
+      mnemonic:
 
   scheduler:
-    type: grid:internal:Scheduler
+    type: threefold:provider:Scheduler
     options:
       provider: ${provider}
     properties:
-      mru: 256
-      sru: 2048
+      mru: 0.25 # 256 megabytes
+      sru: 2
       farm_ids: [1]
 
   network:
-    type: grid:internal:Network
+    type: threefold:provider:Network
     options:
       provider: ${provider}
       dependsOn:
@@ -246,9 +232,12 @@ resources:
       nodes:
         - ${scheduler.nodes[0]}
       ip_range: 10.1.0.0/16
+      mycelium: true
+      # mycelium_keys:
+      #   manual_nodeID: 9751c596c7c951aedad1a5f78f18b59515064adf660e0d55abead65e6fbbd627 # hex encoded 32 bytes [example]
 
   deployment:
-    type: grid:internal:Deployment
+    type: threefold:provider:Deployment
     options:
       provider: ${provider}
       dependsOn:
@@ -265,6 +254,8 @@ resources:
           cpu: 2
           memory: 256
           planetary: true
+          mycelium: true
+          # mycelium_ip_seed: b60f2b7ec39c # hex encoded 6 bytes [example]
           mounts:
             - disk_name: data
               mount_point: /app
@@ -278,13 +269,14 @@ resources:
 outputs:
   node_deployment_id: ${deployment.node_deployment_id}
   planetary_ip: ${deployment.vms_computed[0].planetary_ip}
+  mycelium_ip: ${deployment.vms_computed[0].mycelium_ip}
 ```
 
 We have a scheduler, and a network just like before. But now, we also have a deployment `grid:internal:Deployment` object that can have one or more disks and virtual machines.
 
 ```yaml
-deployment:
-    type: grid:internal:Deployment
+  deployment:
+    type: threefold:provider:Deployment
     options:
       provider: ${provider}
       dependsOn:
@@ -301,11 +293,13 @@ deployment:
           cpu: 2
           memory: 256
           planetary: true
+          mycelium: true
+          # mycelium_ip_seed: b60f2b7ec39c # hex encoded 6 bytes [example]
           mounts:
             - disk_name: data
               mount_point: /app
           env_vars:
-            SSH_KEY: <to be filled>
+            SSH_KEY:
 
       disks:
         - name: data
@@ -325,7 +319,7 @@ We now see how to deploy a [Kubernetes cluster using Pulumi](https://github.com/
 ```yaml
   content was removed for brevity
   kubernetes:
-    type: grid:internal:Kubernetes
+    type: threefold:provider:Kubernetes
     options:
       provider: ${provider}
       dependsOn:
@@ -353,11 +347,8 @@ We now see how to deploy a [Kubernetes cluster using Pulumi](https://github.com/
 
       token: t123456789
       network_name: test
-      ssh_key: <to be filled>
+      ssh_key:
 
-outputs:
-  node_deployment_id: ${kubernetes.node_deployment_id}
-  planetary_ip: ${kubernetes.master_computed.planetary_ip}
 ```
 
 Now, we define the Kubernetes resource `grid:internal:Kubernetes` that has master and workers blocks. You define almost everything like a normal VM except for the FLiist. Also note that the token is the `cluster token`. This will ensure that the workers and the master communicate properly.
@@ -383,17 +374,16 @@ We present here the file for a simple domain prefix.
 ```yml
   content was removed for brevity
   scheduler:
-    type: grid:internal:Scheduler
+    type: threefold:provider:Scheduler
     options:
       provider: ${provider}
     properties:
-      mru: 256
       farm_ids: [1]
       ipv4: true
       free_ips: 1
 
   gatewayName:
-    type: grid:internal:GatewayName
+    type: threefold:provider:GatewayName
     options:
       provider: ${provider}
       dependsOn:
@@ -403,10 +393,6 @@ We present here the file for a simple domain prefix.
       node_id: ${scheduler.nodes[0]}
       backends:
         - "http://69.164.223.208"
-
-outputs:
-  node_deployment_id: ${gatewayName.node_deployment_id}
-  fqdn: ${gatewayName.fqdn}
 
 ```
 
@@ -425,7 +411,7 @@ Here's an [example](https://github.com/threefoldtech/pulumi-provider-grid/blob/d
 ```yml
   code removed for brevity
   gatewayFQDN:
-    type: grid:internal:GatewayFQDN
+    type: threefold:provider:GatewayFQDN
     options:
       provider: ${provider}
       dependsOn:
@@ -433,9 +419,10 @@ Here's an [example](https://github.com/threefoldtech/pulumi-provider-grid/blob/d
     properties:
       name: testing
       node_id: 14
-      fqdn: mydomain.com
+      fqdn: remote.omar.grid.tf
       backends:
         - http://[${deployment.vms_computed[0].planetary_ip}]:9000
+
 ```
 
 Here, we informed the gateway that any request coming for the domain `mydomain.com` needs to be balanced through the backends.
@@ -445,5 +432,3 @@ Here, we informed the gateway that any request coming for the domain `mydomain.c
 ## Conclusion
 
 We covered in this guide some basic details concerning the use of the ThreeFold Pulumi plugin.
-
-If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Grid Tester Community](https://t.me/threefoldtesting) on Telegram.

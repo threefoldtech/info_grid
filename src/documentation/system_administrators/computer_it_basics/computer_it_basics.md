@@ -10,11 +10,7 @@ In this section, tailored specifically for system administrators, we'll delve in
 - [Docker Basics](./docker_basics.md)
 - [Git and GitHub Basics](./git_github_basics.md)
 - [Gitea](./gitea/gitea_toc.md)
-  - [Gitea Basics](./gitea/gitea_basics.md)
-  - [Gitea API](./gitea/gitea_api.md)
 - [Firewall Basics](./firewall_basics/firewall_basics.md)
-  - [UFW Basics](./firewall_basics/ufw_basics.md)
-  - [Firewalld Basics](./firewall_basics/firewalld_basics.md)
 - [File Transfer](./file_transfer.md)
 - [Screenshots](./screenshots.md)
   

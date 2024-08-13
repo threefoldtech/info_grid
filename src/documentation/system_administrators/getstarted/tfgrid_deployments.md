@@ -6,6 +6,7 @@
 - [Dashboard UI](#dashboard-ui)
 - [Infrastrure-As-Code](#infrastrure-as-code)
 - [Command Line Interfaces](#command-line-interfaces)
+- [GPU Workloads](#gpu-workloads)
 
 ---
 
@@ -34,3 +35,9 @@ You can use our Go and Javascript/TypeScript command line interface tools to dep
   - [TFCMD](../../developers/tfcmd/tfcmd.md)
   - [TFRobot](../../developers/tfrobot/tfrobot.md)
 - [TypeScript Grid Client](../../developers/javascript/grid3_javascript_readme.md)
+
+## GPU Workloads
+
+There are many ways to deploy GPU workloads on the ThreeFold Grid. Check the GPU section for all the details.
+
+- [GPU Support](../gpu/gpu_toc.md)
