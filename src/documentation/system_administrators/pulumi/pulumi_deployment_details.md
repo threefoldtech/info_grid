@@ -117,7 +117,7 @@ resources:
       farm_ids: [1]
 
   network:
-    type: threefold:provider:Network
+    type: threefold:Network
     options:
       provider: ${provider}
       dependsOn:
