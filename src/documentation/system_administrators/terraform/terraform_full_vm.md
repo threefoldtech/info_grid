@@ -22,7 +22,7 @@ This short ThreeFold Guide will teach you how to deploy a Full VM on the TFGrid 
 
 The steps are very simple. You first need to create the Terraform files, the variables file and the deployment file, and then deploy the full VM. After the deployment is done, you can SSH into the full VM.
 
-The main goal of this guide is to show you all the necessary steps to deploy a Full VM on the TGrid using Terraform. Once you get acquainted with this first basic deployment, you should be able to explore on your own the possibilities that the TFGrid and Terraform combined provide.
+The main goal of this guide is to show you all the necessary steps to deploy a Full VM on the TFGrid using Terraform. Once you get acquainted with this first basic deployment, you should be able to explore on your own the possibilities that the TFGrid and Terraform combined provide.
 
 
 ## Main Process
