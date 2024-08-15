@@ -1,12 +1,12 @@
-<h1> Deploying a VM with MyCelium network</h1>
+<h1> Deploying a VM with Mycelium Network</h1>
 
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
 - [Example](#example)
 - [Detailed Explanation](#detailed-explanation)
-  - [What is the MyCelium network](#what-is-the-mycelium-network)
-  - [How to deploy a machine with the MyCelium network](#how-to-deploy-a-machine-with-the-mycelium-network)
+  - [What is the Mycelium Network](#what-is-the-mycelium-network)
+  - [How to Deploy a Machine with the Mycelium Network](#how-to-deploy-a-machine-with-the-mycelium-network)
 - [Summary](#summary)
   - [Mycelium Flag Behavior](#mycelium-flag-behavior)
   - [Mycelium Machine Seed](#mycelium-machine-seed)
@@ -16,10 +16,13 @@
 
 ## Introduction
 
-We present information on how to deploy a VM with `MyCelium network` by the Javascript client with concrete examples.
+We present information on how to deploy a VM with `Mycelium network` by the Javascript client with concrete examples.
 
+Consult the [official Mycelium repo](https://github.com/threefoldtech/mycelium) to learn more.
 
 ## Example
+
+Here is a simple example on how to use Mycelium with the Javascript client:
 
 ```ts
 import { generateRandomHexSeed, GridClient, MachinesDeleteModel, MachinesModel } from "../src";
@@ -130,15 +133,13 @@ main();
 
 ## Detailed Explanation
 
-### What is the MyCelium network
+### What is the Mycelium Network
 
-Mycelium is an IPv6 overlay network written in Rust. Each node that joins the overlay network will receive an overlay network IP in the 400::/7 range.
+Mycelium is an IPv6 overlay network written in Rust. Each node that joins the overlay network will receive an overlay network IP in the 400::/7 range. 
 
-[read more about it](https://github.com/threefoldtech/mycelium?tab=readme-ov-file)
+### How to Deploy a Machine with the Mycelium Network
 
-### How to deploy a machine with the MyCelium network
-
-You just need to enable the `mycelium`, you need to set it to true as we did in the mentioned example
+You just need to enable `mycelium`: set it to true as we did in the example above.
 
 ```ts
 const machines = [

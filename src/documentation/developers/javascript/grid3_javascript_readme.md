@@ -11,6 +11,7 @@ Please make sure to check the [basics](../../system_administrators/getstarted/tf
 - [Installation](./grid3_javascript_installation.md)
 - [Loading Client](./grid3_javascript_loadclient.md)
 - [Deploy a VM](./grid3_javascript_vm.md)
+- [Deploy a VM with Mycelium Network](./grid3_javascript_vm_with_mycelium_network.md)
 - [Capacity Planning](./grid3_javascript_capacity_planning.md)
 - [Deploy Multiple VMs](./grid3_javascript_vms.md)
 - [Deploy CapRover](./grid3_javascript_caprover.md)
