@@ -66,6 +66,7 @@
       - [Installation](documentation/developers/javascript/grid3_javascript_installation.md)
       - [Loading Client](documentation/developers/javascript/grid3_javascript_loadclient.md)
       - [Deploy a VM](documentation/developers/javascript/grid3_javascript_vm.md)
+      - [Deploy a VM with Mycelium Network](documentation/developers/javascript/grid3_javascript_vm_with_mycelium_network.md)
       - [Capacity Planning](documentation/developers/javascript/grid3_javascript_capacity_planning.md)
       - [Deploy Multiple VMs](documentation/developers/javascript/grid3_javascript_vms.md)
       - [Deploy CapRover](documentation/developers/javascript/grid3_javascript_caprover.md)
