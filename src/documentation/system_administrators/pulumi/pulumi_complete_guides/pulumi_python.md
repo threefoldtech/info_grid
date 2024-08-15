@@ -17,7 +17,7 @@ To provide a uniform deployment method, we use Docker for this guide. It is opti
 
 This guide is useful to get you started quickly with Pulumi on the TFGrid.
 
-Once you've successfully deployed a VM, you can try all the different Python examples within the `pulumi-threefold` repository. The examples are available in the subdirectory `/examples/python/`.
+Once you've successfully deployed a VM, you can try all the different Python examples within the [pulumi-threefold repository](https://github.com/threefoldtech/pulumi-threefold). The examples are available in the subdirectory `/examples/python/`.
 
 ## Prerequisites
 
