@@ -44,9 +44,19 @@ You can access the ThreeFold Dashboard on different TF Chain networks.
 
 ## Dashboard Backups
 
-If the main Dashboard URLs are not working for any reason, the following URLs can be used. Those Dashboard URLs are fully independent of the main Dashboard URLs shown above.
+If the Dashboard URLs are not working for any reason, the following URLs can be used. Those Dashboard URLs are fully independent of the main Dashboard URLs shown above.
 
 - [https://dashboard.02.dev.grid.tf](https://dashboard.02.dev.grid.tf) for Dev net
 - [https://dashboard.02.qa.grid.tf](https://dashboard.02.qa.grid.tf) for QA net
 - [https://dashboard.02.test.grid.tf](https://dashboard.02.test.grid.tf) for Test net
 - [https://dashboard.02.grid.tf](https://dashboard.02.grid.tf) for Main net
+
+## List of Mainnet Backend Stacks
+
+We provide alternative and independent mainnet backend stacks. Here is the complete list:
+
+- [https://dashboard.grid.tf](https://dashboard.grid.tf)
+- [https://dashboard.be.grid.tf](https://dashboard.be.grid.tf)
+- [https://dashboard.fin.grid.tf](https://dashboard.fin.grid.tf)
+- [https://dashboard.sg.grid.tf](https://dashboard.sg.grid.tf)
+- [https://dashboard.us.grid.tf](https://dashboard.us.grid.tf)
