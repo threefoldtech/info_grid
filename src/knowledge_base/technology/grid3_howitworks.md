@@ -24,8 +24,6 @@ Z-OS (Zero Operating System) is a lightweight and secure operating system design
 
 In a similar manner to purchasing electricity or other utilities, the internet capacity provided by the ThreeFold Grid is produced and allocated locally. This decentralized approach empowers digital service and application providers to host their offerings closer to end-users, resulting in exceptional performance, competitive pricing, and improved profit margins. The TFGrid is fueled by the ThreeFold Token.
 
-> [Learn more about TFT](../about/token_overview/token_overview.md)
-
 ## TFChain: The Backbone Blockchain Infrastructure
 
 __TFChain__, also known as __ThreeFold Chain__, is the powerful blockchain that orchestrates the interactions within the ThreeFold Grid ecosystem. TFChain is like the control center of the ThreeFold Grid, providing users and farmers with a wide range of key functionalities.

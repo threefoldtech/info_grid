@@ -5,7 +5,6 @@
 - [Introduction](#introduction)
 - [Main Steps and Prerequisites](#main-steps-and-prerequisites)
 - [SSH with PuTTY on Windows](#ssh-with-putty-on-windows)
-- [Questions and Feedback](#questions-and-feedback)
 
 ***
 
@@ -13,9 +12,9 @@
 
 In this Threefold Guide, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3Node on Windows with [PuTTY](https://www.putty.org/).
 
-To deploy different workloads, the SSH connection process should be very similar.
+To deploy different workloads, the SSH connection process should be very similar. 
 
-If you have any questions, feel free to write a post on the [Threefold Forum](http://forum.threefold.io/).
+Make sure to read the [Mycelium section](../../mycelium/mycelium_toc.md) if you use Mycelium for the network connection.
 
 
 
@@ -27,10 +26,8 @@ The main steps for the whole process are the following:
 
 * Create an SSH Key pair
 * Deploy a 3Node
-  * Choose IPv4 or the Planetary Network
+  * Choose IPv4 or Mycelium
 * SSH into the 3Node
-  * For the Planetary Network, set a [Planetary Network connection](../planetarynetwork.md)
-
 
 
 ## SSH with PuTTY on Windows
@@ -55,15 +52,15 @@ Here are the main steps to SSH into a full VM using PuTTY on a Windows machine.
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
     * Minimum Disk Size: 15 Gb
-  * Select IPv4 in `Network`
+  * Select IPv4 or Mycelium in `Network`
   * In `Node Selection`, click on `Load Nodes`
   * Click `Deploy`
 * To SSH into the VM once the 3Node is deployed
-  * Take note of the IPv4 address
+  * Take note of the IP address
 * Connect to the full VM with PuTTY
   * Open PuTTY
   * Go to the section `Session`
-    * Add the VM IPv4 address under `Host Name (or IP address)`
+    * Add the VM address under `Host Name (or IP address)`
     * Make sure `Connection type` is set to `SSH`
   * Go to the section `Connection` -> `SSH` -> `Auth` -> `Credentials`
     * Under `Private key file for authentication`, click on `Browse...`
@@ -73,9 +70,3 @@ Here are the main steps to SSH into a full VM using PuTTY on a Windows machine.
   * Enter the passphrase for the private key if you set one
 
 You now have an SSH connection on Windows using PuTTY.
-
-
-
-## Questions and Feedback
-
-If you have any questions, let us know by writing a post on the [Threefold Forum](http://forum.threefold.io/).

@@ -13,7 +13,7 @@
 
 ## Introduction
 
-We cover the overall process to add a domain to a virtual machine running on the ThreeFold Grid. 
+We cover the overall process to add a domain to a virtual machine running on the ThreeFold Grid. This process works for both micro and full virtual machines.
 
 ## Preparation
 

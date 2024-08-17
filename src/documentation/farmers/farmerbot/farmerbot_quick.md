@@ -155,8 +155,6 @@ It is highly recommended to set a Ubuntu systemd service to keep the Farmerbot r
     [Service]
     Restart=always
     RestartSec=5
-    StandardOutput=append:/root/farmerbotfiles/farmerbot.log
-    StandardError=append:/root/farmerbotfiles/farmerbot.log
     ExecStart=/usr/local/bin/farmerbot run -e /root/farmerbotfiles/.env -c /root/farmerbotfiles/config.yml -d
 
     [Install]
@@ -175,25 +173,27 @@ It is highly recommended to set a Ubuntu systemd service to keep the Farmerbot r
 
 ### Check the Farmerbot Logs
 
-Once you've set a Farmerbot systemd service [as show above](#set-a-systemd-service), the Farmerbot will start writing logs to the file `farmerbot.log` in the directory `farmerbotfiles`.
+You can get more details on the operation of the Farmerbot by inspecting the log file.
 
-Thus, you can get more details on the operation of the Farmerbot by inspecting the log file. This can also be used to see the **Farmerbot Report Table** as this table is printed in the Farmerbot log.
-
-* See all logs so far
+* View the log file
   ```
-  cat ~/farmerbotfiles/farmerbot.log
+  journalctl -u <unit file name>
   ```
-* See the last ten lines and new logs as they are generated
+* View the log file with reverse output
   ```
-  tail -f ~/farmerbotfiles/farmerbot.log
+  journalctl -ru <unit file name>
   ```
-* See all logs and new lines as they are generated
+* View X lines from the log file
   ```
-  tail -f -n +1 ~/farmerbotfiles/farmerbot.log
+  journalctl -u <unit file name> -n X 
   ```
-* See the last report table
+* View the log file since a given date
   ```
-  tac ~/farmerbotfiles/farmerbot.log | grep -B5000 -m1 "Nodes report" | tac
+  journalctl -u <unit file name> --since <date>
+  ```
+* Create a log file with journalctl with the last 1000 lines
+  ```
+  journalctl -u farmerbot -n 1000 > farmerbot.log
   ```
 
 ### Stop the Farmerbot

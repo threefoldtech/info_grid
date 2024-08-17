@@ -3,11 +3,11 @@
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
+- [Check All the Examples](#check-all-the-examples)
 - [Prerequisites](#prerequisites)
 - [Set the Environment Variables](#set-the-environment-variables)
 - [Test the Plugin](#test-the-plugin)
 - [Destroy the Deployment](#destroy-the-deployment)
-- [Questions and Feedback](#questions-and-feedback)
 
 ***
 
@@ -18,6 +18,12 @@
 We present here the basic steps to test the examples within the [ThreeFold Pulumi](https://github.com/threefoldtech/pulumi-threefold) plugin repository. Once you've set the plugin and exported the necessary variables, the deployment process from one example to another is very similar.
 
 Please note that the Pulumi plugin for ThreeFold Grid is not yet officially published. We look forward to your feedback on this project.
+
+## Check All the Examples
+
+In the manual, we cover some basic examples of Pulumi deployments on the grid. 
+
+You can access all the Pulumi deployment examples on the ThreeFold Pulumi repository [here](https://github.com/threefoldtech/pulumi-threefold/tree/development/examples).
 
 ## Prerequisites
 
@@ -83,7 +89,3 @@ You can destroy your Pulumi deployment at any time with the following make comma
 ```
 make destroy
 ```   
-
-## Questions and Feedback
-
-If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Grid Tester Community](https://t.me/threefoldtesting) on Telegram.

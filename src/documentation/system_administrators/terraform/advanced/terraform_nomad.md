@@ -334,7 +334,7 @@ We are now ready to SSH into the client and server nodes with WireGuard.
      ssh root@wg_ip
      ```
 
-You now have an SSH connection access over WireGuard to the client and server nodes of your Nomad cluster. For more information on connecting with WireGuard, read [this documentation](../../getstarted/ssh_guide/ssh_wireguard.md).
+You now have an SSH connection access over WireGuard to the client and server nodes of your Nomad cluster. For more information on connecting with WireGuard, read [this documentation](../../getstarted/ssh_guide/advanced_methods/ssh_wireguard.md).
 
 
 

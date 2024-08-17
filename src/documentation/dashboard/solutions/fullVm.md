@@ -40,7 +40,7 @@ Deploy a new full virtual machine on the Threefold Grid
   - `Public IPv4` flag gives the virtual machine a Public IPv4
   - `Public IPv6` flag gives the virtual machine a Public IPv6
   - `Planetary Network` to connect the Virtual Machine to Planetary network
-  - `Myceluim` to enable mycelium on the virtual machine
+  - `Mycelium` to enable Mycelium on the virtual machine
   - `Wireguard Access` to add a wireguard access to the Virtual Machine
 - `GPU` flag to add GPU to the Virtual machine
   - To deploy a Full VM with GPU, you first need to [rent a dedicated node](../../dashboard/deploy/node_finder.md#dedicated-nodes)

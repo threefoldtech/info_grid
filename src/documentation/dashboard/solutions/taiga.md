@@ -11,7 +11,7 @@
 
 ## Introduction
 
-[Taiga](https://www.taiga.io/) is the project management tool for multi-functional agile teams. It has a rich feature set and at the same time it is very simple to start with through its intuitive user interface.
+[Taiga](https://taiga.io/) is the project management tool for multi-functional agile teams. It has a rich feature set and at the same time it is very simple to start with through its intuitive user interface.
 
 ## Prerequisites
 
@@ -31,14 +31,16 @@
     - **Medium**: {cpu: 4, memory: 8, diskSize: 150 }
     - **Large**: {cpu: 4, memory: 16, diskSize: 250 }
     - Or choose a **Custom** plan
-
+- Choose the network
+   - `Public IPv4` flag gives the virtual machine a Public IPv4
+   - `Mycelium` flag gives the virtual machine a Mycelium address
 - `Dedicated` flag to retrieve only dedeicated nodes 
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
    - `Region`
    - `Country`
    - `Farm Name`
-- Choose the node to deploy the Tiaga instance on
+- Choose the node to deploy the Taiga instance on
 > Or you can select a specific node with manual selection.
 - `Custom Domain` flag lets the user to use a custom domain
 - Choose a gateway node to deploy your Funkwhale instance on.
