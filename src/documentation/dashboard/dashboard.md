@@ -51,3 +51,5 @@ We provide independent mainnet backend stacks. Here is the current list:
 - [https://dashboard.fin.grid.tf](https://dashboard.fin.grid.tf)
 - [https://dashboard.sg.grid.tf](https://dashboard.sg.grid.tf)
 - [https://dashboard.us.grid.tf](https://dashboard.us.grid.tf)
+
+For a complete list of all grid V3 links, consult [this document](https://github.com/threefoldtech/tf_operations/blob/master/docs/all-grid-v3-links.md).
