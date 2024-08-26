@@ -54,7 +54,7 @@ After that is done you can see a list of all of your deployed instances
 
 ![ ](./img/jenkins2.png)
 
-Use JENKINS_HOSTNAME to go to the homepage of your Jenkins instance!
+Click on ***Visit*** to go to the homepage of your Jenkins instance!
 
 ![ ](./img/jenkins3.png)
 
