@@ -221,6 +221,7 @@
       - [Complete Guides](documentation/system_administrators/pulumi/pulumi_complete_guides/pulumi_complete_guides_toc.md)
         - [Pulumi and YAML](documentation/system_administrators/pulumi/pulumi_complete_guides/pulumi_yaml.md)
         - [Pulumi and Python](documentation/system_administrators/pulumi/pulumi_complete_guides/pulumi_python.md)
+        - [Pulumi and Go](documentation/system_administrators/pulumi/pulumi_complete_guides/pulumi_go.md)
     - [GPU](documentation/system_administrators/gpu/gpu_toc.md)
       - [GPU Support](documentation/system_administrators/gpu/gpu.md)
     - [Terraform](documentation/system_administrators/terraform/terraform_toc.md)

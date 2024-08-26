@@ -14,6 +14,7 @@ With Pulumi, you can express your infrastructure requirements using the language
   - [Project File](#project-file)
   - [Stacks](#stacks)
   - [Resources](#resources)
+- [Pulumi Registry](#pulumi-registry)
 
 ***
 
@@ -123,3 +124,7 @@ resources:
     properties: ...args
     options: ...options
 ```
+
+## Pulumi Registry
+
+You can visit the Pulumi registry to access the ThreeFold package [here](https://www.pulumi.com/registry/packages/threefold/).
