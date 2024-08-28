@@ -1,4 +1,4 @@
-<h1> Jenkins </h1>
+<h1> Jitsi </h1>
 
 <h2>Table of Contents</h2>
 
@@ -23,7 +23,7 @@ Jitsi Meet is a set of Open Source projects which empower users to use and deplo
 
 **Process** :
 
-![ ](/src/documentation/dashboard/solutions/img/solutions_jitsi.png)
+![ ](./img/solutions_jitsi.png)
 
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. **_fw100myfunk_.gent02.dev.grid.tf**
 
@@ -35,9 +35,9 @@ Jitsi Meet is a set of Open Source projects which empower users to use and deplo
 - Choose the network
   - `Public IPv4` flag gives the virtual machine a Public IPv4
   - `Public IPv6` flag gives the virtual machine a Public IPv6
-  - `Planetary Network` to connect the Virtual Machine to Planetary network
+  - `Planetary Network` flag gives the virtual machine an Yggdrasil address
   - `Mycelium` flag gives the virtual machine a Mycelium address
-- `Dedicated` flag to retrieve only dedeicated nodes
+- `Dedicated` flag to retrieve only dedicated nodes
 - `Certified` flag to retrieve only certified nodes
 - Choose the location of the node
 
@@ -52,11 +52,11 @@ Jitsi Meet is a set of Open Source projects which empower users to use and deplo
 
 After that is done you can see a list of all of your deployed instances
 
-![ ](/src/documentation/dashboard/solutions/img/solutions_jitsi_instances.png)
+![ ](./img/solutions_jitsi_instances.png)
 
 Click on **_Visit_** to go to the homepage of your Jitsi instance!
 
-![ ](/src/documentation/dashboard/solutions/img/solutions_jitsi_homepage.png)
+![ ](./img/solutions_jitsi_homepage.png)
 
 ## Troubleshooting
 
