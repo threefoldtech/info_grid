@@ -41,6 +41,7 @@
         - [TFRobot](documentation/dashboard/solutions/tfrobot.md)
         - [Umbrel](documentation/dashboard/solutions/umbrel.md)
         - [WordPress](documentation/dashboard/solutions/wordpress.md)
+        - [Jenkins](documentation/dashboard/solutions/jenkins.md)
       - [Your Contracts](documentation/dashboard/deploy/your_contracts.md)
       - [Images](documentation/dashboard/deploy/images.md)
       - [SSH Keys](documentation/dashboard/deploy/ssh_keys.md)
