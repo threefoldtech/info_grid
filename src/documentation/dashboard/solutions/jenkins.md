@@ -37,7 +37,7 @@ __Process__ :
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4
    - `Public IPv6` flag gives the virtual machine a Public IPv6
-   - `Planetary Network` to connect the Virtual Machine to Planetary network
+   - `Planetary Network` flag gives the virtual machine an Yggdrasil address
    - `Mycelium` flag gives the virtual machine a Mycelium address
 - `Dedicated` flag to retrieve only dedicated nodes 
 - `Certified` flag to retrieve only certified nodes 
