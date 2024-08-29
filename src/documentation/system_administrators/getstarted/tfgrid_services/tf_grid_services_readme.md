@@ -7,13 +7,13 @@
 - [QAnet](#qanet)
 - [Testnet](#testnet)
 - [Mainnet](#mainnet)
-  - [Supported Planetary Network Nodes](#supported-planetary-network-nodes)
+- [General](#general)
 
 ***
 
 ## Introduction
 
-On this article we have aggregated a list of all of the services running on Threefold Grid 3 infrastructure for your convenience
+Here is a list of all of the services running on Threefold Grid 3 infrastructure.
 
 > Note: the usage of `dev` indicates a devnet service.
 > and usage of `test` indicates a testnet service.
@@ -53,43 +53,7 @@ On this article we have aggregated a list of all of the services running on Thre
 - [TFGrid Proxy](https://gridproxy.grid.tf)
 - [Grid Dashboard](https://dashboard.grid.tf)
 
-### Supported Planetary Network Nodes
+## General
 
-```
- Peers:
-  [
-    # Threefold Lochrist
-    tcp://gent01.grid.tf:9943
-    tcp://gent02.grid.tf:9943
-    tcp://gent03.grid.tf:9943
-    tcp://gent04.grid.tf:9943
-    tcp://gent01.test.grid.tf:9943
-    tcp://gent02.test.grid.tf:9943
-    tcp://gent01.dev.grid.tf:9943
-    tcp://gent02.dev.grid.tf:9943
-    # GreenEdge
-    tcp://gw291.vienna1.greenedgecloud.com:9943
-    tcp://gw293.vienna1.greenedgecloud.com:9943
-    tcp://gw294.vienna1.greenedgecloud.com:9943
-    tcp://gw297.vienna1.greenedgecloud.com:9943
-    tcp://gw298.vienna1.greenedgecloud.com:9943
-    tcp://gw299.vienna2.greenedgecloud.com:9943
-    tcp://gw300.vienna2.greenedgecloud.com:9943
-    tcp://gw304.vienna2.greenedgecloud.com:9943
-    tcp://gw306.vienna2.greenedgecloud.com:9943
-    tcp://gw307.vienna2.greenedgecloud.com:9943
-    tcp://gw309.vienna2.greenedgecloud.com:9943
-    tcp://gw313.vienna2.greenedgecloud.com:9943
-    tcp://gw324.salzburg1.greenedgecloud.com:9943
-    tcp://gw326.salzburg1.greenedgecloud.com:9943
-    tcp://gw327.salzburg1.greenedgecloud.com:9943
-    tcp://gw328.salzburg1.greenedgecloud.com:9943
-    tcp://gw330.salzburg1.greenedgecloud.com:9943
-    tcp://gw331.salzburg1.greenedgecloud.com:9943
-    tcp://gw333.salzburg1.greenedgecloud.com:9943
-    tcp://gw422.vienna2.greenedgecloud.com:9943
-    tcp://gw423.vienna2.greenedgecloud.com:9943
-    tcp://gw424.vienna2.greenedgecloud.com:9943
-    tcp://gw425.vienna2.greenedgecloud.com:9943
-  ]
-```
+- [TF Flist Hub](../../../developers/flist/flist_hub/zos_hub.md)
+- [TF Boot Generator](../../../dashboard/farms/node_installer.md)

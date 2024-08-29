@@ -1,28 +1,26 @@
-# TFGrid Manual - Get Started
+# Getting Started
 
-## Get Started - Your First Deployment
+## Your First Deployment
 
-It's easy to get started on the TFGrid and deploy applications.
+It's easy to get started on the TFGrid. 
+
+For your first deployment on the grid, we will show you how to deploy a full virtual machine running on a ThreeFold node.
 
 - [Create a TFChain Account](../../dashboard/wallet_connector.md)
 - [Get TFT](../../threefold_token/buy_sell_tft/buy_sell_tft.md)
 - [Bridge TFT to TChain](../../threefold_token/tft_bridges/tft_bridges.md)
-- [Deploy an Application](../../dashboard/deploy/deploy.md)
-- [Connect to the Application](./ssh_guide/ssh_guide.md)
+- [Deploy and Connect to a VM](../../system_administrators/getstarted/ssh_guide/ssh_openssh.md)
 
-## Grid Platforms
+Once you're acquainted with the basics, you can explore all types of ThreeFold deployments.
 
-- [TF Dashboard](../../dashboard/dashboard.md)
-- [TF Flist Hub](../../developers/flist/flist_hub/zos_hub.md)
+## TFGrid Deployments
 
-## TFGrid Services and Resources
+From virtual machines to Kubernetes, to one-click apps to infrastructure-as-code workloads, the TFGrid provides syadmins control and flexibility.
+
+- [ThreeFold Deployments](./tfgrid_deployments.md)
+
+## TFGrid Services
+
+Consult the list of TFGrid services to gain an overview of the ThreeFold ecosystem.
 
 - [TFGrid Services](./tfgrid_services/tf_grid_services_readme.md)
-
-## Advanced Deployment Techniques
-
-- [Advanced Topics](../advanced/advanced.md)
-
-## Questions and Feedback
-
-If you have any question, feel free to ask for help on the [Threefold Forum](https://forum.threefold.io/c/threefold-grid-utilization/support/).

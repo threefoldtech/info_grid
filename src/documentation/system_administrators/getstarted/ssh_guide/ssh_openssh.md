@@ -3,44 +3,34 @@
 <h2> Table of Contents </h2>
 
 - [Introduction](#introduction)
-- [Main Steps and Prerequisites](#main-steps-and-prerequisites)
-- [Step-by-Step Process with OpenSSH](#step-by-step-process-with-openssh)
-  - [Linux](#linux)
-    - [SSH into a 3Node with IPv4 on Linux](#ssh-into-a-3node-with-ipv4-on-linux)
-    - [SSH into a 3Node with Mycelium on Linux](#ssh-into-a-3node-with-mycelium-on-linux)
-  - [MAC](#mac)
-    - [SSH into a 3Node with IPv4 on MAC](#ssh-into-a-3node-with-ipv4-on-mac)
-    - [SSH into a 3Node with Mycelium on MAC](#ssh-into-a-3node-with-mycelium-on-mac)
-  - [Windows](#windows)
-    - [SSH into a 3Node with IPv4 on Windows](#ssh-into-a-3node-with-ipv4-on-windows)
-    - [SSH into a 3Node with Mycelium on Windows](#ssh-into-a-3node-with-mycelium-on-windows)
+- [Overview](#overview)
+- [Linux](#linux)
+- [MacOS](#macos)
+- [Windows](#windows)
 
 ***
 
-# Introduction
+## Introduction
 
-In this Threefold Guide, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3Node with [OpenSSH](https://www.openssh.com/) on Linux, MAC and Windows with both an IPv4 or a Mycelium connection. To get started with Mycelium, read [this section](../../mycelium/mycelium_toc.md).
+In this Threefold Guide, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3Node with [OpenSSH](https://www.openssh.com/) on Linux, MacOS and Windows with either an IPv4 or a Mycelium connection. 
 
 To deploy different workloads, the SSH connection process should be very similar.
 
-# Main Steps and Prerequisites
+## Overview
 
 Make sure to [read the introduction](../tfgrid3_getstarted.md#get-started---your-first-deployment) before going further.
 
 The main steps for the whole process are the following:
 
-* Create an SSH Key pair
-* Deploy a 3Node
-  * Choose IPv4 or Mycelium
+* Create an SSH key pair
+* Deploy a VM on a 3Node
 * SSH into the 3Node
-
-# Step-by-Step Process with OpenSSH
 
 ## Linux
 
-### SSH into a 3Node with IPv4 on Linux
+Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on Linux.
 
-Here are the steps to SSH into a 3Node with IPv4 on Linux.
+If you are using Mycelium, make sure to [read this section](../../mycelium/mycelium_toc.md).
 
 * To create the SSH key pair, write in the terminal 
   * ```
@@ -59,61 +49,23 @@ Here are the steps to SSH into a 3Node with IPv4 on Linux.
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
     * Minimum Disk Size: 15 Gb
-  * Select IPv4 in `Network`
+  * Select `IPv4` or `Mycelium` in `Network`
   * In `Node Selection`, click on `Load Nodes`
   * Click `Deploy`
 * To SSH into the VM once the 3Node is deployed
-  * Copy the IPv4 address
+  * Copy the IP address
   * Open the terminal, write the following with the deployment address and write **yes** to confirm
     * ```
-      ssh root@IPv4_address
+      ssh root@IP_address
       ```
 
-You now have an SSH connection on Linux with IPv4.
+You now have an SSH connection on Linux.
 
+## MacOS
 
+Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on MacOS.
 
-### SSH into a 3Node with Mycelium on Linux
-
-Here are the steps to SSH into a 3Node with Mycelium on Linux.
-
-* Set [Mycelium](../../mycelium/mycelium_toc.md)
-* To create the SSH key pair, write in the terminal
-  * ```
-    ssh-keygen
-    ```
-    * Save in default location
-    * Write a password (optional)
-* To see the public key, write in the terminal
-  * ```
-    cat ~/.ssh/id_rsa.pub
-    ```
-  * Select and copy the public key when needed
-* To deploy a full VM
-  * On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
-  * Choose the parameters you want
-    * Minimum CPU: 1 vCore
-    * Minimum Memory: 512 Mb
-    * Minimum Disk Size: 15 Gb
-  * Select Mycelium in `Network`
-  * In `Node Selection`, click on `Load Nodes`
-  * Click `Deploy`
-* To SSH into the VM once the 3Node is deployed
-  * Copy the Mycelium address
-  * Open the terminal, write the following with the deployment address and write **yes** to confirm
-    * ```
-      ssh root@mycelium_address
-      ```
-
-You now have an SSH connection on Linux with Mycelium.
-
-
-
-## MAC
-
-### SSH into a 3Node with IPv4 on MAC
-
-Here are the steps to SSH into a 3Node with IPv4 on MAC.
+If you are using Mycelium, make sure to [read this section](../../mycelium/mycelium_toc.md).
 
 * To create the SSH key pair, in the terminal write
     * ```
@@ -132,59 +84,23 @@ Here are the steps to SSH into a 3Node with IPv4 on MAC.
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
     * Minimum Disk Size: 15 Gb
-  * Select IPv4 in `Network`
+  * Select `IPv4` or `Mycelium` in `Network`
   * In `Node Selection`, click on `Load Nodes`
   * Click `Deploy`
 * To SSH into the VM once the 3Node is deployed
-  * Copy the IPv4 address
+  * Copy the IP address
   * Open the terminal, write the following with the deployment address and write **yes** to confirm
     * ```
-      ssh root@IPv4_address
+      ssh root@IP_address
       ```
 
-You now have an SSH connection on MAC with IPv4.
-
-
-
-### SSH into a 3Node with Mycelium on MAC
-
-Here are the steps to SSH into a 3Node with Mycelium on MAC.
-
-* Set [Mycelium](../../mycelium/mycelium_toc.md)
-* To create the SSH key pair, write in the terminal 
-    * ```
-      ssh-keygen
-      ```
-      * Save in default location
-      * Write a password (optional)
-* To see the public key, write in the terminal
-    * ```
-      cat ~/.ssh/id_rsa.pub
-      ```
-    * Select and copy the public key when needed
-* To deploy a full VM
-  * On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
-  * Choose the parameters you want
-    * Minimum CPU: 1 vCore
-    * Minimum Memory: 512 Mb
-    * Minimum Disk Size: 15 Gb
-  * Select Mycelium in `Network`
-  * In `Node Selection`, click on `Load Nodes`
-  * Click `Deploy`
-* To SSH into the VM once the 3Node is deployed
-  * Copy the Mycelium address
-  * Open the terminal, write the following with the deployment address and write **yes** to confirm
-    * ```
-      ssh root@mycelium_address
-      ```
-
-You now have an SSH connection on MAC with Mycelium.
-
-
+You now have an SSH connection on MacOS.
 
 ## Windows
 
-### SSH into a 3Node with IPv4 on Windows
+Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on Windows.
+
+If you are using Mycelium, make sure to [read this section](../../mycelium/mycelium_toc.md).
 
 * To download OpenSSH client and OpenSSH server
   * Open the `Settings` and select `Apps`
@@ -212,57 +128,14 @@ You now have an SSH connection on MAC with Mycelium.
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
     * Minimum Disk Size: 15 Gb
-  * Select IPv4 in `Network`
+  * Select `IPv4` or `Mycelium` in `Network`
   * In `Node Selection`, click on `Load Nodes`
   * Click `Deploy`
 * To SSH into the VM once the 3Node is deployed
-  * Copy the IPv4 address
+  * Copy the IP address
   * Open `PowerShell`, write the following with the deployment address and write **yes** to confirm
     * ```
-      ssh root@IPv4_address
+      ssh root@IP_address
       ```
 
-You now have an SSH connection on Window with IPv4.
-
-
-
-### SSH into a 3Node with Mycelium on Windows
-
-* Set [Mycelium](../../mycelium/mycelium_toc.md)
-* To download OpenSSH client and OpenSSH server
-  * Open the `Settings` and select `Apps`
-  * Click `Apps & Features`
-  * Click `Optional Features`
-  * Verifiy if OpenSSH Client and OpenSSH Server are there
-    * If not
-      * Click `Add a feature`
-        * Search OpenSSH
-        * Install OpenSSH Client and OpenSSH Server
-* To create the SSH key pair, open `PowerShell` and write
-  * ```
-    ssh-keygen
-    ```
-    * Save in default location
-    * Write a password (optional)
-* To see the public key, write in `PowerShell`
-  * ```
-    cat ~/.ssh/id_rsa.pub
-    ```
-  * Select and copy the public key when needed
-* To deploy a full VM
-  * On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
-  * Choose the parameters you want
-    * Minimum CPU: 1 vCore
-    * Minimum Memory: 512 Mb
-    * Minimum Disk Size: 15 Gb
-  * Select Mycelium address in `Network`
-  * In `Node Selection`, click on `Load Nodes`
-  * Click `Deploy`
-* To SSH into the VM once the 3Node is deployed
-  * Copy the Mycelium address
-  * Open `PowerShell`, write the following with the deployment address and write **yes** to confirm
-    * ```
-      ssh root@mycelium_address
-      ```
-
-You now have an SSH connection on Window with Mycelium.
+You now have an SSH connection on Window.
