@@ -171,7 +171,7 @@ In this section, we cover how to make a BorgBackup on the Nextcloud VM and we al
 
 In the section **Backup and restore**, you can set a [BorgBackup](https://www.borgbackup.org/) of your Nextcloud instance.
 
-* Add a mount point and a directory name for your backup (e.g. **/mnt/backup**) and click **Submit backup location**.
+* Add a mount point and a directory name for your backup (e.g. **/mnt/data/backup**) and click **Submit backup location**.
 * After the creation of the backup location, write down the **encryption password for backups** somewhere safe and offline.
 * Click **Create backup** to create a BorgBackup of your Nextcloud instance.
   * This will stop all containers, run the backup container and create the backup. 
@@ -189,7 +189,7 @@ After the first manual backup of your Nextcloud instance is complete, you can se
 
 To allow for another layer of redundancy, you can set a secondary VM on the grid and make a daily backup from the BorgBackup of your Nextcloud instance to the secondary VM. The following shows how to do this. It is based on the [File Transfer section](../../system_administrators/computer_it_basics/file_transfer.md#automate-backup-with-rsync) of the manual.
 
-For the following, we take into account that the BorgBackup is located at `/mnt/backup` on the VM running Nextcloud. 
+For the following, we take into account that the BorgBackup is located at `/mnt/data/backup` on the VM running Nextcloud. 
 
 You will need to deploy a full VM on the TFGrid and SSH into this secondary VM.
 
@@ -200,14 +200,6 @@ We want to set an SSH connection between the Nextcloud VM and the secondary VM.
 * Create SSH key pair on the secondary VM
   * ```
     ssh-keygen
-    ```
-* Install openssh-client on the secondary VM
-  * ```
-    apt install openssh-client
-    ```
-* Install openssh-server on the Nextcloud VM
-  * ```
-    apt install openssh-server
     ```
 * Copy the public key of the secondary VM
   * ```
@@ -250,7 +242,7 @@ On the secondary VM, do the following:
   * ```
     #!/bin/bash
 
-    sudo rsync -avz --progress --delete --log-file=/root/nextcloud_backup/rsync_nextcloud_storage.log /root/nextcloud_backup/ root@<Nextcloud_VM_IP_Address>:/mnt/backup
+    sudo rsync -avz --progress --delete --log-file=/root/nextcloud_backup/rsync_nextcloud_storage.log /root/nextcloud_backup/ root@<Nextcloud_VM_IP_Address>:/mnt/data/backup
     ```
 * Give permission to execute the script
   * ```
