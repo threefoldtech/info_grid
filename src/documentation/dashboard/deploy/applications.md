@@ -14,6 +14,8 @@ Easily deploy your favourite applications on the ThreeFold grid with a click of 
 - [Domains](../solutions/domains.md)
 - [Funkwhale](../solutions/funkwhale.md)
 - [Gitea](../solutions/gitea.md)
+- [Jenkins](../solutions/jenkins.md)
+- [Jitsi](../solutions/jitsi.md)
 - [Mattermost](../solutions/mattermost.md)
 - [Nextcloud](../solutions/nextcloud.md)
 - [Node Pilot](../solutions/nodepilot.md)
