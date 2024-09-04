@@ -32,7 +32,7 @@
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4
    - `Mycelium` flag gives the virtual machine a Mycelium address
-- `Dedicated` flag to retrieve only dedeicated nodes 
+- `Dedicated` flag to retrieve only dedicated nodes 
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
    - `Region`

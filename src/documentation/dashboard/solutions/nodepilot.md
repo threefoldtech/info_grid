@@ -29,7 +29,7 @@ This is a simple instance of upstream [Node Pilot](https://nodepilot.tech).
   - 256 MB of memory
   - 15 GB of storage
 
-- `Dedicated` flag to retrieve only dedeicated nodes 
+- `Dedicated` flag to retrieve only dedicated nodes 
 - `Certified` flag to retrieve only certified nodes 
 
 - Choose the location of the node
