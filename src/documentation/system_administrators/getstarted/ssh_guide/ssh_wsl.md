@@ -6,7 +6,6 @@
 - [SSH Key Generation](#ssh-key-generation)
 - [Connect to Remote Host with SSH](#connect-to-remote-host-with-ssh)
 - [Enable Port 22 in Windows Firewall](#enable-port-22-in-windows-firewall)
-- [Questions and Feedback](#questions-and-feedback)
 
 ***
 
@@ -14,11 +13,11 @@
 
 In this Threefold Guide, we show how easy it is to SSH into a 3node on Windows with [Windows Subsystem for Linux (WSL)](https://ubuntu.com/wsl).
 
-If you have any questions, feel free to write a post on the [Threefold Forum](http://forum.threefold.io/).
+Make sure to read the [Mycelium section](../../mycelium/mycelium_toc.md) if you use Mycelium for the network connection.
 
 ## SSH Key Generation
 
-Make sure SSH is installed by entering following command at the command prompt:
+Make sure SSH is installed by entering the following command at the command prompt:
 
 ```sh
 sudo apt install openssh-client
@@ -83,7 +82,3 @@ This is not recommend especially for portable device (Laptop, Tablets) that conn
 - under `Name`
   - Name: `SSH Server`
   - Description: `SSH Server`
-
-## Questions and Feedback
-
-If you have any questions, let us know by writing a post on the [Threefold Forum](http://forum.threefold.io/).

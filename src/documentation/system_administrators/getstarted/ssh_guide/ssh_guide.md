@@ -5,6 +5,4 @@ SSH is a secure protocol used as the primary means of connecting to Linux server
 <h2> Table of Contents </h2>
 
 - [SSH with OpenSSH](./ssh_openssh.md)
-- [SSH with PuTTY](./ssh_putty.md)
-- [SSH with WSL](./ssh_wsl.md)
-- [WireGuard Access](./ssh_wireguard.md)
+- [Advanced Methods](./advanced_methods/advanced_methods.md)

@@ -37,8 +37,8 @@ __Process__ :
     - Or choose a **Custom** plan
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4
-
-- `Dedicated` flag to retrieve only dedeicated nodes 
+   - `Mycelium` flag gives the virtual machine a Mycelium address
+- `Dedicated` flag to retrieve only dedicated nodes 
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
    - `Region`

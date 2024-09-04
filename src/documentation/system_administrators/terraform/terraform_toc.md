@@ -1,38 +1,14 @@
 <h1> Terraform</h1>
 
+Welcome to the *Terraform* section of the ThreeFold Manual! 
+
+In this section, we'll embark on a journey to explore the powerful capabilities of Terraform within the ThreeFold Grid ecosystem. Terraform, a cutting-edge infrastructure as code (IaC) tool, empowers you to define and provision your infrastructure efficiently and consistently.
+
 <h2>Table of Contents</h2>
 
-- [Overview](./terraform_readme.md)
+- [Introduction to Terraform](./terraform_readme.md)
 - [Installing Terraform](./terraform_install.md)
-- [Terraform Basics](./terraform_basics.md)
 - [Full VM Deployment](./terraform_full_vm.md)
-- [GPU Support](./terraform_gpu_support.md)
+- [Terraform Basics](./terraform_basics.md)
 - [Resources](./resources/terraform_resources_readme.md)
-  - [Using Scheduler](./resources/terraform_scheduler.md)
-  - [Virtual Machine](./resources/terraform_vm.md)
-  - [Web Gateway](./resources/terraform_vm_gateway.md)
-  - [Kubernetes Cluster](./resources/terraform_k8s.md)
-  - [ZDB](./resources/terraform_zdb.md)
-  - [Zlogs](./resources/terraform_zlogs.md)
-  - [Quantum Safe Filesystem](./resources/terraform_qsfs.md)
-    - [QSFS on Micro VM](./resources/terraform_qsfs_on_microvm.md)
-    - [QSFS on Full VM](./resources/terraform_qsfs_on_full_vm.md)
-  - [CapRover](./resources/terraform_caprover.md)
-- [QSFS on Micro VM](./resources/terraform_qsfs_on_microvm.md)
-- [QSFS on Full VM](./resources/terraform_qsfs_on_full_vm.md)
-  - [CapRover](./resources/terraform_caprover.md)
 - [Advanced](./advanced/terraform_advanced_readme.md)
-  - [Terraform Provider](./advanced/terraform_provider.md)
-  - [Terraform Provisioners](./advanced/terraform_provisioners.md)
-  - [Mounts](./advanced/terraform_mounts.md)
-  - [Capacity Planning](./advanced/terraform_capacity_planning.md)
-  - [Updates](./advanced/terraform_updates.md)
-  - [SSH Connection with Wireguard](./advanced/terraform_wireguard_ssh.md)
-  - [Set a Wireguard VPN](./advanced/terraform_wireguard_vpn.md)
-  - [Synced MariaDB Databases](./advanced/terraform_mariadb_synced_databases.md)
-  - [Nomad](./advanced/terraform_nomad.md)
-  - [Nextcloud Deployments](./advanced/terraform_nextcloud_toc.md)
-    - [Nextcloud All-in-One Deployment](./advanced/terraform_nextcloud_aio.md)
-    - [Nextcloud Single Deployment](./advanced/terraform_nextcloud_single.md)
-    - [Nextcloud Redundant Deployment](./advanced/terraform_nextcloud_redundant.md)
-    - [Nextcloud 2-Node VPN Deployment](./advanced/terraform_nextcloud_vpn.md)

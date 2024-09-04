@@ -343,7 +343,7 @@ After deployments, take note of the 3nodes' IPv4 address. You will need those ad
 
 We now want to ping the VMs using Wireguard. This will ensure the connection is properly established. 
 
-For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../getstarted/ssh_guide/ssh_wireguard.md).
+For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../getstarted/ssh_guide/advanced_methods/ssh_wireguard.md).
 
 First, we set Wireguard with the Terraform output.
 

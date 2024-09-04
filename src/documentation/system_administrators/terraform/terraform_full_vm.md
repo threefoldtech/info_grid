@@ -1,4 +1,4 @@
-<h1>Terraform Complete Full VM Deployment</h1>
+<h1>Terraform Full VM Deployment</h1>
 
 <h2>Table of Contents</h2>
 
@@ -22,8 +22,7 @@ This short ThreeFold Guide will teach you how to deploy a Full VM on the TFGrid 
 
 The steps are very simple. You first need to create the Terraform files, the variables file and the deployment file, and then deploy the full VM. After the deployment is done, you can SSH into the full VM.
 
-The main goal of this guide is to show you all the necessary steps to deploy a Full VM on the TGrid using Terraform. Once you get acquainted with this first basic deployment, you should be able to explore on your own the possibilities that the TFGrid and Terraform combined provide.
-
+The main goal of this guide is to show you all the necessary steps to deploy a Full VM on the TFGrid using Terraform. Once you get acquainted with this first basic deployment, you should be able to explore on your own the possibilities that the TFGrid and Terraform combined provide.
 
 
 ## Main Process
@@ -71,10 +70,11 @@ We show here how to find a suitable 3Node using the ThreeFold Explorer.
 - For proper understanding, we give further information on some relevant columns:
   - `ID` refers to the node ID
   - `Free Public IPs` refers to available IPv4 public IP addresses
-  - `HRU` refers to HDD storage
-  - `SRU` refers to SSD storage
-  - `MRU` refers to RAM (memory)
-  - `CRU` refers to virtual cores (vcores)
+  - Resource unit codes (consult [this page](../../../knowledge_base/cloud/resource_units_calc_cloudunits.md#resource-units-overview) for more information)
+    - `HRU` is the code for the HDD unit (storage capacity in GB)
+    - `SRU` is the code for the SSD unit (storage capacity in GB)
+    - `MRU` is the code for the the memory unit (memory capacity in GB)
+    - `CRU` is the code for the core unit (virtual cores capacity)
 - To quicken the process of finding a proper 3Node, you can narrow down the search by adding filters:
   - At the top left of the screen, in the `Filters` box, select the parameter(s) you want.
   - For each parameter, a new field will appear where you can enter a minimum number requirement for the 3Nodes.
@@ -227,10 +227,9 @@ cpu = "1"
 memory = "512"
 ```
 
-Make sure to add your own seed phrase and SSH public key. You will also need to specify the node ID of the server used. Simply replace the three dots by the content.
+Make sure to add your own mnemonics and SSH public key. You will also need to specify the node ID of the server used. Simply replace the three dots by the content.
 
-We set here the minimum specs for a full VM, but you can adjust these parameters.
-
+We set here the minimum specs for a full VM, but you can adjust these parameters. Here `size` is the SSD storage capacity in GB, `cpu` is the number of virtual core and `memory` is the memory capacity in MB.
 
 
 ## Deploy the Full VM with Terraform
@@ -276,5 +275,3 @@ Make sure that you are in the Terraform directory you created for this deploymen
 ## Conclusion
 
 You now have the basic knowledge and know-how to deploy on the TFGrid using Terraform.
-
-As always, if you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Grid Tester Community](https://t.me/threefoldtesting) on Telegram.

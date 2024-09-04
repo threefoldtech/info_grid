@@ -66,11 +66,15 @@ If you're not sure and just want the easiest, most affordable option, skip the p
     * **Standard**: {cpu: 2, memory: 8gb, diskSize: 500gb }
     * **Recommended**: {cpu: 4, memory: 16gb, diskSize: 1000gb }
     * Or choose a **Custom** plan
-* If want to reserve a public IPv4 address, click on Network then select **Public IPv4**
-* Choose the location of the node
-   * `Country`
-   * `Farm Name`
-* Select a node 
+- Choose the network
+   - `Public IPv4` flag gives the virtual machine a Public IPv4
+   - `Mycelium` flag gives the virtual machine a Mycelium address
+- `Dedicated` flag to retrieve only dedicated nodes 
+- `Certified` flag to retrieve only certified nodes 
+- Choose the location of the node
+   - `Region`
+   - `Country`
+   - `Farm Name`
 * If you want to use a custom domain, click on **Custom domain** under **Domain Name** and write your domain name
   * Example: `nextcloudwebsite.com`
 * The **Select gateway** box will be visible whenever a gateway is required. If so, click it and choose a gateway
