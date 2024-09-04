@@ -242,7 +242,7 @@ On the secondary VM, do the following:
   * ```
     #!/bin/bash
 
-    sudo rsync -avz --progress --delete --log-file=/root/nextcloud_backup/rsync_nextcloud_storage.log /root/nextcloud_backup/ root@<Nextcloud_VM_IP_Address>:/mnt/data/backup
+    sudo rsync -avz --progress --delete --log-file=/root/nextcloud_backup/rsync_nextcloud_storage.log root@<Nextcloud_VM_IP_Address>:/mnt/data/backup /root/nextcloud_backup/ 
     ```
 * Give permission to execute the script
   * ```
