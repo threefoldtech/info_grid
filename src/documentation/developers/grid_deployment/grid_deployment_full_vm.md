@@ -73,7 +73,7 @@ If you are deploying on testnet or devnet, simply replace `mainnet` by the prope
 
 - Set the prerequisites
   ```
-  apt update && apt install -y git 
+  apt update && apt install -y git nano ufw
   ```
 - Download the ThreeFold Tech `grid_deployment` repository
     ```
