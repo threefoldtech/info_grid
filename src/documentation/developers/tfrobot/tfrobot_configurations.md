@@ -53,6 +53,7 @@ When deploying with TFROBOT, you can set different configurations allowing for p
 | planetary | should the vm have yggdrasil ip | `true` or `false` |
 | public_ip4 | should the vm have free ip v4 | `true` or `false` |
 | public_ip6 | should the vm have free ip v6 | `true` or `false` |
+| mycelium_ip | should the vm have mycelium ip | `true` or `false` |
 | flist | should be a link to valid flist | valid flist url with `.flist` or `.fl` extension |
 | entry_point | entry point of the flist | path to the entry point in the flist |
 | ssh_key | key of ssh key defined in the ssh_keys map | should be valid ssh_key defined in the ssh_keys map |
