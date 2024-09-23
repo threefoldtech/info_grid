@@ -71,6 +71,10 @@ We show the steps to prepare the VM to run the network instance.
 
 If you are deploying on testnet or devnet, simply replace `mainnet` by the proper network in the following lines.
 
+- Set the prerequisites
+  ```
+  apt update && apt install -y git nano ufw
+  ```
 - Download the ThreeFold Tech `grid_deployment` repository
     ```
     git clone https://github.com/threefoldtech/grid_deployment
@@ -79,8 +83,8 @@ If you are deploying on testnet or devnet, simply replace `mainnet` by the prope
 - Generate a TFChain node key with `subkey`
   - Note: If you deploy the 3 network instances, you can use the same node key for all 3 networks. But it is recommended to use 3 different keys to facilitate management.
     ```
-    echo .subkey_mainnet >> .gitignore
-    ../subkey generate-node-key > .nodekey_mainnet
+    echo .nodekey_mainnet >> .gitignore
+    ../../apps/subkey generate-node-key > .nodekey_mainnet
     cat .nodekey_mainnet
     ```
 - Create and the set environment variables file
