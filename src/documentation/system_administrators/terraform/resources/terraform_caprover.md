@@ -45,7 +45,7 @@ Here’s a link to CapRover's open source repository on [GitHub](https://github.
   Note that you can use CapRover without a domain too. But you won't be able to setup HTTPS or add `Self hosted Docker Registry`.
 - TerraForm installed to provision, adjust and tear down infrastructure using the tf configuration files provided here.
 - Yggdrasil installed and enabled for End-to-end encrypted IPv6 networking.
-- account created on [Polkadot](https://polkadot.js.org/apps/?rpc=wss://tfchain.dev.threefold.io/ws#/accounts) and got an twin id, and saved you mnemonic.
+- account created on [Polkadot](https://polkadot.js.org/apps/?rpc=wss://tfchain.dev.threefold.io/ws#/accounts) and got an twin id, and saved your mnemonic.
 - TFTs in your account balance (in development, Transferer some test TFTs from ALICE account).
 
 ## How to Run CapRover on ThreeFold Grid 3
