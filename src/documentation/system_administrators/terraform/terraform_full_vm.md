@@ -122,7 +122,7 @@ terraform {
   }
 }
 
-variable "mnemonics" {
+variable "mnemonic" {
   type = string
 }
 
@@ -147,7 +147,7 @@ variable "memory" {
 }
 
 provider "grid" {
-  mnemonics = var.mnemonics
+  mnemonic = var.mnemonic
   network = "main"
 }
 
@@ -217,7 +217,7 @@ In this file, we name the VM as `vm1`.
 - Copy the `credentials.auto.tfvars` content and save the file.
 
 ```
-mnemonics = "..."
+mnemonic = "..."
 SSH_KEY = "..."
 
 tfnodeid1 = "..."
@@ -227,7 +227,7 @@ cpu = "1"
 memory = "512"
 ```
 
-Make sure to add your own mnemonics and SSH public key. You will also need to specify the node ID of the server used. Simply replace the three dots by the content.
+Make sure to add your own mnemonic and SSH public key. You will also need to specify the node ID of the server used. Simply replace the three dots by the content.
 
 We set here the minimum specs for a full VM, but you can adjust these parameters. Here `size` is the SSD storage capacity in GB, `cpu` is the number of virtual core and `memory` is the memory capacity in MB.
 

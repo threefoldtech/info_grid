@@ -139,7 +139,7 @@ terraform {
   }
 }
 
-variable "mnemonics" {
+variable "mnemonic" {
   type = string
 }
 
@@ -164,7 +164,7 @@ variable "memory" {
 }
 
 provider "grid" {
-  mnemonics = var.mnemonics
+  mnemonic = var.mnemonic
   network = "main"
 }
 
@@ -232,7 +232,7 @@ In this file, we name the full VM as `vm1`.
 
 * Copy the `credentials.auto.tfvars` content and save the file. 
   *  ```
-     mnemonics = "..."
+     mnemonic = "..."
      SSH_KEY = "..."
 
      tfnodeid1 = "..."

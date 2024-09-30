@@ -45,7 +45,7 @@ Here’s a link to CapRover's open source repository on [GitHub](https://github.
   Note that you can use CapRover without a domain too. But you won't be able to setup HTTPS or add `Self hosted Docker Registry`.
 - TerraForm installed to provision, adjust and tear down infrastructure using the tf configuration files provided here.
 - Yggdrasil installed and enabled for End-to-end encrypted IPv6 networking.
-- account created on [Polkadot](https://polkadot.js.org/apps/?rpc=wss://tfchain.dev.threefold.io/ws#/accounts) and got an twin id, and saved you mnemonics.
+- account created on [Polkadot](https://polkadot.js.org/apps/?rpc=wss://tfchain.dev.threefold.io/ws#/accounts) and got an twin id, and saved you mnemonic.
 - TFTs in your account balance (in development, Transferer some test TFTs from ALICE account).
 
 ## How to Run CapRover on ThreeFold Grid 3
@@ -74,7 +74,7 @@ terraform {
 }
 
 provider "grid" {
-    mnemonics = "<your-mnemonics>"
+    mnemonic = "<your-mnemonic>"
     network = "dev" # or test to use testnet
 }
 
@@ -152,7 +152,7 @@ cd freeflow_caprover/terraform/leader/
 vim main.tf
 ```
 
-- In `provider` Block, add your `mnemonics` and specify the grid network to deploy on.
+- In `provider` Block, add your `mnemonic` and specify the grid network to deploy on.
 - In `resource` Block, update the disks size, memory size, and cores number to fit your needs or leave as it is for testing.
 - In the `PUBLIC_KEY` env var value put your ssh public key .
 - In the `CAPROVER_ROOT_DOMAIN` env var value put your root domain, this is optional and you can add it later from the dashboard put it will save you the extra step and allow you to access your dashboard using your domain name directly after the deployment.
@@ -372,7 +372,7 @@ terraform {
 }
 
 provider "grid" {
-    mnemonics = "<your-mnemonics>"
+    mnemonic = "<your-mnemonic>"
     network = "dev" # or test to use testnet
 }
 
@@ -443,7 +443,7 @@ cd freeflow_caprover/terraform/worker/
 vim main.tf
 ```
 
-- In `provider` Block, add your `mnemonics` and specify the grid network to deploy on.
+- In `provider` Block, add your `mnemonic` and specify the grid network to deploy on.
 - In `resource` Block, update the disks size, memory size, and cores number to fit your needs or leave as it is for testing.
 - In the `PUBLIC_KEY` env var value put your ssh public key.
 - In the `SWMTKN` env var value put the previously generated token.
