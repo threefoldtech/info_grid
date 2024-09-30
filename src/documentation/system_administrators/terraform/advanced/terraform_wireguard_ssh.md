@@ -98,7 +98,7 @@ terraform {
   }
 }
 
-variable "mnemonics" {
+variable "mnemonic" {
   type = string
 }
 
@@ -123,7 +123,7 @@ variable "memory" {
 }
 
 provider "grid" {
-  mnemonics = var.mnemonics
+  mnemonic = var.mnemonic
   network = "main"
 }
 
@@ -177,9 +177,9 @@ output "node1_zmachine1_ip" {
      nano credentials.auto.tfvars
      ```
 
-* Copy the `credentials.auto.tfvars` content, set the node ID as well as your mnemonics and SSH public key, then save the file. 
+* Copy the `credentials.auto.tfvars` content, set the node ID as well as your mnemonic and SSH public key, then save the file. 
   *  ```
-     mnemonics = "..."
+     mnemonic = "..."
      SSH_KEY = "..."
 
      tfnodeid1 = "..."

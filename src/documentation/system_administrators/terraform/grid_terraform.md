@@ -81,7 +81,7 @@ to create your twin please check [grid substrate getting started](grid_substrate
 ```bash
 ./msgbusd --twin <TWIN_ID> #run message bus with your twin id
 cd examples/resources
-export MNEMONICS="<mnemonics words>"
+export MNEMONIC="<mnemonic words>"
 terraform init && terraform apply
 ```
 ## Destroying deployment

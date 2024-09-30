@@ -129,7 +129,7 @@ terraform {
   }
 }
 
-variable "mnemonics" {
+variable "mnemonic" {
   type = string
 }
 
@@ -158,7 +158,7 @@ variable "memory" {
 }
 
 provider "grid" {
-  mnemonics = var.mnemonics
+  mnemonic = var.mnemonic
   network = "main"
 }
 
@@ -265,7 +265,7 @@ In this guide, the virtual IP for `vm1` is 10.1.3.2 and the virtual IP for `vm2`
 
 * Copy the `credentials.auto.tfvars` content and save the file. 
   *  ```
-     mnemonics = "..."
+     mnemonic = "..."
      SSH_KEY = "..."
 
      tfnodeid1 = "..."
