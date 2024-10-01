@@ -18,7 +18,7 @@
     - [Template Section](#template-section)
     - [First Script Section (Setup)](#first-script-section-setup)
     - [Second Script Section](#second-script-section)
-- [Testing a application](#testing-a-application)
+- [Testing an application](#testing-an-application)
 - [Contributing to the Dashboard](#contributing-to-the-dashboard)
 - [Conclusion](#conclusion)
 
@@ -38,7 +38,7 @@ While there are many ways to proceed in the development of a ThreeFold applicati
 
 The information provided here is specific to the Nextcloud workload, but it can be applied to other types of workload.
 
-Before building the Nextcloud application, we first deployed a [Nextcloud instance](../../system_administrators/terraform/advanced/terraform_nextcloud_aio.md) on the ThreeFold Grid with a full virtual machine. Once this deployment was working well, we built a [Nextcloud flist](../flist/flist_case_studies/flist_nextcloud_case_study.md). You can consult the Nextcloud flist code in the ThreeFold Tech [tf-images repository](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud). We note that the flist uses a micro VM. There are some differences between a full VM and a micro VM. We propose users to first start deploying with a full VM and then adjust their work when they want to publish a flist with a micro VM, since full VM are easier to work with. You can of course start directly with a micro VM if you want.
+Before building the Nextcloud application, we first deployed a [Nextcloud instance](../../system_administrators/terraform/advanced/terraform_nextcloud_aio.md) on the ThreeFold Grid with a full virtual machine. Once this deployment was working well, we built a [Nextcloud flist](../flist/flist_case_studies/flist_nextcloud_case_study.md). You can consult the Nextcloud flist code in the ThreeFold [tf-images repository](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud). We note that the flist uses a micro VM. There are some differences between a full VM and a micro VM. We propose users to first start deploying with a full VM and then adjust their work when they want to publish a flist with a micro VM, since full VM are easier to work with. You can of course start directly with a micro VM if you want.
 
 In sum, once we were comfortable launching Nextcloud on a full VM and also using an flist, we were ready to tackle the building of an application. These steps should be taken into account when building your own application. We proceed this way to ensure that the workload is properly configured. Once we know the flist is working properly, we can focus on the application aspect of the deployment, knowing the deployment itself is working properly.
 
