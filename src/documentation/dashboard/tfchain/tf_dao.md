@@ -14,7 +14,7 @@ The TFChain DAO (i.e. Decentralized Autonomous Organization) feature integrates 
 
 ## An Introduction to the DAO concept
 
-[A decentralized autonomous organization (DAO)](../../../knowledge_base/about/dao/dao.md) is an entity with no central leadership. Decisions get made from the bottom-up, governed by a community organized around a specific set of rules enforced on a blockchain. 
+A decentralized autonomous organization (DAO) is an entity with no central leadership. Decisions get made from the bottom-up, governed by a community organized around a specific set of rules enforced on a blockchain. 
 
 DAOs are internet-native organizations collectively owned and managed by their members. They have built-in treasuries that are only accessible with the approval of their members. Decisions are made via proposals the group votes on during a specified period.
 

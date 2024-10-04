@@ -235,6 +235,4 @@ This Agreement will be governed by Luxembourg law. Any disputes shall be subject
 
 ## APPENDIX
 
-{{#include threefold_companies0.md}}
-
 {{#include ./sub/the_single_source_truth.md}}

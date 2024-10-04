@@ -7,27 +7,9 @@ AN INTERNET BUILT FOR EVERYONE, BY EVERYONE.
 Threefold is a peer-to-peer network of network, storage an compute capacity for an upgraded internet, laying the foundation for a more sustainable, smart, and sovereign digital world where everyone can participate and prosper.
 
 All the ideas and content created for this concept are opensource and stored in github
-A group of volunteers and the ThreeFold Foundation maintain these repositories.
+A group of volunteers and ThreeFold maintain these repositories.
 
 > See [https://github.com/threefoldfoundation](https://github.com/threefoldfoundation)
-
-## ThreeFold Foundation (TFF) 
-
-The ThreeFold Foundation (ThreeFold_Dubai) is a participant in the bigger ThreeFold movement, the purpose of the movement is to bring the world a truly peer-to-peer internet.
-
-We acknowledge and support the many people and organizations around the world who bring crucial support to the growth and adoption of the ThreeFold_Grid.
-
-See [ThreeFold Dubai](../about/threefold_dubai.md)
-
-> Work is ongoing to make the Foundation a global distributed concept with probably more than 1 legal entity.
-
-## ThreeFold Tech (TFTech, TFTECH)
-
-TF TECH NV, a Belgian limited liability company, having its registered office at Antwerpse Steenweg 19, B-9080 Lochristi, Belgium, registered with the Belgian Crossroads Bank of Enterprises under company number 0712.845.674 (RLP Gent, district Gent)
-
-TF Tech is a software tech company and is a major contributor to the software as used on the TFGrid.
-
-See [TFTech](../about/threefold_tech.md)
 
 ## Non For Profit
 
@@ -35,7 +17,6 @@ Non-for-profit organizations are types of organizations that do not earn profits
 
 In the case of TFF following remarks might be useful
 
-- Many non for profits get a legal status by the government to not have to pay tax, in our case the foundation is in Dubai, there is no Tax implication in Dubai as such we didn't need this status or certification.
 - TFF has been funded by its original founders by means of loans or investment in kind or tokens, this money can be returned to the founders whenever cashflow allows (which is not the case yet).
 - TFF directors/shareholders do everything they can to only operate out of the best interests of the ThreeFold Project.
 - A project is under way to officialize the structure with strict governance e.g. a company called ThreeFold VZW has been created in Belgium with official governance around non for profit structure. This company is not used yet. Other alternatives are being researched at this moment (Aug 2020).
@@ -179,7 +160,7 @@ SLA's (service level agreements) cannot be be guaranteed on Unmanaged Capacity a
 
 ## Certified Capacity
 
-Capacity which received certification as organized by ThreeFold Tech.
+Capacity which received certification as organized by ThreeFold.
 
 ## Managed Capacity
 
@@ -210,16 +191,6 @@ The Product has been defined on the contract who refers to this document.
 ## The Purchaser
 
 Is the person or company or organization who buys The Product from The Company
-
-## ThreeFold Tech (TFTech)
-
-Software Technology company in Belgium.
-
-Has no direct relationship with the TFGrid or TFTokens. TFTech does not farm and ThreeFold_Tokens and has no impact or does not give any direction to anything happening on the ThreeFold_Grid or in relation to TFTokens.
-
-TFTech is the company who creates a lot of the opensource software as is used in the TFGrid. TFTech is also a contributor to the TF Foundation in the form of content or promotion, there is no legal connection in place.
-
-TFTech business model is to sell licenses and certify TFGrid farmers if that is what they require.
 
 # Miscellaneous
 

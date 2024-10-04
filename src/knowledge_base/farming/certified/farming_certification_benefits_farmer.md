@@ -6,13 +6,13 @@
 
 A certified farmer gets more farming_rewards because a certified farmer need to adhere to higher service level agreements and buy certified farming solutions or certifiy their existing 3nodes.
 
-### TF Tech Support
+### ThreeFold Support
 
 Direct defect and certified build support for Zero-OS from the software creators for the tfgrid_primitives on TFGrid.
 
 ### Lower Operational Cost
 
-Certified farms can use the TFTech power management solution which makes sure that 3Nodes are only powered on when there is a need for it. This can save huge amounts of electricity.
+Certified farms can use the ThreeFold power management solution which makes sure that 3Nodes are only powered on when there is a need for it. This can save huge amounts of electricity.
 
 ### Easier to get to minimal required 30% utilization
 
@@ -22,7 +22,7 @@ This is to make sure that people cannot put hardware to the grid which cannot be
 
 ThreeFold needs to make sure that there is no abuse and also that 3Nodes are not brought life for just farming which would burn energy for no reason.
 
-ThreeFold & ThreeFold Tech will do a lot of promotion and find channel_partners to get the TFGrid to grow as fast as possible and get capacity used.
+ThreeFold will do a lot of promotion and find channel_partners to get the TFGrid to grow as fast as possible and get capacity used.
 
 Its up to ThreeFold to make sure that certified capacity gets deployed where it is needed first.
 

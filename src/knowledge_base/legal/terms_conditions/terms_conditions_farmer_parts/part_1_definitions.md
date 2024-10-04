@@ -36,4 +36,3 @@ SPECIAL DEFINITIONS
     - Decentralizes Autonomous Organization
     - Implemented on multiple levels, but for release 3.0.x only on level 1 which is on Substrate TFChain level.
     - The DAO is the set of rules under which the decentralized organization functions.
-    - The DAO specifications will or are available on https://library.threefold.me (our knowledgebase)

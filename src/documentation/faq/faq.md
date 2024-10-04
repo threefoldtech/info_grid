@@ -15,7 +15,6 @@
     - [I want to reach the ThreeFold community. What are ThreeFold social links?](#i-want-to-reach-the-threefold-community-what-are-threefold-social-links)
     - [Could we reach out someone for publishing research work on ThreeFold?](#could-we-reach-out-someone-for-publishing-research-work-on-threefold)
     - [Who can I write to for a proposal? Where can I send a proposal email for a new partnership opportunity with ThreeFold?](#who-can-i-write-to-for-a-proposal-where-can-i-send-a-proposal-email-for-a-new-partnership-opportunity-with-threefold)
-    - [How can I track and follow the progress and development of ThreeFold?](#how-can-i-track-and-follow-the-progress-and-development-of-threefold)
     - [Why do some forum posts need to be approved?](#why-do-some-forum-posts-need-to-be-approved)
   - [The Technology of ThreeFold](#the-technology-of-threefold)
     - [What is a 3Node?](#what-is-a-3node)
@@ -74,7 +73,6 @@
   - [Terraform](#terraform)
     - [Working with Terraform, I get the following error: failed to create contract: ContractIsNotUnique. Is there a fix to this issue?](#working-with-terraform-i-get-the-following-error-failed-to-create-contract-contractisnotunique-is-there-a-fix-to-this-issue)
     - [I am working with Terraform. What do I have to write in the file env.tfvars?](#i-am-working-with-terraform-what-do-i-have-to-write-in-the-file-envtfvars)
-    - [I am working with Terraform and I am using the example in Terraform Provider Grid. How can I use the example main.tf file with environment variables? Why am I getting the message Error: account not found, when deploying with Terraform?](#i-am-working-with-terraform-and-i-am-using-the-example-in-terraform-provider-grid-how-can-i-use-the-example-maintf-file-with-environment-variables-why-am-i-getting-the-message-error-account-not-found-when-deploying-with-terraform)
   - [Users Troubleshooting and Error Messages](#users-troubleshooting-and-error-messages)
     - [When deploying a virtual machine (VM) on the ThreeFold Grid, I get the following message after trying a full system update and upgrade: GRUB failed to install to the following devices... Is there a fix to this issue?](#when-deploying-a-virtual-machine-vm-on-the-threefold-grid-i-get-the-following-message-after-trying-a-full-system-update-and-upgrade-grub-failed-to-install-to-the-following-devices-is-there-a-fix-to-this-issue)
     - [While deploying on the TF Dashboard, I get the following error :"global workload with the same name exists: conflict". What can I do to fix this issue?](#while-deploying-on-the-tf-dashboard-i-get-the-following-error-global-workload-with-the-same-name-exists-conflict-what-can-i-do-to-fix-this-issue)
@@ -282,17 +280,6 @@ You can send an email to info@threefold.io for publishing research on ThreeFold.
 ### Who can I write to for a proposal? Where can I send a proposal email for a new partnership opportunity with ThreeFold?
 
 You can mail your proposal to info@threefold.io or write about your proposal on the [ThreeFold Forum](http://forum.threefold.io/).
-
-
-
-### How can I track and follow the progress and development of ThreeFold?
-
-There are two main places where you can track the progress of ThreeFold. ThreeFold is open source and its developments can be easily tracked on Github.
-
-* You can read about the ongoing ThreeFold Tech projects [here](https://github.com/orgs/threefoldtech/projects).
-* You can read about the ongoing ThreeFold Foundation projects [here](https://github.com/orgs/threefoldfoundation/projects?query=is%3Aopen).
-
-
 
 ### Why do some forum posts need to be approved?
 
@@ -920,57 +907,6 @@ This env.tfvars should look like the following, with the proper content within t
 > SSH_KEY = "write your ssh-key"
 
 Note that this could change based on your specific Terraform deployment.
-
-
-
-### I am working with Terraform and I am using the example in Terraform Provider Grid. How can I use the example main.tf file with environment variables? Why am I getting the message Error: account not found, when deploying with Terraform?
-
-This Q&A is linked with the main.tf file in the [QSFS section of the ThreeFold Tech repository](https://github.com/threefoldtech/terraform-provider-grid/blob/development/examples/resources/qsfs/main.tf).
-
-This error happens when you did not properly set your environment variables.
-In the main.tf file, add those lines at the top:
-
-> variable "MNEMONICS" {
-> 
->   type        = string
-> 
->   description = "The mnemonic phrase used to generate the seed for the node."
-> 
-> }
-
-> variable "NETWORK" {
-> 
->   type        = string
-> 
->   default     = "main"
-> 
->   description = "The network to connect the node to."
-> 
-> }
-
-> variable "SSH_KEY" {
-> 
->   type = string
-> 
-> }
-
-Within the file main.tf, set those lines:
-
-> provider "grid" {
-> 
->    mnemonics = "${var.MNEMONICS}"
-> 
->    network   = "${var.NETWORK}"  
-> 
-> }
- 
->  env_vars = { 
-> 
->    SSH_KEY = "${var.SSH_KEY}" 
-> 
->   } 
-
-Note: Make sure that you properly set your variables in the file env.tfvars.
 
 
 ## Users Troubleshooting and Error Messages

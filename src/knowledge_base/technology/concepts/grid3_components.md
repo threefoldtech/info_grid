@@ -30,7 +30,7 @@
   - [Node-Pilot](#node-pilot)
   - [Oauth-Proxy](#oauth-proxy)
   - [TF Planetary Network Tool](#tf-planetary-network-tool)
-  - [TF Dashboard and Weblets](#tf-Dashboard-and-weblets)
+  - [TF Dashboard and Weblets](#tf-dashboard-and-weblets)
   - [QSFS](#qsfs)
   - [Reliable Message Bus Relay (RMB-RS)](#reliable-message-bus-relay-rmb-rs)
   - [RMB-SDK-Go](#rmb-sdk-go)
@@ -248,7 +248,7 @@ A component of the ThreeFold technology stack that acts as a TCP (Transmission C
 > [Component Repository on Github](https://github.com/threefoldtech/tcprouter)
 
 ### TFChain
-A blockchain developed by the ThreeFold Foundation. It serves as the underlying technology for managing the ThreeFold Grid. TFChain is built on Parity Substrate. It is responsible for storing information related to the ThreeFold Grid, including identity information of entities, 3Node and farmer details, reputation information, digital twin registry, and more. TFChain also acts as the backend for the TFChain database and supports smart contracts for provisioning workloads on top of the ThreeFold Grid.
+A blockchain developed by ThreeFold. It serves as the underlying technology for managing the ThreeFold Grid. TFChain is built on Parity Substrate. It is responsible for storing information related to the ThreeFold Grid, including identity information of entities, 3Node and farmer details, reputation information, digital twin registry, and more. TFChain also acts as the backend for the TFChain database and supports smart contracts for provisioning workloads on top of the ThreeFold Grid.
 
 > [Component Repository on Github](https://github.com/threefoldtech/tfchain)
 

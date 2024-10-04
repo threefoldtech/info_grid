@@ -6,8 +6,8 @@ For practical information for farmers, developers and system administrators, ref
 
 <h2>Table of Contents</h2>
 
-- [About](./about/about.md)
 - [Technology](./technology/technology_toc.md)
+- [Release Notes](./releasenotes/releasenotes_readme.md)
 - [Farming](./farming/farming_toc.md)
 - [Cloud](./cloud/cloud_toc.md)
 - [Collaboration](./collaboration/collaboration_toc.md)

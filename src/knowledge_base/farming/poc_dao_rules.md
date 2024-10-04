@@ -15,7 +15,7 @@
 ## Introduction
 
 - The CU/SU reward gets expressed in TFT and registered in TFChain at 3Node registration time
-  - For certified Nodes, the CU/SU reward was specified at sales/promotion time, this process is managed by ThreeFold Tech.
+  - For certified Nodes, the CU/SU reward was specified at sales/promotion time, this process is managed by ThreeFold.
 - CU/SU rewards are calculated from Resource Units
   - Certified Node gets 25% more farming rewards
   - TFT pricing is pegged to USD (pricing changes in line with TFT/USD rate)
@@ -47,7 +47,6 @@ Suggestions will be made to improve PoC, the DAO will have to come to consensus 
 - ThreeFold is developing a way of how to detect possible fraud on PoC using TPM chip and dynamic generated code to execute random PoC checks.
 - If PoC finds fraud e.g. trying to fake Internet capacity provided, the 3Node will be disabled automatically by Zero-OS and flagged as fraudulant. The Farmer will then have to re-register with a lower reputation for transparancy to the ecosystem. If TFTs are staked at that time, they will be locked permanently.
 - How to improve the calculation of CU rewards to mitigate the difference in power provided between new and old hardware. 
-
 
 ## TFGrid is a DAO
 

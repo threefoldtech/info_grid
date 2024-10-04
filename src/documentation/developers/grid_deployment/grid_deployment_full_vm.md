@@ -75,7 +75,7 @@ If you are deploying on testnet or devnet, simply replace `mainnet` by the prope
   ```
   apt update && apt install -y git nano ufw
   ```
-- Download the ThreeFold Tech `grid_deployment` repository
+- Download the ThreeFold `grid_deployment` repository
     ```
     git clone https://github.com/threefoldtech/grid_deployment
     cd grid_deployment/docker-compose/mainnet

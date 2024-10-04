@@ -55,7 +55,7 @@ One convenient thing about the flist technology is that it is possible to conver
 
 The goal of this case study is to give you enough information and tools so that you can build your own flist projects and deploy on the ThreeFold Grid.
 
-We will explore the different files needed to create the flist and explain the overall process. Instead of starting from scratch, we will analyze the Nextcloud flist directory in the [tf-images](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud) ThreeFold Tech repository. As the project is already done, it will be easier to get an overview of the process and the different components so you can learn to create your own.
+We will explore the different files needed to create the flist and explain the overall process. Instead of starting from scratch, we will analyze the Nextcloud flist directory in the [tf-images](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud) ThreeFold repository. As the project is already done, it will be easier to get an overview of the process and the different components so you can learn to create your own.
 
 ## The Overall Process
 
@@ -78,7 +78,7 @@ In our case, the flist we will be using has some specific configurations dependi
 
 As we've said previously, we will explore the different components of the existing Nextcloud flist directory. We thus want to check the existing files and try to understand as much as possible how the different components work together. This is also a very good introduction to the ThreeFold ecosystem.
 
-We will be using the files available on the [ThreeFold Tech Github page](https://github.com/threefoldtech). In our case, we want to explore the repository [tf-images](https://github.com/threefoldtech/tf-images).
+We will be using the files available on the [ThreeFold Github page](https://github.com/threefoldtech). In our case, we want to explore the repository [tf-images](https://github.com/threefoldtech/tf-images).
 
 If you go in the subsection [tfgrid3](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3), you can see many different flists available. In our case, we want to deploy the [Nextcloud All-in-One Flist](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud). 
 
