@@ -63,7 +63,7 @@ A name contract is a contract that specifies a unique name to be used on the gri
 
 Every contract is billed every 1 hour on the chain, the amount that is due is deducted from the user's wallet every 24 hours or when the user cancels his contract. The total amount acrued in those 24 hours gets send to following destinations:
 
-- 10% goes to the threefold foundation
+- 10% goes to ThreeFold
 - 5% goes to staking pool wallet (to be implemented in a later phase)
 - 50% goes to certified sales channel
 - 35% TFT gets burned

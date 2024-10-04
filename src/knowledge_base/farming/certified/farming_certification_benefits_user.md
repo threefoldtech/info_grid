@@ -24,7 +24,7 @@ Being certified means that the farmer likely will have more uptime compared to a
 
 ### More security
 
-As part of the certification process, TFTech will make sure that the 3Node has secure boot procedures to allow for more security. The Farmer needs to sign an agreement with ThreeFold Foundation where they commit to a set of standards and security requirements.
+As part of the certification process, TFTech will make sure that the 3Node has secure boot procedures to allow for more security. The Farmer needs to sign an agreement with ThreeFold where they commit to a set of standards and security requirements.
 
 ### More legal protection
 

@@ -64,7 +64,7 @@ To give you a bird's view of the whole project, here are the main steps:
 
 As we've said previously, we will not explore all the details of creating an flist from scratch. This would be done in a subsequent guide. For now, we want to take existing codes and work our way from there. This is not only quicker, but it is a good way to get to know the ThreeFold's ecosystem and repositories.
 
-We will be using the code available on the [ThreeFold Tech's Github page](https://github.com/threefoldtech). In our case, we want to explore the repository [tf-images](https://github.com/threefoldtech/tf-images).
+We will be using the code available on the [ThreeFold Github page](https://github.com/threefoldtech). In our case, we want to explore the repository [tf-images](https://github.com/threefoldtech/tf-images).
 
 If you go on the subsection [tfgrid3](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3), you can see many different flists available. In our case, we want to deploy the Debian Linux distribution. It is thus logic to try and find similar Linux distributions to take inspiration from.
 
