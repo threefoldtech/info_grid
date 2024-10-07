@@ -45,9 +45,7 @@
 - `Custom Domain` flag lets the user to use a custom domain
 - Choose a gateway node to deploy your Funkwhale instance on.
 
-
-
-There's also an optional **Mail Server** tab if you'd like to have your Taiga instance configured with an SMTP server.
+There's also an optional **Mail Server** tab if you'd like to have your Taiga instance configured with an SMTP server. The SMTP configuration supports both `Admin Email` and `Username`.
 
 ![ ](./img/taiga4.png)
 

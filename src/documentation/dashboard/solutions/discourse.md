@@ -42,7 +42,7 @@
 - `Custom Domain` flag lets the user to use a custom domain
 - Choose a gateway node to deploy your Discourse instance on.
 
-Unlike other solutions, Discourse requires that you have an SMTP server. So make sure you fill the fields in the **Mail Server** tab in order to deploy your instance successfully.
+Unlike other solutions, Discourse requires that you have an SMTP server. So make sure you fill the fields in the **Mail Server** tab in order to deploy your instance successfully. The SMTP configuration supports both `Admin Email` and `Username`.
 
 ![ ](./img/discourse4.png)
 

@@ -45,7 +45,7 @@
 - Choose a gateway node to deploy your Mattermost instance on.
 
 
-- There's also an optional **SMTP Server** tab if you'd like to have your Mattermost instance configured with an SMTP server.
+- There's also an optional **SMTP Server** tab if you'd like to have your Mattermost instance configured with an SMTP server. The SMTP configuration supports both `Admin Email` and `Username`.
 
    ![ ](./img/mattermost3.png)
 
