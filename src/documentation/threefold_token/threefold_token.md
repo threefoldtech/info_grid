@@ -8,7 +8,6 @@
 - [Bridges Between Chains](#bridges-between-chains)
 - [Storing TFT](#storing-tft)
 - [Buy and Sell TFT](#buy-and-sell-tft)
-- [Liquidity Provider (LP)](#liquidity-provider-lp)
 - [Transaction Fees](#transaction-fees)
 - [Deploy on the TFGrid with TFT](#deploy-on-the-tfgrid-with-tft)
 - [Disclaimer](#disclaimer)
@@ -65,12 +64,6 @@ You can [buy and sell TFT](./buy_sell_tft/buy_sell_tft.md) with cryptocurrencies
 Using Lobstr is very effective to buy TFT with fiat or crypto in no time:
 
 > [Get TFT: Quick Guide](./buy_sell_tft/tft_lobstr/tft_lobstr_short_guide.md)
-
-## Liquidity Provider (LP)
-
-A liquidity provider (LP) is an individual or entity that contributes liquidity to a decentralized exchange or automated market maker (AMM) platform
-
-> [Become a Liquidity Provider](./liquidity/liquidity_readme.md)
 
 ## Transaction Fees
 
