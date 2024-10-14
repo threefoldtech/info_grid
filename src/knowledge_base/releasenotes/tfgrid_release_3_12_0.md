@@ -41,7 +41,7 @@
 
 ## Pulumi
 
-Our latest addition to infrastructure as code, along with terraform, we offer a powerful solution to have a reproducible infrastructure using [pulumi](pulumi.com/) and Threefold.
+Our latest addition to infrastructure as code, along with terraform, we offer a powerful solution to have a reproducible infrastructure using [pulumi](https://www.pulumi.com/) and Threefold.
 
 * Updating a vm in Pulumi can cause a replacement to a new vm, deleting the old one if not all vm inputs are given. [#37](https://github.com/threefoldtech/pulumi-threefold/issues/37)
 * Our Pulumi provider has been released and its available on the Pulumi registry now (latest version v3.0.0). [Plugin page](https://www.pulumi.com/registry/packages/threefold/)
