@@ -37,9 +37,11 @@ For this guide, you will need to deploy a full VM on the ThreeFold Grid with at 
   - A working Docker environment
   - IP addresses: one static IPv4 and one static IPv6
   - One A and one AAAA record to expose all services on. This can be the root of a domain or a subdomain but both must be wildcard records like *.your.domain ([see table for more info](#dns-settings))
-  - 'node key' for the TFchain public RPC node, generated with `subkey generate-node-key`
-  - mnemonic for a wallet on TFchain for the activation service, **this wallet needs funds** and does not need a Twin ID
-  - mnemonic for a wallet on TFchain for the Grid proxy service, **this wallet needs funds AND a registered Twin ID**
+  - `node key` for the TFChain public RPC node, generated with `subkey generate-node-key`
+  - Mnemonic for a wallet on TFChain for the activation service
+    - **this wallet needs funds** and does not need a Twin ID
+  - Mnemonic for a wallet on TFChain for the Grid proxy service
+    - **this wallet needs funds AND a registered Twin ID**
 - Hardware
   - 32GB of RAM
   - 1000 GB of SSD
