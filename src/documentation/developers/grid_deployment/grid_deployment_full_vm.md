@@ -302,7 +302,7 @@ This can be helpful to troubleshoot errors.
 
 ## Update
 
-`cd` into the correct folder for the network your deploying for, our example uses mainnet.
+`cd` into the correct network folder. Our example uses mainnet.
 
 **Note**: Only list services at the end of this command of which you know there is an update for, example for the `grid_relay`.
 
