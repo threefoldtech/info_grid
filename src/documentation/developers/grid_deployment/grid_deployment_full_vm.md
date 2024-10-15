@@ -13,7 +13,7 @@
 - [Launch the Script](#launch-the-script)
 - [Access the Grid Services](#access-the-grid-services)
 - [Manual Commands](#manual-commands)
-- [Update](#update)
+- [Updates](#updates)
 - [Metrics](#metrics)
 - [Logs](#logs)
 
@@ -300,7 +300,9 @@ docker compose --env-file .secrets.env --env-file .env up
 
 This can be helpful to troubleshoot errors.
 
-## Update
+## Updates
+
+You can easily update the grid stack as described below.
 
 `cd` into the correct network folder. Our example uses mainnet.
 
