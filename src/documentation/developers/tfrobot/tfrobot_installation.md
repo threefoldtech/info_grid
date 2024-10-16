@@ -3,6 +3,7 @@
 <h2>Table of Contents</h2>
 
 - [Introduction](#introduction)
+- [Mycelium Network](#mycelium-network)
 - [Installation](#installation)
 
 ***
@@ -12,6 +13,10 @@
 This section covers the basics on how to install TFROBOT (`tfrobot`). 
 
 TFROBOT is available as binaries. Make sure to download the latest release and to stay up to date with new releases.
+
+## Mycelium Network
+
+Note that you can use the [Mycelium network](../../system_administrators/mycelium/mycelium_toc.md) to connect to your deployments. To do so, make sure that the Mycelium network is properly set up for the deployments. You can consult the different examples that include the Mycelium network to understand this further.
 
 ## Installation
 
