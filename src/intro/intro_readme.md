@@ -32,6 +32,7 @@ To develop on the Grid, read the [developers documentation](../documentation/dev
 
 To deploy applications, read the [deploy section](../documentation/dashboard/deploy/deploy.md) then [access the deployment via SSH](../documentation/system_administrators/getstarted/ssh_guide/ssh_guide.md).
 
+To learn about the ThreeFold Grid V4, have a look at [this website](https://docs.threefold.info/).
 
 ## Join the ThreeFold Community
 
