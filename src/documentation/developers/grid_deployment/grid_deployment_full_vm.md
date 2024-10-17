@@ -236,11 +236,11 @@ ufw status
 
 Once you've prepared the VM, you can simply run the script to install the grid stack and deploy it online.
 
+> **Note:** This script downloads and extracts 3 large files. This process can take quite some time to complete (up to several hours depending on the network), and there may be long periods with no visible progress. Please be patient and allow the script to run uninterrupted. This is especially true concerning mainnet.
+
 ```
 sh install_grid_bknd.sh
 ```
-
-This will take some time since you are downloading the whole mainnet grid snapshots. For mainnet, it will take several hours.
 
 You can also install the grid stack manually without snapshots. In this case, you'll need to first install docker. Depending on the available disk iops available, it can take up until a week to sync from block 0. 
 
