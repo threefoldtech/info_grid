@@ -242,7 +242,7 @@ sh install_grid_bknd.sh
 
 This will take some time since you are downloading the whole mainnet grid snapshots. For mainnet, it will take several hours.
 
-You can also install the grid stack manually without snapshots. Depending on the available disk iops available, it can take up until a week to sync from block 0.
+You can also install the grid stack manually without snapshots. In this case, you'll need to first install docker. Depending on the available disk iops available, it can take up until a week to sync from block 0. 
 
 ```sh
 docker compose --env-file .secrets.env --env-file .env up -d
