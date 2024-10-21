@@ -5,7 +5,6 @@
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Buy TFT on PancakeSwap](#buy-tft-on-pancakeswap)
-- [Important Notice](#important-notice)
 - [Disclaimer](#disclaimer)
 
 ***
@@ -43,10 +42,6 @@ On the Swap Page, you would see that it displays swapping from BNB to CAKE as de
 Once selected, define how much BNB or other token you would like to swap into TFT, and click on the '**Swap**' button.
 
 That's it! You have officially swapped BNB into TFT. 
-
-## Important Notice
-
-If you are looking for ways to provide liquidity for TFT on BNB Smart Chain on Pancake Swap, you will find the according information [here](../liquidity/liquidity_pancake.md).
 
 ## Disclaimer
 

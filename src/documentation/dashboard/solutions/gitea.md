@@ -54,6 +54,7 @@
   - Choose a gateway domain for your instance
 - Set the `Mail Server`
   - In the tab `Mail Server` you can adjust the parameters or leave the default parameters
+    - The SMTP configuration supports both `Admin Email` and `Username`
     - The `Admin Email` by default is the email you used when logging into the Dashboard
     - The `Admin Password` is generated automatically but you can modify it
     - By default the SMTP server used for the `Hostname` is `smtp.gmail.com` with its associated port `587`
