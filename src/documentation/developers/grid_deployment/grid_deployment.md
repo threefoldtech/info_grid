@@ -1,14 +1,11 @@
 # Grid Deployment
 
-The TFGrid whole source code is open-source and instances of the grid can be deployed by anyone thanks to the distribution of daily grid snapshots of the complete ThreeFold Grid stacks.
+The ThreeFold Grid whole source code is open-source and we provide all the tools required for a Threefold Grid full stack deployment.
 
-This section also covers the steps to deploy the Dashboard locally. This can be useful when testing the grid or contributing to the open-source project.
+This section also provides information on how to deploy the Dashboard locally and how to create a new Dashboard app.
 
 ## Table of Contents
 
-- [TFGrid Stacks](./tfgrid_stacks.md)
-- [Full VM Grid Deployment](./grid_deployment_full_vm.md)
-- [Grid Snapshots](./snapshots.md)
-- [Z-OS Boot Generator](./zos_boot_generator/zos_boot_generator.md)
+- [ThreeFold Grid Full Stack](./tfgrid_full_stack.md)
 - [Deploy the Dashboard](./deploy_dashboard.md)
 - [Application Case Study: Nextcloud](./app_case_study_nextcloud.md)
