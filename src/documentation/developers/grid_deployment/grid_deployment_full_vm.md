@@ -280,6 +280,8 @@ stats.example.com
 
 In the case of testnet and devnet, links will also have the given subdomain, such as `dashboard.test.example.com` for a `testnet` instance.
 
+For `metrics.example.com`, you will need to add a path to access the data, e.g. `metrics.example.com/caddy` and `metrics.example.com/metrics`
+
 ## Manual Commands
 
 Once you've run the install script, you can deploy manually the grid stack with the following command:
