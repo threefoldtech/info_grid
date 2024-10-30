@@ -1,13 +1,5 @@
 <h1> Static Website </h1>
 
-<h2>Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deployment](#deployment)
-
----
-
 ## Introduction
 
 Static Website is an application where a user provides a GitHub repository URL for the files to be automatically served online using Caddy.

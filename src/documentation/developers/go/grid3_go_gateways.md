@@ -1,15 +1,5 @@
 <h1> Deploying Gateways</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Gateway Name](#gateway-name)
-- [Example](#example)
-- [Gateway FQDN](#gateway-fqdn)
-- [Example](#example-1)
-
-***
-
 ## Introduction
 
 After [deploying a VM](./grid3_go_vm.md) you can deploy Gateways to further expose your VM.

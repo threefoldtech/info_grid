@@ -8,7 +8,7 @@ There are various options available to store TFTs, each with its own benefits an
 
 If TFTs are issued on the Stellar blockchain, users can opt to store them in Stellar-compatible wallets. On the other hand, if TFTs are bridged and swapped from Stellar to the Binance Smart Chain (BSC) or Ethereum Network, users can utilize BSC-compatible and ETH-compatible wallets to store their tokens. 
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [ThreeFold Connect App (Stellar)](./tf_connect_app.md)
 - [Lobstr Wallet (Stellar)](./lobstr_wallet.md)

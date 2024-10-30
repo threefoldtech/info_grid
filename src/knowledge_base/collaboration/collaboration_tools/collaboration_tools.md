@@ -4,7 +4,7 @@ In this section, we will introduce powerful collaboration tools utilized by Thre
 
 These tools play a crucial role in enhancing as well as simplifying collaboration and communication at ThreeFold. The tools we use at ThreeFold are chosen for their open-source design and their focus on ease of comprehension and use. 
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [Circle Tool](./circle_tool.md)
   - This ThreeFold's project management tool, made by using Taiga, is an open-source project management platform designed to facilitate collaboration and to streamline workflows for teams. It provides a comprehensive set of features and tools to help teams plan, track, and manage their projects effectively. 

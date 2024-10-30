@@ -1,15 +1,6 @@
 <h1> Hummingbot on a Full VM </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deploy a Full VM](#deploy-a-full-vm)
-- [Preparing the VM](#preparing-the-vm)
-- [Setting Hummingbot](#setting-hummingbot)
-- [References](#references)
-
----
 
 ## Introduction
 

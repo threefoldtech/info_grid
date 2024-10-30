@@ -1,13 +1,5 @@
 <h1> CapRover Worker </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Step 1: Add a Default Docker Registry](#step-1-add-a-default-docker-registry)
-- [Step 2: Attach a New Node to the Cluster](#step-2-attach-a-new-node-to-the-cluster)
-
-***
-
 ## Introduction
 
 We present the steps to manage a CapRover Worker node.

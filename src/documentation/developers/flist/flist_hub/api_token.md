@@ -1,12 +1,5 @@
 <h1> TF Hub API Token </h1>
 
-<h2> Table of Contents </h2>
-
-- [Generate an API Token](#generate-an-api-token)
-- [Verify the Token Validity](#verify-the-token-validity)
-
-***
-
 ## Generate an API Token
 
 To generate an API Token on the TF Hub, follow those steps:

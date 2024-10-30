@@ -1,13 +1,6 @@
 <h1>Ethereum-Stellar Bridge</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [How to Use the Ethereum-Stellar Bridge](#how-to-use-the-ethereum-stellar-bridge)
-- [Bridge Fees](#bridge-fees)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 ## Introduction
 

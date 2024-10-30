@@ -1,14 +1,7 @@
 
 <h1> ZOS FileSystem (ZOS-FS) </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Uses Flist Inside](#uses-flist-inside)
-  - [Why this ZFlist Concept](#why-this-zflist-concept)
-- [Benefits](#benefits)
-
-***
 
 ## Introduction
 

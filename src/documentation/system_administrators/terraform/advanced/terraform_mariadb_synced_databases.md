@@ -1,30 +1,6 @@
 <h1>MariaDB Synced Databases Between Two VMs</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Main Steps](#main-steps)
-- [Prerequisites](#prerequisites)
-- [Find Nodes with the ThreeFold Explorer](#find-nodes-with-the-threefold-explorer)
-- [Set the VMs](#set-the-vms)
-  - [Create a Two Servers Wireguard VPN with Terraform](#create-a-two-servers-wireguard-vpn-with-terraform)
-    - [Create the Terraform Files](#create-the-terraform-files)
-    - [Deploy the 3Nodes with Terraform](#deploy-the-3nodes-with-terraform)
-    - [SSH into the 3Nodes](#ssh-into-the-3nodes)
-    - [Preparing the VMs for the Deployment](#preparing-the-vms-for-the-deployment)
-    - [Test the Wireguard Connection](#test-the-wireguard-connection)
-- [Configure the MariaDB Database](#configure-the-mariadb-database)
-  - [Download MariaDB and Configure the Database](#download-mariadb-and-configure-the-database)
-  - [Create User with Replication Grant](#create-user-with-replication-grant)
-  - [Verify the Access of the User](#verify-the-access-of-the-user)
-  - [Set the VMs to accept the MariaDB Connection](#set-the-vms-to-accept-the-mariadb-connection)
-    - [TF Template Worker Server Data](#tf-template-worker-server-data)
-    - [TF Template Master Server Data](#tf-template-master-server-data)
-  - [Set the MariaDB Databases on Both 3Nodes](#set-the-mariadb-databases-on-both-3nodes)
-- [Install and Set GlusterFS](#install-and-set-glusterfs)
-- [Conclusion](#conclusion)
-
-***
 
 # Introduction
 

@@ -4,15 +4,7 @@
 <iframe title="How to Buy TFT on Lobstr" width="560" height="315" src="https://www.youtube-nocookie.com/embed/1N15bKztiqk" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
 </div>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Download the App and Create an Account](#download-the-app-and-create-an-account)
-- [Connect Your TF Connect App Wallet](#connect-your-tf-connect-app-wallet)
-- [Buy XLM with Fiat Currency](#buy-xlm-with-fiat-currency)
-- [Swap XLM for TFT](#swap-xlm-for-tft)
-
-***
 
 ## Introduction
 

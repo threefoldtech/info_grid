@@ -1,16 +1,6 @@
 <h1> Store TFT (Stellar) on Albedo Wallet </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Get Started](#get-started)
-  - [Create and Fund Albedo Wallet](#create-and-fund-albedo-wallet)
-  - [Add TFT asset to Albedo Wallet](#add-tft-asset-to-albedo-wallet)
-  - [Storing / Receiving and Sending TFT](#storing--receiving-and-sending-tft)
-- [Important Notice](#important-notice)
-- [Disclaimer](#disclaimer)
-***
 ## Introduction
 
 Welcome to our guide on how to store TFT tokens (Stellar) via the [Albedo wallet](https://albedo.link/)! 

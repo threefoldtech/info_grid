@@ -1,20 +1,5 @@
 <h1>Deploying ZDBs for QSFS</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Example code](#example-code)
-- [Detailed explanation](#detailed-explanation)
-  - [Getting the client](#getting-the-client)
-  - [Preparing the nodes](#preparing-the-nodes)
-  - [Preparing ZDBs](#preparing-zdbs)
-  - [Deploying the ZDBs](#deploying-the-zdbs)
-  - [Getting deployment information](#getting-deployment-information)
-  - [Deleting a deployment](#deleting-a-deployment)
-
-***
-
 ## Introduction
 
 We show how to deploy ZDBs for QSFS on the TFGrid with the Javascript client.

@@ -1,15 +1,6 @@
 <h1>Proof-of-Capacity</h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [What is proof-of-capacity?](#what-is-proof-of-capacity)
-- [Why proof-of-capacity?](#why-proof-of-capacity)
-- [How does Proof-of-Capacity work?](#how-does-proof-of-capacity-work)
-- [PoC Rewards](#poc-rewards)
-- [Farming Reward Calculation](#farming-reward-calculation)
-
-***
 
 > Note: The proof-of-capacity parameters will be updated for the next 3.14 grid release. Stay tuned.
 

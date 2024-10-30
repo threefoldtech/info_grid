@@ -1,11 +1,6 @@
 <h1> ZOS Disk </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Roadmap](#roadmap)
-
-***
 
 ## Introduction
 

@@ -1,13 +1,6 @@
 <h1>Minting Periods</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Minting Period Length](#minting-period-length)
-- [2023 Minting Periods](#2023-minting-periods)
-- [2024 Minting Periods](#2024-minting-periods)
-
-***
 
 ## Introduction
 

@@ -1,20 +1,5 @@
 <h1> Deploying a Kubernetes Cluster </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Example code](#example-code)
-- [Detailed explanation](#detailed-explanation)
-  - [Building network](#building-network)
-  - [Building nodes](#building-nodes)
-  - [Building cluster](#building-cluster)
-  - [Deploying](#deploying)
-  - [Getting deployment information](#getting-deployment-information)
-  - [Deleting deployment](#deleting-deployment)
-
-***
-
 ## Introduction
 
 We show how to deploy a Kubernetes cluster on the TFGrid with the Javascript client.

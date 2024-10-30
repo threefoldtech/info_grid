@@ -1,12 +1,6 @@
 <h1> Farming Requirements </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Uptime Requirements](#uptime-requirements)
-  - [Farmerbot Considerations](#farmerbot-considerations)
- 
----
 
 ## Introduction
 

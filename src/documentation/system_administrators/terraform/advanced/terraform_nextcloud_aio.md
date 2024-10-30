@@ -1,16 +1,6 @@
 <h1> Nextcloud All-in-One Deployment </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Deploy a Full VM](#deploy-a-full-vm)
-- [Set a Firewall](#set-a-firewall)
-- [Set the DNS Record for Your Domain](#set-the-dns-record-for-your-domain)
-- [Install Nextcloud All-in-One](#install-nextcloud-all-in-one)
-- [Set BorgBackup](#set-borgbackup)
-- [Conclusion](#conclusion)
-
-***
 
 ## Introduction
 

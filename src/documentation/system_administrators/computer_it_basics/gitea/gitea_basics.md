@@ -1,23 +1,6 @@
 <h1>Gitea Basics</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Register](#register)
-- [Sign In](#sign-in)
-- [Set an SSH Key Pair](#set-an-ssh-key-pair)
-- [Start the SSH Agent](#start-the-ssh-agent)
-- [Clone a Repository](#clone-a-repository)
-- [Create and Push a New Branch](#create-and-push-a-new-branch)
-  - [On the Browser and Git](#on-the-browser-and-git)
-  - [Only With Git](#only-with-git)
-- [Create a Pull Request](#create-a-pull-request)
-  - [Create a Draft Pull Request](#create-a-draft-pull-request)
-- [Useful Commands](#useful-commands)
-- [Gitea References](#gitea-references)
-
----
 
 ## Introduction
 

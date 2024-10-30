@@ -1,21 +1,6 @@
 <h1>Deploy a Nomad Cluster</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [What is Nomad?](#what-is-nomad)
-- [Prerequisites](#prerequisites)
-- [Create the Terraform Files](#create-the-terraform-files)
-  - [Main File](#main-file)
-  - [Credentials File](#credentials-file)
-- [Deploy the Nomad Cluster](#deploy-the-nomad-cluster)
-- [SSH into the Client and Server Nodes](#ssh-into-the-client-and-server-nodes)
-  - [SSH with the Planetary Network](#ssh-with-the-planetary-network)
-  - [SSH with WireGuard](#ssh-with-wireguard)
-- [Destroy the Nomad Deployment](#destroy-the-nomad-deployment)
-- [Conclusion](#conclusion)
-
-***
 
 ## Introduction
 

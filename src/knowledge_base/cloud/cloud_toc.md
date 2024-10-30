@@ -4,7 +4,7 @@ This section covers the essential information concerning Cloud utilization.
 
 To deploy on the ThreeFold Grid, refer to the [System Administrators](../../documentation/system_administrators/system_administrators.md) section.
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [Cloud Units](./cloudunits.md)
 - [Pricing](./pricing/pricing_toc.md)

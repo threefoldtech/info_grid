@@ -1,14 +1,6 @@
 <h1> Redis </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Install Redis](#install-redis)
-  - [Linux](#linux)
-  - [MacOS](#macos)
-- [Run Redis](#run-redis)
-
-***
 
 ## Introduction
 

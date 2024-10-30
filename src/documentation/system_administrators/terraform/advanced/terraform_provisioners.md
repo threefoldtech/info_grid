@@ -1,16 +1,6 @@
 <h1> Terraform and Provisioner </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Example](#example)
-- [Params docs](#params-docs)
-  - [Requirements](#requirements)
-  - [Connection Block](#connection-block)
-  - [Provisioner Block](#provisioner-block)
-  - [More Info](#more-info)
-
-***
 
 ## Introduction
 

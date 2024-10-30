@@ -1,6 +1,6 @@
 # Compute
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [ZKube](./zkube.md)
 - [ZMachine](./zmachine.md)

@@ -1,17 +1,6 @@
 <h1> Deploy a Full VM and Run Cockpit, a Web-based Interface for Servers </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Deploy a Full VM and Create a Root-Access User](#deploy-a-full-vm-and-create-a-root-access-user)
-- [Set the VM and Install Cockpit](#set-the-vm-and-install-cockpit)
-- [Change the Network System Daemon](#change-the-network-system-daemon)
-- [Set a Firewall](#set-a-firewall)
-- [Access Cockpit](#access-cockpit)
-- [Conclusion](#conclusion)
-- [Acknowledgements and References](#acknowledgements-and-references)
-
-***
 
 ## Introduction
 

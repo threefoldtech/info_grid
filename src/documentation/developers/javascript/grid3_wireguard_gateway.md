@@ -1,22 +1,5 @@
 <h1> Deploying a VM with Wireguard and Gateway </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Client Configurations](#client-configurations)
-- [Code Example](#code-example)
-- [Detailed Explanation](#detailed-explanation)
-  - [Get the Client](#get-the-client)
-  - [Get the Nodes](#get-the-nodes)
-  - [Deploy the VM](#deploy-the-vm)
-  - [Deploy the Gateway](#deploy-the-gateway)
-  - [Get the Deployments Information](#get-the-deployments-information)
-  - [Disconnect the Client](#disconnect-the-client)
-  - [Delete the Deployments](#delete-the-deployments)
-- [Conclusion](#conclusion)
-
-***
-
 ## Introduction
 
 We present here the relevant information when it comes to deploying a virtual machine with Wireguard and a gateway.

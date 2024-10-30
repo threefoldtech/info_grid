@@ -1,12 +1,6 @@
 <h1> Contract Bills Reports </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Contract Billing Report (GraphQL)](#contract-billing-report-graphql)
-- [Consumption](#consumption)
-
-***
 
 ## Introduction
 

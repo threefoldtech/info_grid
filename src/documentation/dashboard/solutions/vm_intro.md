@@ -2,7 +2,7 @@
 
 On the TFGrid, you can deploy both micro and full virtual machines.
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [Full Virtual Machine](./fullVm.md)
 - [Micro Virtual Machine](./vm.md)

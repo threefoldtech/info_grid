@@ -1,6 +1,6 @@
 <h1> Terraform Advanced </h1>
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [Terraform Provider](./terraform_provider.html)
 - [Terraform Provisioners](./terraform_provisioners.html)

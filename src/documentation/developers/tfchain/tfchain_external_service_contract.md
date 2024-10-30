@@ -1,15 +1,4 @@
 <h1>External Service Contract: How to set and execute</h1>
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Step 1: Create the contract and get its unique ID](#step-1-create-contract--get-unique-id)
-- [Step 2: Fill contract](#step-2-fill-contract)
-- [Step 3: Both parties approve contract](#step-3-both-parties-approve-contract)
-- [Step 4: Bill for the service](#step-4-bill-for-the-service)
-- [Step 5: Cancel the contract](#step-5-cancel-the-contract)
-
-***
-
 
 # Introduction
 

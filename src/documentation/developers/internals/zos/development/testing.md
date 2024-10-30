@@ -2,13 +2,6 @@
 
 Beside unit testing, you might want to test your change in an integrated environment, the following are two options to do it.
 
-- [Testing](#testing)
-	- [Using grid/node client](#using-gridnode-client)
-	- [Using a test app](#using-a-test-app)
-		- [An example to talk to container and qsfs modules](#an-example-to-talk-to-container-and-qsfs-modules)
-		- [An example of directly using zinit package](#an-example-of-directly-using-zinit-package)
-
-
 ## Using grid/node client
 
 You can simply use any grid client to deploy a workload of any type, you should specify your node's twin ID (and make sure you are on the correct network). 

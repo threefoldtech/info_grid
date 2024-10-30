@@ -1,14 +1,5 @@
 <h1> Funkwhale </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deployment](#deployment)
-- [Troubleshooting](#troubleshooting)
-
-***
-
 ## Introduction
 
 [Funkwhale](https://funkwhale.audio/) is social platform to enjoy and share music.

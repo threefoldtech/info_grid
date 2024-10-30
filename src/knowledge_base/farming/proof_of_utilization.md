@@ -1,15 +1,6 @@
 <h1>Proof-of-Utilization</h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [What is Proof-of-Utilization?](#what-is-proof-of-utilization)
-- [How does Proof-of-Utilization work?](#how-does-proof-of-utilization-work)
-- [ThreeFold DAO rules in Relation To Proof-of-Utilization](#threefold-dao-rules-in-relation-to-proof-of-utilization)
-  - [TFGrid Capacity Utilization](#tfgrid-capacity-utilization)
-  - [Other Ways TFT are Required](#other-ways-tft-are-required)
-
-***
 
 > Note: The proof-of-utilization parameters will be updated for the next 3.14 grid release. Stay tuned.
 

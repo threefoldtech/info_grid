@@ -1,24 +1,6 @@
 
 <h1>Deploy a VM</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Deploy](#deploy)
-  - [Flags](#flags)
-    - [Required Flags](#required-flags)
-    - [Optional Flags](#optional-flags)
-  - [Examples](#examples)
-    - [Deploy a VM without GPU](#deploy-a-vm-without-gpu)
-    - [Deploy a VM with GPU](#deploy-a-vm-with-gpu)
-- [Get](#get)
-  - [Get Example](#get-example)
-- [Cancel](#cancel)
-  - [Cancel Example](#cancel-example)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
-
 # Introduction
 
 In this section, we explore how to deploy a virtual machine (VM) on the ThreeFold Grid using `tfcmd`. 

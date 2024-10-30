@@ -2,7 +2,7 @@
 
 ThreeFold Connect is a mobile app that serves as a gateway to the ThreeFold ecosystem and its various ThreeFold products and services. 
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [TFConnect Overview](./tfconnect_overview.md)
 - [TFConnect Authenticator](./tfconnect_authenticator.md)

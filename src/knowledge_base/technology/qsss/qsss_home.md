@@ -2,14 +2,7 @@
 
 <h1> Quantum Safe Storage System </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [QSS Benefits](#qss-benefits)
-- [Peer-to-Peer Design](#peer-to-peer-design)
-- [Overview](#overview)
-
-***
 
 ## Introduction
 

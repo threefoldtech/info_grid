@@ -1,14 +1,6 @@
 <h1> ZKube </h1>
 
-<h2>Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Unique for our Kubernetes implementation](#unique-for-our-kubernetes-implementation)
-- [Features](#features)
-- [ZMachine Benefits](#zmachine-benefits)
-- [Architecture](#architecture)
-
-***
 
 ## Introduction
 

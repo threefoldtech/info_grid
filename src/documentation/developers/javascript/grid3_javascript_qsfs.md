@@ -1,18 +1,5 @@
 <h1>Deploying a VM with QSFS</h1>
 
-<h2>Table of Contents</h2>
-
-- [Prerequisites](#prerequisites)
-- [Code Example](#code-example)
-- [Detailed Explanation](#detailed-explanation)
-  - [Getting the Client](#getting-the-client)
-  - [Preparing QSFS](#preparing-qsfs)
-  - [Deploying a VM with QSFS](#deploying-a-vm-with-qsfs)
-  - [Getting the Deployment Information](#getting-the-deployment-information)
-  - [Deleting a Deployment](#deleting-a-deployment)
-
-***
-
 ## Prerequisites
 
 First, make sure that you have your [client](./grid3_javascript_loadclient.md) prepared.

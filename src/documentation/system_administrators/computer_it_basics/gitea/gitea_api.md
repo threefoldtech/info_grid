@@ -1,15 +1,6 @@
 <h1>Gitea API</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Swagger](#swagger)
-- [CLI](#cli)
-- [Swagger and CLI](#swagger-and-cli)
-- [API Authorization](#api-authorization)
-- [References](#references)
-
----
 
 ## Introduction
 

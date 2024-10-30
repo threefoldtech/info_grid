@@ -4,19 +4,6 @@ Welcome to the *GPU Farming* section of the ThreeFold Manual!
 
 In this guide, we delve into the realm of GPU farming, shedding light on the significance of Graphics Processing Units (GPUs) and how they can be seamlessly integrated into the ThreeFold ecosystem.
 
-<h2>Table of Contents</h2>
-
-- [Understanding GPUs](#understanding-gpus)
-- [Get Started](#get-started)
-- [Install the GPU](#install-the-gpu)
-- [GPU Node and the Farmerbot](#gpu-node-and-the-farmerbot)
-- [Set a Price for the GPU Node](#set-a-price-for-the-gpu-node)
-- [Check the GPU Node on the Node Finder](#check-the-gpu-node-on-the-node-finder)
-- [Reserving the GPU Node](#reserving-the-gpu-node)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
-
 ## Understanding GPUs
 
 A Graphics Processing Unit, or GPU, is a specialized electronic circuit designed to accelerate the rendering of images and videos. Originally developed for graphics-intensive tasks in gaming and multimedia applications, GPUs have evolved into powerful parallel processors with the ability to handle complex computations, such as 3D rendering, AI and machine learning. 

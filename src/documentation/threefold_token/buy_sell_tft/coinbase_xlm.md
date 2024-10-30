@@ -1,13 +1,6 @@
 <h1> Buy XLM on Coinbase </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Tutorial](#tutorial)
-- [Important Notice](#important-notice)
-- [Withdrawing XLM From Coinbase to Your Stellar Wallet](#withdrawing-xlm-from-coinbase-to-your-stellar-wallet)
-***
 ## Introduction
 
 In order to engage in seamless TFT transactions on the Stellar network, it is essential to acquire XLM (Stellar Lumens) as a prerequisite. XLM serves as the native cryptocurrency of the Stellar network, enabling fast and low-cost cross-border transactions.

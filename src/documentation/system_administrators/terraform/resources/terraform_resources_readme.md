@@ -1,6 +1,6 @@
 <h1> Terraform Resources </h1>
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [Using Scheduler](./terraform_scheduler.md)
 - [Virtual Machine](./terraform_vm.md)

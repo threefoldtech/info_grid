@@ -1,30 +1,5 @@
 <h1>Firewalld Basic Commands</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Firewalld Basic Commands](#firewalld-basic-commands)
-  - [Install Firewalld](#install-firewalld)
-  - [See the Status of Firewalld](#see-the-status-of-firewalld)
-  - [Enable Firewalld](#enable-firewalld)
-  - [Stop Firewalld](#stop-firewalld)
-  - [Start Firewalld](#start-firewalld)
-  - [Disable Firewalld](#disable-firewalld)
-  - [Mask Firewalld](#mask-firewalld)
-  - [Unmask Firewalld](#unmask-firewalld)
-  - [Add a Service to Firewalld](#add-a-service-to-firewalld)
-  - [Remove a Service to Firewalld](#remove-a-service-to-firewalld)
-  - [Remove the Diles of a Service to Firewalld](#remove-the-diles-of-a-service-to-firewalld)
-  - [See if a Service is Available](#see-if-a-service-is-available)
-  - [Reload Firewalld](#reload-firewalld)
-  - [Display the Services and the Open Ports for the Public Zone](#display-the-services-and-the-open-ports-for-the-public-zone)
-  - [Display the Open Ports by Services and Port Numbers](#display-the-open-ports-by-services-and-port-numbers)
-  - [Add a Port for tcp](#add-a-port-for-tcp)
-  - [Add a Port for udp](#add-a-port-for-udp)
-  - [Add a Port for tcp and udp](#add-a-port-for-tcp-and-udp)
-- [References](#references)
-
-
 ## Introduction
 
 We present a quick introduction to [firewalld](https://firewalld.org/), a free and open-source firewall management tool for Linux operating systems. This guide can be useful for users of the TFGrid deploying on full and micro VMs as well as other types of deployment.

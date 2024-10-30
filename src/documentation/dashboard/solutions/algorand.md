@@ -1,17 +1,5 @@
 <h1> Algorand </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Algorand Structure](#algorand-structure)
-- [Run Default Node](#run-default-node)
-- [Run Relay Node](#run-relay-node)
-- [Run Indexer Node](#run-indexer-node)
-- [Select Capacity](#select-capacity)
-
-***
-
 ## Introduction
 
 [Algorand](https://www.algorand.com/) builds technology that accelerates the convergence between decentralized and traditional finance by enabling the simple creation of next-generation financial products, protocols, and exchange of value.

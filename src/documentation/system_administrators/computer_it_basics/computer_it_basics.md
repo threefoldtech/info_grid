@@ -4,7 +4,7 @@ Welcome to the *Computer and IT Basics* section of the ThreeFold Manual!
 
 In this section, tailored specifically for system administrators, we'll delve into fundamental concepts and tools that form the backbone of managing and securing infrastructure. Whether you're a seasoned sysadmin or just starting your journey, these basics are essential for navigating the intricacies of the ThreeFold Grid.
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [CLI and Scripts Basics](./cli_scripts_basics.md)
 - [Docker Basics](./docker_basics.md)

@@ -1,13 +1,6 @@
 <h1> Quantum Safe Filesystem </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-  - [Benefits](#benefits)
-  - [Use Cases](#use-cases)
-  - [Implementation](#implementation)
- 
-***
 
 ## Introduction
 

@@ -4,7 +4,7 @@ The ThreeFold Manual covers many ways to use a GPU node on the TFGrid. A good pl
 
 Feel free to explore the different possibilities!
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [GPU Support](./gpu.md)
 - [Node Finder and GPU](../../dashboard/deploy/node_finder.md#gpu-support)

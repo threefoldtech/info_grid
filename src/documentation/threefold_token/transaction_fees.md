@@ -1,13 +1,6 @@
 <h1> TFT Transaction Fees</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Bridge Fees](#bridge-fees)
-- [Chain Fees](#chain-fees)
-- [Notes](#notes)
-
-***
 
 ## Introduction
 

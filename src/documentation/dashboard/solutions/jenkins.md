@@ -1,14 +1,5 @@
 <h1> Jenkins </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deployment](#deployment)
-- [Troubleshooting](#troubleshooting)
-
-***
-
 ## Introduction
 
 [Jenkins](https://www.jenkins.io/) is a popular open-source automation server that enables developers to build, test, and deploy their applications continuously.

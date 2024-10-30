@@ -1,15 +1,6 @@
 <h1> Smart Contract on TFGrid 3.0 </h1>
 
-<h2>Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Architecture](#architecture)
-- [1: To deploy a workload, the user interacts with this smart contract pallet and calls: `create_contract` with the input being:](#1-to-deploy-a-workload-the-user-interacts-with-this-smart-contract-pallet-and-calls-create_contract-with-the-input-being)
-- [2: The user sends the contractID and workload through the RMB to the destination Node.](#2-the-user-sends-the-contractid-and-workload-through-the-rmb-to-the-destination-node)
-- [3: The Node sends consumption reports to the chain](#3-the-node-sends-consumption-reports-to-the-chain)
-- [Notes](#notes)
-
-***
 
 ## Introduction
 

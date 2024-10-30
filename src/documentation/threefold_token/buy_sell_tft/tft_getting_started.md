@@ -1,15 +1,7 @@
 
 <h1>Getting Started</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Buying and Storing TFTs](#buying-and-storing-tfts)
-- [How to set up a Stellar address for TFT transactions](#how-to-set-up-a-stellar-address-for-tft-transactions)
-- [Disclaimer](#disclaimer)
-  - [Learn All the Methods](#learn-all-the-methods)
-
-***
 
 ## Introduction
 

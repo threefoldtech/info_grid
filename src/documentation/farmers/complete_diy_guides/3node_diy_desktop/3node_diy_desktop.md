@@ -4,42 +4,6 @@ In the following 3Node DIY guide, you will learn how to turn a Dell Optiplex 702
 
 Note that the process is similar for other desktop computers.
 
-<div style="break-after:page"></div>
-
-
-
-<h2>Table of Contents</h2>
-
-
-
-- [Prerequisite](#prerequisite)
-  - [DIY 3Node Computer Requirements](#diy-3node-computer-requirements)
-  - [DIY 3Node Material List](#diy-3node-material-list)
-- [1. Create a Farm](#1-create-a-farm)
-  - [Using Dashboard](#using-dashboard)
-  - [Using TF Connect App](#using-tf-connect-app)
-- [2. Create a Zero-OS Bootstrap Image](#2-create-a-zero-os-bootstrap-image)
-  - [Download the Zero-OS Boostrap Image](#download-the-zero-os-boostrap-image)
-  - [Burn the Zero-OS Bootstrap Image](#burn-the-zero-os-bootstrap-image)
-- [3. Set the Hardware](#3-set-the-hardware)
-- [4. Wipe All the Disks](#4-wipe-all-the-disks)
-  - [1. Create a Linux Boostrap Image](#1-create-a-linux-boostrap-image)
-  - [2. Boot Linux in Try Mode](#2-boot-linux-in-try-mode)
-  - [3. Use wipefs to Wipe All Disks](#3-use-wipefs-to-wipe-all-disks)
-- [5. Set the BIOS/UEFI](#5-set-the-biosuefi)
-  - [The Essential Features of BIOS/UEFI for a 3Node](#the-essential-features-of-biosuefi-for-a-3node)
-  - [Set the BIOS/UEFI on a Dell Optiplex 7020](#set-the-biosuefi-on-a-dell-optiplex-7020)
-- [6. Boot the 3Node](#6-boot-the-3node)
-  - [Check the Node Status](#check-the-node-status)
-  - [Farming Rewards Distribution](#farming-rewards-distribution)
-- [Additional Information](#additional-information)
-
-***
-
-<div style="break-after:page"></div>
-
-
-
 # Prerequisite
 
 ## DIY 3Node Computer Requirements

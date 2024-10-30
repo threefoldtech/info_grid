@@ -1,19 +1,6 @@
 <h1> IPFS on a Micro VM</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Deploy a Micro VM](#deploy-a-micro-vm)
-- [Install the Prerequisites](#install-the-prerequisites)
-- [Set a Firewall](#set-a-firewall)
-  - [Additional Ports](#additional-ports)
-- [Install IPFS](#install-ipfs)
-- [Set IPFS](#set-ipfs)
-- [Set IPFS with zinit](#set-ipfs-with-zinit)
-- [Final Verification](#final-verification)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 ## Introduction
 

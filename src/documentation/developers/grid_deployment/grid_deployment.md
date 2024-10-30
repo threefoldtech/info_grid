@@ -4,7 +4,7 @@ The ThreeFold Grid whole source code is open-source and we provide all the tools
 
 This section also provides information on how to deploy the Dashboard locally and how to create a new Dashboard app.
 
-## Table of Contents
+**TABLE OF CONTENTS**
 
 - [ThreeFold Grid Full Stack](./tfgrid_full_stack.md)
 - [Deploy the Dashboard](./deploy_dashboard.md)

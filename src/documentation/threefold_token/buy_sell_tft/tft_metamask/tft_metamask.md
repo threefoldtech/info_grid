@@ -1,16 +1,6 @@
 <h1>Get TFT: MetaMask (BSC & ETH)</h2>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [TFT Addresses](#tft-addresses)
-  - [Ethereum Chain Address](#ethereum-chain-address)
-  - [BSC Address](#bsc-address)
-- [Add TFT to Metamask](#add-tft-to-metamask)
-- [Buy TFT on Metamask](#buy-tft-on-metamask)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 

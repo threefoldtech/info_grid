@@ -2,21 +2,7 @@
 
 With Pulumi, you can express your infrastructure requirements using the languages you know and love, creating a seamless bridge between development and operations. Let's go!
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Benefits of Using Pulumi](#benefits-of-using-pulumi)
-- [Declarative vs. Imperative Programming](#declarative-vs-imperative-programming)
-  - [Declaration Programming Example](#declaration-programming-example)
-  - [Benefits of Declarative Programming in IaC](#benefits-of-declarative-programming-in-iac)
-- [Concepts](#concepts)
-  - [Pulumi Project](#pulumi-project)
-  - [Project File](#project-file)
-  - [Stacks](#stacks)
-  - [Resources](#resources)
-- [Pulumi Registry](#pulumi-registry)
-
-***
 
 ## Introduction
 

@@ -1,6 +1,6 @@
 <h1> Basic Environments </h1>
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [Virtual Machines](./vm_intro.md)
   - [Micro and Full VM Differences ](./vm_differences.md)

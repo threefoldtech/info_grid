@@ -1,12 +1,5 @@
 <h1>Database</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Max Open Connections](#max-open-connections)
-
-***
-
 ## Introduction
 
 The grid proxy has access to a postgres database containing information about the tfgrid, specifically information about grid nodes, farms, twins, and contracts.\

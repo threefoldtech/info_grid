@@ -6,7 +6,7 @@ Easily deploy your favourite applications on the ThreeFold grid with a click of 
 
 ***
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [Algorand](../solutions/algorand.md)
 - [CasperLabs](../solutions/casper.md)

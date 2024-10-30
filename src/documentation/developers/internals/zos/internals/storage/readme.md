@@ -1,17 +1,5 @@
 <h1> Storage Module</h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [ZBus](#zbus)
-- [Overview](#overview)
-- [List of sub-modules](#list-of-sub-modules)
-- [On Node Booting](#on-node-booting)
-	- [zinit unit](#zinit-unit)
-	- [Interface](#interface)
-
-***
-
 ## Introduction
 
 This module is responsible to manage everything related with storage. 

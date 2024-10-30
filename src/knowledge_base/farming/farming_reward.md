@@ -1,15 +1,6 @@
 <h1> Farming Reward </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [How do farmers earn TFT?](#how-do-farmers-earn-tft)
-- [Proof-of-Capacity](#proof-of-capacity)
-- [What is proof-of-capacity?](#what-is-proof-of-capacity)
-- [Why proof-of-capacity?](#why-proof-of-capacity)
-- [How does Proof-of-Capacity work?](#how-does-proof-of-capacity-work)
-
-***
 
 > Note: Farming rewards will be updated for the next 3.14 grid release. Stay tuned.
 

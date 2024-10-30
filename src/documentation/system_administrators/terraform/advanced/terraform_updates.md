@@ -1,12 +1,6 @@
 <h1> Updating </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Updating with Terraform](#updating-with-terraform)
-- [Adjustments](#adjustments)
-
-***
 
 ## Introduction
 

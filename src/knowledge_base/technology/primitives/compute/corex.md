@@ -1,12 +1,7 @@
 
 <h1> CoreX </h1>
 
-<h2>Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [ZMachine Process Manager](#zmachine-process-manager)
-
-***
 
 ## Introduction
 

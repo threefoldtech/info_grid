@@ -1,11 +1,6 @@
 <h1> Quantum Safe Filesystem (QSFS) </h1>
 
-<h2> Table of Contents </h2>
 
-- [QSFS on Micro VM](./terraform_qsfs_on_microvm.md)
-- [QSFS on Full VM](./terraform_qsfs_on_full_vm.md)
-
-***
 
 ## Introduction
 

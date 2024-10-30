@@ -1,15 +1,5 @@
 <h1> CPUBenchmark </h1>
 
-<h2>Table of Contents</h2>
-
-- [Overview](#overview)
-- [Configuration](#configuration)
-- [Details](#details)
-- [Result Sample](#result-sample)
-- [Result Explanation](#result-explanation)
-
-***
-
 ## Overview
 
 The `CPUBenchmark` task is designed to measure the performance of the CPU. it utilizes the [cpu-benchmark-simple](https://github.com/threefoldtech/cpu-benchmark-simple) tool and includes a zos stub to gather the number of workloads running on the node.

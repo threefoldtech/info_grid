@@ -13,7 +13,7 @@ Here you will find everything related to deployments on the ThreeFold grid. This
 
 ***
 
-## Table of Content
+**TABLE OF CONTENTS**
 
 - [Pricing Calculator](./pricing_calculator.md)
 - [Node Finder](./node_finder.md)

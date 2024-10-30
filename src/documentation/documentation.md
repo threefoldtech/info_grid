@@ -4,7 +4,7 @@ The section contains all the practical information for farmers, developers and s
 
 For complementary information on ThreeFold, refer to the [ThreeFold Knowledge Base](../knowledge_base/knowledge_base.md).
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [ThreeFold Dashboard](./dashboard/dashboard.md)
 - [ThreeFold Connect](./tfconnect/tfconnect_toc.md)

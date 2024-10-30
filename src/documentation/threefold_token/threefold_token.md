@@ -1,18 +1,6 @@
 <h1> ThreeFold Token </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction to TFT](#introduction-to-tft)
-- [Chains with TFT](#chains-with-tft)
-- [TFT Contract Addresses on Chains](#tft-contract-addresses-on-chains)
-- [Bridges Between Chains](#bridges-between-chains)
-- [Storing TFT](#storing-tft)
-- [Buy and Sell TFT](#buy-and-sell-tft)
-- [Transaction Fees](#transaction-fees)
-- [Deploy on the TFGrid with TFT](#deploy-on-the-tfgrid-with-tft)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction to TFT
 

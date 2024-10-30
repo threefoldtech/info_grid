@@ -1,21 +1,6 @@
 <h1>Nextcloud 2-Node VPN Deployment</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [2-Node Terraform Deployment](#2-node-terraform-deployment)
-  - [Create the Terraform Files](#create-the-terraform-files)
-    - [Variables File](#variables-file)
-    - [Main File](#main-file)
-  - [Deploy the 2-Node VPN](#deploy-the-2-node-vpn)
-- [Nextcloud Setup](#nextcloud-setup)
-- [Nextcloud VM Prerequisites](#nextcloud-vm-prerequisites)
-- [Prepare the VMs for the Rsync Daily Backup](#prepare-the-vms-for-the-rsync-daily-backup)
-- [Create a Cron Job for the Rsync Daily Backup](#create-a-cron-job-for-the-rsync-daily-backup)
-- [Future Projects](#future-projects)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 # Introduction
 

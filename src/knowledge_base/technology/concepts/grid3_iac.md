@@ -1,15 +1,6 @@
 <h1> Infrastructure as Code (IaC) </h1>
 
-<h2> Table of Contents </h2>
 
-- [What is IaC?](#what-is-iac)
-- [Benefits of IaC](#benefits-of-iac)
-- [ThreeFold's IaC](#threefolds-iac)
-- [How it Works](#how-it-works)
-- [Dive Deeper](#dive-deeper)
-- [Manuals](#manuals)
-
-***
 
 ## What is IaC?
 Infrastructure as Code (IaC) is a concept that revolutionizes the way infrastructure is provisioned and managed in the world of IT. It involves the use of declarative scripts or configuration files to define and automate the deployment, configuration, and management of infrastructure resources. With IaC, organizations can treat infrastructure provisioning as code, applying software development principles and practices to infrastructure management. This approach brings numerous benefits, such as increased efficiency, consistency, scalability, and reproducibility.

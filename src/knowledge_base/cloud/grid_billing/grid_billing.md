@@ -1,34 +1,6 @@
 <h1>Grid Billing</h2>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Resources to Update](#resources-to-update)
-  - [Current TFT Price](#current-tft-price)
-  - [Current Cloud Units Values](#current-cloud-units-values)
-- [Node Contract](#node-contract)
-  - [Calculating the CU](#calculating-the-cu)
-  - [Calculating the SU](#calculating-the-su)
-  - [Calculating the Billing Rate for the Contract](#calculating-the-billing-rate-for-the-contract)
-  - [Applying the Discounts](#applying-the-discounts)
-- [Rent Contract](#rent-contract)
-  - [Getting the Resources](#getting-the-resources)
-  - [Calculating the CU](#calculating-the-cu-1)
-  - [Calculating the SU](#calculating-the-su-1)
-  - [Calculating the Billing Rate for the Contract](#calculating-the-billing-rate-for-the-contract-1)
-  - [Applying the Dedicated Node Discount](#applying-the-dedicated-node-discount)
-  - [Applying the Staking Discount](#applying-the-staking-discount)
-- [Name Contract](#name-contract)
-  - [Applying the Staking Discount](#applying-the-staking-discount-1)
-- [Public IP](#public-ip)
-  - [Applying the Staking Discount](#applying-the-staking-discount-2)
-- [Network Usage](#network-usage)
-  - [Data Usage](#data-usage)
-  - [NU Value](#nu-value)
-  - [Applying the Staking Discount](#applying-the-staking-discount-3)
-- [Billing History](#billing-history)
-
-***
 
 ## Introduction
 

@@ -4,7 +4,7 @@ ThreeFold strongly believes in the power of open-source projects and community-d
 
 To become a farmer, a developer or a sysadmin on the ThreeFold, read the [documentation](../../documentation/documentation.md).
 
-<h2>Table of Contents</h2
+**TABLE OF CONTENTS**
 
 - [How to Contribute](./contribute.md)
 - [Development Process](./development_process.md)

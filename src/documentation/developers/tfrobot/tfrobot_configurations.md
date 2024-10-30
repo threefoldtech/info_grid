@@ -1,15 +1,5 @@
 <h1> Supported Configurations </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Config File](#config-file)
-- [Node Group](#node-group)
-- [Vms Groups](#vms-groups)
-- [Disk](#disk)
-
-***
-
 ## Introduction
 
 When deploying with TFROBOT, you can set different configurations allowing for personalized deployments.

@@ -1,18 +1,6 @@
 <h1> QSFS on Micro VM with Terraform</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Find a 3Node](#find-a-3node)
-- [Create the Terraform Files](#create-the-terraform-files)
-  - [Create the Files with the Provider](#create-the-files-with-the-provider)
-  - [Create the Files Manually](#create-the-files-manually)
-- [Deploy the Micro VM with Terraform](#deploy-the-micro-vm-with-terraform)
-- [SSH into the 3Node](#ssh-into-the-3node)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 ## Introduction
 

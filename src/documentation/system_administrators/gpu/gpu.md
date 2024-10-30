@@ -1,20 +1,6 @@
 <h1> GPU Support </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Filter and Reserve a GPU Node](#filter-and-reserve-a-gpu-node)
-  - [Filter Nodes](#filter-nodes)
-  - [Reserve a Node](#reserve-a-node)
-- [Deploy a VM with GPU](#deploy-a-vm-with-gpu)
-- [Install the GPU Driver](#install-the-gpu-driver)
-  - [AMD Driver](#amd-driver)
-  - [Nvidia Driver](#nvidia-driver)
-  - [With an AI Model](#with-an-ai-model)
-- [Troubleshooting](#troubleshooting)
-- [GPU Support Links](#gpu-support-links)
-
-***
 
 ## Introduction
 

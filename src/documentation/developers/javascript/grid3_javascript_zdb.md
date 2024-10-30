@@ -1,20 +1,5 @@
 <h1>Deploying ZDB</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Example code](#example-code)
-- [Detailed explanation](#detailed-explanation)
-  - [Getting the client](#getting-the-client)
-  - [Building the model](#building-the-model)
-  - [preparing ZDBs collection](#preparing-zdbs-collection)
-  - [Deployment](#deployment)
-  - [Getting Deployment information](#getting-deployment-information)
-  - [Deleting a deployment](#deleting-a-deployment)
-
-***
-
 ## Introduction
 
 We show how to deploy ZDB on the TFGrid with the Javascript client.

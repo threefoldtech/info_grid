@@ -4,40 +4,6 @@ In the following 3Node DIY guide, you will learn how to turn a Dell server (R620
 
 Note that the process is similar for other rack servers.
 
-<body>
-<h2>Table of Contents</h2>
-</body>
-
-
-- [Setting Up the Hardware](#setting-up-the-hardware)
-  - [Avoiding Static Discharge](#avoiding-static-discharge)
-  - [Setting the M.2 NVME SSD Disk with the PCIe Adaptor](#setting-the-m2-nvme-ssd-disk-with-the-pcie-adaptor)
-  - [Checking the RAM sticks](#checking-the-ram-sticks)
-    - [General Rules when Installing RAM Sticks](#general-rules-when-installing-ram-sticks)
-      - [Procedure to Install RAM Sticks](#procedure-to-install-ram-sticks)
-  - [Installing the SSD Disks](#installing-the-ssd-disks)
-  - [Plugging the 3node Server](#plugging-the-3node-server)
-  - [Removing the DVD Optical Drive - Installing a SSD disk in the DVD Optical Drive Slot](#removing-the-dvd-optical-drive---installing-a-ssd-disk-in-the-dvd-optical-drive-slot)
-  - [Using Onboard Storage - RAID Controller Details](#using-onboard-storage---raid-controller-details)
-- [Zero-OS Bootstrap Image](#zero-os-bootstrap-image)
-  - [Creating a Farm](#creating-a-farm)
-    - [Using Dashboard](#using-dashboard)
-    - [Using TF Connect App](#using-tf-connect-app)
-  - [Wiping All the Disks](#wiping-all-the-disks)
-  - [Downloading the Zero-OS Bootstrap Image](#downloading-the-zero-os-bootstrap-image)
-    - [DVD ISO BIOS Image](#dvd-iso-bios-image)
-    - [USB BIOS Image](#usb-bios-image)
-- [BIOS Settings](#bios-settings)
-  - [Processor Settings](#processor-settings)
-  - [Boot Settings](#boot-settings)
-- [Booting the 3Node](#booting-the-3node)
-- [Additional Information](#additional-information)
-  - [Differences between the R620 and the R720](#differences-between-the-r620-and-the-r720)
-  - [Different CPUs and RAMs Configurations for 3Node Dell Servers](#different-cpus-and-rams-configurations-for-3node-dell-servers)
-- [Closing Words](#closing-words)
-
-***
-
 # Setting Up the Hardware
 
 ![3node_diy_rack_server_1](./img/3node_diy_rack_server_1.png) 

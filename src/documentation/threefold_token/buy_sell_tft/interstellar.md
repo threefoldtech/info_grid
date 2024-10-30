@@ -1,15 +1,6 @@
 <h1> Get TFT (Stellar) on Interstellar </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Get Started](#get-started)
-  - [Get TFT By Trading](#get-tft-by-trading)
-- [Store TFT on Interstellar](#store-tft-on-interstellar)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 Welcome to our guide on how to get TFT tokens (Stellar) via the [**Interstellar**](https://interstellar.exchange/)! 

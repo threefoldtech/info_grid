@@ -1,15 +1,6 @@
 <h1> What's New on ThreeFold Grid v3.x </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [TFChain v3.x](#tfchain-v3x)
-  - [Key Features of  TFChain v3.x:](#key-features-of--tfchain-v3x)
-- [Proof of Utilization: Enhancing Your Cloud Experience](#proof-of-utilization-enhancing-your-cloud-experience)
-  - [Key Features:](#key-features)
-  - [New TFGrid Explorer UI](#new-tfgrid-explorer-ui)
-
-***
 
 ## Introduction
 

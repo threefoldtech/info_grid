@@ -1,21 +1,6 @@
 
 <h1> Deploying a VM </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Example](#example)
-- [Detailed Explanation](#detailed-explanation)
-  - [Building Network](#building-network)
-- [Building the Disk Model](#building-the-disk-model)
-- [Building the VM](#building-the-vm)
-- [Building VMs Collection](#building-vms-collection)
-- [deployment](#deployment)
-- [Getting Deployment Information](#getting-deployment-information)
-- [Deleting a Deployment](#deleting-a-deployment)
-
-***
-
 ## Introduction
 
 We present information on how to deploy a VM with the Javascript client with concrete examples.

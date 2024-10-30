@@ -1,15 +1,5 @@
 <h1> TFRobot </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Deployment](#deployment)
-- [Deployed Instances Table](#deployed-instances-table)
-
-***
-
 ## Introduction
 
 [TFRobot](https://github.com/threefoldtech/tfgrid-sdk-go/blob/development/tfrobot/README.md) is tool designed to automate mass deployment of groups of VMs on the ThreeFold Grid, with support of multiple retries for failed deployments.

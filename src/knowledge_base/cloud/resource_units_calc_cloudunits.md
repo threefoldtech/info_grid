@@ -1,16 +1,7 @@
 
 <h1> Resource Units </h1>
 
-<h2>Table of Contents</h2>
 
-- [Resource Units Overview](#resource-units-overview)
-  - [Compute](#compute)
-  - [Storage](#storage)
-    - [Storage cost price verification Dec 2021](#storage-cost-price-verification-dec-2021)
-- [Change Log](#change-log)
-- [Remarks](#remarks)
-
-***
 
 ## Resource Units Overview
 

@@ -10,7 +10,7 @@ Check and use all things related to the threefold grid. Including:
 
 ***
 
-## Table of Content
+**TABLE OF CONTENTS**
 
 - [Grid Status](./grid_status.md)
 - [Node Statistics](./node_statistics.md)

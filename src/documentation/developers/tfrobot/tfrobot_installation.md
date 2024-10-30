@@ -1,12 +1,5 @@
 <h1>Installation</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Installation](#installation)
-
-***
-
 ## Introduction
 
 This section covers the basics on how to install TFROBOT (`tfrobot`). 

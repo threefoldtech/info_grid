@@ -10,7 +10,7 @@ Out of the box RMB provides the following:
 - Support for 3rd party hosted relays. 
   - Anyone can host a relay and people can use it safely since there is no way messages can be inspected while using e2e. That's similar to home servers by matrix.
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [Introduction to RMB](rmb_intro.md)
 - [Coding Guides](./rmb_coding_guides.md)

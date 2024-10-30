@@ -1,12 +1,6 @@
 <h1> ThreeFold Chain </h1>
 
-<h2>Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Overview](#overview)
-- [Key Functionalities](#key-functionalities)
-
-***
 
 ## Introduction
 

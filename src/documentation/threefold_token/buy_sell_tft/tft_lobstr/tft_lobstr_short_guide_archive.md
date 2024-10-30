@@ -1,15 +1,6 @@
 <h1> Lobstr Wallet: Quick Guide </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Get Started](#get-started)
-  - [Get TFT By Swapping](#get-tft-by-swapping)
-  - [Get TFT by Trading](#get-tft-by-trading)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 

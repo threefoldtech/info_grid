@@ -1,6 +1,6 @@
 # Primitives
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [Compute](./compute/compute_toc.md)
   - [ZKube](./compute/zkube.md)

@@ -6,7 +6,7 @@ For complementary information on ThreeFold farming, refer to the [Farming](../..
 
 To buy a certified node from an official ThreeFold vendor, check the [ThreeFold Marketplace](https://marketplace.3node.global/).
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [Build a 3Node](./3node_building/3node_building.md)
 - [Farming Requirements](./farming_requirements.md)

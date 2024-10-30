@@ -1,10 +1,5 @@
 # Quick start
 
-- [Quick start](#quick-start)
-  - [Starting a local zos node](#starting-a-local-zos-node)
-  - [Accessing node](#accessing-node)
-  - [Development](#development)
-
 ## Starting a local zos node
 
 * Make sure `qemu` and `dnsmasq` are installed

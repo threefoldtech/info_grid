@@ -1,6 +1,6 @@
 # Storage
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [ZOS Filesystem](./zos_fs.md)
 - [ZOS Mount](./zmount.md)

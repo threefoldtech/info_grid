@@ -1,14 +1,6 @@
 <h1>HTTPS with Caddy</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Set HTTPS](#set-https)
-  - [Adjust the Firewall](#adjust-the-firewall)
-  - [Manage with zinit](#manage-with-zinit)
-- [Questions and Feedback](#questions-and-feedback)
----
 
 ## Introduction
 

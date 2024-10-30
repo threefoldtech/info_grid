@@ -1,12 +1,6 @@
 <h1> ThreeFold Connect Overview </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Benefits](#benefits)
-- [Installation](#installation)
-
----
 
 ## Introduction
 

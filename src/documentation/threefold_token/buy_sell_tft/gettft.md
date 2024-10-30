@@ -1,16 +1,6 @@
 <h1>Get TFT (Stellar) on GetTFT.com</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Get Started](#get-started)
-  - [Link TF Wallet to GetTFT.com](#link-tf-wallet-to-gettftcom)
-    - [Get TFT using BTC](#get-tft-using-btc)
-    - [Get TFT using Fiat Currency (USD / EUR)](#get-tft-using-fiat-currency-usd--eur)
-- [Important Notice](#important-notice)
-- [Disclaimer](#disclaimer)
-***
 ## Introduction
 
 Welcome to our tutorial on how to buy TFT tokens (Stellar / Native) via [GetTFT.com](https://gettft.com/)! 

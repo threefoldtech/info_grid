@@ -1,37 +1,6 @@
 <h1> Zola Website Deployer</h1>
 
-<h2> Table of Contents </h2>
 
-- [Overview](#overview)
-  - [What is Zola Framework?](#what-is-zola-framework)
-- [Prerequisites](#prerequisites)
-  - [Important Links](#important-links)
-- [Installing Zola Onto Your Machine](#installing-zola-onto-your-machine)
-  - [Important Links](#important-links-1)
-- [Get Started](#get-started)
-  - [Fork ThreeFold's Website Template to Your Github Account](#fork-threefolds-website-template-to-your-github-account)
-  - [Clone the Forked Repository Locally](#clone-the-forked-repository-locally)
-  - [Open and Edit Your Cloned Zola Template with a Code Editor](#open-and-edit-your-cloned-zola-template-with-a-code-editor)
-  - [Template Guide](#template-guide)
-  - [Navigating the Template](#navigating-the-template)
-  - [Top Navbar Made Easy](#top-navbar-made-easy)
-  - [Replace Logo with your Own logo](#replace-logo-with-your-own-logo)
-  - [Important Links](#important-links-2)
-- [Customization](#customization)
-  - [Some Tutorials on Markdown](#some-tutorials-on-markdown)
-  - [Creating A Single-Column Page Section](#creating-a-single-column-page-section)
-  - [Adding Image](#adding-image)
-  - [Creating Page Section with Multiple Columns](#creating-page-section-with-multiple-columns)
-  - [Important Links](#important-links-3)
-  - [Build and Preview Your Website Locally](#build-and-preview-your-website-locally)
-  - [Check the Website Links](#check-the-website-links)
-  - [Important Links](#important-links-4)
-- [Publish Your Website (Via Github Pages)](#publish-your-website-via-github-pages)
-  - [Publish your Github page](#publish-your-github-page)
-- [Important Links](#important-links-5)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 ## Overview
 

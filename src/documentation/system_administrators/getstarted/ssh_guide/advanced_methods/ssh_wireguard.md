@@ -1,18 +1,6 @@
 <h1> WireGuard </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deploy a Weblet with WireGuard Access](#deploy-a-weblet-with-wireguard-access)
-- [Install WireGuard](#install-wireguard)
-- [Set the WireGuard Configurations](#set-the-wireguard-configurations)
-  - [Linux and MAC](#linux-and-mac)
-  - [Windows](#windows)
-- [Test the WireGuard Connection](#test-the-wireguard-connection)
-- [SSH into the Deployment with Wireguard](#ssh-into-the-deployment-with-wireguard)
-
-***
 
 # Introduction
 

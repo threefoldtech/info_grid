@@ -1,11 +1,6 @@
 <h1>API</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [File Example](#file-example)
-
-***
 
 ## Introduction
 

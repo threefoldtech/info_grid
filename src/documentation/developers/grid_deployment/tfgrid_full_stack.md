@@ -1,12 +1,4 @@
 <h1> ThreeFold Grid Full Stack </h1>
-<h2>Table of Contents</h2>
-
-
-- [Introduction](#introduction)
-- [Components of the Stack](#components-of-the-stack)
-- [Run Your Own Stack](#run-your-own-stack)
-
-***
 
 ## Introduction
 

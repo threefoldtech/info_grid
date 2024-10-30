@@ -1,13 +1,6 @@
 <h1>Get TFT: Pancake Swap (BSC)</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Buy TFT on PancakeSwap](#buy-tft-on-pancakeswap)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 

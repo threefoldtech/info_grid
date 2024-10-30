@@ -1,16 +1,6 @@
 <h1> Cloud Unit Pricing </h1>
 
-<h2>Table of Contents</h2>
 
-- [Pricing Policy](#pricing-policy)
-- [Pricing Expressed Per Month](#pricing-expressed-per-month)
-- [Operation Fees](#operation-fees)
-- [Certified Capacity](#certified-capacity)
-- [Dedicated Nodes](#dedicated-nodes)
-- [Staking Discount](#staking-discount)
-  - [Example for 40% discount (Silver)](#example-for-40-discount-silver)
-
-***
 
 ## Pricing Policy
 

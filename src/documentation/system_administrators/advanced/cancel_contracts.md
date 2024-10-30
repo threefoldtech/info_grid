@@ -1,13 +1,6 @@
 <h1> Cancel Contracts </h1>
 
-<h2>Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Using the Dashboard](#using-the-dashboard)
-- [Using GraphQL and Polkadot UI](#using-graphql-and-polkadot-ui)
-- [Using grid3\_client\_ts](#using-grid3_client_ts)
-
-***
 
 ## Introduction
 

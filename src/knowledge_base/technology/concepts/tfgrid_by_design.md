@@ -1,30 +1,6 @@
 <h1>TFGrid by Design: Deployment Architectures and Solution Categories</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-  - [TFGrid by Design](#tfgrid-by-design)
-  - [Capacity and Connectivity](#capacity-and-connectivity)
-- [TFGrid Main Components Overview and Examples](#tfgrid-main-components-overview-and-examples)
-  - [Storage Units](#storage-units)
-    - [0-DB-FS](#0-db-fs)
-    - [0-stor\_v2](#0-stor_v2)
-    - [QSFS](#qsfs)
-  - [Compute Units](#compute-units)
-    - [Virtual CPUs (vCPUs)](#virtual-cpus-vcpus)
-    - [Kubernetes](#kubernetes)
-    - [TF Grid-SDK-Go and TF Grid-SDK-TS](#tf-grid-sdk-go-and-tf-grid-sdk-ts)
-  - [Network Units](#network-units)
-    - [Reliable Message Bus Relay (RMB-RS)](#reliable-message-bus-relay-rmb-rs)
-    - [TCP-Router](#tcp-router)
-- [Solution Categories](#solution-categories)
-  - [DIY Workloads](#diy-workloads)
-  - [Independent Commercial Offerings](#independent-commercial-offerings)
-  - [ThreeFold Commercial Offerings](#threefold-commercial-offerings)
-- [Best Practices](#best-practices)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 # Introduction
 

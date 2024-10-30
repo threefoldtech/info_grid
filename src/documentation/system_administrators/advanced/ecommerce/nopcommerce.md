@@ -1,26 +1,6 @@
 <h1>Ecommerce on the TFGrid</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deploy a Full VM](#deploy-a-full-vm)
-- [Create an SSH Tunnel](#create-an-ssh-tunnel)
-- [Preparing the VM](#preparing-the-vm)
-- [Set a Firewall](#set-a-firewall)
-- [Download nopCommerce](#download-nopcommerce)
-- [Access nopCommerce](#access-nopcommerce)
-- [Install nopCommerce](#install-nopcommerce)
-- [Access the Ecommerce from the Public Internet](#access-the-ecommerce-from-the-public-internet)
-  - [Set a DNS Record](#set-a-dns-record)
-  - [Access the Ecommerce](#access-the-ecommerce)
-  - [HTTPS with Caddy](#https-with-caddy)
-    - [Manage with Systemd](#manage-with-systemd)
-- [Access Admin Panel](#access-admin-panel)
-- [Manage nopCommerce with Systemd](#manage-nopcommerce-with-systemd)
-- [References](#references)
-- [Questions and Feedback](#questions-and-feedback)
----
 
 ## Introduction
 

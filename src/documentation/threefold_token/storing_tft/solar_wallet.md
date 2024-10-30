@@ -1,17 +1,6 @@
 <h1> Solar Wallet (TFT-Stellar) </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Get Started](#get-started)
-  - [Create a New Solar Wallet](#create-a-new-solar-wallet)
-  - [Fund XLM to New Wallet](#fund-xlm-to-new-wallet)
-  - [Adding TFT Asset to Solar Wallet](#adding-tft-asset-to-solar-wallet)
-- [Storing / Receiving and Sending TFT](#storing--receiving-and-sending-tft)
-- [Important Notice](#important-notice)
-- [Disclaimer](#disclaimer)
-***
 ## Introduction
 
 Welcome to our guide on how to store TFT tokens (Stellar) via the [**Solar Wallet**](https://solarwallet.io/)!

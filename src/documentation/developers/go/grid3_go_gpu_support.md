@@ -1,13 +1,5 @@
 <h1> GPU Support </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Example](#example)
-- [More Information](#more-information)
-
-***
-
 ## Introduction
 
 We present here an example on how to deploy using the Go client. This is part of our integration tests.

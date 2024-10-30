@@ -1,17 +1,6 @@
 <h1> Lobstr Wallet </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Get Started](#get-started)
-  - [Create a New Lobstr Wallet](#create-a-new-lobstr-wallet)
-  - [Fund XLM to Wallet](#fund-xlm-to-wallet)
-  - [Adding TFT Asset to Lobstr Wallet](#adding-tft-asset-to-lobstr-wallet)
-- [Important Notice](#important-notice)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 
