@@ -12,4 +12,3 @@ For complementary information on ThreeFold, refer to the [ThreeFold Knowledge Ba
 - [Farmers](./farmers/farmers.md)
 - [System Administrators](./system_administrators/system_administrators.md)
 - [ThreeFold Token](./threefold_token/threefold_token.md)
-- [FAQ](./faq/faq.md)
