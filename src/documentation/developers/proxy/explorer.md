@@ -1,13 +1,5 @@
 <h1>The Grid Explorer</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Explorer Overview](#explorer-overview)
-- [Explorer Endpoints](#explorer-endpoints)
-
-***
-
 ## Introduction
 
 The Grid Explorer is a rest API used to index a various information from the TFChain.

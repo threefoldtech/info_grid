@@ -1,24 +1,6 @@
 <h1> ThreeFold Connect Advanced </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [ThreeFold Connect Installation](#threefold-connect-installation)
-  - [Verify your identity by Email](#verify-your-identity-by-email)
-  - [Change email associated with TF account](#change-email-associated-with-tf-account)
-- [Create a Wallet](#create-a-wallet)
-- [See ThreeFold Connect App and Wallet Transactions](#see-threefold-connect-app-and-wallet-transactions)
-- [Show Seed Phrase - Remove Account from TF Connect App](#show-seed-phrase---remove-account-from-tf-connect-app)
-- [Recover Account on the ThreeFold Connect App](#recover-account-on-the-threefold-connect-app)
-- [Import Farm from the TF Connect App to the TF Dashboard](#import-farm-from-the-tf-connect-app-to-the-tf-dashboard)
-- [Import TF Dashboard Wallet to the TF Connect App Wallet](#import-tf-dashboard-wallet-to-the-tf-connect-app-wallet)
-- [Send and Receive TFT between TF Connect Wallets](#send-and-receive-tft-between-tf-connect-wallets)
-  - [Send TFT](#send-tft)
-  - [Receive TFT](#receive-tft)
-  - [Send TFT to Hardware Wallet on Stellar Blockchain](#send-tft-to-hardware-wallet-on-stellar-blockchain)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 

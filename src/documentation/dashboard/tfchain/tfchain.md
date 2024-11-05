@@ -11,7 +11,7 @@ Here you will find everything related to the ThreeFold chain. this includes:
    ![](../img/sidebar_4.png)
 
 ***
-## Table of Content
+**TABLE OF CONTENTS**
 
 - [Your Profile](./your_profile.md)
 - [TF DAO](./tf_dao.md)

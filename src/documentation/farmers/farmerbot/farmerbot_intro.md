@@ -6,7 +6,7 @@ We present here a quick guide to accompany farmers in setting up the Farmerbot. 
 
 For more information on the Farmerbot, you can visit the [Farmerbot repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/farmerbot) on Github. You can also consult the Farmerbot FAQ if needed.
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [Quick Guide](./farmerbot_quick.md)
 - [Additional Information](./farmerbot_information.md)

@@ -1,17 +1,5 @@
 <h1> 1. Create a Farm </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Create a TFChain Account](#create-a-tfchain-account)
-- [Create a Farm](#create-a-farm)
-- [Create a ThreeFold Connect Wallet](#create-a-threefold-connect-wallet)
-- [Add a Stellar Address for Payout](#add-a-stellar-address-for-payout)
-  - [Farming Rewards Distribution](#farming-rewards-distribution)
-- [More Information](#more-information)
-
-***
-
 ## Introduction
 
 We cover the basic steps to create a farm with the ThreeFold Dashboard. We also create a TFConnect app wallet to receive the farming rewards. 

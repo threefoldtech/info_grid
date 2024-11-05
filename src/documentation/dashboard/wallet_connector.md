@@ -1,14 +1,5 @@
 <h1> Wallet Connector </h1>
 
-<h2>Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Supported Networks](#supported-networks)
-- [Create a Wallet](#create-a-wallet)
-- [Import a Wallet](#import-a-wallet)
-
-***
-
 ## Introduction
 
 To interact with TFChain, users can connect their TFChain wallet to the wallet connector available on the ThreeFold Dashboard.

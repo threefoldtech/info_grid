@@ -1,19 +1,6 @@
 <h1> Node Status Bot </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deploy a Micro VM](#deploy-a-micro-vm)
-  - [Network Choice](#network-choice)
-- [Create a Telegram Bot](#create-a-telegram-bot)
-- [Prepare the VM](#prepare-the-vm)
-- [Set the Bot](#set-the-bot)
-- [Start the Bot](#start-the-bot)
-- [Set Zinit](#set-zinit)
-- [Questions and Feedback](#questions-and-feedback)
-
----
 
 ## Introduction
 

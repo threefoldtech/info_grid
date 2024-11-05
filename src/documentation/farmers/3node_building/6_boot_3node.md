@@ -1,21 +1,5 @@
 <h1> 6. Boot the 3Node </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [1. Booting the 3Node with Zero-OS](#1-booting-the-3node-with-zero-os)
-- [2. Check the 3Node Status Online](#2-check-the-3node-status-online)
-  - [Check Node Health](#check-node-health)
-- [3. Receive the Farming Rewards](#3-receive-the-farming-rewards)
-- [Advanced Booting Methods (Optional)](#advanced-booting-methods-optional)
-  - [PXE Booting with OPNsense](#pxe-booting-with-opnsense)
-  - [PXE Booting with pfSense](#pxe-booting-with-pfsense)
-- [Booting Issues](#booting-issues)
-  - [Multiple nodes can run with the same node ID](#multiple-nodes-can-run-with-the-same-node-id)
-
-***
-
-
 ## Introduction
 
 We explain how to boot the 3Node with the Zero-OS bootstrap image with a USB key. We also include optional advanced booting methods using OPNSense and pfSense.

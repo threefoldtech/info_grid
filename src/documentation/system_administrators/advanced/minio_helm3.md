@@ -1,16 +1,6 @@
 <h1>MinIO Operator with Helm 3</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Create an SSH Tunnel](#create-an-ssh-tunnel)
-- [Set the VM](#set-the-vm)
-- [Set MinIO](#set-minio)
-- [Access the MinIO Operator](#access-the-minio-operator)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 ## Introduction
 

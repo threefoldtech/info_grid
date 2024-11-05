@@ -1,13 +1,6 @@
 <h1> Zlogs </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Using Zlogs](#using-zlogs)
-  - [Creating a server](#creating-a-server)
-  - [Streaming logs](#streaming-logs)
-
----
 
 ## Introduction
 

@@ -1,14 +1,6 @@
 <h1> WebGW 2.0 </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Implementation](#implementation)
-- [Security](#security)
-- [Redundant Network Connection](#redundant-network-connection)
-- [Unlimited Scale](#unlimited-scale)
-
-***
 
 ## Introduction
 

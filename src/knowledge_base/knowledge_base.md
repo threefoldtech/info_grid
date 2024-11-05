@@ -4,7 +4,7 @@ The section contains information about the ThreeFold ecosystem, its technology a
 
 For practical information for farmers, developers and system administrators, refer to the [ThreeFold Documentation](../documentation/documentation.md).
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [Technology](./technology/technology_toc.md)
 - [Release Notes](./releasenotes/releasenotes_readme.md)

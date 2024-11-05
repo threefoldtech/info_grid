@@ -1,22 +1,5 @@
 <h1> Deploying a VM and exposing it over a Gateway Prefix </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Example code](#example-code)
-- [Detailed explanation](#detailed-explanation)
-  - [deploying](#deploying)
-  - [getting deployment object](#getting-deployment-object)
-  - [deletion](#deletion)
-- [Deploying a VM and exposing it over a Gateway using a Full domain](#deploying-a-vm-and-exposing-it-over-a-gateway-using-a-full-domain)
-- [Example code](#example-code-1)
-- [Detailed explanation](#detailed-explanation-1)
-  - [deploying](#deploying-1)
-  - [get deployment object](#get-deployment-object)
-  - [deletion](#deletion-1)
-
-***
-
 ## Introduction
 
 After the [deployment of a VM](./grid3_javascript_vm.md), now it's time to expose it to the world

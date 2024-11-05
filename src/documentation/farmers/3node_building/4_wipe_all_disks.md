@@ -1,17 +1,5 @@
 <h1> 4. Wipe All the Disks </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Main Steps](#main-steps)
-- [1. Create a Linux Bootstrap Image](#1-create-a-linux-bootstrap-image)
-- [2. Boot Linux in *Try Mode*](#2-boot-linux-in-try-mode)
-- [3. Use wipefs to Wipe All the Disks](#3-use-wipefs-to-wipe-all-the-disks)
-  - [SATA Disks](#sata-disks)
-  - [NVMe Disks](#nvme-disks)
-
-***
-
 ## Introduction
 
 In this section of the ThreeFold Farmers book, we explain how to wipe all the disks of your 3Node.

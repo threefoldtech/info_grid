@@ -1,41 +1,6 @@
 <h1>Nextcloud Redundant Deployment</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Main Steps](#main-steps)
-- [Prerequisites](#prerequisites)
-- [Find Nodes with the ThreeFold Explorer](#find-nodes-with-the-threefold-explorer)
-- [Set the VMs](#set-the-vms)
-  - [Create a Two Servers Wireguard VPN with Terraform](#create-a-two-servers-wireguard-vpn-with-terraform)
-    - [Create the Terraform Files](#create-the-terraform-files)
-    - [Deploy the 3nodes with Terraform](#deploy-the-3nodes-with-terraform)
-    - [SSH into the 3nodes](#ssh-into-the-3nodes)
-    - [Preparing the VMs for the Deployment](#preparing-the-vms-for-the-deployment)
-    - [Test the Wireguard Connection](#test-the-wireguard-connection)
-- [Create the MariaDB Database](#create-the-mariadb-database)
-  - [Download MariaDB and Configure the Database](#download-mariadb-and-configure-the-database)
-  - [Create User with Replication Grant](#create-user-with-replication-grant)
-  - [Verify the Access of the User](#verify-the-access-of-the-user)
-  - [Set the VMs to Accept the MariaDB Connection](#set-the-vms-to-accept-the-mariadb-connection)
-    - [TF Template Worker Server Data](#tf-template-worker-server-data)
-    - [TF Template Master Server Data](#tf-template-master-server-data)
-  - [Set the Nextcloud User and Database](#set-the-nextcloud-user-and-database)
-- [Install and Set GlusterFS](#install-and-set-glusterfs)
-- [Install PHP and Nextcloud](#install-php-and-nextcloud)
-- [Create a Subdomain with DuckDNS](#create-a-subdomain-with-duckdns)
-  - [Worker File for DuckDNS](#worker-file-for-duckdns)
-- [Set Apache](#set-apache)
-- [Access Nextcloud on a Web Browser with the Subdomain](#access-nextcloud-on-a-web-browser-with-the-subdomain)
-- [Enable HTTPS](#enable-https)
-  - [Install Certbot](#install-certbot)
-  - [Set the Certbot with the DNS Domain](#set-the-certbot-with-the-dns-domain)
-  - [Verify HTTPS Automatic Renewal](#verify-https-automatic-renewal)
-- [Set a Firewall](#set-a-firewall)
-- [Conclusion](#conclusion)
-- [Acknowledgements and References](#acknowledgements-and-references)
-
-***
 
 # Introduction
 

@@ -1,14 +1,7 @@
 
 <h1> Hardware Wallet </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Setting up a TFT Trustline on Stellar Blockchain](#setting-up-a-tft-trustline-on-stellar-blockchain)
-- [Conclusion](#conclusion)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 

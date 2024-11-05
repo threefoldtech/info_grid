@@ -1,22 +1,5 @@
 <h1> Workload Types </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Virtual Machine](#virtual-machine)
-  - [`network` type](#network-type)
-  - [`ip` type](#ip-type)
-  - [`zmount` type](#zmount-type)
-  - [`zmachine` type](#zmachine-type)
-    - [Building your `flist`](#building-your-flist)
-  - [`zlogs` type](#zlogs-type)
-- [Storage](#storage)
-  - [`zdb` type](#zdb-type)
-  - [`qsfs` type](#qsfs-type)
-- [Gateway](#gateway)
-  - [`gateway-name-proxy` type](#gateway-name-proxy-type)
-  - [`gateway-fqdn-proxy` type](#gateway-fqdn-proxy-type)
-
 ## Introduction
 
 Each workload has a type which is associated with some data. We present here the different types of workload associated with Zero-OS.

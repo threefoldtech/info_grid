@@ -1,12 +1,5 @@
 <h1> GPU Support and JavaScript </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Example](#example)
-
-***
-
 ## Introduction
 
 We present here a quick introduction to GPU support with JavaScript. 

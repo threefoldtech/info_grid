@@ -2,28 +2,7 @@
 
 Our project development process is characterized by agility, collaboration, and, most importantly, respect. We firmly believe in harnessing the collective ingenuity of our team, recognizing that each individual contributes invaluable insights to our codebase, our development process is completely managed on Github, using Github based projects.
 
-<h2>Table of Contents</h2>
 
-- [Quality Assurance (QA) Process](#quality-assurance-qa-process)
-  - [QA Responsibilities](#qa-responsibilities)
-    - [Daily Standups](#daily-standups)
-    - [Provide Test Plans](#provide-test-plans)
-    - [Test Execution](#test-execution)
-    - [Test Documentation](#test-documentation)
-    - [Verification and Closure](#verification-and-closure)
-    - [Cross-Environment Testing](#cross-environment-testing)
-    - [Bug Assessment Meetings (BAM)](#bug-assessment-meetings-bam)
-    - [Additional Testing Types](#additional-testing-types)
-  - [Expectations for QA Leads](#expectations-for-qa-leads)
-    - [Test Planning](#test-planning)
-    - [Test Strategy](#test-strategy)
-    - [Review and Closure](#review-and-closure)
-    - [Communication](#communication)
-  - [QA Verification and Testing](#qa-verification-and-testing)
-    - [Testplan](#testplan)
-    - [Verification Process](#verification-process)
-
-***
 
 ## Product Definition on Home
 

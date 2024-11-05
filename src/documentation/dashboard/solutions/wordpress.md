@@ -1,23 +1,5 @@
 <h1> WordPress </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Domain Name and IP Address](#domain-name-and-ip-address)
-- [DNS Details with Custom Domain](#dns-details-with-custom-domain)
-  - [DNS Record with Public IPv4](#dns-record-with-public-ipv4)
-  - [DNS Record with Gateway](#dns-record-with-gateway)
-  - [DNS Propagation](#dns-propagation)
-- [Deployment Process](#deployment-process)
-- [Access WordPress](#access-wordpress)
-  - [WordPress Instance Website](#wordpress-instance-website)
-  - [WordPress Instance Admin Page](#wordpress-instance-admin-page)
-- [WordPress Instance Credentials](#wordpress-instance-credentials)
-- [Troubleshooting](#troubleshooting)
-
-***
-
 # Introduction
 
 [WordPress](https://wordpress.org/) is the most popular CMS on the market, powering 65.2% of websites whose CMS we know. That translates to 42.4% of all websites – nearly half of the internet. It is a popular option for those who want to build a website or a blog.

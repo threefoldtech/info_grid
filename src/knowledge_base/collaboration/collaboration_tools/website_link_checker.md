@@ -1,16 +1,6 @@
 <h1> Website Link Checker </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [How the Program Exits](#how-the-program-exits)
-- [Program Arguments](#program-arguments)
-- [How to Use the Program](#how-to-use-the-program)
-  - [With Python](#with-python)
-  - [With Docker](#with-docker)
-  - [With Github Action](#with-github-action)
-
-***
 
 ## Introduction
 

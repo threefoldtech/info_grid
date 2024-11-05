@@ -12,7 +12,7 @@ Whether you are a seasoned ThreeFold enthusiast or a newcomer exploring the dece
 
 To assist you on your journey, we have organized the content into distinct chapters below, covering everything from initial setup procedures and database testing to practical commands, contributions, and insights into the ThreeFold Explorer and the Grid Proxy Database functionalities. 
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [Introducing Grid Proxy](./proxy.md)
 - [Setup](./setup.md)

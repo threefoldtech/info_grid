@@ -1,12 +1,6 @@
 <h1> Get TFT (Stellar) via ThreeFold's Live Desk </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Get Started](#get-started)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 

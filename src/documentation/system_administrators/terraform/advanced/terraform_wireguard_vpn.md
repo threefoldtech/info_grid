@@ -1,18 +1,6 @@
 <h1>Deploy Micro VMs and Set a Wireguard VPN</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Find a 3Node with the ThreeFold Explorer](#find-a-3node-with-the-threefold-explorer)
-- [Create a Two Servers Wireguard VPN with Terraform](#create-a-two-servers-wireguard-vpn-with-terraform)
-- [Deploy the Micro VMs with Terraform](#deploy-the-micro-vms-with-terraform)
-- [Set the Wireguard Connection](#set-the-wireguard-connection)
-- [SSH into the 3Node](#ssh-into-the-3node)
-- [Destroy the Terraform Deployment](#destroy-the-terraform-deployment)
-- [Conclusion](#conclusion)
-
-***
 
 ## Introduction
 

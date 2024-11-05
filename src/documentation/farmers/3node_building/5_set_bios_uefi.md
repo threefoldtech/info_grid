@@ -1,23 +1,5 @@
 <h1> 5. Set the BIOS/UEFI </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Z-OS and DHCP](#z-os-and-dhcp)
-  - [Regular Computer and 3Node Network Differences](#regular-computer-and-3node-network-differences)
-  - [Static IP Addresses](#static-ip-addresses)
-- [The Essential Features of BIOS/UEFI for a 3Node](#the-essential-features-of-biosuefi-for-a-3node)
-- [Setting the Remote Management of a Server with a Static IP Address (Optional)](#setting-the-remote-management-of-a-server-with-a-static-ip-address-optional)
-- [Update the BIOS/UEFI firmware (Optional)](#update-the-biosuefi-firmware-optional)
-  - [Check the BIOS/UEFI version on Windows](#check-the-biosuefi-version-on-windows)
-  - [Check the BIOS/UEFI version on Linux](#check-the-biosuefi-version-on-linux)
-  - [Update the BIOS firmware](#update-the-bios-firmware)
-- [Additional Information](#additional-information)
-  - [BIOS/UEFI and Zero-OS Bootstrap Image Combinations](#biosuefi-and-zero-os-bootstrap-image-combinations)
-
-
-***
-
 ## Introduction
 
 In this section of the ThreeFold Farmers book, we explain how to properly set the BIOS/UEFI of your 3Node.

@@ -1,16 +1,5 @@
 <h1>Contracts</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Get](#get)
-  - [Get Contracts](#get-contracts)
-  - [Get Contract](#get-contract)
-- [Cancel](#cancel)
-  - [Optional Flags](#optional-flags)
-
-***
-
 ## Introduction
 
 We explain how to handle contracts on the TFGrid with `tfcmd`.

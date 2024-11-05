@@ -1,14 +1,5 @@
 <h1>ThreeFold Chain</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Deployed instances](#deployed-instances)
-- [Create a TFChain twin](#create-a-tfchain-twin)
-- [Get your twin ID](#get-your-twin-id)
-
-***
-
 ## Introduction
 
 ThreeFold blockchain (aka TFChain) serves as a registry for Nodes, Farms, Digital Twins and Smart Contracts.

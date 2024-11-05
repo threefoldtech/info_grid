@@ -1,29 +1,5 @@
 <h1>Application Case Study: Nextcloud</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Process Overview and Preparation Steps](#process-overview-and-preparation-steps)
-- [Building an Application](#building-an-application)
-  - [Add an Icon](#add-an-icon)
-  - [Add a Description](#add-a-description)
-  - [Update deployment\_list.ts](#update-deployment_listts)
-  - [Update /types/index.ts](#update-typesindexts)
-  - [Update /router/index.ts](#update-routerindexts)
-  - [Update vm\_deployment\_table.vue](#update-vm_deployment_tablevue)
-  - [Update delete\_deployment.ts](#update-delete_deploymentts)
-  - [Update tf\_deployment\_list.vue](#update-tf_deployment_listvue)
-  - [Create nextcloud\_view.vue](#create-nextcloud_viewvue)
-  - [Create tf\_nextcloud.vue](#create-tf_nextcloudvue)
-    - [Template Section](#template-section)
-    - [First Script Section (Setup)](#first-script-section-setup)
-    - [Second Script Section](#second-script-section)
-- [Testing an application](#testing-an-application)
-- [Contributing to the Dashboard](#contributing-to-the-dashboard)
-- [Conclusion](#conclusion)
-
-***
-
 # Introduction
 
 In this ThreeFold guide, we explore how to create an application on the Dashboard. To do so, we will use the Nextcloud application as a case study. This application is ideal to study since it uses many of the ThreeFold Grid functionalities, such as gateways and gateway domains.

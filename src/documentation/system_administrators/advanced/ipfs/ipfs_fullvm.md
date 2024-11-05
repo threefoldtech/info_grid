@@ -1,18 +1,6 @@
 <h1> IPFS on a Full VM</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Deploy a Full VM](#deploy-a-full-vm)
-- [Create a Root-Access User](#create-a-root-access-user)
-- [Set a Firewall](#set-a-firewall)
-  - [Additional Ports](#additional-ports)
-- [Install IPFS](#install-ipfs)
-- [Set IPFS](#set-ipfs)
-- [Final Verification](#final-verification)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 ## Introduction
 

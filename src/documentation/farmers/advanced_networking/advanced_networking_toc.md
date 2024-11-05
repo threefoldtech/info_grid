@@ -4,7 +4,7 @@ Welcome to the *Advanced Networking* section of the ThreeFold Manual.
 
 In this section, we provide advanced networking tips for farms with public IPs and in data centers (DC). We also cover the differences between IPv4 and IPv6 networking.
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [Networking Overview](./networking_overview.md)
 - [Network Considerations](./network_considerations.md)

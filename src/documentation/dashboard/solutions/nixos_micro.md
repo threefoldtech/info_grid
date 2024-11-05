@@ -1,14 +1,5 @@
 <h1> NixOS MicroVM </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Access the ThreeFold Dashboard](#access-the-threefold-dashboard)
-- [Deploy a NixOS MicroVM](#deploy-a-nixos-microvm)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
-
 ## Introduction
 
 __NixOS MicroVM__ refers to a minimalistic virtual machine environment based on the NixOS Linux distribution.

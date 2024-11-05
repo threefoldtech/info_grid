@@ -1,18 +1,5 @@
 <h1> Zero-OS Advantages </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Zero-OS Installation](#zero-os-installation)
-  - [3Node Install](#3node-install)
-- [Unbreakable Storage](#unbreakable-storage)
-- [Zero Hacking Surface](#zero-hacking-surface)
-- [Zero Boot](#zero-boot)
-  - [How](#how)
-  - [Features](#features)
-- [Deterministic Deployment](#deterministic-deployment)
-- [Zero-OS Protect](#zero-os-protect)
-
 ## Introduction
 
 We present the many advantages of Zero-OS.

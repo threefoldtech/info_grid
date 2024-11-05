@@ -1,6 +1,6 @@
 <h1> Flist </h1>
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [Zero-OS Hub](./flist_hub/zos_hub.md)
 - [Generate an API Token](./flist_hub/api_token.md)

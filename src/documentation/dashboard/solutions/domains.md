@@ -1,13 +1,5 @@
 <h1> Domains </h1>
 
-<h2>Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deployment](#deployment)
-
----
-
 ## Introduction
 
 The Domains solution allows users to securely expose servers hosted on local machines or VMs to the public internet. Users are required to specify the machine's IP, which can be a Mycelium IP, an Yggdrasil IP, or a public IP (IPv4 or IPv6).

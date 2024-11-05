@@ -1,13 +1,6 @@
 <h1> Get TFT(Stellar) on Solar Wallet </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Get Started](#get-started)
-  - [Get TFT by Trading](#get-tft-by-trading)
-- [Disclaimer](#disclaimer)
-***
 ## Introduction
 
 Welcome to our guide on how to buy TFT tokens (Stellar) via the [**Solar Wallet**](https://solarwallet.io/)! 

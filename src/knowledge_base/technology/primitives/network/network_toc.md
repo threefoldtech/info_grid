@@ -1,6 +1,6 @@
 # Network
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [ZNET](./znet.md)
 - [ZNIC](./znic.md)

@@ -1,13 +1,6 @@
 <h1> TFChain-Stellar Bridges: Main Net and Test Net</h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [How to Use the TFChain-Stellar Bridge](#how-to-use-the-tfchain-stellar-bridge)
-- [Bridge Fees](#bridge-fees)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 ## Introduction
 

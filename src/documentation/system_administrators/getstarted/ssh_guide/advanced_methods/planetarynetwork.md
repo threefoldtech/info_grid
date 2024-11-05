@@ -1,26 +1,7 @@
 
 <h1> Planetary Network </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Install](#install)
-- [Run](#run)
-  - [Linux](#linux)
-  - [MacOS](#macos)
-- [Test Connectivity](#test-connectivity)
-- [Firewalls](#firewalls)
-  - [Linux](#linux-1)
-  - [MacOS](#macos-1)
-- [Get Yggdrasil IP](#get-yggdrasil-ip)
-- [Add Peers](#add-peers)
-- [Peers](#peers)
-  - [Central Europe](#central-europe)
-    - [Ghent](#ghent)
-  - [Austria](#austria)
-- [Planetary Network Clients](#planetary-network-clients)
-
-***
 
 ## Introduction
 

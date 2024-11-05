@@ -1,15 +1,6 @@
 <h1>AI & ML Workloads: GPU and Fooocus</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Prepare the System](#prepare-the-system)
-- [Install the GPU Driver](#install-the-gpu-driver)
-- [Install the Prerequisites and Launch Fooocus](#install-the-prerequisites-and-launch-fooocus)
-- [Use Fooocus](#use-fooocus)
-
----
 
 ## Introduction
 

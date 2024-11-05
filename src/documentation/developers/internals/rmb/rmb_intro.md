@@ -1,25 +1,5 @@
 <h1> Introduction to Reliable Message Bus (RMB) </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Overview of the Operation of RMB Relay](#overview-of-the-operation-of-rmb-relay)
-  - [Connections](#connections)
-  - [Federations](#federations)
-  - [Peer](#peer)
-  - [Peer Implementation](#peer-implementation)
-    - [`rmb-peer` message types](#rmb-peer-message-types)
-      - [Output Requests](#output-requests)
-      - [Incoming Response](#incoming-response)
-      - [Incoming Request](#incoming-request)
-      - [Outgoing Response](#outgoing-response)
-- [End2End Encryption](#end2end-encryption)
-  - [Rate Limiting](#rate-limiting)
-  - [Substrate Connections](#substrate-connections)
-  - [Redundancy and Failover](#redundancy-and-failover)
-
-***
-
 ## Introduction
 
 RMB is (reliable message bus) is a set of protocols and a `relay` server that aims to abstract inter-process communication between multiple processes running over multiple nodes.

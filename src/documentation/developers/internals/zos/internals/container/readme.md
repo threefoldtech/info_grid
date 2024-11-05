@@ -1,15 +1,5 @@
 <h1>Container Module</h1>
 
-<h2> Table of Contents </h2>
-
-- [ZBus](#zbus)
-- [Home Directory](#home-directory)
-- [Introduction](#introduction)
-  - [zinit unit](#zinit-unit)
-- [Interface](#interface)
-
-***
-
 ## ZBus
 
 Storage module is available on zbus over the following channel

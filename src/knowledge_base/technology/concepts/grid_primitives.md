@@ -1,15 +1,6 @@
 <h1> ThreeFold Grid Primitives: Empowering Your Solutions </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Compute](#compute)
-- [Storage](#storage)
-- [Network](#network)
-- [Zero-OS Advantages](#zero-os-advantages)
-- [Conclusion](#conclusion)
-
-***
 
 ## Introduction
 

@@ -1,14 +1,6 @@
 <h1>ThreeFold DAO Rules for Proof-of-Capacity</h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Technical Farming Requirements](#technical-farming-requirements)
-- [Suggested: improvements to proof-of-capacity](#suggested-improvements-to-proof-of-capacity)
-- [TFGrid is a DAO](#tfgrid-is-a-dao)
-- [Grid Enhancement Proposal](#grid-enhancement-proposal)
-
-***
 
 > Note: The proof-of-capacity DAO rules will be updated for the next 3.14 grid release. Stay tuned.
 

@@ -1,20 +1,6 @@
 <h1> MetaMask Wallet </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [TFT Addresses](#tft-addresses)
-  - [Ethereum Chain Address](#ethereum-chain-address)
-  - [BSC Address](#bsc-address)
-- [Get Started](#get-started)
-  - [Install \& Create Metamask Account](#install--create-metamask-account)
-  - [Configure a BSC Wallet (Mainnet) for your TFT](#configure-a-bsc-wallet-mainnet-for-your-tft)
-  - [Switch Network from ETH to BSC (Auto Add)](#switch-network-from-eth-to-bsc-auto-add)
-  - [Add TFT Asset to BSC Wallet (Mainnet)](#add-tft-asset-to-bsc-wallet-mainnet)
-- [Important Notice](#important-notice)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 

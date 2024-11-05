@@ -1,12 +1,5 @@
 <h1> Deploy a VM with GPU </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Example](#example)
-
-***
-
 ## Introduction
 
 In this section, we explore how to deploy a virtual machine equipped with GPU. We deploy the VM using Go. The VM will be deployed on a 3Node with an available GPU.

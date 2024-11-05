@@ -4,7 +4,7 @@ This section covers the essential information concerning ThreeFold Farming.
 
 To farm on the ThreeFold Grid, refer to the [Farmers](../../documentation/farmers/farmers.md) section.
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [Farming Rewards](./farming_reward.md)
 - [Proof-of-Capacity](./proof_of_capacity.md)

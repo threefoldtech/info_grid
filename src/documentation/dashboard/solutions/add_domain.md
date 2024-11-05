@@ -1,16 +1,5 @@
 <h1> Add a Domain to a VM</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Preparation](#preparation)
-- [Add New Domain](#add-new-domain)
-- [Domains List](#domains-list)
-- [Delete a Domain](#delete-a-domain)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
-
 ## Introduction
 
 We cover the overall process to add a domain to a virtual machine running on the ThreeFold Grid. This process works for both micro and full virtual machines.

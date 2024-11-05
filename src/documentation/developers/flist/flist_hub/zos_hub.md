@@ -1,22 +1,5 @@
 <h1> Zero-OS Hub </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Upload Your Files](#upload-your-files)
-- [Merge Multiple Flists](#merge-multiple-flists)
-- [Convert Docker Images and Tar Files](#convert-docker-images-and-tar-files)
-- [Upload Customize Flists](#upload-customize-flists)
-- [Upload Homemade Flists](#upload-homemade-flists)
-- [Upload your Existing Flist to Reduce Bandwidth](#upload-your-existing-flist-to-reduce-bandwidth)
-- [Authenticate via 3Bot](#authenticate-via-3bot)
-- [Get and Update Information Through the API](#get-and-update-information-through-the-api)
-  - [Public API Endpoints (No Authentication Required)](#public-api-endpoints-no-authentication-required)
-  - [Restricted API Endpoints (Authentication Required)](#restricted-api-endpoints-authentication-required)
-  - [API Request Templates and Examples](#api-request-templates-and-examples)
-
-***
-
 ## Introduction
 
 The [ThreeFold Zero-OS Hub](https://hub.grid.tf/) allows you to do multiple things and acts as a public centralization of flists.

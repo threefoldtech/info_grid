@@ -1,13 +1,5 @@
 <h1> Supported Flists </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Flists and Parameters](#flists-and-parameters)
-- [More Flists](#more-flists)
-
-***
-
 ## Introduction
 
 We provide basic information on the currently supported Flists.

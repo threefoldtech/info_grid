@@ -1,19 +1,6 @@
 <h1>Minetest on the TFGrid</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deploy a Full VM](#deploy-a-full-vm)
-- [DNS Settings](#dns-settings)
-  - [DNS Verification](#dns-verification)
-- [Run a Minetest Server on the TFGrid](#run-a-minetest-server-on-the-tfgrid)
-- [Run Minetest Locally](#run-minetest-locally)
-- [Access the Server from Minetest](#access-the-server-from-minetest)
-- [Public Server Notes](#public-server-notes)
-- [References](#references)
-
----
 
 ## Introduction
 

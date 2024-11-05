@@ -1,18 +1,6 @@
 <h1>SSH Into a 3Node with Wireguard</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Find a 3Node with the ThreeFold Explorer](#find-a-3node-with-the-threefold-explorer)
-- [Create the Terraform Files](#create-the-terraform-files)
-- [Deploy the Micro VM with Terraform](#deploy-the-micro-vm-with-terraform)
-- [Set the Wireguard Connection](#set-the-wireguard-connection)
-- [SSH into the 3Node with Wireguard](#ssh-into-the-3node-with-wireguard)
-- [Destroy the Terraform Deployment](#destroy-the-terraform-deployment)
-- [Conclusion](#conclusion)
-
-***
 
 ## Introduction
 

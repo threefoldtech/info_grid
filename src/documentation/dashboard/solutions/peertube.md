@@ -1,14 +1,5 @@
 <h1> Peertube </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deployment](#deployment)
-- [Troubleshooting](#troubleshooting)
-
-***
-
 ## Introduction
 
 [Peertube](https://joinpeertube.org/) aspires to be a decentralized and free/libre alternative to video broadcasting services.

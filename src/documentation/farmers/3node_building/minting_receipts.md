@@ -1,14 +1,5 @@
 <h1>Minting Receipts</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Access the Reports](#access-the-reports)
-- [Available Information](#available-information)
-- [TFT Farming Registration Price](#tft-farming-registration-price)
-
-***
-
 ## Introduction
 
 Once you have the receipt hash of your node minting, you can get the [minting report](../../dashboard/tfchain/tf_minting_reports.md) of your node.

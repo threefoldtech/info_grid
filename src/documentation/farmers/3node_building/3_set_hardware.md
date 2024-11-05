@@ -1,25 +1,5 @@
 <h1> 3. Set the Hardware </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Hardware Requirements](#hardware-requirements)
-  - [3Node Requirements Summary](#3node-requirements-summary)
-- [Bandwidth Requirements](#bandwidth-requirements)
-- [Link to Share Farming Setup](#link-to-share-farming-setup)
-- [Powering the 3Node](#powering-the-3node)
-  - [Surge Protector](#surge-protector)
-  - [Power Distribution Unit (PDU)](#power-distribution-unit-pdu)
-  - [Uninterrupted Power Supply (UPS)](#uninterrupted-power-supply-ups)
-  - [Generator](#generator)
-- [Connecting the 3Node to the Internet](#connecting-the-3node-to-the-internet)
-  - [Z-OS and Switches](#z-os-and-switches)
-- [Using Onboard Storage (3Node Servers)](#using-onboard-storage-3node-servers)
-- [Upgrading a DIY 3Node](#upgrading-a-diy-3node)
-
-***
-
-
 ## Introduction
 
 In this section of the ThreeFold Farmers book, we cover the essential farming requirements when it comes to ThreeFold 3Node hardware.

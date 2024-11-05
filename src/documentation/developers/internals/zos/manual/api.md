@@ -1,37 +1,5 @@
 <h1>API</h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Deployments](#deployments)
-  - [Deploy](#deploy)
-  - [Update](#update)
-  - [Get](#get)
-  - [Changes](#changes)
-  - [Delete](#delete)
-- [Statistics](#statistics)
-- [Storage](#storage)
-  - [List separate pools with capacity](#list-separate-pools-with-capacity)
-- [Network](#network)
-  - [List Wireguard Ports](#list-wireguard-ports)
-  - [Supports IPV6](#supports-ipv6)
-  - [List Public Interfaces](#list-public-interfaces)
-  - [List Public IPs](#list-public-ips)
-  - [Get Public Config](#get-public-config)
-- [Admin](#admin)
-  - [List Physical Interfaces](#list-physical-interfaces)
-  - [Get Public Exit NIC](#get-public-exit-nic)
-  - [Set Public Exit NIC](#set-public-exit-nic)
-- [System](#system)
-  - [Version](#version)
-  - [DMI](#dmi)
-  - [Hypervisor](#hypervisor)
-- [GPUs](#gpus)
-  - [List Gpus](#list-gpus)
-
-
-***
-
 ## Introduction
 
 This document should list all the actions available on the node public API. which is available over [RMB](https://github.com/threefoldtech/rmb-rs)

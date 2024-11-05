@@ -2,18 +2,6 @@
 
 <h1> Deployment </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deploy Workloads](#deploy-workloads)
-- [Delete Workloads](#delete-workloads)
-- [Logs](#logs)
-- [Using TFCMD with TFROBOT](#using-tfcmd-with-tfrobot)
-  - [Get Contracts](#get-contracts)
-
-***
-
 ## Introduction
 
 We present how to deploy workloads on the ThreeFold Grid using TFROBOT.

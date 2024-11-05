@@ -1,17 +1,6 @@
 <h1> AI & ML Workloads: GPU and Pytorch</h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Prepare the System](#prepare-the-system)
-- [Install the GPU Driver](#install-the-gpu-driver)
-- [Set a Python Virtual Environment](#set-a-python-virtual-environment)
-- [Install PyTorch and Test Cuda](#install-pytorch-and-test-cuda)
-- [Set and Access Jupyter Notebook](#set-and-access-jupyter-notebook)
-- [Run AI/ML Workloads](#run-aiml-workloads)
-
-***
 
 ## Introduction
 

@@ -1,12 +1,6 @@
 <h1> Installing Pulumi </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Verification](#verification)
-
-***
 
 ## Introduction
 

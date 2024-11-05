@@ -1,18 +1,5 @@
 <h1>Setup</h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Running ZOS (v2) at home](#running-zos-v2-at-home)
-- [Running ZOS (v2) in a multi-node farm in a DC](#running-zos-v2-in-a-multi-node-farm-in-a-dc)
-  - [Necessities](#necessities)
-  - [IPv6](#ipv6)
-  - [Routing/firewalling](#routingfirewalling)
-  - [Multi-NIC Nodes](#multi-nic-nodes)
-  - [Farmers and the grid](#farmers-and-the-grid)
-
-***
-
 ## Introduction
 
 We present ZOSv2 network considerations.

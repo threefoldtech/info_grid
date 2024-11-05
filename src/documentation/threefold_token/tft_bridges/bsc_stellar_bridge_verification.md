@@ -1,13 +1,6 @@
 <h1>BSC-Stellar Bridge Verification</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [From Stellar to BSC](#from-stellar-to-bsc)
-- [From BSC to Stellar](#from-bsc-to-stellar)
-- [Conclusion](#conclusion)
-
-***
 
 ## Introduction
 

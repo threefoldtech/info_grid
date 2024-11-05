@@ -1,15 +1,6 @@
 <h1> ThreeFold Grid Services </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Devnet](#devnet)
-- [QAnet](#qanet)
-- [Testnet](#testnet)
-- [Mainnet](#mainnet)
-- [General](#general)
-
-***
 
 ## Introduction
 

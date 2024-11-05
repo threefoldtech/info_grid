@@ -1,18 +1,6 @@
 <h1> Get TFT (Stellar) on BTC-Alpha </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Get Started](#get-started)
-  - [Sign up for an Account](#sign-up-for-an-account)
-  - [Secure Your Account](#secure-your-account)
-  - [Deposit Funds to Account](#deposit-funds-to-account)
-  - [Start Trading](#start-trading)
-  - [Important Notice](#important-notice)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 

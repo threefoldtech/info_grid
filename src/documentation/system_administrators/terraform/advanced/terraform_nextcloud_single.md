@@ -1,33 +1,6 @@
 <h1>Nextcloud Single Deployment </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Main Steps](#main-steps)
-- [Prerequisites](#prerequisites)
-- [Find a 3Node with the ThreeFold Explorer](#find-a-3node-with-the-threefold-explorer)
-- [Set the Full VM](#set-the-full-vm)
-  - [Overview](#overview)
-  - [Create the Terraform Files](#create-the-terraform-files)
-  - [Deploy the Full VM with Terraform](#deploy-the-full-vm-with-terraform)
-  - [SSH into the 3Node](#ssh-into-the-3node)
-  - [Prepare the Full VM](#prepare-the-full-vm)
-- [Create the MariaDB Database](#create-the-mariadb-database)
-  - [Download MariaDB and Configure the Database](#download-mariadb-and-configure-the-database)
-  - [Set the Nextcloud User and Database](#set-the-nextcloud-user-and-database)
-- [Install PHP and Nextcloud](#install-php-and-nextcloud)
-- [Create a Subdomain with DuckDNS](#create-a-subdomain-with-duckdns)
-- [Set Apache](#set-apache)
-- [Access Nextcloud on a Web Browser](#access-nextcloud-on-a-web-browser)
-- [Enable HTTPS](#enable-https)
-  - [Install Certbot](#install-certbot)
-  - [Set the Certbot with the DNS Domain](#set-the-certbot-with-the-dns-domain)
-  - [Verify HTTPS Automatic Renewal](#verify-https-automatic-renewal)
-- [Set a Firewall](#set-a-firewall)
-- [Conclusion](#conclusion)
-- [Acknowledgements and References](#acknowledgements-and-references)
-
-***
 
 # Introduction
 

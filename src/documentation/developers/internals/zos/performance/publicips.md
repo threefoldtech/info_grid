@@ -1,15 +1,5 @@
 <h1> Public IPs Validation Task </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Configuration](#configuration)
-- [Task Details](#task-details)
-- [Result](#result)
-  - [Result Sample](#result-sample)
-
-***
-
 ## Introduction
 
 The goal of the task is to make sure public IPs assigned to a farm are valid and can be assigned to deployments.

@@ -1,26 +1,7 @@
 
 <h1>Additional Information</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Connect to Other Nodes](#connect-to-other-nodes)
-- [Hosted Public Nodes](#hosted-public-nodes)
-- [Default Port](#default-port)
-- [Check Network Information](#check-network-information)
-- [Test the Network](#test-the-network)
-- [Key Pair](#key-pair)
-- [Running without TUN interface](#running-without-tun-interface)
-- [API](#api)
-- [Message System](#message-system)
-- [Inspecting Node Keys](#inspecting-node-keys)
-- [Troubleshooting](#troubleshooting)
-  - [Root Access](#root-access)
-  - [Enable IPv6 at the OS Level](#enable-ipv6-at-the-os-level)
-  - [VPN Can Block Mycelium](#vpn-can-block-mycelium)
-  - [Add Peers](#add-peers)
-
-***
 
 ## Introduction
 

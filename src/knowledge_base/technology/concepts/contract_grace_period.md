@@ -1,21 +1,6 @@
 <h1> Grace Period: Ensuring Seamless Operations </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [What is the Grace Period?](#what-is-the-grace-period)
-- [How does it work?](#how-does-it-work)
-- [When does the Grace Period kick in?](#when-does-the-grace-period-kick-in)
-- [How to resume your workloads:](#how-to-resume-your-workloads)
-- [Grace Period Contract State: Easily Accessible Information](#grace-period-contract-state-easily-accessible-information)
-  - [Grid Weblets:](#grid-weblets)
-  - [ThreeFold Grid Proxy:](#threefold-grid-proxy)
-- [TFChain GraphQL:](#tfchain-graphql)
-  - [Node Contract](#node-contract)
-  - [Rent Contract](#rent-contract)
-- [PolkadotJS UI:](#polkadotjs-ui)
-
-***
 
 ## Introduction
 

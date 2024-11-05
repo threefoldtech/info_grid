@@ -1,24 +1,5 @@
 <h1> ThreeFold Chain <h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Twins](#twins)
-- [Farms](#farms)
-- [Nodes](#nodes)
-- [Node Contract](#node-contract)
-- [Rent Contract](#rent-contract)
-- [Name Contract](#name-contract)
-- [Contract billing](#contract-billing)
-- [Contract locking](#contract-locking)
-- [Contract grace period](#contract-grace-period)
-- [DAO](#dao)
-- [Farming Policies](#farming-policies)
-- [Node Connection price](#node-connection-price)
-- [Node Certifiers](#node-certifiers)
-
-***
-
 ## Introduction
 
 ThreeFold Chain (TFChain) is the base layer for everything that interacts with the grid. Nodes, farms, users are registered on the chain. It plays the central role in achieving decentralised consensus between a user and Node to deploy a certain workload. A contract can be created on the chain that is essentially an agreement between a node and user.

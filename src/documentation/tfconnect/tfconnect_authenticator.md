@@ -1,10 +1,6 @@
 <h1> ThreeFold Connect Authenticator</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Connect with the Authenticator](#connect-with-the-authenticator)
----
 
 ## Introduction
 

@@ -1,14 +1,6 @@
 <h1>ThreeFold Connect: Create a Threefold Connect Account and Wallet</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Download the ThreeFold Connect App](#download-the-threefold-connect-app)
-- [Create a ThreeFold Connect Account](#create-a-threefold-connect-account)
-- [Verify Your Email](#verify-your-email)
-- [Create a ThreeFold Connect Wallet](#create-a-threefold-connect-wallet)
-
-***
 
 ## Introduction
 

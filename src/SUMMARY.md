@@ -310,7 +310,6 @@
       - [MetaMask (BSC & ETH)](documentation/threefold_token/buy_sell_tft/tft_metamask/tft_metamask.md)
       - [Pancake Swap (BSC)](documentation/threefold_token/buy_sell_tft/pancakeswap.md)
     - [Transaction Fees](documentation/threefold_token/transaction_fees.md)
-  - [FAQ](documentation/faq/faq.md)
 - [Knowledge Base](knowledge_base/knowledge_base.md)
   - [Technology](knowledge_base/technology/technology_toc.md)
     - [How It Works](knowledge_base/technology/grid3_howitworks.md)

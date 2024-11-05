@@ -1,16 +1,6 @@
 <h1> Store TFT on BTC-Alpha Exchange </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Get Started](#get-started)
-  - [Sign up for an Account](#sign-up-for-an-account)
-  - [Secure Your Account](#secure-your-account)
-- [Deposit TFT(Stellar) to Account](#deposit-tftstellar-to-account)
-  - [Important Notice](#important-notice)
-- [Disclaimer](#disclaimer)
-***
 ## Introduction
 
 Welcome to our tutorial on how to get TFT (Stellar) using [**BTC-Alpha**](https://btc-alpha.com/en)! 

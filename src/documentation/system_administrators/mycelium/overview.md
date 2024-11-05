@@ -1,13 +1,7 @@
 
 <h1>Overview</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Testing](#testing)
-
-***
 
 ## Introduction
 

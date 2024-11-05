@@ -1,17 +1,6 @@
 <h1> Calculate the Farming Costs: Power, Internet and Total Costs</h1>
 
-<h2> Table of Contents </h2>
 
-- [Calculate the Total Electricity Cost of Your Farm](#calculate-the-total-electricity-cost-of-your-farm)
-- [Calculate the Proper Bandwidth Needed for Your Farm](#calculate-the-proper-bandwidth-needed-for-your-farm)
-  - [The Minimum Bandwidth per 3Node Equation](#the-minimum-bandwidth-per-3node-equation)
-  - [Cost per Month for a Given Bandwidth](#cost-per-month-for-a-given-bandwidth)
-- [Calculate Total Cost and Revenue](#calculate-total-cost-and-revenue)
-  - [Check Revenue with the ThreeFold Simulator](#check-revenue-with-the-threefold-simulator)
-  - [Economics of Farming](#economics-of-farming)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 ## Calculate the Total Electricity Cost of Your Farm
 

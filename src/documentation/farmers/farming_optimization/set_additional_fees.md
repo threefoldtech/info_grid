@@ -1,13 +1,6 @@
 <h1>Set Additional Fees</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Steps](#steps)
-- [TFT Payments](#tft-payments)
-- [Dedicated Nodes Notice](#dedicated-nodes-notice)
-
-***
 
 ## Introduction
 

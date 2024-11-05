@@ -1,18 +1,6 @@
 <h1> VM Deployment </h1>
 
-<h2>Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Template](#template)
-- [Using scheduler](#using-scheduler)
-- [Using Grid Explorer](#using-grid-explorer)
-- [Describing the overlay network for the project](#describing-the-overlay-network-for-the-project)
-- [Describing the deployment](#describing-the-deployment)
-- [Which flists to use](#which-flists-to-use)
-- [Remark multiple VMs](#remark-multiple-vms)
-- [Reference](#reference)
-
-***
 
 ## Introduction
 

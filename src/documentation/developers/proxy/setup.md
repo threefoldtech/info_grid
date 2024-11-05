@@ -1,15 +1,5 @@
 <h1>Setup</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Install Golang](#install-golang)
-- [Docker](#docker)
-- [Postgres](#postgres)
-- [Get Mnemonics](#get-mnemonics)
-
-***
-
 ## Introduction
 
 We show how to set up grid proxy.

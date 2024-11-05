@@ -1,25 +1,5 @@
 <h1> 2. Create a Zero-OS Bootstrap Image </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Download the Zero-OS Bootstrap Image](#download-the-zero-os-bootstrap-image)
-- [Burn the Zero-OS Bootstrap Image](#burn-the-zero-os-bootstrap-image)
-  - [CD/DVD BIOS](#cddvd-bios)
-  - [USB Key BIOS+UEFI](#usb-key-biosuefi)
-    - [BalenaEtcher (MAC, Linux, Windows)](#balenaetcher-mac-linux-windows)
-    - [CLI (Linux)](#cli-linux)
-    - [Rufus (Windows)](#rufus-windows)
-- [Additional Information (Optional)](#additional-information-optional)
-  - [Expert Mode](#expert-mode)
-    - [Use a Specific Kernel](#use-a-specific-kernel)
-    - [Disable GPU](#disable-gpu)
-  - [Bootstrap Image URL](#bootstrap-image-url)
-    - [Zeros-OS Bootstrapping](#zeros-os-bootstrapping)
-    - [Zeros-OS Expert Bootstrap](#zeros-os-expert-bootstrap)
-
-***
-
 ## Introduction
 
 We will now learn how to create a Zero-OS bootstrap image in order to boot a DIY 3Node.

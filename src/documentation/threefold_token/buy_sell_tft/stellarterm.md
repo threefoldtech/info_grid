@@ -1,16 +1,6 @@
 <h1> Get TFT(Stellar) on StellarTerm </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Get Started](#get-started)
-  - [Login with an Existing Wallet](#login-with-an-existing-wallet)
-  - [Adding TFT as an Asset](#adding-tft-as-an-asset)
-  - [Get TFT by Trading](#get-tft-by-trading)
-  - [Get TFT by Swapping](#get-tft-by-swapping)
-- [Disclaimer](#disclaimer)
-***
 ## Introduction
 
 Welcome to our tutorial on how to get TFT (Stellar) using [**Stellarterm**](https://stellarterm.com/)! 

@@ -1,13 +1,6 @@
 <h1>Resource Units Calculation</h1>
 
-<h2> Table of Contents </h2>
 
-- [Calculation from resource units to CU/SU for farming purposes](#calculation-from-resource-units-to-cusu-for-farming-purposes)
-- [Compute](#compute)
-- [Storage](#storage)
-  - [Storage cost price verification Dec 2021](#storage-cost-price-verification-dec-2021)
-
-***
 
 ## Calculation from resource units to CU/SU for farming purposes
 

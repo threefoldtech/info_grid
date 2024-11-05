@@ -1,20 +1,14 @@
 <h1>TFCMD Getting Started</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Login](#login)
-- [Commands](#commands)
-- [Using TFCMD](#using-tfcmd)
-
-***
-
 ## Introduction
 
 This section covers the basics on how to set up and use TFCMD (`tfcmd`).
 
 TFCMD is available as binaries. Make sure to download the latest release and to stay up to date with new releases.
+
+## Mycelium Network
+
+Note that you can use the [Mycelium network](../../system_administrators/mycelium/mycelium_toc.md) to connect to your deployments. A Mycelium IP is assigned by default to TFCMD deployments. You can consult the different examples to understand this further.
 
 ## Installation
 

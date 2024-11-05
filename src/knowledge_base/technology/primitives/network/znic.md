@@ -1,12 +1,6 @@
 <h1> ZNIC </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Use Cases](#use-cases)
-- [Overview](#overview)
-
-***
 
 ## Introduction
 

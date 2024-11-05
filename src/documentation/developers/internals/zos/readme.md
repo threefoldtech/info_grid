@@ -1,6 +1,6 @@
 <h1> Zero-OS </h1>
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [Manual](./manual/manual.md)
 - [Workload Types](./manual/workload_types.md)

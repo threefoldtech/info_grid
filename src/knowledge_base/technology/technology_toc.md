@@ -4,7 +4,7 @@ This section covers the technology behind the ThreeFold Grid. ThreeFold has crea
 
 To build on the ThreeFold Grid, refer to the [Developers](../../documentation/developers/developers.md) section.
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [How It Works](./grid3_howitworks.md)
 - [Grid Concepts](./concepts/concepts_readme.md)

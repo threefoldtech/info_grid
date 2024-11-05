@@ -1,16 +1,7 @@
 
 <h1> Transfer TFT Between Networks by Using the Keygenerator </h1>
 
-<h2>Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-  - [Keypair](#keypair)
-  - [Stellar to TFChain](#stellar-to-tfchain)
-  - [Alternative Transfer to TF Chain](#alternative-transfer-to-tf-chain)
-- [TFChain to Stellar](#tfchain-to-stellar)
-
-***
 
 ## Introduction
 

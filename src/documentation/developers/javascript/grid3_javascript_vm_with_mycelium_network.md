@@ -1,19 +1,5 @@
 <h1> Deploying a VM with Mycelium Network</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Example](#example)
-- [Detailed Explanation](#detailed-explanation)
-  - [What is the Mycelium Network](#what-is-the-mycelium-network)
-  - [How to Deploy a Machine with the Mycelium Network](#how-to-deploy-a-machine-with-the-mycelium-network)
-- [Summary](#summary)
-  - [Mycelium Flag Behavior](#mycelium-flag-behavior)
-  - [Mycelium Machine Seed](#mycelium-machine-seed)
-  - [Mycelium Network Seed](#mycelium-network-seed)
-
-***
-
 ## Introduction
 
 We present information on how to deploy a VM with `Mycelium network` by the Javascript client with concrete examples.

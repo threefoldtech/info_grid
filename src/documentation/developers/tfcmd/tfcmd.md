@@ -4,7 +4,7 @@ TFCMD (`tfcmd`) is a command line interface to interact and develop on Threefold
 
 Consult the [ThreeFoldTech TFCMD repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/grid-cli) for the latest updates. Make sure to read the [basics](../../system_administrators/getstarted/tfgrid3_getstarted.md).
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [Getting Started](./tfcmd_basics.md)
 - [Deploy a VM](./tfcmd_vm.md)

@@ -9,7 +9,7 @@ This manual is organized in two main sections:
 
 The *ThreeFold Knowledge Base* section contains all information needed to understand how the whole ThreeFold ecosystem works. 
 
-The *ThreeFold Documentation* section contains all the practical information of the ThreeFold Grid, from general information covering the multi-functional [ThreeFold Dashboard](../documentation/dashboard/dashboard.md), the versatile [ThreeFold Connect app](../documentation/tfconnect/tfconnect_toc.md), [TFT](../documentation/threefold_token/threefold_token.md) and our community-based [FAQ](../documentation/faq/faq.md), to specific tutorials for [developers](../documentation/developers/developers.md), [farmers](../documentation/farmers/farmers.md) and [system administrators](../documentation/system_administrators/system_administrators.md).
+The *ThreeFold Documentation* section contains all the practical information of the ThreeFold Grid, from general information covering the multi-functional [ThreeFold Dashboard](../documentation/dashboard/dashboard.md), the versatile [ThreeFold Connect app](../documentation/tfconnect/tfconnect_toc.md) and [TFT](../documentation/threefold_token/threefold_token.md), to specific tutorials for [developers](../documentation/developers/developers.md), [farmers](../documentation/farmers/farmers.md) and [system administrators](../documentation/system_administrators/system_administrators.md).
 
 > Explore the TFGrid status page for live updates on Threefold services!
 > 

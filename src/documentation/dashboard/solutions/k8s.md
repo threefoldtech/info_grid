@@ -1,16 +1,5 @@
 <h1> Kubernetes </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Configs tab](#configs-tab)
-- [Master and Workers tabs](#master-and-workers-tabs)
-- [Kubeconfig](#kubeconfig)
-- [Manage Workers](#manage-workers)
-
-***
-
 ## Introduction
 
 Kubernetes is the standard container orchestration tool.

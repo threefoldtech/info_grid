@@ -1,17 +1,6 @@
 <h1> AI & ML Workloads: CPU and Llama </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deploy a Full VM](#deploy-a-full-vm)
-- [Preparing the VM](#preparing-the-vm)
-- [Setting OpenWebUI](#setting-openwebui)
-- [Pull a Model](#pull-a-model)
-- [Using Llama](#using-llama)
-- [References](#references)
-
----
 
 ## Introduction
 

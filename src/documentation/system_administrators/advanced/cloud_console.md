@@ -1,12 +1,6 @@
 <h1> Cloud Console </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Overview](#overview)
-- [Connect to Cloud Console](#connect-to-cloud-console)
-
----
 
 ## Introduction
 

@@ -1,18 +1,5 @@
 <h1> Deploy CapRover </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Leader Node](#leader-node)
-  - [Code Example](#code-example)
-  - [Environment Variables](#environment-variables)
-- [Worker Node](#worker-node)
-  - [Code Example](#code-example-1)
-  - [Environment Variables](#environment-variables-1)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
-
 ## Introduction
 
 In this section, we show how to deploy CapRover with the Javascript client.

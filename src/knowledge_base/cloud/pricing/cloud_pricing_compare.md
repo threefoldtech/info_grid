@@ -1,14 +1,6 @@
 <h1>Price comparison Cloudorado</h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Compute](#compute)
-  - [Compute Conclusion](#compute-conclusion)
-- [Storage](#storage)
-  - [Storage Conclusion](#storage-conclusion)
-
-***
 
 ## Introduction
 

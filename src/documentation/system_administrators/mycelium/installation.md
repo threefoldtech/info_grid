@@ -1,16 +1,7 @@
 
 <h1>Installation</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Considerations](#considerations)
-- [Set Mycelium](#set-mycelium)
-- [Start Mycelium](#start-mycelium)
-- [Use Mycelium](#use-mycelium)
-- [Mycelium Service (optional)](#mycelium-service-optional)
-
-***
 
 ## Introduction
 

@@ -2,7 +2,7 @@
 
 This section provides a non-code easy way to deploy a whole solution on the TFGrid.
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [Basic Environments](./basic_environments_readme.md)
   - [Virtual Machines](./vm_intro.md)

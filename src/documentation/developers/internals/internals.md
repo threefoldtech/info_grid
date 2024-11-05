@@ -2,7 +2,7 @@
 
 We present in this section of the developers book a partial list of system components. Content will be added progressively.
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [Reliable Message Bus (RMB)](rmb/rmb_toc.md)
   - [Introduction to RMB](rmb/rmb_intro.md)

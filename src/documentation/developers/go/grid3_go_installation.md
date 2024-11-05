@@ -1,17 +1,12 @@
 <h1>Go Client Installation</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Requirements](#requirements)
-- [Steps](#steps)
-- [References](#references)
-
-***
-
 ## Introduction
 
 We present the general steps to install the ThreeFold Grid3 Go Client.
+
+## Mycelium Network
+
+Note that you can use the [Mycelium network](../../system_administrators/mycelium/mycelium_toc.md) to connect to your deployments. To do so, make sure that the Mycelium network is properly set up for the deployments. You can consult the different examples that include the Mycelium network to understand this further.
 
 ## Requirements
 

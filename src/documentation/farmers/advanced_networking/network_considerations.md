@@ -1,18 +1,5 @@
 <h1>Network Considerations</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Running ZOS (v2) at Home](#running-zos-v2-at-home)
-- [Running ZOS (v2) in a Multi-Node Farm in a DC](#running-zos-v2-in-a-multi-node-farm-in-a-dc)
-  - [Necessities](#necessities)
-  - [IPv6](#ipv6)
-  - [Routing/Firewalling](#routingfirewalling)
-  - [Multi-NIC Nodes](#multi-nic-nodes)
-  - [Farmers and the TFGrid](#farmers-and-the-tfgrid)
-
-***
-
 ## Introduction
 
 Running ZOS on a node is just a matter of booting it with a USB stick, or with a dhcp/bootp/tftp server with the right configuration so that the node can start the OS.

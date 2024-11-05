@@ -1,13 +1,5 @@
 <h1> NodePilot </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deployment](#deployment)
-
-***
-
 ## Introduction
 
 This is a simple instance of upstream [Node Pilot](https://nodepilot.tech).

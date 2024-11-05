@@ -1,13 +1,6 @@
 <h1> HDD-Only Nodes</h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Requirements](#requirements)
-- [BIOS Parameters](#bios-parameters)
-- [Bootstrap Image for HDD-Only Nodes](#bootstrap-image-for-hdd-only-nodes)
-
----
 
 ## Introduction
 

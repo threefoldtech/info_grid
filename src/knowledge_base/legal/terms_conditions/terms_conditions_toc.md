@@ -1,6 +1,6 @@
 # Terms & Conditions
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [Terms & Conditions ThreeFold Related Websites](./terms_conditions_websites.md)
 - [Terms & Conditions TFGrid Users TFGrid 3](./terms_conditions_griduser.md)

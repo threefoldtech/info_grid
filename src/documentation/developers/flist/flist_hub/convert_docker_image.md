@@ -1,13 +1,5 @@
 <h1> Convert Docker Image to Flist </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Upload the Image](#upload-the-image)
-- [Flist on the Hub](#flist-on-the-hub)
-
-***
-
 ## Introduction
 
 We show the steps to convert a docker image to an Flist.

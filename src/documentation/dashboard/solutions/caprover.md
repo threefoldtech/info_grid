@@ -1,19 +1,5 @@
 <h1> CapRover </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Requirements](#requirements)
-- [Configs Tab](#configs-tab)
-- [Leader and Workers Tabs](#leader-and-workers-tabs)
-- [The Domain Name](#the-domain-name)
-  - [Domain Name Example](#domain-name-example)
-- [How to Know the IP Address](#how-to-know-the-ip-address)
-- [How to Access the Admin Interface](#how-to-access-the-admin-interface)
-- [How to Work with CapRover](#how-to-work-with-caprover)
-
-***
-
 ## Introduction
 
 CapRover is an extremely easy to use app/database deployment & web server manager for your NodeJS, Python, PHP, ASP.NET, Ruby, MySQL, MongoDB, Postgres, WordPress (and etc...) applications!

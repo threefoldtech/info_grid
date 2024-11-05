@@ -1,15 +1,6 @@
 <h1> Release Process </h1>
 
-<h2>Table of Contents</h2>
 
-- [Github projects](#github-projects)
-- [Releasing the Grid](#releasing-the-grid)
-  - [Environments](#environments)
-  - [Versions](#versions)
-  - [Branching/Tagging](#branchingtagging)
-  - [Blocking Bugfixes for Mainnet](#blocking-bugfixes-for-mainnet)
-
-***
 
 ## Github projects
 

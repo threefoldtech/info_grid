@@ -1,12 +1,5 @@
 <h1> Deploying Kubernetes Clusters</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Example](#example)
-
-***
-
 ## Introduction
 
 We show how to deploy a Kubernetes cluster with the Go client.

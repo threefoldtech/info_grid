@@ -1,19 +1,5 @@
 <h1>Deploy the Dashboard</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Create an SSH Tunnel](#create-an-ssh-tunnel)
-- [Editor SSH Remote Connection](#editor-ssh-remote-connection)
-- [Set the VM](#set-the-vm)
-- [Build the Dashboard](#build-the-dashboard)
-- [Dashboard Public Access](#dashboard-public-access)
-- [Set the Network](#set-the-network)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
-
 ## Introduction
 
 We show how to deploy the Dashboard (devnet) on a full VM. To do so, we set an SSH tunnel and use the VSCodium Remote Explorer function. We will then be able to use a source-code editor to explore the code and see changes on a local browser.
