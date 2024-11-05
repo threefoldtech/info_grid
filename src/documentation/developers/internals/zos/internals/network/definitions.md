@@ -1,14 +1,5 @@
 <h1> Definitions</h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Node](#node)
-- [TNo : Tenant Network Object](#tno--tenant-network-object)
-- [NR: Network Resource](#nr-network-resource)
-
-***
-
 ## Introduction 
 
 We present definitions of words used through the documentation.

@@ -1,13 +1,6 @@
 <h1> Transferring TFT Between Stellar and TFChain</h1>
 
-<h2>Table of Contents</h2>
 
-- [Usage](#usage)
-- [Prerequisites](#prerequisites)
-- [Stellar to TFChain](#stellar-to-tfchain)
-- [TFChain to Stellar](#tfchain-to-stellar)
-
-***
 
 ## Usage
 

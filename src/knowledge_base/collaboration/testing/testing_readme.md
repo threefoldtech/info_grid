@@ -1,13 +1,6 @@
 <h1>Testing the ThreeFold Grid: Ensuring Reliability and User Feedback</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Automation Testing](#automation-testing)
-- [Manual Testing](#manual-testing)
-- [Covered Tests](#covered-tests)
-
-***
 
 ## Introduction
 

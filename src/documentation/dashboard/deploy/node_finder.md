@@ -1,21 +1,5 @@
 <h1>Node Finder</h1>
 
-<h2>Table of Contents</h2>
-
-- [Overview](#overview)
-- [Filters](#filters)
-- [Node Details](#node-details)
-- [Gateway Nodes](#gateway-nodes)
-- [Dedicated Nodes](#dedicated-nodes)
-  - [Reservation](#reservation)
-  - [Billing \& Pricing](#billing--pricing)
-  - [Discounts](#discounts)
-- [GPU Nodes](#gpu-nodes)
-  - [GPU Support](#gpu-support)
-  - [GPU Support Links](#gpu-support-links)
-
-***
-
 ## Overview
 
 The Node Finder page provides a more detailed view for the nodes available on the ThreeFold grid with detailed information and statistics about nodes.

@@ -1,16 +1,5 @@
 <h1>ZDBs</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Deploy](#deploy)
-  - [Required Flags](#required-flags)
-  - [Optional Flags](#optional-flags)
-- [Get](#get)
-- [Cancel](#cancel)
-
-***
-
 ## Introduction
 
 In this section, we explore how to use ZDBs related commands using `tfcmd` to interact with the TFGrid.

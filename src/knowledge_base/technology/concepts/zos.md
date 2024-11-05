@@ -1,12 +1,6 @@
 <h1>Zero-OS</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Overview of Zero-OS](#overview-of-zero-os)
-- [Zero-OS Advantages](#zero-os-advantages)
-
-***
 
 ## Introduction
 

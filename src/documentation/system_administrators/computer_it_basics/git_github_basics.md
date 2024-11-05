@@ -1,37 +1,6 @@
 <h1> Git and GitHub Basics </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Install Git](#install-git)
-  - [Install on Linux](#install-on-linux)
-  - [Install on MAC](#install-on-mac)
-  - [Install on Windows](#install-on-windows)
-- [Basic Commands](#basic-commands)
-  - [Check Git version](#check-git-version)
-  - [Clone a repository](#clone-a-repository)
-  - [Clone a single branch](#clone-a-single-branch)
-  - [Check all available branches](#check-all-available-branches)
-  - [Check the current branch](#check-the-current-branch)
-  - [Go to another branch](#go-to-another-branch)
-  - [Add your changes to a local branch](#add-your-changes-to-a-local-branch)
-  - [Push changes of a local branch to the remote Github branch](#push-changes-of-a-local-branch-to-the-remote-github-branch)
-  - [Reverse modifications to a file where changes haven't been staged yet](#reverse-modifications-to-a-file-where-changes-havent-been-staged-yet)
-  - [Download binaries from Github](#download-binaries-from-github)
-  - [Resolve conflicts between branches](#resolve-conflicts-between-branches)
-  - [Download all repositories of an organization](#download-all-repositories-of-an-organization)
-  - [Revert a push commited with git](#revert-a-push-commited-with-git)
-  - [Make a backup of a branch](#make-a-backup-of-a-branch)
-  - [Revert to a backup branch](#revert-to-a-backup-branch)
-  - [Start over local branch and pull remote branch](#start-over-local-branch-and-pull-remote-branch)
-  - [Overwrite local files and pull remote branch](#overwrite-local-files-and-pull-remote-branch)
-  - [Stash command and parameters](#stash-command-and-parameters)
-- [Code Editors](#code-editors)
-  - [VS-Code](#vs-code)
-  - [VS-Codium](#vs-codium)
-- [References](#references)
-
-***
 
 ## Introduction
 

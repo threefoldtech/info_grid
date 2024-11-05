@@ -1,26 +1,6 @@
 <h1> Farmerbot Quick Guide </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Farmerbot Costs on the TFGrid](#farmerbot-costs-on-the-tfgrid)
-- [Enable Wake-On-Lan](#enable-wake-on-lan)
-- [Deploy a Full VM](#deploy-a-full-vm)
-- [Farmerbot Setup](#farmerbot-setup)
-  - [Download the Farmerbot Binaries](#download-the-farmerbot-binaries)
-  - [Create the Farmerbot Files](#create-the-farmerbot-files)
-  - [Run the Farmerbot](#run-the-farmerbot)
-  - [Set a systemd Service](#set-a-systemd-service)
-  - [Check the Farmerbot Logs](#check-the-farmerbot-logs)
-  - [Stop the Farmerbot](#stop-the-farmerbot)
-- [Farmerbot Files](#farmerbot-files)
-  - [Configuration File Template (config.yml)](#configuration-file-template-configyml)
-  - [Environment Variables File Template (.env)](#environment-variables-file-template-env)
-- [Running Multiple Farmerbots on the Same VM](#running-multiple-farmerbots-on-the-same-vm)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 ## Introduction
 

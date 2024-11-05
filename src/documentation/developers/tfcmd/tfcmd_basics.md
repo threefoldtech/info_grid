@@ -1,16 +1,5 @@
 <h1>TFCMD Getting Started</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Mycelium Network](#mycelium-network)
-- [Installation](#installation)
-- [Login](#login)
-- [Commands](#commands)
-- [Using TFCMD](#using-tfcmd)
-
-***
-
 ## Introduction
 
 This section covers the basics on how to set up and use TFCMD (`tfcmd`).

@@ -1,14 +1,5 @@
 <h1> Health Check </h1>
 
-<h2>Table of Contents</h2>
-
-- [Overview](#overview)
-- [Configuration](#configuration)
-- [Details](#details)
-- [Result Sample](#result-sample)
-
-***
-
 ## Overview
 
 Health check task executes some checks over ZOS components to determine if the node is in a usable state or not and set flags for the Power Daemon to stop uptime reports if the node is unusable.

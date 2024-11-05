@@ -1,16 +1,6 @@
 <h1> BSC-Stellar Bridge </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [How to Use the BSC-Stellar Bridge](#how-to-use-the-bsc-stellar-bridge)
-  - [Bridge from Stellar to BSC](#bridge-from-stellar-to-bsc)
-  - [Bridge from BSC to Stellar](#bridge-from-bsc-to-stellar)
-- [Setting Up TFT on Metamask](#setting-up-tft-on-metamask)
-- [Bridge Fees](#bridge-fees)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 ## Introduction
 

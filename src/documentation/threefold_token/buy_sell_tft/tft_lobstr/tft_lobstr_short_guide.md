@@ -1,15 +1,6 @@
 <h1>Get TFT: Quick Start (Stellar)</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Install Lobstr](#install-lobstr)
-- [Create Wallet](#create-wallet)
-- [Buy XLM](#buy-xlm)
-- [Swap XLM for TFT](#swap-xlm-for-tft)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 

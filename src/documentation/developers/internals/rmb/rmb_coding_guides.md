@@ -1,18 +1,5 @@
 <h1> Coding Guides </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Module Structure](#module-structure)
-  - [Example](#example)
-- [Naming Conventions](#naming-conventions)
-- [`error` Handling](#error-handling)
-- [`logs`](#logs)
-- [Function Signatures](#function-signatures)
-  - [Examples](#examples)
-
----
-
 ## Introduction
 
 We present coding guides for the reliable message bus (RMB).

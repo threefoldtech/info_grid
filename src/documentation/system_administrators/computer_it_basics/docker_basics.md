@@ -1,44 +1,6 @@
 <h1>Docker Basic Commands</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Basic Commands](#basic-commands)
-  - [Install Docker Desktop and Docker Engine](#install-docker-desktop-and-docker-engine)
-  - [Remove completely Docker](#remove-completely-docker)
-  - [List containers](#list-containers)
-  - [Pull an image](#pull-an-image)
-  - [Push an image](#push-an-image)
-  - [Inspect and pull an image with GHCR](#inspect-and-pull-an-image-with-ghcr)
-  - [See a docker image (no download)](#see-a-docker-image-no-download)
-  - [Build a container](#build-a-container)
-  - [List all available docker images](#list-all-available-docker-images)
-  - [Run a container](#run-a-container)
-  - [Run a new command in an existing container](#run-a-new-command-in-an-existing-container)
-  - [Bash shell into container](#bash-shell-into-container)
-  - [Pass arguments with a bash script and a Dockerfile](#pass-arguments-with-a-bash-script-and-a-dockerfile)
-  - [Copy files from a container to the local computer](#copy-files-from-a-container-to-the-local-computer)
-  - [Delete all the containers, images and volumes](#delete-all-the-containers-images-and-volumes)
-  - [Kill all the Docker processes](#kill-all-the-docker-processes)
-  - [Output full logs for all containers](#output-full-logs-for-all-containers)
-- [Resources Usage](#resources-usage)
-  - [Examine containers with size](#examine-containers-with-size)
-  - [Examine disks usage](#examine-disks-usage)
-- [Wasted Resources](#wasted-resources)
-  - [Prune the Docker logs](#prune-the-docker-logs)
-  - [Prune the Docker containers](#prune-the-docker-containers)
-  - [Remove unused and untagged local container images](#remove-unused-and-untagged-local-container-images)
-  - [Clean up and delete all unused container images](#clean-up-and-delete-all-unused-container-images)
-  - [Clean up container images based on a given timeframe](#clean-up-container-images-based-on-a-given-timeframe)
-- [Command Combinations](#command-combinations)
-  - [Kill all running containers](#kill-all-running-containers)
-  - [Stop all running containers](#stop-all-running-containers)
-  - [Delete all stopped containers](#delete-all-stopped-containers)
-  - [Delete all images](#delete-all-images)
-  - [Update and stop a container in a crash-loop](#update-and-stop-a-container-in-a-crash-loop)
-- [References](#references)
-
-***
 
 ## Introduction
 

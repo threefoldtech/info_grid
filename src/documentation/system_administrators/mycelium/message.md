@@ -1,12 +1,6 @@
 <h1> Message Subsystem</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Curl Examples](#curl-examples)
-- [Mycelium Binary Examples](#mycelium-binary-examples)
-
-***
 
 ## Introduction
 

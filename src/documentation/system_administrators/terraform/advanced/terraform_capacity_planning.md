@@ -1,12 +1,6 @@
 <h1> Capacity Planning </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Example](#example)
-- [Preparing the Requests](#preparing-the-requests)
-
-***
 
 ## Introduction
 

@@ -1,16 +1,5 @@
 <h1> Introduction to Networkd</h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Boot and initial setup](#boot-and-initial-setup)
-- [Networkd functionality](#networkd-functionality)
-- [Techie talk](#techie-talk)
-- [Wireguard explanations](#wireguard-explanations)
-- [Caveats](#caveats)
-
-***
-
 ## Introduction 
 
 We provide an introduction to Networkd, the network manager of 0-OS.

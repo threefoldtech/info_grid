@@ -1,13 +1,5 @@
 <h1>Load Client</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [TFPluginClient Configuration](#tfpluginclient-configuration)
-- [Creating Client](#creating-client)
-
-***
-
 ## Introduction
 
 We cover how to load client using the Go client.

@@ -1,16 +1,6 @@
 <h1> How to Contribute to the Threefold Manual </h1>
 
-<h2>Table of Contents</h2>
 
-- [Quick Method: Create an Issue](#quick-method-create-an-issue)
-- [Advanced Method: Create a Pull Request](#advanced-method-create-a-pull-request)
-  - [Main Steps to Add Content](#main-steps-to-add-content)
-  - [How to View the mdbook Locally](#how-to-view-the-mdbook-locally)
-  - [How to Install git and mdbook](#how-to-install-git-and-mdbook)
-  - [Markdown File Template (Optional)](#markdown-file-template-optional)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 ## Quick Method: Create an Issue
 

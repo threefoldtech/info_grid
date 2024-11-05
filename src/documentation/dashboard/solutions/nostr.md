@@ -1,13 +1,5 @@
 <h1> Nostr </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deployment](#deployment)
-
-***
-
 ## Introduction
 
 [Nostr](https://nostr.com/) is a decentralized network protocol for a distributed social networking system. The name is an acronym for "Notes and Other Stuff Transmitted by Relays". It was designed with goals of censorship-resistance in mind. 

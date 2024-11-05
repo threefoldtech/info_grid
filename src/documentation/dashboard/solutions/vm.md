@@ -1,12 +1,5 @@
 <h1> Micro Virtual Machine </h1>
 
-<h2>Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Deployment](#deployment)
-
-***
-
 ## Introduction
 
 We present the steps to deploy a micro VM on the TFGrid.

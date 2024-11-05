@@ -1,14 +1,5 @@
 <h1> Jitsi </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deployment](#deployment)
-- [Troubleshooting](#troubleshooting)
-
----
-
 ## Introduction
 
 Jitsi Meet is a set of Open Source projects which empower users to use and deploy video conferencing platforms with state-of-the-art video quality and features. For more details, check [Jitsi documentation](https://jitsi.github.io/handbook/docs/intro/).

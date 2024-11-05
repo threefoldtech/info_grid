@@ -1,13 +1,6 @@
 
 <h1> Deploying multiple VMs</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Example code](#example-code)
-
-***
-
 ## Introduction
 
 It is possible to deploy multiple VMs with the Javascript client.

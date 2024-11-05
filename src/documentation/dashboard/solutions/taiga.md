@@ -1,14 +1,5 @@
 <h1> Taiga </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deployment](#deployment)
-- [Troubleshooting](#troubleshooting)
-
-***
-
 ## Introduction
 
 [Taiga](https://taiga.io/) is the project management tool for multi-functional agile teams. It has a rich feature set and at the same time it is very simple to start with through its intuitive user interface.

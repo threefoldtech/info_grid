@@ -1,21 +1,5 @@
 <h1>Installation</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Mycelium Network](#mycelium-network)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-  - [External Package](#external-package)
-  - [Local Usage](#local-usage)
-- [Getting Started](#getting-started)
-  - [Client Configuration](#client-configuration)
-- [Generate the Documentation](#generate-the-documentation)
-- [How to Run the Scripts](#how-to-run-the-scripts)
-- [Reference API](#reference-api)
-
-***
-
 ## Introduction
 
 We present here the general steps required to install and use the ThreeFold Grid Client.

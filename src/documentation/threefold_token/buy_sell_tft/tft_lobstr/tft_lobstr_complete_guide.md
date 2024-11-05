@@ -1,15 +1,6 @@
 <h1> Get TFT: Lobstr Wallet (Stellar)</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Download the App and Create an Account](#download-the-app-and-create-an-account)
-- [Connect Your TF Connect App Wallet](#connect-your-tf-connect-app-wallet)
-- [Buy XLM with Fiat Currency](#buy-xlm-with-fiat-currency)
-- [Swap XLM for TFT](#swap-xlm-for-tft)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 

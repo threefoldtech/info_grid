@@ -1,13 +1,5 @@
 <h1> Node Module</h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Zbus](#zbus)
-- [Example](#example)
-
-***
-
 ## Introduction
 
 This module is responsible of registering the node on the grid, and handling of grid events. The node daemon broadcast the intended events on zbus for other modules that are interested in those events.

@@ -1,42 +1,5 @@
 <h1> Flist Case Study: Nextcloud All-in-One </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-  - [Flist: What is It?](#flist-what-is-it)
-  - [Case Study Objective](#case-study-objective)
-  - [The Overall Process](#the-overall-process)
-- [Docker Image Creation](#docker-image-creation)
-  - [Nextcloud Flist Directory Tree](#nextcloud-flist-directory-tree)
-  - [Caddyfile](#caddyfile)
-  - [Dockerfile](#dockerfile)
-  - [README.md File](#readmemd-file)
-  - [scripts Folder](#scripts-folder)
-    - [caddy.sh](#caddysh)
-    - [sshd\_init.sh](#sshd_initsh)
-    - [ufw\_init.sh](#ufw_initsh)
-    - [nextcloud.sh](#nextcloudsh)
-    - [nextcloud\_conf.sh](#nextcloud_confsh)
-  - [zinit Folder](#zinit-folder)
-    - [ssh-init.yaml and sshd.yaml](#ssh-inityaml-and-sshdyaml)
-    - [ufw-init.yaml and ufw.yaml](#ufw-inityaml-and-ufwyaml)
-    - [caddy.yaml](#caddyyaml)
-    - [dockerd.yaml](#dockerdyaml)
-    - [nextcloud.yaml](#nextcloudyaml)
-    - [nextcloud-conf.yaml](#nextcloud-confyaml)
-  - [Putting it All Together](#putting-it-all-together)
-- [Docker Publishing Steps](#docker-publishing-steps)
-  - [Create Account and Access Token](#create-account-and-access-token)
-  - [Build and Push the Docker Image](#build-and-push-the-docker-image)
-- [Convert the Docker Image to an Flist](#convert-the-docker-image-to-an-flist)
-- [Deploy Nextcloud AIO on the TFGrid with Terraform](#deploy-nextcloud-aio-on-the-tfgrid-with-terraform)
-  - [Create the Terraform Files](#create-the-terraform-files)
-  - [Deploy Nextcloud with Terraform](#deploy-nextcloud-with-terraform)
-  - [Nextcloud Setup](#nextcloud-setup)
-- [Conclusion](#conclusion)
-
-***
-
 # Introduction
 
 In this case study, we explain how to create a new flist on the ThreeFold ecosystem. We will show the process of creating a Nextcloud All-in-One flist and we will deploy a micro VM on the ThreeFold Playground to access our Nextcloud instance. As a reference, the official Nextcloud flist is available [here](https://hub.grid.tf/tf-official-apps/threefoldtech-nextcloudaio-latest.flist.md).

@@ -1,17 +1,5 @@
 <h1>Capacity</h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [System reserved capacity](#system-reserved-capacity)
-  - [Reserved Memory](#reserved-memory)
-  - [Reserved Storage](#reserved-storage)
-- [User Capacity](#user-capacity)
-  - [Memory](#memory)
-  - [Storage](#storage)
-
-***
-
 ## Introduction
 
 This document describes how ZOS does the following tasks:

@@ -1,18 +1,4 @@
-
-
 <h1> Introduction to Terraform </h1>
-
-<h2>Table of Contents</h2>
-
-- [What is Terraform?](#what-is-terraform)
-- [Mycelium Network](#mycelium-network)
-- [Get Started](#get-started)
-- [Deployment Examples](#deployment-examples)
-- [Features](#features)
-- [What is Not Supported](#what-is-not-supported)
-- [OpenTofu: Alternative to Terraform](#opentofu-alternative-to-terraform)
-
-***
 
 ## What is Terraform?
 

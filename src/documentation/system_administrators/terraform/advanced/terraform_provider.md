@@ -1,13 +1,6 @@
 <h1> Terraform Provider </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Example](#example)
-- [Environment Variables](#environment-variables)
-- [Remarks](#remarks)
-
-***
 
 ## Introduction
 

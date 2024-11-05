@@ -1,28 +1,6 @@
 <h1>File Transfer</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [SCP](#scp)
-  - [File transfer with IPv4](#file-transfer-with-ipv4)
-  - [File transfer with IPv6](#file-transfer-with-ipv6)
-- [Rsync](#rsync)
-  - [File transfer](#file-transfer)
-  - [Adjust reorganization of files and folders before running rsync](#adjust-reorganization-of-files-and-folders-before-running-rsync)
-  - [Automate backup with rsync](#automate-backup-with-rsync)
-  - [Parameters --checksum and --ignore-times with rsync](#parameters---checksum-and---ignore-times-with-rsync)
-  - [Trailing slashes with rsync](#trailing-slashes-with-rsync)
-- [SFTP](#sftp)
-  - [SFTP on the Terminal](#sftp-on-the-terminal)
-  - [SFTP Basic Commands](#sftp-basic-commands)
-  - [SFTP File Transfer](#sftp-file-transfer)
-- [SFTP with FileZilla](#sftp-with-filezilla)
-  - [Install FileZilla](#install-filezilla)
-  - [Add a Private Key](#add-a-private-key)
-  - [FileZilla SFTP Connection](#filezilla-sftp-connection)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 ## Introduction
 

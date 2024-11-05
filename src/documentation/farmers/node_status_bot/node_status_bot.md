@@ -1,15 +1,6 @@
 <h1> Node Status Bot </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Disclaimer](#disclaimer)
-- [Getting Started with the Bot](#getting-started-with-the-bot)
-- [Commands](#commands)
-- [Bugs and Features](#bugs-and-features)
-- [Node Status Bot News](#node-status-bot-news)
-
----
 
 ## Introduction
 

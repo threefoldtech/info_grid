@@ -14,7 +14,7 @@ If you still can't find solutions to your issues, read the section [Get Further 
 
 Going through the [whole table of contents](./farming_troubleshooting_tips.md#table-of-contents) can quicken your search.
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [Build Troubleshooting](./farming_troubleshooting_tips.md#build-troubleshooting)
 - [Basic Post Build Troubleshooting](./farming_troubleshooting_tips.md#basic-post-build-troubleshooting)

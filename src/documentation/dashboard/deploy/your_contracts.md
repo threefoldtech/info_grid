@@ -4,15 +4,15 @@ From the Contracts section you can check your contracts by navigating to the `De
 
 From there you will see the `Contracts List`, the list is split into three different sections. these sections are:
 
-### Node contracts
+## Node contracts
 
 ![image](../img/node_contracts.png)
 
-### Name contracts
+## Name contracts
 
 ![image](../img/name_contracts.png)
 
-### Rent contracts
+## Rent contracts
 
 ![image](../img/rent_contracts.png)
 

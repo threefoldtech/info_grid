@@ -1,12 +1,5 @@
 <h1> Deploying QSFS </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Example](#example)
-
-***
-
 ## Introduction
 
 We show how to deploy QSFS workloads with the Go client.

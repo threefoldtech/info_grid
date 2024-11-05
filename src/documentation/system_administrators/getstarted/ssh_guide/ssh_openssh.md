@@ -1,14 +1,6 @@
 <h1> SSH Remote Connection with OpenSSH </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Overview](#overview)
-- [Linux](#linux)
-- [MacOS](#macos)
-- [Windows](#windows)
-
-***
 
 ## Introduction
 

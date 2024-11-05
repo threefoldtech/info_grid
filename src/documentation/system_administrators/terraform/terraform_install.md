@@ -1,15 +1,6 @@
 <h1> Installing Terraform</h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Install Terraform](#install-terraform)
-  - [Linux](#linux)
-  - [MacOS](#macos)
-  - [Windows](#windows)
-- [ThreeFold Terraform Plugin](#threefold-terraform-plugin)
-
-***
 
 ## Introduction
 

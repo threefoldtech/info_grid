@@ -1,18 +1,4 @@
 <h1> Introducing Grid Proxy </h1>
- 
-<h2> Table of Content</h2>
-
-- [About](#about)
-- [How to Use the Project](#how-to-use-the-project)
-- [Used Technologies \& Prerequisites](#used-technologies--prerequisites)
-- [Start for Development](#start-for-development)
-- [Setup for Production](#setup-for-production)
-- [Get and Install the Binary](#get-and-install-the-binary)
-- [Add as a Systemd Service](#add-as-a-systemd-service)
-
-***
-
-<!-- About -->
 
 ## About
 

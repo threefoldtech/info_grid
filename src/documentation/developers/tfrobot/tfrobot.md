@@ -4,7 +4,7 @@ TFROBOT (`tfrobot`) is a command line interface tool that offers simultaneous ma
 
 Consult the [ThreeFoldTech TFROBOT repository](https://github.com/threefoldtech/tfgrid-sdk-go/tree/development/tfrobot) for the latest updates and read the [basics](../../system_administrators/getstarted/tfgrid3_getstarted.md) to get up to speed if needed.
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [Installation](./tfrobot_installation.md)
 - [Configuration File](./tfrobot_config.md)

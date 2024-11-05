@@ -1,17 +1,5 @@
 <h1>Network Setup</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Network Setup for Farmers](#network-setup-for-farmers)
-  - [Step 1. Testing for IPv6 Availability in Your Location](#step-1-testing-for-ipv6-availability-in-your-location)
-  - [Step 2. Choosing the Setup to Connect Your Nodes](#step-2-choosing-the-setup-to-connect-your-nodes)
-    - [2.1 Home Setup](#21-home-setup)
-    - [2.2 Data Center/Advanced Setup](#22-data-centeradvanced-setup)
-- [General Notes](#general-notes)
-
-***
-
 # Introduction
 
 0-OS nodes participating in the Threefold grid, need connectivity of course. They need to be able to communicate over 

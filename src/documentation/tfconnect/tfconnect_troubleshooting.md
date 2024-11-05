@@ -1,17 +1,6 @@
 <h1> ThreeFold Connect Troubleshooting </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Basic Troubleshooting](#basic-troubleshooting)
-  - [I am trying to access my wallet in the ThreeFold Connect App. It worked fine before, but now I just get a white screen. What does it mean and what can I do?](#i-am-trying-to-access-my-wallet-in-the-threefold-connect-app-it-worked-fine-before-but-now-i-just-get-a-white-screen-what-does-it-mean-and-what-can-i-do)
-  - [When I open the ThreeFold Connect App, I get the error: Error in initialization in Flagsmith. How can I fix this issue?](#when-i-open-the-threefold-connect-app-i-get-the-error-error-in-initialization-in-flagsmith-how-can-i-fix-this-issue)
-  - [I do not remember the name (ThreeFold 3bot ID) associated with my seed phrase on the ThreeFold Connect app. Can I recover my TF Connect app account with only the seed phrase and not the name (3bot ID) associated with it?](#i-do-not-remember-the-name-threefold-3bot-id-associated-with-my-seed-phrase-on-the-threefold-connect-app-can-i-recover-my-tf-connect-app-account-with-only-the-seed-phrase-and-not-the-name-3bot-id-associated-with-it)
-  - [TF Connect App is now asking for a 4-digit password (PIN). I don't remember it as I usually use touch or face ID to unlock the app. What can I do?](#tf-connect-app-is-now-asking-for-a-4-digit-password-pin-i-dont-remember-it-as-i-usually-use-touch-or-face-id-to-unlock-the-app-what-can-i-do)
-  - [Is there a way to have more than one wallet in TF Connect App?](#is-there-a-way-to-have-more-than-one-wallet-in-tf-connect-app)
-  - [On the ThreeFold Connect App, it says I need to migrate my Titan farm from V2 to V3. What do I have to do? How long does this take?](#on-the-threefold-connect-app-it-says-i-need-to-migrate-my-titan-farm-from-v2-to-v3-what-do-i-have-to-do-how-long-does-this-take)
-
----
 
 ## Introduction
 

@@ -1,12 +1,6 @@
 <h1> Smart Contract For IT 3Bot Integration </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Use Cases](#use-cases)
-- [Overview](#overview)
-
-***
 
 ## Introduction
 

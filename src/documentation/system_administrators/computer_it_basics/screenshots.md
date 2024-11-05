@@ -1,13 +1,6 @@
 <h1> Screenshots </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Linux](#linux)
-- [MAC](#mac)
-- [Windows](#windows)
-
-***
 
 ## Introduction
 

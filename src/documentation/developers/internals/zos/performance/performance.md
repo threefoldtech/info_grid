@@ -1,18 +1,5 @@
 <h1> Performance Monitor Package </h1>
 
-<h2>Table of Contents</h2>
-
-- [Overview](#overview)
-- [Flow](#flow)
-- [Node Initialization Check](#node-initialization-check)
-- [Scheduling](#scheduling)
-- [RMB Commands](#rmb-commands)
-- [Caching](#caching)
-- [Registered Tests](#registered-tests)
-- [Test Suite](#test-suite)
-
-***
-
 ## Overview
 
 The `perf` package is a performance monitor in `zos` nodes. it schedules tasks, cache their results and allows retrieval of these results through `RMB` calls.

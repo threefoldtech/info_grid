@@ -1,13 +1,6 @@
 <h1> Pulumi Complete Python Guide</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Steps](#steps)
-- [Alternative to Make Commands](#alternative-to-make-commands)
-
----
 
 ## Introduction
 

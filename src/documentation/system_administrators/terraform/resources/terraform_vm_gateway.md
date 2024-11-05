@@ -1,13 +1,6 @@
 <h1> Terraform Web Gateway With VM </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Expose with Prefix](#expose-with-prefix)
-- [Expose with Full Domain](#expose-with-full-domain)
-- [Using Gateway Name on Private Networks (WireGuard)](#using-gateway-name-on-private-networks-wireguard)
-
-***
 
 ## Introduction
 

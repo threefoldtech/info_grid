@@ -1,19 +1,5 @@
 <h1> Networking Overview </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Possible Configurations](#possible-configurations)
-- [Overall Requirements](#overall-requirements)
-- [Notes and Warnings](#notes-and-warnings)
-  - [Management Interfaces](#management-interfaces)
-  - [Data Center Cable Management](#data-center-cable-management)
-  - [Static IP Uplink](#static-ip-uplink)
-- [Testing the Setup](#testing-the-setup)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
-
 ## Introduction
 
 In this section, we provide advanced networking tips for farms with public IPs and in data centers (DC). The information available in this section is a combination of documentation from ThreeFold and tips and advice from community members who experienced first-hand the creation of ThreeFold farms that make use of public IPs block in data centers, personal data centers and home farms. A special thank you to those who contributed to improving the TFGrid and its knowledge base documentation.

@@ -1,12 +1,5 @@
 <h1> CasperLabs </h1>
 
-<h2>Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Deployment](#deployment)
-
-***
-
 ## Introduction
 
 [Casper Network](https://casperlabs.io/) is a blockchain protocol built from the ground up to remain true to core Web3 principles and adapt to the needs of our evolving world.

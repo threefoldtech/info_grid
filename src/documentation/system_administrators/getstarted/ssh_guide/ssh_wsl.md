@@ -1,13 +1,6 @@
 <h1> SSH Remote Connection with WSL </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [SSH Key Generation](#ssh-key-generation)
-- [Connect to Remote Host with SSH](#connect-to-remote-host-with-ssh)
-- [Enable Port 22 in Windows Firewall](#enable-port-22-in-windows-firewall)
-
-***
 
 ## Introduction
 

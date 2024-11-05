@@ -1,18 +1,6 @@
 
 <h1> Air Conditioner, Relative Humidity and Air Changes per Hour </h1>
 
-<h1> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Calculate the Minimum BTU/h Needed for the AC](#calculate-the-minimum-btuh-needed-for-the-ac)
-  - [How Much BTU/h is Needed?](#how-much-btuh-is-needed)
-  - [Taking Utilization Into Account](#taking-utilization-into-account)
-  - [The General BTU/h Equation](#the-general-btuh-equation)
-- [Ensure Proper Relative Humidity](#ensure-proper-relative-humidity)
-- [Ensure Proper Air Changes per Hour](#ensure-proper-air-changes-per-hour)
-
-***
-
 ## Introduction
 
 In this section of the ThreeFold Farmers book, we cover some important notions concerning the room parameters where your 3Nodes are working. We discuss topics such as air conditioner, relative humidity and air changes per hour.

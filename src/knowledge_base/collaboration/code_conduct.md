@@ -1,46 +1,6 @@
 <h1> Code of Conduct</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction: Collaboration Manifest](#introduction-collaboration-manifest)
-- [Code of Conduct](#code-of-conduct)
-  - [Forum \& Chat Rules](#forum--chat-rules)
-  - [Moderation Rights](#moderation-rights)
-  - [Contribution](#contribution)
-  - [Keep It Simple and Relevant](#keep-it-simple-and-relevant)
-  - [Content Verification Guidelines](#content-verification-guidelines)
-  - [Freedom of Speech.](#freedom-of-speech)
-- [Contribution Guidelines](#contribution-guidelines)
-  - [This is a Civilized Place for Public Discussion](#this-is-a-civilized-place-for-public-discussion)
-  - [Improve the Discussion](#improve-the-discussion)
-  - [Be Agreeable, Even When You Disagree](#be-agreeable-even-when-you-disagree)
-  - [Your Participation Counts](#your-participation-counts)
-  - [If You See a Problem, Flag It](#if-you-see-a-problem-flag-it)
-  - [Always Be Civil](#always-be-civil)
-  - [Keep It Tidy](#keep-it-tidy)
-  - [Post Only Your Own Stuff](#post-only-your-own-stuff)
-  - [Powered by You](#powered-by-you)
-  - [Terms of Service](#terms-of-service)
-- [Terms of Service (TOS)](#terms-of-service-tos)
-  - [Important Terms](#important-terms)
-  - [Your Permission to Use the Forum)](#your-permission-to-use-the-forum)
-  - [Conditions for Use of the Forum](#conditions-for-use-of-the-forum)
-  - [Acceptable Use](#acceptable-use)
-  - [Content Standards](#content-standards)
-  - [Enforcement](#enforcement)
-  - [Your Account](#your-account)
-  - [Your Content](#your-content)
-  - [Your Responsibility](#your-responsibility)
-  - [Disclaimers](#disclaimers)
-  - [Limits on Liability](#limits-on-liability)
-  - [Feedback](#feedback)
-  - [Termination](#termination)
-  - [Disputes](#disputes)
-  - [General Terms](#general-terms)
-  - [Contact](#contact)
-  - [Changes](#changes)
-
-***
 
 # Introduction: Collaboration Manifest
 

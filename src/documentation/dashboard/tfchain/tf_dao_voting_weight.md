@@ -1,12 +1,5 @@
 <h1> Voting Weight Example</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Example](#example)
-
----
-
 ## Introduction
 
 As we've seen in the previous section, voting weights for the TF DAO are tracked per farm to keep it easy and traceable.

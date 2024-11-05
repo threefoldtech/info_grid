@@ -4,7 +4,7 @@ This section of the ThreeFold Farmers book presents the necessary and basic step
 
 For advanced farming information, such as GPU farming and room parameters, refer to the section [Farming Optimization](../farming_optimization/farming_optimization.md).
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [1. Create a Farm](./1_create_farm.md)
 - [2. Create a Zero-OS Bootstrap Image](./2_bootstrap_image.md)

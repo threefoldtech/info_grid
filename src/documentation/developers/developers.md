@@ -4,7 +4,7 @@ This section covers all practical tutorials on how to develop and build on the T
 
 For complementary information on the technology developed by ThreeFold, refer to the [Technology](../../knowledge_base/technology/technology_toc.md) section.
 
-<h2> Table of Contents </h2>
+**TABLE OF CONTENTS**
 
 - [Javascript Client](./javascript/grid3_javascript_readme.md)
 - [Go Client](./go/grid3_go_readme.md)

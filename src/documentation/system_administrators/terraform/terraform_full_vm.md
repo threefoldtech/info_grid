@@ -1,20 +1,6 @@
 <h1>Terraform Full VM Deployment</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Main Process](#main-process)
-- [Prerequisites](#prerequisites)
-- [Find a 3Node with the ThreeFold Explorer](#find-a-3node-with-the-threefold-explorer)
-  - [Using the Grid Scheduler](#using-the-grid-scheduler)
-  - [Using the Grid Explorer](#using-the-grid-explorer)
-- [Create the Terraform Files](#create-the-terraform-files)
-- [Deploy the Full VM with Terraform](#deploy-the-full-vm-with-terraform)
-- [SSH into the 3Node](#ssh-into-the-3node)
-- [Delete the Deployment](#delete-the-deployment)
-- [Conclusion](#conclusion)
-
-***
 
 ## Introduction
 

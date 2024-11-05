@@ -1,15 +1,6 @@
 <h1>Get TFT on 1inch.io (TFT-BSC)</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [How to Get TFT on 1inch.io (TFT-BSC)](#how-to-get-tft-on-1inchio-tft-bsc)
-  - [Connect a BSC Wallet to 1inch.io](#connect-a-bsc-wallet-to-1inchio)
-  - [Swapping tokens to TFT](#swapping-tokens-to-tft)
-  - [Important Notice](#important-notice)
-- [Disclaimer](#disclaimer)
-***
 ## Introduction
 
 Welcome to our tutorial on how to buy TFT on Binance Smart Chain (BSC) using [1inch.io](https://1inch.io/)! 

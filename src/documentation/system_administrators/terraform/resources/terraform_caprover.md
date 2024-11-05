@@ -1,23 +1,6 @@
 <h1> Terraform Caprover </h1>
 
-<h2>Table of Contents</h2>
 
-- [What is CapRover?](#what-is-caprover)
-- [Features of Caprover](#features-of-caprover)
-- [Prerequisites](#prerequisites)
-- [How to Run CapRover on ThreeFold Grid 3](#how-to-run-caprover-on-threefold-grid-3)
-  - [Clone the Project Repo](#clone-the-project-repo)
-  - [A) leader node deployment/setup:](#a-leader-node-deploymentsetup)
-    - [Step 1: Deploy a Leader Node](#step-1-deploy-a-leader-node)
-    - [Step 2: Connect Root Domain](#step-2-connect-root-domain)
-      - [Note](#note)
-    - [Step 3: CapRover Root Domain Configurations](#step-3-caprover-root-domain-configurations)
-    - [Step 4: Access the Captain Dashboard](#step-4-access-the-captain-dashboard)
-      - [To allow cluster mode](#to-allow-cluster-mode)
-  - [B) Worker Node Deployment/setup:](#b-worker-node-deploymentsetup)
-- [Implementations Details:](#implementations-details)
-
-***
 
 ## What is CapRover?
 

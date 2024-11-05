@@ -1,47 +1,6 @@
 
 <h1> Farmerbot Additional Information </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Additional Information](#additional-information)
-  - [General Considerations](#general-considerations)
-  - [YAML Configuration File Template](#yaml-configuration-file-template)
-  - [Supported Commands and Flags](#supported-commands-and-flags)
-  - [Minimum specs to run the Farmerbot](#minimum-specs-to-run-the-farmerbot)
-  - [How to Prepare Your Farm for the Farmerbot with WOL](#how-to-prepare-your-farm-for-the-farmerbot-with-wol)
-  - [WOL Requirements](#wol-requirements)
-    - [Enabling WOL in the BIOS](#enabling-wol-in-the-bios)
-    - [ZOS Nodes and NIC](#zos-nodes-and-nic)
-    - [NIC Firmware and WOL](#nic-firmware-and-wol)
-  - [How to Move Your Farm to a Different Network](#how-to-move-your-farm-to-a-different-network)
-  - [The differences between power "state" and power "target"](#the-differences-between-power-state-and-power-target)
-  - [The differences between uptime, status and power state](#the-differences-between-uptime-status-and-power-state)
-  - [The sequence of events for a node managed by the Farmerbot](#the-sequence-of-events-for-a-node-managed-by-the-farmerbot)
-  - [The problematic states of a 3node set with the Farmerbot](#the-problematic-states-of-a-3node-set-with-the-farmerbot)
-  - [Using the ThreeFold Node Status Bot](#using-the-threefold-node-status-bot)
-  - [CPU overprovisioning](#cpu-overprovisioning)
-  - [Seed phrase and HEX secret](#seed-phrase-and-hex-secret)
-  - [Farmerbot directory tree](#farmerbot-directory-tree)
-  - [Dedicated Nodes and the Farmerbot](#dedicated-nodes-and-the-farmerbot)
-  - [Periodic wakeup](#periodic-wakeup)
-  - [Time period between random wakeups and power target update](#time-period-between-random-wakeups-and-power-target-update)
-  - [Upgrade to the new Farmerbot](#upgrade-to-the-new-farmerbot)
-  - [Set the Farmerbot without the mnemonics of a ThreeFold Dashboard account](#set-the-farmerbot-without-the-mnemonics-of-a-threefold-dashboard-account)
-- [Maintenance](#maintenance)
-  - [See the power state and power target of 3Nodes](#see-the-power-state-and-power-target-of-3nodes)
-    - [With GraphQL](#with-graphql)
-    - [With Grid Proxy](#with-grid-proxy)
-  - [Change manually the power target of a 3Node](#change-manually-the-power-target-of-a-3node)
-  - [Properly reboot the node if power target "Down" doesn't work](#properly-reboot-the-node-if-power-target-down-doesnt-work)
-  - [Add a 3Node to a running Farmerbot](#add-a-3node-to-a-running-farmerbot)
-  - [Update the Farmerbot with a new release](#update-the-farmerbot-with-a-new-release)
-- [Troubleshooting](#troubleshooting)
-  - [Can't Find the Logs](#cant-find-the-logs)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
-
 # Introduction
 
 We present some general information concerning the Farmerbot as well as some advice for proper maintenance and troubleshooting.

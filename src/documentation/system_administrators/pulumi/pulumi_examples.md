@@ -1,15 +1,6 @@
 <h1> Deployment Examples</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Check All the Examples](#check-all-the-examples)
-- [Prerequisites](#prerequisites)
-- [Set the Environment Variables](#set-the-environment-variables)
-- [Test the Plugin](#test-the-plugin)
-- [Destroy the Deployment](#destroy-the-deployment)
-
-***
 
 ## Introduction
 

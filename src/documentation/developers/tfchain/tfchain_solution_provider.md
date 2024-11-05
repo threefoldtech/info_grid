@@ -1,14 +1,5 @@
 <h1>Solution Provider</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Changes to Contract Creation](#changes-to-contract-creation)
-- [Creating a Provider](#creating-a-provider)
-- [Council needs to approve a provider before it can be used](#council-needs-to-approve-a-provider-before-it-can-be-used)
-
-***
-
 ## Introduction
 
 > Note: While the solution provider program is still active, the plan is to discontinue the program in the near future. We will update the manual as we get more information. We currently do not accept new solution providers.

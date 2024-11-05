@@ -1,12 +1,6 @@
 <h1> Minting and the Farmerbot </h2>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Minting Rules](#minting-rules)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 

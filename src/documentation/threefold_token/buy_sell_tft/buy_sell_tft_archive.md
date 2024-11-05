@@ -1,14 +1,7 @@
 
 <h1>Buy and Sell TFT: Getting Started</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Set up a Stellar Address](#set-up-a-stellar-address)
-- [Methods to Get TFT](#methods-to-get-tft)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 

@@ -1,13 +1,6 @@
 <h1> ZNET </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Secure mesh overlay network (peer2peer)](#secure-mesh-overlay-network-peer2peer)
-- [Redundancy](#redundancy)
-- [Interfaces in Zero-OS](#interfaces-in-zero-os)
-
-***
 
 ## Introduction
 

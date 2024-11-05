@@ -1,20 +1,5 @@
 <h1> Dedicated Machines </h1>
 
-<h2> Table of Contents </h2>
-
-- [What is a Dedicated Machine?](#what-is-a-dedicated-machine)
-- [Description](#description)
-- [Billing \& Pricing](#billing--pricing)
-- [Discounts](#discounts)
-- [Usage](#usage)
-- [GPU Support](#gpu-support)
-- [Filter and Reserve a GPU Node](#filter-and-reserve-a-gpu-node)
-  - [Filter Nodes](#filter-nodes)
-  - [Reserve a Node](#reserve-a-node)
-- [GPU Support Links](#gpu-support-links)
-
-***
-
 ## What is a Dedicated Machine?
 
 Dedicated machines are 3Nodes that can be reserved and rented entirely by one user. The user can thus reserve an entire node and use it exclusively to deploy solutions. This feature is ideal for users who want to host heavy deployments with the benefits of high reliability and cost effectiveness.

@@ -1,30 +1,6 @@
 
 <h1> Uncomplicated Firewall (ufw) Basic Commands</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Basic Commands](#basic-commands)
-  - [Install ufw](#install-ufw)
-  - [Enable ufw](#enable-ufw)
-  - [Disable ufw](#disable-ufw)
-  - [Reset ufw](#reset-ufw)
-  - [Reload ufw](#reload-ufw)
-  - [Deny Incoming Connections](#deny-incoming-connections)
-  - [Allow Outgoing Connections](#allow-outgoing-connections)
-  - [Allow a Specific IP address](#allow-a-specific-ip-address)
-  - [Allow a Specific IP Address to a Given Port](#allow-a-specific-ip-address-to-a-given-port)
-  - [Allow a Port for tcp](#allow-a-port-for-tcp)
-  - [Allow a Port for tcp and udp](#allow-a-port-for-tcp-and-udp)
-  - [Allow a Subnet to a Given Port](#allow-a-subnet-to-a-given-port)
-  - [Deny an IP Address](#deny-an-ip-address)
-  - [Block Incoming Connections to a Network Interface](#block-incoming-connections-to-a-network-interface)
-  - [Delete a Rule with Number](#delete-a-rule-with-number)
-  - [Get App Info](#get-app-info)
-  - [Allow a Specific App](#allow-a-specific-app)
-- [References](#references)
-
-
 ## Introduction
 
 We present a quick introduction to [Uncomplicated Firewall (ufw)](https://firewalld.org/), a free and open-source firewall management tool for Linux operating systems. This guide can be useful for users of the TFGrid deploying on full and micro VMs as well as other types of deployment.

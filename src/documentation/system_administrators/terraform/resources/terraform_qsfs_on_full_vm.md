@@ -1,15 +1,6 @@
 <h1> QSFS on Full VM </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Create the Terraform Files](#create-the-terraform-files)
-- [Full Example](#full-example)
-- [Mounting the QSFS Disk](#mounting-the-qsfs-disk)
-- [Debugging](#debugging)
-
-***
 
 ## Introduction
 

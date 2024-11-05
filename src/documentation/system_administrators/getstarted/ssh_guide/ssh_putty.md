@@ -1,12 +1,6 @@
 <h1> SSH Remote Connection with PuTTY </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Main Steps and Prerequisites](#main-steps-and-prerequisites)
-- [SSH with PuTTY on Windows](#ssh-with-putty-on-windows)
-
-***
 
 ## Introduction
 

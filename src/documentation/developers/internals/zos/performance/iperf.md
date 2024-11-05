@@ -1,14 +1,5 @@
 <h1> IPerf </h1>
 
-<h2>Table of Contents</h2>
-
-- [Overview](#overview)
-- [Configuration](#configuration)
-- [Details](#details)
-- [Result Sample](#result-sample)
-
-***
-
 ## Overview
 
 The `iperf` package is designed to facilitate network performance testing using the `iperf3` tool. with both UDP and TCP over IPv4 and IPv6.

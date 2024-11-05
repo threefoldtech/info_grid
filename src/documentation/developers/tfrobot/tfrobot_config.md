@@ -1,15 +1,5 @@
 <h1> Configuration File</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Examples](#examples)
-  - [YAML Example](#yaml-example)
-  - [JSON Example](#json-example)
-- [Create a Configuration File](#create-a-configuration-file)
-
-***
-
 ## Introduction
 
 To use TFROBOT, the user needs to create a YAML or a JSON configuration file that will contain the mass deployment information, such as the groups information, number of VMs to deploy how, the compute, storage and network resources needed, as well as the user's credentials, such as the SSH public key, the network (main, test, dev, qa) and the TFChain mnemonics.

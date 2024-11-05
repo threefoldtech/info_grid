@@ -1,12 +1,5 @@
 <h1> Discourse </h1>
 
-<h2>Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Deployment](#deployment)
-
-***
-
 ## Introduction
 
 [Discourse](https://www.discourse.org/) is the 100% open source discussion platform built for the next decade of the Internet. Use it as a mailing list, discussion forum, long-form chat room, and more!

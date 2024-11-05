@@ -1,18 +1,5 @@
 <h1> Full Virtual Machine </h1>
 
-<h2>Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Deployment](#deployment)
-- [Difference Between Full VM and Micro VM](#difference-between-full-vm-and-micro-vm)
-- [Manually Mounting Additional Disk](#manually-mounting-additional-disk)
-  - [Check All Disks Attached to the VM](#check-all-disks-attached-to-the-vm)
-  - [Create a Mount Directory](#create-a-mount-directory)
-  - [New file system](#new-file-system)
-  - [Mount drive](#mount-drive)
-
-***
-
 ## Introduction
 
 We present the steps to deploy a full VM on the TFGrid.

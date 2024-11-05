@@ -1,20 +1,6 @@
 <h1>WooCommerce on the TFGrid</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deploy Wordpress](#deploy-wordpress)
-- [Set a DNS Record](#set-a-dns-record)
-- [HTTPS with Caddy](#https-with-caddy)
-  - [Adjust the Firewall](#adjust-the-firewall)
-  - [Manage with zinit](#manage-with-zinit)
-- [Access Admin Panel](#access-admin-panel)
-- [Install WooCommerce](#install-woocommerce)
-- [Troubleshooting](#troubleshooting)
-- [References](#references)
-- [Questions and Feedback](#questions-and-feedback)
----
 
 ## Introduction
 

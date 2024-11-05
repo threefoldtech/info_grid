@@ -1,26 +1,5 @@
 <h1> Flist Case Study: Debian 12 </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-  - [You Said Flist?](#you-said-flist)
-  - [Case Study Objective](#case-study-objective)
-  - [The Overall Process](#the-overall-process)
-- [Docker Image Creation](#docker-image-creation)
-  - [Dockerfile](#dockerfile)
-  - [Docker Image Script](#docker-image-script)
-  - [zinit Folder](#zinit-folder)
-  - [README.md File](#readmemd-file)
-  - [Putting it All Together](#putting-it-all-together)
-- [Docker Publishing Steps](#docker-publishing-steps)
-  - [Create Account and Access Token](#create-account-and-access-token)
-  - [Build and Push the Docker Image](#build-and-push-the-docker-image)
-- [Convert the Docker Image to an Flist](#convert-the-docker-image-to-an-flist)
-- [Deploy the Flist on the TF Playground](#deploy-the-flist-on-the-tf-playground)
-- [Conclusion](#conclusion)
-
-***
-
 ## Introduction
 
 For this tutorial, we will present a case study demonstrating how easy it is to create a new flist on the ThreeFold ecosystem. We will be creating a Debian Flist and we will deploy a micro VM on the ThreeFold Playground and access our Debian deployment. 

@@ -1,15 +1,6 @@
 <h1>TFT on Ethereum</h2>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [TFT Ethereum-Stellar Bridge](#tft-ethereum-stellar-bridge)
-- [TFT and Metamask](#tft-and-metamask)
-  - [Add TFT to Metamask](#add-tft-to-metamask)
-  - [Buy TFT on Metamask](#buy-tft-on-metamask)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
 
 ## Introduction
 

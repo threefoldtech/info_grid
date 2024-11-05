@@ -1,14 +1,5 @@
 <h1> Commands and Flags </h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Commands](#commands)
-- [Subcommands](#subcommands)
-- [Flags](#flags)
-
-***
-
 ## Introduction
 
 We present the various commands, subcommands and flags available with TFROBOT.

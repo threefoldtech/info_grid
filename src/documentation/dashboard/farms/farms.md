@@ -11,7 +11,7 @@ Here you will find everything farming related. this includes:
 
 ***
 
-## Table of Content
+**TABLE OF CONTENTS**
 
 - [Your Farms](./your_farms.md)
 - [Farm Finder](./farms_finder.md)

@@ -1,16 +1,5 @@
 <h1> CapRover Admin <h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Step 1: Enable HTTPS](#step-1-enable-https)
-- [Step 2: Add a Default Docker Registry](#step-2-add-a-default-docker-registry)
-- [Step 3: Deploy an App](#step-3-deploy-an-app)
-- [Step 4: Enable Monitoring](#step-4-enable-monitoring)
-- [Step 5: Change Your Password](#step-5-change-your-password)
-
-***
-
 ## Introduction
 
 We present the steps to manage a CapRover Admin node.

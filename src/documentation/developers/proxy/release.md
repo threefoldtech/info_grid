@@ -1,13 +1,5 @@
 <h1>Release Grid-Proxy</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Steps](#steps)
-- [Debugging](#debugging)
-
-***
-
 ## Introduction
 
 We show the steps to release a new version of the Grid Proxy.

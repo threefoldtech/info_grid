@@ -1,12 +1,6 @@
 <h1> Scheduler Resource </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [How the Scheduler Works](#how-the-scheduler-works)
-- [Quick Example](#quick-example)
-
-***
 
 
 ## Introduction

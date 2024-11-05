@@ -1,16 +1,6 @@
 <h1> Get TFT (Stellar) from Mazraa Farmers </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Get Started](#get-started)
-  - [Get TFT via Mazraa.io Website](#get-tft-via-mazraaio-website)
-  - [Get TFT via Wire Transfer](#get-tft-via-wire-transfer)
-  - [Get TFT via PaypPal](#get-tft-via-payppal)
-  - [Get TFT via Credit Card (Transcoin)](#get-tft-via-credit-card-transcoin)
-- [Important Notice](#important-notice)
-- [Disclaimer](#disclaimer)
-***
 ## Introduction
 
 Alternatively, you can get TFT from [Mazraa](https://mazraa.io) farmers.

@@ -1,13 +1,6 @@
 <h1> Get TFT Stellar via BetterToken </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Get Started](#get-started)
-- [Important Notice](#important-notice)
-- [Disclaimer](#disclaimer)
-
-***
 ## Introduction
 
 Alternatively, you can get TFT from Mazraa [BetterToken](https://bettertoken.com/) farmers.

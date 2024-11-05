@@ -1,35 +1,5 @@
 <h1> Nextcloud </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Domain Names and Public IPs](#domain-names-and-public-ips)
-- [Deploy Nextcloud](#deploy-nextcloud)
-- [Nextcloud Setup](#nextcloud-setup)
-- [DNS Details](#dns-details)
-  - [DNS Record with Public IPv4](#dns-record-with-public-ipv4)
-  - [DNS Record with Gateway](#dns-record-with-gateway)
-  - [DNS Propagation](#dns-propagation)
-- [Talk](#talk)
-  - [Install Talk](#install-talk)
-  - [TURN](#turn)
-  - [Use Talk](#use-talk)
-- [Backups and Updates](#backups-and-updates)
-  - [BorgBackup](#borgbackup)
-    - [Create a BorgBackup](#create-a-borgbackup)
-    - [Automatic Borg Backups and Updates](#automatic-borg-backups-and-updates)
-  - [Secondary VM Backup](#secondary-vm-backup)
-    - [SSH Connection](#ssh-connection)
-    - [Secondary VM Backup Script](#secondary-vm-backup-script)
-- [Troubleshooting](#troubleshooting)
-  - [Retrieve the Nextcloud AIO Password](#retrieve-the-nextcloud-aio-password)
-  - [Access the Nextcloud Interface Page](#access-the-nextcloud-interface-page)
-  - [Check the DNS Propagation](#check-the-dns-propagation)
-- [Questions and Feedback](#questions-and-feedback)
-
-***
-
 # Introduction
 
 [Nextcloud](https://nextcloud.com/) is a suite of client-server software for creating and using file hosting services. 

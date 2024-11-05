@@ -1,12 +1,5 @@
 <h1> RMB Relay </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Example](#example)
-
-***
-
 ## Introduction
 
 We present an example of RMB relay. Note that the extension for this kind of file is `.wsd`.

@@ -1,24 +1,6 @@
 <h1>Terraform Basics</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Requirements](#requirements)
-- [Basic Commands](#basic-commands)
-- [Find A Node](#find-a-node)
-- [Preparation](#preparation)
-- [Main File Details](#main-file-details)
-  - [Initializing the Provider](#initializing-the-provider)
-- [Export Environment Variables](#export-environment-variables)
-  - [Output Section](#output-section)
-- [Start a Deployment](#start-a-deployment)
-- [Delete a Deployment](#delete-a-deployment)
-- [Available Flists](#available-flists)
-- [Full and Micro Virtual Machines](#full-and-micro-virtual-machines)
-- [Tips on Managing Resources](#tips-on-managing-resources)
-- [Conclusion](#conclusion)
-
-***
 
 ## Introduction
 

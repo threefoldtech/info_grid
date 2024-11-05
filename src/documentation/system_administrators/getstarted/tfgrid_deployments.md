@@ -1,14 +1,6 @@
 <h1> TFGrid Deployments </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Dashboard UI](#dashboard-ui)
-- [Infrastrure-As-Code](#infrastrure-as-code)
-- [Command Line Interfaces](#command-line-interfaces)
-- [GPU Workloads](#gpu-workloads)
-
----
 
 ## Introduction
 

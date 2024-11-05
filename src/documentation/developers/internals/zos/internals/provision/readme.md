@@ -1,14 +1,5 @@
 <h1>Provision Module</h1>
 
-<h2> Table of Contents </h2>
-
-- [ZBus](#zbus)
-- [Introduction](#introduction)
-- [Supported workload](#supported-workload)
-
-
-***
-
 ## ZBus
 
 This module is autonomous module and is not reachable over `zbus`.

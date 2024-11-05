@@ -1,15 +1,6 @@
 <h1> Kubernetes Cluster </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Example](#example)
-- [Grid Kubernetes Resource](#grid-kubernetes-resource)
-  - [Kubernetes Outputs](#kubernetes-outputs)
-- [More Info](#more-info)
-- [Demo Video](#demo-video)
-
-***
 
 ## Introduction
 

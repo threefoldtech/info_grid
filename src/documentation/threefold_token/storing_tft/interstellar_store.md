@@ -1,17 +1,6 @@
 <h1> Interstellar (TFT-Stellar) </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Get Started](#get-started)
-  - [Create a New Interstellar account](#create-a-new-interstellar-account)
-  - [Create a New Wallet](#create-a-new-wallet)
-  - [Adding TFT as an Asset](#adding-tft-as-an-asset)
-- [Purchase TFT on Interstellar](#purchase-tft-on-interstellar)
-- [Disclaimer](#disclaimer)
-
-***
 
 ## Introduction
 

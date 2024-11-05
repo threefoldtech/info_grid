@@ -6,7 +6,7 @@ Deploy your favorite orchestrating services and enjoy the seamless coordination 
 
 ***
 
-## Table of Contnet
+**TABLE OF CONTENTS**
 
 - [Kubernetes](../solutions/k8s.md)
 - [Caprover](../solutions/caprover.md)

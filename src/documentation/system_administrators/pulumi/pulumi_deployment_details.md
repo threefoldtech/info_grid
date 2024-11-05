@@ -1,25 +1,6 @@
 <h1>Deployment Details</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Installation](#installation)
-- [Essential Workflow](#essential-workflow)
-  - [State](#state)
-  - [Creating an Empty Stack](#creating-an-empty-stack)
-  - [Bringing up the Infrastructure](#bringing-up-the-infrastructure)
-  - [Destroy the Infrastructure](#destroy-the-infrastructure)
-  - [Pulumi Makefile](#pulumi-makefile)
-- [Creating a Network](#creating-a-network)
-  - [Pulumi File](#pulumi-file)
-- [Creating a Virtual Machine](#creating-a-virtual-machine)
-- [Kubernetes](#kubernetes)
-- [Creating a Domain](#creating-a-domain)
-  - [Example of a Simple Domain Prefix](#example-of-a-simple-domain-prefix)
-  - [Example of a Fully Controlled Domain](#example-of-a-fully-controlled-domain)
-- [Conclusion](#conclusion)
-
-***
 
 ## Introduction 
 

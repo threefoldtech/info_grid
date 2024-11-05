@@ -1,15 +1,6 @@
 <h1> Deploy a Full VM and Run XRDP for Remote Desktop Connection </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Server Side: Deploy the Full VM, install a desktop and XRDP](#server-side-deploy-the-full-vm-install-a-desktop-and-xrdp)
-- [Client Side: Install Remote Desktop Connection for Windows, MAC or Linux](#client-side-install-remote-desktop-connection-for-windows-mac-or-linux)
-  - [Download the App](#download-the-app)
-  - [Connect Remotely](#connect-remotely)
-- [Conclusion](#conclusion)
-
-***
 
 ## Introduction
 

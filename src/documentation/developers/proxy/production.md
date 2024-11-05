@@ -1,16 +1,5 @@
 <h1>Running Proxy in Production</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Production Run](#production-run)
-- [To upgrade the machine](#to-upgrade-the-machine)
-- [Dockerfile](#dockerfile)
-- [Update helm package](#update-helm-package)
-- [Install the chart using helm package](#install-the-chart-using-helm-package)
-
-***
-
 ## Introduction
 
 We show how to run grid proxy in production.

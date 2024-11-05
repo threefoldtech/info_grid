@@ -2,23 +2,6 @@
 
 With Pulumi, you can express your infrastructure requirements using the languages you know and love, creating a seamless bridge between development and operations. Let's go!
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Mycelium Network](#mycelium-network)
-- [Benefits of Using Pulumi](#benefits-of-using-pulumi)
-- [Declarative vs. Imperative Programming](#declarative-vs-imperative-programming)
-  - [Declaration Programming Example](#declaration-programming-example)
-  - [Benefits of Declarative Programming in IaC](#benefits-of-declarative-programming-in-iac)
-- [Concepts](#concepts)
-  - [Pulumi Project](#pulumi-project)
-  - [Project File](#project-file)
-  - [Stacks](#stacks)
-  - [Resources](#resources)
-- [Pulumi Registry](#pulumi-registry)
-
-***
-
 ## Introduction
 
 [ThreeFold Grid](https://threefold.io) is a decentralized cloud infrastructure platform that provides developers with a secure and scalable way to deploy and manage their applications. It is based on a peer-to-peer network of nodes that are distributed around the world.

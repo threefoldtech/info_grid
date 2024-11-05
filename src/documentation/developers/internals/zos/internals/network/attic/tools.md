@@ -1,8 +1,5 @@
 # Network
 
-- [How does a farmer configure a node as exit node](#How-does-a-farmer-configure-a-node-as-exit-node)
-- [How to create a user private network](#How-to-create-a-user-private-network)
-
 ## How does a farmer configure a node as exit node
 
 For the network of the grid to work properly, some of the nodes in the grid need to be configured as "exit nodes".  An "exit node" is a node that has a publicly accessible IP address and that is responsible routing IPv6 traffic, or proxy IPv4 traffic.

@@ -1,15 +1,6 @@
 <h1>How to Use TestLodge for Testing the ThreeFold Grid</h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Getting Started on TestLodge](#getting-started-on-testlodge)
-  - [Joining the TF GRID Project on TestLodge by Invitation](#joining-the-tf-grid-project-on-testlodge-by-invitation)
-- [Accessing the TF GRID 3.x Projects](#accessing-the-tf-grid-3x-projects)
-  - [Project Overview](#project-overview)
-  - [Creating Your Own Personal Test Run](#creating-your-own-personal-test-run)
-
-***
 
 ## Introduction
 

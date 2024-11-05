@@ -1,12 +1,6 @@
 <h1> Proof of Utilization </h1>
 
-<h2>Table of Contents</h2>
 
-- [Introduction](#introduction)
-- [Overview](#overview)
-- [CU, SU, NU](#cu-su-nu)
-
-***
 
 ## Introduction
 

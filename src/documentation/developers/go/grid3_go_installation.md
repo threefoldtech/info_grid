@@ -1,15 +1,5 @@
 <h1>Go Client Installation</h1>
 
-<h2>Table of Contents</h2>
-
-- [Introduction](#introduction)
-- [Mycelium Network](#mycelium-network)
-- [Requirements](#requirements)
-- [Steps](#steps)
-- [References](#references)
-
-***
-
 ## Introduction
 
 We present the general steps to install the ThreeFold Grid3 Go Client.

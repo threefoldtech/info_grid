@@ -1,12 +1,6 @@
 <h1>Staking Discount Levels</h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Table of Discounts](#table-of-discounts)
-- [Example for 40% discount](#example-for-40-discount)
-
-***
 
 ## Introduction
 

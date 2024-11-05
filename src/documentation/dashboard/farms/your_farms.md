@@ -2,19 +2,6 @@
 
 This comprehensive guide aims to provide users with detailed instructions and insights into efficiently managing their _Farms_. Farms encompass servers and storage devices contributing computational and storage capabilities to the grid, empowering users to oversee, maintain, and optimize their resources effectively.
 
-- [Getting Started](#getting-started)
-- [Create a New Farm](#create-a-new-farm)
-- [Manage Your Farms](#manage-your-farms)
-  - [Add a Public IP to Your Farm](#add-a-public-ip-to-your-farm)
-  - [Add a Stellar Address for Payout](#add-a-stellar-address-for-payout)
-  - [Generate Your Node Bootstrap Image](#generate-your-node-bootstrap-image)
-  - [Additional Information](#additional-information)
-- [Manage Your Nodes](#manage-your-nodes)
-  - [Node Information](#node-information)
-  - [Extra Fees](#extra-fees)
-  - [Public Configuration](#public-configuration)
-    - [The Difference Between IPs Assigned to Nodes Versus a Farm](#the-difference-between-ips-assigned-to-nodes-versus-a-farm)
-
 ## Getting Started
 
 After logging in to the TF Dashboard, on the sidebar click on **Dashboard** then _Your Farms_ .

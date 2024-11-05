@@ -1,17 +1,6 @@
 <h1> Deploy a Full VM and Run Apache Guacamole (RDP Connection, Remote Desktop) </h1>
 
-<h2> Table of Contents </h2>
 
-- [Introduction](#introduction)
-- [Deploy a Full VM and Create a Root-Access User](#deploy-a-full-vm-and-create-a-root-access-user)
-- [SSH with Root-Access User, Install Prerequisites and Apache Guacamole](#ssh-with-root-access-user-install-prerequisites-and-apache-guacamole)
-- [Access Apache Guacamole and Create Admin-Access User](#access-apache-guacamole-and-create-admin-access-user)
-- [Download the Desktop Environment and Run xrdp](#download-the-desktop-environment-and-run-xrdp)
-- [Create an RDP Connection and Access the Server Remotely](#create-an-rdp-connection-and-access-the-server-remotely)
-- [Feedback and Questions](#feedback-and-questions)
-- [References](#references)
-
-***
 
 ## Introduction
 

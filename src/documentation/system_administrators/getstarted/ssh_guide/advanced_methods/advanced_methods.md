@@ -1,6 +1,6 @@
 # Advanced Methods
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [SSH with PuTTY](../ssh_putty.md)
 - [SSH with WSL](../ssh_wsl.md)

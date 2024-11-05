@@ -1,19 +1,5 @@
 <h1> ZOS Manual</h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Farm? Network? What are these?](#farm-network-what-are-these)
-- [Creating a farm](#creating-a-farm)
-- [Interaction](#interaction)
-- [Deployment](#deployment)
-	- [Workload](#workload)
-	- [Types](#types)
-	- [API](#api)
-- [Raid Controller Configuration](#raid-controller-configuration)
-
-***
-
 ## Introduction
 
 This document explain the usage of `ZOS`. `ZOS` usually pronounced (zero OS), got it's name from the idea of zero configuration. Since after the initial `minimal` configuration which only include which `farm` to join and what `network` (`development`, `testing`, or `production`) the owner of the node does not has to do anything more, and the node work fully autonomous.

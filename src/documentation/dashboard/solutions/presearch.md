@@ -1,16 +1,5 @@
 <h1> Presearch </h1>
 
-<h2> Table of Contents </h2>
-
-- [Introduction](#introduction)
-- [Prerequisites](#prerequisites)
-- [Deploy a Presearch Node](#deploy-a-presearch-node)
-- [Migrate an Existing Presearch Node to the TFGrid](#migrate-an-existing-presearch-node-to-the-tfgrid)
-- [Verify if a 3Node Already Runs a Presearch Workload](#verify-if-a-3node-already-runs-a-presearch-workload)
-- [Learn More About Presearch](#learn-more-about-presearch)
-
-***
-
 ## Introduction
 
 [Presearch](https://www.presearch.io/) is a community-powered, decentralized search engine that provides better results while protecting your privacy and rewarding you when you search. This weblet deploys a Presearch node. Presearch Nodes are used to process user search requests, and node operators earn Presearch PRE tokens for joining and supporting the network.

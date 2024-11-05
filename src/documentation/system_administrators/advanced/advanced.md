@@ -2,7 +2,7 @@
 
 In this section, we delve into sophisticated topics and powerful functionalities that empower you to harness the full potential of TFGrid 3.0. Whether you're an experienced user seeking to deepen your understanding or a trailblazer venturing into uncharted territories, this manual is your gateway to mastering advanced concepts on the ThreeFold Grid.
 
-<h2>Table of Contents</h2>
+**TABLE OF CONTENTS**
 
 - [Token Transfer Keygenerator](./token_transfer_keygenerator.md)
 - [Cancel Contracts](./cancel_contracts.md)
