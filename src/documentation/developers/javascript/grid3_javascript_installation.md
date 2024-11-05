@@ -6,6 +6,10 @@ We present here the general steps required to install and use the ThreeFold Grid
 
 The [Grid Client](https://github.com/threefoldtech/tfgrid-sdk-ts/tree/development/packages/grid_client) is written using [TypeScript](https://www.typescriptlang.org/) to provide more convenience and type-checked code. It is used to deploy workloads like virtual machines, kubernetes clusters, quantum storage, and more.
 
+## Mycelium Network
+
+Note that you can use the [Mycelium network](../../system_administrators/mycelium/mycelium_toc.md) to connect to your deployments. To do so, make sure that the Mycelium network is properly set up for the deployments. You can consult the different examples that include the Mycelium network to understand this further.
+
 ## Prerequisites
 
 To install the Grid Client, you will need the following on your machine:

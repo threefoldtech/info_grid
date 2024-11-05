@@ -2,8 +2,6 @@
 
 With Pulumi, you can express your infrastructure requirements using the languages you know and love, creating a seamless bridge between development and operations. Let's go!
 
-
-
 ## Introduction
 
 [ThreeFold Grid](https://threefold.io) is a decentralized cloud infrastructure platform that provides developers with a secure and scalable way to deploy and manage their applications. It is based on a peer-to-peer network of nodes that are distributed around the world.
@@ -13,6 +11,10 @@ With Pulumi, you can express your infrastructure requirements using the language
 The [Pulumi plugin for ThreeFold Grid](https://github.com/threefoldtech/pulumi-provider-grid) provides developers with a way to deploy and manage their ThreeFold Grid resources using Pulumi. This means that developers can benefit from all of the features and benefits that Pulumi offers, such as cross-cloud support, type safety, preview and diff, and parallel execution -still in the works-.
 
 Please note that the Pulumi plugin for ThreeFold Grid is not yet officially published. We look forward to your feedback on this project.
+
+## Mycelium Network
+
+Note that you can use the [Mycelium network](../mycelium/mycelium_toc.md) to connect to your deployments. To do so, make sure that the Mycelium network is properly set up for the deployments. You can consult the different examples that include the Mycelium network to understand this further.
 
 ## Benefits of Using Pulumi
 

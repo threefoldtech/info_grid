@@ -1,8 +1,4 @@
-
-
 <h1> Introduction to Terraform </h1>
-
-
 
 ## What is Terraform?
 
@@ -11,6 +7,10 @@
 The beauty of Terraform lies in its ability to automate the provisioning and management of infrastructure across various cloud providers, ensuring that your deployments are reproducible and scalable. It promotes collaboration, version control, and the ability to treat your infrastructure as code, providing a unified and seamless approach to managing complex environments.
 
 This section of the manual will guide you through the process of setting up, configuring, and managing your infrastructure on the ThreeFold Grid using Terraform. Whether you're a seasoned developer, a DevOps professional, or someone exploring the world of decentralized computing for the first time, this guide is designed to provide clear and concise instructions to help you get started.
+
+## Mycelium Network
+
+Note that you can use the [Mycelium network](../../system_administrators/mycelium/mycelium_toc.md) to connect to your deployments. To do so, make sure that the Mycelium network is properly set up for the deployments. You can consult the different examples that include the Mycelium network to understand this further.
 
 ## Get Started
 

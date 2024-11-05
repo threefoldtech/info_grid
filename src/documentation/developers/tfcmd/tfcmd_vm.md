@@ -35,6 +35,7 @@ When you use `tfcmd`, there are two required flags (`name` and `ssh`), while the
 - **memory**: memory size in GB (default `1`).
 - **rootfs**: root filesystem size in GB (default `2`).
 - **ygg**: assign yggdrasil ip for the VM (default `true`).
+- **mycelium**: assign Mycelium ip for the VM (default `true`).
 - **gpus**: assign a list of gpus' IDs to the VM. Note: setting this without the node option will fail.
 
 ## Examples
@@ -74,57 +75,63 @@ In the following example, the name of the deployment to get is `examplevm`.
 
 ```console
 $ tfcmd get vm examplevm
-3:20PM INF vm:
+11:56AM INF starting peer session=tf-1522837 twin=192
+11:56AM INF vm:
 {
         "Name": "examplevm",
-        "NodeID": 15,
-        "SolutionType": "examplevm",
+        "NodeID": 11,
+        "SolutionType": "vm/examplevm",
         "SolutionProvider": null,
         "NetworkName": "examplevmnetwork",
         "Disks": [
                 {
-                        "Name": "examplevmdisk",
-                        "SizeGB": 10,
-                        "Description": ""
+                        "name": "examplevmdisk",
+                        "size": 10,
+                        "description": ""
                 }
         ],
         "Zdbs": [],
         "Vms": [
                 {
-                        "Name": "examplevm",
-                        "Flist": "https://hub.grid.tf/tf-official-apps/threefoldtech-ubuntu-22.04.flist",
-                        "FlistChecksum": "",
-                        "PublicIP": false,
-                        "PublicIP6": false,
-                        "Planetary": true,
-                        "Corex": false,
-                        "ComputedIP": "",
-                        "ComputedIP6": "",
-                        "YggIP": "301:ad3a:9c52:98d1:cd05:1595:9abb:e2f1",
-                        "IP": "10.20.2.2",
-                        "Description": "",
-                        "CPU": 2,
-                        "Memory": 4096,
-                        "RootfsSize": 2048,
-                        "Entrypoint": "/sbin/zinit init",
-                        "Mounts": [
+                        "name": "examplevm",
+                        "flist": "https://hub.grid.tf/tf-official-apps/threefoldtech-ubuntu-22.04.flist",
+                        "flist_checksum": "",
+                        "publicip": false,
+                        "publicip6": false,
+                        "planetary": true,
+                        "corex": false,
+                        "computedip": "",
+                        "computedip6": "",
+                        "planetary_ip": "302:9e63:7d43:b742:c2e0:ab69:e101:8032",
+                        "mycelium_ip": "45f:6cd6:8c6d:6c73:ff0f:6c97:11e3:4e84",
+                        "ip": "10.20.2.2",
+                        "mycelium_ip_seed": "bJcR406E",
+                        "description": "",
+                        "gpus": null,
+                        "cpu": 2,
+                        "memory": 4096,
+                        "rootfs_size": 2048,
+                        "entrypoint": "/sbin/zinit init",
+                        "mounts": [
                                 {
-                                        "DiskName": "examplevmdisk",
-                                        "MountPoint": "/data"
+                                        "disk_name": "examplevmdisk",
+                                        "mount_point": "/data"
                                 }
                         ],
-                        "Zlogs": null,
-                        "EnvVars": {
+                        "zlogs": null,
+                        "env_vars": {
                                 "SSH_KEY": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDcGrS1RT36rHAGLK3/4FMazGXjIYgWVnZ4bCvxxg8KosEEbs/DeUKT2T2LYV91jUq3yibTWwK0nc6O+K5kdShV4qsQlPmIbdur6x2zWHPeaGXqejbbACEJcQMCj8szSbG8aKwH8Nbi8BNytgzJ20Ysaaj2QpjObCZ4Ncp+89pFahzDEIJx2HjXe6njbp6eCduoA+IE2H9vgwbIDVMQz6y/TzjdQjgbMOJRTlP+CzfbDBb6Ux+ed8F184bMPwkFrpHs9MSfQVbqfIz8wuq/wjewcnb3wK9dmIot6CxV2f2xuOZHgNQmVGratK8TyBnOd5x4oZKLIh3qM9Bi7r81xCkXyxAZbWYu3gGdvo3h85zeCPGK8OEPdYWMmIAIiANE42xPmY9HslPz8PAYq6v0WwdkBlDWrG3DD3GX6qTt9lbSHEgpUP2UOnqGL4O1+g5Rm9x16HWefZWMjJsP6OV70PnMjo9MPnH+yrBkXISw4CGEEXryTvupfaO5sL01mn+UOyE= abdulrahman@AElawady-PC\n"
                         },
-                        "NetworkName": "examplevmnetwork"
+                        "network_name": "examplevmnetwork",
+                        "console_url": "10.20.2.0:20002"
                 }
         ],
         "QSFS": [],
         "NodeDeploymentID": {
-                "15": 22748
+                "11": 100063
         },
-        "ContractID": 22748
+        "ContractID": 100063,
+        "IPrange": "10.20.2.0/24"
 }
 ```
 
@@ -148,6 +155,3 @@ $ tfcmd cancel examplevm
 3:37PM INF examplevm canceled
 ```
 
-# Questions and Feedback
-
-If you have any questions or feedback, you can ask the ThreeFold community for help on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Grid Tester Community](https://t.me/threefoldtesting) on Telegram.
