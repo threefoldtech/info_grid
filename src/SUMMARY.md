@@ -346,6 +346,7 @@
       - [Infrastructure As Code (IAC)](knowledge_base/technology/smartcontract_it/smartcontract_iac.md)
       - [3Bot Integration](knowledge_base/technology/smartcontract_it/smartcontract_3bot.md)
   - [Release Notes](knowledge_base/releasenotes/releasenotes_readme.md)
+    - [TFGrid v3.15.0](knowledge_base/releasenotes/tfgrid_release_3_15_0.md)
     - [TFGrid v3.14.0](knowledge_base/releasenotes/tfgrid_release_3_14_0.md)
     - [TFGrid v3.13.0](knowledge_base/releasenotes/tfgrid_release_3_13_0.md)
     - [TFGrid v3.12.0](knowledge_base/releasenotes/tfgrid_release_3_12_0.md)
