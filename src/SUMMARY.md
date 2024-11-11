@@ -53,6 +53,7 @@
       - [Simulator](documentation/dashboard/farms/simulator.md)
     - [TFChain](documentation/dashboard/tfchain/tfchain.md)
       - [Your Profile](documentation/dashboard/tfchain/your_profile.md)
+        - [KYC](documentation/dashboard/tfchain/kyc.md)
       - [TF DAO](documentation/dashboard/tfchain/tf_dao.md)
         - [Voting Weight Example](documentation/dashboard/tfchain/tf_dao_voting_weight.md)
       - [TF Token Bridge](documentation/dashboard/tfchain/tf_token_bridge.md)
