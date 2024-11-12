@@ -11,3 +11,5 @@ The twin details consists of three main items.
 - `Relay` A relay is a component that facilitates the reliable and secure transfer of messages between different entities within the ThreeFold ecosystem.
 
 To create a twin check the [Wallet Connector](../wallet_connector.md) Section. 
+
+To complete the KYC process, read [the next page](./kyc.md).
