@@ -1,8 +1,8 @@
-<h1> ThreeFold Documentation </h1>
+<h1> ThreeFold V3 Documentation </h1>
 
-The section contains all the practical information for farmers, developers and system administrators of the ThreeFold Grid.
+The section contains all the practical information for farmers, developers and system administrators of the ThreeFold V3 Grid.
 
-For complementary information on ThreeFold, refer to the [ThreeFold Knowledge Base](../knowledge_base/knowledge_base.md).
+For complementary information on ThreeFold V3, refer to the [ThreeFold V3 Knowledge Base](../knowledge_base/knowledge_base.md).
 
 **TABLE OF CONTENTS**
 
