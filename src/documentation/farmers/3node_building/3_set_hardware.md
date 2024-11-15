@@ -77,7 +77,9 @@ A surge protector is highly recommended for your farm and your 3Nodes. This ensu
 
 ### Power Distribution Unit (PDU)
 
-A PDU (power distribution unit) is useful in big server settings in order to manage your wattage and keep track of your power consumption.
+A PDU (power distribution unit) is useful in big server settings in order to manage your wattage and keep track of your power consumption. 
+
+It can also be used to power on and off nodes from a distance. In this case, a PDU with outlet switching capabilities allows remote power control of connected devices.  To power on/off a computer remotely, first plug the computer's power cable into a switched outlet on the PDU. Then, connect the PDU to your network.  Depending on the PDU's features, you can control the outlet remotely through various methods like a web interface, command-line interface, or dedicated software.  By switching the designated outlet on or off via the chosen interface, you effectively power on or shut down the connected computer as if you were physically pressing the power button. Smart Wifi Plug can also be considered.
 
 
 ### Uninterrupted Power Supply (UPS)
