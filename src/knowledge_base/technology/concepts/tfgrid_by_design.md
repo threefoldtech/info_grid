@@ -102,7 +102,7 @@ The ThreeFold Manual already contains a lot of resourceful information on how to
 
 ThreeFold is building commercial offerings on top of the TFGrid. Those commercial offerings are for-profit organizations. Each of those organizations would function as a centralized entity.
 
-ThreeFold Ventures will be the branch exploring this aspect of the TF Ecosystem. A major project on the way is [ThreeFold Cloud](https://cloud.threefold.io/). ThreeFold Cloud is thus a centralized entity that will generate its own Terms and Conditions, support, marketing and website strategy. Furthermore, ThreeFold Cloud will be liable to its users to the extent developed in the ThreeFold Cloud Terms and Conditions.
+ThreeFold Ventures will be the branch exploring this aspect of the TF Ecosystem. A major project on the way is [ThreeFold](https://cloud.threefold.io/). ThreeFold is thus a centralized entity that will generate its own Terms and Conditions, support, marketing and website strategy. Furthermore, ThreeFold will be liable to its users to the extent developed in the ThreeFold Terms and Conditions.
 
 # Best Practices
 

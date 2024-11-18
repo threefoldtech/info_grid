@@ -1,8 +1,8 @@
-<h1> ThreeFold Cloud Knowledge Base </h1>
+<h1> ThreeFold Knowledge Base </h1>
 
-The section contains information about the ThreeFold Cloud ecosystem, its technology and its history.
+The section contains information about the ThreeFold ecosystem, its technology and its history.
 
-For practical information for farmers, developers and system administrators, refer to the [ThreeFold Cloud Documentation](../documentation/documentation.md).
+For practical information for farmers, developers and system administrators, refer to the [ThreeFold Documentation](../documentation/documentation.md).
 
 **TABLE OF CONTENTS**
 
