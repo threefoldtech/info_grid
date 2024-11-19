@@ -1,4 +1,4 @@
-## ThreeFold Cloud Manual Summary
+## ThreeFold Manual Summary
 
 - [Introduction](intro/intro_readme.md)
 - [Documentation](documentation/documentation.md)
