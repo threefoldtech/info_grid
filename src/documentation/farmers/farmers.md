@@ -16,4 +16,6 @@ To buy a certified node from an official ThreeFold vendor, check the [ThreeFold 
 - [Node Status Bot](./node_status_bot/node_status_bot.md)
 - [Farming Troubleshooting](./farming_troubleshooting.md)
 
-> Note: Bugs in the code (e.g. ZOS or other components) can happen. If this is the case, there might be a loss of tokens during minting which won't be refunded by ThreeFold. If there are minting code errors, ThreeFold will try its best to fix the minting code and remint nodes that were affected by such errors.
+> Notes: Bugs in the code (e.g. ZOS or other components) can happen. If this is the case, there might be a loss of tokens during minting which won't be refunded by ThreeFold. If there are minting code errors, ThreeFold will try its best to fix the minting code and remint nodes that were affected by such errors.
+>
+> Farmers are solely responsible for the hardware they use to build their nodes.  ThreeFold makes no warranties or representations regarding the compatibility, performance, or reliability of any specific hardware.  Thorough research and testing are recommended before building your node.
