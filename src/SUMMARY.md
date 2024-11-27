@@ -194,6 +194,7 @@
     - [Node Status Bot](documentation/farmers/node_status_bot/node_status_bot.md)
     - [Farming Troubleshooting](documentation/farmers/farming_troubleshooting.md)
       - [Build, Post Build & Memory](documentation/farmers/farming_troubleshooting_tips.md)
+    - [Utilization Rewards](documentation/farmers/utilization_rewards.md)
   - [System Administrators](documentation/system_administrators/system_administrators.md)
     - [Getting Started](documentation/system_administrators/getstarted/tfgrid3_getstarted.md)
       - [SSH Remote Connection](documentation/system_administrators/getstarted/ssh_guide/ssh_guide.md)
