@@ -1,6 +1,6 @@
 # Legal
 
-<img src="./img/legal_header.jpg" alt="Description of the image" style="border-radius: 10px;">
+<img src="./img/legal_header.jpg" alt="ThreeFold Legal Picture" style="border-radius: 10px;">
 
 ## TFGRID USER and/or FARMER TERMS AND CONDITIONS TFGRID 3.X
 
