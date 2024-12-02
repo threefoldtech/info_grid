@@ -28,12 +28,18 @@ To connect with the authenticator:
 
 - On your phone, open TFConnect and enter your password
 
-![](./img/tfconnect_enter_password.png)
+![](./img/tfconnect_authenticator_4.png)
+
+- Verify the URL and click `Yes, it does`
+
+![](./img/tfconnect_authenticator_5.png)
 
 - Click on the icon you saw on the browser screen
 
+![](./img/tfconnect_authenticator_6.png)
+
 - You will see a confirmation screen
 
-![](./img/tfconnect_logging_in.png)
+![](./img/tfconnect_authenticator_7.png)
 
-You should now be logged in.
+You are now logged in.
