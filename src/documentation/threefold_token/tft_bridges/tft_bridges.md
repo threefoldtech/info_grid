@@ -13,8 +13,8 @@ The following diagram shows the different bridges and ways to transfer ThreeFold
 ```mermaid
 
 graph LR
-    A((TFChain-MainNet)) === id1(Stellar / TFChain MainNet Bridge) === B((Stellar Chain));
-    C((TFChain-TestNet)) === id2(Stellar / TFChain TestNet Bridge) === B((Stellar Chain));
+    A((TFChain-MainNet)) === id1(Stellar / TFChain Mainnet Bridge) === B((Stellar Chain));
+    C((TFChain-TestNet)) === id2(Stellar / TFChain Testnet Bridge) === B((Stellar Chain));
     B((Stellar Chain)) === id3(Stellar / BSC Bridge) === E((Binance Smart Chain));
     B((Stellar Chain)) === id4(Stellar / Eth Bridge) === D((Ethereum Chain));
 
@@ -35,11 +35,11 @@ The links to the bridges for TFT are the following:
 * Stellar-BSC Bridge
   * This bridge is accessible at the following link: [https://bridge.bsc.threefold.io/](https://bridge.bsc.threefold.io/)
   * Read [this guide](./bsc_stellar_bridge.html) for more information
-* The TFChain Main net Bridge
-  * This bridge is accessible on the ThreeFold Main Net Dashboard: [https://dashboard.grid.tf/](https://dashboard.grid.tf/). 
+* Stellar-TFChain Mainnet Bridge
+  * This bridge is accessible on the ThreeFold Mainnet Dashboard: [https://dashboard.grid.tf/](https://dashboard.grid.tf/). 
   * Read [this guide](./tfchain_stellar_bridge.html) for more information
-* The TFChain Test net Bridge
-  * This bridge is accessible on the ThreeFold Test Net Dashboard: [https://dashboard.test.grid.tf/](https://dashboard.test.grid.tf/).
+* Stellar-TFChain Testnet Bridge
+  * This bridge is accessible on the ThreeFold Testnet Dashboard: [https://dashboard.test.grid.tf/](https://dashboard.test.grid.tf/).
   * Read [this guide](./tfchain_stellar_bridge.html) for more information
 
 ## Chains Functions
