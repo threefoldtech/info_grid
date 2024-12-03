@@ -178,6 +178,7 @@
       - [GPU Farming](documentation/farmers/3node_building/gpu_farming.md)
       - [HDD-Only Nodes](documentation/farmers/farming_optimization/hdd_only_nodes.md)
       - [Set Additional Fees](documentation/farmers/farming_optimization/set_additional_fees.md)
+      - [Minting Process](documentation/farmers/farming_optimization/minting_process.md)
       - [Minting Receipts](documentation/farmers/3node_building/minting_receipts.md)
       - [Minting Periods](documentation/farmers/farming_optimization/minting_periods.md)
       - [Room Parameters](documentation/farmers/farming_optimization/farm_room_parameters.md)
