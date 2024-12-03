@@ -8,11 +8,11 @@ We cover the wallet features of the ThreeFold Connect app.
 
 By default, the app will generate a wallet associated with your account.
 
-To access your wallet, click on `Wallet` at the bottom of the app screen, then click on your wallet. By default, the wallet is named `Daily`.
+- To access your wallet, click on `Wallet` at the bottom of the app screen, then click on your wallet. By default, the wallet is named `Daily`.
 
 ![](./img/tfconnect_18.png)
 
-The wallet main page is the following:
+- The wallet main page is the following:
 
 ![](./img/tfconnect_21.png)
 
@@ -63,6 +63,15 @@ To generate the QR Code, select the chain you want to use, Stellar or TFChain, e
 
 > Note: The memo option is only available for Stellar, not for TFChain. 
 
+
+### Wallet Transactions
+
+To see your transactions, simply click `Transactions` at the bottom of the screen.
+
+If there are no transactions yet on your wallet, you will see `No transaction`.
+
+![](./img/tfconnect_26.png)
+
 ### Wallet Info
 
 To access your wallet info, click `Info` at the bottom of the screen.
@@ -74,13 +83,3 @@ In this section, you can access the TFChain and Stellar addresses associated wit
 You can also change the wallet name by clicking on the button next to the wallet name.
 
 ![](./img/tfconnect_23.png)
-
-### Wallet Transactions
-
-To see your transactions, simply click `Transactions` at the bottom of the screentwo arrows at the bottom of the screen, as shown below.
-
-![](./img/tfconnect_20.png)
-
-Until transactions happen on your wallet, you will see `No transaction`.
-
-![](./img/tfconnect_26.png)
