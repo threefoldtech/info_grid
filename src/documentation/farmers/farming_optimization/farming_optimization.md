@@ -7,6 +7,7 @@ The section [Build a 3Node](../3node_building/3node_building.md) covered the not
 - [GPU Farming](../3node_building/gpu_farming.md)
 - [HDD-Only Nodes](./hdd_only_nodes.md)
 - [Set Additional Fees](./set_additional_fees.md)
+- [Minting Process](./minting_process.md)
 - [Minting Receipts](../3node_building/minting_receipts.md)
 - [Minting Periods](./minting_periods.md)
 - [Room Parameters](./farm_room_parameters.md)
