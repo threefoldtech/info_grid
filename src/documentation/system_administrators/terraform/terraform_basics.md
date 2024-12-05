@@ -80,7 +80,7 @@ Providers can have different arguments e.g using which identity when deploying, 
 
 ```terraform
 provider "grid" {
-    mnemonics = "FROM THE CREATE TWIN STEP"
+    mnemonic = "FROM THE CREATE TWIN STEP"
     network = "dev" # or test to use testnet
 
 }
@@ -90,9 +90,9 @@ provider "grid" {
 
 When writing the main file, you can decide to leave a variable content empty. In this case you can export the variable content as environment variables.
 
-* Export your mnemonics
+* Export your mnemonic
   * ```
-    export MNEMONICS="..."
+    export MNEMONIC="..."
     ```
 * Export the network
   * ```

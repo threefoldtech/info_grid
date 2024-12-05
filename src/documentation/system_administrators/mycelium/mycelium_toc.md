@@ -12,3 +12,4 @@ In this section, we present [Mycelium](https://github.com/threefoldtech/mycelium
 - [Packet](./packet.md)
 - [Data Packet](./data_packet.md)
 - [API YAML](./api_yaml.md)
+- [App](./mycelium_app.md)

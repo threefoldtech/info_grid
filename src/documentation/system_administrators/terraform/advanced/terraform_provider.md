@@ -17,7 +17,7 @@ terraform {
   }
 }
 provider "grid" {
-    mnemonics = "FROM THE CREATE TWIN STEP"
+    mnemonic = "FROM THE CREATE TWIN STEP"
     network = grid network, one of: dev test qa main
     key_type = key type registered on substrate (ed25519 or sr25519)
     relay_url =  example: "wss://relay.dev.grid.tf"
@@ -30,7 +30,7 @@ provider "grid" {
 
 should be recognizable as Env variables too
 
-- `MNEMONICS`
+- `MNEMONIC`
 - `NETWORK`
 - `SUBSTRATE_URL`
 - `KEY_TYPE`
@@ -43,4 +43,4 @@ The *_URL variables can be used to override the dafault urls associated with the
 
 - Grid terraform provider is hosted on terraform registry [here](https://registry.terraform.io/providers/threefoldtech/grid/latest/docs?pollNotifications=true)
 - All provider input variables and their description can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/index.md)
-- Capitalized environment variables can be used instead of writing them in the provider (e.g. MNEMONICS)
+- Capitalized environment variables can be used instead of writing them in the provider (e.g. MNEMONIC)

@@ -68,7 +68,7 @@ terraform {
   }
 }
 
-variable "mnemonics" {
+variable "mnemonic" {
   type = string
 }
 
@@ -93,7 +93,7 @@ variable "memory" {
 }
 
 provider "grid" {
-  mnemonics = var.mnemonics
+  mnemonic = var.mnemonic
   network = "main"
 }
 
@@ -246,7 +246,7 @@ We create a credentials file that will contain the environment variables. This f
 
 * Copy the `credentials.auto.tfvars` content and save the file
   *  ```
-     mnemonics = "..."
+     mnemonic = "..."
      SSH_KEY = "..."
 
      tfnodeid = "..."
@@ -256,7 +256,7 @@ We create a credentials file that will contain the environment variables. This f
      memory = "1024"
      ```
 
-Make sure to replace the three dots by your own information for `mnemonics` and `SSH_KEY`. You will also need to find a suitable node for your deployment and set its node ID (`tfnodeid`). Feel free to adjust the parameters `size`, `cpu` and `memory` if needed.
+Make sure to replace the three dots by your own information for `mnemonic` and `SSH_KEY`. You will also need to find a suitable node for your deployment and set its node ID (`tfnodeid`). Feel free to adjust the parameters `size`, `cpu` and `memory` if needed.
 
 
 

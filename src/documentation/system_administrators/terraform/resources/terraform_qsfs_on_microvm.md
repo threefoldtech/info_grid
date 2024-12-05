@@ -60,9 +60,9 @@ Creating the Terraform files is very straightforward. We want to clone the repos
   * ```
     cd terraform-provider-grid/examples/resources/qsfs
     ```
-* Set your own mnemonics (replace `mnemonics words` with your own mnemonics)
+* Set your own mnemonic (replace `mnemonic words` with your own mnemonic)
   * ```
-    export MNEMONICS="mnemonics words"
+    export MNEMONIC="mnemonic words"
     ```
 * Set the network (replace `network` by the desired network, e.g. `dev`, `qa`, `test` or `main`)
   * ```
@@ -118,7 +118,7 @@ terraform {
 
 # Variables
 
-variable "mnemonics" {
+variable "mnemonic" {
   type = string
 }
 
@@ -155,7 +155,7 @@ variable "expected_shards" {
 }
 
 provider "grid" {
-  mnemonics = var.mnemonics
+  mnemonic = var.mnemonic
   network = var.network
 }
 
@@ -272,7 +272,7 @@ Note that we named the VM as **vm1**.
     network = "main"
 
     # Credentials
-    mnemonics = "..."
+    mnemonic = "..."
     SSH_KEY = "..."
 
     # Node Parameters

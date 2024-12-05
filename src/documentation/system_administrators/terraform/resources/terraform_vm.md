@@ -19,7 +19,7 @@ terraform {
 }
 
 provider "grid" {
-    mnemonics = "FROM THE CREATE TWIN STEP"
+    mnemonic = "FROM THE CREATE TWIN STEP"
     network = "dev" # or test to use testnet
 }
 
