@@ -215,6 +215,7 @@
       - [Packet](documentation/system_administrators/mycelium/packet.md)
       - [Data Packet](documentation/system_administrators/mycelium/data_packet.md)
       - [API YAML](documentation/system_administrators/mycelium/api_yaml.md)
+      - [App](documentation/system_administrators/mycelium/mycelium_app.md)
     - [Pulumi](documentation/system_administrators/pulumi/pulumi_readme.md)
       - [Introduction to Pulumi](documentation/system_administrators/pulumi/pulumi_intro.md)
       - [Installing Pulumi](documentation/system_administrators/pulumi/pulumi_install.md)
