@@ -1,7 +1,5 @@
 <h1> ThreeFold Connect Authenticator</h1>
 
-
-
 ## Introduction
 
 We present how to use the ThreeFold Authenticator. 
@@ -10,30 +8,36 @@ The ThreeFold Connect two-factor authenticator enables you access to ThreeFold G
 
 ## Connect with the Authenticator
 
-To connect with the authenticator:
+Follow the steps below to connect with the authenticator.
 
 - Make sure your ThreeFold Connect app is open before sending the login request.
 
-- Write your ThreeFold ID
+- Write your ThreeFold ID.
 
 ![](./img/tfconnect_authenticator_1.png)
 
-- Click `SIGN IN`
+- Click `SIGN IN`.
 
 ![](./img/tfconnect_authenticator_2.png)
 
-- Take note of the icon shown on your screen
+- Take note of the icon shown on your screen.
 
 ![](./img/tfconnect_authenticator_3.png)
 
-- On your phone, open TFConnect and enter your password
+- On your phone, open TFConnect and enter your password.
 
-![](./img/tfconnect_enter_password.png)
+![](./img/tfconnect_authenticator_4.png)
 
-- Click on the icon you saw on the browser screen
+- Verify the URL.
 
-- You will see a confirmation screen
+![](./img/tfconnect_authenticator_5.png)
 
-![](./img/tfconnect_logging_in.png)
+- Click on the icon you saw on the browser screen.
 
-You should now be logged in.
+![](./img/tfconnect_authenticator_6.png)
+
+- You will see a confirmation screen.
+
+![](./img/tfconnect_authenticator_7.png)
+
+You are now logged in.
