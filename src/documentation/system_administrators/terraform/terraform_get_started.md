@@ -42,7 +42,7 @@ Providers can have different arguments e.g using which identity when deploying, 
 
 ```terraform
 provider "grid" {
-    mnemonics = "FROM THE CREATE TWIN STEP"
+    mnemonic = "FROM THE CREATE TWIN STEP"
     network = "dev" # or test to use testnet
 
 }
@@ -51,7 +51,7 @@ provider "grid" {
 Please note you can leave its content empty and export everything as environment variables
 
 ```
-export MNEMONICS="....."
+export MNEMONIC="....."
 export NETWORK="....."
 
 ```

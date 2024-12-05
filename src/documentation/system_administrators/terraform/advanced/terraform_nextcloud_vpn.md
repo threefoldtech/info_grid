@@ -31,7 +31,7 @@ For this example, we will be deploying the Nextcloud instance with a ThreeFold g
 * Copy the following content and save the file under the name `credentials.auto.tfvars`:
 
 ```
-mnemonics = "..."
+mnemonic = "..."
 SSH_KEY = "..."
 network = "main"
 
@@ -60,9 +60,9 @@ Obviously, you can decide to increase or modify the quantity for the CPU, memory
 * Copy the following content and save the file under the name `main.tf`:
 
 ```
-variable "mnemonics" {
+variable "mnemonic" {
   type = string
-  default = "your mnemonics"
+  default = "your mnemonic"
 }
 
 variable "network" {
@@ -129,7 +129,7 @@ terraform {
 }
 
 provider "grid" {
-    mnemonics = var.mnemonics
+    mnemonic = var.mnemonic
     network = var.network
 }
 
