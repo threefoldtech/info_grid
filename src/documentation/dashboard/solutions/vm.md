@@ -31,7 +31,7 @@ __Process__ :
   - `Mycelium` to enable Mycelium on the virtual machine
   - `Wireguard Access` to add a wireguard acces to the Virtual Machine
 - `GPU` flag to add GPU to the Virtual machine
-- `Dedicated` flag to retrieve only dedicated nodes 
+- `Dedicated` flag to retrieve only [dedicated nodes](../deploy/node_finder.md#dedicated-nodes) (rentable or rented by you)
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
    - `Region`
