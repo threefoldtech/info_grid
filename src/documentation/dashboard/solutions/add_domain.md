@@ -19,6 +19,8 @@ We cover the overall process to add a domain to a virtual machine running on the
 
 We cover the different domain parameters presented in the **Add New Domain** tab.
 
+![Custom Domain Name](../img/add_domain.png)
+
 - **Subdomain**
   - The subdomain is used to reference to the complete domain name. It is randomly generated, but the user can write a specific subdomain name.
     - The subdomain prefix (e.g. **fvm3748domainguide**) is decided as follows:
@@ -30,8 +32,11 @@ We cover the different domain parameters presented in the **Add New Domain** tab
   - You can also use a custom domain.
     - In this case, instead of having a gateway subdomain and a gateway name as your domain, the domain will be the custom domain entered in this field.
   - If you select **Custom domain**, make sure to set a DNS A record pointing to the gateway IP address on your domain name registrar.
-
-![Custom Domain Name](../img/add_domain_8.png)
+- **Supported Interfaces**
+  - You can select the network interface
+    - `WireGuard`
+    - `Planetary`
+    - `Mycelium`
 
 - **Select domain**
   - Choose a gateway for your domain.
