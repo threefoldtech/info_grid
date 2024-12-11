@@ -9,17 +9,17 @@ We cover the overall process to add a domain to a virtual machine running on the
 - Deploy a virtual machine
 - Click on the button **Manage Domains** under **Actions**
 
-![](../img/add_domain_6.png)
+![](./img/add_domain_6.png)
 
 - Open the **Add New Domain** tab
 
-![](../img/add_domain_10.png)
+![](./img/add_domain_10.png)
 
 ## Add New Domain
 
-We cover the different domain parameters presented in the **Add New Domain** tab.
+There are different parameters to fill in to add a new domain.
 
-![Custom Domain Name](../img/add_domain.png)
+![](./img/add_domain_11.png)
 
 - **Subdomain**
   - The subdomain is used to reference to the complete domain name. It is randomly generated, but the user can write a specific subdomain name.
@@ -28,15 +28,10 @@ We cover the different domain parameters presented in the **Add New Domain** tab
       - Twin ID (e.g. **3748**)
       - Deployment name (e.g. **domainguide**)
   - The complete subdomain is thus composed of the subdomain prefix mentioned above and the subdomain entered in the **Subdomain** field.
-- **Custom domain name** 
+- **Custom Domain** 
   - You can also use a custom domain.
     - In this case, instead of having a gateway subdomain and a gateway name as your domain, the domain will be the custom domain entered in this field.
   - If you select **Custom domain**, make sure to set a DNS A record pointing to the gateway IP address on your domain name registrar.
-- **Supported Interfaces**
-  - You can select the network interface
-    - `WireGuard`
-    - `Planetary`
-    - `Mycelium`
 
 - **Select domain**
   - Choose a gateway for your domain.
@@ -49,11 +44,14 @@ We cover the different domain parameters presented in the **Add New Domain** tab
   - Disabling TLS passthrough will let the gateway terminate the traffic.
   - Enabling TLS passthrough will let the backend service terminate the traffic.
 
-- **Network Name**
-  - This is the name of the WireGuard interface network (read-only field).
+- **Supported Interfaces**
+  - You can select the network interface. Note that you will only see the network(s) provided when you deployed the VM.
+    - `WireGuard`
+    - `Public IPv4`
+    - `Planetary`
+    - `Mycelium`
+    - `Public IPv6`
 
-- **IP Address**
-  - This is the WireGuard IP address (read-only field).
 
 Once you've filled the domain parameters, click on the **Add** button. The message **Successfully deployed gateway** will be presented once the domain is properly added.
 
@@ -80,7 +78,7 @@ Once your domain is set, you can access the **Domains List** tab to consult its 
 * **TLS Passthrough**
   * The TLS passthrough status can be either **Yes** or **No**.
 * **Backend**
-  * The WireGuard IP and the chosen port of the domain (e.g. `http://10.20.4.2:80`).
+  * The network IP and the chosen port of the domain.
 * **Status**
   * **OK** is displayed when the domain is properly set.
 * **Actions**
@@ -95,7 +93,3 @@ To delete a domain, open the **Manage Domains** window, in the tab **Domains lis
 ![Select To Delete Domain](../img/add_domain_11.png)
 
 By clicking the **Delete** button, the deletion will start and the domain will be deleted from this virtual machine.
-
-## Questions and Feedback
-
-If you have any questions, you can ask the ThreeFold community for help on the [ThreeFold Forum](http://forum.threefold.io/) or on the [ThreeFold Grid Tester Community](https://t.me/threefoldtesting) on Telegram.
