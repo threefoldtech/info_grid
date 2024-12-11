@@ -19,7 +19,7 @@ We cover the overall process to add a domain to a virtual machine running on the
 
 There are different parameters to fill in to add a new domain.
 
-![](./img/add_domain_11.png)
+![](./img/add_domain_12.png)
 
 - **Subdomain**
   - The subdomain is used to reference to the complete domain name. It is randomly generated, but the user can write a specific subdomain name.
@@ -55,13 +55,13 @@ There are different parameters to fill in to add a new domain.
 
 Once you've filled the domain parameters, click on the **Add** button. The message **Successfully deployed gateway** will be presented once the domain is properly added.
 
-![Success Domain](../img/add_new_domain_success.png)
+![Success Domain](./img/add_new_domain_success.png)
 
 ## Domains List
 
 Once your domain is set, you can access the **Domains List** tab to consult its parameters. To visit the domain, simply click on the **Visit** button under **Actions**.
 
-![List Domain For VM](../img/add_domain_9.png)
+![List Domain For VM](./img/add_domain_9.png)
 
 * **Name**
   * The name is the subdomain (without the prefix)
@@ -90,6 +90,6 @@ At all time, you can click on **Reload** to reload the Domains List parameters.
 
 To delete a domain, open the **Manage Domains** window, in the tab **Domains lists** select the domain you wish to delete and click **Delete**.
 
-![Select To Delete Domain](../img/add_domain_11.png)
+![Select To Delete Domain](./img/add_domain_11.png)
 
 By clicking the **Delete** button, the deletion will start and the domain will be deleted from this virtual machine.
