@@ -23,7 +23,7 @@
    - `Planetary Network` to connect the Virtual Machine to Planetary network
    - `Mycelium` flag gives the virtual machine a Mycelium address
 
-- `Dedicated` flag to retrieve only dedicated nodes 
+- `Dedicated` flag to retrieve only [dedicated nodes](../deploy/node_finder.md#dedicated-nodes) (rentable or rented by you)
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
    - `Region`

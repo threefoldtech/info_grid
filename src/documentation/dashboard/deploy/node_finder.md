@@ -49,13 +49,13 @@ To see only gateway nodes, enable **Gateways** in the filters.
 
 Dedicated machines are 3Nodes that can be reserved and rented entirely by one user. The user can thus reserve an entire node and use it exclusively to deploy solutions. This feature is ideal for users who want to host heavy deployments with the benefits of high reliability and cost effectiveness.
 
-To see only dedicated nodes, enable **Dedicated Nodes** in the filters.
+To see only dedicated nodes, that are either rented by you or rentable, enable **Dedicated Nodes** in the filters.
 
 ![](../img/dashboard_node_finder_dedicated.png)
 
 ### Reservation
 
-When you have decided which node to reserve, you can easily rent it from the Node Finder page.
+When you have decided which node to reserve, you can easily rent it from the `Node Finder` page. You can also rent a dedicated node directly on a deployment page available from the main sections `Virtual Machines`, `Orchestrators` or `Applications`.
 
 To reserve a node, simply click on `Reserve` on the node row.
 
