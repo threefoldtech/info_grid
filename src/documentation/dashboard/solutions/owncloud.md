@@ -29,7 +29,7 @@
     - Or choose a **Custom** plan
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4
-- Enable the `Dedicated` flag to retrieve only dedicated nodes 
+- Enable the `Dedicated` flag to retrieve only [dedicated nodes](../deploy/node_finder.md#dedicated-nodes) (rentable or rented by you)
 - Enable the `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
    - `Region`
