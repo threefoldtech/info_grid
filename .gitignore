@@ -9,3 +9,7 @@ src/knowledge_base/about/token_overview/special_wallets/wallet_data/*
 src/values/*_MTFT_HOUR.md
 src/values/tft_value.md
 src/values/tft_marketcap.md
+temp
+/temp
+test
+/test
