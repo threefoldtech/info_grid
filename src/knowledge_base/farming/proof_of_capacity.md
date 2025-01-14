@@ -31,11 +31,11 @@ The main advantage of PoC to farmers it makes it really easy to run a 3Node. It 
 
 ## How does Proof-of-Capacity work?
 
-1. A farmer boots hardware with Zero-OS (multiple boot methods available)
-2. Zero-OS is a low level OS, with no shell, farmers cannot access Zero-OS
-3. Zero-OS reports used IT capacity towards TFChain
-4. TFChain and TFDAO will calculate rewards as required for the farmer (TFGrid 3.1.x)
-5. TFChain will mint the required TFT and send them to account on TFChain of the farmer.
+1. A farmer boots hardware with Zero-OS (multiple boot methods available).
+2. Zero-OS is a low level OS, with no shell, farmers cannot access Zero-OS.
+3. Zero-OS reports used IT capacity towards TFChain.
+4. TFChain and TFDAO will calculate rewards as required for the farmer (TFGrid 3.1.x).
+5. The required TFT are minted on Stellar and sent to the account of the farmer on Stellar.
 6. Everyone can use the [ThreeFold Node Finder](https://dashboard.grid.tf/#/deploy/node-finder/) to see where capacity is available. This info comes from the TFChain.
 
 
