@@ -58,11 +58,11 @@ resource "grid_deployment" "d1" {
     memory = 2048
     entrypoint = "/sbin/zinit init"
     mounts {
-      disk_name = "mydisk1"
+      name = "mydisk1"
       mount_point = "/opt"
     }
     mounts {
-      disk_name = "mydisk2"
+      name = "mydisk2"
       mount_point = "/test"
     }
     env_vars = {
