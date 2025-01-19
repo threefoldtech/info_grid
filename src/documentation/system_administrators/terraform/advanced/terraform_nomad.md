@@ -122,7 +122,7 @@ resource "grid_deployment" "d1" {
     cpu        = var.cpu
     memory     = var.memory
     mounts {
-        disk_name = "disk1"
+        name = "disk1"
         mount_point = "/disk1"
     }
     entrypoint = "/sbin/zinit init"
@@ -138,7 +138,7 @@ resource "grid_deployment" "d1" {
     cpu        = var.cpu
     memory     = var.memory
     mounts {
-        disk_name = "disk1"
+        name = "disk1"
         mount_point = "/disk1"
     }
     entrypoint = "/sbin/zinit init"
@@ -154,7 +154,7 @@ resource "grid_deployment" "d1" {
     cpu        = var.cpu
     memory     = var.memory
     mounts {
-        disk_name = "disk1"
+        name = "disk1"
         mount_point = "/disk1"
     }
     entrypoint = "/sbin/zinit init"
@@ -170,7 +170,7 @@ resource "grid_deployment" "d1" {
     cpu        = var.cpu
     memory     = var.memory
     mounts {
-        disk_name = "disk1"
+        name = "disk1"
         mount_point = "/disk1"
     }
     entrypoint = "/sbin/zinit init"
@@ -186,7 +186,7 @@ resource "grid_deployment" "d1" {
     cpu        = var.cpu
     memory     = var.memory
     mounts {
-        disk_name = "disk1"
+        name = "disk1"
         mount_point = "/disk1"
     }
     entrypoint = "/sbin/zinit init"

@@ -169,7 +169,7 @@ resource "grid_deployment" "d1" {
       NEXTCLOUD_DOMAIN = data.grid_gateway_domain.domain.fqdn
     }
     mounts {
-        disk_name = "data"
+        name = "data"
         mount_point = "/mnt/data"
     }
   }
@@ -188,7 +188,7 @@ resource "grid_deployment" "d2" {
     flist      = "https://hub.grid.tf/tf-official-vms/ubuntu-22.04.flist"
     cpu        = var.cpu_vm2
     mounts {
-        disk_name = "disk2"
+        name = "disk2"
         mount_point = "/disk2"
     }
     memory     = var.memory_vm2
