@@ -11,13 +11,13 @@ This section contains information on the farming requirements.
 To be eligible for proof-of-capacity farming rewards, farmers need to ensure that their nodes have a minimum uptime per minting period. 
 
 - 95% uptime requirements for DIY nodes
-  - This means that nodes have 36 hours of allowed downtime per month
+  - This means that nodes have 36.54 hours of allowed downtime per month (36 hours and 32.4 minutes)
 - 98% uptime requirements for certified nodes
-  - This means that nodes have 14.4 hours of allowed downtime per month
+  - This means that nodes have 14.616 hours of allowed downtime per month (14 hours and 36.96 minutes)
 
-Each minting period is 720 hours. The minimum uptime is always calculated against the duration of a full minting period. 
+Each minting period is 730.8 hours. The minimum uptime is always calculated against the duration of a full minting period. 
 
-> We can recommend that farmers bring any new nodes online shortly before the start of a new minting period, to avoid any extra energy use during a period where the node can't possibly be eligible for minting. Consult the 2024 minting periods [here](./farming_optimization/minting_periods.md#2024-minting-periods).
+> We can recommend that farmers bring any new nodes online shortly before the start of a new minting period, to avoid any extra energy use during a period where the node can't possibly be eligible for minting. Consult the 2025 minting periods [here](./farming_optimization/minting_periods.md#2025-minting-periods).
 
 ### Farmerbot Considerations
 
