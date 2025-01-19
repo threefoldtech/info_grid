@@ -238,7 +238,7 @@ resources:
           mycelium: true
           # mycelium_ip_seed: b60f2b7ec39c # hex encoded 6 bytes [example]
           mounts:
-            - disk_name: data
+            - name: data
               mount_point: /app
           env_vars:
             SSH_KEY:
@@ -277,7 +277,7 @@ We have a scheduler, and a network just like before. But now, we also have a dep
           mycelium: true
           # mycelium_ip_seed: b60f2b7ec39c # hex encoded 6 bytes [example]
           mounts:
-            - disk_name: data
+            - name: data
               mount_point: /app
           env_vars:
             SSH_KEY:
@@ -287,7 +287,7 @@ We have a scheduler, and a network just like before. But now, we also have a dep
           size: 2
 ```
 
-The deployment can be linked to a network using `network_name` and can have virtual machines in the `vms` section, and disks in the `disks` section. The disk can be linked and mounted in the VM if `disk_name` is used in the `mounts` section of the VM.
+The deployment can be linked to a network using `network_name` and can have virtual machines in the `vms` section, and disks in the `disks` section. The disk can be linked and mounted in the VM if `name` is used in the `mounts` section of the VM.
 
 We also specify a couple of essential properties, like how many virtual cores, how much memory, what FList to use, and the environment variables in the `env_vars` section. 
 

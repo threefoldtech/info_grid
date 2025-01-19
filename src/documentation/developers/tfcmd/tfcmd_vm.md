@@ -114,7 +114,7 @@ $ tfcmd get vm examplevm
                         "entrypoint": "/sbin/zinit init",
                         "mounts": [
                                 {
-                                        "disk_name": "examplevmdisk",
+                                        "name": "examplevmdisk",
                                         "mount_point": "/data"
                                 }
                         ],

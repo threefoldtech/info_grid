@@ -761,7 +761,7 @@ resource "grid_deployment" "d1" {
       NEXTCLOUD_DOMAIN = data.grid_gateway_domain.domain.fqdn
     }
     mounts {
-        disk_name = "data"
+        name = "data"
         mount_point = "/mnt/data"
     }
   }

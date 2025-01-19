@@ -147,7 +147,7 @@ resource "grid_deployment" "d1" {
     flist = "https://hub.grid.tf/tf-official-vms/ubuntu-22.04.flist"
     cpu   = var.cpu
     mounts {
-        disk_name = "disk1"
+        name = "disk1"
         mount_point = "/disk1"
     }
     memory     = var.memory
@@ -174,7 +174,7 @@ resource "grid_deployment" "d2" {
     flist      = "https://hub.grid.tf/tf-official-vms/ubuntu-22.04.flist"
     cpu        = var.cpu
     mounts {
-        disk_name = "disk2"
+        name = "disk2"
         mount_point = "/disk2"
     }
     memory     = var.memory

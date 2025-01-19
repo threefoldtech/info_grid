@@ -96,11 +96,11 @@ resource "grid_deployment" "d0" {
     memory = 8192
     entrypoint = "/sbin/zinit init"
     mounts {
-      disk_name   = "data0"
+      name   = "data0"
       mount_point = "/var/lib/docker"
     }
     mounts {
-      disk_name   = "data1"
+      name   = "data1"
       mount_point = "/captain"
     }
     env_vars = {
@@ -387,7 +387,7 @@ resource "grid_deployment" "d2" {
     memory = 2048
     entrypoint = "/sbin/zinit init"
     mounts {
-      disk_name   = "data2"
+      name   = "data2"
       mount_point = "/var/lib/docker"
     }
     env_vars = {
