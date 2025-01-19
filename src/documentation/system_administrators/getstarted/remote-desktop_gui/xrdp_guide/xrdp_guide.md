@@ -18,7 +18,7 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
 ## Server Side: Deploy the Full VM, install a desktop and XRDP
 
 * Go to the [Threefold Dashboard](https://dashboard.grid.tf/#/)
-* Deploy a full VM (Ubuntu 20.04)
+* Deploy a full VM (Ubuntu 24.04)
   * With an IPv4 Address
 * After deployment, copy the IPv4 address
 * To SSH into the VM, write in the terminal
@@ -28,12 +28,17 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
 * Once connected, update, upgrade and install the desktop environment
   * Update
     * ```
-      sudo apt update -y && sudo apt upgrade -y
+      apt update && apt install nano -y && apt upgrade -y
       ```  
-  * Install a light-weight desktop environment (Xfce)
-    * ```
-      sudo apt install xfce4 xfce4-goodies -y
-      ```
+  * You can install XCFE, a lightweight desktop environment or Ubuntu Desktop (choose either one)
+    * Install XCFE
+      * ```
+        apt install xrdp xfce4 xfce4-goodies -y
+        ```
+    * Install Ubuntu Desktop
+      * ```
+        apt install xrdp ubuntu-desktop -y
+        ```
 * Create a user with root access
     * ``` 
       adduser newuser
@@ -46,6 +51,12 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
       * ```
         usermod -aG sudo newuser
         ```
+    * Update the setuid for root
+      * ```
+        chown root:root /usr/bin/sudo
+        chmod 4755 /usr/bin/sudo
+        ls -l /usr/bin/sudo
+        ```
     * Make newuser accessible by SSH
       * ```
         su - newuser
@@ -56,45 +67,50 @@ If you are new to the Threefold ecosystem and you want to deploy workloads on th
       * ```
         nano ~/.ssh/authorized_keys
         ```
-        * add authorized public key in file and save
+        * Add the authorized public key and save the file
   * Exit the VM and reconnect with new user
     * ```
       exit
       ```
-* Reconnect to the VM terminal and install XRDP
+* Reconnect to the VM terminal with newuser
     * ``` 
       ssh newuser@VM_IPv4_address
       ```
-* Install XRDP
-  * ```
-    sudo apt install xrdp -y
-    ```
 * Check XRDP status 
   * ```
     sudo systemctl status xrdp
     ```
-  * If not running, run manually:
+  * If not running, run manually (this also makes sure xrdp runs at every restart of the VM)
     * ```
-      sudo systemctl start xrdp
+      sudo systemctl enable --now xrdp
       ```
 * If needed, configure xrdp (optional)
   * ```
     sudo nano /etc/xrdp/xrdp.ini
     ```
 * Create a session with root-access user
-Move to home directory
   * Go to home directory of root-access user
     * ```
       cd ~
       ```
-* Create session
-  * ``` 
-    echo "xfce4-session" | tee .xsession
-    ```
-* Restart the server
+* Create a desktop session
+  * For XCFE
+    * ``` 
+        echo "xfce4-session" | tee .xsession
+        ```
+  * For Ubuntu desktop
+    * ``` 
+        echo "gnome-session" | tee .xsession
+        ```
+* Reload the daemon and restart xrdp
   * ```
+    sudo systemctl daemon-reload
     sudo systemctl restart xrdp
     ```
+
+### Set Firewall (Optional)
+
+You can set a firewall, but this is optional.
 
 * Find your local computer IP address
   * On your local computer terminal, write
@@ -102,7 +118,11 @@ Move to home directory
       curl ifconfig.me
       ```
 
-* On the VM terminal, allow client computer port to the firewall (ufw)
+* On the VM terminal, install ufw
+  * ```
+    sudo apt install ufw -y
+    ```
+* Allow client computer port to the firewall (ufw)
   * ```
     sudo ufw allow from your_local_ip/32 to any port 3389
     ```
