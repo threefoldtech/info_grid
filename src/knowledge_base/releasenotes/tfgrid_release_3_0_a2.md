@@ -103,7 +103,7 @@ Following list is incomplete but gives some issues to think about.
 - Docker & ZOS containers [differences](https://github.com/threefoldtech/zos/issues/1483)
 - ZOS workloads upgrade [issue](https://github.com/threefoldtech/zos/issues/1425)
 - Terraform projects [don't reflect in the weblets](https://github.com/threefoldtech/terraform-provider-grid/issues/146)
-- Can't detach public IP from a VM and removing it from a contract [issue](https://github.com/threefoldtech/tfchain_pallets/issues/73), please note you can still create each in separate contracts.
+- Can't detach public IP from a VM and removing it from a contract [issue](https://github.com/threefoldtech/tfchain/issues/175), please note you can still create each in separate contracts.
 
 # ThreeFold Release Notes TFGrid 3.0.0 Alpha 1 (Live on mainnet)
 
@@ -201,4 +201,4 @@ Following list is incomplete but gives some issues to think about.
 - Docker & ZOS containers [differences](https://github.com/threefoldtech/zos/issues/1483)
 - ZOS workloads upgrade [issue](https://github.com/threefoldtech/zos/issues/1425)
 - Terraform projects [don't reflect in the weblets](https://github.com/threefoldtech/terraform-provider-grid/issues/146)
-- Can't detach public IP from a VM and removing it from a contract [issue](https://github.com/threefoldtech/tfchain_pallets/issues/73), please note you can still create each in separate contracts.
+- Can't detach public IP from a VM and removing it from a contract [issue](https://github.com/threefoldtech/tfchain/issues/175), please note you can still create each in separate contracts.
