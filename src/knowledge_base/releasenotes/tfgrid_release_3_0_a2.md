@@ -96,7 +96,7 @@ TODO
 
 Following list is incomplete but gives some issues to think about.
 
-- Weblets [limitations](https://library.threefold.me/info/manual/#/manual__weblets_home?id=limitations)
+- Weblets limitations
 - QSFS integration is a work in progress
 - ZOS and SSD performance [issue](https://github.com/threefoldtech/zos/issues/1467)
 - Threefold Connect having [issues](https://circles.threefold.me/project/test-tfgrid3/issue/52) 
@@ -193,7 +193,7 @@ TODO
 
 Following list is incomplete but gives some issues to think about.
 
-- Weblets [limitations](https://library.threefold.me/info/manual/#/manual__weblets_home?id=limitations)
+- Weblets limitations
 - Public IP6 [support](https://github.com/threefoldtech/zos/pull/1488) in ZOS
 - QSFS integration is a work in progress
 - ZOS and SSD performance [issue](https://github.com/threefoldtech/zos/issues/1467)
