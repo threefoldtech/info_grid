@@ -14,7 +14,7 @@ Redis is widely used in various use cases, including caching, session management
 
 ### Linux
 
-If you don't find Redis in your Linux distro's package manager, check the [Redis downloads](https://redis.io/download) page for the source code and installation instructions.
+If you don't find Redis in your Linux distro's package manager, check the [Redis downloads](https://redis.io/downloads/) page for the source code and installation instructions.
 
 ### MacOS
 
@@ -25,7 +25,7 @@ brew update
 brew install redis
 ```
 
-Alternatively, it can be built from source, using the same [download page](https://redis.io/download/) as shown above.
+Alternatively, it can be built from source, using the same [download page](https://redis.io/downloads/) as shown above.
 
 
 
