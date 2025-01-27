@@ -63,6 +63,18 @@ To generate the QR Code, select the chain you want to use, Stellar or TFChain, e
 
 > Note: The memo option is only available for Stellar, not for TFChain. 
 
+#### Bridge Assets
+
+You can bridge TFT between TFChain and Stellar chain by following the steps below:
+
+- Set the direction of the bridge
+  - TFChain to Stellar
+  - Stellar to TFChain
+- **To**: Enter the address of the receiver
+  - Optional: Click on the icon on the right to set a wallet or favorite address 
+- **Amount**: Enter the amount to send
+- Click `Submit` to submit the bridge transfer
+- Click `Confirm` to finalize the transaction
 
 ### Wallet Transactions
 
