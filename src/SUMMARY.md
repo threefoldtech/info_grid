@@ -180,6 +180,7 @@
     - [Farming Requirements](documentation/farmers/farming_requirements.md)
     - [Farming Optimization](documentation/farmers/farming_optimization/farming_optimization.md)
       - [GPU Farming](documentation/farmers/3node_building/gpu_farming.md)
+      - [Cloud Provider Farming](documentation/farmers/farming_optimization/cloud_provider_farming.md)
       - [HDD-Only Nodes](documentation/farmers/farming_optimization/hdd_only_nodes.md)
       - [Set Additional Fees](documentation/farmers/farming_optimization/set_additional_fees.md)
       - [Minting Process](documentation/farmers/farming_optimization/minting_process.md)
