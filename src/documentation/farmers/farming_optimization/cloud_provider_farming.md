@@ -4,6 +4,16 @@
 
 We explain how to set up a 3Node on the ThreeFold Grid running on a cloud provider server. Currently, the documentation is made for [Hetzner](https://www.hetzner.com).
 
+## Considerations
+
+When you set up a node as explained in this guide, it will be running ZOS V4 on Grid 3. This means that you can access the node stats on the Dashboard, but not the usual Dashboard link. To reach out the Dashboard, you will need to use the following link:
+
+- Dashboard link: [https://next.dashboard.grid.tf/](https://next.dashboard.grid.tf/)
+
+Also, this current setup does not allow the node to be a grid gateway node out of the box. If you want to deploy a grid gateway node using Hetzner, reach out to support and we will assist you.
+
+To deploy on those nodes, you can either use the Next Dashboard link above or deploy using Terraform.
+
 ## Hetzner Server Specs
 
 You first need to order a dedicated server from Hetzner with the following specs. You can consult the [Hetzner Serve Auction page](https://www.hetzner.com/sb/).
@@ -58,7 +68,7 @@ BootOrder: 0001
 Boot0001* UEFI: PXE IP4 Intel(R) Ethernet Connection (H) I219-LM
 ```
 
-Currently, it is only possible to deploy on a UEFI server. Make sure you have a UEFI server to continue.
+Currently, it is only possible to deploy on a UEFI boot mode server. Since each auction server comes in BIOS boot mode, you have to ask the Hetzner support to change it to UEFI boot mode.
 
 - UEFI boot mode script installation, always use the first disk (mostly `nvme0n1`) and make sure the second is wiped. Note that here we use the farm ID `3997` as an example.
 ```sh
@@ -90,3 +100,7 @@ You can consult some basic data on the Dashboard to make sure everything is set 
 - Check that the node is properly registered and note the node ID
 - Check that all hardware is registered (CPU, RAM, total disk count)
 - Check that it is sending metrics by pressing `Check Node Health`
+
+As explained above, you will need to use the following Dashboard link:
+
+- Dashboard link: [https://next.dashboard.grid.tf/](https://next.dashboard.grid.tf/)
