@@ -16,7 +16,7 @@ To deploy on those nodes, you can either use the Next Dashboard link above or de
 
 ## Hetzner Server Specs
 
-You first need to order a dedicated server from Hetzner with the following specs. You can consult the [Hetzner Serve Auction page](https://www.hetzner.com/sb/).
+You first need to order a dedicated server from Hetzner with the following specs. You can consult the [Hetzner Server Auction page](https://www.hetzner.com/sb/).
 
 - NVMe: First filter on NVMe only servers with 'Drives' > 'NVMe SSD'
 - Preferred CPU: Intel Core i7-8700 / AMD Ryzen 5 3600.
