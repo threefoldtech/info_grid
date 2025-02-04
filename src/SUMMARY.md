@@ -192,6 +192,7 @@
       - [Networking Overview](documentation/farmers/advanced_networking/networking_overview.md)
       - [Network Considerations](documentation/farmers/advanced_networking/network_considerations.md)
       - [Network Setup](documentation/farmers/advanced_networking/network_setup.md)
+      - [Gateway Domain](documentation/farmers/advanced_networking/gateway_domain.md)
     - [Farmerbot](documentation/farmers/farmerbot/farmerbot_intro.md)
       - [Quick Guide](documentation/farmers/farmerbot/farmerbot_quick.md)
       - [Additional Information](documentation/farmers/farmerbot/farmerbot_information.md)
