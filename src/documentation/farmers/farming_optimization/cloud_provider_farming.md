@@ -6,7 +6,7 @@ We explain how to set up a 3Node on the ThreeFold Grid running on a cloud provid
 
 ## Considerations
 
-When you set up a node as explained in this guide, it will be running ZOS V4 on Grid 3. This means that you can access the node stats on the Dashboard, but not the usual Dashboard link. To reach out the Dashboard, you will need to use the following link:
+When you set up a node as explained in this guide, it will be running ZMachine Light on Grid 3. This means that you can access the node stats on the Dashboard, but not the usual Dashboard link. To reach out the Dashboard, you will need to use the following link:
 
 - Dashboard link: [https://next.dashboard.grid.tf/](https://next.dashboard.grid.tf/)
 
@@ -32,13 +32,13 @@ You first need to order a dedicated server from Hetzner with the following specs
 - Location
   - No preferred location.
 
-Once you get a server with Hetzner, it will be delivered booted in the Hetzner rescue mode. From this, we can install ZOS.
+Once you get a server with Hetzner, it will be delivered booted in the Hetzner rescue mode. From this, we can install ZMachine Light.
 
-## ZOS Installation Script
+## ZMachine Light Installation Script
 
-The next step is to install ZOS with UEFI using a script written in Bash.
+The next step is to install ZMachine Light with UEFI using a script written in Bash.
 
-For this, we will SSH into the node, wipe the disk and then partition it to install ZOS on the small partition.
+For this, we will SSH into the node, wipe the disk and then partition it to install ZMachine Light on the small partition.
 
 - SSH to the server that is in rescue mode to **wipe the disks** and chech the boot mode (BIOS or UEFI)
 ```sh
@@ -89,7 +89,7 @@ nvme1n1     259:1    0 476.9G  0 disk
 
 ## Test the Server
 
-Reboot the server and ping its public IP, it should reply soon (while in PXE boot). Then it will stop replying. This means it is booting into ZOS. After about 1 minute, it should reply again.
+Reboot the server and ping its public IP, it should reply soon (while in PXE boot). Then it will stop replying. This means it is booting into ZMachine Light. After about 1 minute, it should reply again.
 
 Once the node is connected and registered on the grid, the node should have its ID and be online in the dashboard.
 
