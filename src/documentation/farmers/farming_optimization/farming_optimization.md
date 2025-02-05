@@ -5,6 +5,7 @@ The section [Build a 3Node](../3node_building/3node_building.md) covered the not
 **TABLE OF CONTENTS**
 
 - [GPU Farming](../3node_building/gpu_farming.md)
+- [Cloud Provider Farming](./cloud_provider_farming.md)
 - [HDD-Only Nodes](./hdd_only_nodes.md)
 - [Set Additional Fees](./set_additional_fees.md)
 - [Minting Process](./minting_process.md)
