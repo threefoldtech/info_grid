@@ -27,8 +27,8 @@ Use the following command to serve the book (this will open the browser)
 
 ## Browse docs
 
-- The official ThreeFold manual is available at [www.manual.grid.tf](https://manual.grid.tf/)
-- Staging version from development branch is available at [www2.manual.grid.tf](https://www2.manual.grid.tf)
+- The official ThreeFold manual from master branch is available at [www.manual.grid.tf](https://manual.grid.tf/)
+- Staging version from development branch is available at [www.manual.dev.grid.tf](https://www.manual.dev.grid.tf)
 - Staging version from development-split branch is available at [wwww3.manual.grid.tf](https://www3.manual.grid.tf)
 
 ## Contribute
