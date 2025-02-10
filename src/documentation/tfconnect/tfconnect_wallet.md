@@ -14,7 +14,7 @@ By default, the app will generate a wallet associated with your account.
 
 - The wallet main page is the following:
 
-![](./img/tfconnect_21.png)
+<img src="./img/tfconnect_wallet_02.jpg" style="width: 55%;">
 
 ## Import a Wallet
 
@@ -63,6 +63,22 @@ To generate the QR Code, select the chain you want to use, Stellar or TFChain, e
 
 > Note: The memo option is only available for Stellar, not for TFChain. 
 
+#### Bridge Assets
+
+You can bridge TFT between TFChain and Stellar chain.
+
+<img src="./img/tfconnect_wallet_03.jpg" style="width: 55%;">
+
+To bridge TFT, follow the steps below:
+
+- Set the direction of the bridge
+  - TFChain to Stellar
+  - Stellar to TFChain
+- **To**: Enter the address of the receiver
+  - Optional: Click on the icon on the right to set a wallet or favorite address 
+- **Amount**: Enter the amount to send
+- Click `Submit` to submit the bridge transfer
+- Click `Confirm` to finalize the transaction
 
 ### Wallet Transactions
 
