@@ -43,3 +43,12 @@ Once this is done, you can see a list of all of your deployed instances:
 Click on the button **Visit** under **Actions** to go to your Open WebUI instance!
 
 > Note: It will take a few minutes for the deployment to finalize. If you see `Bad Gateway`, simply wait some time and refresh the page.
+
+## Troubleshooting
+
+Models might require high resources. If you encounter the following error: `500: Ollama: 500, message='Internal Server Error', url='http://localhost:11434/api/chat'`, it might simply indicate that your need to provide higher resources (vcpu and GB of RAM). Check the logs for more information (using Mycelium or WireGuard)
+
+```
+ssh root@vm_ip
+docker logs open-webui
+```
