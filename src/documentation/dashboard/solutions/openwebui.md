@@ -52,3 +52,18 @@ Models might require high resources. If you encounter the following error: `500:
 ssh root@vm_ip
 docker logs open-webui
 ```
+
+## Check the GPU
+
+You can verify that the GPU is working with the following.
+
+> Note: Use `nvidia-smi` for Nvidia and `rocm-smi` for AMD.
+
+- Check that the Docker container can access the GPU
+  ```
+  docker exec open-webui nvidia-smi
+  ```
+- Check the GPU resources live and run queries on Open WebUI. The resources allocated should vary:
+  ```
+  watch -n1 'docker exec open-webui nvidia-smi'
+  ```
