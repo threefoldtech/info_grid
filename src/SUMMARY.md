@@ -35,6 +35,7 @@
         - [Nextcloud](documentation/dashboard/solutions/nextcloud.md)
         - [Node Pilot](documentation/dashboard/solutions/nodepilot.md)
         - [Nostr](documentation/dashboard/solutions/nostr.md)
+        - [Open WebUI](documentation/dashboard/solutions/openwebui.md)
         - [Peertube](documentation/dashboard/solutions/peertube.md)
         - [Presearch](documentation/dashboard/solutions/presearch.md)
         - [Static Website](documentation/dashboard/solutions/static_website.md)
