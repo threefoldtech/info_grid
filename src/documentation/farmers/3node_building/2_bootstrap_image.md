@@ -8,37 +8,33 @@ If you are building an HDD-only node, read [this section](../farming_optimizatio
 
 ## Download the Zero-OS Bootstrap Image
 
-Let's download the Zero-OS bootstrap image.
-
-In the Farms section of the Dashboard, click on **Bootstrap Node Image** 
-
-![dashboard_bootstrap_farm](./img/dashboard_bootstrap_farm.png)
-
-or use the direct link [https://v3.bootstrap.grid.tf](https://v3.bootstrap.grid.tf):
-
-```
-https://v3.bootstrap.grid.tf
-```
+Let's download the Zero-OS bootstrap image via the Zero-OS Boot Generator: [https://v3.bootstrap.grid.tf](https://v3.bootstrap.grid.tf)
 
 ![Farming_Create_Farm_21](./img/farming_createfarm_21.png) 
 
-This is the Zero-OS v3 Bootstrapping page.
+On the Boot Generator page, write your farm ID and choose `Production` mode to deploy on mainnet.
 
 ![Farming_Create_Farm_22](./img/farming_createfarm_22.png)  
 
-Write your farm ID and choose production mode.
+Choose a bootstrap image format to download.
+
+If your system is new, choose an image format for a `UEFI` bootable kernel. You can use either `EFI IMG` or `EFI FILE`.
+
+- `EFI IMG`
+  - Burn this image with BalenaEtcher. [See below for more info.](#balenaetcher-mac-linux-windows)
+- `EFI FILE`
+  - Format the USB to one `FAT` partition and save the bootstrap image as `/EFI/BOOT/BOOTX64.EFI`.
 
 ![Farming_Create_Farm_23](./img/farming_createfarm_23.png)  
 
-If your system is new, you might be able to run the bootstrap in UEFI mode.
+For older systems, choose an image format for a `BIOS` bootable kernel. 
+
+- For BIOS CD/DVD, choose **ISO**.
+- For BIOS USB, choose **USB**.
 
 ![Farming_Create_Farm_24](./img/farming_createfarm_24.png) 
 
-For older systems, run the bootstrap in BIOS mode. For BIOS CD/DVD, choose **ISO**. For BIOS USB, choose **USB**
-
-Download the bootstrap image. Next, we will burn the bootstrap image.
-
-
+Next, we cover in details how to burn the bootstrap image.
 
 ## Burn the Zero-OS Bootstrap Image
 
@@ -54,9 +50,9 @@ There are many ways to burn the bootstrap image on a USB key. The easiest way th
 
 #### BalenaEtcher (MAC, Linux, Windows)
 
-For **MAC**, **Linux** and **Windows**, you can use [BalenaEtcher](https://www.balena.io/etcher/) to load/flash the image on a USB stick. This program also formats the USB in the process. This will work for the option **EFI IMG** for UEFI boot, and with the option **USB** for BIOS boot. Simply follow the steps presented to you and make sure you select the bootstrap image file you downloaded previously.
+For **MAC**, **Linux** and **Windows**, you can use [BalenaEtcher](https://www.balena.io/etcher/) to flash the image on a USB key. This program also formats the USB in the process. This will work for the option **EFI IMG** for UEFI boot, and with the option **USB** for BIOS boot. Simply follow the steps presented to you and make sure you select the bootstrap image file you downloaded previously.
 
-> Note: There are alternatives to BalenaEtcher (e.g. [usbimager](https://gitlab.com/bztsrc/usbimager/)).
+> Note: There are alternatives to BalenaEtcher (e.g. [usbimager](https://gitlab.com/bztsrc/usbimager/) for Windows, MAC and Linux, and [Rufus](https://sourceforge.net/projects/rufus.mirror/) for Windows).
 
 **General Steps with BalenaEtcher:**
 
@@ -74,15 +70,13 @@ That's it. Now you have a bootstrap image on Zero-OS as a bootable removable med
 
 For the BIOS **USB** and the UEFI **EFI IMG** images, you can do the following on Linux:
 
-    sudo dd status=progress if=FILELOCATION.ISO(or .IMG) of=/dev/sd*
+```
+sudo dd status=progress if=FILELOCATION.ISO(or .IMG) of=/dev/sdX
+```
 
-Here the * is to indicate that you must adjust according to your disk. To see your disks, write lsblk in the command window. Make sure you select the proper disk!
+Simply replace `X` by the proper disk for your USB key. To see your disks, write `lsblk` in the command line. Make sure you select the proper disk!
 
-*If you USB key is not new, make sure that you format it before burning the Zero-OS image.
-
-#### Rufus (Windows)
-
-For Windows, if you are using the "dd" able image, instead of writing command line, you can use the free USB flashing program called [Rufus](https://sourceforge.net/projects/rufus.mirror/) and it will automatically do this without needing to use the command line. Rufus also formats the boot media in the process.
+If you USB key is not new, make sure to format it before burning the Zero-OS image.
 
 ## Additional Information (Optional)
 
