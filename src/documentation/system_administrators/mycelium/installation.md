@@ -17,14 +17,14 @@ Read the [Troubleshooting](./information.md#troubleshooting) section for more in
 
 ## Set Mycelium
 
+We show how to set up Mycelium.
+
 - Update the system
     ```
     apt update
     ```
 - Download the latest Mycelium release: [https://github.com/threefoldtech/mycelium/releases/latest](https://github.com/threefoldtech/mycelium/releases/latest)
-    ``` 
-    wget https://github.com/threefoldtech/mycelium/releases/download/v0.4.0/mycelium-x86_64-unknown-linux-musl.tar.gz
-    ```
+  - E.g. for Linux 64-bit x86 processor, download the latest release of the file `mycelium-x86_64-unknown-linux-musl.tar.gz`
 - Extract Mycelium
     ``` 
     tar -xvf mycelium-x86_64-unknown-linux-musl.tar.gz

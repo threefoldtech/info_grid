@@ -13,13 +13,13 @@ If you want to connect to other nodes, you can specify their listening address a
 part of the command (combined with the protocol they are listening on, usually TCP);
 
 ```sh
-mycelium --peers tcp://83.231.240.31:9651 quic://185.206.122.71:9651
+mycelium --peers tcp://188.40.132.242:9651 quic://185.69.166.8:9651
 ```
 
 If you are using other tun inferface, e.g. utun3 (default), you can set a different utun inferface
 
 ```sh
-mycelium --peers tcp://83.231.240.31:9651 quic://185.206.122.71:9651 --tun-name utun9
+mycelium --peers tcp://188.40.132.242:9651 quic://185.69.166.8:9651 --tun-name utun9
 ```
 
 ## Hosted Public Nodes
@@ -47,7 +47,7 @@ These nodes are all interconnected, so 2 peers who each connect to a different n
 it is recommended to connect to all of the above at once however. An example connection
 string could be:
 
-`--peers tcp://188.40.132.242:9651 "tcp://[2a01:4f8:212:fa6::2]:9651" quic://185.69.166.7:9651 "tcp://[2a02:1802:5e:0:8c9e:7dff:fec9:f0d2]:9651" tcp://65.21.231.58:9651 "quic://[2a01:4f9:5a:1042::2]:9651"`
+`--peers tcp://188.40.132.242:9651 "quic://[2a01:4f8:212:fa6::2]:9651" tcp://185.69.166.7:9651 "quic://[2a02:1802:5e:0:ec4:7aff:fe51:e36b]:9651" tcp://65.21.231.58:9651 "quic://[2a01:4f9:5a:1042::2]:9651" "tcp://[2604:a00:50:17b:9e6b:ff:fe1f:e054]:9651" quic://5.78.122.16:9651 "tcp://[2a01:4ff:2f0:3621::1]:9651" quic://142.93.217.194:9651`
 
 It is up to the user to decide which peers he wants to use, over which protocol.
 Note that quotation may or may not be required, depending on which shell is being
@@ -70,7 +70,7 @@ Where a typical output would be:
 ```
 {
   "publicKey": "abd16194646defe7ad2318a0f0a69eb2e3fe939c3b0b51cf0bb88bb8028ecd1d",
-  "address": "3c4:c176:bf44:b2ab:5e7e:f6a:b7e2:11ca"
+  "address": "5c4:c176:bf44:b2ab:5e7e:f6a:b7e2:11ca"
 }
 ```
 
@@ -79,7 +79,7 @@ Where a typical output would be:
 You can easily test that the network works by pinging to anyone in the network.
 
 ```
-ping6 3c4:c176:bf44:b2ab:5e7e:f6a:b7e2:11ca
+ping6 54b:83ab:6cb5:7b38:44ae:cd14:53f3:a907
 ```
 
 ## Key Pair
