@@ -2,7 +2,9 @@
 
 ## Introduction
 
-In this section of the ThreeFold Farmers book, we explain how to properly set the BIOS/UEFI of your 3Node.
+In this section, we explain how to properly set the BIOS/UEFI of your 3Node.
+
+If you do not want to read the whole page, make sure to read [this section](#the-essential-features-of-biosuefi-for-a-3node), which covers the basics.
 
 Note that the BIOS mode is usually needed for older hardware while the UEFI mode is usually needed for newer hardware, when it comes to booting properly Zero-OS on your DIY 3Node.
 
@@ -42,7 +44,7 @@ You can [set a static IP address to remotely manage a 3Node](#setting-the-remote
 
 There are certain things that you should make sure are set properly on your 3Node.
 
-As a general advice, you can Load Defaults (Settings) on your BIOS, then make sure the options below are set properly.
+As a general advice, you can Load Defaults (Settings) on your BIOS/UEFI, then make sure the options below are set properly.
 
 * Choose the correct combination of BIOS/UEFI and bootstrap image on [https://bootstrap.grid.tf/](https://bootstrap.grid.tf/)
   * Newer system will use UEFI
@@ -55,6 +57,7 @@ As a general advice, you can Load Defaults (Settings) on your BIOS, then make su
   * Make sure virtualization is enabled and look for the precise terms in your specific BIOS/UEFI.
 * Set AC Recovery at Last Power State
   * This will make sure your 3Node restarts after losing power momentarily.
+  * It can have different names depending on the hardware, e.g. `Power State After Power Loss`, check the hardware docs if needed.
 * Select the proper Boot Sequence for the 3Node to boot Zero-OS from your bootstrap image
   * e.g., if you have a USB key as a bootstrap image, select it in Boot Sequence
 * Set Server Lookup Method (or the equivalent) at DNS. Only use Static IP if you know what you are doing.
@@ -62,9 +65,10 @@ As a general advice, you can Load Defaults (Settings) on your BIOS, then make su
 * Set Client Address Method (or the equivalent) at DHCP. Only use Static IP if you know what you are doing.
   * Your router will assign a dynamic IP address to your 3Node when it connects to Internet.
 * Secure Boot should be left at disabled
-  * Enable it if you know what you are doing. Otherwise, it can be set at disabled.
-
-
+  * Enable it if you know what you are doing. Otherwise, it should be set at disabled.
+* Set Network Stack and PXE at Enabled.
+  * Note: Network Stack is a prerequisite for PXE.
+  * Note: In some cases, farmers had to disable Network State for the 3Node to properly boot, but in general enabling it is needed.
 
 
 ## Setting the Remote Management of a Server with a Static IP Address (Optional)

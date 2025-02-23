@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In this section of the ThreeFold Farmers book, we cover the essential farming requirements when it comes to ThreeFold 3Node hardware.
+In this section, we cover the essential farming requirements when it comes to ThreeFold 3Node hardware.
 
 The essential information are available in the section [3Node Requirements Summary](#3node-requirements-summary).
 
