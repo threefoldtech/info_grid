@@ -20,7 +20,7 @@ Deployment need to have valid signature, the contract must exist on chain with t
 
 | command |body| return|
 |---|---|---|
-| `zos.deployment.update` | [Deployment](https://github.com/threefold/zosbase/blob/main/pkg/gridtypes/deployment.go)|-|
+| `zos.deployment.update` | [Deployment](https://github.com/threefoldtech/zosbase/blob/main/pkg/gridtypes/deployment.go)|-|
 
 The update call, will update (modify) an already existing deployment with new definition. The deployment must already exist on the node, the contract must have the new hash as the provided deployment, plus valid versions.
 
