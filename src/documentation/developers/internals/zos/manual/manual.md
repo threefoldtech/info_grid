@@ -15,10 +15,6 @@ So what is `network`.Well, to allow developers to build and `zos` itself and mak
 - `testing`: Once new features are developed and well tested on `development` network they are released to `testing` environment. This also available for users to use with a slightly higher price than `development` network. But it's much more stable. In theory this network is stable, there should be no resets of the network, issues on this network usually are not fatal, but partial data loss can still occurs.
 - `production`: Well, as the name indicates this is the most stable network (also full price) once new features are fully tested on `testing` network they are released on `production`.
 
-## Creating a farm
-
-While this is outside the scope of this document here you are a [link](https://library.threefold.me/info/manual/#/manual__create_farm)
-
 ## Interaction
 
 `ZOS` provide a simple `API` that can be used to:
@@ -166,7 +162,7 @@ type Workload struct {
 ### API
 Node is always connected to the RMB network with the node `twin`. Means the node is always reachable over RMB with the node `twin-id` as an address.
 
-The [node client](https://github.com/threefoldtech/zos/blob/main/client/node.go) should have a complete list of all available functions. documentations of the API can be found [here](./api.md)
+The [node client](https://github.com/threefoldtech/zosbase/blob/main/client/node.go) should have a complete list of all available functions. documentations of the API can be found [here](./api.md)
 
 ## Raid Controller Configuration
 

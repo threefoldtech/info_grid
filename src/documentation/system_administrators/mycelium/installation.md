@@ -17,14 +17,14 @@ Read the [Troubleshooting](./information.md#troubleshooting) section for more in
 
 ## Set Mycelium
 
+We show how to set up Mycelium.
+
 - Update the system
     ```
     apt update
     ```
 - Download the latest Mycelium release: [https://github.com/threefoldtech/mycelium/releases/latest](https://github.com/threefoldtech/mycelium/releases/latest)
-    ``` 
-    wget https://github.com/threefoldtech/mycelium/releases/download/v0.4.0/mycelium-x86_64-unknown-linux-musl.tar.gz
-    ```
+  - E.g. for Linux 64-bit x86 processor, download the latest release of the file `mycelium-x86_64-unknown-linux-musl.tar.gz`
 - Extract Mycelium
     ``` 
     tar -xvf mycelium-x86_64-unknown-linux-musl.tar.gz
@@ -40,7 +40,7 @@ You can start Mycelium
 
 - Start Mycelium
     ``` 
-    mycelium --peers tcp://83.231.240.31:9651 quic://185.206.122.71:9651 --tun-name utun2
+    mycelium --peers tcp://188.40.132.242:9651 quic://185.69.166.8:9651 --tun-name utun9
     ```
 - Open another terminal
 - Check the Mycelium connection information (address and public key)
@@ -85,7 +85,7 @@ You can create a systemd service to make sure Mycelium is always enabled and run
     StateDirectory=mycelium
     StateDirectoryMode=0700
     ExecStartPre=+-/sbin/modprobe tun
-    ExecStart=/usr/local/bin/mycelium --tun-name mycelium -k %S/mycelium/key.bin --peers tcp://146.185.93.83:9651 quic://83.231.240.31:9651 quic://185.206.122.71:9651 tcp://[2a04:f340:c0:71:28cc:b2ff:fe63:dd1c]:9651 tcp://[2001:728:1000:402:78d3:cdff:fe63:e07e]:9651 quic://[2a10:b600:1:0:ec4:7aff:fe30:8235]:9651
+    ExecStart=/usr/local/bin/mycelium --tun-name mycelium -k %S/mycelium/key.bin --peers tcp://146.185.93.83:9651 quic://185.69.166.8:9651 quic://185.206.122.71:9651 tcp://[2a04:f340:c0:71:28cc:b2ff:fe63:dd1c]:9651 tcp://[2001:728:1000:402:78d3:cdff:fe63:e07e]:9651 quic://[2a10:b600:1:0:ec4:7aff:fe30:8235]:9651
     Restart=always
     RestartSec=5
     TimeoutStopSec=5
