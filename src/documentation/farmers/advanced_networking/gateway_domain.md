@@ -28,7 +28,7 @@ __acme-challenge.gatewaydomain.com   NS      gatewaydomain.com / ns.gatewaydomai
 
 Some DNS providers only allow NS records that start with the letters "ns". In this case the second form using the "ns" subdomains is fine—it will fall under the CNAME wildcard and ultimately resolve the the gateway's IP address.
 
-For more information on this feature, refer the [ZOS documentation](https://github.com/threefoldtech/zos/blob/main/docs/internals/gateway/readme.md#implementation-details).
+For more information on this feature, refer the [ZOS documentation](https://github.com/threefoldtech/zosbase/blob/main/docs/internals/gateway/readme.md#implementation-details).
 
 ## Public Config
 

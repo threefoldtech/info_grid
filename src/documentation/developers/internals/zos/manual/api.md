@@ -4,7 +4,7 @@
 
 This document should list all the actions available on the node public API. which is available over [RMB](https://github.com/threefoldtech/rmb-rs)
 
-The node is always reachable over the node twin id as per the node object on tfchain. Once node twin is known, a [client](https://github.com/threefoldtech/zos/blob/main/client/node.go) can be initiated and used to talk to the node.
+The node is always reachable over the node twin id as per the node object on tfchain. Once node twin is known, a [client](https://github.com/threefoldtech/zosbase/blob/main/client/node.go) can be initiated and used to talk to the node.
 
 ## Deployments
 
@@ -12,7 +12,7 @@ The node is always reachable over the node twin id as per the node object on tfc
 
 | command |body| return|
 |---|---|---|
-| `zos.deployment.deploy` | [Deployment](https://github.com/threefoldtech/zos/blob/main/pkg/gridtypes/deployment.go)|-|
+| `zos.deployment.deploy` | [Deployment](https://github.com/threefoldtech/zosbase/blob/main/pkg/gridtypes/deployment.go)|-|
 
 Deployment need to have valid signature, the contract must exist on chain with the correct contract hash as the deployment.
 
@@ -30,7 +30,7 @@ The update call, will update (modify) an already existing deployment with new de
 
 | command |body| return|
 |---|---|---|
-| `zos.deployment.get` | `{contract_id: <id>}`|[Deployment](https://github.com/threefoldtech/zos/blob/main/pkg/gridtypes/deployment.go)|
+| `zos.deployment.get` | `{contract_id: <id>}`|[Deployment](https://github.com/threefoldtech/zosbase/blob/main/pkg/gridtypes/deployment.go)|
 
 ### Changes
 
@@ -40,7 +40,7 @@ The update call, will update (modify) an already existing deployment with new de
 
 Where:
 
-- [workload](https://github.com/threefoldtech/zos/blob/main/pkg/gridtypes/workload.go)
+- [workload](https://github.com/threefoldtech/zosbase/blob/main/pkg/gridtypes/workload.go)
 
 The list will contain all deployment workloads (changes) means a workload can (will) appear
 multiple times in this list for each time a workload state will change.
@@ -211,7 +211,7 @@ name must be one of (free) names returned by `zos.network.admin.interfaces`
 
 | command |body| return|
 |---|---|---|
-| `zos.system.dmi` | - | [DMI](https://github.com/threefoldtech/zos/blob/main/pkg/capacity/dmi/dmi.go) |
+| `zos.system.dmi` | - | [DMI](https://github.com/threefoldtech/zosbase/blob/main/pkg/capacity/dmi/dmi.go) |
 
 ### Hypervisor
 
