@@ -20,6 +20,7 @@ Easily deploy your favourite applications on the ThreeFold grid with a click of 
 - [Nextcloud](../solutions/nextcloud.md)
 - [Node Pilot](../solutions/nodepilot.md)
 - [Nostr](../solutions/nostr.md)
+- [Open WebUI](../solutions/openwebui.md)
 - [Peertube](../solutions/peertube.md)
 - [Presearch](../solutions/presearch.md)
 - [Static Website](../solutions/static_website.md)
