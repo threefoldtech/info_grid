@@ -44,9 +44,27 @@ Click on the button **Visit** under **Actions** to go to your Open WebUI instanc
 
 > Note: It will take a few minutes for the deployment to finalize. If you see `Bad Gateway`, simply wait some time and refresh the page.
 
+## Use the App
+
+This Open WebUI is deployed alongside with Ollama. To add Ollama models to Open WebUI, follow those steps:
+
+- Click on your username icon at the bottom left of the screen
+- Select `Admin Panel`
+- Select `Settings` then `Models`
+- Click on the button `Manage Models`
+- Pull a model from Ollama.com, e.g. `mistra:7b`
+
+![openwebui_models](./img/oi_models.png)
+
+Once this is done, you can use the model by creating a new chat.
+
+![oi_chat](./img/oi_chat.png)
+
+For more information, consult the official [Open WebUI](https://docs.openwebui.com/).
+
 ## Troubleshooting
 
-Models might require high resources. If you encounter the following error: `500: Ollama: 500, message='Internal Server Error', url='http://localhost:11434/api/chat'`, it might simply indicate that your need to provide higher resources (vcpu and GB of RAM). Check the logs for more information (using Mycelium or WireGuard)
+Models might require high resources. If you encounter the following error: `500: Ollama: 500, message='Internal Server Error', url='http://localhost:11434/api/chat'`, it might simply indicate that your need to provide higher resources (vcpu and GB of RAM). Check the logs for more information (using Mycelium or WireGuard).
 
 ```
 ssh root@vm_ip
