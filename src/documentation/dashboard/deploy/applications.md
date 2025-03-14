@@ -11,7 +11,6 @@ Easily deploy your favourite applications on the ThreeFold grid with a click of 
 - [Algorand](../solutions/algorand.md)
 - [CasperLabs](../solutions/casper.md)
 - [Discourse](../solutions/discourse.md)
-- [Domains](../solutions/domains.md)
 - [Funkwhale](../solutions/funkwhale.md)
 - [Gitea](../solutions/gitea.md)
 - [Jenkins](../solutions/jenkins.md)

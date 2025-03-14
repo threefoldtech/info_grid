@@ -24,7 +24,8 @@
     - Or choose a **Custom** plan
 - Choose the network
    - `Mycelium` flag gives the virtual machine a Mycelium address
-- `Dedicated` flag to retrieve only [dedicated nodes](../deploy/node_finder.md#dedicated-nodes) (rentable or rented by you)
+- `Rented By Me` flag to retrieve nodes currently reserved by you
+- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../deploy/node_finder.md#dedicated-nodes)
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
    - `Region`
