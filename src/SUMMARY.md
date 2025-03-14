@@ -186,6 +186,7 @@
       - [Set Additional Fees](documentation/farmers/farming_optimization/set_additional_fees.md)
       - [Minting Process](documentation/farmers/farming_optimization/minting_process.md)
       - [Minting Receipts](documentation/farmers/3node_building/minting_receipts.md)
+      - [Minting & Uptime Tool](documentation/farmers/farming_optimization/minting_tool.md)
       - [Minting Periods](documentation/farmers/farming_optimization/minting_periods.md)
       - [Room Parameters](documentation/farmers/farming_optimization/farm_room_parameters.md)
       - [Farming Costs](documentation/farmers/farming_optimization/farming_costs.md)
