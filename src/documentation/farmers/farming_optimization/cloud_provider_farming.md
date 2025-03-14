@@ -2,7 +2,7 @@
 
 ## Introduction
 
-We explain how to set up a 3Node on the ThreeFold Grid running on a cloud provider server. Currently, the documentation is made for [Hetzner](https://www.hetzner.com).
+We explain how to set up a 3Node on the ThreeFold Grid running on a cloud provider server. Currently, the documentation is made for [Hetzner](https://www.hetzner.com) and [OVH](https://www.ovhcloud.com/).
 
 ## Considerations
 
@@ -33,6 +33,38 @@ You first need to order a dedicated server from Hetzner with the following specs
   - No preferred location.
 
 Once you get a server with Hetzner, it will be delivered booted in the Hetzner rescue mode. From this, we can install ZMachine Light.
+
+## OVH Server Specs
+
+You'll need to order a dedicated server from OVH with hardware specifications that meet Zero-OS requirements. Visit the [OVH Dedicated Server](https://www.ovhcloud.com/en/bare-metal/prices/) page to explore available options.
+
+### Recommended OVH Server Specifications:
+- **CPU**: Intel or AMD processors with good single-thread performance
+  - Avoid very old CPU models for optimal performance
+- **RAM**: Minimum 32GB recommended for productive nodes
+- **Storage**: Servers with NVMe drives are preferred for better performance
+- **Networking**: Default networking configuration is sufficient
+
+After ordering, boot your server into `CUSTOMER RESCUE` mode through the OVH control panel. This is required to install ZMachine Light in the following steps.
+
+### OVH-Specific DDoS Protection Configuration
+
+When deploying ZOS nodes on OVH, you will need to request a special DDoS protection profile adjustment. OVH's default DDoS protection may trigger false positives due to the UDP traffic patterns of Zero-OS nodes, which can disrupt your node's connectivity.
+
+#### DDoS Protection Adjustment Process
+
+1. After deploying your ZOS node, monitor for any connectivity issues
+2. If you notice your node going offline unexpectedly, open a support ticket with OVH
+3. Request the following:
+   - "Please adjust the DDoS protection profile for my server (provide your IP address) to match the profile used for IP 51.77.66.70, which has been configured for Zero-OS nodes"
+   - Explain that your server is running Zero-OS and requires appropriate thresholds to prevent false DDoS triggers from UDP traffic
+
+#### Important Notes
+
+- This profile adjustment must be requested for each new ZOS server you deploy on OVH
+- There is currently no standard profile name or automatic process - you need to specifically reference the existing working profile (IP 51.77.66.70) in your request
+- OVH support does not provide details about the specific changes made to the DDoS protection thresholds
+- After the profile change, monitor your node to ensure the issue is resolved
 
 ## ZMachine Light Installation Script
 
