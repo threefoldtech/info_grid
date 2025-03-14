@@ -6,6 +6,23 @@
 
 The Web Gateway is a mechanism to connect the private networks to the open Internet, in such a way that there is no direct connection between internet and the secure workloads running in the ZMachines.
 
+## Overview
+
+A Web Gateway connects the public internet to nodes in the ThreeFold Grid network by using reverse proxy software running on nodes with public IP addresses. It acts as an intermediary that:
+
+1. Receives incoming requests from internet users
+2. Routes them to the appropriate node in the private network
+3. Returns responses to the requester
+
+This enables any node to serve web content publicly without needing its own public IP address. Web Gateways provide cost efficiency (cheaper than dedicated public IPs), simplified management (automatic routing), and global accessibility without complex setup.
+
+While Web Gateways have some limitations (less flexibility than dedicated IPs and shared resources that may affect performance during peak loads), they're ideal for hosting static websites, API endpoints, web applications, and content distribution.
+
+## Web Gateway Architecture
+
+
+A distributed web gateway architecture creates a strategic separation between backend computing resources and user-facing services.
+
 ![](img/webgateway.jpg)
 
 
