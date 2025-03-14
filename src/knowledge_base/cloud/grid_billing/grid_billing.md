@@ -14,6 +14,8 @@ This documentation can be used in parallel with the [TFGrid Pricing Calculator](
 
 -->
 
+> **Note:** Values on chain are expressed as **units USD per hour**, where **1 unit USD = 10.000.000** (or 1e7). To get the amount in TFT, simply divide the amount by 10^7.
+
 ## Resources to Update
 
 Some of the used resources should be updated whenever you try to do these calculations, these resources are the TFT price and the cloud units (SU and CU).
@@ -34,8 +36,6 @@ The current cloud units values can be retrieved directly from TChain with the [P
 - Press `Enter`
 
 ![image](./img/grid_billing_2.png)
-
-> Note: Values on chain are expressed as "units USD per hour", where "1 unit USD" == 10.000.000 (or 1e7)
 
 ## Node Contract
 
