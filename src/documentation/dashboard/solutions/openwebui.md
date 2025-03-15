@@ -10,6 +10,18 @@ Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI plat
 - From the sidebar click on **Applications**
 - Click on **Open WebUI**
 
+## Hardware Considerations
+
+Open WebUI's performance varies significantly based on your hardware configuration. The table below shows recommended specifications for different usage levels. Considerer the following before deploying your Open WebUI instance.
+
+| Configuration | vCores | RAM (GB) | SSD (GB) | Rating with GPU | Rating CPU-Only |
+|--------------|--------|----------|----------|-----------------|-----------------|
+| **Small**    | 2      | 4        | 25       | Minimum         | Inadequate      |
+| **Medium**   | 4      | 8        | 50       | Good            | Minimum         |
+| **Large**    | 8      | 16       | 100      | Excellent       | Good            |
+
+CPU-only deployments require at least the Medium configuration for acceptable performance. Deploying on nodes with high-end GPUs delivers faster inference and better handling of larger models.
+
 ## Deployment
 
 ![ ](./img/openwebui.png)
@@ -18,9 +30,9 @@ Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI plat
 
 - Select a capacity package:
 
-  - **Small**: {cpu: 1, memory: 2 , diskSize: 50 }
-  - **Medium**: {cpu: 2, memory: 4, diskSize: 100 }
-  - **Large**: {cpu: 4, memory: 16, diskSize: 250 }
+  - **Small**: {cpu: 2, memory: 8 , diskSize: 25 }
+  - **Medium**: {cpu: 4, memory: 16, diskSize: 50 }
+  - **Large**: {cpu: 8, memory: 32, diskSize: 100 }
   - Or choose a **Custom** plan
 - Choose the network
    - `Mycelium` flag gives the virtual machine a Mycelium address
