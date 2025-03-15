@@ -16,9 +16,9 @@ Open WebUI's performance varies significantly based on your hardware configurati
 
 | Configuration | vCores | RAM (GB) | SSD (GB) | Rating with GPU | Rating CPU-Only |
 |--------------|--------|----------|----------|-----------------|-----------------|
-| **Small**    | 2      | 4        | 25       | Minimum         | Inadequate      |
-| **Medium**   | 4      | 8        | 50       | Good            | Minimum         |
-| **Large**    | 8      | 16       | 100      | Excellent       | Good            |
+| **Small**    | 2      | 8        | 25       | Minimum         | Inadequate      |
+| **Medium**   | 4      | 16        | 50       | Good            | Minimum         |
+| **Large**    | 8      | 32       | 100      | Excellent       | Good            |
 
 CPU-only deployments require at least the Medium configuration for acceptable performance. Deploying on nodes with high-end GPUs delivers faster inference and better handling of larger models.
 
