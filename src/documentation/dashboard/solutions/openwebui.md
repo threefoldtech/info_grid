@@ -52,7 +52,7 @@ This Open WebUI is deployed alongside with Ollama. To add Ollama models to Open 
 - Select `Admin Panel`
 - Select `Settings` then `Models`
 - Click on the button `Manage Models`
-- Pull a model from Ollama.com, e.g. `mistra:7b`
+- Pull a model from Ollama.com, e.g. `mistral:7b`
 
 ![openwebui_models](./img/oi_models.png)
 
