@@ -12,6 +12,8 @@ Note that, in order to reduce the deployment cost, we set the minimum CPU and me
 
 Note that this guide also make use of the ThreeFold gateway. For this reason, this deployment can be set on any two 3Nodes on the TFGrid, i.e. there is no need for IPv4 on the 2 nodes we are deploying on, as long as we set a gateway on a gateway node.
 
+This guide also includes a comprehensive recovery section that provides step-by-step instructions for restoring your Nextcloud instance from Borgbackup files in case of deployment failure. With these recovery procedures, you can quickly rebuild your Nextcloud environment with minimal data loss.
+
 For now, let's see how to achieve this redundant deployment with Rsync!
 
 # 2-Node Terraform Deployment
@@ -315,14 +317,58 @@ We now set a daily cron job that will make a backup between the Nextcloud VM and
 
 > Note: To set Rsync with a script, [read this documentation](../../computer_it_basics/file_transfer.md#automate-backup-with-rsync). 
 
-# Future Projects
+# Recovery from Borgbackup
 
-This concept can be expanded in many directions. We can generate a script to facilitate the process, we can set a script directly in an FList for minimal user configurations, we can also explore Mariadb and GlusterFS instead of Rsync.
+If your Nextcloud deployment fails but you have access to your Borgbackup files, you can restore your entire instance following these recovery procedures.
 
-As a generic deployment, we can develop a weblet that makes a daily backup of any other ThreeFold Playground weblet. 
+## 1. Deploy a New Nextcloud Instance
 
-# Questions and Feedback
+First, deploy a new Nextcloud AIO instance following the Terraform deployment steps presented in this guide. Do not start the containers yet.
 
-We invite others to propose ideas and codes if they feel inspired!
+## 2. Access Your Backup Files
 
-If you have any questions or feedback, please let us know by either writing a post on the [ThreeFold Forum](https://forum.threefold.io/), or by chatting with us on the [TF Grid Tester Community](https://t.me/threefoldtesting) Telegram channel.
+You have two options to access your backup files:
+
+- **From Primary VM Backup**: If your first VM failed but you can still access the backup files in `/mnt/backup/borg`
+- **From Secondary VM Backup**: If you have the Rsync backup from your secondary VM
+
+## 3. Prepare for Restoration
+
+You'll need:
+- The Borg repository (the backup files folder)
+- The encryption password that was shown in the AIO interface when you created your first backup
+
+## 4. Restore from the AIO Interface
+
+1. On your new Terraform deployment, access the AIO interface at port 8080 (e.g., `https://ip.address.of.this.server:8080`)
+2. During the initial setup, select "Restore former AIO instance from backup"
+3. Enter the encryption password from your old backup
+4. Specify the path to the backup folder (without the "borg" part), for example:
+   - If your backup is at `/mnt/backup/borg`, enter `/mnt/backup`
+   - If you copied your backup to a new location, provide that path
+5. Click "Submit location and password"
+6. Choose the latest backup from the dropdown and click "Restore selected backup"
+7. Wait for the restoration process to complete
+8. Start the containers through the AIO interface
+
+## 5. Verification
+
+After restoration is complete:
+1. Access your Nextcloud instance through your domain
+2. Verify that your files, users, and applications are properly restored
+3. Check that all services are working correctly
+4. Configure a new backup schedule to ensure continued data protection
+
+## Troubleshooting Recovery
+
+If you encounter issues during recovery:
+
+- **Incorrect Password**: Double-check the encryption password is correct (it's case-sensitive)
+- **Backup Path Issues**: Ensure the path points to the directory containing the "borg" folder, not the "borg" folder itself
+- **Permission Problems**: If using a copied backup, ensure the permissions are set correctly with `chown -R 33:0` and `chmod -R 750`
+- **Database Errors**: If you see database errors after restore, try running maintenance commands through the Nextcloud container:
+  ```
+  sudo docker exec --user www-data -it nextcloud-aio-nextcloud php occ maintenance:repair
+  ```
+
+By following these steps, you should be able to successfully recover your Nextcloud deployment from your Borgbackup files, ensuring minimal data loss in case of a deployment failure.
