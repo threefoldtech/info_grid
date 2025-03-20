@@ -63,7 +63,7 @@ To generate the QR Code, select the chain you want to use, Stellar or TFChain, e
 
 > Note: The memo option is only available for Stellar, not for TFChain. 
 
-#### Bridge Assets
+#### Bridge Assets (TFChain)
 
 You can bridge TFT between TFChain and Stellar chain.
 
@@ -74,6 +74,22 @@ To bridge TFT, follow the steps below:
 - Set the direction of the bridge
   - TFChain to Stellar
   - Stellar to TFChain
+- **To**: Enter the address of the receiver
+  - Optional: Click on the icon on the right to set a wallet or favorite address 
+- **Amount**: Enter the amount to send
+- Click `Submit` to submit the bridge transfer
+- Click `Confirm` to finalize the transaction
+
+#### Bridge Assets (Solana)
+
+You can bridge TFT from Stellar to Solana. 
+
+> Note: You cannot bridge from Solana to Stellar.
+
+<img src="./img/bridge_stellar_solana.jpg" style="width: 55%;">
+
+To bridge TFT, follow the steps below:
+
 - **To**: Enter the address of the receiver
   - Optional: Click on the icon on the right to set a wallet or favorite address 
 - **Amount**: Enter the amount to send
