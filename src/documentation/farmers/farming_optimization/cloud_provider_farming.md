@@ -18,6 +18,7 @@ To deploy on those nodes, you can either use the Next Dashboard link above or de
 
 You first need to order a dedicated server from Hetzner with the following specs. You can consult the [Hetzner Server Auction page](https://www.hetzner.com/sb/).
 
+**Recommended Hetzner Server Specifications**
 - NVMe: First filter on NVMe only servers with 'Drives' > 'NVMe SSD'
 - Preferred CPU: Intel Core i7-8700 / AMD Ryzen 5 3600.
   - Try to find the best deals in the first pages.
@@ -32,37 +33,47 @@ You first need to order a dedicated server from Hetzner with the following specs
 - Location
   - No preferred location.
 
-Once you get a server with Hetzner, it will be delivered booted in the Hetzner rescue mode. From this, we can install ZMachine Light.
+Once you get a server with Hetzner, it will be delivered booted in the Hetzner rescue mode with `UEFI` enabled. From this, we can install ZMachine Light. Make sure to use a `UEFI` ZOS bootstrap image.
 
 ## OVH Server Specs
 
 You'll need to order a dedicated server from OVH with hardware specifications that meet Zero-OS requirements. Visit the [OVH Dedicated Server](https://www.ovhcloud.com/en/bare-metal/prices/) page to explore available options.
 
-### Recommended OVH Server Specifications:
+**Recommended OVH Server Specifications**
 - **CPU**: Intel or AMD processors with good single-thread performance
   - Avoid very old CPU models for optimal performance
 - **RAM**: Minimum 32GB recommended for productive nodes
 - **Storage**: Servers with NVMe drives are preferred for better performance
 - **Networking**: Default networking configuration is sufficient
 
-After ordering, boot your server into `CUSTOMER RESCUE` mode through the OVH control panel. This is required to install ZMachine Light in the following steps.
+After ordering, boot your server into `CUSTOMER RESCUE` mode with `UEFI` enabled through the OVH control panel. This is required to install ZMachine Light in the following steps. Make sure to use a `UEFI` ZOS image.
 
-### OVH-Specific DDoS Protection Configuration
+### OVH DDOS Protection
 
-When deploying ZOS nodes on OVH, you will need to request a special DDoS protection profile adjustment. OVH's default DDoS protection may trigger false positives due to the UDP traffic patterns of Zero-OS nodes, which can disrupt your node's connectivity.
+When a Zero-OS node is deployed on OVH, you may receive automated emails about their DDOS protection being activated. This is normal behavior and does not indicate any actual problems with your node.
 
-#### DDoS Protection Adjustment Process
+**What Happens**
+- Certain UDP traffic patterns on your node can trigger OVH's automatic DDOS protection
+- This protection activates for approximately 10 minutes before disabling itself
+- You will receive notification emails when protection is enabled and disabled
 
-1. After deploying your ZOS node, monitor for any connectivity issues
-2. If you notice your node going offline unexpectedly, open a support ticket with OVH
-3. Request the following:
-   - "Please adjust the DDoS protection profile for my server (provide your IP address) to match the profile used for IP 51.77.66.70, which has been configured for Zero-OS nodes"
-   - Explain that your server is running Zero-OS and requires appropriate thresholds to prevent false DDoS triggers from UDP traffic
+**Important Notes**
+- Your node remains online and functional during these protection periods
+- No actual DDOS attack is occurring - this is just OVH's security system working as designed
+- The multiple notification emails from OVH can be safely disregarded
 
-#### Important Notes
+**Update UDP Profile**
+
+You can update the UDP profile so these email alerts stop.
+
+- Request the following:
+  - "Please adjust the DDoS protection profile for my server (provide your IP address) to match the profile used for IP 51.77.66.70, which has been configured for Zero-OS nodes"
+- Explain that your server is running Zero-OS and requires appropriate thresholds to prevent false DDoS triggers from UDP traffic
+
+**Important Notes**
 
 - This profile adjustment must be requested for each new ZOS server you deploy on OVH
-- There is currently no standard profile name or automatic process - you need to specifically reference the existing working profile (IP 51.77.66.70) in your request
+- There is currently no standard profile name or automatic process - you need to specifically reference the existing working profile in your request
 - OVH support does not provide details about the specific changes made to the DDoS protection thresholds
 - After the profile change, monitor your node to ensure the issue is resolved
 
