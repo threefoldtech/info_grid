@@ -14,7 +14,7 @@
 
 __Process__ :
 
-![ ](./img/solutions_jenkins1.png)
+![ ](./img/solutions_jenkins.png)
 
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. ***fw100myfunk*.gent02.dev.grid.tf**
 
@@ -30,7 +30,8 @@ __Process__ :
    - `Public IPv6` flag gives the virtual machine a Public IPv6
    - `Planetary Network` flag gives the virtual machine an Yggdrasil address
    - `Mycelium` flag gives the virtual machine a Mycelium address
-- `Dedicated` flag to retrieve only [dedicated nodes](../deploy/node_finder.md#dedicated-nodes) (rentable or rented by you)
+- `Rented By Me` flag to retrieve nodes currently reserved by you
+- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../deploy/node_finder.md#dedicated-nodes)
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
    - `Region`
