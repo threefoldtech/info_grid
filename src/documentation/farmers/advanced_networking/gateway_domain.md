@@ -21,9 +21,9 @@ If you do it the other way around (public config first then DNS records), the no
 Set up the following DNS records with the DNS registrar:
 
 ```
-gatewaydomain.com                    A       ip.of.the.gateway
-*.gatewaydomain.com                  CNAME   gatewaydomain.com
-__acme-challenge.gatewaydomain.com   NS      gatewaydomain.com / ns.gatewaydomain.com
+gatewaydomain.com                   A       ip.of.the.gateway
+*.gatewaydomain.com                 CNAME   gatewaydomain.com
+_acme-challenge.gatewaydomain.com   NS      gatewaydomain.com / ns.gatewaydomain.com
 ```
 
 Some DNS providers only allow NS records that start with the letters "ns". In this case the second form using the "ns" subdomains is fine—it will fall under the CNAME wildcard and ultimately resolve the the gateway's IP address.
