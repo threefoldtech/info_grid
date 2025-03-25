@@ -22,8 +22,7 @@ Read the [Dashboard section](../../dashboard/tfchain/tf_token_bridge.md) for mor
    * Transfer TFT from TFChain to Stellar
       * Click on *Withdraw*
 
-Note: If you are on ThreeFold Connect App, you can export your account to the Polkadot extension. Look at the section [Move Farm from the TF app to the TF Portal (polkadot.js)](../storing_tft/tf_connect_app.md#move-farm-from-the-tf-connect-app-to-the-tf-portal-polkadotjs).
-
+Note: To withdraw, make sure to use a valid Stellar address. Do not use the Stellar Bridge address from the `Deposit` page.
 
 
 ## Bridge Fees
