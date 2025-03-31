@@ -1,9 +1,5 @@
 <h1> Farming Reward </h1>
 
-
-
-> Note: Farming rewards will be updated for the next 3.14 grid release. Stay tuned.
-
 ## Introduction
 
 The amount of TFT earned by farmers is relative to the amount of compute, storage or network capacity they provide to the ThreeFold Grid as recorded by the proof-of-capacity algorythm. This section covers some farming and token reward basics. 
