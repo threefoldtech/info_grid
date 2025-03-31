@@ -84,7 +84,7 @@ To bridge TFT, follow the steps below:
 
 You can bridge TFT from Stellar to Solana. 
 
-> Note: You cannot bridge from Solana to Stellar.
+> Important: Make sure to create an associated token account on Solana for TFT. Read [this section](../threefold_token/tft_bridges/stellar_solana/stellar_solana_ata.md) for more information.
 
 <img src="./img/bridge_stellar_solana.jpg" style="width: 55%;">
 
@@ -95,6 +95,8 @@ To bridge TFT, follow the steps below:
 - **Amount**: Enter the amount to send
 - Click `Submit` to submit the bridge transfer
 - Click `Confirm` to finalize the transaction
+
+> Note: You cannot bridge from Solana to Stellar.
 
 ### Wallet Transactions
 
