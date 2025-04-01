@@ -14,7 +14,7 @@ const FeatureList = [
     iconColor: '#1ba18e',
     description: (
       <>
-        Documentation for deploying and using ThreeFold Grid services.
+        Documentation to deploy on the ThreeFold Grid.
         Deploy VMs, set up Mycelium and web gateways, connect securely to your workloads.
       </>
     ),

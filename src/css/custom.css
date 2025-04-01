@@ -4,6 +4,46 @@
  * work well for content-centric websites.
  */
 
+/* Add @font-face declarations for the Inter font */
+@font-face {
+  font-family: 'Inter';
+  font-weight: 400; /* Light */
+  font-style: normal;
+  src: url('/fonts/Inter_28pt-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 500; /* Regular */
+  font-style: normal;
+  src: url('/fonts/Inter_28pt-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-weight: 600; /* Medium */
+  font-style: normal;
+  src: url('/fonts/Inter_28pt-Medium.ttf') format('truetype');
+}
+
+/* Apply the Inter font globally */
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+}
+
+/* Header styles - Medium weight for headers */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Paragraph styles - Light weight for paragraphs */
+p {
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
 /* You can override the default Infima variables here. */
 :root {
   /* Primary teal color */
@@ -25,6 +65,12 @@
   --ifm-footer-background-color: var(--tf-color-black);
   
   --ifm-code-font-size: 95%;
+  
+  /* Apply scroll margin to footnote targets */
+  --scroll-margin-top: 80px;
+  
+  /* Added SVG fill color variable for light mode */
+  --svg-fill-color: #202021;
 }
 
 .docusaurus-highlight-code-line {
@@ -40,6 +86,43 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* Dark mode styles */
+html[data-theme="dark"] {
+  --svg-fill-color: #fff; /* White fill for dark mode */
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #8d8d8d; /* Grey primary color for dark mode */
+  --ifm-color-primary-dark: #7f7f7f;
+  --ifm-color-primary-darker: #777777;
+  --ifm-color-primary-darkest: #626262;
+  --ifm-color-primary-light: #9b9b9b;
+  --ifm-color-primary-lighter: #a3a3a3;
+  --ifm-color-primary-lightest: #b8b8b8;
+  
+  /* Override homepage feature icons to use grey in dark mode */
+  --feature-icon-color: #8d8d8d;
+}
+
+/* Apply the SVG fill color to icons */
+img.svg-icon {
+  fill: var(--svg-fill-color);
+}
+
+/* Override feature icons colors in dark mode */
+/* This will override the inline styles to ensure correct colors in both themes */
+html[data-theme='dark'] .fa-user,
+html[data-theme='dark'] .fa-server,
+html[data-theme='dark'] .fa-code {
+  color: #8d8d8d !important; /* Grey color for dark mode */
+}
+
+/* Apply scroll margin to footnote targets */
+[data-footnote-ref="true"] {
+  scroll-margin-top: 80px; /* Adjust this value to match your navbar height */
+}
+
 /* Custom footer styling */
 .footer {
   background-color: var(--tf-color-lightgrey) !important;
@@ -48,6 +131,12 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 
 .footer__link-item {
   color: var(--tf-color-black);
+  transition: color 0.2s ease;
+}
+
+/* Hover effect for footer links in light mode */
+.footer__link-item:hover {
+  color: var(--ifm-color-primary); /* Teal on hover */
 }
 
 .footer__title {
@@ -65,37 +154,128 @@ html[data-theme='dark'] .footer__title {
   color: white;
 }
 
-/* Custom navbar styling */
-.navbar {
-  background-color: var(--tf-color-lightgrey);
+/* Hover effect for footer links in dark mode */
+html[data-theme='dark'] .footer__link-item:hover {
+  color: #b8b8b8; /* Lighter grey on hover */
 }
 
+/* =================== */
+/* Navbar styling - consolidated */
+/* =================== */
+
+/* Basic navbar styling */
+.navbar {
+  background-color: white;
+}
+
+/* Dark mode navbar */
 html[data-theme='dark'] .navbar {
   background-color: var(--tf-color-black) !important;
 }
 
+/* Logo styling */
 .navbar__logo {
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 100%;
   padding: 0;
   margin: 0;
 }
 
 .navbar__logo img {
-  height: 1.1rem; /* Further reduced logo height */
+  height: 0.5rem !important; /* Small logo as requested */
   width: auto;
-  display: block;
-  position: relative;
-  top: 10; /* Adjust this value if needed: negative moves up, positive moves down */
   margin: auto;
-  padding-bottom: 12px; /* Added padding below the logo */
+  padding: 0.2rem;
+  max-width: 150px;
 }
 
+/* Navbar items styling */
 .navbar__item {
-  font-size: 1.25rem; /* Further increased navbar items font size */
-  font-weight: 500;
+  font-size: 1.25rem; /* Prominent navbar items */
+  font-weight: 500; /* Normal weight */
   padding: 0.5rem 1.2rem;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05rem; /* Emphasis */
+  color: var(--tf-color-grey); /* Grey text */
+  display: flex;
+  align-items: center;
 }
+
+/* Navbar links styling */
+.navbar__link {
+  padding: 8px 12px;
+  color: var(--tf-color-grey); /* Grey text */
+  transition: color 0.2s ease;
+}
+
+/* Hover effects for light mode */
+.navbar__link:hover {
+  color: var(--ifm-color-primary); /* Teal color on hover */
+}
+
+/* Active links styling for both modes */
+.navbar__link--active,
+.navbar__item--active {
+  color: var(--ifm-color-primary) !important; /* Teal for active links */
+}
+
+/* Dark mode text colors */
+html[data-theme='dark'] .navbar__link,
+html[data-theme='dark'] .navbar__item {
+  color: white;
+}
+
+/* Dark mode hover effects */
+html[data-theme='dark'] .navbar__link:hover {
+  color: #b8b8b8; /* Lighter grey on hover */
+}
+
+/* Fix sidebar text color in light mode to use black */
+.menu__link {
+  color: var(--tf-color-black);
+  transition: color 0.2s ease;
+}
+
+/* Hover effect for sidebar links in light mode */
+.menu__link:hover {
+  color: var(--ifm-color-primary); /* Teal color on hover in light mode */
+}
+
+/* Make active sidebar link use teal color in light mode */
+.menu__link--active:not(.menu__link--sublist) {
+  color: var(--ifm-color-primary);
+}
+
+/* Ensure all content text uses black in light mode */
+.markdown, 
+.markdown p,
+.markdown li,
+.markdown a:not(.menu__link--active),
+.table-of-contents__link {
+  color: var(--tf-color-black);
+}
+
+/* Dark mode overrides for sidebar and content text */
+html[data-theme='dark'] .menu__link {
+  color: white;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect for sidebar links in dark mode */
+html[data-theme='dark'] .menu__link:hover {
+  color: #b8b8b8; /* Lighter grey on hover in dark mode */
+}
+
+html[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
+  color: var(--ifm-color-primary);
+}
+
+html[data-theme='dark'] .markdown,
+html[data-theme='dark'] .markdown p,
+html[data-theme='dark'] .markdown li,
+html[data-theme='dark'] .markdown a:not(.menu__link--active),
+html[data-theme='dark'] .table-of-contents__link {
+  color: white;
+}
+
+
