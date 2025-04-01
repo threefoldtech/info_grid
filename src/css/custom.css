@@ -1,0 +1,101 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  /* Primary teal color */
+  --ifm-color-primary: #1ba18e;
+  --ifm-color-primary-dark: #188980;
+  --ifm-color-primary-darker: #168178;
+  --ifm-color-primary-darkest: #126a63;
+  --ifm-color-primary-light: #1eb99c;
+  --ifm-color-primary-lighter: #1fc4a5;
+  --ifm-color-primary-lightest: #25dab9;
+  
+  /* ThreeFold additional colors */
+  --tf-color-grey: #424242;
+  --tf-color-black: #202021;
+  --tf-color-darkblue: #313946;
+  --tf-color-lightgrey: #f5f5f5;
+  
+  /* Override Docusaurus variables */
+  --ifm-footer-background-color: var(--tf-color-black);
+  
+  --ifm-code-font-size: 95%;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom footer styling */
+.footer {
+  background-color: var(--tf-color-lightgrey) !important;
+  color: var(--tf-color-black);
+}
+
+.footer__link-item {
+  color: var(--tf-color-black);
+}
+
+.footer__title {
+  color: var(--tf-color-black);
+  font-weight: 600;
+}
+
+html[data-theme='dark'] .footer {
+  background-color: var(--tf-color-black) !important;
+  color: white;
+}
+
+html[data-theme='dark'] .footer__link-item,
+html[data-theme='dark'] .footer__title {
+  color: white;
+}
+
+/* Custom navbar styling */
+.navbar {
+  background-color: var(--tf-color-lightgrey);
+}
+
+html[data-theme='dark'] .navbar {
+  background-color: var(--tf-color-black) !important;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar__logo img {
+  height: 1.1rem; /* Further reduced logo height */
+  width: auto;
+  display: block;
+  position: relative;
+  top: 10; /* Adjust this value if needed: negative moves up, positive moves down */
+  margin: auto;
+  padding-bottom: 12px; /* Added padding below the logo */
+}
+
+.navbar__item {
+  font-size: 1.25rem; /* Further increased navbar items font size */
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  letter-spacing: 0.03em;
+}
