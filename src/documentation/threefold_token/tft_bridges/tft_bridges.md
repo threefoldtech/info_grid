@@ -13,15 +13,17 @@ The following diagram shows the different bridges and ways to transfer ThreeFold
 ```mermaid
 
 graph LR
-    A((TFChain-MainNet)) === id1(Stellar / TFChain Mainnet Bridge) === B((Stellar Chain));
-    C((TFChain-TestNet)) === id2(Stellar / TFChain Testnet Bridge) === B((Stellar Chain));
-    B((Stellar Chain)) === id3(Stellar / BSC Bridge) === E((Binance Smart Chain));
-    B((Stellar Chain)) === id4(Stellar / Eth Bridge) === D((Ethereum Chain));
+    A((TFChain-MainNet)) <--> id1(Stellar / TFChain Mainnet Bridge) <--> B((Stellar Chain));
+    C((TFChain-TestNet)) <--> id2(Stellar / TFChain Testnet Bridge) <--> B((Stellar Chain));
+    B((Stellar Chain)) <--> id3(Stellar / BSC Bridge) <--> E((Binance Smart Chain));
+    B((Stellar Chain)) <--> id4(Stellar / Eth Bridge) <--> D((Ethereum Chain));
+    B((Stellar Chain)) --> id5(Stellar / Solana Bridge) --> F((Solana Chain));
 
     click id1 "./tfchain_stellar_bridge.html"
     click id2 "./tfchain_stellar_bridge.html"
     click id3 "./bsc_stellar_bridge.html"
     click id4 "./tft_ethereum/tft_ethereum.html"
+    click id5 "./stellar_solana/stellar_solana_bridge.html"
 
 ```
 
@@ -41,6 +43,9 @@ The links to the bridges for TFT are the following:
 * Stellar-TFChain Testnet Bridge
   * This bridge is accessible on the ThreeFold Testnet Dashboard: [https://dashboard.test.grid.tf/](https://dashboard.test.grid.tf/).
   * Read [this guide](./tfchain_stellar_bridge.html) for more information
+* Stellar-Solana Bridge
+  * This bridge is accessible on the ThreeFold Connect app.
+  * Read [this guide](./stellar_solana/stellar_solana_bridge.md) for more information
 
 ## Chains Functions
 
@@ -49,6 +54,7 @@ The different bridges help you move your TFT and achieve different goals:
 * The TFChain-Stellar Bridge is used to go between the Stellar Chain and TF Chain for Main net and Test net.
 * The BSC-Stellar Bridge is used to go between the Stellar Chain and Binance Smart Chain (BSC).
 * The Stellar-Ethereum Bridge is used to go between the Stellar Chain and the Ethereum blockchain.
+* The Stellar-Solana Bridge is used to go between the Stellar Chain and the Solana blockchain.
 
 As shown in the diagram, to go from BSC to TF Chain, or from TF Chain to BSC, you need to use first the BSC-Stellar bridge, then the Stellar-TFChain bridge. To go from the Ethereum blockchain to TFChain, you need to use the Ethereum-Stellar bridge then the Stellar-TFChain bridge.
 
