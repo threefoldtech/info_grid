@@ -114,6 +114,10 @@ To configure public IP addresses to a specific Node
 
 > The IPv6 address and the Domain are optional but if you provide The IPv6 you have to provide its Domain.
 
+#### Required: ISP-Provided IP Blocks Only
+
+The IP addresses you add to your farm must be from dedicated ISP IP blocks, not regular consumer IP addresses. You need to obtain proper IP blocks from your Internet Service Provider (ISP) that are specifically assigned for this purpose. Standard router IP addresses cannot be used.
+
 #### The Difference Between IPs Assigned to Nodes Versus a Farm
 
-IPs assigned to a farm are available to be rented by workloads. They can be assigned to virtual machines for example. IPs assigned to nodes enable each node to become a gateway.
+IPs assigned to a farm are available to be rented by workloads. They can be assigned to virtual machines for example. IPs assigned to nodes enable each node to become a [gateway](../../../knowledge_base/technology/primitives/network/webgw3.md).

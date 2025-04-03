@@ -82,3 +82,15 @@ The below table expands on CU, SU, NU and IPAddr and their farming rewards:
 > **The rewards above are calculated according to the current TFT to USD price in TFChain of 0.08. TFDAO is responsible to change this price in accordance to the current market and liquidity.**
 
 The above farming rewards apply for 3Nodes registered in TFChain for ThreeFold Grid v3. Anyone can calculate their potential rewards using the [Farming Reward Simulator](https://dashboard.grid.tf/#/farms/simulator/). The same CU, SU, NU and IPAddr principles apply to the sales of Internet capacity in the form of [cloud units](../cloud/cloudunits.md).
+
+## Reward Simulator
+
+You can use the Dashboard Farming Calculator to simulate capacity rewards. To simulate rewards, follow those steps:
+
+- Access the Farming Calculator on the Dashboard via this [link](https://dashboard.grid.tf/#/farms/simulator/)
+- Choose `DIY`
+- Enter your node specs in the calculator
+- Set the TFT selling price in `Maximum Token Price`
+- Check the rewards over a given period of time
+
+> Note: Capacity rewards are sent to Stellar chain.

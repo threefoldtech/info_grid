@@ -32,6 +32,17 @@ Every hour, the utilization is recorded in TFChain and the user is charged for t
 
 > Note: While the solution provider program is still active, the plan is to discontinue the program in the near future. We will update the manual as we get more information. We currently do not accept new solution providers.
 
+## Reward Simulator
+
+You can use the Dashboard Pricing Calculator to simulate utilization rewards. As a farmer, you will receive 50% of the utilization rewards. To simulate rewards, follow those steps:
+
+- Access the Pricing Calculator on the Dashboard via this [link](https://dashboard.grid.tf/#/deploy/pricing-calculator/)
+- Enter your node specs in the calculator
+- Check the renting price over a month
+- Divise the number by 2, as farmers receive 50%, to see the utilization rewards
+
+> Note: Utilization rewards are sent to TFChain.
+
 ## ThreeFold DAO rules in Relation To Proof-of-Utilization
 
 ### TFGrid Capacity Utilization
