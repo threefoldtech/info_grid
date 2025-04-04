@@ -1,19 +1,23 @@
 ---
-title: Farmer Documentation
+title: Become a Farmer
 sidebar_position: 1
+description: Learn about ThreeFold farming.
 ---
 
-# Farmer Documentation
+![](./img/become_farmer.png)
 
-Welcome to the ThreeFold Grid Farmer Documentation. This section provides basic farmer documentation for setting up and maintaining farms on the ThreeFold Grid.
+> Become a contributor of storage, compute & network capacity to the ThreeFold Grid.
 
-## What you can do as a farmer
+ThreeFold Farming is a unique concept in the ThreeFold ecosystem where individuals, called farmers, can:
 
-- Set up a ThreeFold farm
-- Perform basic farming operations with step-by-step guidance
-- Maintain your farm with documented procedures
-- Find solutions in our FAQ and troubleshooting section
+- Deploy nodes (3Nodes) that connect to the ThreeFold Grid
+- Contribute computing resources (data, cloud and network) to the decentralized ThreeFold Grid
+- Earn rewards for providing capacity on the grid
+- Earn rewards when there is utilization on their nodes
+- Support a peer-to-peer cloud infrastructure alternative to centralized providers
 
-## Getting Started
+## A Farmer's Journey
 
-Explore the sidebar to learn how to set up and manage your farm on the ThreeFold Grid.
+ThreeFold farmers are individuals and organizations who operate nodes that provide capacity to the ThreeFold network. Since these nodes are standard computer hardware that runs ThreeFold's self-healing Zero-OS operating system, farmers simply need to provide electricity and network connectivity to the nodes. As the nodes operate mostly autonomously, little to no administration work is required by the farmers, though they may need to replace faulty hardware from time to time.
+
+Farmers have been the backbone of the grid for years now. Thanks to every farmer out there!
