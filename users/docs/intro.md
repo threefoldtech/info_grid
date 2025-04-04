@@ -1,21 +1,15 @@
 ---
-title: User Documentation
+title: Deploy on the Grid
 sidebar_position: 1
 ---
 
-# User Documentation
-
 Welcome to the ThreeFold Grid User Documentation. This section provides basic user documentation for deploying and using ThreeFold Grid services.
 
-## What you can do as a user
+## First Steps
 
-- Deploy a VM with Dashboard UI
-- Deploy a VM with HeroScript
-- Set up web gateway and domain
-- Access over mycelium
-- Access over wireguard
-- Find answers in our FAQ and common use cases
+Here's what you can easily do on the ThreeFold Grid:
 
-## Getting Started
-
-Explore the sidebar to learn how to deploy and manage your workloads on the ThreeFold Grid.
+- Deploy VMs with the ThreeFold Dashboard
+- Access VMs over Mycelium
+- Access VMs over WireGuard
+- Set up web gateways and domains
