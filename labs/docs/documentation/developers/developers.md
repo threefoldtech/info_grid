@@ -7,7 +7,7 @@ sidebar_position: 71
 
 This section covers all practical tutorials on how to develop and build on the ThreeFold Grid.
 
-For complementary information on the technology developed by ThreeFold, refer to the [Technology](../../knowledge_base/technology/technology_toc.md) section.
+For complementary information on the technology developed by ThreeFold, refer to the [Technology](../../knowledge_base/technology_toc/technology_toc.md) section.
 
 **TABLE OF CONTENTS**
 

@@ -11,7 +11,7 @@ For practical information for farmers, developers and system administrators, ref
 
 **TABLE OF CONTENTS**
 
-- [Technology](./technology/technology_toc.md)
+- [Technology](./technology_toc/technology_toc.md)
 - [Release Notes](./releasenotes/releasenotes_readme.md)
 - [Farming](./farming/farming_toc.md)
 - [Cloud](./cloud/cloud_toc.md)

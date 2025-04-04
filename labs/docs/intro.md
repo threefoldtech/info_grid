@@ -16,7 +16,7 @@ This manual is organized in two main sections:
 
 The *ThreeFold Knowledge Base* section contains all information needed to understand how the whole ThreeFold ecosystem works. 
 
-The *ThreeFold Documentation* section contains all the practical information of the ThreeFold Grid, from general information covering the multi-functional [ThreeFold Dashboard](./documentation/dashboard/dashboard.md), the versatile [ThreeFold Connect app](./documentation/tfconnect/tfconnect_toc.md) and [TFT](./documentation/threefold_token/threefold_token.md), to specific tutorials for [developers](./documentation/developers/developers.md), [farmers](./documentation/farmers/farmers.md) and [system administrators](./documentation/system_administrators/system_administrators.md).
+The *ThreeFold Documentation* section contains all the practical information of the ThreeFold Grid, from general information covering the multi-functional [ThreeFold Dashboard](./documentation/dashboard/dashboard.md), the versatile [ThreeFold Connect app](./documentation/tfconnect_toc/tfconnect_toc.md) and [TFT](./documentation/threefold_token/threefold_token.md), to specific tutorials for [developers](./documentation/developers/developers.md), [farmers](./documentation/farmers/farmers.md) and [system administrators](./documentation/system_administrators/system_administrators.md).
 
 > Explore the ThreeFold Grid status page for live updates on Threefold services!
 > 
@@ -37,7 +37,7 @@ If you want to deploy or develop on the grid, you will first need to get TFT on 
 
 To develop on the Grid, read the [developers documentation](./documentation/developers/developers.md).
 
-To deploy applications, read the [deploy section](./documentation/dashboard/deploy/deploy.md) then, if needed, [access the deployment via SSH](./documentation/system_administrators/getstarted/ssh_guide/ssh_guide.md).
+To deploy applications, read the [deploy section](./documentation/dashboard/deploy/deploy.md) then, if needed, [access the deployment via SSH](./documentation/system_administrators/tfgrid3_getstarted/ssh_guide/ssh_guide.md).
 
 ## Join the ThreeFold Community
 
