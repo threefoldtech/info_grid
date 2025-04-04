@@ -17,7 +17,7 @@ sidebar_position: 253
 - [Synced MariaDB Databases (SQL)](./terraform_mariadb_synced_databases.md)
 - [Synced CouchDB Databases (NoSQL)](./terraform_couchdb_synced_databases.md)
 - [Nomad](./terraform_nomad.md)
-- [Nextcloud Deployments](./terraform_nextcloud_toc.md)
+- [Nextcloud Deployments](./terraform_nextcloud_toc)
   - [Nextcloud All-in-One Deployment](./terraform_nextcloud_aio.md)
   - [Nextcloud Single Deployment](./terraform_nextcloud_single.md)
   - [Nextcloud Redundant Deployment](./terraform_nextcloud_redundant.md)

@@ -17,7 +17,7 @@ The ThreeFold Grid is a remarkable network sustained by dedicated individuals, k
 
 The ThreeFold Grid supports any application that can run on Linux, guaranteeing compatibility and flexibility. Moreover, it offers additional benefits, including enhanced privacy, security, proximity to end-users, and a significantly lower cost compared to traditional alternatives.
 
-> [Deploy on the TFGrid](../../documentation/system_administrators/getstarted/tfgrid3_getstarted.md)
+> [Deploy on the TFGrid](../../documentation/system_administrators/tfgrid3_getstarted/tfgrid3_getstarted.md)
 
 ## Z-OS: A New Operating System
 

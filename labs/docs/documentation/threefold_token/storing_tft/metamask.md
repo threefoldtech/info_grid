@@ -122,7 +122,7 @@ To deposit TFT tokens to your MetaMask BSC wallet, **you can only initiate a tra
 
 For example, you cannot transfer TFT tokens directly from the TFConnect app to MetaMask, because TFT tokens on TFT Connect operate on the Stellar network, while TFT on MetaMask lives on Binance Smart Chain (BSC) Network. 
 
-But don't worry! You can still swap your Stellar TFT into BSC TFT and vice versa by bridging them using our [TFT BSC Bridge](https://bridge.bsc.threefold.io/). See tutorial [here](../tft_bridges/bsc_stellar_bridge.md).
+But don't worry! You can still swap your Stellar TFT into BSC TFT and vice versa by bridging them using our [TFT BSC Bridge](https://bridge.bsc.threefold.io/). See tutorial [here](../tft_bridges/bsc_stellar_bridge).
 
 You can also buy TFTs on BSC-supported exchangers like [Pancake Swap](https://pancakeswap.finance/). See tutorial [here](../buy_sell_tft/pancakeswap.md)
 

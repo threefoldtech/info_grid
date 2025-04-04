@@ -12,8 +12,8 @@ For practical information for farmers, developers and system administrators, ref
 **TABLE OF CONTENTS**
 
 - [Technology](./technology_toc/technology_toc.md)
-- [Release Notes](./releasenotes/releasenotes_readme.md)
-- [Farming](./farming/farming_toc.md)
-- [Cloud](./cloud/cloud_toc.md)
-- [Collaboration](./collaboration/collaboration_toc.md)
-- [Legal](./legal/terms_conditions_all3.md)
+- [Release Notes](./releasenotes_readme/releasenotes_readme.md)
+- [Farming](./farming_toc/farming_toc.md)
+- [Cloud](./cloud_toc/cloud_toc.md)
+- [Collaboration](./collaboration_toc/collaboration_toc.md)
+- [Legal](./terms_conditions_all3/terms_conditions_all3.md)

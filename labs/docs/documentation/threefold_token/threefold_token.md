@@ -72,7 +72,7 @@ Each time transactions are done on chains, transaction fees apply.
 
 You can do almost anything on the TFGrid: as long as you're doing Linux stuff, ZOS got your back!
 
-> [Get Started on the TFGrid](../system_administrators/getstarted/tfgrid3_getstarted.md)
+> [Get Started on the TFGrid](../system_administrators/tfgrid3_getstarted/tfgrid3_getstarted.md)
 
 ## Disclaimer
 

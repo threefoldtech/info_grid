@@ -13,5 +13,5 @@ sidebar_position: 242
 - [Kubernetes Cluster](./terraform_k8s.md)
 - [ZDB](./terraform_zdb.md)
 - [Zlogs](./terraform_zlogs.md)
-- [Quantum Safe Filesystem](./terraform_qsfs.md)
+- [Quantum Safe Filesystem](./terraform_qsfs)
 - [CapRover](./terraform_caprover.md)

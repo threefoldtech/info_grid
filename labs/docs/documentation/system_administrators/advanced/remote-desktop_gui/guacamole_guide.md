@@ -17,7 +17,7 @@ With Apache Guacamole, a user can access different deployments and command serve
 
 This guide can be done on a Windows, MAC, or Linux computer. For more information on deploying a full VM and using SSH remote connection, read this [SSH guide](../../ssh_guide/ssh_guide.md).
 
-If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](../../tfgrid3_getstarted.md) of the Threefold Manual.
+If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](../../tfgrid3_getstarted) of the Threefold Manual.
 
 
 

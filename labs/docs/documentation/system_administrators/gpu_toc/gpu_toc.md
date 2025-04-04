@@ -14,7 +14,7 @@ Feel free to explore the different possibilities!
 - [GPU Support](./gpu.md)
 - [Node Finder and GPU](../../dashboard/deploy/node_finder.md#gpu-support)
 - [Javascript Client and GPU](../../developers/grid3_javascript_readme/grid3_javascript_gpu_support.md)
-- [GPU and Go](../../developers/grid3_go_readme/grid3_go_gpu.md)
+- [GPU and Go](../../developers/grid3_go_readme/grid3_go_gpu)
 - [TFCMD and GPU](../../developers/tfcmd/tfcmd_vm.md#deploy-a-vm-with-gpu)
 - [Terraform and GPU](../terraform_toc/terraform_gpu_support.md)
 - [Full VM and GPU](../../dashboard/solutions/fullVm.md)

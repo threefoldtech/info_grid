@@ -30,7 +30,7 @@ To use the Grid Client, you will need the following on the TFGrid:
 - A TFChain account
 - TFT in your wallet
 
-If it is not the case, please visit the [Get started section](../../system_administrators/getstarted/tfgrid3_getstarted.md).
+If it is not the case, please visit the [Get started section](../../system_administrators/tfgrid3_getstarted/tfgrid3_getstarted.md).
 
 ## Installation
 

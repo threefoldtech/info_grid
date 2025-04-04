@@ -89,7 +89,7 @@ There are three main solution categories on the TFGrid: DIY workloads, independe
 
 ## DIY Workloads
 
-Out-of-the-box applications are available on the [TF Dashboard](../../../documentation/dashboard/deploy/applications.md) and [Terraform](../../../documentation/system_administrators/terraform/terraform_toc.md), where anyone can [buy TFTs](../../../documentation/threefold_token/buy_sell_tft/buy_sell_tft.md) and deploy on the decentralized and open-source grid. The reliability of those deployments depend on the capacity and resources of each DIY system administrator.
+Out-of-the-box applications are available on the [TF Dashboard](../../../documentation/dashboard/deploy/applications) and [Terraform](../../../documentation/system_administrators/terraform/terraform_toc.md), where anyone can [buy TFTs](../../../documentation/threefold_token/buy_sell_tft/buy_sell_tft.md) and deploy on the decentralized and open-source grid. The reliability of those deployments depend on the capacity and resources of each DIY system administrator.
 
 In essence, when you deploy on the decentralized and open-source TFGrid, you act as a centralized entity building the solution architecture. You must design the solution in a way that it can be reliable with high-availability and resilience levels that suit the needs of your project.
 
@@ -101,7 +101,7 @@ Since the TFGrid is open-source, anyone could decide to build a commercial offer
 
 In this case, the commercial offering is the centralized entity and if the company makes a mistake, it would be liable to the users to the extent discussed in the T&C.
 
-The ThreeFold Manual already contains a lot of resourceful information on how to [deploy applications](../../../documentation/dashboard/deploy/applications.md) on the TFGrid. We invite everyone to develop independent commercial offerings on top of the ThreeFold Grid.
+The ThreeFold Manual already contains a lot of resourceful information on how to [deploy applications](../../../documentation/dashboard/deploy/applications) on the TFGrid. We invite everyone to develop independent commercial offerings on top of the ThreeFold Grid.
 
 ## ThreeFold Commercial Offerings
 

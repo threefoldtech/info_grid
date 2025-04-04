@@ -17,7 +17,7 @@ For a complete guide on deploying a full VM on the TFGrid, read [this documentat
 
 Here are the requirements to use Terraform on the TFGrid:
 
-- [Set your TFGrid account](../getstarted/tfgrid3_getstarted.md)
+- [Set your TFGrid account](../tfgrid3_getstarted/tfgrid3_getstarted.md)
 - [Install Terraform](../terraform_toc/terraform_install.md)
 
 ## Basic Commands

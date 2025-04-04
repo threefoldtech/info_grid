@@ -64,7 +64,7 @@ When the owner of a contract runs out funds on his wallet to pay for his deploym
 
 ## DAO
 
-See [DAO](../../dashboard/tfchain/tf_dao.md) for more information on the DAO on TF Chain.
+See [DAO](../../dashboard/tfchain/tf_dao) for more information on the DAO on TF Chain.
 
 ## Farming Policies
 

@@ -43,7 +43,7 @@ When you have decided which node to reserve, click on **Reserve** under the colu
   
 ## Deploy a VM with GPU
 
-Now that you've reserverd a dedicated GPU node, it's time to deploy a VM to make use of the GPU! There are many ways to proceed. You can use the [Dashboard](../../dashboard/solutions/fullVm.md), [Go](../../developers/grid3_go_readme/grid3_go_gpu.md), [Terraform](../terraform_toc/terraform_gpu_support.md), etc.
+Now that you've reserverd a dedicated GPU node, it's time to deploy a VM to make use of the GPU! There are many ways to proceed. You can use the [Dashboard](../../dashboard/solutions/fullVm.md), [Go](../../developers/grid3_go_readme/grid3_go_gpu), [Terraform](../terraform_toc/terraform_gpu_support.md), etc.
 
 For example, deploying a VM with GPU on the Dashboard is easy. Simply set the GPU option and make sure to select your dedicated node, as show here:
 ![](./img/gpu_3.png)

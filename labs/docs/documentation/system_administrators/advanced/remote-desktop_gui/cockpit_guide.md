@@ -13,7 +13,7 @@ In this Threefold Guide, we show how easy it is to deploy a full VM and access C
 
 For more information on deploying a full VM and using SSH remote connection, read [this SSH guide](../../ssh_guide/ssh_guide.md).
 
-If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](../../tfgrid3_getstarted.md) of the Threefold Manual.
+If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](../../tfgrid3_getstarted) of the Threefold Manual.
 
 Note that the two sections [Change the Network System Daemon](#change-the-network-system-daemon) and [Set a Firewall](#set-a-firewall) are optional. That being said, they provide more features and security to the deployment.
 

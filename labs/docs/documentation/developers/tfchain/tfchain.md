@@ -3,11 +3,6 @@ title: "ThreeFold Chain"
 sidebar_position: 113
 ---
 
----
-title: "TFChain"
-sidebar_position: 54
----
-
 ## Introduction
 
 ThreeFold Chain (TFChain) is the base layer for everything that interacts with the grid. Nodes, farms, users are registered on the chain. It plays the central role in achieving decentralised consensus between a user and Node to deploy a certain workload. A contract can be created on the chain that is essentially an agreement between a node and user.
@@ -69,7 +64,7 @@ When the owner of a contract runs out funds on his wallet to pay for his deploym
 
 ## DAO
 
-See [DAO](../../dashboard/tfchain/tf_dao.md) for more information on the DAO on TF Chain.
+See [DAO](../../dashboard/tfchain/tf_dao) for more information on the DAO on TF Chain.
 
 ## Farming Policies
 

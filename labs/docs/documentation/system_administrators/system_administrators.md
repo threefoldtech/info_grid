@@ -11,7 +11,7 @@ For complementary information on the ThreeFold Grid and its cloud component, ref
 
 **TABLE OF CONTENTS**
 
-- [Getting Started](./getstarted/tfgrid3_getstarted.md)
+- [Getting Started](./tfgrid3_getstarted/tfgrid3_getstarted.md)
 - [Mycelium](./mycelium/mycelium_toc.md)
 - [Pulumi](./pulumi/pulumi_readme.md)
 - [GPU](./gpu/gpu_toc.md)
