@@ -3,7 +3,7 @@ title: "Build, Post Build & Memory"
 sidebar_position: 204
 ---
 
-<h1> Farming Troubleshooting Tips </h1>
+
 
 
 
@@ -110,7 +110,7 @@ Anyone experiencing frequently this issue where Z-OS sometimes detects an SSD as
   * **Sample size**: 10 MB is sufficient
 * Check the average access time on the [ThreeFold repository](https://www.github.com/threefoldtech/seektime)
   * Check seek time for HDD and SSD
-    * A SSD needs to be <=0.5ms
+    * A SSD needs to be \<=0.5ms
 * If the result is above 0.5ms, this is why Z-OS doesn't recognize the disk properly
   * You can then run diagnostics (e.g. smartmontools)
     * If this is not fixable, you should change disk (e.g. take a more performing disk)

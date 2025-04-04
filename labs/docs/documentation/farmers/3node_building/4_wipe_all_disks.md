@@ -3,7 +3,7 @@ title: "4. Wipe All the Disks"
 sidebar_position: 177
 ---
 
-<h1> 4. Wipe All the Disks </h1>
+
 
 ## Introduction
 

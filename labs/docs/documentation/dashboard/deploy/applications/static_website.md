@@ -3,7 +3,7 @@ title: "Static Website"
 sidebar_position: 39
 ---
 
-<h1> Static Website </h1>
+
 
 ## Introduction
 
@@ -29,9 +29,9 @@ Static Website is an application where a user provides a GitHub repository URL f
 
 - Select a capacity package:
 
-  - **Small**: {cpu: 1, memory: 2 , diskSize: 50 }
-  - **Medium**: {cpu: 2, memory: 4, diskSize: 100 }
-  - **Large**: {cpu: 4, memory: 16, diskSize: 250 }
+  - **Small**: \{cpu: 1, memory: 2 , diskSize: 50 \}
+  - **Medium**: \{cpu: 2, memory: 4, diskSize: 100 \}
+  - **Large**: \{cpu: 4, memory: 16, diskSize: 250 \}
   - Or choose a **Custom** plan
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4

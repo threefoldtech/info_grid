@@ -3,7 +3,7 @@ title: "Wallet Connector"
 sidebar_position: 6
 ---
 
-<h1> Wallet Connector </h1>
+
 
 ## Introduction
 

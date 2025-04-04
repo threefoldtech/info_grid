@@ -3,7 +3,7 @@ title: "IPFS"
 sidebar_position: 289
 ---
 
-<h1>IPFS and ThreeFold</h1>
+
 
 **TABLE OF CONTENTS**
 

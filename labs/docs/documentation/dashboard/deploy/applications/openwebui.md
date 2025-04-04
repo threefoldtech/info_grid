@@ -3,7 +3,7 @@ title: "Open WebUI"
 sidebar_position: 36
 ---
 
-<h1> Open Webui </h1>
+
 
 ## Introduction
 
@@ -35,9 +35,9 @@ CPU-only deployments require at least the Medium configuration for acceptable pe
 
 - Select a capacity package:
 
-  - **Small**: {cpu: 2, memory: 8 , diskSize: 25 }
-  - **Medium**: {cpu: 4, memory: 16, diskSize: 50 }
-  - **Large**: {cpu: 8, memory: 32, diskSize: 100 }
+  - **Small**: \{cpu: 2, memory: 8 , diskSize: 25 \}
+  - **Medium**: \{cpu: 4, memory: 16, diskSize: 50 \}
+  - **Large**: \{cpu: 8, memory: 32, diskSize: 100 \}
   - Or choose a **Custom** plan
 - Choose the network
    - `Mycelium` flag gives the virtual machine a Mycelium address

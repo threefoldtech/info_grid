@@ -3,7 +3,7 @@ title: "Coding Guides"
 sidebar_position: 139
 ---
 
-<h1> Coding Guides </h1>
+
 
 ## Introduction
 

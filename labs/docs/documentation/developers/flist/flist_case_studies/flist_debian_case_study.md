@@ -3,7 +3,7 @@ title: "Case Study: Debian 12"
 sidebar_position: 134
 ---
 
-<h1> Flist Case Study: Debian 12 </h1>
+
 
 ## Introduction
 

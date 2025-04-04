@@ -3,7 +3,7 @@ title: "Transaction Fees"
 sidebar_position: 327
 ---
 
-<h1> TFT Transaction Fees</h1>
+
 
 
 

@@ -3,7 +3,7 @@ title: "Deploy Multiple VMs"
 sidebar_position: 92
 ---
 
-<h1> Deploying Multiple VMs</h1>
+
 
 ## Introduction
 

@@ -3,7 +3,7 @@ title: "Jenkins"
 sidebar_position: 29
 ---
 
-<h1> Jenkins </h1>
+
 
 ## Introduction
 
@@ -26,9 +26,9 @@ __Process__ :
 - Enter administrator information including **Username**, and **Password**. This admin user will have full permission on the deployed instance.
 
 - Select a capacity package:
-    - **Small**: {cpu: 1, memory: 2, diskSize: 50 }
-    - **Medium**: {cpu: 2, memory: 4, diskSize: 100 }
-    - **Large**: {cpu: 4, memory: 16, diskSize: 250 }
+    - **Small**: \{cpu: 1, memory: 2, diskSize: 50\}
+    - **Medium**: \{cpu: 2, memory: 4, diskSize: 100\}
+    - **Large**: \{cpu: 4, memory: 16, diskSize: 250\}
     - Or choose a **Custom** plan
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4

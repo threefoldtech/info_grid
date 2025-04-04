@@ -3,7 +3,7 @@ title: "TFChain-Stellar Bridge"
 sidebar_position: 310
 ---
 
-<h1> TFChain-Stellar Bridges: Main Net and Test Net</h1>
+
 
 
 

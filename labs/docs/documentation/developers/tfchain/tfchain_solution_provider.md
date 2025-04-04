@@ -3,7 +3,7 @@ title: "Solution Provider"
 sidebar_position: 117
 ---
 
-<h1>Solution Provider</h1>
+
 
 ## Introduction
 
@@ -17,7 +17,7 @@ A "solution" is something running on the grid, created by a community member. Th
 
 This means contracts need to carry an optional solution code. If the code is not specified (default), the 50% goes entirely to the treasury (as is always the case today).
 
-A solution can be created by calling the extrinsic `smartContractModule` -> `createSolutionProvider` with parameters:
+A solution can be created by calling the extrinsic `smartContractModule` -\> `createSolutionProvider` with parameters:
 
 - description
 - link (to website)
@@ -40,11 +40,11 @@ When creating a contract, a `solution_provider_id` can be passed. An error will 
 
 Creating a provider is as easy as going to the [polkadotJS UI](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.dev.grid.tf#/extrinsics) (Currently only on devnet)
 
-Select module `SmartContractModule` -> `createSolutionProvider(..)`
+Select module `SmartContractModule` -\> `createSolutionProvider(..)`
 
 Fill in all the details, you can specify up to 5 target accounts which can have a take of the TFT generated from being a provider. Up to a total maximum of 50%. `Take` should be specified as a integer, example (`25`).
 
-Once this object is created, a forum post should be created here: <https://forum.threefold.io/>
+Once this object is created, a forum post should be created here: https://forum.threefold.io/
 
 ![](./img/create_provider.png)
 
@@ -68,7 +68,7 @@ After enough votes are reached, it can be closed:
 
 If the close was executed without error the solution should be approved and ready to be used
 
-Query the solution: `chainstate` -> `SmartContractModule` -> `solutionProviders`
+Query the solution: `chainstate` -\> `SmartContractModule` -\> `solutionProviders`
 
 ![](./img/query_provider.png)
 

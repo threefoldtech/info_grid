@@ -3,7 +3,7 @@ title: "Cloud"
 sidebar_position: 383
 ---
 
-<h1> Cloud </h1>
+
 
 This section covers the essential information concerning Cloud utilization.
 

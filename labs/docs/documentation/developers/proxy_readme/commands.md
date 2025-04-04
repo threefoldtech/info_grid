@@ -3,7 +3,7 @@ title: "Commands"
 sidebar_position: 122
 ---
 
-<h1>Commands</h1>
+
 
 ## Introduction
 

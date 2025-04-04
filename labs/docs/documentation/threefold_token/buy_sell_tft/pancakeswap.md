@@ -3,7 +3,7 @@ title: "Pancake Swap (BSC)"
 sidebar_position: 326
 ---
 
-<h1>Get TFT: Pancake Swap (BSC)</h1>
+
 
 
 

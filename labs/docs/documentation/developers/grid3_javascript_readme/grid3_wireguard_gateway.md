@@ -3,7 +3,7 @@ title: "VM with Wireguard and Gateway"
 sidebar_position: 86
 ---
 
-<h1> Deploying a VM with Wireguard and Gateway </h1>
+
 
 ## Introduction
 

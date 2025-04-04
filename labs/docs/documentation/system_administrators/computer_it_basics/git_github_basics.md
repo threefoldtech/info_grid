@@ -3,7 +3,7 @@ title: "Git and GitHub Basics"
 sidebar_position: 273
 ---
 
-<h1> Git and GitHub Basics </h1>
+
 
 
 

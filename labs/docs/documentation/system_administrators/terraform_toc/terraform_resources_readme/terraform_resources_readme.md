@@ -3,7 +3,7 @@ title: "Resources"
 sidebar_position: 242
 ---
 
-<h1> Terraform Resources </h1>
+
 
 **TABLE OF CONTENTS**
 

@@ -4,7 +4,7 @@ sidebar_position: 78
 ---
 
 
-<h1> Deploying multiple VMs</h1>
+
 
 ## Introduction
 

@@ -3,7 +3,7 @@ title: "Knowledge Base"
 sidebar_position: 328
 ---
 
-<h1> ThreeFold Knowledge Base </h1>
+
 
 The section contains information about the ThreeFold ecosystem, its technology and its history.
 

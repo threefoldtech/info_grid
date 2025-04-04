@@ -3,7 +3,7 @@ title: "Node ID Generation"
 sidebar_position: 148
 ---
 
-<h1> Node ID Generation</h1>
+
 
 ## Introduction
 

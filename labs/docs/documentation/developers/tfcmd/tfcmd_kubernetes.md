@@ -3,7 +3,7 @@ title: "Deploy Kubernetes"
 sidebar_position: 102
 ---
 
-<h1>Kubernetes</h1>
+
 
 ## Introduction
 

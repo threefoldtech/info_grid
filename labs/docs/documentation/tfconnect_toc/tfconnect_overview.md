@@ -3,7 +3,7 @@ title: "Overview"
 sidebar_position: 63
 ---
 
-<h1> ThreeFold Connect Overview </h1>
+
 
 
 

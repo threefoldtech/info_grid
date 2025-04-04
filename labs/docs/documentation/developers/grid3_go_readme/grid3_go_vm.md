@@ -3,7 +3,7 @@ title: "Deploy a VM"
 sidebar_position: 91
 ---
 
-<h1> Deploying a VM</h1>
+
 
 ## Introduction
 

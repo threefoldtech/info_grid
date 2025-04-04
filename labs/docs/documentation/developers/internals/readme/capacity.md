@@ -3,7 +3,7 @@ title: "Capacity"
 sidebar_position: 161
 ---
 
-<h1>Capacity</h1>
+
 
 ## Introduction
 

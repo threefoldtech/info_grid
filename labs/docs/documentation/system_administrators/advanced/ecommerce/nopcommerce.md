@@ -3,7 +3,7 @@ title: "nopCommerce"
 sidebar_position: 300
 ---
 
-<h1>Ecommerce on the TFGrid</h1>
+
 
 
 
@@ -128,7 +128,7 @@ You will need to set your ecommerce store and database information.
   * In the section **Advanced DNS**, add a **DNS A Record** to your domain and link it to the IP address of the VM you deployed on:
     * Type: A Record
     * Host: @
-    * Value: <IPv4_Address>
+    * Value: "IPv4_Address"
     * TTL: Automatic
   * It might take up to 30 minutes to set the DNS properly.
   * To check if the A record has been registered, you can use a common DNS checker:

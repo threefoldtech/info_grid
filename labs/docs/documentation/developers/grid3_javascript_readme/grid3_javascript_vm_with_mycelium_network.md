@@ -3,7 +3,7 @@ title: "Deploy a VM with Mycelium Network"
 sidebar_position: 76
 ---
 
-<h1> Deploying a VM with Mycelium Network</h1>
+
 
 ## Introduction
 

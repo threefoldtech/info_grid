@@ -3,7 +3,7 @@ title: "Introduction to RMB"
 sidebar_position: 138
 ---
 
-<h1> Introduction to Reliable Message Bus (RMB) </h1>
+
 
 ## Introduction
 

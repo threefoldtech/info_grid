@@ -3,7 +3,7 @@ title: "Micro and Full VM Differences"
 sidebar_position: 18
 ---
 
-<h1> Micro and Full VM Differences </h1>
+
 
 ## Introduction
 

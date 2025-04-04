@@ -3,7 +3,7 @@ title: "Nixos Micro VM"
 sidebar_position: 17
 ---
 
-<h1> NixOS MicroVM </h1>
+
 
 ## Introduction
 

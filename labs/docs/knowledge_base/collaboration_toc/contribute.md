@@ -3,7 +3,7 @@ title: "How to Contribute"
 sidebar_position: 393
 ---
 
-<h1> How to Contribute to the Threefold Manual </h1>
+
 
 
 

@@ -3,7 +3,7 @@ title: "CasperLabs"
 sidebar_position: 25
 ---
 
-<h1> CasperLabs </h1>
+
 
 ## Introduction
 
@@ -22,9 +22,9 @@ __Process__ :
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. ***cl98casp*.gent02.dev.grid.tf**
 
 - Select a capacity package:
-    - **Small**: {cpu: 2, memory: 4, diskSize: 100 }
-    - **Medium**: {cpu: 4, memory: 16, diskSize: 500 }
-    - **Large**: {cpu: 8, memory: 32, diskSize: 100 }
+    - **Small**: \{cpu: 2, memory: 4, diskSize: 100\}
+    - **Medium**: \{cpu: 4, memory: 16, diskSize: 500\}
+    - **Large**: \{cpu: 8, memory: 32, diskSize: 100\}
     - Or choose a **Custom** plan
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4

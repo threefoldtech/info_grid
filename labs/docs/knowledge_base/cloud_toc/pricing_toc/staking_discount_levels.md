@@ -3,7 +3,7 @@ title: "Staking Discounts"
 sidebar_position: 387
 ---
 
-<h1>Staking Discount Levels</h1>
+
 
 
 

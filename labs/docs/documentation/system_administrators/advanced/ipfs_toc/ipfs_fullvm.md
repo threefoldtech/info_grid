@@ -3,7 +3,7 @@ title: "IPFS on a Full VM"
 sidebar_position: 290
 ---
 
-<h1> IPFS on a Full VM</h1>
+
 
 
 

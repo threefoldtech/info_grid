@@ -3,7 +3,7 @@ title: "Node Finder"
 sidebar_position: 13
 ---
 
-<h1>Node Finder</h1>
+
 
 ## Overview
 

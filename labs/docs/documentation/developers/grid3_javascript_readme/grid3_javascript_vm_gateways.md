@@ -3,7 +3,7 @@ title: "Gateways"
 sidebar_position: 80
 ---
 
-<h1> Deploying a VM and exposing it over a Gateway Prefix </h1>
+
 
 ## Introduction
 

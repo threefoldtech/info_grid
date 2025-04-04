@@ -4,7 +4,7 @@ sidebar_position: 321
 ---
 
 
-<h1> Hardware Wallet </h1>
+
 
 
 

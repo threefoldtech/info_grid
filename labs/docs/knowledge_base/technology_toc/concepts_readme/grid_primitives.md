@@ -3,7 +3,7 @@ title: "TFGrid Primitives"
 sidebar_position: 333
 ---
 
-<h1> ThreeFold Grid Primitives: Empowering Your Solutions </h1>
+
 
 
 

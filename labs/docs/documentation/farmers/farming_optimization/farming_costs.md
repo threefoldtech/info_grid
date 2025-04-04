@@ -3,7 +3,7 @@ title: "Farming Costs"
 sidebar_position: 191
 ---
 
-<h1> Calculate the Farming Costs: Power, Internet and Total Costs</h1>
+
 
 
 

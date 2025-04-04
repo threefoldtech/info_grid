@@ -3,7 +3,7 @@ title: "Setup"
 sidebar_position: 156
 ---
 
-<h1>Setup</h1>
+
 
 ## Introduction
 

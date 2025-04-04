@@ -183,11 +183,13 @@ html[data-theme='dark'] .navbar {
 }
 
 .navbar__logo img {
-  height: 0.5rem !important; /* Small logo as requested */
+  max-height: 2.5rem !important; /* Increased logo size for better visibility */
   width: auto;
   margin: auto;
   padding: 0.2rem;
   max-width: 150px;
+  object-fit: contain; /* Preserve aspect ratio */
+  aspect-ratio: auto; /* Maintain natural aspect ratio */
 }
 
 /* Navbar items styling */

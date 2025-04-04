@@ -3,7 +3,7 @@ title: "Docker Basics"
 sidebar_position: 272
 ---
 
-<h1>Docker Basic Commands</h1>
+
 
 
 
@@ -76,15 +76,15 @@ To pull an image from [Docker Hub](https://hub.docker.com/):
 
 * Pull an image
   * ```
-    docker pull <image_name>
+    docker pull image_name
     ```
 * Pull an image with the tag
   * ```
-    docker pull <image_name>:tag
+    docker pull image_name:tag
     ```
 * Pull all tags of an image
   * ```
-    docker pull <image_name> -a
+    docker pull image_name -a
     ```
 
 
@@ -95,15 +95,15 @@ To pull an image to [Docker Hub](https://hub.docker.com/):
 
 * Push an image
   * ```
-    docker push <image_name>
+    docker push image_name
     ```
 * Push an image with the tag
   * ```
-    docker push <image_name>:tag
+    docker push image_name:tag
     ```
 * Push all tags of an image
   * ```
-    docker pull <image_name> -a
+    docker pull image_name -a
     ```
 
 
@@ -147,7 +147,7 @@ Use **docker build** to build a container based on a Dockerfile
 * Build a container and store the image with a given name
   * Template
     * ```
-      docker build -t "<image_name>:<tag>"
+      docker build -t "image_name:<tag>"
       ```
   * Example
     * ```
@@ -174,20 +174,20 @@ To run a container based on an image, use the command **docker run**.
 
 * Run an image
   * ```
-    docker run <image_name>
+    docker run image_name
     ```
 * Run an image in the background (run and detach)
   * ```
-    docker run -d <image_name>
+    docker run -d image_name
     ```
 * Run an image with CLI input
   * ```
-    docker run -it <image_name>
+    docker run -it image_name
     ```
 
 You can combine arguments, e.g. **docker run -itd**.
 
-You can also specify the shell, e.g. **docker run -it <image_name> /bin/bash**
+You can also specify the shell, e.g. **docker run -it image_name /bin/bash**
 
 
 

@@ -3,7 +3,7 @@ title: "KYC"
 sidebar_position: 56
 ---
 
-<h1>KYC</h1>
+
 
 ## Introduction
 

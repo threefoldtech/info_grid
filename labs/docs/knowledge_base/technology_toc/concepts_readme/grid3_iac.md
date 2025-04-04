@@ -3,7 +3,7 @@ title: "Infrastructure as Code"
 sidebar_position: 335
 ---
 
-<h1> Infrastructure as Code (IaC) </h1>
+
 
 
 

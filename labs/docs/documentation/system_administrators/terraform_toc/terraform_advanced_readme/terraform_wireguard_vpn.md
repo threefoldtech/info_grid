@@ -3,7 +3,7 @@ title: "Set a Wireguard VPN"
 sidebar_position: 261
 ---
 
-<h1>Deploy Micro VMs and Set a Wireguard VPN</h1>
+
 
 
 

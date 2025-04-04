@@ -3,7 +3,7 @@ title: "Deploy Gateways"
 sidebar_position: 93
 ---
 
-<h1> Deploying Gateways</h1>
+
 
 ## Introduction
 

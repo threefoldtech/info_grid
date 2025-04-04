@@ -3,7 +3,7 @@ title: "Grid Billing"
 sidebar_position: 389
 ---
 
-<h1><h1>Grid Billing</h1>lt;TITLE<h1>Grid Billing</h1>gt;</h1>
+
 
 
 
@@ -133,9 +133,9 @@ You can get the resources of a node using different methods. You can use Grid Pr
     - Write the node ID
     - Click on `Execute`
   - Grid Proxy URL
-    - You can use the following URL and replace <node_id> by the node ID: 
+    - You can use the following URL and replace node_id by the node ID: 
         ```
-        https://gridproxy.grid.tf/nodes/<node_id>
+        https://gridproxy.grid.tf/nodes/node_id
         ```
 
 - Using GraphQL

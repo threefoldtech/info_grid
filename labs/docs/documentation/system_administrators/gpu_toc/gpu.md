@@ -3,7 +3,7 @@ title: "GPU Support"
 sidebar_position: 236
 ---
 
-<h1> GPU Support </h1>
+
 
 
 

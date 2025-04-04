@@ -3,7 +3,7 @@ title: "Labs"
 sidebar_position: 20
 ---
 
-<h1> Ready Community Applications </h1>
+
 
 Easily deploy your favourite applications on the ThreeFold grid with a click of a button.
 

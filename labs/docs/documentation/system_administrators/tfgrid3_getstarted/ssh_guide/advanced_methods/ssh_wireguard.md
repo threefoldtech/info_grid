@@ -3,7 +3,7 @@ title: "WireGuard"
 sidebar_position: 213
 ---
 
-<h1> WireGuard </h1>
+
 
 
 

@@ -3,7 +3,7 @@ title: "Terraform"
 sidebar_position: 237
 ---
 
-<h1> Terraform</h1>
+
 
 **TABLE OF CONTENTS**
 

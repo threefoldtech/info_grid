@@ -3,7 +3,7 @@ title: "2. Create a Zero-OS Bootstrap Image"
 sidebar_position: 175
 ---
 
-<h1> 2. Create a Zero-OS Bootstrap Image </h1>
+
 
 ## Introduction
 

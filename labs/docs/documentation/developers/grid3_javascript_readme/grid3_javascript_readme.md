@@ -3,7 +3,7 @@ title: "Javascript Client"
 sidebar_position: 72
 ---
 
-<h1> Javascript Client </h1>
+
 
 This section covers developing projects on top of Threefold Grid using Javascript language.
 

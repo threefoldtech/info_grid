@@ -3,7 +3,7 @@ title: "SSH with PuTTY"
 sidebar_position: 211
 ---
 
-<h1> SSH Remote Connection with PuTTY </h1>
+
 
 
 

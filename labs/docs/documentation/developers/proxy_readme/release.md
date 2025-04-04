@@ -3,7 +3,7 @@ title: "Release"
 sidebar_position: 127
 ---
 
-<h1>Release Grid-Proxy</h1>
+
 
 ## Introduction
 

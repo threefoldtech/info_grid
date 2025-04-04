@@ -3,7 +3,7 @@ title: "Deploy CapRover"
 sidebar_position: 79
 ---
 
-<h1> Deploy CapRover </h1>
+
 
 ## Introduction
 

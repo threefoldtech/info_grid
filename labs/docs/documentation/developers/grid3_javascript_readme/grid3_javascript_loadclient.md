@@ -3,7 +3,7 @@ title: "Loading Client"
 sidebar_position: 74
 ---
 
-<h1> Grid3 Client</h1>
+
 
 ## Introduction
 

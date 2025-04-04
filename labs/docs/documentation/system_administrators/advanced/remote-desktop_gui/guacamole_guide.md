@@ -3,7 +3,7 @@ title: "Apache Guacamole: a Clientless Remote Desktop Gateway"
 sidebar_position: 307
 ---
 
-<h1> Deploy a Full VM and Run Apache Guacamole (RDP Connection, Remote Desktop) </h1>
+
 
 
 

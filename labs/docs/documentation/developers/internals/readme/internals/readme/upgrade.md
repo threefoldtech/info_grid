@@ -3,7 +3,7 @@ title: "Node Upgrade"
 sidebar_position: 149
 ---
 
-<h1> Node Upgrade</h1>
+
 
 ## Introduction
 

@@ -3,7 +3,7 @@ title: "Farming Requirements"
 sidebar_position: 180
 ---
 
-<h1> Farming Requirements </h1>
+
 
 
 

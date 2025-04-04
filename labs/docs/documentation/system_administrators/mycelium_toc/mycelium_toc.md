@@ -4,7 +4,7 @@ sidebar_position: 217
 ---
 
 
-<h1>Mycelium</h1>
+
 
 In this section, we present [Mycelium](https://github.com/threefoldtech/mycelium), an end-to-end encrypted IPv6 overlay network.
 

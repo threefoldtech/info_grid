@@ -3,7 +3,7 @@ title: "5. Set the BIOS/UEFI"
 sidebar_position: 178
 ---
 
-<h1> 5. Set the BIOS/UEFI </h1>
+
 
 ## Introduction
 

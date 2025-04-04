@@ -3,7 +3,7 @@ title: "Farming Troubleshooting"
 sidebar_position: 203
 ---
 
-<h1> Farming Troubleshooting </h1>
+
 
 When building a 3Node, we advise to follow carefully the 6 steps laid out in the [3Node building](./3node_building/3node_building.md) section of the manual. Make sure that the disks are properly wiped, that you have the correct bootstrap image and that the BIOS/UEFI is set correctly.
 

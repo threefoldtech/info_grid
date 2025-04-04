@@ -3,7 +3,7 @@ title: "GPU Farming"
 sidebar_position: 182
 ---
 
-<h1>GPU Farming</h1>
+
 
 Welcome to the *GPU Farming* section of the ThreeFold Manual! 
 

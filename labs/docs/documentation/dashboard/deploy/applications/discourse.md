@@ -3,7 +3,7 @@ title: "Discourse"
 sidebar_position: 26
 ---
 
-<h1> Discourse </h1>
+
 
 ## Introduction
 
@@ -21,9 +21,9 @@ sidebar_position: 26
 
 - Enter administrator information including **Email**. This admin will have full permission on the deployed instance.
 - Select a capacity package:
-    - **Small**: {cpu: 1, memory: 2, diskSize: 15 }
-    - **Medium**: {cpu: 2, memory: 4, diskSize: 50 }
-    - **Large**: {cpu: 4, memory: 16, diskSize: 100 }
+    - **Small**: \{cpu: 1, memory: 2, diskSize: 15\}
+    - **Medium**: \{cpu: 2, memory: 4, diskSize: 50\}
+    - **Large**: \{cpu: 4, memory: 16, diskSize: 100\}
     - Or choose a **Custom** plan
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4

@@ -3,7 +3,7 @@ title: "Virtual Machines"
 sidebar_position: 14
 ---
 
-<h1><h1> Virtual Machines </h1>lt;TITLE<h1> Virtual Machines </h1>gt;</h1>
+
 
 On the TFGrid, you can deploy both micro and full virtual machines.
 

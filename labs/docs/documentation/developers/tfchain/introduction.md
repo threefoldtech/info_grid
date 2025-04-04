@@ -3,7 +3,7 @@ title: "Introduction"
 sidebar_position: 114
 ---
 
-<h1> Introduction to Networkd</h1>
+
 
 ## Introduction 
 

@@ -3,7 +3,7 @@ title: "Network Setup"
 sidebar_position: 196
 ---
 
-<h1>Network Setup</h1>
+
 
 # Introduction
 

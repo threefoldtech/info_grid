@@ -4,7 +4,7 @@ sidebar_position: 75
 ---
 
 
-<h1> Deploying a VM </h1>
+
 
 ## Introduction
 

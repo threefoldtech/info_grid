@@ -3,7 +3,7 @@ title: "How It Works"
 sidebar_position: 330
 ---
 
-<h1> How It Works </h1>
+
 
 Welcome to the ThreeFold ecosystem, your gateway to a global and sustainable network!
 

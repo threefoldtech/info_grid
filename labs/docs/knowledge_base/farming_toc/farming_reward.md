@@ -3,7 +3,7 @@ title: "Farming Rewards"
 sidebar_position: 379
 ---
 
-<h1> Farming Reward </h1>
+
 
 ## Introduction
 
@@ -51,5 +51,11 @@ The main advantage of PoC to farmers it makes it really easy to run a 3Node. It 
 5. TFChain will mint the required TFT and send them to account on TFChain of TFFarmer.
 6. Everyone can use the [ThreeFold Node Finder](https://dashboard.grid.tf/#/deploy/node-finder/) to see where capacity is available. This info comes from the TFChain.
 
+> DISCLAIMER: ThreeFold organizes this process. This process is the result of the execution of code written by open source developers (Zero-OS and minting code) and a group of people who checks this process voluntarily. No claims can be made or damages asked for to any person or group related to ThreeFold like, but not limited to, the different councils. This process changes for TFGrid 3.X once the TFDAO is fully active.
 
-{{#include farming_reward_disclaimer.md}}
+> Important note: The ThreeFold Token (TFT) is not an investment instrument.
+> TFTs are used to buy and sell IT capacity on the ThreeFold Grid.
+> More info: see [Proof of Capacity DAO rules](./poc_dao_rules.md)
+
+
+

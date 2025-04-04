@@ -3,7 +3,7 @@ title: "CapRover"
 sidebar_position: 252
 ---
 
-<h1> Terraform Caprover </h1>
+
 
 
 

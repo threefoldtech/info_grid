@@ -3,7 +3,7 @@ title: "Pulumi and Python"
 sidebar_position: 233
 ---
 
-<h1> Pulumi Complete Python Guide</h1>
+
 
 
 

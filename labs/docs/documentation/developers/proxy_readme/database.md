@@ -3,7 +3,7 @@ title: "Database"
 sidebar_position: 125
 ---
 
-<h1>Database</h1>
+
 
 ## Introduction
 

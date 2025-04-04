@@ -3,7 +3,7 @@ title: "BSC-Stellar Bridge"
 sidebar_position: 311
 ---
 
-<h1> BSC-Stellar Bridge </h1>
+
 
 
 

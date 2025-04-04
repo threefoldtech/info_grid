@@ -3,7 +3,7 @@ title: "How to Test"
 sidebar_position: 405
 ---
 
-<h1>Testing the ThreeFold Grid: Ensuring Reliability and User Feedback</h1>
+
 
 
 

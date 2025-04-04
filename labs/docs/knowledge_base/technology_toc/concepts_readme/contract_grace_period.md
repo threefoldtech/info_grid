@@ -3,7 +3,7 @@ title: "Contract Grace Period"
 sidebar_position: 337
 ---
 
-<h1> Grace Period: Ensuring Seamless Operations </h1>
+
 
 
 

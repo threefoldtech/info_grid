@@ -3,7 +3,7 @@ title: "Configuration File"
 sidebar_position: 109
 ---
 
-<h1> Configuration File</h1>
+
 
 ## Introduction
 

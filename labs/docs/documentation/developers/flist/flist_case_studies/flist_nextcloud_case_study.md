@@ -3,7 +3,7 @@ title: "Case Study: Nextcloud AIO"
 sidebar_position: 135
 ---
 
-<h1> Flist Case Study: Nextcloud All-in-One </h1>
+
 
 # Introduction
 

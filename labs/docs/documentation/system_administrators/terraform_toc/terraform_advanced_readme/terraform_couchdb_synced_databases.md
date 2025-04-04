@@ -3,7 +3,7 @@ title: "Synced CouchDB Databases (NoSQL)"
 sidebar_position: 263
 ---
 
-<h1> Apache CouchDB Synced Databases Between Two VMs</h1>
+
 
 ## Introduction
 

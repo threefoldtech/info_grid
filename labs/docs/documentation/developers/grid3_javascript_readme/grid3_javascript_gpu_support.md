@@ -3,7 +3,7 @@ title: "GPU Support"
 sidebar_position: 87
 ---
 
-<h1> GPU Support and JavaScript </h1>
+
 
 ## Introduction
 

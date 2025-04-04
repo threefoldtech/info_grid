@@ -3,7 +3,7 @@ title: "Loading Client"
 sidebar_position: 90
 ---
 
-<h1>Load Client</h1>
+
 
 ## Introduction
 

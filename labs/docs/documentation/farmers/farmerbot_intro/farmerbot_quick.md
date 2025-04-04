@@ -3,7 +3,7 @@ title: "Quick Guide"
 sidebar_position: 199
 ---
 
-<h1> Farmerbot Quick Guide </h1>
+
 
 
 

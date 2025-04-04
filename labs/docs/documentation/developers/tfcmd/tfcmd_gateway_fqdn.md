@@ -3,7 +3,7 @@ title: "Gateway FQDN"
 sidebar_position: 104
 ---
 
-<h1>Gateway FQDN</h1>
+
 
 ## Introduction
 

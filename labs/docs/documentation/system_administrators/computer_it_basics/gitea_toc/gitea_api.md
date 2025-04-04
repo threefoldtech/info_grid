@@ -3,7 +3,7 @@ title: "Gitea API"
 sidebar_position: 276
 ---
 
-<h1>Gitea API</h1>
+
 
 
 

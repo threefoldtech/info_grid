@@ -3,7 +3,7 @@ title: "Internals"
 sidebar_position: 136
 ---
 
-<h1> Internals </h1>
+
 
 We present in this section of the developers book a partial list of system components. Content will be added progressively.
 

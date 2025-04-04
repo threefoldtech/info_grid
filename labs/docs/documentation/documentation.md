@@ -3,7 +3,7 @@ title: "Documentation"
 sidebar_position: 4
 ---
 
-<h1> ThreeFold Documentation </h1>
+
 
 The section contains all the practical information for farmers, developers and system administrators of the ThreeFold Grid.
 

@@ -3,7 +3,7 @@ title: "Buy and Sell TFT"
 sidebar_position: 322
 ---
 
-<h1>Buy and Sell TFT</h1>
+
 
 > If you're looking for a simple way to get TFT with crypto or fiat, check out the [Quick Start guide](./tft_lobstr/tft_lobstr_short_guide.md)!
 

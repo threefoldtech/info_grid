@@ -3,7 +3,7 @@ title: "Pulumi"
 sidebar_position: 226
 ---
 
-<h1> Pulumi Plugin</h1>
+
 
 Welcome to the *Pulumi Plugin* section of the ThreeFold Manual!
 

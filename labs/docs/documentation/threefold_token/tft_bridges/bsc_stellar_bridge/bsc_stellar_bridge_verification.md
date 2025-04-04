@@ -3,7 +3,7 @@ title: "BSC-Stellar Bridge Verification"
 sidebar_position: 312
 ---
 
-<h1>BSC-Stellar Bridge Verification</h1>
+
 
 
 

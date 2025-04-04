@@ -3,7 +3,7 @@ title: "DB Testing"
 sidebar_position: 121
 ---
 
-<h1>DB for testing</h1>
+
 
 ## Introduction
 

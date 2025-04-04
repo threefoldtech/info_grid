@@ -3,7 +3,7 @@ title: "Nextcloud 2-Node VPN Deployment"
 sidebar_position: 269
 ---
 
-<h1>Nextcloud 2-Node VPN Deployment</h1>
+
 
 
 

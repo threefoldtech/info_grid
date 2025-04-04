@@ -3,7 +3,7 @@ title: "Generate an API Token"
 sidebar_position: 130
 ---
 
-<h1> TF Hub API Token </h1>
+
 
 ## Generate an API Token
 

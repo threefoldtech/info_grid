@@ -3,7 +3,7 @@ title: "Workload Types"
 sidebar_position: 145
 ---
 
-<h1> Workload Types </h1>
+
 
 ## Introduction
 

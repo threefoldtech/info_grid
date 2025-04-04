@@ -3,7 +3,7 @@ title: "Key Value Store"
 sidebar_position: 85
 ---
 
-<h1>Using TFChain KVStore</h1>
+
 
 ## Introduction
 

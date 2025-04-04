@@ -3,7 +3,7 @@ title: "Installing Terraform"
 sidebar_position: 239
 ---
 
-<h1> Installing Terraform</h1>
+
 
 
 

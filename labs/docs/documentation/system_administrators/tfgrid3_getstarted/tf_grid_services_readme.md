@@ -3,7 +3,7 @@ title: "TFGrid Services"
 sidebar_position: 216
 ---
 
-<h1> ThreeFold Grid Services </h1>
+
 
 
 

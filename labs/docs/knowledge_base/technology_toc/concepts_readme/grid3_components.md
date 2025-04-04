@@ -3,7 +3,7 @@ title: "TFGrid Component List"
 sidebar_position: 334
 ---
 
-<h1> TFGrid Component List (Last Updated May 2023) </h1>
+
 
 
 

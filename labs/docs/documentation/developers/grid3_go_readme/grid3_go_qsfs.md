@@ -3,7 +3,7 @@ title: "Deploy a QSFS"
 sidebar_position: 95
 ---
 
-<h1> Deploying QSFS </h1>
+
 
 ## Introduction
 

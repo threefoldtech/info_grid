@@ -3,7 +3,7 @@ title: "Minting Periods"
 sidebar_position: 189
 ---
 
-<h1>Minting Periods</h1>
+
 
 ## Introduction
 

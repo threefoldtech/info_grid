@@ -3,7 +3,7 @@ title: "MetaMask (BSC & ETH)"
 sidebar_position: 320
 ---
 
-<h1> MetaMask Wallet </h1>
+
 
 
 

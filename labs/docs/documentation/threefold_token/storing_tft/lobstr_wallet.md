@@ -3,7 +3,7 @@ title: "Lobstr Wallet (Stellar)"
 sidebar_position: 319
 ---
 
-<h1> Lobstr Wallet </h1>
+
 
 
 

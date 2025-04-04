@@ -4,7 +4,7 @@ sidebar_position: 283
 ---
 
 
-<h1> Transfer TFT Between Networks by Using the Keygenerator </h1>
+
 
 
 
@@ -19,7 +19,7 @@ Using this method, only transfer is possible between accounts that are generated
 - ed25519 keypair
 - Go installed on your local computer
 
-Create a keypair with the following tool: <https://github.com/threefoldtech/tfchain_tft/tree/main/tfchain_bridge/tools/keygen>
+Create a keypair with the following tool: https://github.com/threefoldtech/tfchain_tft/tree/main/tfchain_bridge/tools/keygen
 
 ```sh
 go build .
@@ -61,11 +61,11 @@ To deposit to a TF Grid object, this object **must** exists. If the object is no
 Create a TFChain account from the key that you generated. (TF Chain raw seed).
 Browse to :
 
-- For mainnet: <https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.grid.tf#/accounts>
-- For testnet: <https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.test.grid.tf#/accounts>
+- For mainnet: https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.grid.tf#/accounts
+- For testnet: https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.test.grid.tf#/accounts
 - For Devnet: https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Ftfchain.dev.grid.tf#/accounts
 
--> Add Account -> Click on mnemonic and select `Raw Seed` -> Paste raw TF Chain seed.
+-\> Add Account -\> Click on mnemonic and select `Raw Seed` -\> Paste raw TF Chain seed.
 
 Select `Advanced creation options` -> Change `keypair crypto type` to `Edwards (ed25519)`. Click `I have saved my mnemonic seed safely` and proceed.
 

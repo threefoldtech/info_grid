@@ -3,7 +3,7 @@ title: "Hummingbot"
 sidebar_position: 293
 ---
 
-<h1> Hummingbot on a Full VM </h1>
+
 
 
 

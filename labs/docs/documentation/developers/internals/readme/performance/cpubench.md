@@ -3,7 +3,7 @@ title: "CPUBenchmark"
 sidebar_position: 164
 ---
 
-<h1> CPUBenchmark </h1>
+
 
 ## Overview
 

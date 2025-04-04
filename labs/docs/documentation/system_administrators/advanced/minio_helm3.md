@@ -3,7 +3,7 @@ title: "MinIO Operator with Helm3"
 sidebar_position: 292
 ---
 
-<h1>MinIO Operator with Helm 3</h1>
+
 
 
 

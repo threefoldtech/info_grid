@@ -3,7 +3,7 @@ title: "ThreeFold Grid Full Stack"
 sidebar_position: 169
 ---
 
-<h1> ThreeFold Grid Full Stack </h1>
+
 
 ## Introduction
 

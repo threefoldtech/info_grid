@@ -3,7 +3,7 @@ title: "Public IPs Validation Task"
 sidebar_position: 163
 ---
 
-<h1> Public IPs Validation Task </h1>
+
 
 ## Introduction
 

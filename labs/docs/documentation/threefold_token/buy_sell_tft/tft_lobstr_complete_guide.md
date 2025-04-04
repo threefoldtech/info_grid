@@ -3,7 +3,7 @@ title: "Lobstr Wallet (Stellar)"
 sidebar_position: 324
 ---
 
-<h1> Get TFT: Lobstr Wallet (Stellar)</h1>
+
 
 
 

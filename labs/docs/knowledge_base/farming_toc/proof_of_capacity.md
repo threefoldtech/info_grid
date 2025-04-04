@@ -3,7 +3,7 @@ title: "Proof-of-Capacity"
 sidebar_position: 380
 ---
 
-<h1>Proof-of-Capacity</h1>
+
 
 
 

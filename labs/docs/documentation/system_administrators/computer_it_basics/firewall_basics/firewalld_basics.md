@@ -3,7 +3,7 @@ title: "Firewalld Basics"
 sidebar_position: 279
 ---
 
-<h1>Firewalld Basic Commands</h1>
+
 
 ## Introduction
 

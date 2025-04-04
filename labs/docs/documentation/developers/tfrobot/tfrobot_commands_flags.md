@@ -3,7 +3,7 @@ title: "Commands and Flags"
 sidebar_position: 111
 ---
 
-<h1> Commands and Flags </h1>
+
 
 ## Introduction
 

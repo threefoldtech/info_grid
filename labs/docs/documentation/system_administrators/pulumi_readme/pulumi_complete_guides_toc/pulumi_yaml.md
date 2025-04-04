@@ -3,7 +3,7 @@ title: "Pulumi and YAML"
 sidebar_position: 232
 ---
 
-<h1> Pulumi Complete YAML Guide</h1>
+
 
 
 

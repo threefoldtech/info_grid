@@ -3,7 +3,7 @@ title: "Circle Tool"
 sidebar_position: 402
 ---
 
-<h1> ThreeFold Circle Tool </h1>
+
 
 
 

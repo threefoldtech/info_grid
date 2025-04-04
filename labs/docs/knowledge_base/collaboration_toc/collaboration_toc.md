@@ -3,7 +3,7 @@ title: "Collaboration"
 sidebar_position: 392
 ---
 
-<h1> Collaboration </h1>
+
 
 ThreeFold strongly believes in the power of open-source projects and community-driven collaboration. The following documentation is ideal for anyone who wants to know ways to collaborate to the ThreeFold ecosystem.
 

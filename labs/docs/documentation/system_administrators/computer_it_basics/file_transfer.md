@@ -3,7 +3,7 @@ title: "File Transfer"
 sidebar_position: 280
 ---
 
-<h1>File Transfer</h1>
+
 
 
 

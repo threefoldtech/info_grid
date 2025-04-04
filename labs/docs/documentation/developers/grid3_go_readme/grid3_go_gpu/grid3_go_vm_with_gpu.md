@@ -3,7 +3,7 @@ title: "Deploy a VM with GPU"
 sidebar_position: 98
 ---
 
-<h1> Deploy a VM with GPU </h1>
+
 
 ## Introduction
 

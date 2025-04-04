@@ -24,6 +24,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           sidebarPath: undefined,
           // Please change this to your repo.
           editUrl: 'https://github.com/threefold/manual/edit/main/',
+
         },
         blog: {
           showReadingTime: true,
@@ -58,6 +59,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         routeBasePath: 'users',
         // Use auto-generated sidebar based on folder structure
         sidebarPath: undefined,
+
       },
     ],
     [
@@ -68,6 +70,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         routeBasePath: 'farmers',
         // Use auto-generated sidebar based on folder structure
         sidebarPath: undefined,
+
       },
     ],
     [
@@ -78,6 +81,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         routeBasePath: 'labs',
         // Use auto-generated sidebar based on folder structure
         sidebarPath: undefined,
+
       },
     ],
   ],

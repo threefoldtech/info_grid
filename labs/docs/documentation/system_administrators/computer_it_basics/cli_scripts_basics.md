@@ -4,7 +4,7 @@ sidebar_position: 271
 ---
 
 
-<h1> CLI and Scripts Basics </h1>
+
 
 
 
@@ -83,7 +83,7 @@ Follow those steps to install [Brew](https://brew.sh/)
   * ```
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     ```
-* Add the path to the **.profile** directory. Replace <user_name> by your username.
+* Add the path to the **.profile** directory. Replace \<user_name\> by your username.
   * ```
     echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/<user_name>/.profile
     ```
@@ -793,7 +793,7 @@ References: https://man.archlinux.org/man/ethtool.8.en
 
 ### See if ethernet port is active
 
-Replace <ethernet_device> with the proper device:
+Replace \<ethernet_device\> with the proper device:
 
 ```
 cat /sys/class/net/<ethernet_device>/carrier
@@ -841,7 +841,7 @@ The private IP range is the following:
 You can use the following template when you set an IP address manually:
 
 * Address
-  * <Private_IP_Address>
+  * \<Private_IP_Address\>
 * Netmask
   * 255.255.255.0
 * Gateway

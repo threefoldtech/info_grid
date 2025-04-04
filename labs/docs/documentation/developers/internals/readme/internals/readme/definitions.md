@@ -3,7 +3,7 @@ title: "Definitions"
 sidebar_position: 154
 ---
 
-<h1> Definitions</h1>
+
 
 ## Introduction 
 

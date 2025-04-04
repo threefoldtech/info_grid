@@ -3,7 +3,7 @@ title: "Network Considerations"
 sidebar_position: 195
 ---
 
-<h1>Network Considerations</h1>
+
 
 ## Introduction
 

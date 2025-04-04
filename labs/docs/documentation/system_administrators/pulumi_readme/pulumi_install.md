@@ -3,7 +3,7 @@ title: "Installing Pulumi"
 sidebar_position: 228
 ---
 
-<h1> Installing Pulumi </h1>
+
 
 
 

@@ -3,7 +3,7 @@ title: "GPU and Pytorch"
 sidebar_position: 296
 ---
 
-<h1> AI & ML Workloads: GPU and Pytorch</h1>
+
 
 
 

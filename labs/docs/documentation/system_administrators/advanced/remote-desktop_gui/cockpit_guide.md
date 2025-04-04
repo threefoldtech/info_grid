@@ -3,7 +3,7 @@ title: "Cockpit: a Web-based Interface for Servers"
 sidebar_position: 305
 ---
 
-<h1> Deploy a Full VM and Run Cockpit, a Web-based Interface for Servers </h1>
+
 
 
 

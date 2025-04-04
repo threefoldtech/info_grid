@@ -3,7 +3,7 @@ title: "Nextcloud All-in-One Deployment"
 sidebar_position: 266
 ---
 
-<h1> Nextcloud All-in-One Deployment </h1>
+
 
 
 
@@ -81,7 +81,7 @@ You now have enabled the firewall with proper security rules for your Nextcloud 
   * In the section **Advanced DNS**, add a **DNS A Record** to your domain and link it to the IP address of the VM you deployed on:
     * Type: A Record
     * Host: @
-    * Value: <VM_IP_Address>
+    * Value: VM_IP_Address
     * TTL: Automatic
   * It might take up to 30 minutes to set the DNS properly.
   * To check if the A record has been registered, you can use a common DNS checker:

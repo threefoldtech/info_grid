@@ -3,7 +3,7 @@ title: "Introduction"
 sidebar_position: 359
 ---
 
-<h1> Smart Contract on TFGrid 3.0 </h1>
+
 
 
 

@@ -3,7 +3,7 @@ title: "Nextcloud Single Deployment"
 sidebar_position: 267
 ---
 
-<h1>Nextcloud Single Deployment </h1>
+
 
 
 

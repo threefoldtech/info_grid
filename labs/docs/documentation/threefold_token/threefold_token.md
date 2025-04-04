@@ -3,7 +3,7 @@ title: "ThreeFold Token"
 sidebar_position: 308
 ---
 
-<h1> ThreeFold Token </h1>
+
 
 
 

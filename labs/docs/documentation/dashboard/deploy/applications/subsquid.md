@@ -3,7 +3,7 @@ title: "Subsquid"
 sidebar_position: 40
 ---
 
-<h1> Subsquid </h1>
+
 
 ## Introduction
 
@@ -25,9 +25,9 @@ sidebar_position: 40
 
 
 - Select a capacity package:
-    - **Small**: {cpu: 1, memory: 2 , diskSize: 50 }
-    - **Medium**: {cpu: 2, memory: 4, diskSize: 100 }
-    - **Large**: {cpu: 4, memory: 16, diskSize: 250 }
+    - **Small**: \{cpu: 1, memory: 2 , diskSize: 50 \}
+    - **Medium**: \{cpu: 2, memory: 4, diskSize: 100 \}
+    - **Large**: \{cpu: 4, memory: 16, diskSize: 250 \}
     - Or choose a **Custom** plan
 - Choose the network
    - `Mycelium` flag gives the virtual machine a Mycelium address

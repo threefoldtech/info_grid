@@ -3,7 +3,7 @@ title: "GPU and Fooocus"
 sidebar_position: 297
 ---
 
-<h1>AI & ML Workloads: GPU and Fooocus</h1>
+
 
 
 

@@ -3,7 +3,7 @@ title: "Algorand"
 sidebar_position: 21
 ---
 
-<h1> Algorand </h1>
+
 
 ## Introduction
 

@@ -3,7 +3,7 @@ title: "Gitea Basics"
 sidebar_position: 275
 ---
 
-<h1>Gitea Basics</h1>
+
 
 
 

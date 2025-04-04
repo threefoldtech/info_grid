@@ -3,7 +3,7 @@ title: "Add a Domain to a VM"
 sidebar_position: 19
 ---
 
-<h1> Add a Domain to a VM</h1>
+
 
 ## Introduction
 

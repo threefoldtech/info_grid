@@ -3,7 +3,7 @@ title: "Mesh"
 sidebar_position: 155
 ---
 
-<h1> Zero-Mesh</h1>
+
 
 ## What It Is
 

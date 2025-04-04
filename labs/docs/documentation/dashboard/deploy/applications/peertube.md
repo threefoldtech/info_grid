@@ -3,7 +3,7 @@ title: "Peertube"
 sidebar_position: 37
 ---
 
-<h1> Peertube </h1>
+
 
 ## Introduction
 
@@ -23,9 +23,9 @@ sidebar_position: 37
   the applied format `<solution-code><twin-id><solution-name>.<gateway-subdomain>` Ex. ***pt100peerprod*.gent02.dev.grid.tf**
 - Enter an email and password which will be used for the admin login.
 - Select a capacity package:
-    - **Small**: { cpu: 1, memory: 2, diskSize: 15 }
-    - **Medium**: { cpu: 2, memory: 4, diskSize: 100 }
-    - **Large**: { cpu: 4, memory: 16, diskSize: 250 }
+    - **Small**: \{ cpu: 1, memory: 2, diskSize: 15 \}
+    - **Medium**: \{ cpu: 2, memory: 4, diskSize: 100 \}
+    - **Large**: \{ cpu: 4, memory: 16, diskSize: 250 \}
     - Or choose a **Custom** plan
 - Choose the network
    - `Mycelium` flag gives the virtual machine a Mycelium address

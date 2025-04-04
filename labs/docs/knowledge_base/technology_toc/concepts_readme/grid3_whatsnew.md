@@ -3,7 +3,7 @@ title: "What's New on TFGrid v3.x"
 sidebar_position: 338
 ---
 
-<h1> What's New on ThreeFold Grid v3.x </h1>
+
 
 
 

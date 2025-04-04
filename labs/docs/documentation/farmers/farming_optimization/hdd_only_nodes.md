@@ -3,7 +3,7 @@ title: "HDD-Only Nodes"
 sidebar_position: 184
 ---
 
-<h1> HDD-Only Nodes</h1>
+
 
 
 

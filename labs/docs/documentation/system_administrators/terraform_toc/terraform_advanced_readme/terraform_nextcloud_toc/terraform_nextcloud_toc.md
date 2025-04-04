@@ -3,7 +3,7 @@ title: "Nextcloud Deployments"
 sidebar_position: 265
 ---
 
-<h1><h1> Nextcloud Deployments </h1>lt;TITLE<h1> Nextcloud Deployments </h1>gt;</h1>
+
 
 We present here different Nextcloud deployments. While this section is focused on Nextcloud, those deployment architectures can be used as templates for other kind of deployments on the TFGrid.
 

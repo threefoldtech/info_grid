@@ -3,7 +3,7 @@ title: "Collaboration Tools"
 sidebar_position: 401
 ---
 
-<h1> ThreeFold's Collaboration Tools </h1>
+
 
 In this section, we will introduce powerful collaboration tools utilized by ThreeFold, such as the Circle Tool and the Website Deployer. 
 

@@ -3,7 +3,7 @@ title: "WebGateway"
 sidebar_position: 355
 ---
 
-<h1> WebGW 2.0 </h1>
+
 
 
 

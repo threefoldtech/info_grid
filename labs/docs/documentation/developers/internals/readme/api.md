@@ -3,7 +3,7 @@ title: "API"
 sidebar_position: 167
 ---
 
-<h1>API</h1>
+
 
 ## Introduction
 

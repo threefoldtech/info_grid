@@ -4,7 +4,7 @@ sidebar_position: 200
 ---
 
 
-<h1> Farmerbot Additional Information </h1>
+
 
 # Introduction
 

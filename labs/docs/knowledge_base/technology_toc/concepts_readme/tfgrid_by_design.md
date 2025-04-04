@@ -3,7 +3,7 @@ title: "TFGrid by Design"
 sidebar_position: 340
 ---
 
-<h1>TFGrid by Design: Deployment Architectures and Solution Categories</h1>
+
 
 
 

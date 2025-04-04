@@ -3,7 +3,7 @@ title: "Minting Receipts"
 sidebar_position: 187
 ---
 
-<h1>Minting Receipts</h1>
+
 
 ## Introduction
 

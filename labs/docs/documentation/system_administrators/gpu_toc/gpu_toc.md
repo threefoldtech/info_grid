@@ -3,7 +3,7 @@ title: "GPU"
 sidebar_position: 235
 ---
 
-<h1>GPU on the TFGrid</h1>
+
 
 The ThreeFold Manual covers many ways to use a GPU node on the TFGrid. A good place to start would be the **GPU Introduction** section.
 

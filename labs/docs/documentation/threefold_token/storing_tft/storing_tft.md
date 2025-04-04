@@ -3,7 +3,7 @@ title: "Storing TFT"
 sidebar_position: 317
 ---
 
-<h1> Storing TFT </h1>
+
 
 In this section, we present different ways to store ThreeFold tokens.
 

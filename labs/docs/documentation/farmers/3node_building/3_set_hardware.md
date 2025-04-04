@@ -3,7 +3,7 @@ title: "3. Set the Hardware"
 sidebar_position: 176
 ---
 
-<h1> 3. Set the Hardware </h1>
+
 
 ## Introduction
 

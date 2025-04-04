@@ -3,7 +3,7 @@ title: "Synced MariaDB Databases (SQL)"
 sidebar_position: 262
 ---
 
-<h1>MariaDB Synced Databases Between Two VMs</h1>
+
 
 
 

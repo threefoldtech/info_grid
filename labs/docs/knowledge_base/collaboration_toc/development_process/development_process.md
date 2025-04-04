@@ -3,7 +3,7 @@ title: "Development Process"
 sidebar_position: 394
 ---
 
-<h1> Development Process </h1>
+
 
 Our project development process is characterized by agility, collaboration, and, most importantly, respect. We firmly believe in harnessing the collective ingenuity of our team, recognizing that each individual contributes invaluable insights to our codebase, our development process is completely managed on Github, using Github based projects.
 

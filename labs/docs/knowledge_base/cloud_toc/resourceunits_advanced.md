@@ -3,7 +3,7 @@ title: "Resource Units Advanced"
 sidebar_position: 391
 ---
 
-<h1>Resource Units Calculation</h1>
+
 
 
 

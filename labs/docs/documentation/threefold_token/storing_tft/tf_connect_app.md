@@ -3,7 +3,7 @@ title: "ThreeFold Connect App (Stellar)"
 sidebar_position: 318
 ---
 
-<h1> ThreeFold Connect App Wallet </h1>
+
 
 
 
@@ -216,7 +216,7 @@ On your browser, click on the extension button (in green).
 
 ![](./img/farming_tf_wallet_48.png)
 
-Select the polkadot{.js} extension.
+Select the polkadot\{.js\} extension.
 
 ![](./img/farming_tf_wallet_49.png)
 

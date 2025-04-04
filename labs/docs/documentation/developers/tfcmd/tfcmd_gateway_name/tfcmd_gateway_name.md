@@ -3,7 +3,7 @@ title: "Gateway Name"
 sidebar_position: 105
 ---
 
-<h1>Gateway Name</h1>
+
 
 ## Introduction
 

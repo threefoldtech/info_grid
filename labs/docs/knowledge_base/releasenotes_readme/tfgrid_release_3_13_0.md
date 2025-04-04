@@ -108,7 +108,7 @@ This release having lots of features and fixes around the new dashboard and myce
 
 ## Mycelium
 
-An IPv6 overlay network completely writing in Rust, developed by Threefold. The overlay network uses some of the core principles of the Babel routing protocol (<https://www.irif.fr/~jch/software/babel/>). Each node that joins the overlay network will receive an overlay network IP in the 400::/7 range.
+An IPv6 overlay network completely writing in Rust, developed by Threefold. The overlay network uses some of the core principles of the Babel routing protocol (https://www.irif.fr/~jch/software/babel/). Each node that joins the overlay network will receive an overlay network IP in the 400::/7 range.
 
 Please check this [introduction on mycelium](https://forum.threefold.io/t/introducing-mycelium/4082) or the [repository](https://github.com/threefoldtech/mycelium) for detailed instructions
 

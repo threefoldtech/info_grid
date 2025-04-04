@@ -3,7 +3,7 @@ title: "Contributions"
 sidebar_position: 123
 ---
 
-<h1>Contributions Guide</h1>
+
 
 ## Introduction
 

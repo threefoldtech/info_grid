@@ -8,7 +8,7 @@ title: "Node Status Bot"
 sidebar_position: 202
 ---
 
-<h1> Node Status Bot </h1>
+
 
 
 

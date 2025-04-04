@@ -220,16 +220,16 @@ no need to specify a kernel yourself (it will be provided).
 
 This is a simple tutorial on how to create your own VM image
 > Note: Please consider checking the official vm images repo on the hub before building your own
-image. this can save you a lot of time (and network traffic) here <https://hub.grid.tf/tf-official-vms>
+image. this can save you a lot of time (and network traffic) here https://hub.grid.tf/tf-official-vms
 
 ### Use one of ubuntu cloud-images
 
 If the ubuntu images in the official repo are not enough, you can simply upload one of the official images as follows
 
-- Visit <https://cloud-images.ubuntu.com/>
+- Visit https://cloud-images.ubuntu.com/
 - Select the version you want (let's assume bionic)
 - Go to bionic, then click on current
-- download the amd64.img file like this one <https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img>
+- download the amd64.img file like this one https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64.img
 - This is a `Qcow2` image, this is not supported by zos. So we need to convert this to a raw disk image using the following command
 
 ```bash
@@ -242,7 +242,7 @@ qemu-img convert -p -f qcow2 -O raw bionic-server-cloudimg-amd64.img image.raw
 tar -czf ubuntu-18.04-lts.tar.gz image.raw
 ```
 
-- now visit the hub <https://hub.grid.tf/> and login or create your own account, then click on upload my file button
+- now visit the hub https://hub.grid.tf/ and login or create your own account, then click on upload my file button
 - Select the newly created tar.gz file
 - Now you should be able to use this flist to create Zmachine workloads
 

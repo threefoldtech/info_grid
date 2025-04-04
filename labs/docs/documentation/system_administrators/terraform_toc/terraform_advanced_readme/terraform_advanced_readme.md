@@ -3,7 +3,7 @@ title: "Advanced"
 sidebar_position: 253
 ---
 
-<h1> Terraform Advanced </h1>
+
 
 **TABLE OF CONTENTS**
 

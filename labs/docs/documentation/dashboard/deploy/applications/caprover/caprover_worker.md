@@ -3,7 +3,7 @@ title: "CapRover Worker"
 sidebar_position: 24
 ---
 
-<h1> CapRover Worker </h1>
+
 
 ## Introduction
 

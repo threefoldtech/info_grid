@@ -3,7 +3,7 @@ title: "Networking Overview"
 sidebar_position: 194
 ---
 
-<h1> Networking Overview </h1>
+
 
 ## Introduction
 

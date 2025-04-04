@@ -3,7 +3,7 @@ title: "Terraform Basics"
 sidebar_position: 241
 ---
 
-<h1>Terraform Basics</h1>
+
 
 
 

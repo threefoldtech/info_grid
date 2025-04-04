@@ -3,7 +3,7 @@ title: "RMB Relay"
 sidebar_position: 142
 ---
 
-<h1> RMB Relay </h1>
+
 
 ## Introduction
 

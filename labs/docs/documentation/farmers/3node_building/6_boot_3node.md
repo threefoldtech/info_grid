@@ -3,7 +3,7 @@ title: "6. Boot the 3Node"
 sidebar_position: 179
 ---
 
-<h1> 6. Boot the 3Node </h1>
+
 
 ## Introduction
 

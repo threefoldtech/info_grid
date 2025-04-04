@@ -3,7 +3,7 @@ title: "Troubleshooting"
 sidebar_position: 70
 ---
 
-<h1> ThreeFold Connect Troubleshooting </h1>
+
 
 We provide solutions to different issues users can encounter while using the ThreeFold Connect app.
 

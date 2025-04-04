@@ -3,7 +3,7 @@ title: "Flist Case Studies"
 sidebar_position: 133
 ---
 
-<h1> Flist Case Studies </h1>
+
 
 **TABLE OF CONTENTS**
 

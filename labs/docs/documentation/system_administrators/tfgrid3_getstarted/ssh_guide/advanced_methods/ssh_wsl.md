@@ -3,7 +3,7 @@ title: "SSH with WSL"
 sidebar_position: 212
 ---
 
-<h1> SSH Remote Connection with WSL </h1>
+
 
 
 

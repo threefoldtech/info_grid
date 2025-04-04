@@ -3,7 +3,7 @@ title: "RMB Peer"
 sidebar_position: 141
 ---
 
-<h1> RMB Peer </h1>
+
 
 ## Introduction
 

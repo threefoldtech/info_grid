@@ -4,7 +4,7 @@ sidebar_position: 190
 ---
 
 
-<h1> Air Conditioner, Relative Humidity and Air Changes per Hour </h1>
+
 
 ## Introduction
 
@@ -119,7 +119,7 @@ Depending on your geographical location and your current situation, it could be 
 
 We will use here the Dell R720 as an example since it is a popular 3Node choice. In this case, we use the R720's [Technical Guide](https://downloads.dell.com/manuals/all-products/esuprt_ser_stor_net/esuprt_poweredge/poweredge-r720_reference-guide_en-us.pdf) as reference.
 
-For the R720, between 35˚C and 40˚C (or 95˚F and 104˚F), with 5% to 85% relative humidity, you can have this <10% of annual operating hours (around 36 days per year), and between 40˚C and 45˚C (or 104˚F and 113˚F), with 5 to 90% relative humidity, it’s <1% of annual operating hours (around 3.6 day per year). All this considers that there is no direct sunlight.
+For the R720, between 35˚C and 40˚C (or 95˚F and 104˚F), with 5% to 85% relative humidity, you can have this less than 10% of annual operating hours (around 36 days per year), and between 40˚C and 45˚C (or 104˚F and 113˚F), with 5 to 90% relative humidity, it’s less than 1% of annual operating hours (around 3.6 day per year). All this considers that there is no direct sunlight.
 
 From 10˚C to 35˚C (thus from 50˚F to 95˚F), it’s considered standard operating temperature. With relative humidity from 10% to 80%.
 

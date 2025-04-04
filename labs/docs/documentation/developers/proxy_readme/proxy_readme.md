@@ -3,7 +3,7 @@ title: "Grid Proxy"
 sidebar_position: 118
 ---
 
-<h1>Grid Proxy</h1>
+
 
 Welcome to the *Grid Proxy* section of the TFGrid Manual! 
 

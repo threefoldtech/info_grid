@@ -4,7 +4,7 @@ sidebar_position: 345
 ---
 
 
-<h1> CoreX </h1>
+
 
 
 

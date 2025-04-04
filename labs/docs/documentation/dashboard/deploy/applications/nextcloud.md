@@ -3,7 +3,7 @@ title: "Nextcloud"
 sidebar_position: 33
 ---
 
-<h1> Nextcloud </h1>
+
 
 # Introduction
 
@@ -37,9 +37,9 @@ If you're not sure and just want the easiest, most affordable option, skip the p
 * Choose a name for your deployment
   * Note: You can use the auto-generated name if you want
 * Select a capacity package:
-    * **Minimum**: {cpu: 2, memory: 4gb, diskSize: 50gb }
-    * **Standard**: {cpu: 2, memory: 8gb, diskSize: 500gb }
-    * **Recommended**: {cpu: 4, memory: 16gb, diskSize: 1000gb }
+    * **Minimum**: \{cpu: 2, memory: 4gb, diskSize: 50gb \}
+    * **Standard**: \{cpu: 2, memory: 8gb, diskSize: 500gb \}
+    * **Recommended**: \{cpu: 4, memory: 16gb, diskSize: 1000gb \}
     * Or choose a **Custom** plan
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4
@@ -83,11 +83,11 @@ The installation is now complete and you have access to your Nextcloud instance.
 
 ## DNS Record with Public IPv4
 
-After deployment, you will have access to the IPv4 address of the VM you deployed on. You will need to add a **DNS A record** (Host: "@", Value: <VM_IP_Address>) to your domain to access Nextcloud. This record type indicates the IP address of a given domain.
+After deployment, you will have access to the IPv4 address of the VM you deployed on. You will need to add a **DNS A record** (Host: "@", Value: "VM_IP_Address") to your domain to access Nextcloud. This record type indicates the IP address of a given domain.
 
 ## DNS Record with Gateway
 
-Before starting the deployment, you will need to add a **DNS A record** (Host: "@", Value: <Gateway_IP>) to your domain. The gateway IP will be shown to you when you select this option.
+Before starting the deployment, you will need to add a **DNS A record** (Host: "@", Value: "Gateway_IP") to your domain. The gateway IP will be shown to you when you select this option.
 
 ## DNS Propagation
 

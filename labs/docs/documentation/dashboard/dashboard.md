@@ -3,7 +3,7 @@ title: "ThreeFold Dashboard"
 sidebar_position: 5
 ---
 
-<h1> ThreeFold Dashboard </h1>
+
 
 Explore, control, and manage your ThreeFold Grid resources effortlessly through our integrated Dashboard. Deploy solutions seamlessly while gaining full control, all within a unified interface.
 

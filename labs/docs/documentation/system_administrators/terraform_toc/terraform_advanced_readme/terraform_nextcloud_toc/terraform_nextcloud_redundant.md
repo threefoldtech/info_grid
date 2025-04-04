@@ -3,7 +3,7 @@ title: "Nextcloud Redundant Deployment"
 sidebar_position: 268
 ---
 
-<h1>Nextcloud Redundant Deployment</h1>
+
 
 
 

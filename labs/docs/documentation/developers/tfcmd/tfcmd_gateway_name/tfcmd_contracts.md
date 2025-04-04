@@ -3,7 +3,7 @@ title: "Contracts"
 sidebar_position: 106
 ---
 
-<h1>Contracts</h1>
+
 
 ## Introduction
 

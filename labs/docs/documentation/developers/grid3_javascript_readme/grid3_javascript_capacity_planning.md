@@ -3,7 +3,7 @@ title: "Capacity Planning"
 sidebar_position: 77
 ---
 
-<h1> Capacity Planning </h1>
+
 
 ## Introduction
 

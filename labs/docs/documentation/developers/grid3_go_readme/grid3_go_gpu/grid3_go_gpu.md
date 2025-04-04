@@ -3,7 +3,7 @@ title: "GPU and Go"
 sidebar_position: 96
 ---
 
-<h1> GPU and Go </h1>
+
 
 **TABLE OF CONTENTS**
 

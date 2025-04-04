@@ -20,9 +20,9 @@ sidebar_position: 32
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. ***matter*.gent02.dev.grid.tf**
 
 - Select a capacity package:
-    - **Small**: {cpu: 1, memory: 2, diskSize: 15 }
-    - **Medium**: {cpu: 2, memory: 4, diskSize: 50 }
-    - **Large**: {cpu: 4, memory: 16, diskSize: 100 }
+    - **Small**: \{cpu: 1, memory: 2, diskSize: 15 \}
+    - **Medium**: \{cpu: 2, memory: 4, diskSize: 50 \}
+    - **Large**: \{cpu: 4, memory: 16, diskSize: 100 \}
     - Or choose a **Custom** plan
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4

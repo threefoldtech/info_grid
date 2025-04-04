@@ -7,7 +7,8 @@ sidebar_position: 411
 
 *This privacy policy will explain how ThreeFold Movement ("companies", “we”, or “us”) uses the personal data we collect from you when you use any of our:*
 
-{{#include ./terms_conditions/sub/websites.md}}
+websites/wikis/forums ending with threefold.io, threefold.me, grid.tf, threefold.tech, ThreeFold_Token.com, freeflownation.org, 3bot.org, incubaid.com or consciousinternet.org or any other website as used/promoted by ThreeFold or any other site as originating from our opensource git repository on https://github.com/threefoldfoundation.
+
 
 ### What data do we collect? 
 
@@ -77,7 +78,8 @@ If you make a request, we have one month to respond to you. If you would like to
 * email: dataprivacy@threefold.io
 
 * post address: 
-{{#include ./threefold_fzc_address.md}}
+Q1-07-038/B SAIF Zone, Sharjah 
+United Arab Emirates
 
 
 ### What are cookies? 
@@ -122,4 +124,8 @@ If you have any questions about our privacy policy, the data we hold on you, or 
 
 Email us at: dataprivacy@threefold.io
 
-{{#include ./terms_conditions/sub/the_single_source_truth.md}}
+## SINGLE SOURCE OF TRUTH
+
+Our single source of truth for our legal docs is stored on [Github: https://github.com/threefoldfoundation/info_legal/tree/master/](https://github.com/threefoldfoundation/info_legal)
+
+> You can see the history of each file on github, useful to see the right version of the file in relation to the date when you signed a document or contract which linked into one of the above documents.

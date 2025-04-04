@@ -3,7 +3,7 @@ title: "Authenticator"
 sidebar_position: 69
 ---
 
-<h1> ThreeFold Connect Authenticator</h1>
+
 
 ## Introduction
 

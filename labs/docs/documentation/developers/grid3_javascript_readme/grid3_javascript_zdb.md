@@ -3,7 +3,7 @@ title: "Deploy a ZDB"
 sidebar_position: 82
 ---
 
-<h1>Deploying ZDB</h1>
+
 
 ## Introduction
 

@@ -3,7 +3,7 @@ title: "Domains"
 sidebar_position: 45
 ---
 
-<h1> Domains </h1>
+
 
 ## Introduction
 

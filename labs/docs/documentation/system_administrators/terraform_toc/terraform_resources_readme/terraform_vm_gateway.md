@@ -3,7 +3,7 @@ title: "Web Gateway"
 sidebar_position: 245
 ---
 
-<h1> Terraform Web Gateway With VM </h1>
+
 
 
 

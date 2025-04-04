@@ -3,7 +3,7 @@ title: "RMB Specs"
 sidebar_position: 140
 ---
 
-<h1> RMB Specs </h1>
+
 
 # Introduction
 

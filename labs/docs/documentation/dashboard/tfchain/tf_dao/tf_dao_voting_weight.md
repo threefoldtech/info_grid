@@ -3,7 +3,7 @@ title: "Voting Weight Example"
 sidebar_position: 58
 ---
 
-<h1> Voting Weight Example</h1>
+
 
 ## Introduction
 

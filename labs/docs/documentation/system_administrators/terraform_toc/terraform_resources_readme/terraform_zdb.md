@@ -3,7 +3,7 @@ title: "ZDB"
 sidebar_position: 247
 ---
 
-<h1> Deploying a ZDB with terraform </h1>
+
 
 
 

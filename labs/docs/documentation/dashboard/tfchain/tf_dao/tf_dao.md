@@ -3,7 +3,7 @@ title: "TF DAO"
 sidebar_position: 57
 ---
 
-<h1>DAO Voting</h1>
+
 
 The TFChain DAO (i.e. Decentralized Autonomous Organization) feature integrates decentralized governance capabilities into the ThreeFold Dashboard. It enables community members to participate in decision-making processes and to contribute to the evolution of the ThreeFold ecosystem. Through the TFChain DAO, users can propose, vote on, and implement changes to the network protocols, policies, and operations, fostering a collaborative and inclusive environment.
 

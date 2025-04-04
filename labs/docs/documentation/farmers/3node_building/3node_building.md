@@ -3,7 +3,7 @@ title: "Build a 3Node"
 sidebar_position: 173
 ---
 
-<h1>  Building a DIY 3Node </h1>
+
 
 This section of the ThreeFold Farmers book presents the necessary and basic steps to build a DIY 3Node.
 

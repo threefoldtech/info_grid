@@ -3,7 +3,7 @@ title: "1. Create a Farm"
 sidebar_position: 174
 ---
 
-<h1> 1. Create a Farm </h1>
+
 
 ## Introduction
 

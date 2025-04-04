@@ -3,7 +3,7 @@ title: "Kubernetes Cluster"
 sidebar_position: 246
 ---
 
-<h1> Kubernetes Cluster </h1>
+
 
 
 

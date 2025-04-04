@@ -3,7 +3,7 @@ title: "Cloud Pricing Compare"
 sidebar_position: 388
 ---
 
-<h1>Price comparison Cloudorado</h1>
+
 
 
 

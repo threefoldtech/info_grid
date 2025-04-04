@@ -3,7 +3,7 @@ title: "IPFS on a Micro VM"
 sidebar_position: 291
 ---
 
-<h1> IPFS on a Micro VM</h1>
+
 
 
 

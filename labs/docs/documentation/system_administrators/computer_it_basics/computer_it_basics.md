@@ -3,7 +3,7 @@ title: "Computer and IT Basics"
 sidebar_position: 270
 ---
 
-<h1> Computer and IT Basics </h1>
+
 
 Welcome to the *Computer and IT Basics* section of the ThreeFold Manual! 
 

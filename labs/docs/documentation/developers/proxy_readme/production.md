@@ -3,7 +3,7 @@ title: "Production"
 sidebar_position: 126
 ---
 
-<h1>Running Proxy in Production</h1>
+
 
 ## Introduction
 

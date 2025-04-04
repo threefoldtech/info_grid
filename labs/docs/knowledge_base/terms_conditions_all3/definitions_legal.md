@@ -270,4 +270,8 @@ means the open source software connecting the Hardware to the ThreeFold network,
 
 means the technical requirements for, and performance standards of, the Deliverables as set forth in the Sales Order or Documentation provided to Customer.
 
-{{#include ./terms_conditions/sub/the_single_source_truth.md}}
+## SINGLE SOURCE OF TRUTH
+
+Our single source of truth for our legal docs is stored on [Github: https://github.com/threefoldfoundation/info_legal/tree/master/](https://github.com/threefoldfoundation/info_legal)
+
+> You can see the history of each file on github, useful to see the right version of the file in relation to the date when you signed a document or contract which linked into one of the above documents.

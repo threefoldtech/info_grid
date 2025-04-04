@@ -3,7 +3,7 @@ title: "Installation"
 sidebar_position: 89
 ---
 
-<h1>Go Client Installation</h1>
+
 
 ## Introduction
 

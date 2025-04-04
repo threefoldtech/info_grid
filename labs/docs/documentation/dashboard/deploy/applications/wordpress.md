@@ -3,7 +3,7 @@ title: "WordPress"
 sidebar_position: 44
 ---
 
-<h1> WordPress </h1>
+
 
 # Introduction
 
@@ -39,13 +39,13 @@ This record type indicates the IP address of a given domain.
 
 Consider the following if you've enabled **Custom Domain** in **Domain Name** and **Public IPv4** in **Network**.
 
-After deployment, you will have access to the IPv4 address of the VM you deployed on. You will need to add a **DNS A record** (Host: "@", Value: <VM_IP_Address>) to your domain to access WordPress.
+After deployment, you will have access to the IPv4 address of the VM you deployed on. You will need to add a **DNS A record** (Host: "@", Value: "VM_IP_Address") to your domain to access WordPress.
 
 ## DNS Record with Gateway
 
 Consider the following if you've enabled **Custom domain** in **Domain Name** but did not enable **Public IPv4** in **Network**.
 
-Before deploying the WordPress instance, you will have access to the gateway IPv4 address. You will need to add a **DNS A record** (Host: "@", Value: <Gateway_IP>) to your domain to access WordPress.
+Before deploying the WordPress instance, you will have access to the gateway IPv4 address. You will need to add a **DNS A record** (Host: "@", Value: "Gateway_IP") to your domain to access WordPress.
 
 ## DNS Propagation
 
@@ -69,9 +69,9 @@ In this section, we cover the steps to deploy a WordPress instance on the Playgr
   - **Password**: This will be used as the MySQL DB password and for Wp-admin
   - **Email**: This will be used for Wp-admin
 - Select a capacity package:
-  - **Small**: { cpu: 1, memory: 2 , diskSize: 15 }
-  - **Medium**: { cpu: 2, memory: 4 , diskSize: 50 }
-  - **Large**: { cpu: 4, memory: 16 , diskSize: 100 }
+  - **Small**: \{ cpu: 1, memory: 2 , diskSize: 15 \}
+  - **Medium**: \{ cpu: 2, memory: 4 , diskSize: 50 \}
+  - **Large**: \{ cpu: 4, memory: 16 , diskSize: 100 \}
   - Or choose a **Custom** plan
 - Choose the network
   - `Public IPv4` flag gives the virtual machine a Public IPv4

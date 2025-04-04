@@ -4,7 +4,7 @@ sidebar_position: 278
 ---
 
 
-<h1> Uncomplicated Firewall (ufw) Basic Commands</h1>
+
 
 ## Introduction
 

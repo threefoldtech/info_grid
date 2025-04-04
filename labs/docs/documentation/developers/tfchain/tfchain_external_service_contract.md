@@ -3,7 +3,7 @@ title: "External Service Contract"
 sidebar_position: 116
 ---
 
-<h1>External Service Contract: How to set and execute</h1>
+
 
 # Introduction
 

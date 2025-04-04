@@ -3,7 +3,7 @@ title: "Getting Started"
 sidebar_position: 100
 ---
 
-<h1>TFCMD Getting Started</h1>
+
 
 ## Introduction
 

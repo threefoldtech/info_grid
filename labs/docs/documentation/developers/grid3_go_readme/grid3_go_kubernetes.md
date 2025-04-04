@@ -3,7 +3,7 @@ title: "Deploy Kubernetes"
 sidebar_position: 94
 ---
 
-<h1> Deploying Kubernetes Clusters</h1>
+
 
 ## Introduction
 

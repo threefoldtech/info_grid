@@ -3,7 +3,7 @@ title: "Advanced Networking"
 sidebar_position: 193
 ---
 
-<h1> Advanced Networking </h1>
+
 
 Welcome to the *Advanced Networking* section of the ThreeFold Manual.
 

@@ -8,7 +8,7 @@ title: "Proof of Utilization"
 sidebar_position: 336
 ---
 
-<h1> Proof of Utilization </h1>
+
 
 
 

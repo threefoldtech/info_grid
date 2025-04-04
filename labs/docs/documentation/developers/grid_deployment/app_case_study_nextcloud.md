@@ -3,7 +3,7 @@ title: "Application Case Study: Nextcloud"
 sidebar_position: 171
 ---
 
-<h1>Application Case Study: Nextcloud</h1>
+
 
 # Introduction
 
@@ -61,7 +61,7 @@ We added the line **Nextcloud = "Nextcloud",** in the array **export enum Projec
 
 We added the line **nextcloud = "nc"** in the array **export enum SolutionCode**. This will be used notably as a prefix for the randomly generated deployment name. For example, when the user deploys a Nextcloud application, the name of the VM could be **ncxwbt2**.
 
-We also added the line **nextcloud: "Nextcloud",** in the array **export const solutionType: { [key: string]: string } =**. This will be used when setting a contract with the TFGrid.
+We also added the line **nextcloud: "Nextcloud". This will be used when setting a contract with the TFGrid.
 
 ## Update \/router\/index.ts
 
@@ -134,7 +134,7 @@ In the file **tf_deployment_list.vue**, located at the directory **packages/play
 
 We note that this section makes use of the **NEXTCLOUD_DOMAIN** and **NEXTCLOUD_AIO_LINK** environment variables shown in the section [Update deployment_list.ts](#update-deployment_listts).
 
-At the end of the file, at the section **const tabs: Tab[]**, we also added the line **{ title: "Nextcloud", value: "Nextcloud", imgPath: "images/icons/nextcloud.png" },**. We note that this line makes use of the Nextcloud icon we set in the **icons** directory.
+At the end of the file, at the section **const tabs: Tab[]**, we also added the line **\{ title: "Nextcloud", value: "Nextcloud", imgPath: "images/icons/nextcloud.png" \},**. We note that this line makes use of the Nextcloud icon we set in the **icons** directory.
 
 ## Create nextcloud_view.vue
 

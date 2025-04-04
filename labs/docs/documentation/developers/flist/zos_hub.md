@@ -3,7 +3,7 @@ title: "Zero-OS Hub"
 sidebar_position: 129
 ---
 
-<h1> Zero-OS Hub </h1>
+
 
 ## Introduction
 

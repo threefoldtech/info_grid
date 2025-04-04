@@ -3,7 +3,7 @@ title: "Jitsi"
 sidebar_position: 30
 ---
 
-<h1> Jitsi </h1>
+
 
 ## Introduction
 
@@ -24,9 +24,9 @@ Jitsi Meet is a set of Open Source projects which empower users to use and deplo
 - Enter an Application Name. It's used in generating a unique subdomain on one of the gateways on the network alongside your twin ID. Ex. **_fw100myfunk_.gent02.dev.grid.tf**
 
 - Select a capacity package:
-  - **Small**: {cpu: 1, memory: 2, diskSize: 50 }
-  - **Medium**: {cpu: 2, memory: 4, diskSize: 100 }
-  - **Large**: {cpu: 4, memory: 16, diskSize: 250 }
+  - **Small**: \{cpu: 1, memory: 2, diskSize: 50\}
+  - **Medium**: \{cpu: 2, memory: 4, diskSize: 100\}
+  - **Large**: \{cpu: 4, memory: 16, diskSize: 250\}
   - Or choose a **Custom** plan
 - Choose the network
   - `Public IPv4` flag gives the virtual machine a Public IPv4

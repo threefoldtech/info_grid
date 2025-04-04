@@ -3,7 +3,7 @@ title: "Farming Policies"
 sidebar_position: 115
 ---
 
-<h1> Farming Policies </h1>
+
 
 ## Introduction
 

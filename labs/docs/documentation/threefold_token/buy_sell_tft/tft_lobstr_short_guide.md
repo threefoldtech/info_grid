@@ -3,7 +3,7 @@ title: "Quick Start (Stellar)"
 sidebar_position: 323
 ---
 
-<h1>Get TFT: Quick Start (Stellar)</h1>
+
 
 
 

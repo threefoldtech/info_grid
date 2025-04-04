@@ -3,7 +3,7 @@ title: "Advanced"
 sidebar_position: 282
 ---
 
-<h1> TFGrid Advanced </h1>
+
 
 In this section, we delve into sophisticated topics and powerful functionalities that empower you to harness the full potential of TFGrid 3.0. Whether you're an experienced user seeking to deepen your understanding or a trailblazer venturing into uncharted territories, this manual is your gateway to mastering advanced concepts on the ThreeFold Grid.
 

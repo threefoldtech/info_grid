@@ -3,7 +3,7 @@ title: "Kubernetes"
 sidebar_position: 31
 ---
 
-<h1> Kubernetes </h1>
+
 
 ## Introduction
 

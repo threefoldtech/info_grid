@@ -3,7 +3,7 @@ title: "Farmerbot"
 sidebar_position: 198
 ---
 
-<h1><h1> Farmerbot </h1>lt;TITLE<h1> Farmerbot </h1>gt;</h1>
+
 
 The Farmerbot is a service that farmers can run in order to automatically manage the nodes in their farms. The behavior of the farmerbot is customizable through a YAML configuration file.
 

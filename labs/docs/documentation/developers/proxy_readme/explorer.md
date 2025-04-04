@@ -3,7 +3,7 @@ title: "Explorer"
 sidebar_position: 124
 ---
 
-<h1>The Grid Explorer</h1>
+
 
 ## Introduction
 

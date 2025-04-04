@@ -3,7 +3,7 @@ title: "Introduction to Terraform"
 sidebar_position: 238
 ---
 
-<h1> Introduction to Terraform </h1>
+
 
 ## What is Terraform?
 

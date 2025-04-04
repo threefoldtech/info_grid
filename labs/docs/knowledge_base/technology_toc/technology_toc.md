@@ -3,7 +3,7 @@ title: "Technology"
 sidebar_position: 329
 ---
 
-<h1>Technology</h1>
+
 
 This section covers the technology behind the ThreeFold Grid. ThreeFold has created an amazing technology system to allow anyone to host their applications and data close to them.
 

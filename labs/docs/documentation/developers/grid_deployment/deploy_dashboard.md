@@ -3,7 +3,7 @@ title: "Deploy the Dashboard"
 sidebar_position: 170
 ---
 
-<h1>Deploy the Dashboard</h1>
+
 
 ## Introduction
 

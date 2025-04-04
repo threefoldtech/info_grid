@@ -3,7 +3,7 @@ title: "TestLodge"
 sidebar_position: 406
 ---
 
-<h1>How to Use TestLodge for Testing the ThreeFold Grid</h1>
+
 
 
 

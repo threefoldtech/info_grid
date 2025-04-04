@@ -3,7 +3,7 @@ title: "Mounts"
 sidebar_position: 257
 ---
 
-<h1> Deploying a VM with Mounts Using Terraform </h1>
+
 
 
 

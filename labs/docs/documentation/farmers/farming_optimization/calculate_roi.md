@@ -3,7 +3,7 @@ title: "Calculate Your ROI"
 sidebar_position: 192
 ---
 
-<h1> Calculate the ROI of a DIY 3Node </h1>
+
 
 To calculate the ROI of a DIY 3Node, we first calculate the Revenue per Month:
 

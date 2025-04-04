@@ -3,7 +3,7 @@ title: "Minting and the Farmerbot"
 sidebar_position: 201
 ---
 
-<h1><h1> Minting and the Farmerbot </h1>lt;TITLE<h1> Minting and the Farmerbot </h1>gt;</h1>
+
 
 
 

@@ -3,7 +3,7 @@ title: "Manual"
 sidebar_position: 144
 ---
 
-<h1> ZOS Manual</h1>
+
 
 ## Introduction
 

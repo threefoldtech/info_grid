@@ -3,7 +3,7 @@ title: "Installation"
 sidebar_position: 108
 ---
 
-<h1>Installation</h1>
+
 
 ## Introduction
 

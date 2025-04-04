@@ -3,7 +3,7 @@ title: "Node Pilot"
 sidebar_position: 34
 ---
 
-<h1> NodePilot </h1>
+
 
 ## Introduction
 

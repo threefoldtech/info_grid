@@ -3,7 +3,7 @@ title: "Health Check"
 sidebar_position: 166
 ---
 
-<h1> Health Check </h1>
+
 
 ## Overview
 

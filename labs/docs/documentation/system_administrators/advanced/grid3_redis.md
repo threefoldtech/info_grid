@@ -3,7 +3,7 @@ title: "Redis"
 sidebar_position: 288
 ---
 
-<h1> Redis </h1>
+
 
 
 

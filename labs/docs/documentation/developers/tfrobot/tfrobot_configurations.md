@@ -3,7 +3,7 @@ title: "Supported Configurations"
 sidebar_position: 112
 ---
 
-<h1> Supported Configurations </h1>
+
 
 ## Introduction
 

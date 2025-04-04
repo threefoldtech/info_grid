@@ -3,7 +3,7 @@ title: "Taiga"
 sidebar_position: 41
 ---
 
-<h1> Taiga </h1>
+
 
 ## Introduction
 
@@ -23,9 +23,9 @@ sidebar_position: 41
 
 - Enter administrator information including **Username**, **Email** and **Password**. This admin user will have full permission on the deployed instance.
 - Select a capacity package:
-    - **Small**: {cpu: 2, memory: 4, diskSize: 100 }
-    - **Medium**: {cpu: 4, memory: 8, diskSize: 150 }
-    - **Large**: {cpu: 4, memory: 16, diskSize: 250 }
+    - **Small**: \{cpu: 2, memory: 4, diskSize: 100 \}
+    - **Medium**: \{cpu: 4, memory: 8, diskSize: 150 \}
+    - **Large**: \{cpu: 4, memory: 16, diskSize: 250 \}
     - Or choose a **Custom** plan
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4

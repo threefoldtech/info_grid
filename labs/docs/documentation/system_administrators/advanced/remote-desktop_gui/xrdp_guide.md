@@ -3,7 +3,7 @@ title: "XRDP: an Open-Source Remote Desktop Protocol"
 sidebar_position: 306
 ---
 
-<h1> Deploy a Full VM and Run XRDP for Remote Desktop Connection </h1>
+
 
 
 

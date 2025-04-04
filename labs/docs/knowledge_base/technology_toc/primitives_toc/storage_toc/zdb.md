@@ -3,7 +3,7 @@ title: "Zero-DB"
 sidebar_position: 350
 ---
 
-<h1> ZOS-DB (ZDB) </h1>
+
 
 
 

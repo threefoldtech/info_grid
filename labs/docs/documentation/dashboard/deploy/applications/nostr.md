@@ -3,7 +3,7 @@ title: "Nostr"
 sidebar_position: 35
 ---
 
-<h1> Nostr </h1>
+
 
 ## Introduction
 
@@ -21,9 +21,9 @@ sidebar_position: 35
 
 - Enter a name for your deployment or keep the default name
 - Select a capacity package:
-    - **Small**: {cpu: 1, memory: 2, diskSize: 25 }
-    - **Medium**: {cpu: 2, memory: 4, diskSize: 50 }
-    - **Large**: {cpu: 4, memory: 16, diskSize: 100 }
+    - **Small**: \{cpu: 1, memory: 2, diskSize: 25 \}
+    - **Medium**: \{cpu: 2, memory: 4, diskSize: 50 \}
+    - **Large**: \{cpu: 4, memory: 16, diskSize: 100 \}
     - Or choose a **Custom** plan
 - Choose the network
    - `Public IPv4` flag gives the virtual machine a Public IPv4

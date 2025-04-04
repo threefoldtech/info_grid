@@ -3,7 +3,7 @@ title: "TFCMD"
 sidebar_position: 99
 ---
 
-<h1>TFCMD</h1>
+
 
 TFCMD (`tfcmd`) is a command line interface to interact and develop on Threefold Grid using command line.
 

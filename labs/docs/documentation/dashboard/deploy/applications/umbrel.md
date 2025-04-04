@@ -3,7 +3,7 @@ title: "Umbrel"
 sidebar_position: 43
 ---
 
-<h1> Umbrel </h1>
+
 
 ## Introduction
 
@@ -25,9 +25,9 @@ sidebar_position: 43
   - Will be used to login to the Umbrel dashboard.
   - Must be 12 to 30 characters .
 - Select a capacity package:
-  - **Small**: { cpu: 1, memory: 2, diskSize: 10 }
-  - **Medium**: { cpu: 2, memory: 4 , diskSize: 50 }
-  - **Large**: { cpu: 4, memory: 16 , diskSize: 100 }
+  - **Small**: \{ cpu: 1, memory: 2, diskSize: 10 \}
+  - **Medium**: \{ cpu: 2, memory: 4 , diskSize: 50 \}
+  - **Large**: \{ cpu: 4, memory: 16 , diskSize: 100 \}
   - Or choose a **Custom** plan
 - Choose the network
   - `Public IPv4` flag gives the virtual machine a Public IPv4

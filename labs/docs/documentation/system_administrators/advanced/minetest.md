@@ -3,7 +3,7 @@ title: "Minetest"
 sidebar_position: 303
 ---
 
-<h1>Minetest on the TFGrid</h1>
+
 
 
 
@@ -47,7 +47,7 @@ The following table explicitly shows how to set the A record for your domain. No
 
 | Type | Host | Value          |
 | ---- | ---- | -------------- |
-| A    | minetest   | <ipv4_address> |
+| A    | minetest   | ipv4_address |
 
 
 You will then be able to access your server on Minetest with the URL `minetest.example.com:30033`. More on the port below.

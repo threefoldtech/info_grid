@@ -3,7 +3,7 @@ title: "CapRover"
 sidebar_position: 22
 ---
 
-<h1> CapRover </h1>
+
 
 ## Introduction
 
@@ -55,9 +55,9 @@ Use the Leader and Workers tabs to add nodes to your deployment.
 
 - Enter a name for the deployment or keep the default name
 - Select a capacity package:
-    - **Small**: {cpu: 1, memory: 2, diskSize: 25 }
-    - **Medium**: {cpu: 2, memory: 4, diskSize: 50 }
-    - **Large**: {cpu: 4, memory: 16, diskSize: 100 }
+    - **Small**: \{cpu: 1, memory: 2, diskSize: 25\}
+    - **Medium**: \{cpu: 2, memory: 4, diskSize: 50\}
+    - **Large**: \{cpu: 4, memory: 16, diskSize: 100\}
     - Or choose a **Custom** plan
 - Choose the network
    - `Mycelium` flag gives the virtual machine a Mycelium address

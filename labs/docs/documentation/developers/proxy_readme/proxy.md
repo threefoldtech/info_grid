@@ -3,7 +3,7 @@ title: "Introducing Grid Proxy"
 sidebar_position: 119
 ---
 
-<h1> Introducing Grid Proxy </h1>
+
 
 ## About
 
@@ -13,27 +13,25 @@ The proxy is used as the backend of several threefold projects like:
 
 - [Dashboard](../../dashboard/dashboard.md)
 
-<!-- Usage -->
 
 ## How to Use the Project
 
 If you don't want to care about setting up your instance you can use one of the live instances. each works against a different TFChain network.
 
-- Dev network: <https://gridproxy.dev.grid.tf>
-  - Swagger: <https://gridproxy.dev.grid.tf/swagger/index.html>
-- Qa network: <https://gridproxy.qa.grid.tf>
-  - Swagger: <https://gridproxy.qa.grid.tf/swagger/index.html>
-- Test network: <https://gridproxy.test.grid.tf>
-  - Swagger: <https://gridproxy.test.grid.tf/swagger/index.html>
-- Main network: <https://gridproxy.grid.tf>
-  - Swagger: <https://gridproxy.grid.tf/swagger/index.html>
+- Dev network: https://gridproxy.dev.grid.tf
+  - Swagger: https://gridproxy.dev.grid.tf/swagger/index.html
+- Qa network: https://gridproxy.qa.grid.tf
+  - Swagger: https://gridproxy.qa.grid.tf/swagger/index.html
+- Test network: https://gridproxy.test.grid.tf
+  - Swagger: https://gridproxy.test.grid.tf/swagger/index.html
+- Main network: https://gridproxy.grid.tf
+  - Swagger: https://gridproxy.grid.tf/swagger/index.html
 
 Or follow the [development guide](#start-for-development) to run yours.
 By default, the instance runs against devnet. to configure that you will need to config this while running the server.
 
 > Note: You may face some differences between each instance and the others. that is normal because each network is in a different stage of development and works correctly with others parts of the Grid on the same network.
 
-<!-- Prerequisites -->
 ## Used Technologies & Prerequisites
 
 1. **GoLang**: Mainly the two parts of the project written in `Go 1.17`, otherwise you can just download the compiled binaries from github [releases](https://github.com/threefoldtech/tfgrid-sdk-go/releases)
@@ -42,8 +40,6 @@ By default, the instance runs against devnet. to configure that you will need to
 4. **Mnemonics**: Secret seeds for adummy identity to use for the relay client.
 
 For more about the prerequisites and how to set up and configure them. follow the [Setup guide](./setup.md)
-
-<!-- Development -->
 
 ## Start for Development
 
@@ -91,7 +87,6 @@ Then visit `http://localhost:8080/<endpoint>`
 
 For more illustrations about the commands needed to work on the project, see the section [Commands](./commands.md). For more info about the project structure and contributions guidelines check the section [Contributions](./contributions.md).
 
-<!-- Production-->
 
 ## Setup for Production
 

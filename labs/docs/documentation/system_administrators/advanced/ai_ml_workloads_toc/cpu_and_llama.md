@@ -3,7 +3,7 @@ title: "CPU and Llama"
 sidebar_position: 295
 ---
 
-<h1> AI & ML Workloads: CPU and Llama </h1>
+
 
 
 

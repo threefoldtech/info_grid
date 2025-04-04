@@ -3,7 +3,7 @@ title: "QSFS"
 sidebar_position: 84
 ---
 
-<h1>Deploying a VM with QSFS</h1>
+
 
 ## Prerequisites
 
