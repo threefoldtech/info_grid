@@ -250,9 +250,21 @@ html[data-theme='dark'] .navbar__link:hover {
 .markdown, 
 .markdown p,
 .markdown li,
-.markdown a:not(.menu__link--active),
 .table-of-contents__link {
   color: var(--tf-color-black);
+}
+
+/* Hyperlink styling for content */
+.markdown a:not(.menu__link--active) {
+  color: var(--ifm-color-primary);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.markdown a:not(.menu__link--active):hover {
+  text-decoration: underline;
+  color: var(--ifm-color-primary-dark);
 }
 
 /* Dark mode overrides for sidebar and content text */
@@ -273,9 +285,21 @@ html[data-theme='dark'] .menu__link--active:not(.menu__link--sublist) {
 html[data-theme='dark'] .markdown,
 html[data-theme='dark'] .markdown p,
 html[data-theme='dark'] .markdown li,
-html[data-theme='dark'] .markdown a:not(.menu__link--active),
 html[data-theme='dark'] .table-of-contents__link {
   color: white;
+}
+
+/* Dark mode hyperlink styling */
+html[data-theme='dark'] .markdown a:not(.menu__link--active) {
+  color: var(--ifm-color-primary-lightest);
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+html[data-theme='dark'] .markdown a:not(.menu__link--active):hover {
+  text-decoration: underline;
+  color: #ffffff;
 }
 
 
