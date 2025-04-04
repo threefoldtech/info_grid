@@ -13,6 +13,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   favicon: 'img/logo_tft_light_short.png',
   organizationName: 'ThreeFold',
   projectName: 'info_grid',
+  markdown: {
+    mermaid: true,
+  },
+  themes: ['@docusaurus/theme-mermaid'],
 
   presets: [
     [
@@ -89,6 +93,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      mermaid: {
+        theme: {light: 'neutral', dark: 'forest'},
+      },
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,

@@ -35,6 +35,10 @@ The TFT contract address on different chains are the following:
   - ```
     0x8f0FB159380176D324542b3a7933F0C2Fd0c2bbf
     ```
+- [TFT Contract address on Solana](https://explorer.solana.com/address/TFTDVQ1mw85A79Zjeok5MQ1FNUQfgWd6FnPonApnrod)
+  - ```
+    TFTDVQ1mw85A79Zjeok5MQ1FNUQfgWd6FnPonApnrod
+    ```
 
 ## Bridges Between Chains
 
