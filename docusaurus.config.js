@@ -37,6 +37,18 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     ],
   ],
   
+  customFields: {
+    webpack: {
+      configure: (config) => {
+        config.module.rules.push({
+          test: /\.md$/,
+          type: 'asset/source',
+        });
+        return config;
+      },
+    },
+  },
+
   plugins: [
     [
       '@docusaurus/plugin-content-docs',
