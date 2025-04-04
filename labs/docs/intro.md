@@ -1,20 +1,22 @@
 ---
-title: ThreeFold Labs
+title: Welcome to the Labs
 sidebar_position: 1
 ---
 
-# ThreeFold V3 Manual
+# ThreeFold Labs
 
-*Welcome to the ThreeFold V3 Manual!*
+*Welcome to the ThreeFold Labs!*
+
+> The ThreeFold Labs contain advanced material for users and farmers of the ThreeFold Grid. For basic information, please refer to the [Users](../users/intro) and [Farmers](../farmers/intro) sections respectively.
 
 This manual is organized in two main sections: 
 
-- [ThreeFold Knowledge Base](../knowledge_base/knowledge_base.md)
-- [ThreeFold Documentation](../documentation/documentation.md)
+- [ThreeFold Knowledge Base](./knowledge_base/knowledge_base.md)
+- [ThreeFold Documentation](./documentation/documentation.md)
 
 The *ThreeFold Knowledge Base* section contains all information needed to understand how the whole ThreeFold ecosystem works. 
 
-The *ThreeFold Documentation* section contains all the practical information of the ThreeFold Grid, from general information covering the multi-functional [ThreeFold Dashboard](../documentation/dashboard/dashboard.md), the versatile [ThreeFold Connect app](../documentation/tfconnect/tfconnect_toc.md) and [TFT](../documentation/threefold_token/threefold_token.md), to specific tutorials for [developers](../documentation/developers/developers.md), [farmers](../documentation/farmers/farmers.md) and [system administrators](../documentation/system_administrators/system_administrators.md).
+The *ThreeFold Documentation* section contains all the practical information of the ThreeFold Grid, from general information covering the multi-functional [ThreeFold Dashboard](./documentation/dashboard/dashboard.md), the versatile [ThreeFold Connect app](./documentation/tfconnect/tfconnect_toc.md) and [TFT](./documentation/threefold_token/threefold_token.md), to specific tutorials for [developers](./documentation/developers/developers.md), [farmers](./documentation/farmers/farmers.md) and [system administrators](./documentation/system_administrators/system_administrators.md).
 
 > Explore the ThreeFold Grid status page for live updates on Threefold services!
 > 
@@ -24,18 +26,18 @@ The *ThreeFold Documentation* section contains all the practical information of 
 
 It's easy to get started on the ThreeFold Grid. 
 
-If you want to farm TFT, check out [how to build a 3Node](../documentation/farmers/3node_building/3node_building.md). 
+If you want to farm TFT, check out [how to build a 3Node](./documentation/farmers/3node_building/3node_building.md). 
 
 If you want to deploy or develop on the grid, you will first need to get TFT on TFChain:
 
-- [Create a TFChain account](../documentation/dashboard/wallet_connector.md)
+- [Create a TFChain account](./documentation/dashboard/wallet_connector.md)
 - Get TFT in your TFChain account
-  - [Buy TFT](../documentation/threefold_token/buy_sell_tft/buy_sell_tft.md)
-  - [Send TFT to TFChain](../documentation/threefold_token/tft_bridges/tft_bridges.md)
+  - [Buy TFT](./documentation/threefold_token/buy_sell_tft/buy_sell_tft.md)
+  - [Send TFT to TFChain](./documentation/threefold_token/tft_bridges/tft_bridges.md)
 
-To develop on the Grid, read the [developers documentation](../documentation/developers/developers.md).
+To develop on the Grid, read the [developers documentation](./documentation/developers/developers.md).
 
-To deploy applications, read the [deploy section](../documentation/dashboard/deploy/deploy.md) then, if needed, [access the deployment via SSH](../documentation/system_administrators/getstarted/ssh_guide/ssh_guide.md).
+To deploy applications, read the [deploy section](./documentation/dashboard/deploy/deploy.md) then, if needed, [access the deployment via SSH](./documentation/system_administrators/getstarted/ssh_guide/ssh_guide.md).
 
 ## Join the ThreeFold Community
 
@@ -48,7 +50,7 @@ The ThreeFold community is very active and its members will be more than happy t
 
 ## Questions and Feedback
 
-To explore this manual, you can use the search function by hitting **'s'** on your keyboard, or by clicking on the magnifier button at the top left of each page. Answers to your questions might also be on the [ThreeFold Forum](https://forum.threefold.io/).
+To explore this manual, you can use the search function at the top right of the page. Answers to your questions might also be on the [ThreeFold Forum](https://forum.threefold.io/).
 
 If you can't find the answer to your question, our dedicated [ThreeFold Support](https://threefoldfaq.crisp.help/en/) team is here to help.
 
