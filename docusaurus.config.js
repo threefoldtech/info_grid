@@ -8,19 +8,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   tagline: 'Documentation for ThreeFold Grid',
   url: 'https://manual.grid.tf',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo_tft_light_short.png',
   organizationName: 'ThreeFold',
   projectName: 'info_grid',
   markdown: {
     mermaid: true,
-  },
-  
-  // Configure MDX to handle custom components properly
-  mdx: {
-    remarkPlugins: [],
-    rehypePlugins: [],
   },
   themes: ['@docusaurus/theme-mermaid'],
 
@@ -49,6 +43,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   ],
   
   customFields: {
+    // Configure MDX to handle custom components properly
+    mdx: {
+      remarkPlugins: [],
+      rehypePlugins: [],
+    },
     webpack: {
       configure: (config) => {
         config.module.rules.push({

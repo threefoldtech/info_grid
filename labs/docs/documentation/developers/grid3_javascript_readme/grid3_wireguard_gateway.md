@@ -20,7 +20,7 @@ To configure the client, have a look at [this section](./grid3_javascript_loadcl
 
 ## Code Example
 
-```ts
+```
 import { FilterOptions, GatewayNameModel, GridClient, MachineModel, MachinesModel, NetworkModel } from "../src";
 import { config, getClient } from "./client_loader";
 import { log } from "./utils";
@@ -60,12 +60,11 @@ function createMachinesModel(vm: MachineModel, network: NetworkModel): MachinesM
   } as MachinesModel;
 }
 function createGwModel(node_id: number, ip: string, networkName: string, name: string, port: number) {
-  // ip parameter is passed in from the calling function
   return {
     name,
     node_id,
     tls_passthrough: false,
-    backends: [`http://${ip}:${port}`],
+    backends: [http://${ip}:${port}],
     network: networkName,
   } as GatewayNameModel;
 }
@@ -125,7 +124,7 @@ This will be done through the following steps:
 
 ### Get the Client
 
-```ts
+```
 const grid3 = getClient();
 ```
 
@@ -135,7 +134,7 @@ Determine the deploying nodes for the vm, network and gateway.
 
 - Gateway and network access node
 
-  ```ts
+  ```
   const gwNode = +(await grid3.capacity.filterNodes({ gateway: true }))[0].nodeId;
   ```
 
@@ -147,7 +146,7 @@ Determine the deploying nodes for the vm, network and gateway.
   we need to set the filter options first for this example we will deploy the vm with 1 cpu, 2 GB of memory.
   now will crete a `FilterOptions` object with that specs and get the firs node id of the result.
 
-  ```ts
+  ```
     const vmQueryOptions: FilterOptions = {
     cru: 1,
     mru: 2, // GB
@@ -161,7 +160,7 @@ Determine the deploying nodes for the vm, network and gateway.
 
 We need to create the network and machine models, the deploy the VM
 
-```ts
+```
 const network = createNetworkModel(gwNode, "monNetwork");
 const vm = createMachineModel(vmNode);
 const machines = createMachinesModel(vm, network);
@@ -183,13 +182,13 @@ Now we have our VM deployed with it's network, we need to make the gateway on th
 
 - Get the VM's private IP address:
   
-  ```ts
+  ```
   const vmPrivateIP = (deployedVm as { interfaces: { ip: string }[] }[])[0].interfaces[0].ip;
   ```
 
 - Create the Gateway name model:
   
-  ```ts
+  ```
   const gateway = createGwModel(gwNode, vmPrivateIP, network.name, "pyserver", 8000);
   ```
 
@@ -198,12 +197,12 @@ Now we have our VM deployed with it's network, we need to make the gateway on th
   - `name` : the subdomain name
   - `node_id` : the gateway node id
   - `tls_passthrough: false`
-  - `backends: [`http://${ip}:${port}`]` : the private ip address and the port number of our machine
-  - `network: networkName` : the network name, we already created earlier.
+  - `backends`: the private ip address and the port number of our machine
+  - `network`: the network name, we already created earlier.
 
 ### Get the Deployments Information
 
-  ```ts
+  ```
   const deployedVm = await grid3.machines.getObj(machines.name); 
   log("+++ deployed vm +++");
   log(deployedVm);
@@ -215,7 +214,7 @@ Now we have our VM deployed with it's network, we need to make the gateway on th
 
 - `deployedVm` : is an array of one object contains the details about the vm deployment.
 
-  ```ts
+  ```
   [
   {
     version: 0,
@@ -245,7 +244,7 @@ Now we have our VM deployed with it's network, we need to make the gateway on th
 
 - `deployedGw` : is an array of one object contains the details of the gateway name.
   
-  ```ts
+  ```
   [
   {
     version: 0,
@@ -274,7 +273,7 @@ finally we need to disconnect the client using `await grid3.disconnect();`
 
 If we want to delete the deployments we can just do this:
 
-```ts
+```
   const deletedMachines = await grid3.machines.delete({ name:  machines.name});
   log(deletedMachines);
 
