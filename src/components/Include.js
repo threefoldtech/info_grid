@@ -20,22 +20,28 @@ import TFT_SUPPLY from '../../values/tft_supply.md';
 import TFT_MARKETCAP from '../../values/tft_marketcap.md';
 
 // Create a mapping of value keys to their content
+// Safely convert to string and trim
+const safeStringTrim = (value) => {
+  if (value === null || value === undefined) return '';
+  return String(value).trim();
+};
+
 const values = {
-  'CU_MUSD_HOUR': CU_MUSD_HOUR.trim(),
-  'CU_MTFT_HOUR': CU_MTFT_HOUR.trim(),
-  'SU_MUSD_HOUR': SU_MUSD_HOUR.trim(),
-  'SU_MTFT_HOUR': SU_MTFT_HOUR.trim(), 
-  'NU_MUSD_HOUR': NU_MUSD_HOUR.trim(),
-  'NU_MTFT_HOUR': NU_MTFT_HOUR.trim(),
-  'IP_MUSD_HOUR': IP_MUSD_HOUR.trim(),
-  'IP_MTFT_HOUR': IP_MTFT_HOUR.trim(),
-  'NAME_MUSD_HOUR': NAME_MUSD_HOUR.trim(),
-  'NAME_MTFT_HOUR': NAME_MTFT_HOUR.trim(),
-  'DNAME_MUSD_HOUR': DNAME_MUSD_HOUR.trim(),
-  'DNAME_MTFT_HOUR': DNAME_MTFT_HOUR.trim(),
-  'tft_value': TFT_VALUE.trim(),
-  'tft_supply': TFT_SUPPLY.trim(),
-  'tft_marketcap': TFT_MARKETCAP.trim()
+  'CU_MUSD_HOUR': safeStringTrim(CU_MUSD_HOUR),
+  'CU_MTFT_HOUR': safeStringTrim(CU_MTFT_HOUR),
+  'SU_MUSD_HOUR': safeStringTrim(SU_MUSD_HOUR),
+  'SU_MTFT_HOUR': safeStringTrim(SU_MTFT_HOUR), 
+  'NU_MUSD_HOUR': safeStringTrim(NU_MUSD_HOUR),
+  'NU_MTFT_HOUR': safeStringTrim(NU_MTFT_HOUR),
+  'IP_MUSD_HOUR': safeStringTrim(IP_MUSD_HOUR),
+  'IP_MTFT_HOUR': safeStringTrim(IP_MTFT_HOUR),
+  'NAME_MUSD_HOUR': safeStringTrim(NAME_MUSD_HOUR),
+  'NAME_MTFT_HOUR': safeStringTrim(NAME_MTFT_HOUR),
+  'DNAME_MUSD_HOUR': safeStringTrim(DNAME_MUSD_HOUR),
+  'DNAME_MTFT_HOUR': safeStringTrim(DNAME_MTFT_HOUR),
+  'tft_value': safeStringTrim(TFT_VALUE),
+  'tft_supply': safeStringTrim(TFT_SUPPLY),
+  'tft_marketcap': safeStringTrim(TFT_MARKETCAP)
 };
 
 /**
@@ -45,11 +51,20 @@ const values = {
  * @returns {React.ReactElement} - React component
  */
 export default function Include({ path }) {
-  // Extract the file name from the path (for matching with our value keys)
-  const fileName = path.split('/').pop().replace('.md', '');
-  
-  // Look up the value in our mapping
-  const value = values[fileName] || 'Value not found';
-  
-  return <span>{value}</span>;
+  try {
+    // Extract the file name from the path (for matching with our value keys)
+    const fileName = path.split('/').pop().replace('.md', '');
+    
+    // Look up the value in our mapping
+    let value = 'Value not found';
+    if (values[fileName]) {
+      // Make sure we're dealing with a string before calling trim
+      value = typeof values[fileName] === 'string' ? values[fileName] : String(values[fileName]);
+    }
+    
+    return <span>{value}</span>;
+  } catch (error) {
+    console.error(`Error in Include component for path ${path}:`, error);
+    return <span>Error loading value</span>;
+  }
 }

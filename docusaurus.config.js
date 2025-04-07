@@ -16,6 +16,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   markdown: {
     mermaid: true,
   },
+  
+  // Configure MDX to handle custom components properly
+  mdx: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
   themes: ['@docusaurus/theme-mermaid'],
 
   presets: [

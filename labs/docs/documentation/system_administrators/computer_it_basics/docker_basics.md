@@ -362,10 +362,10 @@ docker image prune -a
 
 ### Clean up container images based on a given timeframe
 
-To clean up container images created X hours ago, you can use the following template (replace {X} with a number):
+To clean up container images created X hours ago, you can use the following template (replace X with a number):
 
 ```
-docker image prune -a --force --filter "until={X}h"
+docker image prune -a --force --filter "until=Xh"
 ```
 
 To clean up container images created before a given date, you can use the following template (replace ` with the complete date):

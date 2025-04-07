@@ -79,9 +79,9 @@ Ignore the TFTP Server settings.
 >
 > wget http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/pxelinux.0
 >
-> wget https://bootstrap.grid.tf/krn/prod/{FARMID} --no-check-certificate
+> wget https://bootstrap.grid.tf/krn/prod/YOUR_FARM_ID --no-check-certificate
 >
-> mv {FARMID} ipxe-prod.lkrn
+> mv YOUR_FARM_ID ipxe-prod.lkrn
 >
 > tar -xvzf netboot.tar.gz
 >
@@ -114,9 +114,9 @@ In OPNsense the tftp directory is /usr/local/tftp
 >
 > fetch http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/pxelinux.0
 >
-> fetch https://bootstrap.grid.tf/krn/prod/{FARMID} 
+> fetch https://bootstrap.grid.tf/krn/prod/YOUR_FARM_ID 
 >
-> mv {FARMID} ipxe-prod.lkrn
+> mv YOUR_FARM_ID ipxe-prod.lkrn
 >
 > tar -xvzf netboot.tar.gz
 >

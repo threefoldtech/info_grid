@@ -60,6 +60,7 @@ function createMachinesModel(vm: MachineModel, network: NetworkModel): MachinesM
   } as MachinesModel;
 }
 function createGwModel(node_id: number, ip: string, networkName: string, name: string, port: number) {
+  // ip parameter is passed in from the calling function
   return {
     name,
     node_id,
