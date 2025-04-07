@@ -5,19 +5,19 @@ all: build
 
 # Install dependencies
 install:
-	npm install
+	yarn install
 
 # Build the Docusaurus site
 build: install
-	npm run build
+	yarn build
 
 # Serve the built site locally
 serve: build
-	npm run serve
+	yarn serve
 
 # Clean build artifacts
 clean:
-	npm run clear
+	yarn clear
 
 # Help information
 help:
