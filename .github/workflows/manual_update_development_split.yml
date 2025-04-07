@@ -21,20 +21,23 @@ jobs:
           git log -1
           git fetch
           git reset --hard origin/development-split
-          # Fix node symlink if broken
-          if ! which node > /dev/null; then
-            echo "Node not found, fixing symlinks..."
-            # Find nvm and use it if available
-            if [ -d "$HOME/.nvm" ]; then
-              export NVM_DIR="$HOME/.nvm"
-              [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-              nvm use default || nvm install --lts
-            else
-              # Alternative: Install Node.js directly
-              curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-              sudo apt-get install -y nodejs
-            fi
+          # Install or update Node.js to v18+ (required for Docusaurus 3.x)
+          echo "Setting up Node.js v18+ for Docusaurus..."
+          # Find nvm and use it if available
+          if [ -d "$HOME/.nvm" ]; then
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+            # Install Node.js 18 LTS if not already installed
+            nvm install 18 || true
+            # Use Node.js 18
+            nvm use 18
+          else
+            # Alternative: Install Node.js directly
+            curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+            sudo apt-get install -y nodejs
           fi
+          # Verify Node.js version
+          node -v
           # Install Yarn if not available
           if ! which yarn > /dev/null; then
             echo "Yarn not found, installing..."
