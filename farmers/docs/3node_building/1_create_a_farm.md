@@ -8,8 +8,6 @@ description: Create a ThreeFold Farm.
 
 To create a farm on ThreeFold, simply download the ThreeFold Connect app, create an account and then create a farm.
 
-> Note: You can create a farm on the ThreeFold Grid V3 or V4.
-
 ## Download the App
 
 The ThreeFold Connect app is available for both iOS and Android devices.
@@ -27,7 +25,7 @@ You will be shown your seed phrase. Keep this in a secure and offline place. You
 
 ## Create a Farm
 
-Open the TF Connect app, go to Farming and click on `V3` or `V4` to create a V3 or V4 farm respectively. Then click on the plus button `+` to create a farm.
+Open the TF Connect app, go to Farming and click on `V3` to create a V3 farm. Then click on the plus button `+` to create a farm.
 
 Choose a farm name and select a wallet then click `Create`.
 
