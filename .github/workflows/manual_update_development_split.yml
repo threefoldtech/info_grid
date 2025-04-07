@@ -21,19 +21,19 @@ jobs:
           git log -1
           git fetch
           git reset --hard origin/development-split
-          # Install or update Node.js to v18+ (required for Docusaurus 3.x)
-          echo "Setting up Node.js v18+ for Docusaurus..."
+          # Install or update Node.js to v20 (required for glob 11.0.1)
+          echo "Setting up Node.js v20 for Docusaurus and glob..."
           # Find nvm and use it if available
           if [ -d "$HOME/.nvm" ]; then
             export NVM_DIR="$HOME/.nvm"
             [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-            # Install Node.js 18 LTS if not already installed
-            nvm install 18 || true
-            # Use Node.js 18
-            nvm use 18
+            # Install Node.js 20 LTS if not already installed
+            nvm install 20 || true
+            # Use Node.js 20
+            nvm use 20
           else
             # Alternative: Install Node.js directly
-            curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+            curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
             sudo apt-get install -y nodejs
           fi
           # Verify Node.js version
@@ -43,6 +43,8 @@ jobs:
             echo "Yarn not found, installing..."
             npm install -g yarn
           fi
+          # Create a temporary .yarnrc file to use resolutions for glob
+          echo '{"resolutions": {"glob": "^8.1.0"}}' > .yarnrc.json
           # Use the Makefile to build the site (now updated to use Yarn)
           make build
           
