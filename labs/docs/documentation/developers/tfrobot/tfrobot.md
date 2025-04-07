@@ -3,12 +3,6 @@ title: "TFROBOT"
 sidebar_position: 107
 ---
 
----
-title: "TFRobot"
-sidebar_position: 42
----
-
-
 
 TFROBOT (`tfrobot`) is a command line interface tool that offers simultaneous mass deployment of groups of VMs on the ThreeFold Grid, with support of multiple retries for failed deployments, and customizable configurations, where you can define node groups, VMs groups and other configurations through a YAML or a JSON file.  
 

@@ -1,11 +1,11 @@
 ---
 title: Download the App
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 The Mycelium app is available for Android, Windows, macOS and iOS.
 
-For Linux, read the [Linux Installation](../experts/03_linux-installation.md) section.
+For Linux, read the [Linux Installation](./04_mycelium-linux.md) section.
 
 ## Download Links
 

@@ -1,6 +1,6 @@
 ---
 title: Use the App
-sidebar_position: 5
+sidebar_position: 3
 ---
 
 ## Start Mycelium

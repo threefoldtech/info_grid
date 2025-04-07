@@ -1,5 +1,5 @@
 ---
-title: Features Mycelium Network
+title: Features
 sidebar_position: 1
 ---
 
