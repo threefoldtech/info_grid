@@ -9,8 +9,6 @@ In this section, we cover the essential farming requirements when it comes to Th
 
 You need a theoretical minimum of 500 GB of SSD and 2 GB of RAM on a mini pc, desktop or server. 
 
-Note that you can run Zero-OS on a Virtual Machine (VM), but you won't farm any TFT from this process. To farm TFT, Zero-OS needs to be on bare metal.
-
 Also, note that ThreeFold runs its own OS, which is Zero-OS. You thus need to start with completely wiped disks. You cannot farm TFT with Windows, Linux or MAC OS installed on your disks. If you need to use such OS temporarily, boot it in Try mode with a removable media (USB key).
 
 ### 3Node Requirements Summary

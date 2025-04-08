@@ -25,7 +25,7 @@ You will be shown your seed phrase. Keep this in a secure and offline place. You
 
 ## Create a Farm
 
-Open the TF Connect app, go to Farming and click on `V3` to create a V3 farm. Then click on the plus button `+` to create a farm.
+Open the TF Connect app, go to Farming and click on `V4` to create a V4 farm. Then click on the plus button `+` to create a farm.
 
 Choose a farm name and select a wallet then click `Create`.
 
