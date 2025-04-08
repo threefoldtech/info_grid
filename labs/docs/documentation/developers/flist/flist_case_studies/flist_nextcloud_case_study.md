@@ -212,7 +212,7 @@ The **README.md** file has the main goal of explaining clearly to the user the f
 
 We also give the necessary steps to create the Docker image and convert it into an flist starting directly with the Nextcloud directory. This can be useful for users that want to create their own flist, instead of using the [official ThreeFold Nextcloud flist](https://hub.grid.tf/tf-official-apps/threefoldtech-nextcloudaio-latest.flist).
 
-To read the complete README.md file, go to [this link](https://github.com/threefoldtech/tf-images/blob/development/tfgrid3/nextcloud/README).
+To read the complete README.md file, go to [this link](https://github.com/threefoldtech/tf-images/blob/development/tfgrid3/nextcloud/README.md).
 
 ## scripts Folder
 
