@@ -553,7 +553,7 @@ You now have enabled the firewall with proper security rules for your Nextcloud 
 
 If everything went smooth, you should now be able to access Nextcloud over the Internet with HTTPS security from any computer or smart phone!
 
-You can now [install Nextcloud](https://nextcloud.com/install/) on your local computer. You will then be able to "use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop". You can also do regular backups with Nextcloud to ensure maximum resilience of your data. Check Nextcloud's [documentation](https://docs.nextcloud.com/server/latest/admin_manual/maintenance/backup) for more information on this.
+You can now [install Nextcloud](https://nextcloud.com/install/) on your local computer. You will then be able to "use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop". You can also do regular backups with Nextcloud to ensure maximum resilience of your data. Check Nextcloud's [documentation](https://docs.nextcloud.com/server/latest/admin_manual/maintenance/index.html) for more information on this.
 
 You should now have a basic understanding of the Threefold Grid, the ThreeFold Explorer, Terraform, MariaDB, PHP and Nextcloud. 
 

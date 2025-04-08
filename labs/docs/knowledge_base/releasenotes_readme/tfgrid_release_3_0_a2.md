@@ -73,14 +73,14 @@ https://github.com/threefoldtech/zos/releases
 
 ### detailed projects list
 
-- https://github.com/threefoldtech/grid_weblets/projects/1
-- https://github.com/threefoldtech/grid_weblets/projects/4
-- https://github.com/threefoldtech/grid_weblets/projects/6
-- https://github.com/threefoldtech/grid_weblets/projects/6
-- https://github.com/threefoldtech/grid_weblets/projects/7
-- https://github.com/threefoldtech/grid_weblets/projects/8
+- `https://github.com/threefoldtech/grid_weblets/projects/1`
+- `https://github.com/threefoldtech/grid_weblets/projects/4`
+- `https://github.com/threefoldtech/grid_weblets/projects/6`
+- `https://github.com/threefoldtech/grid_weblets/projects/6`
+- `https://github.com/threefoldtech/grid_weblets/projects/7`
+- `https://github.com/threefoldtech/grid_weblets/projects/8`
 
-https://github.com/threefoldtech/grid_weblets/releases
+`https://github.com/threefoldtech/grid_weblets/releases`
 
 ## QSFS
 
@@ -154,7 +154,7 @@ Following list is incomplete but gives some issues to think about.
 - Safer mechanism for environment variables and init arguments
 - improvments in cleaning unused mounts
 
-https://github.com/threefoldtech/zos/releases
+`https://github.com/threefoldtech/zos/releases`
 
 ## Terraform
 - Support ZMachine
@@ -178,7 +178,7 @@ https://github.com/threefoldtech/zos/releases
 - Support Virtual machine
 - Support CapRover
 - Support Kubernetes
-https://github.com/threefoldtech/grid_weblets/releases
+`https://github.com/threefoldtech/grid_weblets/releases`
 - Capacity planning deployment
 
 ## QSFS

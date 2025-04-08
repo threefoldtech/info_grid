@@ -64,9 +64,7 @@ We now install OpenWebUI with bundled Ollama support. Note that you might need t
 
 You should now see the OpenWebUI page. You can register by entering your email and setting a password. This information will stay on the machine running OpenWebUI.
 
-<p align="center">
-  <img src="./img/openwebui_page.png" />
-</p>
+![](./img/openwebui_page.png)
 
 ## Pull a Model
 

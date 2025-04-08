@@ -257,7 +257,7 @@ Make sure you have network stack enabled in BIOS. If so, check you ethernet port
 
 ### How can I update Dell and HP servers to Intel E5-2600v2, E5-2400v2 and E5-4600v2, when applicable?
 
-There are many ressources online with steps on how to do this. You can check this [youtube video](https://www.youtube.com/watch?v=duzrULLtonM) on Dell and HP servers, as welll as this [documentation](https://ixnfo.com/en/hp-proliant-gen8-update-to-support-cpu-e5-2600v2-e5-2400v2-e5-4600v2) for HP Proliant Gen8.
+There are many ressources online with steps on how to do this. You can check this [youtube video](https://www.youtube.com/watch?v=duzrULLtonM) on Dell and HP servers, as welll as this [documentation](https://ixnfo.com/en/hp-proliant-gen8-update-to-support-cpu-e5-2600v2-e5-2400v2-e5-4600v2.html) for HP Proliant Gen8.
 
 
 
