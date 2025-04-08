@@ -9,7 +9,7 @@ This section covers all practical information on how to become a cloud service p
 
 For complementary information on ThreeFold farming, refer to the [Farming](../../knowledge_base/farming_toc) section.
 
-To buy a certified node from an official ThreeFold vendor, check the [ThreeFold Marketplace](https://marketplace.3node.global/).
+To buy a certified node from an official ThreeFold vendor, [consult this section](../../../../farmers/3node_buying/order_a_node).
 
 **TABLE OF CONTENTS**
 
