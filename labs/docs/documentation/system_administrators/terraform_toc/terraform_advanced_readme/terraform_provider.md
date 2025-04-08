@@ -47,5 +47,5 @@ The *_URL variables can be used to override the dafault urls associated with the
 ## Remarks
 
 - Grid terraform provider is hosted on terraform registry [here](https://registry.terraform.io/providers/threefoldtech/grid/latest/docs?pollNotifications=true)
-- All provider input variables and their description can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/index)
+- All provider input variables and their description can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/index.md)
 - Capitalized environment variables can be used instead of writing them in the provider (e.g. MNEMONIC)

@@ -96,7 +96,7 @@ In this method, you use the Bridge directly. Thus, it is normal if you do not se
 * Switch the network to  `Binance chain` . You will have to create a new network with following information):
   * Mainnet
   * Network Name: Smart Chain
-  * New RPC URL: https://bsc-dataseed.bnbchain.org/
+  * New RPC URL: `https://bsc-dataseed.bnbchain.org/`
   * ChainID: 56
   * Symbol: BNB
   * Block Explorer URL: [https://bscscan.com](https://bscscan.com/)
