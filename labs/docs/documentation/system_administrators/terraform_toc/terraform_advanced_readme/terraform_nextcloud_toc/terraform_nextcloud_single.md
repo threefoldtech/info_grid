@@ -240,7 +240,7 @@ After deployments, take note of the 3Node's IPv4 address. You will need this add
 
 ## SSH into the 3Node
 
-* To [SSH into the 3Node](../../../tfgrid3_getstarted/ssh_guide/ssh_guide), write the following:
+* To [SSH into the 3Node](../../../tfgrid3_getstarted/ssh_guide/ssh_guide.md), write the following:
   *  ```
      ssh root@VM_IPv4_Address
      ```

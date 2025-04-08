@@ -15,7 +15,7 @@ This section of the manual will guide you through the process of setting up, con
 
 ## Mycelium Network
 
-Note that you can use the [Mycelium network](../mycelium_toc/mycelium_toc) to connect to your deployments. To do so, make sure that the Mycelium network is properly set up for the deployments. You can consult the different examples that include the Mycelium network to understand this further.
+Note that you can use the [Mycelium network](../mycelium_toc/mycelium_toc.md) to connect to your deployments. To do so, make sure that the Mycelium network is properly set up for the deployments. You can consult the different examples that include the Mycelium network to understand this further.
 
 ## Get Started
 
@@ -27,7 +27,7 @@ Once you're acquainted with the basics, you can explore different [Terraform dep
 
 Consult the ThreeFold `terraform-provider-grid` repo for different [Terraform deployment examples](https://github.com/threefoldtech/terraform-provider-grid/tree/development/examples).
 
-You can also read the [Resources](terraform_resources_readme/terraform_resources_readme) section for more details on different Terraform deployments.
+You can also read the [Resources](./terraform_resources_readme/terraform_resources_readme.md) section for more details on different Terraform deployments.
 
 ## Features
 

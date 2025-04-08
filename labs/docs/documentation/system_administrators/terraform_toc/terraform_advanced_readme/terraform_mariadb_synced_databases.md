@@ -286,7 +286,7 @@ Note that, at any moment, if you want to see the information on your Terraform d
 
 ### SSH into the 3Nodes
 
-* To [SSH into the 3Nodes](../../tfgrid3_getstarted/ssh_guide/ssh_guide), write the following while making sure to set the proper IP address for each VM:
+* To [SSH into the 3Nodes](../../tfgrid3_getstarted/ssh_guide/ssh_guide.md), write the following while making sure to set the proper IP address for each VM:
   *  ```
      ssh root@3node_IPv4_Address
      ```
