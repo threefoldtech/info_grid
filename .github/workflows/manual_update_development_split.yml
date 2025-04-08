@@ -47,7 +47,11 @@ jobs:
           echo '{"resolutions": {"glob": "^8.1.0"}}' > .yarnrc.json
           # Use the Makefile to build the site (now updated to use Yarn)
           make build
-          
+          # Show the build directory to verify it exists and has content
+          echo "Checking build output directory..."
+          ls -la build
+          echo "Build completed. Web server should serve from this directory."
+
   wait:
     needs: deploy
     name: Wait for Website Update
