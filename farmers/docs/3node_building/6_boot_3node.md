@@ -12,13 +12,13 @@ One of the great features of Zero-OS is that it can be completely run within the
 
 ## 1. Booting the 3Node with Zero-OS
 
-To boot Zero-OS, insert your Zero-OS bootstrap image USB key, power on your computer and choose the right booting sequence and parameters ([BIOS or UEFI](./5_set_bios_uefi)) in your BIOS/UEFI settings. Then, restart the 3Node. Zero-OS should boot automatically.
+To boot Zero-OS, insert your Zero-OS bootstrap image USB key, power on your computer and choose the right booting sequence and parameters ([BIOS or UEFI](./5_set_bios_uefi.md)) in your BIOS/UEFI settings. Then, restart the 3Node. Zero-OS should boot automatically.
 
 Note that you need an ethernet cable connected to your router or switch. You cannot farm on the ThreeFold Grid with Wifi.
 
 The first time you boot a 3Node, it will be written: “This node is not registered (farmer : NameOfFarm). This is normal. The Grid will create a node ID and you will be able to see it on screen. This can take a couple of minutes.
 
-If time passes (an hour and more) and the node does not get registered, in many cases, [wiping the disks](./4_wipe_all_disks) all over again and trying another reboot usually resolves this issue.
+If time passes (an hour and more) and the node does not get registered, in many cases, [wiping the disks](./4_wipe_all_disks.md) all over again and trying another reboot usually resolves this issue.
 
 Once you have your node ID, you can also go on the ThreeFold Dashboard to see your 3Node and verify that your 3Node is online.
 

@@ -17,7 +17,7 @@ Once you have more information via the Error/Log screen, you should first try to
 
 If you still can't find solutions to your issues, read the section [Get Further Assistance](./farming_troubleshooting_tips#get-further-assistance) to ask for help.
 
-Going through the [whole table of contents](./farming_troubleshooting_tips#table-of-contents) can quicken your search.
+Going through the whole table of contents can quicken your search.
 
 **TABLE OF CONTENTS**
 

@@ -16,7 +16,7 @@ This KYC requirement is essential to protect network participants, including far
 - ThreeFold Chain account with at least 100 TFT
   - [Create a wallet on TFChain](../../wallet_connector)
   - [Buy TFT](../../../threefold_token/buy_sell_tft/tft_lobstr_complete_guide)
-  - [Bridge TFT from Stellar to TFChain](../../../tfconnect_toc/tfconnect_wallet#bridge-assets)
+  - [Bridge TFT from Stellar to TFChain](../../../tfconnect_toc/tfconnect_wallet)
 
 ## Steps
 

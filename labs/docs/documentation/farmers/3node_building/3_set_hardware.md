@@ -158,9 +158,7 @@ Once the disks are wiped, you can shutdown your 3Node and remove the Linux Boots
 
 ## Upgrading a DIY 3Node
 
-
-
-As we've seen in the [List of Common DIY 3Nodes](#list-of-common-diy-3nodes), it is sometimes necessary, and often useful, to upgrade your hardware.
+It is sometimes necessary, and often useful, to upgrade your hardware.
 
 **Type of upgrades possible**
 

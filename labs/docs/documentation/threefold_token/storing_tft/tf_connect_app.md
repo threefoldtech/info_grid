@@ -210,7 +210,7 @@ Click on the button to copy the Secret. The app will show a confirmation message
 
 ![](./img/farming_tf_wallet_47.png)
 
-Now head over to the browser with your polkadot.js extension. For more information on this, check the section [Creating a Polkadot.js account](#1-creating-a-polkadotjs-account).
+Now head over to the browser with your polkadot.js extension. 
 
 On your browser, click on the extension button (in green).
 
@@ -295,4 +295,4 @@ Before sending TFT to a hardware wallet, make sure the hardware wallet has a TFT
 
 > The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
 > 
-> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](../../../knowledge_base/terms_conditions_all3/disclaimer) and seek advice from a qualified financial professional if needed.
+> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](../../../knowledge_base/terms_conditions_all3/disclaimer.md) and seek advice from a qualified financial professional if needed.

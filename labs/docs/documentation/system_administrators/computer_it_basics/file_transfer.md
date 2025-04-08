@@ -57,7 +57,7 @@ Here is short description of the parameters used:
 
 ### Adjust reorganization of files and folders before running rsync
 
-[rsync-sidekick](https://github.com/m-manu/rsync-sidekick) propagates changes from source directory to destination directory. You can run rsync-sidekick before running rsync. Make sure that [Go is installed](#install-go).
+[rsync-sidekick](https://github.com/m-manu/rsync-sidekick) propagates changes from source directory to destination directory. You can run rsync-sidekick before running rsync. Make sure that Go is installed.
 
 * Install rsync-sidekick
   * ```

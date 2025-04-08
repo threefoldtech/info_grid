@@ -124,7 +124,7 @@ similar to the way TCP handles data. Messages are transmitted in chunks, which a
 same data stream used by L3 packets. As such, intermediate nodes can't distinguish between regular L3
 and message data.
 
-The primary way to interact with the message system is through [the API](#API). The message API is
+The primary way to interact with the message system is through the API. The message API is
 documented in [here](./api_yaml). For some more info about how to
 use the message system, see [the Message section](./message).
 

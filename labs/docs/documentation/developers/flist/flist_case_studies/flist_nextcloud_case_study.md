@@ -549,7 +549,7 @@ This file will execute the `nextcloud-conf.sh` script we saw earlier. We recall 
 
 We've now gone through all the files in the Nextcloud flist directory. You should now have a proper understanding of the interplay between the zinit (.yaml) and the scripts (.sh) files as well as the basic steps to build a Dockerfile and to write clear documentation.
 
-To build your own Nextcloud docker image, you would simply need to clone this directory to your local computer and to follow the steps presented in the next section [Docker Publishing Steps](#docker-publishing-steps).
+To build your own Nextcloud docker image, you would simply need to clone this directory to your local computer and to follow the steps presented in the next section Docker Publishing Steps.
 
 To have a look at the complete directory, you can always refer to the [Nextcloud flist directory](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud) on the ThreeFold tf-images repository.
 

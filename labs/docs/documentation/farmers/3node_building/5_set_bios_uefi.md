@@ -41,7 +41,7 @@ You can [set a static IP for the public config of a 3Node or a farm](./1_create_
 
 **Static IP and Remote Management**
 
-You can [set a static IP address to remotely manage a 3Node](#setting-the-remote-management-of-a-server-static-ip-address).
+You can [set a static IP address to remotely manage a 3Node](#setting-the-remote-management-of-a-server-with-a-static-ip-address-optional).
 
 
 
