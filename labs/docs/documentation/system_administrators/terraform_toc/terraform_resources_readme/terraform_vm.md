@@ -208,7 +208,7 @@ The file describes only the desired state which is `a deployment of two VMs and 
 
 ## Reference
 
-A complete list of VM workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/deployment#nested-schema-for-vms).
+A complete list of VM workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/deployment.md#nested-schema-for-vms).
 
 ```
 terraform {

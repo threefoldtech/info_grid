@@ -128,7 +128,7 @@ You can get the resources of a node using different methods. You can use Grid Pr
 
 - Using Grid Proxy
   - Grid Proxy API
-    - Go to the section [nodes endpoint](https://gridproxy.grid.tf/swagger/index#/GridProxy/get_nodes__node_id_)
+    - Go to the section [nodes endpoint](https://gridproxy.grid.tf/swagger/index.html#/GridProxy/get_nodes__node_id_)
     - Click on `Try it out`
     - Write the node ID
     - Click on `Execute`

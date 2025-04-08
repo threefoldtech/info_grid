@@ -57,7 +57,7 @@ We set the Master VM to access the minIO Operator.
 
 ## Set MinIO
 
-We can then set the MinIO Operator. For this step, we mainly follow the MinIO documentation [here](https://min.io/docs/minio/kubernetes/upstream/operations/install-deploy-manage/deploy-operator-helm).
+We can then set the MinIO Operator. For this step, we mainly follow the MinIO documentation [here](https://min.io/docs/minio/kubernetes/upstream/operations/install-deploy-manage/deploy-operator-helm.html).
 
 - Add the MinIO repo
     ```

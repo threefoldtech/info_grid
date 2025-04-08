@@ -163,8 +163,6 @@ https://github.com/threefoldtech/zos/releases
 - Support Capacity Planning
 - Support Gateways
 
-https://github.com/threefoldtech/tf-terraform-provider/releases
-
 
 ## grid3_client_ts
 - Support ZMachine

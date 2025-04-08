@@ -82,4 +82,4 @@ output "public_ip" {
 
 ## More Info
 
-A complete list of Mount workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/deployment#nested-schema-for-vmsmounts).
+A complete list of Mount workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/deployment.md#nested-schema-for-vmsmounts).

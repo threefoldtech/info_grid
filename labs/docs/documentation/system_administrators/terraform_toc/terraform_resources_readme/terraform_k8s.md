@@ -195,7 +195,7 @@ We will be mainly interested in the master node public ip `computed IP` and the 
 
 ## More Info
 
-A complete list of k8s resource parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/kubernetes).
+A complete list of k8s resource parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/kubernetes.md).
 
 ## Demo Video 
 
