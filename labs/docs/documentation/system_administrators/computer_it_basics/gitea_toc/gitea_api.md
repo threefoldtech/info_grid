@@ -81,9 +81,7 @@ Once this is done, every Swagger request you ask will be accompanied with the ac
 - Log in the Gitea API with your access token
   - On the top of the Gitea API page, click on `Authorize`
 
-<p align="center">
-  <img src="./img/gitea_authorize_token.png" />
-</p>
+![](./img/gitea_authorize_token.png)
 
   - In `AuthorizationHeaderToken (apiKey)` write `token` followed by a space and then paste your token, e.g.:
     - `token 1234567890`
