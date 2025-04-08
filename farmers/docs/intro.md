@@ -4,7 +4,7 @@ sidebar_position: 1
 description: Learn about ThreeFold farming.
 ---
 
-![](./img/become_farmer.png)
+![Become a Farmer](./img/become_farmer_light.png#gh-light-mode-only)![Become a Farmer](./img/become_farmer_dark.png#gh-dark-mode-only)
 
 > Become a contributor of storage, compute & network capacity to the ThreeFold Grid.
 
