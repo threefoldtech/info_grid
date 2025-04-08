@@ -61,6 +61,8 @@ If you're not sure and just want the easiest, most affordable option, skip the p
 
 # Nextcloud Setup
 
+
+
 Once the weblet is deployed, the details page will appear. If you are using a custom domain with a public IPv4, you'll need to set your DNS record now using the IP address shown under **Public IPv4**. Again, see [below](#dns-details) for details.
 
 Before you can access Nextcloud itself, you'll need to decide which addons you want to install and complete a setup step. This is done through the AIO interface that's included with your deployment. To access it, you can visit the **Nextcloud Setup** link shown in the details page, or click on the **Nextcloud Setup** button under **Actions** in the deployments list to set up Nextcloud.
@@ -78,7 +80,7 @@ Before you can access Nextcloud itself, you'll need to decide which addons you w
 The installation is now complete and you have access to your Nextcloud instance.
 
 
-
+<div id="dns-details"></div>
 # DNS Details
 
 ## DNS Record with Public IPv4
@@ -98,6 +100,8 @@ When setting your own custom domain, it might take time for DNS to propagate. It
 This is normal. You might simply need to wait for the DNS to propagate completely.
 
 
+
+<div id="talk"></div>
 
 # Talk
 
@@ -255,6 +259,8 @@ To access the Nextcloud interface page, follow those stepse
 * Under **Nextcloud All-in-One**, click **Open Nextcloud AIO Interface**
 
 
+
+<div id="set-the-dns-record"></div>
 
 ## Check the DNS Propagation
 
