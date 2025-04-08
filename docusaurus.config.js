@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'ThreeFold Manual',
   tagline: 'Documentation for ThreeFold Grid',
-  url: 'https://manual.grid.tf',
+  url: 'https://www3.manual.grid.tf',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
