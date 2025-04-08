@@ -10,11 +10,11 @@ In this section, we present [Mycelium](https://github.com/threefoldtech/mycelium
 
 **TABLE OF CONTENTS**
 
-- [Overview](./overview.md)
-- [Mycelium App](./mycelium_app.md)
-- [Installation](./installation.md)
-- [Additional Information](./information.md)
-- [Message](./message.md)
-- [Packet](./packet.md)
-- [Data Packet](./data_packet.md)
-- [API YAML](./api_yaml.md)
+- [Overview](./overview)
+- [Mycelium App](./mycelium_app)
+- [Installation](./installation)
+- [Additional Information](./information)
+- [Message](./message)
+- [Packet](./packet)
+- [Data Packet](./data_packet)
+- [API YAML](./api_yaml)

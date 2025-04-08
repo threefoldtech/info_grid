@@ -19,10 +19,10 @@ OpenWebUI is one of many front ends for Ollama, providing a convenient and user 
 
 ## Prerequisites
 
-- [A TFChain account](../../../dashboard/wallet_connector.md)
+- [A TFChain account](../../../dashboard/wallet_connector)
 - TFT in your TFChain account
-  - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft.md)
-  - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge.md)
+  - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft)
+  - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge)
 
 ## Deploy a Full VM
 
@@ -33,7 +33,7 @@ We start by deploying a full VM on the ThreeFold Dashboard. The more cores we se
   * Vcores: 8 vcores
   * MB of RAM: 4096 GB
   * GB of storage: 100 GB
-* After deployment, [set the Wireguard configurations](../../tfgrid3_getstarted/ssh_guide/advanced_methods/ssh_wireguard.md)
+* After deployment, [set the Wireguard configurations](../../tfgrid3_getstarted/ssh_guide/advanced_methods/ssh_wireguard)
 * Connect to the VM via SSH
   * ``` 
     ssh root@VM_Wireguard_Address

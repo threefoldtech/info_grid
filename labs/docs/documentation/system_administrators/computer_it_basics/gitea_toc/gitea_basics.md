@@ -17,11 +17,11 @@ ThreeFold hosts its own git server on [Gitea OurWorld](https://git.ourworld.tf).
 
 You should have git installed on your computer to work easily with Gitea. It is not necessary to use Gitea but recommended to work with files.
 
-- Install [git](../git_github_basics.md#install-git)
+- Install [git](../git_github_basics#install-git)
   - Optional, to update repositories from your local computer
-- Install [VSCodium](../git_github_basics.md#vs-codium)
+- Install [VSCodium](../git_github_basics#vs-codium)
   - Optional, to edit your files
-- Install [OpenSSH](../../tfgrid3_getstarted/ssh_guide/ssh_openssh.md)
+- Install [OpenSSH](../../tfgrid3_getstarted/ssh_guide/ssh_openssh)
   - Optional, to use SSH
 
 ## Register

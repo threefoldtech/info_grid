@@ -263,7 +263,7 @@ When you are in the main directory of your Zola website, you can check the follo
 zola check
 ```
 
-Once your website is online, you can also use the [Website Link Checker](./website_link_checker.md).
+Once your website is online, you can also use the [Website Link Checker](./website_link_checker).
 
 ### Important Links
 

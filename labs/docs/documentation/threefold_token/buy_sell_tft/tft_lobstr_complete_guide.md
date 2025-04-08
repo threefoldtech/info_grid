@@ -13,7 +13,7 @@ In this guide, you'll learn how to buy ThreeFold Tokens with [Lobstr](https://lo
 
 Lobstr is an app for managing digital assets like TFT on the Stellar blockchain. In this case, we'll first obtain Stellar's native currency, Lumens (XLM) and swap them for TFT.
 
-> Note that it is possible to do these steps without connecting the Lobstr wallet to the TF Connect App wallet (read [docs](./tft_lobstr_short_guide.md)). But doing this has a clear advantage: when we buy and swap on Lobstr, the TFT is directly accessible on the TF Connect app wallet.
+> Note that it is possible to do these steps without connecting the Lobstr wallet to the TF Connect App wallet (read [docs](./tft_lobstr_short_guide)). But doing this has a clear advantage: when we buy and swap on Lobstr, the TFT is directly accessible on the TF Connect app wallet.
 
 ## Download the App and Create an Account
 
@@ -193,4 +193,4 @@ You can now use your TFT to deploy workloads on the Threefold Grid.
 
 > The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
 > 
-> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](../../../../knowledge_base/legal/disclaimer.md) and seek advice from a qualified financial professional if needed.
+> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](../../../knowledge_base/terms_conditions_all3/disclaimer) and seek advice from a qualified financial professional if needed.

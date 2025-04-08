@@ -10,12 +10,12 @@ In this Threefold Guide, we show how to set up [WireGuard](https://www.wireguard
 
 SSH client of your choice. 
 
-For the basic information on Open SSH, [read this](../ssh.md).
+For the basic information on Open SSH, [read this](../ssh).
 
 
 ## Deploy a Weblet with WireGuard Access
 
-For this guide on WireGuard access, we deploy a [full VM](../deploy-a-vm.md). Note that the whole process is similar with other types of ThreeFold weblets on the Dashboard.
+For this guide on WireGuard access, we deploy a [full VM](../deploy-a-vm). Note that the whole process is similar with other types of ThreeFold weblets on the Dashboard.
 
 * On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
 * Choose the parameters you want

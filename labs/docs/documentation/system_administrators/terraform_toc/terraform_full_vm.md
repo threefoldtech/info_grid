@@ -32,7 +32,7 @@ Once this is done, initialize and apply Terraform to deploy your workload, then 
 
 ## Prerequisites
 
-- [Install Terraform](./terraform_install.md)
+- [Install Terraform](./terraform_install)
 
 You need to download and install properly Terraform. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
 
@@ -48,7 +48,7 @@ We present two options to find a suitable node: the scheduler and the TFGrid Exp
 
 ### Using the Grid Scheduler
 
-Using the TFGrid scheduler can be very efficient depending on what you are trying to achieve. To learn more about the scheduler, please refer to this [Scheduler Guide](resources/terraform_scheduler.md).
+Using the TFGrid scheduler can be very efficient depending on what you are trying to achieve. To learn more about the scheduler, please refer to this [Scheduler Guide](terraform_resources_readme/terraform_scheduler).
 
 
 
@@ -61,7 +61,7 @@ We show here how to find a suitable 3Node using the ThreeFold Explorer.
 - For proper understanding, we give further information on some relevant columns:
   - `ID` refers to the node ID
   - `Free Public IPs` refers to available IPv4 public IP addresses
-  - Resource unit codes (consult [this page](../../../knowledge_base/cloud/resource_units_calc_cloudunits.md#resource-units-overview) for more information)
+  - Resource unit codes (consult [this page](../../../knowledge_base/cloud_toc/resource_units_calc_cloudunits#resource-units-overview) for more information)
     - `HRU` is the code for the HDD unit (storage capacity in GB)
     - `SRU` is the code for the SSD unit (storage capacity in GB)
     - `MRU` is the code for the the memory unit (memory capacity in GB)
@@ -244,7 +244,7 @@ After deployments, take note of the 3Node' IPv4 address. You will need this addr
 
 ## SSH into the 3Node
 
-- To [SSH into the 3Node](../tfgrid3_getstarted/ssh_guide/ssh_guide.md), write the following:
+- To [SSH into the 3Node](../tfgrid3_getstarted/ssh_guide/ssh_guide), write the following:
   - ```
     ssh root@VM_IPv4_Address
     ```

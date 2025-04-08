@@ -11,7 +11,7 @@ As part of the tfchain, we support a keyvalue store module that can be used for 
 
 ## Prerequisites
 
-- Make sure you have your [client](./grid3_javascript_loadclient.md) prepared
+- Make sure you have your [client](./grid3_javascript_loadclient) prepared
 
 ## Example code
 

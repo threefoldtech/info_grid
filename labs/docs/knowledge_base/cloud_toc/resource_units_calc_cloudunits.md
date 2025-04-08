@@ -25,7 +25,7 @@ Resource units are used to measure and convert capacity on the hardware level in
 
 These are raw capacities as measured by the ThreeFold software running on Zero-OS.
 
-To learn how they convert into cloudunits see [here](./resourceunits_advanced.md)
+To learn how they convert into cloudunits see [here](./resourceunits_advanced)
 
 ### Compute
 

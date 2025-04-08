@@ -557,7 +557,7 @@ You can use [gocryptfs](https://github.com/rfjakob/gocryptfs) to encrypt files.
 
 ### Encrypt files with Veracrypt
 
-To encrypt files, you can use [Veracrypt](https://www.veracrypt.fr/en/Home.html). Let's see how to download and install Veracrypt.
+To encrypt files, you can use [Veracrypt](https://www.veracrypt.fr/en/Home). Let's see how to download and install Veracrypt.
 
 * Veracrypt GUI
   * Download the package
@@ -578,13 +578,13 @@ To encrypt files, you can use [Veracrypt](https://www.veracrypt.fr/en/Home.html)
       dpkg -i ./veracrypt-console-1.25.9-Ubuntu-22.04-amd64.deb
       ```
 
-You can visit [Veracrypt download page](https://www.veracrypt.fr/en/Downloads.html) to get the newest releases.
+You can visit [Veracrypt download page](https://www.veracrypt.fr/en/Downloads) to get the newest releases.
 
 * To run Veracrypt
   * ```
     veracrypt
     ```
-* Veracrypt documentation is very complete. To begin using the application, visit the [Beginner's Tutorial](https://www.veracrypt.fr/en/Beginner%27s%20Tutorial.html).
+* Veracrypt documentation is very complete. To begin using the application, visit the [Beginner's Tutorial](https://www.veracrypt.fr/en/Beginner%27s%20Tutorial).
 
 
 

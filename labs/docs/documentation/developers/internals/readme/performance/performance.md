@@ -72,10 +72,10 @@ Notes:
 
 ## Registered Tests
 
-- [Public IP Validation](./publicips.md)
-- [CPUBenchmark](./cpubench.md)
-- [IPerf](./iperf.md)
-- [Health Check](./healthcheck.md)
+- [Public IP Validation](./publicips)
+- [CPUBenchmark](./cpubench)
+- [IPerf](./iperf)
+- [Health Check](./healthcheck)
 
 ## Test Suite
 

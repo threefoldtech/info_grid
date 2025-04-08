@@ -19,7 +19,7 @@ Before you can buy TFT on Pancake Swap, there are a few prerequisites you need t
 
 - **BSC Wallet**: To interact with the BNB Smart Chain and Pancake Swap, you'll need a BSC-compatible wallet. [MetaMask](https://metamask.io/) is a popular option that supports BSC. Make sure to set up and secure your wallet before proceeding.
 
-> [Set up a MetaMask Wallet](../storing_tft/metamask.md)
+> [Set up a MetaMask Wallet](../storing_tft/metamask)
 
 - **Connect BSC Wallet to Pancake Swap**: Visit the Pancake Swap website and connect your BSC wallet to your Pancake Swap account.
 
@@ -31,7 +31,7 @@ Before you can buy TFT on Pancake Swap, there are a few prerequisites you need t
 
 ##  Buy TFT on PancakeSwap
 
-On Pancake Swap, you can easily convert your existing crypto assets on BSC network into TFT-BSC by using the Swap function. Once you have obtained TFT-BSC, you have the option to bridge it into TFT Native on the Stellar network by utilizing the [TFT-Stellar bridge](../tft_bridges/tfchain_stellar_bridge.md). Let's swap some tokens!
+On Pancake Swap, you can easily convert your existing crypto assets on BSC network into TFT-BSC by using the Swap function. Once you have obtained TFT-BSC, you have the option to bridge it into TFT Native on the Stellar network by utilizing the [TFT-Stellar bridge](../tft_bridges/tfchain_stellar_bridge). Let's swap some tokens!
 
 Now that you're all set, go to your [PancakeSwap homepage](https://pancakeswap.finance/) and click on **Trade > Swap** button as shown. Please Make sure you're on **BNB Smart Chain** network.
 
@@ -45,4 +45,4 @@ That's it! You have officially swapped BNB into TFT.
 
 > The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
 > 
-> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](../../../knowledge_base/legal/disclaimer.md) and seek advice from a qualified financial professional if needed.
+> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](../../../knowledge_base/terms_conditions_all3/disclaimer) and seek advice from a qualified financial professional if needed.

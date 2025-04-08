@@ -11,6 +11,6 @@ If you have any questions, or if you would like to see a specific guide on remot
 
 **TABLE OF CONTENTS**
 
-- [Cockpit: a Web-based Graphical Interface for Servers](./cockpit_guide/cockpit_guide.md)
-- [XRDP: an Open-Source Remote Desktop Procol](./xrdp_guide/xrdp_guide.md)
-- [Apache Guacamole: a Clientless Remote Desktop Gateway.](./guacamole_guide/guacamole_guide.md)
+- [Cockpit: a Web-based Graphical Interface for Servers](cockpit_guide)
+- [XRDP: an Open-Source Remote Desktop Procol](xrdp_guide)
+- [Apache Guacamole: a Clientless Remote Desktop Gateway.](guacamole_guide)

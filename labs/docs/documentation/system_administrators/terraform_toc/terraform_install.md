@@ -13,7 +13,7 @@ There are many ways to install Terraform depending on your operating system. Ter
 
 ## Install Terraform
 
-You can get Terraform from the Terraform website [download page](https://www.terraform.io/downloads.html). You can also install it using your system package manager. The Terraform [installation manual](https://learn.hashicorp.com/tutorials/terraform/install-cli) contains the essential information for a proper installation.
+You can get Terraform from the Terraform website [download page](https://www.terraform.io/downloads). You can also install it using your system package manager. The Terraform [installation manual](https://learn.hashicorp.com/tutorials/terraform/install-cli) contains the essential information for a proper installation.
 
 We cover here the basic steps for Linux, MAC and Windows for convenience. Refer to the official Terraform documentation if needed.
 
@@ -21,21 +21,21 @@ We cover here the basic steps for Linux, MAC and Windows for convenience. Refer 
 
 To install Terraform on Linux, we follow the official [Terraform documentation](https://developer.hashicorp.com/terraform/downloads). 
 
-* [Install Terraform on Linux](../computer_it_basics/cli_scripts_basics.md#install-terraform)
+* [Install Terraform on Linux](../computer_it_basics/cli_scripts_basics#install-terraform)
 
 ### MacOS
 
 To install Terraform on MacOS, install Brew and then install Terraform.
 
-* [Install Brew](../computer_it_basics/cli_scripts_basics.md#install-brew)
-* [Install Terraform with Brew](../computer_it_basics/cli_scripts_basics.md#install-terraform-with-brew)
+* [Install Brew](../computer_it_basics/cli_scripts_basics#install-brew)
+* [Install Terraform with Brew](../computer_it_basics/cli_scripts_basics#install-terraform-with-brew)
 
 ### Windows
 
 To install Terraform on Windows, a quick way is to first install Chocolatey and then install Terraform.
 
-* [Install Chocolatey](../computer_it_basics/cli_scripts_basics.md#install-chocolatey)
-* [Install Terraform with Chocolatey](../computer_it_basics/cli_scripts_basics.md#install-terraform-with-chocolatey)
+* [Install Chocolatey](../computer_it_basics/cli_scripts_basics#install-chocolatey)
+* [Install Terraform with Chocolatey](../computer_it_basics/cli_scripts_basics#install-terraform-with-chocolatey)
 
 ## ThreeFold Terraform Plugin
 

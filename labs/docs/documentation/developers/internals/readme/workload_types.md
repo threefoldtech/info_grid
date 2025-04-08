@@ -54,7 +54,7 @@ For more details on all parameters needed to run a `zmachine` please refer to [`
 
 #### Building your `flist`
 
-Please refer to [this document](./manual.md) here about how to build an compatible `zmachine flist`
+Please refer to [this document](./manual) here about how to build an compatible `zmachine flist`
 
 ### `zlogs` type
 

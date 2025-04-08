@@ -11,23 +11,23 @@ sidebar_position: 213
 
 In this Threefold Guide, we show how to set up [WireGuard](https://www.wireguard.com/) to access a 3Node deployment with an SSH connection. 
 
-Note that WireGuard provides the connection to the 3Node deployment. It is up to you to decide which SSH client you want to use. This means that the steps to SSH into a 3Node deployment will be similar to the steps proposed in the guides for [Open-SSH](../ssh_openssh.md), [PuTTy](../ssh_putty.md) and [WSL](../ssh_wsl.md). The main difference will be that we connect to the 3Node deployment using a WireGuard connection instead of an IPv4 or a [Mycelium](../../../mycelium_toc/mycelium_toc.md) connection.
+Note that WireGuard provides the connection to the 3Node deployment. It is up to you to decide which SSH client you want to use. This means that the steps to SSH into a 3Node deployment will be similar to the steps proposed in the guides for [Open-SSH](../ssh_openssh), [PuTTy](ssh_putty) and [WSL](ssh_wsl). The main difference will be that we connect to the 3Node deployment using a WireGuard connection instead of an IPv4 or a [Mycelium](../../../mycelium_toc/mycelium_toc) connection.
 
 
 # Prerequisites
 
-Make sure to [read the introduction](../../tfgrid3_getstarted.md#get-started---your-first-deployment) before going further.
+Make sure to [read the introduction](../../tfgrid3_getstarted#get-started---your-first-deployment) before going further.
 
 * SSH client of your choice:
-  * [Open-SSH](../ssh_openssh.md)
-  * [PuTTy](../ssh_putty.md)
-  * [WSL](../ssh_wsl.md)
+  * [Open-SSH](../ssh_openssh)
+  * [PuTTy](ssh_putty)
+  * [WSL](ssh_wsl)
 
 
 
 # Deploy a Weblet with WireGuard Access
 
-For this guide on WireGuard access, we deploy a [Full VM](../../../../dashboard/solutions/fullVm.md). Note that the whole process is similar with other types of ThreeFold weblets on the Dashboard.
+For this guide on WireGuard access, we deploy a [Full VM](../../../../dashboard/deploy/vm_intro/fullVm). Note that the whole process is similar with other types of ThreeFold weblets on the Dashboard.
 
 * On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
 * Choose the parameters you want
@@ -93,7 +93,7 @@ To set the WireGuard connection on Windows, add and activate a tunnel with the W
 
 # Test the WireGuard Connection
 
-As a test, you can [ping](../../../computer_it_basics/cli_scripts_basics.md#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the virtual IP address of the VM to make sure the WireGuard connection is properly established. Make sure to replace `VM_WireGuard_IP` with the proper WireGuard IP address:
+As a test, you can [ping](../../../computer_it_basics/cli_scripts_basics#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the virtual IP address of the VM to make sure the WireGuard connection is properly established. Make sure to replace `VM_WireGuard_IP` with the proper WireGuard IP address:
 
 * Ping the deployment
   * ```

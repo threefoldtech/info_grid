@@ -172,7 +172,7 @@ Then within 9 months, this farm would have paid itself and from now on, it would
 
 We note that this takes into consideration that we are using the AC system 24/7. This would surely not be the case in real life. This means that the real ROI would be even better. It is a common practice to do estimates with stricter parameters. If you predict being profitable with strict parameters, you will surely be profitable in real life, even when "things" happen and not everything goes as planned. As always, this is not financial advice.
 
-We recall that in the section [Calculate the ROI of a DIY 3Node](./calculate_roi.md), we found a simpler ROI of 6.25 months, say 7 months, that wasn't taking into consideration the additional costs of Internet and electricity. We now have a more realistic ROI of 9 months based on a fixed TFT price of 0.08$ USD. You will need to use to equations and check with your current TF farm and 3Nodes, as well as the current TFT market price.
+We recall that in the section [Calculate the ROI of a DIY 3Node](./calculate_roi), we found a simpler ROI of 6.25 months, say 7 months, that wasn't taking into consideration the additional costs of Internet and electricity. We now have a more realistic ROI of 9 months based on a fixed TFT price of 0.08$ USD. You will need to use to equations and check with your current TF farm and 3Nodes, as well as the current TFT market price.
 
 
 ### Check Revenue with the ThreeFold Simulator

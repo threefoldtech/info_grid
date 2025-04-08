@@ -79,7 +79,7 @@ CU: 18
 SU: 8
 ```
 
-We can then simply put these numbers in the [equation shown in the last section](./tf_dao.md#voting-weight) to obtain the farm weight. Note that in this case, the farm has 2 different nodes with the same `CU` and `SU` values.
+We can then simply put these numbers in the [equation shown in the last section](./tf_dao) to obtain the farm weight. Note that in this case, the farm has 2 different nodes with the same `CU` and `SU` values.
 
 ``` 
 Weight = 2 * (sum of CU of all nodes) + (sum of SU of all nodes)

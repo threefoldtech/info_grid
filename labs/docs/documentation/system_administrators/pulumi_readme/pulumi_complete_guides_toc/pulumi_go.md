@@ -19,10 +19,10 @@ Once you've successfully deployed a VM, you can try all the different Go example
 
 ## Prerequisites
 
-- [A TFChain account](../../../dashboard/wallet_connector.md)
+- [A TFChain account](../../../dashboard/wallet_connector)
 - TFT in your TFChain account
-  - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft.md)
-  - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge.md)
+  - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft)
+  - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge)
 - [Get Docker](https://docs.docker.com/get-docker/)
 
 ## Steps

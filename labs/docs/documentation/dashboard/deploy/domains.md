@@ -11,7 +11,7 @@ The Domains solution allows users to securely expose servers hosted on local mac
 
 ## Prerequisites
 
-- Make sure you have a [wallet](../wallet_connector.md)
+- Make sure you have a [wallet](../wallet_connector)
 - From the sidebar click on **Applications**
 - Click on **Domains**
 

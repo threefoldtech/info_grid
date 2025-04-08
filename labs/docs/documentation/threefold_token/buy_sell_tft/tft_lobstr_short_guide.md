@@ -23,7 +23,7 @@ Hit the **Create Account** button and proceed to create an account by entering y
 
 ## Create Wallet
 
-After you sign in to Lobstr for the first time, you'll be prompted to create or connect a Stellar wallet. If you already have the TF Connect App, follow the instructions at [this link](./tft_lobstr_complete_guide.html#connect-your-tf-connect-app-wallet) to import your existing wallet into Lobstr. Otherwise, just press the **Create Stellar Wallet** button.
+After you sign in to Lobstr for the first time, you'll be prompted to create or connect a Stellar wallet. If you already have the TF Connect App, follow the instructions at [this link](./tft_lobstr_complete_guide#connect-your-tf-connect-app-wallet) to import your existing wallet into Lobstr. Otherwise, just press the **Create Stellar Wallet** button.
 
 Lobstr will then present you with 12 words to write down and store safely. Keep in mind that anyone who can access these words can also access any funds in your account. They can also be used to recover your account later. Be sure not to lose them.
 
@@ -69,4 +69,4 @@ When you're finished you'll see a screen that says **Swap completed**. Congrats,
 
 > The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 
 > 
-> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](../../../../knowledge_base/legal/definitions_legal.md) and seek advice from a qualified financial professional if needed.
+> **The ThreeFold Token (TFT)** is not to be considered as a traditional investment instrument. The value of cryptocurrencies can be volatile, and there are no guarantees of profits or returns. Always be aware of the risks involved and make informed choices based on your own assessment and understanding. We strongly encourage you to read our [full disclaimer](../../../knowledge_base/terms_conditions_all3/definitions_legal) and seek advice from a qualified financial professional if needed.

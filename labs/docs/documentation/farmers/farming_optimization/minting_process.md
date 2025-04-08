@@ -23,4 +23,4 @@ It is important to understant that TFChain tracks the capacity and uptime and is
 
 > Note: Additional auditing code will be added in V4 (i.e. special code generated at runtime for verification) using security primitives on motherboards.
 
-For more information on the minting periods, read [this section](./minting_periods.md).
+For more information on the minting periods, read [this section](./minting_periods).

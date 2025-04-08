@@ -104,7 +104,7 @@ In this method, you use the Bridge directly. Thus, it is normal if you do not se
 
 ## Bridge Fees
 
-To learn more about the bridge fees, read [this documentation](../transaction_fees.md).
+To learn more about the bridge fees, read [this documentation](../../transaction_fees).
 
 ## Questions and Feedback
 

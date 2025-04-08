@@ -13,7 +13,7 @@ The [Grid Client](https://github.com/threefoldtech/tfgrid-sdk-ts/tree/developmen
 
 ## Mycelium Network
 
-Note that you can use the [Mycelium network](../../system_administrators/mycelium/mycelium_toc.md) to connect to your deployments. To do so, make sure that the Mycelium network is properly set up for the deployments. You can consult the different examples that include the Mycelium network to understand this further.
+Note that you can use the [Mycelium network](../../system_administrators/mycelium_toc/mycelium_toc) to connect to your deployments. To do so, make sure that the Mycelium network is properly set up for the deployments. You can consult the different examples that include the Mycelium network to understand this further.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ To use the Grid Client, you will need the following on the TFGrid:
 - A TFChain account
 - TFT in your wallet
 
-If it is not the case, please visit the [Get started section](../../system_administrators/tfgrid3_getstarted/tfgrid3_getstarted.md).
+If it is not the case, please visit the [Get started section](../../system_administrators/tfgrid3_getstarted/tfgrid3_getstarted).
 
 ## Installation
 
@@ -75,7 +75,7 @@ Make sure to set the client configuration properly before using the Grid Client.
 - **network**: The network environment (**dev**, **qa**, **test** or **main**).
 
 - **mnemonic**: The 12 words mnemonics for your account. 
-  - Learn how to create one [here](../../dashboard/wallet_connector.md).
+  - Learn how to create one [here](../../dashboard/wallet_connector).
 
 - **storeSecret**: This is any word that will be used for encrypting/decrypting the keys on ThreeFold key-value store.
 
@@ -115,4 +115,4 @@ You can explore the Grid Client by testing the different scripts proposed in **g
 
 ## Reference API
 
-While this is still a work in progress, you can have a look [here](https://threefoldtech.github.io/tfgrid-sdk-ts/packages/grid_client/docs/api/index.html).
+While this is still a work in progress, you can have a look [here](https://threefoldtech.github.io/tfgrid-sdk-ts/packages/grid_client/docs/api/index).

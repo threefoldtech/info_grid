@@ -19,12 +19,12 @@ To assist you on your journey, we have organized the content into distinct chapt
 
 **TABLE OF CONTENTS**
 
-- [Introducing Grid Proxy](./proxy.md)
-- [Setup](./setup.md)
-- [DB Testing](./db_testing.md)
-- [Commands](./commands.md)
-- [Contributions](./contributions.md)
-- [Explorer](./explorer.md)
-- [Database](./database.md)
-- [Production](./production.md)
-- [Release](./release.md)
+- [Introducing Grid Proxy](./proxy)
+- [Setup](./setup)
+- [DB Testing](./db_testing)
+- [Commands](./commands)
+- [Contributions](./contributions)
+- [Explorer](./explorer)
+- [Database](./database)
+- [Production](./production)
+- [Release](./release)

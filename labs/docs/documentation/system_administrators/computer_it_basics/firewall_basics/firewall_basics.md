@@ -9,5 +9,5 @@ In this section, we cover the basic information concerning Firewall uses on Linu
 
 **TABLE OF CONTENTS**
 
-- [UFW Basics](./ufw_basics.md)
-- [Firewalld Basics](./firewalld_basics.md)
+- [UFW Basics](./ufw_basics)
+- [Firewalld Basics](./firewalld_basics)

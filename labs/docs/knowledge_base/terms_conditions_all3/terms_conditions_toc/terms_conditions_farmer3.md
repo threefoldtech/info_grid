@@ -10,7 +10,7 @@ THESE TERMS AND CONDITIONS (THE "**AGREEMENT**") CONSTITUTE A LEGAL AGREEMENT BE
 
 ### 1. DEFINITIONS
 
-Unless defined otherwise in this Agreement below, capitalized terms in this Agreement shall have the meaning ascribed to them in the following links for [Definitions](../definitions_legal.md).
+Unless defined otherwise in this Agreement below, capitalized terms in this Agreement shall have the meaning ascribed to them in the following links for [Definitions](../definitions_legal).
 
 SPECIAL DEFINITIONS
 
@@ -92,10 +92,10 @@ ThreeFold may also certify certain hardware partners (i.e. certified hardware ve
 
 At all times during the Term of this Agreement or the period when Content is maintained in your 3Node, whichever is longer:
 
-1. You will comply with the terms of this Agreement, the [Generic Disclaimer](../disclaimer.md), [ThreeFold Website Terms](./terms_conditions_websites.md) and [Privacy Policy](../privacypolicy.md) and any other terms and conditions required by in connection herewith, the Open Source Licenses, and the terms of all other agreements to which you are a party in connection with your performance under this Agreement including, without limitation, any agreement you have with a third-party Internet service provider.
+1. You will comply with the terms of this Agreement, the [Generic Disclaimer](../disclaimer), [ThreeFold Website Terms](./terms_conditions_websites) and [Privacy Policy](../privacypolicy) and any other terms and conditions required by in connection herewith, the Open Source Licenses, and the terms of all other agreements to which you are a party in connection with your performance under this Agreement including, without limitation, any agreement you have with a third-party Internet service provider.
 2. You will operate the 3Node in strict compliance with terms of this Agreement and any applicable laws or regulations, and will not take any action not expressly authorized hereunder.
 3. Without prejudice to your rights under any applicable Open Source license, you will not modify or attempt to modify the Software for any purpose including but not limited to attempting to circumvent the audit, bypass security, manipulate the performance of, or otherwise disrupt the ThreeFold_Grid for any reason, including but not limited to attempting to increase the amount of data stored or bandwidth utilized or the amount of Farmed TFTs, as defined herein, and you will not otherwise interfere with the operation of the ThreeFold_Grid.
-4. You will provide and maintain the 3Node so that, at all times, it will meet the minimum requirements set out for either pre configured servers (‘certified hardware’) or ‘do-it-yourself’ servers. [Read more here](../../../documentation/farmers/farmers.md).
+4. You will provide and maintain the 3Node so that, at all times, it will meet the minimum requirements set out for either pre configured servers (‘certified hardware’) or ‘do-it-yourself’ servers. [Read more here](../../../documentation/farmers/farmers).
 5. You will implement and maintain adequate administrative, organizational, physical and technical safeguards to ensure the protection, confidentiality, security, and integrity of the 3Node and Content and shall take all reasonable steps to ensure that Content are not disclosed, accessed, used, modified, or distributed except as expressly authorized under this Agreement.
 6. You acknowledge and agree that by running the Software on your hardware device and allowing IT Capacity to be made available on the TF Grid to the Users and TFCHAIN, you may act as a cloud service provider under certain circumstances and as such qualify as a processor or sub-processor under the General Data Processing Directive (Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC) (‘GDPR’). You undertake to comply with any legal obligations which may possibly be applicable to you as a data processor under the GDPR and/or any other applicable data privacy regulations.
 7. You acknowledge and agree that by running the Software on your hardware device and allowing IT Capacity to be made available on the TF Grid to the Users, your 3Node may be impacted due to additional constraints being placed on it by the Software and the processing of Content. In particular, but without limiting the generality of the foregoing, your 3Node may not operate as quickly as it would without running the Software and making IT Capacity available for use by Users.
@@ -135,7 +135,7 @@ Farmers who connect 3Nodes on an ongoing basis to the ThreeFold_Grid by running 
 
 #### 8.2 Calculation of Farmed TFTs
 
-The details of farming (minting of TFT’s) are described on our [farming logic](../../farming/farming_reward.md) and this location serves as master for the TFT Reward Process. The wiki is version controlled (on github), so all changes can be followed.All connected IT Capacity gets registered on the TFChain, i.e. ThreeFolds blockchain software. Each month the TFChain issues new TFTs and transfers them to Farmers in respect of each 3Node that remained connected to the ThreeFold_Grid during the preceding month, using the following calculation in respect of each 3Node:
+The details of farming (minting of TFT’s) are described on our [farming logic](../../farming_toc/farming_reward) and this location serves as master for the TFT Reward Process. The wiki is version controlled (on github), so all changes can be followed.All connected IT Capacity gets registered on the TFChain, i.e. ThreeFolds blockchain software. Each month the TFChain issues new TFTs and transfers them to Farmers in respect of each 3Node that remained connected to the ThreeFold_Grid during the preceding month, using the following calculation in respect of each 3Node:
 
 
 The amount of TFTs that are Farmed hence depends on three variables:
@@ -160,8 +160,8 @@ When connecting reliable hardware the Farmer can request a certification from TF
 
 The specific way how farming rewards are calculated is specified on:
 
-- [Farming Reward](../../farming/farming_reward.md)
-- [Proof-of-Capacity](../../farming/proof_of_capacity.md)
+- [Farming Reward](../../farming_toc/farming_reward)
+- [Proof-of-Capacity](../../farming_toc/proof_of_capacity)
 
 
 #### 8.3 Uptime
@@ -193,7 +193,7 @@ ThreeFold_Tokens (TFTs) are used to buy IT Capacity as delivered by the 3Nodes (
 
 #### 9.2 Utilization Mechanism
 
-IT capacity is expressed in [network, compute & storage units](../../cloud/cloudunits.md).
+IT capacity is expressed in [network, compute & storage units](../../cloud_toc/cloudunits).
 
 - CU = Compute Units
 - SU = Storage Units
@@ -210,7 +210,7 @@ TFT received for people using capacity is disributed as follows:
 | 5%         | to Staking Pool for TF Validators | used to reward the people who run the TFChain 3.0 blockchain validators. |
 | 50%        | for solution providers & sales channel | managed by ThreeFold DAO.                                       |
 
-The single source of truth for Utilization specifications is available [here](../../farming/proof_of_utilization.md).
+The single source of truth for Utilization specifications is available [here](../../farming_toc/proof_of_utilization).
 
 
 #### 9.4 Taxes

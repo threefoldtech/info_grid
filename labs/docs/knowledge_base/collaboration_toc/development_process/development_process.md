@@ -85,8 +85,8 @@ Creating a repository involves establishing a foundation for collaborative devel
 
 #### Github Templates
 
-- Use github templates to provide proper template for issues [bug_report](./bug_report.md) or [feature request](./feature_request.md)
-- Use github templates to provide proper template for [pull requests](./PULL_REQUEST_TEMPLATE.md)
+- Use github templates to provide proper template for issues [bug_report](./bug_report) or [feature request](./feature_request)
+- Use github templates to provide proper template for [pull requests](./PULL_REQUEST_TEMPLATE)
 
 #### Expected Workflows
 
@@ -145,7 +145,7 @@ By following these guidelines, you contribute to a more efficient issue resoluti
 
 #### Issue Labels
 
-See [issue labels](issue_labels.md)
+See [issue labels](issue_labels)
 
 
 #### Branch Names in Issue titles
@@ -289,7 +289,7 @@ Before tagging a release, open a branch named with the intended version e.g 10.5
     - beta: no major, or blocking bugs. All features working for the customer as promised, no blocking bugs
     - production: no major, no blocking, no minor bugs and the documentation is ready
   
-check the [release process document](release_process.md) for more information
+check the [release process document](release_process) for more information
   
 #### Blocking
 

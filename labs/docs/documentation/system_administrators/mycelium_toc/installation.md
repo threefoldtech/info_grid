@@ -18,7 +18,7 @@ Currently, Linux, macOS and Windows are supported. On Windows, you must have `wi
 
 You might need to run Mycelium as root, enable IPv6 at the OS level and disconnect your VPN.
 
-Read the [Troubleshooting](./information.md#troubleshooting) section for more information.
+Read the [Troubleshooting](./information#troubleshooting) section for more information.
 
 ## Set Mycelium
 

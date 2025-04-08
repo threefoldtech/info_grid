@@ -19,7 +19,7 @@ The main goal of this guide is to show you all the necessary steps to deploy a F
 
 ## Prerequisites
 
-- [Install Terraform](../terraform_install.md)
+- [Install Terraform](../../terraform_install)
 
 You need to download and install properly Terraform. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
 
@@ -32,7 +32,7 @@ Deploying a FullVM is a bit different than deploying a MicroVM, let take a look 
 - QSFS disk is based on `virtiofs`, and you can't use QSFS disk as the first mount in a FullVM, instead you need a regular disk.
 - Any extra disks/mounts will be available on the vm but unlike mounts on MicroVMs, extra disks won't be mounted automatically. you will need to mount it manually after the deployment.
 
-Let modify the qsfs-on-microVM [example](./terraform_qsfs_on_microvm.md) to deploy a QSFS on FullVM this time:
+Let modify the qsfs-on-microVM [example](./terraform_qsfs_on_microvm) to deploy a QSFS on FullVM this time:
 
 - Inside the `grid_deployment` resource we will need to add a disk for the vm root fs.
 

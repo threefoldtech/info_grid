@@ -28,7 +28,7 @@ You don't need to take care about the base system yourself, just merge it with t
 
 The ZOS Hub allows you to convert Docker Hub images and Tar files into flists thanks to the Docker Hub Converter. 
 
-You can convert a docker image (eg: `busybox`, `ubuntu`, `fedora`, `couchdb`, ...) to an flist directly from the backend, this allows you to use your existing docker image in our infrastructure out-of-the-box. Go to the [Docker Hub Converter](https://hub.grid.tf/docker-convert) to use this feature. For more information on the process, read the section [Convert Docker Image to flist](./convert_docker_image.md) of the TF Manual.
+You can convert a docker image (eg: `busybox`, `ubuntu`, `fedora`, `couchdb`, ...) to an flist directly from the backend, this allows you to use your existing docker image in our infrastructure out-of-the-box. Go to the [Docker Hub Converter](https://hub.grid.tf/docker-convert) to use this feature. For more information on the process, read the section [Convert Docker Image to flist](./convert_docker_image) of the TF Manual.
 
 You can also easily convert a Tar file into an flist via the [Upload section](https://hub.grid.tf/upload) of the ZOS Hub.
 
@@ -47,7 +47,7 @@ and gives you the full control of the chain. The only restriction is that the co
 on the flist needs to exists on the backend, otherwise your flist will be rejected.
 
 ## Authenticate via 3Bot
-All the operations on the ZOS Hub needs to be done via a `3Bot` (default) authentication. Only downloading a flist can be done anonymously. To authenticate request via the API, you need to generate an API Token as shown in the section [ZOS Hub API Token](./api_token.md).
+All the operations on the ZOS Hub needs to be done via a `3Bot` (default) authentication. Only downloading a flist can be done anonymously. To authenticate request via the API, you need to generate an API Token as shown in the section [ZOS Hub API Token](./api_token).
 
 ## Get and Update Information Through the API
 The hub host a basic REST API which can gives you some informations about flists, renaming them, remove them, etc.

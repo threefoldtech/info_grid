@@ -19,7 +19,7 @@ While there are many ways to proceed in the development of a ThreeFold applicati
 
 The information provided here is specific to the Nextcloud workload, but it can be applied to other types of workload.
 
-Before building the Nextcloud application, we first deployed a [Nextcloud instance](../../system_administrators/terraform/advanced/terraform_nextcloud_aio.md) on the ThreeFold Grid with a full virtual machine. Once this deployment was working well, we built a [Nextcloud flist](../flist/flist_case_studies/flist_nextcloud_case_study.md). You can consult the Nextcloud flist code in the ThreeFold [tf-images repository](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud). We note that the flist uses a micro VM. There are some differences between a full VM and a micro VM. We propose users to first start deploying with a full VM and then adjust their work when they want to publish a flist with a micro VM, since full VM are easier to work with. You can of course start directly with a micro VM if you want.
+Before building the Nextcloud application, we first deployed a [Nextcloud instance](../../system_administrators/terraform_toc/terraform_advanced_readme/terraform_nextcloud_toc/terraform_nextcloud_aio) on the ThreeFold Grid with a full virtual machine. Once this deployment was working well, we built a [Nextcloud flist](../flist/flist_case_studies/flist_nextcloud_case_study). You can consult the Nextcloud flist code in the ThreeFold [tf-images repository](https://github.com/threefoldtech/tf-images/tree/development/tfgrid3/nextcloud). We note that the flist uses a micro VM. There are some differences between a full VM and a micro VM. We propose users to first start deploying with a full VM and then adjust their work when they want to publish a flist with a micro VM, since full VM are easier to work with. You can of course start directly with a micro VM if you want.
 
 In sum, once we were comfortable launching Nextcloud on a full VM and also using an flist, we were ready to tackle the building of an application. These steps should be taken into account when building your own application. We proceed this way to ensure that the workload is properly configured. Once we know the flist is working properly, we can focus on the application aspect of the deployment, knowing the deployment itself is working properly.
 
@@ -209,7 +209,7 @@ By the end of this subsection, we arrive at the end of the **weblet-layout** sub
 
 The first part of this section consists of importing modules from the **src** directory as well as **GridClient** from **@threefold/grid_client** and **computed**, **type Ref**, and **ref** from **vue**. Then we set constants based on the **template** section. 
 
-One constant to notice is **flist**. This constant is given the URL to the Nextcloud flist that we created for the application deployment. For more information on how to create this flist, read the [Nextcloud flist case study](../flist/flist_case_studies/flist_nextcloud_case_study.md) available on the ThreeFold Manual.
+One constant to notice is **flist**. This constant is given the URL to the Nextcloud flist that we created for the application deployment. For more information on how to create this flist, read the [Nextcloud flist case study](../flist/flist_case_studies/flist_nextcloud_case_study) available on the ThreeFold Manual.
 
 In the function **finalize**, we set the output displayed when the deployment has been successful. It's important to add relevant information for the user here. In the case of Nextcloud, we add the following text to provide guidance to the user:
 
@@ -253,7 +253,7 @@ The export section (**export default**) is set with **TFNextcloud** as its **nam
 
 # Testing an application
 
-You can test this application or the application you are creating by deploying the Dashboard locally. For more information on this, feel free to read the documentation [Deploy the Dashboard](./deploy_dashboard.md) of the ThreeFold Manual.
+You can test this application or the application you are creating by deploying the Dashboard locally. For more information on this, feel free to read the documentation [Deploy the Dashboard](./deploy_dashboard) of the ThreeFold Manual.
 
 This is very useful, if not necessary when testing and building your own application.
 

@@ -14,7 +14,7 @@ We access Ubuntu with a desktop environment to offer a graphical user interface 
 
 This guide can be done on a Windows, MAC, or Linux computer. The only difference will be in the Remote Desktop app. The steps are very similar.
 
-For more information on deploying a full VM and using SSH remote connection, read this [SSH guide](../../ssh_guide/ssh_guide.md).
+For more information on deploying a full VM and using SSH remote connection, read this [SSH guide](../../tfgrid3_getstarted/ssh_guide/ssh_guide).
 
 If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](../../tfgrid3_getstarted) of the Threefold Manual.
 

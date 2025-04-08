@@ -9,5 +9,5 @@ SSH is a secure protocol used as the primary means of connecting to Linux server
 
 **TABLE OF CONTENTS**
 
-- [SSH with OpenSSH](./ssh_openssh.md)
-- [Advanced Methods](./advanced_methods/advanced_methods.md)
+- [SSH with OpenSSH](./ssh_openssh)
+- [Advanced Methods](./advanced_methods/advanced_methods)

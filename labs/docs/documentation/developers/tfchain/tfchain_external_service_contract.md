@@ -13,12 +13,12 @@ The initial scenario is when two parties, a service provider and a consumer of t
 This is actually a more direct and generic feature if we compare to the initial rewarding model where a service provider (or solution provider) is receiving TFT from a rewards distribution process, linked to a node contract and based on a cloud capacity consumption, which follows specific billing rules.
 
 The initial requirements are:
-- Both service and consumer need to have their respective twin created on TFChain (if not, see [here](tfchain.md#create-a-tfchain-twin) how to do it)
+- Both service and consumer need to have their respective twin created on TFChain (if not, see [here](tfchain#create-a-tfchain-twin) how to do it)
 - Consumer account needs to be funded (lack of funds will simply result in the contract cancelation while billed)
 
 In the following steps we detail the sequence of extrinsics that need to be called in TFChain Polkadot portal for setting up and executing such contract.
 <!-- We also show how to check if everything is going the right way via the TFChain GraphQL interface. -->
-Make sure to use right [links](tfchain.md#deployed-instances) depending on the targeted network.
+Make sure to use right [links](tfchain#deployed-instances) depending on the targeted network.
 
 
 # Step 1: Create contract / Get unique ID
@@ -49,7 +49,7 @@ Check if the contract fields are correct, especially the twin ID of both service
 
 ## Wrong contract ID ?
 
-If twin IDs are wrong ([how to get my twin ID?](tfchain.md#get-your-twin-id)) on service contract fields it means the contract does not correspond to the last created contract.
+If twin IDs are wrong ([how to get my twin ID?](tfchain#get-your-twin-id)) on service contract fields it means the contract does not correspond to the last created contract.
 In this case parse the last contracts on stack by decreasing `serviceContractId` and try to identify the right one; or the contract was simply not created so you should repeat the creation process and evaluate the error log.
 
 

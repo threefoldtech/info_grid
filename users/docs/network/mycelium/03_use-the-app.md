@@ -43,4 +43,4 @@ To copy the Mycelium address, click on the button on the right of the address.
 
 Once you've installed Mycelium, you can deploy on the ThreeFold Grid and connect to your workload using Mycelium.
 
-As a starter, you can explore the ThreeFold Grid and deploy apps on the [ThreeFold Dashboard](https://manual.grid.tf/documentation/dashboard/dashboard.html) using Mycelium to connect.
+As a starter, you can explore the ThreeFold Grid and deploy apps on the [ThreeFold Dashboard](https://manual.grid.tf/documentation/dashboard/dashboard) using Mycelium to connect.

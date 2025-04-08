@@ -11,7 +11,7 @@ Open WebUI is an extensible, feature-rich, and user-friendly self-hosted AI plat
 
 ## Prerequisites
 
-- Make sure you have a [wallet](../wallet_connector.md)
+- Make sure you have a [wallet](../../wallet_connector)
 - From the sidebar click on **Applications**
 - Click on **Open WebUI**
 
@@ -43,7 +43,7 @@ CPU-only deployments require at least the Medium configuration for acceptable pe
    - `Mycelium` flag gives the virtual machine a Mycelium address
    - `WireGuard` flag gives the virtual machine a Mycelium address
 - `Rented By Me` flag to retrieve nodes currently reserved by you
-- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../deploy/node_finder.md#dedicated-nodes)
+- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../node_finder#dedicated-nodes)
 - `Certified` flag to retrieve only certified nodes
 - Choose the location of the node
   - `Region`

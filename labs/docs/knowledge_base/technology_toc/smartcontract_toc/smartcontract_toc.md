@@ -7,6 +7,6 @@ sidebar_position: 358
 
 **TABLE OF CONTENTS**
 
-- [Introduction](./smartcontract_tfgrid3.md)
-- [Infrastructure As Code (IAC)](./smartcontract_iac.md)
-- [3Bot Integration](./smartcontract_3bot.md)
+- [Introduction](./smartcontract_tfgrid3)
+- [Infrastructure As Code (IAC)](./smartcontract_iac)
+- [3Bot Integration](./smartcontract_3bot)

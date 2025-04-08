@@ -116,7 +116,7 @@ resource "grid_scheduler" "sched" {
 
 Here we define a `list` of requests, each request has a name and filter options e.g `cru`, `sru`, `mru`, `hru`, having `public_config` or not, `public_ips_count` for this deployment, whether or not this node should be `dedicated`, whether or not this node should be `distinct` from other nodes in this plannder, `farm_id` to search in, nodes to exlude from search in `node_exclude`, and whether or not this node should be `certified`.
 
-The full docs for the capacity planner `scheduler` are found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/scheduler.md)
+The full docs for the capacity planner `scheduler` are found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/scheduler)
 
 And after that in our code we can reference the grid_scheduler object with the request name to be used instead of node_id.
 

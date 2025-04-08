@@ -16,7 +16,7 @@ To use a GPU on the TFGrid, users need to rent a dedicated node. Once they have 
 
 ## Filter and Reserve a GPU Node
 
-You can filter and reserve a GPU node using the [Dedicated Nodes section](../../dashboard/deploy/node_finder.md#dedicated-nodes) of the **ThreeFold Dashboard**.
+You can filter and reserve a GPU node using the [Dedicated Nodes section](../../dashboard/deploy/node_finder#dedicated-nodes) of the **ThreeFold Dashboard**.
 
 ### Filter Nodes
 
@@ -43,7 +43,7 @@ When you have decided which node to reserve, click on **Reserve** under the colu
   
 ## Deploy a VM with GPU
 
-Now that you've reserverd a dedicated GPU node, it's time to deploy a VM to make use of the GPU! There are many ways to proceed. You can use the [Dashboard](../../dashboard/solutions/fullVm.md), [Go](../../developers/grid3_go_readme/grid3_go_gpu), [Terraform](../terraform_toc/terraform_gpu_support.md), etc.
+Now that you've reserverd a dedicated GPU node, it's time to deploy a VM to make use of the GPU! There are many ways to proceed. You can use the [Dashboard](../../dashboard/deploy/vm_intro/fullVm), [Go](../../developers/grid3_go/grid3_go_gpu), [Terraform](../terraform_toc/terraform_advanced_readme/terraform_gpu_support), etc.
 
 For example, deploying a VM with GPU on the Dashboard is easy. Simply set the GPU option and make sure to select your dedicated node, as show here:
 ![](./img/gpu_3.png)
@@ -102,7 +102,7 @@ You can also try this [AI model](https://github.com/invoke-ai/InvokeAI#getting-s
 
 Here are some useful links to troubleshoot your GPU installation.
 
-- [Steps to install the driver](https://amdgpu-install.readthedocs.io/en/latest/index.html)
+- [Steps to install the driver](https://amdgpu-install.readthedocs.io/en/latest/index)
 - Changing kernel version
   - [Link 1](https://linux.how2shout.com/how-to-change-default-kernel-in-ubuntu-22-04-20-04-lts/)
   - [Link 2](https://gist.github.com/chaiyujin/c08e59752c3e238ff3b1a5098322b363)
@@ -111,4 +111,4 @@ Here are some useful links to troubleshoot your GPU installation.
 
 ## GPU Support Links
 
-You can consult the [GPU Table of Contents](./gpu_toc.md) to see all available GPU support links on the ThreeFold Manual.
+You can consult the [GPU Table of Contents](./gpu_toc) to see all available GPU support links on the ThreeFold Manual.

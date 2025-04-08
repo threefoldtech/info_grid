@@ -46,7 +46,7 @@ The main advantage of PoC to farmers it makes it really easy to run a 3Node. It 
 
 ## PoC Rewards
 
-100% of specified [farming rewards](./farming_reward.md) goes to the farmer.
+100% of specified [farming rewards](./farming_reward) goes to the farmer.
 
 ## Farming Reward Calculation
 
@@ -59,7 +59,7 @@ Each 3Node has certain amount of compute, storage and network resources:
 
 For making this Internet Capacity available, Farmers are rewarded with TFT.
 
-The amount of resources availabe in a 3Node are translated into compute units (CU), storage units (SU), Network units (NU) and IP addresses (IPAddr) to calculate farming rewards. See also [Cloud Units Calculation For Farming](../cloud/resource_units_calc_cloudunits.md).
+The amount of resources availabe in a 3Node are translated into compute units (CU), storage units (SU), Network units (NU) and IP addresses (IPAddr) to calculate farming rewards. See also [Cloud Units Calculation For Farming](../cloud_toc/resource_units_calc_cloudunits).
 
 > **Unless explicitly specified otherwise, calculations of "gigabytes" use base
 > 1024. That is, 1 GB is equal to 1073741824 bytes.**
@@ -86,7 +86,7 @@ The below table expands on CU, SU, NU and IPAddr and their farming rewards:
 
 > **The rewards above are calculated according to the current TFT to USD price in TFChain of 0.08. TFDAO is responsible to change this price in accordance to the current market and liquidity.**
 
-The above farming rewards apply for 3Nodes registered in TFChain for ThreeFold Grid v3. Anyone can calculate their potential rewards using the [Farming Reward Simulator](https://dashboard.grid.tf/#/farms/simulator/). The same CU, SU, NU and IPAddr principles apply to the sales of Internet capacity in the form of [cloud units](../cloud/cloudunits.md).
+The above farming rewards apply for 3Nodes registered in TFChain for ThreeFold Grid v3. Anyone can calculate their potential rewards using the [Farming Reward Simulator](https://dashboard.grid.tf/#/farms/simulator/). The same CU, SU, NU and IPAddr principles apply to the sales of Internet capacity in the form of [cloud units](../cloud_toc/cloudunits).
 
 ## Reward Simulator
 

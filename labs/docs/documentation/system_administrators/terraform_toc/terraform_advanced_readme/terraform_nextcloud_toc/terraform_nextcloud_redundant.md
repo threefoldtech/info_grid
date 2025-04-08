@@ -45,7 +45,7 @@ To get an overview of the whole process, we present the main steps:
 
 # Prerequisites
 
-* [Install Terraform](../terraform_install.md)
+* [Install Terraform](../../terraform_install)
 * [Install Wireguard](https://www.wireguard.com/install/)
 
 You need to download and install properly Terraform and Wireguard on your local computer. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
@@ -290,7 +290,7 @@ After deployments, take note of the 3nodes' IPv4 address. You will need those ad
 
 ### SSH into the 3nodes
 
-* To [SSH into the 3nodes](../../tfgrid3_getstarted/ssh_guide/ssh_guide.md), write the following:
+* To [SSH into the 3nodes](../../../tfgrid3_getstarted/ssh_guide/ssh_guide), write the following:
   *  ```
      ssh root@VM_IPv4_Address
      ```
@@ -313,7 +313,7 @@ After deployments, take note of the 3nodes' IPv4 address. You will need those ad
 
 We now want to ping the VMs using Wireguard. This will ensure the connection is properly established. 
 
-For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../tfgrid3_getstarted/ssh_guide/advanced_methods/ssh_wireguard.md).
+For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../../tfgrid3_getstarted/ssh_guide/advanced_methods/ssh_wireguard).
 
 First, we set Wireguard with the Terraform output.
 
@@ -337,7 +337,7 @@ First, we set Wireguard with the Terraform output.
 If it doesn't work and you already did a wireguard connection with the same file from Terraform (from a previous deployment perhaps), do `wg-quick down wg`, then `wg-quick up wg`.
 This should set everything properly.
 
-* As a test, you can [ping](../../computer_it_basics/cli_scripts_basics.md#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the virtual IP addresses of both VMs to make sure the Wireguard connection is correct:
+* As a test, you can [ping](../../../computer_it_basics/cli_scripts_basics#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the virtual IP addresses of both VMs to make sure the Wireguard connection is correct:
   *  ```
      ping 10.1.3.2
      ```
@@ -861,7 +861,7 @@ If everything went smooth, you should now be able to access Nextcloud over the I
 
 The Nextcloud database is synced in real-time on two different 3nodes. When one 3node goes offline, the database is still synchronized on the other 3node. Once the powered-off 3node goes back online, the database is synced automatically with the node that was powered off.
 
-You can now [install Nextcloud](https://nextcloud.com/install/) on your local computer. You will then be able to "use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop". You can also do regular backups with Nextcloud to ensure maximum resilience of your data. Check Nextcloud's [documentation](https://docs.nextcloud.com/server/latest/admin_manual/maintenance/backup.html) for more information on this.
+You can now [install Nextcloud](https://nextcloud.com/install/) on your local computer. You will then be able to "use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop". You can also do regular backups with Nextcloud to ensure maximum resilience of your data. Check Nextcloud's [documentation](https://docs.nextcloud.com/server/latest/admin_manual/maintenance/backup) for more information on this.
 
 You should now have a basic understanding of the Threefold Grid, the ThreeFold Explorer, Wireguard, Terraform, MariaDB, GlusterFS, PHP and Nextcloud. Now, you know how to deploy workloads on the Threefold Grid with an efficient architecture in order to ensure redundancy. This is just the beginning. The Threefold Grid has a somewhat infinite potential when it comes to deployments, workloads, architectures and server projects. Let's see where it goes from here!
 

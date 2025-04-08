@@ -19,7 +19,7 @@ Please note that the Pulumi plugin for ThreeFold Grid is not yet officially publ
 
 ## Mycelium Network
 
-Note that you can use the [Mycelium network](../mycelium_toc/mycelium_toc.md) to connect to your deployments. To do so, make sure that the Mycelium network is properly set up for the deployments. You can consult the different examples that include the Mycelium network to understand this further.
+Note that you can use the [Mycelium network](../mycelium_toc/mycelium_toc) to connect to your deployments. To do so, make sure that the Mycelium network is properly set up for the deployments. You can consult the different examples that include the Mycelium network to understand this further.
 
 ## Benefits of Using Pulumi
 

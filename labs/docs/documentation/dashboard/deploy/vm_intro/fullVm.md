@@ -11,7 +11,7 @@ We present the steps to deploy a full VM on the TFGrid.
 
 Deploy a new full virtual machine on the Threefold Grid
 
-- Make sure you have a [wallet](../wallet_connector.md)
+- Make sure you have a [wallet](../../wallet_connector)
 - From the sidebar click on **Applications**
 - Click on **Full Virtual Machine**
 
@@ -33,9 +33,9 @@ Deploy a new full virtual machine on the Threefold Grid
   - `Mycelium` to enable Mycelium on the virtual machine
   - `Wireguard Access` to add a wireguard access to the Virtual Machine
 - `GPU` flag to add GPU to the Virtual machine
-  - To deploy a Full VM with GPU, you first need to [rent a dedicated node](../deploy/node_finder.md#dedicated-nodes)
+  - To deploy a Full VM with GPU, you first need to [rent a dedicated node](../node_finder#dedicated-nodes)
 - `Rented By Me` flag to retrieve nodes currently reserved by you
-- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../deploy/node_finder.md#dedicated-nodes)
+- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../node_finder#dedicated-nodes)
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
   - `Country`

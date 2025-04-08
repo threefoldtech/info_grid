@@ -18,7 +18,7 @@ You can download the Mycelium app with the following links:
 - [Windows](https://github.com/threefoldtech/myceliumflut/releases)
   - Go to the official Mycelium release page and download the latest `.exe` file (e.g. `mycelium-network-x86_64_v0.8.3.exe`)
 
-> Note: There is no app for Linux, but you can simply follow the installation guide [here](./installation.md).
+> Note: There is no app for Linux, but you can simply follow the installation guide [here](./installation).
 
 ## Start Mycelium
 
@@ -40,7 +40,7 @@ Simply add peers and then either start or restart the app.
 
 ![](./img/mycelium_3.png)
 
-You can consult the [Mycelium hosted public nodes](./information.md#hosted-public-nodes) to find more peers.
+You can consult the [Mycelium hosted public nodes](./information#hosted-public-nodes) to find more peers.
 
 For example, if you want to add the node with the IPv4 address `5.78.122.16` with the tcp port `9651`, simply add the following line then start or restart the app.
 
@@ -60,4 +60,4 @@ To copy the Mycelium address, click on the button on the right of the address.
 
 Once you've installed Mycelium, you can deploy on the grid and connect to your workload using Mycelium.
 
-For more information, [read this guide](../tfgrid3_getstarted/ssh_guide/ssh_openssh.md).
+For more information, [read this guide](../tfgrid3_getstarted/ssh_guide/ssh_openssh).

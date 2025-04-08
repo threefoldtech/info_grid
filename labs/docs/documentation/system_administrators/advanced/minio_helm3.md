@@ -17,8 +17,8 @@ large scale AI/ML, data lake and database workloads. Helm is a package manager f
 ## Prerequisites
 
 - TFChain account with TFT
-- [Deploy Kubernetes cluster with one master and one worker (IPv4)](../../dashboard/solutions/k8s.md)
-- [Make sure you can connect via SSH on the terminal](../../system_administrators/getstarted/ssh_guide/ssh_openssh.md)
+- [Deploy Kubernetes cluster with one master and one worker (IPv4)](../../dashboard/deploy/applications/k8s)
+- [Make sure you can connect via SSH on the terminal](../tfgrid3_getstarted/ssh_guide/ssh_openssh)
   
 ## Create an SSH Tunnel
 
@@ -57,7 +57,7 @@ We set the Master VM to access the minIO Operator.
 
 ## Set MinIO
 
-We can then set the MinIO Operator. For this step, we mainly follow the MinIO documentation [here](https://min.io/docs/minio/kubernetes/upstream/operations/install-deploy-manage/deploy-operator-helm.html).
+We can then set the MinIO Operator. For this step, we mainly follow the MinIO documentation [here](https://min.io/docs/minio/kubernetes/upstream/operations/install-deploy-manage/deploy-operator-helm).
 
 - Add the MinIO repo
     ```

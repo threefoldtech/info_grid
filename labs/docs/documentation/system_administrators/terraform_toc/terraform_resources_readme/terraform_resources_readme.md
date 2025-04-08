@@ -7,11 +7,11 @@ sidebar_position: 242
 
 **TABLE OF CONTENTS**
 
-- [Using Scheduler](./terraform_scheduler.md)
-- [Virtual Machine](./terraform_vm.md)
-- [Web Gateway](./terraform_vm_gateway.md)
-- [Kubernetes Cluster](./terraform_k8s.md)
-- [ZDB](./terraform_zdb.md)
-- [Zlogs](./terraform_zlogs.md)
+- [Using Scheduler](./terraform_scheduler)
+- [Virtual Machine](./terraform_vm)
+- [Web Gateway](./terraform_vm_gateway)
+- [Kubernetes Cluster](./terraform_k8s)
+- [ZDB](./terraform_zdb)
+- [Zlogs](./terraform_zlogs)
 - [Quantum Safe Filesystem](./terraform_qsfs)
-- [CapRover](./terraform_caprover.md)
+- [CapRover](./terraform_caprover)

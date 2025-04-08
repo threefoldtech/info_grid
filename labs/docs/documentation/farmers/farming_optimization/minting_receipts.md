@@ -7,7 +7,7 @@ sidebar_position: 187
 
 ## Introduction
 
-Once you have the receipt hash of your node minting, you can get the [minting report](../../dashboard/tfchain/tf_minting_reports.md) of your node.
+Once you have the receipt hash of your node minting, you can get the [minting report](../../dashboard/tfchain/tf_minting_reports) of your node.
 
 ## Access the Reports
 
@@ -23,7 +23,7 @@ The ThreeFold Alpha minting tool will present the following information for each
   - Node ID
   - Farm Name and ID
   - Measured Uptime
-- Node Resources: These resources are related to the [cloud units](../../../knowledge_base/cloud/cloudunits.md) and the [resource units](../../../knowledge_base/cloud/resource_units_calc_cloudunits.md).
+- Node Resources: These resources are related to the [cloud units](../../../knowledge_base/cloud_toc/cloudunits) and the [resource units](../../../knowledge_base/cloud_toc/resource_units_calc_cloudunits).
   - CU
   - SU
   - NU

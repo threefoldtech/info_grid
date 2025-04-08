@@ -26,7 +26,7 @@ Add peers to your configuration file like so:
 Peers: ["PEER_URL:PORT", "PEER_URL:PORT", ...]
 ```
 
-Please consult [yggdrasil installation page](https://yggdrasil-network.github.io/installation.html) for more information and clients
+Please consult [yggdrasil installation page](https://yggdrasil-network.github.io/installation) for more information and clients
 
 ## Run
 

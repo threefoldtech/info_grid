@@ -23,7 +23,7 @@ This release note includes updates, improvements and fixes of numerous grid comp
 ## Upgrades and Improvements
 
 ### TFChain v2.2.0
-- Added [Third Party Billing Services](https://github.com/threefoldtech/tfchain/blob/12bc8842c7c321d22e36667a91dfc5d3c7d04ab8/substrate-node/pallets/pallet-smart-contract/service_consumer_contract_flow.md), allowing defining contracts between TFChain users for a service and the billing.
+- Added [Third Party Billing Services](https://github.com/threefoldtech/tfchain/blob/12bc8842c7c321d22e36667a91dfc5d3c7d04ab8/substrate-node/pallets/pallet-smart-contract/service_consumer_contract_flow), allowing defining contracts between TFChain users for a service and the billing.
 - Reworked billing flow, see  [details here](https://github.com/threefoldtech/tfchain/issues/269).
 - Infrastructure wise, we have integrated [Firesquid](https://docs.subsquid.io/), which is showing promising improvements in regards of the storage and data syncing.
 - Added Bugfixes around data validations and improving migrations

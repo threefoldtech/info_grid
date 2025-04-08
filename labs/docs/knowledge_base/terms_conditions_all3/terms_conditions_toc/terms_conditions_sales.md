@@ -4,7 +4,7 @@ These terms and conditions (the “Agreement") constitute a legal agreement betw
 
 ## DEFINITIONS AND RELATED TERMS
 
-The definitions which apply to this Agreement, unless stated otherwise herein, can be found [here](../definitions_legal.md), and are incorporated herein by reference.
+The definitions which apply to this Agreement, unless stated otherwise herein, can be found [here](../definitions_legal), and are incorporated herein by reference.
 
 
 ##  TF TECH GENERAL TERMS AND CONDITIONS OF SALE

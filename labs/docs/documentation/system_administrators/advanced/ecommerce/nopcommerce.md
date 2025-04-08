@@ -15,10 +15,10 @@ We show how to deploy a free and open-source ecommerce on the ThreeFold Grid. We
 
 ## Prerequisites
 
-- [A TFChain account](../../../dashboard/wallet_connector.md)
+- [A TFChain account](../../../dashboard/wallet_connector)
 - TFT in your TFChain account
-  - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft.md)
-  - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge.md)
+  - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft)
+  - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge)
 
 ## Deploy a Full VM
 
@@ -55,7 +55,7 @@ We prepare the full to run nopCommerce.
    ```
    apt update
    ```
-* [Install Docker](../../computer_it_basics/docker_basics.html#install-docker-desktop-and-docker-engine)
+* [Install Docker](../../computer_it_basics/docker_basics#install-docker-desktop-and-docker-engine)
 * Install docker-compose
     ```
     apt install docker-compose -y
@@ -107,7 +107,7 @@ localhost:5432
 
 ![](./img/nopcommerce_1.png)
 
-For more information on how to use nopCommerce, refer to the [nopCommerce docs](https://docs.nopcommerce.com/en/index.html).
+For more information on how to use nopCommerce, refer to the [nopCommerce docs](https://docs.nopcommerce.com/en/index).
 
 ## Install nopCommerce
 

@@ -14,7 +14,7 @@ We present here the relevant information when it comes to deploying a virtual ma
 
 ## Client Configurations
 
-To configure the client, have a look at [this section](./grid3_javascript_loadclient.md).
+To configure the client, have a look at [this section](./grid3_javascript_loadclient).
 
 
 
@@ -174,7 +174,7 @@ log(vmResult);
 - `CreateNetWorkModel` :
  we are creating a network and set the node id to be `gwNode`, the name `monNetwork` and inside the function we set `addAccess: true` to add __wireguard__ access.
 
-- `createMachineModel` and `createMachinesModel` is similar to the previous section of [deploying a single VM](./grid3_javascript_vm.md), but we are passing the created `NetworkModel` to the machines model and the entry point here runs a simple python server.
+- `createMachineModel` and `createMachinesModel` is similar to the previous section of [deploying a single VM](./grid3_javascript_vm), but we are passing the created `NetworkModel` to the machines model and the entry point here runs a simple python server.
 
 ### Deploy the Gateway
 

@@ -11,7 +11,7 @@ We show how to deploy ZDBs for QSFS on the TFGrid with the Javascript client.
 
 ## Prerequisites
 
-- Make sure you have your [client](./grid3_javascript_loadclient.md) prepared
+- Make sure you have your [client](./grid3_javascript_loadclient) prepared
 
 ## Example code
 

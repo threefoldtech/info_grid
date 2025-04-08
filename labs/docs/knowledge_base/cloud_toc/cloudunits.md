@@ -16,7 +16,7 @@ Cloud units are a unified way to account for virtual hardware resources on the T
 - Storage Unit (SU): The amount of storage capacity in terms of Hard Disk Drives (HDDs) and Solid State Drives (SSDs) in Gigabytes (GB).
 - Network Unit (NU): The amount of data that travels in and out of storage units or compute units expressed in GB.
 
-> Note: [Resource units](./resource_units_calc_cloudunits.md) are used to calculate SU & CU. Resource Units are used to measure compute and storage capacity produced by hardware.
+> Note: [Resource units](./resource_units_calc_cloudunits) are used to calculate SU & CU. Resource Units are used to measure compute and storage capacity produced by hardware.
 
 When a solution is deployed on the ThreeFold Grid, the system automatically gathers the required amount of CU, SU, or NU. It is important to note that users are not billed upon reservation but only when utilizing the actualy CU, SU and NU. TF Certified Farmers can define the price of CU, SU, and NU they make available on the ThreeFold Grid. 
 
@@ -39,7 +39,7 @@ Example of Compute unit:
 - Recommended price on TF Grid = 10 USD
 - Alternative cloud price = between 40 USD and 180 USD
 
-See how we compare with the market compute prices [here](./pricing/pricing.md).
+See how we compare with the market compute prices [here](./pricing_toc/pricing_toc).
 
 ### Storage Capacity
 
@@ -55,7 +55,7 @@ Example of Storage unit:
 - Recommended price on TF Grid for 1 SU = 10 USD
 - Alternative cloud price = between 20 USD and 200 USD
 
-See how we compare with market storage prices [here](./pricing/pricing.md).
+See how we compare with market storage prices [here](./pricing_toc/pricing_toc).
 
 ### Network
 
@@ -63,4 +63,4 @@ See how we compare with market storage prices [here](./pricing/pricing.md).
 | ------------------------------------------ | -------- |
 | GB transferred OUT or IN                   | 1        |
 
-> We use SU-month and CU-month to show SU monthly costs. This can be compared to kilowatts (kW) to see electricity usage per month. Learn more about how this is calculated with [Resource units](./resource_units_calc_cloudunits.md), a way to measure the compute and storage capacity produced by hardware.
+> We use SU-month and CU-month to show SU monthly costs. This can be compared to kilowatts (kW) to see electricity usage per month. Learn more about how this is calculated with [Resource units](./resource_units_calc_cloudunits), a way to measure the compute and storage capacity produced by hardware.

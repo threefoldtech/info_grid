@@ -255,9 +255,9 @@ Note that, at any moment, if you want to see the information on your Terraform d
 # Nextcloud Setup
 
 * Access Nextcloud Setup
-  * Once you've deployed Nextcloud, you can access the Nextcloud Setup page by pasting on a browser the URL displayed on the line `fqdn = "..."` of the `terraform show` output. For more information on this, [read this documentation](../../../dashboard/solutions/nextcloud.md#nextcloud-setup).
+  * Once you've deployed Nextcloud, you can access the Nextcloud Setup page by pasting on a browser the URL displayed on the line `fqdn = "..."` of the `terraform show` output. For more information on this, [read this documentation](../../../../dashboard/deploy/applications/nextcloud#nextcloud-setup).
 * Create a backup and set a daily backup and update
-  * Make sure to create a backup with `/mnt/backup` as the mount point, and set a daily update and backup for your Nextcloud VM. For more information, [read this documentation](../../../dashboard/solutions/nextcloud.md#backups-and-updates).
+  * Make sure to create a backup with `/mnt/backup` as the mount point, and set a daily update and backup for your Nextcloud VM. For more information, [read this documentation](../../../../dashboard/deploy/applications/nextcloud#backups-and-updates).
 
 > Note: By default, the daily Borgbackup is set at 4:00 UTC. If you change this parameter, make sure to adjust the moment the [Rsync backup](#create-a-cron-job-for-the-rsync-daily-backup) is done.
 
@@ -286,7 +286,7 @@ We need to install a few things on the Nextcloud VM before going further.
 
 # Prepare the VMs for the Rsync Daily Backup
 
-* Test the VPN (Optional) with [ping](../../computer_it_basics/cli_scripts_basics.md#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping)
+* Test the VPN (Optional) with [ping](../../../computer_it_basics/cli_scripts_basics#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping)
   * ```
     ping <WireGuard_VM_IP_Address>
     ```
@@ -320,7 +320,7 @@ We now set a daily cron job that will make a backup between the Nextcloud VM and
 
 > Note: By default, the Nextcloud automatic backup is set at 4:00 UTC. For this reason, we set the Rsync daily backup at 8:00 UTC.
 
-> Note: To set Rsync with a script, [read this documentation](../../computer_it_basics/file_transfer.md#automate-backup-with-rsync). 
+> Note: To set Rsync with a script, [read this documentation](../../../computer_it_basics/file_transfer#automate-backup-with-rsync). 
 
 # Recovery from Borgbackup
 

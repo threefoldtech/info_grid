@@ -7,6 +7,6 @@ sidebar_position: 342
 
 **TABLE OF CONTENTS**
 
-- [ZKube](./zkube.md)
-- [ZMachine](./zmachine.md)
-- [CoreX](./corex.md)
+- [ZKube](./zkube)
+- [ZMachine](./zmachine)
+- [CoreX](./corex)

@@ -15,7 +15,7 @@ Please note that the Pulumi plugin for ThreeFold Grid is not yet officially publ
 
 ## Installation
 
-If this isn't already done, [install Pulumi](./pulumi_install.md) on your machine.
+If this isn't already done, [install Pulumi](./pulumi_install) on your machine.
 
 ## Essential Workflow
 

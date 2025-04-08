@@ -39,7 +39,7 @@ To get an overview of the whole process, we present the main steps:
 
 # Prerequisites
 
-- [Install Terraform](../terraform_install.md)
+- [Install Terraform](../../terraform_install)
 
 You need to download and install properly Terraform on your local computer. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
 
@@ -240,7 +240,7 @@ After deployments, take note of the 3Node's IPv4 address. You will need this add
 
 ## SSH into the 3Node
 
-* To [SSH into the 3Node](../../tfgrid3_getstarted/ssh_guide/ssh_guide.md), write the following:
+* To [SSH into the 3Node](../../../tfgrid3_getstarted/ssh_guide/ssh_guide), write the following:
   *  ```
      ssh root@VM_IPv4_Address
      ```
@@ -553,7 +553,7 @@ You now have enabled the firewall with proper security rules for your Nextcloud 
 
 If everything went smooth, you should now be able to access Nextcloud over the Internet with HTTPS security from any computer or smart phone!
 
-You can now [install Nextcloud](https://nextcloud.com/install/) on your local computer. You will then be able to "use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop". You can also do regular backups with Nextcloud to ensure maximum resilience of your data. Check Nextcloud's [documentation](https://docs.nextcloud.com/server/latest/admin_manual/maintenance/backup.html) for more information on this.
+You can now [install Nextcloud](https://nextcloud.com/install/) on your local computer. You will then be able to "use the desktop clients to keep your files synchronized between your Nextcloud server and your desktop". You can also do regular backups with Nextcloud to ensure maximum resilience of your data. Check Nextcloud's [documentation](https://docs.nextcloud.com/server/latest/admin_manual/maintenance/backup) for more information on this.
 
 You should now have a basic understanding of the Threefold Grid, the ThreeFold Explorer, Terraform, MariaDB, PHP and Nextcloud. 
 
@@ -567,6 +567,6 @@ A big thank you to [Scott Yeager](https://github.com/scottyeager) for his help o
 
 This guide has been inspired by Weynand Kuijpers' [great tutorial](https://youtu.be/DIhfSRKAKHw) on how to deploy Nextcloud with Terraform.
 
-This single Nextcloud instance guide is an adaptation from the [Nextcloud Redundant Deployment guide](terraform_nextcloud_redundant.md). The inspiration to make a single instance deployment guide comes from [RobertL](https://forum.threefold.io/t/threefold-guide-nextcloud-redundant-deployment-on-two-3node-servers/3915/3) on the ThreeFold Forum.
+This single Nextcloud instance guide is an adaptation from the [Nextcloud Redundant Deployment guide](terraform_nextcloud_redundant). The inspiration to make a single instance deployment guide comes from [RobertL](https://forum.threefold.io/t/threefold-guide-nextcloud-redundant-deployment-on-two-3node-servers/3915/3) on the ThreeFold Forum.
 
 Thanks to everyone who helped shape this guide.

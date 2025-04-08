@@ -32,7 +32,7 @@ Nomad's versatility extends beyond its user-friendliness. It seamlessly handles 
 
 You need to download and install properly Terraform and Wireguard on your local computer. Simply follow the documentation depending on your operating system (Linux, MAC and Windows).
 
-If you are new to Terraform, feel free to read this basic [Terraform Full VM guide](../terraform_full_vm.md) to get you started.
+If you are new to Terraform, feel free to read this basic [Terraform Full VM guide](../terraform_full_vm) to get you started.
 
 
 
@@ -289,7 +289,7 @@ Note that the IP addresses will be shown under `Outputs` after running the comma
 
 ### SSH with the Planetary Network
 
-* To [SSH with the Planetary network](../../tfgrid3_getstarted/ssh_guide/ssh_openssh.md), write the following with the proper IP address
+* To [SSH with the Planetary network](../../tfgrid3_getstarted/ssh_guide/ssh_openssh), write the following with the proper IP address
   *  ```
      ssh root@planetary_ip
      ```
@@ -312,7 +312,7 @@ To SSH with WireGuard, we first need to set the proper WireGuard configurations.
   *  ```
      wg-quick up wg
      ```
-* As a test, you can [ping](../../computer_it_basics/cli_scripts_basics.md#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the WireGuard IP of a node to make sure the connection is correct
+* As a test, you can [ping](../../computer_it_basics/cli_scripts_basics#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the WireGuard IP of a node to make sure the connection is correct
   *  ```
      ping wg_ip
      ```
@@ -324,7 +324,7 @@ We are now ready to SSH into the client and server nodes with WireGuard.
      ssh root@wg_ip
      ```
 
-You now have an SSH connection access over WireGuard to the client and server nodes of your Nomad cluster. For more information on connecting with WireGuard, read [this documentation](../../tfgrid3_getstarted/ssh_guide/advanced_methods/ssh_wireguard.md).
+You now have an SSH connection access over WireGuard to the client and server nodes of your Nomad cluster. For more information on connecting with WireGuard, read [this documentation](../../tfgrid3_getstarted/ssh_guide/advanced_methods/ssh_wireguard).
 
 
 

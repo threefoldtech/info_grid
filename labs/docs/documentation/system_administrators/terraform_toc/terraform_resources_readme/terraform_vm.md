@@ -95,7 +95,7 @@ output "vm2_planetary_ip" {
 
 ## Using scheduler
 
-- If the user decided to choose [scheduler](terraform_scheduler.md) to find a node for him, then he will use the node returned from the scheduler as the example above
+- If the user decided to choose [scheduler](terraform_scheduler) to find a node for him, then he will use the node returned from the scheduler as the example above
 
 ## Using Grid Explorer
 
@@ -156,15 +156,15 @@ It's bit long for sure but let's try to dissect it a bit
   ip_range = lookup(grid_network.net1.nodes_ip_range, 2, "")
 ```
 
-- `node = grid_scheduler.sched.nodes["node1"]` means this deployment will happen on node returned from the scheduler. Otherwise the user can specify the node as `node = 2` and in this case the choice of the node is completely up to the user at this point. They need to do the capacity planning. Check the [Node Finder](../../../dashboard/deploy/node_finder.md) to know which nodes fits your deployment criteria.
+- `node = grid_scheduler.sched.nodes["node1"]` means this deployment will happen on node returned from the scheduler. Otherwise the user can specify the node as `node = 2` and in this case the choice of the node is completely up to the user at this point. They need to do the capacity planning. Check the [Node Finder](../../../dashboard/deploy/node_finder) to know which nodes fits your deployment criteria.
 - `network_name` which network to deploy our project on, and here we choose the `name` of network `net1`
-- `ip_range` here we [lookup](https://www.terraform.io/docs/language/functions/lookup.html) the iprange of node `2` and initially load it with `""`
+- `ip_range` here we [lookup](https://www.terraform.io/docs/language/functions/lookup) the iprange of node `2` and initially load it with `""`
 
 > Advannced note: Direct map access fails during the planning if the key doesn't exist which happens in cases like adding a node to the network and a new deployment on this node. So it's replaced with this to make a default empty value to pass the planning validation and it's validated anyway inside the plugin.
 
 ## Which flists to use
 
-see [list of flists](../../../developers/flist/grid3_supported_flists.md)
+see [list of flists](../../../developers/flist/grid3_supported_flists)
 
 ## Remark multiple VMs
 
@@ -197,7 +197,7 @@ So to add a VM
 ```
 
 - We give it a name within our deployment `vm1`
-- `flist` is used to define the flist to run within the VM. Check the [list of flists](../../../developers/flist/grid3_supported_flists.md)
+- `flist` is used to define the flist to run within the VM. Check the [list of flists](../../../developers/flist/grid3_supported_flists)
 - `cpu` and `memory` are used to define the cpu and memory
 - `publicip` is usued to define if it requires a public IP or not
 - `entrypoint` is used define the entrypoint which in most of the cases in `/sbin/zinit init`, but in case of flists based on vms it can be specific to each flist
@@ -208,7 +208,7 @@ The file describes only the desired state which is `a deployment of two VMs and 
 
 ## Reference
 
-A complete list of VM workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/deployment.md#nested-schema-for-vms).
+A complete list of VM workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/deployment#nested-schema-for-vms).
 
 ```
 terraform {

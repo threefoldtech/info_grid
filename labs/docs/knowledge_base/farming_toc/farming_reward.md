@@ -55,7 +55,7 @@ The main advantage of PoC to farmers it makes it really easy to run a 3Node. It 
 
 > Important note: The ThreeFold Token (TFT) is not an investment instrument.
 > TFTs are used to buy and sell IT capacity on the ThreeFold Grid.
-> More info: see [Proof of Capacity DAO rules](./poc_dao_rules.md)
+> More info: see [Proof of Capacity DAO rules](./poc_dao_rules)
 
 
 

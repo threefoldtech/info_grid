@@ -14,10 +14,10 @@ We also show how to provide a public access to the Dashboard by setting a gatewa
 ## Prerequisites
 
 - TFChain account with TFT
-- [Deploy full VM with WireGuard connection](../../system_administrators/getstarted/ssh_guide/advanced_methods/ssh_wireguard.md)
-- [Make sure you can connect via SSH on the terminal](../../system_administrators/getstarted/ssh_guide/ssh_openssh.md)
+- [Deploy full VM with WireGuard connection](../../system_administrators/tfgrid3_getstarted/ssh_guide/advanced_methods/ssh_wireguard)
+- [Make sure you can connect via SSH on the terminal](../../system_administrators/tfgrid3_getstarted/ssh_guide/ssh_openssh)
 
-In this guide, we use WireGuard, but you can use other connection methods, such as [Mycelium](../../system_administrators/mycelium/mycelium_toc.md).
+In this guide, we use WireGuard, but you can use other connection methods, such as [Mycelium](../../system_administrators/mycelium_toc/mycelium_toc).
   
 ## Create an SSH Tunnel
 
@@ -97,7 +97,7 @@ To stop running the Dashboard, simply enter ̀`Ctrl-C` on the terminal window.
 
 Once you've tested the Dashboard with the SSH tunnel, you can explore how to access it from the public Internet. For this, we will create a gateway domain and bind the host to `0.0.0.0`.
 
-On the Full VM page, [add a domain](../../dashboard/solutions/add_domain.md) to access your deployment from the public Internet.
+On the Full VM page, [add a domain](../../dashboard/deploy/vm_intro/add_domain) to access your deployment from the public Internet.
 
 - Under `Actions`, click on `Manage Domains`
 - Go to `Add New Domain`

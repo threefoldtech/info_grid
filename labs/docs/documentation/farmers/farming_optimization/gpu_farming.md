@@ -40,13 +40,13 @@ If you are using the Farmerbot, it might be a good idea to first boot the GPU no
 
 ## Set a Price for the GPU Node
 
-You can [set additional fees](../farming_optimization/set_additional_fees.md) for your GPU dedicated node on the [TF Dashboard](https://dashboard.grid.tf/). 
+You can [set additional fees](../farming_optimization/set_additional_fees) for your GPU dedicated node on the [TF Dashboard](https://dashboard.grid.tf/). 
 
 When a user reserves your 3Node as a dedicated node, you will receive TFT payments once every 24 hours. These TFT payments will be sent to the TFChain account of your farm's twin.
 
 ## Check the GPU Node on the Node Finder
 
-You can use the [Node Finder](../../dashboard/deploy/node_finder.md) on the [TF Dashboard](https://dashboard.grid.tf/) to verify that the node is displayed as having a GPU.
+You can use the [Node Finder](../../dashboard/deploy/node_finder) on the [TF Dashboard](https://dashboard.grid.tf/) to verify that the node is displayed as having a GPU.
 
 * On the Dashboard, go to the Node Finder
 * Under **Node ID**, write the node ID of the GPU node
@@ -57,7 +57,7 @@ You can use the [Node Finder](../../dashboard/deploy/node_finder.md) on the [TF 
 
 ## Reserving the GPU Node
 
-Now, users can reserve the node in the **Dedicated Nodes** section of the Dashboard and then deploy workloads using the GPU. For more information, read [this documentation](../../dashboard/deploy/node_finder.md#dedicated-nodes).
+Now, users can reserve the node in the **Dedicated Nodes** section of the Dashboard and then deploy workloads using the GPU. For more information, read [this documentation](../../dashboard/deploy/node_finder#dedicated-nodes).
 
 ## Questions and Feedback
 

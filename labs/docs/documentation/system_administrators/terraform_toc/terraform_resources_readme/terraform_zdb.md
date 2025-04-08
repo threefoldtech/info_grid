@@ -11,7 +11,7 @@ sidebar_position: 247
 
 We provide a basic template for ZDB deployment with Terraform on the TFGrid.
 
-A brief description of zdb fields can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/deployment.md#nested-schema-for-zdbs). 
+A brief description of zdb fields can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/deployment#nested-schema-for-zdbs). 
 
 A more thorough description of zdb operation can be found in its parent [repo](https://github.com/threefoldtech/0-db).
 

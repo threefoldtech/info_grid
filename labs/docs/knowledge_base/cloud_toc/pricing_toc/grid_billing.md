@@ -107,7 +107,7 @@ Contract cost/hour = CU cost/hour + SU cost/hour
 
 ### Applying the Discounts
 
-Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../pricing/staking_discount_levels.md).
+Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](staking_discount_levels).
 
 For this example, we assume that this twin has 18 months worth of TFTs staked, so the user will be eligible for a Gold discount level (60% discount).
 
@@ -128,7 +128,7 @@ You can get the resources of a node using different methods. You can use Grid Pr
 
 - Using Grid Proxy
   - Grid Proxy API
-    - Go to the section [nodes endpoint](https://gridproxy.grid.tf/swagger/index.html#/GridProxy/get_nodes__node_id_)
+    - Go to the section [nodes endpoint](https://gridproxy.grid.tf/swagger/index#/GridProxy/get_nodes__node_id_)
     - Click on `Try it out`
     - Write the node ID
     - Click on `Execute`
@@ -224,7 +224,7 @@ Contract cost/hour = CU cost/hour + SU cost/hour
 
 ### Applying the Dedicated Node Discount
 
-There's a default `50%` discount for renting a node, this discount is not related to the staking discount. For more information on dedicated node discounts, please [read this section](../../../documentation/dashboard/deploy/node_finder.md#dedicated-nodes).
+There's a default `50%` discount for renting a node, this discount is not related to the staking discount. For more information on dedicated node discounts, please [read this section](../../../documentation/dashboard/deploy/node_finder#dedicated-nodes).
 
 ```
 Cost with 50% discount = 35.72532 * 0.5
@@ -233,7 +233,7 @@ Cost with 50% discount = 35.72532 * 0.5
 
 ### Applying the Staking Discount
 
-Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../pricing/staking_discount_levels.md).
+Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](staking_discount_levels).
 
 For this example, let's assume that this twin has 18 months worth of TFTs staked, so the user will be eligible for a Gold discount level (60% discount).
 
@@ -268,7 +268,7 @@ uniqueName in TFT = 0.00025 * 100
 
 ### Applying the Staking Discount
 
-Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../pricing/staking_discount_levels.md).
+Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](staking_discount_levels).
 
 For this example, let's assume that this twin has 18 months worth of TFTs staked, so the user will be eligible for a Gold discount level (60% discount).
 
@@ -303,7 +303,7 @@ Public IP in TFT = 0.004 * 100
 
 ### Applying the Staking Discount
 
-Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../pricing/staking_discount_levels.md).
+Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](staking_discount_levels).
 
 For this example, let's assume that this twin has 18 months worth of TFTs staked, so the user will be eligible for a Gold discount level (60% discount).
 
@@ -355,7 +355,7 @@ NU price in TFT = 0.0015 * 100
 
 ### Applying the Staking Discount
 
-Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](../pricing/staking_discount_levels.md).
+Before assuming that the price above is the final price, check first if your twin is eligible for any of the available staking discount levels. To understand more about discount levels, please read [this section](staking_discount_levels).
 
 For this example, let's assume that this twin has 18 months worth of TFTs staked, so the user will be eligible for a Gold discount level (60% discount).
 

@@ -28,4 +28,4 @@ You should see the following line with your own 3BotID
 {"status": "success", "payload": {"username": "<3BotID>.3bot"}}
 ```
 
-You can then use this API Token in the terminal to [get and update information through the API](./zos_hub.md#get-and-update-information-through-the-api).
+You can then use this API Token in the terminal to [get and update information through the API](./zos_hub#get-and-update-information-through-the-api).

@@ -3,11 +3,6 @@ title: "Proof-of-Utilization"
 sidebar_position: 381
 ---
 
----
-title: "Proof of Utilization"
-sidebar_position: 336
----
-
 
 
 

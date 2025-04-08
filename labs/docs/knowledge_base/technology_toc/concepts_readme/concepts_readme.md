@@ -9,17 +9,17 @@ On this section we will explore the fundamental principles and concepts behind t
 
 ## Learn the Basics
 
-- [Zero-OS](./zos.md)
-- [TFGrid Primitives](./grid_primitives.md)
-- [TFGrid Component List](./grid3_components.md)
-- [ThreeFold's Infrastructure as Code (IaC)](./grid3_iac.md)
-- [Proof of Utilization](./proof_of_utilization.md)
-- [Contract Grace Period](./contract_grace_period.md)
-- [What's New on TFGrid v3.x](./grid3_whatsnew.md)
+- [Zero-OS](./zos)
+- [TFGrid Primitives](./grid_primitives)
+- [TFGrid Component List](./grid3_components)
+- [ThreeFold's Infrastructure as Code (IaC)](./grid3_iac)
+- [Proof of Utilization](./proof_of_utilization)
+- [Contract Grace Period](./contract_grace_period)
+- [What's New on TFGrid v3.x](./grid3_whatsnew)
 - [TFChain](./tfchain)
-- [TFGrid by Design](./tfgrid_by_design.md)
+- [TFGrid by Design](./tfgrid_by_design)
 
 ## Take an In-Depth Looks
 
-- [TF Technology](../technology_toc.md)
-- [What's New on TFGrid v3.x](./grid3_whatsnew.md)
+- [TF Technology](../technology_toc)
+- [What's New on TFGrid v3.x](./grid3_whatsnew)

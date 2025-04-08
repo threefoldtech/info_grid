@@ -86,7 +86,4 @@ Choices 1 and 2 are for UEFI (newer models).
 Choices 4 and 5 are for BIOS (newer models).
 Choices 3 and 6 are mainly for network boot.
 
-Refer to [this previous section](./2_bootstrap_image.md) for more information on creating a Zero-OS bootstrap image.
-
-For information on how to boot Zero-OS with iPXE, read [this section](./6_boot_3node.md#advanced-booting-methods-optional).
-
+Refer to [this previous section](./2_bootstrap_image) for more information on creating a Zero-OS bootstrap image.

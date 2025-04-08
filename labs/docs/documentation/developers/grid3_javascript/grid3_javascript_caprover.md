@@ -9,7 +9,7 @@ sidebar_position: 79
 
 In this section, we show how to deploy CapRover with the Javascript client.
 
-This deployment is very similar to what we have in the section [Deploy a VM](./grid3_javascript_vm.md), but the environment variables are different.
+This deployment is very similar to what we have in the section [Deploy a VM](./grid3_javascript_vm), but the environment variables are different.
 
 ## Leader Node
 

@@ -53,7 +53,7 @@ Note that, for such transactions, there is a maximum fee of 0.1 TFT on the Stell
 
 **Send TFT to Hardware Wallet on Stellar Blockchain**
 
-Before sending TFT to a hardware wallet, make sure the hardware wallet has a TFT trustline on the Stellar Blockchain. For more information, read [this section](../threefold_token/storing_tft/hardware_wallet.md).
+Before sending TFT to a hardware wallet, make sure the hardware wallet has a TFT trustline on the Stellar Blockchain. For more information, read [this section](../threefold_token/storing_tft/hardware_wallet).
 
 
 #### Receive Assets
@@ -89,7 +89,7 @@ To bridge TFT, follow the steps below:
 
 You can bridge TFT from Stellar to Solana. 
 
-> Important: Make sure to create an associated token account on Solana for TFT. Read [this section](../threefold_token/tft_bridges/stellar_solana_bridge/stellar_solana_ata.md) for more information.
+> Important: Make sure to create an associated token account on Solana for TFT. Read [this section](../threefold_token/tft_bridges/stellar_solana_bridge/stellar_solana_ata) for more information.
 
 ![](./img/bridge_stellar_solana.jpg)
 

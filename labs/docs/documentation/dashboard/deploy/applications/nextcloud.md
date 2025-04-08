@@ -15,7 +15,7 @@ Nextcloud provides functionality similar to Dropbox, Office 365 or Google Drive 
 
 # Prerequisites
 
-- Make sure you have a [wallet](../wallet_connector.md)
+- Make sure you have a [wallet](../../wallet_connector)
 - From the sidebar click on **Applications**
 - Click on **Nextcloud**
 
@@ -45,7 +45,7 @@ If you're not sure and just want the easiest, most affordable option, skip the p
    - `Public IPv4` flag gives the virtual machine a Public IPv4
    - `Mycelium` flag gives the virtual machine a Mycelium address
 - `Rented By Me` flag to retrieve nodes currently reserved by you
-- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../deploy/node_finder.md#dedicated-nodes)
+- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../node_finder#dedicated-nodes)
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
    - `Region`
@@ -163,7 +163,7 @@ After the first manual backup of your Nextcloud instance is complete, you can se
 
 ## Secondary VM Backup
 
-To allow for another layer of redundancy, you can set a secondary VM on the grid and make a daily backup from the BorgBackup of your Nextcloud instance to the secondary VM. The following shows how to do this. It is based on the [File Transfer section](../../system_administrators/computer_it_basics/file_transfer.md#automate-backup-with-rsync) of the manual.
+To allow for another layer of redundancy, you can set a secondary VM on the grid and make a daily backup from the BorgBackup of your Nextcloud instance to the secondary VM. The following shows how to do this. It is based on the [File Transfer section](../../../system_administrators/computer_it_basics/file_transfer#automate-backup-with-rsync) of the manual.
 
 For the following, we take into account that the BorgBackup is located at `/mnt/data/backup` on the VM running Nextcloud. 
 

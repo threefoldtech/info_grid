@@ -20,7 +20,7 @@ A ThreeFold Compute Unit is (CU)
 
 A good site to compare is Cloudorado: https://www.cloudorado.com/
 
-![](./img/cloudorado_compute_choices.jpg ':size=600x240')
+![](./img/cloudorado_compute_choices.jpg ':size=600x240'.md)
 
 | Compute                           | Compute                           |
 | --------------------------------- | --------------------------------- |
@@ -40,9 +40,9 @@ A ThreeFold Storage Unit is (SU)
 
 Again, a good site to compare is Cloudorado: https://www.cloudorado.com/
 
-![](./img/cloudorado_storage_choices.jpg ':size=600x270')
+![](./img/cloudorado_storage_choices.jpg ':size=600x270'.md)
 
-![](./img/cloudorado_storage_1.jpg ':size=500x610')
+![](./img/cloudorado_storage_1.jpg ':size=500x610'.md)
 
 ### Storage Conclusion
 

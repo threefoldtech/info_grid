@@ -11,7 +11,7 @@ This is a simple instance of upstream [Node Pilot](https://nodepilot.tech).
 
 ## Prerequisites
 
-- Make sure you have a [wallet](../wallet_connector.md)
+- Make sure you have a [wallet](../../wallet_connector)
 - From the sidebar click on **Applications**
 - Click on **Node Pilot**
 
@@ -26,7 +26,7 @@ This is a simple instance of upstream [Node Pilot](https://nodepilot.tech).
   - 256 MB of memory
   - 15 GB of storage
 
-- `Dedicated` flag to retrieve only [dedicated nodes](../deploy/node_finder.md#dedicated-nodes) (rentable or rented by you)
+- `Dedicated` flag to retrieve only [dedicated nodes](../node_finder#dedicated-nodes) (rentable or rented by you)
 - `Certified` flag to retrieve only certified nodes 
 
 - Choose the location of the node

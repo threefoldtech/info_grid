@@ -12,7 +12,7 @@ We present some general information concerning the Farmerbot as well as some adv
 
 # Additional Information
 
-We present additional information to complement the [Quick Guide](farmerbot_quick.md).
+We present additional information to complement the [Quick Guide](farmerbot_quick).
 
 ## General Considerations
 
@@ -165,7 +165,7 @@ To download the Zero-OS bootstrap image, go to the usual bootstrap link [https:/
 
 ![](./img/farmerbot_5.png) 
 
-Once you have your new bootstrap image for the new network, [wipe your disks](../3node_building/4_wipe_all_disks.md), insert the new bootstrap image and reboot the 3Node.
+Once you have your new bootstrap image for the new network, [wipe your disks](../3node_building/4_wipe_all_disks), insert the new bootstrap image and reboot the 3Node.
 
 ## The differences between power "state" and power "target"
 
@@ -256,7 +256,7 @@ Note that each node managed by the Farmerbot will randomly wakeup on average 10 
 
 ## Upgrade to the new Farmerbot
 
-If you are still running the old version of the Farmerbot (written in V), you can easily upgrade to the new Farmerbot (written in Go). You simply need to properly stop the old Farmerbot and then follow the new [Farmerbot guide](./farmerbot_quick.md).
+If you are still running the old version of the Farmerbot (written in V), you can easily upgrade to the new Farmerbot (written in Go). You simply need to properly stop the old Farmerbot and then follow the new [Farmerbot guide](./farmerbot_quick).
 
 Here are the steps to properly stop the old Farmerbot.
 
@@ -273,7 +273,7 @@ Here are the steps to properly stop the old Farmerbot.
   docker container rm -f -v NAME_OF_CONTAINER
   ```
 
-Once the old Farmerbot is properly stopped and deleted, follow the new [Farmerbot guide](./farmerbot_quick.md).
+Once the old Farmerbot is properly stopped and deleted, follow the new [Farmerbot guide](./farmerbot_quick).
 
 ## Set the Farmerbot without the mnemonics of a ThreeFold Dashboard account
 

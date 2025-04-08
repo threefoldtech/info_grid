@@ -7,7 +7,7 @@ sidebar_position: 84
 
 ## Prerequisites
 
-First, make sure that you have your [client](./grid3_javascript_loadclient.md) prepared.
+First, make sure that you have your [client](./grid3_javascript_loadclient) prepared.
 
 ## Code Example
 
@@ -249,7 +249,7 @@ log(">>>>>>>>>>>>>>>vm has been created<<<<<<<<<<<<<<<");
 log(vm_res);
 ```
 
-So this deployment is almost similiar to what we have in the [vm deployment section](./grid3_javascript_vm.md). We only have a new section `qsfs_disks`
+So this deployment is almost similiar to what we have in the [vm deployment section](./grid3_javascript_vm). We only have a new section `qsfs_disks`
 
 ```ts
     qsfs_disks: [{

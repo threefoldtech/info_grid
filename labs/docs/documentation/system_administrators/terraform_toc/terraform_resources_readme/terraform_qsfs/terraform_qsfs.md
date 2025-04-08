@@ -15,6 +15,6 @@ The aim is to support unlimited local storage with remote backends for offload a
 
 ## QSFS Workload Parameters and Documentation
 
-A complete list of QSFS workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/deployment.md#nested-schema-for-qsfs).
+A complete list of QSFS workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/deployment#nested-schema-for-qsfs).
 
 The [quantum-storage](https://github.com/threefoldtech/quantum-storage) repo contains a more thorough description of QSFS operation.

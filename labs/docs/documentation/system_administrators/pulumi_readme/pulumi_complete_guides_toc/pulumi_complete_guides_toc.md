@@ -9,6 +9,6 @@ This section covers complete guides to deploy workloads on the ThreeFold Grid wi
 
 **TABLE OF CONTENTS**
 
-- [Pulumi and YAML](./pulumi_yaml.md)
-- [Pulumi and Python](./pulumi_python.md)
-- [Pulumi and Go](./pulumi_go.md)
+- [Pulumi and YAML](./pulumi_yaml)
+- [Pulumi and Python](./pulumi_python)
+- [Pulumi and Go](./pulumi_go)

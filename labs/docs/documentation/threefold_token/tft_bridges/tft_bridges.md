@@ -24,11 +24,11 @@ graph LR
     B((Stellar Chain)) <--> id4(Stellar / Eth Bridge) <--> D((Ethereum Chain));
     B((Stellar Chain)) --> id5(Stellar / Solana Bridge) --> F((Solana Chain));
 
-    click id1 "./tfchain_stellar_bridge.html"
-    click id2 "./tfchain_stellar_bridge.html"
-    click id3 "./bsc_stellar_bridge.html"
-    click id4 "./tft_ethereum/tft_ethereum.html"
-    click id5 "./stellar_solana/stellar_solana_bridge.html"
+    click id1 "./tfchain_stellar_bridge"
+    click id2 "./tfchain_stellar_bridge"
+    click id3 "./bsc_stellar_bridge"
+    click id4 "./tft_ethereum"
+    click id5 "./stellar_solana_bridge"
 
 ```
 
@@ -38,19 +38,19 @@ The links to the bridges for TFT are the following:
 
 * Stellar-Ethereum Bridge
   * This bridge is accessible at the following link: [https://bridge.eth.threefold.io/](https://bridge.eth.threefold.io/)
-  * Read [this guide](./tft_ethereum/tft_ethereum.md) for more information
+  * Read [this guide](tft_ethereum) for more information
 * Stellar-BSC Bridge
   * This bridge is accessible at the following link: [https://bridge.bsc.threefold.io/](https://bridge.bsc.threefold.io/)
-  * Read [this guide](./bsc_stellar_bridge.html) for more information
+  * Read [this guide](./bsc_stellar_bridge) for more information
 * Stellar-TFChain Mainnet Bridge
   * This bridge is accessible on the ThreeFold Mainnet Dashboard: [https://dashboard.grid.tf/](https://dashboard.grid.tf/). 
-  * Read [this guide](./tfchain_stellar_bridge.html) for more information
+  * Read [this guide](./tfchain_stellar_bridge) for more information
 * Stellar-TFChain Testnet Bridge
   * This bridge is accessible on the ThreeFold Testnet Dashboard: [https://dashboard.test.grid.tf/](https://dashboard.test.grid.tf/).
-  * Read [this guide](./tfchain_stellar_bridge.html) for more information
+  * Read [this guide](./tfchain_stellar_bridge) for more information
 * Stellar-Solana Bridge
   * This bridge is accessible on the ThreeFold Connect app.
-  * Read [this guide](./stellar_solana/stellar_solana_bridge.md) for more information
+  * Read [this guide](stellar_solana_bridge/stellar_solana_bridge) for more information
 
 ## Chains Functions
 

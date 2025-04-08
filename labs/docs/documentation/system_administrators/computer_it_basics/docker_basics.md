@@ -131,7 +131,7 @@ docker run --rm quay.io/skopeo/stable list-tags docker://ghcr.io/<repository>/<i
 
 Make sure to write the proper information for the repository and the image.
 
-To install Skopeo, read [this documentation](https://github.com/containers/skopeo/blob/main/install.md).
+To install Skopeo, read [this documentation](https://github.com/containers/skopeo/blob/main/install).
 
 
 

@@ -22,7 +22,7 @@ For more information on Nix, you can read the [Nix Reference Manual](https://nix
   * [Devnet](https://dashboard.dev.grid.tf)
   * [QAnet](https://dashboard.qa.grid.tf)
 
-* Make sure you have a [wallet](../wallet_connector.md)
+* Make sure you have a [wallet](../../wallet_connector)
 * From the sidebar click on **Solutions**
 * Click on **Micro Virtual Machine** to start your NixOS MicroVM Deployment
 
@@ -51,7 +51,7 @@ We now present the main steps to properly configure your NixOS MicroVM running o
 
 * Once your configured the parameters, you can deploy the MicroVM.
 
-If you need more information on how to SSH into your deployment, read [this section](../../system_administrators/tfgrid3_getstarted/tfgrid3_getstarted.md) of the TF Manual.
+If you need more information on how to SSH into your deployment, read [this section](../../../system_administrators/tfgrid3_getstarted/tfgrid3_getstarted) of the TF Manual.
 
 
 

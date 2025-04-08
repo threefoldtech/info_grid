@@ -11,7 +11,7 @@ The TFGrid client Proxy acts as an interface to access information about the gri
 
 The proxy is used as the backend of several threefold projects like:
 
-- [Dashboard](../../dashboard/dashboard.md)
+- [Dashboard](../../dashboard/dashboard)
 
 
 ## How to Use the Project
@@ -39,7 +39,7 @@ By default, the instance runs against devnet. to configure that you will need to
 3. **Docker**: Containerize the running services such as Postgres and Redis.
 4. **Mnemonics**: Secret seeds for adummy identity to use for the relay client.
 
-For more about the prerequisites and how to set up and configure them. follow the [Setup guide](./setup.md)
+For more about the prerequisites and how to set up and configure them. follow the [Setup guide](./setup)
 
 ## Start for Development
 
@@ -77,7 +77,7 @@ To start the services for development or testing make sure first you have all th
    make docs
   ```
 
-To run in development environment see [here](./db_testing.md) how to generate test db or load a db dump then use:
+To run in development environment see [here](./db_testing) how to generate test db or load a db dump then use:
 
 ```sh
 go run cmds/proxy_server/main.go --address :8080 --log-level debug -no-cert --postgres-host 127.0.0.1 --postgres-db tfgrid-graphql --postgres-password postgres --postgres-user postgres --mnemonics <insert user mnemonics>
@@ -85,7 +85,7 @@ go run cmds/proxy_server/main.go --address :8080 --log-level debug -no-cert --po
 
 Then visit `http://localhost:8080/<endpoint>`
 
-For more illustrations about the commands needed to work on the project, see the section [Commands](./commands.md). For more info about the project structure and contributions guidelines check the section [Contributions](./contributions.md).
+For more illustrations about the commands needed to work on the project, see the section [Commands](./commands). For more info about the project structure and contributions guidelines check the section [Contributions](./contributions).
 
 
 ## Setup for Production

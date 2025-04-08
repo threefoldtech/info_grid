@@ -29,7 +29,7 @@ It has following benefits :
 
 ## Requirements
 
-- Make sure you have a [wallet](../wallet_connector.md)
+- Make sure you have a [wallet](../../../wallet_connector)
 - From the sidebar click on **Orchestrators**
 - Click on **CapRover**
 
@@ -62,7 +62,7 @@ Use the Leader and Workers tabs to add nodes to your deployment.
 - Choose the network
    - `Mycelium` flag gives the virtual machine a Mycelium address
 - `Rented By Me` flag to retrieve nodes currently reserved by you
-- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../deploy/node_finder.md#dedicated-nodes)
+- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../../node_finder#dedicated-nodes)
 - `Certified` flag to retrieve only certified nodes 
 - Choose the node 
   - Automated
@@ -82,7 +82,7 @@ Deployment will take couple of minutes.
 
 ## The Domain Name
 
-As per the [CapRover documentation](https://caprover.com/docs/get-started.html), you need to point a wildcard DNS entry to the VM IP address of your CapRover Leader instance. You have to do this after having deployed the CapRover instance, otherwise you won't have access to the VM IP address.
+As per the [CapRover documentation](https://caprover.com/docs/get-started), you need to point a wildcard DNS entry to the VM IP address of your CapRover Leader instance. You have to do this after having deployed the CapRover instance, otherwise you won't have access to the VM IP address.
 
 Let’s say your domain is **example.com** and your subdomain is **subdomain**. You can set **\*.subdomain.example.com** as an A record in your DNS settings to point to the VM IP address of the server hosting the CapRover instance, where **\*** acts as the wildcard. To do this, go to the DNS settings of your domain name registrar, and set a wild card A record entry.
 
@@ -143,5 +143,5 @@ Make sure that you've point a wildcard DNS entry to your CapRover IP address (e.
 
 ## How to Work with CapRover
 
-* [CapRover Admin Tutorial](./caprover_admin.md)
-* [CapRover Worker Tutorial](./caprover_worker.md)
+* [CapRover Admin Tutorial](./caprover_admin)
+* [CapRover Worker Tutorial](./caprover_worker)

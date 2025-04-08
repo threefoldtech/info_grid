@@ -7,4 +7,4 @@ sidebar_position: 316
 
 To bridge from Stellar to Solana, use the bridge function on the ThreeFold Connect app.
 
-Read [this section](../../../tfconnect/tfconnect_wallet.md#bridge-assets-solana) for more information.
+Read [this section](../../../tfconnect_toc/tfconnect_wallet#bridge-assets-solana) for more information.

@@ -15,7 +15,7 @@ We present a quick way to install Nextcloud All-in-One on the TFGrid. This guide
 
 ## Deploy a Full VM
 
-* Deploy a Full VM with the [TF Dashboard](../../tfgrid3_getstarted/ssh_guide/ssh_openssh.md) or [Terraform](../terraform_full_vm.md)
+* Deploy a Full VM with the [TF Dashboard](../../../tfgrid3_getstarted/ssh_guide/ssh_openssh) or [Terraform](../../terraform_full_vm)
   * Minimum specs:
     * IPv4 Address
     * 2 vcores 

@@ -19,7 +19,7 @@ In this section, we cover notions such as how to wipe disks, how to set the BIOS
 
 You need to set the BIOS properly for your 3Node to boot with Zero-OS.
 
-The basic information is available [here](./3node_building/5_set_bios_uefi.md#the-essential-features-of-biosuefi-for-a-3node).
+The basic information is available [here](../3node_building/5_set_bios_uefi#the-essential-features-of-biosuefi-for-a-3node).
 
 ### BIOS Troubleshooting
 
@@ -55,7 +55,7 @@ If you're having trouble getting your disks recognized by Zero-OS, some farmers 
 
 If you are using a server with onboard storage and are having issues, there are many ways to troubleshooting this. 
 
-You can use the on board storage on a server without RAID. You can [re-flash](https://fohdeesha.com/docs/perc.html)  the RAID card, turn on HBA/non-RAID mode, or install a different card. There is no need for RAID with ThreeFold farming.
+You can use the on board storage on a server without RAID. You can [re-flash](https://fohdeesha.com/docs/perc)  the RAID card, turn on HBA/non-RAID mode, or install a different card. There is no need for RAID with ThreeFold farming.
 
 It's usually easy to set servers such as a HP Proliant with the HBA mode. For Dell servers, you can either cross-flash the RAID controller with an “IT-mode-Firmware” (see this [video](https://www.youtube.com/watch?v=h5nb09VksYw)) or get a DELL H310-controller (which has the non-RAID option). Otherwise, you can install a NVME SSD with a PCIe adaptor, and turn off the RAID controller.
 
@@ -146,10 +146,10 @@ Note: Resetting the configuration will destroy all data on all virtual disks. Ma
 There can be many different fixes for this error. Here are some troubleshooting tips to test separately:
 
 * In BIOS, enable AHCI
-* Make sure to [wipe the disks](./3node_building/4_wipe_all_disks.md) of the 3Nodes
+* Make sure to [wipe the disks](../3node_building/4_wipe_all_disks) of the 3Nodes
 * If the 3Node has a RAID Controller:
   * Disabled the RAID controller, OR;
-  * [Flash the RAID controller](https://fohdeesha.com/docs/perc.html) (i.e. crossflashing), OR;
+  * [Flash the RAID controller](https://fohdeesha.com/docs/perc) (i.e. crossflashing), OR;
   * Change the controller to a Dell H310 controller (for Dell servers)
 * Try the command **badblocks** (replace **sda** with your specific disk). Note that this command will delete all the data on the disk
   * ```
@@ -195,12 +195,12 @@ First make sure to wipe the disks and then boot your 3Node. If you've wiped the 
 
 ### When booting a 3Node, I get the message: failed to register node: failed to create node: failed to submit extrinsic: Invalid Transaction: registration failed. What could fix this?
 
-The most probable fix to this error is simply to properly [wipe your disks](./3node_building/4_wipe_all_disks.md).
+The most probable fix to this error is simply to properly [wipe your disks](../3node_building/4_wipe_all_disks).
 
 
 ### I did a format on my SSD disk, but Zero-OS still does not recognize them. What's wrong?
 
-Formatting is one thing, but to boot properly, Zero-OS needs to work on a completely wiped disk. Thus, make sure you [wipe your disks](./3node_building/4_wipe_all_disks.md). Formatting is not enough.
+Formatting is one thing, but to boot properly, Zero-OS needs to work on a completely wiped disk. Thus, make sure you [wipe your disks](../3node_building/4_wipe_all_disks). Formatting is not enough.
 
 ### My 3Node doesn't boot properly without a monitor plugged in. What can I do?
 
@@ -257,7 +257,7 @@ Make sure you have network stack enabled in BIOS. If so, check you ethernet port
 
 ### How can I update Dell and HP servers to Intel E5-2600v2, E5-2400v2 and E5-4600v2, when applicable?
 
-There are many ressources online with steps on how to do this. You can check this [youtube video](https://www.youtube.com/watch?v=duzrULLtonM) on Dell and HP servers, as welll as this [documentation](https://ixnfo.com/en/hp-proliant-gen8-update-to-support-cpu-e5-2600v2-e5-2400v2-e5-4600v2.html) for HP Proliant Gen8.
+There are many ressources online with steps on how to do this. You can check this [youtube video](https://www.youtube.com/watch?v=duzrULLtonM) on Dell and HP servers, as welll as this [documentation](https://ixnfo.com/en/hp-proliant-gen8-update-to-support-cpu-e5-2600v2-e5-2400v2-e5-4600v2) for HP Proliant Gen8.
 
 
 

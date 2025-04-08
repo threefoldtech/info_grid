@@ -15,7 +15,7 @@ To deploy different workloads, the SSH connection process should be very similar
 
 ## Overview
 
-Make sure to [read the introduction](../tfgrid3_getstarted.md#get-started---your-first-deployment) before going further.
+Make sure to [read the introduction](../tfgrid3_getstarted#get-started---your-first-deployment) before going further.
 
 The main steps for the whole process are the following:
 
@@ -27,7 +27,7 @@ The main steps for the whole process are the following:
 
 Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on Linux.
 
-If you are using Mycelium, make sure to [read this section](../../mycelium_toc/mycelium_toc.md).
+If you are using Mycelium, make sure to [read this section](../../mycelium_toc/mycelium_toc).
 
 * To create the SSH key pair, write in the terminal 
   * ```
@@ -62,7 +62,7 @@ You now have an SSH connection on Linux.
 
 Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on MacOS.
 
-If you are using Mycelium, make sure to [read this section](../../mycelium_toc/mycelium_toc.md).
+If you are using Mycelium, make sure to [read this section](../../mycelium_toc/mycelium_toc).
 
 * To create the SSH key pair, in the terminal write
     * ```
@@ -97,7 +97,7 @@ You now have an SSH connection on MacOS.
 
 Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on Windows.
 
-If you are using Mycelium, make sure to [read this section](../../mycelium_toc/mycelium_toc.md).
+If you are using Mycelium, make sure to [read this section](../../mycelium_toc/mycelium_toc).
 
 * To download OpenSSH client and OpenSSH server
   * Open the `Settings` and select `Apps`

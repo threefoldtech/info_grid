@@ -11,7 +11,7 @@ sidebar_position: 212
 
 In this Threefold Guide, we show how easy it is to SSH into a 3node on Windows with [Windows Subsystem for Linux (WSL)](https://ubuntu.com/wsl).
 
-Make sure to read the [Mycelium section](../../mycelium_toc/mycelium_toc.md) if you use Mycelium for the network connection.
+Make sure to read the [Mycelium section](../../../mycelium_toc/mycelium_toc) if you use Mycelium for the network connection.
 
 ## SSH Key Generation
 

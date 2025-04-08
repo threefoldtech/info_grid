@@ -11,7 +11,7 @@ sidebar_position: 310
 
 We present here the general steps to use the TFChain-Stellar Bridge. Note that the only difference between using the Main net or Test net TFChain-Stellar bridge lies in the ThreeFold Dashboard URL.
 
-Read the [Dashboard section](../../dashboard/tfchain/tf_token_bridge.md) for more information.
+Read the [Dashboard section](../../dashboard/tfchain/tf_token_bridge) for more information.
 
 
 
@@ -32,7 +32,7 @@ Note: To withdraw, make sure to use a valid Stellar address. Do not use the Stel
 
 ## Bridge Fees
 
-To learn more about the bridge fees, read [this documentation](../transaction_fees.md).
+To learn more about the bridge fees, read [this documentation](../transaction_fees).
 
 ## Questions and Feedback
 

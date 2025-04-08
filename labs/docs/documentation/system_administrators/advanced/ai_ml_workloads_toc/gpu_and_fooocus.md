@@ -13,13 +13,13 @@ We show how to use a ThreeFold GPU node on the grid to deploy AI workloads for g
 
 ## Prerequisites
 
-- [A TFChain account](../../../dashboard/wallet_connector.md)
+- [A TFChain account](../../../dashboard/wallet_connector)
 - TFT in your TFChain account
-  - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft.md)
-  - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge.md)
-- Reserve a [dedicated GPU node](../../../dashboard/deploy/node_finder.md#dedicated-nodes) on the ThreeFold Grid
+  - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft)
+  - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge)
+- Reserve a [dedicated GPU node](../../../dashboard/deploy/node_finder#dedicated-nodes) on the ThreeFold Grid
 - Deploy a full VM running Ubuntu 22.04
-- [SSH](../../tfgrid3_getstarted/ssh_guide/ssh_guide.md) into the node with [Wireguard](../../tfgrid3_getstarted/ssh_guide/advanced_methods/ssh_wireguard.md) 
+- [SSH](../../tfgrid3_getstarted/ssh_guide/ssh_guide) into the node with [Wireguard](../../tfgrid3_getstarted/ssh_guide/advanced_methods/ssh_wireguard) 
 
 ## Prepare the System
 

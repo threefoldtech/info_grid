@@ -12,7 +12,7 @@ sidebar_position: 407
 FreeFlow nation created this collaboration manifest which can be freely used by any organization who finds them useful. If you would like to see any changes to this document please email to **info@freeflownation.org**.
 We at ThreeFold want to follow these guidelines.
 
-This document has been created honoring the [FreeFlow Nation Manifesto](https://www.freeflownation.org/manifesto.html).
+This document has been created honoring the [FreeFlow Nation Manifesto](https://www.freeflownation.org/manifesto).
 
 # Code of Conduct
 

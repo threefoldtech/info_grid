@@ -7,6 +7,6 @@ sidebar_position: 352
 
 **TABLE OF CONTENTS**
 
-- [ZNET](./znet.md)
-- [ZNIC](./znic.md)
-- [WebGateway](./webgw3.md)
+- [ZNET](./znet)
+- [ZNIC](./znic)
+- [WebGateway](./webgw3)

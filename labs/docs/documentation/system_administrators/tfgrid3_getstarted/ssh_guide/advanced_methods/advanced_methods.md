@@ -7,7 +7,7 @@ sidebar_position: 210
 
 **TABLE OF CONTENTS**
 
-- [SSH with PuTTY](../ssh_putty.md)
-- [SSH with WSL](../ssh_wsl.md)
-- [WireGuard](./ssh_wireguard.md)
-- [Planetary Network](./planetarynetwork.md)
+- [SSH with PuTTY](ssh_putty)
+- [SSH with WSL](ssh_wsl)
+- [WireGuard](./ssh_wireguard)
+- [Planetary Network](./planetarynetwork)

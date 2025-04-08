@@ -7,12 +7,12 @@ sidebar_position: 11
 
 Here you will find everything related to deployments on the ThreeFold grid. This includes:
 
-- Checking the cost of a deployment using [Pricing Calculator](./pricing_calculator.md)
-- Finding a node to deploy on using the [Node Finder](./node_finder.md)
-- Deploying a workload: [Virtual Machines](../solutions/vm_intro.md), [Labs Applications](./applications) or [Domains](../solutions/domains.md)
-- Consulting [Your Contracts](./your_contracts.md) on the TFGrid
-- Finding or publishing Flists from [Images](./images.md)
-- Updating or generating your SSH key from [SSH Keys](./ssh_keys.md)
+- Checking the cost of a deployment using [Pricing Calculator](./pricing_calculator)
+- Finding a node to deploy on using the [Node Finder](./node_finder)
+- Deploying a workload: [Virtual Machines](vm_intro/vm_intro), [Labs Applications](./applications) or [Domains](domains)
+- Consulting [Your Contracts](./your_contracts) on the TFGrid
+- Finding or publishing Flists from [Images](./images)
+- Updating or generating your SSH key from [SSH Keys](./ssh_keys)
 
 ![](./img/dashboard_deploy.png)
 
@@ -20,11 +20,11 @@ Here you will find everything related to deployments on the ThreeFold grid. This
 
 **TABLE OF CONTENTS**
 
-- [Pricing Calculator](./pricing_calculator.md)
-- [Node Finder](./node_finder.md)
-- [Virtual Machines](../solutions/vm_intro.md)
+- [Pricing Calculator](./pricing_calculator)
+- [Node Finder](./node_finder)
+- [Virtual Machines](vm_intro/vm_intro)
 - [Labs](./applications)
-- [Domains](../solutions/domains.md)
-- [Your Contracts](./your_contracts.md)
-- [Images](./images.md)
-- [SSH Keys](./ssh_keys.md)
+- [Domains](domains)
+- [Your Contracts](./your_contracts)
+- [Images](./images)
+- [SSH Keys](./ssh_keys)

@@ -11,11 +11,11 @@ In this section, tailored specifically for system administrators, we'll delve in
 
 **TABLE OF CONTENTS**
 
-- [CLI and Scripts Basics](./cli_scripts_basics.md)
-- [Docker Basics](./docker_basics.md)
-- [Git and GitHub Basics](./git_github_basics.md)
-- [Gitea](./gitea/gitea_toc.md)
-- [Firewall Basics](./firewall_basics/firewall_basics.md)
-- [File Transfer](./file_transfer.md)
-- [Screenshots](./screenshots.md)
+- [CLI and Scripts Basics](./cli_scripts_basics)
+- [Docker Basics](./docker_basics)
+- [Git and GitHub Basics](./git_github_basics)
+- [Gitea](gitea_toc/gitea_toc)
+- [Firewall Basics](./firewall_basics/firewall_basics)
+- [File Transfer](./file_transfer)
+- [Screenshots](./screenshots)
   

@@ -7,7 +7,7 @@ sidebar_position: 93
 
 ## Introduction
 
-After [deploying a VM](./grid3_go_vm.md) you can deploy Gateways to further expose your VM.
+After [deploying a VM](./grid3_go_vm) you can deploy Gateways to further expose your VM.
 
 ## Gateway Name
 

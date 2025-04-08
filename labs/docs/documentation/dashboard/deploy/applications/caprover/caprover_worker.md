@@ -19,7 +19,7 @@ You'll have to add a default docker registry so other CapRover nodes in the clus
 
 ![](./img/caprover_docker_default_registry.png)
 
-You can check [official documentation](https://caprover.com/docs/app-scaling-and-cluster.html#setup-docker-registry) to know more about Docker registry options.
+You can check [official documentation](https://caprover.com/docs/app-scaling-and-cluster#setup-docker-registry) to know more about Docker registry options.
 
 
 
@@ -36,4 +36,4 @@ You should see the new added node under **Current Cluster Nodes**
 
 If you faced any problem you can use the `Alternative method`.
 
-Also you can check for Troubleshooting instruction on [Caprover Troubleshooting](https://caprover.com/docs/troubleshooting.html#second)
+Also you can check for Troubleshooting instruction on [Caprover Troubleshooting](https://caprover.com/docs/troubleshooting#second)

@@ -9,4 +9,4 @@ The ThreeFold V4 nodes are available now for order directly on our official part
 - [HostService](https://hostservice.nl/en/) (Europe, Asia, Africa, Australia)
 - [Duck Farm Data](https://duckfarmdata.com) (America)
 
-> Make sure to input the correct [farm ID as explained here](./create_a_farm.md) 
+> Make sure to input the correct [farm ID as explained here](./create_a_farm) 

@@ -11,7 +11,7 @@ sidebar_position: 21
 
 ## Prerequisites
 
-- Make sure you have a [wallet](../wallet_connector.md)
+- Make sure you have a [wallet](../../wallet_connector)
 - From the sidebar click on **Applications**
 - Click on **Algorand**
 

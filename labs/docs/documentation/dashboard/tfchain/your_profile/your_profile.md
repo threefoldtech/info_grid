@@ -15,6 +15,6 @@ The twin details consists of three main items.
 - `Address` Your public address on the ThreeFold chain.
 - `Relay` A relay is a component that facilitates the reliable and secure transfer of messages between different entities within the ThreeFold ecosystem.
 
-To create a twin check the [Wallet Connector](../wallet_connector.md) Section. 
+To create a twin check the [Wallet Connector](../../wallet_connector) Section. 
 
-To complete the KYC process, read [the next page](./kyc.md).
+To complete the KYC process, read [the next page](./kyc).

@@ -11,6 +11,6 @@ This section also provides information on how to deploy the Dashboard locally an
 
 **TABLE OF CONTENTS**
 
-- [ThreeFold Grid Full Stack](./tfgrid_full_stack.md)
-- [Deploy the Dashboard](./deploy_dashboard.md)
-- [Application Case Study: Nextcloud](./app_case_study_nextcloud.md)
+- [ThreeFold Grid Full Stack](./tfgrid_full_stack)
+- [Deploy the Dashboard](./deploy_dashboard)
+- [Application Case Study: Nextcloud](./app_case_study_nextcloud)

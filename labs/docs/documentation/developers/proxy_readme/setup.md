@@ -15,7 +15,7 @@ To install Golang, you can follow the official [guide](https://go.dev/doc/instal
 
 ## Docker
 
-Docker is useful for running the TFGridDb in container environment. Read this to [install Docker engine](../../system_administrators/computer_it_basics/docker_basics.md#install-docker-desktop-and-docker-engine).
+Docker is useful for running the TFGridDb in container environment. Read this to [install Docker engine](../../system_administrators/computer_it_basics/docker_basics#install-docker-desktop-and-docker-engine).
 
 Note: it will be necessary to follow step #2 in the previous article to run docker without sudo. if you want to avoid that. edit the docker commands in the `Makefile` and add sudo.
 

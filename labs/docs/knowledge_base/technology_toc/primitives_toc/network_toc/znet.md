@@ -23,7 +23,7 @@ No connection is made with the internet.The ZNet is a single tenant network and 
 
 ## Redundancy
 
-As integrated with [WebGW](./webgw3.md):
+As integrated with [WebGW](./webgw3):
 
 ![](./img/znet_redundancy.jpg)
 

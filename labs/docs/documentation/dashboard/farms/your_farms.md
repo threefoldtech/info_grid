@@ -69,7 +69,7 @@ In a first phase, farming of tokens still results in payout on the Stellar netwo
 
 ![](./img/dashboard_farms_stellar_address.png)
 
-You can read about different ways to store TFT [here](../../threefold_token/storing_tft/storing_tft.md). Make sure to use a Stellar wallet for your farming rewards.
+You can read about different ways to store TFT [here](../../threefold_token/storing_tft/storing_tft). Make sure to use a Stellar wallet for your farming rewards.
 
 ### Generate Your Node Bootstrap Image
 
@@ -77,7 +77,7 @@ Once you know your farmID, you can set up your node on TFGrid3. Click on `Bootst
 
 ![](./img/dashboard_bootstrap_farm.png)
 
-Read more Zero-OS bootstrap image [here](../../farmers/3node_building/2_bootstrap_image.md).
+Read more Zero-OS bootstrap image [here](../../farmers/3node_building/2_bootstrap_image).
 
 ### Additional Information
 
@@ -125,4 +125,4 @@ The IP addresses you add to your farm must be from dedicated ISP IP blocks, not 
 
 #### The Difference Between IPs Assigned to Nodes Versus a Farm
 
-IPs assigned to a farm are available to be rented by workloads. They can be assigned to virtual machines for example. IPs assigned to nodes enable each node to become a [gateway](../../../knowledge_base/technology/primitives/network/webgw3.md).
+IPs assigned to a farm are available to be rented by workloads. They can be assigned to virtual machines for example. IPs assigned to nodes enable each node to become a [gateway](../../../knowledge_base/technology_toc/primitives_toc/network_toc/webgw3).

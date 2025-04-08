@@ -22,7 +22,7 @@ To be eligible for proof-of-capacity farming rewards, farmers need to ensure tha
 
 Each minting period is 730.8 hours. The minimum uptime is always calculated against the duration of a full minting period. 
 
-> We can recommend that farmers bring any new nodes online shortly before the start of a new minting period, to avoid any extra energy use during a period where the node can't possibly be eligible for minting. Consult the 2025 minting periods [here](./farming_optimization/minting_periods.md#2025-minting-periods).
+> We can recommend that farmers bring any new nodes online shortly before the start of a new minting period, to avoid any extra energy use during a period where the node can't possibly be eligible for minting. Consult the 2025 minting periods [here](./farming_optimization/minting_periods#2025-minting-periods).
 
 ### Farmerbot Considerations
 

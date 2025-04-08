@@ -7,7 +7,7 @@ sidebar_position: 135
 
 # Introduction
 
-In this case study, we explain how to create a new flist on the ThreeFold ecosystem. We will show the process of creating a Nextcloud All-in-One flist and we will deploy a micro VM on the ThreeFold Playground to access our Nextcloud instance. As a reference, the official Nextcloud flist is available [here](https://hub.grid.tf/tf-official-apps/threefoldtech-nextcloudaio-latest.flist.md).
+In this case study, we explain how to create a new flist on the ThreeFold ecosystem. We will show the process of creating a Nextcloud All-in-One flist and we will deploy a micro VM on the ThreeFold Playground to access our Nextcloud instance. As a reference, the official Nextcloud flist is available [here](https://hub.grid.tf/tf-official-apps/threefoldtech-nextcloudaio-latest.flist).
 
 To achieve all this, we will need to create a Docker Hub account, create a Dockerfile and its associated files, a docker image and a docker container, then convert the docker image to a Zero-OS flist. After all this, we will be deploying our Nextcloud instance on the ThreeFold Playground.
 
@@ -17,7 +17,7 @@ As a general advice, before creating an flist for a ThreeFold deployment, you sh
 
 Before we go any further, let us recall what is an flist. In short, an flist is a technology for storing and efficiently sharing sets of files. While it has many great features, it's purpose in this case is simply to deliver the image contents to Zero-OS for execution as a micro VM. It thus acts as a bundle of files like a normal archive.
 
-One convenient thing about the flist technology is that it is possible to convert any Docker image into an flist, thanks to the [ThreeFold Docker Hub Converter tool](https://hub.grid.tf/docker-convert). It is very easy to do and we will show you how to proceed in this case study. For a quick guide on converting Docker images into flists, read [this section](../flist/flist_hub/convert_docker_image.md) of the ThreeFold Manual.
+One convenient thing about the flist technology is that it is possible to convert any Docker image into an flist, thanks to the [ThreeFold Docker Hub Converter tool](https://hub.grid.tf/docker-convert). It is very easy to do and we will show you how to proceed in this case study. For a quick guide on converting Docker images into flists, read [this section](../convert_docker_image) of the ThreeFold Manual.
 
 ## Case Study Objective
 
@@ -38,7 +38,7 @@ One important thing to have in mind is that, when we create an flist, what we ar
 
 Once we've successfully created an flist, we thus have a very quick way to deploy a specific workload while always obtaining the same result. This is why it is highly recommended to test a given deployment on a full or micro VM before building an flist.
 
-For example, in the case of building a Nextcloud All-in-One flist, the prerequisites would be to successfully deploy a Nextcloud AIO instance on a full VM by executing each step sequentially. This specific example is documented in the Terraform section [Nextcloud All-in-One Guide](../../../system_administrators/terraform/advanced/terraform_nextcloud_aio.md) of the System Administrators book.
+For example, in the case of building a Nextcloud All-in-One flist, the prerequisites would be to successfully deploy a Nextcloud AIO instance on a full VM by executing each step sequentially. This specific example is documented in the Terraform section [Nextcloud All-in-One Guide](../../../system_administrators/terraform_toc/terraform_advanced_readme/terraform_nextcloud_toc/terraform_nextcloud_aio) of the System Administrators book.
 
 In our case, the flist we will be using has some specific configurations depending on the way we deploy Nextcloud (e.g. using or not the gateway and a custom domain). The Terraform **main.tf** we will be sharing later on will thus take all this into account for a smooth deployment.
 
@@ -210,9 +210,9 @@ Finally, we set an entrypoint in our Dockerfile. As per the [Docker documentatio
 
 The **README.md** file has the main goal of explaining clearly to the user the functioning of the Nextcloud directory and its associated flist. In this file, we can explain what our code is doing and offer steps to properly configure the whole deployment.
 
-We also give the necessary steps to create the Docker image and convert it into an flist starting directly with the Nextcloud directory. This can be useful for users that want to create their own flist, instead of using the [official ThreeFold Nextcloud flist](https://hub.grid.tf/tf-official-apps/threefoldtech-nextcloudaio-latest.flist.md).
+We also give the necessary steps to create the Docker image and convert it into an flist starting directly with the Nextcloud directory. This can be useful for users that want to create their own flist, instead of using the [official ThreeFold Nextcloud flist](https://hub.grid.tf/tf-official-apps/threefoldtech-nextcloudaio-latest.flist).
 
-To read the complete README.md file, go to [this link](https://github.com/threefoldtech/tf-images/blob/development/tfgrid3/nextcloud/README.md).
+To read the complete README.md file, go to [this link](https://github.com/threefoldtech/tf-images/blob/development/tfgrid3/nextcloud/README).
 
 ## scripts Folder
 

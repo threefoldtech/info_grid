@@ -42,7 +42,7 @@ To be able to contact the node directly you need to run
 - `yggdrasil`
 - `rmb` (correctly configured)
 
-Once you have those running you can now contact the node over `rmb`. For a reference implementation (function names and parameters) please refer to [RMB documentation](../../rmb/rmb_toc.md)
+Once you have those running you can now contact the node over `rmb`. For a reference implementation (function names and parameters) please refer to [RMB documentation](../rmb_toc/rmb_toc)
 
 Here is a rough example of how low level creation of a deployment is done.
 
@@ -152,22 +152,22 @@ type Workload struct {
 
 ### Types
 - Virtual machine related
-  - [`network`](./workload_types.md#network-type)
-  - [`ip`](./workload_types.md#ip-type)
-  - [`zmount`](./workload_types.md#zmount-type)
-  - [`zmachine`](./workload_types.md#zmachine-type)
-  - [`zlogs`](./workload_types.md#zlogs-type)
+  - [`network`](./workload_types#network-type)
+  - [`ip`](./workload_types#ip-type)
+  - [`zmount`](./workload_types#zmount-type)
+  - [`zmachine`](./workload_types#zmachine-type)
+  - [`zlogs`](./workload_types#zlogs-type)
 - Storage related
-  - [`zdb`](./workload_types.md#zdb-type)
-  - [`qsfs`](./workload_types.md#qsfs-type)
+  - [`zdb`](./workload_types#zdb-type)
+  - [`qsfs`](./workload_types#qsfs-type)
 - Gateway related
-  - [`gateway-name-proxy`](./workload_types.md#gateway-name-proxy-type)
-  - [`gateway-fqdn-proxy`](./workload_types.md#gateway-fqdn-proxy-type)
+  - [`gateway-name-proxy`](./workload_types#gateway-name-proxy-type)
+  - [`gateway-fqdn-proxy`](./workload_types#gateway-fqdn-proxy-type)
 
 ### API
 Node is always connected to the RMB network with the node `twin`. Means the node is always reachable over RMB with the node `twin-id` as an address.
 
-The [node client](https://github.com/threefoldtech/zosbase/blob/main/client/node.go) should have a complete list of all available functions. documentations of the API can be found [here](./api.md)
+The [node client](https://github.com/threefoldtech/zosbase/blob/main/client/node.go) should have a complete list of all available functions. documentations of the API can be found [here](./api)
 
 ## Raid Controller Configuration
 

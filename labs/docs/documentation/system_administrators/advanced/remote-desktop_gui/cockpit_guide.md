@@ -11,7 +11,7 @@ sidebar_position: 305
 
 In this Threefold Guide, we show how easy it is to deploy a full VM and access Cockpit, a web-based interface to manage servers. For more information on Cockpit, visit this [link](https://cockpit-project.org/).
 
-For more information on deploying a full VM and using SSH remote connection, read [this SSH guide](../../ssh_guide/ssh_guide.md).
+For more information on deploying a full VM and using SSH remote connection, read [this SSH guide](../../tfgrid3_getstarted/ssh_guide/ssh_guide).
 
 If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](../../tfgrid3_getstarted) of the Threefold Manual.
 
@@ -21,7 +21,7 @@ Note that the two sections [Change the Network System Daemon](#change-the-networ
 
 ## Deploy a Full VM and Create a Root-Access User
 
-To start, you must [deploy and SSH into a full VM](../../ssh_guide/ssh_guide.md).
+To start, you must [deploy and SSH into a full VM](../../tfgrid3_getstarted/ssh_guide/ssh_guide).
 
 * Go to the [Threefold dashboard](https://dashboard.grid.tf/#/)
 * Deploy a full VM (e.g. Ubuntu 22.04)
@@ -171,7 +171,7 @@ We now set a firewall. We note that [ufw](https://wiki.ubuntu.com/UncomplicatedF
 
 ## Conclusion
 
-You now have access to a web-based graphical interface to manage your VM. You can read [Cockpit's documentation](https://cockpit-project.org/documentation.html) to explore further this interface.
+You now have access to a web-based graphical interface to manage your VM. You can read [Cockpit's documentation](https://cockpit-project.org/documentation) to explore further this interface.
 
 
 

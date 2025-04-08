@@ -27,7 +27,7 @@ You'll have to add a default docker registry so other CapRover nodes in the clus
 
 ![](./img/caprover_docker_registry.png)
 
-You can check [official documentation](https://caprover.com/docs/app-scaling-and-cluster.html#setup-docker-registry) to know more about Docker registry options.
+You can check [official documentation](https://caprover.com/docs/app-scaling-and-cluster#setup-docker-registry) to know more about Docker registry options.
 
 ## Step 3: Deploy an App
 
@@ -48,4 +48,4 @@ You should now see
 - Go to `Settings` and change your password. This is important for your own security.
 
 
-> Further information regarding the process of attaching a new node to the cluster can be found through the following documentation link: [Attach a New Node to the Cluster](./caprover_worker.md/#step-2-attach-a-new-node-to-the-cluster)
+> Further information regarding the process of attaching a new node to the cluster can be found through the following documentation link: [Attach a New Node to the Cluster](./caprover_worker#step-2-attach-a-new-node-to-the-cluster)

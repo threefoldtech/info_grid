@@ -40,11 +40,11 @@ The main structure of the code base is as follows:
 
 Adding a new endpoint should be accompanied with a corresponding test. Ideally every change or bug fix should include a test to ensure the new behavior/fix is working as intended.
 
-Since these are integration tests, you need to first make sure that your local db is already seeded with the ncessary data. See tools [doc](./db_testing.md) for more information about how to prepare your db.
+Since these are integration tests, you need to first make sure that your local db is already seeded with the ncessary data. See tools [doc](./db_testing) for more information about how to prepare your db.
 
 Testing tools offer two clients that are the basic of most tests:
 
 - `local`: this client connects to the local db
 - `proxy client`: this client connects to the running local instance
 
-You need to start an instance of the server before running the tests. Check [here](./commands.md) for how to start.
+You need to start an instance of the server before running the tests. Check [here](./commands) for how to start.

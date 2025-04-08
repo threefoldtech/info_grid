@@ -11,12 +11,12 @@ Feel free to explore the different possibilities!
 
 **TABLE OF CONTENTS**
 
-- [GPU Support](./gpu.md)
-- [Node Finder and GPU](../../dashboard/deploy/node_finder.md#gpu-support)
-- [Javascript Client and GPU](../../developers/grid3_javascript_readme/grid3_javascript_gpu_support.md)
-- [GPU and Go](../../developers/grid3_go_readme/grid3_go_gpu)
-- [TFCMD and GPU](../../developers/tfcmd/tfcmd_vm.md#deploy-a-vm-with-gpu)
-- [Terraform and GPU](../terraform_toc/terraform_gpu_support.md)
-- [Full VM and GPU](../../dashboard/solutions/fullVm.md)
-- [Zero-OS API and GPU](../../developers/internals/zos/manual/api.md#gpus)
-- [GPU Farming](../../farmers/3node_building/gpu_farming.md)
+- [GPU Support](./gpu)
+- [Node Finder and GPU](../../dashboard/deploy/node_finder#gpu-support)
+- [Javascript Client and GPU](../../developers/grid3_javascript/grid3_javascript_gpu_support)
+- [GPU and Go](../../developers/grid3_go/grid3_go_gpu)
+- [TFCMD and GPU](../../developers/tfcmd/tfcmd_vm#deploy-a-vm-with-gpu)
+- [Terraform and GPU](../terraform_toc/terraform_advanced_readme/terraform_gpu_support)
+- [Full VM and GPU](../../dashboard/deploy/vm_intro/fullVm)
+- [Zero-OS API and GPU](../../developers/internals/readme/api#gpus)
+- [GPU Farming](../../farmers/farming_optimization/gpu_farming)

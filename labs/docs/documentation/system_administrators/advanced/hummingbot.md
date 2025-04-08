@@ -16,10 +16,10 @@ In this guide, we go through the basic steps to deploy a [Hummingbot](https://hu
 
 ## Prerequisites
 
-- [A TFChain account](../../dashboard/wallet_connector.md)
+- [A TFChain account](../../dashboard/wallet_connector)
 - TFT in your TFChain account
-  - [Buy TFT](../../threefold_token/buy_sell_tft/buy_sell_tft.md)
-  - [Send TFT to TFChain](../../threefold_token/tft_bridges/tfchain_stellar_bridge.md)
+  - [Buy TFT](../../threefold_token/buy_sell_tft/buy_sell_tft)
+  - [Send TFT to TFChain](../../threefold_token/tft_bridges/tfchain_stellar_bridge)
 
 ## Deploy a Full VM
 
@@ -45,7 +45,7 @@ We prepare the full VM to run Hummingbot.
    ```
    apt update
    ```
-* [Install Docker](../computer_it_basics/docker_basics.html#install-docker-desktop-and-docker-engine)
+* [Install Docker](../computer_it_basics/docker_basics#install-docker-desktop-and-docker-engine)
 
 ## Setting Hummingbot
 

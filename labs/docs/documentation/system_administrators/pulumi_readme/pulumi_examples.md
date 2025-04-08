@@ -25,7 +25,7 @@ You can access all the Pulumi deployment examples on the ThreeFold Pulumi reposi
 
 There are a few things to set up before exploring Pulumi. Since we will be using the examples in the ThreeFold Pulumi repository, we must clone the repository before going further.
 
-* [Install Pulumi](./pulumi_install.md) on your machine
+* [Install Pulumi](./pulumi_install) on your machine
 * Clone the **Pulumi-ThreeFold** repository
   * ```
     git clone https://github.com/threefoldtech/pulumi-threefold

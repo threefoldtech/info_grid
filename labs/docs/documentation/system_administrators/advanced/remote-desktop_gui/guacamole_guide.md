@@ -15,7 +15,7 @@ The Apache Guacamole instance has a two-factor authorization to give further sec
 
 With Apache Guacamole, a user can access different deployments and command servers remotely, with desktop access.
 
-This guide can be done on a Windows, MAC, or Linux computer. For more information on deploying a full VM and using SSH remote connection, read this [SSH guide](../../ssh_guide/ssh_guide.md).
+This guide can be done on a Windows, MAC, or Linux computer. For more information on deploying a full VM and using SSH remote connection, read this [SSH guide](../../tfgrid3_getstarted/ssh_guide/ssh_guide).
 
 If you are new to the Threefold ecosystem and you want to deploy workloads on the Threefold Grid, read the [Get Started section](../../tfgrid3_getstarted) of the Threefold Manual.
 

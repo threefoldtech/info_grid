@@ -15,7 +15,7 @@ If TFTs are issued on the Stellar blockchain, users can opt to store them in Ste
 
 **TABLE OF CONTENTS**
 
-- [ThreeFold Connect App (Stellar)](./tf_connect_app.md)
-- [Lobstr Wallet (Stellar)](./lobstr_wallet.md)
-- [MetaMask (BSC & ETH)](./metamask.md)
-- [Hardware Wallet](./hardware_wallet.md)
+- [ThreeFold Connect App (Stellar)](./tf_connect_app)
+- [Lobstr Wallet (Stellar)](./lobstr_wallet)
+- [MetaMask (BSC & ETH)](./metamask)
+- [Hardware Wallet](./hardware_wallet)

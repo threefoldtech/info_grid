@@ -11,7 +11,7 @@ We cover the basic steps to create a farm with the ThreeFold Connect app. We als
 
 ## Create a ThreeFold Connect App Account
 
-Follow the steps in the [TF Connect App section](../../tfconnect_toc/tfconnect_installation.md) to create an account. 
+Follow the steps in the [TF Connect App section](../../tfconnect_toc/tfconnect_installation) to create an account. 
 
 ## Create a Farm
 
@@ -29,7 +29,7 @@ To import the farm on the Dashboard, go to the farming section of the TF Connect
 
 Use this secret to import a wallet on the [ThreeFold Dashboard](https://dashboard.grid.tf).
 
-Consult the [ThreeFold Dashboard section](../../dashboard/dashboard.md) for more information on the dashboard.
+Consult the [ThreeFold Dashboard section](../../dashboard/dashboard) for more information on the dashboard.
 
 ### Farming Rewards Distribution
 

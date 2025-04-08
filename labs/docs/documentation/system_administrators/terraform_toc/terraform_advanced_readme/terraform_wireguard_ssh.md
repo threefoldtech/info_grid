@@ -15,7 +15,7 @@ In this ThreeFold Guide, we show how simple it is to deploy a micro VM on the Th
 
 ## Prerequisites
 
-* [Install Terraform](../terraform_install.md)
+* [Install Terraform](../terraform_install)
 * [Install Wireguard](https://www.wireguard.com/install/)
 
 You need to download and install properly Terraform and Wireguard on your local computer. Simply follow the linked documentation depending on your operating system (Linux, MAC and Windows).
@@ -213,7 +213,7 @@ Note that, at any moment, if you want to see the information on your Terraform d
 
 To set the Wireguard connection, on your local computer, you will need to take the Terraform `wg_config` output and create a `wg.conf` file in the directory: `/usr/local/etc/wireguard/wg.conf`. Note that the Terraform output starts and ends with EOT.
 
-For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../tfgrid3_getstarted/ssh_guide/advanced_methods/ssh_wireguard.md).
+For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../tfgrid3_getstarted/ssh_guide/advanced_methods/ssh_wireguard).
 
 * Create a file named `wg.conf` in the directory: `/usr/local/etc/wireguard/wg.conf`.
   * ```
@@ -234,7 +234,7 @@ If you want to stop the Wireguard service, write the following on your terminal:
 
 > Note: If it doesn't work and you already did a Wireguard connection with the same file from Terraform (from a previous deployment), write on the terminal `wg-quick down wg`, then `wg-quick up wg`.
 
-As a test, you can [ping](../../computer_it_basics/cli_scripts_basics.md#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the virtual IP address of the VM to make sure the Wireguard connection is correct. Make sure to replace `vm_wg_ip` with the proper IP address:
+As a test, you can [ping](../../computer_it_basics/cli_scripts_basics#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the virtual IP address of the VM to make sure the Wireguard connection is correct. Make sure to replace `vm_wg_ip` with the proper IP address:
 * ```
   ping vm_wg_ip
   ```

@@ -9,7 +9,7 @@ sidebar_position: 25
 
 [Casper Network](https://casperlabs.io/) is a blockchain protocol built from the ground up to remain true to core Web3 principles and adapt to the needs of our evolving world.
 
-- Make sure you have a [wallet](../wallet_connector.md)
+- Make sure you have a [wallet](../../wallet_connector)
 - From the sidebar click on **Applications**
 - Click on **Casperlabs**
 
@@ -31,7 +31,7 @@ __Process__ :
    - `Mycelium` flag gives the virtual machine a Mycelium address
 
 - `Rented By Me` flag to retrieve nodes currently reserved by you
-- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../deploy/node_finder.md#dedicated-nodes)
+- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../node_finder#dedicated-nodes)
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
    - `Region`

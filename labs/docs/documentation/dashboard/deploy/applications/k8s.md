@@ -13,7 +13,7 @@ On the TF grid, Kubernetes clusters can be deployed out of the box. We have impl
 
 ## Prerequisites
 
-- Make sure you have a [wallet](../wallet_connector.md)
+- Make sure you have a [wallet](../../wallet_connector)
 - From the sidebar click on **Applications**
 - Click on **Kubernetes**
 

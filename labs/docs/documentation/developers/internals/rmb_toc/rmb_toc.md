@@ -17,8 +17,8 @@ Out of the box RMB provides the following:
 
 **TABLE OF CONTENTS**
 
-- [Introduction to RMB](rmb_intro.md)
-- [Coding Guides](./rmb_coding_guides.md)
-- [RMB Specs](rmb_specs.md)
-- [RMB Peer](uml/peer.md)
-- [RMB Relay](uml/relay.md)
+- [Introduction to RMB](rmb_intro)
+- [Coding Guides](./rmb_coding_guides)
+- [RMB Specs](rmb_specs)
+- [RMB Peer](peer)
+- [RMB Relay](relay)

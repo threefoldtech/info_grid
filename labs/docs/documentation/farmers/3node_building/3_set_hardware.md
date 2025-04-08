@@ -16,7 +16,7 @@ The essential information are available in the section [3Node Requirements Summa
 
 You need a theoretical minimum of 500 GB of SSD and 2 GB of RAM on a mini pc, desktop or server. In short, for peak optimization, aim for 100 GB of SSD and 8GB of RAM per thread. (Thread is equivalent to virtual core or logical core.)
 
-If you are building an HDD-only node, read [this section](../farming_optimization/hdd_only_nodes.md) too.
+If you are building an HDD-only node, read [this section](../farming_optimization/hdd_only_nodes) too.
 
 Also, TFDAO might implement a farming parameter based on [passmark](https://www.cpubenchmark.net/cpu_list.php). From the ongoing discussion on the Forum, you should aim at a CPU mark of 1000 and above per core.
 
@@ -26,7 +26,7 @@ Note that you can run Zero-OS on a Virtual Machine (VM), but you won't farm any 
 
 Also, note that ThreeFold runs its own OS, which is Zero-OS. You thus need to start with completely wiped disks. You cannot farm TFT with Windows, Linux or MAC OS installed on your disks. If you need to use such OS temporarily, boot it in Try mode with a removable media (USB key).
 
-Note: Once you have the necessary hardware, you need to [create a farm](./1_create_farm.md), [create a Zero-OS bootstrap image](./2_bootstrap_image.md), [wipe your disks](./4_wipe_all_disks.md) and [set the BIOS/UEFI](./5_set_bios_uefi.md) . Then you can [boot your 3Node](./6_boot_3node.md). If you are planning in building a farm in data center, [read this section](../advanced_networking/advanced_networking_toc.md).
+Note: Once you have the necessary hardware, you need to [create a farm](./1_create_farm), [create a Zero-OS bootstrap image](./2_bootstrap_image), [wipe your disks](./4_wipe_all_disks) and [set the BIOS/UEFI](./5_set_bios_uefi) . Then you can [boot your 3Node](./6_boot_3node). If you are planning in building a farm in data center, [read this section](../advanced_networking_toc/advanced_networking_toc).
 
 
 
@@ -43,7 +43,7 @@ Any computer with the following specifications can be used as a DIY 3Node.
 
 *A passmark of 1000 per core is recommend and will be a minimum requirement in the future. This is not yet an official requirement. A 3Node with less than 1000 passmark per core of CPU would not be penalized if it is registered before the DAO settles the [Passmark Question](https://forum.threefold.io/t/cpu-benchmarking-for-reward-calculations/2479).
 
-> Note: It is also possible to build an HDD-only node. Read more about this [here](../farming_optimization/hdd_only_nodes.md).
+> Note: It is also possible to build an HDD-only node. Read more about this [here](../farming_optimization/hdd_only_nodes).
 
 ## Bandwidth Requirements
 
@@ -142,13 +142,13 @@ For your 3Nodes, you want to bypass RAID in order for Zero-OS to have bare metal
 
 To use onboard storage on a server without RAID, you can
 
-1. [Re-flash](https://fohdeesha.com/docs/perc.html) the RAID card
+1. [Re-flash](https://fohdeesha.com/docs/perc) the RAID card
 2. Turn on HBA/non-RAID mode
 3. Install a different card.
    
 For HP servers, you simply turn on the HBA mode (Host Bus Adapter). 
 
-For Dell servers, you can either cross, or [re-flash](https://fohdeesha.com/docs/perc.html), the RAID controller with an “IT-mode-Firmware” (see this [video](https://www.youtube.com/watch?v=h5nb09VksYw)) or get a DELL H310-controller (which has the non-RAID option). Otherwise, you can install a NVME SSD with a PCIe adaptor, and turn off the RAID controller.
+For Dell servers, you can either cross, or [re-flash](https://fohdeesha.com/docs/perc), the RAID controller with an “IT-mode-Firmware” (see this [video](https://www.youtube.com/watch?v=h5nb09VksYw)) or get a DELL H310-controller (which has the non-RAID option). Otherwise, you can install a NVME SSD with a PCIe adaptor, and turn off the RAID controller.
 
 
 

@@ -11,13 +11,13 @@ These tools play a crucial role in enhancing as well as simplifying collaboratio
 
 **TABLE OF CONTENTS**
 
-- [Circle Tool](./circle_tool.md)
+- [Circle Tool](./circle_tool)
   - This ThreeFold's project management tool, made by using Taiga, is an open-source project management platform designed to facilitate collaboration and to streamline workflows for teams. It provides a comprehensive set of features and tools to help teams plan, track, and manage their projects effectively. 
 
-- [Website Deployer](./website_tool.md)
+- [Website Deployer](./website_tool)
   - This ThreeFold's website builder tool, made by using Zola, is a static site generator (SSG) and content management system (CMS) that empowers developers and content creators to build and manage websites efficiently. It is an open-source framework written in the Rust programming language, known for its performance, security, and reliability. 
 
-- [Website Link Checker](./website_link_checker.md)
+- [Website Link Checker](./website_link_checker)
   - The ThreeFold website link checker is a wrapper around muffet to check for specific link errors on live websites written in Python.
 
  

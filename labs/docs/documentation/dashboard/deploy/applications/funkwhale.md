@@ -12,7 +12,7 @@ Funkwhale is a community-driven project that lets you listen and share music and
 
 ## Prerequisites
 
-- Make sure you have a [wallet](../wallet_connector.md)
+- Make sure you have a [wallet](../../wallet_connector)
 - From the sidebar click on **Applications**
 - Click on **Funkwhale**
 
@@ -35,7 +35,7 @@ __Process__ :
    - `Public IPv4` flag gives the virtual machine a Public IPv4
    - `Mycelium` flag gives the virtual machine a Mycelium address
 - `Rented By Me` flag to retrieve nodes currently reserved by you
-- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../deploy/node_finder.md#dedicated-nodes)
+- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../node_finder#dedicated-nodes)
 - `Certified` flag to retrieve only certified nodes 
 - Choose the location of the node
    - `Region`

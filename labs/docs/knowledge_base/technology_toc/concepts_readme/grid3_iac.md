@@ -34,10 +34,10 @@ __TypeScript Client and GraphQL Client__ serve as interfaces for interacting wit
 __Grid Proxy REST API__ further enhances the extensibility of the IaC mechanism by enabling integration with external systems and applications, allowing for seamless automation and orchestration of infrastructure tasks. Together, these components form a robust and efficient IaC framework within the ThreeFold ecosystem, empowering users to manage their infrastructure as code with ease and precision.
 
 ## Dive Deeper
-- [How the Grid Works](../grid3_howitworks.md)
-- [ThreeFold's Component List](./grid3_components.md)
-- [Grace Periods](./contract_grace_period.md)
+- [How the Grid Works](../grid3_howitworks)
+- [ThreeFold's Component List](./grid3_components)
+- [Grace Periods](./contract_grace_period)
 
 ## Manuals
-- [Terraform](../../../documentation/system_administrators/terraform/terraform_toc.md)
-- [Typescript Client](../../../documentation/developers/javascript/grid3_javascript_readme.md) 
+- [Terraform](../../../documentation/system_administrators/terraform_toc/terraform_toc)
+- [Typescript Client](../../../documentation/developers/grid3_javascript/grid3_javascript) 

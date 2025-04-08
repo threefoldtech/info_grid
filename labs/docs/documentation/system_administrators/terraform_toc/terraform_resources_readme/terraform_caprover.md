@@ -474,7 +474,7 @@ You can also verify this from CapRover dashboard in `Cluster` tab. Check `Nodes`
 
 Now CapRover is ready in cluster mode (more than one server).
 
-To run One-Click Apps please follow this [tutorial](https://caprover.com/docs/one-click-apps.html)
+To run One-Click Apps please follow this [tutorial](https://caprover.com/docs/one-click-apps)
 
 ## Implementations Details:
 

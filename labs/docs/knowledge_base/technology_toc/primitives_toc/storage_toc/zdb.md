@@ -13,7 +13,7 @@ sidebar_position: 350
 
 ## Use Cases
 
-> ZDB is being used as backend storage for [Quantum Safe Filesystem](./qsfs.md).
+> ZDB is being used as backend storage for [Quantum Safe Filesystem](./qsfs).
 
 ## Overview
 

@@ -11,7 +11,7 @@ sidebar_position: 44
 
 # Prerequisites
 
-- Make sure you have a [wallet](../wallet_connector.md)
+- Make sure you have a [wallet](../../wallet_connector)
 - From the sidebar click on **Solutions**
 - Click on **Wordpress**
 
@@ -77,7 +77,7 @@ In this section, we cover the steps to deploy a WordPress instance on the Playgr
   - `Public IPv4` flag gives the virtual machine a Public IPv4
   - `Mycelium` to enable Mycelium on the virtual machine
 - `Rented By Me` flag to retrieve nodes currently reserved by you
-- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../deploy/node_finder.md#dedicated-nodes)
+- `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../node_finder#dedicated-nodes)
 - **Certified** flag to retrieve only certified nodes 
 - Choose the location of the node
    - **Country**

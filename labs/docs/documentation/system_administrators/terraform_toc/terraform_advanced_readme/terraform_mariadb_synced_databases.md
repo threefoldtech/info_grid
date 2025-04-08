@@ -286,7 +286,7 @@ Note that, at any moment, if you want to see the information on your Terraform d
 
 ### SSH into the 3Nodes
 
-* To [SSH into the 3Nodes](../../tfgrid3_getstarted/ssh_guide/ssh_guide.md), write the following while making sure to set the proper IP address for each VM:
+* To [SSH into the 3Nodes](../../tfgrid3_getstarted/ssh_guide/ssh_guide), write the following while making sure to set the proper IP address for each VM:
   *  ```
      ssh root@3node_IPv4_Address
      ```
@@ -333,7 +333,7 @@ First, we set Wireguard with the Terraform output.
 > Note: If it doesn't work and you already did a WireGuard connection with the same file from Terraform (from a previous deployment perhaps), do `wg-quick down wg`, then `wg-quick up wg`.
 This should set everything properly.
 
-* As a test, you can [ping](../../computer_it_basics/cli_scripts_basics.md#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the virtual IP addresses of both VMs to make sure the Wireguard connection is correct:
+* As a test, you can [ping](../../computer_it_basics/cli_scripts_basics#test-the-network-connectivity-of-a-domain-or-an-ip-address-with-ping) the virtual IP addresses of both VMs to make sure the Wireguard connection is correct:
   *  ```
      ping 10.1.3.2
      ```
@@ -343,7 +343,7 @@ This should set everything properly.
 
 If you correctly receive the packets for the two VMs, you know that the VPN is properly set.
 
-For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../tfgrid3_getstarted/ssh_guide/advanced_methods/ssh_wireguard.md).
+For more information on WireGuard, notably in relation to Windows, please read [this documentation](../../tfgrid3_getstarted/ssh_guide/advanced_methods/ssh_wireguard).
 
 
 

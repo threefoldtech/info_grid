@@ -13,8 +13,8 @@ For more information on the Farmerbot, you can visit the [Farmerbot repository](
 
 **TABLE OF CONTENTS**
 
-- [Quick Guide](./farmerbot_quick.md)
-- [Additional Information](./farmerbot_information.md)
-- [Minting and the Farmerbot](./farmerbot_minting.md)
+- [Quick Guide](./farmerbot_quick)
+- [Additional Information](./farmerbot_information)
+- [Minting and the Farmerbot](./farmerbot_minting)
 
 > Note: The Farmerbot is an optional feature developed by ThreeFold. Please use at your own risk. While ThreeFold will do its best to fix any issues with the Farmerbot and minting, if minting is affected by the use of the Farmerbot, ThreeFold cannot be held responsible.

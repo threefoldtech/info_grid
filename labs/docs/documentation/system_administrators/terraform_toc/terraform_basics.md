@@ -11,14 +11,14 @@ sidebar_position: 241
 
 We cover some important aspects of Terraform deployments on the ThreeFold Grid. 
 
-For a complete guide on deploying a full VM on the TFGrid, read [this documentation](./terraform_full_vm.md).
+For a complete guide on deploying a full VM on the TFGrid, read [this documentation](./terraform_full_vm).
 
 ## Requirements
 
 Here are the requirements to use Terraform on the TFGrid:
 
-- [Set your TFGrid account](../tfgrid3_getstarted/tfgrid3_getstarted.md)
-- [Install Terraform](../terraform_toc/terraform_install.md)
+- [Set your TFGrid account](../tfgrid3_getstarted/tfgrid3_getstarted)
+- [Install Terraform](../terraform_toc/terraform_install)
 
 ## Basic Commands
 
@@ -35,10 +35,10 @@ Here are some very useful commands to use with Terraform:
 
 There are two options when it comes to finding a node to deploy on. You can use the scheduler or search for a node with the Nodes Explorer.
 
-- Use the [scheduler](resources/terraform_scheduler.md)
+- Use the [scheduler](terraform_resources_readme/terraform_scheduler)
   - Scheduler will help you find a node that matches your criteria
 - Use the Nodes Explorer
-  - You can check the [Node Finder](../../dashboard/deploy/node_finder.md) to know which nodes fits your deployment criteria.
+  - You can check the [Node Finder](../../dashboard/deploy/node_finder) to know which nodes fits your deployment criteria.
   - Make sure you choose a node which has enough capacity and is available (up and running).
 
 ## Preparation
@@ -104,7 +104,7 @@ When writing the main file, you can decide to leave a variable content empty. In
     export NETWORK="..."
     ```
 
-For more info, consult the [Provider Manual](./advanced/terraform_provider.md).
+For more info, consult the [Provider Manual](terraform_advanced_readme/terraform_provider).
 
 ### Output Section
 
@@ -147,7 +147,7 @@ terraform destroy
 
 ## Available Flists
 
-You can consult the [list of Flists](../../developers/flist/flist.md)  to learn more about the available Flist to use with a virtual machine.
+You can consult the [list of Flists](../../developers/flist/flist)  to learn more about the available Flist to use with a virtual machine.
 
 ## Full and Micro Virtual Machines
 
@@ -171,4 +171,4 @@ This gives you the following benefits:
 
 ## Conclusion
 
-This was a quick introduction to Terraform, for a complete guide, please read [this documentation](./terraform_full_vm.md). For advanced tutorials and deployments, read [this section](./advanced/terraform_advanced_readme.md). To learn more about the different resources to deploy with Terraform on the TFGrid, read [this section](./resources/terraform_resources_readme.md).
+This was a quick introduction to Terraform, for a complete guide, please read [this documentation](./terraform_full_vm). For advanced tutorials and deployments, read [this section](terraform_advanced_readme/terraform_advanced_readme). To learn more about the different resources to deploy with Terraform on the TFGrid, read [this section](terraform_resources_readme/terraform_resources_readme).

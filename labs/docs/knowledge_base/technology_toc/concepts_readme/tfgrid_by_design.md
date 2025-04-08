@@ -29,7 +29,7 @@ To build a reliable deployment on the TFGrid, you need to take into consideratio
 
 We provide here an overview of some of the main components of the TFGrid. We also provide examples for each of those components in order for the reader to obtain a clear understanding of the TF Ecosystem. By understanding the different components of the TFGrid, system administrators will be able to deploy resilient, redundant and reliable solutions on the grid. 
 
-For a complete list of the TFGrid components, read [this documentation](./grid3_components.md).
+For a complete list of the TFGrid components, read [this documentation](./grid3_components).
 
 ## Storage Units
 
@@ -39,15 +39,15 @@ Let's explore some storage components of the ThreeFold Grid.
 
 ### 0-DB-FS
 
-[0-DB-FS](./grid3_components.md#0-db-fs) is storage system that allows for efficient and secure storage of files on the ThreeFold Grid. 0-DB-FS is built on top of 0-DB, which is a key-value store optimized for high performance and scalability. It provides a decentralized and distributed approach to file storage, ensuring data redundancy and availability.
+[0-DB-FS](./grid3_components#0-db-fs) is storage system that allows for efficient and secure storage of files on the ThreeFold Grid. 0-DB-FS is built on top of 0-DB, which is a key-value store optimized for high performance and scalability. It provides a decentralized and distributed approach to file storage, ensuring data redundancy and availability.
 
 ### 0-stor_v2
 
-[0-stor_v2](./grid3_components.md#0-stor_v2) is a distributed and decentralized storage solution that enables data storage and retrieval on the ThreeFold Grid. 
+[0-stor_v2](./grid3_components#0-stor_v2) is a distributed and decentralized storage solution that enables data storage and retrieval on the ThreeFold Grid. 
 
 ### QSFS
 
-[Quantum Safe Filesystem (QSFS)](./grid3_components.md#qsfs) is ThreeFold's innovative storage solution designed to address the security challenges posed by quantum computing. QSFS employs advanced cryptographic techniques that are resistant to attacks from quantum computers, ensuring the confidentiality and integrity of stored data. By its design, QSFS also offers a high level of redundancy.
+[Quantum Safe Filesystem (QSFS)](./grid3_components#qsfs) is ThreeFold's innovative storage solution designed to address the security challenges posed by quantum computing. QSFS employs advanced cryptographic techniques that are resistant to attacks from quantum computers, ensuring the confidentiality and integrity of stored data. By its design, QSFS also offers a high level of redundancy.
 
 ## Compute Units
 
@@ -61,27 +61,27 @@ Virtual CPUs (vCPUs) are virtual representations of physical CPUs that allow mul
 
 ### Kubernetes
 
-[Kubernetes](../../../documentation/dashboard/solutions/k8s.md) is an open-source container orchestration system for automating software deployment, scaling, and management. On the TFGrid, Kubernetes clusters can be deployed out of the box. Thus, system administrators can seamlessly deploy solutions on the TFGrid that are reliable in terms of compute units.
+[Kubernetes](../../../documentation/dashboard/deploy/applications/k8s) is an open-source container orchestration system for automating software deployment, scaling, and management. On the TFGrid, Kubernetes clusters can be deployed out of the box. Thus, system administrators can seamlessly deploy solutions on the TFGrid that are reliable in terms of compute units.
 
 ### TF Grid-SDK-Go and TF Grid-SDK-TS
 
-The [TFGrid-SDK-Go](./grid3_components.md#tf-grid-sdk-go) and [TFGrid-SDK-TS](./grid3_components.md#tf-grid-sdk-ts) enable developers to interact with the ThreeFold Grid infrastructure, such as provisioning and managing compute resources, accessing storage, and interacting with the blockchain-based services. They provide a standardized and convenient way to leverage the features and capabilities of the ThreeFold Grid within Go and Typescript applications.
+The [TFGrid-SDK-Go](./grid3_components#tf-grid-sdk-go) and [TFGrid-SDK-TS](./grid3_components#tf-grid-sdk-ts) enable developers to interact with the ThreeFold Grid infrastructure, such as provisioning and managing compute resources, accessing storage, and interacting with the blockchain-based services. They provide a standardized and convenient way to leverage the features and capabilities of the ThreeFold Grid within Go and Typescript applications.
 
 ## Network Units
 
-Network units are related to the data transmitted over the Internet. While TFGrid does not provide direct ISP services, elements such as gateways are clearly related to the network. [Gateways](../../../documentation/system_administrators/terraform/resources/terraform_vm_gateway.md) can be used to balance network workloads. A deployment could consist of two different gateways with a master node gateway and a worker node gateway. If the master gateway would fail, the worker gateway would take the lead and become the master gateway. Deploying solutions with several gateways can help system administrators build reliable solutions.
+Network units are related to the data transmitted over the Internet. While TFGrid does not provide direct ISP services, elements such as gateways are clearly related to the network. [Gateways](../../../documentation/system_administrators/terraform_toc/terraform_resources_readme/terraform_vm_gateway) can be used to balance network workloads. A deployment could consist of two different gateways with a master node gateway and a worker node gateway. If the master gateway would fail, the worker gateway would take the lead and become the master gateway. Deploying solutions with several gateways can help system administrators build reliable solutions.
 
-Note that it is also possible to deploy a Wireguard virtual private network (VPN) between different 3Nodes and synchronize their databases. This provides resilience and redundancy. Read more on VPN and synced databases [here](../../../documentation/system_administrators/terraform/advanced/terraform_mariadb_synced_databases.md).
+Note that it is also possible to deploy a Wireguard virtual private network (VPN) between different 3Nodes and synchronize their databases. This provides resilience and redundancy. Read more on VPN and synced databases [here](../../../documentation/system_administrators/terraform_toc/terraform_advanced_readme/terraform_mariadb_synced_databases).
 
 Let's explore some network components of the ThreeFold Grid.
 
 ### Reliable Message Bus Relay (RMB-RS)
 
-[Reliable Message Bus Relay (RMB-RS)](./grid3_components.md#reliable-message-bus-relay-rmb-rs) is a component or system that facilitates the reliable and secure transfer of messages between different entities or systems within the ThreeFold ecosystem. It acts as a relay or intermediary, ensuring that messages are delivered accurately and efficiently, even in the presence of network disruptions or failures. The RMB-RS employs robust protocols and mechanisms to guarantee message reliability, integrity, and confidentiality.
+[Reliable Message Bus Relay (RMB-RS)](./grid3_components#reliable-message-bus-relay-rmb-rs) is a component or system that facilitates the reliable and secure transfer of messages between different entities or systems within the ThreeFold ecosystem. It acts as a relay or intermediary, ensuring that messages are delivered accurately and efficiently, even in the presence of network disruptions or failures. The RMB-RS employs robust protocols and mechanisms to guarantee message reliability, integrity, and confidentiality.
 
 ### TCP-Router
 
-[TCP-Router](./grid3_components.md#tcp-router) is a component of the ThreeFold technology stack that acts as a TCP (Transmission Control Protocol) router and load balancer. It serves as a network gateway for incoming TCP connections, routing them to the appropriate destinations based on predefined rules and configurations. The TCP-Router component is responsible for distributing incoming network traffic across multiple backend services or nodes, ensuring efficient load balancing and high availability.
+[TCP-Router](./grid3_components#tcp-router) is a component of the ThreeFold technology stack that acts as a TCP (Transmission Control Protocol) router and load balancer. It serves as a network gateway for incoming TCP connections, routing them to the appropriate destinations based on predefined rules and configurations. The TCP-Router component is responsible for distributing incoming network traffic across multiple backend services or nodes, ensuring efficient load balancing and high availability.
 
 # Solution Categories
 
@@ -89,11 +89,11 @@ There are three main solution categories on the TFGrid: DIY workloads, independe
 
 ## DIY Workloads
 
-Out-of-the-box applications are available on the [TF Dashboard](../../../documentation/dashboard/deploy/applications) and [Terraform](../../../documentation/system_administrators/terraform/terraform_toc.md), where anyone can [buy TFTs](../../../documentation/threefold_token/buy_sell_tft/buy_sell_tft.md) and deploy on the decentralized and open-source grid. The reliability of those deployments depend on the capacity and resources of each DIY system administrator.
+Out-of-the-box applications are available on the [TF Dashboard](../../../documentation/dashboard/deploy/applications) and [Terraform](../../../documentation/system_administrators/terraform_toc/terraform_toc), where anyone can [buy TFTs](../../../documentation/threefold_token/buy_sell_tft/buy_sell_tft) and deploy on the decentralized and open-source grid. The reliability of those deployments depend on the capacity and resources of each DIY system administrator.
 
 In essence, when you deploy on the decentralized and open-source TFGrid, you act as a centralized entity building the solution architecture. You must design the solution in a way that it can be reliable with high-availability and resilience levels that suit the needs of your project.
 
-Note that when you deploy on the ThreeFold Grid, you are doing so in accordance with the [ThreeFold Terms and Conditions](../../legal/terms_conditions_all3.md).
+Note that when you deploy on the ThreeFold Grid, you are doing so in accordance with the [ThreeFold Terms and Conditions](../../terms_conditions_all3/terms_conditions_all3).
 
 ## Independent Commercial Offerings
 

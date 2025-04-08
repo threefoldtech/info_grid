@@ -13,7 +13,7 @@ In this section, we provide the basic information for a VM web gateway using Ter
 
 ## Expose with Prefix
 
-A complete list of gateway name workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/name_proxy.md).
+A complete list of gateway name workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/name_proxy).
 
 ```
  terraform {
@@ -91,7 +91,7 @@ Here
 
 ## Expose with Full Domain
 
-A complete list of gateway fqdn workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/fqdn_proxy.md).
+A complete list of gateway fqdn workload parameters can be found [here](https://github.com/threefoldtech/terraform-provider-grid/blob/development/docs/resources/fqdn_proxy).
 
 it is more like the above example the only difference is you need to create an `A record` on your name provider for `remote.omar.grid.tf` to gateway node `7` IPv4.
 

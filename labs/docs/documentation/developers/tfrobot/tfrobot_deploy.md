@@ -13,7 +13,7 @@ We present how to deploy workloads on the ThreeFold Grid using TFROBOT.
 
 ## Prerequisites
 
-To deploy workloads on the TFGrid with TFROBOT, you first need to [install TFROBOT](./tfrobot_installation.md) on your machine and create a [configuration file](./tfrobot_config.md).
+To deploy workloads on the TFGrid with TFROBOT, you first need to [install TFROBOT](./tfrobot_installation) on your machine and create a [configuration file](./tfrobot_config).
 
 ## Deploy Workloads
 
@@ -49,4 +49,4 @@ The TFCMD tool works well with TFROBOT, as it can be used to query the TFGrid, f
 tfcmd get contracts
 ```
 
-For more information on TFCMD, [read the documentation](../tfcmd/tfcmd.md).
+For more information on TFCMD, [read the documentation](../tfcmd/tfcmd).

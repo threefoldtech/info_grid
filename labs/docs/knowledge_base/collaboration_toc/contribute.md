@@ -39,7 +39,7 @@ We present here the main steps to add content to the Threefold Manual by forking
 * Make changes in the forked repository
    * To add a new section
       * Add a new Markdown file to the [src](https://github.com/threefoldtech/info_grid/blob/development/src) directory
-      * Add the path of the Markdown file to [SUMMARY](https://github.com/threefoldtech/info_grid/blob/development/src/SUMMARY.md).
+      * Add the path of the Markdown file to [SUMMARY](https://github.com/threefoldtech/info_grid/blob/development/src/SUMMARY).
    * To modify an existing section:
      * Make the changes directly in the Markdown file
 * Ask for a pull request
@@ -88,7 +88,7 @@ To install git, follow the steps provided [here](https://github.com/git-guides/i
 
 To install mdbook, you can download the executable binaries available on the [GitHub Releases Page](https://github.com/rust-lang/mdBook/releases). Simply download the binary for your platform (Windows, macOS, or Linux) and extract the archive. The archive contains an mdbook executable which you can run to build your books. To make it easier to run, you can put the path to the binary into your PATH.
 
-For more information, read the [mdbook Documentation](https://rust-lang.github.io/mdBook/guide/installation.html).
+For more information, read the [mdbook Documentation](https://rust-lang.github.io/mdBook/guide/installation).
 
 
 
