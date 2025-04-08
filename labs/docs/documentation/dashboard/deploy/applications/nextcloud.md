@@ -25,7 +25,7 @@ Nextcloud provides functionality similar to Dropbox, Office 365 or Google Drive 
 
 A domain name is required to use Nextcloud. You can either use your own, which we'll call a *custom domain*, or you can get a free subdomain from a gateway node. This won't impact the function of your deployment, it's just a matter of preference. If you want to use your own domain, follow the steps for custom domain wherever you see them below.
 
-Another choice to make before launching your Nextcloud instance is whether you want to reserve a public IPv4 for the deployment. Renting a public IP is an extra cost and is only required for the dedicated Nextcloud Talk video conferencing backend, recommended for calls with more than four participants. If you don't reserve a public IP, you can still use Talk in a more limited fashion (see the [Talk](#talk) section below for details).
+Another choice to make before launching your Nextcloud instance is whether you want to reserve a public IPv4 for the deployment. Renting a public IP is an extra cost and is only required for the dedicated Nextcloud Talk video conferencing backend, recommended for calls with more than four participants. If you don't reserve a public IP, you can still use Talk in a more limited fashion.
 
 If you're not sure and just want the easiest, most affordable option, skip the public IP and use a gateway domain.
 
@@ -54,7 +54,7 @@ If you're not sure and just want the easiest, most affordable option, skip the p
 * If you want to use a custom domain, click on **Custom domain** under **Domain Name** and write your domain name
   * Example: `nextcloudwebsite.com`
 * The **Select gateway** box will be visible whenever a gateway is required. If so, click it and choose a gateway
-  * If you are also using a custom domain, you must set your DNS record now before proceeding. The IP of the gateway will appear on screen. Check [below](#set-the-dns-record) for more information
+  * If you are also using a custom domain, you must set your DNS record now before proceeding. The IP of the gateway will appear on screen. Check below for more information
 * Click **Deploy**
 
 
@@ -63,7 +63,7 @@ If you're not sure and just want the easiest, most affordable option, skip the p
 
 
 
-Once the weblet is deployed, the details page will appear. If you are using a custom domain with a public IPv4, you'll need to set your DNS record now using the IP address shown under **Public IPv4**. Again, see [below](#dns-details) for details.
+Once the weblet is deployed, the details page will appear. If you are using a custom domain with a public IPv4, you'll need to set your DNS record now using the IP address shown under **Public IPv4**.
 
 Before you can access Nextcloud itself, you'll need to decide which addons you want to install and complete a setup step. This is done through the AIO interface that's included with your deployment. To access it, you can visit the **Nextcloud Setup** link shown in the details page, or click on the **Nextcloud Setup** button under **Actions** in the deployments list to set up Nextcloud.
 
@@ -80,7 +80,6 @@ Before you can access Nextcloud itself, you'll need to decide which addons you w
 The installation is now complete and you have access to your Nextcloud instance.
 
 
-<div id="dns-details"></div>
 # DNS Details
 
 ## DNS Record with Public IPv4
@@ -100,8 +99,6 @@ When setting your own custom domain, it might take time for DNS to propagate. It
 This is normal. You might simply need to wait for the DNS to propagate completely.
 
 
-
-<div id="talk"></div>
 
 # Talk
 
@@ -260,7 +257,6 @@ To access the Nextcloud interface page, follow those stepse
 
 
 
-<div id="set-the-dns-record"></div>
 
 ## Check the DNS Propagation
 
