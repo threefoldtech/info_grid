@@ -13,7 +13,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   favicon: 'img/logo_tft_light_short.png',
   organizationName: 'ThreeFold',
   projectName: 'info_grid',
-  outDir: 'docs',
   markdown: {
     mermaid: true,
   },

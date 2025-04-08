@@ -50,7 +50,30 @@ jobs:
           # Show the build directory to verify it exists and has content
           echo "Checking build output directory..."
           ls -la build
-          echo "Build completed. Web server should serve from this directory."
+          
+          # Move the build directory content to docs for web server
+          echo "Moving build content to docs directory for web server..."
+          # Backup existing docs if it exists
+          if [ -d "docs" ]; then
+            echo "Backing up existing docs directory..."
+            mv docs docs.bak.$(date +%Y%m%d%H%M%S)
+          fi
+          
+          # Create docs directory and copy build content
+          mkdir -p docs
+          cp -r build/* docs/
+          echo "Content moved from build to docs directory successfully"
+          
+          # Verify the docs directory
+          echo "Checking docs directory content..."
+          ls -la docs
+          
+          # Clean up the build directory to save space
+          echo "Cleaning up build directory..."
+          rm -rf build
+          echo "Build directory removed"
+          
+          echo "Build completed. Web server should serve from the docs directory."
 
   wait:
     needs: deploy
