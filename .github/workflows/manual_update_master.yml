@@ -1,4 +1,4 @@
-name: manual.grid.tf
+name: www.manual.grid.tf
 on:
   push:
     branches: [ master ]
@@ -8,20 +8,65 @@ jobs:
     name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: pushing latest change on manual.grid.tf
+    - name: pushing latest change on www.manual.grid.tf
       uses: appleboy/ssh-action@master
       with:
-        host: manual.grid.tf
+        host: www.manual.grid.tf
         username: ${{ secrets.TF_USER }}
         key: ${{ secrets.TF_SECRET }}
         port: ${{ secrets.TF_PORT }}
         script: |
-          cd websites/info_grid/
+          cd websites/www/info_grid
           git checkout master
           git log -1
           git fetch
           git reset --hard origin/master
+          # Install or update Node.js to v20 (required for glob 11.0.1)
+          echo "Setting up Node.js v20 for Docusaurus and glob..."
+          # Find nvm and use it if available
+          if [ -d "$HOME/.nvm" ]; then
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+            # Install Node.js 20 LTS if not already installed
+            nvm install 20 || true
+            # Use Node.js 20
+            nvm use 20
+          else
+            # Alternative: Install Node.js directly
+            curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+            sudo apt-get install -y nodejs
+          fi
+          # Verify Node.js version
+          node -v
+          # Install Yarn if not available
+          if ! which yarn > /dev/null; then
+            echo "Yarn not found, installing..."
+            npm install -g yarn
+          fi
+          # Create a temporary .yarnrc file to use resolutions for glob
+          echo '{"resolutions": {"glob": "^8.1.0"}}' > .yarnrc.json
+          # Use the Makefile to build the site (now updated to use Yarn)
           make build
+          
+          # Move the build directory content to docs for web server
+          echo "Moving build content to docs directory for web server..."
+          # Backup existing docs if it exists
+          if [ -d "docs" ]; then
+            echo "Backing up existing docs directory..."
+            mv docs docs.bak.$(date +%Y%m%d%H%M%S)
+          fi
+          
+          # Create docs directory and copy build content
+          mkdir -p docs
+          cp -r build/* docs/
+          echo "Content moved from build to docs directory successfully"
+          
+          # Clean up the build directory to save space
+          echo "Cleaning up build directory..."
+          rm -rf build
+          echo "Build directory removed"
+          
+          echo "Build completed. Web server should serve from the docs directory."
 
   wait:
     needs: deploy
@@ -31,8 +76,8 @@ jobs:
     - name: Wait Period
       id: wait-deploy
       run: |
-        echo "Sleeping for 30"
-        sleep 30
+        echo "Sleeping for 120"
+        sleep 120
         
   checklinks:
     needs: wait
