@@ -165,7 +165,7 @@ To download the Zero-OS bootstrap image, go to the usual bootstrap link [https:/
 
 ![](./img/farmerbot_5.png) 
 
-Once you have your new bootstrap image for the new network, [wipe your disks](../3node_building/4_wipe_all_disks), insert the new bootstrap image and reboot the 3Node.
+Once you have your new bootstrap image for the new network, [wipe your disks](../3node_building/wipe_all_disks), insert the new bootstrap image and reboot the 3Node.
 
 ## The differences between power "state" and power "target"
 

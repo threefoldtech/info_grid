@@ -29,7 +29,7 @@ To import the farm on the Dashboard, go to the farming section of the TF Connect
 
 Use this secret to import a wallet on the [ThreeFold Dashboard](https://dashboard.grid.tf).
 
-Consult the [ThreeFold Dashboard section](../../dashboard/dashboard) for more information on the dashboard.
+Consult the [ThreeFold Dashboard section](../../dashboard) for more information on the dashboard.
 
 ### Farming Rewards Distribution
 

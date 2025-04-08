@@ -30,6 +30,6 @@ Easily deploy your favourite applications on the ThreeFold grid with a click of 
 - [Static Website](static_website)
 - [Subsquid](subsquid)
 - [Taiga](taiga)
-- [TFRobot](tfrobot/tfrobot)
+- [TFRobot](tfrobot)
 - [Umbrel](umbrel)
 - [WordPress](wordpress)

@@ -110,4 +110,4 @@ To use a GPU on the TFGrid, users need to rent a dedicated node. Once they have 
 
 ### GPU Support Links
 
-The ThreeFold Manual covers many ways to use a GPU node on the TFGrid. Read [this section](../../system_administrators/gpu_toc/gpu_toc) to learn more.
+The ThreeFold Manual covers many ways to use a GPU node on the TFGrid. Read [this section](../../system_administrators/gpu_toc) to learn more.

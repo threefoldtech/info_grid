@@ -5,7 +5,7 @@ sidebar_position: 203
 
 
 
-When building a 3Node, we advise to follow carefully the 6 steps laid out in the [3Node building](../3node_building/3node_building) section of the manual. Make sure that the disks are properly wiped, that you have the correct bootstrap image and that the BIOS/UEFI is set correctly.
+When building a 3Node, we advise to follow carefully the 6 steps laid out in the [3Node building](../3node_building) section of the manual. Make sure that the disks are properly wiped, that you have the correct bootstrap image and that the BIOS/UEFI is set correctly.
 
 If you are still having issues, you may find solutions to your issues by reading the sections [Build Troubleshooting](./farming_troubleshooting_tips#build-troubleshooting) and [Basic Post Build Troubleshooting](./farming_troubleshooting_tips#basic-post-build-troubleshooting).
 

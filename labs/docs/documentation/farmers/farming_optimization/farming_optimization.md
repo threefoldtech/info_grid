@@ -5,7 +5,7 @@ sidebar_position: 181
 
 
 
-The section [Build a 3Node](../3node_building/3node_building) covered the notions necessary to build a DIY 3Node server. The following section will give you additional information with the goal of optimizing your farm while also being able to plan ahead the costs in terms of energy and capitals. We also cover how to set a GPU node and more.
+The section [Build a 3Node](../3node_building) covered the notions necessary to build a DIY 3Node server. The following section will give you additional information with the goal of optimizing your farm while also being able to plan ahead the costs in terms of energy and capitals. We also cover how to set a GPU node and more.
 
 **TABLE OF CONTENTS**
 

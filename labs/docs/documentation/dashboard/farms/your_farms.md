@@ -69,7 +69,7 @@ In a first phase, farming of tokens still results in payout on the Stellar netwo
 
 ![](./img/dashboard_farms_stellar_address.png)
 
-You can read about different ways to store TFT [here](../../threefold_token/storing_tft/storing_tft). Make sure to use a Stellar wallet for your farming rewards.
+You can read about different ways to store TFT [here](../../threefold_token/storing_tft). Make sure to use a Stellar wallet for your farming rewards.
 
 ### Generate Your Node Bootstrap Image
 
@@ -77,7 +77,7 @@ Once you know your farmID, you can set up your node on TFGrid3. Click on `Bootst
 
 ![](./img/dashboard_bootstrap_farm.png)
 
-Read more Zero-OS bootstrap image [here](../../farmers/3node_building/2_bootstrap_image).
+Read more Zero-OS bootstrap image [here](../../farmers/3node_building/bootstrap_image).
 
 ### Additional Information
 

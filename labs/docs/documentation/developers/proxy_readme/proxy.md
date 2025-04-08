@@ -11,7 +11,7 @@ The TFGrid client Proxy acts as an interface to access information about the gri
 
 The proxy is used as the backend of several threefold projects like:
 
-- [Dashboard](../../dashboard/dashboard)
+- [Dashboard](../../dashboard)
 
 
 ## How to Use the Project

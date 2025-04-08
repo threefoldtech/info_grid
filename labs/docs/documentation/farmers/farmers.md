@@ -7,17 +7,17 @@ sidebar_position: 172
 
 This section covers all practical information on how to become a cloud service provider (farmer) on the ThreeFold Grid.
 
-For complementary information on ThreeFold farming, refer to the [Farming](../../knowledge_base/farming_toc/farming_toc) section.
+For complementary information on ThreeFold farming, refer to the [Farming](../../knowledge_base/farming_toc) section.
 
 To buy a certified node from an official ThreeFold vendor, check the [ThreeFold Marketplace](https://marketplace.3node.global/).
 
 **TABLE OF CONTENTS**
 
-- [Build a 3Node](./3node_building/3node_building)
+- [Build a 3Node](./3node_building)
 - [Farming Requirements](./farming_requirements)
-- [Farming Optimization](./farming_optimization/farming_optimization)
-- [Advanced Networking](advanced_networking_toc/advanced_networking_toc)
-- [Farmerbot](farmerbot_intro/farmerbot_intro)
+- [Farming Optimization](./farming_optimization)
+- [Advanced Networking](advanced_networking_toc)
+- [Farmerbot](farmerbot_intro)
 - [Node Status Bot](node_status_bot)
 - [Farming Troubleshooting](./farming_troubleshooting)
 - [Utilization Rewards](./utilization_rewards)

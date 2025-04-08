@@ -30,7 +30,7 @@ We will show how to do this with Ubuntu 24.04. LTS. This distribution is easy to
 
 [Download the Ubuntu 24.04 ISO file](https://releases.ubuntu.com/24.04/) and burn the ISO image on a USB key. Make sure you have enough space on your USB key. You can also use other Linux Distro such as [GRML](https://grml.org/download/), if you want a lighter ISO image.
 
-The process is the same as in section [Burning the Bootstrap Image](./2_bootstrap_image#balenaetcher-mac-linux-windows), but with the Linux ISO instead of the Zero-OS bootstrap image. [BalenaEtcher](https://www.balena.io/etcher/) is recommended as it formats your USB in the process, and it is available for MAC, Windows and Linux.
+The process is the same as in section [Burning the Bootstrap Image](./bootstrap_image#balenaetcher-mac-linux-windows), but with the Linux ISO instead of the Zero-OS bootstrap image. [BalenaEtcher](https://www.balena.io/etcher/) is recommended as it formats your USB in the process, and it is available for MAC, Windows and Linux.
 
 
 ## 2. Boot Linux in *Try Mode*

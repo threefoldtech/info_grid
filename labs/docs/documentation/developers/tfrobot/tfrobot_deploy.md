@@ -49,4 +49,4 @@ The TFCMD tool works well with TFROBOT, as it can be used to query the TFGrid, f
 tfcmd get contracts
 ```
 
-For more information on TFCMD, [read the documentation](../tfcmd/tfcmd).
+For more information on TFCMD, [read the documentation](../tfcmd).

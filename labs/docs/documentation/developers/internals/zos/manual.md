@@ -40,7 +40,7 @@ To be able to contact the node directly you need to run
 - `yggdrasil`
 - `rmb` (correctly configured)
 
-Once you have those running you can now contact the node over `rmb`. For a reference implementation (function names and parameters) please refer to [RMB documentation](../../rmb/rmb_toc.md)
+Once you have those running you can now contact the node over `rmb`. For a reference implementation (function names and parameters) please refer to [RMB documentation](../rmb_toc)
 
 Here is a rough example of how low level creation of a deployment is done.
 

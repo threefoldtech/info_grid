@@ -15,6 +15,6 @@ For complementary information on the ThreeFold Grid and its cloud component, ref
 - [Mycelium](mycelium_toc)
 - [Pulumi](pulumi_readme)
 - [GPU](gpu_toc)
-- [Terraform](./terraform_toc/terraform_toc)
+- [Terraform](./terraform_toc)
 - [Computer and IT Basics](./computer_it_basics)
 - [Advanced](./advanced)

@@ -37,7 +37,7 @@ In the ThreeFold ecosystem, there are only two situations where you would work w
 
 **Static IP and Public Config**
 
-You can [set a static IP for the public config of a 3Node or a farm](./1_create_farm#optional-add-public-ip-addresses). In thise case, the 3Node takes information from TF Chain and uses it to set a static configuration on a NIC (or on a virtual NIC in the case of single NIC systems). 
+You can set a static IP for the public config of a 3Node or a farm. In this case, the 3Node takes information from TF Chain and uses it to set a static configuration on a NIC (or on a virtual NIC in the case of single NIC systems). 
 
 **Static IP and Remote Management**
 
@@ -149,7 +149,7 @@ Choices 1 and 2 are for UEFI (newer models).
 Choices 4 and 5 are for BIOS (newer models).
 Choices 3 and 6 are mainly for network boot.
 
-Refer to [this previous section](./2_bootstrap_image) for more information on creating a Zero-OS bootstrap image.
+Refer to [this previous section](./bootstrap_image) for more information on creating a Zero-OS bootstrap image.
 
-For information on how to boot Zero-OS with iPXE, read [this section](./6_boot_3node#advanced-booting-methods-optional).
+For information on how to boot Zero-OS with iPXE, read [this section](./6_boot_3node.md#advanced-booting-methods-optional).
 

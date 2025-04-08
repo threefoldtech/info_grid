@@ -26,7 +26,7 @@ Note that you can run Zero-OS on a Virtual Machine (VM), but you won't farm any 
 
 Also, note that ThreeFold runs its own OS, which is Zero-OS. You thus need to start with completely wiped disks. You cannot farm TFT with Windows, Linux or MAC OS installed on your disks. If you need to use such OS temporarily, boot it in Try mode with a removable media (USB key).
 
-Note: Once you have the necessary hardware, you need to [create a farm](./1_create_farm), [create a Zero-OS bootstrap image](./2_bootstrap_image), [wipe your disks](./4_wipe_all_disks) and [set the BIOS/UEFI](./5_set_bios_uefi) . Then you can [boot your 3Node](./6_boot_3node). If you are planning in building a farm in data center, [read this section](../advanced_networking_toc/advanced_networking_toc).
+Note: Once you have the necessary hardware, you need to [create a farm](./create_farm), [create a Zero-OS bootstrap image](./bootstrap_image), [wipe your disks](./wipe_all_disks) and [set the BIOS/UEFI](./set_bios_uefi) . Then you can [boot your 3Node](./boot_3node). If you are planning in building a farm in data center, [read this section](../advanced_networking_toc).
 
 
 
