@@ -83,8 +83,8 @@ jobs:
     - name: Wait Period
       id: wait-deploy
       run: |
-        echo "Sleeping for 60"
-        sleep 60
+        echo "Sleeping for 120"
+        sleep 120
         
   checklinks:
     needs: wait
