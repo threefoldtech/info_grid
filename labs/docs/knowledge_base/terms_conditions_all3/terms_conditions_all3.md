@@ -5,7 +5,7 @@ sidebar_position: 408
 
 # Legal
 
-![legal](./img/legal.jpg)
+![legal](./img/legal_header.jpg)
 
 ## TFGRID USER and/or FARMER TERMS AND CONDITIONS TFGRID 3.X
 
