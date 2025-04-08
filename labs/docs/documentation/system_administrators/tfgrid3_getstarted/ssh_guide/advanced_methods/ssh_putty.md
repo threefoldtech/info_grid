@@ -13,13 +13,13 @@ In this Threefold Guide, we show how easy it is to deploy a full virtual machine
 
 To deploy different workloads, the SSH connection process should be very similar. 
 
-Make sure to read the [Mycelium section](../../../mycelium_toc/mycelium_toc) if you use Mycelium for the network connection.
+Make sure to read the [Mycelium section](../../../mycelium_toc/mycelium_toc.md) if you use Mycelium for the network connection.
 
 
 
 ## Main Steps and Prerequisites
 
-Make sure to [read the introduction](../../tfgrid3_getstarted#get-started---your-first-deployment) before going further.
+Make sure to [read the introduction](../../tfgrid3_getstarted.md) before going further.
 
 The main steps for the whole process are the following:
 

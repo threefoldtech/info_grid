@@ -42,37 +42,37 @@ The TFT contract address on different chains are the following:
 
 ## Bridges Between Chains
 
-[Bridges](./tft_bridges/tft_bridges) are available to easily navigate between the chains. 
+[Bridges](./tft_bridges/tft_bridges.md) are available to easily navigate between the chains. 
 
-- [TFChain-Stellar Bridge](./tft_bridges/tfchain_stellar_bridge)
-- [BSC-Stellar Bridge](./tft_bridges/bsc_stellar_bridge)
-- [Ethereum-Stellar Bridge](./tft_bridges/tft_ethereum/tft_ethereum)
+- [TFChain-Stellar Bridge](./tft_bridges/tfchain_stellar_bridge.md)
+- [BSC-Stellar Bridge](./tft_bridges/bsc_stellar_bridge/bsc_stellar_bridge.md)
+- [Ethereum-Stellar Bridge](./tft_bridges/tft_ethereum.md)
 
 ## Storing TFT
 
-There are many ways to store TFT. The [TF Connect app wallet](./storing_tft/tf_connect_app) and a [hardwallet wallet](./storing_tft/hardware_wallet) are two of the many possibilities.
+There are many ways to store TFT. The [TF Connect app wallet](./storing_tft/tf_connect_app.md) and a [hardwallet wallet](./storing_tft/hardware_wallet.md) are two of the many possibilities.
 
-> [Easily Store TFT](./storing_tft/storing_tft)
+> [Easily Store TFT](./storing_tft/storing_tft.md)
 
 ## Buy and Sell TFT
 
-You can [buy and sell TFT](./buy_sell_tft/buy_sell_tft) with cryptocurrencies on Stellar Chain, Ethereum Chain and BNB Smart Chain.
+You can [buy and sell TFT](./buy_sell_tft/buy_sell_tft.md) with cryptocurrencies on Stellar Chain, Ethereum Chain and BNB Smart Chain.
 
 Using Lobstr is very effective to buy TFT with fiat or crypto in no time:
 
-> [Get TFT: Quick Guide](buy_sell_tft/tft_lobstr_short_guide)
+> [Get TFT: Quick Guide](buy_sell_tft/tft_lobstr_short_guide.md)
 
 ## Transaction Fees
 
 Each time transactions are done on chains, transaction fees apply.
 
-> Learn about [Transaction Fees](./transaction_fees)
+> Learn about [Transaction Fees](./transaction_fees.md)
 
 ## Deploy on the TFGrid with TFT
 
 You can do almost anything on the TFGrid: as long as you're doing Linux stuff, ZOS got your back!
 
-> [Get Started on the TFGrid](../system_administrators/tfgrid3_getstarted/tfgrid3_getstarted)
+> [Get Started on the TFGrid](../system_administrators/tfgrid3_getstarted/tfgrid3_getstarted.md)
 
 ## Disclaimer
 

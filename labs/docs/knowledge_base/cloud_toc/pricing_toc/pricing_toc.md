@@ -7,7 +7,7 @@ sidebar_position: 385
 
 **TABLE OF CONTENTS**
 
-- [Pricing Overview](./pricing)
-- [Staking Discounts](./staking_discount_levels)
-- [Cloud Pricing Compare](./cloud_pricing_compare)
-- [Grid Billing](grid_billing)
+- [Pricing Overview](./pricing.mdx)
+- [Staking Discounts](./staking_discount_levels.md)
+- [Cloud Pricing Compare](./cloud_pricing_compare.md)
+- [Grid Billing](grid_billing.md)

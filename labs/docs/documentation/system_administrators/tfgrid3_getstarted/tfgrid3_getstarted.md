@@ -11,9 +11,9 @@ It's easy to get started on the TFGrid.
 
 For your first deployment on the grid, we will show you how to deploy a full virtual machine running on a ThreeFold node.
 
-- [Create a TFChain Account](../../dashboard/wallet_connector)
-- [Get TFT](../../threefold_token/buy_sell_tft/buy_sell_tft)
-- [Bridge TFT to TChain](../../threefold_token/tft_bridges/tft_bridges)
+- [Create a TFChain Account](../../dashboard/wallet_connector.md)
+- [Get TFT](../../threefold_token/buy_sell_tft/buy_sell_tft.md)
+- [Bridge TFT to TChain](../../threefold_token/tft_bridges/tft_bridges.md)
 - [Deploy and Connect to a VM](ssh_guide/ssh_openssh)
 
 Once you're acquainted with the basics, you can explore all types of ThreeFold deployments.

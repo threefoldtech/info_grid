@@ -15,7 +15,7 @@ The ThreeFold Grid v3.x is packed with exciting new features and enhancements. T
 
 ## TFChain v3.x
 
-[__TFChain v3.x__](tfchain/tfchain) is a decentralized chain that holds all the information about the entities comprising the ThreeFold Grid. It operates on the Parity Substrate blockchain infrastructure.
+[__TFChain v3.x__](tfchain/tfchain.md) is a decentralized chain that holds all the information about the entities comprising the ThreeFold Grid. It operates on the Parity Substrate blockchain infrastructure.
 
 ### Key Features of  TFChain v3.x:
 

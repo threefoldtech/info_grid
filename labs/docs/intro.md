@@ -7,7 +7,7 @@ sidebar_position: 1
 
 *Welcome to the ThreeFold Labs!*
 
-> The ThreeFold Labs contain advanced material for users and farmers of the ThreeFold Grid. For basic information, please refer to the [Users](../users/docs/intro.md) and [Farmers](../farmers/docs/intro.md) sections respectively.
+> The ThreeFold Labs contain advanced material for users and farmers of the ThreeFold Grid. For basic information, please refer to the [Users](../users/intro) and [Farmers](../farmers/intro) sections respectively.
 
 This manual is organized in two main sections: 
 

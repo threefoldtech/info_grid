@@ -50,7 +50,7 @@ The links to the bridges for TFT are the following:
   * Read [this guide](./tfchain_stellar_bridge) for more information
 * Stellar-Solana Bridge
   * This bridge is accessible on the ThreeFold Connect app.
-  * Read [this guide](stellar_solana_bridge/stellar_solana_bridge) for more information
+  * Read [this guide](./stellar_solana_bridge/stellar_solana_bridge.md) for more information
 
 ## Chains Functions
 

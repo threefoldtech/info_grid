@@ -39,5 +39,5 @@ __Grid Proxy REST API__ further enhances the extensibility of the IaC mechanism 
 - [Grace Periods](./contract_grace_period)
 
 ## Manuals
-- [Terraform](../../../documentation/system_administrators/terraform_toc/terraform_toc)
-- [Typescript Client](../../../documentation/developers/grid3_javascript/grid3_javascript) 
+- [Terraform](../../../documentation/system_administrators/terraform_toc/terraform_toc.md)
+- [Typescript Client](../../../documentation/developers/grid3_javascript/grid3_javascript.md) 
