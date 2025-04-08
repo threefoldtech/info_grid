@@ -15,4 +15,4 @@ In this section, we will explore the dynamic world of infrastructure as code (Ia
 - [Installing Pulumi](./pulumi_install)
 - [Deployment Examples](./pulumi_examples)
 - [Deployment Details](./pulumi_deployment_details)
-- [Complete Guides](pulumi_complete_guides_toc/pulumi_complete_guides_toc)
+- [Complete Guides](./pulumi_complete_guides_toc/pulumi_complete_guides_toc.md)
