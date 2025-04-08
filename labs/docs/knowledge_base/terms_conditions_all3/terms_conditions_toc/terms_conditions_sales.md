@@ -1,3 +1,9 @@
+---
+title: "Terms & Conditions Sales"
+sidebar_position: 417
+---
+
+
 # Terms Conditions Sales
 
 These terms and conditions (the “Agreement") constitute a legal agreement between you (“farmer,”, "customer", “you", or “yours”) and TF Tech NV, with registered office at Antwerpse Steenweg 19, B-9080 Lochristi, Belgium, (company number KBO 0712.845.674) ("we" "our" or the "Company") regarding our the sales of a service or product to you.

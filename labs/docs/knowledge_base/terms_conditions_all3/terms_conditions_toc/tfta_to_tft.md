@@ -1,3 +1,9 @@
+---
+title: "TFTA TO TFT"
+sidebar_position: 420
+---
+
+
 ## Convert TFTA to TFT
 
 TFTA is a voluntary staking pool for people to show that they have no intent to sell in near time.

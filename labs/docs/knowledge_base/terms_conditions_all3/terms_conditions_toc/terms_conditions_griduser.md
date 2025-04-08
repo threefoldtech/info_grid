@@ -1,3 +1,9 @@
+---
+title: "Terms & Conditions TFGrid Users TFGrid 3"
+sidebar_position: 415
+---
+
+
 **USER TERMS AND CONDITIONS**
 
 These Terms and Conditions (the "**Agreement**") constitute a legal agreement between you (“**user**," “**you**", or “**yours**”) and THREEFOLD RELATED COMPANIES  (“**Threefold**”, “**Company**,” “**us**,” “**we**” or “**our**”)
@@ -19,7 +25,7 @@ You understand and agree that by accepting the terms of this Agreement, either b
 
 ### 1. DEFINITIONS
 
-Unless defined otherwise in this Agreement below, capitalized terms in this Agreement shall have the meaning ascribed to them in the following links for [Definitions](../definitions_legal).
+Unless defined otherwise in this Agreement below, capitalized terms in this Agreement shall have the meaning ascribed to them in the following links for [Definitions](../definitions_legal.md).
 
 SPECIAL DEFINITIONS
 
@@ -91,7 +97,7 @@ Two versions of ThreeFold_Tokens have been issued:
 - A first version of the ThreeFold_Token was issued as from March 2018 on ThreeFolds initial blockchain called Rivine. These TFTs are also referred to as "TFTv1" or “TFTA”. These tokens have now been migrated to the Stellar blockchain.
 - A second version of the ThreeFold_Token was issued as from May 2020 on the Stellar blockchain. These TFTs are also referred to as "TFTv2". This token is available on multiple blockchains, the total amount of tokens farmed is the same independent of blockchain used, TFBridges are used to migrate TFTs between blockchain technology.
 
-While the original TFTv1 kept all same properties and benefits, they are now called TFTA on the Stellar blockchain. Since the creation of the TFTv2, TFTA’s have become ThreeFolds voluntary staking pool of Tokens, which means these TFTs can only be used to buy IT Capacity and cannot be traded otherwise. However any User can convert TFTA’s into TFTs (i.e. TFTv2) by implementing a few simple migration steps which can be found [here](./tfta_to_tft). Once converted, any TFT’s can be traded or transferred by various means as the User deems fit, as further explain [here](../../../documentation/threefold_token/buy_sell_tft/buy_sell_tft).
+While the original TFTv1 kept all same properties and benefits, they are now called TFTA on the Stellar blockchain. Since the creation of the TFTv2, TFTA’s have become ThreeFolds voluntary staking pool of Tokens, which means these TFTs can only be used to buy IT Capacity and cannot be traded otherwise. However any User can convert TFTA’s into TFTs (i.e. TFTv2) by implementing a few simple migration steps which can be found [here](./tfta_to_tft.md). Once converted, any TFT’s can be traded or transferred by various means as the User deems fit, as further explain [here](../../../documentation/threefold_token/buy_sell_tft/buy_sell_tft.md).
 
 The TF Foundation has chosen to use multiple blockchain technology for storing and managing the TFT. You can use any wallet that supports the chosen blockchain, including but not limited to the wallet included in the ThreeFold Connect app.
 
@@ -111,7 +117,7 @@ We reserve the right, in our sole discretion, to modify or discontinue, temporar
 
 At all times during the Term of this Agreement or the period when you use any TF Products, your Content is maintained in a 3Node or TFTs are maintained in a wallet address of which you hold the private keys, whichever is longer:
 
-1. You will comply with the terms of this Agreement and the [Privacy Policy](../privacypolicy) and any other terms and conditions required by in connection herewith, the Open Source Licenses, and the terms of all other agreements to which you are a party in connection with your performance under this Agreement including, without limitation, any agreement you have with a third-party service provider.
+1. You will comply with the terms of this Agreement and the [Privacy Policy](../privacypolicy.md) and any other terms and conditions required by in connection herewith, the Open Source Licenses, and the terms of all other agreements to which you are a party in connection with your performance under this Agreement including, without limitation, any agreement you have with a third-party service provider.
 2. You will use and operate the TF Products in strict compliance with terms of this Agreement and any applicable laws or regulations, and you will not take any action not expressly authorized hereunder.
 3. Without prejudice to your rights under any applicable Open Source license, you will not modify or attempt to modify the TF Products for any purpose including but not limited to attempting to circumvent the audit, bypass security, manipulate the performance of, or otherwise disrupt the TF Products for any reason, including but not limited to attempting to increase the amount of data stored or bandwidth utilized, as defined herein, and you will not otherwise interfere with the operation of the ThreeFold_Grid.
 4. You acknowledge and agree that the Company has no practical access to your data or knowledge of the nature of the data stored on your 3Bot or the 3Nodes (including but not limited to Content) and that it does not retain any Content or other data that you process using the ThreeFold_Grid. The Company has no control in the management of such Content or data, nor any influence in the specific processing procedures. The Company will never pursue changes to TF Products that could make User data accessible to Company or third parties. We are a neutral intermediary and do not act on behalf of a Farmer, User or any other party to process Content or User data and thus you acknowledge and agree that we should not be qualified as data processors or sub-processor under the General Data Processing Directive (Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC) (‘GDPR’).
