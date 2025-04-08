@@ -1,70 +1,81 @@
 import React from 'react';
 
-// This approach imports all values at build time
-// Import all value files from the values directory
-// The values are imported as raw strings
-import CU_MUSD_HOUR from '../../values/CU_MUSD_HOUR.md';
-import CU_MTFT_HOUR from '../../values/CU_MTFT_HOUR.md';
-import SU_MUSD_HOUR from '../../values/SU_MUSD_HOUR.md';
-import SU_MTFT_HOUR from '../../values/SU_MTFT_HOUR.md';
-import NU_MUSD_HOUR from '../../values/NU_MUSD_HOUR.md';
-import NU_MTFT_HOUR from '../../values/NU_MTFT_HOUR.md';
-import IP_MUSD_HOUR from '../../values/IP_MUSD_HOUR.md';
-import IP_MTFT_HOUR from '../../values/IP_MTFT_HOUR.md';
-import NAME_MUSD_HOUR from '../../values/NAME_MUSD_HOUR.md';
-import NAME_MTFT_HOUR from '../../values/NAME_MTFT_HOUR.md';
-import DNAME_MUSD_HOUR from '../../values/DNAME_MUSD_HOUR.md';
-import DNAME_MTFT_HOUR from '../../values/DNAME_MTFT_HOUR.md';
-import TFT_VALUE from '../../values/tft_value.md';
-import TFT_SUPPLY from '../../values/tft_supply.md';
-import TFT_MARKETCAP from '../../values/tft_marketcap.md';
+// Instead of trying to dynamically load from markdown files directly (which causes webpack issues),
+// we'll use a static JSON object with values that gets updated by the build script
 
-// Create a mapping of value keys to their content
-// Safely convert to string and trim
-const safeStringTrim = (value) => {
-  if (value === null || value === undefined) return '';
-  return String(value).trim();
+// This is a hard-coded fallback in case the values are not properly loaded
+// The real values should be populated by your scripts before build
+const defaultValues = {
+  // Cloud Unit Values
+  "CU_MUSD_HOUR": "30.56",
+  "CU_MTFT_HOUR": "18.34",
+  "SU_MUSD_HOUR": "19.44",
+  "SU_MTFT_HOUR": "11.67",
+  "NU_MUSD_HOUR": "10417.00", 
+  "NU_MTFT_HOUR": "6250.00",
+  
+  // Network Addressing Values
+  "IP_MUSD_HOUR": "6.94",
+  "IP_MTFT_HOUR": "4.17",
+  "NAME_MUSD_HOUR": "6.94",
+  "NAME_MTFT_HOUR": "4.17",
+  "DNAME_MUSD_HOUR": "13.89",
+  "DNAME_MTFT_HOUR": "8.33",
+  
+  // TFT Values
+  "tft_value": "0.06",
+  "tft_supply": "1,000,000,000",
+  "tft_marketcap": "60,000,000"
 };
 
-const values = {
-  'CU_MUSD_HOUR': safeStringTrim(CU_MUSD_HOUR),
-  'CU_MTFT_HOUR': safeStringTrim(CU_MTFT_HOUR),
-  'SU_MUSD_HOUR': safeStringTrim(SU_MUSD_HOUR),
-  'SU_MTFT_HOUR': safeStringTrim(SU_MTFT_HOUR), 
-  'NU_MUSD_HOUR': safeStringTrim(NU_MUSD_HOUR),
-  'NU_MTFT_HOUR': safeStringTrim(NU_MTFT_HOUR),
-  'IP_MUSD_HOUR': safeStringTrim(IP_MUSD_HOUR),
-  'IP_MTFT_HOUR': safeStringTrim(IP_MTFT_HOUR),
-  'NAME_MUSD_HOUR': safeStringTrim(NAME_MUSD_HOUR),
-  'NAME_MTFT_HOUR': safeStringTrim(NAME_MTFT_HOUR),
-  'DNAME_MUSD_HOUR': safeStringTrim(DNAME_MUSD_HOUR),
-  'DNAME_MTFT_HOUR': safeStringTrim(DNAME_MTFT_HOUR),
-  'tft_value': safeStringTrim(TFT_VALUE),
-  'tft_supply': safeStringTrim(TFT_SUPPLY),
-  'tft_marketcap': safeStringTrim(TFT_MARKETCAP)
-};
+// Try to load the dynamically generated values.json file
+// which should be created by the scripts
+let values = {};
+try {
+  // Check if we're in a browser environment
+  if (typeof window !== 'undefined' && window.valueData) {
+    values = window.valueData; // Use globally injected values
+  } else {
+    // In SSR or if window.valueData is not available, use defaults
+    values = defaultValues;
+  }
+} catch (e) {
+  console.error('Error loading values:', e);
+  values = defaultValues;
+}
 
 /**
- * Component to include values from markdown files
+ * Component to include values from the central values object
  * @param {Object} props - Component props
- * @param {string} props.path - Path to the value file relative to values directory
+ * @param {string} props.path - Path to the value file (without extension)
  * @returns {React.ReactElement} - React component
  */
 export default function Include({ path }) {
   try {
-    // Extract the file name from the path (for matching with our value keys)
-    const fileName = path.split('/').pop().replace('.md', '');
+    // Normalize the path to match our values object keys
+    // Remove .md extension if present and extract just the filename without path
+    const fileName = path.replace(/\.md$/, '').split('/').pop();
     
-    // Look up the value in our mapping
-    let value = 'Value not found';
-    if (values[fileName]) {
-      // Make sure we're dealing with a string before calling trim
-      value = typeof values[fileName] === 'string' ? values[fileName] : String(values[fileName]);
+    // Debug information in development only
+    if (process.env.NODE_ENV === 'development') {
+      console.log(`Include component looking for value: ${fileName}`);
     }
     
-    return <span>{value}</span>;
+    // Look up the value in our values object
+    if (values[fileName] !== undefined) {
+      return <span>{values[fileName]}</span>;
+    } else {
+      // In development, provide more information about missing values
+      if (process.env.NODE_ENV === 'development') {
+        console.warn(`Value not found: ${fileName}`);
+      }
+      return <span className="missing-value">{fileName}</span>;
+    }
   } catch (error) {
-    console.error(`Error in Include component for path ${path}:`, error);
-    return <span>Error loading value</span>;
+    // Log errors in development
+    if (process.env.NODE_ENV === 'development') {
+      console.error(`Error in Include component for path ${path}:`, error);
+    }
+    return <span className="error">{path}</span>;
   }
 }
