@@ -52,7 +52,7 @@ Every contract is billed every 1 hour on the chain, the amount that is due is de
 - 50% goes to certified sales channel
 - 35% TFT gets burned
 
-See [pricing](../../../knowledge_base/cloud_toc/pricing_toc) for more information on how the cost for a contract is calculated.
+See [pricing](../../../cloud_toc/pricing_toc/pricing_toc.md) for more information on how the cost for a contract is calculated.
 
 ## Contract locking
 
@@ -64,11 +64,11 @@ When the owner of a contract runs out funds on his wallet to pay for his deploym
 
 ## DAO
 
-See [DAO](../../../../documentation/dashboard/tfchain/tf_dao/tf_dao) for more information on the DAO on TF Chain.
+See [DAO](../../../../documentation/dashboard/tfchain/tf_dao/tf_dao.md) for more information on the DAO on TF Chain.
 
 ## Farming Policies
 
-See [farming_policies](../../../../documentation/developers/tfchain/farming_policies) for more information on the farming policies on TF Chain.
+See [farming_policies](../../../../documentation/developers/tfchain/farming_policies.md) for more information on the farming policies on TF Chain.
 
 ## Node Connection price
 

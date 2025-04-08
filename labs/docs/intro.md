@@ -7,16 +7,16 @@ sidebar_position: 1
 
 *Welcome to the ThreeFold Labs!*
 
-> The ThreeFold Labs contain advanced material for users and farmers of the ThreeFold Grid. For basic information, please refer to the [Users](../users/intro) and [Farmers](../farmers/intro) sections respectively.
+> The ThreeFold Labs contain advanced material for users and farmers of the ThreeFold Grid. For basic information, please refer to the [Users](../users/docs/intro.md) and [Farmers](../farmers/docs/intro.md) sections respectively.
 
 This manual is organized in two main sections: 
 
-- [ThreeFold Knowledge Base](./knowledge_base/knowledge_base)
-- [ThreeFold Documentation](./documentation/documentation)
+- [ThreeFold Knowledge Base](./knowledge_base/knowledge_base.md)
+- [ThreeFold Documentation](./documentation/documentation.md)
 
 The *ThreeFold Knowledge Base* section contains all information needed to understand how the whole ThreeFold ecosystem works. 
 
-The *ThreeFold Documentation* section contains all the practical information of the ThreeFold Grid, from general information covering the multi-functional [ThreeFold Dashboard](./documentation/dashboard/dashboard), the versatile [ThreeFold Connect app](./documentation/tfconnect_toc/tfconnect_toc) and [TFT](./documentation/threefold_token/threefold_token), to specific tutorials for [developers](./documentation/developers/developers), [farmers](./documentation/farmers/farmers) and [system administrators](./documentation/system_administrators/system_administrators).
+The *ThreeFold Documentation* section contains all the practical information of the ThreeFold Grid, from general information covering the multi-functional [ThreeFold Dashboard](./documentation/dashboard/dashboard.md), the versatile [ThreeFold Connect app](./documentation/tfconnect_toc/tfconnect_toc.md) and [TFT](./documentation/threefold_token/threefold_token.md), to specific tutorials for [developers](./documentation/developers/developers.md), [farmers](./documentation/farmers/farmers.md) and [system administrators](./documentation/system_administrators/system_administrators.md).
 
 > Explore the ThreeFold Grid status page for live updates on Threefold services!
 > 
@@ -26,18 +26,18 @@ The *ThreeFold Documentation* section contains all the practical information of 
 
 It's easy to get started on the ThreeFold Grid. 
 
-If you want to farm TFT, check out [how to build a 3Node](./documentation/farmers/3node_building/3node_building). 
+If you want to farm TFT, check out [how to build a 3Node](./documentation/farmers/3node_building/3node_building.md). 
 
 If you want to deploy or develop on the grid, you will first need to get TFT on TFChain:
 
-- [Create a TFChain account](./documentation/dashboard/wallet_connector)
+- [Create a TFChain account](./documentation/dashboard/wallet_connector.md)
 - Get TFT in your TFChain account
-  - [Buy TFT](./documentation/threefold_token/buy_sell_tft/buy_sell_tft)
-  - [Send TFT to TFChain](./documentation/threefold_token/tft_bridges/tft_bridges)
+  - [Buy TFT](./documentation/threefold_token/buy_sell_tft/buy_sell_tft.md)
+  - [Send TFT to TFChain](./documentation/threefold_token/tft_bridges/tft_bridges.md)
 
-To develop on the Grid, read the [developers documentation](./documentation/developers/developers).
+To develop on the Grid, read the [developers documentation](./documentation/developers/developers.md).
 
-To deploy applications, read the [deploy section](./documentation/dashboard/deploy/deploy) then, if needed, [access the deployment via SSH](./documentation/system_administrators/tfgrid3_getstarted/ssh_guide/ssh_guide).
+To deploy applications, read the [deploy section](./documentation/dashboard/deploy/deploy.md) then, if needed, [access the deployment via SSH](./documentation/system_administrators/tfgrid3_getstarted/ssh_guide/ssh_guide.md).
 
 ## Join the ThreeFold Community
 
