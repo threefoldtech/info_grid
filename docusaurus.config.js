@@ -13,6 +13,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   favicon: 'img/logo_tft_light_short.png',
   organizationName: 'ThreeFold',
   projectName: 'info_grid',
+  outDir: 'docs',
   markdown: {
     mermaid: true,
   },
@@ -23,8 +24,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       '@docusaurus/preset-classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        // Set the output directory to 'docs' to match the previous mdbook setup
-        outDir: 'docs',
         docs: {
           // Generate sidebar from folder structure
           sidebarPath: undefined,
