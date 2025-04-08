@@ -111,4 +111,4 @@ Here are some useful links to troubleshoot your GPU installation.
 
 ## GPU Support Links
 
-You can consult the [GPU Table of Contents](./gpu_toc) to see all available GPU support links on the ThreeFold Manual.
+You can consult the [GPU Table of Contents](./gpu_toc.md) to see all available GPU support links on the ThreeFold Manual.

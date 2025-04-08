@@ -14,8 +14,8 @@ In this section, tailored specifically for system administrators, we'll delve in
 - [CLI and Scripts Basics](./cli_scripts_basics)
 - [Docker Basics](./docker_basics)
 - [Git and GitHub Basics](./git_github_basics)
-- [Gitea](gitea_toc/gitea_toc)
-- [Firewall Basics](./firewall_basics/firewall_basics)
+- [Gitea](./gitea_toc/gitea_toc.md)
+- [Firewall Basics](./firewall_basics/firewall_basics.md)
 - [File Transfer](./file_transfer)
 - [Screenshots](./screenshots)
   

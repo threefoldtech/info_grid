@@ -15,10 +15,10 @@ We show how to deploy a free and open-source ecommerce on the ThreeFold Grid. We
 
 ## Prerequisites
 
-- [A TFChain account](../../../dashboard/wallet_connector)
+- [A TFChain account](../../../dashboard/wallet_connector.md)
 - TFT in your TFChain account
-  - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft)
-  - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge)
+  - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft.md)
+  - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge.md)
 
 ## Deploy Wordpress
 

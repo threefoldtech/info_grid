@@ -21,7 +21,7 @@ OpenWebUI is one of many front ends for Ollama, providing a convenient and user 
 
 - [A TFChain account](../../../dashboard/wallet_connector)
 - TFT in your TFChain account
-  - [Buy TFT](../../../threefold_token/buy_sell_tft/buy_sell_tft)
+  - [Buy TFT](../../../threefold_token/buy_sell_tft)
   - [Send TFT to TFChain](../../../threefold_token/tft_bridges/tfchain_stellar_bridge)
 
 ## Deploy a Full VM

@@ -29,7 +29,7 @@ query MyQuery {
 
 ```
 
-replace `TWIN_ID` with your twin id. The information should be available on the [Dashboard](../../dashboard/dashboard).
+replace `TWIN_ID` with your twin id. The information should be available on the [Dashboard](../../dashboard/dashboard.md).
 
 Then from [polkadot UI](https://polkadot.js.org/apps/), add the tfchain endpoint to development.
 
