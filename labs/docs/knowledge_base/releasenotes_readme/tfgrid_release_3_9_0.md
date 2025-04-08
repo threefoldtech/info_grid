@@ -40,7 +40,7 @@ Reliable Message Bus Relay (RMB-RS) is a secure communication panel that allows 
 - End-to-end encryption support.
 - Support for third-party hosted Relays. Anyone can host a Relay and people can use it safely since there is no way messages can be inspected while using e2e. That's similar to home servers by matrix.
 
-See [Specifications](https://github.com/threefoldtech/rmb-rs/blob/main/docs/readme) for more information.
+See [Specifications](https://github.com/threefoldtech/rmb-rs/blob/main/docs/readme.md) for more information.
 
 > Below is the list of the __Public Relay Addresses__ hosted by Threefold:
 

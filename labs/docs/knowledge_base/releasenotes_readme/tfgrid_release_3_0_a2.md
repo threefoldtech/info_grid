@@ -53,8 +53,6 @@ https://github.com/threefoldtech/zos/releases
 - Support for public IPv6
 - Support planetary option for k8s
 
-https://github.com/threefoldtech/tf-terraform-provider/releases
-
 
 ## grid3_client_ts v1.0.3
 - Cert type for nodes
