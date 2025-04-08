@@ -13,7 +13,7 @@ The [Grid Client](https://github.com/threefoldtech/tfgrid-sdk-ts/tree/developmen
 
 ## Mycelium Network
 
-Note that you can use the [Mycelium network](../../system_administrators/mycelium_toc/mycelium_toc) to connect to your deployments. To do so, make sure that the Mycelium network is properly set up for the deployments. You can consult the different examples that include the Mycelium network to understand this further.
+Note that you can use the [Mycelium network](../../system_administrators/mycelium_toc/mycelium_toc.md) to connect to your deployments. To do so, make sure that the Mycelium network is properly set up for the deployments. You can consult the different examples that include the Mycelium network to understand this further.
 
 ## Prerequisites
 
@@ -30,7 +30,7 @@ To use the Grid Client, you will need the following on the TFGrid:
 - A TFChain account
 - TFT in your wallet
 
-If it is not the case, please visit the [Get started section](../../system_administrators/tfgrid3_getstarted/tfgrid3_getstarted).
+If it is not the case, please visit the [Get started section](../../system_administrators/tfgrid3_getstarted/tfgrid3_getstarted.md).
 
 ## Installation
 

@@ -7,7 +7,7 @@ sidebar_position: 88
 
 Grid Go Client is a Go client created to interact and develop on Threefold Grid using Go language.
 
-Please make sure to check the [basics](../../system_administrators/tfgrid3_getstarted/tfgrid3_getstarted) before continuing.
+Please make sure to check the [basics](../../system_administrators/tfgrid3_getstarted/tfgrid3_getstarted.md) before continuing.
 
 **TABLE OF CONTENTS**
 

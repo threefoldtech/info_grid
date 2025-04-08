@@ -51,7 +51,7 @@ We now present the main steps to properly configure your NixOS MicroVM running o
 
 * Once your configured the parameters, you can deploy the MicroVM.
 
-If you need more information on how to SSH into your deployment, read [this section](../../../system_administrators/tfgrid3_getstarted/tfgrid3_getstarted) of the TF Manual.
+If you need more information on how to SSH into your deployment, read [this section](../../../system_administrators/tfgrid3_getstarted/tfgrid3_getstarted.md) of the TF Manual.
 
 
 

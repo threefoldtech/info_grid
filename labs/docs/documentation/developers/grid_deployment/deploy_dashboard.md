@@ -17,7 +17,7 @@ We also show how to provide a public access to the Dashboard by setting a gatewa
 - [Deploy full VM with WireGuard connection](../../system_administrators/tfgrid3_getstarted/ssh_guide/advanced_methods/ssh_wireguard)
 - [Make sure you can connect via SSH on the terminal](../../system_administrators/tfgrid3_getstarted/ssh_guide/ssh_openssh)
 
-In this guide, we use WireGuard, but you can use other connection methods, such as [Mycelium](../../system_administrators/mycelium_toc/mycelium_toc).
+In this guide, we use WireGuard, but you can use other connection methods, such as [Mycelium](../../system_administrators/mycelium_toc/mycelium_toc.md).
   
 ## Create an SSH Tunnel
 

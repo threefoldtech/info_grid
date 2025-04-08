@@ -13,7 +13,7 @@ TFCMD is available as binaries. Make sure to download the latest release and to 
 
 ## Mycelium Network
 
-Note that you can use the [Mycelium network](../../system_administrators/mycelium_toc/mycelium_toc) to connect to your deployments. A Mycelium IP is assigned by default to TFCMD deployments. You can consult the different examples to understand this further.
+Note that you can use the [Mycelium network](../../system_administrators/mycelium_toc/mycelium_toc.md) to connect to your deployments. A Mycelium IP is assigned by default to TFCMD deployments. You can consult the different examples to understand this further.
 
 ## Installation
 
