@@ -1,6 +1,6 @@
 ---
 title: "TFGrid v3.16.0"
-sidebar_position: 364
+sidebar_position: 362
 ---
 
 # ThreeFold Grid v3.16.0 Release Note
