@@ -1,1 +1,0 @@
-These Terms and Conditions (the "**Agreement**") constitute a legal agreement between you (“**user**," “**you**", or “**yours**”) and THREEFOLD RELATED COMPANIES  (“**Threefold**”, “**Company**,” “**us**,” “**we**” or “**our**”)

@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd src/values
+cd ../values
 
 coinId="threefold-token"
 

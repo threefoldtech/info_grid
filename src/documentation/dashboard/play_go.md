@@ -1,5 +1,0 @@
-- Choose one of the networks:
-  -  https://dashboard.dev.grid.tf for Devnet.
-  -  https://dashboard.qa.grid.tf for QAnet.
-  -  https://dashboard.test.grid.tf for Testnet.
-  -  https://dashboard.grid.tf for Mainnet.
