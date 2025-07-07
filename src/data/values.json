@@ -1,33 +1,33 @@
 {
-  "CU_MTFT_HOUR": "3820.00"
+  "CU_MTFT_HOUR": "6112.00"
 ,
   "CU_MUSD_HOUR": "30.56"
 ,
   "CU_TFT_HOUR": "15.28"
 ,
-  "DNAME_MTFT_HOUR": "347.50"
+  "DNAME_MTFT_HOUR": "556.00"
 ,
   "DNAME_MUSD_HOUR": "2.78"
 ,
-  "IP_MTFT_HOUR": "867.50"
+  "IP_MTFT_HOUR": "1388.00"
 ,
   "IP_MUSD_HOUR": "6.94"
 ,
-  "NAME_MTFT_HOUR": "173.75"
+  "NAME_MTFT_HOUR": "278.00"
 ,
   "NAME_MUSD_HOUR": "1.39"
 ,
-  "NU_MTFT_HOUR": "6250.00"
+  "NU_MTFT_HOUR": "10000.00"
 ,
   "NU_MUSD_HOUR": "50.00"
 ,
-  "SU_MTFT_HOUR": "2430.00"
+  "SU_MTFT_HOUR": "3888.00"
 ,
   "SU_MUSD_HOUR": "19.44"
 ,
-  "tft_marketcap": "6,240,000"
+  "tft_marketcap": "3,900,000"
 ,
   "tft_supply": "780000000"
 ,
-  "tft_value": "0.008"
+  "tft_value": "0.005"
 }
