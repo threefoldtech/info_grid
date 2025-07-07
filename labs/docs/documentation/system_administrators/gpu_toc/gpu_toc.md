@@ -11,7 +11,8 @@ Feel free to explore the different possibilities!
 
 **TABLE OF CONTENTS**
 
-- [GPU Support](./gpu.md)
+- [GPU Basics](./gpu.md)
+- [GPU Grid](./gpu_grid.md)
 - [Node Finder and GPU](../../dashboard/deploy/node_finder.md)
 - [Javascript Client and GPU](../../developers/grid3_javascript/grid3_javascript_gpu_support.md)
 - [GPU and Go](../../developers/grid3_go/grid3_go.md)
