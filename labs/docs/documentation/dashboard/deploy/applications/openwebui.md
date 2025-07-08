@@ -66,7 +66,7 @@ Click on the button **Visit** under **Actions** to go to your Open WebUI instanc
 
 This Open WebUI is deployed alongside with Ollama. To add Ollama models to Open WebUI, follow those steps:
 
-- Click on your username icon at the bottom left of the screen
+- Click on the username icon
 - Select `Admin Panel`
 - Select `Settings` then `Models`
 - Click on the button `Manage Models`
