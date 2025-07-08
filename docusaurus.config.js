@@ -17,6 +17,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid'],
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: 'AA236B21C47494A2',
+      },
+    },
+  ],
   scripts: [
     {
       src: '/data/load-values.js',
@@ -202,23 +211,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      // Algolia DocSearch configuration
-      // TODO: Replace with actual values after DocSearch approval
       algolia: {
-        // The application ID provided by Algolia
-        appId: 'YOUR_APP_ID',
-        // Public API key: it is safe to commit it
-        apiKey: 'YOUR_SEARCH_API_KEY',
-        indexName: 'YOUR_INDEX_NAME',
-        // Optional: see doc section below
+        appId: 'PK79E8QFKZ',
+        apiKey: '49e734f59296183bc47d29346d085d59',
+        indexName: 'manual',
         contextualSearch: true,
-        // Optional: Specify domains where the navigation should occur through window.location instead on history.push
-        // externalUrlRegex: 'external\\.com|domain\\.com',
-        // Optional: Algolia search parameters
         searchParameters: {},
-        // Optional: path for search page that enabled by default (`false` to disable it)
         searchPagePath: 'search',
-        // Optional: whether the insights feature is enabled or not on Docsearch (`false` by default)
         insights: false,
       },
     }),
