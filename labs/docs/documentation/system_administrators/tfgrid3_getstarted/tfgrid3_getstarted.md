@@ -29,3 +29,7 @@ From virtual machines to Kubernetes, to one-click apps to infrastructure-as-code
 Consult the list of TFGrid services to gain an overview of the ThreeFold ecosystem.
 
 - [TFGrid Services](tf_grid_services_readme)
+
+## Network Restrictions
+
+For more information on network port restrictions, read [this](./network_restrictions).
