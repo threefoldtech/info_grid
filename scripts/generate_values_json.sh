@@ -6,11 +6,11 @@
 # Navigate to the values directory
 cd ../values
 
-# Create a temporary directory for the JSON file
-mkdir -p ../src/data
+# Create the static data directory for the JSON file
+mkdir -p ../static/data
 
 # Start the JSON object
-echo "{" > ../src/data/values.json
+echo "{" > ../static/data/values.json
 
 # Process each markdown file in the values directory
 first=true
@@ -28,14 +28,14 @@ for file in *.md; do
   if [ "$first" = true ]; then
     first=false
   else
-    echo "," >> ../src/data/values.json
+    echo "," >> ../static/data/values.json
   fi
   
   # Add the entry to the JSON file (with proper escaping for JSON)
-  echo "  \"$filename\": \"$content\"" >> ../src/data/values.json
+  echo "  \"$filename\": \"$content\"" >> ../static/data/values.json
 done
 
 # Close the JSON object
-echo "}" >> ../src/data/values.json
+echo "}" >> ../static/data/values.json
 
 echo "Generated values.json with data from $(ls -1 *.md | wc -l) markdown files"
