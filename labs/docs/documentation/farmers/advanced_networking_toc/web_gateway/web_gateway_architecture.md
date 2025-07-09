@@ -28,10 +28,15 @@ graph TB
     B <--> C
     C <--> D
     
-    style A fill:#2563eb,stroke:#1e40af,stroke-width:3px,color:#ffffff
-    style B fill:#7c3aed,stroke:#5b21b6,stroke-width:3px,color:#ffffff
-    style C fill:#059669,stroke:#047857,stroke-width:3px,color:#ffffff
-    style D fill:#dc2626,stroke:#991b1b,stroke-width:3px,color:#ffffff
+    classDef internetClass fill:#3b82f6,stroke:#1d4ed8,stroke-width:2px,color:#ffffff
+    classDef gatewayClass fill:#8b5cf6,stroke:#7c3aed,stroke-width:2px,color:#ffffff
+    classDef myceliumClass fill:#10b981,stroke:#059669,stroke-width:2px,color:#ffffff
+    classDef nodeClass fill:#ef4444,stroke:#dc2626,stroke-width:2px,color:#ffffff
+    
+    class A internetClass
+    class B gatewayClass
+    class C myceliumClass
+    class D nodeClass
 ```
 
 1. **IPv4 Layer**: Traditional internet connectivity for backward compatibility
@@ -83,12 +88,15 @@ flowchart TD
     Mycelium <--> Node2
     Mycelium <--> Node3
     
-    style Internet fill:#2563eb,stroke:#1e40af,stroke-width:3px,color:#ffffff
-    style Gateway fill:#7c3aed,stroke:#5b21b6,stroke-width:3px,color:#ffffff
-    style Mycelium fill:#059669,stroke:#047857,stroke-width:3px,color:#ffffff
-    style Node1 fill:#dc2626,stroke:#991b1b,stroke-width:3px,color:#ffffff
-    style Node2 fill:#dc2626,stroke:#991b1b,stroke-width:3px,color:#ffffff
-    style Node3 fill:#dc2626,stroke:#991b1b,stroke-width:3px,color:#ffffff
+    classDef internetClass fill:#3b82f6,stroke:#1d4ed8,stroke-width:2px,color:#ffffff
+    classDef gatewayClass fill:#8b5cf6,stroke:#7c3aed,stroke-width:2px,color:#ffffff
+    classDef myceliumClass fill:#10b981,stroke:#059669,stroke-width:2px,color:#ffffff
+    classDef nodeClass fill:#ef4444,stroke:#dc2626,stroke-width:2px,color:#ffffff
+    
+    class Internet internetClass
+    class Gateway gatewayClass
+    class Mycelium myceliumClass
+    class Node1,Node2,Node3 nodeClass
 ```
 
 ### How Web Gateways Work
@@ -105,22 +113,24 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    User["👤 Internet User<br/>Browser Request"]
-    Gateway["🌉 Web Gateway<br/>New York<br/>(IPv4: Public)"]
-    Frontend["🎨 Frontend 3Node<br/>London<br/>(Mycelium Only)"]
-    API["🔌 API 3Node<br/>Singapore<br/>(Mycelium Only)"]
-    DB["🗄️ Database 3Node<br/>Frankfurt<br/>(Mycelium Only)"]
+    User["👤 End User<br/>web.example.com"]
+    Gateway["🌉 Web Gateway<br/>Farmer A<br/>(Public IPv4)"]
+    Frontend["🌐 Frontend 3Node<br/>Farmer B<br/>(React/Vue App)"]
+    API["🔌 API 3Node<br/>Farmer C<br/>(Node.js/Python)"]
+    DB["🗄️ Database 3Node<br/>Farmer D<br/>(PostgreSQL/MongoDB)"]
     
-    User --> Gateway
-    Gateway <--> Frontend
-    Frontend <--> API
-    API <--> DB
+    User -->|"HTTPS Request"| Gateway
+    Gateway <-->|"Mycelium Network"| Frontend
+    Frontend <-->|"Mycelium Network"| API
+    API <-->|"Mycelium Network"| DB
     
-    style User fill:#2563eb,stroke:#1e40af,stroke-width:3px,color:#ffffff
-    style Gateway fill:#7c3aed,stroke:#5b21b6,stroke-width:3px,color:#ffffff
-    style Frontend fill:#dc2626,stroke:#991b1b,stroke-width:3px,color:#ffffff
-    style API fill:#dc2626,stroke:#991b1b,stroke-width:3px,color:#ffffff
-    style DB fill:#dc2626,stroke:#991b1b,stroke-width:3px,color:#ffffff
+    classDef userClass fill:#3b82f6,stroke:#1d4ed8,stroke-width:2px,color:#ffffff
+    classDef gatewayClass fill:#8b5cf6,stroke:#7c3aed,stroke-width:2px,color:#ffffff
+    classDef nodeClass fill:#ef4444,stroke:#dc2626,stroke-width:2px,color:#ffffff
+    
+    class User userClass
+    class Gateway gatewayClass
+    class Frontend,API,DB nodeClass
 ```
 
 **Setup**:
