@@ -20,7 +20,7 @@ ThreeFold's networking architecture operates on three complementary layers:
 ```mermaid
 graph TB
     A["🌐 IPv4 Internet Layer<br/>Traditional internet users"] 
-    B["🌉 Web Gateway Layer<br/>Bridge & Protocol Translation"]
+    B["🌉 Web Gateway Layer<br/>Bridge & Reverse Proxy"]
     C["🍄 Mycelium Network Layer<br/>Secure P2P IPv6 Overlay"]
     D["💻 3Node Workloads<br/>Applications & Services"]
     
@@ -76,11 +76,11 @@ A Web Gateway is a specialized 3Node that enables public internet access for wor
 ```mermaid
 flowchart TD
     Internet["🌍 Public IPv4 Internet<br/>Users & Applications"]
-    Gateway["🌉 Web Gateway 3Node<br/>• Public IPv4 Address<br/>• Mycelium Connectivity<br/>• Protocol Translation"]
+    Gateway["🌉 Web Gateway 3Node<br/>• Public IPv4 Address<br/>• Mycelium Connectivity<br/>• Reverse Proxy"]
     Mycelium["🍄 Mycelium Network<br/>• Encrypted P2P Communication<br/>• IPv6 Overlay (400::/7)<br/>• NAT Traversal"]
-    Node1["💻 3Node A<br/>Web Server<br/>(No IPv4)"]
-    Node2["🗄️ 3Node B<br/>Database<br/>(No IPv4)"]
-    Node3["⚙️ 3Node C<br/>API Service<br/>(No IPv4)"]
+    Node1["💻 3Node A<br/>Web Server<br/>(No Public IPv4)"]
+    Node2["🗄️ 3Node B<br/>Database<br/>(No Public IPv4)"]
+    Node3["⚙️ 3Node C<br/>API Service<br/>(No Public IPv4)"]
     
     Internet <--> Gateway
     Gateway <--> Mycelium
@@ -102,7 +102,7 @@ flowchart TD
 ### How Web Gateways Work
 
 1. **Traffic Reception**: Gateway receives IPv4 requests from public internet users
-2. **Protocol Translation**: Converts IPv4 requests to communicate with 3Nodes via Mycelium network
+2. **Reverse Proxy**: Converts IPv4 requests to communicate with 3Nodes via Mycelium network
 3. **Workload Routing**: Routes requests to target workloads on 3Nodes without public IPv4
 4. **Response Handling**: Receives responses from workload 3Nodes and forwards back to internet users
 5. **Load Balancing**: Can distribute traffic across multiple backend workloads on different 3Nodes
@@ -216,7 +216,7 @@ flowchart LR
 ### For Users (Gateway Consumers)
 
 **Benefits**:
-- **No IPv4 Required**: Deploy workloads without expensive public IPs
+- **No Public IPv4 Required**: Deploy workloads without expensive public IPs
 - **Global Reach**: Access to gateways worldwide
 - **Automatic Scaling**: Use multiple gateways for load distribution
 - **Cost Efficiency**: Pay only for gateway usage, not full IPv4 addresses
