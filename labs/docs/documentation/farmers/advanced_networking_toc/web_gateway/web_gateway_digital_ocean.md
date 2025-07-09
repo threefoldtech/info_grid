@@ -9,7 +9,7 @@ sidebar_position: 1
 
 This guide provides step-by-step instructions for setting up a ThreeFold Web Gateway on Digital Ocean. A web gateway enables 3Nodes without public IPv4 addresses to provide publicly accessible services by bridging them with the public IPv4 internet.
 
-**Key Use Case**: Farmers with IPv4 addresses can provide gateway services, allowing users to deploy workloads on 3Nodes without expensive public IPv4 addresses while still making them accessible from the public internet.
+**Key Use Case**: Farmers with public IPv4 addresses can provide gateway services, allowing users to deploy workloads on 3Nodes without expensive public IPv4 addresses while still making them accessible from the public internet.
 
 > 📖 **For architectural details and concepts**, see the [Web Gateway Architecture](./web_gateway_architecture) guide.
 
@@ -220,13 +220,13 @@ After successful boot:
 Once your web gateway is operational, users can leverage it to expose their workloads:
 
 ### For Workload Deployment
-1. **Deploy workloads** on any 3Nodes (IPv4 not required)
+1. **Deploy workloads** on any 3Nodes (public IPv4 not required)
 2. **Select your gateway** from available options in the ThreeFold Dashboard
 3. **Configure routing** to connect gateway to workload via Mycelium network
 4. **Access applications** through the gateway's public IPv4 endpoint
 
 ### Gateway Benefits for Users
-- **Cost Savings**: No need for expensive IPv4 addresses on workload nodes
+- **Cost Savings**: No need for expensive public IPv4 addresses on workload nodes
 - **Global Access**: Workloads become accessible from anywhere on the internet
 - **Secure Communication**: Internal traffic encrypted via Mycelium network
 - **Flexible Deployment**: Place workloads on optimal 3Nodes regardless of IP availability

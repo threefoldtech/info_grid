@@ -9,14 +9,14 @@ sidebar_position: 2
 
 This guide provides step-by-step instructions for setting up a ThreeFold Web Gateway on Hetzner Cloud. A web gateway enables 3Nodes without public IPv4 addresses to provide publicly accessible services by bridging them with the public IPv4 internet.
 
-**Key Use Case**: Farmers with IPv4 addresses can provide gateway services, allowing users to deploy workloads on 3Nodes without expensive public IPv4 addresses while maintaining global accessibility.
+**Key Use Case**: Farmers with public IPv4 addresses can provide gateway services, allowing users to deploy workloads on 3Nodes without expensive public IPv4 addresses while maintaining global accessibility.
 
 > 📖 **For architectural details and concepts**, see the [Web Gateway Architecture](./web_gateway_architecture) guide.
 
 ### Why Use Hetzner for Web Gateways?
 
 - **European Focus**: Excellent connectivity across Europe and globally
-- **Cost-Effective**: Competitive pricing for IPv4 addresses and bandwidth
+- **Cost-Effective**: Competitive pricing for public IPv4 addresses and bandwidth
 - **Reliable Infrastructure**: High-quality data centers with good uptime
 - **Flexible Configurations**: Various server sizes suitable for different gateway loads
 
@@ -252,13 +252,13 @@ Keep track of:
 Once Hetzner resolves nested virtualization limitations and your web gateway becomes operational, users will be able to leverage it:
 
 ### For Workload Deployment
-1. **Deploy workloads** on any 3Nodes (IPv4 not required)
+1. **Deploy workloads** on any 3Nodes (public IPv4 not required)
 2. **Select your gateway** from available options in the ThreeFold Dashboard
 3. **Configure routing** to connect gateway to workload via Mycelium network
 4. **Access applications** through the gateway's public IPv4 endpoint
 
 ### Gateway Benefits for Users
-- **Cost Savings**: No need for expensive IPv4 addresses on workload nodes
+- **Cost Savings**: No need for expensive public IPv4 addresses on workload nodes
 - **European Connectivity**: Excellent performance for European users
 - **Secure Communication**: Internal traffic encrypted via Mycelium network
 - **Flexible Deployment**: Place workloads on optimal 3Nodes regardless of IP availability
