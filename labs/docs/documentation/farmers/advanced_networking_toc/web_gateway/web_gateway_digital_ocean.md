@@ -7,7 +7,18 @@ sidebar_position: 1
 
 ## Overview
 
-This guide covers how to set up a ZeroOS VM on Digital Ocean, primarily for creating a gateway node to expose workloads running on other ZeroOS nodes in bare-metal environments. This is not intended for running general VMs but specifically for gateway solutions.
+This guide provides step-by-step instructions for setting up a ThreeFold Web Gateway on Digital Ocean. A web gateway enables 3Nodes without public IPv4 addresses to provide publicly accessible services by bridging them with the public IPv4 internet.
+
+**Key Use Case**: Farmers with IPv4 addresses can provide gateway services, allowing users to deploy workloads on 3Nodes without expensive public IPv4 addresses while still making them accessible from the public internet.
+
+> 📖 **For architectural details and concepts**, see the [Web Gateway Architecture](./web_gateway_architecture) guide.
+
+### Why Use Digital Ocean for Web Gateways?
+
+- **Global Presence**: Data centers worldwide for optimal gateway placement
+- **Reliable IPv4**: Stable public IP addresses essential for gateway functionality
+- **Performance**: High-bandwidth connections suitable for gateway traffic
+- **Cost-Effective**: Competitive pricing for gateway infrastructure
 
 ## Prerequisites
 
@@ -204,11 +215,30 @@ After successful boot:
 - Keep the underlying Ubuntu system updated for security patches
 - Monitor system logs for any unusual activity
 
-## Next Steps
-Once your ZeroOS gateway is running:
-1. Configure workload exposure rules
-2. Set up monitoring and alerting
-3. Document your specific network configuration
-4. Test connectivity from other ZeroOS nodes
+## Gateway Usage for Users
 
-This completes the Digital Ocean ZeroOS setup process. The system should now be ready to serve as a gateway for your ZeroOS infrastructure.
+Once your web gateway is operational, users can leverage it to expose their workloads:
+
+### For Workload Deployment
+1. **Deploy workloads** on any 3Nodes (IPv4 not required)
+2. **Select your gateway** from available options in the ThreeFold Dashboard
+3. **Configure routing** to connect gateway to workload via Mycelium network
+4. **Access applications** through the gateway's public IPv4 endpoint
+
+### Gateway Benefits for Users
+- **Cost Savings**: No need for expensive IPv4 addresses on workload nodes
+- **Global Access**: Workloads become accessible from anywhere on the internet
+- **Secure Communication**: Internal traffic encrypted via Mycelium network
+- **Flexible Deployment**: Place workloads on optimal 3Nodes regardless of IP availability
+
+## Next Steps
+
+Once your ZeroOS gateway is running:
+
+1. **Configure gateway domains** and certificates as needed
+2. **Advertise your gateway** to the ThreeFold community
+3. **Monitor gateway performance** and connectivity
+4. **Consider implementing backup** gateway solutions for redundancy
+5. **Set up billing/usage tracking** if offering commercial gateway services
+
+This completes the Digital Ocean web gateway setup process. Your gateway is now ready to bridge IPv4 internet traffic to ThreeFold's Mycelium network, enabling users to deploy globally accessible applications without requiring public IP addresses on their workload nodes.

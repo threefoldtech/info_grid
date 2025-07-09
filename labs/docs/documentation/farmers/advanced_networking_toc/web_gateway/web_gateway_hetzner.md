@@ -7,7 +7,22 @@ sidebar_position: 2
 
 ## Overview
 
-This guide covers setting up ZeroOS on Hetzner Cloud VMs, primarily for gateway purposes. Hetzner offers reliable infrastructure with good bandwidth and public IPs worldwide, making it excellent for ZeroOS gateways. However, there are some limitations due to nested virtualization support.
+This guide provides step-by-step instructions for setting up a ThreeFold Web Gateway on Hetzner Cloud. A web gateway enables 3Nodes without public IPv4 addresses to provide publicly accessible services by bridging them with the public IPv4 internet.
+
+**Key Use Case**: Farmers with IPv4 addresses can provide gateway services, allowing users to deploy workloads on 3Nodes without expensive public IPv4 addresses while maintaining global accessibility.
+
+> 📖 **For architectural details and concepts**, see the [Web Gateway Architecture](./web_gateway_architecture) guide.
+
+### Why Use Hetzner for Web Gateways?
+
+- **European Focus**: Excellent connectivity across Europe and globally
+- **Cost-Effective**: Competitive pricing for IPv4 addresses and bandwidth
+- **Reliable Infrastructure**: High-quality data centers with good uptime
+- **Flexible Configurations**: Various server sizes suitable for different gateway loads
+
+### Current Limitations
+
+⚠️ **Important**: Hetzner Cloud currently does not support nested virtualization, which limits full ZeroOS functionality. This guide documents the setup process for future reference when this limitation is resolved.
 
 ## Prerequisites
 
@@ -232,8 +247,36 @@ Keep track of:
 3. Community solutions and workarounds
 4. Alternative cloud providers with nested virtualization support
 
+## Gateway Usage for Users (When Available)
+
+Once Hetzner resolves nested virtualization limitations and your web gateway becomes operational, users will be able to leverage it:
+
+### For Workload Deployment
+1. **Deploy workloads** on any 3Nodes (IPv4 not required)
+2. **Select your gateway** from available options in the ThreeFold Dashboard
+3. **Configure routing** to connect gateway to workload via Mycelium network
+4. **Access applications** through the gateway's public IPv4 endpoint
+
+### Gateway Benefits for Users
+- **Cost Savings**: No need for expensive IPv4 addresses on workload nodes
+- **European Connectivity**: Excellent performance for European users
+- **Secure Communication**: Internal traffic encrypted via Mycelium network
+- **Flexible Deployment**: Place workloads on optimal 3Nodes regardless of IP availability
+
 ## Conclusion
 
-While ZeroOS cannot currently run fully on Hetzner Cloud due to nested virtualization limitations, this guide provides the foundation for when this support becomes available. The custom iPXE approach works correctly up to the virtualization step, indicating that the networking and boot process are properly configured.
+While ZeroOS cannot currently run fully on Hetzner Cloud due to nested virtualization limitations, this guide provides the complete foundation for when this support becomes available. The custom iPXE approach works correctly up to the virtualization step, indicating that the networking and boot process are properly configured.
 
-**Recommendation**: Monitor both Hetzner Cloud and ZeroOS development for updates that resolve the nested virtualization requirement, or consider alternative cloud providers that support nested virtualization for immediate ZeroOS gateway deployment.
+### Current Status
+- **Setup Process**: Fully documented and tested
+- **Network Configuration**: Verified working
+- **Boot Process**: Successfully configured
+- **Limitation**: Nested virtualization requirement blocks full functionality
+
+### Next Steps
+1. **Monitor Hetzner updates** for nested virtualization support
+2. **Track ZeroOS development** for potential workarounds
+3. **Consider alternative providers** for immediate gateway deployment
+4. **Prepare for quick deployment** once limitations are resolved
+
+**Recommendation**: This guide positions you to quickly deploy a Hetzner-based web gateway as soon as the nested virtualization limitation is resolved, providing cost-effective European gateway services to the ThreeFold community.
