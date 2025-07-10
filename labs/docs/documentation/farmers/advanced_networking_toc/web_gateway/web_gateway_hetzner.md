@@ -3,284 +3,119 @@ title: "Web Gateway - Hetzner"
 sidebar_position: 2
 ---
 
-# Set Up a ThreeFold Web Gateway on Hetzner Cloud
+# Web Gateway on Hetzner Cloud
 
 ## Overview
-
-This guide shows how to set up a ThreeFold Web Gateway on Hetzner Cloud.
-
-**Problem Solved**: If your workload doesn't have public IPv4 access, it's not reachable from the public internet.
-
-**Solution**: Web gateways are 3Nodes with public IPv4 addresses that act as reverse proxies, making any workload accessible from the regular internet.
-
-**Key Use Case**: Farmers provide gateway services using their public IPv4 addresses, allowing users to deploy workloads on any 3Node while maintaining global accessibility.
-
-> 📖 **For architectural details and concepts**, see the [Web Gateway Architecture](./web_gateway_architecture) guide.
-
-### Why Use Hetzner for Web Gateways?
-
-- **European Focus**: Excellent connectivity across Europe and globally
-- **Cost-Effective**: Competitive pricing for public IPv4 addresses and bandwidth
-- **Reliable Infrastructure**: High-quality data centers with good uptime
-- **Flexible Configurations**: Various server sizes suitable for different gateway loads
-
-### Current Limitations
-
-⚠️ **Important**: Hetzner Cloud currently does not support nested virtualization, which limits full Zero OS functionality. This guide documents the setup process for future reference when this limitation is resolved.
+This guide explains how to deploy a ThreeFold Zero-OS (ZOS) gateway inside a Hetzner Cloud VM. While this setup isn't recommended for general workloads or ThreeFold VMs, it's useful for gateway deployments due to Hetzner's reliable infrastructure and good bandwidth availability.
 
 ## Prerequisites
+- Hetzner Cloud account with completed KYC and payment method
+- Created Hetzner project
+- SSH key (optional but recommended)
+- Basic Linux command line knowledge
 
-- Hetzner Cloud account with payment method configured
-- SSH key pair for secure access
-- Basic Linux/command line knowledge
-- Understanding of iPXE and network booting concepts
+## Hardware Requirements
+- Minimum 4GB RAM
+- 100GB SSD storage
+- Public IPv4 address
 
-## Important Limitations
+## Step 1: Create Hetzner Cloud VM
 
-⚠️ **Critical**: Hetzner Cloud does not support nested virtualization, which means Zero OS will encounter errors during the virtualization setup phase. This guide documents the process for educational purposes and future reference when this limitation is resolved.
-
-## Step 1: Create Hetzner Cloud Server
-
-### 1.1 Server Configuration
 1. Log into Hetzner Cloud Console
-2. Create a new project (if needed)
-3. Click "Add Server"
-4. Choose your preferred location (e.g., Hillsboro, Oregon)
-5. Select server type:
-   - **CPU**: Shared vCPU (sufficient for gateway)
-   - **RAM**: 4GB minimum (Zero OS requires 2GB+, but 4GB recommended)
-   - **Storage**: Default storage + additional volume
+2. Create a new server with these specifications:
+   - Location: Choose your preferred datacenter
+   - OS Image: Any (will be overwritten)
+   - Server Type: CPX21 (4GB RAM) or higher
+   - Storage: 
+     - Primary disk: 80GB (default)
+     - Additional volume: 100GB
+   - Networking:
+     - Enable Public IPv4
+     - IPv6 optional
+   - File system: Any (will be overwritten)
 
-### 1.2 Network Configuration
-- ✅ **Public IPv4**: Required (this is the main purpose)
-- ✅ **Public IPv6**: Optional but doesn't hurt
-- ❌ **Private Networks**: Not needed for this setup
+## Step 2: Boot into Rescue Mode
 
-### 1.3 Additional Options
-- **SSH Keys**: Add your public key (recommended)
-- **Volumes**: Add additional volume (minimum 80GB for Zero OS requirements)
-
-## Step 2: Prepare Build Environment
-
-### 2.1 Enable Rescue Mode
-1. In Hetzner Console, go to your server
+1. Select the server in Hetzner Console
 2. Click "Rescue" tab
-3. Enable rescue mode with Linux 64-bit
-4. Power cycle the server
-5. Server will boot into Debian rescue environment
-
-### 2.2 Connect to Rescue System
+3. Enable rescue mode and power cycle
+4. Connect via SSH:
 ```bash
-ssh root@[your-server-ip]
+ssh root@<your-server-ip>
 ```
 
-### 2.3 Install Required Dependencies
+## Step 3: Prepare Boot Image
+
+1. Clone the ThreeFold IPXE fork:
 ```bash
-apt update
-apt install -y liblzma-dev git build-essential wget
+git clone https://github.com/threefold/ipxe.git
 ```
 
-## Step 3: Build Custom iPXE
-
-### 3.1 Why Custom iPXE is Required
-The standard bootstrap service doesn't work properly with Hetzner's environment. We need to build a custom iPXE with embedded boot script for network connectivity to work correctly.
-
-### 3.2 Clone and Build iPXE
+2. Install required package:
 ```bash
-# Clone the Zero OS iPXE fork
-git clone https://github.com/threefoldtech/ipxe.git
-cd ipxe
+apt install liblzma-dev
+```
 
-# Build the basic components
+3. Build IPXE:
+```bash
+cd ipxe/src
 make
-
-# This prepares the build environment for the next steps
-make bin/ipxe
 ```
 
-### 3.3 Generate Bootstrap Configuration
-1. Visit [bootstrap.grid.tf](https://bootstrap.grid.tf)
-2. Switch to "Expert Mode"
+## Step 4: Generate Boot Script
+
+1. Visit https://bootstrap.grid.tf
+2. Enter Expert Mode
 3. Configure:
-   - **Version**: `v3-light` (optimized for cloud environments)
-   - **Kernel**: Select "v3-light generic" from the list
-   - **Format**: Choose "iPXE boot script"
-4. Click "Generate"
-5. Copy the generated URL (format: `https://bootstrap.grid.tf/ipxe/...`)
+   - Farm ID: Your farm ID
+   - Network: mainnet
+   - Extra kernel arguments: `version=v3light`
+   - Kernel: `zos-v3light-generic`
+   - Format: IPXE Boot Script
+4. Generate IPXE boot script
+5. Copy the generated URL and preprend  `https://bootstrap.grid.tf`
 
-### 3.4 Download and Embed Boot Script
+## Step 5: Create Boot Image
+
+1. Download the boot script using the generated URL from above:
 ```bash
-# Download the iPXE boot script
-wget -O boot.ipxe [paste-your-bootstrap-url-here]
-
-# Build iPXE with embedded script
-make bin/ipxe.usb EMBED=boot.ipxe
+wget <bootstrap-url> -O zos.ipxe
 ```
 
-This creates a USB-bootable image with the iPXE script embedded.
-
-## Step 4: Write Boot Image to Disk
-
-### 4.1 Identify Target Disk
+2. Create USB boot image:
 ```bash
-lsblk
-```
-- Identify your additional volume (usually `/dev/sdb`)
-- This will be used as the boot disk
-
-### 4.2 Write iPXE Image
-```bash
-# Write the iPXE USB image to the volume
-dd if=bin/ipxe.usb of=/dev/sdb bs=1M status=progress
-
-# Verify the write
-sync
+make bin/ipxe.usb EMBED=zos.ipxe
 ```
 
-### 4.3 Set Boot Priority
-In Hetzner Console:
-1. Go to server settings
-2. Ensure the additional volume is set as primary boot device
-3. Or configure BIOS/UEFI to boot from the correct disk
+## Step 6: Write Boot Image to Disk
 
-## Step 5: Boot Process
-
-### 5.1 Exit Rescue Mode and Reboot
-1. In Hetzner Console, disable rescue mode
-2. Power cycle the server
-3. Monitor boot process via console
-
-### 5.2 Expected Boot Sequence
-1. Server boots from the iPXE image on additional volume
-2. iPXE loads and displays boot menu
-3. Zero OS kernel downloads (this is usually fast on Hetzner)
-4. Zero OS begins initialization process
-5. ❌ **Expected Failure**: Process will fail at virtualization step due to nested virtualization limitation
-
-## Step 6: Network Information Gathering
-
-### 6.1 Get Network Configuration
-Since Zero OS won't fully boot, gather network info from rescue mode:
-
+1. Wipe the disks on the server (e.g. with `sdb`)
 ```bash
-# Boot back into rescue mode to get network details
-ip addr show
-ip route show
+wipefs -af /dev/sdb
 ```
 
-### 6.2 Required Information for Future Use
-Document these values for when Zero OS fully supports Hetzner:
-- **IP Address**: Server's public IP
-- **Gateway**: Default gateway IP
-- **Netmask**: Network mask (usually /32 for Hetzner)
-- **DNS Servers**: Hetzner's DNS or your preferred DNS
-
-## Current Status and Limitations
-
-### What Works
-✅ Custom iPXE builds and boots successfully  
-✅ Network connectivity during boot process  
-✅ Zero OS kernel downloads and starts initialization  
-✅ Basic system components load  
-
-### What Doesn't Work
-❌ Virtualization components fail due to nested virtualization limitation  
-❌ Zero OS cannot complete full initialization  
-❌ Gateway functionality not available  
-
-## Alternative Approaches
-
-### Option 1: Custom ISO (Untested)
-Hetzner supports custom ISO mounting through support tickets:
-1. Build custom ISO with embedded iPXE
-2. Submit ISO to Hetzner support for mounting
-3. Boot from custom ISO
-4. **Status**: Not yet tested, requires support ticket process
-
-### Option 2: Wait for Nested Virtualization
-Monitor Hetzner Cloud updates for nested virtualization support:
-- Check Hetzner Cloud changelog regularly
-- Test periodically as infrastructure updates roll out
-
-## Future Configuration (When Working)
-
-### Network Setup
-Once Zero OS boots successfully:
+2. Write the boot image:
 ```bash
-# Network configuration in Zero OS dashboard
-IP Address: [server-public-ip]
-Gateway: [gateway-from-rescue-mode]
-Netmask: /32 (typical for Hetzner)
-DNS: 8.8.8.8, 1.1.1.1 (or Hetzner DNS)
+dd if=bin/ipxe.usb of=/dev/sda
 ```
 
-### Gateway Configuration
-1. Set public configuration in Zero OS dashboard
-2. Configure domain and DNS settings
-3. Set up workload exposure rules
-4. Test connectivity from other Zero OS nodes
+3. Reboot
 
-## Troubleshooting
-
-### Build Issues
 ```bash
-# If iPXE build fails, ensure dependencies are installed
-apt install -y liblzma-dev build-essential
-
-# Clean and rebuild if necessary
-make clean
-make bin/ipxe.usb EMBED=boot.ipxe
+reboot
 ```
 
-### Boot Issues
-- Verify boot order in server settings
-- Check that iPXE image was written correctly to disk
-- Use Hetzner console to monitor boot process
-- Ensure rescue mode is disabled before testing boot
+You can then go to the Hetzner console and see the Z-OS image loading. On this page, you can see the gateway IP address:
 
-### Network Issues
-- Verify bootstrap URL is accessible
-- Check that iPXE script was embedded correctly
-- Test network connectivity from rescue mode
+```
+net0/ip
+net0/dns
+net0/gateway
+```
 
-## Monitoring Progress
+## Next Step
 
-Keep track of:
-1. Hetzner Cloud feature updates
-2. Zero OS compatibility improvements
-3. Community solutions and workarounds
-4. Alternative cloud providers with nested virtualization support
+Then you can follow the steps in the manual to properly set your public configuration and DNS.
 
-## Gateway Usage for Users (When Available)
-
-Once Hetzner resolves nested virtualization limitations and your web gateway becomes operational, users will be able to leverage it:
-
-### For Workload Deployment
-1. **Deploy workloads** on any 3Nodes (public IPv4 not required)
-2. **Select your gateway** from available options in the ThreeFold Dashboard
-3. **Configure routing** to connect gateway to workload via Mycelium network
-4. **Access applications** through the gateway's public IPv4 endpoint
-
-### Gateway Benefits for Users
-- **Cost Savings**: No need for expensive public IPv4 addresses on workload nodes
-- **European Connectivity**: Excellent performance for European users
-- **Secure Communication**: Internal traffic encrypted via Mycelium network
-- **Flexible Deployment**: Place workloads on optimal 3Nodes regardless of IP availability
-
-## Conclusion
-
-While Zero OS cannot currently run fully on Hetzner Cloud due to nested virtualization limitations, this guide provides the complete foundation for when this support becomes available. The custom iPXE approach works correctly up to the virtualization step, indicating that the networking and boot process are properly configured.
-
-### Current Status
-- **Setup Process**: Fully documented and tested
-- **Network Configuration**: Verified working
-- **Boot Process**: Successfully configured
-- **Limitation**: Nested virtualization requirement blocks full functionality
-
-### Next Steps
-1. **Monitor Hetzner updates** for nested virtualization support
-2. **Track Zero OS development** for potential workarounds
-3. **Consider alternative providers** for immediate gateway deployment
-4. **Prepare for quick deployment** once limitations are resolved
-
-**Recommendation**: This guide positions you to quickly deploy a Hetzner-based web gateway as soon as the nested virtualization limitation is resolved, providing cost-effective European gateway services to the ThreeFold community.
+- [Set Up the Public Config](../../../dashboard/farms/your_farms)
+- [Set Up a Gateway Domain](../gateway_domain.md)

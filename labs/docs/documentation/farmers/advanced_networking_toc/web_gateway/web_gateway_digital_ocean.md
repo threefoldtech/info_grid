@@ -3,246 +3,141 @@ title: "Web Gateway - Digital Ocean"
 sidebar_position: 1
 ---
 
-# Set Up a ThreeFold Web Gateway on Digital Ocean
-
 ## Overview
-
-This guide shows how to set up a ThreeFold Web Gateway on Digital Ocean. 
-
-**Problem Solved**: If your workload doesn't have public IPv4 access, it's not reachable from the public internet.
-
-**Solution**: Web gateways are 3Nodes with public IPv4 addresses that act as reverse proxies, making any workload accessible from the regular internet.
-
-**Key Use Case**: Farmers provide gateway services using their public IPv4 addresses, allowing users to deploy workloads on any 3Node while still making them publicly accessible.
-
-> 📖 **For architectural details and concepts**, see the [Web Gateway Architecture](./web_gateway_architecture) guide.
-
-### Why Use Digital Ocean for Web Gateways?
-
-- **Global Presence**: Data centers worldwide for optimal gateway placement
-- **Reliable IPv4**: Stable public IP addresses essential for gateway functionality
-- **Performance**: High-bandwidth connections suitable for gateway traffic
-- **Cost-Effective**: Competitive pricing for gateway infrastructure
+This guide demonstrates how to deploy a Zero-OS (ZOS) gateway node inside a DigitalOcean virtual machine. While this setup isn't ideal for running general workloads, it's suitable for creating gateway nodes to expose services running on bare metal Zero-OS nodes.
 
 ## Prerequisites
+- Digital Ocean account
+- SSH key pair
+- Domain name for gateway configuration
+- Minimum 4GB RAM droplet size
+- Additional block storage volume (100GB recommended)
 
-- Digital Ocean account with billing set up
-- SSH key pair for secure access
-- Basic understanding of Linux command line
-- Domain name for DNS configuration (optional but recommended)
+## Step 1: Prepare Custom Image
+1. Log into DigitalOcean dashboard
+2. Navigate to Create > Droplets
+3. Select Region and Datacenter
+4. Make sure you have a volume
+5. Click "Custom Image" (for THCP)
+6. Click "Upload Image"
+7. Select "Import via URL" and use the Ubuntu Cloud image URL:
+```
+https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img
+```
+8. Set distribution type as "Ubuntu"
+9. Choose same region as before for step above
+10 . Click "Upload Image"
 
-## Step 1: Create a Digital Ocean Droplet
+Then we go back to create the droplet now thatqw can select our custom image.
 
-### 1.1 Initial Setup
-1. Log into your Digital Ocean dashboard
-2. Create a new project or use an existing one
-3. Click "Create" → "Droplets"
+## Step 2: Create Droplet
+1. Click "Create Droplet"
+2. Select your region
+3. Under "Choose an image", select "Custom Images"
+4. Select your uploaded Ubuntu image
+5. Choose droplet size:
+   - Regular SSD (not Premium)
+   - Minimum 4GB RAM
+6. Add block storage:
+   - 100GB volume
+   - Select "Manually Format & Mount"
+7. Add/select your SSH key
+8. Create droplet
 
-### 1.2 Choose Region and Datacenter
-- Select a region that supports volumes (some regions don't support volumes)
-- Verify the region shows "Volumes available" 
-- Example: Choose regions like SFO3 which support both sizes and volumes
+## Step 3: Prepare the server
+1. SSH into your droplet:
+```bash
+ssh root@<droplet-ip>
+```
 
-### 1.3 Custom Image Setup
-⚠️ **Important**: You must use a custom image to get DHCP support. Digital Ocean's default images won't provide DHCP.
+1. Wipe the volume on the server (e.g. with `sda`)
+```bash
+wipefs -af /dev/sda
+```
 
-1. Click "Custom images" tab
-2. If this is your first time, click "Upload Image"
-3. Select "Import via URL"
-4. Go to [Ubuntu Cloud Images](https://cloud-images.ubuntu.com/)
-5. Navigate to current release → AMD64 → find the `.img` file
-6. Right-click and copy the link address
-7. Paste the URL in Digital Ocean's import field
-8. Select the same region and datacenter as your droplet
-9. Add a distribution label (optional but helpful)
-10. Click "Upload Image"
+## Step 4: Generate Boot Script
 
-### 1.4 Droplet Configuration
-- **Size**: Choose at least 4GB RAM (Zero OS requires minimum 2GB, but 2GB instances often don't pass the threshold)
-- **Storage**: Add a volume with minimum 80GB (Zero OS requires minimum disk space)
-- **Authentication**: Add your SSH key (recommended) or use password
-- **Monitoring**: Enable if desired
+1. Visit https://bootstrap.grid.tf
+2. Enter Expert Mode
+3. Configure:
+   - Farm ID: Your farm ID
+   - Network: mainnet
+   - Extra kernel arguments: `version=v3light`
+   - Kernel: `zos-v3light-generic`
+   - Format: IPXE Boot Script
+4. Generate IPXE boot script
+5. Copy the generated URL and preprend  `https://bootstrap.grid.tf`
 
-## Step 2: Prepare the System
+## Step 5: Set IPXE loader
 
-### 2.1 Initial System Setup
-1. SSH into your new droplet
-2. Check available disks:
-   ```bash
-   lsblk
-   ```
-   - `sda` = main system volume
-   - `sdb` = additional volume you added
-
-### 2.2 Prepare the Boot Volume
-1. Create boot directory:
-   ```bash
-   mkdir -p /boot
-   ```
-
-2. Mount the additional volume:
-   ```bash
-   mount /dev/sdb /boot
-   ```
-
-## Step 3: Download Zero OS Bootstrap
-
-### 3.1 Get Bootstrap Link
-1. Visit [bootstrap.grid.tf](https://bootstrap.grid.tf)
-2. Switch to "Expert Mode"
-3. Configure the following:
-   - **Version**: `v3-light` (optimized for cloud environments)
-   - **Kernel**: Choose v3-light generic from the list
-   - **Format**: Select "EFI" format
-
-4. Click "Generate" and copy the download link
-
-### 3.2 Download Bootstrap
+2. Download Zero-OS bootstrap:
 ```bash
 cd /boot
-wget [paste-your-bootstrap-link-here]
+wget <bootstrap-url> -O zos.iso
 ```
 
-### 3.3 Create iPXE Script
-Create a simple iPXE script for network booting:
+3. Extract the iPXE loader:
 ```bash
-# Create iPXE script
-cat > /boot/boot.ipxe << 'EOF'
-#!ipxe
-# Zero OS iPXE boot script
-# Replace with your actual bootstrap URL
-chain [your-bootstrap-url]
-EOF
+mount -o loop zos.iso /mnt
+cp /mnt/ipxe.lkrn /boot
 ```
 
-## Step 4: Configure GRUB Bootloader
-
-### 4.1 Edit GRUB Custom Configuration
+## Step 6: Configure GRUB
+1. Edit the custom GRUB configuration:
 ```bash
-nano /etc/grub.d/40_custom
+vim /etc/grub.d/40_custom
 ```
 
-Add the following entry (replace `hd0,16` with your actual boot partition):
-```bash
-#!/bin/sh
-exec tail -n +3 $0
-# This file provides an easy way to add custom menu entries.
-
-menuentry 'Zero OS Network Boot' {
-    insmod part_gpt
-    insmod fat
-    set root='hd0,gpt16'  # Adjust based on your boot partition
-    chainloader /boot.ipxe
+2. Add the following entry:
+```
+menuentry 'ZeroOS' --id zos {
+    root=(hd0,16)
+    linux16 /ipxe.lkrn
 }
 ```
 
-### 4.2 Configure GRUB Defaults
-Edit the main GRUB configuration:
+3. Configure GRUB settings file:
 ```bash
-nano /etc/default/grub
+vim /etc/default/grub.d/50-cloudimg-settings.cfg
 ```
 
-Modify these settings:
-```bash
-# Set timeout to 30 seconds
+4. Set the following parameters:
+```
 GRUB_TIMEOUT=30
-
-# Set default boot entry to Zero OS
-GRUB_DEFAULT="Zero OS Network Boot"
 ```
 
-### 4.3 Update GRUB
+3. Configure GRUB default file:
+```bash
+vim /etc/default/grub
+```
+
+4. Set the following parameters:
+```
+GRUB_DEFAULT=zos
+GRUB_TIMEOUT_STYLE=menu
+```
+
+5. Update GRUB:
 ```bash
 update-grub
 ```
 
-## Step 5: Network Configuration
+## Step 7: Configure Public Network
 
-### 5.1 Get Network Information
-From Digital Ocean dashboard:
-1. Go to your droplet details
-2. Note down:
-   - Public IPv4 address
-   - Gateway address
-   - Netmask (usually /20 or /24)
-
-### 5.2 Configure Zero OS Network (After Boot)
-Once Zero OS boots successfully:
-1. Access the Zero OS dashboard
-2. Navigate to Network settings
-3. Enter the public IP configuration:
-   - **IP Address**: Your droplet's public IP
-   - **Gateway**: Gateway from droplet details
-   - **Netmask**: Usually /20 for Digital Ocean
-   - **DNS**: Configure your domain settings
-
-## Step 6: Boot and Verify
-
-### 6.1 Reboot System
-```bash
-reboot
+- On Digital Ocean droplet page, click "Access" in the left sidebar and then "Launch Recovery Console"
+- Select Zos to see the Z-OS screen 
+- On this page, you can see the gateway IP address:
+```
+net0/ip
+net0/dns
+net0/gateway
 ```
 
-### 6.2 Monitor Boot Process
-1. Use Digital Ocean's recovery console to watch the boot process
-2. You should see the GRUB menu with Zero OS option selected by default
-3. Zero OS will download and boot (this may take several minutes)
+To see the node public IPV4 address and web gateway address, go to the Digital Ocean droplet page and click on the sidebar item "Network".
 
-### 6.3 Post-Boot Configuration
-After successful boot:
-1. Set up public configuration in Zero OS dashboard
-2. Configure DNS settings for your domain
-3. Reboot the VM after configuration changes
-4. Verify network connectivity and gateway functionality
+## Next Step
 
-## Important Notes
+Then you can follow the steps in the manual to properly set your public configuration and DNS.
 
-### System Requirements
-- **RAM**: Minimum 4GB (2GB often insufficient)
-- **Storage**: Minimum 80GB additional volume
-- **Network**: Public IPv4 required for gateway functionality
-
-### Limitations
-- IPv6 is not supported in this configuration
-- This setup is optimized for gateway nodes, not general VM workloads
-- Zero OS Light version is specifically designed for cloud environments
-
-### Troubleshooting
-- If boot fails, use Digital Ocean's recovery console to access GRUB menu
-- Select Ubuntu option to return to the base system for debugging
-- Check GRUB configuration if Zero OS doesn't appear in boot menu
-- Verify bootstrap URL is accessible and correct
-
-## Security Considerations
-- Always use SSH keys instead of passwords when possible
-- Configure firewall rules appropriate for your gateway use case
-- Keep the underlying Ubuntu system updated for security patches
-- Monitor system logs for any unusual activity
-
-## Gateway Usage for Users
-
-Once your web gateway is operational, users can leverage it to expose their workloads:
-
-### For Workload Deployment
-1. **Deploy workloads** on any 3Nodes (public IPv4 not required)
-2. **Select your gateway** from available options in the ThreeFold Dashboard
-3. **Configure routing** to connect gateway to workload via Mycelium network
-4. **Access applications** through the gateway's public IPv4 endpoint
-
-### Gateway Benefits for Users
-- **Cost Savings**: No need for expensive public IPv4 addresses on workload nodes
-- **Global Access**: Workloads become accessible from anywhere on the internet
-- **Secure Communication**: Internal traffic encrypted via Mycelium network
-- **Flexible Deployment**: Place workloads on optimal 3Nodes regardless of IP availability
-
-## Next Steps
-
-Once your Zero OS gateway is running:
-
-1. **Configure gateway domains** and certificates as needed
-2. **Advertise your gateway** to the ThreeFold community
-3. **Monitor gateway performance** and connectivity
-4. **Consider implementing backup** gateway solutions for redundancy
-5. **Set up billing/usage tracking** if offering commercial gateway services
-
-This completes the Digital Ocean web gateway setup process. Your gateway is now ready to bridge IPv4 internet traffic to ThreeFold's Mycelium network, enabling users to deploy globally accessible applications without requiring public IP addresses on their workload nodes.
+- [Set Up the Public Config](../../../dashboard/farms/your_farms)
+- [Set Up a Gateway Domain](../gateway_domain.md)
