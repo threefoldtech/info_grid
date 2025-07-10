@@ -11,101 +11,161 @@ ThreeFold's Web Gateway architecture represents a powerful bridge between the tr
 
 This guide explains the architectural concepts, use cases, and benefits of web gateways within the ThreeFold ecosystem.
 
-## Network Architecture Overview
+## ThreeFold Grid Networking Architecture
 
-### The Three-Layer Network Stack
+ThreeFold Grid uses a multi-layer networking approach that enables secure, scalable communication between 3Nodes while providing public internet access through web gateways.
 
-ThreeFold's networking architecture operates on three complementary layers:
+### Core Network Components
 
 ```mermaid
 graph TB
-    A["🌐 IPv4 Internet Layer<br/>Traditional internet users"] 
-    B["🌉 Web Gateway Layer<br/>Bridge & Reverse Proxy"]
-    C["🍄 Mycelium Network Layer<br/>Secure P2P IPv6 Overlay"]
-    D["💻 3Node Workloads<br/>Applications & Services"]
+    A["🌐 IPv4 Internet<br/>Public Internet Users"] 
+    B["🌉 Web Gateway<br/>IPv4 ↔ IPv6 Bridge"]
+    C["🍄 Mycelium Network<br/>IPv6 Overlay (400::/7)"]
+    D["🔒 WireGuard Networks<br/>Private Workload Networks"]
+    E["💻 3Node Workloads<br/>Applications & Services"]
     
     A <--> B
     B <--> C
     C <--> D
+    D <--> E
+    C <--> E
     
     classDef internetClass fill:#3b82f6,stroke:#1d4ed8,stroke-width:2px,color:#ffffff
     classDef gatewayClass fill:#8b5cf6,stroke:#7c3aed,stroke-width:2px,color:#ffffff
     classDef myceliumClass fill:#10b981,stroke:#059669,stroke-width:2px,color:#ffffff
+    classDef wireguardClass fill:#f59e0b,stroke:#d97706,stroke-width:2px,color:#ffffff
     classDef nodeClass fill:#ef4444,stroke:#dc2626,stroke-width:2px,color:#ffffff
     
     class A internetClass
     class B gatewayClass
     class C myceliumClass
-    class D nodeClass
+    class D wireguardClass
+    class E nodeClass
 ```
 
-1. **IPv4 Layer**: Traditional internet connectivity for backward compatibility
-2. **Mycelium Layer**: Advanced IPv6 overlay network for secure P2P communication
-3. **Web Gateway Layer**: Bridge between IPv4 and Mycelium networks
+### Network Layer Breakdown
 
-### Mycelium: The Foundation Network
+1. **IPv4/IPv6 Protocols**: Standard internet protocols for connectivity
+2. **Mycelium Network**: IPv6 overlay network connecting all 3Nodes
+3. **WireGuard Networks**: Private encrypted networks for workload isolation
+4. **Web Gateway**: Protocol bridge enabling IPv4 internet access to IPv6 workloads
 
-Mycelium is ThreeFold's revolutionary IPv6 overlay network that serves as the primary networking layer for 3Nodes:
+### Mycelium: Universal IPv6 Overlay Network
+
+Mycelium is an open-source IPv6 overlay network that anyone can use on Linux, Mac, Windows, Android, iOS, and more. In ThreeFold Grid, it enables secure communication between 3Nodes.
+
+#### Network Architecture:
+- **Public Nodes as Servers**: Public backbone nodes act as servers/relays
+- **All Participants as Clients**: Every device (including 3Nodes) connects as clients to public nodes
+- **Public Node Mesh**: Public nodes connect to each other in a P2P mesh
+- **Multiple Protocols**: Supports QUIC, TCP, and other communication methods
+
+#### Core Capabilities:
+- **Universal Connectivity**: Any device can join the Mycelium network
+- **IPv6 Addressing**: Uses the 400::/7 IPv6 range for consistent addressing
+- **End-to-End Encryption**: All traffic is encrypted by default
+- **Cross-Platform**: Available on all major operating systems and mobile platforms
+- **NAT-Friendly**: Reaches devices behind NAT using public node relays
+- **Self-Healing**: Network automatically adapts to failures and topology changes
+
+#### Future Development:
+- **QUIC Hole Punching**: Direct P2P connections without relay nodes for NAT'd networks
+- **Reduced Relay Dependency**: Direct communication between NAT'd devices
+
+> Learn more at [threefold.info/mycelium](https://threefold.info/mycelium)
+
+### WireGuard: Private Workload Networks
+
+WireGuard provides private, encrypted networks for workload isolation and secure communication between specific nodes.
+
+#### Network Architecture:
+- **Gateway as Server**: Web gateways act as WireGuard servers
+- **Nodes as Clients**: NAT'd 3Nodes connect as clients to the gateway
+- **User Machines as Clients**: Your machine also connects as a client to access VMs
+- **No Reverse Connections**: Gateway doesn't try to connect back to client machines
 
 #### Key Features:
-- **IPv6 Addressing**: Uses the 400::/7 IPv6 range, providing virtually unlimited address space
-- **End-to-End Encryption**: All traffic is encrypted by default between nodes
-- **Identity-Based Networking**: Each node's IPv6 address is cryptographically linked to its private key
-- **NAT Traversal**: Automatically establishes P2P connections without complex protocols
-- **Locality-Aware Routing**: Intelligently finds the shortest path between nodes
-- **Automatic Rerouting**: Self-healing network that adapts to failures and congestion
-- **Decentralized Architecture**: No single points of failure or centralized control
+- **Private Networks**: Create isolated networks for specific workloads
+- **Cross-Node Communication**: Secure communication between workloads on different 3Nodes
+- **Additional Encryption**: Extra security layer on top of Mycelium
+- **Flexible Topology**: Support for various network configurations
+- **High Performance**: Minimal overhead for encrypted communication
 
-#### Benefits Over Traditional Networks:
-- **No NAT Issues**: Direct P2P communication without port forwarding
-- **Built-in Security**: Encryption and authentication at the network layer
-- **Global Scalability**: Can scale to billions of devices
-- **Resilience**: Distributed routing with automatic failover
-- **Privacy**: End-to-end encryption prevents traffic analysis
+#### Benefits:
+- **Security**: Workload isolation and encrypted communication
+- **Privacy**: Private networks separate from public Mycelium traffic
+- **Flexibility**: Custom network topologies for complex applications
+- **Scalability**: Efficient multi-node application architectures
 
-## Web Gateway Role and Function
+## The Web Gateway Solution
 
-### What is a Web Gateway?
+**Key Problem**: If you host a workload on a 3Node without public IPv4 access, it's not reachable from the public internet.
 
-A Web Gateway is a specialized 3Node that enables public internet access for workloads running on 3Nodes without public IPv4 addresses. It acts as a bridge between:
-- **Internal**: 3Nodes without IPv4 addresses running workloads
-- **External**: Public IPv4 internet users who need to access those workloads
+**Web Gateway Solution**: Provides public IPv4 internet access to workloads that don't have public IPv4 connectivity.
 
-### Gateway Architecture
+### Why Web Gateways Are Needed
+
+1. **Public Access**: Makes workloads accessible from the regular internet
+2. **Cost Efficiency**: Public IPv4 addresses are expensive - only gateways need them
+3. **Flexibility**: Deploy workloads on any 3Node regardless of network setup
+4. **Simplicity**: End users access services normally via standard web browsers
+
+## How Web Gateways Work
+
+### Network Flexibility
+
+ThreeFold Grid supports flexible network combinations:
+
+- **IPv4 only**: Traditional internet connectivity
+- **IPv6 only**: Using Mycelium network
+- **Mycelium only**: Secure peer-to-peer communication
+- **WireGuard only**: Private encrypted networks
+- **IPv4 + Mycelium**: Public internet + secure overlay
+- **IPv4 + WireGuard**: Public internet + private networks
+- **IPv4 + IPv6 + Mycelium + WireGuard**: Full stack networking
+
+### When You Need a Web Gateway
+
+**Simple rule**: If your workload doesn't have public IPv4 access, but you want it reachable from the public internet, use a web gateway.
+
+### How It Works
+
+A Web Gateway is a 3Node with:
+- **Public IPv4 address**: Accessible from the regular internet
+- **Internal connectivity**: Can reach your workload via available networks (Mycelium, WireGuard, etc.)
+
+The gateway acts as a **reverse proxy**, forwarding internet requests to your workload and returning responses.
+
+### Traffic Flow Example
 
 ```mermaid
-flowchart TD
-    Internet["🌍 Public IPv4 Internet<br/>Users & Applications"]
-    Gateway["🌉 Web Gateway 3Node<br/>• Public IPv4 Address<br/>• Mycelium Connectivity<br/>• Reverse Proxy"]
-    Mycelium["🍄 Mycelium Network<br/>• Encrypted P2P Communication<br/>• IPv6 Overlay (400::/7)<br/>• NAT Traversal"]
-    Node1["💻 3Node A<br/>Web Server<br/>(No Public IPv4)"]
-    Node2["🗄️ 3Node B<br/>Database<br/>(No Public IPv4)"]
-    Node3["⚙️ 3Node C<br/>API Service<br/>(No Public IPv4)"]
+sequenceDiagram
+    participant User as 👤 Internet User
+    participant GW as 🌉 Web Gateway
+    participant My as 🍄 Mycelium Network
+    participant WG as 🔒 WireGuard Network
+    participant App as 💻 3Node Workload
     
-    Internet <--> Gateway
-    Gateway <--> Mycelium
-    Mycelium <--> Node1
-    Mycelium <--> Node2
-    Mycelium <--> Node3
-    
-    classDef internetClass fill:#3b82f6,stroke:#1d4ed8,stroke-width:2px,color:#ffffff
-    classDef gatewayClass fill:#8b5cf6,stroke:#7c3aed,stroke-width:2px,color:#ffffff
-    classDef myceliumClass fill:#10b981,stroke:#059669,stroke-width:2px,color:#ffffff
-    classDef nodeClass fill:#ef4444,stroke:#dc2626,stroke-width:2px,color:#ffffff
-    
-    class Internet internetClass
-    class Gateway gatewayClass
-    class Mycelium myceliumClass
-    class Node1,Node2,Node3 nodeClass
+    User->>GW: HTTP Request (IPv4)
+    Note over GW: Protocol Translation
+    GW->>My: Forward Request (IPv6)
+    My->>WG: Route to Workload Network
+    WG->>App: Deliver to Application
+    App->>WG: Application Response
+    WG->>My: Return via Mycelium
+    My->>GW: Response (IPv6)
+    Note over GW: Protocol Translation
+    GW->>User: HTTP Response (IPv4)
 ```
 
-### How Web Gateways Work
+### Key Advantages
 
-1. **Traffic Reception**: Gateway receives IPv4 requests from public internet users
-2. **Reverse Proxy**: Converts IPv4 requests to communicate with 3Nodes via Mycelium network
-3. **Workload Routing**: Routes requests to target workloads on 3Nodes without public IPv4
-4. **Response Handling**: Receives responses from workload 3Nodes and forwards back to internet users
-5. **Load Balancing**: Can distribute traffic across multiple backend workloads on different 3Nodes
+1. **Universal Access**: Any 3Node workload becomes publicly accessible
+2. **Cost Efficiency**: Only gateway nodes need expensive public IPv4 addresses
+3. **Network Flexibility**: Workloads can be deployed on any 3Node regardless of network setup
+4. **Security**: All internal communication encrypted via Mycelium and WireGuard
+5. **Scalability**: Multiple gateways can serve the same workloads for redundancy
 
 ## Use Cases and Scenarios
 
@@ -216,16 +276,16 @@ flowchart LR
 ### For Users (Gateway Consumers)
 
 **Benefits**:
-- **No Public IPv4 Required**: Deploy workloads without expensive public IPs
+- **Public Internet Access**: Make any workload accessible from the regular internet
+- **Network Flexibility**: Deploy workloads on any 3Node regardless of network setup
 - **Global Reach**: Access to gateways worldwide
-- **Automatic Scaling**: Use multiple gateways for load distribution
-- **Cost Efficiency**: Pay only for gateway usage, not full IPv4 addresses
+- **Cost Efficiency**: Pay only for gateway usage, not expensive public IPv4 addresses
 
 **Usage Process**:
-1. Deploy workloads on any 3Nodes (IPv4 not required)
+1. Deploy workloads on any 3Node (public IPv4 not required)
 2. Select appropriate gateway from available options
-3. Configure gateway routing to workload
-4. Access application via gateway's public endpoint
+3. Configure gateway routing to your workload
+4. Access your application via gateway's public endpoint
 
 ## Technical Implementation
 
@@ -267,28 +327,38 @@ flowchart LR
 
 ### Enhanced Gateway Features
 
-- **Multi-Protocol Support**: Extended support for various network protocols
-- **Advanced Load Balancing**: Intelligent traffic distribution algorithms
-- **Edge Computing**: Gateway-based compute capabilities
-- **CDN Integration**: Content delivery network functionality
+- **Multi-Protocol Support**: Extended support for various network protocols beyond HTTP/HTTPS
+- **Advanced Load Balancing**: Intelligent traffic distribution algorithms with health checking
+- **Edge Computing**: Gateway-based compute capabilities for processing at the edge
+- **CDN Integration**: Content delivery network functionality with caching
 
 ### Mycelium Network Evolution
 
+#### QUIC Hole Punching (In Development)
+- **Direct P2P Communication**: NAT'd devices can connect directly without relay nodes
+- **QUIC Protocol Integration**: Hole punching capabilities for NAT traversal
+- **Reduced Relay Dependency**: Less reliance on public backbone nodes as middlemen
+- **Enhanced Performance**: Lower latency through direct peer-to-peer connections
+- **Improved Scalability**: Reduced bandwidth load on public relay infrastructure
+
+#### Additional Enhancements
 - **Performance Improvements**: Continued optimization of routing algorithms
 - **Mobile Support**: Enhanced support for mobile and IoT devices
 - **Integration Expansion**: Broader ecosystem integration capabilities
+- **Advanced Monitoring**: Better visibility into network performance and health
 
 ## Conclusion
 
-ThreeFold's Web Gateway architecture represents a sophisticated solution to the challenge of bridging traditional IPv4 internet with next-generation decentralized networking. By combining the power of Mycelium's secure, efficient overlay network with strategic IPv4 gateway points, ThreeFold enables:
+ThreeFold Web Gateways solve a simple but important problem: **making workloads accessible from the public internet when they don't have public IPv4 access**.
 
-- **Cost-effective deployment** of internet-accessible applications
-- **Enhanced security** through encrypted internal communications
-- **Global scalability** without IPv4 address limitations
-- **Flexible architecture** supporting diverse use cases
+Key advantages:
+- **Public Internet Access**: Any workload becomes accessible from the regular internet
+- **Cost Efficiency**: Only gateways need expensive public IPv4 addresses
+- **Network Flexibility**: Deploy workloads anywhere, access them everywhere
+- **Simple Setup**: No complex networking configuration required
 
-This architecture positions ThreeFold as a leader in the transition to a more decentralized, secure, and efficient internet infrastructure while maintaining compatibility with existing systems and user expectations.
+For **farmers**, web gateways provide a revenue opportunity by offering gateway services using their public IPv4 addresses.
 
-For farmers, web gateways represent an opportunity to provide valuable infrastructure services and generate revenue from IPv4 investments. For users, they offer a path to deploy globally accessible applications without the complexity and cost of managing public IP addresses directly.
+For **users**, web gateways enable deploying workloads on any 3Node while maintaining public accessibility - without the cost and complexity of managing public IPv4 addresses.
 
-As the Mycelium network continues to mature and expand, web gateways will play an increasingly important role in making decentralized internet infrastructure accessible to mainstream users and applications.
+Web gateways make ThreeFold Grid practical for real-world applications by bridging the gap between decentralized infrastructure and public internet accessibility.

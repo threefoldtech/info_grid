@@ -5,7 +5,11 @@ sidebar_position: 198
 
 # Web Gateway
 
-ThreeFold Web Gateways enable 3Nodes without public IPv4 addresses to provide publicly accessible services. They bridge the public IPv4 internet with 3Node workloads, eliminating the need for expensive public IP addresses on every node.
+ThreeFold Web Gateways solve a simple problem for users: **if your workload doesn't have public IPv4 access, it's not reachable from the public internet**.
+
+As a farmer, you can provide gateway services using your public IPv4 addresses, allowing users to deploy workloads on any 3Node while still making them publicly accessible.
+
+Web gateways are 3Nodes with public IPv4 addresses that act as reverse proxies, making any workload on any 3Node accessible from the regular internet - regardless of the workload's network setup.
 
 ## Documentation
 
@@ -15,7 +19,8 @@ ThreeFold Web Gateways enable 3Nodes without public IPv4 addresses to provide pu
 
 ## Key Benefits
 
-- **Cost Efficiency**: Users deploy workloads without IPv4 requirements
-- **Global Access**: Farmers with IPv4 provide gateway services worldwide
-- **Secure Communication**: Internal traffic encrypted via Mycelium network
-- **Flexible Architecture**: Workloads can be placed on optimal 3Nodes regardless of IP availability
+- **Public Internet Access**: Makes any workload accessible from the regular internet
+- **Cost Efficiency**: Only gateways need expensive public IPv4 addresses
+- **Network Flexibility**: Deploy workloads on any 3Node regardless of network setup
+- **Global Availability**: Farmers worldwide provide gateway services
+- **Simple Setup**: No complex networking configuration required

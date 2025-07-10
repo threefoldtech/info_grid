@@ -7,9 +7,13 @@ sidebar_position: 2
 
 ## Overview
 
-This guide provides step-by-step instructions for setting up a ThreeFold Web Gateway on Hetzner Cloud. A web gateway enables 3Nodes without public IPv4 addresses to provide publicly accessible services by bridging them with the public IPv4 internet.
+This guide shows how to set up a ThreeFold Web Gateway on Hetzner Cloud.
 
-**Key Use Case**: Farmers with public IPv4 addresses can provide gateway services, allowing users to deploy workloads on 3Nodes without expensive public IPv4 addresses while maintaining global accessibility.
+**Problem Solved**: If your workload doesn't have public IPv4 access, it's not reachable from the public internet.
+
+**Solution**: Web gateways are 3Nodes with public IPv4 addresses that act as reverse proxies, making any workload accessible from the regular internet.
+
+**Key Use Case**: Farmers provide gateway services using their public IPv4 addresses, allowing users to deploy workloads on any 3Node while maintaining global accessibility.
 
 > 📖 **For architectural details and concepts**, see the [Web Gateway Architecture](./web_gateway_architecture) guide.
 
@@ -22,7 +26,7 @@ This guide provides step-by-step instructions for setting up a ThreeFold Web Gat
 
 ### Current Limitations
 
-⚠️ **Important**: Hetzner Cloud currently does not support nested virtualization, which limits full ZeroOS functionality. This guide documents the setup process for future reference when this limitation is resolved.
+⚠️ **Important**: Hetzner Cloud currently does not support nested virtualization, which limits full Zero OS functionality. This guide documents the setup process for future reference when this limitation is resolved.
 
 ## Prerequisites
 
@@ -33,7 +37,7 @@ This guide provides step-by-step instructions for setting up a ThreeFold Web Gat
 
 ## Important Limitations
 
-⚠️ **Critical**: Hetzner Cloud does not support nested virtualization, which means ZeroOS will encounter errors during the virtualization setup phase. This guide documents the process for educational purposes and future reference when this limitation is resolved.
+⚠️ **Critical**: Hetzner Cloud does not support nested virtualization, which means Zero OS will encounter errors during the virtualization setup phase. This guide documents the process for educational purposes and future reference when this limitation is resolved.
 
 ## Step 1: Create Hetzner Cloud Server
 
@@ -44,7 +48,7 @@ This guide provides step-by-step instructions for setting up a ThreeFold Web Gat
 4. Choose your preferred location (e.g., Hillsboro, Oregon)
 5. Select server type:
    - **CPU**: Shared vCPU (sufficient for gateway)
-   - **RAM**: 4GB minimum (ZeroOS requires 2GB+, but 4GB recommended)
+   - **RAM**: 4GB minimum (Zero OS requires 2GB+, but 4GB recommended)
    - **Storage**: Default storage + additional volume
 
 ### 1.2 Network Configuration
@@ -54,7 +58,7 @@ This guide provides step-by-step instructions for setting up a ThreeFold Web Gat
 
 ### 1.3 Additional Options
 - **SSH Keys**: Add your public key (recommended)
-- **Volumes**: Add additional volume (minimum 80GB for ZeroOS requirements)
+- **Volumes**: Add additional volume (minimum 80GB for Zero OS requirements)
 
 ## Step 2: Prepare Build Environment
 
@@ -83,7 +87,7 @@ The standard bootstrap service doesn't work properly with Hetzner's environment.
 
 ### 3.2 Clone and Build iPXE
 ```bash
-# Clone the ZeroOS iPXE fork
+# Clone the Zero OS iPXE fork
 git clone https://github.com/threefoldtech/ipxe.git
 cd ipxe
 
@@ -149,14 +153,14 @@ In Hetzner Console:
 ### 5.2 Expected Boot Sequence
 1. Server boots from the iPXE image on additional volume
 2. iPXE loads and displays boot menu
-3. ZeroOS kernel downloads (this is usually fast on Hetzner)
-4. ZeroOS begins initialization process
+3. Zero OS kernel downloads (this is usually fast on Hetzner)
+4. Zero OS begins initialization process
 5. ❌ **Expected Failure**: Process will fail at virtualization step due to nested virtualization limitation
 
 ## Step 6: Network Information Gathering
 
 ### 6.1 Get Network Configuration
-Since ZeroOS won't fully boot, gather network info from rescue mode:
+Since Zero OS won't fully boot, gather network info from rescue mode:
 
 ```bash
 # Boot back into rescue mode to get network details
@@ -165,7 +169,7 @@ ip route show
 ```
 
 ### 6.2 Required Information for Future Use
-Document these values for when ZeroOS fully supports Hetzner:
+Document these values for when Zero OS fully supports Hetzner:
 - **IP Address**: Server's public IP
 - **Gateway**: Default gateway IP
 - **Netmask**: Network mask (usually /32 for Hetzner)
@@ -176,12 +180,12 @@ Document these values for when ZeroOS fully supports Hetzner:
 ### What Works
 ✅ Custom iPXE builds and boots successfully  
 ✅ Network connectivity during boot process  
-✅ ZeroOS kernel downloads and starts initialization  
+✅ Zero OS kernel downloads and starts initialization  
 ✅ Basic system components load  
 
 ### What Doesn't Work
 ❌ Virtualization components fail due to nested virtualization limitation  
-❌ ZeroOS cannot complete full initialization  
+❌ Zero OS cannot complete full initialization  
 ❌ Gateway functionality not available  
 
 ## Alternative Approaches
@@ -201,9 +205,9 @@ Monitor Hetzner Cloud updates for nested virtualization support:
 ## Future Configuration (When Working)
 
 ### Network Setup
-Once ZeroOS boots successfully:
+Once Zero OS boots successfully:
 ```bash
-# Network configuration in ZeroOS dashboard
+# Network configuration in Zero OS dashboard
 IP Address: [server-public-ip]
 Gateway: [gateway-from-rescue-mode]
 Netmask: /32 (typical for Hetzner)
@@ -211,10 +215,10 @@ DNS: 8.8.8.8, 1.1.1.1 (or Hetzner DNS)
 ```
 
 ### Gateway Configuration
-1. Set public configuration in ZeroOS dashboard
+1. Set public configuration in Zero OS dashboard
 2. Configure domain and DNS settings
 3. Set up workload exposure rules
-4. Test connectivity from other ZeroOS nodes
+4. Test connectivity from other Zero OS nodes
 
 ## Troubleshooting
 
@@ -243,7 +247,7 @@ make bin/ipxe.usb EMBED=boot.ipxe
 
 Keep track of:
 1. Hetzner Cloud feature updates
-2. ZeroOS compatibility improvements
+2. Zero OS compatibility improvements
 3. Community solutions and workarounds
 4. Alternative cloud providers with nested virtualization support
 
@@ -265,7 +269,7 @@ Once Hetzner resolves nested virtualization limitations and your web gateway bec
 
 ## Conclusion
 
-While ZeroOS cannot currently run fully on Hetzner Cloud due to nested virtualization limitations, this guide provides the complete foundation for when this support becomes available. The custom iPXE approach works correctly up to the virtualization step, indicating that the networking and boot process are properly configured.
+While Zero OS cannot currently run fully on Hetzner Cloud due to nested virtualization limitations, this guide provides the complete foundation for when this support becomes available. The custom iPXE approach works correctly up to the virtualization step, indicating that the networking and boot process are properly configured.
 
 ### Current Status
 - **Setup Process**: Fully documented and tested
@@ -275,7 +279,7 @@ While ZeroOS cannot currently run fully on Hetzner Cloud due to nested virtualiz
 
 ### Next Steps
 1. **Monitor Hetzner updates** for nested virtualization support
-2. **Track ZeroOS development** for potential workarounds
+2. **Track Zero OS development** for potential workarounds
 3. **Consider alternative providers** for immediate gateway deployment
 4. **Prepare for quick deployment** once limitations are resolved
 

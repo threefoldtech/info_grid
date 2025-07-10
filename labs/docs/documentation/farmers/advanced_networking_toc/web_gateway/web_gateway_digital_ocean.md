@@ -7,9 +7,13 @@ sidebar_position: 1
 
 ## Overview
 
-This guide provides step-by-step instructions for setting up a ThreeFold Web Gateway on Digital Ocean. A web gateway enables 3Nodes without public IPv4 addresses to provide publicly accessible services by bridging them with the public IPv4 internet.
+This guide shows how to set up a ThreeFold Web Gateway on Digital Ocean. 
 
-**Key Use Case**: Farmers with public IPv4 addresses can provide gateway services, allowing users to deploy workloads on 3Nodes without expensive public IPv4 addresses while still making them accessible from the public internet.
+**Problem Solved**: If your workload doesn't have public IPv4 access, it's not reachable from the public internet.
+
+**Solution**: Web gateways are 3Nodes with public IPv4 addresses that act as reverse proxies, making any workload accessible from the regular internet.
+
+**Key Use Case**: Farmers provide gateway services using their public IPv4 addresses, allowing users to deploy workloads on any 3Node while still making them publicly accessible.
 
 > 📖 **For architectural details and concepts**, see the [Web Gateway Architecture](./web_gateway_architecture) guide.
 
@@ -54,8 +58,8 @@ This guide provides step-by-step instructions for setting up a ThreeFold Web Gat
 10. Click "Upload Image"
 
 ### 1.4 Droplet Configuration
-- **Size**: Choose at least 4GB RAM (ZeroOS requires minimum 2GB, but 2GB instances often don't pass the threshold)
-- **Storage**: Add a volume with minimum 80GB (ZeroOS requires minimum disk space)
+- **Size**: Choose at least 4GB RAM (Zero OS requires minimum 2GB, but 2GB instances often don't pass the threshold)
+- **Storage**: Add a volume with minimum 80GB (Zero OS requires minimum disk space)
 - **Authentication**: Add your SSH key (recommended) or use password
 - **Monitoring**: Enable if desired
 
@@ -81,7 +85,7 @@ This guide provides step-by-step instructions for setting up a ThreeFold Web Gat
    mount /dev/sdb /boot
    ```
 
-## Step 3: Download ZeroOS Bootstrap
+## Step 3: Download Zero OS Bootstrap
 
 ### 3.1 Get Bootstrap Link
 1. Visit [bootstrap.grid.tf](https://bootstrap.grid.tf)
@@ -105,7 +109,7 @@ Create a simple iPXE script for network booting:
 # Create iPXE script
 cat > /boot/boot.ipxe << 'EOF'
 #!ipxe
-# ZeroOS iPXE boot script
+# Zero OS iPXE boot script
 # Replace with your actual bootstrap URL
 chain [your-bootstrap-url]
 EOF
@@ -124,7 +128,7 @@ Add the following entry (replace `hd0,16` with your actual boot partition):
 exec tail -n +3 $0
 # This file provides an easy way to add custom menu entries.
 
-menuentry 'ZeroOS Network Boot' {
+menuentry 'Zero OS Network Boot' {
     insmod part_gpt
     insmod fat
     set root='hd0,gpt16'  # Adjust based on your boot partition
@@ -143,8 +147,8 @@ Modify these settings:
 # Set timeout to 30 seconds
 GRUB_TIMEOUT=30
 
-# Set default boot entry to ZeroOS
-GRUB_DEFAULT="ZeroOS Network Boot"
+# Set default boot entry to Zero OS
+GRUB_DEFAULT="Zero OS Network Boot"
 ```
 
 ### 4.3 Update GRUB
@@ -162,9 +166,9 @@ From Digital Ocean dashboard:
    - Gateway address
    - Netmask (usually /20 or /24)
 
-### 5.2 Configure ZeroOS Network (After Boot)
-Once ZeroOS boots successfully:
-1. Access the ZeroOS dashboard
+### 5.2 Configure Zero OS Network (After Boot)
+Once Zero OS boots successfully:
+1. Access the Zero OS dashboard
 2. Navigate to Network settings
 3. Enter the public IP configuration:
    - **IP Address**: Your droplet's public IP
@@ -181,12 +185,12 @@ reboot
 
 ### 6.2 Monitor Boot Process
 1. Use Digital Ocean's recovery console to watch the boot process
-2. You should see the GRUB menu with ZeroOS option selected by default
-3. ZeroOS will download and boot (this may take several minutes)
+2. You should see the GRUB menu with Zero OS option selected by default
+3. Zero OS will download and boot (this may take several minutes)
 
 ### 6.3 Post-Boot Configuration
 After successful boot:
-1. Set up public configuration in ZeroOS dashboard
+1. Set up public configuration in Zero OS dashboard
 2. Configure DNS settings for your domain
 3. Reboot the VM after configuration changes
 4. Verify network connectivity and gateway functionality
@@ -201,12 +205,12 @@ After successful boot:
 ### Limitations
 - IPv6 is not supported in this configuration
 - This setup is optimized for gateway nodes, not general VM workloads
-- ZeroOS Light version is specifically designed for cloud environments
+- Zero OS Light version is specifically designed for cloud environments
 
 ### Troubleshooting
 - If boot fails, use Digital Ocean's recovery console to access GRUB menu
 - Select Ubuntu option to return to the base system for debugging
-- Check GRUB configuration if ZeroOS doesn't appear in boot menu
+- Check GRUB configuration if Zero OS doesn't appear in boot menu
 - Verify bootstrap URL is accessible and correct
 
 ## Security Considerations
@@ -233,7 +237,7 @@ Once your web gateway is operational, users can leverage it to expose their work
 
 ## Next Steps
 
-Once your ZeroOS gateway is running:
+Once your Zero OS gateway is running:
 
 1. **Configure gateway domains** and certificates as needed
 2. **Advertise your gateway** to the ThreeFold community
