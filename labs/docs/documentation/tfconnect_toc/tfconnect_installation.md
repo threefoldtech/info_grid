@@ -9,8 +9,6 @@ sidebar_position: 64
 
 We show how to install the ThreeFold Connect app.
 
-![](./img/tfconnect_8.png)
-
 ## Download Links
 
 The ThreeFold Connect app is available for both iOS and Android devices.

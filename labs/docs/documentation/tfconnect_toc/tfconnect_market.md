@@ -1,6 +1,6 @@
 ---
 title: "Market"
-sidebar_position: 71
+sidebar_position: 76
 ---
 
 # ThreeFold Connect Market
@@ -37,6 +37,8 @@ The Overview tab provides:
 - **Quick Actions**: Fast access to buy/sell functions
 - **Portfolio Summary**: Your TFT and USDC balances
 
+![TFConnect](./img/tfconnect_46.png)
+
 ### OrderBook Tab
 
 The OrderBook tab displays:
@@ -45,6 +47,8 @@ The OrderBook tab displays:
 - **Order Depth**: Visual representation of market liquidity
 - **Recent Trades**: Latest executed transactions
 - **Spread Information**: Bid-ask spread data
+
+![TFConnect](./img/tfconnect_47.png)
 
 ## Wallet Connection and Setup
 

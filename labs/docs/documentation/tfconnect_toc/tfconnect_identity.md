@@ -1,9 +1,9 @@
 ---
-title: "Verification"
+title: "Identity"
 sidebar_position: 74
 ---
 
-# ThreeFold Connect Verification
+# ThreeFold Connect Identity
 
 The verification process in ThreeFold Connect ensures the security and authenticity of user accounts through a comprehensive identity verification system integrated directly into the app. This includes email verification, phone verification, and Know Your Customer (KYC) procedures as part of the wallet onboarding process.
 
@@ -15,6 +15,8 @@ ThreeFold Connect verification provides:
 - **Identity Verification**: Integrated KYC process for wallet onboarding
 - **Document Verification**: Government ID verification through secure systems
 - **Biometric Verification**: Selfie matching for identity confirmation
+
+![TFConnect](./img/tfconnect_57.png)
 
 ## Email Verification
 

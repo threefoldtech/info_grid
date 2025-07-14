@@ -1,6 +1,6 @@
 ---
 title: "Settings"
-sidebar_position: 73
+sidebar_position: 81
 ---
 
 # ThreeFold Connect Settings
@@ -23,6 +23,8 @@ ThreeFold Connect Settings provide control over:
 2. Navigate to the main menu
 3. Select **Settings** or **Preferences** from the menu
 4. Browse through different settings categories
+
+![TFConnect](./img/tfconnect_55.png)
 
 ## Security Settings
 

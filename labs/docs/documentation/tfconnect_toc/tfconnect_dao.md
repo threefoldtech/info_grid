@@ -1,6 +1,6 @@
 ---
 title: "DAO"
-sidebar_position: 68
+sidebar_position: 77
 ---
 
 # ThreeFold Connect DAO
@@ -15,4 +15,8 @@ The DAO section contains two subsections `Active` and `Executable`.
 
 When there are ongoing DAO vote, you will be able to cast your vote in the section `Active`.
 
-![](./img/tfconnect_34.png)
+![](./img/tfconnect_48.png)
+
+When there are proposals that are ready to be executed, you will be able to vote on them in the section `Executable`.
+
+![](./img/tfconnect_49.png)

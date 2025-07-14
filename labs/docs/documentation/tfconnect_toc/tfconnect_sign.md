@@ -1,6 +1,6 @@
 ---
 title: "Sign"
-sidebar_position: 72
+sidebar_position: 78
 ---
 
 # ThreeFold Connect Sign
@@ -11,7 +11,6 @@ The Sign feature in ThreeFold Connect allows you to cryptographically sign messa
 
 Digital signing in ThreeFold Connect enables:
 - **Message Signing**: Sign text messages and data
-- **File Signing**: Sign documents and files
 - **Link Verification**: Sign and verify URLs and links
 - **QR Code Signing**: Sign data embedded in QR codes
 - **Identity Verification**: Prove ownership of your ThreeFold identity
@@ -43,6 +42,8 @@ The Sign feature can be accessed in several ways:
 2. Navigate to the main menu
 3. Select **Sign** from the menu options
 
+![TFConnect](./img/tfconnect_50.png)
+
 ### Via External Requests
 1. **QR Code Scanning**: Scan QR codes containing sign requests
 2. **Deep Links**: Click on ThreeFold sign links
@@ -67,22 +68,7 @@ The Sign feature can be accessed in several ways:
 - Simple data validation
 - Proof of ownership statements
 
-### File Signing
-
-**Purpose**: Sign documents, images, or other files
-
-**Process**:
-1. **File Request**: Receive a file signing request
-2. **Download Verification**: App downloads and verifies file hash
-3. **Content Review**: Examine file contents (if viewable)
-4. **Hash Validation**: Confirm file integrity through hash comparison
-5. **Sign File**: Approve signing of the file hash
-6. **Signature Delivery**: Provide cryptographic signature
-
-**Security Features**:
-- **Hash Verification**: Ensures file integrity before signing
-- **Download Validation**: Confirms file hasn't been tampered with
-- **Secure Storage**: Temporary file storage with automatic cleanup
+![TFConnect](./img/tfconnect_51.png)
 
 ### Link Signing
 
@@ -100,6 +86,8 @@ The Sign feature can be accessed in several ways:
 - Link verification systems
 - Secure URL sharing
 - Anti-phishing measures
+ 
+![TFConnect](./img/tfconnect_53.png)
 
 ### QR Code Signing
 
@@ -118,6 +106,8 @@ The Sign feature can be accessed in several ways:
 - **Quick Verification**: Fast authentication process
 - **Secure Transfer**: Encrypted data in QR format
 
+![TFConnect](./img/tfconnect_52.png)
+
 ## Sign Interface and Workflow
 
 ### Sign Request Screen
@@ -126,7 +116,7 @@ When you receive a sign request, the interface displays:
 
 #### Request Information
 - **Source Application**: Which app or service is requesting the signature
-- **Request Type**: Text, file, link, or QR code signing
+- **Request Type**: Text, link, or QR code signing
 - **Content Preview**: Display of data to be signed
 - **Security Status**: Verification of request authenticity
 
@@ -136,12 +126,6 @@ When you receive a sign request, the interface displays:
 - Plain text display of message content
 - Character count and data size
 - Formatting preservation
-
-**For File Signing**:
-- File name and type information
-- File size and hash information
-- Download progress indicator
-- Content preview (if supported file type)
 
 **For JSON Data**:
 - Structured JSON viewer with syntax highlighting
@@ -161,13 +145,6 @@ When you receive a sign request, the interface displays:
 - Notifies requesting application of rejection
 
 ### Security Confirmations
-
-#### Hash Verification
-For file signing:
-- **Original Hash**: Hash provided with the request
-- **Computed Hash**: Hash calculated after download
-- **Verification Status**: Confirmation that hashes match
-- **Security Warning**: Alert if hashes don't match
 
 #### Identity Confirmation
 - **Account Verification**: Confirms your ThreeFold identity
@@ -189,7 +166,6 @@ For file signing:
 - **Security Warnings**: Alerts for potential security issues
 
 ### Data Protection
-- **Temporary Storage**: Files are stored temporarily and securely deleted
 - **No Data Retention**: Signed content is not permanently stored
 - **Encrypted Communication**: Secure data transfer protocols
 - **Privacy Preservation**: Minimal data exposure during signing
@@ -200,7 +176,7 @@ For file signing:
 1. **Verify Source**: Ensure the request comes from a trusted source
 2. **Review Content**: Carefully read what you're signing
 3. **Check Context**: Understand why the signature is needed
-4. **Validate Hashes**: For files, ensure hash verification passes
+
 
 ### Security Guidelines
 1. **Never Sign Blindly**: Always review content before signing
@@ -211,7 +187,6 @@ For file signing:
 ### When to Decline
 - **Unknown Sources**: Requests from unrecognized applications
 - **Suspicious Content**: Unusual or potentially malicious data
-- **Hash Mismatches**: Files that fail integrity verification
 - **Unclear Purpose**: Requests without clear legitimate purpose
 
 ## Troubleshooting
@@ -224,15 +199,7 @@ For file signing:
 - **Restart App**: Close and reopen the application
 - **Clear Cache**: Clear app cache if issues persist
 
-#### File Download Failures
-- **Network Connectivity**: Check internet connection stability
-- **File Size**: Large files may take time to download
-- **Server Issues**: Source server may be temporarily unavailable
-- **Storage Space**: Ensure sufficient device storage
-
 #### Hash Verification Failures
-- **File Corruption**: File may have been corrupted during transfer
-- **Tampering**: File may have been modified after hash generation
 - **Network Issues**: Download interruption may cause corruption
 - **Security Alert**: Do not sign if hash verification fails
 
@@ -262,7 +229,7 @@ For developers wanting to integrate with TFConnect signing:
 {
   "type": "sign",
   "data": "Message to be signed",
-  "format": "text", // or "file", "json", "url"
+  "format": "text", // or "json", "url"
   "callback": "https://yourapp.com/signature-callback",
   "metadata": {
     "purpose": "Identity verification",
@@ -290,5 +257,5 @@ For developers wanting to integrate with TFConnect signing:
 
 > **Privacy Notice**: Signing operations may reveal your ThreeFold identity to the requesting party. Only sign for trusted applications and services.
 
-> **Verification Responsibility**: Always verify that hash checks pass for file signing. Never sign files that fail integrity verification.
+> **Verification Responsibility**: Always verify that hash checks pass for signing. Never sign data that fail integrity verification.
 

@@ -11,15 +11,15 @@ ThreeFold Connect is a mobile app that serves as a gateway to the ThreeFold ecos
 
 - [Overview](./tfconnect_overview)
 - [Installation](./tfconnect_installation)
-- [Verification](./tfconnect_verification)
+- [Identity](./tfconnect_identity)
 - [Wallet](./tfconnect_wallet)
-- [News](./tfconnect_news)
-- [DAO](./tfconnect_dao)
-- [Authenticator](./tfconnect_authenticator)
 - [Farming](./tfconnect_farming)
 - [Market](./tfconnect_market)
+- [DAO](./tfconnect_dao)
 - [Sign](./tfconnect_sign)
+- [News](./tfconnect_news)
 - [Settings](./tfconnect_settings)
+- [Authenticator](./tfconnect_authenticator)
 - [Troubleshooting](./tfconnect_troubleshooting)
 
 > The information provided in this tutorial or any related discussion is not intended as investment advice. The purpose is to provide educational and informational content only. Investing in cryptocurrencies or any other assets carries inherent risks, and it is crucial to conduct your own research and exercise caution before making any investment decisions. 

@@ -1,6 +1,6 @@
 ---
 title: "Farming"
-sidebar_position: 70
+sidebar_position: 75
 ---
 
 # ThreeFold Connect Farming
@@ -18,9 +18,11 @@ Farming in the ThreeFold ecosystem involves running nodes that provide compute, 
 3. Select **Farming** from the menu options
 4. The farming interface will display with tabs for V3 and V4 farms
 
+![TFConnect](./img/tfconnect_43.png)
+
 ## V3 Farming vs V4 Farming
 
-### V3 Farming (Legacy)
+### V3 Farming
 
 **V3 Farming** represents the established farming protocol with the following characteristics:
 
@@ -30,7 +32,7 @@ Farming in the ThreeFold ecosystem involves running nodes that provide compute, 
 - **Reward System**: Established tokenomics and reward distribution
 - **Stability**: Production-ready with extensive testing and deployment
 
-### V4 Farming (Next Generation)
+### V4 Farming
 
 **V4 Farming** introduces enhanced features and improvements:
 
@@ -61,6 +63,8 @@ For each farm, you can view:
 1. **Access Creation Interface**:
    - In the Farming section, tap the **+** (plus) icon in the top-right corner
    - This opens the "Add Farm" overlay
+
+![TFConnect](./img/tfconnect_44.png)
 
 2. **Choose Farm Version**:
    - Select the appropriate tab (V3 or V4) before creating
@@ -144,4 +148,3 @@ If you encounter issues with farming operations:
 1. **Check Documentation**: Review the complete ThreeFold farming guides
 2. **Community Support**: Join ThreeFold community forums and chat channels
 3. **Technical Support**: Contact ThreeFold technical support team
-4. **Knowledge Base**: Search the ThreeFold knowledge base for solutions

@@ -27,3 +27,7 @@ Some key features and benefits of the ThreeFold Connect app are:
   - The app features a news section where users can find the latest ThreeFold news and updates.
 - DAO Voting
   - The app featuers a DAO voting section where farmers can vote for grid enhancement proposals on the ThreeFold Grid.
+
+## Home Page
+
+![TFConnect](./img/tfconnect_42.png)
