@@ -15,3 +15,5 @@ Before using the bridge, make sure to create an associated token account on Sola
 
 - [Create an associated token account](./stellar_solana_ata)
 - [Bridge TFT from Stellar to Solana](./stellar_solana_how)
+  
+For information on how to track bridge transfers, read [this](./stellar_track_bridge.md).
