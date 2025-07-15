@@ -13,3 +13,6 @@ ThreeFold farming is the process of connecting hardware (3Nodes) to the ThreeFol
 
 ### How do I become a farmer on the ThreeFold Grid?
 You can become a farmer by either buying a certified node from an [official ThreeFold vendor](./3node_buying/order_a_node) or by [building your own DIY 3Node](category/build-a-3node) following the documentation.
+
+### What is the minimum uptime requirement for certified v4 nodes?
+Certified v4 nodes must maintain a minimum uptime of 98% on the ThreeFold Grid. This ensures reliable service for users deploying workloads on the network.
