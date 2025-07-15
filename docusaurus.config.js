@@ -104,7 +104,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       mermaid: {
-        theme: {light: 'neutral', dark: 'dark'},
+        theme: {light: 'default', dark: 'dark'},
       },
       colorMode: {
         defaultMode: 'dark',
