@@ -84,12 +84,12 @@ This release introduce lots of stability and bugsquashing in TFChain/GraphQL.
 
 ## RFS
 
-- Lightweight Flist server [#61](https://github.com/threefoldtech/mycofs/issues/61)
-- Flist Frontend [#67](https://github.com/threefoldtech/mycofs/issues/67)
-- Improve Dir store for performance [#52](https://github.com/threefoldtech/mycofs/issues/52)
-- Implement HTTP Store [#51](https://github.com/threefoldtech/mycofs/issues/51)
+- Lightweight Flist server [#61](https://github.com/threefoldtech/rfs/issues/61)
+- Flist Frontend [#67](https://github.com/threefoldtech/rfs/issues/67)
+- Improve Dir store for performance [#52](https://github.com/threefoldtech/rfs/issues/52)
+- Implement HTTP Store [#51](https://github.com/threefoldtech/rfs/issues/51)
 - Support Syncing from on location to another e.g dir to S3
-- Support tracking progress while packing flists [#69](https://github.com/threefoldtech/mycofs/issues/69)
+- Support tracking progress while packing flists [#69](https://github.com/threefoldtech/rfs/issues/69)
 
 ## Threefold Connect
 
