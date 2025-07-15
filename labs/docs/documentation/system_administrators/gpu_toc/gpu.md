@@ -1,114 +1,142 @@
 ---
 title: "GPU Support"
-sidebar_position: 236
+sidebar_position: 237
 ---
 
-
-
-
+# How to Use GPU on the Grid
 
 ## Introduction
 
-This section covers the essential information to deploy a node with a GPU. We also provide links to other parts of the manual covering GPU support.
+This guide provides step-by-step instructions for deploying and using GPU resources on the ThreeFold Grid. You'll learn how to rent a dedicated GPU node, deploy a virtual machine, and install the necessary GPU drivers.
 
-To use a GPU on the TFGrid, users need to rent a dedicated node. Once they have rented a dedicated node equipped with a GPU, users can deploy workloads on their dedicated GPU node. 
+## Prerequisites
 
+- Access to the ThreeFold Dashboard
+- Basic knowledge of SSH and Linux command line
+- Understanding of your GPU requirements (AMD or NVIDIA)
 
-## Filter and Reserve a GPU Node
+## Step 1: Rent a GPU Node
 
-You can filter and reserve a GPU node using the [Dedicated Nodes section](../../dashboard/deploy/node_finder#dedicated-nodes) of the **ThreeFold Dashboard**.
+### Find Available GPU Nodes
 
-### Filter Nodes
+1. Navigate to the ThreeFold Dashboard explorer
+2. Enable the **GPU Node (only)** option to filter nodes with GPU capabilities
 
-* Filter nodes using the vendor name
-  * In **Filters**, select **GPU's vendor name**
-  * A new window will appear below named **GPU'S VENDOR NAME**
-    * Write the name of the vendor desired (e.g. **nvidia**, **amd**)
+![GPU Node Filter](./img/gpu10.png)
 
-![](./img/gpu_8.png)
+### Reserve Your Node
 
-* Filter nodes using the device name
-  * In **Filters**, select **GPU's device name**
-  * A new window will appear below named **GPU'S DEVICE NAME**
-    * Write the name of the device desired (e.g. **GT218**)
+1. Once you've identified a suitable GPU node, navigate to the **Dedicated Node** page
+2. Complete the rental process for your selected node
 
-![](./img/gpu_9.png)
+![Node Reservation](./img/gpu11.png)
 
-### Reserve a Node
+## Step 2: Deploy a Virtual Machine with GPU
 
-When you have decided which node to reserve, click on **Reserve** under the column **Actions**. Once you've rented a dedicated node that has a GPU, you can deploy GPU workloads.
+After successfully renting a GPU node, deploy a virtual machine on your dedicated node using one of the following methods:
 
-![](./img/gpu_2.png)
+- **ThreeFold Dashboard** (recommended for beginners)
+- **TypeScript Client**
+- **Terraform**
+- **Other supported deployment tools**
 
-  
-## Deploy a VM with GPU
+![VM Deployment](./img/gpu12.png)
 
-Now that you've reserverd a dedicated GPU node, it's time to deploy a VM to make use of the GPU! There are many ways to proceed. You can use the [Dashboard](../../dashboard/deploy/vm_intro/fullVm), [Go](../../developers/grid3_go/grid3_go_gpu), [Terraform](../terraform_toc/terraform_advanced_readme/terraform_gpu_support), etc.
+## Step 3: Install GPU Drivers
 
-For example, deploying a VM with GPU on the Dashboard is easy. Simply set the GPU option and make sure to select your dedicated node, as show here:
-![](./img/gpu_3.png)
+### System Preparation
 
-## Install the GPU Driver
+1. SSH into your deployed virtual machine
+2. Update your system to ensure compatibility:
 
-Once you've deployed a VM with GPU, you want to SSH into the VM and install the GPU driver.
-
-- SSH to the VM and get your system updated
 ```bash
 dpkg --add-architecture i386
-apt-get update
-apt-get dist-upgrade
-reboot
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo reboot
 ```
-- Find your Driver installer
-  - [AMD driver](https://www.amd.com/en/support/linux-drivers)
-  - [Nvidia driver](https://www.nvidia.com/download/index.aspx)
 
-- You can see the node card details on the ThreeFold Dashboard or by using the following command lines:
+### Identify Your GPU Hardware
+
+Before downloading drivers, identify your GPU specifications using either:
+
+- **ThreeFold Dashboard**: Check node details in your dashboard
+- **Command line tools**:
+
 ```bash
 lspci | grep VGA
 lshw -c video
 ```
 
-### AMD Driver
+### Download GPU Drivers
 
-- Download the GPU driver using `wget`
-  - For example: `wget https://repo.radeon.com/amdgpu-install/23.30.2/ubuntu/focal/amdgpu-install_5.7.50702-1_all.deb`
-- Install the GPU driver using `apt-get`. Make sure to update `<VERSION>`.
+Download the appropriate driver for your GPU:
+
+- **AMD GPUs**: Visit [AMD Support](https://www.amd.com/en/support)
+- **NVIDIA GPUs**: Visit [NVIDIA Driver Downloads](https://www.nvidia.com/download/index.aspx)
+
+Use `wget` to download the driver package to your VM.
+
+### AMD GPU Installation
+
+1. Install the downloaded AMD driver package (replace `<VERSION>` with your specific version):
+
 ```bash
-apt-get install ./amdgpu-install_<VERSION>.deb
+sudo apt-get install ./amdgpu-install_<VERSION>.deb
 amdgpu-install --usecase="dkms,graphics,opencl,hip,rocm,rocmdev,opencl,hiplibsdk,mllib,mlsdk" --opencl=rocr --vulkan=pro --opengl=mesa
 ```
-- To verify that the GPU is properly installed, use the following command lines:
+
+2. Verify the installation:
+
 ```bash
 rocm-smi
 rocminfo
 ```
-- You should something like this:
-![](./img/gpu_4.png)
-![](./img/gpu_5.png)
- 
-### Nvidia Driver
 
-For Nvidia, you can follow [those steps](https://linuxize.com/post/how-to-nvidia-drivers-on-ubuntu-20-04/#installing-the-nvidia-drivers-using-the-command-line).
-- To verify that the GPU is properly installed, you can use `nvidia-smi`. You should something like this:
+3. Expected output should resemble:
 
- ![](./img/gpu_6.png)
- 
-### With an AI Model
+![AMD GPU Verification 1](./img/gpu13.png)
+![AMD GPU Verification 2](./img/gpu14.png)
 
-You can also try this [AI model](https://github.com/invoke-ai/InvokeAI#getting-started-with-invokeai) to install your driver. 
- 
+### NVIDIA GPU Installation
+
+For NVIDIA GPUs, the installation process is more straightforward:
+
+1. Follow the comprehensive guide: [NVIDIA Drivers on Ubuntu 20.04](https://linuxize.com/post/how-to-nvidia-drivers-on-ubuntu-20-04/#installing-the-nvidia-drivers-using-the-command-line)
+
+2. Verify the installation using:
+
+```bash
+nvidia-smi
+```
+
+3. Expected output:
+
+![NVIDIA GPU Verification](./img/gpu15.png)
+
+## Alternative: AI Model Installation
+
+For users interested in AI workloads, consider trying [InvokeAI](https://github.com/invoke-ai/InvokeAI#getting-started-with-invokeai), which can help with driver installation and provide an AI-ready environment.
+
 ## Troubleshooting
 
-Here are some useful links to troubleshoot your GPU installation.
+### Recommended System Configuration
 
-- [Steps to install the driver](https://amdgpu-install.readthedocs.io/en/latest/index)
-- Changing kernel version
-  - [Link 1](https://linux.how2shout.com/how-to-change-default-kernel-in-ubuntu-22-04-20-04-lts/)
-  - [Link 2](https://gist.github.com/chaiyujin/c08e59752c3e238ff3b1a5098322b363)
+**Operating System**: Ubuntu 22.04.2 LTS (GNU/Linux 5.18.13-051813-generic x86_64)
 
-> Note: It is recommended to use Ubuntu 22.04.2 LTS (GNU/Linux 5.18.13-051813-generic x86_64)
+### Useful Resources
 
-## GPU Support Links
+- **AMD Driver Installation**: [Official AMD GPU Install Documentation](https://amdgpu-install.readthedocs.io/en/latest/index.html)
+- **Kernel Version Management**:
+  - [Ubuntu Kernel Management Guide](https://linux.how2shout.com/how-to-change-default-kernel-in-ubuntu-22-04-20-04-lts/)
+  - [Alternative Kernel Configuration](https://gist.github.com/chaiyujin/c08e59752c3e238ff3b1a5098322b363)
 
-You can consult the [GPU Table of Contents](./gpu_toc.md) to see all available GPU support links on the ThreeFold Manual.
+## Next Steps
+
+Once your GPU is successfully installed and verified, you can:
+
+- Deploy AI/ML workloads
+- Run GPU-accelerated applications
+- Explore ThreeFold's GPU-specific documentation for advanced use cases
+
+For additional GPU support resources, consult the [GPU Table of Contents](./gpu_toc.md).

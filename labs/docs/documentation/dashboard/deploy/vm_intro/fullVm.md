@@ -34,6 +34,7 @@ Deploy a new full virtual machine on the Threefold Grid
   - `Wireguard Access` to add a wireguard access to the Virtual Machine
 - `GPU` flag to add GPU to the Virtual machine
   - To deploy a Full VM with GPU, you first need to [rent a dedicated node](../node_finder#dedicated-nodes)
+  - For more information on GPU, consult [this section](../../../system_administrators/gpu_toc/gpu_toc.md) of the manual.
 - `Rented By Me` flag to retrieve nodes currently reserved by you
 - `Rentable` flag to retrieve nodes that can be reserved as [dedicated nodes](../node_finder#dedicated-nodes)
 - `Certified` flag to retrieve only certified nodes 
