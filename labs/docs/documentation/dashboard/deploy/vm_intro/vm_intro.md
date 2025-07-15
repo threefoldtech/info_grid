@@ -11,6 +11,5 @@ On the TFGrid, you can deploy both micro and full virtual machines.
 
 - [Full Virtual Machine](./fullVm)
 - [Micro Virtual Machine](./vm)
-- [Nixos Micro VM](./nixos_micro)
 - [Micro and Full VM Differences ](./vm_differences)
 - [Add a Domain to a VM](./add_domain)
