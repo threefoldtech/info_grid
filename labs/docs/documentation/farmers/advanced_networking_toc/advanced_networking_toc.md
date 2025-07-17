@@ -15,5 +15,6 @@ In this section, we provide advanced networking tips for farms with public IPs a
 - [Network Considerations](./network_considerations)
 - [Network Setup](./network_setup)
 - [Gateway Domain](./gateway_domain)
+- [Web Gateway](./web_gateway)
 
 > Note: This documentation does not constitute a complete set of knowledge on setting farms with public IP addresses in a data center. Please make sure to do your own research and communicate with your data center and your Internet service provider for any additional information.

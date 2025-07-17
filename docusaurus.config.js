@@ -6,7 +6,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 (module.exports = {
   title: 'ThreeFold Manual',
   tagline: 'Documentation for ThreeFold Grid',
-  url: 'https://www3.manual.grid.tf',
+  url: 'https://manual.grid.tf',
   baseUrl: '/',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
@@ -17,6 +17,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid'],
+  headTags: [
+    {
+      tagName: 'meta',
+      attributes: {
+        name: 'algolia-site-verification',
+        content: 'AA236B21C47494A2',
+      },
+    },
+  ],
   scripts: [
     {
       src: '/data/load-values.js',
@@ -104,12 +113,12 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       mermaid: {
-        theme: {light: 'neutral', dark: 'forest'},
+        theme: {light: 'default', dark: 'dark'},
       },
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: false,
-        respectPrefersColorScheme: true,
+        respectPrefersColorScheme: false,
       },
       navbar: {
         title: '',
@@ -201,6 +210,15 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      algolia: {
+        appId: 'PK79E8QFKZ',
+        apiKey: '49e734f59296183bc47d29346d085d59',
+        indexName: 'manual',
+        contextualSearch: true,
+        searchParameters: {},
+        searchPagePath: 'search',
+        insights: false,
       },
     }),
 });

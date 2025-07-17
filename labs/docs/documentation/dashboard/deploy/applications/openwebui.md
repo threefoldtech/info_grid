@@ -35,9 +35,9 @@ CPU-only deployments require at least the Medium configuration for acceptable pe
 
 - Select a capacity package:
 
-  - **Small**: \{cpu: 2, memory: 8 , diskSize: 25 \}
-  - **Medium**: \{cpu: 4, memory: 16, diskSize: 50 \}
-  - **Large**: \{cpu: 8, memory: 32, diskSize: 100 \}
+  - **Small**: \{cpu: 4, memory: 16 , diskSize: 125 \}
+  - **Medium**: \{cpu: 8, memory: 32, diskSize: 250 \}
+  - **Large**: \{cpu: 16, memory: 64, diskSize: 500 \}
   - Or choose a **Custom** plan
 - Choose the network
    - `Mycelium` flag gives the virtual machine a Mycelium address
@@ -66,7 +66,7 @@ Click on the button **Visit** under **Actions** to go to your Open WebUI instanc
 
 This Open WebUI is deployed alongside with Ollama. To add Ollama models to Open WebUI, follow those steps:
 
-- Click on your username icon at the bottom left of the screen
+- Click on the username icon
 - Select `Admin Panel`
 - Select `Settings` then `Models`
 - Click on the button `Manage Models`
