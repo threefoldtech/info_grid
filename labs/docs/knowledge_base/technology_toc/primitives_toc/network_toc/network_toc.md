@@ -10,4 +10,3 @@ sidebar_position: 352
 - [ZNET](./znet)
 - [ZNIC](./znic)
 - [WebGateway](./webgw3)
-- [Network Restrictions](./network_restrictions)

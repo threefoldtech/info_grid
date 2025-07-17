@@ -5,7 +5,7 @@ sidebar_position: 217
 
 # Network Restrictions
 
-When deploying VMs on the ThreeFold Grid, it's important to understand the network restrictions that apply based on your deployment configuration. These restrictions affect which ports are available for your applications and services.
+When deploying VMs on the ThreeFold Grid, it's important to understand the network restrictions that apply based on your deployment configuration. These restrictions affect which ports are available for your applications and services. They primarily affect email-related ports to prevent spam and maintain the integrity of the network.
 
 ## VM Network Access Types
 
@@ -60,6 +60,8 @@ If you need email functionality but want to use a VM without IPv4:
 2. **Deploy a separate email server** on a VM with IPv4
 3. **Use email APIs** instead of SMTP protocols
 
-## Technical Details
+## Technical Implementation
 
-The restrictions are implemented at the Zero-OS network level to prevent spam and maintain network integrity. For technical implementation details, see the [Network Restrictions](../../../knowledge_base/technology_toc/primitives_toc/network_toc/network_restrictions) in the knowledge base.
+The network restrictions are implemented at the Zero-OS level using netfilter/iptables rules. The implementation can be found in the ZOS codebase:
+
+- **Reference**: [ZOS Network Implementation](https://github.com/threefoldtech/zos/blob/0199ee83ff9918918f18fd25fd7ba1cdc1c7abce/cmds/modules/networkd/nft.go#L53)
