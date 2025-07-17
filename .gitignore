@@ -22,3 +22,6 @@ yarn-error.log*
 yarn.lock
 
 .vscode/
+
+# Generated data files
+/static/data/values.json
