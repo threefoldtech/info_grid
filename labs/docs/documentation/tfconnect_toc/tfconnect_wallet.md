@@ -1,6 +1,6 @@
 ---
 title: "Wallet"
-sidebar_position: 66
+sidebar_position: 74
 ---
 
 # ThreeFold Connect Wallet

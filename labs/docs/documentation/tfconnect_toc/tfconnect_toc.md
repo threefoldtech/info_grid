@@ -11,10 +11,14 @@ ThreeFold Connect is a mobile app that serves as a gateway to the ThreeFold ecos
 
 - [Overview](./tfconnect_overview)
 - [Installation](./tfconnect_installation)
-- [Verification](./tfconnect_verification)
+- [Identity](./tfconnect_identity)
 - [Wallet](./tfconnect_wallet)
-- [News](./tfconnect_news)
+- [Farming](./tfconnect_farming)
+- [Market](./tfconnect_market)
 - [DAO](./tfconnect_dao)
+- [Sign](./tfconnect_sign)
+- [News](./tfconnect_news)
+- [Settings](./tfconnect_settings)
 - [Authenticator](./tfconnect_authenticator)
 - [Troubleshooting](./tfconnect_troubleshooting)
 

@@ -1,6 +1,6 @@
 ---
 title: "News"
-sidebar_position: 67
+sidebar_position: 79
 ---
 
 # ThreeFold Connect News
@@ -13,4 +13,4 @@ On the Home page, click on `News` or select `News` from the dropdown menu.
 
 You can then access the news.
 
-![](./img/tfconnect_33.png)
+![TFConnect](./img/tfconnect_54.png)
