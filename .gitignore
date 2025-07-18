@@ -20,3 +20,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 yarn.lock
+
+.vscode/
+
+# Generated data files
+/static/data/values.json
+
+# Values
+/values/
+!/values/tft_supply.md
