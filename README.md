@@ -34,7 +34,9 @@ This command generates static content into the `build` directory and can be serv
 
 ## Contribute
 
-If you want to contribute to [Manual.grid.tf](https://manual.grid.tf/), please follow these steps:
+Be sure to check the [versioning explanation](./versioning.md) first. Make pull request to the appropriate branch.
+
+If you want to contribute to [Manual.grid.tf](https://manual.grid.tf/), you should follow this steps:
 
 1. Add the md file to the appropriate directory in the Docusaurus project structure.
 2. Update the sidebar configuration if needed.
