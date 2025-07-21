@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cd src/values
+cd ../values
 
 value=$(cat tft_value.md)
 

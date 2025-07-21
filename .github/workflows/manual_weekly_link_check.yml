@@ -5,24 +5,24 @@ on:
 
 jobs:
   checkwww:
-    name: Check for Broken Links on www
+    name: Check for Broken Links on main
     runs-on: ubuntu-latest
     steps:
       - name: Check for Broken Links on www
-        id: link-report www
+        id: link-report main
         uses: docker://ghcr.io/threefoldfoundation/website-link-checker:latest
         with:
-          args: 'https://www.manual.grid.tf -e 404 501 503 504 -w all'
+          args: 'https://manual.grid.tf -e 404 501 503 504 -w all'
 
   checkwww2:
-    name: Check for Broken Links on www2
+    name: Check for Broken Links on dev
     runs-on: ubuntu-latest
     steps:
       - name: Check for Broken Links
-        id: link-report www2
+        id: link-report dev
         uses: docker://ghcr.io/threefoldfoundation/website-link-checker:latest
         with:
-          args: 'https://www2.manual.grid.tf -e 404 501 503 504 -w all'
+          args: 'https://manual.dev.grid.tf -e 404 501 503 504 -w all'
         
   checkwww3:
     name: Check for Broken Links on www3

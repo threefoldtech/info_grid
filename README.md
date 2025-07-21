@@ -1,35 +1,36 @@
 # Threefold Grid Manual
 
-## Requirements
+# Website
 
-- Make
-- [mdbook](https://rust-lang.github.io/mdBook/guide/installation.html)
-- [mdbook-mermaid](https://github.com/badboy/mdbook-mermaid)
-- [mdbook-last-changed](https://github.com/badboy/mdbook-last-changed)
-- [jq](https://jqlang.github.io/jq/)
-- [bc](https://www.gnu.org/software/bc/)
-
-## Make
-
-To properly build and serve the manual, use the `make build` and `make serve` commands. This is important since the manual fetches data online through scripts.
-
-### Build
-
-Use the following command to build the book:
-
-`make build`
-
-### Serve
-
-Use the following command to serve the book (this will open the browser)
-
-`make serve`
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 ## Browse docs
 
 - The official ThreeFold manual from master branch is available at [www.manual.grid.tf](https://manual.grid.tf/)
 - Staging version from development branch is available at [www.manual.dev.grid.tf](https://www.manual.dev.grid.tf)
-- Staging version from development-split branch is available at [wwww3.manual.grid.tf](https://www3.manual.grid.tf)
+- Staging version from development-split branch is available at [www3.manual.grid.tf](https://www3.manual.grid.tf)
+
+## Installation and Setup
+
+```
+$ yarn
+```
+
+## Local Development
+
+```
+$ yarn start
+```
+
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+
+## Build
+
+```
+$ yarn build
+```
+
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ## Contribute
 
@@ -37,8 +38,6 @@ Be sure to check the [versioning explanation](./versioning.md) first. Make pull 
 
 If you want to contribute to [Manual.grid.tf](https://manual.grid.tf/), you should follow this steps:
 
-1. Add the md file to [src](./src) directory.
-2. Add the path of the md file to [SUMMARY](./src/SUMMARY.md).
-3. Then use `make build` and `make serve` to see your changes on the browser.
-
-Read the section [How to Contribute](https://manual.grid.tf/knowledge_base/collaboration/contribute.html) for more information.
+1. Add the md file to the appropriate directory in the Docusaurus project structure.
+2. Update the sidebar configuration if needed.
+3. Use `yarn start` to preview your changes locally.

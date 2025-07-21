@@ -1,0 +1,42 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.featureIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 120px;
+  margin: 0 auto 1.5rem;
+  background-color: #f8f8f8;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.featureIcon {
+  font-size: 3.5rem;
+}
+
+.featureButtonContainer {
+  margin-top: 1rem;
+}
+
+.buttonSection {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  background-color: #f7f7f7;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}

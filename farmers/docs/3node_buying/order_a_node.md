@@ -1,0 +1,12 @@
+---
+title: Order a Node
+sidebar_position: 1
+---
+
+
+The ThreeFold V4 nodes are available now for order directly on our official partners' websites. 
+
+- [HostService](https://hostservice.nl/en/) (Europe, Asia, Africa, Australia)
+- [Duck Farm Data](https://duckfarmdata.com) (America)
+
+> Make sure to input the correct [farm ID as explained here](./create_a_farm) 

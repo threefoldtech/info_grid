@@ -1,0 +1,16 @@
+---
+title: "Remote Desktop and GUI"
+sidebar_position: 304
+---
+
+# Remote Desktop and GUI
+
+This section of the Threefold Guide provides different methods to access your 3node servers with either a remote desktop protocol or a graphical user interface (GUI).
+
+If you have any questions, or if you would like to see a specific guide on remote desktop connection or GUI, please let us know by writing a post on the [Threefold Forum](http://forum.threefold.io/).
+
+**TABLE OF CONTENTS**
+
+- [Cockpit: a Web-based Graphical Interface for Servers](cockpit_guide)
+- [XRDP: an Open-Source Remote Desktop Procol](xrdp_guide)
+- [Apache Guacamole: a Clientless Remote Desktop Gateway.](guacamole_guide)
