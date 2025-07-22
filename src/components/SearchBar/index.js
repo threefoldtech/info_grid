@@ -139,6 +139,8 @@ const SearchBar = () => {
         <div className="search-input-wrapper">
           <input
             type="text"
+            id="search-input-desktop"
+            name="search"
             className="search-input"
             placeholder={translate({
               id: 'theme.SearchBar.label',
@@ -206,6 +208,8 @@ const SearchBar = () => {
               <div className="search-input-wrapper">
                 <input
                   type="text"
+                  id="search-input-mobile"
+                  name="search"
                   className="search-input"
                   placeholder="Search documentation..."
                   value={query}
