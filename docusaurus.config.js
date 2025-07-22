@@ -17,15 +17,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
     mermaid: true,
   },
   themes: ['@docusaurus/theme-mermaid'],
-  headTags: [
-    {
-      tagName: 'meta',
-      attributes: {
-        name: 'algolia-site-verification',
-        content: 'AA236B21C47494A2',
-      },
-    },
-  ],
+  headTags: [],
   scripts: [
     {
       src: '/data/load-values.js',
@@ -144,6 +136,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             label: 'Labs',
           },
           {
+            type: 'custom-searchBar',
+            position: 'right',
+          },
+          {
             href: 'https://threefold.io',
             label: 'ThreeFold.io',
             position: 'right',
@@ -211,14 +207,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-      algolia: {
-        appId: 'PK79E8QFKZ',
-        apiKey: '49e734f59296183bc47d29346d085d59',
-        indexName: 'manual',
-        contextualSearch: true,
-        searchParameters: {},
-        searchPagePath: 'search',
-        insights: false,
-      },
+
     }),
 });
