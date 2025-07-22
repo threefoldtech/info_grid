@@ -48,6 +48,9 @@ function generateUrl(filePath, contentDir, routePrefix) {
     .replace(/\\/g, '/') // Convert backslashes to forward slashes
     .replace(/\/index$/, ''); // Remove /index from end
   
+  // Remove Docusaurus numeric prefixes (e.g., "2_file" -> "file", "3node_building/6_boot" -> "3node_building/boot")
+  urlPath = urlPath.replace(/\/(\d+)_/g, '/').replace(/^(\d+)_/, '');
+  
   // Handle case where directory and filename are the same
   // e.g., tfconnect_toc/tfconnect_toc -> tfconnect_toc
   const pathParts = urlPath.split('/');
