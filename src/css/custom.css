@@ -4,6 +4,9 @@
  * work well for content-centric websites.
  */
 
+/* Import mobile navbar customizations */
+@import './navbar-mobile.css';
+
 /* Add @font-face declarations for the Inter font */
 @font-face {
   font-family: 'Inter';

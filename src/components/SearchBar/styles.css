@@ -145,23 +145,126 @@
   background-color: var(--ifm-color-emphasis-200);
 }
 
+/* Mobile Search Icon */
+.search-bar-mobile {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--ifm-navbar-link-color);
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.search-bar-mobile:hover {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+/* Mobile Search Modal */
+.search-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 10vh;
+}
+
+.search-modal {
+  background-color: var(--ifm-navbar-background-color);
+  border-radius: 8px;
+  box-shadow: var(--ifm-global-shadow-md);
+  width: 90vw;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-modal-header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+  gap: 12px;
+}
+
+.search-modal-header .search-input-wrapper {
+  flex: 1;
+  width: auto;
+}
+
+.search-modal-close {
+  background: none;
+  border: none;
+  color: var(--ifm-color-emphasis-600);
+  cursor: pointer;
+  padding: 4px;
+  font-size: 18px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.search-modal-close:hover {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+.search-results-modal {
+  position: static;
+  margin-top: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  max-height: 60vh;
+  background-color: transparent;
+}
+
+.search-modal-placeholder {
+  padding: 32px 16px;
+  text-align: center;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 14px;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
+  /* Hide desktop search, show mobile search icon */
+  .search-bar-desktop {
+    display: none;
+  }
+  
+  .search-bar-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  /* Show desktop search, hide mobile search icon */
+  .search-bar-desktop {
+    display: block;
+  }
+  
+  .search-bar-mobile {
+    display: none;
+  }
+  
   .search-bar-container {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
   }
   
   .search-input-wrapper {
-    width: 150px;
+    width: 180px;
   }
   
   .search-input-wrapper:focus-within {
-    width: 200px;
-  }
-  
-  .search-results {
-    left: -50px;
-    right: -50px;
+    width: 250px;
   }
 }

@@ -119,21 +119,25 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           src: 'img/logo_tft_light.png',
           srcDark: 'img/logo_tft_dark.png',
         },
+        hideOnScroll: false,
         items: [
           {
             to: '/users/intro',
             position: 'left',
             label: 'Users',
+            className: 'navbar__item--desktop-only',
           },
           {
             to: '/farmers/intro',
             position: 'left',
             label: 'Farmers',
+            className: 'navbar__item--desktop-only',
           },
           {
             to: '/labs/intro',
             position: 'left',
             label: 'Labs',
+            className: 'navbar__item--desktop-only',
           },
           {
             type: 'custom-searchBar',
@@ -143,6 +147,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             href: 'https://threefold.io',
             label: 'ThreeFold.io',
             position: 'right',
+            className: 'navbar__item--desktop-only',
           },
         ],
       },
