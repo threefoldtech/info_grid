@@ -40,3 +40,7 @@ Upon activation, you will find your **Twin ID**, **Address** and wallet current 
 Your current and locked balances will also be available at the top right corner of the dashboard. Here's an example of the balances you can find for your wallet. Some TFT is locked during utilization as the TFGrid bills you for your workloads and traffic.
 
 ![](./img/dashboard_balances.png)
+
+## KYC
+
+You will need to complete the KYC process to deploy on the ThreeFold Grid. The KYC process is simple and should take a few minutes.

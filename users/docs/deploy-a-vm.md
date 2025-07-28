@@ -1,9 +1,11 @@
 ---
 title: Deploy a VM
-sidebar_position: 6
+sidebar_position: 7
 ---
 
 We present the steps to deploy a full VM on the TFGrid.
+
+> Make sure that you set up properly SSH keys before deploying a VM. For more information, read the [previous section](ssh).
 
 ## Deployment
 
