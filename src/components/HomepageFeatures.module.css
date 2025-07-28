@@ -25,6 +25,14 @@
   margin-top: 1rem;
 }
 
+/* Mobile-specific fix for icon/button overlap */
+@media screen and (max-width: 768px) {
+  .featureButtonContainer {
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
+  }
+}
+
 .buttonSection {
   display: flex;
   align-items: center;

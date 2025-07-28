@@ -25,7 +25,9 @@ yarn.lock
 
 # Generated data files
 /static/data/values.json
+/static/search-index.json
 
-# Values
-/values/
-!/values/tft_supply.md
+# Generated values files (keep static base files: tft_supply.md, *_MUSD_HOUR.md)
+/values/tft_value.md
+/values/tft_marketcap.md
+/values/*_MTFT_HOUR.md
