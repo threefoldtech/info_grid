@@ -10,27 +10,62 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 - Staging version from development branch is available at [www.manual.dev.grid.tf](https://www.manual.dev.grid.tf)
 - Staging version from development-split branch is available at [www3.manual.grid.tf](https://www3.manual.grid.tf)
 
-## Installation and Setup
+## Development
 
-```
-$ yarn
-```
+### Prerequisites
 
-## Local Development
-
-```
-$ yarn start
-```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-## Build
-
-```
-$ yarn build
+```bash
+# Install dependencies
+make install
+# or
+yarn install
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+### Quick Start
+
+```bash
+# Development server with live data generation
+make dev
+# or
+yarn start
+```
+
+This starts a local development server with auto-generated content and opens a browser window. Most changes are reflected live without restarting the server.
+
+### Build Process
+
+The site uses a multi-stage build process:
+
+```bash
+# Generate all dynamic content
+make prebuild
+
+# Full production build
+make build
+
+# Serve built site locally
+make serve
+```
+
+**Available Make targets:**
+- `make prepare-data` - Generate pricing values from external APIs
+- `make generate-search` - Create search index from documentation
+- `make prebuild` - Run all pre-build data generation
+- `make build` - Complete production build
+- `make dev` - Development server with live updates
+- `make clean` - Clean build artifacts
+
+## Architecture
+
+This Docusaurus site includes several custom features:
+
+### Custom Search Engine
+Client-side search implementation providing fast, cost-free search without external dependencies. The search system indexes all documentation at build time and offers instant results with mobile-optimized UI.
+
+### Dynamic Content Generation
+- **Pricing Values**: Auto-updated from external TFT market sources
+- **Search Index**: Generated from all markdown content with smart URL handling
+- **Responsive Design**: Mobile-first UI with optimized navigation
 
 ## Contribute
 

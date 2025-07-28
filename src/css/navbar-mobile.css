@@ -1,0 +1,65 @@
+/* Mobile navbar customization */
+
+/* Hide navigation items from main navbar on mobile - they'll be available in hamburger menu */
+@media (max-width: 768px) {
+  /* Only hide from the main navbar, not from the mobile sidebar */
+  .navbar__inner .navbar__items .navbar__item--desktop-only {
+    display: none !important;
+  }
+  
+  /* Ensure hamburger menu is visible */
+  .navbar__toggle {
+    display: block !important;
+  }
+  
+  /* Clean mobile navbar layout */
+  .navbar__inner {
+    justify-content: space-between;
+  }
+  
+  /* Logo positioning */
+  .navbar__brand {
+    flex: 1;
+    justify-content: center;
+  }
+  
+  /* Search icon positioning */
+  .navbar__items--right {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Ensure items are visible in mobile sidebar menu */
+  .navbar-sidebar .navbar__item--desktop-only {
+    display: block !important;
+  }
+  
+  /* Hide search button from mobile sidebar - it should only be in main navbar */
+  .navbar-sidebar .search-bar-container,
+  .navbar-sidebar .search-bar-mobile {
+    display: none !important;
+  }
+  
+  /* Style mobile sidebar items */
+  .navbar-sidebar .navbar__item {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  }
+  
+  .navbar-sidebar .navbar__link {
+    font-size: 1.1rem;
+    color: var(--ifm-font-color-base);
+  }
+}
+
+/* Desktop - show all items normally */
+@media (min-width: 769px) {
+  .navbar__item--desktop-only {
+    display: flex !important;
+  }
+  
+  /* Hide hamburger menu on desktop */
+  .navbar__toggle {
+    display: none !important;
+  }
+}
