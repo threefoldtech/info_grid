@@ -1,11 +1,13 @@
 ---
-title: SSH into the VM
-sidebar_position: 7
+title: Set Up SSH
+sidebar_position: 6
 ---
 
-In this Threefold Guide, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3Node with [OpenSSH](https://www.openssh.com/) on Linux, MacOS and Windows with either an IPv4 or a Mycelium connection. 
+In this section, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3Node with [OpenSSH](https://www.openssh.com/) on Linux, MacOS and Windows with either an IPv4 or a Mycelium connection. 
 
 To deploy different workloads, the SSH connection process should be very similar.
+
+> For more information on how to deploy a VM, read the [next section](deploy-a-vm).
 
 ## Overview
 
