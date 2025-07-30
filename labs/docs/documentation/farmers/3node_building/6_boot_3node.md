@@ -69,29 +69,31 @@ Ignore the TFTP Server settings.
 
 **TFTP server setup on a debian machine such as Ubuntu or Raspberry Pi**
 
-> apt-get update
-> 
-> apt-get install tftpd-hpa
->
-> cd /srv/tftp/
->
-> wget http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/netboot.tar.gz
->
-> wget http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/pxelinux.0
->
-> wget https://bootstrap.grid.tf/krn/prod/YOUR_FARM_ID --no-check-certificate
->
-> mv YOUR_FARM_ID ipxe-prod.lkrn
->
-> tar -xvzf netboot.tar.gz
->
-> rm version.info netboot.tar.gz
->
-> rm pxelinux.cfg/default
->
-> chmod 777 /srv/tftp/pxelinux.cfg (optional if next step fails)
->
-> echo 'default ipxe-prod.lkrn' >> pxelinux.cfg/default
+```
+apt-get update
+
+apt-get install tftpd-hpa
+
+cd /srv/tftp/
+
+wget http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/netboot.tar.gz
+
+wget http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/pxelinux.0
+
+wget https://bootstrap.grid.tf/krn/prod/YOUR_FARM_ID --no-check-certificate
+
+mv YOUR_FARM_ID ipxe-prod.lkrn
+
+tar -xvzf netboot.tar.gz
+
+rm version.info netboot.tar.gz
+
+rm pxelinux.cfg/default
+
+chmod 777 /srv/tftp/pxelinux.cfg (optional if next step fails)
+
+echo 'default ipxe-prod.lkrn' >> pxelinux.cfg/default
+```
 
 
 **TFTP Server on a OPNsense router**
@@ -102,29 +104,31 @@ The first step is to download the TFTP server plugin. Go to system>firmware>Stat
 
 Turn on ssh for your router. In OPNsense it is System>Settings>Administration. Then check the Enable, root login, and password login. Hop over to Putty and connect to your router, normally 192.168.1.1. Login as root and input your password. Hit 8 to enter the shell.
 
-In OPNsense the tftp directory is /usr/local/tftp
+In OPNsense, the tftp directory is `/usr/local/tftp`.
 
-> cd /usr/local
->
-> mkdir tftp
->
-> cd ./tftp
->
-> fetch http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/netboot.tar.gz
->
-> fetch http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/pxelinux.0
->
-> fetch https://bootstrap.grid.tf/krn/prod/YOUR_FARM_ID 
->
-> mv YOUR_FARM_ID ipxe-prod.lkrn
->
-> tar -xvzf netboot.tar.gz
->
-> rm version.info netboot.tar.gz
->
-> rm pxelinux.cfg/default
->
-> echo 'default ipxe-prod.lkrn' >> pxelinux.cfg/default
+```
+cd /usr/local
+
+mkdir tftp
+
+cd ./tftp
+
+fetch http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/netboot.tar.gz
+
+fetch http://ftp.nl.debian.org/debian/dists/buster/main/installer-amd64/current/images/netboot/pxelinux.0
+
+fetch https://bootstrap.grid.tf/krn/prod/YOUR_FARM_ID 
+
+mv YOUR_FARM_ID ipxe-prod.lkrn
+
+tar -xvzf netboot.tar.gz
+
+rm version.info netboot.tar.gz
+
+rm pxelinux.cfg/default
+
+echo 'default ipxe-prod.lkrn' >> pxelinux.cfg/default
+```
 
 You can get out of shell by entering exit or just closing the window.
 
