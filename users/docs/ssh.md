@@ -3,7 +3,7 @@ title: Set Up SSH
 sidebar_position: 6
 ---
 
-In this section, we show how easy it is to deploy a full virtual machine (VM) and SSH into a 3Node with [OpenSSH](https://www.openssh.com/) on Linux, MacOS and Windows with either an IPv4 or a Mycelium connection. 
+In this section, we show how easy it is to deploy a full virtual machine (VM) and SSH into it with [OpenSSH](https://www.openssh.com/) on Linux, MacOS and Windows with either an IPv4 or a Mycelium connection. 
 
 To deploy different workloads, the SSH connection process should be very similar.
 
@@ -15,11 +15,11 @@ The main steps for the whole process are the following:
 
 * Create an SSH key pair
 * Deploy a VM on a 3Node
-* SSH into the 3Node
+* SSH into the VM
 
 ## Linux
 
-Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on Linux.
+Here are the steps to SSH into a VM with either IPv4 or Mycelium on Linux.
 
 * To create the SSH key pair, write in the terminal 
   * ```
@@ -31,9 +31,14 @@ Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on Linux.
   * ```
     cat ~/.ssh/id_rsa.pub
     ```
-  * Select and copy the public key when needed
+  * Select and copy the public key
+* To add the SSH public key on the Dashboard
+  * On the [ThreeFold Dashboard](https://dashboard.grid.tf/), go to: `Deploy` -> `SSH Keys`
+  * Click on `Import`
+  * Paste the public key in the `Public SSH Key` field
+  * Click `Save`
 * To deploy a full VM
-  * On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
+  * On the [ThreeFold Dashboard](https://dashboard.grid.tf/), go to: `Deploy` -> `Virtual Machines` -> `Full Virtual Machine`
   * Choose the parameters you want
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
@@ -48,11 +53,11 @@ Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on Linux.
       ssh root@IP_address
       ```
 
-You now have an SSH connection on Linux.
+You've now deployed a VM on the ThreeFold Grid with an SSH connection on Linux.
 
 ## MacOS
 
-Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on MacOS.
+Here are the steps to SSH into a VM with either IPv4 or Mycelium on MacOS.
 
 * To create the SSH key pair, in the terminal write
     * ```
@@ -64,9 +69,14 @@ Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on MacOS.
     * ```
       cat ~/.ssh/id_rsa.pub
       ```
-    * Select and copy the public key when needed
+    * Select and copy the public key
+* To add the SSH public key on the Dashboard
+  * On the [ThreeFold Dashboard](https://dashboard.grid.tf/), go to: `Deploy` -> `SSH Keys`
+  * Click on `Import`
+  * Paste the public key in the `Public SSH Key` field
+  * Click `Save`
 * To deploy a full VM
-  * On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
+  * On the [ThreeFold Dashboard](https://dashboard.grid.tf/), go to: `Deploy` -> `Virtual Machines` -> `Full Virtual Machine`
   * Choose the parameters you want
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
@@ -81,11 +91,11 @@ Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on MacOS.
       ssh root@IP_address
       ```
 
-You now have an SSH connection on MacOS.
+You've now deployed a VM on the ThreeFold Grid with an SSH connection on MacOS.
 
 ## Windows
 
-Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on Windows.
+Here are the steps to SSH into a VM with either IPv4 or Mycelium on Windows.
 
 * To download OpenSSH client and OpenSSH server
   * Open the `Settings` and select `Apps`
@@ -106,9 +116,14 @@ Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on Windows.
   * ```
     cat ~/.ssh/id_rsa.pub
     ```
-  * Select and copy the public key when needed
+  * Select and copy the public key
+* To add the SSH public key on the Dashboard
+  * On the [ThreeFold Dashboard](https://dashboard.grid.tf/), go to: `Deploy` -> `SSH Keys`
+  * Click on `Import`
+  * Paste the public key in the `Public SSH Key` field
+  * Click `Save`
 * To deploy a full VM
-  * On the [Threefold Dashboard](https://dashboard.grid.tf/), go to: Deploy -> Virtual Machines -> Full Virtual Machine
+  * On the [ThreeFold Dashboard](https://dashboard.grid.tf/), go to: `Deploy` -> `Virtual Machines` -> `Full Virtual Machine`
   * Choose the parameters you want
     * Minimum CPU: 1 vCore
     * Minimum Memory: 512 Mb
@@ -123,4 +138,4 @@ Here are the steps to SSH into a 3Node with either IPv4 or Mycelium on Windows.
       ssh root@IP_address
       ```
 
-You now have an SSH connection on Window.
+You've now deployed a VM on the ThreeFold Grid with an SSH connection on Window.
