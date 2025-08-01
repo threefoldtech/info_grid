@@ -139,10 +139,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             label: 'Labs',
             className: 'navbar__item--desktop-only',
           },
-          {
-            type: 'custom-searchBar',
-            position: 'right',
-          },
+
           {
             href: 'https://threefold.io',
             label: 'ThreeFold.io',
@@ -150,6 +147,10 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             className: 'navbar__item--desktop-only',
           },
         ],
+      },
+      // Enable search functionality
+      search: {
+        // This will be handled by our custom SearchBar component
       },
       footer: {
         style: 'dark',

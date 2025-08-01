@@ -1,8 +1,7 @@
 /* Mobile navbar customization */
 
-/* Hide navigation items from main navbar on mobile - they'll be available in hamburger menu */
-@media (max-width: 768px) {
-  /* Only hide from the main navbar, not from the mobile sidebar */
+/* Hide desktop-only items from main navbar on mobile - they'll be available in hamburger menu */
+@media (max-width: 996px) {
   .navbar__inner .navbar__items .navbar__item--desktop-only {
     display: none !important;
   }
@@ -34,32 +33,18 @@
     display: block !important;
   }
   
-  /* Hide search button from mobile sidebar - it should only be in main navbar */
-  .navbar-sidebar .search-bar-container,
-  .navbar-sidebar .search-bar-mobile {
-    display: none !important;
-  }
+  /* Let Docusaurus handle search in mobile sidebar naturally */
   
   /* Style mobile sidebar items */
   .navbar-sidebar .navbar__item {
     padding: 0.75rem 1rem;
     border-bottom: 1px solid var(--ifm-color-emphasis-200);
   }
-  
-  .navbar-sidebar .navbar__link {
-    font-size: 1.1rem;
-    color: var(--ifm-font-color-base);
-  }
 }
 
-/* Desktop - show all items normally */
-@media (min-width: 769px) {
+/* Desktop - show desktop-only items normally */
+@media (min-width: 997px) {
   .navbar__item--desktop-only {
     display: flex !important;
-  }
-  
-  /* Hide hamburger menu on desktop */
-  .navbar__toggle {
-    display: none !important;
   }
 }
